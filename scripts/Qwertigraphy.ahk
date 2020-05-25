@@ -75,9 +75,44 @@ FlashTip(tip) {
     Tooltip %tip%, A_CaretX, A_CaretY + 30
     Sleep 1500
     ToolTip
-    FileAppend %tip% `n, Qwertigraphy.log 
-    Return
 }
-CoachOutline(word, outline, savings, power) {
-    MsgBox % outline 
+^#p::
+    global AcruedTipText
+    global ActiveTipText
+    global Opportunities
+    Opportunities := {}
+
+
+    Gui, +AlwaysOnTop +Resize
+    Gui,Add,Text,vAcruedTipText w200 h250, Shorthand Coach
+    Gui,Add,Text,vActiveTipText w200, Shorthand Coach
+    Gui,Show,w250 h300, Shorthand Coach
+    Return
+
+AddOpportunity(tip,saves) {
+    global Opportunities
+    if ( ! Opportunities[tip] ) {
+        Opportunities[tip] := saves
+    } else {
+        Opportunities[tip] := Opportunities[tip] + saves
+    }
+    ; MsgBox, % "Seeing " tip " for the " Opportunities[tip]
+    GuiControl,,AcruedTipText, % ListOpportunities(Opportunities)
+    GuiControl,,ActiveTipText, %tip%
+}
+ListOpportunities(opps) {
+  summaries := ""
+  for summary,count in opps {
+    summaries .= count ": " summary "`n"
+  }
+  Sort, summaries
+  return Trim(summaries, "`n")
+}
+CoachOutline(word, outline, saves, power) {
+    tip := outline " = " word
+    ; MsgBox % tip
+    if (power > 1.9) {
+        FlashTip(tip)
+    }
+    AddOpportunity(tip,saves)
 }
