@@ -17,7 +17,7 @@ Function Out-CmuCoaching {
     $dictionaryLines = Get-Content -Path $source | Select-String "^[:]" 
     foreach ($dictionaryLine in $dictionaryLines) {
         $occProgressIndex++
-        Write-Progress -id 2 -Activity "Output coaching entry $occProgressIndex of $($dictionaryLines.count)" -PercentComplete (100*$ocdProgressIndex/$dictionaryLines.Count)
+        Write-Progress -id 2 -Activity "Output coaching entry $occProgressIndex of $($dictionaryLines.count)" -PercentComplete (100*$occProgressIndex/$dictionaryLines.Count)
         $trash, $casedOutline, $newWord = $dictionaryLine -split ':C?:'
         $outline = $casedOutline -ireplace '^(\w)', "$($casedOutline.substring(0,1).ToLower())"
         Write-Verbose ("Accumulating $outline under $word")

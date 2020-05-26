@@ -24,7 +24,7 @@ Function New-ClearOutline {
         Write-Verbose ("Creating clear outlines for $($outline.word)")
         $clearOutline = $outline.outline -replace '1$', ''
         Write-Verbose ("Testing $clearOutline")
-        if ((-not $usageWords.ContainsKey($clearOutline)) -or ($usageWords[$clearOutline] -gt $outline.usage * $usageFactor)) { 
+        if ((-not $usageWords.ContainsKey($clearOutline)) -or ($usageWords[$clearOutline] -gt [int]$outline.usage * $usageFactor)) { 
             Write-Verbose ("No word conflicts for $($clearOutline)")
             # If this outline is the most frequently used (ends in 1) and does not conflict with an existing word, add it as a clear outline
             "$clearOutline,$($outline.word),$($outline.usage)" | Add-Content -Path $outlinesFile
