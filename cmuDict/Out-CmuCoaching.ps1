@@ -50,8 +50,16 @@ Function Out-Coachline {
         $power
     )
 
-
+    
     ":*b0:$word ::" | Add-Content -Path $coachFile
+    Write-Verbose ("Adding savings and power for $word")
+    "`tCoachOutline(`"$coachableOutlines`",`"$word`",$savings,$power)" | Add-Content -Path $coachFile
+    "`tReturn" | Add-Content -Path $coachFile
+    ":*b0:$word,::" | Add-Content -Path $coachFile
+    Write-Verbose ("Adding savings and power for $word")
+    "`tCoachOutline(`"$coachableOutlines`",`"$word`",$savings,$power)" | Add-Content -Path $coachFile
+    "`tReturn" | Add-Content -Path $coachFile
+    ":*b0:$word.::" | Add-Content -Path $coachFile
     Write-Verbose ("Adding savings and power for $word")
     "`tCoachOutline(`"$coachableOutlines`",`"$word`",$savings,$power)" | Add-Content -Path $coachFile
     "`tReturn" | Add-Content -Path $coachFile
