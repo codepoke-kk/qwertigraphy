@@ -5,14 +5,12 @@ $stepsTotal = 7
 
 $stepsIndex = 1;Write-Progress -id 1 -Activity "Create new CMU Dictionary $stepsIndex of $stepsTotal" -PercentComplete (100*$stepsIndex/$stepsTotal)
 
-if (-not $rawCmuWordsLines) {
-    $rawCmuWordsLines = . $PSScriptRoot\Read-RawCmuDict.ps1
-    "Loaded $($rawCmuWordsLines.get_count()) raw CMU words"
-    $trainingWords = . $PSScriptRoot\Read-TrainingWords.ps1
-    "Loaded $($trainingWords.get_count()) training words"
-    $usageWords = . $PSScriptRoot\Read-UsageRanking.ps1
-    "Loaded $($usageWords.get_count()) usage words"
-}
+$rawCmuWordsLines = . $PSScriptRoot\Read-RawCmuDict.ps1
+"Loaded $($rawCmuWordsLines.get_count()) raw CMU words"
+$trainingWords = . $PSScriptRoot\Read-TrainingWords.ps1
+"Loaded $($trainingWords.get_count()) training words"
+$usageWords = . $PSScriptRoot\Read-UsageRanking.ps1
+"Loaded $($usageWords.get_count()) usage words"
 
 . $PSScriptRoot\New-CmuObject.ps1
 . $PSScriptRoot\Add-FormalOutline.ps1

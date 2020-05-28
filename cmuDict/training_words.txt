@@ -25,6 +25,8 @@ accept aks
 acceptance aks
 accord akr
 acknowledge ak
+acquaint aka
+acquaintance aka
 acquit aqet
 acre akr
 across akrs
@@ -33,6 +35,7 @@ add ad
 added adt
 address adr
 advantage av
+advertise avt
 affair afar
 affairs afars
 affection afkz
@@ -48,9 +51,9 @@ ahead ahed
 aid ad
 air ar
 alias aleas
-all o
+all O
 allow al
-almost omo
+almost Omo
 alone alon
 already ore
 also oso
@@ -79,6 +82,7 @@ appoint oe
 approximate aprx
 arch Ac
 arduous Aduus
+are r
 area area
 aria area
 arm Am
@@ -113,6 +117,7 @@ banquet baqet
 base bas
 basis bass
 bath bah
+be b
 bear bar
 beauty bte
 because ks
@@ -155,8 +160,8 @@ bought bot
 bound bn
 box box
 boy boe
-braded bradt
 braid brad
+braided bradt
 brain bran
 brave brav
 breach brec
@@ -179,6 +184,8 @@ cake kak
 call ko
 calm kam
 came kam
+can k
+cannot kn
 canoe kanu
 capital kpt
 captive kaptv
@@ -192,6 +199,8 @@ cash kaz
 cashier kazE
 cast kast
 cat kat
+catalog katl
+catalogue katl
 caught kot
 cause ks
 causes kss
@@ -234,7 +243,7 @@ come km
 comedy kmede
 comic kmek
 commence kmns
-committe kete
+committee kete
 common kmn
 communicate kmnu
 communication kmnu
@@ -325,6 +334,7 @@ depend dpnd
 depress dpres
 design dsin
 desk desk
+determine emn
 device dvis
 devout dvaut
 diction dekz
@@ -333,6 +343,8 @@ died did
 diet diet
 difference df
 different df
+difficult dfk
+difficulty dfk
 dig deg
 dining ding
 direct drk
@@ -376,6 +388,8 @@ earn En
 earth erH
 easily esy
 easy ese
+educate edu
+education edu
 effect fk
 effort eft
 eight at
@@ -397,6 +411,7 @@ enjoy njoe
 enough nuf
 entire nti
 entry ntre
+envelope nvl
 envy nve
 equipment eqepm
 equity eqete
@@ -468,12 +483,12 @@ floor flr
 flour flr
 fly fli
 fold fold
-folio foleo
 folks foks
 follow fo
 food fud
 fool ful
 foot fut
+for f
 force fs
 forgive fge
 forgot fgt
@@ -501,7 +516,6 @@ fun fn
 funny fne
 further fh
 future ft
-gaiety gate
 gained gand
 gas gas
 gave ga
@@ -531,6 +545,7 @@ grain gran
 grant grant
 grasp grasp
 gray gra
+great gr
 greater grr
 greed gred
 green gren
@@ -555,6 +570,7 @@ hastily hasty
 hat hat
 hated hatd
 hath hah
+have v
 head hed
 headache hedak
 health helH
@@ -578,6 +594,7 @@ house hus
 how au
 hug hug
 human heumn
+hundred hund
 hurt hEt
 idea ade
 ideal adel
@@ -589,6 +606,9 @@ impending mpndg
 importance mp
 important mp
 impression mprez
+improve mpr
+improvement mpr
+in n
 income nkm
 incomplete nkP
 increase nkres
@@ -601,9 +621,12 @@ influence nf
 inform nfm
 innate enat
 inquire nki
+inspect nsp
 instance ns
 instant ns
 instead nstd
+insurance nz
+insure nz
 into ntu
 inventory nvntre
 invoice nvs
@@ -695,6 +718,7 @@ mend mnd
 mental mntl
 mention mnz
 mentioned mnzd
+merchandise mecdis
 mere mE
 met met
 mile mi
@@ -754,7 +778,9 @@ needed nedt
 needs neds
 net net
 never nv
+nevertheless nvl
 new nu
+newspaper nsp
 next nes
 nice nis
 niece nes
@@ -780,7 +806,9 @@ number num
 nut nut
 object ob
 oblige obl
+occasion kaz
 occur okr
+of o
 off of
 office os
 official ofl
@@ -840,6 +868,7 @@ play pla
 plea ple
 plead pled
 please pl
+pleasure plez
 pledge plej
 plenty plente
 plus plus
@@ -858,13 +887,14 @@ pray pra
 prayer prar
 preach prec
 prepare prep
-presense pr
+presence pr
 present pr
 press pres
 pressed presd
 presume prsm
 pretty prete
 prevent prevent
+previous prevs
 price pris
 prices priss
 prim prem
@@ -893,6 +923,7 @@ purchase prc
 purpose prp
 pursue prsu
 quality ku
+quantity kT
 queen qen
 queer qer
 question kz
@@ -932,6 +963,7 @@ recent rs
 reception rsepz
 recognize rkniz
 reconcile rksil
+record rkd
 red red
 reduce redus
 refer rf
@@ -1127,6 +1159,7 @@ sub s
 subject sj
 success suk
 such sc
+sufficient suf
 suggest suj
 suggestion suj
 suitable sutb
@@ -1169,8 +1202,11 @@ tell te
 terrible terb
 thank ha
 theater hetE
+their H
+them hm
 then hen
 theory here
+there H
 these hes
 thesis hess
 thick hek
@@ -1324,6 +1360,8 @@ winter uentr
 wire ir
 wise uis
 wish uz
+with eh
+without eht
 woman umn
 women uemn
 won un
@@ -1350,31 +1388,7 @@ yesterday est
 yet yet
 yield yeld
 yoke eok
+you u
 young ug
+your u
 youth euh
-record rkd
-improve mpr
-improvement mpr
-newspaper nsp
-inspect nsp
-advertise avt
-acquaint aka
-acquaintance aka
-sufficient suf
-previous prevs
-nevertheless nvl
-envelope nvl
-merchandise mecdis
-occasion kaz
-insure nz
-insurance nz
-determine emn
-quantity kT
-educate edu
-education edu
-pleasure plez
-hundred hund
-difficult dfk
-difficulty dfk
-catalogue katl
-catalog katl

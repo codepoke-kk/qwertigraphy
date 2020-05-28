@@ -1,5 +1,13 @@
 $usageWordsFile = "$PsScriptRoot\wiki-100k.txt"
 
+$usageWordsFileObject = Get-ChildItem -Path $usageWordsFile
+if (($usageWords.count) -and ($usageWordsFileObject.LastWriteTime -lt $usageLastReadTime)) {
+    # "Returning cached lines"
+    Return $usageWords
+}
+# "Returning fresh lines"
+$usageLastReadTime = Get-Date
+ 
 $usageWordsLines = Get-Content -Path $usageWordsFile | Select-String "^[^#]" 
 $usageWords = @{}
 $usageWordIndex = 0
