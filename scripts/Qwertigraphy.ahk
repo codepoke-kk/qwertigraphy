@@ -1,4 +1,8 @@
+
 #Hotstring EndChars -()[]{}:'"/\,.?!`n `t" 
+#Include cmu_dictionary.ahk
+#Include cmu_coaching.ahk
+
 ^j::
 	Suspend toggle
     Return
@@ -119,9 +123,10 @@ CoachOutline(word, outline, saves, power) {
         LaunchCoach()
     }
     tip := outline " = " word
+    AddOpportunity(tip,saves)
+    
     ; MsgBox % tip
     if (power > 1.9) {
         FlashTip(tip)
     }
-    AddOpportunity(tip,saves)
 }

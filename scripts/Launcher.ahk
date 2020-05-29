@@ -6,5 +6,3 @@ SetWorkingDir %A_ScriptDir%  ; Ensures a consistent starting directory.
 ;#Include Home.ahk
 ;#Include Personal.ahk
 #Include Qwertigraphy.ahk
-#Include cmu_dictionary.ahk
-#Include cmu_coaching.ahk
