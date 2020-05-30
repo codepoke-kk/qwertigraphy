@@ -1,5 +1,5 @@
 $cmuWordsFile = "$PsScriptRoot\cmudict-0.7b.txt"
-#$cmuWordsFile = "$PsScriptRoot\small_sample_cmudict-0.7b.txt"
+$cmuWordsFile = "$PsScriptRoot\small_sample_cmudict-0.7b.txt"
 
 $cmuWordsFileObject = Get-ChildItem -Path $cmuWordsFile
 if (($cmuWordsLines.count) -and ($cmuWordsFileObject.LastWriteTime -lt $cmuLastReadTime)) {

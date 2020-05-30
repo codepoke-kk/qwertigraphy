@@ -17,6 +17,7 @@ Function New-ClearOutline {
         $ncoProgressIndex = 0
         $ncoStartTime = Get-Date
         $usageFactor = 3
+        $clearOutlineMarkers = New-Object System.Collections.Hashtable  # This makes a case sensitive hash
     }
     Process{
         $ncoProgressIndex++
@@ -26,8 +27,25 @@ Function New-ClearOutline {
         Write-Verbose ("Testing $clearOutline")
         if ((-not $usageWords.ContainsKey($clearOutline)) -or ($usageWords[$clearOutline] -gt [int]$outline.usage * $usageFactor)) { 
             Write-Verbose ("No word conflicts for $($clearOutline)")
-            # If this outline is the most frequently used (ends in 1) and does not conflict with an existing word, add it as a clear outline
-            "$clearOutline,$($outline.word),$($outline.usage)" | Add-Content -Path $outlinesFile
+
+            # Bug: u:you and U:under conflict. We need to make sure u and U return the same word, and it should be "you".
+                # Correct this by tracking newly created clear outlines and checking for them later
+                # If this clear outline exists or its first character lowered twin, don't add it 
+            $firstCharLoweredOutline = $clearOutline -ireplace '^(\w)', "$($clearOutline.substring(0,1).ToLower())"
+            if ((-not $clearOutlineMarkers.ContainsKey($firstCharLoweredOutline)) -and (-not $clearOutlineMarkers.ContainsKey($clearOutline))) { 
+                # Cleared of possible previous lowered outlines
+                # If this outline is the most frequently used (ends in 1) and does not conflict with an existing word, add it as a clear 
+                "$clearOutline,$($outline.word),$($outline.usage)" | Add-Content -Path $outlinesFile
+            
+                # Add this new outline to tracking 
+                if (-not $clearOutlineMarkers.ContainsKey($clearOutline)) {
+                    $clearOutlineMarkers[$clearOutline] = 1
+                } else {
+                    $clearOutlineMarkers[$clearOutline] = $clearOutlineMarkers[$clearOutline] + 1
+                }
+            } else {
+                Write-Verbose ("A lowered version of $($clearOutline) already exists. Skipping the add.")
+            }
         } else {
             Write-Verbose ("Blocking word conflict for $($clearOutline)")
         }
