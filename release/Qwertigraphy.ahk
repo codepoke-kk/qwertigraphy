@@ -2,6 +2,7 @@
 #Hotstring EndChars -()[]{}:;'"/\,.?!`n `t
 #Include cmu_dictionary.ahk
 #Include cmu_coaching.ahk
+#Include phrases.ahk
 
 :C:w::we
 :C:W::We

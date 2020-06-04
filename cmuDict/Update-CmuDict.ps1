@@ -51,7 +51,7 @@ $outlines = Import-CSV -Path $outlinesFile
 
 ### Compare all priority 1 numbered outlines to existing English words and where possible make unnumbered outlines of them
 $stepsIndex = 5;Write-Progress -id 1 -Activity "Create clear outlines $stepsIndex of $stepsTotal" -PercentComplete (100*$stepsIndex/$stepsTotal)
-$outlines | Where-Object {$_.outline -imatch '\w1$'} | New-ClearOutline -Verbose
+$outlines | Where-Object {$_.outline -imatch '\w1$'} | New-ClearOutline # -Verbose
 # Pull back a fresh load of the outlines
 $outlines = Import-CSV -Path $outlinesFile
 
