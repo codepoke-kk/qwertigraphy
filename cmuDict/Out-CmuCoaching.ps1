@@ -18,12 +18,14 @@ Function Out-CmuCoaching {
     foreach ($dictionaryLine in $dictionaryLines) {
         $occProgressIndex++
         Write-Progress -id 2 -Activity "Output coaching entry $occProgressIndex of $($dictionaryLines.count)" -PercentComplete (100*$occProgressIndex/$dictionaryLines.Count)
-        $trash, $casedOutline, $newWord = $dictionaryLine -split ':C?:'
+        $trash, $casedOutline, $newExpansion = $dictionaryLine -split ':X?C?:'
+        $trash, $newWord, $trash2 = $newExpansion -split '"'
         $outline = $casedOutline -ireplace '^(\w)', "$($casedOutline.substring(0,1).ToLower())"
         Write-Verbose ("Accumulating $outline under $word")
         if ($newWord -ine $currentWord) {
             if ($currentWord.length) {
                 $currentOutlines.Sort()
+                if ($currentOutlines[0].length -eq 0) {Write-Host ("dying with $dictionaryLine")}
                 Out-Coachline -coachFile $destination -word $currentWord -coachableOutlines $($currentOutlines -join ',') -savings ($currentWord.length - $currentOutlines[0].length)  -power ($currentWord.length / $currentOutlines[0].length)
                 $currentOutlines.Clear()
                 $currentOutlines.Add($outline) | Out-Null

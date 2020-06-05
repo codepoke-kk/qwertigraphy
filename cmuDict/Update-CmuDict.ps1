@@ -1,5 +1,5 @@
 $stepsIndex = 0
-$stepsTotal = 7
+$stepsTotal = 8
 
 "Began $(Get-Date)"
 
@@ -24,6 +24,7 @@ $usageWords = . $PSScriptRoot\Read-UsageRanking.ps1
 . $PSScriptRoot\New-ClearOutline.ps1
 . $PSScriptRoot\Out-CmuDictionary.ps1
 . $PSScriptRoot\Out-CmuCoaching.ps1
+. $PSScriptRoot\Out-PhraseCoaching.ps1
 
 ### Begin tranforming the CMU dictionary into a set of simple Gregg outlines
 $stepsIndex = 2;Write-Progress -id 1 -Activity "Write initial CMU Lines and reimport $stepsIndex of $stepsTotal" -PercentComplete (100*$stepsIndex/$stepsTotal)
@@ -62,8 +63,11 @@ $outlines | Sort {$_.word} | Out-CmuDictionary # -Verbose
 
 ### Write coaching lines by CMU dictionary order, which is word order
 # Coaching is created by reading in every outline for a given word and listing them all in the tip
-$stepsIndex = 7;Write-Progress -id 1 -Activity "Create new CMU Dictionary $stepsIndex of $stepsTotal" -PercentComplete (100*$stepsIndex/$stepsTotal)
+$stepsIndex = 7;Write-Progress -id 1 -Activity "Create new CMU Coaching Dictionary $stepsIndex of $stepsTotal" -PercentComplete (100*$stepsIndex/$stepsTotal)
 Out-CmuCoaching -source "$PSScriptRoot\..\scripts\cmu_dictionary.ahk" -destination "$PSScriptRoot\..\scripts\cmu_coaching.ahk" #-Verbose
+
+$stepsIndex = 8;Write-Progress -id 1 -Activity "Create new Phrase Coaching Dictionary $stepsIndex of $stepsTotal" -PercentComplete (100*$stepsIndex/$stepsTotal)
+Out-PhraseCoaching -source "$PSScriptRoot\..\scripts\phrases.ahk" -destination "$PSScriptRoot\..\scripts\phrase_coaching.ahk" #-Verbose
 
 
 "Ended $(Get-Date)"

@@ -1,8 +1,15 @@
 
+hasNotLaunchedCoach := 1
+wordsExpanded := 0
+charsSaved := 0
+lastExpandedWord := ""
+
 #Hotstring EndChars -()[]{}:;'"/\,.?!`n `t
 #Include cmu_dictionary.ahk
-#Include cmu_coaching.ahk
 #Include phrases.ahk
+#Include phrase_coaching.ahk
+#Include cmu_coaching.ahk
+
 
 :C:w::we
 :C:W::We
@@ -51,7 +58,16 @@
 
 
 CoordMode Caret
-hasLaunchedCoach = 0
+
+
+Expand(word) {
+    ; Track each word as expanded in order to make sure we don't coach it
+    global lastExpandedWord
+    lastExpandedWord := word . A_EndChar
+    sendlevel, 1
+    send, % word . A_EndChar ; . " for " . SubStr(A_ThisHotkey, 5)
+    sendlevel, 0
+}
 
 FlashTip(tip) {
     Tooltip %tip%, A_CaretX, A_CaretY + 30
@@ -67,12 +83,18 @@ LaunchCoach() {
     global ActiveTipText
     global Opportunities
     Opportunities := {}
-
+    
+    SysGet, vWidth, 78
+    SysGet, vHeight, 79
+    
+    vWidth := vWidth - 280
+    vHeight := vHeight - 700
 
     Gui, +AlwaysOnTop +Resize
     Gui,Add,Text,vAcruedTipText w200 h550, Shorthand Coach
     Gui,Add,Text,vActiveTipText w200, Shorthand Coach
-    Gui,Show,w250 h600, Shorthand Coach
+    Gui,Show,w250 h600 x%vWidth% y%vHeight%, Shorthand Coach
+
 }
 
 AddOpportunity(tip,saves) {
@@ -95,9 +117,18 @@ ListOpportunities(opps) {
   return Trim(summaries, "`n")
 }
 CoachOutline(word, outline, saves, power) {
-    global hasLaunchedCoach
-    if ( 0 > 1 ) {
+   ; If we just expanded this word, don't coach it
+    global lastExpandedWord
+    if (A_ThisHotkey = ":*b0:" . lastExpandedWord) {
+        ; Msgbox, % "Ignore " A_PriorHotkey
+        Return
+    }
+    
+    ; If we've not yet launched the coach, do so
+    global hasNotLaunchedCoach
+    if ( hasNotLaunchedCoach ) {
         LaunchCoach()
+        hasNotLaunchedCoach := 0
     }
     tip := outline " = " word
     AddOpportunity(tip,saves)

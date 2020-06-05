@@ -29,11 +29,11 @@ Function Out-Outline {
         $word
     )
 
-    ":C:$outline::$word" | Add-Content -Path $dictFile
+    ":XC:$outline::Expand(`"$word`")" | Add-Content -Path $dictFile
     
     $capOutline = $outline -ireplace '^(\w)', "$($outline.substring(0,1).ToUpper())"
     $capWord = $word -ireplace '^(\w)', "$($word.substring(0,1).ToUpper())"
     if (-not ($word -ceq $capWord)) {
-        ":C:$capOutline::$capWord" | Add-Content -Path $dictFile
+        ":XC:$capOutline::Expand(`"$capWord`")" | Add-Content -Path $dictFile
     }
 }
