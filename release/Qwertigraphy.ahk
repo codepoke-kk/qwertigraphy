@@ -3,6 +3,13 @@ hasNotLaunchedCoach := 1
 wordsExpanded := 0
 charsSaved := 0
 lastExpandedWord := ""
+lastEndChar := ""
+
+#NoEnv 
+#Warn 
+SendMode Input 
+SetWorkingDir %A_ScriptDir%  ; Ensures a consistent starting directory.
+Setbatchlines, -1
 
 #Hotstring EndChars -()[]{}:;'"/\,.?!`n `t
 #Include cmu_dictionary.ahk
@@ -64,9 +71,16 @@ Expand(word) {
     ; Track each word as expanded in order to make sure we don't coach it
     global lastExpandedWord
     lastExpandedWord := word . A_EndChar
-    sendlevel, 1
-    send, % word . A_EndChar ; . " for " . SubStr(A_ThisHotkey, 5)
-    sendlevel, 0
+    global lastEndChar
+    if (lastEndChar = "'") {
+        ; Don't allow contractions to expand the ending
+        send, % SubStr(A_ThisHotkey, 5) . A_EndChar 
+    } else {
+        sendlevel, 1
+        send, % word . A_EndChar
+        sendlevel, 0
+    }
+    lastEndChar := A_EndChar
 }
 
 FlashTip(tip) {
@@ -93,7 +107,7 @@ LaunchCoach() {
     Gui, +AlwaysOnTop +Resize
     Gui,Add,Text,vAcruedTipText w200 h550, Shorthand Coach
     Gui,Add,Text,vActiveTipText w200, Shorthand Coach
-    Gui,Show,w250 h600 x%vWidth% y%vHeight%, Shorthand Coach
+    Gui,Show,w250 h600 x%vWidth% y%vHeight% Minimize, Shorthand Coach
 
 }
 
