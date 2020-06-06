@@ -86,7 +86,7 @@
 ::gveus::Government of the United States
 ::herh::here and there
 ::int::I went
-::ip::I hope
+:C:ip::I hope
 ::irs::wire us
 ::isus::ice house; also ishus
 ::jK::Jesus Christ
@@ -255,9 +255,9 @@
 ::thahe::that they
 ::thas::that is
 ::thassa::that is to say
-::the::they were
+;::the::they were
 ::theStu::thoroughly understood
-::then::they were not
+;::then::they were not
 ::thetn::they do not
 ::thid::they had
 ::thosnt::there was not
@@ -283,7 +283,7 @@
 ::tno::to know
 ::tnoen::do you know whether or not
 ::tnra::at any rate
-::to::to all
+;::to::to all
 ::toet::to point out
 ::tone::to honor
 ::tos::told us
