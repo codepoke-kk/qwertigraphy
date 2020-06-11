@@ -18,8 +18,7 @@ Function Out-CmuCoaching {
     foreach ($dictionaryLine in $dictionaryLines) {
         $occProgressIndex++
         Write-Progress -id 2 -Activity "Output coaching entry $occProgressIndex of $($dictionaryLines.count)" -PercentComplete (100*$occProgressIndex/$dictionaryLines.Count)
-        $trash, $casedOutline, $newExpansion = $dictionaryLine -split ':X?C?:'
-        $trash, $newWord, $trash2 = $newExpansion -split '"'
+        $trash, $casedOutline, $newWord = $dictionaryLine -split ':X?C?:'
         $outline = $casedOutline -ireplace '^(\w)', "$($casedOutline.substring(0,1).ToLower())"
         Write-Verbose ("Accumulating $outline under $word")
         if ($newWord -ine $currentWord) {

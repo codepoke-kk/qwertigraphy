@@ -1,5 +1,5 @@
 $stepsIndex = 0
-$stepsTotal = 8
+$stepsTotal = 9
 
 "Began $(Get-Date)"
 
@@ -24,6 +24,7 @@ $usageWords = . $PSScriptRoot\Read-UsageRanking.ps1
 . $PSScriptRoot\New-ClearOutline.ps1
 . $PSScriptRoot\Out-CmuDictionary.ps1
 . $PSScriptRoot\Out-CmuCoaching.ps1
+. $PSScriptRoot\Out-PhraseDictionary.ps1
 . $PSScriptRoot\Out-PhraseCoaching.ps1
 
 ### Begin tranforming the CMU dictionary into a set of simple Gregg outlines
@@ -50,7 +51,7 @@ $cmus | Sort {[int]$_.usage} | New-LazyOutline | New-FormalOutline
 $stepsIndex = 4;Write-Progress -id 1 -Activity "Retrieve outlines as CSV objects $stepsIndex of $stepsTotal" -PercentComplete (100*$stepsIndex/$stepsTotal)
 $outlines = Import-CSV -Path $outlinesFile
 
-### Compare all priority 1 numbered outlines to existing English words and where possible make unnumbered outlines of them
+### Compare all priority 1 numbered outlines to existing English words and where possible make clear,  outlines of them
 $stepsIndex = 5;Write-Progress -id 1 -Activity "Create clear outlines $stepsIndex of $stepsTotal" -PercentComplete (100*$stepsIndex/$stepsTotal)
 $outlines | Where-Object {$_.outline -imatch '\w1$'} | New-ClearOutline # -Verbose
 # Pull back a fresh load of the outlines
@@ -66,8 +67,11 @@ $outlines | Sort {$_.word} | Out-CmuDictionary # -Verbose
 $stepsIndex = 7;Write-Progress -id 1 -Activity "Create new CMU Coaching Dictionary $stepsIndex of $stepsTotal" -PercentComplete (100*$stepsIndex/$stepsTotal)
 Out-CmuCoaching -source "$PSScriptRoot\..\scripts\cmu_dictionary.ahk" -destination "$PSScriptRoot\..\scripts\cmu_coaching.ahk" #-Verbose
 
-$stepsIndex = 8;Write-Progress -id 1 -Activity "Create new Phrase Coaching Dictionary $stepsIndex of $stepsTotal" -PercentComplete (100*$stepsIndex/$stepsTotal)
-Out-PhraseCoaching -source "$PSScriptRoot\..\scripts\phrases.ahk" -destination "$PSScriptRoot\..\scripts\phrase_coaching.ahk" #-Verbose
+$stepsIndex = 8;Write-Progress -id 1 -Activity "Create new Phrase Dictionary $stepsIndex of $stepsTotal" -PercentComplete (100*$stepsIndex/$stepsTotal)
+Out-PhraseDictionary -source "$PSScriptRoot\phrases.txt" -destination "$PSScriptRoot\..\scripts\phrases.ahk" #-Verbose
+
+$stepsIndex = 9;Write-Progress -id 1 -Activity "Create new Phrase Coaching Dictionary $stepsIndex of $stepsTotal" -PercentComplete (100*$stepsIndex/$stepsTotal)
+Out-PhraseCoaching -source "$PSScriptRoot\..\scripts\phrases.ahk" -wordSource "$PSScriptRoot\..\scripts\cmu_coaching.ahk" -destination "$PSScriptRoot\..\scripts\phrase_coaching.ahk" #-Verbose
 
 
 "Ended $(Get-Date)"

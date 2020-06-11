@@ -9,7 +9,7 @@ lastEndChar := ""
 #Warn 
 SendMode Input 
 SetWorkingDir %A_ScriptDir%  ; Ensures a consistent starting directory.
-Setbatchlines, -1
+SetBatchLines, -1
 
 #Hotstring EndChars -()[]{}:;'"/\,.?!`n `t
 #Include cmu_dictionary.ahk
@@ -76,9 +76,9 @@ Expand(word) {
         ; Don't allow contractions to expand the ending
         send, % SubStr(A_ThisHotkey, 5) . A_EndChar 
     } else {
-        sendlevel, 1
+        ; sendlevel, 5
         send, % word . A_EndChar
-        sendlevel, 0
+        ; sendlevel, 0
     }
     lastEndChar := A_EndChar
 }
@@ -98,11 +98,11 @@ LaunchCoach() {
     global Opportunities
     Opportunities := {}
     
-    SysGet, vWidth, 78
-    SysGet, vHeight, 79
+    SysGet, vWidth, 59
+    SysGet, vHeight, 60
     
-    vWidth := vWidth - 280
-    vHeight := vHeight - 700
+    vWidth := vWidth - 445
+    vHeight := vHeight - 1010
 
     Gui, +AlwaysOnTop +Resize
     Gui,Add,Text,vAcruedTipText w200 h550, Shorthand Coach
