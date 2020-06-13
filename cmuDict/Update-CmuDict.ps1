@@ -25,7 +25,7 @@ $usageWords = . $PSScriptRoot\Read-UsageRanking.ps1
 . $PSScriptRoot\Out-CmuDictionary.ps1
 . $PSScriptRoot\Out-CmuCoaching.ps1
 . $PSScriptRoot\Out-PhraseDictionary.ps1
-. $PSScriptRoot\Out-PhraseCoaching.ps1
+. $PSScriptRoot\Out-PhraseExpansions.ps1
 
 ### Begin tranforming the CMU dictionary into a set of simple Gregg outlines
 $stepsIndex = 2;Write-Progress -id 1 -Activity "Write initial CMU Lines and reimport $stepsIndex of $stepsTotal" -PercentComplete (100*$stepsIndex/$stepsTotal)
@@ -71,7 +71,6 @@ $stepsIndex = 8;Write-Progress -id 1 -Activity "Create new Phrase Dictionary $st
 Out-PhraseDictionary -source "$PSScriptRoot\phrases.txt" -destination "$PSScriptRoot\..\scripts\phrases.ahk" #-Verbose
 
 $stepsIndex = 9;Write-Progress -id 1 -Activity "Create new Phrase Coaching Dictionary $stepsIndex of $stepsTotal" -PercentComplete (100*$stepsIndex/$stepsTotal)
-Out-PhraseCoaching -source "$PSScriptRoot\..\scripts\phrases.ahk" -wordSource "$PSScriptRoot\..\scripts\cmu_coaching.ahk" -destination "$PSScriptRoot\..\scripts\phrase_coaching.ahk" #-Verbose
-
+Out-PhraseExpansions -source "$PSScriptRoot\..\scripts\phrases.ahk" -destination "$PSScriptRoot\..\scripts\phrase_expansions.ahk" #-Verbose
 
 "Ended $(Get-Date)"

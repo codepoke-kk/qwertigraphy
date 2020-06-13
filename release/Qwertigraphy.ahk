@@ -4,18 +4,21 @@ wordsExpanded := 0
 charsSaved := 0
 lastExpandedWord := ""
 lastEndChar := ""
+expansions := ""
+phraseEndings := {}
 
 #NoEnv 
 #Warn 
-SendMode Input 
+SendMode Input
 SetWorkingDir %A_ScriptDir%  ; Ensures a consistent starting directory.
 SetBatchLines, -1
+SetKeyDelay, -1
 
-#Hotstring EndChars -()[]{}:;'"/\,.?!`n `t
+;#Hotstring EndChars -()[]{}:;'"/\,.?!`n `t
 #Include cmu_dictionary.ahk
 #Include phrases.ahk
-#Include phrase_coaching.ahk
 #Include cmu_coaching.ahk
+#Include phrase_expansions.ahk
 
 
 :C:w::we
@@ -63,30 +66,46 @@ SetBatchLines, -1
     Send {Enter}
     Return
 
-
 CoordMode Caret
 
-
 Expand(word) {
-    ; Track each word as expanded in order to make sure we don't coach it
-    global lastExpandedWord
-    lastExpandedWord := word . A_EndChar
+    global expansions
+    global phraseEndings
     global lastEndChar
     if (lastEndChar = "'") {
         ; Don't allow contractions to expand the ending
         send, % SubStr(A_ThisHotkey, 5) . A_EndChar 
     } else {
-        ; sendlevel, 5
         send, % word . A_EndChar
-        ; sendlevel, 0
     }
+    
+    expansions .= word . A_EndChar
+    expansions := SubStr(expansions, -40)
+    if (phraseEndings[word]) 
+    {
+        For outline,expansion in phraseEndings[word]
+        {
+            if (InStr(expansions, expansion, , StrLen(expansions) - StrLen(expansion)) ) 
+            {
+                firstOutline := SubStr(outline, 1, InStr(outline, ",")-1)
+                saves := StrLen(expansion) - StrLen(firstOutline)
+                power := StrLen(expansion) / StrLen(firstOutline)
+                CoachOutline(expansion, outline, saves, power)
+            }
+        }
+    }
+    
     lastEndChar := A_EndChar
 }
 
 FlashTip(tip) {
     Tooltip %tip%, A_CaretX, A_CaretY + 30
-    Sleep 1500
-    ToolTip
+    SetTimer, ClearToolTip, -1500
+    return 
+
+    ClearToolTip:
+      ToolTip
+    return 
 }
 ^#p::
     LaunchCoach()
@@ -131,17 +150,11 @@ ListOpportunities(opps) {
   return Trim(summaries, "`n")
 }
 CoachOutline(word, outline, saves, power) {
-   ; If we just expanded this word, don't coach it
-    global lastExpandedWord
-    if (A_ThisHotkey = ":*b0:" . lastExpandedWord) {
-        ; Msgbox, % "Ignore " A_PriorHotkey
-        Return
-    }
-    
     ; If we've not yet launched the coach, do so
     global hasNotLaunchedCoach
     if ( hasNotLaunchedCoach ) {
         LaunchCoach()
+        LoadPhraseExpansions()
         hasNotLaunchedCoach := 0
     }
     tip := outline " = " word
