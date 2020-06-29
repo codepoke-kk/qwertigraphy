@@ -20,9 +20,16 @@ SetKeyDelay, -1
 #Include cmu_coaching.ahk
 #Include phrase_expansions.ahk
 
+; ctrl-win-space expands a word in place
+^#Space::
+    ; Msgbox, % "Spaceing"
+    SendLevel, 1
+    Send, {Space}
+    SendLevel, 0
+    Sleep, 20
+    Send, {bs}
+    Return 
 
-:C:w::we
-:C:W::We
 
 :?*:'s::'s 
 :?*:'d::'d

@@ -11,7 +11,7 @@ Function Add-LazyOutline {
     Process{
         $word,$pronunciation,$formal = $cmu -split ','
         Write-Verbose ("Converting $formal to lazy")
-        $lazyOutline = ConvertTo-LazyGreggOutline -formal $formal
+        $lazyOutline = ConvertTo-LazyGreggOutline -formal $formal -word $word
         "$cmu,$lazyOutline"
     }
     End{
@@ -23,11 +23,21 @@ Function Add-LazyOutline {
 Function ConvertTo-LazyGreggOutline {
     [CmdletBinding()]
     param (
-        $formal
+        $formal, 
+        $word
     )
  
     # Whole words
     $formal = $formal.toLower()
 
+    # Vowels
+    $formal = $formal -ireplace 'ea', 'e'
+    $formal = $formal -ireplace 'ao', 'w'
+    $formal = $formal -ireplace 'au', 'w'
+
+    # Consonant sets
+    if ($word -imatch 'x') {
+        $formal = $formal -ireplace 'es', 'x'
+    }
     $formal
 }
