@@ -6,6 +6,8 @@ lastExpandedWord := ""
 lastEndChar := ""
 expansions := ""
 phraseEndings := {}
+TypedCharacters := 0
+DisplayedCharacters := 0
 
 #NoEnv 
 #Warn 
@@ -79,28 +81,34 @@ Expand(word) {
     global expansions
     global phraseEndings
     global lastEndChar
+    global TypedCharacters
+    global DisplayedCharacters
+    
     if (lastEndChar = "'") {
         ; Don't allow contractions to expand the ending
         send, % SubStr(A_ThisHotkey, 5) . A_EndChar 
     } else {
         send, % word . A_EndChar
+        DisplayedCharacters += StrLen(word)
+        TypedCharacters += StrLen(SubStr(A_ThisHotkey, 5))
+        UpdateDashboard()
     }
     
-    expansions .= word . A_EndChar
-    expansions := SubStr(expansions, -40)
-    if (phraseEndings[word]) 
-    {
-        For outline,expansion in phraseEndings[word]
-        {
-            if (InStr(expansions, expansion, , StrLen(expansions) - StrLen(expansion)) ) 
-            {
-                firstOutline := SubStr(outline, 1, InStr(outline, ",")-1)
-                saves := StrLen(expansion) - StrLen(firstOutline)
-                power := StrLen(expansion) / StrLen(firstOutline)
-                CoachOutline(expansion, outline, saves, power)
-            }
-        }
-    }
+;    expansions .= word . A_EndChar
+;    expansions := SubStr(expansions, -40)
+;    if (phraseEndings[word]) 
+;    {
+;        For outline,expansion in phraseEndings[word]
+;        {
+;            if (InStr(expansions, expansion, , StrLen(expansions) - StrLen(expansion)) ) 
+;            {
+;                firstOutline := SubStr(outline, 1, InStr(outline, ",")-1)
+;                saves := StrLen(expansion) - StrLen(firstOutline)
+;                power := StrLen(expansion) / StrLen(firstOutline)
+;                CoachOutline(expansion, outline, saves, power)
+;            }
+;        }
+;    }
     
     lastEndChar := A_EndChar
 }
@@ -121,6 +129,9 @@ FlashTip(tip) {
 LaunchCoach() {
     global AcruedTipText
     global ActiveTipText
+    global DashboardText
+    global TypedCharacters
+    global DisplayedCharacters
     global Opportunities
     Opportunities := {}
     
@@ -131,12 +142,21 @@ LaunchCoach() {
     vHeight := vHeight - 1010
 
     Gui, +AlwaysOnTop +Resize
+    Gui,Add,Text,vDashboardText w200 h20, Shorthand Coach
     Gui,Add,Text,vAcruedTipText w200 h550, Shorthand Coach
     Gui,Add,Text,vActiveTipText w200, Shorthand Coach
-    Gui,Show,w250 h600 x%vWidth% y%vHeight% Minimize, Shorthand Coach
+    Gui,Show,w250 h620 x%vWidth% y%vHeight% Minimize, Shorthand Coach
 
 }
 
+UpdateDashboard() {
+    global TypedCharacters
+    global DisplayedCharacters
+    SavedCharacters := DisplayedCharacters - TypedCharacters
+    Ratio := Round(TypedCharacters / DisplayedCharacters, 2)
+    
+    GuiControl,,DashboardText, % "T:" SubStr("00000", StrLen(TypedCharacters)) TypedCharacters "  D:" SubStr("00000", StrLen(DisplayedCharacters)) DisplayedCharacters "  S:" SubStr("00000", StrLen(SavedCharacters)) SavedCharacters "  R:" Ratio
+}
 AddOpportunity(tip,saves) {
     global Opportunities
     if ( ! Opportunities[tip] ) {

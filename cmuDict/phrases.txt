@@ -257,7 +257,7 @@ thas:that is
 thassa:that is to say
 ;the:they were
 theStu:thoroughly understood
-then:they were not
+;then:they were not
 thetn:they do not
 thid:they had
 thosnt:there was not

@@ -1,4 +1,4 @@
-; Auto generated 06/27/2020 23:22:38
+; Auto generated 06/29/2020 22:36:05
 LoadPhraseExpansions() {
 global phraseEndings
 phraseMapping := Object("astn,astn0", "i understand","atnstn,atnstn0", "i do not understand")
@@ -69,7 +69,7 @@ phraseMapping := Object("teko,teko0", "ticket auditor","jko,jko0", "general clai
 phraseEndings["auditor"] := phraseMapping
 phraseMapping := Object("skad,skad0", "square yard")
 phraseEndings["yard"] := phraseMapping
-phraseMapping := Object("thosnt,thosnt0", "there was not","atn,atn0", "i do not","dusn,dusn0", "does not","eosnt,eosnt0", "he was not","then,then0", "they were not","tnoen,tnoen0", "do you know whether or not","en,en0", "whether or not","tsnt,tsnt0", "it is not","uern,uern0", "we are not","amn,amn0", "i am not","thetn,thetn0", "they do not","osnt,osnt0", "was not","ueln,ueln0", "we will not","thsnt,thsnt0", "there is not","tosnt,tosnt0", "it was not","uevn,uevn0", "we have not","uetn,uetn0", "we do not")
+phraseMapping := Object("thosnt,thosnt0", "there was not","atn,atn0", "i do not","dusn,dusn0", "does not","eosnt,eosnt0", "he was not","tnoen,tnoen0", "do you know whether or not","en,en0", "whether or not","tsnt,tsnt0", "it is not","uern,uern0", "we are not","amn,amn0", "i am not","thetn,thetn0", "they do not","osnt,osnt0", "was not","ueln,ueln0", "we will not","thsnt,thsnt0", "there is not","tosnt,tosnt0", "it was not","uevn,uevn0", "we have not","uetn,uetn0", "we do not")
 phraseEndings["not"] := phraseMapping
 phraseMapping := Object("astu,astu0", "as to")
 phraseEndings["to"] := phraseMapping

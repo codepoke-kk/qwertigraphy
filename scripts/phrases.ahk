@@ -1,4 +1,4 @@
-; Auto generated 06/27/2020 23:22:30
+; Auto generated 06/29/2020 22:35:57
 :C:aaaaa::Dummy phrase
 :C:aaaaa0::Dummy phrase
 :C:aStn::I understand
@@ -1113,10 +1113,6 @@
 :C:thestu0::thoroughly understood
 :C:Thestu::Thoroughly understood
 :C:Thestu0::Thoroughly understood
-:C:then::they were not
-:C:then0::they were not
-:C:Then::They were not
-:C:Then0::They were not
 :C:thetn::they do not
 :C:thetn0::they do not
 :C:Thetn::They do not
