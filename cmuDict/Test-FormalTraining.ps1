@@ -33,7 +33,7 @@ Foreach ($trainingWord in $trainingWords.Keys) {
         "`$pronunciation = `$pronunciation -creplace '$($filteringHash.$trainingWord) ?\b', '$($trainingWords[$trainingWord])'`t#$trainingWord is not $formal"
         $failureCounter++
     }
-    Write-Progress -Id 1 -Activity "$testCounter/$($trainingWords.Keys.count) $trainingWord, $filteringHash.$trainingWord, $formal, $trainingWord" -PercentComplete (100*$testCounter/$trainingWords.Keys.Count)
+    Write-Progress -Id 1 -Activity "$testCounter/$($trainingWords.Keys.count) $trainingWord, $filteringHash.$trainingWord, $formal, $trainingWord" -PercentComplete (100*$testCounter/$($trainingWords.Keys.Count))
 }
 
 

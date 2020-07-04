@@ -477,11 +477,13 @@ Function ConvertTo-FormalGreggOutline {
     $pronunciation = $pronunciation -creplace 'JH EH1 N ER0 AH0 L ?\b', 'jen'
     $pronunciation = $pronunciation -creplace 'B IY1 ?\b', 'b'	#be is not be
     $pronunciation = $pronunciation -creplace 'HH AE1 N D AH0 L ?\b', 'hndl'
+    $pronunciation = $pronunciation -creplace 'M IH1 N AH0 M AH0 M', 'mnemn'	#minimum is not mnemem
+    $pronunciation = $pronunciation -creplace '^IH1 N \b', 'n'	#in is not en
     $pronunciation = $pronunciation -creplace 'IH0 N ?\b', 'n'	#in is not en
-    $pronunciation = $pronunciation -creplace 'M IH1 N AH0 M AH0 M', 'mnemn'
+    $pronunciation = $pronunciation -creplace 'B IH1 N ?\b', 'bn'	#been is not ben
     $pronunciation = $pronunciation -creplace 'S AH1 M TH IH0 NG ?\b', 'smh'
     $pronunciation = $pronunciation -creplace 'S EH1 N S AH0 S ?\b', 'senss'
-    $pronunciation = $pronunciation -creplace 'IH1 Z ?\b', 's'	#is is not es
+    $pronunciation = $pronunciation -creplace '^IH1 Z$', 's'	#is is not es
     $pronunciation = $pronunciation -creplace 'S EH1 V ER0 AH0 L ?\b', 'sev'
     $pronunciation = $pronunciation -creplace '^IH1 T ?\b', 't'	#it is not et
     $pronunciation = $pronunciation -creplace 'M AO1 R N IH0 NG ?\b', 'mng'
@@ -583,7 +585,6 @@ Function ConvertTo-FormalGreggOutline {
     $pronunciation = $pronunciation -creplace 'OW1 V ER0 ?\b', 'O'
     $pronunciation = $pronunciation -creplace 'T AO1 T ?\b', 'tot'
     $pronunciation = $pronunciation -creplace 'F OW1 K ?\b', 'fok'
-    $pronunciation = $pronunciation -creplace 'T IH1 N ?\b', 'ten'
     $pronunciation = $pronunciation -creplace 'DH IH1 S ?\b', 'hs'
     $pronunciation = $pronunciation -creplace 'B AO1 L ?\b', 'bol'
     $pronunciation = $pronunciation -creplace 'SH UH1 D ?\b', 'zd'
@@ -629,7 +630,6 @@ Function ConvertTo-FormalGreggOutline {
     $pronunciation = $pronunciation -creplace '^AO1 L ?\b', 'O'
     $pronunciation = $pronunciation -creplace 'W ER1 ?\b', 'er'
     $pronunciation = $pronunciation -creplace 'L AO1 ?\b', 'lo'
-    $pronunciation = $pronunciation -creplace 'IH1 N ?\b', 'n'
     $pronunciation = $pronunciation -creplace 'G OW1 ?\b', 'g'
     $pronunciation = $pronunciation -creplace '^AH0 Z ?\b', 's'
     $pronunciation = $pronunciation -creplace 'AO1 L ?\b', 'o'
@@ -652,6 +652,21 @@ Function ConvertTo-FormalGreggOutline {
     $pronunciation = $pronunciation -creplace 'S EH1 K AH0 N D ?\b', 'seknd'	#second is not sekd
     $pronunciation = $pronunciation -creplace 'OW1 L D ER0 ?\b', 'oldr'	#older is not oldE
     $pronunciation = $pronunciation -creplace 'K OW1 L D ER0 ?\b', 'koldr'	#colder is not koldE
+    $pronunciation = $pronunciation -creplace 'T EH1 N AH0 S ?\b', 'tnes'	#tennis is not tns
+    $pronunciation = $pronunciation -creplace 'T IH1 M IH0 D ?\b', 'tmed'	#timid is not tmd
+    $pronunciation = $pronunciation -creplace 'EH1 S T AH0 M AH0 T ?\b', 'estmat'	#estimate is not estmt
+    $pronunciation = $pronunciation -creplace '^T IH1 N ?\b', 'ten'	#tin is not tn
+    $pronunciation = $pronunciation -creplace 'R EH1 Z IH0 D AH0 N S ?\b', 'rsedns'	#residence is not resdns
+    $pronunciation = $pronunciation -creplace 'W IH1 Z D AH0 M ?\b', 'uesdm'	#wisdom is not usdm
+    $pronunciation = $pronunciation -creplace 'R IH0 T EY1 N ?\b', 'retn'	#retain is not rtn
+    $pronunciation = $pronunciation -creplace 'D AE1 N S ?\b', 'dans'	#dance is not dns
+    $pronunciation = $pronunciation -creplace 'T AE1 N ?\b', 'tan'	#tan is not tn
+    $pronunciation = $pronunciation -creplace 'T EH1 M P AH0 L ?\b', 'tmpl'	#temple is not tmp
+    $pronunciation = $pronunciation -creplace 'D IH0 T EY1 N ?\b', 'detn'	#detain is not dtn
+    $pronunciation = $pronunciation -creplace 'B UH1 L IH0 T AH0 N ?\b', 'buletn'	#bulletin is not bultn
+    $pronunciation = $pronunciation -creplace 'S AH1 D AH0 N ?\b', 'sudn'	#sudden is not sdn
+    $pronunciation = $pronunciation -creplace 'S AH0 S T EY1 N ?\b', 'sstn'	#sustain is not sustn
+    $pronunciation = $pronunciation -creplace 'D IH1 N ER0 ?\b', 'dnr'	#dinner is not dnE
         
 
     # Conditional matches
@@ -723,8 +738,13 @@ Function ConvertTo-FormalGreggOutline {
     $pronunciation = $pronunciation -creplace '^IH0 K S T ER1 ?\b', 'es'	#external is not estrnl
     $pronunciation = $pronunciation -creplace '^IH\d N T ER1 ?\b', 'n'	#internal is not ntrnl
     $pronunciation = $pronunciation -creplace '^nT ER\d ?\b', 'n'	#internal is not ntrnl
+    $pronunciation = $pronunciation -creplace '^AY1 \b', 'a'
     $pronunciation = $pronunciation -creplace '^M IH1 (Z|S) \b', 'ms'
     $pronunciation = $pronunciation -creplace '^R I\w\d ?\b', 'r'
+    $pronunciation = $pronunciation -creplace '^A(O|H)\d TH ?', 'oH'
+    $pronunciation = $pronunciation -creplace '^AA1 R ?', 'ar' # aria
+    $pronunciation = $pronunciation -creplace '^AA1 ?', 'o'
+    $pronunciation = $pronunciation -creplace '^D IH1 S ?', 'ds'
     $pronunciation = $pronunciation -creplace '^P R AH0 D ?', 'prod'
     $pronunciation = $pronunciation -creplace '^P R AH0 T ?', 'prot'
     $pronunciation = $pronunciation -creplace '^P R AH0 K ?', 'prok'
@@ -764,6 +784,16 @@ Function ConvertTo-FormalGreggOutline {
     $pronunciation = $pronunciation -creplace '^AH2 N ?\b', 'n'
 
     # Consonant vowel blends
+    $pronunciation = $pronunciation -creplace 'T EH1 M P T ?\b', 'tmt'
+    $pronunciation = $pronunciation -creplace 'T IY1 M ?\b', 'tem'
+    $pronunciation = $pronunciation -creplace 'D AY1 N ?\b', 'din'
+    $pronunciation = $pronunciation -creplace 'nD IY0 AH0 N ?\b', 'ndean' # indian
+    $pronunciation = $pronunciation -creplace 'D IY. [EAI].. M ?\b', 'dm'
+    $pronunciation = $pronunciation -creplace 'D IY. [EAI].. N ?\b', 'dn'
+    $pronunciation = $pronunciation -creplace 'T [EAI].. M ?\b', 'tm'
+    $pronunciation = $pronunciation -creplace 'D [EAI].. M ?\b', 'dm'
+    $pronunciation = $pronunciation -creplace 'T [EAI].. N ?\b', 'tn'
+    $pronunciation = $pronunciation -creplace 'D [EAI].. N ?\b', 'dn'
     $pronunciation = $pronunciation -creplace 'T IH0 D$', 'td'
     $pronunciation = $pronunciation -creplace 'D IH0 D$', 'dt'
     $pronunciation = $pronunciation -creplace 'IH0 D$', 'd'	

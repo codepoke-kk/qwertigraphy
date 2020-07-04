@@ -34,10 +34,19 @@ Function ConvertTo-LazyGreggOutline {
     $formal = $formal -ireplace 'ea', 'e'
     $formal = $formal -ireplace 'ao', 'w'
     $formal = $formal -ireplace 'au', 'w'
+    $formal = $formal -ireplace 'eu', 'u'
 
     # Consonant sets
     if ($word -imatch 'x') {
         $formal = $formal -ireplace 'es', 'x'
     }
+    if ($word -imatch 'qu') {
+        $formal = $formal -ireplace 'k', 'q'
+    }
+
+    # Prefixes
+    $formal = $formal -ireplace 'pr(e|o)', 'pr'
+    $formal = $formal -ireplace 'per', 'pr'
+
     $formal
 }
