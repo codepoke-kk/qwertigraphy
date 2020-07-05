@@ -453,7 +453,7 @@ Function ConvertTo-FormalGreggOutline {
     $pronunciation = $pronunciation -creplace 'B AE1 D ?\b', 'bd'	#bad is not bad
     $pronunciation = $pronunciation -creplace 'W IH1 N ?\b', 'uen'	#win is not un
     $pronunciation = $pronunciation -creplace 'AE1 S K ?\b', 'sk'	#ask is not ask
-    $pronunciation = $pronunciation -creplace 'K AA1 R ?\b', 'kr'	#car is not kor
+    $pronunciation = $pronunciation -creplace '^K AA1 R$', 'kr'	#car is not kor
     $pronunciation = $pronunciation -creplace 'R IH1 D ?\b', 'red'	#rid is not rd
     $pronunciation = $pronunciation -creplace 'W UH1 D ?\b', 'd'	#would is not ud
     $pronunciation = $pronunciation -creplace 'IH0 NG Z ?\b', 'S' # ...ings is S
@@ -465,13 +465,13 @@ Function ConvertTo-FormalGreggOutline {
     $pronunciation = $pronunciation -creplace 'F AO1 R ?\b', 'f'	#for is not for
     $pronunciation = $pronunciation -creplace '^W IY1$', 'w'	#we is not ue
     $pronunciation = $pronunciation -creplace 'S AH1 B ?\b', 's'	#sub is not sb
-    $pronunciation = $pronunciation -creplace 'K ER1 ?\b', 'kur'	#cur is not kr
+    $pronunciation = $pronunciation -creplace '^K ER1$', 'kur'	#cur is not kr
     $pronunciation = $pronunciation -creplace 'EH1 N IY0 TH IH2 NG ?\b', 'neh'
     $pronunciation = $pronunciation -creplace '^Y UW1 ?\b', 'u'	#you is not eu
     $pronunciation = $pronunciation -creplace 'P AA1 S AH0 B AH0 L ?\b', 'pos'
     $pronunciation = $pronunciation -creplace 'M IH1 N ER0 AH0 L ?\b', 'mnerl'
     $pronunciation = $pronunciation -creplace 'K AA1 M$', 'kam'	#calm is not k
-    $pronunciation = $pronunciation -creplace 'M AY1 ?\b', 'ma'	#my is not mi
+    $pronunciation = $pronunciation -creplace '^M AY1 ?\b', 'ma'	#my is not mi
     $pronunciation = $pronunciation -creplace '^AO1 L \b$', 'O'	#all is not o
     $pronunciation = $pronunciation -creplace '^AW1 T$', 'au'	#out is not aot
     $pronunciation = $pronunciation -creplace 'JH EH1 N ER0 AH0 L ?\b', 'jen'
@@ -480,7 +480,6 @@ Function ConvertTo-FormalGreggOutline {
     $pronunciation = $pronunciation -creplace 'M IH1 N AH0 M AH0 M', 'mnemn'	#minimum is not mnemem
     $pronunciation = $pronunciation -creplace '^IH1 N \b', 'n'	#in is not en
     $pronunciation = $pronunciation -creplace 'IH0 N ?\b', 'n'	#in is not en
-    $pronunciation = $pronunciation -creplace 'B IH1 N ?\b', 'bn'	#been is not ben
     $pronunciation = $pronunciation -creplace 'S AH1 M TH IH0 NG ?\b', 'smh'
     $pronunciation = $pronunciation -creplace 'S EH1 N S AH0 S ?\b', 'senss'
     $pronunciation = $pronunciation -creplace '^IH1 Z$', 's'	#is is not es
@@ -622,7 +621,7 @@ Function ConvertTo-FormalGreggOutline {
     $pronunciation = $pronunciation -creplace '^K AA1 M ?\b', 'k'
     $pronunciation = $pronunciation -creplace 'T IH1 L ?\b', 'te'
     $pronunciation = $pronunciation -creplace '^K AH0 M ?\b', 'k'
-    $pronunciation = $pronunciation -creplace 'F AA1 R ?\b', 'fa'
+    $pronunciation = $pronunciation -creplace '^F AA1 R$', 'fa'
     $pronunciation = $pronunciation -creplace '^K AH0 N ?\b', 'k'
     $pronunciation = $pronunciation -creplace 'W IH1 L ?\b', 'l'
     $pronunciation = $pronunciation -creplace 'S AO1 ?\b', 'so'
@@ -645,7 +644,7 @@ Function ConvertTo-FormalGreggOutline {
     $pronunciation = $pronunciation -creplace 'D UW1 M D ?\b', 'dumd'	#doomed is not dmd
     $pronunciation = $pronunciation -creplace 'IH2 N V AH0 N T AO1 R IY0 ?\b', 'nvntre'	#inventory is not nvntore
     $pronunciation = $pronunciation -creplace 'M OW1 N D ?\b', 'mond'	#moaned is not mnd
-    $pronunciation = $pronunciation -creplace 'IH0 G Z EH1 M P T ?\b', 'xemt'	#exempt is not esemt
+    #$pronunciation = $pronunciation -creplace 'IH0 G Z EH1 M P T ?\b', 'xemt'	#exempt is not esemt
     $pronunciation = $pronunciation -creplace 'reF AH1 N D ?\b', 'rfnd'	#refund is not refnd
     $pronunciation = $pronunciation -creplace 'uenT ER0 ?\b', 'uentr'	#winter is not uentE
     $pronunciation = $pronunciation -creplace 'P R nT ?\b', 'prent'	#print is not prnt
@@ -667,9 +666,23 @@ Function ConvertTo-FormalGreggOutline {
     $pronunciation = $pronunciation -creplace 'S AH1 D AH0 N ?\b', 'sudn'	#sudden is not sdn
     $pronunciation = $pronunciation -creplace 'S AH0 S T EY1 N ?\b', 'sstn'	#sustain is not sustn
     $pronunciation = $pronunciation -creplace 'D IH1 N ER0 ?\b', 'dnr'	#dinner is not dnE
-        
-
+    $pronunciation = $pronunciation -creplace 'P ER0 M IH1 T ?\b', 'prmet'	#permit is not pEmet
+    $pronunciation = $pronunciation -creplace 'ptN ER0 ?\b', 'pAtE'	#partner is not ptnE
+    $pronunciation = $pronunciation -creplace 'F IH1 R D ?\b', 'ferd'	#feared is not fEd
+    $pronunciation = $pronunciation -creplace 'P IH1 R IY0 AH0 D ?\b', 'PEd'	#period is not peread
+    $pronunciation = $pronunciation -creplace 'F AA1 R M ER0 Z ?\b', 'fAmY'	#farmers is not fAmrs
+    $pronunciation = $pronunciation -creplace 'L EY1 B ER0 D ?\b', 'labrd'	#labored is not labEd
+    $pronunciation = $pronunciation -creplace 'cAM AH0 N ?\b', 'cAman'	#chairman is not cAmn
+    $pronunciation = $pronunciation -creplace 'T EY1 P ER0 D ?\b', 'taprd'	#tapered is not tapEd        
+    $pronunciation = $pronunciation -creplace 'G AA1 R D IY0 AH0 N ?\b', 'gAdean'	#guardian is not gAdn
+    $pronunciation = $pronunciation -creplace 'TH ER1 D IY2 ?\b', 'HEte'	#thirty is not Hrde
+    $pronunciation = $pronunciation -creplace 'K ER1 T IY0 AH0 S ?\b', 'kEtus'	#courteous is not kEteas
     # Conditional matches
+    if ($word -ne 'bin') {
+        $pronunciation = $pronunciation -creplace 'B IH1 N ?\b', 'bn'	#been is not ben
+    } else {
+        $pronunciation = $pronunciation -creplace 'B IH1 N ?\b', 'ben'	#bin is not ben
+    }
     if ($word -cmatch 'wear') {
         $pronunciation = $pronunciation -creplace '^ar', 'uar'	#wear is not ar
     }
@@ -697,6 +710,14 @@ Function ConvertTo-FormalGreggOutline {
 
     # Counterclockwise vowels
     $straightStrokes = '(M|N|T|D|JH|CH|SH|m|n|t|d|j|c|z)'
+    $forwardStraightStrokes = '(M|N|T|D|m|n|t|d)'
+    $horizontalStrokes = '(M|N|G|K|L|R|TH|m|n|g|k|l|r|h)'
+    $downwardStrokes = '(S|P|B|F|V|JH|CH|SH|s|p|b|f|v|j|c|z)'
+    $upwardStrokes = '(T|N T|N T|D|t|n t|n d|d)'
+    $thLeftStrokes = '(O..|R|ER.|L|o|r|l)'
+    if ($pronunciation -cmatch "TH ?$thLeftStrokes") {
+        $pronunciation = $pronunciation -creplace 'TH ?\b', 'H'
+    }
     if ($pronunciation -cmatch "$straightStrokes ?ER1`$") {
         $pronunciation = $pronunciation -creplace 'ER1 ?\b', 'E'
     }
@@ -727,6 +748,36 @@ Function ConvertTo-FormalGreggOutline {
     if (($word -notmatch 'red$') -and ($pronunciation -cmatch "IH1 R ?$straightStrokes")) {
         $pronunciation = $pronunciation -creplace 'IH1 R ?\b', 'E'
     }
+    if ($pronunciation -cmatch "$downwardStrokes ?ER. ?$forwardStraightStrokes") {
+        $pronunciation = $pronunciation -creplace 'ER. ?\b', 'E'
+    }
+    if ($pronunciation -cmatch "$downwardStrokes ?IH1 R ?$forwardStraightStrokes") {
+        $pronunciation = $pronunciation -creplace 'IH1 R ?\b', 'E'
+    }
+    if ($pronunciation -cmatch "$downwardStrokes ?EH1 R ?$forwardStraightStrokes") {
+        $pronunciation = $pronunciation -creplace 'EH1 R ?\b', 'A'
+    }
+    if ($pronunciation -cmatch "$downwardStrokes ?AA1 R ?$forwardStraightStrokes") {
+        $pronunciation = $pronunciation -creplace 'AA1 R ?\b', 'A'
+    }
+    if ($pronunciation -cmatch "$downwardStrokes ?A.. R ?$forwardStraightStrokes`$") {
+        $pronunciation = $pronunciation -creplace 'A.. R ?\b', 'A'
+    }
+    if ($pronunciation -cmatch "$horizontalStrokes ?ER. ?$upwardStrokes") {
+        $pronunciation = $pronunciation -creplace 'ER. ?\b', 'E'
+    }
+    if ($pronunciation -cmatch "$horizontalStrokes ?AA. R ?$upwardStrokes") {
+        $pronunciation = $pronunciation -creplace 'AA. R ?\b', 'A'
+    }
+    if ($pronunciation -cmatch "$horizontalStrokes ?EH1 R AH0 ?$upwardStrokes") {
+        $pronunciation = $pronunciation -creplace 'EH1 R AH0 ?\b', 'E'
+    }
+    if ($pronunciation -cmatch "$horizontalStrokes ?EH. R AH0 ?$upwardStrokes") {
+        $pronunciation = $pronunciation -creplace 'EH. R AH0 ?\b', 'A'
+    }
+    if ($pronunciation -cmatch "S ?ER. ?$sraightStrokes") {
+        $pronunciation = $pronunciation -creplace 'ER. ?\b', 'E'
+    }
         
     # Counterclockwise - too inconsistently applied compared to other words in earlier lessons that
     # could implement this rule. As such, I'll implement only these exceptions
@@ -745,6 +796,7 @@ Function ConvertTo-FormalGreggOutline {
     $pronunciation = $pronunciation -creplace '^AA1 R ?', 'ar' # aria
     $pronunciation = $pronunciation -creplace '^AA1 ?', 'o'
     $pronunciation = $pronunciation -creplace '^D IH1 S ?', 'ds'
+    $pronunciation = $pronunciation -creplace '^D EH1 Z ?', 'ds'
     $pronunciation = $pronunciation -creplace '^P R AH0 D ?', 'prod'
     $pronunciation = $pronunciation -creplace '^P R AH0 T ?', 'prot'
     $pronunciation = $pronunciation -creplace '^P R AH0 K ?', 'prok'
@@ -775,7 +827,7 @@ Function ConvertTo-FormalGreggOutline {
     $pronunciation = $pronunciation -creplace '^IH2 N ?\b', 'n'
     $pronunciation = $pronunciation -creplace '^AH0 N ?\b', 'n'
     $pronunciation = $pronunciation -creplace '^IH0 G Z ?\b', 'es'
-    $pronunciation = $pronunciation -creplace '^IH0 K S ?\b', 'es'
+    $pronunciation = $pronunciation -creplace '^[EI]H. K S ?\b', 'es'
     if ($word -cmatch '^i') {
         $pronunciation = $pronunciation -creplace '^AY0 ?\b', 'a'
     }
@@ -797,7 +849,8 @@ Function ConvertTo-FormalGreggOutline {
     $pronunciation = $pronunciation -creplace 'T IH0 D$', 'td'
     $pronunciation = $pronunciation -creplace 'D IH0 D$', 'dt'
     $pronunciation = $pronunciation -creplace 'IH0 D$', 'd'	
-    $pronunciation = $pronunciation -creplace 'ZH ER0 ?\b', 'z'
+    $pronunciation = $pronunciation -creplace 'ZH ER0 ?\b', 'z'	
+    $pronunciation = $pronunciation -creplace 'AY1 Z ?\b', 'iz'
     $pronunciation = $pronunciation -creplace 'K AO2 R ?\b', 'k'
     $pronunciation = $pronunciation -creplace 'EH1 K T ?\b', 'k'
     $pronunciation = $pronunciation -creplace 'P L AO1 R ?\b', 'plr'

@@ -11,7 +11,7 @@ if (-not $filteringHash) {
     $filteringHash = @{}
     $rawCmuWordsLines | ForEach-Object {
             $filteringCount++
-            Write-Progress -Id 1 -Activity "$filteringCount/$($rawCmuWordsLines.count)"
+            Write-Progress -Id 1 -CurrentOperation "Adding words" -Activity "$filteringCount/$($rawCmuWordsLines.count)" -PercentComplete (100*$filteringCount/$($rawCmuWordsLines.count))
             $word, $pronunciation = $_ -split '  '
             if(-not $filteringHash.ContainsKey($word.ToLower())) {$filteringHash.Add($word.ToLower(), $pronunciation)}
         }
