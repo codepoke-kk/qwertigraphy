@@ -1,4 +1,5 @@
 $cmuWordsFile = "$PsScriptRoot\cmudict-0.7b.txt"
+# Uncomment this line to work with a small dictionary on problem words.
 # $cmuWordsFile = "$PsScriptRoot\small_sample_cmudict-0.7b.txt"; $cmuWordsLines = $null; $usageWords = $null
 
 

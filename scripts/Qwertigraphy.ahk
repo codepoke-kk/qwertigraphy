@@ -8,6 +8,7 @@ expansions := ""
 phraseEndings := {}
 TypedCharacters := 0
 DisplayedCharacters := 0
+MissedCharacters := 0
 
 #NoEnv 
 #Warn 
@@ -21,6 +22,7 @@ SetKeyDelay, -1
 #Include phrases.ahk
 #Include cmu_coaching.ahk
 #Include phrase_expansions.ahk
+
 
 ; ctrl-win-space expands a word in place
 ^#Space::
@@ -40,38 +42,34 @@ SetKeyDelay, -1
 :?*:'re::'re
 :?*:'ve::'ve
 
+~backspace::hotstring("reset")
+
 ^j::
 	Suspend toggle
     Return
 
 ^Space::
-	Suspend toggle
-	Suspend toggle
+    hotstring("reset")
     Send {Space}
     Return
 ^.::
-	Suspend toggle
-	Suspend toggle
+    hotstring("reset")
     Send {.}
     Return
 ^,::
-	Suspend toggle
-	Suspend toggle
+    hotstring("reset")
     Send {,}
     Return
 +^;::
-	Suspend toggle
-	Suspend toggle
+    hotstring("reset")
     Send {:}
     Return
 ^Tab::
-	Suspend toggle
-	Suspend toggle
+    hotstring("reset")
     Send {Tab}
     Return
 ^Enter::
-	Suspend toggle
-	Suspend toggle
+    hotstring("reset")
     Send {Enter}
     Return
 
@@ -93,23 +91,6 @@ Expand(word) {
         TypedCharacters += StrLen(SubStr(A_ThisHotkey, 5))
         UpdateDashboard()
     }
-    
-;    expansions .= word . A_EndChar
-;    expansions := SubStr(expansions, -40)
-;    if (phraseEndings[word]) 
-;    {
-;        For outline,expansion in phraseEndings[word]
-;        {
-;            if (InStr(expansions, expansion, , StrLen(expansions) - StrLen(expansion)) ) 
-;            {
-;                firstOutline := SubStr(outline, 1, InStr(outline, ",")-1)
-;                saves := StrLen(expansion) - StrLen(firstOutline)
-;                power := StrLen(expansion) / StrLen(firstOutline)
-;                CoachOutline(expansion, outline, saves, power)
-;            }
-;        }
-;    }
-    
     lastEndChar := A_EndChar
 }
 
@@ -127,38 +108,46 @@ FlashTip(tip) {
     Return
     
 LaunchCoach() {
+    global MissedText
+    global DashboardText
     global AcruedTipText
     global ActiveTipText
-    global DashboardText
-    global TypedCharacters
-    global DisplayedCharacters
     global Opportunities
+    ; Define here so each launch refreshes the list
     Opportunities := {}
     
     SysGet, vWidth, 59
     SysGet, vHeight, 60
     
     vWidth := vWidth - 445
-    vHeight := vHeight - 1010
+    vHeight := vHeight - 1110
 
     Gui, +AlwaysOnTop +Resize
-    Gui,Add,Text,vDashboardText w200 h20, Shorthand Coach
-    Gui,Add,Text,vAcruedTipText w200 h550, Shorthand Coach
-    Gui,Add,Text,vActiveTipText w200, Shorthand Coach
-    Gui,Show,w250 h620 x%vWidth% y%vHeight% Minimize, Shorthand Coach
+    Gui,Add,Text,vDashboardText w200 h72, Characters saved in typing
+    Gui,Add,Text,vAcruedTipText w200 h520, Shorthand Coach
+    Gui,Add,Text,vActiveTipText w200, Last word not shortened
+    Gui,Show,w250 h656 x%vWidth% y%vHeight% Minimize, Shorthand Coach
 
 }
 
 UpdateDashboard() {
     global TypedCharacters
     global DisplayedCharacters
+    global MissedCharacters
     SavedCharacters := DisplayedCharacters - TypedCharacters
-    Ratio := Round(TypedCharacters / DisplayedCharacters, 2)
+    Efficiency := Round(SavedCharacters / DisplayedCharacters, 2)
+    Learning := Round(SavedCharacters / MissedCharacters, 2)
     
-    GuiControl,,DashboardText, % "T:" SubStr("00000", StrLen(TypedCharacters)) TypedCharacters "  D:" SubStr("00000", StrLen(DisplayedCharacters)) DisplayedCharacters "  S:" SubStr("00000", StrLen(SavedCharacters)) SavedCharacters "  R:" Ratio
+    GuiControl,,DashboardText, % "Typed:" TypedCharacters "`nSaved:" SavedCharacters "`nMissed: " MissedCharacters "`nEfficiency:" Efficiency "`nLearning:" Learning
 }
 AddOpportunity(tip,saves) {
+    if ( saves < 1) { 
+        ; Don't record opportunities that save nothing or less than nothing
+        Return
+    }
     global Opportunities
+    global MissedCharacters
+    MissedCharacters := MissedCharacters + saves
     if ( ! Opportunities[tip] ) {
         Opportunities[tip] := saves
     } else {

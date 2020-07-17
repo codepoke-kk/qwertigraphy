@@ -12,3 +12,9 @@ bet
 team
 alex
 glad
+store
+done
+down
+news
+those
+build

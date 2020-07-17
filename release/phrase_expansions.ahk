@@ -1,4 +1,4 @@
-; Auto generated 07/11/2020 19:07:09
+; Auto generated 07/17/2020 17:25:41
 LoadPhraseExpansions() {
 global phraseEndings
 phraseMapping := Object("astn,astn0", "i understand","atnstn,atnstn0", "i do not understand")
