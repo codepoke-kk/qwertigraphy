@@ -34,7 +34,7 @@ SetKeyDelay, -1
     Send, {bs}
     Return 
 
-
+; Allow manual contracting
 :?*:'s::'s 
 :?*:'d::'d
 :?*:'t::'t
@@ -42,7 +42,33 @@ SetKeyDelay, -1
 :?*:'re::'re
 :?*:'ve::'ve
 
-~backspace::hotstring("reset")
+; Contractions
+:CX:im::Expand("I'm")
+:CX:Im::Expand("I'm")
+
+; Allow cancellation or expansion with backtick
+^`::
+    ; Cancel expansion on Ctrl
+    hotstring("reset")
+    Return 
+!`::
+    ; Expand in place on Alt
+    ; Msgbox, % "Spacing"
+    SendLevel, 1
+    Send, {Space}
+    SendLevel, 0
+    Sleep, 20
+    Send, {bs}
+    Return 
+#`::
+    ; Expand in place on Win
+    ; Msgbox, % "Spacing"
+    SendLevel, 1
+    Send, {Space}
+    SendLevel, 0
+    Sleep, 20
+    Send, {bs}
+    Return
 
 ^j::
 	Suspend toggle
@@ -84,14 +110,21 @@ Expand(word) {
     
     if (lastEndChar = "'") {
         ; Don't allow contractions to expand the ending
-        send, % SubStr(A_ThisHotkey, 5) . A_EndChar 
+        send, % SubStr(A_ThisHotkey, 5) . A_EndChar
     } else {
-        send, % word . A_EndChar
+        if (A_EndChar = "!") {
+            ; Exclam is the ALT character
+            send, % word 
+            send {!}
+        } else {
+            send, % word A_EndChar
+        }
         DisplayedCharacters += StrLen(word)
         TypedCharacters += StrLen(SubStr(A_ThisHotkey, 5))
         UpdateDashboard()
     }
     lastEndChar := A_EndChar
+    hotstring("reset")
 }
 
 FlashTip(tip) {
@@ -123,11 +156,11 @@ LaunchCoach() {
     vHeight := vHeight - 1110
 
     Gui, +AlwaysOnTop +Resize
-    Gui,Add,Text,vDashboardText w200 h72, Characters saved in typing
+    Gui,Add,Text,vDashboardText w150 r5, Characters saved in typing
     Gui,Add,Text,vAcruedTipText w200 h520, Shorthand Coach
-    Gui,Add,Text,vActiveTipText w200, Last word not shortened
+    Gui,Add,Text,vActiveTipText r1 w200, Last word not shortened
+    Gui,Add,Picture, w70 h-1 x170 y5, coach.png
     Gui,Show,w250 h656 x%vWidth% y%vHeight% Minimize, Shorthand Coach
-
 }
 
 UpdateDashboard() {
