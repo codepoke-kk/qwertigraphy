@@ -12,7 +12,7 @@ Function Add-LazyOutline {
         $word,$pronunciation,$formal = $cmu -split ','
         Write-Verbose ("Converting $formal to lazy")
         $lazyOutline = ConvertTo-LazyGreggOutline -formal $formal -word $word
-        "$cmu,$lazyOutline"
+        "$cmu,$($lazyOutline.trim())"
     }
     End{
         Write-Host ("Done Adding Lazy Gregg Outlines to CMU Object after $((New-TimeSpan -Start $aloStartTime -End (Get-Date)).TotalSeconds) seconds")

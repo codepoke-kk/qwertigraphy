@@ -13,7 +13,7 @@ Function Add-FormalOutline {
         Write-Verbose ("Converting $pronunciation for $word")
         $formalOutline = ConvertTo-FormalGreggOutline -word $word -pronunciation $pronunciation 
         if ($formalOutline.length -gt 0) {
-            "$cmu,$formalOutline"
+            "$cmu,$($formalOutline.trim())"
         } else {
             Write-Host ("Failed to add meaningful outline for $word")
         }

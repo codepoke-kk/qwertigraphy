@@ -20,7 +20,7 @@ Function Add-WordUsage {
             Write-Verbose ("Ranking $($cmu.word) as $($currentRanking)")
             $usage = $currentRanking
         }
-        "$cmu,$usage"
+        "$cmu,$usage,hint,"
     }
     End{
         Write-Host ("Done Adding Word Usage to CMU Object after $((New-TimeSpan -Start $awuStartTime -End (Get-Date)).TotalSeconds) seconds")
