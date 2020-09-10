@@ -1,3 +1,11 @@
+dictionaries := []
+; dictionaries.Push("supplement.csv")
+dictionaries.Push("outlines_final.csv")
+
+words := CSobj()
+hints := CSobj()
+expander := func("ExpandOutline")
+hinter := func("CoachOutline")
 
 hasNotLaunchedCoach := 1
 wordsExpanded := 0
@@ -10,29 +18,91 @@ TypedCharacters := 0
 DisplayedCharacters := 0
 MissedCharacters := 0
 
-#NoEnv 
-#Warn 
-SendMode Input
-SetWorkingDir %A_ScriptDir%  ; Ensures a consistent starting directory.
-SetBatchLines, -1
-SetKeyDelay, -1
+LaunchCoach()
 
-;#Hotstring EndChars -()[]{}:;'"/\,.?!`n `t
-#Include cmu_dictionary.ahk
-#Include phrases.ahk
-#Include cmu_coaching.ahk
-#Include phrase_expansions.ahk
+for index, dictionary in dictionaries
+{
+    Loop,Read,%dictionary%   ;read dictionary into HotStrings
+    {
+        Global NumLines
+        NumLines:=A_Index-1
+        IfEqual, A_Index, 1, Continue ; Skip title row
+        Loop,Parse,A_LoopReadLine,CSV   ;parse line into 6 fields
+        {
+            ; msgbox % "Making field" A_Index " = " A_LoopField
+            field%A_Index% = %A_LoopField%
+        }
+        ; msgbox % "Making " field3 " = " field1 " hinting " field6
+        ; words[field3] := field1
+        ; hints[field1] := field6
+        ; Use fields to define hotstrings
+        ; Hotstring( ":B1:" field3, expander.bind(field3, field1))
+        ; Hotstring( ":B1:" field3, field1)
+        
+        ; Add case sensitive hotstrings for lower case, capped case, and all caps case
+        saves := StrLen(field1) - StrLen(field3)
+        power := StrLen(field1) / StrLen(field3)
 
+        ; lowered hotstring
+        Hotstring( ":B1C:" field3, expander.bind(field3, field1, saves, power))
 
-; ctrl-win-space expands a word in place
-^#Space::
-    ; Msgbox, % "Spaceing"
-    SendLevel, 1
-    Send, {Space}
-    SendLevel, 0
-    Sleep, 20
-    Send, {bs}
-    Return 
+        ; allcapped hotstring
+        StringUpper, field1_upper, field1
+        StringUpper, field3_upper, field3
+        Hotstring( ":B1C:" field3_upper, expander.bind(field3_upper, field1_upper, saves, power))
+
+        ; capped hotstring
+        field1_capped := SubStr(field1_upper, 1, 1) . SubStr(field1, 2, (StrLen(field1) - 1))
+        field3_capped := SubStr(field3_upper, 1, 1) . SubStr(field3, 2, (StrLen(field3) - 1))
+        Hotstring( ":B1C:" field3_capped, expander.bind(field3_capped, field1_capped, saves, power))
+
+        try {
+            ; Try the "word" as a hotstring to see whether it exists
+            Hotstring( ":B1:" field1 )
+        } catch {
+            ; The "word" does not exist, so use it as a coaching hint
+            Hotstring( ":B0:" field1, hinter.bind(field1, field3, field6, saves, power))
+        }
+        
+        ; if ( NumLines > 800 ) {
+        ;     break
+        ; }
+    }
+}
+
+return 
+
+ExpandOutline(lazy, word, saves, power) {
+    global expansions
+    global phraseEndings
+    global lastEndChar
+    global TypedCharacters
+    global DisplayedCharacters
+    
+    if (A_EndChar = "!") {
+        ; Exclam is the ALT character
+        send, % word 
+        send {!}
+    } else {
+        send, % word A_EndChar
+    }
+    DisplayedCharacters += StrLen(word)
+    TypedCharacters += StrLen(lazy)
+    UpdateDashboard()
+
+    hotstring("reset")
+}
+
+FlashHint(hint) {
+    Tooltip %hint%, A_CaretX, A_CaretY + 30
+    SetTimer, ClearToolTip, -1500
+    return 
+
+    ClearToolTip:
+      ToolTip
+    return 
+}
+
 
 ; Allow manual contracting
 :?*:'s::'s 
@@ -42,33 +112,6 @@ SetKeyDelay, -1
 :?*:'re::'re
 :?*:'ve::'ve
 
-; Contractions
-:CX:im::Expand("I'm")
-:CX:Im::Expand("I'm")
-
-; Allow cancellation or expansion with backtick
-^`::
-    ; Cancel expansion on Ctrl
-    hotstring("reset")
-    Return 
-!`::
-    ; Expand in place on Alt
-    ; Msgbox, % "Spacing"
-    SendLevel, 1
-    Send, {Space}
-    SendLevel, 0
-    Sleep, 20
-    Send, {bs}
-    Return 
-#`::
-    ; Expand in place on Win
-    ; Msgbox, % "Spacing"
-    SendLevel, 1
-    Send, {Space}
-    SendLevel, 0
-    Sleep, 20
-    Send, {bs}
-    Return
 
 ^j::
 	Suspend toggle
@@ -99,47 +142,8 @@ SetKeyDelay, -1
     Send {Enter}
     Return
 
-CoordMode Caret
 
-Expand(word) {
-    global expansions
-    global phraseEndings
-    global lastEndChar
-    global TypedCharacters
-    global DisplayedCharacters
-    
-    if (lastEndChar = "'") {
-        ; Don't allow contractions to expand the ending
-        send, % SubStr(A_ThisHotkey, 5) . A_EndChar
-    } else {
-        if (A_EndChar = "!") {
-            ; Exclam is the ALT character
-            send, % word 
-            send {!}
-        } else {
-            send, % word A_EndChar
-        }
-        DisplayedCharacters += StrLen(word)
-        TypedCharacters += StrLen(SubStr(A_ThisHotkey, 5))
-        UpdateDashboard()
-    }
-    lastEndChar := A_EndChar
-    hotstring("reset")
-}
 
-FlashTip(tip) {
-    Tooltip %tip%, A_CaretX, A_CaretY + 30
-    SetTimer, ClearToolTip, -1500
-    return 
-
-    ClearToolTip:
-      ToolTip
-    return 
-}
-^#p::
-    LaunchCoach()
-    Return
-    
 LaunchCoach() {
     global MissedText
     global DashboardText
@@ -189,6 +193,7 @@ AddOpportunity(tip,saves) {
     ; MsgBox, % "Seeing " tip " for the " Opportunities[tip]
     GuiControl,,AcruedTipText, % ListOpportunities(Opportunities)
     GuiControl,,ActiveTipText, %tip%
+    UpdateDashboard()
 }
 ListOpportunities(opps) {
   summaries := ""
@@ -198,19 +203,34 @@ ListOpportunities(opps) {
   Sort, summaries, R
   return Trim(summaries, "`n")
 }
-CoachOutline(word, outline, saves, power) {
-    ; If we've not yet launched the coach, do so
-    global hasNotLaunchedCoach
-    if ( hasNotLaunchedCoach ) {
-        LaunchCoach()
-        LoadPhraseExpansions()
-        hasNotLaunchedCoach := 0
-    }
-    tip := outline " = " word
-    AddOpportunity(tip,saves)
-    
-    ; MsgBox % tip
-    if (power > 1.9) {
-        FlashTip(tip)
+CoachOutline(word, outline, hint, saves, power) {
+    AddOpportunity(hint,saves)
+    if (power > 1.5) {
+        FlashHint(hint)
     }
 }
+
+
+
+CSobj() {
+    static base := object("_NewEnum","__NewEnum", "Next","__Next", "__Set","__Setter", "__Get","__Getter")
+    return, object("__sd_obj__", ComObjCreate("Scripting.Dictionary"), "base", base)
+}
+    __Getter(self, key) {
+        return, self.__sd_obj__.item(key)
+    }
+    __Setter(self, key, value) {
+        self.__sd_obj__.item(key) := value
+        return, false
+    }
+    __NewEnum(self) {
+        return, self
+    }
+    __Next(self, ByRef key = "", ByRef val = "") {
+        static Enum
+        if not Enum
+            Enum := self.__sd_obj__._NewEnum
+        if Not Enum[key], val:=self[key]
+            return, Enum:=false
+        return, true
+    }

@@ -1,5 +1,5 @@
 $stepsIndex = 0
-$stepsTotal = 9
+$stepsTotal = 3
 
 "Began $(Get-Date)"
 
@@ -19,12 +19,6 @@ $usageWords = . $PSScriptRoot\Read-UsageRanking.ps1
 . $PSScriptRoot\Add-FormalOutline.ps1
 . $PSScriptRoot\Add-LazyOutline.ps1
 . $PSScriptRoot\Add-WordUsage.ps1
-. $PSScriptRoot\New-BaseCsvOutline.ps1
-. $PSScriptRoot\New-BaseCsvClearOutline.ps1
-. $PSScriptRoot\Out-CmuBaseCsv.ps1
-. $PSScriptRoot\Out-CmuCoaching.ps1
-. $PSScriptRoot\Out-PhraseDictionary.ps1
-. $PSScriptRoot\Out-PhraseExpansions.ps1
 
 ### Begin tranforming the CMU dictionary into a set of simple Gregg outlines
 $stepsIndex = 2;Write-Progress -id 1 -Activity "Write initial CMU Lines and reimport $stepsIndex of $stepsTotal" -PercentComplete (100*$stepsIndex/$stepsTotal)
@@ -38,17 +32,10 @@ $cmuLines | Add-Content -Path $outlinesFile
 # Reload them as CSV objects 
 $cmus = Import-CSV -Path $outlinesFile
 
+$stepsIndex = 3;Write-Progress -id 1 -Activity "Add disambiguating keyers to lazy outlines $stepsIndex of $stepsTotal" -PercentComplete (100*$stepsIndex/$stepsTotal)
 $keyers = @('o','u','i','a','e','y','w','oo','uu','ii','aa','ee','yy','ww','o1','u1','i1','a1','e1','y1','w1','o2','u2','i2','a2','e2','y2','w2','o3','u3','i3','a3','e3','y3','w3')
 $usedOutlines = New-Object System.Collections.Hashtable
-<#
-foreach ($usageWordPair in $usageWords.getEnumerator()) {
-    # Add the first ~5000 english words as keys, to make sure we don't use words as keys
-    if ($usageWordPair.value -le 5000) {
-        $usedOutlines.Add($usageWordPair.key.toLower(), $usageWordPair.key)
-    }
-}
-#>
-# $thing = Read-Host "hello"
+
 $usageFactor = 3
 Foreach ($cmu in ($cmus | Sort {[int]$_.usage})) {
     $cmu.word = $cmu.word.ToLower()
