@@ -1,5 +1,14 @@
+#NoEnv 
+#Warn 
+#Hotstring NoMouse
+SendMode Input
+SetWorkingDir %A_ScriptDir%  ; Ensures a consistent starting directory.
+SetBatchLines, -1
+SetKeyDelay, -1
+
 dictionaries := []
-; dictionaries.Push("supplement.csv")
+dictionaries.Push("personal.csv")
+dictionaries.Push("phrases.csv")
 dictionaries.Push("outlines_final.csv")
 
 words := CSobj()
@@ -79,17 +88,23 @@ ExpandOutline(lazy, word, saves, power) {
     global TypedCharacters
     global DisplayedCharacters
     
-    if (A_EndChar = "!") {
+    if (lastEndChar = "'") {
+        ; Don't allow contractions to expand the ending
+        send, % SubStr(A_ThisHotkey, 6) . A_EndChar
+    } else if (A_EndChar = "!") {
         ; Exclam is the ALT character
         send, % word 
         send {!}
+        DisplayedCharacters += StrLen(word)
+        TypedCharacters += StrLen(lazy)
+
     } else {
         send, % word A_EndChar
+        DisplayedCharacters += StrLen(word)
+        TypedCharacters += StrLen(lazy)
     }
-    DisplayedCharacters += StrLen(word)
-    TypedCharacters += StrLen(lazy)
     UpdateDashboard()
-
+    lastEndChar := A_EndChar
     hotstring("reset")
 }
 
