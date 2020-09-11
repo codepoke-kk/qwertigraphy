@@ -1,6 +1,6 @@
 #NoEnv 
 #Warn 
-#Hotstring NoMouse
+; #Hotstring NoMouse
 SendMode Input
 SetWorkingDir %A_ScriptDir%  ; Ensures a consistent starting directory.
 SetBatchLines, -1
@@ -53,7 +53,8 @@ for index, dictionary in dictionaries
         power := StrLen(field1) / StrLen(field3)
 
         ; lowered hotstring
-        Hotstring( ":B1C:" field3, expander.bind(field3, field1, saves, power))
+        StringLower, field1_lower, field1
+        Hotstring( ":B1C:" field3, expander.bind(field3, field1_lower, saves, power))
 
         ; allcapped hotstring
         StringUpper, field1_upper, field1
@@ -126,7 +127,9 @@ FlashHint(hint) {
 :?*:'m::'m
 :?*:'re::'re
 :?*:'ve::'ve
-
+; Allow "hypenateds-"
+:?*:non-::non-
+:?*:meta-::meta-
 
 ^j::
 	Suspend toggle
