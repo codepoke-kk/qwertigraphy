@@ -1,6 +1,6 @@
 #NoEnv 
 #Warn 
-; #Hotstring NoMouse
+; #Hotstring NoMouse  ; Allowing the mouse because clicks reset the hotstring
 SendMode Input
 SetWorkingDir %A_ScriptDir%  ; Ensures a consistent starting directory.
 SetBatchLines, -1
@@ -10,7 +10,13 @@ dictionaries := []
 dictionaries.Push("personal.csv")
 dictionaries.Push("phrases.csv")
 dictionaries.Push("outlines_final.csv")
-
+negations_file := "negations.csv"
+negations := ComObjCreate("Scripting.Dictionary")
+Loop,Read,%negations_file%   ;read negations
+{
+    negations.item(A_LoopReadLine) := 1
+}
+            
 words := CSobj()
 hints := CSobj()
 expander := func("ExpandOutline")
@@ -41,12 +47,6 @@ for index, dictionary in dictionaries
             ; msgbox % "Making field" A_Index " = " A_LoopField
             field%A_Index% = %A_LoopField%
         }
-        ; msgbox % "Making " field3 " = " field1 " hinting " field6
-        ; words[field3] := field1
-        ; hints[field1] := field6
-        ; Use fields to define hotstrings
-        ; Hotstring( ":B1:" field3, expander.bind(field3, field1))
-        ; Hotstring( ":B1:" field3, field1)
         
         ; Add case sensitive hotstrings for lower case, capped case, and all caps case
         saves := StrLen(field1) - StrLen(field3)
@@ -54,17 +54,20 @@ for index, dictionary in dictionaries
 
         ; lowered hotstring
         StringLower, field1_lower, field1
-        Hotstring( ":B1C:" field3, expander.bind(field3, field1_lower, saves, power))
+        if not negations.item(field3)
+            Hotstring( ":B1C:" field3, expander.bind(field3, field1_lower, saves, power))
 
         ; allcapped hotstring
         StringUpper, field1_upper, field1
         StringUpper, field3_upper, field3
-        Hotstring( ":B1C:" field3_upper, expander.bind(field3_upper, field1_upper, saves, power))
+        if not negations.item(field3_upper)
+            Hotstring( ":B1C:" field3_upper, expander.bind(field3_upper, field1_upper, saves, power))
 
         ; capped hotstring
         field1_capped := SubStr(field1_upper, 1, 1) . SubStr(field1, 2, (StrLen(field1) - 1))
         field3_capped := SubStr(field3_upper, 1, 1) . SubStr(field3, 2, (StrLen(field3) - 1))
-        Hotstring( ":B1C:" field3_capped, expander.bind(field3_capped, field1_capped, saves, power))
+        if not negations.item(field3_capped)
+            Hotstring( ":B1C:" field3_capped, expander.bind(field3_capped, field1_capped, saves, power))
 
         try {
             ; Try the "word" as a hotstring to see whether it exists
