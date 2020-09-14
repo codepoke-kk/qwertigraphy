@@ -133,6 +133,8 @@ FlashHint(hint) {
 ; Allow "hypenateds-"
 :?*:non-::non-
 :?*:meta-::meta-
+:?*:-q::-q
+:?*:`:q::`:q
 
 ^j::
 	Suspend toggle
