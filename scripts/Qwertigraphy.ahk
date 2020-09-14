@@ -71,7 +71,7 @@ for index, dictionary in dictionaries
 
         try {
             ; Try the "word" as a hotstring to see whether it exists
-            Hotstring( ":B1:" field1 )
+            Hotstring( ":B0:" field1 )
         } catch {
             ; The "word" does not exist, so use it as a coaching hint
             Hotstring( ":B0:" field1, hinter.bind(field1, field3, field6, saves, power))
