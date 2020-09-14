@@ -10,7 +10,7 @@ dictionaries := []
 dictionaries.Push("personal.csv")
 dictionaries.Push("phrases.csv")
 dictionaries.Push("outlines_final.csv")
-negations_file := "negations.csv"
+negations_file := "negations.txt"
 negations := ComObjCreate("Scripting.Dictionary")
 Loop,Read,%negations_file%   ;read negations
 {
