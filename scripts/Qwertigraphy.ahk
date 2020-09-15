@@ -85,6 +85,53 @@ for index, dictionary in dictionaries
 
 return 
 
+; Allow manual contracting
+:?*:'s::'s 
+:?*:'d::'d
+:?*:'t::'t
+:?*:'m::'m
+:?*:'re::'re
+:?*:'ve::'ve
+; Allow "hypenateds-"
+:?*:non-::non-
+:?*:meta-::meta-
+:?*:-q::-q
+:?*:-c::-c
+:?*:-d::-d
+:?*:-t::-t
+:?*:`:q::`:q
+
+^j::
+	Suspend toggle
+    Return
+
+^Space::
+    hotstring("reset")
+    Send {Space}
+    Return
+^.::
+    hotstring("reset")
+    Send {.}
+    Return
+^,::
+    hotstring("reset")
+    Send {,}
+    Return
++^;::
+    hotstring("reset")
+    Send {:}
+    Return
+^Tab::
+    hotstring("reset")
+    Send {Tab}
+    Return
+^Enter::
+    hotstring("reset")
+    Send {Enter}
+    Return
+
+
+
 ExpandOutline(lazy, word, saves, power) {
     global expansions
     global phraseEndings
@@ -121,50 +168,6 @@ FlashHint(hint) {
       ToolTip
     return 
 }
-
-
-; Allow manual contracting
-:?*:'s::'s 
-:?*:'d::'d
-:?*:'t::'t
-:?*:'m::'m
-:?*:'re::'re
-:?*:'ve::'ve
-; Allow "hypenateds-"
-:?*:non-::non-
-:?*:meta-::meta-
-:?*:-q::-q
-:?*:`:q::`:q
-
-^j::
-	Suspend toggle
-    Return
-
-^Space::
-    hotstring("reset")
-    Send {Space}
-    Return
-^.::
-    hotstring("reset")
-    Send {.}
-    Return
-^,::
-    hotstring("reset")
-    Send {,}
-    Return
-+^;::
-    hotstring("reset")
-    Send {:}
-    Return
-^Tab::
-    hotstring("reset")
-    Send {Tab}
-    Return
-^Enter::
-    hotstring("reset")
-    Send {Enter}
-    Return
-
 
 
 LaunchCoach() {
