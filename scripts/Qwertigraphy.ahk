@@ -35,6 +35,8 @@ MissedCharacters := 0
 
 LaunchCoach()
 
+duplicateLazyOutlines := ""
+duplicateLazyOutlineCount := 0
 for index, dictionary in dictionaries
 {
     Loop,Read,%dictionary%   ;read dictionary into HotStrings
@@ -54,21 +56,32 @@ for index, dictionary in dictionaries
 
         ; lowered hotstring
         StringLower, field1_lower, field1
-        if not negations.item(field3)
-            Hotstring( ":B1C:" field3, expander.bind(field3, field1_lower, saves, power))
-
-        ; allcapped hotstring
         StringUpper, field1_upper, field1
         StringUpper, field3_upper, field3
-        if not negations.item(field3_upper)
-            Hotstring( ":B1C:" field3_upper, expander.bind(field3_upper, field1_upper, saves, power))
-
-        ; capped hotstring
         field1_capped := SubStr(field1_upper, 1, 1) . SubStr(field1, 2, (StrLen(field1) - 1))
         field3_capped := SubStr(field3_upper, 1, 1) . SubStr(field3, 2, (StrLen(field3) - 1))
-        if not negations.item(field3_capped)
-            Hotstring( ":B1C:" field3_capped, expander.bind(field3_capped, field1_capped, saves, power))
+        
+        ; First lowered cases
+        if not negations.item(field3) {
+            try {
+                Hotstring( ":B1C:" field3 )
+                duplicateLazyOutlineCount += 1
+                duplicateLazyOutlines := duplicateLazyOutlines . "," field3
+            } catch {
+                Hotstring( ":B1C:" field3, expander.bind(field3, field1_lower, saves, power))
+            }
+        }
 
+        ; Then capped cases, so they preempt all-capped cases
+        if not negations.item(field3_capped) {
+            try {
+                Hotstring( ":B1C:" field3_capped )
+                duplicateLazyOutlineCount += 1
+                duplicateLazyOutlines := duplicateLazyOutlines . "," field3_capped
+            } catch {
+                Hotstring( ":B1C:" field3_capped, expander.bind(field3_capped, field1_capped, saves, power))
+            }
+        }
         try {
             ; Try the "word" as a hotstring to see whether it exists
             Hotstring( ":B0:" field1 )
@@ -76,13 +89,31 @@ for index, dictionary in dictionaries
             ; The "word" does not exist, so use it as a coaching hint
             Hotstring( ":B0:" field1, hinter.bind(field1, field3, field6, saves, power))
         }
+
+        ; finally allcapped cases or HE will preempt He for E
+        if not negations.item(field3_upper) {
+            try {
+                Hotstring( ":B1C:" field3_upper )
+                if StrLen(field3_upper) > 1 {
+                    ; Don't record every single character lazy outline as a dupe
+                    duplicateLazyOutlineCount += 1
+                    duplicateLazyOutlines := duplicateLazyOutlines . "," field3_upper
+                }
+            } catch {
+                Hotstring( ":B1C:" field3_upper, expander.bind(field3_upper, field1_upper, saves, power))
+            }
+        }
         
         ; if ( NumLines > 800 ) {
         ;     break
         ; }
     }
 }
+if FileExist("duplicatesLazyOutlines.txt")
+    FileDelete, duplicatesLazyOutlines.txt
 
+FileAppend %duplicateLazyOutlineCount% , duplicatesLazyOutlines.txt
+FileAppend %duplicateLazyOutlines%, duplicatesLazyOutlines.txt
 return 
 
 ; Allow manual contracting
