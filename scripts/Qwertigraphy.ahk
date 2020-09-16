@@ -109,11 +109,11 @@ for index, dictionary in dictionaries
         ; }
     }
 }
-if FileExist("duplicatesLazyOutlines.txt")
-    FileDelete, duplicatesLazyOutlines.txt
+if FileExist("duplicateLazyOutlines.txt")
+    FileDelete, duplicateLazyOutlines.txt
 
-FileAppend %duplicateLazyOutlineCount% , duplicatesLazyOutlines.txt
-FileAppend %duplicateLazyOutlines%, duplicatesLazyOutlines.txt
+FileAppend %duplicateLazyOutlineCount% , duplicateLazyOutlines.txt
+FileAppend %duplicateLazyOutlines%, duplicateLazyOutlines.txt
 return 
 
 ; Allow manual contracting
