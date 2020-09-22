@@ -221,7 +221,7 @@ LaunchCoach() {
     Gui,Add,Text,vAcruedTipText w200 h520, Shorthand Coach
     Gui,Add,Text,vActiveTipText r1 w200, Last word not shortened
     Gui,Add,Picture, w70 h-1 x170 y5, coach.png
-    Gui,Show,w250 h656 x%vWidth% y%vHeight% Minimize, Shorthand Coach
+    Gui,Show,w250 h656 x%vWidth% y%vHeight%, Shorthand Coach
 }
 
 UpdateDashboard() {
