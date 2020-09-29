@@ -217,8 +217,10 @@ LaunchCoach() {
     vHeight := vHeight - 1110
 
     Gui, +AlwaysOnTop +Resize
-    Gui,Add,Text,vDashboardText w150 r5, Characters saved in typing
-    Gui,Add,Text,vAcruedTipText w200 h520, Shorthand Coach
+    Gui,Add,Button,x5 y5 h20 w70 gSaveOpportunities,Save log
+    Gui,Add,Button,x80 y5 h20 w70 gClearOpportunities,Clear log
+    Gui,Add,Text,vDashboardText x5 w150 r5, Characters saved in typing
+    Gui,Add,Text,vAcruedTipText w200 h500, Shorthand Coach
     Gui,Add,Text,vActiveTipText r1 w200, Last word not shortened
     Gui,Add,Picture, w70 h-1 x170 y5, coach.png
     Gui,Show,w250 h656 x%vWidth% y%vHeight%, Shorthand Coach
@@ -265,6 +267,22 @@ CoachOutline(word, outline, hint, saves, power) {
     if (power > 1.5) {
         FlashHint(hint)
     }
+}
+; Provided by Josh Grams
+SaveOpportunities()
+{
+	Global Opportunities
+	FileDelete, opportunities.txt
+	FileAppend, % ListOpportunities(Opportunities), opportunities.txt
+}
+; Provided by Josh Grams
+OnExit("SaveOpportunities")
+; Provided by Josh Grams
+ClearOpportunities()
+{
+	Global Opportunities
+	Opportunities := {}
+    GuiControl,,AcruedTipText, % ListOpportunities(Opportunities)
 }
 
 
