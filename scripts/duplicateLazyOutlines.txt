@@ -1,1 +1,0 @@
-18,seg,Seg,SEG,ema,Ema,EMA,ohro,Ohro,OHRO,kura,Kura,KURA,obr,Obr,OBR,segs,Segs,SEGS
