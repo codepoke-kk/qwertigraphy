@@ -6,10 +6,15 @@ SetWorkingDir %A_ScriptDir%  ; Ensures a consistent starting directory.
 SetBatchLines, -1
 SetKeyDelay, -1
 
+coachingLevel := 1 ; 0 is none, 1 is some, 2 is all 
+
+dictionariesLoaded := 0
+dictionaryListFile := "dictionary_load.list"
 dictionaries := []
-dictionaries.Push("personal.csv")
-dictionaries.Push("phrases.csv")
-dictionaries.Push("outlines_final.csv")
+Loop, read, %dictionaryListFile% 
+{
+    dictionaries.Push(A_LoopReadLine)
+}
 negations_file := "negations.txt"
 negations := ComObjCreate("Scripting.Dictionary")
 Loop,Read,%negations_file%   ;read negations
@@ -237,7 +242,12 @@ UpdateDashboard() {
     GuiControl,,DashboardText, % "Typed:" TypedCharacters "`nSaved:" SavedCharacters "`nMissed: " MissedCharacters "`nEfficiency:" Efficiency "`nLearning:" Learning
 }
 AddOpportunity(tip,saves) {
-    if ( saves < 1) { 
+    global coachingLevel
+    if (! coachingLevel ) {
+        Return
+    }
+    
+    if ( saves < 1 and coachingLevel = 1 ) { 
         ; Don't record opportunities that save nothing or less than nothing
         Return
     }
@@ -263,9 +273,14 @@ ListOpportunities(opps) {
   return Trim(summaries, "`n")
 }
 CoachOutline(word, outline, hint, saves, power) {
+    global coachingLevel
     AddOpportunity(hint,saves)
-    if (power > 1.5) {
+    if (coachingLevel > 1) {
         FlashHint(hint)
+    } else if (coachingLevel = 1) {
+        if (power > 1.5) {
+            FlashHint(hint)
+        }
     }
 }
 ; Provided by Josh Grams

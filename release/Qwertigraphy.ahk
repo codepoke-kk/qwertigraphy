@@ -6,10 +6,15 @@ SetWorkingDir %A_ScriptDir%  ; Ensures a consistent starting directory.
 SetBatchLines, -1
 SetKeyDelay, -1
 
+coachingLevel := 2 ; 0 is none, 1 is some, 2 is all 
+
+dictionariesLoaded := 0
+dictionaryListFile := "dictionary_load.list"
 dictionaries := []
-dictionaries.Push("personal.csv")
-dictionaries.Push("phrases.csv")
-dictionaries.Push("outlines_final.csv")
+Loop, read, %dictionaryListFile% 
+{
+    dictionaries.Push(A_LoopReadLine)
+}
 negations_file := "negations.txt"
 negations := ComObjCreate("Scripting.Dictionary")
 Loop,Read,%negations_file%   ;read negations
@@ -217,11 +222,13 @@ LaunchCoach() {
     vHeight := vHeight - 1110
 
     Gui, +AlwaysOnTop +Resize
-    Gui,Add,Text,vDashboardText w150 r5, Characters saved in typing
-    Gui,Add,Text,vAcruedTipText w200 h520, Shorthand Coach
+    Gui,Add,Button,x5 y5 h20 w70 gSaveOpportunities,Save log
+    Gui,Add,Button,x80 y5 h20 w70 gClearOpportunities,Clear log
+    Gui,Add,Text,vDashboardText x5 w150 r5, Characters saved in typing
+    Gui,Add,Text,vAcruedTipText w200 h500, Shorthand Coach
     Gui,Add,Text,vActiveTipText r1 w200, Last word not shortened
     Gui,Add,Picture, w70 h-1 x170 y5, coach.png
-    Gui,Show,w250 h656 x%vWidth% y%vHeight% Minimize, Shorthand Coach
+    Gui,Show,w250 h656 x%vWidth% y%vHeight%, Shorthand Coach
 }
 
 UpdateDashboard() {
@@ -235,7 +242,12 @@ UpdateDashboard() {
     GuiControl,,DashboardText, % "Typed:" TypedCharacters "`nSaved:" SavedCharacters "`nMissed: " MissedCharacters "`nEfficiency:" Efficiency "`nLearning:" Learning
 }
 AddOpportunity(tip,saves) {
-    if ( saves < 1) { 
+    global coachingLevel
+    if (! coachingLevel ) {
+        Return
+    }
+    
+    if ( saves < 1 and coachingLevel = 1 ) { 
         ; Don't record opportunities that save nothing or less than nothing
         Return
     }
@@ -261,10 +273,31 @@ ListOpportunities(opps) {
   return Trim(summaries, "`n")
 }
 CoachOutline(word, outline, hint, saves, power) {
+    global coachingLevel
     AddOpportunity(hint,saves)
-    if (power > 1.5) {
+    if (coachingLevel > 1) {
         FlashHint(hint)
+    } else if (coachingLevel = 1) {
+        if (power > 1.5) {
+            FlashHint(hint)
+        }
     }
+}
+; Provided by Josh Grams
+SaveOpportunities()
+{
+	Global Opportunities
+	FileDelete, opportunities.txt
+	FileAppend, % ListOpportunities(Opportunities), opportunities.txt
+}
+; Provided by Josh Grams
+OnExit("SaveOpportunities")
+; Provided by Josh Grams
+ClearOpportunities()
+{
+	Global Opportunities
+	Opportunities := {}
+    GuiControl,,AcruedTipText, % ListOpportunities(Opportunities)
 }
 
 
