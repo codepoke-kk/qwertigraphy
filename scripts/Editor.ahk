@@ -113,10 +113,10 @@ LaunchEditor() {
     Gui, Add, Edit, x442 y469 w160 h20 vEditHint, 
     Gui, Add, Edit, x602 y469 w110 h20 vEditDict, 
     Gui, Add, Button, x712 y469 w90 h20 gCommitEdit, Commit
-    Gui, Add, Button, x582 y500 w130 h30 gSaveDictionaries, Save
+    Gui, Add, Button, x712 y500 w90 h30 gSaveDictionaries, Save
     
     ; Add checkbox controls
-    Gui, Add, CheckBox, x715 y49 w130 h20 vAutoGenHints gAutoGenHints, AutoGenerate Hints
+    Gui, Add, CheckBox, x715 y49 w130 h20 vAutoGenHints gAutoGenHints Checked, AutoGenerate Hints
     
     ; Generated using SmartGUI Creator 4.0
     Gui, Show, x262 y118 h551 w836, New GUI Window
