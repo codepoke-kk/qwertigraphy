@@ -2,23 +2,39 @@
 #Warn 
 ; #Hotstring NoMouse  ; Allowing the mouse because clicks reset the hotstring
 SendMode Input
+#SingleInstance Force
 SetWorkingDir %A_ScriptDir%  ; Ensures a consistent starting directory.
 SetBatchLines, -1
 SetKeyDelay, -1
+
+logFile := 0
+LogVerbosity := 3
+IfNotExist, logs
+    FileCreateDir, logs
+
+logEvent(0, "not logged")
+logEvent(1, "not verbose")
+logEvent(2, "slightly verbose")
+logEvent(3, "pretty verbose")
+logEvent(4, "very verbose")
 
 coachingLevel := 1 ; 0 is none, 1 is some, 2 is all 
 
 dictionariesLoaded := 0
 dictionaryListFile := "dictionary_load.list"
+logEvent(1, "Loading dictionaries list from " dictionaryListFile)
 dictionaries := []
 Loop, read, %dictionaryListFile% 
 {
+    logEvent(1, "Adding dictionary " A_LoopReadLine)
     dictionaries.Push(A_LoopReadLine)
 }
-negations_file := "negations.txt"
+negationsFile := "negations.txt"
+logEvent(1, "Loading negations from " negationsFile)
 negations := ComObjCreate("Scripting.Dictionary")
-Loop,Read,%negations_file%   ;read negations
+Loop,Read,%negationsFile%   ;read negations
 {
+    logEvent(4, "Loading negation " A_LoopReadLine)
     negations.item(A_LoopReadLine) := 1
 }
             
@@ -44,6 +60,7 @@ duplicateLazyOutlines := ""
 duplicateLazyOutlineCount := 0
 for index, dictionary in dictionaries
 {
+    logEvent(1, "Loading dictionary " dictionary)
     Loop,Read,%dictionary%   ;read dictionary into HotStrings
     {
         Global NumLines
@@ -113,11 +130,15 @@ for index, dictionary in dictionaries
         ;     break
         ; }
     }
+    logEvent(1, "Loaded dictionary " dictionary " resulting in " NumLines " forms")
 }
+logEvent(1, "Loaded all forms")
+
 if FileExist("duplicateLazyOutlines.txt")
     FileDelete, duplicateLazyOutlines.txt
 
-FileAppend %duplicateLazyOutlineCount% , duplicateLazyOutlines.txt
+logEvent(1, duplicateLazyOutlineCount " duplicate outlines: " duplicateLazyOutlines)
+FileAppend duplicateLazyOutlineCount%duplicateLazyOutlineCount% , duplicateLazyOutlines.txt
 FileAppend %duplicateLazyOutlines%, duplicateLazyOutlines.txt
 return 
 
@@ -291,13 +312,19 @@ SaveOpportunities()
 	FileAppend, % ListOpportunities(Opportunities), opportunities.txt
 }
 ; Provided by Josh Grams
-OnExit("SaveOpportunities")
+OnExit("ExitLogging")
+
 ; Provided by Josh Grams
 ClearOpportunities()
 {
 	Global Opportunities
 	Opportunities := {}
     GuiControl,,AcruedTipText, % ListOpportunities(Opportunities)
+}
+
+ExitLogging() {
+    SaveOpportunities()
+    LogEvent(1, "Application exited")
 }
 
 
@@ -324,3 +351,19 @@ CSobj() {
             return, Enum:=false
         return, true
     }
+
+LogEvent(verbosity, message) {
+    global logFileName
+    global logFile
+    global logVerbosity
+    if (not verbosity) or (not logVerbosity)
+        Return
+    FormatTime, logDateStamp, , yyyyMMdd.HHmmss
+    if (! logFile) {
+        logFileName := "qwertigraph." . logDateStamp . ".log"
+        logFile := FileOpen("logs\" logFileName, "a")
+        logFile.Write(logDateStamp . "[0]: Log initiated`r`n")
+    }
+    if (verbosity <= logVerbosity) 
+        logFile.Write(logDateStamp "[" verbosity "]: " message "`r`n")
+}
