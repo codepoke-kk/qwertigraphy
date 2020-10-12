@@ -152,11 +152,22 @@ return
 ; Allow "hypenateds-"
 :?*:non-::non-
 :?*:meta-::meta-
-:?*:-q::-q
+:?*:pre-::pre-
+:?*:re-::re-
 :?*:-c::-c
 :?*:-d::-d
 :?*:-t::-t
+:?*:-q::-q
+:?*:-p::-p
+:?*:-m::-m
 :?*:`:q::`:q
+
+:*:htpp::http://
+:*:htps::https://
+
+:C:AHK::AHK
+::ahk::AutoHotkey
+
 
 ^j::
 	Suspend toggle
