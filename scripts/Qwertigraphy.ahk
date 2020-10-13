@@ -8,7 +8,7 @@ SetBatchLines, -1
 SetKeyDelay, -1
 
 logFile := 0
-LogVerbosity := 3
+LogVerbosity := 4
 IfNotExist, logs
     FileCreateDir, logs
 
@@ -149,6 +149,7 @@ return
 :?*:'m::'m
 :?*:'re::'re
 :?*:'ve::'ve
+:?*:'ll::'ll
 ; Allow "hypenateds-"
 :?*:non-::non-
 :?*:meta-::meta-
@@ -167,7 +168,6 @@ return
 
 :C:AHK::AHK
 ::ahk::AutoHotkey
-
 
 ^j::
 	Suspend toggle
@@ -207,17 +207,20 @@ ExpandOutline(lazy, word, saves, power) {
     global TypedCharacters
     global DisplayedCharacters
     
+    logEvent(3, "Expanding " lazy " into " word " saving " saves " at power " power)
     if (lastEndChar = "'") {
+        logEvent(4, "lastEndChar is '")
         ; Don't allow contractions to expand the ending
         send, % SubStr(A_ThisHotkey, 6) . A_EndChar
     } else if (A_EndChar = "!") {
+        logEvent(4, "lastEndChar is !")
         ; Exclam is the ALT character
         send, % word 
         send {!}
         DisplayedCharacters += StrLen(word)
         TypedCharacters += StrLen(lazy)
-
     } else {
+        logEvent(4, "Handling normally")
         send, % word A_EndChar
         DisplayedCharacters += StrLen(word)
         TypedCharacters += StrLen(lazy)
