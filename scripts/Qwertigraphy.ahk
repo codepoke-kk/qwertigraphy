@@ -53,11 +53,13 @@ phraseEndings := {}
 TypedCharacters := 0
 DisplayedCharacters := 0
 MissedCharacters := 0
+expectedForms := 40000
 
 LaunchCoach()
 
 duplicateLazyOutlines := ""
 duplicateLazyOutlineCount := 0
+
 for index, dictionary in dictionaries
 {
     logEvent(1, "Loading dictionary " dictionary)
@@ -126,12 +128,15 @@ for index, dictionary in dictionaries
             }
         }
         
+        progress := Round(100 * (NumLines/expectedForms))
+        GuiControl, , LoadProgress, %progress%
         ; if ( NumLines > 800 ) {
         ;     break
         ; }
     }
     logEvent(1, "Loaded dictionary " dictionary " resulting in " NumLines " forms")
 }
+GuiControl, Hide, LoadProgress
 logEvent(1, "Loaded all forms")
 
 if FileExist("duplicateLazyOutlines.txt")
@@ -247,6 +252,7 @@ LaunchCoach() {
     global AcruedTipText
     global ActiveTipText
     global Opportunities
+    global LoadProgress
     ; Define here so each launch refreshes the list
     Opportunities := {}
     
@@ -262,6 +268,7 @@ LaunchCoach() {
     Gui,Add,Text,vDashboardText x5 w150 r5, Characters saved in typing
     Gui,Add,Text,vAcruedTipText w200 h500, Shorthand Coach
     Gui,Add,Text,vActiveTipText r1 w200, Last word not shortened
+    Gui,Add, Progress, h5 cOlive vLoadProgress, 1
     Gui,Add,Picture, w70 h-1 x170 y5, coach.png
     Gui,Show,w250 h656 x%vWidth% y%vHeight%, Shorthand Coach
 }

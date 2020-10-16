@@ -90,6 +90,8 @@ LaunchEditor() {
     global EditForm
     global AutoGenHints
     global SaveDictionaries
+    global SaveProgress
+    global BackupCount
     
     logEvent(2, "Launching Editor")
     
@@ -129,12 +131,15 @@ LaunchEditor() {
     Gui, Add, Edit, x602 y469 w110 h20 vEditDict,
     Gui, Add, Button, x712 y469 w90 h20 gCommitEdit, Commit
     Gui, Add, Button, x712 y500 w90 h30 gSaveDictionaries vSaveDictionaries Disabled, Save
+    Gui, Add, Progress, x12 y545 w700 h5 cOlive vSaveProgress, 1
     
     ; Add checkbox controls
     Gui, Add, CheckBox, x715 y49 w130 h20 vAutoGenHints gAutoGenHints Checked, AutoGenerate Hints
+    Gui, Add, Edit, x715 y74 w20 h20 vBackupCount, 2
+    Gui, Add, Text, x740 y74 w105 h20, Backups to retain 
     
     ; Generated using SmartGUI Creator 4.0
-    Gui, Show, x262 y118 h551 w836, Qwertigraphy Dictionary Editor
+    Gui, Show, x262 y118 h560 w836, Qwertigraphy Dictionary Editor
     
     ; Create a popup menu to be used as the context menu:
     Menu, FormLVContextMenu, Add, Edit, ContextEditForm
@@ -496,6 +501,8 @@ SearchForms() {
     GuiControlGet RegexUsage
     GuiControlGet RegexHint
     
+    global SaveProgress
+    
     logEvent(2, "Performing search of forms to populate ListView")
     logEvent(3, "RegexWord " RegexWord ", RegexFormal " RegexFormal ", RegexLazy " RegexLazy ", RegexKeyer " RegexKeyer ", RegexUsage " RegexUsage ", RegexHint " RegexHint ", RegexDict " RegexDict )
     foundKeys := {}
@@ -561,6 +568,9 @@ SaveDictionaries() {
     global forms 
     global form 
     global word 
+    global SaveProgress
+    global index
+    global BackupCount
     
     logEvent(1, "Saving dictionaries")
     if ( not dictionariesLoaded ) {
@@ -581,6 +591,32 @@ SaveDictionaries() {
         }
     }
     
+    ; Removed unwanted backups
+    GuiControlGet BackupCount
+    for dictIndex, dictionary in dictionaries {
+        logEvent(2, "Trimming backups in " dictionary)
+        FileList := ""
+        Loop, Files, %dictionary%*.bak, F  ; Include Files and Directories
+            FileList .= A_LoopFileTimeModified "`t" A_LoopFileName "`n"
+            
+        retainedCount := 0
+        Sort, FileList, R ; Sort by date.
+        Loop, Parse, FileList, `n
+        {
+            retainedCount += 1
+            if (A_LoopField = "")  ; Omit the last linefeed (blank item) at the end of the list.
+                continue
+            StringSplit, FileItem, A_LoopField, %A_Tab%  ; Split into two parts at the tab char.
+            logEvent(2, "The next backup from " FileItem1 " is: " FileItem2)
+            if (BackupCount >= retainedCount) {
+                logEvent(2, "Retaining " FileItem2)
+            } else {
+                logEvent(2, "Deleting " FileItem2)
+                FileDelete, %FileItem2%
+            }
+        }
+    }
+    
     ; Refresh all dictionary files with .new versions
     for dictIndex, dictionary in dictionaries {
         newdict := dictionary . ".new"
@@ -591,19 +627,40 @@ SaveDictionaries() {
     
     ; Create a new array with sortable names by prepending the usage number 
     sortableForms := {}
+    sortedCount := 0
     for word, form in forms {
+        sortedCount += 1
         sortableKey :=  SubStr("0000000", StrLen(form.usage)) form.usage "_" form.word
         sortableForms[sortableKey] := form
         ; msgbox, % "created " sortableForms[sortableKey].lazy   
     }
     
+    ; Open all the dictionaries for writing
+    fileHandles := {}
+    for index, dictionary in dictionaries
+    {
+        newdict := dictionary . ".new"
+        fileHandle := FileOpen(newdict, "w")
+        fileHandles[dictionary] := fileHandle
+    }
+    
     ; Loop across the sorted forms and write them 
     ; Write each to its own dictionary 
+    writtenCount := 0
+    GuiControl,Show, SaveProgress 
     for sortableKey, form in sortableForms {
+        writtenCount += 1
+        progress := Round(100*(writtenCount/sortedCount))
+        GuiControl,, SaveProgress, %progress%  
         ; msgbox, % "Looping with " sortableKey "=" form.word
         line := form.word "," form.formal "," form.lazy "," form.keyer "," form.usage "," form.hint "`n"
-        newdict := form.dictionary . ".new"
-        FileAppend, %line%, %newdict%
+        fileHandles[form.dictionary].Write(line)
+    }
+    
+    ; Close all the dictionaries 
+    for index, dictionary in dictionaries
+    {
+        fileHandles[dictionary].Close()
     }
     
     ; Overwrite the current dictionaries with the new
@@ -615,6 +672,7 @@ SaveDictionaries() {
         FileDelete, %newdict%
     }
     
+    GuiControl,Hide, SaveProgress 
     GuiControl, Disable, SaveDictionaries
 }
 
