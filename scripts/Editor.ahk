@@ -617,14 +617,6 @@ SaveDictionaries() {
         }
     }
     
-    ; Refresh all dictionary files with .new versions
-    for dictIndex, dictionary in dictionaries {
-        newdict := dictionary . ".new"
-        logEvent(3, "Creating " newdict)
-        FileDelete, %newdict%
-        FileAppend, word`,formal`,lazy`,keyer`,usage`,hint`n, %newdict%
-    }
-    
     ; Create a new array with sortable names by prepending the usage number 
     sortableForms := {}
     sortedCount := 0
@@ -642,6 +634,8 @@ SaveDictionaries() {
         newdict := dictionary . ".new"
         fileHandle := FileOpen(newdict, "w")
         fileHandles[dictionary] := fileHandle
+        header := "word,formal,lazy,keyer,usage,hint`n"
+        fileHandles[dictionary].Write(header)
     }
     
     ; Loop across the sorted forms and write them 

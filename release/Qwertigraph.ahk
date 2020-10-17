@@ -2,23 +2,39 @@
 #Warn 
 ; #Hotstring NoMouse  ; Allowing the mouse because clicks reset the hotstring
 SendMode Input
+#SingleInstance Force
 SetWorkingDir %A_ScriptDir%  ; Ensures a consistent starting directory.
 SetBatchLines, -1
 SetKeyDelay, -1
 
-coachingLevel := 2 ; 0 is none, 1 is some, 2 is all 
+logFile := 0
+LogVerbosity := 4
+IfNotExist, logs
+    FileCreateDir, logs
+
+logEvent(0, "not logged")
+logEvent(1, "not verbose")
+logEvent(2, "slightly verbose")
+logEvent(3, "pretty verbose")
+logEvent(4, "very verbose")
+
+coachingLevel := 1 ; 0 is none, 1 is some, 2 is all 
 
 dictionariesLoaded := 0
 dictionaryListFile := "dictionary_load.list"
+logEvent(1, "Loading dictionaries list from " dictionaryListFile)
 dictionaries := []
 Loop, read, %dictionaryListFile% 
 {
+    logEvent(1, "Adding dictionary " A_LoopReadLine)
     dictionaries.Push(A_LoopReadLine)
 }
-negations_file := "negations.txt"
+negationsFile := "negations.txt"
+logEvent(1, "Loading negations from " negationsFile)
 negations := ComObjCreate("Scripting.Dictionary")
-Loop,Read,%negations_file%   ;read negations
+Loop,Read,%negationsFile%   ;read negations
 {
+    logEvent(4, "Loading negation " A_LoopReadLine)
     negations.item(A_LoopReadLine) := 1
 }
             
@@ -37,13 +53,16 @@ phraseEndings := {}
 TypedCharacters := 0
 DisplayedCharacters := 0
 MissedCharacters := 0
+expectedForms := 40000
 
 LaunchCoach()
 
 duplicateLazyOutlines := ""
 duplicateLazyOutlineCount := 0
+
 for index, dictionary in dictionaries
 {
+    logEvent(1, "Loading dictionary " dictionary)
     Loop,Read,%dictionary%   ;read dictionary into HotStrings
     {
         Global NumLines
@@ -109,15 +128,22 @@ for index, dictionary in dictionaries
             }
         }
         
+        progress := Round(100 * (NumLines/expectedForms))
+        GuiControl, , LoadProgress, %progress%
         ; if ( NumLines > 800 ) {
         ;     break
         ; }
     }
+    logEvent(1, "Loaded dictionary " dictionary " resulting in " NumLines " forms")
 }
+GuiControl, Hide, LoadProgress
+logEvent(1, "Loaded all forms")
+
 if FileExist("duplicateLazyOutlines.txt")
     FileDelete, duplicateLazyOutlines.txt
 
-FileAppend %duplicateLazyOutlineCount% , duplicateLazyOutlines.txt
+logEvent(1, duplicateLazyOutlineCount " duplicate outlines: " duplicateLazyOutlines)
+FileAppend duplicateLazyOutlineCount%duplicateLazyOutlineCount% , duplicateLazyOutlines.txt
 FileAppend %duplicateLazyOutlines%, duplicateLazyOutlines.txt
 return 
 
@@ -128,14 +154,25 @@ return
 :?*:'m::'m
 :?*:'re::'re
 :?*:'ve::'ve
+:?*:'ll::'ll
 ; Allow "hypenateds-"
 :?*:non-::non-
 :?*:meta-::meta-
-:?*:-q::-q
+:?*:pre-::pre-
+:?*:re-::re-
 :?*:-c::-c
 :?*:-d::-d
 :?*:-t::-t
+:?*:-q::-q
+:?*:-p::-p
+:?*:-m::-m
 :?*:`:q::`:q
+
+:*:htpp::http://
+:*:htps::https://
+
+:C:AHK::AHK
+::ahk::AutoHotkey
 
 ^j::
 	Suspend toggle
@@ -175,17 +212,20 @@ ExpandOutline(lazy, word, saves, power) {
     global TypedCharacters
     global DisplayedCharacters
     
+    logEvent(3, "Expanding " lazy " into " word " saving " saves " at power " power)
     if (lastEndChar = "'") {
+        logEvent(4, "lastEndChar is '")
         ; Don't allow contractions to expand the ending
         send, % SubStr(A_ThisHotkey, 6) . A_EndChar
     } else if (A_EndChar = "!") {
+        logEvent(4, "lastEndChar is !")
         ; Exclam is the ALT character
         send, % word 
         send {!}
         DisplayedCharacters += StrLen(word)
         TypedCharacters += StrLen(lazy)
-
     } else {
+        logEvent(4, "Handling normally")
         send, % word A_EndChar
         DisplayedCharacters += StrLen(word)
         TypedCharacters += StrLen(lazy)
@@ -212,6 +252,7 @@ LaunchCoach() {
     global AcruedTipText
     global ActiveTipText
     global Opportunities
+    global LoadProgress
     ; Define here so each launch refreshes the list
     Opportunities := {}
     
@@ -227,6 +268,7 @@ LaunchCoach() {
     Gui,Add,Text,vDashboardText x5 w150 r5, Characters saved in typing
     Gui,Add,Text,vAcruedTipText w200 h500, Shorthand Coach
     Gui,Add,Text,vActiveTipText r1 w200, Last word not shortened
+    Gui,Add, Progress, h5 cOlive vLoadProgress, 1
     Gui,Add,Picture, w70 h-1 x170 y5, coach.png
     Gui,Show,w250 h656 x%vWidth% y%vHeight%, Shorthand Coach
 }
@@ -291,13 +333,19 @@ SaveOpportunities()
 	FileAppend, % ListOpportunities(Opportunities), opportunities.txt
 }
 ; Provided by Josh Grams
-OnExit("SaveOpportunities")
+OnExit("ExitLogging")
+
 ; Provided by Josh Grams
 ClearOpportunities()
 {
 	Global Opportunities
 	Opportunities := {}
     GuiControl,,AcruedTipText, % ListOpportunities(Opportunities)
+}
+
+ExitLogging() {
+    SaveOpportunities()
+    LogEvent(1, "Application exited")
 }
 
 
@@ -324,3 +372,19 @@ CSobj() {
             return, Enum:=false
         return, true
     }
+
+LogEvent(verbosity, message) {
+    global logFileName
+    global logFile
+    global logVerbosity
+    if (not verbosity) or (not logVerbosity)
+        Return
+    FormatTime, logDateStamp, , yyyyMMdd.HHmmss
+    if (! logFile) {
+        logFileName := "qwertigraph." . logDateStamp . ".log"
+        logFile := FileOpen("logs\" logFileName, "a")
+        logFile.Write(logDateStamp . "[0]: Log initiated`r`n")
+    }
+    if (verbosity <= logVerbosity) 
+        logFile.Write(logDateStamp "[" verbosity "]: " message "`r`n")
+}
