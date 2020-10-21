@@ -1,8 +1,7 @@
 #NoEnv 
 #Warn 
-; #Hotstring NoMouse  ; Allowing the mouse because clicks reset the hotstring
-SendMode Input
 #SingleInstance Force
+SendMode Input
 SetWorkingDir %A_ScriptDir%  ; Ensures a consistent starting directory.
 SetBatchLines, -1
 SetKeyDelay, -1
@@ -148,6 +147,10 @@ if FileExist("duplicateLazyOutlines.txt")
 logEvent(1, duplicateLazyOutlineCount " duplicate outlines: " duplicateLazyOutlines)
 FileAppend duplicateLazyOutlineCount%duplicateLazyOutlineCount% , duplicateLazyOutlines.txt
 FileAppend %duplicateLazyOutlines%, duplicateLazyOutlines.txt
+
+; Doing this include earlier kills the script, but it loads immediately even though it's last
+#Include personal.ahk
+
 return 
 
 ; Allow manual contracting
