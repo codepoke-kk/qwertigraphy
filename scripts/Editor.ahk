@@ -109,7 +109,7 @@ LaunchEditor() {
     Gui, Add, Button, Default x712 y29 w90 h20 gSearchForms, Search
     
     ; Add the data ListView
-    Gui, Add, ListView, x12 y49 w700 h420 vFormsLV gFormsLV -ReadOnly, Word|Formal|Lazy|Keyer|Usage|Hint|Dictionary
+    Gui, Add, ListView, x12 y49 w700 h420 vFormsLV gFormsLV, Word|Formal|Lazy|Keyer|Usage|Hint|Dictionary
     LV_ModifyCol(5, "Integer")  ; For sorting, indicate that the Usage column is an integer.
     LV_ModifyCol(1, 160)
     LV_ModifyCol(2, 90)
