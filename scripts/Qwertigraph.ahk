@@ -55,6 +55,7 @@ TypedCharacters := 0
 DisplayedCharacters := 0
 MissedCharacters := 0
 expectedForms := 40000
+NumLines := 0
 
 LaunchCoach()
 

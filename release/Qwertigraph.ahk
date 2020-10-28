@@ -1,8 +1,7 @@
 #NoEnv 
 #Warn 
-; #Hotstring NoMouse  ; Allowing the mouse because clicks reset the hotstring
-SendMode Input
 #SingleInstance Force
+SendMode Input
 SetWorkingDir %A_ScriptDir%  ; Ensures a consistent starting directory.
 SetBatchLines, -1
 SetKeyDelay, -1
@@ -47,13 +46,16 @@ hasNotLaunchedCoach := 1
 wordsExpanded := 0
 charsSaved := 0
 lastExpandedWord := ""
+lastExpandedForm := ""
 lastEndChar := ""
+forms := {}
 expansions := ""
 phraseEndings := {}
 TypedCharacters := 0
 DisplayedCharacters := 0
 MissedCharacters := 0
 expectedForms := 40000
+NumLines := 0
 
 LaunchCoach()
 
@@ -73,6 +75,7 @@ for index, dictionary in dictionaries
             ; msgbox % "Making field" A_Index " = " A_LoopField
             field%A_Index% = %A_LoopField%
         }
+        forms[field3] := field1
         
         ; Add case sensitive hotstrings for lower case, capped case, and all caps case
         saves := StrLen(field1) - StrLen(field3)
@@ -145,6 +148,10 @@ if FileExist("duplicateLazyOutlines.txt")
 logEvent(1, duplicateLazyOutlineCount " duplicate outlines: " duplicateLazyOutlines)
 FileAppend duplicateLazyOutlineCount%duplicateLazyOutlineCount% , duplicateLazyOutlines.txt
 FileAppend %duplicateLazyOutlines%, duplicateLazyOutlines.txt
+
+; Doing this include earlier kills the script, but it loads immediately even though it's last
+#Include personal.ahk
+
 return 
 
 ; Allow manual contracting
@@ -202,12 +209,17 @@ return
     hotstring("reset")
     Send {Enter}
     Return
+#^r::
+    hotstring("reset")
+    OfferRetry()
+    Return
 
 
 
 ExpandOutline(lazy, word, saves, power) {
-    global expansions
     global phraseEndings
+    global lastExpandedForm
+    global lastExpandedWord
     global lastEndChar
     global TypedCharacters
     global DisplayedCharacters
@@ -231,6 +243,8 @@ ExpandOutline(lazy, word, saves, power) {
         TypedCharacters += StrLen(lazy)
     }
     UpdateDashboard()
+    lastExpandedWord := word
+    lastExpandedForm := lazy
     lastEndChar := A_EndChar
     hotstring("reset")
 }
@@ -341,6 +355,33 @@ ClearOpportunities()
 	Global Opportunities
 	Opportunities := {}
     GuiControl,,AcruedTipText, % ListOpportunities(Opportunities)
+}
+
+OfferRetry() {
+    global forms
+    global lastExpandedWord
+    global lastExpandedForm
+    global index
+    global keyers := Array("","o","u","i","e","a","w","y")
+    
+    logEvent(1, "Offering retry with " lastExpandedWord "/" lastExpandedForm)
+    possibles := {}
+    possiblesCount := 0
+    possiblesMsg := "Did you mean: `n"
+    for index, keyer in keyers {
+        keyedLazy := lastExpandedForm . keyer
+        StringLower, keyedLazy, keyedLazy
+        logEvent(3, "Testing availability of  " keyedLazy)
+        if (forms[keyedLazy]) {
+            possibles[keyedLazy] := forms[keyedLazy]
+            possiblesCount += 1
+            possiblesMsg := possiblesMsg keyedLazy ": " forms[keyedLazy] "`n"
+            logEvent(3, "Available:  " keyedLazy " as " forms[keyedLazy])
+        } else {
+            logEvent(3, "Not available:  " keyedLazy)
+        }
+    }
+    Msgbox, % possiblesMsg
 }
 
 ExitLogging() {
