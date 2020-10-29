@@ -28,11 +28,11 @@ Now type "T's tm to stat"
 The Coach should now show you've saved 4 characters in typing and have attained a learning level of 1.00. 
 
 ##### Tips:
--No word will expand until you stroke an "end character". You have to hit some punctation key to let the Qwertigraph know you're done and ready to move on. 
--Control-Backspace is your friend. If you meant some other word than the one the Qwertigraph typed, Control-Backspace will delete the entire word and let you start over again. (It's much lazier to hit Control-Backspace once than to hit Backspace a does times.)
--Control-j will Suspend the Qwertigraph if you need to type without its help. Control-j again will reactivate it. 
--Control-{ most punctuation marks } will cause the Qwertigraph to ignore whatever word you just typed.
--If you type out a word for which there's a "big win" lazy form, a pop-up tip will give you a hint to that effect.  
+- No word will expand until you stroke an "end character". You have to hit some punctation key to let the Qwertigraph know you're done and ready to move on. 
+- Control-Backspace is your friend. If you meant some other word than the one the Qwertigraph typed, Control-Backspace will delete the entire word and let you start over again. (It's much lazier to hit Control-Backspace once than to hit Backspace a does times.)
+- Control-j will Suspend the Qwertigraph if you need to type without its help. Control-j again will reactivate it. 
+- Control-{ most punctuation marks } will cause the Qwertigraph to ignore whatever word you just typed.
+- If you type out a word for which there's a "big win" lazy form, a pop-up tip will give you a hint to that effect.  
 
 #### Step: Use The Coach
 ##### From the top down:
