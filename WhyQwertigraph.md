@@ -12,7 +12,9 @@ Qwertigraphy gives you 3 components.
 Qwertigraphy's main engine holds a dictionary of ~40,000 "lazy forms" of frequently typed words and phrases. The more frequently the word is typed, the shorter the lazy form. The Qwertigraph watches everything you type, and when you type a lazy form, it immediately subs in the longer word the form represents. 
 
 > U rio hs nd u se ha, j afa u k g
+
 ...becomes...
+
 > You write this and you see that, just as fast as you can go
 
 #### The Coach: 
