@@ -24,7 +24,8 @@ The Coach immediately tells you how to "lazy" your way through the last word you
 
 You don't need to know anything to start. Fire it up, and let The Coach do its job. 
 
-#### The Editor: Do you type "Director of Enterprise Marketing" 75 times a day? Edit your dictionary, and turn that into dym. Do you do quantum computing in your spare time? Add all your tech terms to your dictionary. 
+#### The Editor: 
+Do you type "Director of Enterprise Marketing" 75 times a day? Edit your dictionary, and turn that into dym. Do you do quantum computing in your spare time? Add all your tech terms to your dictionary. 
 
 Laziness should be universal. 
 
@@ -32,7 +33,7 @@ The Qwertigraphy experience is that of turning every memo into a resource optimi
 
 Learning even a handful of words a day will change your typing experience. 
 
-But didn't I mention pen writing?
+#### But didn't I mention pen writing?
 
 You will quickly learn the lazy form for the word, "and". In Qwertigraphy, that's typed "nd". It only saves one keystroke, but it does so 50 times a day for the rest of your life. Once you have "and" committed to automatic response memory, you can begin using it in your pen writing just as easily. In longhand, the word "and" requires 7 joined pen-strokes (if you're not too fancy.) Writing just "nd" instead takes your pen-load down to only 5 strokes. It's a gain. 
 
