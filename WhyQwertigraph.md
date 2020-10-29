@@ -1,6 +1,6 @@
-Why Qwertigraph?
+### Why Qwertigraph?
 
-Bottom line: You're lazy and love puzzles. If you can get away with typing 20-50% less every day to get the same output, you're ready to sign up. If you can whip out your pen and take meeting notes 2-5 times faster, you can't be held back. Laziness is its own reward, and you want some of that. 
+**Bottom line:** You're lazy and love puzzles. If you can get away with typing 20-50% less every day and still get the same output, you're ready to sign up. If you can whip out your pen and take meeting notes 2-5 times faster, you can't be held back. Laziness is its own reward, and you want some of that. 
 
 Qwertigraphy is too easy not to try, and it's built on the tried and true foundations of Gregg Shorthand and AutoHotkey. This is not some new, well-hyped vaporware. The tech behind this tech has been making hard-working people money since 1916 -- more than 100 years. It will let you become a soft-working person and you can start today.
 
@@ -8,19 +8,21 @@ So, what is "it"?
 
 Qwertigraphy gives you 3 components. 
 
-The Qwertigraph: Qwertigraphy's main engine holds a dictionary of ~40,000 "lazy forms" of frequently typed words and phrases. The more frequently the word is typed, the shorter the lazy form. The Qwertigraph watches everything you type, and when you type a lazy form, it immediately subs in the longer word the form represents. 
+#### The Qwertigraph: 
+Qwertigraphy's main engine holds a dictionary of ~40,000 "lazy forms" of frequently typed words and phrases. The more frequently the word is typed, the shorter the lazy form. The Qwertigraph watches everything you type, and when you type a lazy form, it immediately subs in the longer word the form represents. 
 
-"U rio hs nd u se ha, j afa u k g"
+> U rio hs nd u se ha, j afa u k g
 ...becomes...
-"You write this and you see that, just as fast as you can go"
+> You write this and you see that, just as fast as you can go
 
-The Coach: You only need to know a handful of lazy forms to begin saving time and effort, but knowing that first form is a stretch. The Coach is there to help. The Coach marks down every word you type the hard way, and gives you instant feedback on how to write it lazier, plus a real-time training summary throughout your session. 
+#### The Coach: 
+You only need to know a handful of lazy forms to begin saving time and effort, but knowing that first form is a stretch. The Coach is there to help. The Coach marks down every word you type the hard way, and gives you instant feedback on how to write it lazier, plus a real-time training summary throughout your session. 
 
 The Coach immediately tells you how to "lazy" your way through the last word you just wrote out, keeps a notebook of the top 30 words with which you could be lazier, and how many keystrokes you've avoided so far. At the end of each session you can review your most overworked words, and practice not typing them out tomorrow. 
 
 You don't need to know anything to start. Fire it up, and let The Coach do its job. 
 
-The Editor: Do you type "Director of Enterprise Marketing" 75 times a day? Edit your dictionary, and turn that into dym. Do you do quantum computing in your spare time? Add all your tech terms to your dictionary. 
+#### The Editor: Do you type "Director of Enterprise Marketing" 75 times a day? Edit your dictionary, and turn that into dym. Do you do quantum computing in your spare time? Add all your tech terms to your dictionary. 
 
 Laziness should be universal. 
 
@@ -36,6 +38,6 @@ Gregg Shorthand reduces the "nd" to a single pen-stroke.
 
 Once you've learned the Qwertigraphy representation of any word, you can go out and learn to write that same word in Gregg to lazy your way out of writing 90% of whatever the diligent would put on paper. A hard-working longhand writer will usually take their notes at something like 25 words per minute. 100 WPM will be well within your reach using Gregg, and the best shorthand users exceed 200 WPM. Writing will become so much fun you'll be tempted not to be lazy and to start writing more valuable notes, notes filled with a ton more detail. 
 
-Qwertigraphy cannot be held responsible for such self-abuse, but it's a risk you'll have to take. 
+*Qwertigraphy cannot be held responsible for such self-abuse, but it's a risk you'll have to take.*
 
-Next: How to Qwertigraph
+Next: [How to Qwertigraph](https://github.com/codepoke-kk/qwertigraphy/blob/master/HowQwertigraph.md)

@@ -1,6 +1,6 @@
 ### How to Qwertigraph!
 
-Previous: Why Qwertigraph?
+Previous: [Why Qwertigraph?](https://github.com/codepoke-kk/qwertigraphy/blob/master/WhyQwertigraph.md)
 
 #### Step: Download AutoHotkey 
 https://www.autohotkey.com/download/
