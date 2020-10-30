@@ -31,8 +31,11 @@ Not being able to reproduce the problem, I cannot tell whether the problem is wi
 ##### Under some conditions, the Qwertigraph is too slow
 When the computer is chugging away on some background task, keystroke input and output will get jumbled. In those situations, there's nothing for it but to let the computer catch up. If anyone with really fast fingers wants to Qwertigraph, it will not take me long to whip out a Qwertigraph-Pro version with The Coach completely removed. A Pro version would have half the dictionary entries and do none of the scorekeeping of the coached version. It should be slightly more able to keep up. 
 
-#### I want to show the Gregg form of every typed word
+#### I want to show a picture of the Gregg form of every typed word
 This is a strong wish of mine, and it's within the range of the possible. I just have not done it yet. 
+
+#### Qwertigraphy only works on Windows
+I'd love to see this on *nix, but I have no such computers and no idea what tool might facilitate that move. 
 
 #### I really need this thing on my phone
 I cannot see why this should not be possible, but I've just not done any phone development yet. The problem with phone work is updating the dictionary, though. There would be no way to make a personalized dictionary, and I'm pretty sure that's a desirable feature for all users.
