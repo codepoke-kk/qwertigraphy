@@ -1,5 +1,10 @@
 ### Why Qwertigraph?
 
+Index: 
+[Why Qwertigraph?](https://github.com/codepoke-kk/qwertigraphy/blob/master/HowQwertigraph.md)
+[How to Qwertigraph?](https://github.com/codepoke-kk/qwertigraphy/blob/master/WhyQwertigraph.md)
+[Broken Qwertigraph?](https://github.com/codepoke-kk/qwertigraphy/blob/master/FixQwertigraph.md)
+
 **Bottom line:** You're lazy and love puzzles. If you can get away with typing 20-50% less every day and still get the same output, you're ready to sign up. If you can whip out your pen and take meeting notes 2-5 times faster, you can't be held back. Laziness is its own reward, and you want some of that. 
 
 Qwertigraphy is too easy not to try, and it's built on the tried and true foundations of Gregg Shorthand and AutoHotkey. This is not some new, well-hyped vaporware. The tech behind this tech has been making hard-working people money since 1916 -- more than 100 years. It will let you become a soft-working person and you can start today.
