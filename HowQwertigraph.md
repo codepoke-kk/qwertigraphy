@@ -45,7 +45,7 @@ Gregg Shorthand users and non-users will both have questions about why some of t
 - **c:** Stands in for the CH sound as in WHICH
 - **w:** Stands in for the OW sound as in POWER
 - **y:** Stands in for the OY sound as in TOY
-- **q:** Stands in for the QU sound as in QUICK, or for INK, ANK, UNK
+- **q:** Stands in for the QU sound as in QUICK, or for INK, ANK, UNK as in LINK
 - **u:** Usually only for long U or OO as in LOOK
 - **i:** Only for the long I sound as in PIPE
 - **a:** Seldom for AH and often for I (Gregg reasons)
