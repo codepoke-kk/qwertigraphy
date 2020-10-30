@@ -16,6 +16,9 @@ I'd never touched AutoHotkey before starting this project. I've taken advice whe
 #### What am I even doing, trying this?
 If someone else has already done this better, let me know. I'd gladly shut this down and buy theirs.
 
+#### The Qwertigraph does not accurately count all words
+The Qwertigraph and The Coach only count words they recognize. For this reason, they cannot tell you how many words you type per minute. AutoHotkey could do the full WPM game, but only if it were fundamentally transformed from a "text expander" application into a full "keystroke logger" application. I'm not sure I see the value, but I clearly see the work involved. For now, I happily do my own speed math as needed.
+
 #### The Dictionary is a moving target
 I consider my Gregg Shorthand Dictionary of 1930, Anniversary Edition, to be the gold standard for the "anniversary_core.ahk" dictionary. 5-10% of my dictionary is in agreement with Mr. Gregg's. The rest is computer-generated and somewhat reasonable, but not correct. I manually add/fix some words every week, but I'll be a long while getting to "right". If you start learning Qwertigraphy before the dictionary is done, expect to see words change each time you refresh your copy. 
 
