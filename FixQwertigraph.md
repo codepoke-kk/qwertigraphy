@@ -1,8 +1,7 @@
 ### Known Issues With Qwertigraphy
 
-Index: 
-[Why Qwertigraph?](https://github.com/codepoke-kk/qwertigraphy/blob/master/HowQwertigraph.md)
-[How to Qwertigraph?](https://github.com/codepoke-kk/qwertigraphy/blob/master/WhyQwertigraph.md)
+[Why Qwertigraph?](https://github.com/codepoke-kk/qwertigraphy/blob/master/WhyQwertigraph.md) | 
+[How to Qwertigraph?](https://github.com/codepoke-kk/qwertigraphy/blob/master/HowQwertigraph.md) | 
 [Broken Qwertigraph?](https://github.com/codepoke-kk/qwertigraphy/blob/master/FixQwertigraph.md)
 
 #### Finite Time
@@ -12,7 +11,7 @@ I work two jobs. This is a labor of amusement for me, so I'll get to things when
 I learned Gregg in 1993 or so, and figured I knew enough to be dangerous when I got to lesson 12 of 36. I did Gregg poorly, after that until 2019. I've got nothing but half-baked knowledge and deeply ingrained bad habits to show for all my experience. I'm slowly coming up to speed, but my weaknesses impact the final product badly. I'm sorry and trying to do better.
 
 #### My AutoHotkey-fu is weak, too
-I'd never touched AutoHotkey before starting this project. I've advice where I could get it and jogged The Google as much as I could, but there are certainly places someone with skills could improve on what we have here. My thanks to @Nou for setting me on some good paths early.
+I'd never touched AutoHotkey before starting this project. I've taken advice where I could get it and jogged The Google as much as I could, but there are certainly places someone with skills could improve on what we have here. My thanks to @Nou for setting me on some good paths early.
 
 #### What am I even doing, trying this?
 If someone else has already done this better, let me know. I'd gladly shut this down and buy theirs.
