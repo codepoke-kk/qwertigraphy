@@ -16,7 +16,7 @@ AutoHotkey will not do anything when you install it. After installation, it awai
 If you are familiar with the ideas and uses of GitHub, you can go to the repository and clone, pull, or download at will. If all that was Greek to you, then download a zip file of the repository here. Unzip it anywhere you'd like on your computer. I keep mine in a qwertigraphy folder in "My Documents."
 https://github.com/codepoke-kk/qwertigraphy/archive/master.zip
 
-A low-quality video walk-through here: [Qwertigraphy Quick Start](https://www.youtube.com/watch?v=z3lnBqlmgmE&feature=youtu.be)
+A low-quality video walk-through here: [Qwertigraphy Quick Start](https://www.youtube.com/watch?v=Eodl0zzjCcw&feature=youtu.be)
 
 #### Step: Start the Qwertigraph
 Go to the /release folder, and double click Qwertigraph.ahk. You should see The Coach appear on the right side of your screen. Move it around as you wish, but it will hover on top until you minimize it. This is its function. 
