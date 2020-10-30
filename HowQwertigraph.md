@@ -36,7 +36,27 @@ The Coach should now show you've saved 4 characters in typing and have attained 
 - Control-Backspace is your friend. If you meant some other word than the one the Qwertigraph typed, Control-Backspace will delete the entire word and let you start over again. (It's much lazier to hit Control-Backspace once than to hit Backspace a does times.)
 - Control-j will Suspend the Qwertigraph if you need to type without its help. Control-j again will reactivate it. 
 - Control-{ most punctuation marks } will cause the Qwertigraph to ignore whatever word you just typed.
-- If you type out a word for which there's a "big win" lazy form, a pop-up tip will give you a hint to that effect.  
+- If you type out a word for which there's a "big win" lazy form, a pop-up tip will give you a hint to that effect. 
+
+##### Words about letters
+Gregg Shorthand users and non-users will both have questions about why some of the lazy forms are spelled the way they are. I'll do that explanation some other day, but for now I'll supply these little hints.
+- **h:** Stands in for the TH sound as in THE
+- **z:** Stands in for the SH sound as in SHIP
+- **c:** Stands in for the CH sound as in WHICH
+- **w:** Stands in for the OW sound as in POWER
+- **y:** Stands in for the OY sound as in TOY
+- **q:** Stands in for the QU sound as in QUICK
+- **u:** Usually only for long U or OO as in LOOK
+- **i:** Only for the long I sound as in PIPE
+- **a:** Seldom for AH and often for I (Gregg reasons)
+- **e:** Stands in for many sounds like "i" in QUICK
+- **t:** Often stands in for "ED" as in WORKED
+- **g:** Stands in for ING, ONG, or UNG
+
+##### Keyers
+Gregg Shorthand uses exactly the same form for several words. For example, THE, THERE, and THEIR are all lazified using the H, which is the TH sound. The Qwertigraph needs to know which of those words the Qwertigrapher means, so they are keyed using vowels. The most commonly used word is THE, so a pure H is the word THE. Adding an O to the H makes the word THEIR. Adding an I to the H makes THERE. You will see many Qwertigraphy words that end with O, U, and I. You will see a few ending in E, A, W, and Y. These are often keyed words. Whenever you see one, you can bet there's an unkeyed lazy form already representing some more frequently used word. 
+
+You can always tell the actual Gregg Shorthand form by looking at The Coach's hint. The form in parentheses is the formal Gregg Shorthand form.
 
 #### Step: Use The Coach
 ##### From the top down:
