@@ -181,10 +181,17 @@ return
 :C:AHK::AHK
 ::ahk::AutoHotkey
 
+; Enable/Disable
 ^j::
 	Suspend toggle
     Return
 
+; Enable expansion to work immediately after control-backspace
+~^Backspace::
+    hotstring("reset")
+    Return
+    
+; Enable expansion and strip the "control" from the stroke on punctuation
 ^Space::
     hotstring("reset")
     Send {Space}
@@ -209,6 +216,8 @@ return
     hotstring("reset")
     Send {Enter}
     Return
+    
+; Show related strokes after an expansion
 #^r::
     hotstring("reset")
     OfferRetry()
@@ -346,8 +355,6 @@ SaveOpportunities()
 	FileDelete, opportunities.txt
 	FileAppend, % ListOpportunities(Opportunities), opportunities.txt
 }
-; Provided by Josh Grams
-OnExit("ExitLogging")
 
 ; Provided by Josh Grams
 ClearOpportunities()
