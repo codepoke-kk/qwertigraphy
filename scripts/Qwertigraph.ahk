@@ -149,8 +149,10 @@ logEvent(1, duplicateLazyOutlineCount " duplicate outlines: " duplicateLazyOutli
 FileAppend duplicateLazyOutlineCount%duplicateLazyOutlineCount% , duplicateLazyOutlines.txt
 FileAppend %duplicateLazyOutlines%, duplicateLazyOutlines.txt
 
-; Doing this include earlier kills the script, but it loads immediately even though it's last
-#Include personal.ahk
+; Load personal.ahk only after all other code has run
+; And before loading any Qwertigraphy native briefs
+; But ignore if it doesn't exist
+#Include *i personal.ahk
 
 return 
 
