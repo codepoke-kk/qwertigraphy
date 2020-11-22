@@ -1,0 +1,5 @@
+& "$PsScriptRoot\Publish-Formal.ps1"
+& "$PsScriptRoot\Publish-Usage.ps1"
+& "$PsScriptRoot\Publish-Lazy.ps1"
+& "$PsScriptRoot\Publish-KeyedLazy.ps1"
+& "$PsScriptRoot\Publish-Hinted.ps1"

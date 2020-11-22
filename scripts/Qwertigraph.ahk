@@ -5,35 +5,41 @@ SendMode Input
 SetWorkingDir %A_ScriptDir%  ; Ensures a consistent starting directory.
 SetBatchLines, -1
 SetKeyDelay, -1
+nibY := -999 ; disable GreggPad until loaded. 
 
-logFile := 0
-LogVerbosity := 4
+logFileQG := 0
+logVerbosityQG := 4
 IfNotExist, logs
     FileCreateDir, logs
 
-logEvent(0, "not logged")
-logEvent(1, "not verbose")
-logEvent(2, "slightly verbose")
-logEvent(3, "pretty verbose")
-logEvent(4, "very verbose")
+logEventQG(0, "not logged")
+logEventQG(1, "not verbose")
+logEventQG(2, "slightly verbose")
+logEventQG(3, "pretty verbose")
+logEventQG(4, "very verbose")
 
 coachingLevel := 1 ; 0 is none, 1 is some, 2 is all 
 
 dictionariesLoaded := 0
 dictionaryListFile := "dictionary_load.list"
-logEvent(1, "Loading dictionaries list from " dictionaryListFile)
+logEventQG(1, "Loading dictionaries list from " dictionaryListFile)
 dictionaries := []
 Loop, read, %dictionaryListFile% 
 {
-    logEvent(1, "Adding dictionary " A_LoopReadLine)
-    dictionaries.Push(A_LoopReadLine)
+    if (! RegexMatch(A_LoopReadLine, "^;")) {
+        logEventQG(1, "Adding dictionary " A_LoopReadLine)
+        dictionaries.Push(A_LoopReadLine)
+    } else {
+        logEventQG(1, "Skipping dictionary " A_LoopReadLine)
+    }
 }
+
 negationsFile := "negations.txt"
-logEvent(1, "Loading negations from " negationsFile)
+logEventQG(1, "Loading negations from " negationsFile)
 negations := ComObjCreate("Scripting.Dictionary")
 Loop,Read,%negationsFile%   ;read negations
 {
-    logEvent(4, "Loading negation " A_LoopReadLine)
+    logEventQG(4, "Loading negation " A_LoopReadLine)
     negations.item(A_LoopReadLine) := 1
 }
             
@@ -64,7 +70,7 @@ duplicateLazyOutlineCount := 0
 
 for index, dictionary in dictionaries
 {
-    logEvent(1, "Loading dictionary " dictionary)
+    logEventQG(1, "Loading dictionary " dictionary)
     Loop,Read,%dictionary%   ;read dictionary into HotStrings
     {
         Global NumLines
@@ -95,7 +101,7 @@ for index, dictionary in dictionaries
                 duplicateLazyOutlineCount += 1
                 duplicateLazyOutlines := duplicateLazyOutlines . "," field3
             } catch {
-                Hotstring( ":B1C:" field3, expander.bind(field3, field1_lower, saves, power))
+                Hotstring( ":B1C:" field3, expander.bind(field3, field1_lower, field2, saves, power))
             }
         }
 
@@ -106,7 +112,7 @@ for index, dictionary in dictionaries
                 duplicateLazyOutlineCount += 1
                 duplicateLazyOutlines := duplicateLazyOutlines . "," field3_capped
             } catch {
-                Hotstring( ":B1C:" field3_capped, expander.bind(field3_capped, field1_capped, saves, power))
+                Hotstring( ":B1C:" field3_capped, expander.bind(field3_capped, field1_capped, field2, saves, power))
             }
         }
         try {
@@ -114,7 +120,9 @@ for index, dictionary in dictionaries
             Hotstring( ":B0:" field1 )
         } catch {
             ; The "word" does not exist, so use it as a coaching hint
-            Hotstring( ":B0:" field1, hinter.bind(field1, field3, field6, saves, power))
+            if (StrLen(field1) < 40) {
+                Hotstring( ":B0:" field1, hinter.bind(field1, field3, field6, field2, saves, power))
+            }
         }
 
         ; finally allcapped cases or HE will preempt He for E
@@ -127,28 +135,31 @@ for index, dictionary in dictionaries
                     duplicateLazyOutlines := duplicateLazyOutlines . "," field3_upper
                 }
             } catch {
-                Hotstring( ":B1C:" field3_upper, expander.bind(field3_upper, field1_upper, saves, power))
+                Hotstring( ":B1C:" field3_upper, expander.bind(field3_upper, field1_upper, field2, saves, power))
             }
         }
         
         progress := Round(100 * (NumLines/expectedForms))
+        Gui Qwertigraph:Default
         GuiControl, , LoadProgress, %progress%
         ; if ( NumLines > 800 ) {
         ;     break
         ; }
     }
-    logEvent(1, "Loaded dictionary " dictionary " resulting in " NumLines " forms")
+    logEventQG(1, "Loaded dictionary " dictionary " resulting in " NumLines " forms")
 }
+Gui Qwertigraph:Default
 GuiControl, Hide, LoadProgress
-logEvent(1, "Loaded all forms")
+logEventQG(1, "Loaded all forms")
 
 if FileExist("duplicateLazyOutlines.txt")
     FileDelete, duplicateLazyOutlines.txt
 
-logEvent(1, duplicateLazyOutlineCount " duplicate outlines: " duplicateLazyOutlines)
+logEventQG(1, duplicateLazyOutlineCount " duplicate outlines: " duplicateLazyOutlines)
 FileAppend duplicateLazyOutlineCount%duplicateLazyOutlineCount% , duplicateLazyOutlines.txt
 FileAppend %duplicateLazyOutlines%, duplicateLazyOutlines.txt
 
+#Include GreggPad.ahk
 ; Load personal.ahk only after all other code has run
 ; And before loading any Qwertigraphy native briefs
 ; But ignore if it doesn't exist
@@ -227,33 +238,37 @@ return
 
 
 
-ExpandOutline(lazy, word, saves, power) {
+ExpandOutline(lazy, word, formal, saves, power) {
     global phraseEndings
     global lastExpandedForm
     global lastExpandedWord
     global lastEndChar
     global TypedCharacters
     global DisplayedCharacters
+    global nibY
     
-    logEvent(3, "Expanding " lazy " into " word " saving " saves " at power " power)
+    logEventQG(3, "Expanding " lazy " into " word " saving " saves " at power " power)
     if (lastEndChar = "'") {
-        logEvent(4, "lastEndChar is '")
+        logEventQG(4, "lastEndChar is '")
         ; Don't allow contractions to expand the ending
         send, % SubStr(A_ThisHotkey, 6) . A_EndChar
     } else if (A_EndChar = "!") {
-        logEvent(4, "lastEndChar is !")
+        logEventQG(4, "lastEndChar is !")
         ; Exclam is the ALT character
         send, % word 
         send {!}
         DisplayedCharacters += StrLen(word)
         TypedCharacters += StrLen(lazy)
     } else {
-        logEvent(4, "Handling normally")
+        logEventQG(4, "Handling normally")
         send, % word A_EndChar
         DisplayedCharacters += StrLen(word)
         TypedCharacters += StrLen(lazy)
     }
     UpdateDashboard()
+    if (nibY > -1) {
+        VisualizeForm(formal, "blue")
+    }
     lastExpandedWord := word
     lastExpandedForm := lazy
     lastEndChar := A_EndChar
@@ -288,14 +303,14 @@ LaunchCoach() {
     vHeight := vHeight - 1110
 
     Gui, +AlwaysOnTop +Resize
-    Gui,Add,Button,x5 y5 h20 w70 gSaveOpportunities,Save log
-    Gui,Add,Button,x80 y5 h20 w70 gClearOpportunities,Clear log
-    Gui,Add,Text,vDashboardText x5 w150 r5, Characters saved in typing
-    Gui,Add,Text,vAcruedTipText w200 h500, Shorthand Coach
-    Gui,Add,Text,vActiveTipText r1 w200, Last word not shortened
-    Gui,Add, Progress, h5 cOlive vLoadProgress, 1
-    Gui,Add,Picture, w70 h-1 x170 y5, coach.png
-    Gui,Show,w250 h656 x%vWidth% y%vHeight%, Shorthand Coach
+    Gui,Qwertigraph:Add,Button,x5 y5 h20 w70 gSaveOpportunities,Save log
+    Gui,Qwertigraph:Add,Button,x80 y5 h20 w70 gClearOpportunities,Clear log
+    Gui,Qwertigraph:Add,Text,vDashboardText x5 w150 r5, Characters saved in typing
+    Gui,Qwertigraph:Add,Text,vAcruedTipText w200 h500, Shorthand Coach
+    Gui,Qwertigraph:Add,Text,vActiveTipText r1 w200, Last word not shortened
+    Gui,Qwertigraph:Add, Progress, h5 cOlive vLoadProgress, 1
+    Gui,Qwertigraph:Add,Picture, w70 h-1 x170 y5, coach.png
+    Gui,Qwertigraph:Show,w250 h656 x%vWidth% y%vHeight%, Shorthand Coach
 }
 
 UpdateDashboard() {
@@ -306,6 +321,7 @@ UpdateDashboard() {
     Efficiency := Round(SavedCharacters / DisplayedCharacters, 2)
     Learning := Round(SavedCharacters / MissedCharacters, 2)
     
+    Gui Qwertigraph:Default
     GuiControl,,DashboardText, % "Typed:" TypedCharacters "`nSaved:" SavedCharacters "`nMissed: " MissedCharacters "`nEfficiency:" Efficiency "`nLearning:" Learning
 }
 AddOpportunity(tip,saves) {
@@ -327,6 +343,7 @@ AddOpportunity(tip,saves) {
         Opportunities[tip] := Opportunities[tip] + saves
     }
     ; MsgBox, % "Seeing " tip " for the " Opportunities[tip]
+    Gui Qwertigraph:Default
     GuiControl,,AcruedTipText, % ListOpportunities(Opportunities)
     GuiControl,,ActiveTipText, %tip%
     UpdateDashboard()
@@ -339,8 +356,9 @@ ListOpportunities(opps) {
   Sort, summaries, R
   return Trim(summaries, "`n")
 }
-CoachOutline(word, outline, hint, saves, power) {
+CoachOutline(word, outline, hint, formal, saves, power) {
     global coachingLevel
+    global nibY
     AddOpportunity(hint,saves)
     if (coachingLevel > 1) {
         FlashHint(hint)
@@ -348,6 +366,9 @@ CoachOutline(word, outline, hint, saves, power) {
         if (power > 1.5) {
             FlashHint(hint)
         }
+    }
+    if (nibY > -1) {
+        VisualizeForm(formal, "red")
     }
 }
 ; Provided by Josh Grams
@@ -363,6 +384,7 @@ ClearOpportunities()
 {
 	Global Opportunities
 	Opportunities := {}
+    Gui Qwertigraph:Default
     GuiControl,,AcruedTipText, % ListOpportunities(Opportunities)
 }
 
@@ -373,21 +395,21 @@ OfferRetry() {
     global index
     global keyers := Array("","o","u","i","e","a","w","y")
     
-    logEvent(1, "Offering retry with " lastExpandedWord "/" lastExpandedForm)
+    logEventQG(1, "Offering retry with " lastExpandedWord "/" lastExpandedForm)
     possibles := {}
     possiblesCount := 0
     possiblesMsg := "Did you mean: `n"
     for index, keyer in keyers {
         keyedLazy := lastExpandedForm . keyer
         StringLower, keyedLazy, keyedLazy
-        logEvent(3, "Testing availability of  " keyedLazy)
+        logEventQG(3, "Testing availability of  " keyedLazy)
         if (forms[keyedLazy]) {
             possibles[keyedLazy] := forms[keyedLazy]
             possiblesCount += 1
             possiblesMsg := possiblesMsg keyedLazy ": " forms[keyedLazy] "`n"
-            logEvent(3, "Available:  " keyedLazy " as " forms[keyedLazy])
+            logEventQG(3, "Available:  " keyedLazy " as " forms[keyedLazy])
         } else {
-            logEvent(3, "Not available:  " keyedLazy)
+            logEventQG(3, "Not available:  " keyedLazy)
         }
     }
     Msgbox, % possiblesMsg
@@ -395,7 +417,7 @@ OfferRetry() {
 
 ExitLogging() {
     SaveOpportunities()
-    LogEvent(1, "Application exited")
+    logEventQG(1, "Application exited")
 }
 
 
@@ -423,18 +445,18 @@ CSobj() {
         return, true
     }
 
-LogEvent(verbosity, message) {
-    global logFileName
-    global logFile
-    global logVerbosity
-    if (not verbosity) or (not logVerbosity)
+logEventQG(verbosity, message) {
+    global logFileNameQG
+    global logFileQG
+    global logVerbosityQG
+    if (not verbosity) or (not logVerbosityQG)
         Return
     FormatTime, logDateStamp, , yyyyMMdd.HHmmss
-    if (! logFile) {
-        logFileName := "qwertigraph." . logDateStamp . ".log"
-        logFile := FileOpen("logs\" logFileName, "a")
-        logFile.Write(logDateStamp . "[0]: Log initiated`r`n")
+    if (! logFileQG) {
+        logFileNameQG := "qwertigraph." . logDateStamp . ".log"
+        logFileQG := FileOpen("logs\" logFileNameQG, "a")
+        logFileQG.Write(logDateStamp . "[0]: Log initiated`r`n")
     }
-    if (verbosity <= logVerbosity) 
-        logFile.Write(logDateStamp "[" verbosity "]: " message "`r`n")
+    if (verbosity <= logVerbosityQG) 
+        logFileQG.Write(logDateStamp "[" verbosity "]: " message "`r`n")
 }
