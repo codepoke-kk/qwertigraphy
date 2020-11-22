@@ -3,33 +3,37 @@
 #SingleInstance Force
 SetWorkingDir %A_ScriptDir%
 
-logFile := 0
-LogVerbosity := 2
+logFileDE := 0
+LogVerbosityDE := 2
 IfNotExist, logs
     FileCreateDir, logs
 
-logEvent(0, "not logged")
-logEvent(1, "not verbose")
-logEvent(2, "slightly verbose")
-logEvent(3, "pretty verbose")
-logEvent(4, "very verbose")
+logEventDE(0, "not logged")
+logEventDE(1, "not verbose")
+logEventDE(2, "slightly verbose")
+logEventDE(3, "pretty verbose")
+logEventDE(4, "very verbose")
 
 dictionariesLoaded := 0
 dictionaryListFile := "dictionary_load.list"
-logEvent(1, "Loading dictionaries list from " dictionaryListFile)
+logEventDE(1, "Loading dictionaries list from " dictionaryListFile)
 dictionaries := []
 Loop, read, %dictionaryListFile% 
 {
-    logEvent(1, "Adding dictionary " A_LoopReadLine)
-    dictionaries.Push(A_LoopReadLine)
+    if (! RegexMatch(A_LoopReadLine, "^;")) {
+        logEventDE(1, "Adding dictionary " A_LoopReadLine)
+        dictionaries.Push(A_LoopReadLine)
+    } else {
+        logEventDE(1, "Skipping dictionary " A_LoopReadLine)
+    }
 }
 
 negationsFile := "negations.txt"
-logEvent(1, "Loading negations from " negationsFile)
+logEventDE(1, "Loading negations from " negationsFile)
 negations := ComObjCreate("Scripting.Dictionary")
 Loop,Read,%negationsFile%   ;read negations
 {
-    logEvent(4, "Loading negation " A_LoopReadLine)
+    logEventDE(4, "Loading negation " A_LoopReadLine)
     negations.item(A_LoopReadLine) := 1
 }
             
@@ -38,10 +42,10 @@ forms := {}
 LaunchEditor()
 
 NumLines := 0
-logEvent(1, "Loading forms")
+logEventDE(1, "Loading forms")
 for index, dictionary in dictionaries
 {
-    logEvent(1, "Loading dictionary " dictionary)
+    logEventDE(1, "Loading dictionary " dictionary)
     Loop,Read,%dictionary%   ;read dictionary into array
     {
         NumLines:=A_Index-1
@@ -54,15 +58,15 @@ for index, dictionary in dictionaries
         form := Object("dictionary", dictionary, "word", field1, "formal", field2, "lazy", field3, "keyer", field4, "usage", field5, "hint", field6)
 
         formKey := form.dictionary "!!" form.word
-        logEvent(4, "Creating form " formKey)
+        logEventDE(4, "Creating form " formKey)
         if ( not forms[formKey] ) {
             ; Make sure we don't overwrite an existing word with a less used version
             forms[formKey] := form
         }
     }
-    logEvent(1, "Loaded dictionary " dictionary " resulting in " NumLines " forms")
+    logEventDE(1, "Loaded dictionary " dictionary " resulting in " NumLines " forms")
 }
-logEvent(1, "Loaded all forms")
+logEventDE(1, "Loaded all forms")
 dictionariesLoaded := 1
 
 ;Msgbox, % "I have forms " sortableWords["00000005_password"]
@@ -93,7 +97,7 @@ LaunchEditor() {
     global SaveProgress
     global BackupCount
     
-    logEvent(2, "Launching Editor")
+    logEventDE(2, "Launching Editor")
     
     ; Add header text
     Gui, Add, Text, x12  y9 w700  h20 , Snazzy dictionary edits are more fun than Excel spreadsheet editing
@@ -161,102 +165,102 @@ LaunchEditor() {
     return
 
     GuiClose:
-        logEvent(1, "App exit called")
+        logEventDE(1, "App exit called")
         ExitApp
 }
 
 FormsLV:
-    logEvent(2, "Listview event " A_GuiEvent " on " A_EventInfo)
+    logEventDE(2, "Listview event " A_GuiEvent " on " A_EventInfo)
     if (A_GuiEvent = "DoubleClick") {
         PrepareEdit(A_EventInfo)
     }
     if (A_GuiEvent = "e") {
         LV_GetText(RowText, A_EventInfo)  ; Get the text from the row's first field.
-        logEvent(3, "Listview in-place edit to  " RowText)
+        logEventDE(3, "Listview in-place edit to  " RowText)
         Msgbox, % "You edited row " A_EventInfo " to: " RowText
     }
     return
     
 ContextEditForm:
-    logEvent(2, "Listview context edit event ")
+    logEventDE(2, "Listview context edit event ")
     FocusedRowNumber := LV_GetNext(0, "F")  ; Find the focused row.
     if not FocusedRowNumber  ; No row is focused.
         return
-    logEvent(3, "Listview context edit event on row " FocusedRowNumber)
+    logEventDE(3, "Listview context edit event on row " FocusedRowNumber)
     PrepareEdit(FocusedRowNumber)
     Return
 
 ContextDeleteForm:
-    logEvent(2, "Listview context delete event ")
+    logEventDE(2, "Listview context delete event ")
     FocusedRowNumber := LV_GetNext(0, "F")  ; Find the focused row.
     if not FocusedRowNumber  ; No row is focused.
         return
-    logEvent(3, "Listview context delete event on row " FocusedRowNumber)
+    logEventDE(3, "Listview context delete event on row " FocusedRowNumber)
     PrepareEdit(FocusedRowNumber)
     DeleteForm()
     Return
 
 ContextAddToForm_S:
-    logEvent(2, "Listview context add S ")
+    logEventDE(2, "Listview context add S ")
     FocusedRowNumber := LV_GetNext(0, "F")  ; Find the focused row.
     if not FocusedRowNumber  ; No row is focused.
         return
-    logEvent(3, "Listview context add S to row " FocusedRowNumber)
+    logEventDE(3, "Listview context add S to row " FocusedRowNumber)
     PrepareEdit(FocusedRowNumber)
     AddValueToEditFields("s", "s", "s")
     CommitEdit()
     Return
 
 ContextAddToForm_G:
-    logEvent(2, "Listview context add G ")
+    logEventDE(2, "Listview context add G ")
     FocusedRowNumber := LV_GetNext(0, "F")  ; Find the focused row.
     if not FocusedRowNumber  ; No row is focused.
         return
-    logEvent(3, "Listview context add G to row " FocusedRowNumber)
+    logEventDE(3, "Listview context add G to row " FocusedRowNumber)
     PrepareEdit(FocusedRowNumber)
     AddValueToEditFields("ing", "g", "g")
     CommitEdit()
     Return
 
 ContextAddToForm_D:
-    logEvent(2, "Listview context add D ")
+    logEventDE(2, "Listview context add D ")
     FocusedRowNumber := LV_GetNext(0, "F")  ; Find the focused row.
     if not FocusedRowNumber  ; No row is focused.
         return
-    logEvent(3, "Listview context add D to row " FocusedRowNumber)
+    logEventDE(3, "Listview context add D to row " FocusedRowNumber)
     PrepareEdit(FocusedRowNumber)
     AddValueToEditFields("ed", "d", "d")
     CommitEdit()
     Return
 
 ContextAddToForm_T:
-    logEvent(2, "Listview context add T ")
+    logEventDE(2, "Listview context add T ")
     FocusedRowNumber := LV_GetNext(0, "F")  ; Find the focused row.
     if not FocusedRowNumber  ; No row is focused.
         return
-    logEvent(3, "Listview context add T to row " FocusedRowNumber)
+    logEventDE(3, "Listview context add T to row " FocusedRowNumber)
     PrepareEdit(FocusedRowNumber)
     AddValueToEditFields("ed", "t", "t")
     CommitEdit()
     Return
 
 ContextAddToForm_R:
-    logEvent(2, "Listview context add R ")
+    logEventDE(2, "Listview context add R ")
     FocusedRowNumber := LV_GetNext(0, "F")  ; Find the focused row.
     if not FocusedRowNumber  ; No row is focused.
         return
-    logEvent(3, "Listview context add R to row " FocusedRowNumber)
+    logEventDE(3, "Listview context add R to row " FocusedRowNumber)
     PrepareEdit(FocusedRowNumber)
     AddValueToEditFields("er", "r", "r")
     CommitEdit()
     Return
 
 ContextAddToForm_LY:
-    logEvent(2, "Listview context add LY ")
+    logEventDE(2, "Listview context add LY ")
     FocusedRowNumber := LV_GetNext(0, "F")  ; Find the focused row.
     if not FocusedRowNumber  ; No row is focused.
         return
-    logEvent(3, "Listview context add LY to row " FocusedRowNumber)
+    logEventDE(3, "Listview context add LY to row " FocusedRowNumber)
     PrepareEdit(FocusedRowNumber)
     AddValueToEditFields("ly", "e", "e")
     CommitEdit()
@@ -305,9 +309,9 @@ AutoKeyer() {
     GuiControlGet keyer, , EditKeyer
     GuiControlGet dict, , EditDict
     formKey := dict "!!" word
-    logEvent(3, "Seeking keyer for " formKey)
+    logEventDE(3, "Seeking keyer for " formKey)
     newKeyer := GetNextKeyer(formKey, lazy)
-    logEvent(2, "Setting newKeyer to " newKeyer)
+    logEventDE(2, "Setting newKeyer to " newKeyer)
     
     GuiControl, Text, EditKeyer, %newKeyer%
 }
@@ -337,54 +341,54 @@ GetNextKeyer(formKey, lazy) {
     global index
     global keyer
     global keyers := Array("","o","u","i","e","a","w","y")
-    logEvent(3, "Getting next keyer for " lazy " and " formKey)
+    logEventDE(3, "Getting next keyer for " lazy " and " formKey)
     allMatchingKeys := {}
     allMatchingKeysCount := 0
     
     if (lazy = "") {
-        logEvent(4, "Empty lazy form. Returning nill")
+        logEventDE(4, "Empty lazy form. Returning nill")
         Return
     }
     for loopFormKey, form in forms {
         if (RegExMatch(form.lazy,"^" lazy)) {
-            logEvent(0, form.lazy " begins with " lazy)
+            logEventDE(0, form.lazy " begins with " lazy)
             allMatchingKeys[loopFormKey] := form
             allMatchingKeysCount += 1
         }
     }
-    logEvent(4, "Possible matching forms count: " allMatchingKeysCount)
+    logEventDE(4, "Possible matching forms count: " allMatchingKeysCount)
         
     for index, keyer in keyers {
         keyedLazy := lazy . keyer
-        logEvent(4, "Testing keyer " keyer " as " keyedLazy)
+        logEventDE(4, "Testing keyer " keyer " as " keyedLazy)
         usedKeyFound := false
         for matchingKey, matchingForm in allMatchingKeys {
             if (not usedKeyFound) and (matchingForm.lazy = keyedLazy) {
-                logEvent(4, "Matched " keyedLazy)
+                logEventDE(4, "Matched " keyedLazy)
                 matchedFormKey := matchingForm.dict "!!" matchingForm.word
                 if matchingForm.word = forms[formKey].word {
-                    logEvent(4, "Matched keyer, lazy, and word. Returning this keyer: " keyer)
+                    logEventDE(4, "Matched keyer, lazy, and word. Returning this keyer: " keyer)
                     Return keyer
                 } else {
-                    logEvent(4, "Keyer taken. Owned by " matchingForm.word)
+                    logEventDE(4, "Keyer taken. Owned by " matchingForm.word)
                     usedKeyFound := true
                     break
                 }
             } else {
-                logEvent(4, "Not a match for " matchingForm.lazy)
+                logEventDE(4, "Not a match for " matchingForm.lazy)
             }
         }
         if not usedKeyFound {
-            logEvent(4, "Returning available keyer " keyer)
+            logEventDE(4, "Returning available keyer " keyer)
             Return keyer
         }
     }
-    logEvent(3, "No keyer found in available options") 
+    logEventDE(3, "No keyer found in available options") 
     Return "qq"
 }
 
 AutoGenHints:
-    logEvent(2, "AutoHint Checkbox set to auto ")
+    logEventDE(2, "AutoHint Checkbox set to auto ")
     GuiControl, Text, EditHint, Auto 
     Return
     
@@ -399,16 +403,16 @@ DeleteForm() {
     GuiControlGet dictionary, , EditDict
     
     formKey := dictionary "!!" word
-    logEvent(3, "Deleting " formKey)
+    logEventDE(3, "Deleting " formKey)
     ignore := forms.Delete(formKey)
-    logEvent(4, "Deleted " ignore.lazy)
+    logEventDE(4, "Deleted " ignore.lazy)
     
     ; Reload the search view with the new value 
     SearchForms()
 }
     
 PrepareEdit(RowNumber) {
-    logEvent(2, "Preparing edit for ListView row " RowNumber)
+    logEventDE(2, "Preparing edit for ListView row " RowNumber)
     global EditDict
     global EditWord
     global EditFormal
@@ -441,7 +445,7 @@ PrepareEdit(RowNumber) {
     GuiControl, Text, EditDict, %EditDict%
 }
 CommitEdit() {
-    logEvent(3, "Commiting edit to form")
+    logEventDE(3, "Commiting edit to form")
     global dictionary
     global word
     global formal
@@ -472,7 +476,7 @@ CommitEdit() {
     form := Object("word", word, "formal", formal, "lazy", lazy, "keyer", keyer, "usage", usage, "hint", hint, "dictionary", dictionary)
     formKey := form.dictionary "!!" form.word
     
-    logEvent(2, "Commiting edit to " formKey)
+    logEventDE(2, "Commiting edit to " formKey)
     forms[formKey] := form
     
     GuiControl, Enable, SaveDictionaries
@@ -503,49 +507,49 @@ SearchForms() {
     
     global SaveProgress
     
-    logEvent(2, "Performing search of forms to populate ListView")
-    logEvent(3, "RegexWord " RegexWord ", RegexFormal " RegexFormal ", RegexLazy " RegexLazy ", RegexKeyer " RegexKeyer ", RegexUsage " RegexUsage ", RegexHint " RegexHint ", RegexDict " RegexDict )
+    logEventDE(2, "Performing search of forms to populate ListView")
+    logEventDE(3, "RegexWord " RegexWord ", RegexFormal " RegexFormal ", RegexLazy " RegexLazy ", RegexKeyer " RegexKeyer ", RegexUsage " RegexUsage ", RegexHint " RegexHint ", RegexDict " RegexDict )
     foundKeys := {}
     for formKey, form in forms {
         if (RegexDict) {
             if (RegExMatch(form.dictionary,RegexDict)) {
-                logEvent(4, "RegexDict matched " formKey)
+                logEventDE(4, "RegexDict matched " formKey)
                 foundKeys[formKey] += 1
             }
         }
         if (RegexWord) {
             if (RegExMatch(form.word,RegexWord)) {
-                logEvent(4, "RegexWord matched " formKey)
+                logEventDE(4, "RegexWord matched " formKey)
                 foundKeys[formKey] += 1
             }
         }
         if (RegexFormal) {
             if (RegExMatch(form.formal,RegexFormal)) {
-                logEvent(4, "RegexFormal matched " formKey)
+                logEventDE(4, "RegexFormal matched " formKey)
                 foundKeys[formKey] += 1
             }
         }
         if (RegexLazy) {
             if (RegExMatch(form.lazy,RegexLazy)) {
-                logEvent(4, "RegexLazy matched " formKey)
+                logEventDE(4, "RegexLazy matched " formKey)
                 foundKeys[formKey] += 1
             }
         }
         if (RegexKeyer) {
             if (RegExMatch(form.keyer,RegexKeyer)) {
-                logEvent(4, "RegexKeyer matched " formKey)
+                logEventDE(4, "RegexKeyer matched " formKey)
                 foundKeys[formKey] += 1
             }
         }
         if (RegexUsage) {
             if (RegExMatch(form.usage,RegexUsage)) {
-                logEvent(4, "RegexUsage matched " formKey)
+                logEventDE(4, "RegexUsage matched " formKey)
                 foundKeys[formKey] += 1
             }
         }
         if (RegexHint) {
             if (RegExMatch(form.hint,RegexHint)) {
-                logEvent(4, "RegexHint matched " formKey)
+                logEventDE(4, "RegexHint matched " formKey)
                 foundKeys[formKey] += 1
             }
         }
@@ -572,9 +576,9 @@ SaveDictionaries() {
     global index
     global BackupCount
     
-    logEvent(1, "Saving dictionaries")
+    logEventDE(1, "Saving dictionaries")
     if ( not dictionariesLoaded ) {
-        logEvent(1, "Dictionaries not yet loaded. Stopping")
+        logEventDE(1, "Dictionaries not yet loaded. Stopping")
         Msgbox, % "Please wait for all dictionaries to load"
         Return
     }
@@ -584,7 +588,7 @@ SaveDictionaries() {
     FormatTime, bakDateStamp, , yyyyMMddHH
     for dictIndex, dictionary in dictionaries {
         bakdict := dictionary . "." . bakDateStamp . ".bak"
-        logEvent(1, "Backing up " bakdict)
+        logEventDE(1, "Backing up " bakdict)
         if ( not FileExist(bakdict) ) {
             ; Msgbox, % "Backing up " dictionary " to " bakdict
             FileCopy, %dictionary%, %bakdict%
@@ -594,7 +598,7 @@ SaveDictionaries() {
     ; Removed unwanted backups
     GuiControlGet BackupCount
     for dictIndex, dictionary in dictionaries {
-        logEvent(2, "Trimming backups in " dictionary)
+        logEventDE(2, "Trimming backups in " dictionary)
         FileList := ""
         Loop, Files, %dictionary%*.bak, F  ; Include Files and Directories
             FileList .= A_LoopFileTimeModified "`t" A_LoopFileName "`n"
@@ -607,11 +611,11 @@ SaveDictionaries() {
             if (A_LoopField = "")  ; Omit the last linefeed (blank item) at the end of the list.
                 continue
             StringSplit, FileItem, A_LoopField, %A_Tab%  ; Split into two parts at the tab char.
-            logEvent(2, "The next backup from " FileItem1 " is: " FileItem2)
+            logEventDE(2, "The next backup from " FileItem1 " is: " FileItem2)
             if (BackupCount >= retainedCount) {
-                logEvent(2, "Retaining " FileItem2)
+                logEventDE(2, "Retaining " FileItem2)
             } else {
-                logEvent(2, "Deleting " FileItem2)
+                logEventDE(2, "Deleting " FileItem2)
                 FileDelete, %FileItem2%
             }
         }
@@ -659,9 +663,9 @@ SaveDictionaries() {
     
     ; Overwrite the current dictionaries with the new
     for dictIndex, dictionary in dictionaries {
-        logEvent(1, "Permanently copying " newdict)
+        logEventDE(1, "Permanently copying " newdict)
         newdict := dictionary . ".new"
-        logEvent(1, "Permanently copying " newdict " as " dictionary)
+        logEventDE(1, "Permanently copying " newdict " as " dictionary)
         FileCopy, %newdict%, %dictionary%, true
         FileDelete, %newdict%
     }
@@ -670,18 +674,18 @@ SaveDictionaries() {
     GuiControl, Disable, SaveDictionaries
 }
 
-LogEvent(verbosity, message) {
-    global logFileName
-    global logFile
-    global logVerbosity
-    if (not verbosity) or (not logVerbosity)
+logEventDE(verbosity, message) {
+    global logFileNameDE
+    global logFileDE
+    global LogVerbosityDE
+    if (not verbosity) or (not LogVerbosityDE)
         Return
     FormatTime, logDateStamp, , yyyyMMdd.HHmmss
-    if (! logFile) {
-        logFileName := "editor." . logDateStamp . ".log"
-        logFile := FileOpen("logs\" logFileName, "a")
-        logFile.Write(logDateStamp . "[0]: Log initiated`r`n")
+    if (! logFileDE) {
+        logFileNameDE := "editor." . logDateStamp . ".log"
+        logFileDE := FileOpen("logs\" logFileNameDE, "a")
+        logFileDE.Write(logDateStamp . "[0]: Log initiated`r`n")
     }
-    if (verbosity <= logVerbosity) 
-        logFile.Write(logDateStamp "[" verbosity "]: " message "`r`n")
+    if (verbosity <= LogVerbosityDE) 
+        logFileDE.Write(logDateStamp "[" verbosity "]: " message "`r`n")
 }
