@@ -7,6 +7,8 @@ SetBatchLines, -1
 SetKeyDelay, -1
 nibY := -999 ; disable GreggPad until loaded. 
 
+retrains := { "w":1, "nd":1 }
+
 logFileQG := 0
 logVerbosityQG := 4
 IfNotExist, logs
@@ -246,7 +248,11 @@ ExpandOutline(lazy, word, formal, saves, power) {
     global TypedCharacters
     global DisplayedCharacters
     global nibY
+    global retrains
     
+    if (retrains.HasKey(lazy)) {
+        Msgbox, % "Oops: " lazy
+    }
     logEventQG(3, "Expanding " lazy " into " word " saving " saves " at power " power)
     if (lastEndChar = "'") {
         logEventQG(4, "lastEndChar is '")
@@ -267,7 +273,7 @@ ExpandOutline(lazy, word, formal, saves, power) {
     }
     UpdateDashboard()
     if (nibY > -1) {
-        VisualizeForm(formal, "blue")
+        ; VisualizeForm(formal, "blue")
     }
     lastExpandedWord := word
     lastExpandedForm := lazy
@@ -368,7 +374,7 @@ CoachOutline(word, outline, hint, formal, saves, power) {
         }
     }
     if (nibY > -1) {
-        VisualizeForm(formal, "red")
+        ; VisualizeForm(formal, "red")
     }
 }
 ; Provided by Josh Grams

@@ -392,6 +392,9 @@ SelectVowelForm(preceding, vowel, following) {
 }
 
 AdvanceNib(path) {
+    global FoundPos
+    global Matches
+    
     LogEventGP(4, "Advancing nib column-wise per " path)
     subPaths := StrSplit(path, StrSplit("c,l", ","))
     advance := 1
