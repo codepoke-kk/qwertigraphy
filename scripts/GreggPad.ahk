@@ -193,7 +193,7 @@ LogEventGP(4, "order: " keysString)
 vowels := "aeoiuAEIOU"
 LogEventGP(4, "Initial path: " padPages[padPages.Max_Index])
 
-VisualizeForm("stat", "red")
+VisualizeForm("s-t-a-t", "red")
 return
 
 GreggPadGuiClose:

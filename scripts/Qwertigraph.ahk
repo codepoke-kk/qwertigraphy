@@ -7,7 +7,7 @@ SetBatchLines, -1
 SetKeyDelay, -1
 nibY := -999 ; disable GreggPad until loaded. 
 
-retrains := { "w":1, "nd":1 }
+;retrains := { "w":1, "nd":1 }
 
 logFileQG := 0
 logVerbosityQG := 4
@@ -43,6 +43,14 @@ Loop,Read,%negationsFile%   ;read negations
 {
     logEventQG(4, "Loading negation " A_LoopReadLine)
     negations.item(A_LoopReadLine) := 1
+}
+retrainsFile := "retrains.txt"
+logEventQG(1, "Loading retrains from " retrainsFile)
+retrains := {}
+Loop,Read,%retrainsFile%   ;read retrains
+{
+    logEventQG(4, "Loading retrain " A_LoopReadLine)
+    retrains[A_LoopReadLine] := 1
 }
             
 words := CSobj()
@@ -374,7 +382,7 @@ CoachOutline(word, outline, hint, formal, saves, power) {
         }
     }
     if (nibY > -1) {
-        ; VisualizeForm(formal, "red")
+        VisualizeForm(formal, "red")
     }
 }
 ; Provided by Josh Grams
