@@ -72,6 +72,10 @@ DisplayedCharacters := 0
 MissedCharacters := 0
 expectedForms := 40000
 NumLines := 0
+Coaching := true
+Retraining := true
+Gregging := true
+Qwerting := false 
 
 LaunchCoach()
 
@@ -169,6 +173,8 @@ logEventQG(1, duplicateLazyOutlineCount " duplicate outlines: " duplicateLazyOut
 FileAppend duplicateLazyOutlineCount%duplicateLazyOutlineCount% , duplicateLazyOutlines.txt
 FileAppend %duplicateLazyOutlines%, duplicateLazyOutlines.txt
 
+
+
 #Include GreggPad.ahk
 ; Load personal.ahk only after all other code has run
 ; And before loading any Qwertigraphy native briefs
@@ -256,10 +262,13 @@ ExpandOutline(lazy, word, formal, saves, power) {
     global TypedCharacters
     global DisplayedCharacters
     global nibY
+    global Retraining
     global retrains
     
-    if (retrains.HasKey(lazy)) {
-        Msgbox, % "Oops: " lazy
+    if (Retraining) {
+        if (retrains.HasKey(lazy)) {
+            Msgbox, % "Oops: " lazy
+        }
     }
     logEventQG(3, "Expanding " lazy " into " word " saving " saves " at power " power)
     if (lastEndChar = "'") {
@@ -281,7 +290,7 @@ ExpandOutline(lazy, word, formal, saves, power) {
     }
     UpdateDashboard()
     if (nibY > -1) {
-        ; VisualizeForm(formal, "blue")
+        VisualizeForm(formal, "blue")
     }
     lastExpandedWord := word
     lastExpandedForm := lazy
@@ -307,6 +316,10 @@ LaunchCoach() {
     global ActiveTipText
     global Opportunities
     global LoadProgress
+    global Coaching
+    global Retraining
+    global Gregging
+    global Qwerting
     ; Define here so each launch refreshes the list
     Opportunities := {}
     
@@ -323,8 +336,33 @@ LaunchCoach() {
     Gui,Qwertigraph:Add,Text,vAcruedTipText w200 h500, Shorthand Coach
     Gui,Qwertigraph:Add,Text,vActiveTipText r1 w200, Last word not shortened
     Gui,Qwertigraph:Add, Progress, h5 cOlive vLoadProgress, 1
-    Gui,Qwertigraph:Add,Picture, w70 h-1 x170 y5, coach.png
+    Gui,Qwertigraph:Add,Checkbox,x170 y5 h20 w70 gCoachingSub Checked,Coach
+    Gui,Qwertigraph:Add,Checkbox,x170 y25 h20 w70 gRetrainingSub Checked,Retrain
+    Gui,Qwertigraph:Add,Checkbox,x170 y45 h20 w70 gGreggingSub Checked,Gregg
+    Gui,Qwertigraph:Add,Checkbox,x170 y65 h20 w70 gQwertingSub,Qwerthand
     Gui,Qwertigraph:Show,w250 h656 x%vWidth% y%vHeight%, Shorthand Coach
+}
+
+; OK. I know a checkbox should set a variable and I should not have to do this. I could not make it work. 
+CoachingSub() {
+    global Coaching 
+    Coaching := (! Coaching)
+    ; Msgbox, % "Coach " Coaching
+}
+RetrainingSub() {
+    global Retraining 
+    Retraining := (! Retraining)
+    ; Msgbox, % "Retrain " Retraining
+}
+GreggingSub() {
+    global Gregging 
+    Gregging := (! Gregging)
+    ; Msgbox, % "Gregg " Gregging
+}
+QwertingSub() {
+    global Qwerting 
+    Qwerting := (! Qwerting)
+    ; Msgbox, % "Qwert " Qwerting
 }
 
 UpdateDashboard() {
@@ -371,8 +409,14 @@ ListOpportunities(opps) {
   return Trim(summaries, "`n")
 }
 CoachOutline(word, outline, hint, formal, saves, power) {
+    global Coaching
     global coachingLevel
     global nibY
+    
+    if (! Coaching) {
+        Return
+    }
+        
     AddOpportunity(hint,saves)
     if (coachingLevel > 1) {
         FlashHint(hint)

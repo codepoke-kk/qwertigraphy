@@ -81,7 +81,6 @@ a-b-s-tm-u-s  abstemious
 a-b-s-tn      abstain
 a-b-th        about the
 a-b-v         above
-a-b-u         above (1916)
 a-ch-b-e-sh (a2)  archbishop
 a-ch-d-ch-e (a2)  archduchy
 a-ch-e-e (a2, e2)  archery
@@ -110,7 +109,7 @@ a-d-p/t       adopted
 a-d-r         address
 a-d-r/t       addressed
 a-d-r-o-e     adroit
-a-d-s         adds, adz, aidsabo
+a-d-s         adds, adz, aids
 a-d-sh        addition
 a-d-sh-ya     additionally
 a-d-s-o-p-sh  adsorption
@@ -5235,7 +5234,7 @@ nt-e-x        index
 nt-e-xs       indexes
 n-th          in the
 n-th-mn-h     in the morning
-n-th-s        in this
+n-ths        in this
 n-th-u-s      enthusiasm
 n-th-u-s/s-t  enthusiastic
 n-th-u-s-t    enthusiast
@@ -5676,7 +5675,7 @@ o-th-r        author
 o-th-r-df (r-df blended)  authoritative
 o-th-r-i-s    authorize
 o-th-r-i-s-d  authorized
-o-th-s        of this
+o-ths        of this
 o-tm          autumn, odium
 o-tm/a        automatic
 o-tm-a-tn     automaton
@@ -7049,7 +7048,7 @@ th-a-s        that is
 th-a-s-s-a    that is to say
 th-a-th       that the
 th-a-th-e     that they
-th-a-th-s     that this
+th-a-ths     that this
 th-a-u        thousand
 th-b (th2)    thereby
 th-e (th1)    they
@@ -7101,10 +7100,10 @@ th-r-u        threw, through
 th-r-u-t      throughout
 th-r-u-th (th2, th1)  through the
 th-s          those
-th-s (s1)     this
+ths          this
 th-s (th2)    there is
 th-s-nt (th2-s2)  there is not
-th-s-s        this is
+ths-s        this is
 th-t-u (th2)  thereto
 th-u          thank you
 th-u-f        thank you for
@@ -7360,7 +7359,7 @@ t-u-s-m-e-s   to some extent
 t-u-t-a-k     to take
 t-u-th        to the, tooth
 t-u-th-e-mn-th-s (th2, th1)  two or three months
-t-u-th-s      to this
+t-u-ths      to this
 t-u-u         to you
 t-w-i-s       twice
 t-x           Texas, text

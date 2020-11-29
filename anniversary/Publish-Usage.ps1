@@ -1,5 +1,5 @@
-$formalLines = Import-Csv -Path "$PsScriptRoot\anniversary_formals.csv"
-"Loaded $($formalLines.get_count()) formal anniversary words"
+$formalLines = Import-Csv -Path "$PsScriptRoot\anniversary_refined.csv"
+"Loaded $($formalLines.get_count()) refined anniversary words"
 
 $usageWords = . "$PsScriptRoot\Read-UsageRanking.ps1"
 

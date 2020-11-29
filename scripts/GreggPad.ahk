@@ -4,8 +4,11 @@
 #NoEnv
 SetWorkingDir %A_ScriptDir% 
 
+padPageFile := "greggpad.html"
+Gregging := True
+
 logFileGP := ""
-logVerbosityGP := 4
+logVerbosityGP := 2
 IfNotExist, logs
     FileCreateDir, logs
 
@@ -16,16 +19,17 @@ LogEventGP(3, "pretty verbose")
 LogEventGP(4, "very verbose")
 
 padPages := []
-padPages[padPages.Max_Index] := "<path d="" M 29,50 l 1,0"" fill=""none"" stroke=""white"" stroke-width=""2"" />"
+padPagesIndex := 0
+padPages[padPagesIndex] := "<path d="" M 29,50 l 1,0"" fill=""none"" stroke=""white"" stroke-width=""2"" />"
 pageWidth := 500
 guiWidth := .7 * pageWidth
 pageHeight := 800
 guiHeight := .7 * pageHeight
 lineWidth := pageWidth -50
 horizontalSpacing := 20
-verticalSpacing := 50
-nibX := 30
-nibY := 50
+verticalSpacing := 70
+nibX := horizontalSpacing
+nibY := verticalSpacing
 
 padPageHeader = ;continuation section
 (
@@ -34,7 +38,7 @@ padPageHeader = ;continuation section
 <html>
 <body>
 
-<svg height="100" width="100">  
+<svg id="GreggPad" height="100" width="100">  
 )
 
 padPageFooter =     
@@ -59,10 +63,13 @@ Loop {
 }
 
 ;display inline svg
-Gui, GreggPad:Add, ActiveX, x0 y0 w%guiWidth% h%guiHeight% voWB, shell explorer
+Gui, GreggPad:Add, ActiveX, x0 y0 w%guiWidth% h%guiHeight% voWB, internet.explorer
 Gui, GreggPad:Show, , Gregg Pad
 
 oWB.Navigate("about:blank")
+oWB.document.write(padPageHeader)
+oWB.document.write(padPageFooter)
+oWB.Refresh()
 
 ; nibY:  l dx,dy
 ; arc:   a rx,ry x-axis-rotation large-arc-flag,sweep-flag dx,dy
@@ -70,130 +77,39 @@ oWB.Navigate("about:blank")
 
 strokes := ComObjCreate("Scripting.Dictionary")
 vowelStrokes := ComObjCreate("Scripting.Dictionary")
-
-; Consonants
-strokes.item("n") := "l 15,0"
-strokes.item("m") := "l 36,0"
-strokes.item("t") := "l 12,-6"
-strokes.item("d") := "l 30,-15"
-strokes.item("ng") := "l 12,6"
-strokes.item("nk") := "l 30,15"
-strokes.item("z") := "l -3,8"
-strokes.item("c") := "l -6,20"
-strokes.item("j") := "l -8,36"
-strokes.item("h") := "m 5,5 c 3,0 0,3 0,0"
-strokes.item("H") := "m 0,-15 c 3,0 0,3 0,0 m 0,15"
-strokes.item("k") := "c 4,-4 21,-9 15,0"
-strokes.item("g") := "c 4,-4 45,-12 36,0"
-strokes.item("G") := "m -2,10 c 4,-4 45,-12 36,0"
-strokes.item("r") := "c -9,9 11,4 15,0"
-strokes.item("l") := "c -9,12 28,4 36,0"
-strokes.item("s") := "c -4,0 -9,6 -4,8"
-strokes.item("p") := "c -4,0 -20,13 -10,20"
-strokes.item("b") := "c -4,0 -36,24 -18,36"
-strokes.item("S") := "c 4,0 4,2 -4,8"
-strokes.item("f") := "c 4,0 12,5 -10,20"
-strokes.item("v") := "c 4,0 20,8 -18,36"
-strokes.item("th") := "c 3,-6 3,-6 18,-12"
-strokes.item("TH") := "c 12,-3 17,-4 18,-12"
-strokes.item("nt") := "c 8,0 18,0 24,-16"
-strokes.item("nd") := "c 8,0 18,0 24,-16"
-strokes.item("mt") := "c 12,0 24,0 36,-20"
-strokes.item("md") := "c 12,0 24,0 36,-20"
-strokes.item("tn") := "c 0,-4 0,-12 24,-16"
-strokes.item("dn") := "c 0,-4 0,-12 24,-16"
-strokes.item("tm") := "c 0,-2 0,-20 36,-20"
-strokes.item("dm") := "c 0,-2 0,-20 36,-20"
-strokes.item("tv") := "c -5,-35 60,-55 10,3"
-strokes.item("df") := "c -5,-35 60,-55 10,3"
-strokes.item("dv") := "c -5,-35 60,-55 10,3"
-strokes.item("ntv") := "l 15,0 c -5,-35 60,-55 10,3"
-strokes.item("ndf") := "l 15,0 c -5,-35 60,-55 10,3"
-strokes.item("ndv") := "l 15,0 c -5,-35 60,-55 10,3"
-strokes.item("jnt") := "c -60,55 15,40 10,3"
-strokes.item("jnd") := "c -60,55 15,40 10,3"
-strokes.item("pnt") := "c -60,55 15,40 10,3"
-strokes.item("pnd") := "c -60,55 15,40 10,3"
-strokes.item("ld") := "c -9,12 48,8 36,-8"
-strokes.item("dt") := "l 42,-21"
-strokes.item("td") := "l 42,-21"
-strokes.item("ss") := "c -4,0 -9,6 -4,8 s 1,4 -4,8"
-strokes.item("i") := ""
-strokes.item("a") := ""
-strokes.item("e") := ""
-strokes.item("o") := ""
-strokes.item("u") := ""
-strokes.item("I") := ""
-strokes.item("A") := ""
-strokes.item("E") := ""
-strokes.item("O") := ""
-strokes.item("U") := ""
-
-; A
-vowelStrokes.item("aDC")  := "c 2,-36 -24,9 0,2" ; 
-vowelStrokes.item("aDK")  := "c 4,-36 24,9 0,2" ; 
-vowelStrokes.item("aFC")  := "c -27,-16 -5,16 1,2" ; 
-;vowelStrokes.item("aFD")  := "c 2,-36 24,9 0,2" ; 
-vowelStrokes.item("aFK")  := "c -20,-24 24,0 1,2" ; 
-vowelStrokes.item("aLC")  := "c -36,4 9,16 2,0"   ; 
-vowelStrokes.item("aLK")  := "c -36,-4 9,-16 2,0"   ; 
-vowelStrokes.item("aNDC") := "c -4,36 -36,36 0,2" ; 
-vowelStrokes.item("aNUC") := "c -10,30 -48,30 0,2" ; 
-vowelStrokes.item("aNUK") := "c 36,-20 8,-20 0,-2" ; 
-vowelStrokes.item("aUC")  := "c -27,16 16,9 2,-1"  ; 
-vowelStrokes.item("aUK")  := "c -30,16 2,-20 2,-1"  ;
-; I
-vowelStrokes.item("iDC")  := vowelStrokes.item("aDC")  " l -6,-6 l 6,6" ; 
-vowelStrokes.item("iDK")  := vowelStrokes.item("aDK")  " l 6,-6 l -6,6" ; 
-vowelStrokes.item("iFC")  := vowelStrokes.item("aFC")  " l -8,-1 l 8,1" ; 
-;vowelStrokes.item("iFD")  := vowelStrokes.item("aFD")  "c 2,-36 24,9 0,2" ; 
-vowelStrokes.item("iFK")  := vowelStrokes.item("aFK")  " l 2,-6 l -2,6" ; 
-vowelStrokes.item("iLC")  := vowelStrokes.item("aLC")  " l -6,6 l 6,-6"   ; 
-vowelStrokes.item("iLK")  := vowelStrokes.item("aLK")  " l -6,-6 l 6,6"   ; 
-vowelStrokes.item("iNDC") := vowelStrokes.item("aNDC") " l -8,12 l ,-12" ; 
-vowelStrokes.item("iNUC") := vowelStrokes.item("aNUC") " l -9,9 l 9,-9" ; 
-vowelStrokes.item("iNUK") := vowelStrokes.item("aNUK") " l 9,-6 l -9,6" ; 
-vowelStrokes.item("iUC")  := vowelStrokes.item("aUC")  " l -3,6 l 3,-6"  ; 
-vowelStrokes.item("iUK")  := vowelStrokes.item("aUK")  " l -8,0 l 8,0"  ;
-; E
-vowelStrokes.item("eDC") := "c 2,-12 -12,3 0,2" ; 
-vowelStrokes.item("eDK") := "c 4,-12 12,3 0,2" ; 
-vowelStrokes.item("eFC") := "c -12,0 0,8 1,2" ; 
-vowelStrokes.item("eFD") := "c 2,-12 24,3 0,2" ; 
-vowelStrokes.item("eFK") := "c 5,-8 8,8 1,2" ; 
-vowelStrokes.item("eLC") := "c -12,4 3,9 2,0"   ; 
-vowelStrokes.item("eLK") := "c -12,-4 3,-9 2,0"   ; 
-vowelStrokes.item("eNDC") := "c -12,9 0,12 0,2" ; 
-vowelStrokes.item("eNUC") := "c -16,10 -5,10 0,2" ; 
-vowelStrokes.item("eNUK") := "c 0,-12 12,-6 0,-2" ; 
-vowelStrokes.item("eUC") := "c -14,5 16,5 2,-1"  ; 
-vowelStrokes.item("eUK") := "c -14,-5 2,-7 2,-1"  ;
-; O
-vowelStrokes.item("oP") := "c 0,8 6,8 6,0" ; 
-vowelStrokes.item("oS") := "c -8,0 -8,6 0,6" ; 
-; U
-vowelStrokes.item("uB") := "c 0,-8 6,-8 6,0" ; 
-vowelStrokes.item("uT") := "c 8,0 8,6 0,6" ; 
-
+#Include strokes.ahk
 keysArray := strokes.keys
-keysString := ""
-For key in keysArray {
-    keysString := keysString . key . ","
-}
-keysString := Trim(keysString, OmitChars := ",")
-Sort, keysString, D, F StrokeKeysSort
 
-StrokeKeysSort(a1, a2)
-{
-    ; Sort by length of key, then alphabetically like normal
-    return StrLen(a1) < StrLen(a2) ? 1 : StrLen(a1) > StrLen(a2) ? -1 : a1 > a2 ? 1 : a1 < a2 ? -1 : 0
-}
-LogEventGP(4, "order: " keysString)
+vowels := "-a-e-o-i-u-"
+LogEventGP(4, "Initial path: " padPages[padPagesIndex])
 
-vowels := "aeoiuAEIOU"
-LogEventGP(4, "Initial path: " padPages[padPages.Max_Index])
-
-VisualizeForm("s-t-a-t", "red")
+; Uniquely shaped consonants: b,v,d,m,g,l,j
+; Uniquely shaped blends: dm, md, dv, jnd 
+VisualizeForm("b-a", "red")
+VisualizeForm("v-a", "red")
+VisualizeForm("d-a", "red")
+VisualizeForm("m-a", "red")
+VisualizeForm("g-a", "red")
+VisualizeForm("l-a", "red")
+VisualizeForm("j-a", "red")
+VisualizeForm("dm-a", "red")
+VisualizeForm("md-a", "red")
+VisualizeForm("df-a-s2", "red")
+VisualizeForm("b-a2", "red")
+VisualizeForm("v-a2", "red")
+VisualizeForm("d-a2", "red")
+VisualizeForm("m-a2", "red")
+VisualizeForm("g-a2", "red")
+VisualizeForm("l-a2", "red")
+VisualizeForm("j-a2", "red")
+VisualizeForm("dm-a2", "red")
+VisualizeForm("md-a2", "red")
+VisualizeForm("df-a2-s2", "red")
+VisualizeForm("s", "red")
+VisualizeForm("ths", "red")
+VisualizeForm("s2-t-a2-t-s", "red")
+VisualizeForm("^-h-\-a-p-n-s", "red")
+VisualizeForm("p-t", "red")
 return
 
 GreggPadGuiClose:
@@ -201,12 +117,14 @@ GreggPadGuiClose:
     ExitApp
 
 VisualizeForm(form, pen) {
+    Global Gregging
     global oWB
     global strokes
     global vowelStrokes
     global keysString
     global key
     global padPages
+    global padPagesIndex
     global padPageHeader
     global padPageFooter
     global padPageBackground
@@ -215,180 +133,144 @@ VisualizeForm(form, pen) {
     global horizontalSpacing
     global verticalSpacing
     global lineWidth
+    global pageHeight
     global vowels
+    global padPageFile
     
-    LogEventGP(4, "Visualing form " form)
+    if (! Gregging) {
+        return
+    }
+    
+    LogEventGP(2, "Visualing form " form)
+    
+    formStrokes := StrSplit(form, "-")
     
     ; thisForm will hold the finished Shorthand form 
-    thisForm := "<path d=""m " nibX "," nibY " "
+    thisForm := "<!-- encoding " form " --><path d=""M " nibX "," nibY " "
     preceding := ""
-    ; Loop until the code breaks out after representing the last stroke
-    Loop {  
-        startLength := StrLen(form)
-        ; Loop across all defined strokes, looking for one with which the form begins 
-        for gpindex, key in StrSplit(keysString, ",") { 
-            LogEventGP(4, "Working ^" key " with " strokes.item(key))
-            newForm := RegExReplace(form, "^" key, Replacement := "")
-            if (newForm != form) {
-                LogEventGP(4, "Found " key " leaving " newForm)
-                
-                ; modify vowels based upon the preceding and following characters
-                if (RegexMatch(vowels, key)) {
-                    following := SubStr(newForm, 1, 1)
-                    LogEventGP(4, "Found vowel as " preceding "." key "." following)
-                    vowelKey := SelectVowelForm(preceding, key, following)
-                    thisPath := vowelStrokes.item(vowelKey)
-                    LogEventGP(4, "Adding " thisPath " ")
-                } else {
-                    LogEventGP(4, "Adding " strokes.item(key) " ")
-                    thisPath := strokes.item(key) " "
-                }
-                
-                ; Check for empty thisPath 
-                LogEventGP(4, "thisPath is " StrLen(thisPath) " characters long")
-                if (StrLen(thisPath) == 0) {
-                    LogEventGP(4, "Filling empty thisPath")
-                    thisPath := FillMissingCharacter()
-                }
-                thisForm := thisForm . thisPath " "
-                nibX += AdvanceNib(thisPath)
-                form := newForm
-                preceding := key
-                break
-            } else {
-                LogEventGP(4, "Did not find " key)
-            }
-        }
+    for fsindex, formStroke in formStrokes { 
+        LogEventGP(4, "Working formStroke " formStroke)
         
-        ; We broke out. Handle the found stroke, then keep looping for the next 
-        if (startLength != StrLen(form)) {
-            ; The form key is shorter, so we found something 
-            LogEventGP(4, "Identified something. Continuing")
-            if (! StrLen(form)) {
-                LogEventGP(4, "Form fully parsed")
-                break
-            }
+        ; modify vowels based upon the preceding and following characters
+        if (InStr("a,a2,e,e2,i,i2,o,o2,u,u2", formStroke)) {
+            following := formStrokes[(fsindex + 1)]
+            LogEventGP(2, "Found vowel as " preceding "-" formStroke "-" following)
+            vowelKey := SelectVowelForm(preceding, formStroke, following)
+            thisPath := vowelStrokes.item(vowelKey)
+            LogEventGP(4, "Adding " thisPath " ")
         } else {
-            ; The form key is the same length, so we hit an undefined character 
-            LogEventGP(1, "Unidentified character in form: " form)
-            ; Msgbox, % "Unidentified character in form: " form
-            ;thisPath := fill=""none"" stroke=""" pen """ stroke-width=""2"" />"
-            ;thisForm := thisForm . thisPath " "
-            ;nibX += AdvanceNib(thisPath)
-            ;preceding := key
-            break
+            LogEventGP(4, "Adding " strokes.item(formStroke) " ")
+            thisPath := strokes.item(formStroke)
         }
+            
+        ; Check for empty thisPath 
+        LogEventGP(4, "thisPath is " StrLen(thisPath) " characters long")
+        if (StrLen(thisPath) <= 1) {
+            LogEventGP(2, "Unable to visualize " formStroke " in " form)
+            thisPath := FillMissingCharacter()
+        }
+        thisForm := thisForm . thisPath " "
+        nibX += AdvanceNib(thisPath)
+        preceding := formStroke
     }
-    thisForm := thisForm . """ fill=""none"" stroke=""" pen """ stroke-width=""2"" />"
+    thisForm := thisForm . """ fill=""none"" stroke=""" pen """ stroke-width=""2"" />`n"
     nibX += horizontalSpacing
     if (nibX > lineWidth) {
         nibX := horizontalSpacing
         nibY += verticalSpacing
     }
     
-    padPages[padPages.Max_Index] := padPages[padPages.Max_Index] . thisForm
-    LogEventGP(2, "Final path: " padPages[padPages.Max_Index])
+    LogEventGP(4, "Adding thisForm to page " padPagesIndex ": " thisForm)
+    padPages[padPagesIndex] := padPages[padPagesIndex] . thisForm
+    LogEventGP(2, "Final path: " padPages[padPagesIndex])
     
-    fullLine := padPages[padPages.Max_Index]
+    fullLine := padPages[padPagesIndex]
     padPageContent = %padPageHeader%%padPageBackground%%fullline%%padPageFooter%
+    
+    FileDelete, %padPageFile%
+    FileAppend, %padPageContent%, %padPageFile%
 
     LogEventGP(4, "Final pad page " padPageContent)
-    oWB.document.write(padPageContent)
-    oWB.Refresh()
-    ;Gui, GreggPad:Show, AutoSize Center
+    oWB.Navigate(A_ScriptDir "/" padPageFile)
+    
+    ; Only now if we need a new page, turn it
+    if (nibY > pageHeight) {
+        nibY := verticalSpacing
+        padPagesIndex += 1
+        padPages[padPagesIndex] := "<path d="" M 29,50 l 1,0"" fill=""none"" stroke=""white"" stroke-width=""2"" />"
+        ; Msgbox, % "We need a new page and now max index is " padPagesIndex
+    }
 }
 
 SelectVowelForm(preceding, vowel, following) {
     global strokes
     global vowelStrokes
     
-    series := SubStr(preceding, 0, 1) . vowel . SubStr(following, 1, 1) 
-    LogEventGP(3, "Choosing vowel based upon " preceding "." vowel "." following " as " series)
+    LogEventGP(2, "Choosing vowel based upon " preceding "." vowel "." following)
     
-    
-    ; Taken markers: ULFDNCKPSBT
-    ; All consonants: spbSfvtdnmkgrlzcj
+    ; Uniquely shaped consonants: b,v,d,m,g,l,j
+    ; Uniquely shaped blends: dm, md, dv, jnd 
     ; All vowels: aeiou
-    
-    
-    ; AEI
-    ; Direction
-    upward := "(^[tdSfv][aieAEI])|(^[aieAEI][td])"
-    level := "(^[hnmrgkl][aieAEI])|(^[aieAEI][hnmrgkl])"
-    falling := "(^(([spb][aieAEI])|ng|nk))|(^[aieAEI][spbfv])"
-    down := "(^[zcj][aieAEI])|(^[aieAEI][zcj])"
-    ; Shape
-    narrow := "([zcjSfv][aieAEI][td])|[td][aieAEI][zcj]"
-    clockwise := "((^[Sfvkg][aeiAEI])|(^[aeiAEI][Sfvkgtdnmzcj])|([spb][aeiAEI][tdnmkg])|([td][aeiAEI][td])|([nm][aeiAEI][tdnmkg])|([zcj][aeiAEI][Sfvtdnmkgzcj]))"
-    kounterclockwise := "((^[rl])|(^[aeiAEI][spbrl])|([spb][aeiAEI][spbSfvrl])|([tdnm][aeiAEI][spbSfvnmrlzcj])|([zcj][aeiAEI][spbrl]))"
-    reverser := "[AEI]"
-    
-    ; O
-    puddle := "([oO][spbSfvtdkgzcj])|([spbSfvzcj][oO][nmrl])"
-    spill := "([^spbSfvzcj][oO][nmrl])"
-    
-    ; U
-    bump := "([spbSfvtdrlzcj][uU])|([kg][uU][^rl])"
-    trap := "([nm][uU])|([kg][uU][rl])"
-    
-    
-    StringLower, selection, vowel
-    
-    if (RegexMatch(series, narrow)) {
-        selection := selection "N"
+    if (InStr(",<,^,>,\,/,", "," preceding ",")) {
+        preceding := ""
+    } else if (InStr(",s,p,b,", "," preceding ",")) {
+        preceding := "b"
+    } else if (InStr(",s2,f,v,", "," preceding ",")) {
+        preceding := "v"
+    } else if (InStr(",t,d,", "," preceding ",")) {
+        preceding := "d"
+    } else if (InStr(",n,m,nm,mn,", "," preceding ",")) {
+        preceding := "m"
+    } else if (InStr(",k,g,", "," preceding ",")) {
+        preceding := "g"
+    } else if (InStr(",r,l,pr,br,pl,bl,", "," preceding ",")) {
+        preceding := "l"
+    } else if (InStr(",z,c,j,", "," preceding ",")) {
+        preceding := "j"
+    } else if (InStr(",tn,tm,dn,dm,", "," preceding ",")) {
+        preceding := "m"
+    } else if (InStr(",nt,mt,nd,md,", "," preceding ",")) {
+        preceding := "d"
+    } else if (InStr(",tf,df,df,dv,", "," preceding ",")) {
+        preceding := "v"
+    } else if (InStr(",jnd,jnt,", "," preceding ",")) {
+        preceding := "jnd"
+    }
+    if (InStr(",<,^,>,\,/,", "," following ",")) {
+        following := ""
+    } else if (InStr(",s,p,b,", "," following ",")) {
+        following := "b"
+    } else if (InStr(",s2,f,v,", "," following ",")) {
+        following := "v"
+    } else if (InStr(",t,d,", "," following ",")) {
+        following := "d"
+    } else if (InStr(",n,m,nm,mn,", "," following ",")) {
+        following := "m"
+    } else if (InStr(",k,g,", "," following ",")) {
+        following := "g"
+    } else if (InStr(",r,l,pr,br,pl,bl,", "," following ",")) {
+        following := "l"
+    } else if (InStr(",z,c,j,", "," following ",")) {
+        following := "j"
+    } else if (InStr(",tn,tm,dn,dm,", "," following ",")) {
+        following := "d"
+    } else if (InStr(",nt,mt,nd,md,", "," following ",")) {
+        following := "m"
+    } else if (InStr(",tf,df,df,dv,", "," following ",")) {
+        following := "d"
+    } else if (InStr(",jnd,jnt,", "," following ",")) {
+        following := "jnd"
     }
     
-    if (RegexMatch(series, upward)) {
-        selection := selection "U"
-    } else if (RegexMatch(series, level)) {
-        selection := selection "L"
-    } else if (RegexMatch(series, falling)) {
-        selection := selection "F"
-    } else if (RegexMatch(series, down)) {
-        selection := selection "D"
-    } else {
-        LogEventGP(4, "Picking direction failed with no match on """ series """")
+    series := preceding . vowel . following
+    LogEventGP(2, "Transformed vowel selection to " series)
+    
+    
+    if (! vowelStrokes.item(series)) {
+        LogEventGP(1, "Need to create vowel stroke for """ series """")
     }
     
-    if (RegexMatch(series, clockwise)) {
-        if (! RegexMatch(series, reverser)) {
-            selection := selection "C"
-        } else {
-            selection := selection "K"
-        }
-    } else if (RegexMatch(series, kounterclockwise)) {
-        if (! RegexMatch(series, reverser)) {
-            selection := selection "K"
-        } else {
-            selection := selection "C"
-        }
-    } else {
-        LogEventGP(4, "Picking rotation failed with no match on """ series """")
-    }
-    
-    if (RegexMatch(series, puddle)) {
-        selection := selection "P"
-    } else if (RegexMatch(series, spill)) {
-        selection := selection "S"
-    } else {
-        LogEventGP(4, "Picking puddle/spill failed with no match on """ series """")
-    }
-    
-    if (RegexMatch(series, bump)) {
-        selection := selection "B"
-    } else if (RegexMatch(series, trap)) {
-        selection := selection "T"
-    } else {
-        LogEventGP(4, "Picking bump/trap failed with no match on """ series """")
-    }
-    
-    if (! vowelStrokes.item(selection)) {
-        LogEventGP(1, "Need to create vowel stroke for """ series """  selects """ selection """")
-        ; Msgbox, % "Need to create vowel for " selection
-    }
-    
-    LogEventGP(3, "Chose " selection)
-    Return selection
+    Return series
 }
 
 AdvanceNib(path) {
@@ -403,9 +285,9 @@ AdvanceNib(path) {
         FoundPos := RegExMatch(subPath, "O)(-?\d+),-?\d+ ?$" , Matches)
         deltaX := Abs(Matches[1] + 0)
         advance += deltaX
-        LogEventGP(2, "Advance nib " deltaX " pixels and total of " advance " for subpath " subpath)
+        LogEventGP(3, "Advance nib " deltaX " pixels and total of " advance " for subpath " subpath)
     }
-    LogEventGP(2, "Total advance of nib " advance " pixels for path " path)
+    LogEventGP(3, "Total advance of nib " advance " pixels for path " path)
     Return advance
 }
 
@@ -421,7 +303,7 @@ LogEventGP(verbosity, message) {
         Return
     FormatTime, logDateStamp, , yyyyMMdd.HHmmss
     if (! logFileGP) {
-        logFileGPName := "coach." . logDateStamp . ".log"
+        logFileGPName := "GreggPad." . logDateStamp . ".log"
         logFileGP := FileOpen("logs\" logFileGPName, "a")
         logFileGP.Write(logDateStamp . "[0]: Log initiated`r`n")
     }

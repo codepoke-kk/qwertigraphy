@@ -7740,5 +7740,3 @@ ye-r          year
 ye-r-e        yearly
 ye-r-s-g      years ago
 ye-t          yet
-Reverse_Dict.txt
-Displaying Reverse_Dict.txt.

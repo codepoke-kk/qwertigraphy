@@ -1,4 +1,6 @@
+& "$PsScriptRoot\Publish-RawFromSource.ps1"
 & "$PsScriptRoot\Publish-Formal.ps1"
+& "$PsScriptRoot\Publish-Refined.ps1"
 & "$PsScriptRoot\Publish-Usage.ps1"
 & "$PsScriptRoot\Publish-Lazy.ps1"
 & "$PsScriptRoot\Publish-KeyedLazy.ps1"
