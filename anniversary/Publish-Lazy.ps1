@@ -25,6 +25,10 @@ Function Convert-FormalToLazy {
     }
     $formal = $formal -replace '\W', ''
     $formal = $formal -replace '\d', ''
+    # Straight hacks
+    if ($word -match '^think') {
+        $formal = $formal -replace '^hg', 'hh'
+    }
     $formal
 }
 

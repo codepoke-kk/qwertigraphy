@@ -22,9 +22,9 @@ padPages := []
 padPagesIndex := 0
 padPages[padPagesIndex] := "<path d="" M 29,50 l 1,0"" fill=""none"" stroke=""white"" stroke-width=""2"" />"
 pageWidth := 500
-guiWidth := .7 * pageWidth
+guiWidth := pageWidth
 pageHeight := 800
-guiHeight := .7 * pageHeight
+guiHeight := pageHeight
 lineWidth := pageWidth -50
 horizontalSpacing := 20
 verticalSpacing := 70
@@ -63,6 +63,8 @@ Loop {
 }
 
 ;display inline svg
+Gui GreggPad:Default
+Gui, -dpiscale +Resize
 Gui, GreggPad:Add, ActiveX, x0 y0 w%guiWidth% h%guiHeight% voWB, internet.explorer
 Gui, GreggPad:Show, , Gregg Pad
 
