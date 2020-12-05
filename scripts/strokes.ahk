@@ -188,7 +188,7 @@ vowelStrokes.item("mo2")  := vowelStrokes.item("bo2")
 vowelStrokes.item("do2")  := vowelStrokes.item("bo2")
 vowelStrokes.item("tho2")  := vowelStrokes.item("bo")
 ; U
-vowelStrokes.item("bu") := "c 0,-8 6,-8 6,0" ; 
+vowelStrokes.item("bu") := "c 1,-10 17,-10 10,0" ; 
 vowelStrokes.item("vu")  := vowelStrokes.item("bu")
 vowelStrokes.item("gu")  := vowelStrokes.item("bu")
 vowelStrokes.item("ju")  := vowelStrokes.item("bu")

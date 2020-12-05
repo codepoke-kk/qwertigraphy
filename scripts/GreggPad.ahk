@@ -87,7 +87,7 @@ LogEventGP(4, "Initial path: " padPages[padPagesIndex])
 
 ; Uniquely shaped consonants: b,v,d,m,g,l,j
 ; Uniquely shaped blends: dm, md, dv, jnd 
-VisualizeForm("b-u", "red")
+VisualizeForm("df-u-s2", "red")
 VisualizeForm("v-u", "red")
 VisualizeForm("d-u", "red")
 VisualizeForm("m-u", "red")
@@ -266,7 +266,13 @@ SelectVowelForm(preceding, vowel, following) {
     
     
     if (! vowelStrokes.item(series)) {
-        LogEventGP(1, "Need to create vowel stroke for """ series """")
+        series := preceding . vowel 
+        if (! vowelStrokes.item(series)) {
+            series := vowel
+            if (! vowelStrokes.item(series)) {
+                LogEventGP(1, "Need to create vowel stroke for """ series """")
+            }
+        }
     }
     
     Return series
