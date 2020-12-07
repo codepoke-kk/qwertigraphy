@@ -27,15 +27,6 @@ Function Convert-FormalToLazy {
     if ($word -imatch '^i$') {
         $formal = 'ik1'
     }
-    # PR, PL
-    $formal = $formal -replace 'pr', 'pr'
-    $formal = $formal -replace 'p-l', 'pl'
-    # BR, BL 
-    $formal = $formal -replace 'b-r', 'br'
-    $formal = $formal -replace 'b-l', 'bl'
-    # FR, FL 
-    $formal = $formal -replace 'f-r', 'fr'
-    $formal = $formal -replace 'f-l', 'fl'
 
     # Now strip non-words and digits 
     $formal = $formal -replace '\W', ''
