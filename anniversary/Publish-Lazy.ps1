@@ -15,11 +15,21 @@ Function Convert-FormalToLazy {
     $formal = $formal -replace 'e-u', 'u'
     $formal = $formal -replace 'a-u', 'w'
     $formal = $formal -replace 'o-e', 'y'
-    if ($word -match '^qu') {
-        $formal = $formal -replace '^k', 'q'
+    if ($word -match 'qu') {
+        if ($word -match 'que(ly)$') {
+            $formal = $formal -replace 'k([^k]*)$', 'q$1'
+        } elseif ($word -notmatch '^con') {
+            $formal = $formal -replace '^([^k]*)k', '$1q'
+        } else {
+            $formal = $formal -replace 'k([^k]*)$', 'q$1'
+        }
+        $formal = $formal -replace 'q-w', 'q'
     }
     if ($word -imatch '^ex') {
         $formal = $formal -replace '^e-s', 'x'
+    }
+    if ($word -imatch 'x') {
+        $formal = $formal -replace '^([^k]*)k-s', '$1x'
     }
     if ($word -match '^an?$') {
         $formal = 'hk1'
