@@ -181,7 +181,7 @@ VisualizeForm(form, pen) {
     
     LogEventGP(4, "Adding thisForm to page " padPagesIndex ": " thisForm)
     padPages[padPagesIndex] := padPages[padPagesIndex] . thisForm
-    LogEventGP(2, "Final path: " padPages[padPagesIndex])
+    LogEventGP(3, "Final path: " padPages[padPagesIndex])
     
     fullLine := padPages[padPagesIndex]
     padPageContent = %padPageHeader%%padPageBackground%%fullline%%padPageFooter%
