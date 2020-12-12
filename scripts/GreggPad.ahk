@@ -6,6 +6,7 @@ SetWorkingDir %A_ScriptDir%
 
 padPageFile := "greggpad.html"
 Gregging := True
+Qwerting := True
 
 logFileGP := ""
 logVerbosityGP := 2
@@ -28,6 +29,8 @@ guiHeight := pageHeight
 lineWidth := pageWidth -50
 horizontalSpacing := 20
 verticalSpacing := 70
+qwertingVertical := 50
+averageLetterWidth := 8
 nibX := horizontalSpacing
 nibY := verticalSpacing
 
@@ -87,36 +90,40 @@ LogEventGP(4, "Initial path: " padPages[padPagesIndex])
 
 ; Uniquely shaped consonants: b,v,d,m,g,l,j
 ; Uniquely shaped blends: dm, md, dv, jnd 
-VisualizeForm("df-u-s2", "red")
-VisualizeForm("v-u", "red")
-VisualizeForm("d-u", "red")
-VisualizeForm("m-u", "red")
-VisualizeForm("g-u", "red")
-VisualizeForm("l-u", "red")
-VisualizeForm("j-u", "red")
-VisualizeForm("dm-u", "red")
-VisualizeForm("md-u", "red")
-VisualizeForm("df-u-s2", "red")
-VisualizeForm("b-u2", "red")
-VisualizeForm("v-u2", "red")
-VisualizeForm("d-u2", "red")
-VisualizeForm("m-u2", "red")
-VisualizeForm("g-u2", "red")
-VisualizeForm("l-u2", "red")
-VisualizeForm("j-u2", "red")
-VisualizeForm("s", "red")
-VisualizeForm("ths", "red")
-VisualizeForm("s2-t-a2-t-s", "red")
-VisualizeForm("^-h-\-a-p-n-s", "red")
-VisualizeForm("p-t", "red")
+VisualizeForm("dfus", "df-u-s2", "red")
+VisualizeForm("vu", "v-u", "red")
+VisualizeForm("du", "d-u", "red")
+VisualizeForm("mu", "m-u", "red")
+VisualizeForm("gu", "g-u", "red")
+VisualizeForm("lu", "l-u", "red")
+VisualizeForm("ju", "j-u", "red")
+VisualizeForm("dmu", "dm-u", "red")
+VisualizeForm("mdu", "md-u", "red")
+VisualizeForm("dfuso", "df-u-s2", "red")
+VisualizeForm("buo", "b-u2", "red")
+VisualizeForm("vuo", "v-u2", "red")
+VisualizeForm("duo", "d-u2", "red")
+VisualizeForm("muo", "m-u2", "red")
+VisualizeForm("guo", "g-u2", "red")
+VisualizeForm("luo", "l-u2", "red")
+VisualizeForm("juo", "j-u2", "red")
+VisualizeForm("s", "s", "red")
+VisualizeForm("hs", "ths", "red")
+VisualizeForm("stats", "s2-t-a2-t-s", "red")
+VisualizeForm("hapns", "^-h-\-a-p-n-s", "red")
+VisualizeForm("pt", "p-t", "red")
+VisualizeForm("rjektd", "rjektd", "red")
+VisualizeForm("rjektd", "rjektd", "red")
+VisualizeForm("rjektd", "rjektd", "red")
 return
 
 GreggPadGuiClose:
     LogEventGP(1, "App exit called")
     ExitApp
 
-VisualizeForm(form, pen) {
+VisualizeForm(qwerd, form, pen) {
     Global Gregging
+    Global Qwerting
     global oWB
     global strokes
     global vowelStrokes
@@ -131,6 +138,8 @@ VisualizeForm(form, pen) {
     global nibY
     global horizontalSpacing
     global verticalSpacing
+    global qwertingVertical
+    global averageLetterWidth
     global lineWidth
     global pageHeight
     global vowels
@@ -145,7 +154,14 @@ VisualizeForm(form, pen) {
     formStrokes := StrSplit(form, "-")
     
     ; thisForm will hold the finished Shorthand form 
-    thisForm := "<!-- encoding " form " --><path d=""M " nibX "," nibY " "
+    if (Qwerting) {
+        thisQwerd := "<text x=""" nibx """ y=""" (nibY+qwertingVertical) """ fill=""" pen """>" qwerd "</text>" 
+        qwertNibX := nibX + (averageLetterWidth * StrLen(qwerd))
+    } else {
+        thisQwerd := ""
+        qwertNibX := 0
+    }
+    thisForm := thisQwerd "<!-- encoding " form " --><path d=""M " nibX "," nibY " "
     preceding := ""
     for fsindex, formStroke in formStrokes { 
         LogEventGP(4, "Working formStroke " formStroke)
@@ -173,10 +189,18 @@ VisualizeForm(form, pen) {
         preceding := formStroke
     }
     thisForm := thisForm . """ fill=""none"" stroke=""" pen """ stroke-width=""2"" />`n"
+    if (Qwerting) {
+        if (nibX < qwertNibX) {
+            nibX := qwertNibX
+        }
+    }
     nibX += horizontalSpacing
     if (nibX > lineWidth) {
         nibX := horizontalSpacing
         nibY += verticalSpacing
+        if (Qwerting) {
+            nibY += qwertingVertical
+        }
     }
     
     LogEventGP(4, "Adding thisForm to page " padPagesIndex ": " thisForm)

@@ -1,3 +1,5 @@
+# After adding to the core dictionary, remove the corresponding CMU words from that dictionary 
+
 $cores = Import-Csv -Path "$PsScriptRoot\anniversary_core.csv"
 "Loaded $($cores.get_count()) core anniversary words"
 $moderns = Import-Csv -Path "$PsScriptRoot\anniversary_modern.csv"

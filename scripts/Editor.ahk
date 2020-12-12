@@ -207,7 +207,7 @@ ContextAddToForm_S:
         return
     logEventDE(3, "Listview context add S to row " FocusedRowNumber)
     PrepareEdit(FocusedRowNumber)
-    AddValueToEditFields("s", "s", "s")
+    AddValueToEditFields("s", "-s", "s")
     CommitEdit()
     Return
 
@@ -218,7 +218,7 @@ ContextAddToForm_G:
         return
     logEventDE(3, "Listview context add G to row " FocusedRowNumber)
     PrepareEdit(FocusedRowNumber)
-    AddValueToEditFields("ing", "g", "g")
+    AddValueToEditFields("ing", "-\-h", "g")
     CommitEdit()
     Return
 
@@ -229,7 +229,7 @@ ContextAddToForm_D:
         return
     logEventDE(3, "Listview context add D to row " FocusedRowNumber)
     PrepareEdit(FocusedRowNumber)
-    AddValueToEditFields("ed", "d", "d")
+    AddValueToEditFields("ed", "-d", "d")
     CommitEdit()
     Return
 
@@ -240,7 +240,7 @@ ContextAddToForm_T:
         return
     logEventDE(3, "Listview context add T to row " FocusedRowNumber)
     PrepareEdit(FocusedRowNumber)
-    AddValueToEditFields("ed", "t", "t")
+    AddValueToEditFields("ed", "-t", "t")
     CommitEdit()
     Return
 
@@ -251,7 +251,7 @@ ContextAddToForm_R:
         return
     logEventDE(3, "Listview context add R to row " FocusedRowNumber)
     PrepareEdit(FocusedRowNumber)
-    AddValueToEditFields("er", "r", "r")
+    AddValueToEditFields("er", "-r", "r")
     CommitEdit()
     Return
 
@@ -262,7 +262,7 @@ ContextAddToForm_LY:
         return
     logEventDE(3, "Listview context add LY to row " FocusedRowNumber)
     PrepareEdit(FocusedRowNumber)
-    AddValueToEditFields("ly", "e", "e")
+    AddValueToEditFields("ly", "-e", "e")
     CommitEdit()
     Return
     
@@ -442,7 +442,12 @@ PrepareEdit(RowNumber) {
     } else {
         GuiControl, Text, EditHint, %EditHint%
     }
-    GuiControl, Text, EditDict, %EditDict%
+    if (InStr(EditDict, "_core.csv")) { 
+        supplemental_dict := RegExReplace(EditDict, "_core.csv", "_supplement.csv")
+        GuiControl, Text, EditDict, %supplemental_dict%
+    } else {
+        GuiControl, Text, EditDict, %EditDict%
+    }
 }
 CommitEdit() {
     logEventDE(3, "Commiting edit to form")

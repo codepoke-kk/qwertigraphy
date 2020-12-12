@@ -75,7 +75,7 @@ NumLines := 0
 Coaching := true
 Retraining := true
 Gregging := true
-Qwerting := false 
+Qwerting := true
 
 LaunchCoach()
 
@@ -290,7 +290,7 @@ ExpandOutline(lazy, word, formal, saves, power) {
     }
     UpdateDashboard()
     if (nibY > -1) {
-        VisualizeForm(formal, "blue")
+        VisualizeForm(lazy, formal, "blue")
     }
     lastExpandedWord := word
     lastExpandedForm := lazy
@@ -339,7 +339,7 @@ LaunchCoach() {
     Gui,Qwertigraph:Add,Checkbox,x170 y5 h20 w70 gCoachingSub Checked,Coach
     Gui,Qwertigraph:Add,Checkbox,x170 y25 h20 w70 gRetrainingSub Checked,Retrain
     Gui,Qwertigraph:Add,Checkbox,x170 y45 h20 w70 gGreggingSub Checked,Gregg
-    Gui,Qwertigraph:Add,Checkbox,x170 y65 h20 w70 gQwertingSub,Qwerthand
+    Gui,Qwertigraph:Add,Checkbox,x170 y65 h20 w70 gQwertingSub Checked,Qwerthand
     Gui,Qwertigraph:Show,w250 h656 x%vWidth% y%vHeight%, Shorthand Coach
 }
 
@@ -426,7 +426,7 @@ CoachOutline(word, outline, hint, formal, saves, power) {
         }
     }
     if (nibY > -1) {
-        VisualizeForm(formal, "red")
+        VisualizeForm(outline, formal, "red")
     }
 }
 ; Provided by Josh Grams
