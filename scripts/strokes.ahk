@@ -5,18 +5,6 @@ strokes.item("<") := "m -12,0"
 strokes.item("/") := "m 12,0"
 strokes.item("\") := "m 0,12"
 
-; vowel holders
-strokes.item("i") := ""
-strokes.item("a") := ""
-strokes.item("e") := ""
-strokes.item("o") := ""
-strokes.item("u") := 
-strokes.item("i2") := ""
-strokes.item("a2") := ""
-strokes.item("e2") := ""
-strokes.item("o2") := ""
-strokes.item("u2") := ""
-
 ; Consonants
 strokes.item("n") := "l 20,0"
 strokes.item("m") := "l 36,0"
@@ -24,8 +12,8 @@ strokes.item("t") := "l 20,-12"
 strokes.item("d") := "l 36,-18"
 strokes.item("ng") := "l 15,9"
 strokes.item("nk") := "l 36,20"
-strokes.item("z") := "l -3,8"
-strokes.item("c") := "l -6,20"
+strokes.item("sh") := "l -3,8"
+strokes.item("ch") := "l -6,20"
 strokes.item("j") := "l -8,36"
 strokes.item("h") := "m 5,5 c 3,0 0,3 0,0"
 strokes.item("H") := "m 0,-15 c 3,0 0,3 0,0 m 0,15"
@@ -42,6 +30,7 @@ strokes.item("f") := "c 4,0 12,5 -10,20"
 strokes.item("v") := "c 4,0 20,8 -18,36"
 strokes.item("th") := "c 3,-6 3,-6 18,-12"
 strokes.item("th2") := "c 12,-3 17,-4 18,-12"
+strokes.item("mn") := "l 48,0"
 strokes.item("nd") := "c 8,0 18,0 24,-16"
 strokes.item("nt") := strokes.item("nd")
 strokes.item("md") := "c 12,0 24,0 36,-20"
@@ -61,10 +50,37 @@ strokes.item("jnt") := strokes.item("jnd")
 strokes.item("pnt") := strokes.item("jnd")
 strokes.item("pnd") := strokes.item("jnd")
 strokes.item("ld") := "c -9,12 48,8 36,-8"
-strokes.item("dt") := "l 42,-21"
+strokes.item("dt") := "l 48,-21"
 strokes.item("td") := strokes.item("dt")
 strokes.item("ss") := "c -4,0 -9,6 -4,8 s 1,4 -4,8"
 strokes.item("ths") := "c -4,-36 36,-24 18,2"
+strokes.item("pr") := "c -16,16 2,28 16,18"
+strokes.item("pl") := "c -16,16 2,28 49,17"
+strokes.item("br") := "c -23,34 -5,46 8,36"
+strokes.item("bl") := "c -34,35 5,61 36,39"
+
+; Bare vowels
+strokes.item("a") := "c 16,-19 18,21 0,0"
+strokes.item("e") := "c 7,-9 8,9 0,0"
+strokes.item("i") := "c 8,0 8,0 0,0 c 16,-19 18,21 0,0"
+strokes.item("o") := "c 0,8 6,8 6,2"
+strokes.item("u") := "c 1,-10 17,-10 10,0"
+strokes.item("a2") := "c -29,21 2,14 0,0"
+strokes.item("e2") := "c -13,9 1,6 0,0"
+strokes.item("i2") := "c -6,8 -6,8 0,0 c -29,21 2,14 0,0"
+strokes.item("o2") := "c -8,0 -8,6 0,6"
+strokes.item("u2") := "c 8,0 8,6 0,6"
+; Bare vowels
+vowelStrokes.item("a") := "c 16,-19 18,21 0,0"
+vowelStrokes.item("e") := "c 7,-9 8,9 0,0"
+vowelStrokes.item("i") := "c 8,0 8,0 0,0 c 16,-19 18,21 0,0"
+vowelStrokes.item("o") := "c 0,8 6,8 6,2"
+vowelStrokes.item("u") := "c 1,-10 17,-10 10,0"
+vowelStrokes.item("a2") := "c -29,21 2,14 0,0"
+vowelStrokes.item("e2") := "c -13,9 1,6 0,0"
+vowelStrokes.item("i2") := "c -6,8 -6,8 0,0 c -29,21 2,14 0,0"
+vowelStrokes.item("o2") := "c -8,0 -8,6 0,6"
+vowelStrokes.item("u2") := "c 8,0 8,6 0,6"
 
 ; A Vowels manually generated from https://codepen.io/explosion/full/YGApwd and scaled by PowerShell 
 vowelStrokes.item("ba")  := "c 16,-19 18,21 0,0" ;

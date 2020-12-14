@@ -6,7 +6,7 @@ foreach ($formalLine in $formalLines) {
     $formalLine.formal = $formalLine.formal -replace 's-(([aie23]*-)?[oufvnmkgtd])', 's2-$1'
     $formalLine.formal = $formalLine.formal -replace '([fv])-s', '$1-s2'
     # PR, PL
-    $formalLine.formal = $formalLine.formal -replace 'pr', 'pr'
+    $formalLine.formal = $formalLine.formal -replace 'p-r', 'pr'
     $formalLine.formal = $formalLine.formal -replace 'p-l', 'pl'
     # BR, BL 
     $formalLine.formal = $formalLine.formal -replace 'b-r', 'br'

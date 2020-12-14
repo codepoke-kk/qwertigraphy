@@ -90,31 +90,10 @@ LogEventGP(4, "Initial path: " padPages[padPagesIndex])
 
 ; Uniquely shaped consonants: b,v,d,m,g,l,j
 ; Uniquely shaped blends: dm, md, dv, jnd 
-VisualizeForm("dfus", "df-u-s2", "red")
-VisualizeForm("vu", "v-u", "red")
-VisualizeForm("du", "d-u", "red")
-VisualizeForm("mu", "m-u", "red")
-VisualizeForm("gu", "g-u", "red")
-VisualizeForm("lu", "l-u", "red")
-VisualizeForm("ju", "j-u", "red")
-VisualizeForm("dmu", "dm-u", "red")
-VisualizeForm("mdu", "md-u", "red")
-VisualizeForm("dfuso", "df-u-s2", "red")
-VisualizeForm("buo", "b-u2", "red")
-VisualizeForm("vuo", "v-u2", "red")
-VisualizeForm("duo", "d-u2", "red")
-VisualizeForm("muo", "m-u2", "red")
-VisualizeForm("guo", "g-u2", "red")
-VisualizeForm("luo", "l-u2", "red")
-VisualizeForm("juo", "j-u2", "red")
-VisualizeForm("s", "s", "red")
-VisualizeForm("hs", "ths", "red")
-VisualizeForm("stats", "s2-t-a2-t-s", "red")
-VisualizeForm("hapns", "^-h-\-a-p-n-s", "red")
-VisualizeForm("pt", "p-t", "red")
-VisualizeForm("rjektd", "rjektd", "red")
-VisualizeForm("rjektd", "rjektd", "red")
-VisualizeForm("rjektd", "rjektd", "red")
+;VisualizeForm("aprvl", "a-pr-v-l", "red")
+;VisualizeForm("apli", "a-pl-i", "red")
+;VisualizeForm("bro", "br-o", "red")
+;VisualizeForm("blo", "bl-o", "red")
 return
 
 GreggPadGuiClose:
@@ -217,7 +196,7 @@ VisualizeForm(qwerd, form, pen) {
     oWB.Navigate(A_ScriptDir "/" padPageFile)
     
     ; Only now if we need a new page, turn it
-    if (nibY > pageHeight) {
+    if (nibY > (pageHeight - verticalSpacing - qwertingVertical)) {
         nibY := verticalSpacing
         padPagesIndex += 1
         padPages[padPagesIndex] := "<path d="" M 29,50 l 1,0"" fill=""none"" stroke=""white"" stroke-width=""2"" />"
