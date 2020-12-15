@@ -7,6 +7,8 @@ $lineCount = 0
 
 $started = $false
 $outlines = New-Object System.Collections.ArrayList
+# Manually inject the word "being" because we just need it 
+$outlines.Add('b-h           being') | Out-Null
 foreach ($sourceLine in $sourceDictionaryLines) {
     $lineCount++
     if ($sourceLine -eq '------------------------------------------------------------------------') {
