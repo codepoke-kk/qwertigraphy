@@ -14,6 +14,7 @@ Function Convert-FormalToLazy {
     $formal = $formal -replace 'th', 'h'
     $formal = $formal -replace 'mn', 'mm'
     $formal = $formal -replace 'td', 'dd'
+    $formal = $formal -replace 'ea', 'e'
     $formal = $formal -replace 'e-u', 'u'
     $formal = $formal -replace 'a-u', 'w'
     $formal = $formal -replace 'o-e', 'y'
