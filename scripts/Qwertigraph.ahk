@@ -233,6 +233,10 @@ return
     hotstring("reset")
     Send {,}
     Return
+^-::
+    hotstring("reset")
+    Send {-}
+    Return
 +^;::
     hotstring("reset")
     Send {:}
