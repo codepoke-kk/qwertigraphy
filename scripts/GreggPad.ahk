@@ -65,17 +65,6 @@ Loop {
     }
 }
 
-;display inline svg
-Gui GreggPad:Default
-Gui, -dpiscale +Resize
-Gui, GreggPad:Add, ActiveX, x0 y0 w%guiWidth% h%guiHeight% voWB, internet.explorer
-Gui, GreggPad:Show, , Gregg Pad
-
-oWB.Navigate("about:blank")
-oWB.document.write(padPageHeader)
-oWB.document.write(padPageFooter)
-oWB.Refresh()
-
 ; nibY:  l dx,dy
 ; arc:   a rx,ry x-axis-rotation large-arc-flag,sweep-flag dx,dy
 ; curve: c dx1,dy1, dx2,dy2 dx,dy
@@ -90,15 +79,36 @@ LogEventGP(4, "Initial path: " padPages[padPagesIndex])
 
 ; Uniquely shaped consonants: b,v,d,m,g,l,j
 ; Uniquely shaped blends: dm, md, dv, jnd 
-;VisualizeForm("aprvl", "a-pr-v-l", "red")
-;VisualizeForm("apli", "a-pl-i", "red")
+;VisualizeForm("Gregg", "g-r-e-g", "blue")
+;VisualizeForm("Pad", "p-a-d", "blue")
 ;VisualizeForm("bro", "br-o", "red")
 ;VisualizeForm("blo", "bl-o", "red")
+
+;display inline svg
+PresentGreggPad()
+
 return
 
 GreggPadGuiClose:
     LogEventGP(1, "App exit called")
-    ExitApp
+    ; ExitApp
+
+PresentGreggPad() {
+    global guiWidth
+    global guiHeight
+    global oWB
+        
+    Gui GreggPad:Default
+    Gui, -dpiscale +Resize
+    Gui, GreggPad:Add, ActiveX, x0 y0 w%guiWidth% h%guiHeight% voWB, internet.explorer
+    Gui, GreggPad:Show, , Gregg Pad
+
+    ;oWB.Navigate("about:blank")
+    ;oWB.Refresh()
+    
+    VisualizeForm("Gregg", "g-r-e-g", "blue")
+    VisualizeForm("Pad", "p-a-d", "blue")
+}
 
 VisualizeForm(qwerd, form, pen) {
     Global Gregging

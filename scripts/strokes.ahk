@@ -89,6 +89,7 @@ vowelStrokes.item("vab")  := vowelStrokes.item("va")
 vowelStrokes.item("vav")  := vowelStrokes.item("va")
 vowelStrokes.item("ga")  := "c -3,23 -34,1 0,0" ;
 vowelStrokes.item("ja")  := "c -5,26 -28,-1 0,0" ;
+vowelStrokes.item("bad")  := "c -5,26 -28,-1 0,0" ;
 vowelStrokes.item("la")  := "c -20,-8 24,-12 0,0" ; 
 vowelStrokes.item("ma")  := "c -18,16 30,0 0,0" ; 
 vowelStrokes.item("da")  := "c 27,-21 9,21 0,0" ;
