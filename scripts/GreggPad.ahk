@@ -5,8 +5,13 @@
 SetWorkingDir %A_ScriptDir% 
 
 padPageFile := "greggpad.html"
-Gregging := True
-Qwerting := True
+if (A_ScriptName == "GreggPad.ahk") {
+    Gregging := True
+    Qwerting := True
+    FreeStandingGreggPad := True
+} else {
+    FreeStandingGreggPad := False
+}
 
 logFileGP := ""
 logVerbosityGP := 2
@@ -85,15 +90,23 @@ LogEventGP(4, "Initial path: " padPages[padPagesIndex])
 ;VisualizeForm("blo", "bl-o", "red")
 
 ;display inline svg
-PresentGreggPad()
-
-return
+if (Gregging) {
+    ShowGreggPad()
+}
 
 GreggPadGuiClose:
     LogEventGP(1, "App exit called")
-    ; ExitApp
-
-PresentGreggPad() {
+    if (FreeStandingGreggPad) {
+        ExitApp
+    } else {
+        Gregging := false
+        Gui GreggPad:Default
+        Gui Destroy
+        Gui Qwertigraph:Default
+        GuiControl, , GreggingCheckbox, 0
+    }
+    
+ShowGreggPad() {
     global guiWidth
     global guiHeight
     global oWB

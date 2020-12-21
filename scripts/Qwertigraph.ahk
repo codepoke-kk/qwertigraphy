@@ -76,6 +76,7 @@ Coaching := true
 Retraining := true
 Gregging := true
 Qwerting := true
+Editing := false
 
 LaunchCoach()
 
@@ -176,12 +177,12 @@ FileAppend %duplicateLazyOutlines%, duplicateLazyOutlines.txt
 
 
 #Include GreggPad.ahk
+#Include Editor.ahk
 ; Load personal.ahk only after all other code has run
 ; And before loading any Qwertigraphy native briefs
 ; But ignore if it doesn't exist
 #Include *i personal.ahk
 
-return 
 
 ; Allow manual contracting
 :?*:'s::'s 
@@ -323,7 +324,10 @@ LaunchCoach() {
     global Coaching
     global Retraining
     global Gregging
+    global Greggingcheckbox
     global Qwerting
+    global Editing
+    global Editingcheckbox
     ; Define here so each launch refreshes the list
     Opportunities := {}
     
@@ -342,8 +346,9 @@ LaunchCoach() {
     Gui,Qwertigraph:Add, Progress, h5 cOlive vLoadProgress, 1
     Gui,Qwertigraph:Add,Checkbox,x170 y5 h20 w70 gCoachingSub Checked,Coach
     Gui,Qwertigraph:Add,Checkbox,x170 y25 h20 w70 gRetrainingSub Checked,Retrain
-    Gui,Qwertigraph:Add,Checkbox,x170 y45 h20 w70 gGreggingSub Checked,Gregg
-    Gui,Qwertigraph:Add,Checkbox,x170 y65 h20 w70 gQwertingSub Checked,Qwerthand
+    Gui,Qwertigraph:Add,Checkbox,x170 y45 h20 w70 vGreggingCheckbox gGreggingSub Checked,Gregg
+    Gui,Qwertigraph:Add,Checkbox,x175 y65 h20 w70 gQwertingSub Checked,Qwerthand
+    Gui,Qwertigraph:Add,Checkbox,x170 y85 h20 w70 vEditingCheckbox gEditingSub,Edit
     Gui,Qwertigraph:Show,w250 h656 x%vWidth% y%vHeight%, Shorthand Coach
 }
 
@@ -360,13 +365,31 @@ RetrainingSub() {
 }
 GreggingSub() {
     global Gregging 
-    Gregging := (! Gregging)
+    if (Gregging) {
+        Gregging := false
+        Gui GreggPad:Default
+        Gui Destroy
+    } else {
+        Gregging := True 
+        ShowGreggPad()
+    }
     ; Msgbox, % "Gregg " Gregging
 }
 QwertingSub() {
     global Qwerting 
     Qwerting := (! Qwerting)
     ; Msgbox, % "Qwert " Qwerting
+}
+EditingSub() {
+    global Editing 
+    if (Editing) {
+        Editing := false
+        Gui Editor:Default
+        Gui Destroy
+    } else {
+        Editing := true
+        ShowEditor()
+    }
 }
 
 UpdateDashboard() {
@@ -455,6 +478,7 @@ OfferRetry() {
     global lastExpandedWord
     global lastExpandedForm
     global index
+    global keyer
     global keyers := Array("","o","u","i","e","a","w","y")
     
     logEventQG(1, "Offering retry with " lastExpandedWord "/" lastExpandedForm)

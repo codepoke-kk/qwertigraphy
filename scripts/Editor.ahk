@@ -3,6 +3,13 @@
 #SingleInstance Force
 SetWorkingDir %A_ScriptDir%
 
+if (A_ScriptName == "Editor.ahk") {
+    Editing := True
+    FreeStandingEditor := True
+} else {
+    FreeStandingEditor := False
+}
+
 logFileDE := 0
 LogVerbosityDE := 2
 IfNotExist, logs
@@ -39,7 +46,9 @@ Loop,Read,%negationsFile%   ;read negations
             
 forms := {}
 
-LaunchEditor()
+if (Editing) {
+    ShowEditor()
+}
 
 NumLines := 0
 logEventDE(1, "Loading forms")
@@ -70,10 +79,22 @@ logEventDE(1, "Loaded all forms")
 dictionariesLoaded := 1
 
 ;Msgbox, % "I have forms " sortableWords["00000005_password"]
-return 
 
 
-LaunchEditor() {
+EditorGuiClose:
+    LogEventDE(1, "App exit called")
+    if (FreeStandingEditor) {
+        ExitApp
+    } else {
+        Editing := false
+        Gui Editor:Default
+        Gui Destroy
+        Gui Qwertigraph:Default
+        GuiControl, , EditingCheckbox, 0
+    }
+
+
+ShowEditor() {
     global Forms
     global EditorTitle
     global FormsLV
@@ -99,6 +120,7 @@ LaunchEditor() {
     
     logEventDE(2, "Launching Editor")
     
+    Gui Editor:Default
     ; Add header text
     Gui, Add, Text, x12  y9 w700  h20 , Snazzy dictionary edits are more fun than Excel spreadsheet editing
     
@@ -163,13 +185,10 @@ LaunchEditor() {
         ; because they provide correct coordinates even if the user pressed the Apps key:
         Menu, FormLVContextMenu, Show, %A_GuiX%, %A_GuiY%
     return
-
-    GuiClose:
-        logEventDE(1, "App exit called")
-        ExitApp
 }
 
 FormsLV:
+    Gui Editor:Default
     logEventDE(2, "Listview event " A_GuiEvent " on " A_EventInfo)
     if (A_GuiEvent = "DoubleClick") {
         PrepareEdit(A_EventInfo)
@@ -182,6 +201,7 @@ FormsLV:
     return
     
 ContextEditForm:
+    Gui Editor:Default
     logEventDE(2, "Listview context edit event ")
     FocusedRowNumber := LV_GetNext(0, "F")  ; Find the focused row.
     if not FocusedRowNumber  ; No row is focused.
@@ -191,6 +211,7 @@ ContextEditForm:
     Return
 
 ContextDeleteForm:
+    Gui Editor:Default
     logEventDE(2, "Listview context delete event ")
     FocusedRowNumber := LV_GetNext(0, "F")  ; Find the focused row.
     if not FocusedRowNumber  ; No row is focused.
@@ -201,6 +222,7 @@ ContextDeleteForm:
     Return
 
 ContextAddToForm_S:
+    Gui Editor:Default
     logEventDE(2, "Listview context add S ")
     FocusedRowNumber := LV_GetNext(0, "F")  ; Find the focused row.
     if not FocusedRowNumber  ; No row is focused.
@@ -212,6 +234,7 @@ ContextAddToForm_S:
     Return
 
 ContextAddToForm_G:
+    Gui Editor:Default
     logEventDE(2, "Listview context add G ")
     FocusedRowNumber := LV_GetNext(0, "F")  ; Find the focused row.
     if not FocusedRowNumber  ; No row is focused.
@@ -223,6 +246,7 @@ ContextAddToForm_G:
     Return
 
 ContextAddToForm_D:
+    Gui Editor:Default
     logEventDE(2, "Listview context add D ")
     FocusedRowNumber := LV_GetNext(0, "F")  ; Find the focused row.
     if not FocusedRowNumber  ; No row is focused.
@@ -234,6 +258,7 @@ ContextAddToForm_D:
     Return
 
 ContextAddToForm_T:
+    Gui Editor:Default
     logEventDE(2, "Listview context add T ")
     FocusedRowNumber := LV_GetNext(0, "F")  ; Find the focused row.
     if not FocusedRowNumber  ; No row is focused.
@@ -245,6 +270,7 @@ ContextAddToForm_T:
     Return
 
 ContextAddToForm_R:
+    Gui Editor:Default
     logEventDE(2, "Listview context add R ")
     FocusedRowNumber := LV_GetNext(0, "F")  ; Find the focused row.
     if not FocusedRowNumber  ; No row is focused.
@@ -256,6 +282,7 @@ ContextAddToForm_R:
     Return
 
 ContextAddToForm_LY:
+    Gui Editor:Default
     logEventDE(2, "Listview context add LY ")
     FocusedRowNumber := LV_GetNext(0, "F")  ; Find the focused row.
     if not FocusedRowNumber  ; No row is focused.
@@ -270,6 +297,7 @@ AutoLazyForm() {
     global formal
     global word
     global lazy
+    Gui Editor:Default
     GuiControlGet formal, , EditFormal
     GuiControlGet word, , EditWord
  
@@ -304,6 +332,7 @@ AutoKeyer() {
     global keyer
     global dict
     global formKey
+    Gui Editor:Default
     GuiControlGet word, , EditWord
     GuiControlGet lazy, , EditLazy
     GuiControlGet keyer, , EditKeyer
@@ -324,6 +353,7 @@ AddValueToEditFields(WordAdd, FormalAdd, LazyAdd) {
     global EditWord
     global EditFormal
     global EditLazy
+    Gui Editor:Default
     GuiControlGet word, , EditWord
     GuiControlGet formal, , EditFormal
     GuiControlGet lazy, , EditLazy
@@ -398,6 +428,7 @@ DeleteForm() {
     global forms
     global formKey
     
+    Gui Editor:Default
     ; Grab values the user has edited and wants to commit 
     GuiControlGet word, , EditWord
     GuiControlGet dictionary, , EditDict
@@ -421,6 +452,7 @@ PrepareEdit(RowNumber) {
     global EditUsage
     global EditHint
     
+    Gui Editor:Default    
     ; Get the data from the edited row
     LV_GetText(EditWord, RowNumber, 1)
     LV_GetText(EditFormal, RowNumber, 2)
@@ -462,6 +494,7 @@ CommitEdit() {
     global form
     global formKey
     
+    Gui Editor:Default
     ; Grab values the user has edited and wants to commit 
     GuiControlGet formal, , EditFormal
     GuiControlGet word, , EditWord
@@ -502,6 +535,7 @@ SearchForms() {
     global forms
     global form
     global formKey
+    Gui Editor:Default
     GuiControlGet RegexDict
     GuiControlGet RegexWord
     GuiControlGet RegexFormal
@@ -577,10 +611,12 @@ SaveDictionaries() {
     global forms 
     global form 
     global word 
+    global progress
     global SaveProgress
     global index
     global BackupCount
     
+    Gui Editor:Default
     logEventDE(1, "Saving dictionaries")
     if ( not dictionariesLoaded ) {
         logEventDE(1, "Dictionaries not yet loaded. Stopping")
@@ -683,6 +719,7 @@ logEventDE(verbosity, message) {
     global logFileNameDE
     global logFileDE
     global LogVerbosityDE
+    
     if (not verbosity) or (not LogVerbosityDE)
         Return
     FormatTime, logDateStamp, , yyyyMMdd.HHmmss
