@@ -620,6 +620,7 @@ SaveDictionaries() {
     global SaveProgress
     global index
     global BackupCount
+    global line
     
     Gui Editor:Default
     logEventDE(1, "Saving dictionaries")
