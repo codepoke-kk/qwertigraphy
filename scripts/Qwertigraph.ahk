@@ -96,70 +96,12 @@ for index, dictionary in dictionaries
             ; msgbox % "Making field" A_Index " = " A_LoopField
             field%A_Index% = %A_LoopField%
         }
-        forms[field3] := field1
         
-        ; Add case sensitive hotstrings for lower case, capped case, and all caps case
-        saves := StrLen(field1) - StrLen(field3)
-        power := StrLen(field1) / StrLen(field3)
-
-        ; lowered hotstring
-        StringLower, field1_lower, field1
-        StringUpper, field1_upper, field1
-        StringUpper, field3_upper, field3
-        field1_capped := SubStr(field1_upper, 1, 1) . SubStr(field1, 2, (StrLen(field1) - 1))
-        field3_capped := SubStr(field3_upper, 1, 1) . SubStr(field3, 2, (StrLen(field3) - 1))
-        
-        ; First lowered cases
-        if not negations.item(field3) {
-            try {
-                Hotstring( ":B1C:" field3 )
-                duplicateLazyOutlineCount += 1
-                duplicateLazyOutlines := duplicateLazyOutlines . "," field3
-            } catch {
-                Hotstring( ":B1C:" field3, expander.bind(field3, field1_lower, field2, saves, power))
-            }
-        }
-
-        ; Then capped cases, so they preempt all-capped cases
-        if not negations.item(field3_capped) {
-            try {
-                Hotstring( ":B1C:" field3_capped )
-                duplicateLazyOutlineCount += 1
-                duplicateLazyOutlines := duplicateLazyOutlines . "," field3_capped
-            } catch {
-                Hotstring( ":B1C:" field3_capped, expander.bind(field3_capped, field1_capped, field2, saves, power))
-            }
-        }
-        try {
-            ; Try the "word" as a hotstring to see whether it exists
-            Hotstring( ":B0:" field1 )
-        } catch {
-            ; The "word" does not exist, so use it as a coaching hint
-            if (StrLen(field1) < 40) {
-                Hotstring( ":B0:" field1, hinter.bind(field1, field3, field6, field2, saves, power))
-            }
-        }
-
-        ; finally allcapped cases or HE will preempt He for E
-        if not negations.item(field3_upper) {
-            try {
-                Hotstring( ":B1C:" field3_upper )
-                if StrLen(field3_upper) > 1 {
-                    ; Don't record every single character lazy outline as a dupe
-                    duplicateLazyOutlineCount += 1
-                    duplicateLazyOutlines := duplicateLazyOutlines . "," field3_upper
-                }
-            } catch {
-                Hotstring( ":B1C:" field3_upper, expander.bind(field3_upper, field1_upper, field2, saves, power))
-            }
-        }
+        CreateFormsFromDictionary(field1, field2, field3, field6)
         
         progress := Round(100 * (NumLines/expectedForms))
         Gui Qwertigraph:Default
         GuiControl, , LoadProgress, %progress%
-        ; if ( NumLines > 800 ) {
-        ;     break
-        ; }
     }
     logEventQG(1, "Loaded dictionary " dictionary " resulting in " NumLines " forms")
 }
@@ -257,7 +199,77 @@ FileAppend %duplicateLazyOutlines%, duplicateLazyOutlines.txt
     OfferRetry()
     Return
 
+CreateFormsFromDictionary(word, formal, lazy, hint) {
+    global saves
+    global power
+    global forms
+    global negations
+    global duplicateLazyOutlineCount
+    global duplicateLazyOutlines
+    global expander
+    global hinter
+    global progress
+    global LoadProgress
+    global expectedForms
 
+    forms[lazy] := word
+    
+    ; Add case sensitive hotstrings for lower case, capped case, and all caps case
+    saves := StrLen(word) - StrLen(lazy)
+    power := StrLen(word) / StrLen(lazy)
+
+    ; lowered hotstring
+    StringLower, word_lower, word
+    StringUpper, word_upper, word
+    StringUpper, lazy_upper, lazy
+    word_capped := SubStr(word_upper, 1, 1) . SubStr(word, 2, (StrLen(word) - 1))
+    lazy_capped := SubStr(lazy_upper, 1, 1) . SubStr(lazy, 2, (StrLen(lazy) - 1))
+    
+    ; First lowered cases
+    if not negations.item(lazy) {
+        try {
+            Hotstring( ":B1C:" lazy )
+            duplicateLazyOutlineCount += 1
+            duplicateLazyOutlines := duplicateLazyOutlines . "," lazy
+        } catch {
+            Hotstring( ":B1C:" lazy, expander.bind(lazy, word_lower, formal, saves, power))
+        }
+    }
+
+    ; Then capped cases, so they preempt all-capped cases
+    if not negations.item(lazy_capped) {
+        try {
+            Hotstring( ":B1C:" lazy_capped )
+            duplicateLazyOutlineCount += 1
+            duplicateLazyOutlines := duplicateLazyOutlines . "," lazy_capped
+        } catch {
+            Hotstring( ":B1C:" lazy_capped, expander.bind(lazy_capped, word_capped, formal, saves, power))
+        }
+    }
+    try {
+        ; Try the "word" as a hotstring to see whether it exists
+        Hotstring( ":B0:" word )
+    } catch {
+        ; The "word" does not exist, so use it as a coaching hint
+        if (StrLen(word) < 40) {
+            Hotstring( ":B0:" word, hinter.bind(word, lazy, hint, formal, saves, power))
+        }
+    }
+
+    ; finally allcapped cases or HE will preempt He for E
+    if not negations.item(lazy_upper) {
+        try {
+            Hotstring( ":B1C:" lazy_upper )
+            if StrLen(lazy_upper) > 1 {
+                ; Don't record every single character lazy outline as a dupe
+                duplicateLazyOutlineCount += 1
+                duplicateLazyOutlines := duplicateLazyOutlines . "," lazy_upper
+            }
+        } catch {
+            Hotstring( ":B1C:" lazy_upper, expander.bind(lazy_upper, word_upper, formal, saves, power))
+        }
+    }
+}
 
 ExpandOutline(lazy, word, formal, saves, power) {
     global phraseEndings

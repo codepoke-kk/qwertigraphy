@@ -11,7 +11,7 @@ if (A_ScriptName == "Editor.ahk") {
 }
 
 logFileDE := 0
-LogVerbosityDE := 2
+LogVerbosityDE := 4
 IfNotExist, logs
     FileCreateDir, logs
 
@@ -78,21 +78,7 @@ for index, dictionary in dictionaries
 logEventDE(1, "Loaded all forms")
 dictionariesLoaded := 1
 
-;Msgbox, % "I have forms " sortableWords["00000005_password"]
-
-
-EditorGuiClose:
-    LogEventDE(1, "App exit called")
-    if (FreeStandingEditor) {
-        ExitApp
-    } else {
-        Editing := false
-        Gui Editor:Default
-        Gui Destroy
-        Gui Qwertigraph:Default
-        GuiControl, , EditingCheckbox, 0
-    }
-
+return
 
 ShowEditor() {
     global Forms
@@ -117,25 +103,27 @@ ShowEditor() {
     global SaveDictionaries
     global SaveProgress
     global BackupCount
+    global Editing
+    global FreeStandingEditor
     
     logEventDE(2, "Launching Editor")
     
     Gui Editor:Default
     ; Add header text
-    Gui, Add, Text, x12  y9 w700  h20 , Snazzy dictionary edits are more fun than Excel spreadsheet editing
+    Gui, Editor:Add, Text, x12  y9 w700  h20 , Snazzy dictionary edits are more fun than Excel spreadsheet editing
     
     ; Add regex search fields
-    Gui, Add, Edit, -WantReturn x12  y29 w160 h20 vRegexWord,  
-    Gui, Add, Edit, -WantReturn x172 y29 w90  h20 vRegexFormal,  
-    Gui, Add, Edit, -WantReturn x262 y29 w90  h20 vRegexLazy, 
-    Gui, Add, Edit, -WantReturn x352 y29 w30  h20 vRegexKeyer, 
-    Gui, Add, Edit, -WantReturn x382 y29 w60  h20 vRegexUsage,  
-    Gui, Add, Edit, -WantReturn x442 y29 w160 h20 vRegexHint, 
-    Gui, Add, Edit, -WantReturn x602 y29 w110 h20 vRegexDict, 
-    Gui, Add, Button, Default x712 y29 w90 h20 gSearchForms, Search
+    Gui, Editor:Add, Edit, -WantReturn x12  y29 w160 h20 vRegexWord,  
+    Gui, Editor:Add, Edit, -WantReturn x172 y29 w90  h20 vRegexFormal,  
+    Gui, Editor:Add, Edit, -WantReturn x262 y29 w90  h20 vRegexLazy, 
+    Gui, Editor:Add, Edit, -WantReturn x352 y29 w30  h20 vRegexKeyer, 
+    Gui, Editor:Add, Edit, -WantReturn x382 y29 w60  h20 vRegexUsage,  
+    Gui, Editor:Add, Edit, -WantReturn x442 y29 w160 h20 vRegexHint, 
+    Gui, Editor:Add, Edit, -WantReturn x602 y29 w110 h20 vRegexDict, 
+    Gui, Editor:Add, Button, Default x712 y29 w90 h20 gSearchForms, Search
     
     ; Add the data ListView
-    Gui, Add, ListView, x12 y49 w700 h420 vFormsLV gFormsLV, Word|Formal|Lazy|Keyer|Usage|Hint|Dictionary
+    Gui, Editor:Add, ListView, x12 y49 w700 h420 vFormsLV gFormsLV, Word|Formal|Lazy|Keyer|Usage|Hint|Dictionary
     LV_ModifyCol(5, "Integer")  ; For sorting, indicate that the Usage column is an integer.
     LV_ModifyCol(1, 160)
     LV_ModifyCol(2, 90)
@@ -146,46 +134,47 @@ ShowEditor() {
     LV_ModifyCol(7, 107) ; 3 pixels short to avoid the h_scrollbar 
     
     ; Add edit fields and controls
-    Gui, Add, Edit, x12  y469 w160 h20 vEditWord,  
-    Gui, Add, Edit, x172 y469 w70  h20 vEditFormal,  
-    Gui, Add, Button, x242 y469 w20 h20 gAutoLazyForm, L> 
-    Gui, Add, Edit, x262 y469 w90  h20 vEditLazy, 
-    Gui, Add, Button, x352 y469 w20 h20 gAutoKeyer, K> 
-    Gui, Add, Edit, x372 y469 w30  h20 vEditKeyer, 
-    Gui, Add, Edit, x402 y469 w50  h20 vEditUsage,  
-    Gui, Add, Edit, x452 y469 w150 h20 vEditHint, 
-    Gui, Add, Edit, x602 y469 w110 h20 vEditDict,
-    Gui, Add, Button, x712 y469 w90 h20 gCommitEdit, Commit
-    Gui, Add, Button, x712 y500 w90 h30 gSaveDictionaries vSaveDictionaries Disabled, Save
-    Gui, Add, Progress, x12 y545 w700 h5 cOlive vSaveProgress, 1
+    Gui, Editor:Add, Edit, x12  y469 w160 h20 vEditWord,  
+    Gui, Editor:Add, Edit, x172 y469 w70  h20 vEditFormal,  
+    Gui, Editor:Add, Button, x242 y469 w20 h20 gAutoLazyForm, L> 
+    Gui, Editor:Add, Edit, x262 y469 w90  h20 vEditLazy, 
+    Gui, Editor:Add, Button, x352 y469 w20 h20 gAutoKeyer, K> 
+    Gui, Editor:Add, Edit, x372 y469 w30  h20 vEditKeyer, 
+    Gui, Editor:Add, Edit, x402 y469 w50  h20 vEditUsage,  
+    Gui, Editor:Add, Edit, x452 y469 w150 h20 vEditHint, 
+    Gui, Editor:Add, Edit, x602 y469 w110 h20 vEditDict,
+    Gui, Editor:Add, Button, x712 y469 w90 h20 gCommitEdit, Commit
+    Gui, Editor:Add, Button, x712 y500 w90 h30 gSaveDictionaries vSaveDictionaries Disabled, Save
+    Gui, Editor:Add, Progress, x12 y545 w700 h5 cOlive vSaveProgress, 1
     
     ; Add checkbox controls
-    Gui, Add, CheckBox, x715 y49 w130 h20 vAutoGenHints gAutoGenHints Checked, AutoGenerate Hints
-    Gui, Add, Edit, x715 y74 w20 h20 vBackupCount, 2
-    Gui, Add, Text, x740 y74 w105 h20, Backups to retain 
+    Gui, Editor:Add, CheckBox, x715 y49 w130 h20 vAutoGenHints gAutoGenHints Checked, AutoGenerate Hints
+    Gui, Editor:Add, Edit, x715 y74 w20 h20 vBackupCount, 2
+    Gui, Editor:Add, Text, x740 y74 w105 h20, Backups to retain 
+    
+    ; Create a popup menu to be used as the context menu:
+    Menu, FormsLVContextMenu, Add, Edit, ContextEditForm
+    Menu, FormsLVContextMenu, Add, Delete, ContextDeleteForm
+    Menu, FormsLVContextMenu, Add, Add 's', ContextAddToForm_S
+    Menu, FormsLVContextMenu, Add, Add 'g', ContextAddToForm_G
+    Menu, FormsLVContextMenu, Add, Add 'd', ContextAddToForm_D
+    Menu, FormsLVContextMenu, Add, Add 't', ContextAddToForm_T
+    Menu, FormsLVContextMenu, Add, Add 'r', ContextAddToForm_R
+    Menu, FormsLVContextMenu, Add, Add 'ly', ContextAddToForm_LY
+    Menu, FormsLVContextMenu, Default, Edit  ; Make "Edit" a bold font to indicate that double-click does the same thing.
     
     ; Generated using SmartGUI Creator 4.0
     Gui, Show, x262 y118 h560 w836, Qwertigraphy Dictionary Editor
-    
-    ; Create a popup menu to be used as the context menu:
-    Menu, FormLVContextMenu, Add, Edit, ContextEditForm
-    Menu, FormLVContextMenu, Add, Delete, ContextDeleteForm
-    Menu, FormLVContextMenu, Add, Add 's', ContextAddToForm_S
-    Menu, FormLVContextMenu, Add, Add 'g', ContextAddToForm_G
-    Menu, FormLVContextMenu, Add, Add 'd', ContextAddToForm_D
-    Menu, FormLVContextMenu, Add, Add 't', ContextAddToForm_T
-    Menu, FormLVContextMenu, Add, Add 'r', ContextAddToForm_R
-    Menu, FormLVContextMenu, Add, Add 'ly', ContextAddToForm_LY
-    Menu, FormLVContextMenu, Default, Edit  ; Make "Edit" a bold font to indicate that double-click does the same thing.
-
-    GuiContextMenu:  ; Launched in response to a right-click or press of the Apps key.
-        if (A_GuiControl != "FormsLV")  ; Display the menu only for clicks inside the ListView.
-            return
-        ; Show the menu at the provided coordinates, A_GuiX and A_GuiY. These should be used
-        ; because they provide correct coordinates even if the user pressed the Apps key:
-        Menu, FormLVContextMenu, Show, %A_GuiX%, %A_GuiY%
-    return
 }
+
+EditorGuiContextMenu: ; Launched in response to a right-click or press of the Apps key.
+    Gui Editor:Default
+    if (A_GuiControl != "FormsLV")  ; Display the menu only for clicks inside the ListView.
+        return
+    ; Show the menu at the provided coordinates, A_GuiX and A_GuiY. These should be used
+    ; because they provide correct coordinates even if the user pressed the Apps key:
+    Menu, FormsLVContextMenu, Show, %A_GuiX%, %A_GuiY%
+    return
 
 FormsLV:
     Gui Editor:Default
@@ -199,7 +188,7 @@ FormsLV:
         Msgbox, % "You edited row " A_EventInfo " to: " RowText
     }
     return
-    
+
 ContextEditForm:
     Gui Editor:Default
     logEventDE(2, "Listview context edit event ")
@@ -208,7 +197,7 @@ ContextEditForm:
         return
     logEventDE(3, "Listview context edit event on row " FocusedRowNumber)
     PrepareEdit(FocusedRowNumber)
-    Return
+    return
 
 ContextDeleteForm:
     Gui Editor:Default
@@ -219,7 +208,7 @@ ContextDeleteForm:
     logEventDE(3, "Listview context delete event on row " FocusedRowNumber)
     PrepareEdit(FocusedRowNumber)
     DeleteForm()
-    Return
+    return
 
 ContextAddToForm_S:
     Gui Editor:Default
@@ -231,7 +220,7 @@ ContextAddToForm_S:
     PrepareEdit(FocusedRowNumber)
     AddValueToEditFields("s", "-s", "s")
     CommitEdit()
-    Return
+    return
 
 ContextAddToForm_G:
     Gui Editor:Default
@@ -243,7 +232,7 @@ ContextAddToForm_G:
     PrepareEdit(FocusedRowNumber)
     AddValueToEditFields("ing", "-\-h", "g")
     CommitEdit()
-    Return
+    return
 
 ContextAddToForm_D:
     Gui Editor:Default
@@ -255,7 +244,7 @@ ContextAddToForm_D:
     PrepareEdit(FocusedRowNumber)
     AddValueToEditFields("ed", "-d", "d")
     CommitEdit()
-    Return
+    return
 
 ContextAddToForm_T:
     Gui Editor:Default
@@ -267,7 +256,7 @@ ContextAddToForm_T:
     PrepareEdit(FocusedRowNumber)
     AddValueToEditFields("ed", "-t", "t")
     CommitEdit()
-    Return
+    return
 
 ContextAddToForm_R:
     Gui Editor:Default
@@ -279,7 +268,7 @@ ContextAddToForm_R:
     PrepareEdit(FocusedRowNumber)
     AddValueToEditFields("er", "-r", "r")
     CommitEdit()
-    Return
+    return
 
 ContextAddToForm_LY:
     Gui Editor:Default
@@ -291,8 +280,25 @@ ContextAddToForm_LY:
     PrepareEdit(FocusedRowNumber)
     AddValueToEditFields("ly", "-e", "e")
     CommitEdit()
-    Return
+    return
     
+AutoGenHints:
+    logEventDE(2, "AutoHint Checkbox set to auto ")
+    GuiControl, Text, EditHint, Auto 
+    return
+    
+EditorGuiClose:
+    LogEventDE(1, "App exit called")
+    if (FreeStandingEditor) {
+        ExitApp
+    } else {
+        Editing := false
+        Gui Editor:Default
+        Gui Destroy
+        Gui Qwertigraph:Default
+        GuiControl, , EditingCheckbox, 0
+    }
+   
 AutoLazyForm() {
     global formal
     global word
@@ -416,11 +422,6 @@ GetNextKeyer(formKey, lazy) {
     logEventDE(3, "No keyer found in available options") 
     Return "qq"
 }
-
-AutoGenHints:
-    logEventDE(2, "AutoHint Checkbox set to auto ")
-    GuiControl, Text, EditHint, Auto 
-    Return
     
 DeleteForm() {
     global dictionary
@@ -493,6 +494,7 @@ CommitEdit() {
     global forms
     global form
     global formKey
+    global FreeStandingEditor
     
     Gui Editor:Default
     ; Grab values the user has edited and wants to commit 
@@ -517,6 +519,9 @@ CommitEdit() {
     logEventDE(2, "Commiting edit to " formKey)
     forms[formKey] := form
     
+    if (! FreeStandingEditor) {
+        CreateFormsFromDictionary(word, formal, lazy, hint)
+    }
     GuiControl, Enable, SaveDictionaries
     
     ; Reload the search view with the new value 
