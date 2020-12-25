@@ -97,7 +97,7 @@ for index, dictionary in dictionaries
             field%A_Index% = %A_LoopField%
         }
         
-        CreateFormsFromDictionary(field1, field2, field3, field6)
+        CreateFormsFromDictionary(field1, field2, field3, field6, False)
         
         progress := Round(100 * (NumLines/expectedForms))
         Gui Qwertigraph:Default
@@ -194,12 +194,12 @@ FileAppend %duplicateLazyOutlines%, duplicateLazyOutlines.txt
     Return
     
 ; Show related strokes after an expansion
-#^r::
+#^e::
     hotstring("reset")
-    OfferRetry()
+    OfferEdit()
     Return
 
-CreateFormsFromDictionary(word, formal, lazy, hint) {
+CreateFormsFromDictionary(word, formal, lazy, hint, overwrite) {
     global saves
     global power
     global forms
@@ -218,55 +218,66 @@ CreateFormsFromDictionary(word, formal, lazy, hint) {
     saves := StrLen(word) - StrLen(lazy)
     power := StrLen(word) / StrLen(lazy)
 
-    ; lowered hotstring
+    ; variously cased hotstrings
     StringLower, word_lower, word
     StringUpper, word_upper, word
     StringUpper, lazy_upper, lazy
     word_capped := SubStr(word_upper, 1, 1) . SubStr(word, 2, (StrLen(word) - 1))
     lazy_capped := SubStr(lazy_upper, 1, 1) . SubStr(lazy, 2, (StrLen(lazy) - 1))
     
-    ; First lowered cases
-    if not negations.item(lazy) {
-        try {
-            Hotstring( ":B1C:" lazy )
-            duplicateLazyOutlineCount += 1
-            duplicateLazyOutlines := duplicateLazyOutlines . "," lazy
-        } catch {
-            Hotstring( ":B1C:" lazy, expander.bind(lazy, word_lower, formal, saves, power))
-        }
-    }
-
-    ; Then capped cases, so they preempt all-capped cases
-    if not negations.item(lazy_capped) {
-        try {
-            Hotstring( ":B1C:" lazy_capped )
-            duplicateLazyOutlineCount += 1
-            duplicateLazyOutlines := duplicateLazyOutlines . "," lazy_capped
-        } catch {
-            Hotstring( ":B1C:" lazy_capped, expander.bind(lazy_capped, word_capped, formal, saves, power))
-        }
-    }
-    try {
-        ; Try the "word" as a hotstring to see whether it exists
-        Hotstring( ":B0:" word )
-    } catch {
-        ; The "word" does not exist, so use it as a coaching hint
-        if (StrLen(word) < 40) {
-            Hotstring( ":B0:" word, hinter.bind(word, lazy, hint, formal, saves, power))
-        }
-    }
-
-    ; finally allcapped cases or HE will preempt He for E
-    if not negations.item(lazy_upper) {
-        try {
-            Hotstring( ":B1C:" lazy_upper )
-            if StrLen(lazy_upper) > 1 {
-                ; Don't record every single character lazy outline as a dupe
+    if (overwrite) {
+        ; On dynamic adds, force every add to happen 
+        ; Add the hinter entry first, so it will be overwritten by a lazy form if they happen to be the same 
+        Hotstring( ":B0:" word, hinter.bind(word, lazy, hint, formal, saves, power))
+        Hotstring( ":B1C:" lazy, expander.bind(lazy, word_lower, formal, saves, power))
+        Hotstring( ":B1C:" lazy_capped, expander.bind(lazy_capped, word_capped, formal, saves, power))
+        Hotstring( ":B1C:" lazy_upper, expander.bind(lazy_upper, word_upper, formal, saves, power))
+    } else {
+        ; We're not overwriting on initial load, so test whether a form already exists before adding it
+        ; This allows the personal dictionary to take priority over the core dictionary so people can do their own thing 
+        ; First lowered cases
+        if not negations.item(lazy) {
+            try {
+                Hotstring( ":B1C:" lazy )
                 duplicateLazyOutlineCount += 1
-                duplicateLazyOutlines := duplicateLazyOutlines . "," lazy_upper
+                duplicateLazyOutlines := duplicateLazyOutlines . "," lazy
+            } catch {
+                Hotstring( ":B1C:" lazy, expander.bind(lazy, word_lower, formal, saves, power))
             }
+        }
+
+        ; Then capped cases, so they preempt all-capped cases
+        if not negations.item(lazy_capped) {
+            try {
+                Hotstring( ":B1C:" lazy_capped )
+                duplicateLazyOutlineCount += 1
+                duplicateLazyOutlines := duplicateLazyOutlines . "," lazy_capped
+            } catch {
+                Hotstring( ":B1C:" lazy_capped, expander.bind(lazy_capped, word_capped, formal, saves, power))
+            }
+        }
+        try {
+            ; Try the "word" as a hotstring to see whether it exists
+            Hotstring( ":B0:" word )
         } catch {
-            Hotstring( ":B1C:" lazy_upper, expander.bind(lazy_upper, word_upper, formal, saves, power))
+            ; The "word" does not exist, so use it as a coaching hint
+            if (StrLen(word) < 40) {
+                Hotstring( ":B0:" word, hinter.bind(word, lazy, hint, formal, saves, power))
+            }
+        }
+
+        ; finally allcapped cases or HE will preempt He for E
+        if not negations.item(lazy_upper) {
+            try {
+                Hotstring( ":B1C:" lazy_upper )
+                if StrLen(lazy_upper) > 1 {
+                    ; Don't record every single character lazy outline as a dupe
+                    duplicateLazyOutlineCount += 1
+                    duplicateLazyOutlines := duplicateLazyOutlines . "," lazy_upper
+                }
+            } catch {
+                Hotstring( ":B1C:" lazy_upper, expander.bind(lazy_upper, word_upper, formal, saves, power))
+            }
         }
     }
 }
@@ -485,32 +496,29 @@ ClearOpportunities()
     GuiControl,,AcruedTipText, % ListOpportunities(Opportunities)
 }
 
-OfferRetry() {
-    global forms
-    global lastExpandedWord
-    global lastExpandedForm
-    global index
-    global keyer
-    global keyers := Array("","o","u","i","e","a","w","y")
+OfferEdit() {
+    global Editing
+    global RegexWord
+    global RegexLazy
     
-    logEventQG(1, "Offering retry with " lastExpandedWord "/" lastExpandedForm)
-    possibles := {}
-    possiblesCount := 0
-    possiblesMsg := "Did you mean: `n"
-    for index, keyer in keyers {
-        keyedLazy := lastExpandedForm . keyer
-        StringLower, keyedLazy, keyedLazy
-        logEventQG(3, "Testing availability of  " keyedLazy)
-        if (forms[keyedLazy]) {
-            possibles[keyedLazy] := forms[keyedLazy]
-            possiblesCount += 1
-            possiblesMsg := possiblesMsg keyedLazy ": " forms[keyedLazy] "`n"
-            logEventQG(3, "Available:  " keyedLazy " as " forms[keyedLazy])
-        } else {
-            logEventQG(3, "Not available:  " keyedLazy)
-        }
+    clipboard := ""  ; Start off empty to allow ClipWait to detect when the text has arrived.
+    Send ^c
+    ClipWait  ; Wait for the clipboard to contain text.
+
+    logEventQG(1, "Offering edit with " Clipboard)
+    
+    if (! Editing) {
+        Gui Qwertigraph:Default
+        GuiControl, , EditingCheckbox, 1
+        EditingSub()
     }
-    Msgbox, % possiblesMsg
+    
+    trimmed := Trim(Clipboard)
+    
+    Gui Editor:Default
+    GuiControl, Text, RegexWord, ^%trimmed%
+    GuiControl, Text, RegexLazy, ^%trimmed%.?$
+    SearchForms()
 }
 
 ExitLogging() {

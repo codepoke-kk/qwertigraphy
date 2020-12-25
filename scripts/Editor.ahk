@@ -23,6 +23,7 @@ logEventDE(4, "very verbose")
 
 dictionariesLoaded := 0
 dictionaryListFile := "dictionary_load.list"
+dictionaryDropDown := ""
 logEventDE(1, "Loading dictionaries list from " dictionaryListFile)
 dictionaries := []
 Loop, read, %dictionaryListFile% 
@@ -30,6 +31,7 @@ Loop, read, %dictionaryListFile%
     if (! RegexMatch(A_LoopReadLine, "^;")) {
         logEventDE(1, "Adding dictionary " A_LoopReadLine)
         dictionaries.Push(A_LoopReadLine)
+        dictionaryDropDown := dictionaryDropDown "|" A_LoopReadLine 
     } else {
         logEventDE(1, "Skipping dictionary " A_LoopReadLine)
     }
@@ -101,6 +103,7 @@ ShowEditor() {
     global EditForm
     global AutoGenHints
     global SaveDictionaries
+    global dictionaryDropDown
     global SaveProgress
     global BackupCount
     global Editing
@@ -142,7 +145,7 @@ ShowEditor() {
     Gui, Editor:Add, Edit, x372 y469 w30  h20 vEditKeyer, 
     Gui, Editor:Add, Edit, x402 y469 w50  h20 vEditUsage,  
     Gui, Editor:Add, Edit, x452 y469 w150 h20 vEditHint, 
-    Gui, Editor:Add, Edit, x602 y469 w110 h20 vEditDict,
+    Gui, Editor:Add, DropDownList, x602 y469 w110 r5 vEditDict, %dictionaryDropDown%
     Gui, Editor:Add, Button, x712 y469 w90 h20 gCommitEdit, Commit
     Gui, Editor:Add, Button, x712 y500 w90 h30 gSaveDictionaries vSaveDictionaries Disabled, Save
     Gui, Editor:Add, Progress, x12 y545 w700 h5 cOlive vSaveProgress, 1
@@ -452,6 +455,7 @@ PrepareEdit(RowNumber) {
     global EditKeyer
     global EditUsage
     global EditHint
+    global dictionaryDropDown
     
     Gui Editor:Default    
     ; Get the data from the edited row
@@ -477,10 +481,12 @@ PrepareEdit(RowNumber) {
     }
     if (InStr(EditDict, "_core.csv")) { 
         supplemental_dict := RegExReplace(EditDict, "_core.csv", "_supplement.csv")
-        GuiControl, Text, EditDict, %supplemental_dict%
+        dictList := RegexReplace(dictionaryDropDown, supplemental_dict "\|?", supplemental_dict "||")
     } else {
-        GuiControl, Text, EditDict, %EditDict%
+        dictList := RegexReplace(dictionaryDropDown, EditDict "\|?", EditDict "||")
     }
+    
+    GuiControl, , EditDict, %dictList%
 }
 CommitEdit() {
     logEventDE(3, "Commiting edit to form")
@@ -520,7 +526,7 @@ CommitEdit() {
     forms[formKey] := form
     
     if (! FreeStandingEditor) {
-        CreateFormsFromDictionary(word, formal, lazy, hint)
+        CreateFormsFromDictionary(word, formal, lazy, hint, true)
     }
     GuiControl, Enable, SaveDictionaries
     
