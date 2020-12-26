@@ -194,6 +194,11 @@ FileAppend %duplicateLazyOutlines%, duplicateLazyOutlines.txt
     Return
     
 ; Show related strokes after an expansion
+#^r::
+    hotstring("reset")
+    RecordOpportunity()
+    Return
+; Show related strokes after an expansion
 #^e::
     hotstring("reset")
     OfferEdit()
@@ -426,6 +431,13 @@ UpdateDashboard() {
     Gui Qwertigraph:Default
     GuiControl,,DashboardText, % "Typed:" TypedCharacters "`nSaved:" SavedCharacters "`nMissed: " MissedCharacters "`nEfficiency:" Efficiency "`nLearning:" Learning
 }
+RecordOpportunity() {
+    clipboard := ""  ; Start off empty to allow ClipWait to detect when the text has arrived.
+    Send ^c
+    ClipWait  ; Wait for the clipboard to contain text.
+    AddOpportunity(clipboard " (recorded)", 7)
+    FlashHint(clipboard " (recorded)")
+}
 AddOpportunity(tip,saves) {
     global coachingLevel
     if (! coachingLevel ) {
@@ -518,6 +530,7 @@ OfferEdit() {
     Gui Editor:Default
     GuiControl, Text, RegexWord, ^%trimmed%
     GuiControl, Text, RegexLazy, ^%trimmed%.?$
+    Gui Show
     SearchForms()
 }
 
