@@ -526,10 +526,11 @@ OfferEdit() {
     }
     
     trimmed := Trim(Clipboard)
+    StringLower, lowered, trimmed
     
     Gui Editor:Default
-    GuiControl, Text, RegexWord, ^%trimmed%
-    GuiControl, Text, RegexLazy, ^%trimmed%.?$
+    GuiControl, Text, RegexWord, ^%lowered%
+    GuiControl, Text, RegexLazy, ^%lowered%.?$
     Gui Show
     SearchForms()
 }
