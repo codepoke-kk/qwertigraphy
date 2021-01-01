@@ -7,7 +7,10 @@ SetBatchLines, -1
 SetKeyDelay, -1
 nibY := -999 ; disable GreggPad until loaded. 
 
-;retrains := { "w":1, "nd":1 }
+I_Icon = coach.ico
+IfExist, %I_Icon%
+Menu, Tray, Icon, %I_Icon%
+;return
 
 logFileQG := 0
 logVerbosityQG := 4
@@ -580,3 +583,16 @@ logEventQG(verbosity, message) {
     if (verbosity <= logVerbosityQG) 
         logFileQG.Write(logDateStamp "[" verbosity "]: " message "`r`n")
 }
+
+; Directives to allow this script to be compiled as an exe
+;@Ahk2Exe-AddResource duplicateLazyOutlines.txt
+;@Ahk2Exe-AddResource negations.txt
+;@Ahk2Exe-AddResource opportunities.txt
+;@Ahk2Exe-AddResource retrains.txt
+;@Ahk2Exe-AddResource anniversary_cmu.csv
+;@Ahk2Exe-AddResource anniversary_core.csv
+;@Ahk2Exe-AddResource anniversary_modern.csv
+;@Ahk2Exe-AddResource anniversary_phrases.csv
+;@Ahk2Exe-AddResource anniversary_supplement.csv
+;@Ahk2Exe-AddResource personal.csv
+;@Ahk2Exe-AddResource greggpad.html
