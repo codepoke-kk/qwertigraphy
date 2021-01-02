@@ -1,6 +1,6 @@
 ﻿cd "$PsScriptRoot\..\scripts"
 
-$filters = @('*.txt', '*.csv', '*.html')
+$filters = @('*.csv', '*.html', '*.template')
 foreach ($filter in $filters) {
 $files = dir -filter $filter
     foreach ($file in $files) {

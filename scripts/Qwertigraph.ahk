@@ -607,14 +607,13 @@ logEventQG(verbosity, message) {
 }
 
 ; Directives to allow this script to be compiled as an exe
-;@Ahk2Exe-AddResource duplicateLazyOutlines.txt
-;@Ahk2Exe-AddResource negations.txt
-;@Ahk2Exe-AddResource opportunities.txt
-;@Ahk2Exe-AddResource retrains.txt
 ;@Ahk2Exe-AddResource anniversary_cmu.csv
 ;@Ahk2Exe-AddResource anniversary_core.csv
 ;@Ahk2Exe-AddResource anniversary_modern.csv
 ;@Ahk2Exe-AddResource anniversary_phrases.csv
 ;@Ahk2Exe-AddResource anniversary_supplement.csv
-;@Ahk2Exe-AddResource personal.csv
 ;@Ahk2Exe-AddResource greggpad.html
+;@Ahk2Exe-AddResource dictionary_load.template
+;@Ahk2Exe-AddResource negations.template
+;@Ahk2Exe-AddResource personal.template
+;@Ahk2Exe-AddResource retrains.template

@@ -47,7 +47,7 @@ Loop, read, %dictionaryListFile%
     }
 }
 
-negationsFile := "negations.txt"
+negationsFile := PersonalDataFolder "\negations.txt"
 logEventDE(1, "Loading negations from " negationsFile)
 negations := ComObjCreate("Scripting.Dictionary")
 Loop,Read,%negationsFile%   ;read negations
