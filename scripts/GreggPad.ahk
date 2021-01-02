@@ -107,6 +107,7 @@ GreggPadGuiClose:
     }
     
 ShowGreggPad() {
+    local
     global guiWidth
     global guiHeight
     global oWB
@@ -124,13 +125,12 @@ ShowGreggPad() {
 }
 
 VisualizeForm(qwerd, form, pen) {
+    local
     Global Gregging
     Global Qwerting
     global oWB
     global strokes
     global vowelStrokes
-    global keysString
-    global key
     global padPages
     global padPagesIndex
     global padPageHeader
@@ -228,6 +228,7 @@ VisualizeForm(qwerd, form, pen) {
 }
 
 SelectVowelForm(preceding, vowel, following) {
+    local
     global strokes
     global vowelStrokes
     
@@ -305,8 +306,7 @@ SelectVowelForm(preceding, vowel, following) {
 }
 
 AdvanceNib(path) {
-    global FoundPos
-    global Matches
+    local
     
     LogEventGP(4, "Advancing nib column-wise per " path)
     subPaths := StrSplit(path, StrSplit("c,l", ","))

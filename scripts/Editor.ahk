@@ -21,17 +21,27 @@ logEventDE(2, "slightly verbose")
 logEventDE(3, "pretty verbose")
 logEventDE(4, "very verbose")
 
+PersonalDataFolder := A_AppData "\Qwertigraph"
+logEventDE(1, "Personal data found at " PersonalDataFolder)
+
 dictionariesLoaded := 0
 dictionaryListFile := "dictionary_load.list"
 dictionaryDropDown := ""
+dictionaryFullToShortNames := {}
+dictionaryShortToFullNames := {}
 logEventDE(1, "Loading dictionaries list from " dictionaryListFile)
 dictionaries := []
 Loop, read, %dictionaryListFile% 
 {
     if (! RegexMatch(A_LoopReadLine, "^;")) {
         logEventDE(1, "Adding dictionary " A_LoopReadLine)
-        dictionaries.Push(A_LoopReadLine)
-        dictionaryDropDown := dictionaryDropDown "|" A_LoopReadLine 
+        personalizedDict := RegExReplace(A_LoopReadLine, "AppData", PersonalDataFolder) 
+        dictionaries.Push(personalizedDict)
+        dictShortName := RegExReplace(personalizedDict, "^(.*\\)", "")
+        dictionaryFullToShortNames[personalizedDict] := dictShortName
+        dictionaryDropDown := dictionaryDropDown "|" dictShortName 
+        logEventDE(1, "Adding dictionary names " dictShortName " for " personalizedDict)
+        dictionaryShortToFullNames[dictShortName] := personalizedDict
     } else {
         logEventDE(1, "Skipping dictionary " A_LoopReadLine)
     }
@@ -83,6 +93,7 @@ dictionariesLoaded := 1
 return
 
 ShowEditor() {
+    local
     global Forms
     global EditorTitle
     global FormsLV
@@ -303,9 +314,7 @@ EditorGuiClose:
     }
    
 AutoLazyForm() {
-    global formal
-    global word
-    global lazy
+    local
     Gui Editor:Default
     GuiControlGet formal, , EditFormal
     GuiControlGet word, , EditWord
@@ -336,11 +345,7 @@ AutoLazyForm() {
 }
     
 AutoKeyer() {
-    global word
-    global lazy
-    global keyer
-    global dict
-    global formKey
+    local
     Gui Editor:Default
     GuiControlGet word, , EditWord
     GuiControlGet lazy, , EditLazy
@@ -355,10 +360,7 @@ AutoKeyer() {
 }
 
 AddValueToEditFields(WordAdd, FormalAdd, LazyAdd) {
-
-    global formal
-    global word
-    global lazy
+    local
     global EditWord
     global EditFormal
     global EditLazy
@@ -427,15 +429,17 @@ GetNextKeyer(formKey, lazy) {
 }
     
 DeleteForm() {
-    global dictionary
-    global word
+    local
     global forms
-    global formKey
+    global dictionaryShortToFullNames
     
     Gui Editor:Default
     ; Grab values the user has edited and wants to commit 
     GuiControlGet word, , EditWord
     GuiControlGet dictionary, , EditDict
+    
+    ; Convert the dictionary from its short name to its full name for storage
+    dictionary := dictionaryShortToFullNames[dictionary]
     
     formKey := dictionary "!!" word
     logEventDE(3, "Deleting " formKey)
@@ -447,6 +451,7 @@ DeleteForm() {
 }
     
 PrepareEdit(RowNumber) {
+    local
     logEventDE(2, "Preparing edit for ListView row " RowNumber)
     global EditDict
     global EditWord
@@ -455,7 +460,9 @@ PrepareEdit(RowNumber) {
     global EditKeyer
     global EditUsage
     global EditHint
+    global EditForm
     global dictionaryDropDown
+    global dictionaryFullToShortNames
     
     Gui Editor:Default    
     ; Get the data from the edited row
@@ -479,6 +486,10 @@ PrepareEdit(RowNumber) {
     } else {
         GuiControl, Text, EditHint, %EditHint%
     }
+    
+    ; First convert the requested dictionary to its full name for display to the user
+    EditDict := dictionaryFullToShortNames[EditDict]
+    ; Next change the dictionary if they're trying to edit a core dictionary 
     if (InStr(EditDict, "_core.csv")) { 
         supplemental_dict := RegExReplace(EditDict, "_core.csv", "_supplement.csv")
         dictList := RegexReplace(dictionaryDropDown, supplemental_dict "\|?", supplemental_dict "||")
@@ -489,18 +500,19 @@ PrepareEdit(RowNumber) {
     GuiControl, , EditDict, %dictList%
 }
 CommitEdit() {
-    logEventDE(3, "Commiting edit to form")
-    global dictionary
-    global word
-    global formal
-    global lazy
-    global keyer
-    global usage
-    global hint
+    local
+    global EditDict
+    global EditWord
+    global EditFormal
+    global EditLazy
+    global EditKeyer
+    global EditUsage
+    global EditHint
+    global EditForm
     global forms
-    global form
-    global formKey
     global FreeStandingEditor
+    global dictionaryShortToFullNames
+    logEventDE(3, "Commiting edit to form")
     
     Gui Editor:Default
     ; Grab values the user has edited and wants to commit 
@@ -512,6 +524,9 @@ CommitEdit() {
     GuiControlGet hint, , EditHint
     GuiControlGet dictionary, , EditDict
     
+    ; Convert the dictionary from its short name to its full name for storage
+    dictionary := dictionaryShortToFullNames[dictionary]
+    
     ; Generate an autohint if it's requested by checkbox or explicit field value 
     GuiControlGet autoHint, , AutoGenHints
     if ( hint = "Auto" ) or ( autoHint) {
@@ -522,7 +537,8 @@ CommitEdit() {
     form := Object("word", word, "formal", formal, "lazy", lazy, "keyer", keyer, "usage", usage, "hint", hint, "dictionary", dictionary)
     formKey := form.dictionary "!!" form.word
     
-    logEventDE(2, "Commiting edit to " formKey)
+    logEventDE(2, "Commiting edit to " formKey)    
+    logEventDE(3, "Commiting fields: word," word " formal," formal " lazy," lazy " keyer," keyer " usage," usage " hint," hint " dictionary," dictionary)
     forms[formKey] := form
     
     if (! FreeStandingEditor) {
@@ -535,6 +551,7 @@ CommitEdit() {
 }
 
 SearchForms() {
+    local
     global RegexDict
     global RegexWord
     global RegexFormal
@@ -542,10 +559,7 @@ SearchForms() {
     global RegexKeyer
     global RegexUsage
     global RegexHint
-    global word
     global forms
-    global form
-    global formKey
     Gui Editor:Default
     GuiControlGet RegexDict
     GuiControlGet RegexWord
@@ -614,19 +628,17 @@ SearchForms() {
 }
 
 SaveDictionaries() {
+    local
     global dictionariesLoaded 
     global dictionaries
     global dictionary
     global sortableKey
     global sortableWords
     global forms 
-    global form 
-    global word 
     global progress
     global SaveProgress
-    global index
     global BackupCount
-    global line
+    global PersonalDataFolder
     
     Gui Editor:Default
     logEventDE(1, "Saving dictionaries")
@@ -669,7 +681,7 @@ SaveDictionaries() {
                 logEventDE(2, "Retaining " FileItem2)
             } else {
                 logEventDE(2, "Deleting " FileItem2)
-                FileDelete, %FileItem2%
+                FileDelete, %PersonalDataFolder%\%FileItem2%
             }
         }
     }

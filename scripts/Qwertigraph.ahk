@@ -7,11 +7,13 @@ SetBatchLines, -1
 SetKeyDelay, -1
 nibY := -999 ; disable GreggPad until loaded. 
 
+; Make the pretty icon
 I_Icon = coach.ico
 IfExist, %I_Icon%
 Menu, Tray, Icon, %I_Icon%
 ;return
 
+; Prepare to do the logging
 logFileQG := 0
 logVerbosityQG := 4
 IfNotExist, logs
@@ -23,23 +25,44 @@ logEventQG(2, "slightly verbose")
 logEventQG(3, "pretty verbose")
 logEventQG(4, "very verbose")
 
+; It can coach more or less
 coachingLevel := 1 ; 0 is none, 1 is some, 2 is all 
 
+; Personalize this user's data
+PersonalDataFolder := A_AppData "\Qwertigraph"
+logEventQG(1, "Personal data found at " PersonalDataFolder)
+IfNotExist, %PersonalDataFolder% 
+{
+    FileCreateDir, %PersonalDataFolder%
+    logEventQG(1, "Created " PersonalDataFolder)
+}
+personalizedFiles := {"personal.template":"personal.csv", "dictionary_load.template":"dictionary_load.list", "negations.template":"negations.txt", "retrains.template":"retrains.txt"}
+for fileKey, fileValue in personalizedFiles
+{
+    IfNotExist, %PersonalDataFolder%\%fileValue%
+    {
+        FileCopy, %fileKey%, %PersonalDataFolder%\%fileValue%, false
+        logEventQG(1, "Created " PersonalDataFolder "\" fileValue)
+    }
+}
+
+; Finally, down to business 
 dictionariesLoaded := 0
-dictionaryListFile := "dictionary_load.list"
+dictionaryListFile := PersonalDataFolder "\dictionary_load.list"
 logEventQG(1, "Loading dictionaries list from " dictionaryListFile)
 dictionaries := []
 Loop, read, %dictionaryListFile% 
 {
     if (! RegexMatch(A_LoopReadLine, "^;")) {
         logEventQG(1, "Adding dictionary " A_LoopReadLine)
-        dictionaries.Push(A_LoopReadLine)
+        personalizedDict := RegExReplace(A_LoopReadLine, "AppData", PersonalDataFolder) 
+        dictionaries.Push(personalizedDict)
     } else {
         logEventQG(1, "Skipping dictionary " A_LoopReadLine)
     }
 }
 
-negationsFile := "negations.txt"
+negationsFile := PersonalDataFolder "\negations.txt"
 logEventQG(1, "Loading negations from " negationsFile)
 negations := ComObjCreate("Scripting.Dictionary")
 Loop,Read,%negationsFile%   ;read negations
@@ -47,7 +70,7 @@ Loop,Read,%negationsFile%   ;read negations
     logEventQG(4, "Loading negation " A_LoopReadLine)
     negations.item(A_LoopReadLine) := 1
 }
-retrainsFile := "retrains.txt"
+retrainsFile := PersonalDataFolder "\retrains.txt"
 logEventQG(1, "Loading retrains from " retrainsFile)
 retrains := {}
 Loop,Read,%retrainsFile%   ;read retrains
@@ -208,8 +231,7 @@ FileAppend %duplicateLazyOutlines%, duplicateLazyOutlines.txt
     Return
 
 CreateFormsFromDictionary(word, formal, lazy, hint, overwrite) {
-    global saves
-    global power
+    local
     global forms
     global negations
     global duplicateLazyOutlineCount
