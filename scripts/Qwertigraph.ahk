@@ -28,6 +28,13 @@ logEventQG(4, "very verbose")
 ; It can coach more or less
 coachingLevel := 1 ; 0 is none, 1 is some, 2 is all 
 
+; Include files needed to create a release
+FileInstall, anniversary_core.csv, anniversary_core.csv, true
+FileInstall, anniversary_supplement.csv, anniversary_supplement.csv, true
+FileInstall, anniversary_phrases.csv, anniversary_phrases.csv, true
+FileInstall, anniversary_modern.csv, anniversary_modern.csv, true
+
+
 ; Personalize this user's data
 PersonalDataFolder := A_AppData "\Qwertigraph"
 logEventQG(1, "Personal data found at " PersonalDataFolder)

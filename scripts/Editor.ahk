@@ -25,7 +25,7 @@ PersonalDataFolder := A_AppData "\Qwertigraph"
 logEventDE(1, "Personal data found at " PersonalDataFolder)
 
 dictionariesLoaded := 0
-dictionaryListFile := "dictionary_load.list"
+dictionaryListFile := PersonalDataFolder "\dictionary_load.list"
 dictionaryDropDown := ""
 dictionaryFullToShortNames := {}
 dictionaryShortToFullNames := {}
