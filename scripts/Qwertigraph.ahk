@@ -29,6 +29,10 @@ logEventQG(4, "very verbose")
 coachingLevel := 1 ; 0 is none, 1 is some, 2 is all 
 
 ; Include files needed to create a release
+IfNotExist, dictionaries
+    FileCreateDir, dictionaries
+IfNotExist, templates
+    FileCreateDir, templates
 FileInstall, dictionaries\anniversary_core.csv, dictionaries\anniversary_core.csv, true
 FileInstall, dictionaries\anniversary_supplement.csv, dictionaries\anniversary_supplement.csv, true
 FileInstall, dictionaries\anniversary_phrases.csv, dictionaries\anniversary_phrases.csv, true
