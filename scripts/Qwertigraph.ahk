@@ -34,6 +34,11 @@ FileInstall, dictionaries\anniversary_supplement.csv, dictionaries\anniversary_s
 FileInstall, dictionaries\anniversary_phrases.csv, dictionaries\anniversary_phrases.csv, true
 FileInstall, dictionaries\anniversary_modern.csv, dictionaries\anniversary_modern.csv, true
 FileInstall, dictionaries\anniversary_cmu.csv, dictionaries\anniversary_cmu.csv, true
+FileInstall, templates\dictionary_load.template, templates\dictionary_load.template, true
+FileInstall, templates\negations.template, templates\negations.template, true
+FileInstall, templates\personal.template, templates\personal.template, true
+FileInstall, templates\retrains.template, templates\retrains.template, true
+FileInstall, coach.ico, coach.ico, true
 
 
 ; Personalize this user's data
@@ -613,15 +618,3 @@ logEventQG(verbosity, message) {
     if (verbosity <= logVerbosityQG) 
         logFileQG.Write(logDateStamp "[" verbosity "]: " message "`r`n")
 }
-
-; Directives to allow this script to be compiled as an exe
-;@Ahk2Exe-AddResource anniversary_cmu.csv
-;@Ahk2Exe-AddResource anniversary_core.csv
-;@Ahk2Exe-AddResource anniversary_modern.csv
-;@Ahk2Exe-AddResource anniversary_phrases.csv
-;@Ahk2Exe-AddResource anniversary_supplement.csv
-;@Ahk2Exe-AddResource greggpad.html
-;@Ahk2Exe-AddResource dictionary_load.template
-;@Ahk2Exe-AddResource negations.template
-;@Ahk2Exe-AddResource personal.template
-;@Ahk2Exe-AddResource retrains.template

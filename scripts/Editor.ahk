@@ -133,11 +133,11 @@ ShowEditor() {
     Gui, Editor:Add, Edit, -WantReturn x352 y29 w30  h20 vRegexKeyer, 
     Gui, Editor:Add, Edit, -WantReturn x382 y29 w60  h20 vRegexUsage,  
     Gui, Editor:Add, Edit, -WantReturn x442 y29 w160 h20 vRegexHint, 
-    Gui, Editor:Add, Edit, -WantReturn x602 y29 w110 h20 vRegexDict, 
-    Gui, Editor:Add, Button, Default x712 y29 w90 h20 gSearchForms, Search
+    Gui, Editor:Add, Edit, -WantReturn x602 y29 w210 h20 vRegexDict, 
+    Gui, Editor:Add, Button, Default x812 y29 w90 h20 gSearchForms, Search
     
     ; Add the data ListView
-    Gui, Editor:Add, ListView, x12 y49 w700 h420 vFormsLV gFormsLV, Word|Formal|Lazy|Keyer|Usage|Hint|Dictionary
+    Gui, Editor:Add, ListView, x12 y49 w800 h420 vFormsLV gFormsLV, Word|Formal|Lazy|Keyer|Usage|Hint|Dictionary
     LV_ModifyCol(5, "Integer")  ; For sorting, indicate that the Usage column is an integer.
     LV_ModifyCol(1, 160)
     LV_ModifyCol(2, 90)
@@ -145,7 +145,7 @@ ShowEditor() {
     LV_ModifyCol(4, 30)
     LV_ModifyCol(5, 60)
     LV_ModifyCol(6, 160)
-    LV_ModifyCol(7, 107) ; 3 pixels short to avoid the h_scrollbar 
+    LV_ModifyCol(7, 207) ; 3 pixels short to avoid the h_scrollbar 
     
     ; Add edit fields and controls
     Gui, Editor:Add, Edit, x12  y469 w160 h20 vEditWord,  
@@ -156,15 +156,16 @@ ShowEditor() {
     Gui, Editor:Add, Edit, x372 y469 w30  h20 vEditKeyer, 
     Gui, Editor:Add, Edit, x402 y469 w50  h20 vEditUsage,  
     Gui, Editor:Add, Edit, x452 y469 w150 h20 vEditHint, 
-    Gui, Editor:Add, DropDownList, x602 y469 w110 r5 vEditDict, %dictionaryDropDown%
-    Gui, Editor:Add, Button, x712 y469 w90 h20 gCommitEdit, Commit
-    Gui, Editor:Add, Button, x712 y500 w90 h30 gSaveDictionaries vSaveDictionaries Disabled, Save
+    Gui, Editor:Add, DropDownList, x602 y469 w210 r5 vEditDict, %dictionaryDropDown%
+    Gui, Editor:Add, Button, x812 y469 w90 h20 gCommitEdit, Commit
+    Gui, Editor:Add, Button, x812 y500 w90 h30 gSaveDictionaries vSaveDictionaries Disabled, Save
     Gui, Editor:Add, Progress, x12 y545 w700 h5 cOlive vSaveProgress, 1
     
     ; Add checkbox controls
-    Gui, Editor:Add, CheckBox, x715 y49 w130 h20 vAutoGenHints gAutoGenHints Checked, AutoGenerate Hints
-    Gui, Editor:Add, Edit, x715 y74 w20 h20 vBackupCount, 2
-    Gui, Editor:Add, Text, x740 y74 w105 h20, Backups to retain 
+    Gui, Editor:Add, CheckBox, x815 y49 w130 h20 vAutoGenHints gAutoGenHints Checked, AutoGenerate Hints
+    Gui, Editor:Add, Button, x812 y444 w90 h20 gOpenPersonalizations, Personalizations
+    Gui, Editor:Add, Edit, x815 y74 w20 h20 vBackupCount, 2
+    Gui, Editor:Add, Text, x840 y74 w105 h20, Backups to retain 
     
     ; Create a popup menu to be used as the context menu:
     Menu, FormsLVContextMenu, Add, Edit, ContextEditForm
@@ -178,7 +179,7 @@ ShowEditor() {
     Menu, FormsLVContextMenu, Default, Edit  ; Make "Edit" a bold font to indicate that double-click does the same thing.
     
     ; Generated using SmartGUI Creator 4.0
-    Gui, Show, x262 y118 h560 w836, Qwertigraphy Dictionary Editor
+    Gui, Show, x262 y118 h560 w936, Qwertigraphy Dictionary Editor
 }
 
 EditorGuiContextMenu: ; Launched in response to a right-click or press of the Apps key.
@@ -758,6 +759,10 @@ SaveDictionaries() {
     
     GuiControl,Hide, SaveProgress 
     GuiControl, Disable, SaveDictionaries
+}
+OpenPersonalizations() {
+    global PersonalDataFolder
+    Run, % A_Windir "\explorer.exe " PersonalDataFolder
 }
 
 logEventDE(verbosity, message) {
