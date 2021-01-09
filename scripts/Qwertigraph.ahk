@@ -43,7 +43,7 @@ IfNotExist, %PersonalDataFolder%
     FileCreateDir, %PersonalDataFolder%
     logEventQG(1, "Created " PersonalDataFolder)
 }
-personalizedFiles := {"personal.template":"personal.csv", "dictionary_load.template":"dictionary_load.list", "negations.template":"negations.txt", "retrains.template":"retrains.txt"}
+personalizedFiles := {"templates\personal.template":"personal.csv", "templates\dictionary_load.template":"dictionary_load.list", "templates\negations.template":"negations.txt", "templates\retrains.template":"retrains.txt"}
 for fileKey, fileValue in personalizedFiles
 {
     IfNotExist, %PersonalDataFolder%\%fileValue%
