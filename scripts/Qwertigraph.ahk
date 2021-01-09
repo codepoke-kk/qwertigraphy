@@ -29,10 +29,11 @@ logEventQG(4, "very verbose")
 coachingLevel := 1 ; 0 is none, 1 is some, 2 is all 
 
 ; Include files needed to create a release
-FileInstall, anniversary_core.csv, anniversary_core.csv, true
-FileInstall, anniversary_supplement.csv, anniversary_supplement.csv, true
-FileInstall, anniversary_phrases.csv, anniversary_phrases.csv, true
-FileInstall, anniversary_modern.csv, anniversary_modern.csv, true
+FileInstall, dictionaries\anniversary_core.csv, dictionaries\anniversary_core.csv, true
+FileInstall, dictionaries\anniversary_supplement.csv, dictionaries\anniversary_supplement.csv, true
+FileInstall, dictionaries\anniversary_phrases.csv, dictionaries\anniversary_phrases.csv, true
+FileInstall, dictionaries\anniversary_modern.csv, dictionaries\anniversary_modern.csv, true
+FileInstall, dictionaries\anniversary_cmu.csv, dictionaries\anniversary_cmu.csv, true
 
 
 ; Personalize this user's data

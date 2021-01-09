@@ -1,6 +1,6 @@
 AppData\personal.csv
-anniversary_core.csv
-anniversary_supplement.csv
-anniversary_phrases.csv
-anniversary_modern.csv
-anniversary_cmu.csv
+dictionaries\anniversary_core.csv
+dictionaries\anniversary_supplement.csv
+dictionaries\anniversary_phrases.csv
+dictionaries\anniversary_modern.csv
+dictionaries\anniversary_cmu.csv
