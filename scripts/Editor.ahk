@@ -346,12 +346,16 @@ AutoLazyForm() {
     
 AutoKeyer() {
     local
+    global dictionaryShortToFullNames
+    
     Gui Editor:Default
     GuiControlGet word, , EditWord
     GuiControlGet lazy, , EditLazy
     GuiControlGet keyer, , EditKeyer
     GuiControlGet dict, , EditDict
-    formKey := dict "!!" word
+    
+    dictionary := dictionaryShortToFullNames[dict]
+    formKey := dictionary "!!" word
     logEventDE(3, "Seeking keyer for " formKey)
     newKeyer := GetNextKeyer(formKey, lazy)
     logEventDE(2, "Setting newKeyer to " newKeyer)
@@ -364,24 +368,37 @@ AddValueToEditFields(WordAdd, FormalAdd, LazyAdd) {
     global EditWord
     global EditFormal
     global EditLazy
+    global EditKeyer
     Gui Editor:Default
     GuiControlGet word, , EditWord
     GuiControlGet formal, , EditFormal
     GuiControlGet lazy, , EditLazy
+    GuiControlGet keyer, , EditKeyer
     
+    ; I'm not ready to build a full grammar here, but removing "e" is going to save time 
+    if (InStr("ed|ing", WordAdd)) {
+        ; remove "e" from the end of the word when adding ed or ing
+        word := RegExReplace(word, "e$", "")
+    }
     
-    GuiControl, Text, EditWord, %EditWord%%wordAdd%
-    GuiControl, Text, EditFormal, %EditFormal%%FormalAdd%
-    GuiControl, Text, EditLazy, %EditLazy%%LazyAdd%
+    ; When a keyer exists, we have to remove it from the lazy form
+    if (StrLen(keyer)) {
+        ; remove keyer from the end of the lazy form before adding LazyAdd
+        lazy := RegExReplace(lazy, keyer "$", "")
+    }
+    
+    GuiControl, Text, EditWord, %word%%WordAdd%
+    GuiControl, Text, EditFormal, %formal%%FormalAdd%
+    GuiControl, Text, EditLazy, %lazy%%LazyAdd%
+    GuiControl, Text, EditKeyer, 
     
 }
 
 GetNextKeyer(formKey, lazy) {
+    local
     global forms
-    global form
-    global index
-    global keyer
-    global keyers := Array("","o","u","i","e","a","w","y")
+    global dictionaryShortToFullNames
+    keyers := Array("","o","u","i","e","a","w","y")
     logEventDE(3, "Getting next keyer for " lazy " and " formKey)
     allMatchingKeys := {}
     allMatchingKeysCount := 0
@@ -390,6 +407,8 @@ GetNextKeyer(formKey, lazy) {
         logEventDE(4, "Empty lazy form. Returning nill")
         Return
     }
+    
+    ; Loop across all forms and keep every form that begins with this lazy key
     for loopFormKey, form in forms {
         if (RegExMatch(form.lazy,"^" lazy)) {
             logEventDE(0, form.lazy " begins with " lazy)
@@ -399,19 +418,21 @@ GetNextKeyer(formKey, lazy) {
     }
     logEventDE(4, "Possible matching forms count: " allMatchingKeysCount)
         
+    ; Loop across all keyers in sequence, looking for the first that's not matched
     for index, keyer in keyers {
         keyedLazy := lazy . keyer
         logEventDE(4, "Testing keyer " keyer " as " keyedLazy)
         usedKeyFound := false
         for matchingKey, matchingForm in allMatchingKeys {
             if (not usedKeyFound) and (matchingForm.lazy = keyedLazy) {
-                logEventDE(4, "Matched " keyedLazy)
-                matchedFormKey := matchingForm.dict "!!" matchingForm.word
+                ; This is a match, but it might be a self-match which would be the right one to return
+                matchedFormKey := dictionaryShortToFullNames[matchingForm.dict] "!!" matchingForm.word
+                logEventDE(4, "Matched " keyedLazy " as " matchedFormKey)
                 if matchingForm.word = forms[formKey].word {
-                    logEventDE(4, "Matched keyer, lazy, and word. Returning this keyer: " keyer)
+                    logEventDE(4, "Matched keyer, lazy, and word " forms[formKey].word ". Returning this keyer: " keyer)
                     Return keyer
                 } else {
-                    logEventDE(4, "Keyer taken. Owned by " matchingForm.word)
+                    logEventDE(4, "Keyer " forms[formKey].word " taken. Owned by " matchingForm.word)
                     usedKeyFound := true
                     break
                 }
