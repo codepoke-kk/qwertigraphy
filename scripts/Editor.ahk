@@ -377,8 +377,8 @@ AddValueToEditFields(WordAdd, FormalAdd, LazyAdd) {
     GuiControlGet keyer, , EditKeyer
     
     ; I'm not ready to build a full grammar here, but removing "e" is going to save time 
-    if (InStr("ed|ing", WordAdd)) {
-        ; remove "e" from the end of the word when adding ed or ing
+    if (InStr("er|ed|ing", WordAdd)) {
+        ; remove "e" from the end of the word when adding er, ed, or ing
         word := RegExReplace(word, "e$", "")
     }
     
