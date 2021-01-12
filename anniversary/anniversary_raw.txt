@@ -3113,7 +3113,7 @@ k-d-l         candle
 k-d-l-a-b     candelabrum
 k-d-o-n-sh    condonation
 k-d-s-e-n-sh  condescension
-k-d-sh        condititon
+k-d-sh        condition
 k-d-u-k       conduct
 k-d-u-k-t     conducted
 k-e           commit (Expert), committee (Expert), Kentucky, key
