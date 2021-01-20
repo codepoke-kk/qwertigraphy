@@ -2981,7 +2981,7 @@ k/d-s-t-sh    contradistinction
 k/e-t-nt (e2)  counterirritant
 k/k           contract
 k/k-l-a-m     counterclaim
-k/l (k on line)  quality (Simp.)
+k-u               quality (Simp.)
 k/l (k raised)  control
 k/l-r         comptroller
 k/m-a-n       countermand

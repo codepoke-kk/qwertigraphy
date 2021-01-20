@@ -25,6 +25,7 @@ foreach ($sourceLine in $sourceDictionaryLines) {
     $sourceline = $sourceline -replace 'n-j-e k-s/k-sh', 'n-j-e/k-s/k-sh'
     $sourceline = $sourceline -replace 'ths \(s1\)', 'ths     '
     $sourceline = $sourceline -replace 'condititon', 'condition'
+    $sourceline = $sourceline -replace 'k/l \(k on line\)', 'k-u             '
 
     # $sourceline = $sourceline -replace 's-([oufvnmkgtd])', 's2-$1'
     $outlines.Add($sourceline) | Out-Null
