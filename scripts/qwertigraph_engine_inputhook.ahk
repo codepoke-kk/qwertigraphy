@@ -166,16 +166,24 @@ loop
     final_characters_count := StrLen(buffered_input_text) + 1
     logEventDE(4, "Completed hyphen " buffered_input_text)
   } else if (key = "backspace") {
-    logEventDE(4, "Did a backspace after " buffered_input_text " buffering " input_text_backspace_buffer)
-    if (buffered_input_text = "") {
-        logEventDE(4, "Backspaced with an empty buffer. Retrieving last buffer " last_input_text_backspace_buffer)
-        buffered_input_text := last_input_text_backspace_buffer
-        input_text_backspace_buffer := last_input_text_backspace_buffer
+    if (not InStr(mods, "^")) {
+        logEventDE(4, "Did a backspace after " buffered_input_text " buffering " input_text_backspace_buffer)
+        if (buffered_input_text = "") {
+            logEventDE(4, "Backspaced with an empty buffer. Retrieving last buffer " last_input_text_backspace_buffer)
+            buffered_input_text := last_input_text_backspace_buffer
+            input_text_backspace_buffer := last_input_text_backspace_buffer
+            last_input_text_backspace_buffer := ""
+        }
+        input_text_backspace_buffer := SubStr(buffered_input_text, 1, (StrLen(buffered_input_text) - 1))
+        final_characters_count := StrLen(buffered_input_text)
+        logEventDE(4, "Did a backspace after " buffered_input_text " buffering " input_text_backspace_buffer)
+    } else {
+        logEventDE(4, "Did a control-backspace after " buffered_input_text " buffering " input_text_backspace_buffer)
+        buffered_input_text := ""
+        input_text_backspace_buffer := ""
         last_input_text_backspace_buffer := ""
+        final_characters_count := 0
     }
-    input_text_backspace_buffer := SubStr(buffered_input_text, 1, (StrLen(buffered_input_text) - 1))
-    final_characters_count := StrLen(buffered_input_text)
-    logEventDE(4, "Did a backspace after " buffered_input_text " buffering " input_text_backspace_buffer)
   } else if (qwerds[buffered_input_text]) {
     if (not InStr(mods, "^")) {
       ;;; Expandable
