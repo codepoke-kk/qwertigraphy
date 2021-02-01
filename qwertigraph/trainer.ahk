@@ -37,7 +37,11 @@ speedViewer.addQueue(engine.speedQueue)
 		
 coachViewer := new CoachViewport()
 coachViewer.addQueue(engine.coachQueue)
+
+
 engine.Start()
+
+#Include personal.ahk
 
 class CoachingEvent 
 {
