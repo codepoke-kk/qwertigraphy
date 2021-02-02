@@ -55,7 +55,7 @@ class MappingEngine_InputHook
 		this.logEvent(4, "Input_text after buffering " buffered_input_text)
 		
 		; Suppressing Enter and Tab, to keep them from messing up field inputs. We'll have to send them every time
-		must_send_endkey := (InStr("Enter|Tab", key) > 0)
+		must_send_endkey := (InStr("Enter Tab", key) > 0)
 
 		if ((this.last_end_key == "'") and (InStr(MappingEngine_InputHook.ContractedEndings,buffered_input_text))) {
 			; If the last input ended with ' and this input is a common contraction, do nothing 
@@ -109,6 +109,7 @@ class MappingEngine_InputHook
 			
 			; We will always send suppressed keys later, so only send unsuppressed keys now 
 			if (not must_send_endkey) {
+				this.logEvent(2, "Sending end key, because it's not Enter or Tab")
 				Send, {%key%}
 			}
 		} else {
@@ -132,7 +133,8 @@ class MappingEngine_InputHook
 		; Since we're suppressing these keys to make sure expansion happens before leaving a field, we must always send them
 		if (must_send_endkey) {
 			; Must send modifiers if we want them to appear, but must strip the < character from them 
-			clean_mods := StrReplace(mods, "<", "")
+			clean_mods := StrReplace(mods, "<", "") 
+			this.logEvent(2, "Forcing send of endkey " key " with mods " clean_mods)
 			Send, %clean_mods%{%key%}
 		}
 

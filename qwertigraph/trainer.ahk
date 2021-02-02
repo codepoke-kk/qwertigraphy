@@ -41,7 +41,7 @@ coachViewer.addQueue(engine.coachQueue)
 
 engine.Start()
 
-#Include personal.ahk
+#Include *i personal.ahk
 
 class CoachingEvent 
 {
@@ -63,11 +63,9 @@ class CoachViewport
 {
 }
 
-
-
-
 ^Space::
 ^Enter::
+^Tab::
 ^.::
 ^,::
 ^/::
