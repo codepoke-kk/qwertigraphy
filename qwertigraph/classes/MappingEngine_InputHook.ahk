@@ -92,6 +92,14 @@ class MappingEngine_InputHook
 			}
 		} else if (this.map.qwerds.item(buffered_input_text).word) {
 			if (not InStr(mods, "^")) {
+				coaching := new CoachingEvent()
+				coaching.word := this.map.qwerds.item(buffered_input_text).word
+				coaching.qwerd := buffered_input_text
+				coaching.form := this.map.qwerds.item(buffered_input_text).form
+				coaching.saves := this.map.qwerds.item(buffered_input_text).saves
+				coaching.power := this.map.qwerds.item(buffered_input_text).power
+				coaching.match := true
+				this.coachQueue.enqueue(coaching)
 				;;; Expandable
 				this.logEvent(2, "Matched a qwerd " this.map.qwerds.item(buffered_input_text).word)
 				final_characters_count := StrLen(this.map.qwerds.item(buffered_input_text).word) + 1
@@ -121,10 +129,22 @@ class MappingEngine_InputHook
 			this.logEvent(4, "No match for " buffered_input_text ", so deleting " this.input_text_backspace_buffer)
 			this.input_text_backspace_buffer := ""
 			if (this.map.hints.item(buffered_input_text).hint) {
+				coaching := new CoachingEvent()
+				coaching.word := buffered_input_text
+				coaching.qwerd := this.map.hints.item(buffered_input_text).qwerd
+				coaching.form := this.map.hints.item(buffered_input_text).form
+				coaching.saves := this.map.hints.item(buffered_input_text).saves
+				coaching.power := this.map.hints.item(buffered_input_text).power
+				coaching.miss := true
+				this.coachQueue.enqueue(coaching)
 				;;; Hintable
 				this.logEvent(2, "Matched a hint " this.map.hints.item(buffered_input_text).hint)
 				; FlashHint(this.map.hints.item(buffered_input_text).hint)
 			} else {
+				coaching := new CoachingEvent()
+				coaching.word := buffered_input_text
+				coaching.other := true
+				this.coachQueue.enqueue(coaching)
 				;;; Ignorable 
 				this.logEvent(3, "Unknown qwerd")
 			}
@@ -133,7 +153,9 @@ class MappingEngine_InputHook
 		; Since we're suppressing these keys to make sure expansion happens before leaving a field, we must always send them
 		if (must_send_endkey) {
 			; Must send modifiers if we want them to appear, but must strip the < character from them 
-			clean_mods := StrReplace(mods, "<", "") 
+			; clean_mods := StrReplace(mods, "<", "") 
+			clean_mods := RegExReplace(mods, "[<>](.)(?:>\1)?", "$1")
+
 			this.logEvent(2, "Forcing send of endkey " key " with mods " clean_mods)
 			Send, %clean_mods%{%key%}
 		}
