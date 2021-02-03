@@ -131,9 +131,9 @@ class CoachViewport
 	SearchCoachEvents() {
 		Gui CoachGUI:Default
 		LV_Delete()
-		For key, garbage in this.coachEvents {
-			value := this.coachEvents.item(key)
-			LV_Add(, value.savings, key, value.qwerd, value.form, value.power, value.saves, value.match, value.miss, value.other)
+		For eventkey, garbage in this.coachEvents {
+			value := this.coachEvents.item(eventkey)
+			LV_Add(, value.savings, value.word, value.qwerd, value.form, value.power, value.saves, value.match, value.miss, value.other)
 		}
 	}
 	
