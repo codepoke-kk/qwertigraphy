@@ -99,6 +99,7 @@ class MappingEngine_InputHook
 				coaching.saves := this.map.qwerds.item(buffered_input_text).saves
 				coaching.power := this.map.qwerds.item(buffered_input_text).power
 				coaching.match := true
+				coaching.endKey := key
 				this.coachQueue.enqueue(coaching)
 				;;; Expandable
 				this.logEvent(2, "Matched a qwerd " this.map.qwerds.item(buffered_input_text).word)
@@ -136,15 +137,20 @@ class MappingEngine_InputHook
 				coaching.saves := this.map.hints.item(buffered_input_text).saves
 				coaching.power := this.map.hints.item(buffered_input_text).power
 				coaching.miss := true
+				coaching.endKey := key
 				this.coachQueue.enqueue(coaching)
 				;;; Hintable
 				this.logEvent(2, "Matched a hint " this.map.hints.item(buffered_input_text).hint)
 				; FlashHint(this.map.hints.item(buffered_input_text).hint)
 			} else {
-				coaching := new CoachingEvent()
-				coaching.word := buffered_input_text
-				coaching.other := true
-				this.coachQueue.enqueue(coaching)
+				; This is an unknown word and qwerd. Send it to coaching, but only if it's not too strange
+				if (not RegExMatch(buffered_input_text, "[0-9!@#$%^&*]")) {
+					coaching := new CoachingEvent()
+					coaching.word := buffered_input_text
+					coaching.other := 
+					coaching.endKey := key
+					this.coachQueue.enqueue(coaching)
+				}
 				;;; Ignorable 
 				this.logEvent(3, "Unknown qwerd")
 			}

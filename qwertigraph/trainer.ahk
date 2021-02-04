@@ -54,6 +54,7 @@ class CoachingEvent
 	miss := 0
 	other := 0
 	savings := 0
+	endKey := ""
 	
 	__New()
 	{
@@ -75,6 +76,8 @@ class CoachViewport
 	coachQueues := []
 	interval := 1000
 	coachEvents := ComObjCreate("Scripting.Dictionary")
+	phrases := ComObjCreate("Scripting.Dictionary")
+	phrase_buffer := ""
 	
 	__New()
 	{
@@ -142,24 +145,49 @@ class CoachViewport
 		For index, coachQueue in this.coachQueues {
 			Loop, % coachQueue.getSize() {
 				coachEvent := coachQueue.dequeue()
-				if (not coachEvent.word) {
+				eventKey := coachEvent.word
+				StringLower, eventKey, eventKey
+				if (not eventKey) {
+					; Ignore null words
 					Continue
 				}
-				if (not this.coachEvents.item(coachEvent.word)) {
-					this.coachEvents.item(coachEvent.word) := coachEvent
+				if (not this.coachEvents.item(eventKey)) {
+					this.coachEvents.item(eventKey) := coachEvent
 				}
 				if (coachEvent.miss) {
-					this.coachEvents.item(coachEvent.word).savings += coachEvent.saves
+					this.coachEvents.item(eventKey).savings += coachEvent.saves
+					this.coachEvents.item(eventKey).miss := 0
 				}
-				this.coachEvents.item(coachEvent.word).match += coachEvent.match
-				this.coachEvents.item(coachEvent.word).miss += coachEvent.miss
-				this.coachEvents.item(coachEvent.word).other += coachEvent.other
+				this.coachEvents.item(eventKey).match += coachEvent.match
+				this.coachEvents.item(eventKey).miss += coachEvent.miss
+				this.coachEvents.item(eventKey).other += coachEvent.other
+				
+				;this.bufferPhrasing(coachEvent)
 			}
 		}
 	}
 	
 	addQueue(coachQueue) { 
 		this.coachQueues.Push(coachQueue)
+	}
+	
+	bufferPhrasing(coachEvent) {
+		this.phrase_buffer .= " " coachEvent.word
+		words := StrSplit(this.phrase_buffer, " ")
+		current_phrase := words[words.MaxIndex()]
+		Loop, % words.MaxIndex() {
+			word_index := words.MaxIndex() - A_Index
+			current_phrase := words[word_index] " " current_phrase
+			if (this.phrases.item(current_phrase)) {
+				this.phrases.item(current_phrase) += 1
+			} else {
+				this.phrases.item(current_phrase) := 1
+			}
+			ToolTip, % "Current phrase: " current_phrase " times: " this.phrases.item(current_phrase)
+		}
+		if (coachEvent.endKey != "Space") {
+			this.phrase_buffer := ""
+		}
 	}
 }
 
