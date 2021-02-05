@@ -35,7 +35,7 @@ logViewer.addQueue(engine.logQueue)
 speedViewer := new SpeedViewport()
 speedViewer.addQueue(engine.speedQueue)
 		
-coachViewer := new CoachViewport()
+coachViewer := new CoachViewport(map)
 coachViewer.addQueue(engine.coachQueue)
 
 
@@ -73,14 +73,17 @@ Global RegexCoachOther
 Global CoachEventsLV
 class CoachViewport
 {
+	map := ""
 	coachQueues := []
 	interval := 1000
 	coachEvents := ComObjCreate("Scripting.Dictionary")
 	phrases := ComObjCreate("Scripting.Dictionary")
 	phrase_buffer := ""
+	qwerds_buffer := ""
 	
-	__New()
+	__New(map)
 	{
+		this.map := map
 		
 		Gui CoachGUI:Default
 		; Add header text
@@ -145,34 +148,36 @@ class CoachViewport
 		For index, coachQueue in this.coachQueues {
 			Loop, % coachQueue.getSize() {
 				coachEvent := coachQueue.dequeue()
-				eventKey := coachEvent.word
-				StringLower, eventKey, eventKey
-				if (not eventKey) {
+				if (not coachEvent.word) {
 					; Ignore null words
 					Continue
 				}
-				if (not this.coachEvents.item(eventKey)) {
-					this.coachEvents.item(eventKey) := coachEvent
-				}
-				if (coachEvent.miss) {
-					this.coachEvents.item(eventKey).savings += coachEvent.saves
-					this.coachEvents.item(eventKey).miss := 0
-				}
-				this.coachEvents.item(eventKey).match += coachEvent.match
-				this.coachEvents.item(eventKey).miss += coachEvent.miss
-				this.coachEvents.item(eventKey).other += coachEvent.other
-				
-				;this.bufferPhrasing(coachEvent)
+				this.coachItem(coachEvent)
+				this.coachPhrasing(coachEvent)
 			}
 		}
+	}
+	
+	coachItem(coachEvent) {
+		eventKey := coachEvent.word
+		StringLower, eventKey, eventKey
+		if (not this.coachEvents.item(eventKey)) {
+			this.coachEvents.item(eventKey) := coachEvent
+		} else {
+			this.coachEvents.item(eventKey).match += coachEvent.match
+			this.coachEvents.item(eventKey).miss += coachEvent.miss
+			this.coachEvents.item(eventKey).other += coachEvent.other
+		}
+		this.coachEvents.item(eventKey).savings += coachEvent.saves
 	}
 	
 	addQueue(coachQueue) { 
 		this.coachQueues.Push(coachQueue)
 	}
 	
-	bufferPhrasing(coachEvent) {
+	coachPhrasing(coachEvent) {
 		this.phrase_buffer .= " " coachEvent.word
+		this.qwerds_buffer .= " " coachEvent.qwerd
 		words := StrSplit(this.phrase_buffer, " ")
 		current_phrase := words[words.MaxIndex()]
 		Loop, % words.MaxIndex() {
@@ -183,10 +188,26 @@ class CoachViewport
 			} else {
 				this.phrases.item(current_phrase) := 1
 			}
-			ToolTip, % "Current phrase: " current_phrase " times: " this.phrases.item(current_phrase)
+			if (this.map.hints.item(current_phrase)) {
+				coaching := new CoachingEvent()
+				coaching.word := current_phrase
+				coaching.qwerd := this.map.hints.item(current_phrase).qwerd
+				coaching.form := this.map.hints.item(current_phrase).form
+				coaching.power := this.map.hints.item(current_phrase).power
+				coaching.endKey := coachEvent.endKey
+				if (not InStr(this.qwerds_buffer, this.map.hints.item(current_phrase).qwerd)) {
+					coaching.miss := true
+					coaching.saves := -1 * this.map.hints.item(current_phrase).saves
+				} else {
+					coaching.match := true
+					coaching.saves := this.map.hints.item(current_phrase).saves
+				}	
+				this.coachItem(coaching)
+			}
 		}
 		if (coachEvent.endKey != "Space") {
 			this.phrase_buffer := ""
+			this.qwerds_buffer := ""
 		}
 	}
 }

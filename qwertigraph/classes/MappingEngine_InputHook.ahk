@@ -134,7 +134,7 @@ class MappingEngine_InputHook
 				coaching.word := buffered_input_text
 				coaching.qwerd := this.map.hints.item(buffered_input_text).qwerd
 				coaching.form := this.map.hints.item(buffered_input_text).form
-				coaching.saves := this.map.hints.item(buffered_input_text).saves
+				coaching.saves := -1 * this.map.hints.item(buffered_input_text).saves
 				coaching.power := this.map.hints.item(buffered_input_text).power
 				coaching.miss := true
 				coaching.endKey := key
