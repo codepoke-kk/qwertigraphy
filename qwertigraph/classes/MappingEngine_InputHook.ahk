@@ -181,6 +181,12 @@ class MappingEngine_InputHook
 		event := new SpeedingEvent(A_Now, ticks, StrLen(buffered_input_text) + 1, final_characters_count, key)
 		this.speedQueue.enqueue(event)
 	}
+	
+	ResetInput()
+	{
+		this.logEvent(2, "Input reset by function ")
+		this.ih.Stop()
+	}
 
 	LogEvent(verbosity, message) 
 	{

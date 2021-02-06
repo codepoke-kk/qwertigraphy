@@ -10,6 +10,7 @@ class DictionaryEntry
 		this.keyer := fields[4]
 		this.usage := fields[5]
 		this.hint := fields[6]
+		this.dictionary := fields[7]
 		this.saves := StrLen(this.word) - StrLen(this.qwerd)
 		this.power := StrLen(this.word) / StrLen(this.qwerd)
 		this.isPhrase := InStr(this.word, " ") > 0

@@ -2,6 +2,9 @@
 class DictionaryMap
 {
 	dictionaries := []
+	dictionaryPickList := ""
+	dictionaryFullToShortNames := {}
+	dictionaryShortToFullNames := {}
 	dictionariesLoaded := 0
 	retrains := {}
 	negations := ComObjCreate("Scripting.Dictionary")
@@ -23,6 +26,10 @@ class DictionaryMap
 				this.logEvent(2, "Adding dictionary " A_LoopReadLine)
 				personalizedDict := RegExReplace(A_LoopReadLine, "AppData", this.qenv.personalDataFolder) 
 				this.dictionaries.Push(personalizedDict)
+				dictShortName := RegExReplace(personalizedDict, "^(.*\\)", "")
+				this.dictionaryFullToShortNames[personalizedDict] := dictShortName
+				this.dictionaryPickList := this.dictionaryPickList "|" dictShortName 
+				this.dictionaryShortToFullNames[dictShortName] := personalizedDict
 			} else {
 				this.logEvent(2, "Skipping dictionary " A_LoopReadLine)
 			}
@@ -47,13 +54,18 @@ class DictionaryMap
 		for index, loadDictionary in this.dictionaries
 		{
 			this.logEvent(2, "Loading dictionary " loadDictionary)
-			Loop,Read, % loadDictionary   ;read dictionary into HotStrings
+			Loop,Read, % loadDictionary   ;read dictionary into Scripting.Dictionaries 
 			{
 				NumLines:=A_Index-1
 				IfEqual, A_Index, 1, Continue ; Skip title row
-				newEntry := new DictionaryEntry(A_LoopReadLine)
+				newEntry := new DictionaryEntry(A_LoopReadLine "," loadDictionary)
 				
 				if (this.qwerds.item(newEntry.qwerd).word) {
+					; If we already have this one, do not overwrite the existing entry
+					continue
+				}
+				if (this.negations.item(newEntry.qwerd)) {
+					; If this one is in the negations list, do not add it 
 					continue
 				}
 				
