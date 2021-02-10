@@ -9,6 +9,61 @@ Global RegexCoachMatch
 Global RegexCoachMiss
 Global RegexCoachOther
 Global CoachEventsLV
+
+; Predefine a coach object. The Trainer will redefine it. 
+coachViewer := {}
+
+Gui, Tab, Coach
+
+
+;; Add regex search fields
+;Gui, Add, Edit, -WantReturn x12  y64 w90 h20 vRegexWhere,  
+;Gui, Add, Edit, -WantReturn x102 y64 w100  h20 vRegexWhen,  
+;Gui, Add, Edit, -WantReturn x202 y64 w576  h20 vRegexWhat, 
+;Gui, Add, Edit, -WantReturn x778 y64 w60  h20 vRegexHow,
+;Gui, Add, Button, Default x838 y64 w90 h20 gSearchLogEvents, Search
+;
+;; Add the data ListView
+;Gui, Add, ListView, x12 y84 w916 h420 vLogEventsLV, Where|When|What|How
+;LV_ModifyCol(4, "Integer")  ; For sorting, indicate that the Usage column is an integer.
+;LV_ModifyCol(1, 90)
+;LV_ModifyCol(2, 100)
+;LV_ModifyCol(3, 576)
+;LV_ModifyCol(4, 30)
+
+; Add regex search fields
+Gui, Add, Edit, -WantReturn x12  y64 w50 h20 vRegexCoachSavings, 
+Gui, Add, Edit, -WantReturn x62  y64 w260 h20 vRegexCoachWord,  
+Gui, Add, Edit, -WantReturn x322 y64 w130 h20 vRegexCoachQwerd,  
+Gui, Add, Edit, -WantReturn x452 y64 w130 h20 vRegexCoachForm, 
+Gui, Add, Edit, -WantReturn x582 y64 w56 h20 vRegexCoachPower, 
+Gui, Add, Edit, -WantReturn x638 y64 w50 h20 vRegexCoachSaves, 
+Gui, Add, Edit, -WantReturn x688 y64 w50 h20 vRegexCoachMatch, 
+Gui, Add, Edit, -WantReturn x738 y64 w50 h20 vRegexCoachMiss, 
+Gui, Add, Edit, -WantReturn x788 y64 w50 h20 vRegexCoachOther, 
+Gui, Add, Button, Default x838 y64 w90 h20 gSearchCoachEvents, Search
+
+; Add the data ListView
+Gui, Add, ListView, x12 y84 w916 h476 vCoachEventsLV, Savings|Word|Qwerd|Form|Power|Saves|Matches|Misses|Other
+LV_ModifyCol(1, "Integer")  ; For sorting, indicate columns are integer.
+LV_ModifyCol(5, "Float")  
+LV_ModifyCol(6, "Integer")  
+LV_ModifyCol(7, "Integer")  
+LV_ModifyCol(8, "Integer")  
+LV_ModifyCol(9, "Integer")  
+LV_ModifyCol(1, 50)
+LV_ModifyCol(2, 260)
+LV_ModifyCol(3, 130)
+LV_ModifyCol(4, 130)
+LV_ModifyCol(5, 56)
+LV_ModifyCol(6, 50)
+LV_ModifyCol(7, 50)
+LV_ModifyCol(8, 50)
+LV_ModifyCol(9, 50)
+
+SearchCoachEvents:
+	coachViewer.SearchCoachEvents()
+
 class CoachViewport
 {
 	map := ""
@@ -23,45 +78,6 @@ class CoachViewport
 	{
 		this.map := map
 		
-		Gui CoachGUI:Default
-		; Add header text
-		Gui, CoachGUI:Add, Text, x12  y9 w700  h20 , % "We can see what we can do better" 
-
-		; Add regex search fields
-		Gui, CoachGUI:Add, Edit, -WantReturn x12  y29 w50 h20 vRegexCoachSavings, 
-		Gui, CoachGUI:Add, Edit, -WantReturn x62  y29 w120 h20 vRegexCoachWord,  
-		Gui, CoachGUI:Add, Edit, -WantReturn x182 y29 w100 h20 vRegexCoachQwerd,  
-		Gui, CoachGUI:Add, Edit, -WantReturn x282 y29 w100 h20 vRegexCoachForm, 
-		Gui, CoachGUI:Add, Edit, -WantReturn x382 y29 w40 h20 vRegexCoachPower, 
-		Gui, CoachGUI:Add, Edit, -WantReturn x422 y29 w25 h20 vRegexCoachSaves, 
-		Gui, CoachGUI:Add, Edit, -WantReturn x447 y29 w25 h20 vRegexCoachMatch, 
-		Gui, CoachGUI:Add, Edit, -WantReturn x472 y29 w25 h20 vRegexCoachMiss, 
-		Gui, CoachGUI:Add, Edit, -WantReturn x497 y29 w47 h20 vRegexCoachOther, 
-		Gui, CoachGUI:Add, Button, Default x544 y29 w90 h20 hwndhSearchCoachEvents, Search
-		this.hSearchCoachEvents := hSearchCoachEvents
-		OnMessage(0x111, this.WmCommand := this.WmCommand.bind(this), 2)
-
-		; Add the data ListView
-		Gui, CoachGUI:Add, ListView, x12 y49 w532 h420 vCoachEventsLV, Savings|Word|Qwerd|Form|`%|#|+|-|0
-		LV_ModifyCol(1, "Integer")  ; For sorting, indicate columns are integer.
-		LV_ModifyCol(5, "Float")  
-		LV_ModifyCol(6, "Integer")  
-		LV_ModifyCol(7, "Integer")  
-		LV_ModifyCol(8, "Integer")  
-		LV_ModifyCol(9, "Integer")  
-		LV_ModifyCol(1, 50)
-		LV_ModifyCol(2, 120)
-		LV_ModifyCol(3, 100)
-		LV_ModifyCol(4, 100)
-		LV_ModifyCol(5, 40)
-		LV_ModifyCol(6, 25)
-		LV_ModifyCol(7, 25)
-		LV_ModifyCol(8, 25)
-		LV_ModifyCol(9, 25)
-
-		; Generated using SmartGUI Creator 4.0
-		Gui, Show, x262 y118 h560 w660, % "Coaching Viewer"
-		
         this.timer := ObjBindMethod(this, "DequeueEvents")
         timer := this.timer
         SetTimer % timer, % this.interval
@@ -73,7 +89,7 @@ class CoachViewport
 	}
 	
 	SearchCoachEvents() {
-		Gui CoachGUI:Default
+		Gui, ListView, CoachEventsLV
 		LV_Delete()
 		For eventkey, garbage in this.coachEvents {
 			value := this.coachEvents.item(eventkey)
@@ -82,7 +98,6 @@ class CoachViewport
 	}
 	
 	DequeueEvents() {
-		Gui CoachGUI:Default
 		For index, coachQueue in this.coachQueues {
 			Loop, % coachQueue.getSize() {
 				coachEvent := coachQueue.dequeue()

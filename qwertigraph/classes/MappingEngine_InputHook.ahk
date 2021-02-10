@@ -1,3 +1,4 @@
+engine := {}
 
 class MappingEngine_InputHook
 {

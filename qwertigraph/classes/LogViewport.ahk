@@ -5,6 +5,27 @@ global RegexWhat
 global RegexHow
 global LogEventsLV
 
+logViewer := {}
+
+Gui, Tab, Logs
+; Add regex search fields
+Gui, Add, Edit, -WantReturn x12  y64 w90 h20 vRegexWhere,  
+Gui, Add, Edit, -WantReturn x102 y64 w100  h20 vRegexWhen,  
+Gui, Add, Edit, -WantReturn x202 y64 w576  h20 vRegexWhat, 
+Gui, Add, Edit, -WantReturn x778 y64 w60  h20 vRegexHow,
+Gui, Add, Button, Default x838 y64 w90 h20 gSearchLogEvents, Search
+
+; Add the data ListView
+Gui, Add, ListView, x12 y84 w916 h476 vLogEventsLV, Where|When|What|How
+LV_ModifyCol(4, "Integer")  ; For sorting, indicate that the Usage column is an integer.
+LV_ModifyCol(1, 90)
+LV_ModifyCol(2, 100)
+LV_ModifyCol(3, 576)
+LV_ModifyCol(4, 30)
+
+SearchLogEvents:
+	logViewer.SearchLogEvents()
+
 class LogViewport
 {
 	logQueues := []
@@ -13,31 +34,6 @@ class LogViewport
 	
 	__New()
 	{
-		
-		Gui LogGUI:Default
-		; Add header text
-		Gui, LogGUI:Add, Text, x12  y9 w700  h20 , % "We can watch the log" 
-
-		; Add regex search fields
-		Gui, LogGUI:Add, Edit, -WantReturn x12  y29 w90 h20 vRegexWhere,  
-		Gui, LogGUI:Add, Edit, -WantReturn x102 y29 w90  h20 vRegexWhen,  
-		Gui, LogGUI:Add, Edit, -WantReturn x192 y29 w570  h20 vRegexWhat, 
-		Gui, LogGUI:Add, Edit, -WantReturn x762 y29 w60  h20 vRegexHow,
-		Gui, LogGUI:Add, Button, Default x812 y29 w90 h20 hwndhSearchLogEvents, Search
-		this.hSearchLogEvents := hSearchLogEvents
-		OnMessage(0x111, this.WmCommand := this.WmCommand.bind(this), 2)
-
-		; Add the data ListView
-		;Gui, LogGUI:Add, ListView, x12 y49 w800 h420 vLogEventsLV gLogEventsLV, Where|When|What|How
-		Gui, LogGUI:Add, ListView, x12 y49 w800 h420 vLogEventsLV, Where|When|What|How
-		LV_ModifyCol(4, "Integer")  ; For sorting, indicate that the Usage column is an integer.
-		LV_ModifyCol(1, 90)
-		LV_ModifyCol(2, 90)
-		LV_ModifyCol(3, 570)
-		LV_ModifyCol(4, 30)
-
-		; Generated using SmartGUI Creator 4.0
-		Gui, Show, x262 y118 h560 w936, % "Log Viewer"
 		
         this.timer := ObjBindMethod(this, "DequeueEvents")
         timer := this.timer
@@ -54,7 +50,7 @@ class LogViewport
 	}
 	
 	DequeueEvents() {
-		Gui LogGUI:Default
+		Gui, ListView, LogEventsLV
 		For index, logQueue in this.logQueues {
 			Loop, % logQueue.getSize() {
 				logEvent := logQueue.dequeue()

@@ -7,6 +7,9 @@ process, priority, ,high
 coordmode, mouse, screen
 setworkingdir, %a_scriptdir%
 
+Gui, Add, Tab3,x6 y40 w928 h526, Coach|Editor|GreggPad|Logs
+Gui, Show, x262 y118 w940 h570, % "Qwertigraph Trainer"
+
 #Include classes\QwertigraphyEnvironment.ahk
 #Include classes\DictionaryEntry.ahk
 #Include classes\DictionaryMap.ahk
@@ -35,13 +38,13 @@ speedViewer.addQueue(engine.speedQueue)
 coachViewer := new CoachViewport(map)
 coachViewer.addQueue(engine.coachQueue)
 
-editor := new EditViewport(map)
-
 logViewer := new LogViewport()
 logViewer.addQueue(qenv.logQueue)
 logViewer.addQueue(map.logQueue)
 logViewer.addQueue(engine.logQueue)
-logViewer.addQueue(editor.logQueue)
+;logViewer.addQueue(editor.logQueue)
+;
+;editor := new EditViewport(map)
 
 engine.Start()
 
@@ -98,7 +101,8 @@ class EditViewport
 		OnMessage(0x111, this.WmCommand := this.WmCommand.bind(this), 2)
 		
 		; Add the data ListView
-		Gui, Add, ListView, x12 y49 w800 h420 vFormsLV, Word|Form|Qwerd||Keyer|Usage|Hint|Dictionary
+		Gui, Add, ListView, x12 y49 w800 h420 vFormsLV hwndhListView, Word|Form|Qwerd||Keyer|Usage|Hint|Dictionary
+		this.hListView := hListView
 		LV_ModifyCol(5, "Integer")  ; For sorting, indicate that the Usage column is an integer.
 		LV_ModifyCol(1, 160)
 		LV_ModifyCol(2, 90)
@@ -131,7 +135,8 @@ class EditViewport
 		Gui, Add, Text, x840 y74 w105 h20, Backups to retain 
 		
 		; Create a popup menu to be used as the context menu:
-		;Menu, FormsLVContextMenu, Add, Edit, ContextEditForm
+		;Menu, FormsLVContextMenu, Add, Edit, hwndhContextEditForm
+		;this.hContextEditForm := hContextEditForm
 		;Menu, FormsLVContextMenu, Add, Delete, ContextDeleteForm
 		;Menu, FormsLVContextMenu, Add, Add 's', ContextAddToForm_S
 		;Menu, FormsLVContextMenu, Add, Add 'g', ContextAddToForm_G
@@ -146,15 +151,36 @@ class EditViewport
 	}
  
  	WmCommand(wParam, lParam){
+		; the "h" variables are unique numbers for each Windows event listener. Bind a listener to a function 
 		this.logEvent(3, "A button was clicked " wParam "!!" lParam)
-		if (lParam = this.hSearchMapEntries)
+		if (lParam = this.hSearchMapEntries) {
 			this.SearchMapEntries()
-		if (lParam = this.hAutoQwerdForm)
-			this.autoQwerdForm()
-		if (lParam = this.hAutoKey)
-			this.autoKey()
-		if (lParam = this.hSearchMapEntries)
+		} else if (lParam = this.hAutoQwerdForm) {
 			this.SearchMapEntries()
+		} else if (lParam = this.hAutoKey) {
+			this.SearchMapEntries()
+		} else if (lParam = this.hListView) {
+			this.listViewEvent()
+		} else {
+			this.logEvent(2, "We did not understand this event!")
+		}
+	}
+	
+	listViewEvent() {
+		Gui EditorGUI:Default
+		this.logEvent(2, "Listview event " A_GuiEvent " on " A_EventInfo)
+		if (A_GuiEvent = "DoubleClick") {
+			this.prepareEdit(A_EventInfo)
+		}
+		if (A_GuiEvent = "e") {
+			LV_GetText(RowText, A_EventInfo)  ; Get the text from the row's first field.
+			this.logEvent(3, "Listview in-place edit to  " RowText)
+			Msgbox, % "You edited row " A_EventInfo " to: " RowText
+		}
+	}
+	
+	prepareEdit(EventInfo) {
+		Msgbox, % "Prepare edit " EventInfo " to: " RowText
 	}
 	
 	SearchMapEntries() {
@@ -346,6 +372,32 @@ class EditViewport
 		Return "qq"
 	}
 
+
+	addValueToEditFields(WordAdd, FormAdd, QwerdAdd) {
+		Gui EditorGUI:Default
+		GuiControlGet word, , EditWord
+		GuiControlGet form, , EditForm
+		GuiControlGet qwerd, , EditQwerd
+		GuiControlGet keyer, , EditKeyer
+		
+		; I'm not ready to build a full grammar here, but removing "e" is going to save time 
+		if (InStr("er|ed|ing", WordAdd)) {
+			; remove "e" from the end of the word when adding er, ed, or ing
+			word := RegExReplace(word, "e$", "")
+		}
+		
+		; When a keyer exists, we have to remove it from the lazy form
+		if (StrLen(keyer)) {
+			; remove keyer from the end of the lazy form before adding LazyAdd
+			qwerd := RegExReplace(qwerd, keyer "$", "")
+		}
+		
+		GuiControl, Text, EditWord, %word%%WordAdd%
+		GuiControl, Text, EditForm, %form%%FormAdd%
+		GuiControl, Text, EditQwerd, %qwerd%%QwerdAdd%
+		GuiControl, Text, EditKeyer, 
+		
+	}
 	LogEvent(verbosity, message) 
 	{
 		if (verbosity <= this.logVerbosity) 
