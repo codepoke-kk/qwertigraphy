@@ -13,7 +13,7 @@ Gui, Add, Edit, -WantReturn x12  y64 w90 h20 vRegexWhere,
 Gui, Add, Edit, -WantReturn x102 y64 w100  h20 vRegexWhen,  
 Gui, Add, Edit, -WantReturn x202 y64 w576  h20 vRegexWhat, 
 Gui, Add, Edit, -WantReturn x778 y64 w60  h20 vRegexHow,
-Gui, Add, Button, Default x838 y64 w90 h20 gSearchLogEvents, Search
+Gui, Add, Button, Default x838 y64 w90 h20 gLogViewerSearchLogEvents, Search
 
 ; Add the data ListView
 Gui, Add, ListView, x12 y84 w916 h476 vLogEventsLV, Where|When|What|How
@@ -23,8 +23,10 @@ LV_ModifyCol(2, 100)
 LV_ModifyCol(3, 576)
 LV_ModifyCol(4, 30)
 
-SearchLogEvents:
+LogViewerSearchLogEvents() {
+	global logViewer
 	logViewer.SearchLogEvents()
+}
 
 class LogViewport
 {

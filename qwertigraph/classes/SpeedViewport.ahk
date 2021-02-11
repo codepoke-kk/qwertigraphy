@@ -6,8 +6,8 @@ Global CurrentSpeedMessage
 Gui, Tab
 Gui, Font, s18, Verdana  ;
 Gui, Add, Text, x12  y9 w250  h28 vCurrentSpeedMessage, % "0 WPM/0 WPM" 
-Gui, Font, s10, Verdana  ;
-Gui, Add, Text, x270  y9 w150  h28 vSessionSpeedMessage, % "0 WPM/0 WPM" 
+Gui, Font, s8, Verdana  ;
+Gui, Add, Text, x270  y9 w650  h48 vSessionSpeedMessage, % "0 WPM/0 WPM`nInput characters: 0, Output characters: 0" 
 Gui, Font
 
 class SpeedViewport
@@ -60,7 +60,7 @@ class SpeedViewport
 			}
 		}
 		GuiControl,,CurrentSpeedMessage, % Round(current_in_chars / (current_ticks / 12000)) " WPM / " Round(current_out_chars / (current_ticks / 12000)) " WPM"
-		GuiControl,,SessionSpeedMessage, % Round(in_chars / (ticks / 12000)) " WPM / " Round(out_chars / (ticks / 12000)) " WPM"
+		GuiControl,,SessionSpeedMessage, % Round(in_chars / (ticks / 12000)) " WPM / " Round(out_chars / (ticks / 12000)) " WPM`nInput characters: " in_chars ", Output characters: " out_chars
 	}
 	
 	addQueue(speedQueue) {
