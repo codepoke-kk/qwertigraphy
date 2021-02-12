@@ -39,13 +39,14 @@ speedViewer.addQueue(engine.speedQueue)
 coachViewer := new CoachViewport(map)
 coachViewer.addQueue(engine.coachQueue)
 
+editor := new EditorViewport(map)
+
 logViewer := new LogViewport()
 logViewer.addQueue(qenv.logQueue)
 logViewer.addQueue(map.logQueue)
 logViewer.addQueue(engine.logQueue)
-;logViewer.addQueue(editor.logQueue)
+logViewer.addQueue(editor.logQueue)
 ;
-;editor := new EditorViewport(map)
 
 engine.Start()
 

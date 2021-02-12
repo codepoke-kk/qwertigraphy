@@ -37,7 +37,7 @@ Gui, Add, Edit, -WantReturn x602 y64 w236 h20 vRegexDict,
 Gui, Add, Button, Default x838 y64 w90 h20 gEditorSearchMapEntries, Search
 
 ; Add the data ListView
-Gui, Add, ListView, x12 y84 w916 h456 vEditorLV, Word|Form|Qwerd||Keyer|Usage|Hint|Dictionary
+Gui, Add, ListView, x12 y84 w826 h456 vEditorLV gEditorLV, Word|Form|Qwerd|Keyer|Usage|Hint|Dictionary
 LV_ModifyCol(5, "Integer")  ; For sorting, indicate that the Usage column is an integer.
 LV_ModifyCol(1, 160)
 LV_ModifyCol(2, 90)
@@ -45,7 +45,7 @@ LV_ModifyCol(3, 90)
 LV_ModifyCol(4, 30)
 LV_ModifyCol(5, 60)
 LV_ModifyCol(6, 160)
-LV_ModifyCol(7, 180) ; 3 pixels short to avoid the h_scrollbar 
+LV_ModifyCol(7, 216) ; 3 pixels short to avoid the h_scrollbar 
 
 ; Add edit fields and controls
 Gui, Add, Edit, x12  y540 w160 h20 vEditWord,  
@@ -56,14 +56,15 @@ Gui, Add, Button, x352 y540 w20 h20 gEditorAutoKey, K>
 Gui, Add, Edit, x372 y540 w30  h20 vEditKeyer, 
 Gui, Add, Edit, x402 y540 w50  h20 vEditUsage,  
 Gui, Add, Edit, x452 y540 w150 h20 vEditHint, 
-Gui, Add, DropDownList, x602 y540 w210 r5 vEditDict, %dictionaryDropDown%
-;Gui, Add, Button, x812 y469 w90 h20 gCommitEdit, Commit
-;Gui, Add, Button, x812 y500 w90 h30 gSaveDictionaries vSaveDictionaries Disabled, Save
+Gui, Add, DropDownList, x602 y540 w236 r5 vEditDict, %dictionaryDropDown%
+Gui, Add, Button, x838 y539 w90 h20 gEditorCommitEdit, Commit
+Gui, Add, Button, x838 y500 w90 h30 gEditorSaveDictionaries vSaveDictionaries , Save
+;Disabled
 ;Gui, Add, Progress, x12 y545 w700 h5 cOlive vSaveProgress, 1
 
 ; Add checkbox controls
 ;Gui, Add, CheckBox, x815 y49 w130 h20 vAutoGenHints gAutoGenHints Checked, AutoGenerate Hints
-;Gui, Add, Button, x812 y444 w90 h20 gOpenPersonalizations, Personalizations
+Gui, Add, Button, x838 y86 w90 h20 gEditorOpenPersonalizations, Personalizations
 ;Gui, Add, Edit, x815 y74 w20 h20 vBackupCount, 2
 ;Gui, Add, Text, x840 y74 w105 h20, Backups to retain 
 
@@ -92,6 +93,33 @@ EditorAutoKey() {
 	global editor
 	editor.AutoKey()
 }
+EditorOpenPersonalizations() {
+	global editor
+	editor.OpenPersonalizations()
+}
+EditorCommitEdit() {
+	global editor
+	editor.commitEdit()
+}
+EditorSaveDictionaries() {
+	global editor
+	editor.saveDictionaries()
+}
+
+EditorLV() {
+	global editor
+    editor.logEvent(2, "Listview event " A_GuiEvent " on " A_EventInfo)
+    if (A_GuiEvent = "DoubleClick") {
+        editor.prepareEdit(A_EventInfo)
+    }
+    if (A_GuiEvent = "e") {
+		Gui, Listview, EditorLV
+        LV_GetText(RowText, A_EventInfo)  ; Get the text from the row's first field.
+        editor.logEvent(3, "Listview in-place edit to  " RowText)
+        Msgbox, % "You edited row " A_EventInfo " to: " RowText
+    }
+}
+
 class EditorViewport
 {
 	map := ""
@@ -102,24 +130,9 @@ class EditorViewport
 	__New(map)
 	{
 		this.map := map
+		this.qenv := this.map.qenv
 		DictionaryDropDown := map.dictionaryPickList
 		
-	}
- 
- 	WmCommand(wParam, lParam){
-		; the "h" variables are unique numbers for each Windows event listener. Bind a listener to a function 
-		this.logEvent(3, "A button was clicked " wParam "!!" lParam)
-		if (lParam = this.hSearchMapEntries) {
-			this.SearchMapEntries()
-		} else if (lParam = this.hAutoQwerdForm) {
-			this.SearchMapEntries()
-		} else if (lParam = this.hAutoKey) {
-			this.SearchMapEntries()
-		} else if (lParam = this.hListView) {
-			this.listViewEvent()
-		} else {
-			this.logEvent(2, "We did not understand this event!")
-		}
 	}
 	
 	listViewEvent() {
@@ -134,12 +147,8 @@ class EditorViewport
 			Msgbox, % "You edited row " A_EventInfo " to: " RowText
 		}
 	}
-	
-	prepareEdit(EventInfo) {
-		Msgbox, % "Prepare edit " EventInfo " to: " RowText
-	}
-	
-	SearchMapEntries() {
+		
+	searchMapEntries() {
 		
 		GuiControlGet RegexDict
 		GuiControlGet RegexWord
@@ -214,6 +223,8 @@ class EditorViewport
 			}
 		}
 		
+		
+		Gui, ListView, EditorLV
 		LV_Delete()
 		for foundKey, count in foundKeys {
 			if (foundKeys[foundKey] = requiredMatchCount) {
@@ -225,7 +236,7 @@ class EditorViewport
 		}
 	}
 
-	AutoQwerdForm() {
+	autoQwerdForm() {
 		
 		GuiControlGet form, , EditForm
 		GuiControlGet word, , EditWord
@@ -328,7 +339,6 @@ class EditorViewport
 		Return "qq"
 	}
 
-
 	addValueToEditFields(WordAdd, FormAdd, QwerdAdd) {
 		
 		GuiControlGet word, , EditWord
@@ -354,6 +364,87 @@ class EditorViewport
 		GuiControl, Text, EditKeyer, 
 		
 	}
+
+	prepareEdit(RowNumber) {
+		this.logEvent(2, "Preparing edit for ListView row " RowNumber)
+		
+		Gui, ListView, EditorLV
+		; Get the data from the edited row
+		LV_GetText(EditWord, RowNumber, 1)
+		LV_GetText(EditForm, RowNumber, 2)
+		LV_GetText(EditQwerd, RowNumber, 3)
+		LV_GetText(EditKeyer, RowNumber, 4)
+		LV_GetText(EditUsage, RowNumber, 5)
+		LV_GetText(EditHint, RowNumber, 6)
+		LV_GetText(EditDict, RowNumber, 7)
+		
+		; Push the data into the editing fields
+		GuiControl, Text, EditWord, %EditWord%
+		GuiControl, Text, EditForm, %EditForm%
+		GuiControl, Text, EditQwerd, %EditQwerd%
+		GuiControl, Text, EditKeyer, %EditKeyer%
+		GuiControl, Text, EditUsage, %EditUsage%
+		GuiControlGet autoHint, , AutoGenHints
+		if (autoHint) {
+			GuiControl, Text, EditHint, Auto ; %EditHint%
+		} else {
+			GuiControl, Text, EditHint, %EditHint%
+		}
+		
+		; First convert the requested dictionary to its full name for display to the user
+		EditDict := this.map.dictionaryFullToShortNames[EditDict]
+		; Next change the dictionary if they're trying to edit a core dictionary 
+		if (InStr(EditDict, "_core.csv")) { 
+			supplemental_dict := RegExReplace(EditDict, "_core.csv", "_supplement.csv")
+			dictList := RegexReplace(this.map.dictionaryPickList, supplemental_dict "\|?", supplemental_dict "||")
+		} else {
+			dictList := RegexReplace(this.map.dictionaryPickList, EditDict "\|?", EditDict "||")
+		}
+		
+		GuiControl, , EditDict, %dictList%
+	}
+	
+	commitEdit() {
+		this.logEvent(3, "Commiting edit to qwerd")
+		
+		; Grab values the user has edited and wants to commit 
+		GuiControlGet word, , EditWord
+		GuiControlGet form, , EditForm
+		GuiControlGet qwerd, , EditQwerd
+		GuiControlGet keyer, , EditKeyer
+		GuiControlGet usage, , EditUsage
+		GuiControlGet hint, , EditHint
+		GuiControlGet dictionary, , EditDict
+		
+		; Convert the dictionary from its short name to its full name for storage
+		dictionary := this.map.dictionaryShortToFullNames[dictionary]
+		
+		; Generate an autohint if it's requested by checkbox or explicit field value 
+		GuiControlGet autoHint, , AutoGenHints
+		;if ( hint = "Auto" ) or ( autoHint) {
+		hint := word " = " qwerd " (" form ")  [" (StrLen(word) - StrLen(qwerd)) "]" 
+		
+		newEntryCsv := word "," form "," qwerd "," keyer "," usage "," hint "," dictionary
+		this.logEvent(2, "Commiting fields: " newEntryCsv)
+		newEntry := new DictionaryEntry(newEntryCsv)
+		   
+		this.map.propagateEntryToMaps(newEntry)
+		
+		;GuiControl, Enable, SaveDictionaries
+		
+		; Reload the search view with the new value 
+		this.searchMapEntries()
+	}
+
+	saveDictionaries() {
+		this.logEvent(3, "Saving dictionaries")
+		this.map.saveDictionaries()
+	}
+	
+	openPersonalizations() {
+		Run, % A_Windir "\explorer.exe " this.qenv.personalDataFolder
+	}
+
 	LogEvent(verbosity, message) 
 	{
 		if (verbosity <= this.logVerbosity) 
