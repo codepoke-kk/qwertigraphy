@@ -64,13 +64,20 @@ Gui, Add, Button, x838 y500 w90 h30 gEditorSaveDictionaries vSaveDictionaries , 
 
 ; Add checkbox controls
 ;Gui, Add, CheckBox, x815 y49 w130 h20 vAutoGenHints gAutoGenHints Checked, AutoGenerate Hints
-Gui, Add, Button, x838 y86 w90 h20 gEditorOpenPersonalizations, Personalizations
+Gui, Add, Button, x838 y90 w90 h20 gEditorOpenPersonalizations, Personalizations
+Gui, Add, Button, x838 y130 w90 h20 gEditorEditRow, Edit
+Gui, Add, Button, x838 y150 w90 h20 gEditorDeleteRow, Delete
+Gui, Add, Button, x838 y170 w90 h20 gEditorCreateRow_S, Add S
+Gui, Add, Button, x838 y190 w90 h20 gEditorCreateRow_G, Add G
+Gui, Add, Button, x838 y210 w90 h20 gEditorCreateRow_D, Add D
+Gui, Add, Button, x838 y230 w90 h20 gEditorCreateRow_T, Add T
+Gui, Add, Button, x838 y250 w90 h20 gEditorCreateRow_R, Add R
+Gui, Add, Button, x838 y270 w90 h20 gEditorCreateRow_LY, Add LY
 ;Gui, Add, Edit, x815 y74 w20 h20 vBackupCount, 2
 ;Gui, Add, Text, x840 y74 w105 h20, Backups to retain 
 
 ; Create a popup menu to be used as the context menu:
-;Menu, FormsLVContextMenu, Add, Edit, hwndhContextEditForm
-;this.hContextEditForm := hContextEditForm
+;Menu, EditorLVContextMenu, Add, Edit, ContextEditForm
 ;Menu, FormsLVContextMenu, Add, Delete, ContextDeleteForm
 ;Menu, FormsLVContextMenu, Add, Add 's', ContextAddToForm_S
 ;Menu, FormsLVContextMenu, Add, Add 'g', ContextAddToForm_G
@@ -118,6 +125,118 @@ EditorLV() {
         editor.logEvent(3, "Listview in-place edit to  " RowText)
         Msgbox, % "You edited row " A_EventInfo " to: " RowText
     }
+}
+	
+
+EditorEditRow() {
+	global editor
+	Gui, ListView, EditorLV
+	editor.logEvent(1, "Listview ContextMenu edit")
+    FocusedRowNumber := LV_GetNext(0, "F")  ; Find the focused row.
+    if not FocusedRowNumber { ; No row is focused.
+		editor.logEvent(1, "Listview edit event with no row selected")
+        return
+	}
+    editor.logEvent(3, "Listview context edit event on row " FocusedRowNumber)
+    editor.prepareEdit(FocusedRowNumber)
+}
+EditorDeleteRow() {
+	global editor
+	Gui, ListView, EditorLV
+	editor.logEvent(1, "Listview ContextMenu edit")
+    FocusedRowNumber := LV_GetNext(0, "F")  ; Find the focused row.
+    if not FocusedRowNumber { ; No row is focused.
+		editor.logEvent(1, "Listview edit event with no row selected")
+        return
+	}
+    editor.logEvent(3, "Listview context delete event on row " FocusedRowNumber)
+    editor.prepareEdit(FocusedRowNumber)
+    editor.deleteForm()
+	editor.SearchMapEntries()
+}
+EditorCreateRow_S() {
+	global editor
+	Gui, ListView, EditorLV
+    FocusedRowNumber := LV_GetNext(0, "F")  ; Find the focused row.
+    if not FocusedRowNumber { ; No row is focused.
+		editor.logEvent(1, "Listview edit event with no row selected")
+        return
+	}
+    editor.logEvent(3, "Listview context edit event adding S on row " FocusedRowNumber)
+    editor.prepareEdit(FocusedRowNumber)
+    editor.addValueToEditFields("s", "-s", "s")
+	editor.commitEdit()
+	editor.SearchMapEntries()
+}
+EditorCreateRow_G() {
+	global editor
+	Gui, ListView, EditorLV
+    FocusedRowNumber := LV_GetNext(0, "F")  ; Find the focused row.
+    if not FocusedRowNumber { ; No row is focused.
+		editor.logEvent(1, "Listview edit event with no row selected")
+        return
+	}
+    editor.logEvent(3, "Listview context edit event adding G on row " FocusedRowNumber)
+    editor.prepareEdit(FocusedRowNumber)
+    editor.addValueToEditFields("ing", "-\-h", "g")
+	editor.commitEdit()
+	editor.SearchMapEntries()
+}
+EditorCreateRow_D() {
+	global editor
+	Gui, ListView, EditorLV
+    FocusedRowNumber := LV_GetNext(0, "F")  ; Find the focused row.
+    if not FocusedRowNumber { ; No row is focused.
+		editor.logEvent(1, "Listview edit event with no row selected")
+        return
+	}
+    editor.logEvent(3, "Listview context edit event adding D on row " FocusedRowNumber)
+    editor.prepareEdit(FocusedRowNumber)
+    editor.addValueToEditFields("ed", "-d", "d")
+	editor.commitEdit()
+	editor.SearchMapEntries()
+}
+EditorCreateRow_T() {
+	global editor
+	Gui, ListView, EditorLV
+    FocusedRowNumber := LV_GetNext(0, "F")  ; Find the focused row.
+    if not FocusedRowNumber { ; No row is focused.
+		editor.logEvent(1, "Listview edit event with no row selected")
+        return
+	}
+    editor.logEvent(3, "Listview context edit event adding T on row " FocusedRowNumber)
+    editor.prepareEdit(FocusedRowNumber)
+    editor.addValueToEditFields("ed", "-t", "t")
+	editor.commitEdit()
+	editor.SearchMapEntries()
+}
+EditorCreateRow_R() {
+	global editor
+	Gui, ListView, EditorLV
+    FocusedRowNumber := LV_GetNext(0, "F")  ; Find the focused row.
+    if not FocusedRowNumber { ; No row is focused.
+		editor.logEvent(1, "Listview edit event with no row selected")
+        return
+	}
+    editor.logEvent(3, "Listview context edit event adding R on row " FocusedRowNumber)
+    editor.prepareEdit(FocusedRowNumber)
+    editor.addValueToEditFields("er", "-r", "r")
+	editor.commitEdit()
+	editor.SearchMapEntries()
+}
+EditorCreateRow_LY() {
+	global editor
+	Gui, ListView, EditorLV
+    FocusedRowNumber := LV_GetNext(0, "F")  ; Find the focused row.
+    if not FocusedRowNumber { ; No row is focused.
+		editor.logEvent(1, "Listview edit event with no row selected")
+        return
+	}
+    editor.logEvent(3, "Listview context edit event adding LY on row " FocusedRowNumber)
+    editor.prepareEdit(FocusedRowNumber)
+    editor.addValueToEditFields("ly", "-e", "e")
+	editor.commitEdit()
+	editor.SearchMapEntries()
 }
 
 class EditorViewport
@@ -340,7 +459,6 @@ class EditorViewport
 	}
 
 	addValueToEditFields(WordAdd, FormAdd, QwerdAdd) {
-		
 		GuiControlGet word, , EditWord
 		GuiControlGet form, , EditForm
 		GuiControlGet qwerd, , EditQwerd
@@ -362,7 +480,6 @@ class EditorViewport
 		GuiControl, Text, EditForm, %form%%FormAdd%
 		GuiControl, Text, EditQwerd, %qwerd%%QwerdAdd%
 		GuiControl, Text, EditKeyer, 
-		
 	}
 
 	prepareEdit(RowNumber) {
@@ -445,7 +562,19 @@ class EditorViewport
 		Run, % A_Windir "\explorer.exe " this.qenv.personalDataFolder
 	}
 
-	LogEvent(verbosity, message) 
+	deleteForm() {
+		
+		; Grab values the user has edited and wants to commit 
+		GuiControlGet qwerdKey, , EditQwerd
+		
+		this.logEvent(3, "Deleting " qwerdKey)
+		this.map.deleteQwerdFromMaps(qwerdKey)
+		
+		; Reload the search view with the new value 
+		this.searchForms()
+	}
+
+LogEvent(verbosity, message) 
 	{
 		if (verbosity <= this.logVerbosity) 
 		{

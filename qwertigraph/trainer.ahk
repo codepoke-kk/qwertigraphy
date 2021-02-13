@@ -67,3 +67,8 @@ engine.Start()
 ^[::
 	Send, % "{" SubStr(A_ThisHotkey, 2, StrLen(A_ThisHotkey) - 1) "}"
 	return
+	
+
+ContextEditForm:
+EditorLVContextEditForm:
+	msgbox, % "Hit"

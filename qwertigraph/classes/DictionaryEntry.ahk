@@ -3,6 +3,7 @@ class DictionaryEntry
 {
     __New(line)
     {
+		line := StrReplace(line, """", "")
 		fields := StrSplit(line, ",")
 		this.word := fields[1]
 		this.form := fields[2]
@@ -14,6 +15,8 @@ class DictionaryEntry
 		this.saves := StrLen(this.word) - StrLen(this.qwerd)
 		this.power := StrLen(this.word) / StrLen(this.qwerd)
 		this.isPhrase := InStr(this.word, " ") > 0
+		StringLower, loweredQwerd, % this.qwerd
+		this.isLower := (loweredQwerd == this.qwerd)
     }
 	
 	generateHint() {
