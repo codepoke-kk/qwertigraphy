@@ -14,6 +14,7 @@ Function Convert-FormalToLazy {
     $formal = $formal -replace 'th', 'h'
     $formal = $formal -replace 'mn', 'mm'
     $formal = $formal -replace 'td', 'dd'
+    $formal = $formal -replace 'nk', 'q'
     $formal = $formal -replace 'ea', 'e'
     $formal = $formal -replace 'e-u', 'u'
     $formal = $formal -replace 'a-u', 'w'
@@ -34,6 +35,9 @@ Function Convert-FormalToLazy {
     if ($word -imatch 'x') {
         $formal = $formal -replace '^([^k]*)k-s', '$1x'
     }
+    if ($word -imatch 'nex') {
+        $formal = $formal -replace 'n-e-s', 'nx'
+    }
     if ($word -match '^an?$') {
         $formal = 'hk1'
     }
@@ -48,7 +52,7 @@ Function Convert-FormalToLazy {
     if ($word -match '^think') {
         $formal = $formal -replace '^hg', 'hh'
     }
-    $formal
+    $formal.toLower()
 }
 
 $lazyForms = @{}
