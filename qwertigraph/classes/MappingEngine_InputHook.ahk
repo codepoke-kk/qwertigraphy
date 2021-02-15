@@ -21,6 +21,7 @@ class MappingEngine_InputHook
 	logVerbosity := 2
 	speedQueue := new Queue("SpeedQueue")
 	coachQueue := new Queue("CoachQueue")
+	penQueue := new Queue("PenQueue")
 
 	__New(map)
 	{
@@ -93,6 +94,7 @@ class MappingEngine_InputHook
 			}
 		} else if (this.map.qwerds.item(buffered_input_text).word) {
 			if (not InStr(mods, "^")) {
+				; Success - expand the qwerd
 				coaching := new CoachingEvent()
 				coaching.word := this.map.qwerds.item(buffered_input_text).word
 				coaching.qwerd := buffered_input_text
@@ -102,6 +104,9 @@ class MappingEngine_InputHook
 				coaching.match := true
 				coaching.endKey := key
 				this.coachQueue.enqueue(coaching)
+				penAction := new PenEvent(this.map.qwerds.item(buffered_input_text).form, buffered_input_text, this.map.qwerds.item(buffered_input_text).word)
+				this.penQueue.enqueue(penAction)
+				this.logEvent(2, "Enqueued pen action " penAction.form)
 				;;; Expandable
 				this.logEvent(2, "Matched a qwerd " this.map.qwerds.item(buffered_input_text).word)
 				final_characters_count := StrLen(this.map.qwerds.item(buffered_input_text).word) + 1

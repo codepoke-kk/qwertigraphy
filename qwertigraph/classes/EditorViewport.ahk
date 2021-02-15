@@ -574,7 +574,7 @@ class EditorViewport
 		this.searchForms()
 	}
 
-LogEvent(verbosity, message) 
+	LogEvent(verbosity, message) 
 	{
 		if (verbosity <= this.logVerbosity) 
 		{

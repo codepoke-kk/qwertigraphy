@@ -22,6 +22,8 @@ Gui, Show, x262 y118 w940 h570, % "Qwertigraph Trainer"
 #Include classes\CoachingEvent.ahk
 #Include classes\CoachViewport.ahk
 #Include classes\EditorViewport.ahk
+#Include classes\PenEvent.ahk
+#Include classes\PadViewport.ahk
 #Include classes\QwertigraphyEnvironment.ahk
 
 ; Make the pretty icon
@@ -41,11 +43,14 @@ coachViewer.addQueue(engine.coachQueue)
 
 editor := new EditorViewport(map)
 
+pad := new PadViewport(engine.penQueue)
+
 logViewer := new LogViewport()
 logViewer.addQueue(qenv.logQueue)
 logViewer.addQueue(map.logQueue)
 logViewer.addQueue(engine.logQueue)
 logViewer.addQueue(editor.logQueue)
+logViewer.addQueue(pad.logQueue)
 ;
 
 engine.Start()
