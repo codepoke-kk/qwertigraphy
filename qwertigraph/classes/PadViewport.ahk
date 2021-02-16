@@ -258,8 +258,8 @@ class PadViewport
 		advance := 1
 		Loop % subPaths.MaxIndex() {
 			subPath := subPaths[A_Index]
-			FoundPos := RegExMatch(subPath, "O)(-?\d+),-?\d+ ?$" , Matches)
-			deltaX := Abs(Matches[1] + 0)
+			FoundPosVar := RegExMatch(subPath, "O)(-?\d+),-?\d+ ?$" , subPathMatches)
+			deltaX := Abs(subPathMatches[1] + 0)
 			advance += deltaX
 			this.LogEvent(3, "Advance nib " deltaX " pixels and total of " advance " for subpath " subpath)
 		}

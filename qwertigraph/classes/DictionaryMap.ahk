@@ -234,12 +234,12 @@ class DictionaryMap
 			; progress := Round(100*(writtenCount/sortedCount))
 			; GuiControl,, SaveProgress, %progress%  
 			; msgbox, % "Looping with " sortableKey "=" form.word
-			line := qwerd.word "," qwerd.form "," qwerd.qwerd "," qwerd.keyer "," qwerd.usage "," qwerd.hint "`n"
-			this.logEvent(4, "Writing " line " to " qwerd.dictionary)
+			dictline := qwerd.word "," qwerd.form "," qwerd.qwerd "," qwerd.keyer "," qwerd.usage "," qwerd.hint "`n"
+			this.logEvent(4, "Writing " dictline " to " qwerd.dictionary)
 			if (qwerd.word = "look" or qwerd.word = "execution" or qwerd.word = "services") {
-				this.logEvent(1, "Writing sortable for " line " to " qwerd.dictionary)  
+				this.logEvent(1, "Writing sortable for " dictline " to " qwerd.dictionary)  
 			}
-			fileHandles[qwerd.dictionary].Write(line)
+			fileHandles[qwerd.dictionary].Write(dictline)
 		}
 		this.logEvent(2, "Wrote " writtenCount " qwerds")
 		
