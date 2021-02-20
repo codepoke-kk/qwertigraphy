@@ -19,7 +19,8 @@ class MappingEngine_InputHook
 	discard_ratio := ""
 	input_text_buffer := ""
 	logQueue := new Queue("EngineQueue")
-	logVerbosity := 3
+	logVerbosity := 4
+	tip_power_threshold := 2
 	speedQueue := new Queue("SpeedQueue")
 	coachQueue := new Queue("CoachQueue")
 	penQueue := new Queue("PenQueue")
@@ -62,14 +63,15 @@ class MappingEngine_InputHook
 		must_send_endkey := (InStr("EnterTab", key) > 0)
 		this.logEvent(4, "Must send end key is " must_send_endkey)
 		
-		if (input_text) {
+		; if ((input_text) or (key = "Backspace")) {
+		if (True) {
 			if (StrLen(this.input_text_buffer) > (this.map.longestQwerd + 1)) {
 				in_play_chars := SubStr(this.input_text_buffer, (StrLen(this.input_text_buffer) - (this.map.longestQwerd + 1)))
 			} else {
 				in_play_chars := this.input_text_buffer
 			}
 		} else {
-			this.logEvent(4, "No input text, so no in play chars")
+			this.logEvent(4, "No input text and key is '" key "', so no in play chars")
 			in_play_chars := ""
 		}
 		this.logEvent(4, "In play chars are '" in_play_chars "'")
@@ -200,34 +202,41 @@ class MappingEngine_InputHook
 			}
 		} else {
 			; This buffered input was not a special character, nor a qwerd
-			this.logEvent(4, "No match on " token)
-			final_characters_count := StrLen(token) + 1
-			if (this.map.hints.item(token).hint) {
-				coaching := new CoachingEvent()
-				coaching.word := token
-				coaching.qwerd := this.map.hints.item(token).qwerd
-				coaching.form := this.map.hints.item(token).form
-				coaching.saves := -1 * this.map.hints.item(token).saves
-				coaching.power := this.map.hints.item(token).power
-				coaching.miss := true
-				coaching.endKey := key
-				this.coachQueue.enqueue(coaching)
-				this.logEvent(3, "Enqueued failure coaching " coaching.word)
-				
-				;;; Hintable
-				this.logEvent(2, "Matched a hint " this.map.hints.item(token).hint)
-			} else {
-				; This is an unknown word and qwerd. Send it to coaching, but only if it's not too strange
-				if (not RegExMatch(token, "[0-9!@#$%^&*]")) {
+			this.logEvent(4, "No match on '" token "' and input text was '" input_text "'")
+			if (input_text) {
+				final_characters_count := StrLen(token) + 1
+				if (this.map.hints.item(token).hint) {
 					coaching := new CoachingEvent()
 					coaching.word := token
-					coaching.other := 
+					coaching.qwerd := this.map.hints.item(token).qwerd
+					coaching.form := this.map.hints.item(token).form
+					coaching.saves := -1 * this.map.hints.item(token).saves
+					coaching.power := this.map.hints.item(token).power
+					coaching.miss := true
 					coaching.endKey := key
 					this.coachQueue.enqueue(coaching)
-					this.logEvent(3, "Enqueued unknown coaching " coaching.word)
+					this.logEvent(3, "Enqueued failure coaching " coaching.word)
+		
+					this.flashTip(coaching)
+					
+					;;; Hintable
+					this.logEvent(2, "Matched a hint " this.map.hints.item(token).hint)
+				} else {
+					; This is an unknown word and qwerd. Send it to coaching, but only if it's not too strange
+					if (not RegExMatch(token, "[0-9!@#$%^&*]")) {
+						coaching := new CoachingEvent()
+						coaching.word := token
+						coaching.other := 
+						coaching.endKey := key
+						this.coachQueue.enqueue(coaching)
+						this.logEvent(3, "Enqueued unknown coaching " coaching.word)
+					}
+					;;; Ignorable 
+					this.logEvent(3, "Unknown qwerd " token)
 				}
-				;;; Ignorable 
-				this.logEvent(3, "Unknown qwerd " token)
+			} else {
+				this.logEvent(4, "No input_text, so not coachable - text from buffer only")
+				final_characters_count := 0
 			}
 		}
 		
@@ -264,15 +273,32 @@ class MappingEngine_InputHook
 			this.last_end_key := ""
 		}
 
-		this.logEvent(3, "Enqueuing speed event " StrLen(token) + 1 " to " final_characters_count " in " ticks)
-		event := new SpeedingEvent(A_Now, ticks, StrLen(token) + 1, final_characters_count, key)
-		this.speedQueue.enqueue(event)
+		if (input_text) {
+			this.logEvent(3, "Enqueuing speed event " StrLen(token) + 1 " to " final_characters_count " in " ticks)
+			event := new SpeedingEvent(A_Now, ticks, StrLen(token) + 1, final_characters_count, key)
+			this.speedQueue.enqueue(event)
+		} else {
+			this.logEvent(3, "No input_text, so new speed event - text from buffer only")
+		}
 	}
 	
 	ResetInput()
 	{
 		this.logEvent(2, "Input reset by function ")
 		this.ih.Stop()
+	}
+	
+	flashTip(coachEvent) {
+		if (coachEvent.power < this.tip_power_threshold) {
+			return
+		}
+		Tooltip % coachEvent.word "=" coachEvent.qwerd, A_CaretX, A_CaretY + 30
+		SetTimer, ClearToolTip, -1500
+		return 
+
+		ClearToolTip:
+		  ToolTip
+		return 
 	}
 
 	LogEvent(verbosity, message) 
