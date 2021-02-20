@@ -13,7 +13,7 @@ Gui, Show, x262 y118 w940 h570, % "Qwertigraph Trainer"
 #Include classes\QwertigraphyEnvironment.ahk
 #Include classes\DictionaryEntry.ahk
 #Include classes\DictionaryMap.ahk
-#Include classes\MappingEngine_InputHook.ahk
+#Include classes\MappingEngine_InputHook-poc.ahk
 #Include classes\Queue.ahk
 #Include classes\LoggingEvent.ahk
 #Include classes\LogViewport.ahk
