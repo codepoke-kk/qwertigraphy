@@ -6,6 +6,7 @@ class DictionaryMap
 	dictionaryFullToShortNames := {}
 	dictionaryShortToFullNames := {}
 	dictionariesLoaded := 0
+	longestQwerd := 0
 	backupCount := 2
 	retrains := {}
 	negations := ComObjCreate("Scripting.Dictionary")
@@ -73,6 +74,9 @@ class DictionaryMap
 					continue
 				}
 				
+				if (StrLen(newEntry.qwerd) > this.longestQwerd) {
+					this.longestQwerd := StrLen(newEntry.qwerd)
+				}
 				this.propagateEntryToMaps(newEntry)
 
 			}

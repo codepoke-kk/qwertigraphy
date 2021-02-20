@@ -17,7 +17,7 @@ class PadViewport
 	interval := 1000
 	penEvents := []
 	logQueue := new Queue("PadQueue")
-	logVerbosity := 3
+	logVerbosity := 1
 	
 	padPageFile := "greggpad.html"
 	padPages := []
@@ -270,7 +270,6 @@ class PadViewport
 	fillMissingCharacter() {
 		Return "l 3,-3 l 3,6 l 3,-6 l 3,6 l 3,-6 l 3,6 l 3,-6 l 3,3"
 	}
-
 
 	LogEvent(verbosity, message) 
 	{
