@@ -11,7 +11,7 @@ Global RegexCoachOther
 Global CoachEventsLV
 
 ; Predefine a coach object. The Trainer will redefine it. 
-coachViewer := {}
+coach := {}
 
 Gui, Tab, Coach
 
@@ -41,7 +41,7 @@ Gui, Add, Edit, -WantReturn x638 y64 w50 h20 vRegexCoachSaves,
 Gui, Add, Edit, -WantReturn x688 y64 w50 h20 vRegexCoachMatch, 
 Gui, Add, Edit, -WantReturn x738 y64 w50 h20 vRegexCoachMiss, 
 Gui, Add, Edit, -WantReturn x788 y64 w50 h20 vRegexCoachOther, 
-Gui, Add, Button, Default x838 y64 w90 h20 gCoachViewerSearchCoachEvents, Search
+Gui, Add, Button, Default x838 y64 w90 h20 gCoachSearchCoachEvents, Search
 
 ; Add the data ListView
 Gui, Add, ListView, x12 y84 w916 h476 vCoachEventsLV, Savings|Word|Qwerd|Form|Power|Saves|Matches|Misses|Other
@@ -61,9 +61,9 @@ LV_ModifyCol(7, 50)
 LV_ModifyCol(8, 50)
 LV_ModifyCol(9, 50)
 
-CoachViewerSearchCoachEvents() {
-	global coachViewer
-	coachViewer.SearchCoachEvents()
+CoachSearchCoachEvents() {
+	global coach
+	coach.SearchCoachEvents()
 }
 
 class CoachViewport
@@ -75,6 +75,8 @@ class CoachViewport
 	phrases := ComObjCreate("Scripting.Dictionary")
 	phrase_buffer := ""
 	qwerds_buffer := ""
+	logQueue := new Queue("CoachQueue")
+	logVerbosity := 4
 	
 	__New(map)
 	{
@@ -83,6 +85,7 @@ class CoachViewport
         this.timer := ObjBindMethod(this, "DequeueEvents")
         timer := this.timer
         SetTimer % timer, % this.interval
+		this.LogEvent(2, "Coach initialized")
 	}
  
  	WmCommand(wParam, lParam){
@@ -97,6 +100,10 @@ class CoachViewport
 			value := this.coachEvents.item(eventkey)
 			LV_Add(, value.savings, value.word, value.qwerd, value.form, value.power, value.saves, value.match, value.miss, value.other)
 		}
+	}
+	
+	addQueue(coachQueue) { 
+		this.coachQueues.Push(coachQueue)
 	}
 	
 	DequeueEvents() {
@@ -126,18 +133,16 @@ class CoachViewport
 		this.coachEvents.item(eventKey).savings += coachEvent.saves
 	}
 	
-	addQueue(coachQueue) { 
-		this.coachQueues.Push(coachQueue)
-	}
-	
 	coachPhrasing(coachEvent) {
 		this.phrase_buffer .= " " coachEvent.word
 		this.qwerds_buffer .= " " coachEvent.qwerd
+		this.LogEvent(4, "Phrase coaching '" coachEvent.word "' against '" this.phrase_buffer "'")
 		words := StrSplit(this.phrase_buffer, " ")
 		current_phrase := words[words.MaxIndex()]
 		Loop, % words.MaxIndex() {
 			word_index := words.MaxIndex() - A_Index
 			current_phrase := words[word_index] " " current_phrase
+			this.LogEvent(4, "Testing " current_phrase)
 			if (this.phrases.item(current_phrase)) {
 				this.phrases.item(current_phrase) += 1
 			} else {
@@ -160,9 +165,18 @@ class CoachViewport
 				this.coachItem(coaching)
 			}
 		}
-		if (coachEvent.endKey != "Space") {
+		if (coachEvent.endKey != " ") {
 			this.phrase_buffer := ""
 			this.qwerds_buffer := ""
+		}
+	}
+
+	LogEvent(verbosity, message) 
+	{
+		if (verbosity <= this.logVerbosity) 
+		{
+			event := new LoggingEvent("coach",A_Now,message,verbosity)
+			this.logQueue.enqueue(event)
 		}
 	}
 }

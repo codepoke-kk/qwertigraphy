@@ -271,7 +271,6 @@ class PadViewport
 		Return "l 3,-3 l 3,6 l 3,-6 l 3,6 l 3,-6 l 3,6 l 3,-6 l 3,3"
 	}
 
-
 	LogEvent(verbosity, message) 
 	{
 		if (verbosity <= this.logVerbosity) 

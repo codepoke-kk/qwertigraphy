@@ -13,7 +13,7 @@ Gui, Show, x262 y118 w940 h570, % "Qwertigraph Trainer"
 #Include classes\QwertigraphyEnvironment.ahk
 #Include classes\DictionaryEntry.ahk
 #Include classes\DictionaryMap.ahk
-#Include classes\MappingEngine_InputHook-poc.ahk
+#Include classes\MappingEngine_InputHook.ahk
 #Include classes\Queue.ahk
 #Include classes\LoggingEvent.ahk
 #Include classes\LogViewport.ahk
@@ -38,8 +38,8 @@ engine := new MappingEngine_InputHook(map)
 speedViewer := new SpeedViewport()
 speedViewer.addQueue(engine.speedQueue)
 		
-coachViewer := new CoachViewport(map)
-coachViewer.addQueue(engine.coachQueue)
+coach := new CoachViewport(map)
+coach.addQueue(engine.coachQueue)
 
 editor := new EditorViewport(map)
 
@@ -49,6 +49,7 @@ logViewer := new LogViewport()
 logViewer.addQueue(qenv.logQueue)
 logViewer.addQueue(map.logQueue)
 logViewer.addQueue(engine.logQueue)
+logViewer.addQueue(coach.logQueue)
 logViewer.addQueue(editor.logQueue)
 logViewer.addQueue(pad.logQueue)
 ;

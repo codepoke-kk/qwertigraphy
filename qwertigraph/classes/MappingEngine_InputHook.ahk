@@ -19,7 +19,7 @@ class MappingEngine_InputHook
 	discard_ratio := ""
 	input_text_buffer := ""
 	logQueue := new Queue("EngineQueue")
-	logVerbosity := 4
+	logVerbosity := 3
 	speedQueue := new Queue("SpeedQueue")
 	coachQueue := new Queue("CoachQueue")
 	penQueue := new Queue("PenQueue")
@@ -62,10 +62,15 @@ class MappingEngine_InputHook
 		must_send_endkey := (InStr("EnterTab", key) > 0)
 		this.logEvent(4, "Must send end key is " must_send_endkey)
 		
-		if (StrLen(this.input_text_buffer) > (this.map.longestQwerd + 1)) {
-			in_play_chars := SubStr(this.input_text_buffer, (StrLen(this.input_text_buffer) - (this.map.longestQwerd + 1)))
+		if (input_text) {
+			if (StrLen(this.input_text_buffer) > (this.map.longestQwerd + 1)) {
+				in_play_chars := SubStr(this.input_text_buffer, (StrLen(this.input_text_buffer) - (this.map.longestQwerd + 1)))
+			} else {
+				in_play_chars := this.input_text_buffer
+			}
 		} else {
-			in_play_chars := this.input_text_buffer
+			this.logEvent(4, "No input text, so no in play chars")
+			in_play_chars := ""
 		}
 		this.logEvent(4, "In play chars are '" in_play_chars "'")
 		token := ""
@@ -89,7 +94,7 @@ class MappingEngine_InputHook
 				end_char := A_LoopField
 			}
 		}
-		this.logEvent(4, "Token '" token "', embedded end char '" embedded_end_char "', end char '" end_char "', and leading end char " leading_end_char)
+		this.logEvent(3, "Token '" token "', embedded end char '" embedded_end_char "', end char '" end_char "', and leading end char " leading_end_char)
 		
 		;;; Now handle the token itself 
 		if (key = "Backspace") {
@@ -146,7 +151,7 @@ class MappingEngine_InputHook
 				coaching.match := true
 				coaching.endKey := key
 				this.coachQueue.enqueue(coaching)
-				this.logEvent(4, "Enqueued success coaching")
+				this.logEvent(3, "Enqueued success coaching " coaching.word)
 				
 				; Add this qwerd to the GreggPad display
 				penAction := new PenEvent(this.map.qwerds.item(token).form, token, this.map.qwerds.item(token).word)
@@ -207,7 +212,7 @@ class MappingEngine_InputHook
 				coaching.miss := true
 				coaching.endKey := key
 				this.coachQueue.enqueue(coaching)
-				this.logEvent(4, "Enqueued failure coaching")
+				this.logEvent(3, "Enqueued failure coaching " coaching.word)
 				
 				;;; Hintable
 				this.logEvent(2, "Matched a hint " this.map.hints.item(token).hint)
@@ -219,7 +224,7 @@ class MappingEngine_InputHook
 					coaching.other := 
 					coaching.endKey := key
 					this.coachQueue.enqueue(coaching)
-				this.logEvent(4, "Enqueued unknown coaching")
+					this.logEvent(3, "Enqueued unknown coaching " coaching.word)
 				}
 				;;; Ignorable 
 				this.logEvent(3, "Unknown qwerd " token)
@@ -237,44 +242,6 @@ class MappingEngine_InputHook
 			this.logEvent(4, "Buffer cleared for soft end character")
 		}
 		
-		
-;		;; Have to handle ', -, /, :
-;
-;		if ((this.last_end_key == "'") and (InStr(MappingEngine_InputHook.ContractedEndings,buffered_input_text))) {
-;			; If the last input ended with ' and this input is a common contraction, do nothing 
-;			final_characters_count := StrLen(buffered_input_text) + 1
-;			this.logEvent(3, "Completed contraction " buffered_input_text)
-;		} else if (this.last_end_key == "-") {
-;			; If the last input ended with a hyphen per standards found below, do not expand since this is a Unix parameter flag
-;			final_characters_count := StrLen(buffered_input_text) + 1
-;			this.logEvent(3, "Completed hyphen " buffered_input_text)
-;		} else if (key == "LControl" or key == "RControl") {
-;			; The control key kills an input without expansion
-;			final_characters_count := StrLen(buffered_input_text) + 1
-;			this.logEvent(3, "Cancelled via control key " buffered_input_text)
-;		} else if (key = "backspace") {
-;			; Get fancy here to allow backspace to re-activate the last input
-;			if (not InStr(mods, "^")) {
-;				this.logEvent(4, "Did a backspace after " buffered_input_text " buffering " this.input_text_backspace_buffer)
-;				if (buffered_input_text = "") {
-;					this.logEvent(4, "Backspaced with an empty buffer. Retrieving last buffer " this.last_input_text_backspace_buffer)
-;					buffered_input_text := this.last_input_text_backspace_buffer
-;					this.input_text_backspace_buffer := this.last_input_text_backspace_buffer
-;					this.last_input_text_backspace_buffer := ""
-;				}
-;				this.input_text_backspace_buffer := SubStr(buffered_input_text, 1, (StrLen(buffered_input_text) - 1))
-;				final_characters_count := StrLen(buffered_input_text)
-;				this.logEvent(3, "Did a backspace after " buffered_input_text " buffering " this.input_text_backspace_buffer)
-;			} else {
-;				; Control-backspace resets all buffers
-;				this.logEvent(4, "Did a control-backspace after " buffered_input_text " buffering " this.input_text_backspace_buffer)
-;				buffered_input_text := ""
-;				this.input_text_backspace_buffer := ""
-;				this.last_input_text_backspace_buffer := ""
-;				final_characters_count := 0
-;			}
-;		} else 
-;		
 		; Since we're suppressing these keys to make sure expansion happens before leaving a field, we must always send them
 		if (must_send_endkey) {
 			; Must send modifiers if we want them to appear, but must strip the < character from them 
@@ -297,6 +264,7 @@ class MappingEngine_InputHook
 			this.last_end_key := ""
 		}
 
+		this.logEvent(3, "Enqueuing speed event " StrLen(token) + 1 " to " final_characters_count " in " ticks)
 		event := new SpeedingEvent(A_Now, ticks, StrLen(token) + 1, final_characters_count, key)
 		this.speedQueue.enqueue(event)
 	}
