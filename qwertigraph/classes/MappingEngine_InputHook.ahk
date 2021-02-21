@@ -82,7 +82,7 @@ class MappingEngine_InputHook
 		Loop, Parse, in_play_chars 
 		{
 			this.logEvent(4, "Playing " A_LoopField " with " token "/" embedded_end_char "/" end_char "/" leading_end_char)
-			if (InStr("abcdefghijklmnopqrstuzwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ", A_LoopField)) {
+			if (InStr("abcdefghijklmnopqrstuzwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789", A_LoopField)) {
 				if (end_char) {
 					token := ""
 					embedded_end_char := end_char
