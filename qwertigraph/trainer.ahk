@@ -63,6 +63,13 @@ engine.Start()
 ~LButton::engine.ResetInput()
 ~RButton::engine.ResetInput()
 
+
+; Enable/Disable
+^#p::
+    Pause toggle
+    engine.ResetInput()
+    Return
+
 ^Space::
 ^Enter::
 ^Tab::
@@ -72,9 +79,9 @@ engine.Start()
 ^;::
 ^[::
 	Send, % "{" SubStr(A_ThisHotkey, 2, StrLen(A_ThisHotkey) - 1) "}"
-	return
+	Return
 	
 
 ContextEditForm:
 EditorLVContextEditForm:
-	msgbox, % "Hit"
+	Msgbox, % "Hit"
