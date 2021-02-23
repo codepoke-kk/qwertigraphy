@@ -4,6 +4,13 @@
 [How to Qwertigraph?](https://github.com/codepoke-kk/qwertigraphy/blob/master/HowQwertigraph.md) | 
 [Broken Qwertigraph?](https://github.com/codepoke-kk/qwertigraphy/blob/master/FixQwertigraph.md)
 
+There are two ways to go on this. If you just want to start using Qwertigraphy, download this:
+https://github.com/codepoke-kk/qwertigraphy/release/trainer.exe
+
+Double click and go!
+
+If you'd like to see how it works, change a couple things, or steal the code and make something better:
+
 #### Step: Download AutoHotkey 
 https://www.autohotkey.com/download/
 
@@ -19,23 +26,22 @@ https://github.com/codepoke-kk/qwertigraphy/archive/master.zip
 A low-quality video walk-through here: [Qwertigraphy Quick Start](https://www.youtube.com/watch?v=Eodl0zzjCcw&feature=youtu.be)
 
 #### Step: Start the Qwertigraph
-Go to the /release folder, and double click Qwertigraph.ahk. You should see The Coach appear on the right side of your screen. Move it around as you wish, but it will hover on top until you minimize it. This is its function. 
+Go to the /qwertigraph folder, and double click trainer.ahk. You should see the qwertigraph interface appear. Move it around as you wish. 
 
 #### Step: Use the Qwertigraph
-Open a simple text editor, a new email, or anything else into which you might wish to type some text. Type "It's time to start". If all has gone well, The Coach should show:
-0002: time = tm (tm) [2]
-0001: start = stat (stAt) [1]
-0001: it = t (t) [1]
+Open a simple text editor, a new email, or anything else into which you might wish to type some text. Type "It's time to start". If all has gone well, The Coach should show how quickly you typed that line. You may have noticed some recommendations flash just below your blinking cursor as you typed. Click the button in the top right of The Coach, and it should show you on which words you lost time, and what you could type instead to save that time in the future. 
 
 Now type "T's tm to stat"
 
-The Coach should now show you've saved 4 characters in typing and have attained a learning level of 1.00. 
+If you click the button again, The Coach should now show you've saved and lost the same number of characters, for a grand total of 0. 
+
+Now, go forth and type like usual. At the end of the day, come back to the coach to see which words you would profit most from learning. Click the "Savings" column header to sort your possible savings from lowest to highest, and start learning from the top. 
 
 ##### Tips:
 - No word will expand until you stroke an "end character". You have to hit some punctation key to let the Qwertigraph know you're done and ready to move on. 
 - Control-Backspace is your friend. If you meant some other word than the one the Qwertigraph typed, Control-Backspace will delete the entire word and let you start over again. (It's much lazier to hit Control-Backspace once than to hit Backspace a does times.)
-- Control-j will Suspend the Qwertigraph if you need to type without its help. Control-j again will reactivate it. 
-- Control-{ most punctuation marks } will cause the Qwertigraph to ignore whatever word you just typed.
+- Control-Windows-P will Pause the Qwertigraph if you need to type without its help. Control-Windows-P again will reactivate it. 
+- Hitting the Control key will cause the Qwertigraph to ignore whatever word you just typed and start listening all over again.
 - If you type out a word for which there's a "big win" lazy form, a pop-up tip will give you a hint to that effect. 
 
 ##### Words about letters
@@ -44,7 +50,7 @@ Gregg Shorthand users and non-users will both have questions about why some of t
 - **z:** Stands in for the SH sound as in SHIP
 - **c:** Stands in for the CH sound as in WHICH
 - **w:** Stands in for the OW sound as in POWER
-- **y:** Stands in for the OY sound as in TOY
+- **y:** Stands in for the OY sound as in JOIN
 - **q:** Stands in for the QU sound as in QUICK, or for INK, ANK, UNK as in LINK
 - **u:** Usually only for long U or OO as in LOOK
 - **i:** Only for the long I sound as in PIPE
@@ -56,33 +62,17 @@ Gregg Shorthand users and non-users will both have questions about why some of t
 ##### Keyers
 Gregg Shorthand uses exactly the same form for several words. For example, THE, THERE, and THEIR are all lazified using the H, which is the TH sound. The Qwertigraph needs to know which of those words the Qwertigrapher means, so they are keyed using vowels. The most commonly used word is THE, so a pure H is the word THE. Adding an O to the H makes the word THEIR. Adding an I to the H makes THERE. You will see many Qwertigraphy words that end with O, U, and I. You will see a few ending in E, A, W, and Y. These are often keyed words. Whenever you see one, you can bet there's an unkeyed lazy form already representing some more frequently used word. 
 
-You can always tell the actual Gregg Shorthand form by looking at The Coach's hint. The form in parentheses is the formal Gregg Shorthand form.
+You can always tell the actual Gregg Shorthand form by looking at The Coach or The Editor. The "form" is exactly how the word is written in Gregg.
 
 #### Step: Use The Coach
-##### From the top down:
-The Save log and Clear log buttons allow you to output a text file into the Qwertigraph's folder with a list of every word you could have typed lazily.
-The squiggle in the top right is the word "coach" written in Gregg Shorthand.
+##### Click "Search" in the top right, after typing for a while to see a sortable, filterable (someday) list of all the words you've typed in this session. 
 
-##### The summary at the top means:
-- Typed: The total number of the characters you've typed that had meaning to The Coach. Words The Coach does not understand will not be included in this total, so don't expect The Coach to be able to tell you how many Words Per Minute you're typing. You'll need to analyze that the old fashioned way. 
-- Saved: The total number of characters the Qwertigraph typed for you upon recognizing a lazy form of a word.
-- Missed: The total number of characters you could have saved, had you used a lazy form instead of typing one or more words out the hard way. 
-- Efficiency: "Typed" divided by "Saved", which is an indication of how powerful is your laziness. Oddly, as you become a better Qwertigrapher, this number may actually go down, since you'll be able to add fewer and fewer "big win" words and begin adding more "daily use" words with smaller and smaller gains.
-- Learning: "Saved" divided by "Missed". This number can be driven higher and higher week after week. As you use more and more lazy forms and miss fewer opportunities to save yourself strokes, this number will climb.
-
-##### The numbered lines:
-These are a list of hints with a score. The first 4-digit number is the score you could have saved overall had you been lazy every time you used the word. The remainder of the line is the hint for that word. The first element of the hint is the word itself. The first element after the = sign is the lazy form of the word. Type the lazy form and the word will be typed for you. Within the parentheses is the "formal form" of the word. When you begin to write in Gregg Shorthand, you will write the formal form, not the lazy form. Often they are the same, but almost as often they are not. Finally, within the square brackets is the character savings per instance of the word being used correctly.
-
-Near the bottom will be found the hint for the last word you missed. Keep The Coach open, and you can always see your most recent hint. 
-
-At the very bottom is the progress bar. The full dictionary requires about 5 minutes to load. You can start using the Qwertigraph immediately, but it and The Coach will miss some rarer words until the dictionary is fully loaded.
+More can and should be written about this, but I'm too tired tonight. I rewrote The Coach from the ground up, and the whole documentation thing needs a total rework some day soon.
 
 #### Step: Use the Editor
 This is really a whole instruction into itself, so I won't do much with it. I'll drop a couple hints here for the adventurous. 
 
-- Double click on Editor.ahk in the Qwertigraphy folder to start the editor.
-- Search in any field using regular expressions. So, to anchor your search to match only the beginning of a word or form, prepend a ^ to it. To match only the end of a word or form append a $. To match any character, use a dot. For the more experienced, all the little tricks work. 
+- Search in any of the top fields using regular expressions. So, to anchor your search to match only the beginning of a word or form, prepend a ^ to it. To match only the end of a word or form append a $. To match any character, use a dot. For the more experienced, all the little tricks work. 
 - Double click on a row to bring it down to the editing fields. 
 - Make your changes to the row and click Commit to add it back to the dictionary after corrections. 
 - Click Save when you're done to write the dictionary to the file system. 
-- To pick up any saved changes, you must reload the Qwertigraph. 
