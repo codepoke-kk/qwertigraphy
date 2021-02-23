@@ -163,12 +163,26 @@ class CoachViewport
 					coaching.saves := this.map.hints.item(current_phrase).saves
 				}	
 				this.coachItem(coaching)
+				this.flashTip(coaching)
 			}
 		}
 		if (coachEvent.endKey != " ") {
 			this.phrase_buffer := ""
 			this.qwerds_buffer := ""
 		}
+	}
+	
+	flashTip(coachEvent) {
+		if (coachEvent.power < this.tip_power_threshold) {
+			return
+		}
+		Tooltip % coachEvent.word " = " coachEvent.qwerd, A_CaretX, A_CaretY + 30
+		SetTimer, ClearToolTipCoaching, -1500
+		return 
+
+		ClearToolTipCoaching:
+		  ToolTip
+		return 
 	}
 
 	LogEvent(verbosity, message) 

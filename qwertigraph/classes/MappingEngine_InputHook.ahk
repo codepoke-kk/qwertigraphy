@@ -292,11 +292,11 @@ class MappingEngine_InputHook
 		if (coachEvent.power < this.tip_power_threshold) {
 			return
 		}
-		Tooltip % coachEvent.word "=" coachEvent.qwerd, A_CaretX, A_CaretY + 30
-		SetTimer, ClearToolTip, -1500
+		Tooltip % coachEvent.word " = " coachEvent.qwerd, A_CaretX, A_CaretY + 30
+		SetTimer, ClearToolTipEngine, -1500
 		return 
 
-		ClearToolTip:
+		ClearToolTipEngine:
 		  ToolTip
 		return 
 	}

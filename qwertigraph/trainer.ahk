@@ -7,6 +7,21 @@ process, priority, ,high
 coordmode, mouse, screen
 setworkingdir, %a_scriptdir%
 
+IfNotExist, dictionaries
+    FileCreateDir, dictionaries
+IfNotExist, templates
+    FileCreateDir, templates
+FileInstall, dictionaries\anniversary_core.csv, dictionaries\anniversary_core.csv, true
+FileInstall, dictionaries\anniversary_supplement.csv, dictionaries\anniversary_supplement.csv, true
+FileInstall, dictionaries\anniversary_phrases.csv, dictionaries\anniversary_phrases.csv, true
+FileInstall, dictionaries\anniversary_modern.csv, dictionaries\anniversary_modern.csv, true
+FileInstall, dictionaries\anniversary_cmu.csv, dictionaries\anniversary_cmu.csv, true
+FileInstall, templates\dictionary_load.template, templates\dictionary_load.template, true
+FileInstall, templates\negations.template, templates\negations.template, true
+FileInstall, templates\personal.template, templates\personal.template, true
+FileInstall, templates\retrains.template, templates\retrains.template, true
+FileInstall, coach.ico, coach.ico, true
+
 Gui, Add, Tab3,x6 y40 w928 h526, Coach|Editor|Logs|GreggPad
 Gui, Show, x262 y118 w940 h570, % "Qwertigraph Trainer"
 
@@ -85,3 +100,4 @@ engine.Start()
 ContextEditForm:
 EditorLVContextEditForm:
 	Msgbox, % "Hit"
+	
