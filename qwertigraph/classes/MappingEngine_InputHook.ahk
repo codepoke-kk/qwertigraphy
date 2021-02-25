@@ -63,40 +63,46 @@ class MappingEngine_InputHook
 		must_send_endkey := (InStr("EnterTab", key) > 0)
 		this.logEvent(4, "Must send end key is " must_send_endkey)
 		
-		; if ((input_text) or (key = "Backspace")) {
-		if (True) {
-			if (StrLen(this.input_text_buffer) > (this.map.longestQwerd + 1)) {
-				in_play_chars := SubStr(this.input_text_buffer, (StrLen(this.input_text_buffer) - (this.map.longestQwerd + 1)))
-			} else {
-				in_play_chars := this.input_text_buffer
-			}
+		if (StrLen(this.input_text_buffer) > (this.map.longestQwerd + 1)) {
+			in_play_chars := SubStr(this.input_text_buffer, (StrLen(this.input_text_buffer) - (this.map.longestQwerd + 1)))
 		} else {
-			this.logEvent(4, "No input text and key is '" key "', so no in play chars")
-			in_play_chars := ""
+			in_play_chars := this.input_text_buffer
 		}
 		this.logEvent(4, "In play chars are '" in_play_chars "'")
+		
 		token := ""
 		end_char := ""
-		embedded_end_char := ""
-		leading_end_char := False
+		pre_end_char := ""
+		last_char := ""
+		last_end_char := ""
+		pre_last_end_char := ""
+		leading_end_char := false
 		Loop, Parse, in_play_chars 
 		{
-			this.logEvent(4, "Playing " A_LoopField " with " token "/" embedded_end_char "/" end_char "/" leading_end_char)
+			this.logEvent(4, "Playing " A_LoopField " with " token "/" end_char "/" last_end_char "/" pre_last_end_char)
 			if (InStr("abcdefghijklmnopqrstuzwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789", A_LoopField)) {
+				; Not an end char, so add this to the token
 				if (end_char) {
+					; if we have a current end char, then erase the current token and start a new word 
 					token := ""
-					embedded_end_char := end_char
+					; remember the last end char and pre_end_char
+					pre_last_end_char := pre_end_char
+					last_end_char := end_char
+					; the current token has no end char yet, so erase that 
 					end_char := ""
 				}
 				token .= A_LoopField
 			} else {
-				if ((not end_char) or (end_char = " ")) {
-					leading_end_char := True
-				}
+				; This is an end_char, so we need to log it and whatever came before it 
+				pre_end_char := last_char
 				end_char := A_LoopField
 			}
+			last_char := A_LoopField
 		}
-		this.logEvent(3, "Token '" token "', embedded end char '" embedded_end_char "', end char '" end_char "', and leading end char " leading_end_char)
+		if ((last_end_char) and (pre_last_end_char = " ")) {
+			leading_end_char := true
+		}
+		this.logEvent(3, "Token '" token "', ended by '" end_char "', with last end char '" last_end_char "', and preceding char '" pre_last_end_char "'")
 		
 		;;; Now handle the token itself 
 		if (key = "Backspace") {
@@ -107,7 +113,7 @@ class MappingEngine_InputHook
 			; The control key kills an input without expansion
 			final_characters_count := StrLen(token) + 1
 			this.logEvent(3, "Cancelled via control key " token)
-		} else if ((embedded_end_char == "'") and (InStr(MappingEngine_InputHook.ContractedEndings,token))) {
+		} else if ((last_end_char == "'") and (not leading_end_char) and (InStr(MappingEngine_InputHook.ContractedEndings,token))) {
 			this.logEvent(4, "Handling apostrophe")
 			; If the last input ended with ' and this input is a common contraction
 			Switch token
@@ -135,11 +141,14 @@ class MappingEngine_InputHook
 					final_characters_count := StrLen(token) + 1
 			}
 			this.logEvent(3, "Completed contraction " token)
-		} else if ((embedded_end_char == "-") and (leading_end_char)) {
-			this.logEvent(4, "Handling leading hyphen")
+		} else if (leading_end_char) {
+			this.logEvent(4, "Handling leading end_char")
 			; If the last input began with -
 			final_characters_count := StrLen(token) + 1
-			this.logEvent(3, "Completed contraction " token)
+		} else if ((not leading_end_char) and (last_end_char = "/") and (false)) {
+			this.logEvent(4, "Handling join character")
+			; If the last input began with -
+			final_characters_count := StrLen(token) + 1
 		} else if (this.map.qwerds.item(token).word) {
 			if (not InStr(mods, "^")) {
 				; Success 
@@ -159,6 +168,11 @@ class MappingEngine_InputHook
 				penAction := new PenEvent(this.map.qwerds.item(token).form, token, this.map.qwerds.item(token).word)
 				this.penQueue.enqueue(penAction)
 				this.logEvent(4, "Enqueued pen action '" penAction.form "'")
+				
+				if ((not leading_end_char) and (last_end_char = "/")) {
+					Send, {Backspace}
+					this.logEvent(4, "After handling join character input text buffer is " this.input_text_buffer)
+				}
 				
 				;;; Expand the qwerd into its word 
 				this.logEvent(2, "Matched " token " to " this.map.qwerds.item(token).word)
