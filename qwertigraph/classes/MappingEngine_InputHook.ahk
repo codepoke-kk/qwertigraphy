@@ -5,7 +5,7 @@ class MappingEngine_InputHook
 	Static MovementKeys := "{Delete}{Insert}{Home}{End}{PgUp}{PgDn}{left}{up}{right}{down}"
 	Static ContractedEndings := "s,d,t,m,re,ve,ll,r,v,l"
 	Static EndKeys_soft := "{LControl}{RControl}{backspace}{enter}{tab}{Delete}{Insert}{Home}{End}{PgUp}{PgDn}{left}{up}{right}{down}{LButton}"
-	Static EndKeys_hard := " .,?!;:'""-_{{}{}}[]/+=|()@#$%^&*<>"
+	Static EndKeys_hard := " .,?!;:'""-_{{}{}}[]/\+=|()@#$%^&*<>"
 	Static EndKeys := MappingEngine_InputHook.EndKeys_soft MappingEngine_InputHook.EndKeys_hard
 	
 	map := ""
@@ -279,7 +279,7 @@ class MappingEngine_InputHook
 		
 		; Decisions
 		inbound.hasToken := (StrLen(inbound.token) > 0)
-		inbound.isCode := (((inbound.preceding_char == " ") or (inbound.preceding_char == "")) and (InStr("-:/", inbound.initial_end_char)))
+		inbound.isCode := (((inbound.preceding_char == " ") or (inbound.preceding_char == "")) and ((inbound.initial_end_char) and (InStr("-:/", inbound.initial_end_char))))
 		inbound.isContraction := ((inbound.initial_end_char == "'") and (inbound.preceding_char) and (InStr(MappingEngine_InputHook.ContractedEndings,inbound.token)))
 		inbound.isAffix := false
 		
