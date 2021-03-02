@@ -19,11 +19,13 @@ class MappingEngine_InputHook
 	discard_ratio := ""
 	input_text_buffer := ""
 	logQueue := new Queue("EngineQueue")
-	logVerbosity := 4
+	logVerbosity := 3
 	tip_power_threshold := 2
 	speedQueue := new Queue("SpeedQueue")
 	coachQueue := new Queue("CoachQueue")
 	penQueue := new Queue("PenQueue")
+	
+	nullQwerd := new DictionaryEntry("null,,,,0,Could add,null_dictionary.csv")
 
 	__New(map)
 	{
@@ -62,16 +64,7 @@ class MappingEngine_InputHook
 		}
 		this.logEvent(4, "Input_text after buffering '" this.input_text_buffer "'")
 		
-		; InputHook is suppressing Enter and Tab, to keep them from messing up field inputs. We'll have to send them every time
-		must_send_endkey := (InStr("EnterTab", key) > 0)
-		this.logEvent(4, "Must send end key is " must_send_endkey)
-		
-		if (StrLen(this.input_text_buffer) > (this.map.longestQwerd + 1)) {
-			in_play_chars := SubStr(this.input_text_buffer, (StrLen(this.input_text_buffer) - (this.map.longestQwerd + 1)))
-		} else {
-			in_play_chars := this.input_text_buffer
-		}
-		this.logEvent(4, "In play chars are '" in_play_chars "'")
+		in_play_chars := this.getInPlayChars(this.input_text_buffer)
 		inbound := this.parseInbound(in_play_chars)
 		
 		this.logEvent(4, "We have an inbound " inbound.token)
@@ -124,29 +117,11 @@ class MappingEngine_InputHook
 			if (not InStr(mods, "^")) {
 				; Success 
 				; Coach the found qwerd
-				coaching := new CoachingEvent()
-				coaching.word := this.map.qwerds.item(inbound.token).word
-				coaching.qwerd := inbound.token
-				coaching.form := this.map.qwerds.item(inbound.token).form
-				coaching.saves := this.map.qwerds.item(inbound.token).saves
-				coaching.power := this.map.qwerds.item(inbound.token).power
-				coaching.match := true
-				coaching.endKey := key
-				this.coachQueue.enqueue(coaching)
-				this.logEvent(3, "Enqueued success coaching " coaching.word)
-				
-				; Add this qwerd to the GreggPad display
-				penAction := new PenEvent(this.map.qwerds.item(inbound.token).form, inbound.token, this.map.qwerds.item(inbound.token).word)
-				this.penQueue.enqueue(penAction)
-				this.logEvent(4, "Enqueued pen action '" penAction.form "'")
-				
-				;if ((not leading_end_char) and (last_end_char = "/")) {
-				;	Send, {Backspace}
-				;	this.logEvent(4, "After handling join character input text buffer is " this.input_text_buffer)
-				;}
+				this.pushCoaching(this.map.qwerds.item(inbound.token), true, false, false, key)
+				this.pushPenStroke(this.map.qwerds.item(inbound.token), "blue")
 				
 				; We will always send suppressed keys later, so only send unsuppressed keys now 
-				if (not must_send_endkey) {
+				if (not (InStr("EnterTab", key) > 0)) {
 					this.logEvent(2, "Sending end key, because it's not going to be sent later like Enter or Tab")
 					sendable_end_key := key
 				} else {
@@ -160,37 +135,23 @@ class MappingEngine_InputHook
 				; The control key was down, so don't expand, still send the end char, and count the chars typed
 				final_characters_count := StrLen(inbound.token) + 1
 			}
-			
 		} else {
 			; This buffered input was not a special character, nor a qwerd
 			this.logEvent(4, "No match on '" inbound.token "' and input text was '" input_text "'")
 			if (input_text) {
 				final_characters_count := StrLen(inbound.token) + 1
 				if (this.map.hints.item(inbound.token).hint) {
-					coaching := new CoachingEvent()
-					coaching.word := inbound.token
-					coaching.qwerd := this.map.hints.item(inbound.token).qwerd
-					coaching.form := this.map.hints.item(inbound.token).form
-					coaching.saves := -1 * this.map.hints.item(inbound.token).saves
-					coaching.power := this.map.hints.item(inbound.token).power
-					coaching.miss := true
-					coaching.endKey := key
-					this.coachQueue.enqueue(coaching)
-					this.logEvent(3, "Enqueued failure coaching " coaching.word)
+					this.pushCoaching(this.map.hints.item(inbound.token), false, true, false, key)
+					this.pushPenStroke(this.map.hints.item(inbound.token), "red")
 		
-					this.flashTip(coaching)
-					
 					;;; Hintable
 					this.logEvent(2, "Matched a hint " this.map.hints.item(inbound.token).hint)
 				} else {
 					; This is an unknown word and qwerd. Send it to coaching, but only if it's not too strange
 					if (not RegExMatch(inbound.token, "[0-9!@#$%^&*]")) {
-						coaching := new CoachingEvent()
-						coaching.word := inbound.token
-						coaching.other := 
-						coaching.endKey := key
-						this.coachQueue.enqueue(coaching)
-						this.logEvent(3, "Enqueued unknown coaching " coaching.word)
+						this.nullQwerd.word := inbound.token
+						this.pushCoaching(this.nullQwerd, false, false, true, key)
+						this.pushPenStroke(this.nullQwerd, "purple")
 					}
 					;;; Ignorable 
 					this.logEvent(3, "Unknown qwerd " inbound.token)
@@ -213,7 +174,7 @@ class MappingEngine_InputHook
 		}
 		
 		; Since we're suppressing these keys to make sure expansion happens before leaving a field, we must always send them
-		if (must_send_endkey) {
+		if (InStr("EnterTab", key) > 0) {
 			; Must send modifiers if we want them to appear, but must strip the < character from them 
 			; clean_mods := StrReplace(mods, "<", "") 
 			clean_mods := RegExReplace(mods, "[<>](.)(?:>\1)?", "$1")
@@ -247,6 +208,17 @@ class MappingEngine_InputHook
 	{
 		this.logEvent(2, "Input reset by function ")
 		this.ih.Stop()
+	}
+	
+	getInPlayChars(buffer) {
+		if (StrLen(buffer) > (this.map.longestQwerd + 1)) {
+			in_play_chars := SubStr(buffer, (StrLen(buffer) - (this.map.longestQwerd + 1)))
+		} else {
+			in_play_chars := buffer
+		}
+		this.logEvent(4, "In play chars are '" in_play_chars "'")
+		return in_play_chars
+		
 	}
 	
 	parseInbound(in_play_chars) {
@@ -327,6 +299,31 @@ class MappingEngine_InputHook
 		this.logEvent(4, "Buffer after expansion is '" this.input_text_buffer "'")
 		
 		return final_characters_count
+	}
+	
+	pushCoaching(qwerd, match, miss, other, key) {
+		coaching := new CoachingEvent()
+		coaching.word := qwerd.word
+		coaching.qwerd := qwerd.qwerd
+		coaching.form := qwerd.form
+		coaching.saves := qwerd.saves
+		coaching.power := qwerd.power
+		coaching.match := match
+		coaching.miss := miss
+		coaching.other := other
+		coaching.endKey := key
+		this.coachQueue.enqueue(coaching)
+		this.logEvent(3, "Enqueued coaching " coaching.word)
+		
+		if (miss) { 
+			this.flashTip(coaching)
+		}
+	}
+	
+	pushPenStroke(qwerd, ink) {
+		penAction := new PenEvent(qwerd.form, qwerd.qwerd, qwerd.word, ink)
+		this.penQueue.enqueue(penAction)
+		this.logEvent(4, "Enqueued pen action '" penAction.form "'")
 	}
 	
 	flashTip(coachEvent) {

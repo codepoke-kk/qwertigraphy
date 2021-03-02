@@ -17,7 +17,7 @@ class PadViewport
 	interval := 1000
 	penEvents := []
 	logQueue := new Queue("PadQueue")
-	logVerbosity := 1
+	logVerbosity := 2
 	
 	padPageFile := "greggpad.html"
 	padPages := []
@@ -87,7 +87,11 @@ class PadViewport
 			penAction := this.penQueue.dequeue()
 			this.LogEvent(3, "Dequeued event for " penAction.form)
 			this.penEvents.Push(penAction)
-			this.visualizeForm(penAction.qwerd, penAction.form, "blue")
+			if (penAction.form) {
+				this.visualizeForm(penAction.qwerd, penAction.form, penAction.ink)
+			} else {
+				this.visualizeForm(penAction.word, "h", penAction.ink)
+			}
 		}
 	}
 	
@@ -107,7 +111,7 @@ class PadViewport
 	
 	visualizeForm(qwerd, form, pen) {
 		
-		this.LogEvent(2, "Visualing form " form)
+		this.LogEvent(2, "Visualing form '" form "' and '" qwerd "' in " pen)
 		
 		formStrokes := StrSplit(form, "-")
 		
