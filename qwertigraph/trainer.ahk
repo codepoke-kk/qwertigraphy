@@ -53,7 +53,7 @@ engine := new MappingEngine_InputHook(map)
 speedViewer := new SpeedViewport()
 speedViewer.addQueue(engine.speedQueue)
 		
-coach := new CoachViewport(map)
+coach := new CoachViewport(map, speedViewer)
 coach.addQueue(engine.coachQueue)
 
 editor := new EditorViewport(map)

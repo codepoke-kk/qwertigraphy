@@ -69,8 +69,10 @@ CoachSearchCoachEvents() {
 class CoachViewport
 {
 	map := ""
+	speedViewer := ""
 	coachQueues := []
 	interval := 1000
+	phrasePowerThreshold := 10
 	coachEvents := ComObjCreate("Scripting.Dictionary")
 	phrases := ComObjCreate("Scripting.Dictionary")
 	phrase_buffer := ""
@@ -78,9 +80,10 @@ class CoachViewport
 	logQueue := new Queue("CoachQueue")
 	logVerbosity := 2
 	
-	__New(map)
+	__New(map, speedViewer)
 	{
 		this.map := map
+		this.speedViewer := speedViewer
 		
         this.timer := ObjBindMethod(this, "DequeueEvents")
         timer := this.timer
@@ -114,6 +117,9 @@ class CoachViewport
 					; Ignore null words
 					Continue
 				}
+				if (coachEvent.miss or coachEvent.other) {
+					coachEvent.saves *= -1
+				}
 				this.coachItem(coachEvent)
 				this.coachPhrasing(coachEvent)
 			}
@@ -123,6 +129,7 @@ class CoachViewport
 	coachItem(coachEvent) {
 		eventKey := coachEvent.word
 		StringLower, eventKey, eventKey
+		coachEvent.word := eventKey
 		if (not this.coachEvents.item(eventKey)) {
 			this.coachEvents.item(eventKey) := coachEvent
 		} else {
@@ -138,6 +145,8 @@ class CoachViewport
 		this.qwerds_buffer .= " " coachEvent.qwerd
 		this.LogEvent(4, "Phrase coaching '" coachEvent.word "' against '" this.phrase_buffer "'")
 		words := StrSplit(this.phrase_buffer, " ")
+		; We're going to grow current_phrase out to a max, and check each version for presence in hints
+		; Then we're going to count the number of times we used each phrase and mark it for possible creation 
 		current_phrase := words[words.MaxIndex()]
 		Loop, % words.MaxIndex() {
 			word_index := words.MaxIndex() - A_Index
@@ -147,6 +156,23 @@ class CoachViewport
 				this.phrases.item(current_phrase) += 1
 			} else {
 				this.phrases.item(current_phrase) := 1
+			}
+			; Now, if the count of this phrase's use exceeds 10, let's log that in coaching
+			; A 10-character phrase must be seen 3 times in 10000 characters 
+			if (this.phrases.item(current_phrase) > 2) {
+				if ((StrLen(current_phrase) * this.phrases.item(current_phrase) * this.phrasePowerThreshold) > this.speedViewer.out_chars) {
+					coaching := new CoachingEvent()
+					coaching.word := current_phrase
+					coaching.qwerd := "_create_"
+					coaching.form := "h"
+					coaching.power := 3
+					coaching.endKey := " "
+					coaching.miss := true
+					coaching.saves := Round(StrLen(current_phrase) * -.667)
+					this.coachItem(coaching)
+					this.LogEvent(1, "Coaching new potential phrase '" current_phrase "' at " (StrLen(current_phrase) * this.phrases.item(current_phrase) * this.phrasePowerThreshold) " > " this.speedViewer.out_chars)
+					this.phrases.item(current_phrase) := 1
+				}
 			}
 			if (this.map.hints.item(current_phrase)) {
 				coaching := new CoachingEvent()

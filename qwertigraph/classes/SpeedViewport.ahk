@@ -17,6 +17,9 @@ class SpeedViewport
 	showInterval := 10000
 	speedEvents := []
 	speedQueues := []
+	in_chars := 0
+	out_chars := 0
+	ticks := 1
 	
 	__New()
 	{
@@ -34,14 +37,14 @@ class SpeedViewport
 			Loop, % speedQueue.getSize() {
 				speedEvent := speedQueue.dequeue()
 				this.speedEvents.Push(speedEvent)
+				this.in_chars += speedEvent.in_chars
+				this.out_chars += speedEvent.out_chars
+				this.ticks += speedEvent.ticks
 			}
 		}
 	}
 	
 	ShowSpeed() {
-		in_chars := 0
-		out_chars := 0
-		ticks := 1
 		current_in_chars := 0
 		current_out_chars := 0
 		current_ticks := 0
@@ -49,9 +52,6 @@ class SpeedViewport
 		current_horizon += -15, Seconds
 		For index, speedEvent in this.speedEvents {
 			if (speedEvent.wpm > this.minimumSpeed) {
-				in_chars += speedEvent.in_chars
-				out_chars += speedEvent.out_chars
-				ticks += speedEvent.ticks
 				if (speedEvent.when > current_horizon) {
 					current_in_chars += speedEvent.in_chars
 					current_out_chars += speedEvent.out_chars
@@ -60,7 +60,7 @@ class SpeedViewport
 			}
 		}
 		GuiControl,,CurrentSpeedMessage, % Round(current_in_chars / (current_ticks / 12000)) " WPM / " Round(current_out_chars / (current_ticks / 12000)) " WPM"
-		GuiControl,,SessionSpeedMessage, % Round(in_chars / (ticks / 12000)) " WPM / " Round(out_chars / (ticks / 12000)) " WPM`nInput characters: " in_chars ", Output characters: " out_chars
+		GuiControl,,SessionSpeedMessage, % Round(this.in_chars / (this.ticks / 12000)) " WPM / " Round(this.out_chars / (this.ticks / 12000)) " WPM`nInput characters: " this.in_chars ", Output characters: " this.out_chars
 	}
 	
 	addQueue(speedQueue) {
