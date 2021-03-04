@@ -72,7 +72,7 @@ class CoachViewport
 	speedViewer := ""
 	coachQueues := []
 	interval := 1000
-	phrasePowerThreshold := 10
+	phrasePowerThreshold := 30
 	coachEvents := ComObjCreate("Scripting.Dictionary")
 	phrases := ComObjCreate("Scripting.Dictionary")
 	phrase_buffer := ""
@@ -160,6 +160,7 @@ class CoachViewport
 			; Now, if the count of this phrase's use exceeds 10, let's log that in coaching
 			; A 10-character phrase must be seen 3 times in 10000 characters 
 			if (this.phrases.item(current_phrase) > 2) {
+				this.LogEvent(1, "Testing '" current_phrase "' at " (StrLen(current_phrase) * this.phrases.item(current_phrase) * this.phrasePowerThreshold) " > " this.speedViewer.out_chars)
 				if ((StrLen(current_phrase) * this.phrases.item(current_phrase) * this.phrasePowerThreshold) > this.speedViewer.out_chars) {
 					coaching := new CoachingEvent()
 					coaching.word := current_phrase
