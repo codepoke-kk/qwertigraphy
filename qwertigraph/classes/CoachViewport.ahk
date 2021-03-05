@@ -72,7 +72,7 @@ class CoachViewport
 	speedViewer := ""
 	coachQueues := []
 	interval := 1000
-	phrasePowerThreshold := 30
+	phrasePowerThreshold := 50
 	coachEvents := ComObjCreate("Scripting.Dictionary")
 	phrases := ComObjCreate("Scripting.Dictionary")
 	phrase_buffer := ""
@@ -173,6 +173,10 @@ class CoachViewport
 					this.coachItem(coaching)
 					this.LogEvent(1, "Coaching new potential phrase '" current_phrase "' at " (StrLen(current_phrase) * this.phrases.item(current_phrase) * this.phrasePowerThreshold) " > " this.speedViewer.out_chars)
 					this.phrases.item(current_phrase) := 1
+				} else {
+					if (this.phrases.item(current_phrase) > 10) {
+						this.LogEvent(1, "Skipping new potential phrase '" current_phrase "' at " (StrLen(current_phrase) * this.phrases.item(current_phrase) * this.phrasePowerThreshold) " > " this.speedViewer.out_chars)
+					}
 				}
 			}
 			if (this.map.hints.item(current_phrase)) {
