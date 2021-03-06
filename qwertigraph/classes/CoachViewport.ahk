@@ -41,7 +41,7 @@ Gui, Add, Edit, -WantReturn x638 y64 w50 h20 vRegexCoachSaves,
 Gui, Add, Edit, -WantReturn x688 y64 w50 h20 vRegexCoachMatch, 
 Gui, Add, Edit, -WantReturn x738 y64 w50 h20 vRegexCoachMiss, 
 Gui, Add, Edit, -WantReturn x788 y64 w50 h20 vRegexCoachOther, 
-Gui, Add, Button, Default x838 y64 w90 h20 gCoachSearchCoachEvents, Search
+Gui, Add, Button, Default x838 y64 w90 h20 gCoachFilterCoachEvents, Filter
 
 ; Add the data ListView
 Gui, Add, ListView, x12 y84 w916 h476 vCoachEventsLV, Savings|Word|Qwerd|Form|Power|Saves|Matches|Misses|Other
@@ -61,9 +61,9 @@ LV_ModifyCol(7, 50)
 LV_ModifyCol(8, 50)
 LV_ModifyCol(9, 50)
 
-CoachSearchCoachEvents() {
+CoachFilterCoachEvents() {
 	global coach
-	coach.SearchCoachEvents()
+	coach.filterCoachEvents()
 }
 
 class CoachViewport
@@ -72,13 +72,13 @@ class CoachViewport
 	speedViewer := ""
 	coachQueues := []
 	interval := 1000
-	phrasePowerThreshold := 50
+	phrasePowerThreshold := 100
 	coachEvents := ComObjCreate("Scripting.Dictionary")
 	phrases := ComObjCreate("Scripting.Dictionary")
 	phrase_buffer := ""
 	qwerds_buffer := ""
 	logQueue := new Queue("CoachQueue")
-	logVerbosity := 2
+	logVerbosity := 4
 	
 	__New(map, speedViewer)
 	{
@@ -93,16 +93,74 @@ class CoachViewport
  
  	WmCommand(wParam, lParam){
 		if (lParam = this.hSearchCoachEvents)
-			this.SearchCoachEvents()
+			this.filterCoachEvents()
 	}
 	
-	SearchCoachEvents() {
+	filterCoachEvents() {
+		
+		GuiControlGet RegexCoachSavings
+		GuiControlGet RegexCoachWord
+		GuiControlGet RegexCoachQwerd
+		GuiControlGet RegexCoachForm
+		GuiControlGet RegexCoachPower
+		GuiControlGet RegexCoachSaves
+		GuiControlGet RegexCoachMatch
+		GuiControlGet RegexCoachMiss
+		GuiControlGet RegexCoachOther
+		
+		;global SaveProgress
+		
+		
+		this.logEvent(3, "RegexCoachSavings " RegexCoachSavings ", RegexCoachWord " RegexCoachWord ", RegexCoachQwerd " RegexCoachQwerd ", RegexCoachForm " RegexCoachForm ", RegexCoachPower " RegexCoachPower ", RegexCoachSaves " RegexCoachSaves ", RegexCoachMatch " RegexCoachMatch ", RegexCoachMiss " RegexCoachMiss ", RegexCoachOther " RegexCoachOther)
+		
+		requiredMatchCount := 0
+		requiredMatchCount += (RegexCoachSavings) ? 1 : 0
+		requiredMatchCount += (RegexCoachWord) ? 1 : 0
+		requiredMatchCount += (RegexCoachQwerd) ? 1 : 0
+		requiredMatchCount += (RegexCoachForm) ? 1 : 0
+		requiredMatchCount += (RegexCoachPower) ? 1 : 0
+		requiredMatchCount += (RegexCoachSaves) ? 1 : 0
+		requiredMatchCount += (RegexCoachMatch) ? 1 : 0
+		requiredMatchCount += (RegexCoachMiss) ? 1 : 0
+		requiredMatchCount += (RegexCoachOther) ? 1 : 0
+		
 		Gui, ListView, CoachEventsLV
 		LV_Delete()
-		For eventkey, garbage in this.coachEvents {
-			value := this.coachEvents.item(eventkey)
-			LV_Add(, value.savings, value.word, value.qwerd, value.form, value.power, value.saves, value.match, value.miss, value.other)
+		
+		for wordKey, garbage in this.coachEvents {
+			word := this.coachEvents.item(wordKey)
+			foundKey := 0
+			foundKey += this.testField("RegexCoachSavings", wordKey, word.savings, RegexCoachSavings)
+			foundKey += this.testField("RegexCoachWord", wordKey, word.word, RegexCoachWord)
+			foundKey += this.testField("RegexCoachQwerd", wordKey, word.qwerd, RegexCoachQwerd)
+			foundKey += this.testField("RegexCoachForm", wordKey, word.form, RegexCoachForm)
+			foundKey += this.testField("RegexCoachPower", wordKey, word.power, RegexCoachPower)
+			foundKey += this.testField("RegexCoachSaves", wordKey, word.saves, RegexCoachSaves)
+			foundKey += this.testField("RegexCoachMatch", wordKey, word.match, RegexCoachMatch)
+			foundKey += this.testField("RegexCoachMiss", wordKey, word.miss, RegexCoachMiss)
+			foundKey += this.testField("RegexCoachOther", wordKey, word.other, RegexCoachOther)
+			;if (RegexCoachSavings) {
+			;	if (RegExMatch(word.savings,RegexCoachSavings)) {
+			;		this.logEvent(4, "RegexCoachSavings matched " wordKey)
+			;		foundKeys[wordKey] := (foundKeys[wordKey]) ? foundKeys[wordKey] + 1 : 1
+			;	}
+			;}
+		
+			if (foundKey >= requiredMatchCount) {
+				LV_Add(, word.savings, word.word, word.qwerd, word.form, word.power, word.saves, word.match, word.miss, word.other)
+			}
 		}
+	}
+	
+	testField(fieldName,wordKey,haystack,needle) {
+		this.logEvent(4, "Testing " fieldName " for " wordKey " against " haystack " looking for " needle)
+		if (needle) {
+			if (RegExMatch(haystack,"i)" needle)) {
+				this.logEvent(4, fieldName " matched " wordKey)
+				return 1
+			}
+		}
+		return 0
 	}
 	
 	addQueue(coachQueue) { 
@@ -147,7 +205,7 @@ class CoachViewport
 		words := StrSplit(this.phrase_buffer, " ")
 		; We're going to grow current_phrase out to a max, and check each version for presence in hints
 		; Then we're going to count the number of times we used each phrase and mark it for possible creation 
-		current_phrase := words[words.MaxIndex()]
+		current_phrase := Trim(words[words.MaxIndex()])
 		Loop, % words.MaxIndex() {
 			word_index := words.MaxIndex() - A_Index
 			current_phrase := words[word_index] " " current_phrase
@@ -159,20 +217,25 @@ class CoachViewport
 			}
 			; Now, if the count of this phrase's use exceeds 10, let's log that in coaching
 			; A 10-character phrase must be seen 3 times in 10000 characters 
-			if (this.phrases.item(current_phrase) > 2) {
+			if ((word_index > 1) and (this.phrases.item(current_phrase) > 2)) {
 				this.LogEvent(1, "Testing '" current_phrase "' at " (StrLen(current_phrase) * this.phrases.item(current_phrase) * this.phrasePowerThreshold) " > " this.speedViewer.out_chars)
 				if ((StrLen(current_phrase) * this.phrases.item(current_phrase) * this.phrasePowerThreshold) > this.speedViewer.out_chars) {
-					coaching := new CoachingEvent()
-					coaching.word := current_phrase
-					coaching.qwerd := "_create_"
-					coaching.form := "h"
-					coaching.power := 3
-					coaching.endKey := " "
-					coaching.miss := true
-					coaching.saves := Round(StrLen(current_phrase) * -.667)
-					this.coachItem(coaching)
-					this.LogEvent(1, "Coaching new potential phrase '" current_phrase "' at " (StrLen(current_phrase) * this.phrases.item(current_phrase) * this.phrasePowerThreshold) " > " this.speedViewer.out_chars)
-					this.phrases.item(current_phrase) := 1
+					if (not this.map.hints.item(current_phrase).word) {
+						coaching := new CoachingEvent()
+						coaching.word := current_phrase
+						coaching.qwerd := "_create_"
+						coaching.form := "h"
+						coaching.power := 3
+						coaching.endKey := " "
+						coaching.miss := true
+						coaching.saves := Round(StrLen(current_phrase) * -.667)
+						this.coachItem(coaching)
+						this.LogEvent(1, "Coaching new potential phrase '" current_phrase "' at " (StrLen(current_phrase) * this.phrases.item(current_phrase) * this.phrasePowerThreshold) " > " this.speedViewer.out_chars)
+						this.phrases.item(current_phrase) := 1
+					} else {
+						this.LogEvent(1, "Not adding new potential phrase '" current_phrase "' - redundant")
+						this.phrases.item(current_phrase) := 1
+					}
 				} else {
 					if (this.phrases.item(current_phrase) > 10) {
 						this.LogEvent(1, "Skipping new potential phrase '" current_phrase "' at " (StrLen(current_phrase) * this.phrases.item(current_phrase) * this.phrasePowerThreshold) " > " this.speedViewer.out_chars)
