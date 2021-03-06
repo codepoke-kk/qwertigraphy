@@ -19,7 +19,7 @@ class MappingEngine_InputHook
 	discard_ratio := ""
 	input_text_buffer := ""
 	logQueue := new Queue("EngineQueue")
-	logVerbosity := 3
+	logVerbosity := 1
 	tip_power_threshold := 2
 	speedQueue := new Queue("SpeedQueue")
 	coachQueue := new Queue("CoachQueue")

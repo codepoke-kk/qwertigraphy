@@ -243,7 +243,7 @@ class EditorViewport
 {
 	map := ""
 	logQueue := new Queue("EditorQueue")
-	logVerbosity := 4
+	logVerbosity := 1
 	keyers := Array("","o","u","i","e","a","w","y")
 	
 	__New(map)

@@ -17,7 +17,7 @@ class PadViewport
 	interval := 1000
 	penEvents := []
 	logQueue := new Queue("PadQueue")
-	logVerbosity := 2
+	logVerbosity := 1
 	
 	padPageFile := "greggpad.html"
 	padPages := []

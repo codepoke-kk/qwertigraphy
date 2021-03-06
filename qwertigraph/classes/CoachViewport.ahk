@@ -78,7 +78,7 @@ class CoachViewport
 	phrase_buffer := ""
 	qwerds_buffer := ""
 	logQueue := new Queue("CoachQueue")
-	logVerbosity := 4
+	logVerbosity := 1
 	
 	__New(map, speedViewer)
 	{
