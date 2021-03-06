@@ -56,18 +56,32 @@ class MappingEngine_InputHook
 	 
 	ExpandInput(input_text, key, mods, ticks) {
 
+        this.maskToken := RegexMatch(input_text, "[0-9!@#$%\^&*<>?]")
 		; First glue this input to the buffer 
-		this.logEvent(2, "Expanding '" input_text "' ended with '" key "' after " ticks " millis")
+        if (not this.maskToken) {
+            this.logEvent(2, "Expanding '" input_text "' ended with '" key "' after " ticks " millis")
+        } else {
+            this.logEvent(2, "Expanding '****' ended with '" key "' after " ticks " millis")
+        }
 	    this.input_text_buffer := this.input_text_buffer . input_text
 		if (StrLen(key) = 1) {
 			this.input_text_buffer .= key
 		}
-		this.logEvent(4, "Input_text after buffering '" this.input_text_buffer "'")
+        if (not this.maskToken) {
+            this.logEvent(4, "Input_text after buffering '" this.input_text_buffer "'")
+        } else {
+            maskedBuffer := StrReplace(this.input_text_buffer, input_text, "****")
+            this.logEvent(4, "Input_text after buffering '" this.maskedBuffer "'")
+        }
 		
 		in_play_chars := this.getInPlayChars(this.input_text_buffer)
 		inbound := this.parseInbound(in_play_chars)
-		
-		this.logEvent(4, "We have an inbound " inbound.token)
+        
+        if (not this.maskToken) {
+            this.logEvent(4, "We have an inbound " inbound.token)
+        } else {
+            this.logEvent(4, "We have a possible sensitive inbound ****")
+        }
 		
 		;;; Now handle the token itself 
 		if (key = "Backspace") {
@@ -77,7 +91,11 @@ class MappingEngine_InputHook
 		} else if (key == "LControl" or key == "RControl") {
 			; The control key kills an input without expansion
 			final_characters_count := StrLen(inbound.token) + 1
-			this.logEvent(3, "Cancelled via control key " inbound.token)
+            if (not this.maskToken) {
+                this.logEvent(3, "Cancelled via control key " inbound.token)
+            } else {
+                this.logEvent(3, "Cancelled via control key ****")
+            }
 		} else if (inbound.isContraction) {
 			this.logEvent(4, "Handling apostrophe")
 			; If the last input ended with ' and this input is a common contraction
@@ -105,7 +123,11 @@ class MappingEngine_InputHook
 					this.logEvent(4, "Handling all others")
 					final_characters_count := StrLen(inbound.token) + 1
 			}
-			this.logEvent(3, "Completed contraction " inbound.token)
+            if (not this.maskToken) {
+                this.logEvent(3, "Completed contraction " inbound.token)
+            } else {
+                this.logEvent(3, "Completed contraction ****")
+            }
 		} else if (inbound.isCode) {
 			this.logEvent(4, "Token is code and should not expand")
 			final_characters_count := StrLen(inbound.token) + 1
@@ -131,13 +153,21 @@ class MappingEngine_InputHook
 				final_characters_count := this.pushInput(inbound.token, this.map.qwerds.item(inbound.token).word, sendable_end_key)
 				
 			} else {
-				this.logEvent(2, "Control key down on match, so don't expand " inbound.token)
+                if (not this.maskToken) {
+                    this.logEvent(2, "Control key down on match, so don't expand " inbound.token)
+                } else {
+                    this.logEvent(2, "Control key down on match, so don't expand ****")
+                }
 				; The control key was down, so don't expand, still send the end char, and count the chars typed
 				final_characters_count := StrLen(inbound.token) + 1
 			}
 		} else {
 			; This buffered input was not a special character, nor a qwerd
-			this.logEvent(4, "No match on '" inbound.token "' and input text was '" input_text "'")
+            if (not this.maskToken) {
+                this.logEvent(4, "No match on '" inbound.token "' and input text was '" input_text "'")
+            } else {
+                this.logEvent(4, "No match on '****' and input text was '****'")
+            }
 			if (input_text) {
 				final_characters_count := StrLen(inbound.token) + 1
 				if (this.map.hints.item(inbound.token).hint) {
@@ -154,7 +184,11 @@ class MappingEngine_InputHook
 						this.pushPenStroke(this.nullQwerd, "purple")
 					}
 					;;; Ignorable 
-					this.logEvent(3, "Unknown qwerd " inbound.token)
+                    if (not this.maskToken) {
+                        this.logEvent(3, "Unknown qwerd " inbound.token)
+                    } else {
+                        this.logEvent(3, "Unknown qwerd ****")
+                    }
 				}
 			} else {
 				this.logEvent(4, "No input_text, so not coachable - text from buffer only")
@@ -196,7 +230,7 @@ class MappingEngine_InputHook
 		}
 
 		if (input_text) {
-			this.logEvent(3, "Enqueuing speed event " StrLen(inbound.token) + 1 " to " final_characters_count " in " ticks)
+            this.logEvent(3, "Enqueuing speed event " StrLen(inbound.token) + 1 " to " final_characters_count " in " ticks)
 			event := new SpeedingEvent(A_Now, ticks, StrLen(inbound.token) + 1, final_characters_count, key)
 			this.speedQueue.enqueue(event)
 		} else {
@@ -216,7 +250,12 @@ class MappingEngine_InputHook
 		} else {
 			in_play_chars := buffer
 		}
-		this.logEvent(4, "In play chars are '" in_play_chars "'")
+        if (not this.maskToken) {
+            this.logEvent(4, "In play chars are '" in_play_chars "'")
+        } else {
+            this.logEvent(4, "In play chars are '****'")
+        }
+        
 		return in_play_chars
 		
 	}
@@ -255,8 +294,13 @@ class MappingEngine_InputHook
 		inbound.isContraction := ((inbound.initial_end_char == "'") and (inbound.preceding_char) and (InStr(MappingEngine_InputHook.ContractedEndings,inbound.token)))
 		inbound.isAffix := false
 		
-		this.logEvent(3, "Inbound pre,end1,token,end2 '" inbound.preceding_char "','" inbound.initial_end_char "','" inbound.token "','" inbound.final_end_char "'")
-		this.logEvent(4, "hasToken = " inbound.hasToken ", and isCode = " inbound.isCode)
+        if (not this.maskToken) {
+            this.logEvent(4, "Inbound pre,end1,token,end2 '" inbound.preceding_char "','" inbound.initial_end_char "','" inbound.token "','" inbound.final_end_char "'")
+            this.logEvent(4, "hasToken = " inbound.hasToken ", and isCode = " inbound.isCode)
+        } else {
+            this.logEvent(4, "Inbound pre,end1,token,end2 '" inbound.preceding_char "','" inbound.initial_end_char "','****','" inbound.final_end_char "'")
+            this.logEvent(4, "hasToken = " inbound.hasToken ", and isCode = " inbound.isCode)
+        }
 		return inbound
 	}
 	

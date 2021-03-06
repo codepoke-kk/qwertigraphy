@@ -33,6 +33,9 @@ SettingsLoggingLevelEngine() {
 	global engine
 	GuiControlGet SettingsLoggingLevelEngine
 	if (RegExMatch(SettingsLoggingLevelEngine, "^[012345]$")) {
+		if (RegExMatch(SettingsLoggingLevelEngine, "4")) {
+			Msgbox, % "Be aware. An engine log setting of 4 can display passwords as log entries"
+		}
 		engine.logVerbosity := SettingsLoggingLevelEngine
 	} else {
 		Msgbox, % "Could not understand " SettingsLoggingLevelEngine
