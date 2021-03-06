@@ -7,7 +7,7 @@ global SettingsLoggingLevelPad
 
 Gui, Tab, Settings
 ; Add regex search fields
-Gui, Add, Text, x12  y64 w160 h20 , Logging Level Settings 
+Gui, Add, Text, x12  y64 w444 h20 , Logging Level Settings (1 for low logging up to 4 for high logging)
 Gui, Add, Text, x12  y84 w160 h20 , Dictionary Map:
 Gui, Add, Edit, x172  y84 w20 h20 vSettingsLoggingLevelMap gSettingsLoggingLevelMap, 1
 Gui, Add, Text, x12  y104 w160 h20 , Expansion Engine:
@@ -19,6 +19,9 @@ Gui, Add, Edit, x172  y144 w20 h20 vSettingsLoggingLevelCoach gSettingsLoggingLe
 Gui, Add, Text, x12  y164 w160 h20 , Gregg Pad:
 Gui, Add, Edit, x172  y164 w20 h20 vSettingsLoggingLevelPad gSettingsLoggingLevelPad, 1
 
+Gui, Add, Text, x12  y244 w444 h20 , Phrase suggestion enthusiasm (1 for low no recommendations to 4000+ for all of them)
+Gui, Add, Text, x12  y264 w160 h20 , Enthusiasm:
+Gui, Add, Edit, x172  y264 w40 h20 vSettingsPhraseEnthusiasm gSettingsPhraseEnthusiasm, 100
 
 SettingsLoggingLevelMap() {
 	global map
@@ -66,5 +69,14 @@ SettingsLoggingLevelPad() {
 		pad.logVerbosity := SettingsLoggingLevelPad
 	} else {
 		Msgbox, % "Could not understand " SettingsLoggingLevelPad
+	}
+}
+SettingsPhraseEnthusiasm() {
+	global coach
+	GuiControlGet SettingsPhraseEnthusiasm
+	if (RegExMatch(SettingsPhraseEnthusiasm, "^\d+$")) {
+		coach.phrasePowerThreshold := SettingsPhraseEnthusiasm
+	} else {
+		Msgbox, % "Could not understand " SettingsPhraseEnthusiasm
 	}
 }
