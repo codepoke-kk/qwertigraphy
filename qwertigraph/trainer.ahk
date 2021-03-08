@@ -22,7 +22,7 @@ FileInstall, templates\personal.template, templates\personal.template, true
 FileInstall, templates\retrains.template, templates\retrains.template, true
 FileInstall, coach.ico, coach.ico, true
 
-Gui, Add, Tab3,x6 y40 w928 h526, Coach|Editor|Logs|GreggPad
+Gui, Add, Tab3,x6 y40 w928 h526, Coach|Editor|Logs|GreggPad|Settings
 Gui, Show, x262 y118 w940 h570, % "Qwertigraph Trainer"
 
 #Include classes\QwertigraphyEnvironment.ahk
@@ -68,6 +68,8 @@ logViewer.addQueue(coach.logQueue)
 logViewer.addQueue(editor.logQueue)
 logViewer.addQueue(pad.logQueue)
 ;
+
+#Include classes\SettingsViewport.ahk
 
 engine.Start()
 
