@@ -105,19 +105,19 @@ class MappingEngine_InputHook
 					this.logEvent(4, "Handling 'r")
 					Send, {Backspace}e
 					Send, % key
-					this.input_text_buffer .= "e" inbound.final_end_char
+					this.input_text_buffer := SubStr(this.input_text_buffer, 1, (StrLen(this.input_text_buffer) - 1)) "e" inbound.final_end_char
 					final_characters_count := 3
 				Case "v":
 					this.logEvent(4, "Handling 'v")
 					Send, {Backspace}e
 					Send, % key
-					this.input_text_buffer .= "e" inbound.end_char
+					this.input_text_buffer := SubStr(this.input_text_buffer, 1, (StrLen(this.input_text_buffer) - 1)) "e" inbound.final_end_char
 					final_characters_count := 3
 				Case "l":
 					this.logEvent(4, "Handling 'l")
 					Send, {Backspace}l
 					Send, % key
-					this.input_text_buffer .= "l" inbound.end_char
+					this.input_text_buffer := SubStr(this.input_text_buffer, 1, (StrLen(this.input_text_buffer) - 1)) "l" inbound.final_end_char
 					final_characters_count := 3
 				Default:
 					this.logEvent(4, "Handling all others")
