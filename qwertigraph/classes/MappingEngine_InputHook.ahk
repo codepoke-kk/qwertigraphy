@@ -38,7 +38,7 @@ class MappingEngine_InputHook
 		{
 			this.ih := InputHook("VCE", MappingEngine_InputHook.EndKeys)
 			; Don't allow Enter and Tab to go through, or those keys will exit a field before expanding the text
-			this.ih.KeyOpt("{Enter}{Tab}", "+S")
+			this.ih.KeyOpt("{Enter}{Tab}{NumPadEnter}", "+S")
 			;Msgbox, % "Backspace is " ih.BackspaceIsUndo
 			this.ih.Start()
 			input_start := A_TickCount
@@ -143,7 +143,7 @@ class MappingEngine_InputHook
 				this.pushPenStroke(this.map.qwerds.item(inbound.token), "blue")
 				
 				; We will always send suppressed keys later, so only send unsuppressed keys now 
-				if (not (InStr("EnterTab", key) > 0)) {
+				if (not (InStr("NumpadEnterTab", key) > 0)) {
 					this.logEvent(2, "Sending end key, because it's not going to be sent later like Enter or Tab")
 					sendable_end_key := key
 				} else {
@@ -208,7 +208,7 @@ class MappingEngine_InputHook
 		}
 		
 		; Since we're suppressing these keys to make sure expansion happens before leaving a field, we must always send them
-		if (InStr("EnterTab", key) > 0) {
+		if (InStr("NumpadEnterTab", key) > 0) {
 			; Must send modifiers if we want them to appear, but must strip the < character from them 
 			; clean_mods := StrReplace(mods, "<", "") 
 			clean_mods := RegExReplace(mods, "[<>](.)(?:>\1)?", "$1")
@@ -310,14 +310,14 @@ class MappingEngine_InputHook
 		this.logEvent(2, "Pushing " qwerd " to " word " ending with " end_key)
 		final_characters_count := StrLen(word) + 1
 		; expand this qwerd by first deleting the qwerd itself and its end character if not suppressed
-		deleteChars := StrLen(qwerd) + (InStr("EnterTab", end_key) = 0)
+		deleteChars := StrLen(qwerd) + (InStr("NumpadEnterTab", end_key) = 0)
 		this.logEvent(4, "Sending " deleteChars " backspaces")
 		Send, {Backspace %deleteChars%}
 		this.logEvent(4, "Sending '" word "'")
 		Send, % word
 		
 		; Expand the qwerd into the buffer as well 
-		this.input_text_buffer := SubStr(this.input_text_buffer, 1, (StrLen(this.input_text_buffer) - (StrLen(qwerd) + (InStr("EnterTab", end_key) = 0)))) word
+		this.input_text_buffer := SubStr(this.input_text_buffer, 1, (StrLen(this.input_text_buffer) - (StrLen(qwerd) + (InStr("NumpadEnterTab", end_key) = 0)))) word
 
 		if (StrLen(end_key) = 1) {
 			; handle these special characters explicitly, or they'll be interpreted as modifiers
