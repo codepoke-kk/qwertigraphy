@@ -89,6 +89,7 @@ engine.Start()
 
 ^Space::
 ^Enter::
+^NumPadEnter::
 ^Tab::
 ^.::
 ^,::

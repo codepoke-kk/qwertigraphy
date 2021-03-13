@@ -4,7 +4,7 @@ class MappingEngine_InputHook
 {
 	Static MovementKeys := "{Delete}{Insert}{Home}{End}{PgUp}{PgDn}{left}{up}{right}{down}"
 	Static ContractedEndings := "s,d,t,m,re,ve,ll,r,v,l"
-	Static EndKeys_soft := "{LControl}{RControl}{backspace}{enter}{tab}{Delete}{Insert}{Home}{End}{PgUp}{PgDn}{left}{up}{right}{down}{LButton}"
+	Static EndKeys_soft := "{LControl}{RControl}{backspace}{enter}{numpadenter}{tab}{Delete}{Insert}{Home}{End}{PgUp}{PgDn}{left}{up}{right}{down}{LButton}"
 	Static EndKeys_hard := " .,?!;:'""-_{{}{}}[]/\+=|()@#$%^&*<>"
 	Static EndKeys := MappingEngine_InputHook.EndKeys_soft MappingEngine_InputHook.EndKeys_hard
 	
