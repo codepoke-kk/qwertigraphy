@@ -41,7 +41,7 @@ Gui, Add, Edit, -WantReturn x638 y64 w50 h20 vRegexCoachSaves,
 Gui, Add, Edit, -WantReturn x688 y64 w50 h20 vRegexCoachMatch, 
 Gui, Add, Edit, -WantReturn x738 y64 w50 h20 vRegexCoachMiss, 
 Gui, Add, Edit, -WantReturn x788 y64 w50 h20 vRegexCoachOther, 
-Gui, Add, Button, Default x838 y64 w90 h20 gCoachFilterCoachEvents, Filter
+Gui, Add, Button, x838 y64 w90 h20 gCoachFilterCoachEvents, Filter
 
 ; Add the data ListView
 Gui, Add, ListView, x12 y84 w916 h476 vCoachEventsLV, Savings|Word|Qwerd|Form|Power|Saves|Matches|Misses|Other
