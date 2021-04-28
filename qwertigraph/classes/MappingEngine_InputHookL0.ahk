@@ -309,6 +309,8 @@ class MappingEngine_InputHookL0
 	{
 		this.logEvent(2, "Input reset by function ")
 		;this.ih.Stop()
+		;this.Start()
+		this.CancelToken("{LButton}")
 	}
 	
 	getInPlayChars(buffer) {
