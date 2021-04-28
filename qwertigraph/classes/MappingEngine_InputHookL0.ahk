@@ -90,7 +90,7 @@ class MappingEngine_InputHookL0
 				this.SendToken(sendkey)
 			case "Home", "End", "PgUp", "PgDn", "Left", "Up", "Right", "Down", "NumpadHome", "NumpadEnd", "NumpadPgUp", "NumpadPgDn", "NumpadLeft", "NumpadUp", "NumpadRight", "NumpadDown":
 				sendKey := "{" key "}"
-				this.SendToken(sendkey)
+				this.CancelToken(sendkey)
 			case "LButton":
 				Msgbox, % "Yep. LButton"
 				sendKey := "{" key "}"
@@ -147,6 +147,7 @@ class MappingEngine_InputHookL0
 	}
 
 	AddToToken(key) {
+		; Accumulate this letter
 		if (this.keyboard.Shfed) {
 			StringUpper key, key
 		} 
@@ -154,10 +155,18 @@ class MappingEngine_InputHookL0
 	}
 
 	RemoveKeyFromToken() {
+		; This is a backspace
 		this.keyboard.Token := SubStr(this.keyboard.Token, 1, (StrLen(this.keyboard.Token) - 1))
 	}
 
+	CancelToken(key) {
+		; Send the empty key through to clear the input buffer
+		this.keyboard.Token := ""
+		this.ExpandInput(this.keyboard.Token, key, (this.keyboard.Shfed this.keyboard.Ctled this.keyboard.Alted this.keyboard.Wined), (A_TickCount - this.keyboard.TokenStartTicks))
+	}
+
 	SendToken(key) {
+		; Send through a valid qwerd
 		this.ExpandInput(this.keyboard.Token, key, (this.keyboard.Shfed this.keyboard.Ctled this.keyboard.Alted this.keyboard.Wined), (A_TickCount - this.keyboard.TokenStartTicks))
 		this.keyboard.Token := ""
 		this.keyboard.TokenStartTicks := A_TickCount

@@ -48,7 +48,7 @@ Menu, Tray, Icon, %I_Icon%
 
 qenv := new QwertigraphyEnvironment()
 map := new DictionaryMap(qenv)
-engine := new MappingEngine_InputHookLis(map)
+engine := new MappingEngine_InputHookL0(map)
 		
 speedViewer := new SpeedViewport()
 speedViewer.addQueue(engine.speedQueue)
