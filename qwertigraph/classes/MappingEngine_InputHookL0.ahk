@@ -48,7 +48,8 @@ class MappingEngine_InputHookL0
 	}
 		
 	Start() 
-	{			
+	{
+		this.logEvent(1, "Starting" )
 		this.ih := InputHook("EL0I1")
 		this.ih.KeyOpt("{All}", "NS")  ; End and Suppress
 		;this.ih.OnKeyDown := Func("this.ReceiveKeyDown")
@@ -64,16 +65,42 @@ class MappingEngine_InputHookL0
 			Sleep, 100
 		}
 	}	 
+		
+	Stop() 
+	{
+		this.logEvent(1, "Stopping" )
+		this.ih.KeyOpt("{All}", "-NS")  ; End and Suppress
+		this.ih.Stop()
+		Send, {Ctrl down}
+		Send, {Ctrl up}
+		Send, {Win down}
+		Send, {Win up}
+		this.logEvent(1, "Stopped" )
+	}	 
 	
 	ReceiveKeyDown(InputHook, VK, SC) {
 		;ToolTip, % "VK: " VK ", SC: " SC
 		key := GetKeyName(Format("vk{:x}", VK))
 		Switch key
 		{
+			case "p": 
+				; We need a way to stop all input
+				if (this.keyboard.Ctled and this.keyboard.Wined) {
+					sendkey := key
+					this.CancelToken(sendkey)
+					if (this.ih.InProgress) {
+						this.Stop()
+					} else {
+						this.Start()
+					}
+				} else {
+					this.AddToToken(key)
+					sendkey := key
+				}
 			case "a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m":
 				this.AddToToken(key)
 				sendkey := key
-			case "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z": 
+			case "n", "o", "r", "q", "s", "t", "u", "v", "w", "x", "y", "z": 
 				this.AddToToken(key)
 				sendkey := key
 			case "0", "1", "2", "3", "4", "5", "6", "7", "8", "9": 
@@ -85,22 +112,15 @@ class MappingEngine_InputHookL0
 			case "Space":
 				sendKey := "{" key "}"
 				this.SendToken(sendKey)
-			case "Enter", "Tab", "Delete", "Insert", "NumPadEnter":
+			case "Enter", "Tab", "Insert", "NumPadEnter":
 				sendKey := "{" key "}"
 				this.SendToken(sendkey)
-			case "Home", "End", "PgUp", "PgDn", "Left", "Up", "Right", "Down", "NumpadHome", "NumpadEnd", "NumpadPgUp", "NumpadPgDn", "NumpadLeft", "NumpadUp", "NumpadRight", "NumpadDown":
+			case "Home", "End", "PgUp", "PgDn", "Left", "Up", "Right", "Down", "NumpadHome", "NumpadEnd", "NumpadPgUp", "NumpadPgDn", "NumpadLeft", "NumpadUp", "NumpadRight", "NumpadDown", "NumpadDel", "Delete":
 				sendKey := "{" key "}"
 				this.CancelToken(sendkey)
-			case "LButton":
-				Msgbox, % "Yep. LButton"
-				sendKey := "{" key "}"
-				this.SendToken(key)
 			case "Backspace":
 				sendKey := "{" key "}"
 				this.RemoveKeyFromToken()
-			case "LShift", "RShift":
-				this.keyboard.Shfed := "+"
-				sendKey := ""
 			case "CapsLock":
 				if (this.keyboard.CapsLock) {
 					this.keyboard.Shfed := ""
@@ -110,18 +130,21 @@ class MappingEngine_InputHookL0
 					this.keyboard.CapsLock := true
 				}
 				sendKey := ""
+			case "LShift", "RShift":
+				this.keyboard.Shfed := "+"
+				sendKey := ""
 			case "LControl", "RControl":
 				this.keyboard.Ctled := "^"
 				sendKey := ""
-				this.SendToken(key)
+				this.CancelToken(key)
 			case "LAlt", "RAlt":
 				this.keyboard.Alted := "!"
 				sendKey := ""
-				this.SendToken(key)
+				this.CancelToken(key)
 			case "LWin", "RWin":
 				this.keyboard.Wined := "#"
 				sendKey := ""
-				this.SendToken(key)
+				this.CancelToken(key)
 			default:
 				sendKey := "{" key "}"
 				; ToolTip, % "Unknown key: " key

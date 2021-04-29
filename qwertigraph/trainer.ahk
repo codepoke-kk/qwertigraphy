@@ -83,8 +83,8 @@ engine.Start()
 
 ; Enable/Disable
 ^#p::
-    Pause toggle
-    engine.ResetInput()
+    ;Pause toggle
+    engine.Start()
     Return
 
 ^Space::
