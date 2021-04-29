@@ -49,6 +49,8 @@ class MappingEngine_InputHookL0
 		
 	Start() 
 	{
+		this.keyboard.Token := ""
+		this.input_text_buffer := ""
 		this.logEvent(1, "Starting" )
 		this.ih := InputHook("EL0I1")
 		this.ih.KeyOpt("{All}", "NS")  ; End and Suppress
@@ -75,27 +77,30 @@ class MappingEngine_InputHookL0
 		Send, {Ctrl up}
 		Send, {Win down}
 		Send, {Win up}
+		this.keyboard.Token := ""
 		this.logEvent(1, "Stopped" )
 	}	 
 	
 	ReceiveKeyDown(InputHook, VK, SC) {
-		;ToolTip, % "VK: " VK ", SC: " SC
+		; ToolTip, % "VK: " VK ", SC: " SC
 		key := GetKeyName(Format("vk{:x}", VK))
 		Switch key
 		{
 			case "p": 
 				; We need a way to stop all input
-				if (this.keyboard.Ctled and this.keyboard.Wined) {
+				if (this.keyboard.Alted and this.keyboard.Wined) {
 					sendkey := key
 					this.CancelToken(sendkey)
 					if (this.ih.InProgress) {
 						this.Stop()
 					} else {
+						ToolTip, "Should never hit this line"
 						this.Start()
 					}
 				} else {
-					this.AddToToken(key)
+					; ToolTip, % "Our P has " this.keyboard.Ctled "and" this.keyboard.Wined "and" this.keyboard.Alted
 					sendkey := key
+					this.CancelToken(sendkey)
 				}
 			case "a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m":
 				this.AddToToken(key)
@@ -130,27 +135,51 @@ class MappingEngine_InputHookL0
 					this.keyboard.CapsLock := true
 				}
 				sendKey := ""
-			case "LShift", "RShift":
+			case "LShift":
+				Send, {Lshift down}
 				this.keyboard.Shfed := "+"
 				sendKey := ""
-			case "LControl", "RControl":
+			case "RShift":
+				Send, {RShift down}
+				this.keyboard.Shfed := "+"
+				sendKey := ""
+			case "LControl":
+				Send, {LControl down}
 				this.keyboard.Ctled := "^"
 				sendKey := ""
 				this.CancelToken(key)
-			case "LAlt", "RAlt":
+			case "RControl":
+				Send, {RControl down}
+				this.keyboard.Ctled := "^"
+				sendKey := ""
+				this.CancelToken(key)
+			case "LAlt":
+				Send, {LAlt down}
 				this.keyboard.Alted := "!"
 				sendKey := ""
 				this.CancelToken(key)
-			case "LWin", "RWin":
+			case "RAlt":
+				Send, {RAlt down}
+				this.keyboard.Alted := "!"
+				sendKey := ""
+				this.CancelToken(key)
+			case "LWin":
+				Send, {LWin down}
+				this.keyboard.Wined := "#"
+				sendKey := ""
+				this.CancelToken(key)
+			case "RWin":
+				Send, {RWin down}
 				this.keyboard.Wined := "#"
 				sendKey := ""
 				this.CancelToken(key)
 			default:
 				sendKey := "{" key "}"
-				; ToolTip, % "Unknown key: " key
+				ToolTip, % "Unknown key: " key
 				SetTimer, ClearToolTipEngine, -1500
 				this.SendToken(key)
 		} 
+		; Send, % sendKey
 		Send, % this.keyboard.Shfed this.keyboard.Ctled this.keyboard.Alted this.keyboard.Wined sendKey
 	}
 
@@ -158,13 +187,29 @@ class MappingEngine_InputHookL0
 		key := GetKeyName(Format("vk{:x}", VK))
 		Switch key
 		{
-			case "LShift", "RShift":
+			case "LShift":
+				Send, {LShift up}
 				this.keyboard.Shfed := ""
-			case "LControl", "RControl":
+			case "RShift":
+				Send, {RShift up}
+				this.keyboard.Shfed := ""
+			case "LControl":
+				Send, {LControl up}
 				this.keyboard.Ctled := ""
-			case "LAlt", "RAlt":
+			case "RControl":
+				Send, {RControl up}
+				this.keyboard.Ctled := ""
+			case "LAlt":
+				Send, {LAlt up}
 				this.keyboard.Alted := ""
-			case "LWin", "RWin":
+			case "RAlt":
+				Send, {RAlt up}
+				this.keyboard.Alted := ""
+			case "LWin":
+				Send, {LWin up}
+				this.keyboard.Wined := ""
+			case "RWin":
+				Send, {RWin up}
 				this.keyboard.Wined := ""
 		} 
 	}

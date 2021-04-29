@@ -82,8 +82,8 @@ engine.Start()
 
 
 ; Enable/Disable
-^#p::
-    ;Pause toggle
+!#p::
+    Pause toggle
     engine.Start()
     Return
 
