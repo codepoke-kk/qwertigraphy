@@ -233,6 +233,7 @@ class MappingEngine_InputHookL0
 	RemoveKeyFromToken() {
 		; This is a backspace
 		this.keyboard.Token := SubStr(this.keyboard.Token, 1, (StrLen(this.keyboard.Token) - 1))
+		this.input_text_buffer := SubStr(this.input_text_buffer, 1, (StrLen(this.input_text_buffer) - 1))
 	}
 
 	CancelToken(key) {
