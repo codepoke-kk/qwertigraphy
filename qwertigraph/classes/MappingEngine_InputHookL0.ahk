@@ -82,6 +82,7 @@ class MappingEngine_InputHookL0
 	}	 
 	
 	ReceiveKeyDown(InputHook, VK, SC) {
+		local key
 		; ToolTip, % "VK: " VK ", SC: " SC
 		key := GetKeyName(Format("vk{:x}", VK))
 		Switch key
@@ -184,6 +185,7 @@ class MappingEngine_InputHookL0
 	}
 
 	ReceiveKeyUp(InputHook, VK, SC) {
+		local key
 		key := GetKeyName(Format("vk{:x}", VK))
 		Switch key
 		{
