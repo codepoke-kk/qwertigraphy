@@ -99,8 +99,8 @@ class MappingEngine_InputHookL0
 					}
 				} else {
 					; ToolTip, % "Our P has " this.keyboard.Ctled "and" this.keyboard.Wined "and" this.keyboard.Alted
+					this.AddToToken(key)
 					sendkey := key
-					this.CancelToken(sendkey)
 				}
 			case "a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m":
 				this.AddToToken(key)
