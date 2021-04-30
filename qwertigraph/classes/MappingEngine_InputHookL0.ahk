@@ -198,21 +198,27 @@ class MappingEngine_InputHookL0
 			case "LControl":
 				Send, {LControl up}
 				this.keyboard.Ctled := ""
+				this.CancelToken(key)
 			case "RControl":
 				Send, {RControl up}
 				this.keyboard.Ctled := ""
+				this.CancelToken(key)
 			case "LAlt":
 				Send, {LAlt up}
 				this.keyboard.Alted := ""
+				this.CancelToken(key)
 			case "RAlt":
 				Send, {RAlt up}
 				this.keyboard.Alted := ""
+				this.CancelToken(key)
 			case "LWin":
 				Send, {LWin up}
 				this.keyboard.Wined := ""
+				this.CancelToken(key)
 			case "RWin":
 				Send, {RWin up}
 				this.keyboard.Wined := ""
+				this.CancelToken(key)
 		} 
 	}
 
