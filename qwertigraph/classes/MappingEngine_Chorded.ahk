@@ -277,7 +277,7 @@ class MappingEngine_Chorded
 	ExpandInput(input_text, key, mods, ticks) {
 		chord := ""
 		this.logEvent(4, "Expanding |" input_text "|" key "|" mods "|" ticks "|" )
-		if (input_text and (StrLen(input_text) = this.keyboard.ChordLength)) {
+		if ((StrLen(this.keyboard.ChordLength) > 1) and input_text and (StrLen(input_text) = this.keyboard.ChordLength)) {
 			chord := this.map.AlphaOrder(input_text)
 			ToolTip, % "Chording " chord, A_CaretX, A_CaretY + 30
 			SetTimer, ClearToolTipEngine, -1500
