@@ -11,6 +11,7 @@ class DictionaryMap
 	retrains := {}
 	negations := ComObjCreate("Scripting.Dictionary")
 	qwerds := ComObjCreate("Scripting.Dictionary")
+	chords := ComObjCreate("Scripting.Dictionary")
 	hints := ComObjCreate("Scripting.Dictionary")
 	displaceds := ComObjCreate("Scripting.Dictionary")
 	
@@ -77,6 +78,10 @@ class DictionaryMap
 				if (StrLen(newEntry.qwerd) > this.longestQwerd) {
 					this.longestQwerd := StrLen(newEntry.qwerd)
 				}
+				
+				; Give the new entry a chord
+				newEntry.chord := this.AlphaOrder(newEntry.qwerd)
+				
 				this.propagateEntryToMaps(newEntry)
 
 			}
@@ -101,6 +106,11 @@ class DictionaryMap
 		newEntryCapped := new DictionaryEntry(wordCapped "," newEntry.form "," qwerdCapped "," newEntry.keyer "," newEntry.Usage "," newEntry.hint "," newEntry.dictionary)
 		this.qwerds.item(qwerdCapped) := newEntryCapped
 		this.hints.item(wordCapped) := newEntryCapped
+		
+		if (not this.chords.item(newEntry.chord).word) {
+			this.logEvent(4, "Adding chord " newEntry.chord " as " newEntry.word) 
+			this.chords.item(newEntry.chord) := newEntry
+		}
 		
 		;Msgbox, % "Qwerds " newEntry.qwerd "," qwerdUPPER "," qwerdCapped
 		;Msgbox, % "Words " newEntry.word "," wordUPPER "," wordCapped
@@ -132,6 +142,15 @@ class DictionaryMap
 		;Msgbox, % "Qwerds " newEntry.qwerd "," qwerdUPPER "," qwerdCapped
 		;Msgbox, % "Words " newEntry.word "," wordUPPER "," wordCapped
 	}	
+	
+	AlphaOrder(input_text) {		
+		chord := ""
+		loop, parse, input_text
+			chord .= A_LoopField ","
+		
+		Sort, chord, UD,
+		return StrReplace(chord, ",")
+	}
 
 	saveDictionaries() {
 		this.logEvent(1, "Saving dictionaries") 
