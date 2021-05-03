@@ -73,12 +73,13 @@ class CoachViewport
 	coachQueues := []
 	interval := 1000
 	phrasePowerThreshold := 100
+	tip_power_threshold := 1
 	coachEvents := ComObjCreate("Scripting.Dictionary")
 	phrases := ComObjCreate("Scripting.Dictionary")
 	phrase_buffer := ""
 	qwerds_buffer := ""
 	logQueue := new Queue("CoachQueue")
-	logVerbosity := 1
+	logVerbosity := 3
 	
 	__New(map, speedViewer)
 	{
@@ -180,6 +181,7 @@ class CoachViewport
 				}
 				this.coachItem(coachEvent)
 				this.coachPhrasing(coachEvent)
+				this.coachChording(coachEvent)
 			}
 		}
 	}
@@ -196,6 +198,15 @@ class CoachViewport
 			this.coachEvents.item(eventKey).other += coachEvent.other
 		}
 		this.coachEvents.item(eventKey).savings += coachEvent.saves
+	}
+	
+	coachChording(coachEvent) {
+		if ((not coachEvent.chorded) and (coachEvent.chordable)) {
+			this.LogEvent(2, "Chord coaching '" coachEvent.word "' against '" coachEvent.chord "'")
+			this.flashTip(coachEvent)
+		} else {
+			this.LogEvent(2, "Chord not coaching '" coachEvent.word "' against '" coachEvent.chord "'")
+		}
 	}
 	
 	coachPhrasing(coachEvent) {
@@ -270,7 +281,11 @@ class CoachViewport
 		if (coachEvent.power < this.tip_power_threshold) {
 			return
 		}
-		Tooltip % coachEvent.word " = " coachEvent.qwerd, A_CaretX, A_CaretY + 30
+		if (coachEvent.chordable) {
+			Tooltip % coachEvent.word " = " coachEvent.qwerd " (" coachEvent.chord ")", A_CaretX, A_CaretY + 30
+		} else {
+			Tooltip % coachEvent.word " = " coachEvent.qwerd, A_CaretX, A_CaretY + 30
+		}
 		SetTimer, ClearToolTipCoaching, -1500
 		return 
 

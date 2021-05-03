@@ -2,6 +2,9 @@ class CoachingEvent
 {
 	word := ""
 	qwerd := ""
+	chord := ""
+	chordable := false
+	chorded := false
 	form := ""
 	saves := 0
 	power := 0

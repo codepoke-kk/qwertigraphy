@@ -20,7 +20,7 @@ class MappingEngine_Chorded
 	input_text_buffer := ""
 	logQueue := new Queue("EngineQueue")
 	logVerbosity := 4
-	tip_power_threshold := 2
+	tip_power_threshold := 1
 	speedQueue := new Queue("SpeedQueue")
 	coachQueue := new Queue("CoachQueue")
 	penQueue := new Queue("PenQueue")
@@ -277,9 +277,12 @@ class MappingEngine_Chorded
 	ExpandInput(input_text, key, mods, ticks) {
 		chord := ""
 		this.logEvent(4, "Expanding |" input_text "|" key "|" mods "|" ticks "|" )
-		if ((StrLen(this.keyboard.ChordLength) > 1) and input_text and (StrLen(input_text) = this.keyboard.ChordLength)) {
+		if ((this.keyboard.ChordLength > 1) and input_text and (StrLen(input_text) = this.keyboard.ChordLength)) {
 			chord := this.map.AlphaOrder(input_text)
-			ToolTip, % "Chording " chord, A_CaretX, A_CaretY + 30
+			if (this.keyboard.Shfed) {
+				StringUpper, chord, chord
+			}
+			; ToolTip, % "Chording " chord, A_CaretX, A_CaretY + 30
 			SetTimer, ClearToolTipEngine, -1500
 			this.logEvent(4, "Chording " chord " of length " this.keyboard.ChordLength)
 			if (this.map.chords.item(chord).word) {
@@ -348,7 +351,7 @@ class MappingEngine_Chorded
 			if (not InStr(mods, "^")) {
 				; Success 
 				; Coach the found qwerd
-				this.pushCoaching(this.map.qwerds.item(inbound.token), true, false, false, key)
+				this.pushCoaching(this.map.qwerds.item(inbound.token), true, false, false, key, (StrLen(chord)))
 				this.pushPenStroke(this.map.qwerds.item(inbound.token), "blue")
 				; "Push Input" is where the magic happens on screen
 				if (chord) {
@@ -368,7 +371,7 @@ class MappingEngine_Chorded
 			if (input_text) {
 				final_characters_count := StrLen(inbound.token) + 1
 				if (this.map.hints.item(inbound.token).hint) {
-					this.pushCoaching(this.map.hints.item(inbound.token), false, true, false, key)
+					this.pushCoaching(this.map.hints.item(inbound.token), false, true, false, key, (StrLen(chord)))
 					this.pushPenStroke(this.map.hints.item(inbound.token), "red")
 		
 					;;; Hintable
@@ -377,7 +380,7 @@ class MappingEngine_Chorded
 					; This is an unknown word and qwerd. Send it to coaching, but only if it's not too strange
 					if (not inbound.isSensitive) {
 						this.nullQwerd.word := inbound.token
-						this.pushCoaching(this.nullQwerd, false, false, true, key)
+						this.pushCoaching(this.nullQwerd, false, false, true, key, (StrLen(chord)))
 						this.pushPenStroke(this.nullQwerd, "purple")
 					}
 					;;; Ignorable 
@@ -504,10 +507,13 @@ class MappingEngine_Chorded
 		return final_characters_count
 	}
 	
-	pushCoaching(qwerd, match, miss, other, key) {
+	pushCoaching(qwerd, match, miss, other, key, chorded) {
 		coaching := new CoachingEvent()
 		coaching.word := qwerd.word
 		coaching.qwerd := qwerd.qwerd
+		coaching.chord := qwerd.chord
+		coaching.chordable := qwerd.chordable
+		coaching.chorded := chorded
 		coaching.form := qwerd.form
 		coaching.saves := qwerd.saves
 		coaching.power := qwerd.power
@@ -516,7 +522,7 @@ class MappingEngine_Chorded
 		coaching.other := other
 		coaching.endKey := key
 		this.coachQueue.enqueue(coaching)
-		this.logEvent(3, "Enqueued coaching " coaching.word)
+		this.logEvent(3, "Enqueued coaching " coaching.word " (" coaching.chord "," coaching.chordable ")")
 		
 		if (miss) { 
 			this.flashTip(coaching)
@@ -533,7 +539,11 @@ class MappingEngine_Chorded
 		if (coachEvent.power < this.tip_power_threshold) {
 			return
 		}
-		Tooltip % coachEvent.word " = " coachEvent.qwerd, A_CaretX, A_CaretY + 30
+		if (coachEvent.chordable) {
+			Tooltip % coachEvent.word " = " coachEvent.qwerd " (" coachEvent.chord ")", A_CaretX, A_CaretY + 30
+		} else {
+			Tooltip % coachEvent.word " = " coachEvent.qwerd, A_CaretX, A_CaretY + 30
+		}
 		SetTimer, ClearToolTipEngine, -1500
 		return 
 

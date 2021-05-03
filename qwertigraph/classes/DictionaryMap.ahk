@@ -109,7 +109,14 @@ class DictionaryMap
 		
 		if ((StrLen(newEntry.chord) > 1) and (not this.chords.item(newEntry.chord).word)) {
 			this.logEvent(4, "Adding chord " newEntry.chord " as " newEntry.word) 
+			newEntry.chordable := true
 			this.chords.item(newEntry.chord) := newEntry
+			
+			StringUpper, chordUPPER, % newEntry.chord
+			newChordEntryCapped := new DictionaryEntry(wordCapped "," newEntry.form "," chordUPPER "," newEntry.keyer "," newEntry.Usage "," newEntry.hint "," newEntry.dictionary)
+			newChordEntryCapped.chord := chordUPPER
+			newChordEntryCapped.chordable := true
+			this.chords.item(newChordEntryCapped.chord) := newChordEntryCapped
 		}
 		
 		;Msgbox, % "Qwerds " newEntry.qwerd "," qwerdUPPER "," qwerdCapped
