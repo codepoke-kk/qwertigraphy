@@ -82,8 +82,8 @@ engine.Start()
 
 
 ; Enable/Disable
-^#p::
-	Msgbox, % "ReStarting"
+!#p::
+    Pause toggle
     engine.Start()
     Return
 
