@@ -19,7 +19,7 @@ class MappingEngine_Chorded
 	discard_ratio := ""
 	input_text_buffer := ""
 	logQueue := new Queue("EngineQueue")
-	logVerbosity := 4
+	logVerbosity := 1
 	tip_power_threshold := 1
 	speedQueue := new Queue("SpeedQueue")
 	coachQueue := new Queue("CoachQueue")
@@ -60,24 +60,13 @@ class MappingEngine_Chorded
 		;this.ih.OnKeyUp := Func("this.ReceiveKeyUp")
 		this.ih.OnKeyUp := ObjBindMethod(this, "ReceiveKeyUp")
 		this.ih.Start()	
-		
-		Loop {
-			if (not this.ih.InProgress) {
-				this.LogEvent(1, "IH stopped due to " this.ih.EndReason)
-			}
-			Sleep, 100
-		}
 	}	 
 		
 	Stop() 
 	{
 		this.logEvent(1, "Stopping" )
-		this.ih.KeyOpt("{All}", "-NS")  ; End and Suppress
+		this.ih.KeyOpt("{All}", "-N-S")  ; Undo end and Suppress
 		this.ih.Stop()
-		Send, {Ctrl down}
-		Send, {Ctrl up}
-		Send, {Win down}
-		Send, {Win up}
 		this.keyboard.Token := ""
 		this.logEvent(1, "Stopped" )
 	}
@@ -93,12 +82,7 @@ class MappingEngine_Chorded
 				if (this.keyboard.Alted and this.keyboard.Wined) {
 					sendkey := key
 					this.CancelToken(sendkey)
-					if (this.ih.InProgress) {
-						this.Stop()
-					} else {
-						ToolTip, "Should never hit this line"
-						this.Start()
-					}
+					this.Stop()
 				} else {
 					; ToolTip, % "Our P has " this.keyboard.Ctled "and" this.keyboard.Wined "and" this.keyboard.Alted
 					this.AddToToken(key)

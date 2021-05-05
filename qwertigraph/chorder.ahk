@@ -83,9 +83,21 @@ engine.Start()
 
 ; Enable/Disable
 !#p::
-    Pause toggle
-    engine.Start()
+	Pause toggle
+	if (engine.ih.InProgress) {
+		;engine.Stop()
+		;Msgbox, % "Stopped in launcher"
+	} else {
+		engine.Start()
+		; SetTimer, ClearModifiers, 5000
+		; Msgbox, % "Started and alt " GetKeyState("LAlt") " win " GetKeyState("LWin")
+	}
     Return
+
+ClearModifiers() {
+	Msgbox, % "Clearing"
+	Send {Blind}{LControl up}{RControl up}{LAlt up}{RAlt up}{LWin up}{RWin up}
+}
 
 ^Space::
 ^Enter::
