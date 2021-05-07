@@ -19,7 +19,7 @@ class MappingEngine_Chorded
 	discard_ratio := ""
 	input_text_buffer := ""
 	logQueue := new Queue("EngineQueue")
-	logVerbosity := 1
+	logVerbosity := 4
 	tip_power_threshold := 1
 	speedQueue := new Queue("SpeedQueue")
 	coachQueue := new Queue("CoachQueue")
@@ -39,7 +39,11 @@ class MappingEngine_Chorded
 	keyboard.TokenStartTicks := A_TickCount
 	keyboard.CapsLock := false
 	keyboard.ChordLength := 0
-
+	keyboard.MaxChordLength := 0
+	keyboard.ChordReleaseStartTicks := 0
+	keyboard.AutoSpaceSent := true
+	keyboard.ChordReleaseWindow := 70
+	keyboard.ChordMinimumLength := 3
 	
 	nullQwerd := new DictionaryEntry("null,,,,0,Could add,null_dictionary.csv")
 
@@ -238,44 +242,113 @@ class MappingEngine_Chorded
 	CancelToken(key) {
 		; Send the empty key through to clear the input buffer
 		this.keyboard.Token := ""
+		this.input_text_buffer := ""
 		this.ExpandInput(this.keyboard.Token, key, (this.keyboard.Shfed this.keyboard.Ctled this.keyboard.Alted this.keyboard.Wined), (A_TickCount - this.keyboard.TokenStartTicks))
 	}
 
 	SendToken(key) {
-		; Send through a valid qwerd
+		; Send through a valid qwerd because an end character was typed 
+		if (this.keyboard.AutoSpaceSent) {
+			; We sent a space after sending a chord. 
+			if (not this.keyboard.Token) {
+				; if this is a bare end key, then we need to delete that autospace
+				Send, {Backspace}
+			}
+		}
 		this.ExpandInput(this.keyboard.Token, key, (this.keyboard.Shfed this.keyboard.Ctled this.keyboard.Alted this.keyboard.Wined), (A_TickCount - this.keyboard.TokenStartTicks))
 		this.keyboard.Token := ""
 		this.keyboard.TokenStartTicks := A_TickCount
+		this.keyboard.AutoSpaceSent := false
 		; SetTimer, ClearToolTipEngine, -1500
 	}	
 
 	JoinChord(key) {
-		this.keyboard.ChordLength += 1
+		; This is a chordable keydown event
+		this.logEvent(4, "Chord: join candidate " key " from count " this.keyboard.ChordLength " with max length " this.keyboard.MaxChordLength)
+		if (this.keyboard.ChordLength = this.keyboard.MaxChordLength) {
+			; If any key comes up, the chord entry portion is over, so chord length should always be max when valid
+			this.keyboard.ChordLength += 1
+		} else {
+			; Some key came up, so chord length must be smaller than max. Kill the chord
+			this.keyboard.ChordLength := 0
+			this.keyboard.ChordReleaseStartTicks := 0
+		}
+		; In any case the max length should now be the chord length
+		this.keyboard.MaxChordLength := this.keyboard.ChordLength
 		this.logEvent(4, "Chord: joining " key " for count " this.keyboard.ChordLength)
 	}
 	LeaveChord(key) {
-		this.logEvent(4, "Chord: leaving " key)
-		this.keyboard.ChordLength := 0
+		; This is a chordable keyup event 
+		if (this.keyboard.ChordLength > 1) {
+			; If we have input of 2 or more characters, then let's see if it's valid
+			if (this.keyboard.ChordLength = this.keyboard.MaxChordLength) {
+				; This is the first key to come back up, so start the timing of whether they all come up together 
+				this.keyboard.ChordReleaseStartTicks := A_TickCount
+				this.logEvent(4, "Chord: first leaving " key " at " this.keyboard.ChordReleaseStartTicks)
+			} else {
+				; This is a subsequent key, but not the last key. Just log it 
+				this.logEvent(4, "Chord: next leaving " key)
+			}
+			; Now decrement the remaining chord length
+			this.keyboard.ChordLength -= 1
+		} else if (this.keyboard.ChordLength = 1) {
+			; This is the release of the last key in the chord
+			chordWindow := A_TickCount - this.keyboard.ChordReleaseStartTicks
+			if ((StrLen(this.keyboard.Token) >= this.keyboard.ChordMinimumLength) and (chordWindow < this.keyboard.ChordReleaseWindow)) {
+				; The time is quick enough to call a chord 
+				this.logEvent(2, "ChordWindow: completed " this.keyboard.Token " in " chordWindow "ms")
+				this.keyboard.ChordLength := 0
+				this.keyboard.MaxChordLength := 0
+				this.SendChord()
+			} else {
+				; Too slow. Let this be serial input
+				this.logEvent(2, "ChordWindow: timed out " this.keyboard.Token " in " chordWindow "ms against " this.keyboard.ChordReleaseWindow)
+				this.keyboard.ChordLength := 0
+				this.keyboard.MaxChordLength := 0
+			}
+			; Whether chorded or serial, reset everything
+		} else {
+			this.logEvent(4, "Chord: already zero, so this chord was interrupted " key)
+			this.keyboard.MaxChordLength := 0
+		}
+	}
+	SendChord() {
+		; Send through a possible chord
+		chord := this.map.AlphaOrder(this.keyboard.Token)
+		if (this.keyboard.Shfed) {
+			StringUpper, chord, chord
+		}
+		if (this.map.chords.item(chord).word) {
+			; Sleep long enough to see whether another key is pressed
+			Sleep, this.keyboard.ChordReleaseWindow
+			if (not this.keyboard.ChordLength) {
+				this.logEvent(2, "Chord: allowed because no other key was struck")
+				; The sorted input is a valid chord, so push it as input
+				this.logEvent(4, "Chord " chord " found for " this.map.chords.item(chord).word)
+				this.ExpandInput(chord, "{Chord}", (this.keyboard.Shfed this.keyboard.Ctled this.keyboard.Alted this.keyboard.Wined), (A_TickCount - this.keyboard.TokenStartTicks))
+				Send, {Space}
+				; Mark that we sent this as a chord, so we know we need to send a backspace before the next end char
+				this.keyboard.AutoSpaceSent := true
+				; Reset the input token 
+				this.keyboard.Token := ""
+				this.keyboard.TokenStartTicks := A_TickCount
+			} else {
+				this.logEvent(2, "Chord: aborted because another key was struck")
+			}
+		} else {
+			this.logEvent(4, "Chord " chord " not found. Allow input to complete in serial fashion")
+		}
 	}
 
 	ExpandInput(input_text, key, mods, ticks) {
-		chord := ""
 		this.logEvent(4, "Expanding |" input_text "|" key "|" mods "|" ticks "|" )
-		if ((this.keyboard.ChordLength > 1) and input_text and (StrLen(input_text) = this.keyboard.ChordLength)) {
-			chord := this.map.AlphaOrder(input_text)
-			if (this.keyboard.Shfed) {
-				StringUpper, chord, chord
-			}
-			; ToolTip, % "Chording " chord, A_CaretX, A_CaretY + 30
+		if (key = "{Chord}") {
+			ToolTip, % "Chording " input_text, A_CaretX, A_CaretY + 30
 			SetTimer, ClearToolTipEngine, -1500
-			this.logEvent(4, "Chording " chord " of length " this.keyboard.ChordLength)
-			if (this.map.chords.item(chord).word) {
-				this.logEvent(4, "Chord " chord " found for " this.map.chords.item(chord).word)
-			} else {
-				this.logEvent(4, "Chord " chord " not found")
-			}
+			this.logEvent(4, "Chording " input_text )
 		} else {
-			this.logEvent(4, "Serialing " input_text " not matching chord length of " this.keyboard.ChordLength)
+			this.logEvent(4, "Serialing " input_text)
+			this.keyboard.MaxChordLength := 0
 		}
 	    this.input_text_buffer .= input_text
 		in_play_chars := this.getInPlayChars(this.input_text_buffer)
@@ -330,20 +403,31 @@ class MappingEngine_Chorded
 			; If the last input began with -
 			final_characters_count := StrLen(inbound.token) + 1
 		;;; Now handle input with possible qwerd
-		} else if ((this.map.qwerds.item(inbound.token).word) or (this.map.chords.item(chord).word)) {
+		} else if (key = "{Chord}") {
+			; This is a chorded expansion
 			; Do not try to match if the control key is down 
 			if (not InStr(mods, "^")) {
 				; Success 
 				; Coach the found qwerd
-				this.pushCoaching(this.map.qwerds.item(inbound.token), true, false, false, key, (StrLen(chord)))
+				this.pushCoaching(this.map.qwerds.item(inbound.token), true, false, false, key, (StrLen(inbound.token)))
 				this.pushPenStroke(this.map.qwerds.item(inbound.token), "blue")
 				; "Push Input" is where the magic happens on screen
-				if (chord) {
-					final_characters_count := this.pushInput(inbound.token, this.map.chords.item(chord).word, key)
-				} else {
-					final_characters_count := this.pushInput(inbound.token, this.map.qwerds.item(inbound.token).word, key)
-				}
-				
+				final_characters_count := this.pushInput(inbound.token, this.map.chords.item(inbound.token).word, key)
+			} else {
+				this.logEvent(2, "Control key down on match, so don't expand " inbound.token)
+				; The control key was down, so don't expand, still send the end char, and count the chars typed
+				final_characters_count := StrLen(inbound.token) + 1
+			}
+		} else if (this.map.qwerds.item(inbound.token).word) {
+			; This is a serial expansion
+			; Do not try to match if the control key is down 
+			if (not InStr(mods, "^")) {
+				; Success 
+				; Coach the found qwerd
+				this.pushCoaching(this.map.qwerds.item(inbound.token), true, false, false, key, (StrLen(inbound.token)))
+				this.pushPenStroke(this.map.qwerds.item(inbound.token), "blue")
+				; "Push Input" is where the magic happens on screen
+				final_characters_count := this.pushInput(inbound.token, this.map.qwerds.item(inbound.token).word, key)
 			} else {
 				this.logEvent(2, "Control key down on match, so don't expand " inbound.token)
 				; The control key was down, so don't expand, still send the end char, and count the chars typed
@@ -355,7 +439,7 @@ class MappingEngine_Chorded
 			if (input_text) {
 				final_characters_count := StrLen(inbound.token) + 1
 				if (this.map.hints.item(inbound.token).hint) {
-					this.pushCoaching(this.map.hints.item(inbound.token), false, true, false, key, (StrLen(chord)))
+					this.pushCoaching(this.map.hints.item(inbound.token), false, true, false, key, (StrLen(inbound.token)))
 					this.pushPenStroke(this.map.hints.item(inbound.token), "red")
 		
 					;;; Hintable
@@ -364,7 +448,7 @@ class MappingEngine_Chorded
 					; This is an unknown word and qwerd. Send it to coaching, but only if it's not too strange
 					if (not inbound.isSensitive) {
 						this.nullQwerd.word := inbound.token
-						this.pushCoaching(this.nullQwerd, false, false, true, key, (StrLen(chord)))
+						this.pushCoaching(this.nullQwerd, false, false, true, key, (StrLen(inbound.token)))
 						this.pushPenStroke(this.nullQwerd, "purple")
 					}
 					;;; Ignorable 
@@ -478,6 +562,9 @@ class MappingEngine_Chorded
 		final_characters_count := StrLen(word) + 1
 		; expand this qwerd by first deleting the qwerd itself and its end character if not suppressed
 		deleteChars := StrLen(qwerd)
+		if (not this.keyboard.AutoSpaceSent) {
+			;deleteChars++
+		}
 		this.logEvent(4, "Sending " deleteChars " backspaces")
 		Send, {Backspace %deleteChars%}
 		this.logEvent(4, "Sending '" word "'")

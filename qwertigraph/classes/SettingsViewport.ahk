@@ -23,6 +23,10 @@ Gui, Add, Text, x12  y244 w444 h20 , Phrase suggestion enthusiasm (1 for low no 
 Gui, Add, Text, x12  y264 w160 h20 , Enthusiasm:
 Gui, Add, Edit, x172  y264 w40 h20 vSettingsPhraseEnthusiasm gSettingsPhraseEnthusiasm, 100
 
+Gui, Add, Text, x12  y324 w444 h20 , Chord release milliseconds window (10 for no chords to 100 for too many)
+Gui, Add, Text, x12  y344 w160 h20 , Chord Window:
+Gui, Add, Edit, x172  y344 w40 h20 vSettingsChordWindow gSettingsChordWindow, 70
+
 SettingsLoggingLevelMap() {
 	global map
 	GuiControlGet SettingsLoggingLevelMap
@@ -78,5 +82,14 @@ SettingsPhraseEnthusiasm() {
 		coach.phrasePowerThreshold := SettingsPhraseEnthusiasm
 	} else {
 		Msgbox, % "Could not understand " SettingsPhraseEnthusiasm
+	}
+}
+SettingsChordWindow() {
+	global engine
+	GuiControlGet SettingsChordWindow
+	if (RegExMatch(SettingsChordWindow, "^\d+$")) {
+		engine.keyboard.ChordReleaseWindow := SettingsChordWindow
+	} else {
+		Msgbox, % "Could not understand " SettingsChordWindow
 	}
 }
