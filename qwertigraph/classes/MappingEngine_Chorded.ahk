@@ -237,6 +237,8 @@ class MappingEngine_Chorded
 			this.input_text_buffer := SubStr(this.input_text_buffer, 1, (StrLen(this.input_text_buffer) - 1))
 		}
 		this.keyboard.Token := SubStr(this.keyboard.Token, 1, (StrLen(this.keyboard.Token) - 1))
+		; We have to reset the deletion of the auto space, or it will double delete
+		this.keyboard.AutoSpaceSent := false
 	}
 
 	CancelToken(key) {
@@ -294,7 +296,9 @@ class MappingEngine_Chorded
 		} else if (this.keyboard.ChordLength = 1) {
 			; This is the release of the last key in the chord
 			chordWindow := A_TickCount - this.keyboard.ChordReleaseStartTicks
-			if ((StrLen(this.keyboard.Token) >= this.keyboard.ChordMinimumLength) and (chordWindow < this.keyboard.ChordReleaseWindow)) {
+			if ((StrLen(this.keyboard.Token) >= this.keyboard.ChordMinimumLength) 
+				and (chordWindow < this.keyboard.ChordReleaseWindow) 
+				and (StrLen(this.keyboard.Token) = this.keyboard.MaxChordLength)) {
 				; The time is quick enough to call a chord 
 				this.logEvent(2, "ChordWindow: completed " this.keyboard.Token " in " chordWindow "ms")
 				this.keyboard.ChordLength := 0
@@ -302,7 +306,7 @@ class MappingEngine_Chorded
 				this.SendChord()
 			} else {
 				; Too slow. Let this be serial input
-				this.logEvent(2, "ChordWindow: timed out " this.keyboard.Token " in " chordWindow "ms against " this.keyboard.ChordReleaseWindow)
+				this.logEvent(2, "ChordWindow: too short or timed out " this.keyboard.Token " in " chordWindow "ms against " this.keyboard.ChordReleaseWindow)
 				this.keyboard.ChordLength := 0
 				this.keyboard.MaxChordLength := 0
 			}
@@ -320,7 +324,7 @@ class MappingEngine_Chorded
 		}
 		if (this.map.chords.item(chord).word) {
 			; Sleep long enough to see whether another key is pressed
-			Sleep, this.keyboard.ChordReleaseWindow
+			; Sleep, this.keyboard.ChordReleaseWindow
 			if (not this.keyboard.ChordLength) {
 				this.logEvent(2, "Chord: allowed because no other key was struck")
 				; The sorted input is a valid chord, so push it as input

@@ -107,7 +107,8 @@ class DictionaryMap
 		this.qwerds.item(qwerdCapped) := newEntryCapped
 		this.hints.item(wordCapped) := newEntryCapped
 		
-		if ((StrLen(newEntry.chord) > 1) and (not this.chords.item(newEntry.chord).word) and (not newEntry.chord = "ot")) {
+		; Limit chord acceptance by length, by frequency of usage, and to only appear once 
+		if ((StrLen(newEntry.chord) > 2) and (not this.chords.item(newEntry.chord).word) and (newEntry.Usage < 3000)) {
 			this.logEvent(4, "Adding chord " newEntry.chord " as " newEntry.word) 
 			newEntry.chordable := true
 			this.chords.item(newEntry.chord) := newEntry
