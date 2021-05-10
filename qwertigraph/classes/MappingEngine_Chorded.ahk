@@ -256,6 +256,8 @@ class MappingEngine_Chorded
 				Send, {Backspace}
 			}
 		}
+        ; Bug in 1.1.32.00 causes shift key to stick
+        Send, {LShift up}{RShift up}
 		this.ExpandInput(this.keyboard.Token, key, (this.keyboard.Shfed this.keyboard.Ctled this.keyboard.Alted this.keyboard.Wined), (A_TickCount - this.keyboard.TokenStartTicks))
 		this.keyboard.Token := ""
 		this.keyboard.TokenStartTicks := A_TickCount
@@ -572,6 +574,7 @@ class MappingEngine_Chorded
 		this.logEvent(4, "Sending " deleteChars " backspaces")
 		Send, {Backspace %deleteChars%}
 		this.logEvent(4, "Sending '" word "'")
+        ; Msgbox, % "Hold"
 		Send, % word
 		
 		;;; Expand the qwerd into the buffer as well 

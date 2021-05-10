@@ -98,7 +98,7 @@ class CoachViewport
 	}
 	
 	filterCoachEvents() {
-		
+		local garbage
 		GuiControlGet RegexCoachSavings
 		GuiControlGet RegexCoachWord
 		GuiControlGet RegexCoachQwerd
@@ -169,6 +169,7 @@ class CoachViewport
 	}
 	
 	DequeueEvents() {
+        local index
 		For index, coachQueue in this.coachQueues {
 			Loop, % coachQueue.getSize() {
 				coachEvent := coachQueue.dequeue()

@@ -268,7 +268,7 @@ class EditorViewport
 	}
 		
 	searchMapEntries() {
-		
+		local 
 		GuiControlGet RegexDict
 		GuiControlGet RegexWord
 		GuiControlGet RegexForm
@@ -356,7 +356,7 @@ class EditorViewport
 	}
 
 	autoQwerdForm() {
-		
+        local
 		GuiControlGet form, , EditForm
 		GuiControlGet word, , EditWord
 		
@@ -390,7 +390,7 @@ class EditorViewport
 	}
 				
 	autoKey() {
-		
+        local
 		GuiControlGet word, , EditWord
 		GuiControlGet qwerd, , EditQwerd
 		GuiControlGet keyer, , EditKeyer
@@ -407,6 +407,7 @@ class EditorViewport
 	}
 
 	getNextKeyer(qwerdKey, qwerd, word) {
+        local 
 		this.logEvent(3, "Getting next keyer for " qwerd " and " qwerdKey)
 		allMatchingKeys := {}
 		allMatchingKeysCount := 0
@@ -459,6 +460,7 @@ class EditorViewport
 	}
 
 	addValueToEditFields(WordAdd, FormAdd, QwerdAdd) {
+        local
 		GuiControlGet word, , EditWord
 		GuiControlGet form, , EditForm
 		GuiControlGet qwerd, , EditQwerd
@@ -483,6 +485,7 @@ class EditorViewport
 	}
 
 	prepareEdit(RowNumber) {
+        local
 		this.logEvent(2, "Preparing edit for ListView row " RowNumber)
 		
 		Gui, ListView, EditorLV
@@ -523,6 +526,7 @@ class EditorViewport
 	}
 	
 	commitEdit() {
+        local
 		this.logEvent(3, "Commiting edit to qwerd")
 		
 		; Grab values the user has edited and wants to commit 

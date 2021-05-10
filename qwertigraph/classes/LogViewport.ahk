@@ -48,6 +48,7 @@ class LogViewport
 	}
 	
 	filterLogEvents() {
+        local
 		GuiControlGet RegexWhere
 		GuiControlGet RegexWhen
 		GuiControlGet RegexWhat
@@ -86,6 +87,7 @@ class LogViewport
 	
 	
 	DequeueEvents() {
+        local
 		Gui, ListView, LogEventsLV
 		For index, logQueue in this.logQueues {
 			Loop, % logQueue.getSize() {

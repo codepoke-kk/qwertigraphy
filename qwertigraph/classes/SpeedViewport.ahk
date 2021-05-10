@@ -23,6 +23,7 @@ class SpeedViewport
 	
 	__New()
 	{
+        local 
         this.dequeueTimer := ObjBindMethod(this, "DequeueEvents")
         dequeueTimer := this.dequeueTimer
         SetTimer % dequeueTimer, % this.dequeueInterval
@@ -33,6 +34,7 @@ class SpeedViewport
 	}
 	
 	DequeueEvents() {
+        local 
 		For index, speedQueue in this.speedQueues {
 			Loop, % speedQueue.getSize() {
 				speedEvent := speedQueue.dequeue()
@@ -45,6 +47,7 @@ class SpeedViewport
 	}
 	
 	ShowSpeed() {
+        local 
 		current_in_chars := 0
 		current_out_chars := 0
 		current_ticks := 0

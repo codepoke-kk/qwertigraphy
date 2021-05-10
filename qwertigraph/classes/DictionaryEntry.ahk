@@ -3,6 +3,7 @@ class DictionaryEntry
 {
     __New(line)
     {
+        local fields
 		line := StrReplace(line, """", "")
 		fields := StrSplit(line, ",")
 		this.word := fields[1]

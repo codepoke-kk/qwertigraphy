@@ -22,6 +22,7 @@ class DictionaryMap
 	
 	__New(qenv)
 	{
+        local fields
 		this.qenv := qenv
 		
 		; Create the array of dictionary files to be loaded
@@ -185,6 +186,7 @@ class DictionaryMap
 	}
 
 	saveDictionaries() {
+        local dictline
 		this.logEvent(1, "Saving dictionaries") 
 		if ( not this.dictionariesLoaded ) {
 			this.logEvent(1, "Dictionaries not yet loaded. Stopping")
@@ -316,6 +318,7 @@ class DictionaryMap
 	}
 	
 	upgradeDictionaryToV2(dictionary) {
+        local line
 		this.logEvent(2, "Upgrading " dictionary " to v2")
 		
 		; First create a backup of the v1 dictionary 

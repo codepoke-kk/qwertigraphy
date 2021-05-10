@@ -1,5 +1,5 @@
 #NoEnv 
-#Warn 
+#Warn
 #SingleInstance Force
 SetBatchLines, -1
 SetKeyDelay, -1
