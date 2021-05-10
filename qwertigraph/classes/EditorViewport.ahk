@@ -7,16 +7,16 @@ global RegexForm
 global RegexQwerd
 global RegexKeyer
 global RegexUsage
-global RegexHint
+global RegexChord
 global EditDict
 global EditWord
 global EditForm
 global EditQwerd
 global EditKeyer
 global EditUsage
-global EditHint
+global EditChord
 global EditForm
-global AutoGenHints
+global AutoGenChords
 global SaveDictionaries
 global DictionaryDropDown
 global SaveProgress
@@ -32,19 +32,19 @@ Gui, Add, Edit, -WantReturn x172 y64 w90  h20 vRegexForm,
 Gui, Add, Edit, -WantReturn x262 y64 w90  h20 vRegexQwerd, 
 Gui, Add, Edit, -WantReturn x352 y64 w30  h20 vRegexKeyer, 
 Gui, Add, Edit, -WantReturn x382 y64 w60  h20 vRegexUsage,  
-Gui, Add, Edit, -WantReturn x442 y64 w160 h20 vRegexHint, 
+Gui, Add, Edit, -WantReturn x442 y64 w160 h20 vRegexChord, 
 Gui, Add, Edit, -WantReturn x602 y64 w236 h20 vRegexDict, 
 Gui, Add, Button, Default x838 y64 w90 h20 gEditorSearchMapEntries, Search
 
 ; Add the data ListView
-Gui, Add, ListView, x12 y84 w826 h456 vEditorLV gEditorLV, Word|Form|Qwerd|Keyer|Usage|Hint|Dictionary
-LV_ModifyCol(5, "Integer")  ; For sorting, indicate that the Usage column is an integer.
+Gui, Add, ListView, x12 y84 w826 h456 vEditorLV gEditorLV, Word|Form|Qwerd|Keyer|Chord|Usage|Dictionary
+LV_ModifyCol(6, "Integer")  ; For sorting, indicate that the Usage column is an integer.
 LV_ModifyCol(1, 160)
 LV_ModifyCol(2, 90)
 LV_ModifyCol(3, 90)
 LV_ModifyCol(4, 30)
-LV_ModifyCol(5, 60)
-LV_ModifyCol(6, 160)
+LV_ModifyCol(5, 160)
+LV_ModifyCol(6, 60)
 LV_ModifyCol(7, 216) ; 3 pixels short to avoid the h_scrollbar 
 
 ; Add edit fields and controls
@@ -53,9 +53,9 @@ Gui, Add, Edit, x172 y540 w70  h20 vEditForm,
 Gui, Add, Button, x242 y540 w20 h20 gEditorAutoQwerdForm, L> 
 Gui, Add, Edit, x262 y540 w90  h20 vEditQwerd, 
 Gui, Add, Button, x352 y540 w20 h20 gEditorAutoKey, K> 
-Gui, Add, Edit, x372 y540 w30  h20 vEditKeyer, 
-Gui, Add, Edit, x402 y540 w50  h20 vEditUsage,  
-Gui, Add, Edit, x452 y540 w150 h20 vEditHint, 
+Gui, Add, Edit, x372 y540 w30  h20 vEditKeyer,  
+Gui, Add, Edit, x402 y540 w150 h20 vEditChord, 
+Gui, Add, Edit, x552 y540 w50  h20 vEditUsage, 
 Gui, Add, DropDownList, x602 y540 w236 r5 vEditDict, %dictionaryDropDown%
 Gui, Add, Button, x838 y539 w90 h20 gEditorCommitEdit, Commit
 Gui, Add, Button, x838 y500 w90 h30 gEditorSaveDictionaries vSaveDictionaries , Save
@@ -63,7 +63,7 @@ Gui, Add, Button, x838 y500 w90 h30 gEditorSaveDictionaries vSaveDictionaries , 
 ;Gui, Add, Progress, x12 y545 w700 h5 cOlive vSaveProgress, 1
 
 ; Add checkbox controls
-;Gui, Add, CheckBox, x815 y49 w130 h20 vAutoGenHints gAutoGenHints Checked, AutoGenerate Hints
+;Gui, Add, CheckBox, x815 y49 w130 h20 vAutoGenChords gAutoGenChords Checked, AutoGenerate Chords
 Gui, Add, Button, x838 y90 w90 h20 gEditorOpenPersonalizations, Personalizations
 Gui, Add, Button, x838 y130 w90 h20 gEditorEditRow, Edit
 Gui, Add, Button, x838 y150 w90 h20 gEditorDeleteRow, Delete
@@ -274,21 +274,21 @@ class EditorViewport
 		GuiControlGet RegexForm
 		GuiControlGet RegexQwerd
 		GuiControlGet RegexKeyer
+		GuiControlGet RegexChord
 		GuiControlGet RegexUsage
-		GuiControlGet RegexHint
 		
 		;global SaveProgress
 		
 		
-		this.logEvent(3, "RegexWord " RegexWord ", RegexForm " RegexForm ", RegexQwerd " RegexQwerd ", RegexKeyer " RegexKeyer ", RegexUsage " RegexUsage ", RegexHint " RegexHint ", RegexDict " RegexDict )
+		this.logEvent(3, "RegexWord " RegexWord ", RegexForm " RegexForm ", RegexQwerd " RegexQwerd ", RegexKeyer " RegexKeyer ", RegexChord " RegexChord ", RegexUsage " RegexUsage ", RegexDict " RegexDict )
 		
 		requiredMatchCount := 0
 		requiredMatchCount += (RegexWord) ? 1 : 0
 		requiredMatchCount += (RegexForm) ? 1 : 0
 		requiredMatchCount += (RegexQwerd) ? 1 : 0
+		requiredMatchCount += (RegexChord) ? 1 : 0
 		requiredMatchCount += (RegexKeyer) ? 1 : 0
 		requiredMatchCount += (RegexUsage) ? 1 : 0
-		requiredMatchCount += (RegexHint) ? 1 : 0
 		requiredMatchCount += (RegexDict) ? 1 : 0
 		foundKeys := {}
 		for qwerdKey, garbage in this.map.qwerds {
@@ -328,15 +328,15 @@ class EditorViewport
 					foundKeys[qwerdKey] := (foundKeys[qwerdKey]) ? foundKeys[qwerdKey] + 1 : 1
 				}
 			}
-			if (RegexUsage) {
-				if (RegExMatch(qwerd.usage,RegexUsage)) {
-					this.logEvent(4, "RegexUsage matched " qwerdKey)
+			if (RegexChord) {
+				if (RegExMatch(qwerd.chord,RegexChord)) {
+					this.logEvent(4, "RegexChord matched " qwerdKey)
 					foundKeys[qwerdKey] := (foundKeys[qwerdKey]) ? foundKeys[qwerdKey] + 1 : 1
 				}
 			}
-			if (RegexHint) {
-				if (RegExMatch(qwerd.hint,RegexHint)) {
-					this.logEvent(4, "RegexHint matched " qwerdKey)
+			if (RegexUsage) {
+				if (RegExMatch(qwerd.usage,RegexUsage)) {
+					this.logEvent(4, "RegexUsage matched " qwerdKey)
 					foundKeys[qwerdKey] := (foundKeys[qwerdKey]) ? foundKeys[qwerdKey] + 1 : 1
 				}
 			}
@@ -348,7 +348,7 @@ class EditorViewport
 		for foundKey, count in foundKeys {
 			if (foundKeys[foundKey] = requiredMatchCount) {
 				qwerd := this.map.qwerds.item(foundKey)
-				LV_Add(, qwerd.word, qwerd.form, qwerd.qwerd, qwerd.keyer, qwerd.usage, qwerd.hint, qwerd.dictionary)
+				LV_Add(, qwerd.word, qwerd.form, qwerd.qwerd, qwerd.keyer, qwerd.chord, qwerd.usage, qwerd.dictionary)
 			} else {
 				this.logEvent(3, foundKey " matched " foundKeys[foundKey] " times, not " requiredMatchCount)
 			}
@@ -491,8 +491,8 @@ class EditorViewport
 		LV_GetText(EditForm, RowNumber, 2)
 		LV_GetText(EditQwerd, RowNumber, 3)
 		LV_GetText(EditKeyer, RowNumber, 4)
-		LV_GetText(EditUsage, RowNumber, 5)
-		LV_GetText(EditHint, RowNumber, 6)
+		LV_GetText(EditChord, RowNumber, 5)
+		LV_GetText(EditUsage, RowNumber, 6)
 		LV_GetText(EditDict, RowNumber, 7)
 		
 		; Push the data into the editing fields
@@ -500,13 +500,14 @@ class EditorViewport
 		GuiControl, Text, EditForm, %EditForm%
 		GuiControl, Text, EditQwerd, %EditQwerd%
 		GuiControl, Text, EditKeyer, %EditKeyer%
+		GuiControl, Text, EditChord, %EditChord%
 		GuiControl, Text, EditUsage, %EditUsage%
-		GuiControlGet autoHint, , AutoGenHints
-		if (autoHint) {
-			GuiControl, Text, EditHint, Auto ; %EditHint%
-		} else {
-			GuiControl, Text, EditHint, %EditHint%
-		}
+;		GuiControlGet autoChord, , AutoGenChords
+;		if (autoChord) {
+;			GuiControl, Text, EditChord, Auto ; %EditChord%
+;		} else {
+;			GuiControl, Text, EditChord, %EditChord%
+;		}
 		
 		; First convert the requested dictionary to its full name for display to the user
 		EditDict := this.map.dictionaryFullToShortNames[EditDict]
@@ -529,19 +530,19 @@ class EditorViewport
 		GuiControlGet form, , EditForm
 		GuiControlGet qwerd, , EditQwerd
 		GuiControlGet keyer, , EditKeyer
+		GuiControlGet chord, , EditChord
 		GuiControlGet usage, , EditUsage
-		GuiControlGet hint, , EditHint
 		GuiControlGet dictionary, , EditDict
 		
 		; Convert the dictionary from its short name to its full name for storage
 		dictionary := this.map.dictionaryShortToFullNames[dictionary]
 		
-		; Generate an autohint if it's requested by checkbox or explicit field value 
-		GuiControlGet autoHint, , AutoGenHints
-		;if ( hint = "Auto" ) or ( autoHint) {
-		hint := word " = " qwerd " (" form ")  [" (StrLen(word) - StrLen(qwerd)) "]" 
+;		; Generate an autochord if it's requested by checkbox or explicit field value 
+;		GuiControlGet autoChord, , AutoGenChords
+;		;if ( chord = "Auto" ) or ( autoChord) {
+;		chord := word " = " qwerd " (" form ")  [" (StrLen(word) - StrLen(qwerd)) "]" 
 		
-		newEntryCsv := word "," form "," qwerd "," keyer "," usage "," hint "," dictionary
+		newEntryCsv := word "," form "," qwerd "," keyer "," chord "," usage "," dictionary
 		this.logEvent(2, "Commiting fields: " newEntryCsv)
 		newEntry := new DictionaryEntry(newEntryCsv)
 		   

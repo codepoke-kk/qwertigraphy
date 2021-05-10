@@ -1,795 +1,795 @@
-word,form,qwerd,keyer,usage,hint
-seeing,s-e-\-h,segi,i,6,seeing = segi (s-e-\-h)  [2]
-sees,s-e-s,seso,,6,sees = seso (s-e-s)  [0]
-phones,f-o-n-s,fons,,7,phones = fons (f-o-n-s)  [2]
-phoning,f-o-n-\-h,fong,,7,phoning = fong (f-o-n-\-h)  [3]
-downside,d-n-s-i,dnsi,,18,downside = dnsi (d-n-s-i)  [4]
-downsides,d-n-s-i-s,dnsis,,18,downsides = dnsis (d-n-s-i-s)  [4]
-being,b-\-h,bg,,41,being = bg (b-\-h)  [3]
-rework,r-e-r-k,rerk,,132,rework = rerk (r-e-r-k)  [2]
-reworked,r-e-r-k-d,rerkd,,132,reworked = rerkd (r-e-r-k-d)  [3]
-reworking,r-e-r-k-\-h,rerkg,,132,reworking = rerkg (r-e-r-k-\-h)  [4]
-reworks,r-e-r-k-s,rerks,,132,reworks = rerks (r-e-r-k-s)  [2]
-workable,r-k-b,rkb,,132,workable = rkb (r-k-b)  [5]
-workably,r-k-b-e,rkbe,,132,workably = rkbe (r-k-b-e)  [4]
-worked,r-k-d,rkd,,132,worked = rkd (r-k-d)  [3]
-working,r-k-\-h,rkg,,132,working = rkg (r-k-\-h)  [4]
-workings,r-k-\-h-s,rkgs,,132,workings = rkgs (r-k-\-h-s)  [4]
-works,r-k-s,rks,,132,works = rks (r-k-s)  [2]
-I'm,i-m,im,,188,I'm = im (i-m)  [1]
-finder,f-i-r,fir,,208,finder = fir (f-i-r)  [3]
-finders,f-i-r-s,firs,,208,finders = firs (f-i-r-s)  [3]
-finding,f-i-\-h,fig,,208,finding = fig (f-i-\-h)  [4]
-findings,f-i-\-h-s,figs,,208,findings = figs (f-i-\-h-s)  [4]
-finds,f-i-s,fis,,208,finds = fis (f-i-s)  [2]
-lookup,l-u-k-p,lukp,,216,lookup = lukp (l-u-k-p)  [2]
-lookups,l-u-k-p-s,lukps,,216,lookups = lukps (l-u-k-p-s)  [2]
-all-nighter,o-n-i-r,onir,,217,all-nighter = onir (o-n-i-r)  [7]
-all-nighters,o-n-i-r-s,onirs,,217,all-nighters = onirs (o-n-i-r-s)  [7]
-homework,^-h-\-o-m-r-k,homrk,,246,homework = homrk (^-h-\-o-m-r-k)  [3]
-presented,pr-d,prd,,276,presented = prd (pr-d)  [6]
-presenter,pr-r,prr,,276,presenter = prr (pr-r)  [6]
-presenting,pr-\-h,prg,,276,presenting = prg (pr-\-h)  [7]
-poorer,p-u-r,pur,,282,poorer = pur (p-u-r)  [3]
-poorest,p-u-s-t,pust,,282,poorest = pust (p-u-s-t)  [3]
-certainly,s2-e-tn-e,setne,,283,certainly = setne (s2-e-tn-e)  [4]
-certainties,s2-e-tn-t-e-s,setntes,,283,certainties = setntes (s2-e-tn-t-e-s)  [4]
-certainty,s2-e-tn-t-e,setnte,,283,certainty = setnte (s2-e-tn-t-e)  [3]
-downpour,dn-p-o-r,dnpor,,324,downpour = dnpor (dn-p-o-r)  [3]
-outpouring,a-u-p-o-r-\-h,wporg,,324,outpouring = wporg (a-u-p-o-r-\-h)  [5]
-pour,p-o-r,por,,324,pour = por (p-o-r)  [1]
-poured,p-o-r-d,pord,,324,poured = pord (p-o-r-d)  [2]
-pouring,p-o-r-\-h,porg,,324,pouring = porg (p-o-r-\-h)  [3]
-pours,p-o-r-s,pors,,324,pours = pors (p-o-r-s)  [1]
-seconding,s2-e-k-nt-\-h,sekntg,,373,seconding = sekntg (s2-e-k-nt-\-h)  [3]
-secondly,s2-e-k-nt-e,seknte,,373,secondly = seknte (s2-e-k-nt-e)  [2]
-seconds,s2-e-k-nt-s,seknts,,373,seconds = seknts (s2-e-k-nt-s)  [1]
-shortest,^-sh-\-s-t,zst,,422,shortest = zst (^-sh-\-s-t)  [5]
-shorts,^-sh-\-s,zso,o,422,shorts = zso (^-sh-\-s)  [3]
-shortsighted,^-sh-\s-i-td,zsitd,,422,shortsighted = zsitd (^-sh-\s-i-td)  [7]
-shortsightedly,^-sh-\s-i-td-e,zsitde,,422,shortsightedly = zsitde (^-sh-\s-i-td-e)  [8]
-questionable,k-n-b,qnb,,430,questionable = qnb (k-n-b)  [9]
-questioned,k-n-d,qnd,,430,questioned = qnd (k-n-d)  [7]
-questioner,k-n-r,qnr,,430,questioner = qnr (k-n-r)  [7]
-questioning,k-n-\-h,qng,,430,questioning = qng (k-n-\-h)  [8]
-questionings,k-n-\-h-s,qngs,,430,questionings = qngs (k-n-\-h-s)  [8]
-questions,k-n-s,qns,,430,questions = qns (k-n-s)  [6]
-unquestionable,n-k-n-b,nqnb,,430,unquestionable = nqnb (n-k-n-b)  [10]
-unquestionably,n-k-n-b-e,nqnbe,,430,unquestionably = nqnbe (n-k-n-b-e)  [9]
-unquestioned,n-k-n-d,nqnd,,430,unquestioned = nqnd (n-k-n-d)  [8]
-unquestioning,n-k-n-\-h,nqng,,430,unquestioning = nqng (n-k-n-\-h)  [9]
-coming,k-m-\-h,kmg,,435,coming = kmg (k-m-\-h)  [3]
-understandable,u-/-s2-tn-b,ustnb,,467,understandable = ustnb (u-/-s2-tn-b)  [9]
-understandably,u-/-s2-tn-b-e,ustnbe,,467,understandably = ustnbe (u-/-s2-tn-b-e)  [8]
-understanding,u-/-s2-tn-\-h,ustng,,467,understanding = ustng (u-/-s2-tn-\-h)  [8]
-understandings,u-/-s2-tn-s-\-h,ustngs,,467,understandings = ustngs (u-/-s2-tn-s-\-h)  [8]
-understands,u-/-s2-tn-s,ustns,,467,understands = ustns (u-/-s2-tn-s)  [6]
-accountable,a-k-t-b,aktb,,481,accountable = aktb (a-k-t-b)  [7]
-accountably,a-k-t-b-e,aktbe,,481,accountably = aktbe (a-k-t-b-e)  [6]
-accounted,a-k-t-d,aktd,,481,accounted = aktd (a-k-t-d)  [5]
-accounting,a-k-t-\-h,aktg,,481,accounting = aktg (a-k-t-\-h)  [6]
-accounts,a-k-t-s,akts,,481,accounts = akts (a-k-t-s)  [4]
-positioned,p-o-sh-d,pozd,,556,positioned = pozd (p-o-sh-d)  [6]
-positioning,p-o-sh-\-h,pozg,,556,positioning = pozg (p-o-sh-\-h)  [7]
-positions,p-o-sh-s,pozs,,556,positions = pozs (p-o-sh-s)  [5]
-sounding,s2-nt-\-h,sntg,,567,sounding = sntg (s2-nt-\-h)  [4]
-soundings,s2-nt-\-h-s,sntgs,,567,soundings = sntgs (s2-nt-\-h-s)  [4]
-sounds,s2-nt-s,snts,,567,sounds = snts (s2-nt-s)  [2]
-unsound,n-s2-nt,nsnt,,567,unsound = nsnt (n-s2-nt)  [3]
-notebook,n-o-t-b-k,notbk,o,584,notebook = notbk (n-o-t-b-k)  [3]
-notebooks,n-o-t-b-k-s,notbks,o,584,notebooks = notbks (n-o-t-b-k-s)  [3]
-notes,n-o-t-s,nots,,584,notes = nots (n-o-t-s)  [1]
-noting,n-o-t-\-h,notog,o,584,noting = notog (n-o-t-\-h)  [1]
-importantly,m-p-e,mpe,,598,importantly = mpe (m-p-e)  [8]
-serviceable,^-s2-b,sb,,601,serviceable = sb (^-s2-b)  [9]
-serviceably,^-s2-b-e,sbe,,601,serviceably = sbe (^-s2-b-e)  [8]
-serviced,^-s2-d,sd,,601,serviced = sd (^-s2-d)  [6]
-servicing,^-s2-\-h,sg,,601,servicing = sg (^-s2-\-h)  [7]
-agreements,^-ya-m-s,yams,,631,agreements = yams (^-ya-m-s)  [6]
-papered,p-a-pr-d,paprd,,649,papered = paprd (p-a-pr-d)  [2]
-papering,p-a-pr-\-h,paprg,,649,papering = paprg (p-a-pr-\-h)  [3]
-paperwork,p-a-pr-k,paprk,,649,paperwork = paprk (p-a-pr-k)  [4]
-paperworked,p-a-pr-k-d,paprkd,,649,paperworked = paprkd (p-a-pr-k-d)  [5]
-paperworking,p-a-pr-k-\-h,paprkg,,649,paperworking = paprkg (p-a-pr-k-\-h)  [6]
-paperworks,p-a-pr-k-s,paprks,,649,paperworks = paprks (p-a-pr-k-s)  [4]
-singled,s2-e-ng-d,segd,,672,singled = segd (s2-e-ng-d)  [3]
-singleton,s2-e-ng-tn,segtn,,672,singleton = segtn (s2-e-ng-tn)  [4]
-singletons,s2-e-ng-tn-s,segtns,,672,singletons = segtns (s2-e-ng-tn-s)  [4]
-singling,s2-e-ng-\-h,segg,,672,singling = segg (s2-e-ng-\-h)  [4]
-singly,s2-e-ng-e,sege,,672,singly = sege (s2-e-ng-e)  [2]
-captains,k-a-p-tn-s,kaptns,,687,captains = kaptns (k-a-p-tn-s)  [2]
-follow up,f-o-p,fop,,696,follow up = fop (f-o-p)  [6]
-follower,f-o-r,foru,u,696,follower = foru (f-o-r)  [4]
-followers,f-o-r-s,fors,,696,followers = fors (f-o-r-s)  [5]
-following,f-o-\-h,fog,,696,following = fog (f-o-\-h)  [6]
-following up,f-o-p-\-h,fopg,,696,following up = fopg (f-o-p-\-h)  [8]
-config,k-f-e-g,kfeg,,735,config = kfeg (k-f-e-g)  [2]
-configed,k-f-e-g-d,kfegd,,735,configed = kfegd (k-f-e-g-d)  [3]
-configing,k-f-e-g-\-h,kfegg,,735,configing = kfegg (k-f-e-g-\-h)  [4]
-configs,k-f-e-g-s,kfegs,,735,configs = kfegs (k-f-e-g-s)  [2]
-configuration,k-f-e-g-r-sh,kfegrz,,735,configuration = kfegrz (k-f-e-g-r-sh)  [7]
-configurations,k-f-e-g-r-sh-s,kfegrzs,,735,configurations = kfegrzs (k-f-e-g-r-sh-s)  [7]
-configure,k-f-e-g-r,kfegr,,735,configure = kfegr (k-f-e-g-r)  [4]
-configured,k-f-e-g-r-d,kfegrd,,735,configured = kfegrd (k-f-e-g-r-d)  [4]
-configures,k-f-e-g-r-s,kfegrs,,735,configures = kfegrs (k-f-e-g-r-s)  [4]
-configuring,k-f-e-g-r-\-h,kfegrg,,735,configuring = kfegrg (k-f-e-g-r-\-h)  [5]
-disfigure,d-s-f-e-g-r,dsfegr,,735,disfigure = dsfegr (d-s-f-e-g-r)  [3]
-disfigured,d-s-f-e-g-r-d,dsfegrd,,735,disfigured = dsfegrd (d-s-f-e-g-r-d)  [3]
-disfigurement,d-s-f-e-g-r-m,dsfegrm,,735,disfigurement = dsfegrm (d-s-f-e-g-r-m)  [6]
-disfigurements,d-s-f-e-g-r-m-s,dsfegrms,,735,disfigurements = dsfegrms (d-s-f-e-g-r-m-s)  [6]
-disfiguring,d-s-f-e-g-r-\-h,dsfegrg,,735,disfiguring = dsfegrg (d-s-f-e-g-r-\-h)  [4]
-figurative,f-e-g-r-a-df,fegradf,,735,figurative = fegradf (f-e-g-r-a-df)  [3]
-figuratively,f-e-g-r-a-df-e,fegradfe,,735,figuratively = fegradfe (f-e-g-r-a-df-e)  [4]
-figures,f-e-g-r-s,fegrs,,735,figures = fegrs (f-e-g-r-s)  [2]
-figuring,f-e-g-r-\-h,fegrg,,735,figuring = fegrg (f-e-g-r-\-h)  [3]
-agreed,^-ya-d,yad,,746,agreed = yad (^-ya-d)  [3]
-agreeing,^-ya-\-h,yag,,746,agreeing = yag (^-ya-\-h)  [5]
-agrees,^-ya-s,yas,,746,agrees = yas (^-ya-s)  [3]
-resultant,r-s2-u-nt,rsunt,,837,resultant = rsunt (r-s2-u-nt)  [4]
-resulting,r-s2-u-\-h,rsug,,837,resulting = rsug (r-s2-u-\-h)  [5]
-conversational,k-v-e-sh-l,kvezl,,888,conversational = kvezl (k-v-e-sh-l)  [9]
-conversations,k-v-e-sh-s,kvezs,,888,conversations = kvezs (k-v-e-sh-s)  [8]
-directions,d-r-k-sh-s,drkzs,,907,directions = drkzs (d-r-k-sh-s)  [5]
-redirection,r-e-d-r-k-sh,redrkz,,907,redirection = redrkz (r-e-d-r-k-sh)  [5]
-redirections,r-e-d-r-k-sh-s,redrkzs,,907,redirections = redrkzs (r-e-d-r-k-sh-s)  [5]
-authorities,o-th2-/-r-s,ohrso,o,938,authorities = ohrso (o-th2-/-r-s)  [6]
-authoritys,o-th2-/-r-s,ohrs,,938,authoritys = ohrs (o-th2-/-r-s)  [6]
-breaking,br-a-k-\-h,brakg,,981,breaking = brakg (br-a-k-\-h)  [3]
-successes,s2-u-k-s,suks,,1001,successes = suks (s2-u-k-s)  [5]
-succession,s2-u-k-sh,sukz,,1001,succession = sukz (s2-u-k-sh)  [6]
-successions,s2-u-k-sh-s,sukzs,,1001,successions = sukzs (s2-u-k-sh-s)  [6]
-successive,s2-u-k-v,sukv,,1001,successive = sukv (s2-u-k-v)  [6]
-successively,s2-u-k-v-e,sukve,,1001,successively = sukve (s2-u-k-v-e)  [7]
-successor,s2-u-k-\-r,sukr,,1001,successor = sukr (s2-u-k-\-r)  [5]
-successors,s2-u-k-\-r-s,sukrs,,1001,successors = sukrs (s2-u-k-\-r-s)  [5]
-completely,kp-e,kpe,,1081,completely = kpe (kp-e)  [7]
-completeness,kp-n-s,kpns,,1081,completeness = kpns (kp-n-s)  [8]
-completes,kp-s,kps,,1081,completes = kps (kp-s)  [6]
-incomplete,n-kp,nkp,,1081,incomplete = nkp (n-kp)  [7]
-incompletely,n-kp-e,nkpe,,1081,incompletely = nkpe (n-kp-e)  [8]
-proved,pr-v-d,prvd,,1144,proved = prvd (pr-v-d)  [2]
-proves,pr-v-s,prvs,,1144,proves = prvs (pr-v-s)  [2]
-proving,pr-v-\-h,prvg,,1144,proving = prvg (pr-v-\-h)  [3]
-surprised,s-e-pr-i-s-d,seprisd,,1168,surprised = seprisd (s-e-pr-i-s-d)  [2]
-surprises,s-e-pr-i-s-s,sepriss,,1168,surprises = sepriss (s-e-pr-i-s-s)  [2]
-surprising,s-e-pr-i-s-\-h,seprisg,,1168,surprising = seprisg (s-e-pr-i-s-\-h)  [3]
-surprisingly,s-e-pr-i-s-\-h-e,seprisge,,1168,surprisingly = seprisge (s-e-pr-i-s-\-h-e)  [4]
-searchability,s2-e-ch-\-b,secbo,o,1201,searchability = secbo (s2-e-ch-\-b)  [8]
-searchable,s2-e-ch-b,secb,,1201,searchable = secb (s2-e-ch-b)  [6]
-searchably,s2-e-ch-b-e,secbe,,1201,searchably = secbe (s2-e-ch-b-e)  [5]
-searched,s2-e-ch-d,secd,,1201,searched = secd (s2-e-ch-d)  [4]
-searcher,s2-e-ch-e2,sece,,1201,searcher = sece (s2-e-ch-e2)  [4]
-searchers,s2-e-ch-e2-s,seces,,1201,searchers = seces (s2-e-ch-e2-s)  [4]
-searches,s2-e-ch-s,secs,,1201,searches = secs (s2-e-ch-s)  [4]
-searching,s2-e-ch-\-h,secg,,1201,searching = secg (s2-e-ch-\-h)  [5]
-searchlight,s2-e-ch-l-i,secli,,1201,searchlight = secli (s2-e-ch-l-i)  [6]
-searchlights,s2-e-ch-l-i-s,seclis,,1201,searchlights = seclis (s2-e-ch-l-i-s)  [6]
-secured,s2-e-k-r-d,sekrd,,1260,secured = sekrd (s2-e-k-r-d)  [2]
-secures,s2-e-k-r-s,sekrs,,1260,secures = sekrs (s2-e-k-r-s)  [2]
-securing,s2-e-k-r-\-h,sekrg,,1260,securing = sekrg (s2-e-k-r-\-h)  [3]
-directed,d-r-k-d,drkd,,1429,directed = drkd (d-r-k-d)  [4]
-directing,d-r-k-\-h,drkg,,1429,directing = drkg (d-r-k-\-h)  [5]
-directly,d-r-k-e,drke,,1429,directly = drke (d-r-k-e)  [4]
-directness,d-r-k-n-s,drkns,,1429,directness = drkns (d-r-k-n-s)  [5]
-directs,d-r-k-s,drks,,1429,directs = drks (d-r-k-s)  [3]
-redirect,r-e-d-r-k,redrk,,1429,redirect = redrk (r-e-d-r-k)  [3]
-redirected,r-e-d-r-k-d,redrkd,,1429,redirected = redrkd (r-e-d-r-k-d)  [4]
-redirecting,r-e-d-r-k-\-h,redrkg,,1429,redirecting = redrkg (r-e-d-r-k-\-h)  [5]
-redirects,r-e-d-r-k-s,redrks,,1429,redirects = redrks (r-e-d-r-k-s)  [3]
-addresses,a-d-r-s,adrs,,1549,addresses = adrs (a-d-r-s)  [5]
-addressing,a-d-r-\-h,adrg,,1549,addressing = adrg (a-d-r-\-h)  [6]
-Constantine,k-s2-tn-e-n,kstnen,,1552,Constantine = kstnen (k-s2-tn-e-n)  [5]
-constantly,k-s2-tn-e,kstne,,1552,constantly = kstne (k-s2-tn-e)  [5]
-constants,k-s2-tn-s,kstns,,1552,constants = kstns (k-s2-tn-s)  [4]
-interested,^-n-\-s-\-t,nst,,1559,interested = nst (^-n-\-s-\-t)  [7]
-interesting,^-n-\-s-\-h,nsg,,1575,interesting = nsg (^-n-\-s-\-h)  [8]
-interestingly,^-n-\-s-\-g,nsge,,1575,interestingly = nsge (^-n-\-s-\-g)  [9]
-doubled,d-b-d,dbd,,1600,doubled = dbd (d-b-d)  [4]
-doubleing,d-b-\-h,dbg,,1600,doubleing = dbg (d-b-\-h)  [6]
-doubles,d-b-s,dbs,,1600,doubles = dbs (d-b-s)  [4]
-doubling,d-b-\-h,dbg,,1600,doubling = dbg (d-b-\-h)  [5]
-removable,r-e-m-u-b,remub,,1657,removable = remub (r-e-m-u-b)  [4]
-removables,r-e-m-u-b-s,remubs,,1657,removables = remubs (r-e-m-u-b-s)  [4]
-removably,r-e-m-u-b-e,remube,,1657,removably = remube (r-e-m-u-b-e)  [3]
-removed,r-e-m-u-d,remud,,1657,removed = remud (r-e-m-u-d)  [2]
-removes,r-e-m-u-s,remus,,1657,removes = remus (r-e-m-u-s)  [2]
-removing,r-e-m-u-\-h,remug,,1657,removing = remug (r-e-m-u-\-h)  [3]
-currently,k-r-e-nt-e,krente,,1668,currently = krente (k-r-e-nt-e)  [3]
-currents,k-r-e-nt-s,krents,,1668,currents = krents (k-r-e-nt-s)  [2]
-policies,p-o-l-s,pols,,1698,policies = pols (p-o-l-s)  [4]
-relations,r-e-l-a-sh-s,relazs,,1704,relations = relazs (r-e-l-a-sh-s)  [3]
-relationship,r-e-l-a-sh-\-sh,relazz,,1704,relationship = relazz (r-e-l-a-sh-\-sh)  [6]
-relationships,r-e-l-a-sh-\-sh-s,relazzs,,1704,relationships = relazzs (r-e-l-a-sh-\-sh-s)  [6]
-qualitative,k-u-df,qudf,,1727,qualitative = qudf (k-u-df)  [7]
-qualitatively,k-u-df-e,qudfe,,1727,qualitatively = qudfe (k-u-df-e)  [8]
-happened,^-h-\-a-p-n-d,hapnd,,1744,happened = hapnd (^-h-\-a-p-n-d)  [3]
-happening,^-h-\-a-p-n-\-h,hapng,,1744,happening = hapng (^-h-\-a-p-n-\-h)  [4]
-happenings,^-h-\-a-p-n-s\--h,hapngs,,1744,happenings = hapngs (^-h-\-a-p-n-s\--h)  [4]
-appliance,a-pl-i-n-s,aplins,,1758,appliance = aplins (a-pl-i-n-s)  [3]
-appliances,a-pl-i-n-s-s,aplinss,,1758,appliances = aplinss (a-pl-i-n-s-s)  [3]
-applicability,a-pl-e-k-\-b,aplekbo,o,1758,applicability = aplekbo (a-pl-e-k-\-b)  [6]
-applicable,a-pl-e-k-b,aplekb,,1758,applicable = aplekb (a-pl-e-k-b)  [4]
-applicably,a-pl-e-k-b-e,aplekbe,,1758,applicably = aplekbe (a-pl-e-k-b-e)  [3]
-applies,a-pl-i-s,aplis,,1758,applies = aplis (a-pl-i-s)  [2]
-applying,a-pl-i-\-h,aplig,,1758,applying = aplig (a-pl-i-\-h)  [3]
-connect,k-e-k,keko,o,1770,connect = keko (k-e-k)  [3]
-protecting,pr-o-t-e-k-\-h,protekg,,1802,protecting = protekg (pr-o-t-e-k-\-h)  [3]
-protective,pr-o-t-e-k-v,protekv,,1802,protective = protekv (pr-o-t-e-k-v)  [3]
-protector,pr-o-t-e-k-r,protekr,,1802,protector = protekr (pr-o-t-e-k-r)  [2]
-protectorate,pr-o-t-e-k-r-a,protekra,,1802,protectorate = protekra (pr-o-t-e-k-r-a)  [4]
-protectorates,pr-o-t-e-k-r-a-s,protekras,,1802,protectorates = protekras (pr-o-t-e-k-r-a-s)  [4]
-protectors,pr-o-t-e-k-r-s,protekrs,,1802,protectors = protekrs (pr-o-t-e-k-r-s)  [2]
-protects,pr-o-t-e-k-s,proteks,,1802,protects = proteks (pr-o-t-e-k-s)  [1]
-coupled,k-u-pl-d,kupld,,1817,coupled = kupld (k-u-pl-d)  [2]
-couples,k-u-pl-s,kupls,,1817,couples = kupls (k-u-pl-s)  [2]
-coupling,k-u-pl-\-h,kuplg,,1817,coupling = kuplg (k-u-pl-\-h)  [3]
-requires,r-k-i-s,rqis,,1833,requires = rqis (r-k-i-s)  [4]
-requiring,r-k-i-\-h,rqig,,1833,requiring = rqig (r-k-i-\-h)  [5]
-requisite,r-k-e-s-t,rqesto,o,1833,requisite = rqesto (r-k-e-s-t)  [3]
-requisites,r-k-e-s-t-s,rqests,,1833,requisites = rqests (r-k-e-s-t-s)  [4]
-parent,p-a-r-e-nt,parento,o,1863,parent = parento (p-a-r-e-nt)  [-1]
-parentage,p-a-r-e-nt-j,parentj,,1863,parentage = parentj (p-a-r-e-nt-j)  [2]
-parental,p-a-r-e-nt-l,parentl,o,1863,parental = parentl (p-a-r-e-nt-l)  [1]
-transparency,t-\-p-a-r-e-n-s-e,tparense,,1863,transparency = tparense (t-\-p-a-r-e-n-s-e)  [4]
-transparent,t-\-p-a-r-e-nt,tparent,,1863,transparent = tparent (t-\-p-a-r-e-nt)  [4]
-transparently,t-\-p-a-r-e-nt-e,tparente,,1863,transparently = tparente (t-\-p-a-r-e-nt-e)  [5]
-controlling,^-k-/-l-\-h,klg,,1869,controlling = klg (^-k-/-l-\-h)  [8]
-controls,^-k-/-l-s,kls,,1869,controls = kls (^-k-/-l-s)  [5]
-singer,s2-e-ng-e2,segeo,o,1922,singer = segeo (s2-e-ng-e2)  [1]
-singers,s2-e-ng-e2-s,seges,,1922,singers = seges (s2-e-ng-e2-s)  [2]
-singing,s2-e-ng-\-h,seggo,o,1922,singing = seggo (s2-e-ng-\-h)  [2]
-sings,s2-e-ng-s,segso,o,1922,sings = segso (s2-e-ng-s)  [0]
-singular,s2-e-ng-u,segu,,1922,singular = segu (s2-e-ng-u)  [4]
-singularity,s2-e-ng-u-\-r,segur,,1922,singularity = segur (s2-e-ng-u-\-r)  [6]
-singularly,s2-e-ng-u-e,segueo,o,1922,singularly = segueo (s2-e-ng-u-e)  [4]
-connections,k-e-k-sh-s,kekzs,,1927,connections = kekzs (k-e-k-sh-s)  [6]
-protections,pr-o-t-e-k-sh-s,protekzs,,1983,protections = protekzs (pr-o-t-e-k-sh-s)  [3]
-successfully,s2-u-k-f-e,sukfe,,2078,successfully = sukfe (s2-u-k-f-e)  [7]
-unsuccessful,n-s2-u-k-f,nsukf,,2078,unsuccessful = nsukf (n-s2-u-k-f)  [7]
-unsuccessfully,n-s2-u-k-f-e,nsukfe,,2078,unsuccessfully = nsukfe (n-s2-u-k-f-e)  [8]
-developments,dfl-m-s,dflms,,2110,developments = dflms (dfl-m-s)  [7]
-guideed,g-i-d-d,gidd,,2141,guideed = gidd (g-i-d-d)  [3]
-guideing,g-i-d-\-h,gidg,,2141,guideing = gidg (g-i-d-\-h)  [4]
-guides,g-i-d-s,gids,,2141,guides = gids (g-i-d-s)  [2]
-unrelated,n-r-e-l-a-/-t,nrelat,,2159,unrelated = nrelat (n-r-e-l-a-/-t)  [3]
-temples,tm-pl-s,tmpls,,2206,temples = tmpls (tm-pl-s)  [2]
-sourced,s2-o-s-d,sosd,,2223,sourced = sosd (s2-o-s-d)  [3]
-sources,s2-o-s-s,soss,,2223,sources = soss (s2-o-s-s)  [3]
-sourcing,s2-o-s-\-h,sosg,,2223,sourcing = sosg (s2-o-s-\-h)  [4]
-referenced,r-f-d,rfd,,2303,referenced = rfd (r-f-d)  [7]
-referencing,r-f-\-h,rfg,,2303,referencing = rfg (r-f-\-h)  [8]
-wasted,u-a-s2-t-d,uastd,,2311,wasted = uastd (u-a-s2-t-d)  [1]
-wasteful,u-a-s2-t-f,uastf,,2311,wasteful = uastf (u-a-s2-t-f)  [3]
-wastefully,u-a-s2-t-f-e,uastfe,,2311,wastefully = uastfe (u-a-s2-t-f-e)  [4]
-wastes,u-a-s2-t-s,uasts,,2311,wastes = uasts (u-a-s2-t-s)  [1]
-wasting,u-a-s2-t-\-h,uastg,,2311,wasting = uastg (u-a-s2-t-\-h)  [2]
-limitations,l-e-m-sh-s,lemzs,,2368,limitations = lemzs (l-e-m-sh-s)  [6]
-agreeably,^-yab-e,yabe,,2378,agreeably = yabe (^-yab-e)  [5]
-suggestions,s2-u-j-s,sujs,,2382,suggestions = sujs (s2-u-j-s)  [7]
-maintaining,mn-tn-\-h,mmtng,,2559,maintaining = mmtng (mn-tn-\-h)  [6]
-maintains,mn-tn-s,mmtns,,2559,maintains = mmtns (mn-tn-s)  [4]
-performed,pr-f-m-d,prfmd,,2589,performed = prfmd (pr-f-m-d)  [4]
-performer,pr-f-m-r,prfmr,,2589,performer = prfmr (pr-f-m-r)  [4]
-performers,pr-f-m-r-s,prfmrs,,2589,performers = prfmrs (pr-f-m-r-s)  [4]
-performing,pr-f-m-\-h,prfmg,,2589,performing = prfmg (pr-f-m-\-h)  [5]
-performs,pr-f-m-s,prfms,,2589,performs = prfms (pr-f-m-s)  [3]
-availability,a-v-a-l-\-b,avalbo,,2653,availability = avalbo (a-v-a-l-\-b)  [6]
-routed,r-u-t-d,rutd,,2671,routed = rutd (r-u-t-d)  [2]
-routes,r-u-t-s,rutso,o,2671,routes = rutso (r-u-t-s)  [1]
-routing,r-u-t-\-h,rutg,,2671,routing = rutg (r-u-t-\-h)  [3]
-commented,k-mn-t-d,kmmtd,,2738,commented = kmmtd (k-mn-t-d)  [4]
-commenting,k-mn-t-\-h,kmmtg,,2738,commenting = kmmtg (k-mn-t-\-h)  [5]
-comments,k-mn-t-s,kmmts,,2738,comments = kmmts (k-mn-t-s)  [3]
-editions,e-d-sh-s,edzs,,2816,editions = edzs (e-d-sh-s)  [4]
-organizations,o-g-s,ogs,,2829,organizations = ogs (o-g-s)  [10]
-executioner,e-s2-k-sh-r,xkzr,,3011,executioner = xkzr (e-s2-k-sh-r)  [7]
-executioners,e-s2-k-sh-r-s,xkzrs,,3011,executioners = xkzrs (e-s2-k-sh-r-s)  [7]
-executions,e-s2-k-sh-s,xkzso,o,3011,executions = xkzso (e-s2-k-sh-s)  [5]
-uncompleted,n-kp-/-t,nkp/t,,3023,uncompleted = nkp/t (n-kp-/-t)  [6]
-standardize,s2-tn-a-d-i-s,stnadis,,3032,standardize = stnadis (s2-tn-a-d-i-s)  [4]
-standardized,s2-tn-a-d-i-s-d,stnadisd,,3032,standardized = stnadisd (s2-tn-a-d-i-s-d)  [4]
-standardizes,s2-tn-a-d-i-s-s,stnadiss,,3032,standardizes = stnadiss (s2-tn-a-d-i-s-s)  [4]
-standardizing,s2-tn-a-d-i-s-\-h,stnadisg,,3032,standardizing = stnadisg (s2-tn-a-d-i-s-\-h)  [5]
-standards,s2-tn-a-d-s,stnads,,3032,standards = stnads (s2-tn-a-d-s)  [3]
-operational,o-pr-a-sh-l,oprazl,,3048,operational = oprazl (o-pr-a-sh-l)  [5]
-operationally,o-pr-a-sh-l-e,oprazle,,3048,operationally = oprazle (o-pr-a-sh-l-e)  [6]
-operations,o-pr-a-sh-s,oprazs,,3048,operations = oprazs (o-pr-a-sh-s)  [4]
-securities,s2-e-k-/-r-s,sekrso,o,3065,securities = sekrso (s2-e-k-/-r-s)  [4]
-applications,a-pl-sh-s,aplzs,,3097,applications = aplzs (a-pl-sh-s)  [7]
-definitely,df-n-e,dfne,,3128,definitely = dfne (df-n-e)  [6]
-includes,e-/-d-s,edos,o,3157,includes = edos (e-/-d-s)  [4]
-including,e-/-d-\-h,edog,o,3157,including = edog (e-/-d-\-h)  [5]
-seeded,s2-e-d-d,sedd,,3202,seeded = sedd (s2-e-d-d)  [2]
-seeding,s2-e-d-\-h,sedg,,3202,seeding = sedg (s2-e-d-\-h)  [3]
-seeds,s2-e-d-s,seds,,3202,seeds = seds (s2-e-d-s)  [1]
-clerked,k-l-r-d,klrd,,3264,clerked = klrd (k-l-r-d)  [3]
-clerking,k-l-r-\-h,klrg,,3264,clerking = klrg (k-l-r-\-h)  [4]
-clerks,k-l-r-s,klrs,,3264,clerks = klrs (k-l-r-s)  [2]
-picked,p-e-k-t,pekt,,3272,picked = pekt (p-e-k-t)  [2]
-picking,p-e-k-\-h,pekg,,3272,picking = pekg (p-e-k-\-h)  [3]
-picks,p-e-k-s,peks,,3272,picks = peks (p-e-k-s)  [1]
-performances,pr-f-mn-s-s,prfmmss,,3320,performances = prfmmss (pr-f-mn-s-s)  [5]
-detailing,td-a2-\-h,ddag,,3339,detailing = ddag (td-a2-\-h)  [5]
-specification,s-p-e-s2-\-f,spesf,,3371,specification = spesf (s-p-e-s2-\-f)  [8]
-specifications,s-p-e-s2-\-f-s,spesfs,,3371,specifications = spesfs (s-p-e-s2-\-f-s)  [8]
-suggesting,s2-u-g-\-h,sugg,,3432,suggesting = sugg (s2-u-g-\-h)  [6]
-suggestive,s2-u-g-v,sugv,,3432,suggestive = sugv (s2-u-g-v)  [6]
-suggestively,s2-u-g-v-e,sugve,,3432,suggestively = sugve (s2-u-g-v-e)  [7]
-suggestiveness,s2-u-g-v-n-s,sugvns,,3432,suggestiveness = sugvns (s2-u-g-v-n-s)  [8]
-suggests,s2-u-g-s,sugs,,3432,suggests = sugs (s2-u-g-s)  [4]
-resource,r-s2-o-s2,rsos,,3455,resource = rsos (r-s2-o-s2)  [4]
-resourceful,r-s2-o-s2-f,rsosf,,3455,resourceful = rsosf (r-s2-o-s2-f)  [6]
-resourcefulness,r-s2-o-s2-f-n-s,rsosfns,,3455,resourcefulness = rsosfns (r-s2-o-s2-f-n-s)  [8]
-occupations,o-kp-s,okps,,3498,occupations = okps (o-kp-s)  [7]
-invitations,n-v-e-t-sh-s,nvetzs,,3582,invitations = nvetzs (n-v-e-t-sh-s)  [5]
-instructional,n-s-/-k-sh-l,nskzl,,3748,instructional = nskzl (n-s-/-k-sh-l)  [8]
-instructionally,n-s-/-k-sh-l-e,nskzle,,3748,instructionally = nskzle (n-s-/-k-sh-l-e)  [9]
-instructions,n-s-/-k-sh-s,nskzs,,3748,instructions = nskzs (n-s-/-k-sh-s)  [7]
-reservable,r-s2-e-v-b,rsevb,,3764,reservable = rsevb (r-s2-e-v-b)  [5]
-reservably,r-s2-e-v-b-e,rsevbe,,3764,reservably = rsevbe (r-s2-e-v-b-e)  [4]
-reserved,r-s2-e-v-d,rsevd,,3764,reserved = rsevd (r-s2-e-v-d)  [3]
-reserves,r-s2-e-v-s,rsevs,,3764,reserves = rsevs (r-s2-e-v-s)  [3]
-reserving,r-s2-e-v-\-h,rsevg,,3764,reserving = rsevg (r-s2-e-v-\-h)  [4]
-reservior,r-s2-e-v-o-r-\-<-n,rsevor,,3764,reservior = rsevor (r-s2-e-v-o-r-\-<-n)  [3]
-reserviors,r-s2-e-v-o-r-\-<-n-s,rsevors,,3764,reserviors = rsevors (r-s2-e-v-o-r-\-<-n-s)  [3]
-compositions,k-p-o-sh-s,kpozs,,3767,compositions = kpozs (k-p-o-sh-s)  [7]
-decomposition,d-e-k-p-o-sh,dkpoz,,3767,decomposition = dkpoz (d-e-k-p-o-sh)  [8]
-identified,a-tn-df-d,atndfd,,3839,identified = atndfd (a-tn-df-d)  [4]
-identifies,a-tn-df-s,atndfs,,3839,identifies = atndfs (a-tn-df-s)  [4]
-identifying,a-tn-df-\-h,atndfg,,3839,identifying = atndfg (a-tn-df-\-h)  [5]
-solutioned,s2-o-l-sh-d,solzd,,3907,solutioned = solzd (s2-o-l-sh-d)  [5]
-solutioning,s2-o-l-sh-\-h,solzg,,3907,solutioning = solzg (s2-o-l-sh-\-h)  [6]
-solutions,s2-o-l-sh-s,solzs,,3907,solutions = solzs (s2-o-l-sh-s)  [4]
-executives,e-s2-e-k-v-s,xekvs,,4030,executives = xekvs (e-s2-e-k-v-s)  [5]
-maximize,m-a-x-m-i-s,maxmis,,4077,maximize = maxmis (m-a-x-m-i-s)  [2]
-maximized,m-a-x-m-i-s-d,maxmisd,,4077,maximized = maxmisd (m-a-x-m-i-s-d)  [2]
-maximizes,m-a-x-m-i-s-s,maxmiss,,4077,maximizes = maxmiss (m-a-x-m-i-s-s)  [2]
-maximizing,m-a-x-m-i-s-\-h,maxmisg,,4077,maximizing = maxmisg (m-a-x-m-i-s-\-h)  [3]
-maximo,m-a-x-m-o,maxmo,,4077,maximo = maxmo (m-a-x-m-o)  [1]
-maximums,m-a-x-mn-s,maxmms,,4077,maximums = maxmms (m-a-x-mn-s)  [2]
-products,pr-o-k-s,proks,o,4118,products = proks (pr-o-k-s)  [3]
-editors,e-td-e2-s,eddes,,4123,editors = eddes (e-td-e2-s)  [2]
-editorship,e-td-e2-sh,eddez,,4123,editorship = eddez (e-td-e2-sh)  [5]
-editorships,e-td-e2-sh-s,eddezs,,4123,editorships = eddezs (e-td-e2-sh-s)  [5]
-improvements,m-pr-s,mprs,,4173,improvements = mprs (m-pr-s)  [8]
-captivate,k-a-p-df-a-t,kapdfat,,4183,captivate = kapdfat (k-a-p-df-a-t)  [2]
-captivated,k-a-p-df-a-t-d,kapdfatd,,4183,captivated = kapdfatd (k-a-p-df-a-t-d)  [2]
-captivates,k-a-p-df-a-t-s,kapdfats,,4183,captivates = kapdfats (k-a-p-df-a-t-s)  [2]
-captivating,k-a-p-df-a-t-\-h,kapdfatg,,4183,captivating = kapdfatg (k-a-p-df-a-t-\-h)  [3]
-captive,k-a-p-df,kapdf,,4183,captive = kapdf (k-a-p-df)  [2]
-captives,k-a-p-df-s,kapdfs,,4183,captives = kapdfs (k-a-p-df-s)  [2]
-captivity,k-a-p-df-t-e,kapdfte,,4183,captivity = kapdfte (k-a-p-df-t-e)  [2]
-captor,k-a-p-t-e,kapte,,4183,captor = kapte (k-a-p-t-e)  [1]
-captors,k-a-p-t-e-s,kaptes,,4183,captors = kaptes (k-a-p-t-e-s)  [1]
-capture,k-a-p-t-r,kaptr,,4183,capture = kaptr (k-a-p-t-r)  [2]
-captured,k-a-p-t-r-d,kaptrd,,4183,captured = kaptrd (k-a-p-t-r-d)  [2]
-captures,k-a-p-t-r-s,kaptrs,,4183,captures = kaptrs (k-a-p-t-r-s)  [2]
-capturing,k-a-p-t-r-\-h,kaptrg,,4183,capturing = kaptrg (k-a-p-t-r-\-h)  [3]
-occupancy,o-kp-n-s-e,okpnse,,4190,occupancy = okpnse (o-kp-n-s-e)  [3]
-occupant,o-kp-nt,okpnt,,4190,occupant = okpnt (o-kp-nt)  [3]
-occupants,o-kp-nt-s,okpnts,,4190,occupants = okpnts (o-kp-nt-s)  [3]
-occupied,o-kp-d,okpd,,4190,occupied = okpd (o-kp-d)  [4]
-occupier,o-kp-r,okpr,,4190,occupier = okpr (o-kp-r)  [4]
-occupiers,o-kp-r-s,okprs,,4190,occupiers = okprs (o-kp-r-s)  [4]
-occupies,o-kp-s,okps,,4190,occupies = okps (o-kp-s)  [4]
-occupying,o-kp-\-h,okpg,,4190,occupying = okpg (o-kp-\-h)  [5]
-combinations,k-b-n-sh-s,kbnzs,,4193,combinations = kbnzs (k-b-n-sh-s)  [7]
-limiting,l-e-m-e-t-\-h,lemetg,,4396,limiting = lemetg (l-e-m-e-t-\-h)  [2]
-limits,l-e-m-e-t-s,lemets,,4396,limits = lemets (l-e-m-e-t-s)  [0]
-nets,n-e-t-s,nets,,4455,nets = nets (n-e-t-s)  [0]
-netted,n-e-t-d,netd,,4455,netted = netd (n-e-t-d)  [2]
-netting,n-e-t-\-h,netg,,4455,netting = netg (n-e-t-\-h)  [3]
-nettle,n-e-t-l,netl,,4455,nettle = netl (n-e-t-l)  [2]
-nettled,n-e-t-l-d,netld,,4455,nettled = netld (n-e-t-l-d)  [2]
-nettles,n-e-t-l-s,netls,,4455,nettles = netls (n-e-t-l-s)  [2]
-normally,n-o-m-ye,nomy,,4590,normally = nomy (n-o-m-ye)  [4]
-indirectly,nt-r-k-e,ntrke,,4696,indirectly = ntrke (nt-r-k-e)  [5]
-converge,k-v-e-j,kvej,,4741,converge = kvej (k-v-e-j)  [4]
-convergence,k-v-e-j-n-s,kvejns,,4741,convergence = kvejns (k-v-e-j-n-s)  [5]
-convergent,k-v-e-jnt,kvejnt,,4741,convergent = kvejnt (k-v-e-jnt)  [4]
-conversion,k-v-e-sh,kvez,,4741,conversion = kvez (k-v-e-sh)  [6]
-conversions,k-v-e-sh-s,kvezs,,4741,conversions = kvezs (k-v-e-sh-s)  [6]
-convert,k-v-e2-t,kvet,,4741,convert = kvet (k-v-e2-t)  [3]
-converted,k-v-e2-t-d,kvetd,,4741,converted = kvetd (k-v-e2-t-d)  [4]
-convertible,k-v-e2-t-b,kvetb,,4741,convertible = kvetb (k-v-e2-t-b)  [6]
-convertibles,k-v-e2-t-b-s,kvetbs,,4741,convertibles = kvetbs (k-v-e2-t-b-s)  [6]
-converting,k-v-e2-t-\-h,kvetg,,4741,converting = kvetg (k-v-e2-t-\-h)  [5]
-converts,k-v-e2-t-s,kvets,,4741,converts = kvets (k-v-e2-t-s)  [3]
-relates,r-e-l-a-s,relas,,4800,relates = relas (r-e-l-a-s)  [2]
-appreciated,a-pr-e-sh-d,aprezd,,4901,appreciated = aprezd (a-pr-e-sh-d)  [5]
-appreciates,a-pr-e-sh-s,aprezs,,4901,appreciates = aprezs (a-pr-e-sh-s)  [5]
-appreciating,a-pr-e-sh-\-h,aprezg,,4901,appreciating = aprezg (a-pr-e-sh-\-h)  [6]
-researched,r-s2-e-ch-d,rsecd,,4980,researched = rsecd (r-s2-e-ch-d)  [5]
-researching,r-s2-e-ch-\-h,rsecg,,4980,researching = rsecg (r-s2-e-ch-\-h)  [6]
-researchs,r-s2-e-ch-s,rsecs,,4980,researchs = rsecs (r-s2-e-ch-s)  [4]
-documentary,d-o-k-m-r-e,dokmre,,5069,documentary = dokmre (d-o-k-m-r-e)  [5]
-documentation,d-o-k-m-sh,dokmz,,5069,documentation = dokmz (d-o-k-m-sh)  [8]
-documented,d-o-k-m-d,dokmd,,5069,documented = dokmd (d-o-k-m-d)  [5]
-documenting,d-o-k-m-\-h,dokmg,,5069,documenting = dokmg (d-o-k-m-\-h)  [6]
-documents,d-o-k-m-s,dokms,,5069,documents = dokms (d-o-k-m-s)  [4]
-organic,o-g-n-e-k,ognek,,5141,organic = ognek (o-g-n-e-k)  [2]
-organically,o-g-n-\-k-e,ognke,,5141,organically = ognke (o-g-n-\-k-e)  [6]
-organism,o-g-n-s-m,ognsm,,5141,organism = ognsm (o-g-n-s-m)  [3]
-organisms,o-g-n-s-m-s,ognsms,,5141,organisms = ognsms (o-g-n-s-m-s)  [3]
-organist,o-g-n-e-s,ognes,,5141,organist = ognes (o-g-n-e-s)  [3]
-organs,o-g-n-s,ogns,,5141,organs = ogns (o-g-n-s)  [2]
-selections,s-e-l-e-k-sh-s,selekzs,,5218,selections = selekzs (s-e-l-e-k-sh-s)  [3]
-logged,l-o-g-d,logd,,5239,logged = logd (l-o-g-d)  [2]
-logging,l-o-g-\-h,logg,,5239,logging = logg (l-o-g-\-h)  [3]
-beforehand,b-f-n-t,bfnt,,5240,beforehand = bfnt (b-f-n-t)  [6]
-selecting,s-e-l-e-k-\-h,selekg,,5294,selecting = selekg (s-e-l-e-k-\-h)  [3]
-selective,s-e-l-e-k-v,selekv,,5294,selective = selekv (s-e-l-e-k-v)  [3]
-selectively,s-e-l-e-k-v-e,selekve,,5294,selectively = selekve (s-e-l-e-k-v-e)  [4]
-selects,s-e-l-e-k-s,seleks,,5294,selects = seleks (s-e-l-e-k-s)  [1]
-invited,n-v-i-d,nvid,,5305,invited = nvid (n-v-i-d)  [3]
-invites,n-v-i-s,nvis,,5305,invites = nvis (n-v-i-s)  [3]
-inviting,n-v-i-\-h,nvig,,5305,inviting = nvig (n-v-i-\-h)  [4]
-improved,m-pr-d,mprd,,5337,improved = mprd (m-pr-d)  [4]
-improves,m-pr-s,mprso,o,5337,improves = mprso (m-pr-s)  [3]
-improving,m-pr-\-h,mprg,,5337,improving = mprg (m-pr-\-h)  [5]
-improvisation,m-pr-v-e-s-a-sh,mprvesash,,5337,improvisation = mprvesash (m-pr-v-e-s-a-sh)  [4]
-improvise,m-pr-v-i-s,mprvis,,5337,improvise = mprvis (m-pr-v-i-s)  [3]
-improvised,m-pr-v-i-s-d,mprvisd,,5337,improvised = mprvisd (m-pr-v-i-s-d)  [3]
-improvises,m-pr-v-i-s-s,mprviss,,5337,improvises = mprviss (m-pr-v-i-s-s)  [3]
-improvising,m-pr-v-i-s-\-h,mprvisg,,5337,improvising = mprvisg (m-pr-v-i-s-\-h)  [4]
-unimproved,n-m-pr-d,nmprd,,5337,unimproved = nmprd (n-m-pr-d)  [5]
-availed,a-v-a-l-d,avald,,5529,availed = avald (a-v-a-l-d)  [2]
-availing,a-v-a-l-\-h,avalg,,5529,availing = avalg (a-v-a-l-\-h)  [3]
-avails,a-v-a-l-s,avals,,5529,avails = avals (a-v-a-l-s)  [1]
-approvals,a-pr-v-l-s,aprvls,,5616,approvals = aprvls (a-pr-v-l-s)  [3]
-disapproval,d-s-a-pr-v-l,daprvl,,5616,disapproval = daprvl (d-s-a-pr-v-l)  [5]
-directories,d-r-k-/-r-e-s,drkres,,5660,directories = drkres (d-r-k-/-r-e-s)  [5]
-directors,d-r-k-/-r-s,drkrs,,5660,directors = drkrs (d-r-k-/-r-s)  [4]
-directory,d-r-k-/-r-e,drkre,,5660,directory = drkre (d-r-k-/-r-e)  [4]
-redirector,r-e-d-r-k-/-r,redrkr,,5660,redirector = redrkr (r-e-d-r-k-/-r)  [4]
-redirectors,r-e-d-r-k-/-r-s,redrkrs,,5660,redirectors = redrkrs (r-e-d-r-k-/-r-s)  [4]
-networked,n-e-t-r-k-d,netrkd,,5683,networked = netrkd (n-e-t-r-k-d)  [3]
-networking,n-e-t-r-k-\-h,netrkg,,5683,networking = netrkg (n-e-t-r-k-\-h)  [4]
-networks,n-e-t-r-k-s,netrks,,5683,networks = netrks (n-e-t-r-k-s)  [2]
-workman,r-k-mn,rkmmu,u,5688,workman = rkmmu (r-k-mn)  [2]
-workmanlike,r-k-mn-l,rkmml,,5688,workmanlike = rkmml (r-k-mn-l)  [6]
-workmanship,r-k-mn-sh,rkmnz,u,5688,workmanship = rkmnz (r-k-mn-sh)  [6]
-developed,dfl-d,dfld,,5759,developed = dfld (dfl-d)  [5]
-developer,dfl-r,dflr,,5759,developer = dflr (dfl-r)  [5]
-developers,dfl-r-s,dflrs,,5759,developers = dflrs (dfl-r-s)  [5]
-developing,dfl-\-h,dflg,,5759,developing = dflg (dfl-\-h)  [6]
-develops,dfl-s,dfls,,5759,develops = dfls (dfl-s)  [4]
-patterned,p-a-tn-d,patnd,,5806,patterned = patnd (p-a-tn-d)  [4]
-patterning,p-a-tn-\-h,patng,o,5806,patterning = patng (p-a-tn-\-h)  [5]
-approved,a-pr-v-d,aprvd,,5852,approved = aprvd (a-pr-v-d)  [3]
-approves,a-pr-v-s,aprvs,,5852,approves = aprvs (a-pr-v-s)  [3]
-approving,a-pr-v-\-h,aprvg,,5852,approving = aprvg (a-pr-v-\-h)  [4]
-approvingly,a-pr-v-\-h-e,aprvge,,5852,approvingly = aprvge (a-pr-v-\-h-e)  [5]
-disapprove,d-s-a-pr-v,dsaprv,,5852,disapprove = dsaprv (d-s-a-pr-v)  [4]
-disapproved,d-s-a-pr-v-d,dsaprvd,,5852,disapproved = dsaprvd (d-s-a-pr-v-d)  [4]
-disapproves,d-s-a-pr-v-s,dsaprvs,,5852,disapproves = dsaprvs (d-s-a-pr-v-s)  [4]
-disapproving,d-s-a-pr-v-\-h,dsaprvg,,5852,disapproving = dsaprvg (d-s-a-pr-v-\-h)  [5]
-removals,r-e-m-u-l-s,remuls,,5930,removals = remuls (r-e-m-u-l-s)  [2]
-functionaries,f-nk-r-e-s,fqres,,6026,functionaries = fqres (f-nk-r-e-s)  [8]
-functionary,f-nk-r-e,fqre,,6026,functionary = fqre (f-nk-r-e)  [7]
-functioned,f-nk-d,fqd,,6026,functioned = fqd (f-nk-d)  [7]
-functioning,f-nk-\-h,fqg,,6026,functioning = fqg (f-nk-\-h)  [8]
-functions,f-nk-s,fqs,,6026,functions = fqs (f-nk-s)  [6]
-modification,m-o-d-\-f,modfi,i,6086,modification = modfi (m-o-d-\-f)  [7]
-modifications,m-o-d-\-f-s,modfs,,6086,modifications = modfs (m-o-d-\-f-s)  [8]
-modified,m-o-df-d,modfd,,6086,modified = modfd (m-o-df-d)  [3]
-modifies,m-o-df-s,modfso,o,6086,modifies = modfso (m-o-df-s)  [2]
-modifying,m-o-df-\-h,modfg,,6086,modifying = modfg (m-o-df-\-h)  [4]
-extracted,e-s-/-k-d,xkd,,6269,extracted = xkd (e-s-/-k-d)  [6]
-extracting,e-s-/-k-\-h,xkg,,6269,extracting = xkg (e-s-/-k-\-h)  [7]
-extraction,e-s-/-k-sh,xkz,,6269,extraction = xkz (e-s-/-k-sh)  [7]
-extractions,e-s-/-k-sh-s,xkzs,,6269,extractions = xkzs (e-s-/-k-sh-s)  [7]
-extracts,e-s-/-k-s,xks,,6269,extracts = xks (e-s-/-k-s)  [5]
-executable,e-s2-k-b,xkb,,6515,executable = xkb (e-s2-k-b)  [7]
-executables,e-s2-k-b-s,xkbs,,6515,executables = xkbs (e-s2-k-b-s)  [7]
-executes,e-s2-k-s,xkso,o,6515,executes = xkso (e-s2-k-s)  [4]
-executing,e-s2-k-\-h,xkog,o,6515,executing = xkog (e-s2-k-\-h)  [5]
-conversant,k-v-e-s-nt,kvesnt,,6622,conversant = kvesnt (k-v-e-s-nt)  [4]
-conversantly,k-v-e-s-nt-e,kvesnte,,6622,conversantly = kvesnte (k-v-e-s-nt-e)  [5]
-conversed,k-v-e-s-d,kvesd,,6622,conversed = kvesd (k-v-e-s-d)  [4]
-conversely,k-v-e-s-e,kvese,,6622,conversely = kvese (k-v-e-s-e)  [5]
-converses,k-v-e-s-s,kvess,,6622,converses = kvess (k-v-e-s-s)  [4]
-conversing,k-v-e-s-\-h,kvesg,,6622,conversing = kvesg (k-v-e-s-\-h)  [5]
-devices,df-i-s-s,dfiss,,6640,devices = dfiss (df-i-s-s)  [2]
-definitions,df-n-sh-s,dfnzs,,6911,definitions = dfnzs (df-n-sh-s)  [6]
-identities,a-tn-t-e-s,atntes,,6977,identities = atntes (a-tn-t-e-s)  [4]
-illogic,e-l-o-j-k,elojk,,7324,illogic = elojk (e-l-o-j-k)  [2]
-illogical,e-l-o-j-/-k,elojko,o,7324,illogical = elojko (e-l-o-j-/-k)  [3]
-kicked,k-e-k-d,kekd,,7324,kicked = kekd (k-e-k-d)  [2]
-kicking,k-e-k-\-h,kekg,,7324,kicking = kekg (k-e-k-\-h)  [3]
-kicks,k-e-k-s,keks,,7324,kicks = keks (k-e-k-s)  [1]
-logic,l-o-j-k,lojk,,7324,logic = lojk (l-o-j-k)  [1]
-logical,l-o-j-/-k,lojko,o,7324,logical = lojko (l-o-j-/-k)  [2]
-constance,k-s2-tn-s,kstnso,o,7666,constance = kstnso (k-s2-tn-s)  [3]
-constancy,k-s2-tn-s-e,kstnse,,7666,constancy = kstnse (k-s2-tn-s-e)  [3]
-proposition,pr-p-o-sh,prpoz,,7854,proposition = prpoz (pr-p-o-sh)  [6]
-propositioned,pr-p-o-sh-d,prpozd,,7854,propositioned = prpozd (pr-p-o-sh-d)  [7]
-propositioning,pr-p-o-sh-\-h,prpozg,,7854,propositioning = prpozg (pr-p-o-sh-\-h)  [8]
-propositions,pr-p-o-sh-s,prpozs,,7854,propositions = prpozs (pr-p-o-sh-s)  [6]
-supposition,s-p-o-sh,spoz,,7854,supposition = spoz (s-p-o-sh)  [7]
-suppositions,s-p-o-sh-s,spozs,,7854,suppositions = spozs (s-p-o-sh-s)  [7]
-ticketed,t-e-k-e-t-d,teketd,,7883,ticketed = teketd (t-e-k-e-t-d)  [2]
-ticketing,t-e-k-e-t-\-h,teketg,,7883,ticketing = teketg (t-e-k-e-t-\-h)  [3]
-delete,d-l-e-t,dlet,,8274,delete = dlet (d-l-e-t)  [2]
-deleted,d-l-e-t-d,dletd,,8274,deleted = dletd (d-l-e-t-d)  [2]
-deletes,d-l-e-t-s,dlets,,8274,deletes = dlets (d-l-e-t-s)  [2]
-deleting,d-l-e-t-\-h,dletg,,8274,deleting = dletg (d-l-e-t-\-h)  [3]
-productivity,pr-o-k-v-t-e,prokvte,,8288,productivity = prokvte (pr-o-k-v-t-e)  [5]
-import,m-p-o-t,mpot,,8595,import = mpot (m-p-o-t)  [2]
-importation,m-p-o-t-sh,mpotz,,8595,importation = mpotz (m-p-o-t-sh)  [6]
-imported,m-p-o-t-d,mpotd,,8595,imported = mpotd (m-p-o-t-d)  [3]
-importer,m-p-o-t-r,mpotr,,8595,importer = mpotr (m-p-o-t-r)  [3]
-importers,m-p-o-t-r-s,mpotrs,,8595,importers = mpotrs (m-p-o-t-r-s)  [3]
-importing,m-p-o-t-\-h,mpotg,,8595,importing = mpotg (m-p-o-t-\-h)  [4]
-imports,m-p-o-t-s,mpots,,8595,imports = mpots (m-p-o-t-s)  [2]
-environmental,n-v-i-r-mn-l,nvirmml,,8705,environmental = nvirmml (n-v-i-r-mn-l)  [6]
-environments,n-v-i-r-mn-s,nvirmms,,8705,environments = nvirmms (n-v-i-r-mn-s)  [5]
-combines,k-b-i-s,kbis,,8790,combines = kbis (k-b-i-s)  [4]
-combining,k-b-i-\-h,kbig,,8790,combining = kbig (k-b-i-\-h)  [5]
-reschedule,r-s2-k-e-d-l,rskedl,,8811,reschedule = rskedl (r-s2-k-e-d-l)  [4]
-rescheduled,r-s2-k-e-d-l-d,rskedld,,8811,rescheduled = rskedld (r-s2-k-e-d-l-d)  [4]
-reschedules,r-s2-k-e-d-l-s,rskedls,,8811,reschedules = rskedls (r-s2-k-e-d-l-s)  [4]
-rescheduling,r-s2-k-e-d-l-\-h,rskedlg,,8811,rescheduling = rskedlg (r-s2-k-e-d-l-\-h)  [5]
-schedules,s2-k-e-d-l-s,skedls,,8811,schedules = skedls (s2-k-e-d-l-s)  [3]
-scheduling,s2-k-e-d-l-\-h,skedlg,,8811,scheduling = skedlg (s2-k-e-d-l-\-h)  [4]
-edited,e-td-d,eddd,o,8828,edited = eddd (e-td-d)  [2]
-editing,e-td-\-h,eddg,,8828,editing = eddg (e-td-\-h)  [3]
-edits,e-td-s,edds,o,8828,edits = edds (e-td-s)  [1]
-instructing,n-s-/-k-\-h,nskg,,8912,instructing = nskg (n-s-/-k-\-h)  [7]
-instructive,n-s-/-k-v,nskv,,8912,instructive = nskv (n-s-/-k-v)  [7]
-instructively,n-s-/-k-v-e,nskve,,8912,instructively = nskve (n-s-/-k-v-e)  [8]
-instructs,n-s-/-k-s,nsks,,8912,instructs = nsks (n-s-/-k-s)  [5]
-inoperative,n-o-pr-a-\-v,noprav,,9085,inoperative = noprav (n-o-pr-a-\-v)  [5]
-operated,o-pr-a-d,oprad,,9085,operated = oprad (o-pr-a-d)  [3]
-operates,o-pr-a-s,opras,,9085,operates = opras (o-pr-a-s)  [3]
-operating,o-pr-a-\-h,oprag,,9085,operating = oprag (o-pr-a-\-h)  [4]
-operative,o-pr-a-\-v,oprav,,9085,operative = oprav (o-pr-a-\-v)  [4]
-operatives,o-pr-a-\-v-s,opravs,,9085,operatives = opravs (o-pr-a-\-v-s)  [4]
-operator,o-pr-a-\-r,oprar,,9085,operator = oprar (o-pr-a-\-r)  [3]
-operators,o-pr-a-\-r-s,oprars,,9085,operators = oprars (o-pr-a-\-r-s)  [3]
-invent,n-v-nt,nvnt,,9171,invent = nvnt (n-v-nt)  [2]
-invented,n-v-nt-d,nvntd,,9171,invented = nvntd (n-v-nt-d)  [3]
-inventing,n-v-nt-\-h,nvntg,,9171,inventing = nvntg (n-v-nt-\-h)  [4]
-invention,n-v-n-sh,nvnsh,,9171,invention = nvnsh (n-v-n-sh)  [4]
-inventions,n-v-n-sh-s,nvnshs,,9171,inventions = nvnshs (n-v-n-sh-s)  [4]
-inventive,n-v-nt-v,nvntv,,9171,inventive = nvntv (n-v-nt-v)  [4]
-inventiveness,n-v-nt-v-n-s,nvntvns,,9171,inventiveness = nvntvns (n-v-nt-v-n-s)  [6]
-inventor,n-v-nt-r,nvntr,,9171,inventor = nvntr (n-v-nt-r)  [3]
-inventors,n-v-nt-r-s,nvntrs,,9171,inventors = nvntrs (n-v-nt-r-s)  [3]
-invents,n-v-nt-s,nvnts,,9171,invents = nvnts (n-v-nt-s)  [2]
-presentations,pr-sh-s,przs,,9294,presentations = przs (pr-sh-s)  [9]
-definable,df-i-n-b,dfinb,,9338,definable = dfinb (df-i-n-b)  [4]
-definably,df-i-n-b-e,dfinbe,,9338,definably = dfinbe (df-i-n-b-e)  [3]
-defining,df-i-n-\-h,dfing,,9338,defining = dfing (df-i-n-\-h)  [3]
-buttoned,b-u-tn-d,butnd,,9381,buttoned = butnd (b-u-tn-d)  [3]
-buttonhole,b-u-tn-o-l-^-<-h,butnol,,9381,buttonhole = butnol (b-u-tn-o-l-^-<-h)  [4]
-buttonholed,b-u-tn-o-l-d-^-<-h,butnold,,9381,buttonholed = butnold (b-u-tn-o-l-d-^-<-h)  [4]
-buttonholes,b-u-tn-o-l-s-^-<-h,butnols,,9381,buttonholes = butnols (b-u-tn-o-l-s-^-<-h)  [4]
-buttonholing,b-u-tn-o-l-\-h-^-<-h,butnolg,,9381,buttonholing = butnolg (b-u-tn-o-l-\-h-^-<-h)  [5]
-buttoning,b-u-tn-\-h,butng,,9381,buttoning = butng (b-u-tn-\-h)  [4]
-buttons,b-u-tn-s,butns,,9381,buttons = butns (b-u-tn-s)  [2]
-editorials,e-td-r-l-s,eddrls,,9852,editorials = eddrls (e-td-r-l-s)  [4]
-certificates,s2-e-df-s,sedfs,,9931,certificates = sedfs (s2-e-df-s)  [7]
-outpost,a-u-p-o-s-t,wpost,,10999,outpost = wpost (a-u-p-o-s-t)  [2]
-outposts,a-u-p-o-s-t-s,wposts,,10999,outposts = wposts (a-u-p-o-s-t-s)  [2]
-output,a-u\--p,wp,,10999,output = wp (a-u\--p)  [4]
-outputs,a-u\--p-s,wps,,10999,outputs = wps (a-u\--p-s)  [4]
-outputting,a-u-\-p-\-h,wpg,,10999,outputting = wpg (a-u-\-p-\-h)  [7]
-assign,a-s-i-n,asin,,11390,assign = asin (a-s-i-n)  [2]
-assigning,a-s-i-n-\-h,asing,,11390,assigning = asing (a-s-i-n-\-h)  [4]
-assigns,a-s-i-n-s,asins,,11390,assigns = asins (a-s-i-n-s)  [2]
-rout,r-a-o-t,rwt,,11813,rout = rwt (r-a-o-t)  [1]
-routs,r-a-o-t-s,rwts,,11813,routs = rwts (r-a-o-t-s)  [1]
-profile,pr-f-i-l,prfil,,11816,profile = prfil (pr-f-i-l)  [2]
-profiled,pr-f-i-l-d,prfild,,11816,profiled = prfild (pr-f-i-l-d)  [2]
-profiler,pr-f-i-l-r,prfilr,,11816,profiler = prfilr (pr-f-i-l-r)  [2]
-profilers,pr-f-i-l-r-s,prfilrs,,11816,profilers = prfilrs (pr-f-i-l-r-s)  [2]
-profiles,pr-f-i-l-s,prfils,,11816,profiles = prfils (pr-f-i-l-s)  [2]
-profiling,pr-f-i-l-\-h,prfilg,,11816,profiling = prfilg (pr-f-i-l-\-h)  [3]
-automatically,o-tm-/-a-e,otmae,,12143,automatically = otmae (o-tm-/-a-e)  [8]
-click,k-l-e-k,klek,,12573,click = klek (k-l-e-k)  [1]
-clicked,k-l-e-k-t,klekt,,12573,clicked = klekt (k-l-e-k-t)  [2]
-clicking,k-l-e-k-\-h,klekg,,12573,clicking = klekg (k-l-e-k-\-h)  [3]
-clicks,k-l-e-k-s,kleks,,12573,clicks = kleks (k-l-e-k-s)  [1]
-disorganization,d-s-o-g-sh,dsogz,,12648,disorganization = dsogz (d-s-o-g-sh)  [10]
-disorganize,d-s-o-g,dsog,,12648,disorganize = dsog (d-s-o-g)  [7]
-disorganized,d-s-o-g-d,dsogd,,12648,disorganized = dsogd (d-s-o-g-d)  [7]
-disorganizes,d-s-o-g-s,dsogs,,12648,disorganizes = dsogs (d-s-o-g-s)  [7]
-disorganizing,d-s-o-g-\-h,dsogg,,12648,disorganizing = dsogg (d-s-o-g-\-h)  [8]
-organized,o-g-d,ogd,,12648,organized = ogd (o-g-d)  [6]
-organizer,o-g-r,ogr,,12648,organizer = ogr (o-g-r)  [6]
-organizers,o-g-r-s,ogrs,,12648,organizers = ogrs (o-g-r-s)  [6]
-organizes,o-g-s,ogs,,12648,organizes = ogs (o-g-s)  [6]
-organizing,o-g-\-h,ogg,,12648,organizing = ogg (o-g-\-h)  [7]
-unorganize,n-o-g,nogu,u,12648,unorganize = nogu (n-o-g)  [6]
-unorganized,n-o-g-d,nogd,,12648,unorganized = nogd (n-o-g-d)  [7]
-authoritatively,o-th-rdf-e,ohrdfe,,12938,authoritatively = ohrdfe (o-th-rdf-e)  [9]
-locomotives,l-o-k-m-o-df-s,lokmodfs,,13371,locomotives = lokmodfs (l-o-k-m-o-df-s)  [3]
-symptom,s-e-m-tm,semtm,,13544,symptom = semtm (s-e-m-tm)  [2]
-symptomatic,s-e-m-tm-\-a,semtma,,13544,symptomatic = semtma (s-e-m-tm-\-a)  [5]
-symptoms,s-e-m-tm-s,semtms,,13544,symptoms = semtms (s-e-m-tm-s)  [2]
-shorten,sh-/-n,zn,,14581,shorten = zn (sh-/-n)  [5]
-shortening,sh-/-n-\-h,zng,,14581,shortening = zng (sh-/-n-\-h)  [7]
-shortens,sh-/-n-s,zns,,14581,shortens = zns (sh-/-n-s)  [5]
-workshop,r-k-sh-o-p,rkzop,,14772,workshop = rkzop (r-k-sh-o-p)  [3]
-workshops,r-k-sh-o-p-s,rkzops,,14772,workshops = rkzops (r-k-sh-o-p-s)  [3]
-forthcoming,f-th-k-m-\-h,fhkmg,,15126,forthcoming = fhkmg (f-th-k-m-\-h)  [6]
-reservations,r-s-a-sh-s,rsazs,,15211,reservations = rsazs (r-s-a-sh-s)  [7]
-instructors,n-s-/-k-r-s,nskrs,,16231,instructors = nskrs (n-s-/-k-r-s)  [6]
-verification,v-e-r-\-f,verfo,o,16753,verification = verfo (v-e-r-\-f)  [7]
-verified,v-e-r-f-d,verfd,,16753,verified = verfd (v-e-r-f-d)  [3]
-verifier,v-e-r-f-r,verfr,,16753,verifier = verfr (v-e-r-f-r)  [3]
-verifiers,v-e-r-f-r-s,verfrs,,16753,verifiers = verfrs (v-e-r-f-r-s)  [3]
-verifies,v-e-r-f-s,verfs,,16753,verifies = verfs (v-e-r-f-s)  [3]
-verify,v-e-r-f,verf,,16753,verify = verf (v-e-r-f)  [2]
-verifying,v-e-r-f-\-h,verfg,,16753,verifying = verfg (v-e-r-f-\-h)  [4]
-qualification,k-o-\-f,qofo,o,16962,qualification = qofo (k-o-\-f)  [9]
-qualifications,k-o-\-f-s,qofs,,16962,qualifications = qofs (k-o-\-f-s)  [10]
-qualifies,k-o-f-s,qofs,,16962,qualifies = qofs (k-o-f-s)  [5]
-qualifying,k-o-f-\-h,qofg,,16962,qualifying = qofg (k-o-f-\-h)  [6]
-optional,o-p-sh-l,opzl,,17467,optional = opzl (o-p-sh-l)  [4]
-optionally,o-p-sh-l-e,opzle,,17467,optionally = opzle (o-p-sh-l-e)  [5]
-optioned,o-p-sh-d,opzd,,17467,optioned = opzd (o-p-sh-d)  [4]
-optioning,o-p-sh-\-h,opzg,,17467,optioning = opzg (o-p-sh-\-h)  [5]
-options,o-p-sh-s,opzs,,17467,options = opzs (o-p-sh-s)  [3]
-requisitioned,r-k-e-s-sh-d,rqeszd,,17564,requisitioned = rqeszd (r-k-e-s-sh-d)  [7]
-requisitioning,r-k-e-s-sh-\-h,rqeszg,,17564,requisitioning = rqeszg (r-k-e-s-sh-\-h)  [8]
-requisitions,r-k-e-s-sh-s,rqeszs,,17564,requisitions = rqeszs (r-k-e-s-sh-s)  [6]
-authorization,o-th-r-e-s-a-sh,ohresaz,,17721,authorization = ohresaz (o-th-r-e-s-a-sh)  [6]
-authorizations,o-th-r-e-s-a-sh-s,ohresazs,,17721,authorizations = ohresazs (o-th-r-e-s-a-sh-s)  [6]
-authorizes,o-th-r-i-s-s,ohriss,,17721,authorizes = ohriss (o-th-r-i-s-s)  [4]
-authorizing,o-th-r-i-s-\-h,ohrisg,,17721,authorizing = ohrisg (o-th-r-i-s-\-h)  [5]
-executors,e-s2-k-/-r-s,xkrs,,18142,executors = xkrs (e-s2-k-/-r-s)  [5]
-disagreements,dya-m-s,dyams,,18178,disagreements = dyams (dya-m-s)  [8]
-appreciatively,a-pr-e-sh-/-v-e,aprezve,,18471,appreciatively = aprezve (a-pr-e-sh-/-v-e)  [7]
-requirements,r-k-i-m-s,rqims,,19812,requirements = rqims (r-k-i-m-s)  [7]
-notification,n-o-t-\-f,notf,,20151,notification = notf (n-o-t-\-f)  [8]
-notifications,n-o-t-\-f-s,notfs,,20151,notifications = notfs (n-o-t-\-f-s)  [8]
-notified,n-o-df-d,nodfd,,20151,notified = nodfd (n-o-df-d)  [3]
-notifies,n-o-df-s,nodfs,,20151,notifies = nodfs (n-o-df-s)  [3]
-notifying,n-o-df-\-h,nodfg,,20151,notifying = nodfg (n-o-df-\-h)  [4]
-components,k-p-o-n-s,kpons,,20428,components = kpons (k-p-o-n-s)  [5]
-inventoried,n-v-nt-re-d,nvntred,,20433,inventoried = nvntred (n-v-nt-re-d)  [4]
-inventories,n-v-nt-re-s,nvntres,,20433,inventories = nvntres (n-v-nt-re-s)  [4]
-inventorying,n-v-nt-re-\-h,nvntreg,,20433,inventorying = nvntreg (n-v-nt-re-\-h)  [5]
-disagreeable,dya-b,dyab,,20725,disagreeable = dyab (dya-b)  [8]
-disagreeablely,dya-b-e,dyabe,,20725,disagreeablely = dyabe (dya-b-e)  [9]
-disagreeably,dya-b-e,dyabe,,20725,disagreeably = dyabe (dya-b-e)  [7]
-disagreed,dya-d,dyad,,20725,disagreed = dyad (dya-d)  [5]
-disagreeing,dya-\-h,dyag,,20725,disagreeing = dyag (dya-\-h)  [7]
-disagrees,dya-s,dyas,,20725,disagrees = dyas (dya-s)  [5]
-implement,m-pl-e-m,mplem,,20778,implement = mplem (m-pl-e-m)  [4]
-implementation,m-pl-e-m-a-sh,mplemaz,,20778,implementation = mplemaz (m-pl-e-m-a-sh)  [7]
-implementations,m-pl-e-m-a-sh-s,mplemazs,,20778,implementations = mplemazs (m-pl-e-m-a-sh-s)  [7]
-implemented,m-pl-e-m-d,mplemd,,20778,implemented = mplemd (m-pl-e-m-d)  [5]
-implementing,m-pl-e-m-\-h,mplemg,,20778,implementing = mplemg (m-pl-e-m-\-h)  [6]
-implements,m-pl-e-m-s,mplems,,20778,implements = mplems (m-pl-e-m-s)  [4]
-entail,n-ta-l,ntal,,21539,entail = ntal (n-ta-l)  [2]
-entailed,n-ta-l-d,ntald,,21539,entailed = ntald (n-ta-l-d)  [3]
-entailing,n-ta-l-\-h,ntalg,,21539,entailing = ntalg (n-ta-l-\-h)  [4]
-entails,n-ta-l-s,ntals,,21539,entails = ntals (n-ta-l-s)  [2]
-assignments,a-s2-i-mn-s,asimms,,21884,assignments = asimms (a-s2-i-mn-s)  [5]
-installations,n-s2-t-o-l-a-sh-s,nstolazs,,22364,installations = nstolazs (n-s2-t-o-l-a-sh-s)  [5]
-retrieval,r-\-v-l,rvl,,22760,retrieval = rvl (r-\-v-l)  [6]
-retrievals,r-\-v-l-s,rvls,,22760,retrievals = rvls (r-\-v-l-s)  [6]
-retrieve,r-\-v,rv,,22760,retrieve = rv (r-\-v)  [6]
-retrieved,r-\-v-d,rvd,,22760,retrieved = rvd (r-\-v-d)  [6]
-retrieves,r-\-v-s,rvs,,22760,retrieves = rvs (r-\-v-s)  [6]
-retrieving,r-\-v-\-h,rvg,,22760,retrieving = rvg (r-\-v-\-h)  [7]
-applicants,a-pl-e-k-nt-s,apleknts,,23395,applicants = apleknts (a-pl-e-k-nt-s)  [2]
-invulnerability,n-v-u-l-n-e-r-\-b,nvulnerbo,,24003,invulnerability = nvulnerbo (n-v-u-l-n-e-r-\-b)  [6]
-invulnerable,n-v-u-l-n-e-r-b,nvulnerb,,24003,invulnerable = nvulnerb (n-v-u-l-n-e-r-b)  [4]
-vulnerabilities,v-u-l-n-e-r-\-b-s,vulnerbos,,24003,vulnerabilities = vulnerbos (v-u-l-n-e-r-\-b-s)  [6]
-vulnerability,v-u-l-n-e-r-\-b,vulnerbo,,24003,vulnerability = vulnerbo (v-u-l-n-e-r-\-b)  [5]
-diagnose,d-i-g-n-o-s,dignos,,24781,diagnose = dignos (d-i-g-n-o-s)  [2]
-diagnosed,d-i-g-n-o-s-d,dignosd,,24781,diagnosed = dignosd (d-i-g-n-o-s-d)  [2]
-diagnoses,d-i-g-n-o-s-e-s,dignoses,,24781,diagnoses = dignoses (d-i-g-n-o-s-e-s)  [1]
-diagnosing,d-i-g-n-o-s-\-h,dignosg,,24781,diagnosing = dignosg (d-i-g-n-o-s-\-h)  [3]
-diagnosis,d-i-g-n-o-ss,dignoss,,24781,diagnosis = dignoss (d-i-g-n-o-ss)  [2]
-diagnosises,d-i-g-n-o-ss-s,dignosss,,24781,diagnosises = dignosss (d-i-g-n-o-ss-s)  [3]
-diagnostic,d-i-g-n-\-s-t,dignst,,24781,diagnostic = dignst (d-i-g-n-\-s-t)  [4]
-diagnostician,d-i-g-n-o-s-t-sh,dignostz,,24781,diagnostician = dignostz (d-i-g-n-o-s-t-sh)  [5]
-diagnosticians,d-i-g-n-o-s-t-sh-s,dignostzs,,24781,diagnosticians = dignostzs (d-i-g-n-o-s-t-sh-s)  [5]
-diagnostics,d-i-g-n-\-s-t-s,dignsts,,24781,diagnostics = dignsts (d-i-g-n-\-s-t-s)  [4]
-certifies,s2-e-df-s,sedfs,,25044,certifies = sedfs (s2-e-df-s)  [4]
-certifying,s2-e-df-\-h,sedfg,,25044,certifying = sedfg (s2-e-df-\-h)  [5]
-cooperated,k-o-o-p-d,koopd,,26301,cooperated = koopd (k-o-o-p-d)  [5]
-cooperates,k-o-o-p-s,koops,,26301,cooperates = koops (k-o-o-p-s)  [5]
-cooperating,k-o-o-p-\-h,koopg,,26301,cooperating = koopg (k-o-o-p-\-h)  [6]
-cooperative,k-o-o-p-v,koopv,,26301,cooperative = koopv (k-o-o-p-v)  [6]
-cooperatively,k-o-o-p-v-e,koopve,,26301,cooperatively = koopve (k-o-o-p-v-e)  [7]
-cooperatives,k-o-o-p-v-s,koopvs,,26301,cooperatives = koopvs (k-o-o-p-v-s)  [6]
-monitored,mn-e-t-e2-d,mmeted,,26517,monitored = mmeted (mn-e-t-e2-d)  [3]
-monitoring,mn-e-t-e2-\-h,mmeteg,,26517,monitoring = mmeteg (mn-e-t-e2-\-h)  [4]
-monitors,mn-e-t-e2-s,mmetes,,26517,monitors = mmetes (mn-e-t-e2-s)  [2]
-specified,s-p-e-s-d,spesd,,26856,specified = spesd (s-p-e-s-d)  [4]
-specifies,s-p-e-s-s,spess,,26856,specifies = spess (s-p-e-s-s)  [4]
-specifing,s-p-e-s-\-h,spesg,,26856,specifing = spesg (s-p-e-s-\-h)  [4]
-definitively,df-n-e-df-e,dfnedfe,,26967,definitively = dfnedfe (df-n-e-df-e)  [5]
-shortages,sh-/-j-s,zjs,,27735,shortages = zjs (sh-/-j-s)  [6]
-shortcoming,sh-/-k-m-\-h,zkmg,,27735,shortcoming = zkmg (sh-/-k-m-\-h)  [7]
-shortcomings,sh-/-k-m-\-h-s,zkmgs,,27735,shortcomings = zkmgs (sh-/-k-m-\-h-s)  [7]
-shortness,sh-/-n-e-s,znes,,27735,shortness = znes (sh-/-n-e-s)  [5]
-shortwave,sh-/-u-a-v,zuav,,27735,shortwave = zuav (sh-/-u-a-v)  [5]
-disproved,d-s-pr-v-d,dsprvd,,28203,disproved = dsprvd (d-s-pr-v-d)  [3]
-disproves,d-s-pr-v-s,dsprvs,,28203,disproves = dsprvs (d-s-pr-v-s)  [3]
-disproving,d-s-pr-v-\-h,dsprvg,,28203,disproving = dsprvg (d-s-pr-v-\-h)  [4]
-operatic,o-pr-a-t-k,opratk,,28396,operatic = opratk (o-pr-a-t-k)  [2]
-functionally,f-nk-/-l-e,fqle,,30062,functionally = fqle (f-nk-/-l-e)  [8]
-syntax,s-e-nt-a-x,sentax,,30086,syntax = sentax (s-e-nt-a-x)  [0]
-irrevocable,e-r-v-k-b,ervkb,,30778,irrevocable = ervkb (e-r-v-k-b)  [6]
-irrevocably,e-r-v-k-b-e,ervkbe,,30778,irrevocably = ervkbe (e-r-v-k-b-e)  [5]
-revocable,r-v-k-b,rvkb,,30778,revocable = rvkb (r-v-k-b)  [5]
-revocably,r-v-k-b-e,rvkbe,,30778,revocably = rvkbe (r-v-k-b-e)  [4]
-revocation,r-v-k-a-z,rvkaz,,30778,revocation = rvkaz (r-v-k-a-z)  [5]
-revocations,r-v-k-a-z-s,rvkazs,,30778,revocations = rvkazs (r-v-k-a-z-s)  [5]
-revoke,r-v-k,rvk,,30778,revoke = rvk (r-v-k)  [3]
-revoked,r-v-k-t,rvkt,,30778,revoked = rvkt (r-v-k-t)  [3]
-revokes,r-v-k-s,rvks,,30778,revokes = rvks (r-v-k-s)  [3]
-revoking,r-v-k-\-h,rvkg,,30778,revoking = rvkg (r-v-k-\-h)  [4]
-insecurities,n-s2-e-k-/-r-s,nsekrs,,31677,insecurities = nsekrs (n-s2-e-k-/-r-s)  [6]
-concurrent,k-k-r-e-nt,kkrent,,32396,concurrent = kkrent (k-k-r-e-nt)  [4]
-concurrently,k-k-r-e-nt-e,kkrente,,32396,concurrently = kkrente (k-k-r-e-nt-e)  [5]
-recurrent,r-k-r-e-nt,rkrent,,32396,recurrent = rkrent (r-k-r-e-nt)  [3]
-undercurrent,u-k-r-e-nt,ukrent,,32396,undercurrent = ukrent (u-k-r-e-nt)  [6]
-undercurrents,u-k-r-e-nt-s,ukrents,,32396,undercurrents = ukrents (u-k-r-e-nt-s)  [6]
-doubleday,d-b-d-a,dbda,,32627,doubleday = dbda (d-b-d-a)  [5]
-singe,s-e-n-j,senj,,33893,singe = senj (s-e-n-j)  [1]
-singed,senj-d,senjd,,33893,singed = senjd (senj-d)  [1]
-singes,s-e-n-j-s,senjs,,33893,singes = senjs (s-e-n-j-s)  [1]
-inclusions,e-/-sh-s,ezos,o,37756,inclusions = ezos (e-/-sh-s)  [6]
-installments,n-s2-t-o-l-m-s,nstolms,,38139,installments = nstolms (n-s2-t-o-l-m-s)  [5]
-converged,k-v-e-j-d,kvejd,,38983,converged = kvejd (k-v-e-j-d)  [4]
-converges,k-v-e-j-s,kvejs,,38983,converges = kvejs (k-v-e-j-s)  [4]
-converging,k-v-e-j-\-h,kvejg,,38983,converging = kvejg (k-v-e-j-\-h)  [5]
-installs,n-s2-t-o-l-s,nstols,,39681,installs = nstols (n-s2-t-o-l-s)  [2]
-workroom,r-k-r-m,rkrm,,40538,workroom = rkrm (r-k-r-m)  [4]
-workrooms,r-k-r-m-s,rkrms,,40538,workrooms = rkrms (r-k-r-m-s)  [4]
-requiem,r-e-k-\-n-^-<-e-m,reqem,,41094,requiem = reqem (r-e-k-\-n-^-<-e-m)  [2]
-requiems,r-e-k-\-n-^-<-e-m-s,reqems,,41094,requiems = reqems (r-e-k-\-n-^-<-e-m-s)  [2]
-requite,r-e-k-\-n-^-<-i-t,reqit,,41094,requite = reqit (r-e-k-\-n-^-<-i-t)  [2]
-requited,r-e-k-\-n-^-<-i-t-d,reqitd,,41094,requited = reqitd (r-e-k-\-n-^-<-i-t-d)  [2]
-unrequited,n-r-e-k-\-n-^-<-i-t-d,nreqitd,,41094,unrequited = nreqitd (n-r-e-k-\-n-^-<-i-t-d)  [3]
-caption,k-a-p-sh,kapz,,44771,caption = kapz (k-a-p-sh)  [3]
-captioned,k-a-p-sh-d,kapzd,,44771,captioned = kapzd (k-a-p-sh-d)  [4]
-captioning,k-a-p-sh-\-h,kapzg,,44771,captioning = kapzg (k-a-p-sh-\-h)  [5]
-captions,k-a-p-sh-s,kapzs,,44771,captions = kapzs (k-a-p-sh-s)  [3]
-reorganization,r-o-g-sh,rogz,,47478,reorganization = rogz (r-o-g-sh)  [10]
-reorganized,r-o-g-d,rogd,,47478,reorganized = rogd (r-o-g-d)  [7]
-reorganizes,r-o-g-s,rogs,,47478,reorganizes = rogs (r-o-g-s)  [7]
-reorganizing,r-o-g-\-h,rogg,,47478,reorganizing = rogg (r-o-g-\-h)  [8]
-poorhouse,p-u-u-s2-^-^-^-h,puus,,47516,poorhouse = puus (p-u-u-s2-^-^-^-h)  [5]
-certification,s2-e-df-sh,sedfz,,59944,certification = sedfz (s2-e-df-sh)  [8]
-certifications,s2-e-df-sh-s,sedfzs,,59944,certifications = sedfzs (s2-e-df-sh-s)  [8]
-singles,s2-e-ng-s,segs,,65996,singles = segs (s2-e-ng-s)  [3]
-condition,k-d-sh,kdz,,70330,condition = kdz (k-d-sh)  [6]
-conditional,k-d-sh-l,kdzl,,70330,conditional = kdzl (k-d-sh-l)  [7]
-conditionally,k-d-sh-ye,kdzy,,70330,conditionally = kdzy (k-d-sh-ye)  [9]
-conditioned,k-d-sh-d,kdzd,,70330,conditioned = kdzd (k-d-sh-d)  [7]
-conditioning,k-d-sh-\-h,kdzg,,70330,conditioning = kdzg (k-d-sh-\-h)  [8]
-conditions,k-d-sh-s,kdzs,,70330,conditions = kdzs (k-d-sh-s)  [6]
-unconditional,n-k-d-sh-l,nkdzl,,70330,unconditional = nkdzl (n-k-d-sh-l)  [8]
-unconditionally,n-k-d-sh-y,nkdzy,,70330,unconditionally = nkdzy (n-k-d-sh-y)  [10]
-connecting,k-e-k-\-h,kekgo,o,70334,connecting = kekgo (k-e-k-\-h)  [5]
-connective,k-e-k-v,kekv,,70334,connective = kekv (k-e-k-v)  [6]
-connectives,k-e-k-v-s,kekvs,,70334,connectives = kekvs (k-e-k-v-s)  [6]
-connects,k-e-k-s,kekso,o,70334,connects = kekso (k-e-k-s)  [3]
-correlated,k-o-r-e-l-a-d,korelad,,70352,correlated = korelad (k-o-r-e-l-a-d)  [3]
-correlates,k-o-r-e-l-a-s,korelas,,70352,correlates = korelas (k-o-r-e-l-a-s)  [3]
-correlation,k-o-r-e-l-a-sh,korelaz,,70352,correlation = korelaz (k-o-r-e-l-a-sh)  [4]
-correlations,k-o-r-e-l-a-sh-s,korelazs,,70352,correlations = korelazs (k-o-r-e-l-a-sh-s)  [4]
-deletions,d-l-e-sh-s,dlezs,,70417,deletions = dlezs (d-l-e-sh-s)  [4]
-excluded,e-s-/-d-d,xdd,,70565,excluded = xdd (e-s-/-d-d)  [5]
-excludes,e-s-/-d-s,xds,,70565,excludes = xds (e-s-/-d-s)  [5]
-excluding,e-s-/-d-\-h,xdg,,70565,excluding = xdg (e-s-/-d-\-h)  [6]
-good morning,g-m,gmu,u,70898,good morning = gmu (g-m)  [9]
-inappreciated,e-n-a-pr-e-sh-d,enaprezd,,70910,inappreciated = enaprezd (e-n-a-pr-e-sh-d)  [5]
-questionnaires,k-sh-a2-s,qzas,,71526,questionnaires = qzas (k-sh-a2-s)  [10]
-reconditioned,r-k-d-sh-d,rkdzd,,71538,reconditioned = rkdzd (r-k-d-sh-d)  [8]
-reconditioning,r-k-d-sh-\-h,rkdzg,,71538,reconditioning = rkdzg (r-k-d-sh-\-h)  [9]
-reconditions,r-k-d-sh-s,rkdzs,,71538,reconditions = rkdzs (r-k-d-sh-s)  [7]
-templated,tm-pl-a-d,tmplad,,71659,templated = tmplad (tm-pl-a-d)  [3]
-templates,tm-pl-a-s,tmplas,,71659,templates = tmplas (tm-pl-a-s)  [3]
-templating,tm-pl-a-\-h,tmplag,,71659,templating = tmplag (tm-pl-a-\-h)  [4]
-to be,t-b,tb,,71706,to be = tb (t-b)  [3]
-you can,u-k,uk,,71882,you can = uk (u-k)  [5]
+word,form,qwerd,keyer,chord,usage
+seeing,s-e-\-h,segi,i,egis,6
+sees,s-e-s,seso,,eos,6
+phones,f-o-n-s,fons,,fnos,7
+phoning,f-o-n-\-h,fong,,fgno,7
+downside,d-n-s-i,dnsi,,dins,18
+downsides,d-n-s-i-s,dnsis,,dins,18
+being,b-\-h,bg,,bg,41
+rework,r-e-r-k,rerk,,ekr,132
+reworked,r-e-r-k-d,rerkd,,dekr,132
+reworking,r-e-r-k-\-h,rerkg,,egkr,132
+reworks,r-e-r-k-s,rerks,,ekrs,132
+workable,r-k-b,rkb,,bkr,132
+workably,r-k-b-e,rkbe,,bekr,132
+worked,r-k-d,rkd,,dkr,132
+working,r-k-\-h,rkg,,gkr,132
+workings,r-k-\-h-s,rkgs,,gkrs,132
+works,r-k-s,rks,,krs,132
+I'm,i-m,im,,im,188
+finder,f-i-r,fir,,fir,208
+finders,f-i-r-s,firs,,firs,208
+finding,f-i-\-h,fig,,fgi,208
+findings,f-i-\-h-s,figs,,fgis,208
+finds,f-i-s,fis,,fis,208
+lookup,l-u-k-p,lukp,,klpu,216
+lookups,l-u-k-p-s,lukps,,klpsu,216
+all-nighter,o-n-i-r,onir,,inor,217
+all-nighters,o-n-i-r-s,onirs,,inors,217
+homework,^-h-\-o-m-r-k,homrk,,hkmor,246
+presented,pr-d,prd,,dpr,276
+presenter,pr-r,prr,,pr,276
+presenting,pr-\-h,prg,,gpr,276
+poorer,p-u-r,pur,,pru,282
+poorest,p-u-s-t,pust,,pstu,282
+certainly,s2-e-tn-e,setne,,enst,283
+certainties,s2-e-tn-t-e-s,setntes,,enst,283
+certainty,s2-e-tn-t-e,setnte,,enst,283
+downpour,dn-p-o-r,dnpor,,dnopr,324
+outpouring,a-u-p-o-r-\-h,wporg,,goprw,324
+pour,p-o-r,por,,opr,324
+poured,p-o-r-d,pord,,dopr,324
+pouring,p-o-r-\-h,porg,,gopr,324
+pours,p-o-r-s,pors,,oprs,324
+seconding,s2-e-k-nt-\-h,sekntg,,egknst,373
+secondly,s2-e-k-nt-e,seknte,,eknst,373
+seconds,s2-e-k-nt-s,seknts,,eknst,373
+shortest,^-sh-\-s-t,zst,,stz,422
+shorts,^-sh-\-s,zso,o,osz,422
+shortsighted,^-sh-\s-i-td,zsitd,,distz,422
+shortsightedly,^-sh-\s-i-td-e,zsitde,,deistz,422
+questionable,k-n-b,qnb,,bnq,430
+questioned,k-n-d,qnd,,dnq,430
+questioner,k-n-r,qnr,,nqr,430
+questioning,k-n-\-h,qng,,gnq,430
+questionings,k-n-\-h-s,qngs,,gnqs,430
+questions,k-n-s,qns,,nqs,430
+unquestionable,n-k-n-b,nqnb,,bnq,430
+unquestionably,n-k-n-b-e,nqnbe,,benq,430
+unquestioned,n-k-n-d,nqnd,,dnq,430
+unquestioning,n-k-n-\-h,nqng,,gnq,430
+coming,k-m-\-h,kmg,,gkm,435
+understandable,u-/-s2-tn-b,ustnb,,bnstu,467
+understandably,u-/-s2-tn-b-e,ustnbe,,benstu,467
+understanding,u-/-s2-tn-\-h,ustng,,gnstu,467
+understandings,u-/-s2-tn-s-\-h,ustngs,,gnstu,467
+understands,u-/-s2-tn-s,ustns,,nstu,467
+accountable,a-k-t-b,aktb,,abkt,481
+accountably,a-k-t-b-e,aktbe,,abekt,481
+accounted,a-k-t-d,aktd,,adkt,481
+accounting,a-k-t-\-h,aktg,,agkt,481
+accounts,a-k-t-s,akts,,akst,481
+positioned,p-o-sh-d,pozd,,dopz,556
+positioning,p-o-sh-\-h,pozg,,gopz,556
+positions,p-o-sh-s,pozs,,opsz,556
+sounding,s2-nt-\-h,sntg,,gnst,567
+soundings,s2-nt-\-h-s,sntgs,,gnst,567
+sounds,s2-nt-s,snts,,nst,567
+unsound,n-s2-nt,nsnt,,nst,567
+notebook,n-o-t-b-k,notbk,o,bknot,584
+notebooks,n-o-t-b-k-s,notbks,o,bknost,584
+notes,n-o-t-s,nots,,nost,584
+noting,n-o-t-\-h,notog,o,gnot,584
+importantly,m-p-e,mpe,,emp,598
+serviceable,^-s2-b,sb,,bs,601
+serviceably,^-s2-b-e,sbe,,bes,601
+serviced,^-s2-d,sd,,ds,601
+servicing,^-s2-\-h,sg,,gs,601
+agreements,^-ya-m-s,yams,,amsy,631
+papered,p-a-pr-d,paprd,,adpr,649
+papering,p-a-pr-\-h,paprg,,agpr,649
+paperwork,p-a-pr-k,paprk,,akpr,649
+paperworked,p-a-pr-k-d,paprkd,,adkpr,649
+paperworking,p-a-pr-k-\-h,paprkg,,agkpr,649
+paperworks,p-a-pr-k-s,paprks,,akprs,649
+singled,s2-e-ng-d,segd,,degs,672
+singleton,s2-e-ng-tn,segtn,,egnst,672
+singletons,s2-e-ng-tn-s,segtns,,egnst,672
+singling,s2-e-ng-\-h,segg,,egs,672
+singly,s2-e-ng-e,sege,,egs,672
+captains,k-a-p-tn-s,kaptns,,aknpst,687
+follow up,f-o-p,fop,,fop,696
+follower,f-o-r,foru,u,foru,696
+followers,f-o-r-s,fors,,fors,696
+following,f-o-\-h,fog,,fgo,696
+following up,f-o-p-\-h,fopg,,fgop,696
+config,k-f-e-g,kfeg,,efgk,735
+configed,k-f-e-g-d,kfegd,,defgk,735
+configing,k-f-e-g-\-h,kfegg,,efgk,735
+configs,k-f-e-g-s,kfegs,,efgks,735
+configuration,k-f-e-g-r-sh,kfegrz,,efgkrz,735
+configurations,k-f-e-g-r-sh-s,kfegrzs,,efgkrsz,735
+configure,k-f-e-g-r,kfegr,,efgkr,735
+configured,k-f-e-g-r-d,kfegrd,,defgkr,735
+configures,k-f-e-g-r-s,kfegrs,,efgkrs,735
+configuring,k-f-e-g-r-\-h,kfegrg,,efgkr,735
+disfigure,d-s-f-e-g-r,dsfegr,,defgrs,735
+disfigured,d-s-f-e-g-r-d,dsfegrd,,defgrs,735
+disfigurement,d-s-f-e-g-r-m,dsfegrm,,defgmrs,735
+disfigurements,d-s-f-e-g-r-m-s,dsfegrms,,defgmrs,735
+disfiguring,d-s-f-e-g-r-\-h,dsfegrg,,defgrs,735
+figurative,f-e-g-r-a-df,fegradf,,adefgr,735
+figuratively,f-e-g-r-a-df-e,fegradfe,,adefgr,735
+figures,f-e-g-r-s,fegrs,,efgrs,735
+figuring,f-e-g-r-\-h,fegrg,,efgr,735
+agreed,^-ya-d,yad,,ady,746
+agreeing,^-ya-\-h,yag,,agy,746
+agrees,^-ya-s,yas,,asy,746
+resultant,r-s2-u-nt,rsunt,,nrstu,837
+resulting,r-s2-u-\-h,rsug,,grsu,837
+conversational,k-v-e-sh-l,kvezl,,eklvz,888
+conversations,k-v-e-sh-s,kvezs,,eksvz,888
+directions,d-r-k-sh-s,drkzs,,dkrsz,907
+redirection,r-e-d-r-k-sh,redrkz,,dekrz,907
+redirections,r-e-d-r-k-sh-s,redrkzs,,dekrsz,907
+authorities,o-th2-/-r-s,ohrso,o,hors,938
+authoritys,o-th2-/-r-s,ohrs,,hors,938
+breaking,br-a-k-\-h,brakg,,abgkr,981
+successes,s2-u-k-s,suks,,ksu,1001
+succession,s2-u-k-sh,sukz,,ksuz,1001
+successions,s2-u-k-sh-s,sukzs,,ksuz,1001
+successive,s2-u-k-v,sukv,,ksuv,1001
+successively,s2-u-k-v-e,sukve,,eksuv,1001
+successor,s2-u-k-\-r,sukr,,krsu,1001
+successors,s2-u-k-\-r-s,sukrs,,krsu,1001
+completely,kp-e,kpe,,ekp,1081
+completeness,kp-n-s,kpns,,knps,1081
+completes,kp-s,kps,,kps,1081
+incomplete,n-kp,nkp,,knp,1081
+incompletely,n-kp-e,nkpe,,eknp,1081
+proved,pr-v-d,prvd,,dprv,1144
+proves,pr-v-s,prvs,,prsv,1144
+proving,pr-v-\-h,prvg,,gprv,1144
+surprised,s-e-pr-i-s-d,seprisd,,deiprs,1168
+surprises,s-e-pr-i-s-s,sepriss,,eiprs,1168
+surprising,s-e-pr-i-s-\-h,seprisg,,egiprs,1168
+surprisingly,s-e-pr-i-s-\-h-e,seprisge,,egiprs,1168
+searchability,s2-e-ch-\-b,secbo,o,bceos,1201
+searchable,s2-e-ch-b,secb,,bces,1201
+searchably,s2-e-ch-b-e,secbe,,bces,1201
+searched,s2-e-ch-d,secd,,cdes,1201
+searcher,s2-e-ch-e2,sece,,ces,1201
+searchers,s2-e-ch-e2-s,seces,,ces,1201
+searches,s2-e-ch-s,secs,,ces,1201
+searching,s2-e-ch-\-h,secg,,cegs,1201
+searchlight,s2-e-ch-l-i,secli,,ceils,1201
+searchlights,s2-e-ch-l-i-s,seclis,,ceils,1201
+secured,s2-e-k-r-d,sekrd,,dekrs,1260
+secures,s2-e-k-r-s,sekrs,,ekrs,1260
+securing,s2-e-k-r-\-h,sekrg,,egkrs,1260
+directed,d-r-k-d,drkd,,dkr,1429
+directing,d-r-k-\-h,drkg,,dgkr,1429
+directly,d-r-k-e,drke,,dekr,1429
+directness,d-r-k-n-s,drkns,,dknrs,1429
+directs,d-r-k-s,drks,,dkrs,1429
+redirect,r-e-d-r-k,redrk,,dekr,1429
+redirected,r-e-d-r-k-d,redrkd,,dekr,1429
+redirecting,r-e-d-r-k-\-h,redrkg,,degkr,1429
+redirects,r-e-d-r-k-s,redrks,,dekrs,1429
+addresses,a-d-r-s,adrs,,adrs,1549
+addressing,a-d-r-\-h,adrg,,adgr,1549
+Constantine,k-s2-tn-e-n,kstnen,,eknst,1552
+constantly,k-s2-tn-e,kstne,,eknst,1552
+constants,k-s2-tn-s,kstns,,knst,1552
+interested,^-n-\-s-\-t,nst,,nst,1559
+interesting,^-n-\-s-\-h,nsg,,gns,1575
+interestingly,^-n-\-s-\-g,nsge,,egns,1575
+doubled,d-b-d,dbd,,bd,1600
+doubleing,d-b-\-h,dbg,,bdg,1600
+doubles,d-b-s,dbs,,bds,1600
+doubling,d-b-\-h,dbg,,bdg,1600
+removable,r-e-m-u-b,remub,,bemru,1657
+removables,r-e-m-u-b-s,remubs,,bemrsu,1657
+removably,r-e-m-u-b-e,remube,,bemru,1657
+removed,r-e-m-u-d,remud,,demru,1657
+removes,r-e-m-u-s,remus,,emrsu,1657
+removing,r-e-m-u-\-h,remug,,egmru,1657
+currently,k-r-e-nt-e,krente,,eknrt,1668
+currents,k-r-e-nt-s,krents,,eknrst,1668
+policies,p-o-l-s,pols,,lops,1698
+relations,r-e-l-a-sh-s,relazs,,aelrsz,1704
+relationship,r-e-l-a-sh-\-sh,relazz,,aelrz,1704
+relationships,r-e-l-a-sh-\-sh-s,relazzs,,aelrsz,1704
+qualitative,k-u-df,qudf,,dfqu,1727
+qualitatively,k-u-df-e,qudfe,,defqu,1727
+happened,^-h-\-a-p-n-d,hapnd,,adhnp,1744
+happening,^-h-\-a-p-n-\-h,hapng,,aghnp,1744
+happenings,^-h-\-a-p-n-s\--h,hapngs,,aghnps,1744
+appliance,a-pl-i-n-s,aplins,,ailnps,1758
+appliances,a-pl-i-n-s-s,aplinss,,ailnps,1758
+applicability,a-pl-e-k-\-b,aplekbo,o,abeklop,1758
+applicable,a-pl-e-k-b,aplekb,,abeklp,1758
+applicably,a-pl-e-k-b-e,aplekbe,,abeklp,1758
+applies,a-pl-i-s,aplis,,ailps,1758
+applying,a-pl-i-\-h,aplig,,agilp,1758
+connect,k-e-k,keko,o,eko,1770
+protecting,pr-o-t-e-k-\-h,protekg,,egkoprt,1802
+protective,pr-o-t-e-k-v,protekv,,ekoprtv,1802
+protector,pr-o-t-e-k-r,protekr,,ekoprt,1802
+protectorate,pr-o-t-e-k-r-a,protekra,,aekoprt,1802
+protectorates,pr-o-t-e-k-r-a-s,protekras,,aekoprst,1802
+protectors,pr-o-t-e-k-r-s,protekrs,,ekoprst,1802
+protects,pr-o-t-e-k-s,proteks,,ekoprst,1802
+coupled,k-u-pl-d,kupld,,dklpu,1817
+couples,k-u-pl-s,kupls,,klpsu,1817
+coupling,k-u-pl-\-h,kuplg,,gklpu,1817
+requires,r-k-i-s,rqis,,iqrs,1833
+requiring,r-k-i-\-h,rqig,,giqr,1833
+requisite,r-k-e-s-t,rqesto,o,eoqrst,1833
+requisites,r-k-e-s-t-s,rqests,,eqrst,1833
+parent,p-a-r-e-nt,parento,o,aenoprt,1863
+parentage,p-a-r-e-nt-j,parentj,,aejnprt,1863
+parental,p-a-r-e-nt-l,parentl,o,aelnprt,1863
+transparency,t-\-p-a-r-e-n-s-e,tparense,,aenprst,1863
+transparent,t-\-p-a-r-e-nt,tparent,,aenprt,1863
+transparently,t-\-p-a-r-e-nt-e,tparente,,aenprt,1863
+controlling,^-k-/-l-\-h,klg,,gkl,1869
+controls,^-k-/-l-s,kls,,kls,1869
+singer,s2-e-ng-e2,segeo,o,egos,1922
+singers,s2-e-ng-e2-s,seges,,egs,1922
+singing,s2-e-ng-\-h,seggo,o,egos,1922
+sings,s2-e-ng-s,segso,o,egos,1922
+singular,s2-e-ng-u,segu,,egsu,1922
+singularity,s2-e-ng-u-\-r,segur,,egrsu,1922
+singularly,s2-e-ng-u-e,segueo,o,egosu,1922
+connections,k-e-k-sh-s,kekzs,,eksz,1927
+protections,pr-o-t-e-k-sh-s,protekzs,,ekoprstz,1983
+successfully,s2-u-k-f-e,sukfe,,efksu,2078
+unsuccessful,n-s2-u-k-f,nsukf,,fknsu,2078
+unsuccessfully,n-s2-u-k-f-e,nsukfe,,efknsu,2078
+developments,dfl-m-s,dflms,,dflms,2110
+guideed,g-i-d-d,gidd,,dgi,2141
+guideing,g-i-d-\-h,gidg,,dgi,2141
+guides,g-i-d-s,gids,,dgis,2141
+unrelated,n-r-e-l-a-/-t,nrelat,,aelnrt,2159
+temples,tm-pl-s,tmpls,,lmpst,2206
+sourced,s2-o-s-d,sosd,,dos,2223
+sources,s2-o-s-s,soss,,os,2223
+sourcing,s2-o-s-\-h,sosg,,gos,2223
+referenced,r-f-d,rfd,,dfr,2303
+referencing,r-f-\-h,rfg,,fgr,2303
+wasted,u-a-s2-t-d,uastd,,adstu,2311
+wasteful,u-a-s2-t-f,uastf,,afstu,2311
+wastefully,u-a-s2-t-f-e,uastfe,,aefstu,2311
+wastes,u-a-s2-t-s,uasts,,astu,2311
+wasting,u-a-s2-t-\-h,uastg,,agstu,2311
+limitations,l-e-m-sh-s,lemzs,,elmsz,2368
+agreeably,^-yab-e,yabe,,abey,2378
+suggestions,s2-u-j-s,sujs,,jsu,2382
+maintaining,mn-tn-\-h,mmtng,,gmnt,2559
+maintains,mn-tn-s,mmtns,,mnst,2559
+performed,pr-f-m-d,prfmd,,dfmpr,2589
+performer,pr-f-m-r,prfmr,,fmpr,2589
+performers,pr-f-m-r-s,prfmrs,,fmprs,2589
+performing,pr-f-m-\-h,prfmg,,fgmpr,2589
+performs,pr-f-m-s,prfms,,fmprs,2589
+availability,a-v-a-l-\-b,avalbo,,ablov,2653
+routed,r-u-t-d,rutd,,drtu,2671
+routes,r-u-t-s,rutso,o,orstu,2671
+routing,r-u-t-\-h,rutg,,grtu,2671
+commented,k-mn-t-d,kmmtd,,dkmt,2738
+commenting,k-mn-t-\-h,kmmtg,,gkmt,2738
+comments,k-mn-t-s,kmmts,,kmst,2738
+editions,e-d-sh-s,edzs,,desz,2816
+organizations,o-g-s,ogs,,gos,2829
+executioner,e-s2-k-sh-r,xkzr,,krxz,3011
+executioners,e-s2-k-sh-r-s,xkzrs,,krsxz,3011
+executions,e-s2-k-sh-s,xkzso,o,kosxz,3011
+uncompleted,n-kp-/-t,nkp/t,,/knpt,3023
+standardize,s2-tn-a-d-i-s,stnadis,,adinst,3032
+standardized,s2-tn-a-d-i-s-d,stnadisd,,adinst,3032
+standardizes,s2-tn-a-d-i-s-s,stnadiss,,adinst,3032
+standardizing,s2-tn-a-d-i-s-\-h,stnadisg,,adginst,3032
+standards,s2-tn-a-d-s,stnads,,adnst,3032
+operational,o-pr-a-sh-l,oprazl,,aloprz,3048
+operationally,o-pr-a-sh-l-e,oprazle,,aeloprz,3048
+operations,o-pr-a-sh-s,oprazs,,aoprsz,3048
+securities,s2-e-k-/-r-s,sekrso,o,ekors,3065
+applications,a-pl-sh-s,aplzs,,alpsz,3097
+definitely,df-n-e,dfne,,defn,3128
+includes,e-/-d-s,edos,o,deos,3157
+including,e-/-d-\-h,edog,o,dego,3157
+seeded,s2-e-d-d,sedd,,des,3202
+seeding,s2-e-d-\-h,sedg,,degs,3202
+seeds,s2-e-d-s,seds,,des,3202
+clerked,k-l-r-d,klrd,,dklr,3264
+clerking,k-l-r-\-h,klrg,,gklr,3264
+clerks,k-l-r-s,klrs,,klrs,3264
+picked,p-e-k-t,pekt,,ekpt,3272
+picking,p-e-k-\-h,pekg,,egkp,3272
+picks,p-e-k-s,peks,,ekps,3272
+performances,pr-f-mn-s-s,prfmmss,,fmprs,3320
+detailing,td-a2-\-h,ddag,,adg,3339
+specification,s-p-e-s2-\-f,spesf,,efps,3371
+specifications,s-p-e-s2-\-f-s,spesfs,,efps,3371
+suggesting,s2-u-g-\-h,sugg,,gsu,3432
+suggestive,s2-u-g-v,sugv,,gsuv,3432
+suggestively,s2-u-g-v-e,sugve,,egsuv,3432
+suggestiveness,s2-u-g-v-n-s,sugvns,,gnsuv,3432
+suggests,s2-u-g-s,sugs,,gsu,3432
+resource,r-s2-o-s2,rsos,,ors,3455
+resourceful,r-s2-o-s2-f,rsosf,,fors,3455
+resourcefulness,r-s2-o-s2-f-n-s,rsosfns,,fnors,3455
+occupations,o-kp-s,okps,,kops,3498
+invitations,n-v-e-t-sh-s,nvetzs,,enstvz,3582
+instructional,n-s-/-k-sh-l,nskzl,,klnsz,3748
+instructionally,n-s-/-k-sh-l-e,nskzle,,eklnsz,3748
+instructions,n-s-/-k-sh-s,nskzs,,knsz,3748
+reservable,r-s2-e-v-b,rsevb,,bersv,3764
+reservably,r-s2-e-v-b-e,rsevbe,,bersv,3764
+reserved,r-s2-e-v-d,rsevd,,dersv,3764
+reserves,r-s2-e-v-s,rsevs,,ersv,3764
+reserving,r-s2-e-v-\-h,rsevg,,egrsv,3764
+reservior,r-s2-e-v-o-r-\-<-n,rsevor,,eorsv,3764
+reserviors,r-s2-e-v-o-r-\-<-n-s,rsevors,,eorsv,3764
+compositions,k-p-o-sh-s,kpozs,,kopsz,3767
+decomposition,d-e-k-p-o-sh,dkpoz,,dkopz,3767
+identified,a-tn-df-d,atndfd,,adfnt,3839
+identifies,a-tn-df-s,atndfs,,adfnst,3839
+identifying,a-tn-df-\-h,atndfg,,adfgnt,3839
+solutioned,s2-o-l-sh-d,solzd,,dlosz,3907
+solutioning,s2-o-l-sh-\-h,solzg,,glosz,3907
+solutions,s2-o-l-sh-s,solzs,,losz,3907
+executives,e-s2-e-k-v-s,xekvs,,eksvx,4030
+maximize,m-a-x-m-i-s,maxmis,,aimsx,4077
+maximized,m-a-x-m-i-s-d,maxmisd,,adimsx,4077
+maximizes,m-a-x-m-i-s-s,maxmiss,,aimsx,4077
+maximizing,m-a-x-m-i-s-\-h,maxmisg,,agimsx,4077
+maximo,m-a-x-m-o,maxmo,,amox,4077
+maximums,m-a-x-mn-s,maxmms,,amsx,4077
+products,pr-o-k-s,proks,o,koprs,4118
+editors,e-td-e2-s,eddes,,des,4123
+editorship,e-td-e2-sh,eddez,,dez,4123
+editorships,e-td-e2-sh-s,eddezs,,desz,4123
+improvements,m-pr-s,mprs,,mprs,4173
+captivate,k-a-p-df-a-t,kapdfat,,adfkpt,4183
+captivated,k-a-p-df-a-t-d,kapdfatd,,adfkpt,4183
+captivates,k-a-p-df-a-t-s,kapdfats,,adfkpst,4183
+captivating,k-a-p-df-a-t-\-h,kapdfatg,,adfgkpt,4183
+captive,k-a-p-df,kapdf,,adfkp,4183
+captives,k-a-p-df-s,kapdfs,,adfkps,4183
+captivity,k-a-p-df-t-e,kapdfte,,adefkpt,4183
+captor,k-a-p-t-e,kapte,,aekpt,4183
+captors,k-a-p-t-e-s,kaptes,,aekpst,4183
+capture,k-a-p-t-r,kaptr,,akprt,4183
+captured,k-a-p-t-r-d,kaptrd,,adkprt,4183
+captures,k-a-p-t-r-s,kaptrs,,akprst,4183
+capturing,k-a-p-t-r-\-h,kaptrg,,agkprt,4183
+occupancy,o-kp-n-s-e,okpnse,,eknops,4190
+occupant,o-kp-nt,okpnt,,knopt,4190
+occupants,o-kp-nt-s,okpnts,,knopst,4190
+occupied,o-kp-d,okpd,,dkop,4190
+occupier,o-kp-r,okpr,,kopr,4190
+occupiers,o-kp-r-s,okprs,,koprs,4190
+occupies,o-kp-s,okps,,kops,4190
+occupying,o-kp-\-h,okpg,,gkop,4190
+combinations,k-b-n-sh-s,kbnzs,,bknsz,4193
+limiting,l-e-m-e-t-\-h,lemetg,,eglmt,4396
+limits,l-e-m-e-t-s,lemets,,elmst,4396
+nets,n-e-t-s,nets,,enst,4455
+netted,n-e-t-d,netd,,dent,4455
+netting,n-e-t-\-h,netg,,egnt,4455
+nettle,n-e-t-l,netl,,elnt,4455
+nettled,n-e-t-l-d,netld,,delnt,4455
+nettles,n-e-t-l-s,netls,,elnst,4455
+normally,n-o-m-ye,nomy,,mnoy,4590
+indirectly,nt-r-k-e,ntrke,,eknrt,4696
+converge,k-v-e-j,kvej,,ejkv,4741
+convergence,k-v-e-j-n-s,kvejns,,ejknsv,4741
+convergent,k-v-e-jnt,kvejnt,,ejkntv,4741
+conversion,k-v-e-sh,kvez,,ekvz,4741
+conversions,k-v-e-sh-s,kvezs,,eksvz,4741
+convert,k-v-e2-t,kvet,,ektv,4741
+converted,k-v-e2-t-d,kvetd,,dektv,4741
+convertible,k-v-e2-t-b,kvetb,,bektv,4741
+convertibles,k-v-e2-t-b-s,kvetbs,,bekstv,4741
+converting,k-v-e2-t-\-h,kvetg,,egktv,4741
+converts,k-v-e2-t-s,kvets,,ekstv,4741
+relates,r-e-l-a-s,relas,,aelrs,4800
+appreciated,a-pr-e-sh-d,aprezd,,adeprz,4901
+appreciates,a-pr-e-sh-s,aprezs,,aeprsz,4901
+appreciating,a-pr-e-sh-\-h,aprezg,,aegprz,4901
+researched,r-s2-e-ch-d,rsecd,,cders,4980
+researching,r-s2-e-ch-\-h,rsecg,,cegrs,4980
+researchs,r-s2-e-ch-s,rsecs,,cers,4980
+documentary,d-o-k-m-r-e,dokmre,,dekmor,5069
+documentation,d-o-k-m-sh,dokmz,,dkmoz,5069
+documented,d-o-k-m-d,dokmd,,dkmo,5069
+documenting,d-o-k-m-\-h,dokmg,,dgkmo,5069
+documents,d-o-k-m-s,dokms,,dkmos,5069
+organic,o-g-n-e-k,ognek,,egkno,5141
+organically,o-g-n-\-k-e,ognke,,egkno,5141
+organism,o-g-n-s-m,ognsm,,gmnos,5141
+organisms,o-g-n-s-m-s,ognsms,,gmnos,5141
+organist,o-g-n-e-s,ognes,,egnos,5141
+organs,o-g-n-s,ogns,,gnos,5141
+selections,s-e-l-e-k-sh-s,selekzs,,eklsz,5218
+logged,l-o-g-d,logd,,dglo,5239
+logging,l-o-g-\-h,logg,,glo,5239
+beforehand,b-f-n-t,bfnt,,bfnt,5240
+selecting,s-e-l-e-k-\-h,selekg,,egkls,5294
+selective,s-e-l-e-k-v,selekv,,eklsv,5294
+selectively,s-e-l-e-k-v-e,selekve,,eklsv,5294
+selects,s-e-l-e-k-s,seleks,,ekls,5294
+invited,n-v-i-d,nvid,,dinv,5305
+invites,n-v-i-s,nvis,,insv,5305
+inviting,n-v-i-\-h,nvig,,ginv,5305
+improved,m-pr-d,mprd,,dmpr,5337
+improves,m-pr-s,mprso,o,moprs,5337
+improving,m-pr-\-h,mprg,,gmpr,5337
+improvisation,m-pr-v-e-s-a-sh,mprvesash,,aehmprsv,5337
+improvise,m-pr-v-i-s,mprvis,,imprsv,5337
+improvised,m-pr-v-i-s-d,mprvisd,,dimprsv,5337
+improvises,m-pr-v-i-s-s,mprviss,,imprsv,5337
+improvising,m-pr-v-i-s-\-h,mprvisg,,gimprsv,5337
+unimproved,n-m-pr-d,nmprd,,dmnpr,5337
+availed,a-v-a-l-d,avald,,adlv,5529
+availing,a-v-a-l-\-h,avalg,,aglv,5529
+avails,a-v-a-l-s,avals,,alsv,5529
+approvals,a-pr-v-l-s,aprvls,,alprsv,5616
+disapproval,d-s-a-pr-v-l,daprvl,,adlprv,5616
+directories,d-r-k-/-r-e-s,drkres,,dekrs,5660
+directors,d-r-k-/-r-s,drkrs,,dkrs,5660
+directory,d-r-k-/-r-e,drkre,,dekr,5660
+redirector,r-e-d-r-k-/-r,redrkr,,dekr,5660
+redirectors,r-e-d-r-k-/-r-s,redrkrs,,dekrs,5660
+networked,n-e-t-r-k-d,netrkd,,deknrt,5683
+networking,n-e-t-r-k-\-h,netrkg,,egknrt,5683
+networks,n-e-t-r-k-s,netrks,,eknrst,5683
+workman,r-k-mn,rkmmu,u,kmru,5688
+workmanlike,r-k-mn-l,rkmml,,klmr,5688
+workmanship,r-k-mn-sh,rkmnz,u,kmnrz,5688
+developed,dfl-d,dfld,,dfl,5759
+developer,dfl-r,dflr,,dflr,5759
+developers,dfl-r-s,dflrs,,dflrs,5759
+developing,dfl-\-h,dflg,,dfgl,5759
+develops,dfl-s,dfls,,dfls,5759
+patterned,p-a-tn-d,patnd,,adnpt,5806
+patterning,p-a-tn-\-h,patng,o,agnpt,5806
+approved,a-pr-v-d,aprvd,,adprv,5852
+approves,a-pr-v-s,aprvs,,aprsv,5852
+approving,a-pr-v-\-h,aprvg,,agprv,5852
+approvingly,a-pr-v-\-h-e,aprvge,,aegprv,5852
+disapprove,d-s-a-pr-v,dsaprv,,adprsv,5852
+disapproved,d-s-a-pr-v-d,dsaprvd,,adprsv,5852
+disapproves,d-s-a-pr-v-s,dsaprvs,,adprsv,5852
+disapproving,d-s-a-pr-v-\-h,dsaprvg,,adgprsv,5852
+removals,r-e-m-u-l-s,remuls,,elmrsu,5930
+functionaries,f-nk-r-e-s,fqres,,efqrs,6026
+functionary,f-nk-r-e,fqre,,efqr,6026
+functioned,f-nk-d,fqd,,dfq,6026
+functioning,f-nk-\-h,fqg,,fgq,6026
+functions,f-nk-s,fqs,,fqs,6026
+modification,m-o-d-\-f,modfi,i,dfimo,6086
+modifications,m-o-d-\-f-s,modfs,,dfmos,6086
+modified,m-o-df-d,modfd,,dfmo,6086
+modifies,m-o-df-s,modfso,o,dfmos,6086
+modifying,m-o-df-\-h,modfg,,dfgmo,6086
+extracted,e-s-/-k-d,xkd,,dkx,6269
+extracting,e-s-/-k-\-h,xkg,,gkx,6269
+extraction,e-s-/-k-sh,xkz,,kxz,6269
+extractions,e-s-/-k-sh-s,xkzs,,ksxz,6269
+extracts,e-s-/-k-s,xks,,ksx,6269
+executable,e-s2-k-b,xkb,,bkx,6515
+executables,e-s2-k-b-s,xkbs,,bksx,6515
+executes,e-s2-k-s,xkso,o,kosx,6515
+executing,e-s2-k-\-h,xkog,o,gkox,6515
+conversant,k-v-e-s-nt,kvesnt,,eknstv,6622
+conversantly,k-v-e-s-nt-e,kvesnte,,eknstv,6622
+conversed,k-v-e-s-d,kvesd,,deksv,6622
+conversely,k-v-e-s-e,kvese,,eksv,6622
+converses,k-v-e-s-s,kvess,,eksv,6622
+conversing,k-v-e-s-\-h,kvesg,,egksv,6622
+devices,df-i-s-s,dfiss,,dfis,6640
+definitions,df-n-sh-s,dfnzs,,dfnsz,6911
+identities,a-tn-t-e-s,atntes,,aenst,6977
+illogic,e-l-o-j-k,elojk,,ejklo,7324
+illogical,e-l-o-j-/-k,elojko,o,ejklo,7324
+kicked,k-e-k-d,kekd,,dek,7324
+kicking,k-e-k-\-h,kekg,,egk,7324
+kicks,k-e-k-s,keks,,eks,7324
+logic,l-o-j-k,lojk,,jklo,7324
+logical,l-o-j-/-k,lojko,o,jklo,7324
+constance,k-s2-tn-s,kstnso,o,knost,7666
+constancy,k-s2-tn-s-e,kstnse,,eknst,7666
+proposition,pr-p-o-sh,prpoz,,oprz,7854
+propositioned,pr-p-o-sh-d,prpozd,,doprz,7854
+propositioning,pr-p-o-sh-\-h,prpozg,,goprz,7854
+propositions,pr-p-o-sh-s,prpozs,,oprsz,7854
+supposition,s-p-o-sh,spoz,,opsz,7854
+suppositions,s-p-o-sh-s,spozs,,opsz,7854
+ticketed,t-e-k-e-t-d,teketd,,dekt,7883
+ticketing,t-e-k-e-t-\-h,teketg,,egkt,7883
+delete,d-l-e-t,dlet,,delt,8274
+deleted,d-l-e-t-d,dletd,,delt,8274
+deletes,d-l-e-t-s,dlets,,delst,8274
+deleting,d-l-e-t-\-h,dletg,,deglt,8274
+productivity,pr-o-k-v-t-e,prokvte,,ekoprtv,8288
+import,m-p-o-t,mpot,,mopt,8595
+importation,m-p-o-t-sh,mpotz,,moptz,8595
+imported,m-p-o-t-d,mpotd,,dmopt,8595
+importer,m-p-o-t-r,mpotr,,moprt,8595
+importers,m-p-o-t-r-s,mpotrs,,moprst,8595
+importing,m-p-o-t-\-h,mpotg,,gmopt,8595
+imports,m-p-o-t-s,mpots,,mopst,8595
+environmental,n-v-i-r-mn-l,nvirmml,,ilmnrv,8705
+environments,n-v-i-r-mn-s,nvirmms,,imnrsv,8705
+combines,k-b-i-s,kbis,,biks,8790
+combining,k-b-i-\-h,kbig,,bgik,8790
+reschedule,r-s2-k-e-d-l,rskedl,,deklrs,8811
+rescheduled,r-s2-k-e-d-l-d,rskedld,,deklrs,8811
+reschedules,r-s2-k-e-d-l-s,rskedls,,deklrs,8811
+rescheduling,r-s2-k-e-d-l-\-h,rskedlg,,degklrs,8811
+schedules,s2-k-e-d-l-s,skedls,,dekls,8811
+scheduling,s2-k-e-d-l-\-h,skedlg,,degkls,8811
+edited,e-td-d,eddd,o,de,8828
+editing,e-td-\-h,eddg,,deg,8828
+edits,e-td-s,edds,o,des,8828
+instructing,n-s-/-k-\-h,nskg,,gkns,8912
+instructive,n-s-/-k-v,nskv,,knsv,8912
+instructively,n-s-/-k-v-e,nskve,,eknsv,8912
+instructs,n-s-/-k-s,nsks,,kns,8912
+inoperative,n-o-pr-a-\-v,noprav,,anoprv,9085
+operated,o-pr-a-d,oprad,,adopr,9085
+operates,o-pr-a-s,opras,,aoprs,9085
+operating,o-pr-a-\-h,oprag,,agopr,9085
+operative,o-pr-a-\-v,oprav,,aoprv,9085
+operatives,o-pr-a-\-v-s,opravs,,aoprsv,9085
+operator,o-pr-a-\-r,oprar,,aopr,9085
+operators,o-pr-a-\-r-s,oprars,,aoprs,9085
+invent,n-v-nt,nvnt,,ntv,9171
+invented,n-v-nt-d,nvntd,,dntv,9171
+inventing,n-v-nt-\-h,nvntg,,gntv,9171
+invention,n-v-n-sh,nvnsh,,hnsv,9171
+inventions,n-v-n-sh-s,nvnshs,,hnsv,9171
+inventive,n-v-nt-v,nvntv,,ntv,9171
+inventiveness,n-v-nt-v-n-s,nvntvns,,nstv,9171
+inventor,n-v-nt-r,nvntr,,nrtv,9171
+inventors,n-v-nt-r-s,nvntrs,,nrstv,9171
+invents,n-v-nt-s,nvnts,,nstv,9171
+presentations,pr-sh-s,przs,,prsz,9294
+definable,df-i-n-b,dfinb,,bdfin,9338
+definably,df-i-n-b-e,dfinbe,,bdefin,9338
+defining,df-i-n-\-h,dfing,,dfgin,9338
+buttoned,b-u-tn-d,butnd,,bdntu,9381
+buttonhole,b-u-tn-o-l-^-<-h,butnol,,blnotu,9381
+buttonholed,b-u-tn-o-l-d-^-<-h,butnold,,bdlnotu,9381
+buttonholes,b-u-tn-o-l-s-^-<-h,butnols,,blnostu,9381
+buttonholing,b-u-tn-o-l-\-h-^-<-h,butnolg,,bglnotu,9381
+buttoning,b-u-tn-\-h,butng,,bgntu,9381
+buttons,b-u-tn-s,butns,,bnstu,9381
+editorials,e-td-r-l-s,eddrls,,delrs,9852
+certificates,s2-e-df-s,sedfs,,defs,9931
+outpost,a-u-p-o-s-t,wpost,,opstw,10999
+outposts,a-u-p-o-s-t-s,wposts,,opstw,10999
+output,a-u\--p,wp,,pw,10999
+outputs,a-u\--p-s,wps,,psw,10999
+outputting,a-u-\-p-\-h,wpg,,gpw,10999
+assign,a-s-i-n,asin,,ains,11390
+assigning,a-s-i-n-\-h,asing,,agins,11390
+assigns,a-s-i-n-s,asins,,ains,11390
+rout,r-a-o-t,rwt,,rtw,11813
+routs,r-a-o-t-s,rwts,,rstw,11813
+profile,pr-f-i-l,prfil,,filpr,11816
+profiled,pr-f-i-l-d,prfild,,dfilpr,11816
+profiler,pr-f-i-l-r,prfilr,,filpr,11816
+profilers,pr-f-i-l-r-s,prfilrs,,filprs,11816
+profiles,pr-f-i-l-s,prfils,,filprs,11816
+profiling,pr-f-i-l-\-h,prfilg,,fgilpr,11816
+automatically,o-tm-/-a-e,otmae,,aemot,12143
+click,k-l-e-k,klek,,ekl,12573
+clicked,k-l-e-k-t,klekt,,eklt,12573
+clicking,k-l-e-k-\-h,klekg,,egkl,12573
+clicks,k-l-e-k-s,kleks,,ekls,12573
+disorganization,d-s-o-g-sh,dsogz,,dgosz,12648
+disorganize,d-s-o-g,dsog,,dgos,12648
+disorganized,d-s-o-g-d,dsogd,,dgos,12648
+disorganizes,d-s-o-g-s,dsogs,,dgos,12648
+disorganizing,d-s-o-g-\-h,dsogg,,dgos,12648
+organized,o-g-d,ogd,,dgo,12648
+organizer,o-g-r,ogr,,gor,12648
+organizers,o-g-r-s,ogrs,,gors,12648
+organizes,o-g-s,ogs,,gos,12648
+organizing,o-g-\-h,ogg,,go,12648
+unorganize,n-o-g,nogu,u,gnou,12648
+unorganized,n-o-g-d,nogd,,dgno,12648
+authoritatively,o-th-rdf-e,ohrdfe,,defhor,12938
+locomotives,l-o-k-m-o-df-s,lokmodfs,,dfklmos,13371
+symptom,s-e-m-tm,semtm,,emst,13544
+symptomatic,s-e-m-tm-\-a,semtma,,aemst,13544
+symptoms,s-e-m-tm-s,semtms,,emst,13544
+shorten,sh-/-n,zn,,nz,14581
+shortening,sh-/-n-\-h,zng,,gnz,14581
+shortens,sh-/-n-s,zns,,nsz,14581
+workshop,r-k-sh-o-p,rkzop,,koprz,14772
+workshops,r-k-sh-o-p-s,rkzops,,koprsz,14772
+forthcoming,f-th-k-m-\-h,fhkmg,,fghkm,15126
+reservations,r-s-a-sh-s,rsazs,,arsz,15211
+instructors,n-s-/-k-r-s,nskrs,,knrs,16231
+verification,v-e-r-\-f,verfo,o,eforv,16753
+verified,v-e-r-f-d,verfd,,defrv,16753
+verifier,v-e-r-f-r,verfr,,efrv,16753
+verifiers,v-e-r-f-r-s,verfrs,,efrsv,16753
+verifies,v-e-r-f-s,verfs,,efrsv,16753
+verify,v-e-r-f,verf,,efrv,16753
+verifying,v-e-r-f-\-h,verfg,,efgrv,16753
+qualification,k-o-\-f,qofo,o,foq,16962
+qualifications,k-o-\-f-s,qofs,,foqs,16962
+qualifies,k-o-f-s,qofs,,foqs,16962
+qualifying,k-o-f-\-h,qofg,,fgoq,16962
+optional,o-p-sh-l,opzl,,lopz,17467
+optionally,o-p-sh-l-e,opzle,,elopz,17467
+optioned,o-p-sh-d,opzd,,dopz,17467
+optioning,o-p-sh-\-h,opzg,,gopz,17467
+options,o-p-sh-s,opzs,,opsz,17467
+requisitioned,r-k-e-s-sh-d,rqeszd,,deqrsz,17564
+requisitioning,r-k-e-s-sh-\-h,rqeszg,,egqrsz,17564
+requisitions,r-k-e-s-sh-s,rqeszs,,eqrsz,17564
+authorization,o-th-r-e-s-a-sh,ohresaz,,aehorsz,17721
+authorizations,o-th-r-e-s-a-sh-s,ohresazs,,aehorsz,17721
+authorizes,o-th-r-i-s-s,ohriss,,hiors,17721
+authorizing,o-th-r-i-s-\-h,ohrisg,,ghiors,17721
+executors,e-s2-k-/-r-s,xkrs,,krsx,18142
+disagreements,dya-m-s,dyams,,admsy,18178
+appreciatively,a-pr-e-sh-/-v-e,aprezve,,aeprvz,18471
+requirements,r-k-i-m-s,rqims,,imqrs,19812
+notification,n-o-t-\-f,notf,,fnot,20151
+notifications,n-o-t-\-f-s,notfs,,fnost,20151
+notified,n-o-df-d,nodfd,,dfno,20151
+notifies,n-o-df-s,nodfs,,dfnos,20151
+notifying,n-o-df-\-h,nodfg,,dfgno,20151
+components,k-p-o-n-s,kpons,,knops,20428
+inventoried,n-v-nt-re-d,nvntred,,denrtv,20433
+inventories,n-v-nt-re-s,nvntres,,enrstv,20433
+inventorying,n-v-nt-re-\-h,nvntreg,,egnrtv,20433
+disagreeable,dya-b,dyab,,abdy,20725
+disagreeablely,dya-b-e,dyabe,,abdey,20725
+disagreeably,dya-b-e,dyabe,,abdey,20725
+disagreed,dya-d,dyad,,ady,20725
+disagreeing,dya-\-h,dyag,,adgy,20725
+disagrees,dya-s,dyas,,adsy,20725
+implement,m-pl-e-m,mplem,,elmp,20778
+implementation,m-pl-e-m-a-sh,mplemaz,,aelmpz,20778
+implementations,m-pl-e-m-a-sh-s,mplemazs,,aelmpsz,20778
+implemented,m-pl-e-m-d,mplemd,,delmp,20778
+implementing,m-pl-e-m-\-h,mplemg,,eglmp,20778
+implements,m-pl-e-m-s,mplems,,elmps,20778
+entail,n-ta-l,ntal,,alnt,21539
+entailed,n-ta-l-d,ntald,,adlnt,21539
+entailing,n-ta-l-\-h,ntalg,,aglnt,21539
+entails,n-ta-l-s,ntals,,alnst,21539
+assignments,a-s2-i-mn-s,asimms,,aims,21884
+installations,n-s2-t-o-l-a-sh-s,nstolazs,,alnostz,22364
+retrieval,r-\-v-l,rvl,,lrv,22760
+retrievals,r-\-v-l-s,rvls,,lrsv,22760
+retrieve,r-\-v,rv,,rv,22760
+retrieved,r-\-v-d,rvd,,drv,22760
+retrieves,r-\-v-s,rvs,,rsv,22760
+retrieving,r-\-v-\-h,rvg,,grv,22760
+applicants,a-pl-e-k-nt-s,apleknts,,aeklnpst,23395
+invulnerability,n-v-u-l-n-e-r-\-b,nvulnerbo,,belnoruv,24003
+invulnerable,n-v-u-l-n-e-r-b,nvulnerb,,belnruv,24003
+vulnerabilities,v-u-l-n-e-r-\-b-s,vulnerbos,,belnorsuv,24003
+vulnerability,v-u-l-n-e-r-\-b,vulnerbo,,belnoruv,24003
+diagnose,d-i-g-n-o-s,dignos,,dginos,24781
+diagnosed,d-i-g-n-o-s-d,dignosd,,dginos,24781
+diagnoses,d-i-g-n-o-s-e-s,dignoses,,deginos,24781
+diagnosing,d-i-g-n-o-s-\-h,dignosg,,dginos,24781
+diagnosis,d-i-g-n-o-ss,dignoss,,dginos,24781
+diagnosises,d-i-g-n-o-ss-s,dignosss,,dginos,24781
+diagnostic,d-i-g-n-\-s-t,dignst,,dginst,24781
+diagnostician,d-i-g-n-o-s-t-sh,dignostz,,dginostz,24781
+diagnosticians,d-i-g-n-o-s-t-sh-s,dignostzs,,dginostz,24781
+diagnostics,d-i-g-n-\-s-t-s,dignsts,,dginst,24781
+certifies,s2-e-df-s,sedfs,,defs,25044
+certifying,s2-e-df-\-h,sedfg,,defgs,25044
+cooperated,k-o-o-p-d,koopd,,dkop,26301
+cooperates,k-o-o-p-s,koops,,kops,26301
+cooperating,k-o-o-p-\-h,koopg,,gkop,26301
+cooperative,k-o-o-p-v,koopv,,kopv,26301
+cooperatively,k-o-o-p-v-e,koopve,,ekopv,26301
+cooperatives,k-o-o-p-v-s,koopvs,,kopsv,26301
+monitored,mn-e-t-e2-d,mmeted,,demt,26517
+monitoring,mn-e-t-e2-\-h,mmeteg,,egmt,26517
+monitors,mn-e-t-e2-s,mmetes,,emst,26517
+specified,s-p-e-s-d,spesd,,deps,26856
+specifies,s-p-e-s-s,spess,,eps,26856
+specifing,s-p-e-s-\-h,spesg,,egps,26856
+definitively,df-n-e-df-e,dfnedfe,,defn,26967
+shortages,sh-/-j-s,zjs,,jsz,27735
+shortcoming,sh-/-k-m-\-h,zkmg,,gkmz,27735
+shortcomings,sh-/-k-m-\-h-s,zkmgs,,gkmsz,27735
+shortness,sh-/-n-e-s,znes,,ensz,27735
+shortwave,sh-/-u-a-v,zuav,,auvz,27735
+disproved,d-s-pr-v-d,dsprvd,,dprsv,28203
+disproves,d-s-pr-v-s,dsprvs,,dprsv,28203
+disproving,d-s-pr-v-\-h,dsprvg,,dgprsv,28203
+operatic,o-pr-a-t-k,opratk,,akoprt,28396
+functionally,f-nk-/-l-e,fqle,,eflq,30062
+syntax,s-e-nt-a-x,sentax,,aenstx,30086
+irrevocable,e-r-v-k-b,ervkb,,bekrv,30778
+irrevocably,e-r-v-k-b-e,ervkbe,,bekrv,30778
+revocable,r-v-k-b,rvkb,,bkrv,30778
+revocably,r-v-k-b-e,rvkbe,,bekrv,30778
+revocation,r-v-k-a-z,rvkaz,,akrvz,30778
+revocations,r-v-k-a-z-s,rvkazs,,akrsvz,30778
+revoke,r-v-k,rvk,,krv,30778
+revoked,r-v-k-t,rvkt,,krtv,30778
+revokes,r-v-k-s,rvks,,krsv,30778
+revoking,r-v-k-\-h,rvkg,,gkrv,30778
+insecurities,n-s2-e-k-/-r-s,nsekrs,,eknrs,31677
+concurrent,k-k-r-e-nt,kkrent,,eknrt,32396
+concurrently,k-k-r-e-nt-e,kkrente,,eknrt,32396
+recurrent,r-k-r-e-nt,rkrent,,eknrt,32396
+undercurrent,u-k-r-e-nt,ukrent,,eknrtu,32396
+undercurrents,u-k-r-e-nt-s,ukrents,,eknrstu,32396
+doubleday,d-b-d-a,dbda,,abd,32627
+singe,s-e-n-j,senj,,ejns,33893
+singed,senj-d,senjd,,dejns,33893
+singes,s-e-n-j-s,senjs,,ejns,33893
+inclusions,e-/-sh-s,ezos,o,eosz,37756
+installments,n-s2-t-o-l-m-s,nstolms,,lmnost,38139
+converged,k-v-e-j-d,kvejd,,dejkv,38983
+converges,k-v-e-j-s,kvejs,,ejksv,38983
+converging,k-v-e-j-\-h,kvejg,,egjkv,38983
+installs,n-s2-t-o-l-s,nstols,,lnost,39681
+workroom,r-k-r-m,rkrm,,kmr,40538
+workrooms,r-k-r-m-s,rkrms,,kmrs,40538
+requiem,r-e-k-\-n-^-<-e-m,reqem,,emqr,41094
+requiems,r-e-k-\-n-^-<-e-m-s,reqems,,emqrs,41094
+requite,r-e-k-\-n-^-<-i-t,reqit,,eiqrt,41094
+requited,r-e-k-\-n-^-<-i-t-d,reqitd,,deiqrt,41094
+unrequited,n-r-e-k-\-n-^-<-i-t-d,nreqitd,,deinqrt,41094
+caption,k-a-p-sh,kapz,,akpz,44771
+captioned,k-a-p-sh-d,kapzd,,adkpz,44771
+captioning,k-a-p-sh-\-h,kapzg,,agkpz,44771
+captions,k-a-p-sh-s,kapzs,,akpsz,44771
+reorganization,r-o-g-sh,rogz,,gorz,47478
+reorganized,r-o-g-d,rogd,,dgor,47478
+reorganizes,r-o-g-s,rogs,,gors,47478
+reorganizing,r-o-g-\-h,rogg,,gor,47478
+poorhouse,p-u-u-s2-^-^-^-h,puus,,psu,47516
+certification,s2-e-df-sh,sedfz,,defsz,59944
+certifications,s2-e-df-sh-s,sedfzs,,defsz,59944
+singles,s2-e-ng-s,segs,,egs,65996
+condition,k-d-sh,kdz,,dkz,70330
+conditional,k-d-sh-l,kdzl,,dklz,70330
+conditionally,k-d-sh-ye,kdzy,,dkyz,70330
+conditioned,k-d-sh-d,kdzd,,dkz,70330
+conditioning,k-d-sh-\-h,kdzg,,dgkz,70330
+conditions,k-d-sh-s,kdzs,,dksz,70330
+unconditional,n-k-d-sh-l,nkdzl,,dklnz,70330
+unconditionally,n-k-d-sh-y,nkdzy,,dknyz,70330
+connecting,k-e-k-\-h,kekgo,o,egko,70334
+connective,k-e-k-v,kekv,,ekv,70334
+connectives,k-e-k-v-s,kekvs,,eksv,70334
+connects,k-e-k-s,kekso,o,ekos,70334
+correlated,k-o-r-e-l-a-d,korelad,,adeklor,70352
+correlates,k-o-r-e-l-a-s,korelas,,aeklors,70352
+correlation,k-o-r-e-l-a-sh,korelaz,,aeklorz,70352
+correlations,k-o-r-e-l-a-sh-s,korelazs,,aeklorsz,70352
+deletions,d-l-e-sh-s,dlezs,,delsz,70417
+excluded,e-s-/-d-d,xdd,,dx,70565
+excludes,e-s-/-d-s,xds,,dsx,70565
+excluding,e-s-/-d-\-h,xdg,,dgx,70565
+good morning,g-m,gmu,u,gmu,70898
+inappreciated,e-n-a-pr-e-sh-d,enaprezd,,adenprz,70910
+questionnaires,k-sh-a2-s,qzas,,aqsz,71526
+reconditioned,r-k-d-sh-d,rkdzd,,dkrz,71538
+reconditioning,r-k-d-sh-\-h,rkdzg,,dgkrz,71538
+reconditions,r-k-d-sh-s,rkdzs,,dkrsz,71538
+templated,tm-pl-a-d,tmplad,,adlmpt,71659
+templates,tm-pl-a-s,tmplas,,almpst,71659
+templating,tm-pl-a-\-h,tmplag,,aglmpt,71659
+to be,t-b,tb,,bt,71706
+you can,u-k,uk,,ku,71882

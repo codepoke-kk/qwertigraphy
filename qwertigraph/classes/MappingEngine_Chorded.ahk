@@ -43,7 +43,6 @@ class MappingEngine_Chorded
 	keyboard.ChordReleaseStartTicks := 0
 	keyboard.AutoSpaceSent := true
 	keyboard.ChordReleaseWindow := 70
-	keyboard.ChordMinimumLength := 3
 	
 	nullQwerd := new DictionaryEntry("null,,,,0,Could add,null_dictionary.csv")
 
@@ -296,7 +295,8 @@ class MappingEngine_Chorded
 		} else if (this.keyboard.ChordLength = 1) {
 			; This is the release of the last key in the chord
 			chordWindow := A_TickCount - this.keyboard.ChordReleaseStartTicks
-			if ((StrLen(this.keyboard.Token) >= this.keyboard.ChordMinimumLength) 
+			if ((StrLen(this.keyboard.Token) >= this.map.minimumChordLength) 
+				and (chordWindow > 0) 
 				and (chordWindow < this.keyboard.ChordReleaseWindow) 
 				and (StrLen(this.keyboard.Token) = this.keyboard.MaxChordLength)) {
 				; The time is quick enough to call a chord 

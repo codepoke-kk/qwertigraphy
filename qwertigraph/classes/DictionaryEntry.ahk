@@ -9,11 +9,11 @@ class DictionaryEntry
 		this.form := fields[2]
 		this.qwerd := fields[3]
 		this.keyer := fields[4]
-		this.usage := fields[5]
-		this.hint := fields[6]
+		this.chord := fields[5]
+		this.usage := fields[6]
+		this.hint := "-v1-"
 		this.dictionary := fields[7]
-		this.chord := ""
-		this.chordable := false
+		this.chordable := "Initializing"
 		this.saves := StrLen(this.word) - StrLen(this.qwerd)
 		this.power := StrLen(this.word) / StrLen(this.qwerd)
 		this.isPhrase := InStr(this.word, " ") > 0

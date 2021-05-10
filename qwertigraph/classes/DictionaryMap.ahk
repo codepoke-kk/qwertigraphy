@@ -5,6 +5,8 @@ class DictionaryMap
 	dictionaryPickList := ""
 	dictionaryFullToShortNames := {}
 	dictionaryShortToFullNames := {}
+	minimumChordLength := 3
+	maximumChordUsage := 10000
 	dictionariesLoaded := 0
 	longestQwerd := 0
 	backupCount := 2
@@ -16,7 +18,7 @@ class DictionaryMap
 	displaceds := ComObjCreate("Scripting.Dictionary")
 	
 	logQueue := new Queue("DictionaryMapQueue")
-	logVerbosity := 1
+	logVerbosity := 3
 	
 	__New(qenv)
 	{
@@ -58,10 +60,24 @@ class DictionaryMap
 		for index, loadDictionary in this.dictionaries
 		{
 			this.logEvent(2, "Loading dictionary " loadDictionary)
+			; preload variable as false to capture any event making it true 
+			upgradeToV2Happened := false 
 			Loop,Read, % loadDictionary   ;read dictionary into Scripting.Dictionaries 
 			{
 				NumLines:=A_Index-1
-				IfEqual, A_Index, 1, Continue ; Skip title row
+				if (A_Index = 1) {
+					; We do nothing with the title row, except check to see whether this is a v2 dictionary 
+					if (A_LoopReadLine ~= "hint") {
+						this.logEvent(1, loadDictionary " is v1 and must be upgrade to v2")
+						this.upgradeDictionaryToV2(loadDictionary)
+						upgradeToV2Happened := true
+					} 
+				}
+				
+				if (upgradeToV2Happened) {
+					Continue
+				}
+				
 				newEntry := new DictionaryEntry(A_LoopReadLine "," loadDictionary)
 				
 				if (this.qwerds.item(newEntry.qwerd).word) {
@@ -87,6 +103,10 @@ class DictionaryMap
 			}
 			this.logEvent(1, "Loaded dictionary " loadDictionary " resulting in " NumLines " entries")
 		}
+				
+		if (upgradeToV2Happened) {
+			Msgbox, % "After dictionary upgrade, you must restart this script. Please close it and restart it"
+		}
 		this.dictionariesLoaded := 1
 		;MsgBox, % "Dictionaries fully loaded"
 	}
@@ -108,20 +128,27 @@ class DictionaryMap
 		this.hints.item(wordCapped) := newEntryCapped
 		
 		; Limit chord acceptance by length, by frequency of usage, and to only appear once 
-		if ((StrLen(newEntry.chord) > 2) and (not this.chords.item(newEntry.chord).word) and (newEntry.Usage < 3000)) {
-			this.logEvent(4, "Adding chord " newEntry.chord " as " newEntry.word) 
-			newEntry.chordable := true
-			this.chords.item(newEntry.chord) := newEntry
-			
-			StringUpper, chordUPPER, % newEntry.chord
-			newChordEntryCapped := new DictionaryEntry(wordCapped "," newEntry.form "," chordUPPER "," newEntry.keyer "," newEntry.Usage "," newEntry.hint "," newEntry.dictionary)
-			newChordEntryCapped.chord := chordUPPER
-			newChordEntryCapped.chordable := true
-			this.chords.item(newChordEntryCapped.chord) := newChordEntryCapped
+		if (StrLen(newEntry.chord) >= this.minimumChordLength) {
+			If (not this.chords.item(newEntry.chord).word) {
+				if (newEntry.Usage < this.maximumChordUsage) {
+					this.logEvent(4, "Adding chord " newEntry.chord " as " newEntry.word) 
+					newEntry.chordable := "active"
+					this.chords.item(newEntry.chord) := newEntry
+					
+					StringUpper, chordUPPER, % newEntry.chord
+					newChordEntryCapped := new DictionaryEntry(wordCapped "," newEntry.form "," chordUPPER "," newEntry.keyer "," newEntry.Usage "," newEntry.hint "," newEntry.dictionary)
+					newChordEntryCapped.chord := chordUPPER
+					newChordEntryCapped.chordable := true
+					this.chords.item(newChordEntryCapped.chord) := newChordEntryCapped
+				} else { 
+					newEntry.chordable := "rare"
+				}
+			} else { 
+				newEntry.chordable := "unused"
+			}
+		} else { 
+			newEntry.chordable := "short"
 		}
-		
-		;Msgbox, % "Qwerds " newEntry.qwerd "," qwerdUPPER "," qwerdCapped
-		;Msgbox, % "Words " newEntry.word "," wordUPPER "," wordCapped
 	}	
 	
 	deleteQwerdFromMaps(qwerdKey) {
@@ -146,9 +173,6 @@ class DictionaryMap
 		if (this.hints.item(wordCapped)) {
 			this.hints.remove(wordCapped)
 		}
-		
-		;Msgbox, % "Qwerds " newEntry.qwerd "," qwerdUPPER "," qwerdCapped
-		;Msgbox, % "Words " newEntry.word "," wordUPPER "," wordCapped
 	}	
 	
 	AlphaOrder(input_text) {		
@@ -289,6 +313,47 @@ class DictionaryMap
 			FileDelete, %newdict%
 		}
 
+	}
+	
+	upgradeDictionaryToV2(dictionary) {
+		this.logEvent(2, "Upgrading " dictionary " to v2")
+		
+		; First create a backup of the v1 dictionary 
+		backupdict := dictionary . ".v1backup"
+		newdict := dictionary . ".v2temp"
+		this.logEvent(2, "Backing up old " dictionary " as " backupdict)
+		FileCopy, %dictionary%, %backupdict%, true
+		
+		fileHandle := FileOpen(newdict, "w")
+		header := "word,form,qwerd,keyer,chord,usage`n"
+		fileHandle.Write(header)
+			
+		; Next read in the rows of the dictionary
+		Loop,Read, % dictionary 
+		{
+			if (A_Index = 1) {
+				continue
+			}
+			line := StrReplace(A_LoopReadLine, """", "")
+			fields := StrSplit(line, ",")
+			entry := {}
+			entry.word := fields[1]
+			entry.form := fields[2]
+			entry.qwerd := fields[3]
+			entry.keyer := fields[4]
+			entry.usage := fields[5]
+			entry.hint := fields[6]
+			entry.chord := this.AlphaOrder(entry.qwerd)
+			
+			dictline := entry.word "," entry.form "," entry.qwerd "," entry.keyer "," entry.chord "," entry.usage "`n"
+			fileHandle.Write(dictline)
+		}
+		
+		fileHandle.Close()
+		
+		this.logEvent(1, "Permanently copying " newdict " as " dictionary)
+		FileCopy, %newdict%, %dictionary%, true
+		FileDelete, %newdict%
 	}
 
 LogEvent(verbosity, message) 
