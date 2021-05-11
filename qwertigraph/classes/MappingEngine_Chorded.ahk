@@ -30,6 +30,7 @@ class MappingEngine_Chorded
 	keyboard.EditKeys := "{enter}{numpadenter}{tab}{delete}{insert}"
 	keyboard.SpecialKeys := "{}!#^*"
 	keyboard.EndKeys_hard := " .,?!;:'""-_{{}{}}[]/\+=|()@#$%^&*<>"
+    keyboard.ShiftedNumerals := {"1": "!", "2": "@", "3": "#", "4": "$", "5": "%", "6": "^", "7": "&", "8": "*", "9": "(", "0": ")"}
 	keyboard.DownKeys := ""
 	keyboard.Shfed := ""
 	keyboard.Ctled := ""
@@ -97,10 +98,11 @@ class MappingEngine_Chorded
 			case "n", "o", "r", "q", "s", "t", "u", "v", "w", "x", "y", "z": 
 				this.AddToToken(key)
 				sendkey := key
-			case "0", "1", "2", "3", "4", "5", "6", "7", "8", "9":
+			case "1", "2", "3", "4", "5", "6", "7", "8", "9", "0":
 				sendkey := key
 				if (this.keyboard.Shfed) {
-					this.SendToken(sendkey)
+                    shiftedKey := this.keyboard.ShiftedNumerals[key]
+					this.SendToken(shiftedKey)
 				} else {
 					this.AddToToken(key)
 				}
@@ -356,6 +358,7 @@ class MappingEngine_Chorded
 			this.logEvent(4, "Serialing " input_text)
 			this.keyboard.MaxChordLength := 0
 		}
+        
 	    this.input_text_buffer .= input_text
 		in_play_chars := this.getInPlayChars(this.input_text_buffer)
 		inbound := this.parseInbound(in_play_chars, key)
