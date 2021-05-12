@@ -33,33 +33,39 @@ Gui, Tab, Coach
 
 ; Add regex search fields
 Gui, Add, Edit, -WantReturn x12  y64 w50 h20 vRegexCoachSavings, 
-Gui, Add, Edit, -WantReturn x62  y64 w260 h20 vRegexCoachWord,  
-Gui, Add, Edit, -WantReturn x322 y64 w130 h20 vRegexCoachQwerd,  
-Gui, Add, Edit, -WantReturn x452 y64 w130 h20 vRegexCoachForm, 
-Gui, Add, Edit, -WantReturn x582 y64 w56 h20 vRegexCoachPower, 
-Gui, Add, Edit, -WantReturn x638 y64 w50 h20 vRegexCoachSaves, 
-Gui, Add, Edit, -WantReturn x688 y64 w50 h20 vRegexCoachMatch, 
-Gui, Add, Edit, -WantReturn x738 y64 w50 h20 vRegexCoachMiss, 
-Gui, Add, Edit, -WantReturn x788 y64 w50 h20 vRegexCoachOther, 
+Gui, Add, Edit, -WantReturn x62  y64 w180 h20 vRegexCoachWord,  
+Gui, Add, Edit, -WantReturn x242 y64 w80 h20 vRegexCoachQwerd,  
+Gui, Add, Edit, -WantReturn x322 y64 w80 h20 vRegexCoachChord,   
+Gui, Add, Edit, -WantReturn x402 y64 w60 h20 vRegexCoachChordable,  
+Gui, Add, Edit, -WantReturn x462 y64 w80 h20 vRegexCoachForm, 
+Gui, Add, Edit, -WantReturn x542 y64 w50 h20 vRegexCoachPower, 
+Gui, Add, Edit, -WantReturn x592 y64 w50 h20 vRegexCoachSaves, 
+Gui, Add, Edit, -WantReturn x642 y64 w50 h20 vRegexCoachMatch, 
+Gui, Add, Edit, -WantReturn x692 y64 w50 h20 vRegexCoachCMatch, 
+Gui, Add, Edit, -WantReturn x742 y64 w50 h20 vRegexCoachMiss, 
+Gui, Add, Edit, -WantReturn x792 y64 w50 h20 vRegexCoachOther, 
 Gui, Add, Button, x838 y64 w90 h20 gCoachFilterCoachEvents, Filter
 
 ; Add the data ListView
-Gui, Add, ListView, x12 y84 w916 h476 vCoachEventsLV, Savings|Word|Qwerd|Form|Power|Saves|Matches|Misses|Other
+Gui, Add, ListView, x12 y84 w916 h476 vCoachEventsLV, Savings|Word|Qwerd|Chord|Chordable|Form|Power|Saves|Matches|Chords|Misses|Other
 LV_ModifyCol(1, "Integer")  ; For sorting, indicate columns are integer.
-LV_ModifyCol(5, "Float")  
-LV_ModifyCol(6, "Integer")  
-LV_ModifyCol(7, "Integer")  
+LV_ModifyCol(7, "Float")  
 LV_ModifyCol(8, "Integer")  
 LV_ModifyCol(9, "Integer")  
+LV_ModifyCol(10, "Integer")  
+LV_ModifyCol(11, "Integer")  
 LV_ModifyCol(1, 50)
-LV_ModifyCol(2, 260)
-LV_ModifyCol(3, 130)
-LV_ModifyCol(4, 130)
-LV_ModifyCol(5, 56)
-LV_ModifyCol(6, 50)
+LV_ModifyCol(2, 180)
+LV_ModifyCol(3, 80)
+LV_ModifyCol(4, 80)
+LV_ModifyCol(5, 60)
+LV_ModifyCol(6, 80)
 LV_ModifyCol(7, 50)
 LV_ModifyCol(8, 50)
 LV_ModifyCol(9, 50)
+LV_ModifyCol(10, 50)
+LV_ModifyCol(11, 50)
+LV_ModifyCol(12, 50)
 
 CoachFilterCoachEvents() {
 	global coach
@@ -79,7 +85,7 @@ class CoachViewport
 	phrase_buffer := ""
 	qwerds_buffer := ""
 	logQueue := new Queue("CoachQueue")
-	logVerbosity := 1
+	logVerbosity := 3
 	
 	__New(map, speedViewer)
 	{
@@ -102,26 +108,32 @@ class CoachViewport
 		GuiControlGet RegexCoachSavings
 		GuiControlGet RegexCoachWord
 		GuiControlGet RegexCoachQwerd
+		GuiControlGet RegexCoachChord
+		GuiControlGet RegexCoachChordable
 		GuiControlGet RegexCoachForm
 		GuiControlGet RegexCoachPower
 		GuiControlGet RegexCoachSaves
 		GuiControlGet RegexCoachMatch
+		GuiControlGet RegexCoachCMatch
 		GuiControlGet RegexCoachMiss
 		GuiControlGet RegexCoachOther
 		
 		;global SaveProgress
 		
 		
-		this.logEvent(3, "RegexCoachSavings " RegexCoachSavings ", RegexCoachWord " RegexCoachWord ", RegexCoachQwerd " RegexCoachQwerd ", RegexCoachForm " RegexCoachForm ", RegexCoachPower " RegexCoachPower ", RegexCoachSaves " RegexCoachSaves ", RegexCoachMatch " RegexCoachMatch ", RegexCoachMiss " RegexCoachMiss ", RegexCoachOther " RegexCoachOther)
+		this.logEvent(3, "RegexCoachSavings " RegexCoachSavings ", RegexCoachWord " RegexCoachWord ", RegexCoachQwerd " RegexCoachQwerd ", RegexCoachChord " RegexCoachChord ", RegexCoachChordable " RegexCoachChordable ", RegexCoachForm " RegexCoachForm ", RegexCoachPower " RegexCoachPower ", RegexCoachSaves " RegexCoachSaves ", RegexCoachMatch " RegexCoachMatch ", RegexCoachCMatch " RegexCoachCMatch ", RegexCoachMiss " RegexCoachMiss ", RegexCoachOther " RegexCoachOther)
 		
 		requiredMatchCount := 0
 		requiredMatchCount += (RegexCoachSavings) ? 1 : 0
 		requiredMatchCount += (RegexCoachWord) ? 1 : 0
 		requiredMatchCount += (RegexCoachQwerd) ? 1 : 0
+		requiredMatchCount += (RegexCoachChord) ? 1 : 0
+		requiredMatchCount += (RegexCoachChordable) ? 1 : 0
 		requiredMatchCount += (RegexCoachForm) ? 1 : 0
 		requiredMatchCount += (RegexCoachPower) ? 1 : 0
 		requiredMatchCount += (RegexCoachSaves) ? 1 : 0
 		requiredMatchCount += (RegexCoachMatch) ? 1 : 0
+		requiredMatchCount += (RegexCoachCMatch) ? 1 : 0
 		requiredMatchCount += (RegexCoachMiss) ? 1 : 0
 		requiredMatchCount += (RegexCoachOther) ? 1 : 0
 		
@@ -134,10 +146,13 @@ class CoachViewport
 			foundKey += this.testField("RegexCoachSavings", wordKey, word.savings, RegexCoachSavings)
 			foundKey += this.testField("RegexCoachWord", wordKey, word.word, RegexCoachWord)
 			foundKey += this.testField("RegexCoachQwerd", wordKey, word.qwerd, RegexCoachQwerd)
+			foundKey += this.testField("RegexCoachChord", wordKey, word.chord, RegexCoachChord)
+			foundKey += this.testField("RegexCoachChordable", wordKey, word.chordable, RegexCoachChordable)
 			foundKey += this.testField("RegexCoachForm", wordKey, word.form, RegexCoachForm)
 			foundKey += this.testField("RegexCoachPower", wordKey, word.power, RegexCoachPower)
 			foundKey += this.testField("RegexCoachSaves", wordKey, word.saves, RegexCoachSaves)
 			foundKey += this.testField("RegexCoachMatch", wordKey, word.match, RegexCoachMatch)
+			foundKey += this.testField("RegexCoachCMatch", wordKey, word.cmatch, RegexCoachCMatch)
 			foundKey += this.testField("RegexCoachMiss", wordKey, word.miss, RegexCoachMiss)
 			foundKey += this.testField("RegexCoachOther", wordKey, word.other, RegexCoachOther)
 			;if (RegexCoachSavings) {
@@ -148,7 +163,7 @@ class CoachViewport
 			;}
 		
 			if (foundKey >= requiredMatchCount) {
-				LV_Add(, word.savings, word.word, word.qwerd, word.form, word.power, word.saves, word.match, word.miss, word.other)
+				LV_Add(, word.savings, word.word, word.qwerd, word.chord, word.chordable, word.form, word.power, word.saves, word.match, word.cmatch, word.miss, word.other)
 			}
 		}
 	}
@@ -195,6 +210,7 @@ class CoachViewport
 			this.coachEvents.item(eventKey) := coachEvent
 		} else {
 			this.coachEvents.item(eventKey).match += coachEvent.match
+			this.coachEvents.item(eventKey).cmatch += coachEvent.cmatch
 			this.coachEvents.item(eventKey).miss += coachEvent.miss
 			this.coachEvents.item(eventKey).other += coachEvent.other
 		}
@@ -202,11 +218,11 @@ class CoachViewport
 	}
 	
 	coachChording(coachEvent) {
-		if ((not coachEvent.chorded) and (coachEvent.chordable)) {
+		if ((not coachEvent.chorded) and (coachEvent.chordable = "active")) {
 			this.LogEvent(2, "Chord coaching '" coachEvent.word "' against '" coachEvent.chord "'")
-			this.flashTip(coachEvent)
+			this.flashTip_chord(coachEvent)
 		} else {
-			this.LogEvent(2, "Chord not coaching '" coachEvent.word "' against '" coachEvent.chord "'")
+			this.LogEvent(2, "Not chord coaching '" coachEvent.word "' against '" coachEvent.chord "' because " coachEvent.chorded " or " coachEvent.chordable)
 		}
 	}
 	
@@ -282,7 +298,7 @@ class CoachViewport
 		if (coachEvent.power < this.tip_power_threshold) {
 			return
 		}
-		if (coachEvent.chordable) {
+		if (coachEvent.chordable = "active") {
 			Tooltip % coachEvent.word " = " coachEvent.qwerd " (" coachEvent.chord ")", A_CaretX, A_CaretY + 30
 		} else {
 			Tooltip % coachEvent.word " = " coachEvent.qwerd, A_CaretX, A_CaretY + 30
@@ -291,6 +307,18 @@ class CoachViewport
 		return 
 
 		ClearToolTipCoaching:
+		  ToolTip
+		return 
+	}
+	
+	flashTip_chord(coachEvent) {
+		if (coachEvent.chordable = "active") {
+			Tooltip % coachEvent.word " = ** " coachEvent.qwerd " (" coachEvent.chord ") **", A_CaretX, A_CaretY + 30
+		} 
+		SetTimer, ClearToolTipCoaching_chord, -1500
+		return 
+
+		ClearToolTipCoaching_chord:
 		  ToolTip
 		return 
 	}

@@ -9,6 +9,7 @@ class CoachingEvent
 	saves := 0
 	power := 0
 	match := 0
+	cmatch := 0
 	miss := 0
 	other := 0
 	savings := 0

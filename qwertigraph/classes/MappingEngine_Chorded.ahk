@@ -19,7 +19,7 @@ class MappingEngine_Chorded
 	discard_ratio := ""
 	input_text_buffer := ""
 	logQueue := new Queue("EngineQueue")
-	logVerbosity := 4
+	logVerbosity := 1
 	tip_power_threshold := 1
 	speedQueue := new Queue("SpeedQueue")
 	coachQueue := new Queue("CoachQueue")
@@ -418,8 +418,8 @@ class MappingEngine_Chorded
 			if (not InStr(mods, "^")) {
 				; Success 
 				; Coach the found qwerd
-				this.pushCoaching(this.map.qwerds.item(inbound.token), true, false, false, key, (StrLen(inbound.token)))
-				this.pushPenStroke(this.map.qwerds.item(inbound.token), "blue")
+				this.pushCoaching(this.map.chords.item(inbound.token), true, false, false, key, 1)
+				this.pushPenStroke(this.map.chords.item(inbound.token), "blue")
 				; "Push Input" is where the magic happens on screen
 				final_characters_count := this.pushInput(inbound.token, this.map.chords.item(inbound.token).word, key)
 			} else {
@@ -433,7 +433,7 @@ class MappingEngine_Chorded
 			if (not InStr(mods, "^")) {
 				; Success 
 				; Coach the found qwerd
-				this.pushCoaching(this.map.qwerds.item(inbound.token), true, false, false, key, (StrLen(inbound.token)))
+				this.pushCoaching(this.map.qwerds.item(inbound.token), true, false, false, key, 0)
 				this.pushPenStroke(this.map.qwerds.item(inbound.token), "blue")
 				; "Push Input" is where the magic happens on screen
 				final_characters_count := this.pushInput(inbound.token, this.map.qwerds.item(inbound.token).word, key)
@@ -448,7 +448,7 @@ class MappingEngine_Chorded
 			if (input_text) {
 				final_characters_count := StrLen(inbound.token) + 1
 				if (this.map.hints.item(inbound.token).hint) {
-					this.pushCoaching(this.map.hints.item(inbound.token), false, true, false, key, (StrLen(inbound.token)))
+					this.pushCoaching(this.map.hints.item(inbound.token), false, true, false, key, 0)
 					this.pushPenStroke(this.map.hints.item(inbound.token), "red")
 		
 					;;; Hintable
@@ -599,6 +599,7 @@ class MappingEngine_Chorded
 		coaching.saves := qwerd.saves
 		coaching.power := qwerd.power
 		coaching.match := match
+		coaching.cmatch := chorded
 		coaching.miss := miss
 		coaching.other := other
 		coaching.endKey := key
