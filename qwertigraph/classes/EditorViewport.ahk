@@ -31,21 +31,23 @@ Gui, Add, Edit, -WantReturn x12  y64 w160 h20 vRegexWord,
 Gui, Add, Edit, -WantReturn x172 y64 w90  h20 vRegexForm,  
 Gui, Add, Edit, -WantReturn x262 y64 w90  h20 vRegexQwerd, 
 Gui, Add, Edit, -WantReturn x352 y64 w30  h20 vRegexKeyer, 
-Gui, Add, Edit, -WantReturn x382 y64 w60  h20 vRegexUsage,  
-Gui, Add, Edit, -WantReturn x442 y64 w160 h20 vRegexChord, 
+Gui, Add, Edit, -WantReturn x382 y64 w80 h20 vRegexChord, 
+Gui, Add, Edit, -WantReturn x462 y64 w80 h20 vRegexChordable, 
+Gui, Add, Edit, -WantReturn x542 y64 w60  h20 vRegexUsage,  
 Gui, Add, Edit, -WantReturn x602 y64 w236 h20 vRegexDict, 
 Gui, Add, Button, Default x838 y64 w90 h20 gEditorSearchMapEntries, Search
 
 ; Add the data ListView
-Gui, Add, ListView, x12 y84 w826 h456 vEditorLV gEditorLV, Word|Form|Qwerd|Keyer|Chord|Usage|Dictionary
-LV_ModifyCol(6, "Integer")  ; For sorting, indicate that the Usage column is an integer.
+Gui, Add, ListView, x12 y84 w826 h456 vEditorLV gEditorLV, Word|Form|Qwerd|Keyer|Chord|Chordable|Usage|Dictionary
+LV_ModifyCol(7, "Integer")  ; For sorting, indicate that the Usage column is an integer.
 LV_ModifyCol(1, 160)
 LV_ModifyCol(2, 90)
 LV_ModifyCol(3, 90)
 LV_ModifyCol(4, 30)
-LV_ModifyCol(5, 160)
-LV_ModifyCol(6, 60)
-LV_ModifyCol(7, 216) ; 3 pixels short to avoid the h_scrollbar 
+LV_ModifyCol(5, 80)
+LV_ModifyCol(6, 80)
+LV_ModifyCol(7, 60)
+LV_ModifyCol(8, 216) ; 3 pixels short to avoid the h_scrollbar 
 
 ; Add edit fields and controls
 Gui, Add, Edit, x12  y540 w160 h20 vEditWord,  
@@ -54,7 +56,9 @@ Gui, Add, Button, x242 y540 w20 h20 gEditorAutoQwerdForm, L>
 Gui, Add, Edit, x262 y540 w90  h20 vEditQwerd, 
 Gui, Add, Button, x352 y540 w20 h20 gEditorAutoKey, K> 
 Gui, Add, Edit, x372 y540 w30  h20 vEditKeyer,  
-Gui, Add, Edit, x402 y540 w150 h20 vEditChord, 
+Gui, Add, Button, x402 y540 w20 h20 gEditorAutoChord, C> 
+Gui, Add, Edit, x422 y540 w50 h20 vEditChord,  
+Gui, Add, Edit, x472 y540 w80 h20 Disabled vEditChordable, 
 Gui, Add, Edit, x552 y540 w50  h20 vEditUsage, 
 Gui, Add, DropDownList, x602 y540 w236 r5 vEditDict, %dictionaryDropDown%
 Gui, Add, Button, x838 y539 w90 h20 gEditorCommitEdit, Commit
@@ -99,6 +103,10 @@ EditorAutoQwerdForm() {
 EditorAutoKey() {
 	global editor
 	editor.AutoKey()
+}
+EditorAutoChord() {
+	global editor
+	editor.AutoChord()
 }
 EditorOpenPersonalizations() {
 	global editor
@@ -164,7 +172,7 @@ EditorCreateRow_S() {
 	}
     editor.logEvent(3, "Listview context edit event adding S on row " FocusedRowNumber)
     editor.prepareEdit(FocusedRowNumber)
-    editor.addValueToEditFields("s", "-s", "s")
+    editor.addValueToEditFields("s", "-s", "s", "s")
 	editor.commitEdit()
 	editor.SearchMapEntries()
 }
@@ -178,7 +186,7 @@ EditorCreateRow_G() {
 	}
     editor.logEvent(3, "Listview context edit event adding G on row " FocusedRowNumber)
     editor.prepareEdit(FocusedRowNumber)
-    editor.addValueToEditFields("ing", "-\-h", "g")
+    editor.addValueToEditFields("ing", "-\-h", "g", "g")
 	editor.commitEdit()
 	editor.SearchMapEntries()
 }
@@ -192,7 +200,7 @@ EditorCreateRow_D() {
 	}
     editor.logEvent(3, "Listview context edit event adding D on row " FocusedRowNumber)
     editor.prepareEdit(FocusedRowNumber)
-    editor.addValueToEditFields("ed", "-d", "d")
+    editor.addValueToEditFields("ed", "-d", "d", "d")
 	editor.commitEdit()
 	editor.SearchMapEntries()
 }
@@ -206,7 +214,7 @@ EditorCreateRow_T() {
 	}
     editor.logEvent(3, "Listview context edit event adding T on row " FocusedRowNumber)
     editor.prepareEdit(FocusedRowNumber)
-    editor.addValueToEditFields("ed", "-t", "t")
+    editor.addValueToEditFields("ed", "-t", "t", "t")
 	editor.commitEdit()
 	editor.SearchMapEntries()
 }
@@ -220,7 +228,7 @@ EditorCreateRow_R() {
 	}
     editor.logEvent(3, "Listview context edit event adding R on row " FocusedRowNumber)
     editor.prepareEdit(FocusedRowNumber)
-    editor.addValueToEditFields("er", "-r", "r")
+    editor.addValueToEditFields("er", "-r", "r", "r")
 	editor.commitEdit()
 	editor.SearchMapEntries()
 }
@@ -234,7 +242,7 @@ EditorCreateRow_LY() {
 	}
     editor.logEvent(3, "Listview context edit event adding LY on row " FocusedRowNumber)
     editor.prepareEdit(FocusedRowNumber)
-    editor.addValueToEditFields("ly", "-e", "e")
+    editor.addValueToEditFields("ly", "-e", "e", "e")
 	editor.commitEdit()
 	editor.SearchMapEntries()
 }
@@ -275,12 +283,13 @@ class EditorViewport
 		GuiControlGet RegexQwerd
 		GuiControlGet RegexKeyer
 		GuiControlGet RegexChord
+		GuiControlGet RegexChordable
 		GuiControlGet RegexUsage
 		
 		;global SaveProgress
 		
 		
-		this.logEvent(3, "RegexWord " RegexWord ", RegexForm " RegexForm ", RegexQwerd " RegexQwerd ", RegexKeyer " RegexKeyer ", RegexChord " RegexChord ", RegexUsage " RegexUsage ", RegexDict " RegexDict )
+		this.logEvent(3, "RegexWord " RegexWord ", RegexForm " RegexForm ", RegexQwerd " RegexQwerd ", RegexKeyer " RegexKeyer ", RegexChord " RegexChord ", RegexChordable " RegexChordable ", RegexUsage " RegexUsage ", RegexDict " RegexDict )
 		
 		requiredMatchCount := 0
 		requiredMatchCount += (RegexWord) ? 1 : 0
@@ -334,6 +343,12 @@ class EditorViewport
 					foundKeys[qwerdKey] := (foundKeys[qwerdKey]) ? foundKeys[qwerdKey] + 1 : 1
 				}
 			}
+			if (RegexChordable) {
+				if (RegExMatch(qwerd.chordable,RegexChordable)) {
+					this.logEvent(4, "RegexChordable matched " qwerdKey)
+					foundKeys[qwerdKey] := (foundKeys[qwerdKey]) ? foundKeys[qwerdKey] + 1 : 1
+				}
+			}
 			if (RegexUsage) {
 				if (RegExMatch(qwerd.usage,RegexUsage)) {
 					this.logEvent(4, "RegexUsage matched " qwerdKey)
@@ -348,7 +363,7 @@ class EditorViewport
 		for foundKey, count in foundKeys {
 			if (foundKeys[foundKey] = requiredMatchCount) {
 				qwerd := this.map.qwerds.item(foundKey)
-				LV_Add(, qwerd.word, qwerd.form, qwerd.qwerd, qwerd.keyer, qwerd.chord, qwerd.usage, qwerd.dictionary)
+				LV_Add(, qwerd.word, qwerd.form, qwerd.qwerd, qwerd.keyer, qwerd.chord, qwerd.chordable, qwerd.usage, qwerd.dictionary)
 			} else {
 				this.logEvent(3, foundKey " matched " foundKeys[foundKey] " times, not " requiredMatchCount)
 			}
@@ -404,6 +419,18 @@ class EditorViewport
 		this.logEvent(2, "Setting newKeyer to " newKeyer)
 		
 		GuiControl, Text, EditKeyer, %newKeyer%
+	}			
+	autoChord() {
+        local
+		GuiControlGet qwerd, , EditQwerd
+		
+		this.logEvent(3, "Generating auto chord for " qwerd)
+	 
+		; Lowercase the whole word
+		StringLower, chord, qwerd
+		chord := this.map.AlphaOrder(chord)
+		
+		GuiControl, Text, EditChord, %chord%
 	}
 
 	getNextKeyer(qwerdKey, qwerd, word) {
@@ -459,11 +486,12 @@ class EditorViewport
 		Return "qq"
 	}
 
-	addValueToEditFields(WordAdd, FormAdd, QwerdAdd) {
+	addValueToEditFields(WordAdd, FormAdd, QwerdAdd, ChordAdd) {
         local
 		GuiControlGet word, , EditWord
 		GuiControlGet form, , EditForm
 		GuiControlGet qwerd, , EditQwerd
+		GuiControlGet chord, , EditChord
 		GuiControlGet keyer, , EditKeyer
 		
 		; I'm not ready to build a full grammar here, but removing "e" is going to save time 
@@ -481,6 +509,7 @@ class EditorViewport
 		GuiControl, Text, EditWord, %word%%WordAdd%
 		GuiControl, Text, EditForm, %form%%FormAdd%
 		GuiControl, Text, EditQwerd, %qwerd%%QwerdAdd%
+		GuiControl, Text, EditChord, %chord%%ChordAdd%
 		GuiControl, Text, EditKeyer, 
 	}
 
@@ -495,8 +524,9 @@ class EditorViewport
 		LV_GetText(EditQwerd, RowNumber, 3)
 		LV_GetText(EditKeyer, RowNumber, 4)
 		LV_GetText(EditChord, RowNumber, 5)
-		LV_GetText(EditUsage, RowNumber, 6)
-		LV_GetText(EditDict, RowNumber, 7)
+		LV_GetText(EditChordable, RowNumber, 6)
+		LV_GetText(EditUsage, RowNumber, 7)
+		LV_GetText(EditDict, RowNumber, 8)
 		
 		; Push the data into the editing fields
 		GuiControl, Text, EditWord, %EditWord%
@@ -504,6 +534,7 @@ class EditorViewport
 		GuiControl, Text, EditQwerd, %EditQwerd%
 		GuiControl, Text, EditKeyer, %EditKeyer%
 		GuiControl, Text, EditChord, %EditChord%
+		GuiControl, Text, EditChordable, %EditChordable%
 		GuiControl, Text, EditUsage, %EditUsage%
 ;		GuiControlGet autoChord, , AutoGenChords
 ;		if (autoChord) {
@@ -527,6 +558,7 @@ class EditorViewport
 	
 	commitEdit() {
         local
+		global DictionaryEntry
 		this.logEvent(3, "Commiting edit to qwerd")
 		
 		; Grab values the user has edited and wants to commit 
