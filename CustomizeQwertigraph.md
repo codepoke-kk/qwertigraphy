@@ -27,8 +27,11 @@ My recommendation is that you create all your dictionaries in your personal data
 
 You must then create your dictionary files. Your dictionary should look like this:
 > word,form,qwerd,keyer,chord,usage
+>
 > red,qwer,qwer,,eqrw,1
+>
 > orange,asdf,asdf,,adfs,1
+>
 > yellow,zxcv,zxcv,,cvzx,1
 > green,qwe,qwe,,eqw,1
 > blue,sdf,sdf,,dfs,1
