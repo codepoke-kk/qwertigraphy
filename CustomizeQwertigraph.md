@@ -11,35 +11,32 @@ The dictionaries do not need all to conform to the same theory, and they do not 
 The "dictionary load list" is found in your personal Qwertigraphy data folder. To open this folder, start the Qwertigraph and go to its "Editor" tab. The second button down on the right side is "Personalizations". Click it to open the folder. 
 
 Within your personal data folder, you will find "dictionary_load.list". That file begins life with these contents:
-> AppData\personal.csv
-> dictionaries\anniversary_core.csv
-> dictionaries\anniversary_supplement.csv
-> dictionaries\anniversary_phrases.csv
-> dictionaries\anniversary_modern.csv
-> dictionaries\anniversary_cmu.csv
+> AppData\personal.csv  
+> dictionaries\anniversary_core.csv  
+> dictionaries\anniversary_supplement.csv  
+> dictionaries\anniversary_phrases.csv  
+> dictionaries\anniversary_modern.csv  
+> dictionaries\anniversary_cmu.csv  
 
 My recommendation is that you create all your dictionaries in your personal data folder, and then list them in the load list just like the personal.csv dictionary is listed. There is no limit to the number of dictionaries you can create and order here. One possible example of an entirely new theory might look like:
-> AppData\pittman_supplement.csv
-> AppData\pittman_phrases.csv
-> AppData\pittman_core.csv
+> AppData\pittman_supplement.csv  
+> AppData\pittman_phrases.csv  
+> AppData\pittman_core.csv  
 
 (As of this writing, your Pittman dictionary will not draw Pittman forms on the "Gregg" tab. If you want it to do that for you, you can override the strokes.ahk drawing file to create new shapes.)
 
 You must then create your dictionary files. Your dictionary should look like this:
-> word,form,qwerd,keyer,chord,usage
->
-> red,qwer,qwer,,eqrw,1
->
-> orange,asdf,asdf,,adfs,1
->
-> yellow,zxcv,zxcv,,cvzx,1
-> green,qwe,qwe,,eqw,1
-> blue,sdf,sdf,,dfs,1
-> surely you must be expecting purple.,xcv,xcv,,cvx,1
-> this is amazing progress;,dfjk,dfjk,,dfjk,1
-> i am very excited!,fghj,fghj,,fghj,1
-> do you think it will work?,cvm,cvm,,cmv,1
-> (is this list too long?),vbnm,vbnm,,bmnv,1
+> word,form,qwerd,keyer,chord,usage  
+> red,qwer,qwer,,eqrw,1  
+> orange,asdf,asdf,,adfs,1  
+> yellow,zxcv,zxcv,,cvzx,1  
+> green,qwe,qwe,,eqw,1  
+> blue,sdf,sdf,,dfs,1  
+> surely you must be expecting purple.,xcv,xcv,,cvx,1  
+> this is amazing progress;,dfjk,dfjk,,dfjk,1  
+> i am very excited!,fghj,fghj,,fghj,1  
+> do you think it will work?,cvm,cvm,,cmv,1  
+> (is this list too long?),vbnm,vbnm,,bmnv,1  
 
 The first line is a hint regarding what each row contains. The dictionary is called a CSV file, but it does not comply with normal CSV standards. The first line does not really define the way the fields are used. You can modify that line at will, but it must be there. The second difference is that the Qwertigraph does not respect quotation marks as a way of hiding commas. You can put a lot of punctuation in your dictionary, but commas are not yet allowed. I should probably work on that. 
 
