@@ -12,10 +12,10 @@ The "dictionary load list" is found in your personal Qwertigraphy data folder. T
 
 Within your personal data folder, you will find "dictionary_load.list". That file begins life with these contents:
 > AppData\personal.csv  
-> dictionaries\anniversary_core.csv  
 > dictionaries\anniversary_supplement.csv  
 > dictionaries\anniversary_phrases.csv  
 > dictionaries\anniversary_modern.csv  
+> dictionaries\anniversary_core.csv  
 > dictionaries\anniversary_cmu.csv  
 
 My recommendation is that you create all your dictionaries in your personal data folder, and then list them in the load list just like the personal.csv dictionary is listed. There is no limit to the number of dictionaries you can create and order here. One possible example of an entirely new theory might look like:
