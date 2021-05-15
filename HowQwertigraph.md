@@ -5,7 +5,10 @@
 [Broken Qwertigraph?](https://github.com/codepoke-kk/qwertigraphy/blob/master/FixQwertigraph.md)
 
 There are two ways to go on this. If you just want to start using Qwertigraphy, download this:
+(The simplest version)
 https://github.com/codepoke-kk/qwertigraphy/release/trainer.exe
+(To allow chorded entry - hitting all the keys in a word at once)
+https://github.com/codepoke-kk/qwertigraphy/release/chorder.exe
 
 Double click and go!
 

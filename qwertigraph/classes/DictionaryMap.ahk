@@ -113,8 +113,12 @@ class DictionaryMap
 	}
 	
 	propagateEntryToMaps(newEntry) {
-		this.qwerds.item(newEntry.qwerd) := newEntry
-		this.hints.item(newEntry.word) := newEntry
+		; Force lower entries to lower
+		StringLower, qwerdlower, % newEntry.qwerd
+		StringLower, wordlower, % newEntry.word
+		newEntrylower := new DictionaryEntry(wordlower "," newEntry.form "," qwerdlower "," newEntry.keyer "," newEntry.Usage "," newEntry.hint "," newEntry.dictionary)
+		this.qwerds.item(newEntry.qwerd) := newEntrylower
+		this.hints.item(newEntry.word) := newEntrylower
 		
 		StringUpper, qwerdUPPER, % newEntry.qwerd
 		StringUpper, wordUPPER, % newEntry.word

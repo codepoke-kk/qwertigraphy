@@ -246,6 +246,7 @@ class MappingEngine_Chorded
 		; Send the empty key through to clear the input buffer
 		this.keyboard.Token := ""
 		this.input_text_buffer := ""
+		this.keyboard.AutoSpaceSent := false
 		this.ExpandInput(this.keyboard.Token, key, (this.keyboard.Shfed this.keyboard.Ctled this.keyboard.Alted this.keyboard.Wined), (A_TickCount - this.keyboard.TokenStartTicks))
 	}
 
@@ -351,8 +352,8 @@ class MappingEngine_Chorded
 	ExpandInput(input_text, key, mods, ticks) {
 		this.logEvent(4, "Expanding |" input_text "|" key "|" mods "|" ticks "|" )
 		if (key = "{Chord}") {
-			ToolTip, % "Chording " input_text, A_CaretX, A_CaretY + 30
-			SetTimer, ClearToolTipEngine, -1500
+			;ToolTip, % "Chording " input_text, A_CaretX, A_CaretY + 30
+			;SetTimer, ClearToolTipEngine, -1500
 			this.logEvent(4, "Chording " input_text )
 		} else {
 			this.logEvent(4, "Serialing " input_text)
@@ -621,7 +622,7 @@ class MappingEngine_Chorded
 		if (coachEvent.power < this.tip_power_threshold) {
 			return
 		}
-		if (coachEvent.chordable) {
+		if (coachEvent.chordable = "active") {
 			Tooltip % coachEvent.word " = " coachEvent.qwerd " (" coachEvent.chord ")", A_CaretX, A_CaretY + 30
 		} else {
 			Tooltip % coachEvent.word " = " coachEvent.qwerd, A_CaretX, A_CaretY + 30
