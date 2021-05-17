@@ -281,7 +281,7 @@ class DictionaryMap
 			newdict := dictionary . ".new"
 			fileHandle := FileOpen(newdict, "w")
 			fileHandles[dictionary] := fileHandle
-			header := "word,form,qwerd,keyer,usage,hint`n"
+			header := "word,form,qwerd,keyer,chord,usage`n"
 			fileHandles[dictionary].Write(header)
 		}
 		
@@ -295,7 +295,7 @@ class DictionaryMap
 			; progress := Round(100*(writtenCount/sortedCount))
 			; GuiControl,, SaveProgress, %progress%  
 			; msgbox, % "Looping with " sortableKey "=" form.word
-			dictline := qwerd.word "," qwerd.form "," qwerd.qwerd "," qwerd.keyer "," qwerd.usage "," qwerd.hint "`n"
+			dictline := qwerd.word "," qwerd.form "," qwerd.qwerd "," qwerd.keyer "," qwerd.chord "," qwerd.usage "`n"
 			this.logEvent(4, "Writing " dictline " to " qwerd.dictionary)
 			if (qwerd.word = "look" or qwerd.word = "execution" or qwerd.word = "services") {
 				this.logEvent(1, "Writing sortable for " dictline " to " qwerd.dictionary)  
