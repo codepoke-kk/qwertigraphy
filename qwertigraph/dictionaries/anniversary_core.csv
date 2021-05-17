@@ -24,7 +24,7 @@ to,t-u,tu,,tu,26
 a,h,hk,,hk,27
 in,n,n,,n,28
 that,th-a,ha,,ah,29
-I,a,ik,,ik,30
+i,a,ik,,ik,30
 was,o-s,os,,os,31
 he,e,e,,e,32
 his,s,su,u,su,33
@@ -192,7 +192,7 @@ far,f-a,fa,,af,198
 seemed,s2-e-mt,semt,,emst,199
 house,^-h-\-u-s,hus,,hsu,200
 got,g-t,gt,,gt,201
-God,g,gu,u,gu,202
+god,g,gu,u,gu,202
 head,^-h-\-e-d,hed,,deh,203
 called,k-o-/-t,kot,,kot,204
 looked,l-u-/-t,lut,,ltu,205
@@ -322,7 +322,7 @@ least,l-e-s2-t,lest,,elst,342
 case,k-a-s,kas,,aks,343
 hear,^-h-\-e-r,heru,u,ehru,344
 known,n-o-n,nono,o,no,345
-English,e-ng-sh,engz,,egnz,346
+english,e-ng-sh,engz,,egnz,346
 hope,^-h-\-o-p,hop,,hop,348
 along,a-l-ng,alg,,agl,349
 leave,l-e-v,lev,,elv,350
@@ -388,14 +388,14 @@ city,s2-e-t-e,sete,,est,425
 fell,f-e-l,felo,o,eflo,426
 able,a-bl,abl,,abl,427
 need,n-e-d,ned,,den,428
-French,fr-e-n-ch,frenc,,cefnr,429
+french,fr-e-n-ch,frenc,,cefnr,429
 question,k-n,qn,,nq,430
 family,f-a-m-ya,famya,,afmy,431
 boy,b-o-e,byo,o,boy,432
 cause,k-s2,kso,o,kos,433
 strong,s2-t-r,str,,rst,435
 ten,tn,tn,,nt,437
-England,e-ng,eg,,eg,438
+england,e-ng,eg,,eg,438
 possible,p-o-s,poso,o,ops,439
 dead,td,ddo,o,do,440
 returned,r-e-t-/-t,rett,,ert,441
@@ -497,7 +497,7 @@ position,p-o-sh,poz,,opz,556
 else,l-s,ls,,ls,558
 clear,k-l-e,kle,,ekl,559
 late,l-a-t,lat,,alt,560
-American,a-m-n,amn,,amn,561
+american,a-m-n,amn,,amn,561
 bed,b-d,bd,,bd,563
 laid,l-a-d,lado,o,adlo,564
 cold,k-o-ld,kold,,dklo,565
@@ -542,7 +542,7 @@ especially,e-s-p-e,espe,,eps,607
 desire,d-s,ds,,ds,609
 send,s2-e-n,seno,o,enos,611
 office,o-f,ofu,u,fou,612
-London,l-nt,lnt,,lnt,614
+london,l-nt,lnt,,lnt,614
 greater,g-r-r,grr,,gr,615
 big,b-g,bgo,o,bgo,617
 letters,l-es,leso,o,elos,618
@@ -705,7 +705,7 @@ court,k-o-t,kotu,u,kotu,809
 youth,e-u-th,uho,o,hou,811
 cost,k-o-s,kos,,kos,812
 sudden,s2-u-tn,sutn,,nstu,815
-Christian,k-r-e-s-ch,kresc,,cekrs,816
+christian,k-r-e-s-ch,kresc,,cekrs,816
 evil,e-v-l,evl,,elv,817
 danger,tn-j-e2,tnje,,ejnt,818
 main,m-a-n,manu,u,amnu,819
@@ -769,7 +769,7 @@ top,t-o-p,topo,o,opt,896
 tone,t-o-n,tono,o,not,898
 laughed,l-a-f-t,laft,,aflt,899
 intended,n-tn-/-t,ntnt,,nt,901
-Indian,nt-ea-n,nten,,ent,903
+indian,nt-ea-n,nten,,ent,903
 direction,d-r-k-sh,drkz,,dkrz,907
 gives,g-e-s,ges,,egs,908
 terrible,t-e-r-b,terb,,bert,909
@@ -783,7 +783,7 @@ attempt,a-tm-t,atmt,,amt,918
 likely,l-a-e,lae,,ael,919
 drawn,d-r-o-n,dron,,dnor,921
 fast,f-a-s2-t,fasto,o,afost,923
-Street,s2-t,stw,w,stw,924
+street,s2-t,stw,w,stw,924
 wall,u-o-l,uol,,lou,925
 troops,t-r-u-p-s,trups,,prstu,927
 modern,m-o-tn,motn,,mnot,928
@@ -919,7 +919,7 @@ camp,k-a-m-p,kamp,,akmp,1107
 move,m-u,muo,o,mou,1108
 winter,u-e-nt-r,uentr,,enrtu,1109
 excellent,e-s2-l,xl,,lx,1110
-America,a-m,amu,u,amu,1112
+america,a-m,amu,u,amu,1112
 tax,t-a-x,taxo,o,aotx,1114
 consider,k-s,ksu,u,ksu,1115
 car,k-r,kr,,kr,1117
@@ -963,7 +963,7 @@ breath,br-e-th,breh,,behr,1165
 similar,s2-e-m-e-l,semel,,elms,1167
 surprise,s-e-pr-i-s,sepris,,eiprs,1168
 obtain,o-b-tn,obtn,,bnot,1170
-March,m-a-ch,mac,,acm,1171
+march,m-a-ch,mac,,acm,1171
 dog,d-o-g,dogo,o,dgo,1172
 iron,i-r-n,irn,,inr,1173
 gentlemen,jnt,jnt,,jnt,1174
@@ -998,9 +998,9 @@ difference,df,dfo,o,dfo,1212
 clearly,k-l-e-e,klee,,ekl,1213
 honest,o-n-e-s,oneso,o,enos,1214
 freely,fr-e-e,freeo,o,efor,1215
-Jesus,j-e-ss,jess,,ejs,1216
+jesus,j-e-ss,jess,,ejs,1216
 royal,r-o-e-l,ryl,,lry,1217
-July,j-u,ju,,ju,1218
+july,j-u,ju,,ju,1218
 seat,s2-e-t,seti,i,eist,1222
 heads,^-h-\-e-d-s,heds,,dehs,1223
 illustration,e-l-u-s,elus,,elsu,1224
@@ -1029,7 +1029,7 @@ shut,sh-u-t,zut,,tuz,1253
 ships,sh-s,zs,,sz,1254
 settled,s2-e-t-ld,setld,,delst,1255
 report,r-pr,rpr,,pr,1256
-June,j-n,jn,,jn,1259
+june,j-n,jn,,jn,1259
 secure,s2-e-k-r,sekr,,ekrs,1260
 permitted,pr-m-e-td,prmedd,,dempr,1261
 daily,d-a-e,dae,,ade,1264
@@ -1086,7 +1086,7 @@ sides,s2-i-d-s,sids,,dis,1335
 creature,k-r-e-t-r,kretr,,ekrt,1339
 hill,^-h-\-e-l,hel,,ehl,1340
 altogether,o-t-u,otu,,otu,1341
-Washington,u-o-sh,uoz,,ouz,1342
+washington,u-o-sh,uoz,,ouz,1342
 famous,f-a-m-u-s,famus,,afmsu,1343
 equally,e-k-l-e,eqle,,elq,1344
 otherwise,u-th-i,uhi,,hiu,1346
@@ -1116,7 +1116,7 @@ thin,th-e-n,heno,o,ehno,1385
 failed,f-a-ld,fald,,adfl,1386
 fate,f-a-t,fato,o,afot,1388
 phrase,fr-a-s,fras,,afrs,1389
-November,n-v,nvo,o,nov,1392
+november,n-v,nvo,o,nov,1392
 waited,u-a-td,uadd,,adu,1394
 coast,k-o-s2-t,kost,,kost,1396
 hall,^-h-\-o-l,holo,o,hlo,1397
@@ -1149,7 +1149,7 @@ list,l-s,lso,o,los,1432
 blow,bl-o,bloo,o,blo,1433
 tender,tn-d-e2,tnde,,dent,1434
 stranger,s2-t-j-e2,stje,,ejst,1435
-December,d-e-s,des,,des,1437
+december,d-e-s,des,,des,1437
 handsome,^-h-\-a-n-s2-m,hansm,,ahmns,1438
 worked,r-k-t,rkt,,krt,1439
 prepare,pr-e-p,prep,,epr,1440
@@ -1163,7 +1163,7 @@ surface,s2-e-f-a-s,sefas,,aefs,1447
 consequence,k-s2-e-k,kseq,,ekqs,1448
 pity,p-t-e,pteo,o,eopt,1449
 throw,th-r-o,hro,,hor,1450
-January,j-a-n,jano,o,ajno,1451
+january,j-a-n,jano,o,ajno,1451
 habit,^-h-\-a-b-t,habt,,abht,1452
 weak,e-k,eko,o,eko,1453
 congress,k-g,kg,,gk,1455
@@ -1220,7 +1220,7 @@ extraordinary,e-s-/-o-tn,xotn,,notx,1521
 guard,g-a2-d,gad,,adg,1522
 hearing,^-h-\-e-r-\-h,herg,,eghr,1523
 beat,b-e-t,beti,i,beit,1524
-August,o-g,og,,go,1526
+august,o-g,og,,go,1526
 burst,br-s2-t,brst,,brst,1527
 calm,k-a-m,kamo,o,akmo,1528
 forces,f-s2s,fss,,fs,1529
@@ -1232,7 +1232,7 @@ thank,th-^->-\-h,hgo,o,gho,1539
 discover,d-s2-k-v,dskv,,dksv,1540
 stands,s2-tn-s,stns,,nst,1542
 based,b-a-s2-t,bast,,abst,1543
-April,a-pr,apro,o,aopr,1544
+april,a-pr,apro,o,aopr,1544
 explained,e-s-pl-/-t,xplt,,lptx,1545
 heat,^-h-\-e-t,het,,eht,1547
 ear,e-r,eri,i,eir,1548
@@ -1273,9 +1273,9 @@ season,s-e-s2-n,sesn,,ens,1597
 wounded,u-u-nt-d,uuntd,,dntu,1598
 double,d-b,db,,bd,1600
 drove,d-r-o-v,drov,,dorv,1602
-Spain,s-p-n,spno,o,nops,1607
+spain,s-p-n,spno,o,nops,1607
 enemies,e-n-e-m-e-s,enemes,,emns,1608
-October,o-k-t,okt,,kot,1609
+october,o-k-t,okt,,kot,1609
 busy,b-e-s-e,bese,,bes,1614
 title,t-i-t,tit,,it,1615
 series,s-e-r-e-s,seres,,ers,1616
@@ -1329,7 +1329,7 @@ task,t-a-s2-k,tasko,o,akost,1690
 fool,f-u-l,ful,,flu,1691
 kingdom,k-e-ng-tm,kengtm,,egkmnt,1692
 cruel,k-r-u-l,krul,,klru,1693
-Sunday,s2-n,sne,e,ens,1694
+sunday,s2-n,sne,e,ens,1694
 shape,sh-a-p,zap,,apz,1695
 birth,b-e-r-th,berh,,behr,1697
 policy,p-o-l,pol,,lop,1698
@@ -1465,7 +1465,7 @@ immense,e-mn-s,emms,,ems,1879
 devoted,df-td,dfdd,,df,1882
 everybody,e-v-b-o,evbo,,beov,1884
 level,l-e-v-l,levl,,elv,1885
-Virginia,v-a,vao,o,aov,1887
+virginia,v-a,vao,o,aov,1887
 directed,d-r-k-t,drkt,,dkrt,1888
 raise,r-a-s,raso,o,aors,1889
 dull,d-u-l,dul,,dlu,1890
@@ -1507,7 +1507,7 @@ avoid,v-o-e,vy,,vy,1938
 solemn,s2-o-l-e-m,solem,,elmos,1939
 composed,k-p-o-/-t,kpot,,kopt,1940
 mental,mn-t-l,mmtl,,lmt,1941
-India,nt-a,nta,,ant,1943
+india,nt-a,nta,,ant,1943
 computer,k-p-u-/-r,kpur,,kpru,1944
 theory,th-e-r-e,hereo,o,ehor,1945
 suit,s2-u-t,sut,,stu,1946
@@ -1528,7 +1528,7 @@ color,k-u-l,kul,,klu,1967
 hurried,^-h-\-e-r-e-d,hered,,dehr,1969
 mistress,m-s2-t-r-e-s,mstres,,emrst,1971
 excitement,e-s2-i-t-m,xitm,,imtx,1972
-September,s-e-p,sepo,o,eops,1973
+september,s-e-p,sepo,o,eops,1973
 praise,pr-a-s,pras,,aprs,1975
 writer,r-i-r,rir,,ir,1976
 plenty,pl-e-nt-e,plente,,elnpt,1977
@@ -1557,7 +1557,7 @@ cousin,k-u-s2-n,kusn,,knsu,2016
 circle,s2-e-k-l,sekl,,ekls,2018
 energy,n-r-j,nrj,,jnr,2019
 union,e-u-n,unu,u,nu,2020
-February,f-e-b,febo,o,befo,2023
+february,f-e-b,febo,o,befo,2023
 included,e-/-td,edd,,de,2024
 liability,l-i-/-b,libo,o,bilo,2027
 favor,f-a,fao,o,afo,2033
@@ -1594,7 +1594,7 @@ lake,l-a-k,lak,,akl,2086
 teach,t-e-ch,tec,,cet,2088
 worship,u-u-/-sh,uuz,,uz,2089
 stock,s2-t-o,stoo,o,ost,2090
-Ireland,i-r,ir,,ir,2091
+ireland,i-r,ir,,ir,2091
 quantity,k-<-t,qt,,qt,2092
 earlier,e-r-e-r,erer,,er,2094
 interrupted,n-/-u-p-/-t,nupt,,nptu,2095
@@ -1613,7 +1613,7 @@ treatment,t-r-e-m,trem,,emrt,2113
 fat,f-a-t,fatu,u,aftu,2116
 type,t-i-p,tipo,o,iopt,2117
 mistake,m-s2-t,mst,,mst,2119
-Napoleon,n-a-p-o-l-e-n,napolen,,aelnop,2120
+napoleon,n-a-p-o-l-e-n,napolen,,aelnop,2120
 glorious,g-l-o-s,glos,,glos,2121
 inclined,e-/-nt,ento,o,enot,2122
 anywhere,n-a-r,nar,,anr,2123
@@ -1644,7 +1644,7 @@ readily,r-e-d-ya,redya,,adery,2155
 ignorant,e-g,ego,o,ego,2156
 voyage,v-o-e-j,vyj,,jvy,2157
 related,r-e-l-a-/-t,relat,,aelrt,2159
-Latin,l-a-tn,latn,,alnt,2164
+latin,l-a-tn,latn,,alnt,2164
 foolish,f-u-l-sh,fulz,,fluz,2165
 trial,t-r-i-l,tril,,ilrt,2167
 unfortunate,n-f-tn-a-t,nftnat,,afnt,2168
@@ -1776,7 +1776,7 @@ listening,l-e-s2-n-\-h,lesng,,eglns,2376
 agreeable,^-yab,yab,,aby,2378
 suggestion,s2-u-j,suj,,jsu,2382
 comfortable,k-f-t-b,kftb,,bfkt,2383
-Egypt,e-j-e-p,ejep,,ejp,2387
+egypt,e-j-e-p,ejep,,ejp,2387
 classes,k-l-a-ss,klass,,akls,2388
 measures,m-e-sh-u-s,mezus,,emsuz,2391
 confusion,k-f-e-u-sh,kfuz,,fkuz,2394
@@ -1801,7 +1801,7 @@ spare,s-p-a-r,spar,,aprs,2432
 announced,a-n-n-s2-t,annst,,anst,2434
 solid,s2-o-l-e-d,soled,,delos,2436
 poem,p-o-e-m,pym,,mpy,2437
-Elizabeth,e-l-e-s-b-th,elesbh,,behls,2439
+elizabeth,e-l-e-s-b-th,elesbh,,behls,2439
 blame,bl-a-m,blam,,ablm,2440
 assumed,a-s2-m-/-t,asmt,,amst,2443
 magnificent,m-/-f,mf,,fm,2444
@@ -1811,7 +1811,7 @@ disposition,d-s-p-o-sh,dspoz,,dopsz,2450
 estate,e-s2-t,estu,u,estu,2452
 painful,p-a-n-f,panf,,afnp,2453
 rolled,r-o-ld,rold,,dlor,2455
-Boston,b-o-s,boso,o,bos,2456
+boston,b-o-s,boso,o,bos,2456
 hem,^-h-\-e-m,hemo,o,ehmo,2458
 towns,t-n-s,tns,,nst,2460
 gun,g-n,gno,o,gno,2461
@@ -1931,7 +1931,7 @@ impulse,m-pl-s,mpls,,lmps,2652
 available,a-v-a-l-b,avalb,,ablv,2653
 conviction,k-v-e-k-sh,kvekz,,ekvz,2658
 declare,d-e-/-r,der,,der,2659
-Russia,r-sh-a,rza,,arz,2661
+russia,r-sh-a,rza,,arz,2661
 port,p-o-t,poto,o,opt,2664
 ideal,a-d-e-l,adel,,adel,2665
 haste,^-h-\-a-s2-t,hast,,ahst,2670
@@ -1943,7 +1943,7 @@ clever,k-l-e-v,klev,,eklv,2678
 decision,d-s-e-sh,dsez,,desz,2681
 aspect,a-s-p-k,aspk,,akps,2682
 western,u-e-s2-tn,uestn,,enstu,2683
-Bible,b-i-b,bib,,bi,2684
+bible,b-i-b,bib,,bi,2684
 insisted,n-ss-/-t,nsst,,nst,2685
 exist,e-s-e-s,xes,,esx,2688
 silk,s-e-l-k,selk,,ekls,2690
@@ -1984,7 +1984,7 @@ enthusiasm,n-th-u-s,nhus,,hnsu,2768
 exceedingly,e-s2-e-d-/-e,xede,,dex,2769
 fix,f-e-x,fex,,efx,2771
 venture,v-nt-r,vntr,,nrtv,2773
-Christmas,k-r-e-s,kres,,ekrs,2774
+christmas,k-r-e-s,kres,,ekrs,2774
 critical,k-r-/-ya,krya,,akry,2776
 nearest,n-e2-/-s2-t,nestu,u,enstu,2778
 errors,e-r-r-s,errs,,ers,2780
@@ -2041,7 +2041,7 @@ deed,d-e-d,ded,,de,2870
 chain,ch-a-n,cano,o,acno,2873
 writes,r-i-s,risu,u,irsu,2874
 knife,n-i-f,nif,,fin,2875
-Mississippi,m-e-ss,messo,o,emos,2876
+mississippi,m-e-ss,messo,o,emos,2876
 studied,s2-td-e-d,sdded,,des,2877
 maintained,mn-tn-d,mmtnd,,dmnt,2878
 fears,f-e-r-s,ferso,o,efors,2879
@@ -2055,7 +2055,7 @@ widow,u-e-d-o,uedo,,deou,2895
 repeat,r-p-e,rpe,,epr,2897
 industry,nt-s,ntso,o,nost,2899
 arrive,a-r-i,ario,o,aior,2901
-Saturday,s2-a-t,satu,u,astu,2902
+saturday,s2-a-t,satu,u,astu,2902
 intense,n-tn-s,ntns,,nst,2905
 somebody,s2-m-b-o,smbo,,bmos,2907
 intimate,n-tm-a-t,ntmat,,amnt,2909
@@ -2070,7 +2070,7 @@ moreover,^-m-o,moo,o,mo,2923
 merit,m-e2-t,mete,e,emt,2924
 stir,s2-t-e2,steo,o,eost,2925
 intelligent,n-/-jnt,njnt,,jnt,2926
-Africa,a-fr,afr,,afr,2927
+africa,a-fr,afr,,afr,2927
 gross,g-r-o-s,groso,o,gors,2929
 average,a-v-r-j,avrj,,ajrv,2930
 meanwhile,mn-i2,mmi,,im,2933
@@ -2155,7 +2155,7 @@ mood,m-u-d,mudo,o,dmou,3088
 folk,f-o-k,fok,,fko,3090
 central,s2-n-/-l,snl,,lns,3091
 succeed,s2-u-k-d,sukd,,dksu,3092
-Scotland,s2-k-o-t,skot,,kost,3093
+scotland,s2-k-o-t,skot,,kost,3093
 exchange,e-s2-ch,xc,,cx,3094
 beaten,b-e-tn,betno,o,benot,3095
 application,a-pl-sh,aplz,,alpz,3097
@@ -2165,7 +2165,7 @@ owe,o,oa,a,ao,3102
 remote,r-e-m-o-t,remot,,emort,3103
 safely,s2-a-f-e,safeo,o,aefos,3105
 sins,s2-e-n-s,sensi,i,eins,3108
-Mexico,m-e-x,mex,,emx,3109
+mexico,m-e-x,mex,,emx,3109
 whereas,a-r-s,ars,,ars,3110
 folly,f-o-l-e,fole,,eflo,3112
 bottle,b-o-t-l,botl,,blot,3115
@@ -2231,7 +2231,7 @@ apartment,a-p-t-m,aptm,,ampt,3235
 suitable,s2-u-t-b,sutb,,bstu,3236
 guest,g-e-s2-t,gest,,egst,3239
 desires,d-s-s,dsso,o,dos,3242
-Jerusalem,j-e-r-u-s,jerus,,ejrsu,3244
+jerusalem,j-e-r-u-s,jerus,,ejrsu,3244
 equipment,e-k-w-e-p-m,eqepm,,empq,3245
 sunshine,s2-n-sh-i-n,snzin,,insz,3249
 obvious,o-b-v,obv,,bov,3252
@@ -2344,7 +2344,7 @@ jealous,j-e-l-u-s,jelus,,ejlsu,3469
 novel,n-o-v,novo,o,nov,3471
 conceal,k-s-e-l,kselu,u,eklsu,3472
 silly,s-e-l-e,sele,,els,3473
-Christianity,k-r-e-s-ch-/-n-t,krescnt,,ceknrst,3474
+christianity,k-r-e-s-ch-/-n-t,krescnt,,ceknrst,3474
 intercourse,n-/-k-r-s,nkrs,,knrs,3478
 badly,b-d-e,bde,,bde,3479
 estimated,e-s2-tm-a-td,estmadd,,ademst,3480
@@ -2472,7 +2472,7 @@ instruction,n-s-/-k-sh,nskz,,knsz,3748
 intellect,n-/-e-k,neku,u,eknu,3749
 namely,n-a-e,naeo,o,aeno,3757
 behalf,b-f,bfo,o,bfo,3758
-Austria,o-s-/-a,osa,,aos,3759
+austria,o-s-/-a,osa,,aos,3759
 clock,k-l-o-k,klok,,klo,3761
 reserve,r-s2-e-v,rsev,,ersv,3764
 revolution,r-v-o-l-sh,rvolz,,lorvz,3766
@@ -2531,7 +2531,7 @@ objection,o-b-sh,obz,,boz,3864
 cares,k-as,kaso,o,akos,3865
 knights,n-i-s,nisu,u,insu,3869
 pretend,pr-e-tn,pretn,,enprt,3870
-Ohio,o,ow,w,ow,3872
+ohio,o,ow,w,ow,3872
 preparation,pr-e-p-sh,prepz,,eprz,3873
 vital,v-i-t-l,vitl,,iltv,3878
 deserve,d-s2-e-v,dsev,,desv,3879
@@ -2564,7 +2564,7 @@ wont,o-nt,onti,i,inot,3949
 countess,k-nt-e-s,kntes,,eknst,3952
 dramatic,d-r-a-m-/-a,dramao,o,admor,3955
 abide,a-b-i,abi,,abi,3958
-Massachusetts,m-a-s,masi,i,aims,3960
+massachusetts,m-a-s,masi,i,aims,3960
 leaf,l-e-f,lef,,efl,3962
 disappointment,d-o-e-m,dym,,dmy,3963
 hospital,^-h-\-o-s-p-t-l,hosptl,,hlopst,3965
@@ -2580,7 +2580,7 @@ translation,t-/-l-a-sh,tlaz,,altz,3986
 representative,r-p-df,rpdf,,dfpr,3989
 department,/-d,dy,y,dy,3990
 easier,e-s-e-r,eser,,ers,3991
-Atlantic,a-t-l-a-nt,atlant,,alnt,3992
+atlantic,a-t-l-a-nt,atlant,,alnt,3992
 acknowledge,a-k,ako,o,ako,3995
 maybe,m-a-b,mab,,abm,3997
 strict,s2-t-r-k,strko,o,korst,4004
@@ -2636,11 +2636,11 @@ selfish,s2-/-s2h,ssh,,hs,4138
 retained,r-e-tn-d,retnd,,denrt,4145
 recognition,r-k-n-sh,rknz,,knrz,4147
 hunt,^-h-\-u-nt,hunto,o,hnotu,4149
-California,k-a,ka,,ak,4150
+california,k-a,ka,,ak,4150
 discharge,d-s-ch-j,dscj,,cdjs,4154
 dates,td-s,dds,,ds,4155
 justified,j-u-s2-f-/-t,jusft,,fjstu,4157
-Monday,m-u-n,muno,o,mnou,4163
+monday,m-u-n,muno,o,mnou,4163
 linen,l-e-n-e-n,lenen,,eln,4168
 knee,n-e,neu,u,enu,4171
 elegant,e-l-e-g,eleg,,egl,4172
@@ -2716,7 +2716,7 @@ injured,n-j-u-/-t,njut,,jntu,4327
 unpleasant,n-p-e-s,npes,,enps,4333
 invisible,n-v-e-s-b,nvesb,,bensv,4334
 canoe,k-a-n-u,kanu,,aknu,4338
-Berlin,br-l-e-n,brlen,,belnr,4343
+berlin,br-l-e-n,brlen,,belnr,4343
 declined,d-e-/-nt,dent,,dent,4350
 whatsoever,o-t-s2-o-v,otsov,,ostv,4351
 hopeless,^-h-\-o-pl,hopl,,hlop,4354
@@ -2728,7 +2728,7 @@ requested,r-k-e-s-/-t,rqest,,eqrst,4363
 duchess,d-ch-e-s,dces,,cdes,4367
 suited,s2-u-td,sudd,,dsu,4369
 amiable,a-m-b,ambo,o,abmo,4370
-Missouri,m-o,mou,u,mou,4376
+missouri,m-o,mou,u,mou,4376
 lean,l-e-n,leno,o,elno,4378
 lend,l-e-nt,lenti,i,eilnt,4383
 undertake,u-/-t-a-k,utak,,aktu,4384
@@ -2760,7 +2760,7 @@ trifle,t-r-i-f,trif,,firt,4466
 proposal,pr-p-o-l,prpol,,lopr,4468
 artificial,a2-t-f-e-sh,atfez,,aeftz,4469
 artistic,a2-t-/-s2-t,atst,,ast,4471
-Texas,t-x,txo,o,otx,4473
+texas,t-x,txo,o,otx,4473
 heir,a-r,arw,w,arw,4478
 tore,t-o-r,toro,o,ort,4481
 extend,e-s2-tn,xtn,,ntx,4484
@@ -2775,9 +2775,9 @@ uses,e-u-s,usa,a,asu,4506
 pacific,p-a-s2-k,pask,,akps,4507
 descent,d-s2-e-nt,dsento,o,denost,4509
 retain,r-e-tn,retno,o,enort,4510
-Illinois,e-l,ele,e,el,4511
+illinois,e-l,ele,e,el,4511
 polite,p-o-l-i,poli,,ilop,4513
-Norman,n-o-mn,nomm,,mno,4514
+norman,n-o-mn,nomm,,mno,4514
 relating,r-e-l-a-\-h,relag,,aeglr,4517
 offended,o-f-nt-d,ofntd,,dfnot,4523
 alliance,a-l-i-n-s,alins,,ailns,4526
@@ -2788,7 +2788,7 @@ lock,l-o-k,loko,o,klo,4533
 minor,m-i-n-e2,mineo,o,eimno,4534
 anguish,a-ng-sh,angz,,agnz,4545
 neighborhood,n-a-br-/-d,nabrd,,abdnr,4546
-Hamilton,^-h-\-a-m-e-l,hamel,,aehlm,4550
+hamilton,^-h-\-a-m-e-l,hamel,,aehlm,4550
 interfere,n-/-f-e-r,nfer,,efnr,4551
 humor,^-h-\-e2-u-m-e2,heume,,ehmu,4555
 wheat,^-h-\-u-e-t,huet,,ehtu,4559
@@ -2813,13 +2813,13 @@ pine,p-i-n,pino,o,inop,4617
 erect,e-r-e-k,erek,,ekr,4623
 painter,p-a-nt-r,pantr,,anprt,4624
 seal,s-e-l,selo,o,elos,4629
-Jewish,j-u-sh,juz,,juz,4631
+jewish,j-u-sh,juz,,juz,4631
 liable,l-i-b,libu,u,bilu,4632
 heed,^-h-\-e-d,hede,e,deh,4635
 stomach,s2-tm-a-k,stmak,,akmst,4636
 deer,d-e2,deu,u,deu,4637
 considerably,k-s-b-e,ksbe,,beks,4642
-Kentucky,k-e,keu,u,eku,4643
+kentucky,k-e,keu,u,eku,4643
 hearty,^-h-\-a2-t-e,hateo,o,aehot,4645
 nonsense,n-o-n-s2-e-n-s,nonsens,,enos,4647
 temptation,tm-t-sh,tmtz,,mtz,4651
@@ -2842,7 +2842,7 @@ sketch,s2-k-e-ch,skec,,ceks,4692
 indirect,nt-r-k,ntrk,,knrt,4696
 welfare,l-f-a-r,lfar,,aflr,4697
 session,s-e-sh,sez,,esz,4699
-Japan,j-a-p-n,japn,,ajnp,4700
+japan,j-a-p-n,japn,,ajnp,4700
 compare,k-pr,kpr,,kpr,4702
 wagon,u-a-g-n,uagn,,agnu,4703
 charitable,ch-a2-t-b,catb,,abct,4708
@@ -2860,11 +2860,11 @@ checked,ch-e-k-t,cekt,,cekt,4751
 continent,k-tn-nt,ktnnt,,knt,4753
 hay,^-h-\-a,hao,o,aho,4756
 educational,e-d-u-/-l,edul,,delu,4758
-Georgia,j-a,ja,,aj,4760
+georgia,j-a,ja,,aj,4760
 yourselves,u-ss,uss,,su,4761
 bedroom,b-d-r-m,bdrm,,bdmr,4762
 inward,n-/-d,ndo,o,dno,4763
-Chicago,sh-e-k,zek,,ekz,4765
+chicago,sh-e-k,zek,,ekz,4765
 injustice,n-j-u-s-s,njuss,,jnsu,4766
 experiences,s-p-e-s,spes,,eps,4769
 engage,n-g-a,nga,,agn,4770
@@ -2872,11 +2872,11 @@ courtesy,k-e2-t-s-e2,ketse,,ekst,4777
 civilized,s2-v-i-s2-d,svisd,,disv,4783
 acres,a-k-r-s,akrso,o,akors,4784
 everyone,e-v-u-n,evun,,enuv,4787
-Pennsylvania,p-a,pao,o,aop,4789
+pennsylvania,p-a,pao,o,aop,4789
 carries,k-a-e-s,kaes,,aeks,4791
 relate,r-e-l-a,rela,,aelr,4800
 probability,pr-/-b,prbo,o,bopr,4802
-Tennessee,tn,tne,e,ent,4807
+tennessee,tn,tne,e,ent,4807
 sweetness,s2-u-e-t-n-e-s,suetnes,,enstu,4808
 hired,^-h-\-i-r-/-t,hirt,,hirt,4812
 adapted,a-d-a-p-/-t,adapto,o,adopt,4814
@@ -2921,7 +2921,7 @@ mob,m-o-b,mobo,o,bmo,4913
 velvet,v-e-l-v-t,velvt,,eltv,4914
 upstairs,u-p-s2-t-ya,upstya,,apstuy,4921
 duly,d-u-e,dueo,o,deou,4923
-Cambridge,k-a-m-b,kamb,,abkm,4926
+cambridge,k-a-m-b,kamb,,abkm,4926
 shirt,sh-e2-t,zeto,o,eotz,4928
 elect,e-l-e-k,elek,,ekl,4929
 bodily,b-o-e,byu,u,buy,4931
@@ -2931,8 +2931,8 @@ backward,b-a-k-d,bakd,,abdk,4935
 adopt,a-d-p,adp,,adp,4936
 fund,f-nt,fnto,o,fnot,4942
 teachers,t-e-ch-ye2,tecye,,cety,4943
-Friday,fr-i,fri,,fir,4946
-Philadelphia,f-e-l-a,fela,,aefl,4947
+friday,fr-i,fri,,fir,4946
+philadelphia,f-e-l-a,fela,,aefl,4947
 raw,r-o,rou,u,oru,4948
 damp,d-a-m-p,dampo,o,admop,4954
 discuss,d-s2-k,dsko,o,dkos,4958
@@ -3013,7 +3013,7 @@ withdraw,e-th-d-r-o,ehdro,,dehor,5148
 opera,o-pr-a,opra,,aopr,5156
 oppose,o-p-o,opo,,op,5159
 curiously,k-e-u-e,kue,,eku,5164
-Louisiana,l-a,lau,u,alu,5170
+louisiana,l-a,lau,u,alu,5170
 consult,k-s2-u,ksuo,o,kosu,5172
 confirmation,k-f-e-m-sh,kfemz,,efkmz,5175
 personality,pr-s-/-l,prsl,,lprs,5176
@@ -3065,7 +3065,7 @@ jersey,j-e-s-e,jese,,ejs,5303
 invite,n-v-i,nvi,,inv,5305
 ingenious,n-j-e-n-u-s,njenus,,ejnsu,5310
 caution,k-o-sh,koz,,koz,5312
-Vienna,v-e-n-a,vena,,aenv,5315
+vienna,v-e-n-a,vena,,aenv,5315
 sends,s2-e-n-s,sensa,a,aens,5319
 weighed,u-a-d,uad,,adu,5326
 awe,o,oy,y,oy,5331
@@ -3097,7 +3097,7 @@ earn,e2-n,enu,u,enu,5427
 admission,a-m-sh,amz,,amz,5430
 nowhere,n-o-a-r,noar,,anor,5431
 swell,s2-u-e-l,suel,,elsu,5433
-Connecticut,k-t,ktu,u,ktu,5435
+connecticut,k-t,ktu,u,ktu,5435
 potatoes,p-o-t-a-t-o-s,potatos,,aopst,5441
 forbid,f-b-d,fbd,,bdf,5446
 hesitate,^-h-\-e-s2-t-a,hesta,,aehst,5453
@@ -3109,7 +3109,7 @@ bargain,b-a-r-g-n,bargn,,abgnr,5468
 bond,b-o-nt,bont,,bnot,5480
 specimen,s-p-e-s2-mn,spesmm,,emps,5484
 gang,g-a-ng,gago,o,ago,5491
-Howard,^-h-\-a-u-d,hwd,,dhw,5492
+howard,^-h-\-a-u-d,hwd,,dhw,5492
 continuous,k-tn-u-u-s,ktnuus,,knstu,5494
 entertainment,n-/-tn-m,ntnm,,mnt,5496
 dishes,d-e-sh-s,dezs,,desz,5498
@@ -3118,14 +3118,14 @@ thorough,th2-e,hea,a,aeh,5505
 belt,b-e-l-t,belto,o,belot,5506
 breaks,br-a-k-s,braks,,abkrs,5507
 cigar,s2-e-g-r,segr,,egrs,5509
-Netherlands,n-e-th-l-a-nt-s,nehlants,,aehlnst,5511
+netherlands,n-e-th-l-a-nt-s,nehlants,,aehlnst,5511
 entry,nt-r-e,ntre,,enrt,5514
 corporation,k-r-p,krp,,kpr,5515
 legend,l-e-jnt,lejnt,,ejlnt,5521
-Kansas,k,ky,y,ky,5523
+kansas,k,ky,y,ky,5523
 avail,a-v-a-l,aval,,alv,5529
 woke,u-o-k,uoko,o,kou,5530
-Maine,m-a-n,mani,i,aimn,5532
+maine,m-a-n,mani,i,aimn,5532
 accurate,a-k-r-a,akra,,akr,5541
 accord,a-k-r,akr,,akr,5548
 pledge,pl-e-j,plej,,ejlp,5550
@@ -3160,7 +3160,7 @@ prosperous,pr-s-pr-u-s,prsprus,,prsu,5631
 excessive,e-s-e-s2-v,xesv,,esvx,5633
 lawful,l-o-f,lof,,flo,5634
 resort,r-s2o-t,rsot,,orst,5638
-Florida,fl-a,fla,,afl,5639
+florida,fl-a,fla,,afl,5639
 legitimate,l-j-tm-a-t,ljtmat,,ajlmt,5644
 aren't,r-nt,rnto,o,nort,5653
 petition,p-e-t-sh,petz,,eptz,5655
@@ -3178,10 +3178,10 @@ prompt,pr-mt,prmt,,mprt,5685
 workmen,r-k-mn,rkmmo,o,kmor,5688
 crop,k-r-p,krpo,o,kopr,5690
 scenery,s2-e-n-r-e,senre,,enrs,5693
-Richmond,r-e-ch-mn,recmm,,cemr,5700
+richmond,r-e-ch-mn,recmm,,cemr,5700
 reduce,r-e-d-u-s,redus,,dersu,5701
 lamps,l-a-m-p-s,lampso,o,almops,5703
-Edinburgh,e-tn-br-o,etnbro,,benort,5707
+edinburgh,e-tn-br-o,etnbro,,benort,5707
 exile,e-s-i-l,xil,,ilx,5710
 hears,^-h-\-e-r-s,herso,o,ehors,5711
 partial,p-a-r-sh,parzo,o,aoprz,5712
@@ -3199,7 +3199,7 @@ allusion,a-l-sh,alz,,alz,5762
 fantastic,f-a-nt-/-s2-t,fantst,,afnst,5763
 cake,k-a-k,kako,o,ako,5764
 wreck,r-e-k,rek,,ekr,5766
-Australia,o-s-/-l-ea,osle,,elos,5776
+australia,o-s-/-l-ea,osle,,elos,5776
 farmers,f-a2-m-ya2,famyao,o,afmoy,5788
 checks,ch-e-k-s,ceks,,ceks,5796
 agricultural,ya-/-k-l,yakl,,akly,5797
@@ -3239,7 +3239,7 @@ cash,k-a-sh,kazo,o,akoz,5905
 allowance,a-l-n-s,alns,,alns,5907
 defiance,df-i-n-s,dfins,,dfins,5911
 goddess,g-d-e-s,gdes,,degs,5913
-Thursday,th-r-s,hrs,,hrs,5915
+thursday,th-r-s,hrs,,hrs,5915
 debate,d-b-a-t,dbat,,abdt,5917
 navy,n-a-v-e,naveo,o,aenov,5920
 modesty,m-o-d-e-s-e,modese,,demos,5921
@@ -3268,7 +3268,7 @@ discretion,d-s2-k-r-e-sh,dskrez,,dekrsz,5987
 chorus,k-o-r-u-s,korus,,korsu,5992
 consist,k-ss,ksso,o,kos,6001
 pole,p-o-l,polu,u,lopu,6002
-Tuesday,t-u-s,tuso,o,ostu,6004
+tuesday,t-u-s,tuso,o,ostu,6004
 assertion,a-s2-e-s2h,asesh,,aehs,6006
 await,^-h-\-u-a-t,huat,,ahtu,6017
 machines,m-a-sh-n-s,mazns,,amnsz,6018
@@ -3305,7 +3305,7 @@ constitute,k-s2-t,kstu,u,kstu,6101
 extension,e-s2-tn-sh,xtnz,,ntxz,6107
 factory,f-a-k-t-r-e,faktre,,aefkrt,6108
 telegraph,t-e-l-/-^-e,tele,,elt,6109
-Columbus,k-o-l-m,kolmo,o,klmo,6112
+columbus,k-o-l-m,kolmo,o,klmo,6112
 honey,^-h-\-u-n-e,hune,,ehnu,6113
 attendance,a-tn-tn-s,atntns,,anst,6114
 imaginary,e-m-a-j-/-r-e,emajre,,aejmr,6116
@@ -3323,7 +3323,7 @@ attraction,a-t-r-k-sh,atrkz,,akrtz,6155
 momentary,m-o-m-r-e,momre,,emor,6159
 keys,k-e-s,kes,,eks,6162
 parlor,p-a-r-l-r,parlr,,alpr,6165
-Indiana,nt,ntw,w,ntw,6171
+indiana,nt,ntw,w,ntw,6171
 thrill,th-r-e-l,hrel,,ehlr,6175
 laden,l-a-tn,latno,o,alnot,6178
 republican,r-p-b-n,rpbn,,bnpr,6183
@@ -3340,9 +3340,9 @@ rail,r-a-l,ral,,alr,6212
 lawn,l-o-n,lono,o,lno,6227
 spoiled,s-p-o-e-ld,spyld,,dlpsy,6243
 drift,d-r-e-f-t,dreft,,defrt,6245
-Wednesday,u-e-n-s,uens,,ensu,6249
+wednesday,u-e-n-s,uens,,ensu,6249
 lazy,l-a-s-e,lase,,aels,6255
-Victoria,v-e-k-t,vekt,,ektv,6266
+victoria,v-e-k-t,vekt,,ektv,6266
 divers,d-i-v-r-s,divrs,,dirsv,6268
 extract,e-s-/-k,xk,,kx,6269
 split,s-pl-e-t,splet,,elpst,6281
@@ -3398,7 +3398,7 @@ commonplace,k-mn-pl-a-s,kmmplas,,aklmps,6514
 execute,e-s2-k,xko,o,kox,6515
 resulted,r-s2-u-/-t,rsut,,rstu,6524
 provincial,pr-v-e-n-sh,prvenz,,enprvz,6530
-Matthew,m-a-th-e-u,mahu,,ahmu,6531
+matthew,m-a-th-e-u,mahu,,ahmu,6531
 errand,e-r-a-nt,erant,,aenrt,6532
 swim,s2-u-e-m,suem,,emsu,6541
 gorgeous,g-o-j-u-s,gojus,,gjosu,6542
@@ -3435,9 +3435,9 @@ screen,s2-k-r-e-n,skren,,eknrs,6686
 yea,ya,yau,u,auy,6695
 impress,m-pr-e-s,mpres,,emprs,6699
 endeavor,n-dfr,ndfr,,dfnr,6701
-Arkansas,a-r-k,arko,o,akor,6711
+arkansas,a-r-k,arko,o,akor,6711
 sentimental,s2-e-nt-/-m,sentm,,emnst,6712
-Delaware,d-e,dek1,k1,1dek,6717
+delaware,d-e,dek1,k1,1dek,6717
 compromise,k-pr-m-i-s,kprmis,,ikmprs,6718
 democratic,tm-k,tmk,,kmt,6719
 genial,j-e-n-l,jenl,,ejln,6722
@@ -3450,9 +3450,9 @@ trains,t-r-a-n-s,transo,o,anorst,6734
 argue,a-g-e-u,agu,,agu,6735
 rely,r-e-l-i,reli,,eilr,6737
 bee,b-e,bea,a,abe,6739
-Portugal,p-t-u-g,ptug,,gptu,6742
+portugal,p-t-u-g,ptug,,gptu,6742
 tempest,tm-p-e-s,tmpes,,empst,6744
-Constantinople,k-s2-tn-o-p,kstnop,,knopst,6751
+constantinople,k-s2-tn-o-p,kstnop,,knopst,6751
 plane,pl-a-n,plani,i,ailnp,6760
 voluntary,v-o-l-nt-r-e,volntre,,elnortv,6761
 greet,g-r-e-t,greto,o,egort,6766
@@ -3465,7 +3465,7 @@ scared,s2-k-a-r-/-t,skart,,akrst,6820
 downstairs,d-n-s2-t-ya,dnstya,,adnsty,6825
 diameter,d-i-m-e-t-e2,dimete,,deimt,6826
 confederate,k-f-e-d-r-a,kfedra,,adefkr,6831
-Canadian,k-a-n-n,kanno,o,akno,6842
+canadian,k-a-n-n,kanno,o,akno,6842
 majestic,m-a-j-/-s2-t,majst,,ajmst,6850
 controversy,k-/-v-e-s-e,kvese,,eksv,6853
 lighter,l-i-r,lir,,ilr,6856
@@ -3486,7 +3486,7 @@ amounted,a-m-td,amdd,,adm,6914
 coward,k-a-u-d,kwd,,dkw,6915
 expend,e-s-jnt,xjnt,,jntx,6918
 kin,k-e-n,kenu,u,eknu,6919
-Alabama,a-l-a,alao,o,alo,6922
+alabama,a-l-a,alao,o,alo,6922
 worried,u-u-e-d,uued,,deu,6926
 louder,l-a-u-r,lwr,,lrw,6932
 cellar,s-e-l-r,selr,,elrs,6935
@@ -3509,13 +3509,13 @@ beggar,b-g-r,bgro,o,bgor,7010
 emphasis,m-f-a-ss,mfass,,afms,7019
 engineer,n-j-n-e2,njne,,ejn,7020
 circulation,s2-/-l-a-s2h,slasho,o,ahlos,7022
-Iowa,i,iu,u,iu,7023
-Dublin,d-bl-e-n,dblen,,bdeln,7024
+iowa,i,iu,u,iu,7023
+dublin,d-bl-e-n,dblen,,bdeln,7024
 attentive,a-tn-df,atndfo,o,adfnot,7027
 odious,o-d-u-s,odus,,dosu,7034
 barrier,b-a-r-e-r,barer,,aber,7037
 dean,d-e-n,dene,e,den,7038
-Oregon,o-r,oru,u,oru,7039
+oregon,o-r,oru,u,oru,7039
 circuit,s2-/-t,sty,y,sty,7043
 qualified,k-o-f-/-t,qoft,,foqt,7044
 maids,m-a-d-s,mads,,adms,7045
@@ -3527,12 +3527,12 @@ illusion,e-l-sh,elz,,elz,7073
 sack,s2-a-k,sako,o,akos,7075
 oven,u-v-n,uvn,,nuv,7077
 consumption,k-s2-m-sh,ksmz,,kmsz,7079
-Michigan,m-i,mii,i,im,7081
+michigan,m-i,mii,i,im,7081
 renew,r-e-n-u,renu,,enru,7087
 excellency,e-s2-l-e,xle,,elx,7089
 counter,^-k,kk1,k1,1k,7090
 confidential,k-f-tn-sh,kftnz,,fkntz,7102
-Nevada,n-e-v,nevo,o,enov,7104
+nevada,n-e-v,nevo,o,enov,7104
 unusually,nu-sh-e,nuze,,enuz,7111
 authorized,o-th-r-i-s2-d,ohrisd,,dhiors,7122
 museum,m-u-s2-e-m,musem,,emsu,7134
@@ -3544,7 +3544,7 @@ toe,t-o,toa,a,aot,7162
 elephant,e-l-f-nt,elfnt,,eflnt,7163
 ivory,i-v-r-e,ivre,,eirv,7175
 champion,ch-a-m-p-n,campn,,acmnp,7186
-Persia,p-e-s-a,pesa,,aeps,7189
+persia,p-e-s-a,pesa,,aeps,7189
 pension,p-n-sh,pnzo,o,nopz,7192
 anyhow,n-^-h-\-a-u,nhw,,hnw,7194
 cord,k-o-d,kodo,o,dko,7198
@@ -3586,7 +3586,7 @@ kick,k-e-k,kek,,ek,7324
 condemn,k-tm,ktm,,kmt,7326
 favored,f-a-/-t,fati,i,afit,7333
 sweetest,s2-u-e-t-e-s,suetes,,estu,7338
-Switzerland,s2-u-e-t-s,suets,,estu,7342
+switzerland,s2-u-e-t-s,suets,,estu,7342
 courses,k-r-ss,krss,,krs,7346
 verdict,v-e2-d,vedo,o,deov,7351
 compound,k-p-n,kpn,,knp,7353
@@ -3603,7 +3603,7 @@ groaned,g-r-o-nt,gront,,gnort,7424
 deprive,d-pr-i,dpri,,dipr,7429
 communion,k-m-u-n-u-n,kmunun,,kmnu,7431
 benevolent,b-n-e-v,bnev,,benv,7439
-Vermont,v-t,vto,o,otv,7443
+vermont,v-t,vto,o,otv,7443
 bother,b-o-th,boho,o,bho,7452
 worthless,u-u-th-l,uuhl,,hlu,7457
 divorce,df-o-s,dfos,,dfos,7460
@@ -3650,7 +3650,7 @@ jail,j-a-l,jal,,ajl,7655
 reasonably,r-s-e,rseo,o,eors,7656
 censure,s2-e-n-sh-u,senzu,,ensuz,7658
 starts,s2-t-a2-t-s,stats,,ast,7668
-Quebec,k-e-b-k,qebk,,bekq,7675
+quebec,k-e-b-k,qebk,,bekq,7675
 luxurious,l-u-x-u-s,luxus,,lsux,7676
 mule,m-e-u-l,mul,,lmu,7681
 colonial,k-o-l-o-n,kolon,,klno,7683
@@ -3661,7 +3661,7 @@ skirt,s2-k-e2-t,sket,,ekst,7692
 industrious,nt-s2-u-s,ntsus,,nstu,7695
 satin,s2-a-tn,satn,,anst,7705
 recourse,r-e-k-r-s,rekrs,,ekrs,7706
-Montana,m-o-nt,monto,o,mnot,7707
+montana,m-o-nt,monto,o,mnot,7707
 keeper,k-p-/-r,kpro,o,kopr,7711
 rains,r-a-n-s,rans,,anrs,7714
 ascend,a-s2-e-n,asen,,aens,7727
@@ -3671,7 +3671,7 @@ rotten,r-o-tn,rotn,,nort,7760
 sergeant,s-a-jnt,sajnt,,ajnst,7774
 contend,k-tn-d,ktndo,o,dknot,7781
 vary,v-a-r-e,vareo,o,aeorv,7794
-Syria,s-e-r-a,serao,o,aeors,7796
+syria,s-e-r-a,serao,o,aeors,7796
 heretofore,^-h-\-e2-t-f,hetf,,efht,7798
 jenny,j-e-n-e,jeneu,u,ejnu,7813
 illustrate,e-l-u-s,eluso,o,elosu,7814
@@ -3694,18 +3694,18 @@ impose,m-p-o,mpoo,o,mop,7903
 isle,i-l,ilu,u,ilu,7906
 tenant,tn-nt,tnnt,,nt,7914
 ford,f-d,fdo,o,dfo,7928
-Wisconsin,u-e,ueo,o,eou,7943
+wisconsin,u-e,ueo,o,eou,7943
 hopeful,^-h-\-o-p-f,hopf,,fhop,7957
 frown,fr-n,frno,o,fnor,7960
-Nebraska,n-e,nea,a,aen,7967
+nebraska,n-e,nea,a,aen,7967
 pie,p-i,pio,o,iop,7975
 lists,l-s-s,lss,,ls,7981
 notorious,n-o-t-r-u-s,notrus,,norstu,7986
 excursion,e-s2-k-r-sh,xkrz,,krxz,7990
 menace,mn-a-s,mmas,,ams,8013
-Utah,e-u-t,uto,o,otu,8022
+utah,e-u-t,uto,o,otu,8022
 diligence,d-e-l-e-j,delej,,dejl,8026
-Belgium,bl-j-m,bljm,,bjlm,8031
+belgium,bl-j-m,bljm,,bjlm,8031
 abrupt,a-br-p,abrp,,abpr,8050
 tough,t-u-f,tuf,,ftu,8063
 courtyard,k-o-t-a2-d,kotad,,adkot,8064
@@ -3752,10 +3752,10 @@ ecstasy,e-s2-t-s-e,estse,,est,8332
 brightly,br-ia,bria,,abir,8334
 resident,r-s2-e-tn,rsetn,,enrst,8343
 enforce,n-f-s2,nfs,,fns,8344
-Liverpool,l-pl,lpl,,lp,8346
+liverpool,l-pl,lpl,,lp,8346
 appoint,o-e,yi,i,iy,8355
 eminence,e-mn-s,emmso,o,emos,8356
-Alaska,a-l-a-s2-k,alask,,akls,8366
+alaska,a-l-a-s2-k,alask,,akls,8366
 boundless,b-n-l,bnlo,o,blno,8382
 destination,d-s2-tn-sh,dstnz,,dnstz,8385
 exceptional,s-e-p-sh-l,sepzl,,elpsz,8389
@@ -3764,21 +3764,21 @@ heavier,^-h-\-e-v-e-r,hever,,ehrv,8404
 accidental,a-k-s-l,aksl,,akls,8408
 rainy,r-a-n-e,rane,,aenr,8415
 exterior,e-s-/-o-r,xor,,orx,8416
-Easter,e2-s2-t-e2,esteo,o,eost,8423
+easter,e2-s2-t-e2,esteo,o,eost,8423
 behavior,b-^-h-\-a-v-r,bhavr,,abhrv,8429
 disgusted,d-s2-g-u-s-/-t,dsgust,,dgstu,8431
 teaches,t-e-ch-s,tecs,,cest,8433
 helps,^-h-\-e-l-p-s,helpso,o,ehlops,8437
 grade,g-r-a,grao,o,agor,8441
 endurance,nt-r-a-n-s,ntrans,,anrst,8443
-Marion,m-a-r-n,marn,,amnr,8444
+marion,m-a-r-n,marn,,amnr,8444
 mineral,mn-e-r-l,mmerl,,elmr,8445
 aforesaid,a-f-s22-e-d,afsed,,adefs,8458
 deliverance,d-l-n-s,dlns,,dlns,8460
 ken,k-e-n,keni,i,eikn,8462
 lump,l-m-p,lmp,,lmp,8467
 apron,a-pr-n,aprn,,anpr,8491
-Oklahoma,o-k,oko,o,ko,8493
+oklahoma,o-k,oko,o,ko,8493
 malicious,m-a-l-e-sh,malez,,aelmz,8494
 transportation,t-/-p-o-t-sh,tpotz,,optz,8504
 duration,d-r-a-sh,draz,,adrz,8513
@@ -3790,7 +3790,7 @@ bureau,b-u,buo,o,bou,8534
 exit,e-s2-e-t,xet,,etx,8540
 pairs,p-a-r-s,parso,o,aoprs,8548
 guarantee,g-a2-nt-e,gante,,aegnt,8549
-Maryland,m-d,mdo,o,dmo,8559
+maryland,m-d,mdo,o,dmo,8559
 furnace,f-n-a-s,fnas,,afns,8564
 reluctance,r-e-l-u-k,reluk,,eklru,8566
 transaction,t-/-a-k-sh,takz,,aktz,8579
@@ -3809,7 +3809,7 @@ estimation,e-s2-tm-sh,estmz,,emstz,8656
 correctly,k-r-e,kreu,u,ekru,8660
 reluctant,r-e-l-u-k,reluko,o,ekloru,8662
 yearly,e-r-e,ereu,u,eru,8664
-Denmark,tn-m-a-r-k,tnmark,,akmnrt,8671
+denmark,tn-m-a-r-k,tnmark,,akmnrt,8671
 junction,j-nk,jq,,jq,8674
 muscular,m-u-s2-k-l-r,musklr,,klmrsu,8683
 defy,df-i,dfi,,dfi,8687
@@ -3846,7 +3846,7 @@ confidently,k-f-e,kfe,,efk,8830
 nowadays,n-a-u-d-a-s,nwdas,,adnsw,8833
 cordially,k-o-j-ye,kojye,,ejkoy,8844
 intrigue,n-/-g,ngu,u,gnu,8848
-Norway,n-o-r-a,norao,o,anor,8849
+norway,n-o-r-a,norao,o,anor,8849
 role,r-o-l,rolo,o,lor,8850
 superfluous,s-/-f,sf,,fs,8859
 kid,k-e-d,ked,,dek,8862
@@ -3877,7 +3877,7 @@ drown,d-r-n,drn,,dnr,9022
 millennium,m-e-l-e-n,melen,,elmn,9037
 malignant,m-a-l-e-g-n,malegn,,aeglmn,9040
 slide,s-l-i-d,slido,o,dilos,9050
-Puritan,p-e-u-tn,putn,,nptu,9059
+puritan,p-e-u-tn,putn,,nptu,9059
 asylum,a-s-i-l-m,asilm,,ailms,9064
 herewith,^-h-\-e2-th,heh,,eh,9068
 institute,n-s2-t,nst,,nst,9070
@@ -3916,7 +3916,7 @@ sane,s2-a-n,sanu,u,ansu,9212
 mortality,m-o-t-/-l,motlo,o,lmot,9215
 sculpture,s2-k-l-p-t-r,sklptr,,klprst,9216
 bake,b-a-k,bako,o,abko,9218
-Cleveland,k-l-e-v,klevo,o,eklov,9220
+cleveland,k-l-e-v,klevo,o,eklov,9220
 strenuous,s2-t-r-e-n-u-u-s,strenuus,,enrstu,9224
 luggage,l-u-g-j,lugj,,gjlu,9236
 tonight,tn-i,tnio,o,inot,9237
@@ -3942,7 +3942,7 @@ rug,r-u-g,rugo,o,goru,9336
 define,df-i-n,dfino,o,dfino,9338
 infer,n-f-e-r,nfero,o,efnor,9343
 mar,m-a2,mak2,k2,2akm,9351
-Asiatic,a-sh-/-a,aza,,az,9359
+asiatic,a-sh-/-a,aza,,az,9359
 unkind,n-k-i,nki,,ikn,9360
 cowardice,k-a-u-d-e-s,kwdes,,deksw,9365
 constable,k-s2-t-b,kstb,,bkst,9366
@@ -3970,20 +3970,20 @@ toy,t-o-e,tyo,o,oty,9454
 acre,a-k-r,akru,u,akru,9461
 lass,l-a-s,lasi,i,ails,9469
 bat,b-a-t,bato,o,abot,9473
-Colorado,k-o,koo,o,ko,9474
+colorado,k-o,koo,o,ko,9474
 monopoly,mn-o-pl-e,mmople,,elmop,9488
 metallic,m-e-t-l-k,metlk,,eklmt,9489
 idly,a-d-e,adeo,o,adeo,9496
 orphan,o-f-n,ofno,o,fno,9509
 depot,d-p-o,dpo,,dop,9512
 unit,e-u-n-e-t,unet,,entu,9514
-Manchester,mn-ch-e-s,mmces,,cems,9515
+manchester,mn-ch-e-s,mmces,,cems,9515
 client,k-l-i,kli,,ikl,9528
 lowly,l-o-e,lyi,i,ily,9535
 annals,a-n-l-s,anls,,alns,9542
-Norfolk,n-o-r-f-k,norfk,,fknor,9548
+norfolk,n-o-r-f-k,norfk,,fknor,9548
 deity,d-e-t-e,deteo,o,deot,9554
-Wellington,u-e-l-/-tn,ueltn,,elntu,9555
+wellington,u-e-l-/-tn,ueltn,,elntu,9555
 chocolate,ch-k-l-a,ckla,,ackl,9559
 deficient,df-e-sh-t,dfezt,,deftz,9561
 explore,e-s-pl-r,xplr,,lprx,9568
@@ -4011,7 +4011,7 @@ tension,tn-sh,tnzo,o,notz,9723
 magazines,m-a-g-s,mags,,agms,9738
 commended,k-mn-td,kmmddo,o,dkmo,9753
 creditors,k-r-e-/-r-s,krers,,ekrs,9754
-Amsterdam,a-m-s2-t-e-tm,amstetm,,aemst,9781
+amsterdam,a-m-s2-t-e-tm,amstetm,,aemst,9781
 heroism,^-h-\-e-r-o-s2-m,herosm,,ehmors,9782
 manger,mn-j-e2,mmjeo,o,ejmo,9793
 felicity,f-e-l-/-s,felsu,u,eflsu,9797
@@ -4040,11 +4040,11 @@ cloudy,k-l-a-u-e,klwe,,eklw,9915
 cleaned,k-l-e-nt,klent,,eklnt,9929
 certificate,s2-e-df,sedf,,defs,9931
 dungeon,tn-j-n,tnjn,,jnt,9935
-Brazil,br-a-s,brasu,u,abrsu,9964
+brazil,br-a-s,brasu,u,abrsu,9964
 gentry,jnt-r-e,jntre,,ejnrt,9975
 envious,n-v-u-s,nvus,,nsuv,9981
 fortitude,f-t-e-t,ftet,,eft,9982
-Palestine,p-a-l-e-s2-tn,palestn,,aelnpst,9985
+palestine,p-a-l-e-s2-tn,palestn,,aelnpst,9985
 incomprehensible,n-k-pr-e-n-s-b,nkprensb,,beknprs,9993
 dingy,tn-j-e,tnjeo,o,ejnot,9999
 intricate,n-/-k,nko,o,kno,10000
@@ -4064,12 +4064,12 @@ geography,j-/-o-e,jyo,o,joy,10083
 enclosure,n-k-/-r,nkr,,knr,10086
 mornings,mn-/-s,mmso,o,mos,10100
 indescribable,nt-s2-k-r-b,ntskrb,,bknrst,10106
-Windsor,u-e-n-s2-o-r,uensor,,enorsu,10107
+windsor,u-e-n-s2-o-r,uensor,,enorsu,10107
 actress,a-k-r-e-s,akres,,aekrs,10116
-Albany,o-b-n-e,obne,,beno,10119
+albany,o-b-n-e,obne,,beno,10119
 presbyterian,pr-e-s-b,presb,,beprs,10125
 avarice,a-v-a-r-e-s,avares,,aersv,10126
-Jesuit,j-e-s2-u-t,jesut,,ejstu,10148
+jesuit,j-e-s2-u-t,jesut,,ejstu,10148
 expired,e-s-p-i-/-t,xpit,,iptx,10150
 battalion,b-t-a-l-n,btaln,,ablnt,10153
 dearer,d-e2-/-r,dero,o,deor,10164
@@ -4085,7 +4085,7 @@ willingness,l-^-h-\-n-e-s,lhnes,,ehlns,10215
 heiress,a-r-e-s,areso,o,aeors,10224
 medal,m-e-d-l,medlo,o,delmo,10225
 opium,o-p-e-m,opem,,emop,10228
-Ceylon,s-e-l-o-n,selono,o,elnos,10244
+ceylon,s-e-l-o-n,selono,o,elnos,10244
 core,k-o-r,koro,o,kor,10257
 ethical,e-th-/-k,ehk,,ehk,10263
 respond,r-s-jnt,rsjnt,,jnrst,10268
@@ -4136,7 +4136,7 @@ bitten,b-e-tn,betnu,u,bentu,10554
 emphatic,m-f-/-a,mfa,,afm,10555
 initial,e-n-e-sh,enez,,enz,10564
 shipped,sh-/-t,zt,,tz,10565
-Montreal,m-o-nt,montu,u,mnotu,10567
+montreal,m-o-nt,montu,u,mnotu,10567
 contention,k-tn-sh,ktnz,,kntz,10570
 drill,d-r-e-l,drel,,delr,10583
 establishments,e-s2-t-b-m-s,estbms,,bemst,10585
@@ -4148,7 +4148,7 @@ bidden,b-tn,btno,o,bnot,10605
 favors,f-as,fasu,u,afsu,10621
 confound,k-f-nt,kfnt,,fknt,10623
 handy,^-h-\-nt-e,hnte,,ehnt,10632
-Memphis,mn-f-e-s,mmfes,,efms,10638
+memphis,mn-f-e-s,mmfes,,efms,10638
 unfair,n-f-a-r,nfar,,afnr,10642
 civility,s2-v-/-l,svl,,lsv,10648
 fiend,f-e-nt,fent,,efnt,10660
@@ -4172,8 +4172,8 @@ oar,o-r,orw,w,orw,10773
 index,nt-e-x,ntex,,entx,10775
 gum,g-m,gm,,gm,10783
 sometime,s2-tm,stmo,o,most,10789
-Calcutta,k-a-l-k,kalk,,akl,10793
-Jehovah,j-o-v-a,jova,,ajov,10801
+calcutta,k-a-l-k,kalk,,akl,10793
+jehovah,j-o-v-a,jova,,ajov,10801
 inherit,e-n-^-h-\-e2-t,enhet,,ehnt,10809
 butt,b-u-t,buto,o,botu,10811
 interminable,n-/-mn-b,nmmb,,bmn,10814
@@ -4220,12 +4220,12 @@ satisfactorily,s2-a-t-e,sateo,o,aeost,11063
 helpful,^-h-\-e-l-p-f,helpf,,efhlp,11072
 capricious,k-a-pr-e-sh,kaprez,,aekprz,11073
 azure,a-sh-u,azuo,o,aouz,11081
-Glasgow,g-l-a-s2-g,glasg,,agls,11097
+glasgow,g-l-a-s2-g,glasg,,agls,11097
 arrogance,a-r-o-g,arog,,agor,11119
 delirium,d-l-e-r-m,dlerm,,delmr,11120
 ownership,o-n-e2-/-sh,onez,,enoz,11122
 lire,l-e-r-a,lera,,aelr,11127
-Rochester,r-o-ch,roco,o,cor,11138
+rochester,r-o-ch,roco,o,cor,11138
 conform,k-f-m,kfm,,fkm,11142
 copious,k-o-p-u-s,kopus,,kopsu,11158
 lease,l-e-s,lesu,u,elsu,11190
@@ -4265,10 +4265,10 @@ auspicious,o-s-p-e-sh,ospez,,eopsz,11468
 construct,k-s2-/-k,ksk,,ks,11469
 poultry,p-o-l-t-r-e,poltre,,eloprt,11491
 tank,t-a-nk,taq,,aqt,11495
-Lancaster,l-a-nk-a-s,laqas,,alqs,11519
+lancaster,l-a-nk-a-s,laqas,,alqs,11519
 epistle,e-p-e-s-l,epesl,,elps,11529
 arrogant,a-r-o-g,arogo,o,agor,11533
-Bohemia,b-o-e-m-ea,byme,,bemy,11539
+bohemia,b-o-e-m-ea,byme,,bemy,11539
 merciless,m-e-r-s2-e2-l,mersel,,elmrs,11544
 considerate,k-s-/-a-t,ksat,,akst,11546
 customer,k-u-s-r,kusr,,krsu,11568
@@ -4287,7 +4287,7 @@ petroleum,p-t-r-l-m,ptrlm,,lmprt,11638
 vacation,v-a-k-a-sh,vakaz,,akvz,11649
 numberless,n-u-m-l,numl,,lmnu,11656
 tinge,tn-j,tnj,,jnt,11659
-Cincinnati,s2-e-n-s2-e-n,sensen,,ens,11667
+cincinnati,s2-e-n-s2-e-n,sensen,,ens,11667
 ether,e-th2,ehu,u,ehu,11677
 invest,n-v-e-s,nves,,ensv,11695
 conveyance,k-v-a-n-s,kvans,,aknsv,11696
@@ -4329,12 +4329,12 @@ haul,^-h-\-o-l,holi,i,hilo,11952
 inexorable,n-e-s2-o-r-b,nxorb,,bnorx,11972
 masterly,m-a-s-e,mase,,aems,11974
 ferocity,f-e-r-/-s,fersu,u,efrsu,11980
-Panama,p-n-a-m-a,pnama,,amnp,11982
+panama,p-n-a-m-a,pnama,,amnp,11982
 circumference,s2-/-f,sfo,o,fos,11987
 girlish,g-l-sh,glz,,glz,11989
 savings,s2-a-v-/-s2,savs,,asv,12002
 lovingly,l-v-/-e,lveo,o,elov,12009
-Atlanta,a-t-l-a,atla,,alt,12015
+atlanta,a-t-l-a,atla,,alt,12015
 cement,s2-e-mn-t,semmt,,emst,12025
 chemistry,k-e-m-e-s-r-e,kemesre,,ekmrs,12060
 dictate,d-e-k-t-a,dekta,,adekt,12063
@@ -4445,7 +4445,7 @@ trips,t-r-e-p-s,treps,,eprst,12974
 civic,s2-v-k,svk,,ksv,12978
 scarf,s2-k-a-r-f,skarf,,afkrs,12989
 efficacy,e-f-k-s-e,efkse,,efks,12991
-Leipzig,l-i-p-s2-g,lipsg,,gilps,13007
+leipzig,l-i-p-s2-g,lipsg,,gilps,13007
 domination,d-o-mn-sh,dommz,,dmoz,13031
 fry,fr-i,friu,u,firu,13033
 housekeeping,^-h-\-u-s2-k-p-\-h,huskpg,,ghkpsu,13050
@@ -4455,7 +4455,7 @@ ant,a-nt,antu,u,antu,13057
 lunatic,l-u-n-/-a,lunao,o,alnou,13064
 cleanliness,k-l-e-n-e-n-e-s,klenenes,,eklns,13065
 multiple,m-u-/-pl,mupl,,lmpu,13076
-Portland,p-o-t-l-a-nt,potlant,,alnopt,13087
+portland,p-o-t-l-a-nt,potlant,,alnopt,13087
 decrease,d-e-k-r-e-s,dekres,,dekrs,13089
 prosecute,pr-s2-k,prsk,,kprs,13092
 conjure,k-j-u,kju,,jku,13093
@@ -4464,7 +4464,7 @@ embroidery,m-br-o-e2-d-e2-e2,mbrydee,,bdemry,13118
 cooperation,k-o-o-p,koop,,kop,13127
 fabulous,f-a-b-u-s,fabus,,abfsu,13128
 treasurer,t-r-e-sh-u-/-r,trezur,,ertuz,13175
-Worcester,u-u-s2-t-e2,uuste,,estu,13190
+worcester,u-u-s2-t-e2,uuste,,estu,13190
 observant,o-b-s-e-/-nt,obsent,,benost,13192
 ditto,td-o,ddoo,o,do,13201
 forgave,f-g-a,fga,,afg,13223
@@ -4480,7 +4480,7 @@ firmament,f-e-m-a-m,femam,,aefm,13287
 eke,e-k,eku,u,eku,13292
 filth,f-e-l-th,felh,,efhl,13298
 expectancy,e-s-p-n-s-e,xpnse,,enpsx,13303
-Bordeaux,b-o-d-o,bodo,,bdo,13305
+bordeaux,b-o-d-o,bodo,,bdo,13305
 furtive,f-df,fdf,,df,13307
 consigned,k-s2-i-nt,ksint,,iknst,13318
 postpone,p-/-p-o-n,ppon,,nop,13325
@@ -4512,7 +4512,7 @@ ballot,b-a-l-o-t,balot,,ablot,13573
 invariable,n-v-a-r-b,nvarb,,abnrv,13620
 genesis,j-e-n-ss,jenss,,ejns,13626
 clamor,k-l-a-m-e2,klame,,aeklm,13627
-Lisbon,l-e-s-b-n,lesbn,,belns,13629
+lisbon,l-e-s-b-n,lesbn,,belns,13629
 disorderly,d-s2-o-d-e,dsode,,deos,13630
 lurid,l-r-e-d,lred,,delr,13640
 manor,mn-e2,mmei,i,eim,13680
@@ -4569,12 +4569,12 @@ astonish,a-s2-tn-sh,astnz,,anstz,14123
 sash,s-a-sh,saz,,asz,14127
 oration,o-r-a-sh,oraz,,aorz,14129
 commodore,k-m-o-d-r,kmodr,,dkmor,14134
-Melbourne,m-e-l-b,melb,,belm,14147
+melbourne,m-e-l-b,melb,,belm,14147
 chord,k-o-d,kodu,u,dkou,14155
 unacquainted,n-a-k-a-/-t,naqat,,anqt,14159
 carrier,k-a-e-/-r,kaer,,aekr,14194
 enlighten,n-l-i-n,nlin,,iln,14216
-Mohammedan,m-^-h-\-a-m-tn,mhamtn,,ahmnt,14240
+mohammedan,m-^-h-\-a-m-tn,mhamtn,,ahmnt,14240
 budget,b-j-e-t,bjet,,bejt,14241
 gall,g-o-l,golo,o,glo,14248
 collector,k-o-l-r,kolro,o,klor,14252
@@ -4602,7 +4602,7 @@ condescension,k-d-s2-e-n-sh,kdsenz,,deknsz,14419
 transit,t-/-t,tto,o,ot,14449
 astronomy,a-s2-t-r-o-n,astrono,o,anorst,14451
 aperture,a-p-e2-t-r,apetr,,aeprt,14467
-Detroit,d-/-o-e,dyo,o,doy,14468
+detroit,d-/-o-e,dyo,o,doy,14468
 mobile,m-o-bl,mobl,,blmo,14474
 bothered,b-o-th-/-t,boht,,bhot,14482
 irresponsible,e-r-s-p,ersp,,eprs,14497
@@ -4628,13 +4628,13 @@ octave,o-k-df,okdf,,dfko,14652
 zip,s-e-p,sepu,u,epsu,14660
 surest,shs2-t,zst,,stz,14663
 item,a-tm,atmo,o,amot,14667
-Morocco,m-o-r-o-k,moroko,o,kmor,14677
+morocco,m-o-r-o-k,moroko,o,kmor,14677
 enlist,n-l-s,nls,,lns,14684
 immemorial,e-mn-o-r-l,emmorl,,elmor,14697
 concord,k-k-o-d,kkod,,dko,14708
 cholera,k-o-l-r-a,kolra,,aklor,14712
 accomplice,a-k-pl-e-s,akples,,aeklps,14717
-Idaho,i-d,idu,u,diu,14742
+idaho,i-d,idu,u,diu,14742
 unfriendly,n-fr,nfr,,fnr,14754
 bankrupt,b-a-nk-p,baqp,,abpq,14769
 rheumatism,r-u-m-a-t-s2-m,rumatsm,,amrstu,14811
@@ -4723,7 +4723,7 @@ impure,m-p-e-u,mpu,,mpu,15724
 carnal,k-r-n-l,krnlo,o,klnor,15758
 lightest,l-i-s2-t,listo,o,ilost,15762
 westerly,u-r-e,ureo,o,eoru,15768
-Armenian,a2-mn-ea2-n,ammen,,aemn,15772
+armenian,a2-mn-ea2-n,ammen,,aemn,15772
 construed,k-s2-/-d,ksd,,dks,15775
 canton,k-t-o-n,kton,,knot,15778
 impregnable,m-pr-e-g,mpreg,,egmpr,15779
@@ -4733,9 +4733,9 @@ affable,a-f-b,afb,,abf,15801
 divan,d-i-v-a-n,divano,o,adinov,15803
 infidel,n-f-e-d-l,nfedl,,defln,15809
 compete,kp-e,kpeo,o,ekop,15818
-Toledo,t-o-l-e,toleo,o,elot,15847
+toledo,t-o-l-e,toleo,o,elot,15847
 incongruous,n-k-g-r-u-u-s,nkgruus,,gknrsu,15849
-Southampton,s-/-a-m-tn,samtn,,amnst,15857
+southampton,s-/-a-m-tn,samtn,,amnst,15857
 blameless,bl-a-m-l,blaml,,ablm,15862
 intact,nt-a-k,ntak,,aknt,15871
 minstrel,mn-s2-t-r-e-l,mmstrel,,elmrst,15878
@@ -4754,7 +4754,7 @@ perennial,pr-e-n-l,prenl,,elnpr,15994
 electoral,e-l-e-k-r-l,elekrl,,eklr,16009
 occult,o-k-l-t,oklt,,klot,16018
 desultory,d-s2-u-/-r-e,dsure,,dersu,16040
-Newfoundland,n-<-f,nfu,u,fnu,16046
+newfoundland,n-<-f,nfu,u,fnu,16046
 incalculable,n-k-a-l-b,nkalb,,abkln,16049
 bail,b-a-l,balo,o,ablo,16054
 inequality,n-e-k-u,nequ,,enqu,16059
@@ -4766,7 +4766,7 @@ elevator,e2-l-v-a-t-e2,elvate,,aeltv,16130
 frolic,fr-l-e-k,frlek,,efklr,16145
 dairy,d-a-r-e,dareo,o,adeor,16148
 lineage,l-e-n-j,lenj,,ejln,16159
-Minnesota,mn,mmu,u,mu,16162
+minnesota,mn,mmu,u,mu,16162
 indecent,nt-s2-e-nt,ntsent,,enst,16169
 faulty,f-o-t-e,fote,,efot,16181
 tickled,t-e-k-ld,tekld,,deklt,16194
@@ -4790,7 +4790,7 @@ inlet,n-l-e,nle,,eln,16351
 microscope,m-i-k-r-o-s2-k-p,mikroskp,,ikmoprs,16352
 despicable,d-s-p-k-b,dspkb,,bdkps,16369
 graduate,g-r-a-d-e-u-t,gradut,,adgrtu,16372
-Louisville,l-u-e-v,luev,,eluv,16373
+louisville,l-u-e-v,luev,,eluv,16373
 bunting,b-n-t-\-h,bntg,,bgnt,16375
 admonition,a-nm-sh,anmz,,amnz,16392
 infirm,n-f-e-m,nfem,,efmn,16424
@@ -4799,7 +4799,7 @@ ensign,n-s2-i-n,nsin,,ins,16435
 fortify,f-df,fdfo,o,dfo,16440
 hiss,^-h-\-e-s,heso,o,ehos,16441
 miner,m-i-n-e2,mineu,u,eimnu,16444
-Arizona,a-r-e-s,aresu,u,aersu,16459
+arizona,a-r-e-s,aresu,u,aersu,16459
 woo,u-u,uuu,u,u,16474
 idiotic,e-d-/-a,edao,o,adeo,16495
 mistrust,m-s2-t-r-s,mstrs,,mrst,16503
@@ -4817,7 +4817,7 @@ flagrant,fl-a-g,flagu,u,afglu,16623
 autumnal,o-tm-l,otml,,lmot,16650
 mid,m-e-d,medo,o,demo,16673
 cheerless,ch-el2,celo,o,celo,16675
-Erie,e-r-e,erei,i,eir,16679
+erie,e-r-e,erei,i,eir,16679
 constituent,k-s2-t-u-nt,kstunt,,knstu,16686
 ecstatic,e-s2-t-/-a,estao,o,aeost,16692
 expel,e-s-pl,xpl,,lpx,16725
@@ -4832,7 +4832,7 @@ genie,j-e-n-e,jenei,i,eijn,16814
 southerly,s2-u-th-e,suhe,,ehsu,16845
 goblet,g-o-bl-e,goble,,beglo,16852
 housewife,^-h-\-u-s2-i-f,husif,,fhisu,16853
-Syracuse,s-e-r-k-e-u,serku,,ekrsu,16885
+syracuse,s-e-r-k-e-u,serku,,ekrsu,16885
 masterful,m-a-s2-f,masf,,afms,16890
 cashier,k-a-sh-e2,kaze,,aekz,16911
 purchaser,pr-ch-/-r,prcr,,cpr,16916
@@ -4854,7 +4854,7 @@ episcopal,e-p-e-s2-k,epesk,,ekps,17048
 impediment,m-p-d-e-m,mpdem,,demp,17060
 instantaneous,n-s2-tn-u-s,nstnus,,nstu,17064
 belligerent,b-e-l-e-j,belej,,bejl,17068
-Santiago,s2-a-nt-a-g,santag,,agnst,17086
+santiago,s2-a-nt-a-g,santag,,agnst,17086
 dandy,tn-d-e,tndeo,o,denot,17119
 ambiguous,a-m-b-g,ambg,,abgm,17126
 premium,pr-e-mn,premm,,empr,17127
@@ -4879,7 +4879,7 @@ decease,d-s-e-s,dseso,o,deos,17376
 exemption,e-s2-e-m-sh,xemz,,emxz,17385
 bulwark,b-u-l-r-k,bulrk,,bklru,17389
 endanger,n-tn-j-e2,ntnje,,ejnt,17391
-Warsaw,u-o-s2-o,uoso,,osu,17394
+warsaw,u-o-s2-o,uoso,,osu,17394
 imagery,e-m-j-r-e,emjre,,ejmr,17396
 infinity,n-f-/-nt,nfnt,,fnt,17401
 illiterate,e-l-e-t,elet,,elt,17408
@@ -4939,7 +4939,7 @@ fanatic,f-a-n-/-a,fana,,afn,18072
 cocoa,k-k-o,kkoo,o,ko,18076
 delegation,d-e-l-sh,delz,,delz,18078
 nether,n-e-th,neho,o,ehno,18090
-D.C.,d-s-e,dseo,o,deos,18101
+d.c.,d-s-e,dseo,o,deos,18101
 pastor,p-a-s2-t-e2,pasteo,o,aeopst,18106
 combustion,k-b-u-s-sh,kbusz,,bksuz,18111
 canvass,k-a-n-v-a-s,kanvas,,aknsv,18121
@@ -4947,7 +4947,7 @@ executor,e-s2-k-/-r,xkr,,krx,18142
 covetous,k-u-v-e-t-u-s,kuvetus,,ekstuv,18148
 density,tn-/-s,tnse,e,enst,18162
 disagreement,dya-m,dyam,,admy,18178
-Havre,a-v-r,avr,,arv,18181
+havre,a-v-r,avr,,arv,18181
 caustic,k-/-s2-t,ksti,i,ikst,18183
 ostentation,o-s2-tn-t-sh,ostntz,,nostz,18190
 diffuse,df-e-u,dfuo,o,dfou,18197
@@ -4993,7 +4993,7 @@ fitly,f-e-t-e,feteo,o,efot,18686
 brilliance,br-e-l,brelo,o,belor,18720
 canned,k-a-nt,kanto,o,aknot,18752
 bloodless,bl-u-d-l,bludl,,bdlu,18766
-Homeric,^-h-\-o-m-e-r-k,homerk,,ehkmor,18768
+homeric,^-h-\-o-m-e-r-k,homerk,,ehkmor,18768
 detriment,d-/-m,dmo,o,dmo,18806
 effeminate,e-f-e-mn-a-t,efemmat,,aefmt,18810
 likened,l-a-n-d,landu,u,adlnu,18826
@@ -5069,7 +5069,7 @@ cans,k-a-n-s,kansu,u,aknsu,19611
 federation,f-e-d-r-a-sh,fedraz,,adefrz,19649
 illicit,e-l-e-s2-t,elest,,elst,19658
 consonant,k-s2-n,ksn,,kns,19661
-Venezuela,v-e-n-s-e-l-a,vensela,,aelnsv,19712
+venezuela,v-e-n-s-e-l-a,vensela,,aelnsv,19712
 outstanding,a-u-s2-tn-\-h,wstng,,gnstw,19713
 aristocrat,a-r-e-s2-t-o-k,arestok,,aekorst,19717
 apostolic,a-p-o-s2-t-l-k,apostlk,,aklopst,19723
@@ -5082,7 +5082,7 @@ optimism,o-p-tm-s2-m,optmsm,,mopst,19804
 fiendish,f-e-nt-sh,fentz,,efntz,19810
 requirement,r-k-i-m,rqim,,imqr,19812
 coated,k-o-td,koddo,o,dko,19823
-Havana,a-v-a-n-a,avana,,anv,19853
+havana,a-v-a-n-a,avana,,anv,19853
 enjoyable,n-j-o-e-b,njyb,,bjny,19860
 tonnage,t-n-j,tnjo,o,jnot,19863
 approximate,a-pr-x,aprx,,aprx,19873
@@ -5102,13 +5102,13 @@ insinuate,n-s2-e-n-e-u-t,nsenut,,enstu,20024
 dictator,d-e-k-t-a-/-r,dektar,,adekrt,20027
 embarrass,m-b-a-r-a-s,mbaras,,abmrs,20067
 omnipotent,o-m-n-e-p,omnep,,emnop,20082
-Barcelona,br-s-e-l-o-n-a,brselona,,abelnors,20087
+barcelona,br-s-e-l-o-n-a,brselona,,abelnors,20087
 indecision,nt-s-e-sh,ntsez,,enstz,20145
 notify,n-o-df,nodf,,dfno,20151
 intuitive,nt-e-u-df,ntudf,,dfntu,20165
 mitigate,m-e-t-e-g,meteg,,egmt,20167
 straighten,s2-t-r-a-tn,stratn,,anrst,20170
-Nicaragua,n-e-k-r,nekr,,eknr,20186
+nicaragua,n-e-k-r,nekr,,eknr,20186
 endeared,n-d-e2-d,nded,,den,20191
 menial,m-e-n-l,menl,,elmn,20192
 incorrect,n-k-r,nkru,u,knru,20209
@@ -5123,10 +5123,10 @@ exotic,e-s-/-a,xa,,ax,20266
 immaterial,e-m-a-t-e-r,emater,,aemrt,20277
 lighthouse,l-^-h-\-i-s,lhis,,hils,20282
 embody,m-b-o,mbo,,bmo,20283
-Singapore,s2-e-ng-p-o-r,sengpor,,egnoprs,20287
+singapore,s2-e-ng-p-o-r,sengpor,,egnoprs,20287
 decorate,d-e-k-r-a,dekra,,adekr,20288
 embargo,m-b-a-g-o,mbago,,abgmo,20293
-Wyoming,u-i,uio,o,iou,20295
+wyoming,u-i,uio,o,iou,20295
 geometry,j-e-om,jeom,,ejmo,20319
 entrust,nt-r-s,ntrs,,nrst,20344
 cynicism,s2-e-n-ss,senssu,u,ensu,20384
@@ -5153,7 +5153,7 @@ conserve,k-s2-e-v,ksev,,eksv,20717
 disagree,dya,dya,,ady,20725
 extort,e-s2-t-o-t,xtot,,otx,20727
 meditation,m-e-td-sh,meddz,,demz,20733
-Denver,tn-v,tnv,,ntv,20738
+denver,tn-v,tnv,,ntv,20738
 hubbub,^-h-\-u-b-b,hubb,,bhu,20753
 grandly,g-/-e,gei,i,egi,20787
 criterion,k-r-i-t-e-r-n,kritern,,eiknrt,20805
@@ -5194,11 +5194,11 @@ magnify,m-/-f,mfo,o,fmo,21346
 multiplicity,m-u-/-pl-/-s,mupls,,lmpsu,21348
 execrable,e-s2-e-k-r-b,xekrb,,bekrx,21404
 punt,p-n-t,pnt,,npt,21408
-Copenhagen,k-o-p-n-a-g-n,kopnagn,,agknop,21426
+copenhagen,k-o-p-n-a-g-n,kopnagn,,agknop,21426
 dowager,d-a-u-j-e2,dwje,,dejw,21430
 producer,pr-u-s-r,prusr,,prsu,21445
 ignominy,e-g-n-o-mn-e,egnomme,,egmno,21450
-Ontario,o-nt,onte,e,enot,21455
+ontario,o-nt,onte,e,enot,21455
 carnival,k-r-n-e-v,krnev,,eknrv,21481
 consternation,k-s2-tn-sh,kstnz,,knstz,21493
 auditor,o-td-e2,odde,,deo,21506
@@ -5215,7 +5215,7 @@ headstrong,^-h-\-e-d-s2-t-r,hedstr,,dehrst,21650
 culpable,k-l-p-b,klpb,,bklp,21656
 destitution,d-s2-t-e-t-sh,dstetz,,destz,21670
 contrition,k-/-sh,kz,,kz,21695
-Colombia,k-o-l,kolu,u,klou,21721
+colombia,k-o-l,kolu,u,klou,21721
 intolerance,nt-o-l-r-a-n-s,ntolrans,,alnorst,21724
 irrevocable,e-r-v-k-b,ervkb,,bekrv,21737
 languish,l-a-ng-sh,langz,,aglnz,21752
@@ -5228,9 +5228,9 @@ oversight,o-/-s2-i-t,osit,,iost,21816
 adept,a-d-e-p,adep,,adep,21826
 liberate,l-e-b-e-r-a,lebera,,abelr,21832
 registration,r-e-j-e-s2-t-r-a-sh,rejestraz,,aejrstz,21858
-Afghanistan,a-f-g-a-n,afgan,,afgn,21864
-Regina,r-e-j,rej,,ejr,21865
-Ottawa,o-t-a,otao,o,aot,21877
+afghanistan,a-f-g-a-n,afgan,,afgn,21864
+regina,r-e-j,rej,,ejr,21865
+ottawa,o-t-a,otao,o,aot,21877
 assignment,a-s2-i-mn,asimm,,aims,21884
 eliminate,e-l-e-mn-a-t,elemmat,,aelmt,21902
 claimant,k-l-a-/-nt,klant,,aklnt,21940
@@ -5279,7 +5279,7 @@ lenient,l-e-n-e-nt,lenent,,elnt,22668
 valuation,v-l-sh,vlz,,lvz,22680
 gamble,g-a-m-b,gamb,,abgm,22683
 numb,n-u-m,numu,u,mnu,22701
-Rotterdam,r-o-t-e-tm,rotetm,,emort,22708
+rotterdam,r-o-t-e-tm,rotetm,,emort,22708
 censor,s2-e-n-s2-o-r,sensor,,enors,22710
 gymnasium,j-e-m-n-a-s,jemnas,,aejmns,22718
 adornment,a-d-o-mn,adomm,,admo,22722
@@ -5316,7 +5316,7 @@ boot,b-u-t,butu,u,btu,23063
 insoluble,n-s2-o-l-b,nsolb,,blnos,23066
 dictum,d-e-k-tm,dektm,,dekmt,23079
 postmaster,p-/-m-a-s,pmas,,amps,23081
-Belfast,bl-f-a-s,blfas,,abfls,23091
+belfast,bl-f-a-s,blfas,,abfls,23091
 obdurate,o-b-d-r-a,obdra,,abdor,23150
 informant,n-f-m-/-nt,nfmnt,,fmnt,23176
 isthmus,e-s2-m-u-s,esmus,,emsu,23182
@@ -5334,11 +5334,11 @@ crochet,k-r-o-sh-a,kroza,,akorz,23314
 crumble,k-r-m-b,krmb,,bkmr,23324
 ranch,r-a-n-ch,ranc,,acnr,23334
 groundless,g-r-nt-l,grntl,,glnrt,23380
-Vancouver,v-a-n-k-v,vankv,,aknv,23393
+vancouver,v-a-n-k-v,vankv,,aknv,23393
 applicant,a-pl-e-k-nt,apleknt,,aeklnpt,23395
 kangaroo,k-a-ng-r-u,kangru,,agknru,23398
 bigot,b-g-t,bgt,,bgt,23418
-Stockholm,s2-t-o-k-o-m,stokom,,kmost,23436
+stockholm,s2-t-o-k-o-m,stokom,,kmost,23436
 generic,j-e-n-r-k,jenrk,,ejknr,23440
 furtherance,f-th2-n-s,fhns,,fhns,23456
 detour,td-u-r,ddur,,dru,23464
@@ -5352,7 +5352,7 @@ attorneys,a-tn-e-s,atnes,,aenst,23544
 edification,e-d-/-f,edf,,def,23545
 diffident,df-tn,dftn,,dfnt,23546
 manifesto,mn-f-e-s2-o,mmfeso,,efmos,23561
-Toronto,t-o-r-o-nt,toront,,nort,23592
+toronto,t-o-r-o-nt,toront,,nort,23592
 hearse,^-h-\-e-r-s,hersu,u,ehrsu,23601
 irreverent,e-r-e-v,erev,,erv,23632
 salesman,s-a-s2-m-a-n,sasman,,amns,23681
@@ -5366,12 +5366,12 @@ immoderate,e-m-o-d,emod,,demo,23834
 divergence,df-e-j,dfej,,defj,23841
 mirage,m-e-r-a-sh,meraz,,aemrz,23871
 unanswerable,n-a-n-s-b,nansb,,abns,23877
-Mansfield,mn-s2-f,mmsf,,fms,23879
+mansfield,mn-s2-f,mmsf,,fms,23879
 burrow,b-u-r-o,buro,,boru,23882
 carbide,k-r-b-i,krbi,,bikr,23886
 defines,df-i-n-s,dfinsu,u,dfinsu,23896
 missile,m-s-e-l,msel,,elms,23920
-Paraguay,p-/-g,pgu,u,gpu,23934
+paraguay,p-/-g,pgu,u,gpu,23934
 indestructible,nt-s-/-k-b,ntskb,,bknst,23940
 bus,b-u-s,buso,o,bosu,23949
 dissipate,d-s-e-p-a,dsepa,,adeps,23950
@@ -5391,7 +5391,7 @@ helium,^-h-\-e-l-e-m,helem,,ehlm,24171
 colloquy,k-o-l-o-k-e,qoloke,,ekloq,24184
 expound,e-s-p-n,xpn,,npx,24186
 haphazard,^-h-\-a2-p-a2-s2-a2-d,hapasad,,adhps,24201
-Algeria,a-l-j,alj,,ajl,24204
+algeria,a-l-j,alj,,ajl,24204
 infliction,n-fl-sh,nflzo,o,flnoz,24232
 errant,e-r-a-nt,eranto,o,aenort,24261
 auto,o-t-o,otou,u,otu,24268
@@ -5432,7 +5432,7 @@ irreproachable,e-r-e-pr-ch-b,ereprcb,,bcepr,24928
 aground,a-g-r-nt,agrnt,,agnrt,24939
 almond,a-mn-d,ammd,,adm,24956
 lengthen,l-e-ng-n,lengn,,egln,24973
-Pittsburgh,p-t-s-b,ptsb,,bpst,24975
+pittsburgh,p-t-s-b,ptsb,,bpst,24975
 lacy,l-a-s-e,laseo,o,aelos,24980
 immature,e-m-a-t-r,ematr,,aemrt,24983
 ermine,e2-mn,emmi,i,eim,24990
@@ -5446,7 +5446,7 @@ equip,e-k-p,eqp,,epq,25069
 befriend,b-fr,bfr,,bfr,25083
 distraught,^-d-s-/-t,dsti,i,dist,25085
 dormitory,d-o-m-e-t-r-e,dometre,,demort,25086
-Labrador,l-a-br,labro,o,ablor,25096
+labrador,l-a-br,labro,o,ablor,25096
 flippant,fl-e-jnt,flejnt,,efjlnt,25102
 malt,m-o-l-t,molt,,lmot,25106
 corona,k-r-o-n-a,krona,,aknor,25120
@@ -5454,16 +5454,16 @@ godless,g-d-l,gdl,,dgl,25124
 iniquity,e-n-e-k-w-e-t-e,eneqete,,enqt,25125
 currant,k-r-a-nt,krant,,aknrt,25180
 heron,^-h-\-e-r-n,hern,,ehnr,25192
-P.S.,p-/-s,pso,o,ops,25240
+p.s.,p-/-s,pso,o,ops,25240
 dissemble,d-s2-e-m,dsem,,dems,25252
 obliterate,o-bl-e-t,oblet,,belot,25263
 dissertation,d-s2-e2-t-n,dsetn,,denst,25292
-Czech,ch-e-k,ceko,o,ceko,25298
-Fairfield,f-a-r-f,farf,,afr,25306
+czech,ch-e-k,ceko,o,ceko,25298
+fairfield,f-a-r-f,farf,,afr,25306
 jaunty,j-o-nt-e,jonte,,ejnot,25308
 taut,t-o-t,toty,y,oty,25310
 imprison,m-pr-e-s2-n,mpresn,,emnprs,25320
-Argentina,a-jnt,ajnt,,ajnt,25336
+argentina,a-jnt,ajnt,,ajnt,25336
 deduce,td-u-s,ddus,,dsu,25340
 clears,k-l-e-s,kles,,ekls,25344
 jubilee,j-u-bl-e,juble,,bejlu,25352
@@ -5496,16 +5496,16 @@ narrate,n-a-r-a,nara,,anr,25858
 culmination,k-l-mn-sh,klmmz,,klmz,25869
 eel,e-l,ela,a,ael,25891
 locally,l-o-k-ya,lokya,,akloy,25918
-Honduras,^-h-\-o-nt-r-a-s,hontras,,ahnorst,25955
+honduras,^-h-\-o-nt-r-a-s,hontras,,ahnorst,25955
 entrant,n-/-nt,nnt,,nt,25973
 facial,f-a-sh-l,fazl,,aflz,25991
-Houston,^-h-\-e-u-s2-tn,hustn,,hnstu,26003
+houston,^-h-\-e-u-s2-tn,hustn,,hnstu,26003
 amendment,a-mn,ammu,u,amu,26059
 gnaw,n-o,noa,a,ano,26061
 controversial,k-/-v-e-sh,kvezo,o,ekovz,26073
 inalienable,e-n-a-l-e-n-b,enalenb,,abeln,26117
-Moscow,m-o-s2-k,mosk,,kmos,26123
-Albania,o-b-n-a,obna,,abno,26130
+moscow,m-o-s2-k,mosk,,kmos,26123
+albania,o-b-n-a,obna,,abno,26130
 atheism,a-th-e-s2-m,ahesm,,aehms,26168
 potion,p-o-sh,pozo,o,opz,26209
 nitrate,n-i-t-r-a,nitra,,ainrt,26233
@@ -5550,7 +5550,7 @@ mazes,m-a-ss,massi,i,aims,26947
 cursory,k-r-s-r-e,krsre,,ekrs,26966
 definitive,df-n-e-df,dfnedf,,defn,26967
 salve,s2-a-v,savo,o,aosv,27040
-Tripoli,t-r-e-pl-e,treple,,elprt,27042
+tripoli,t-r-e-pl-e,treple,,elprt,27042
 incorporation,n-k-r-p,nkrp,,knpr,27054
 cistern,ss2-tn,sstnu,u,nstu,27084
 decipher,d-s2-i-f,dsif,,dfis,27085
@@ -5572,7 +5572,7 @@ instability,n-s2-t-/-b,nstbo,o,bnost,27482
 gunwale,g-n-l,gnl,,gln,27500
 mammoth,mn-o-th2,mmoh,,hmo,27502
 reek,r-e-k,reku,u,ekru,27532
-Cuba,k-e-u-b-a,kuba,,abku,27535
+cuba,k-e-u-b-a,kuba,,abku,27535
 babe,b-a-b,babi,i,abi,27540
 nutrition,n-u-t-r-e-sh,nutrez,,enrtuz,27551
 extortion,e-s2-t-o-sh,xtoz,,otxz,27578
@@ -5597,14 +5597,14 @@ litigation,l-e-t-sh,letz,,eltz,27813
 stylish,s2-t-i2-/-sh,stiz,,istz,27817
 credits,k-r-e-s,kresi,i,eikrs,27824
 gasoline,g-a-s-l-e-n,gaslen,,aeglns,27868
-Antwerp,a-nt-e-r-p,anterp,,aenprt,27929
+antwerp,a-nt-e-r-p,anterp,,aenprt,27929
 disproportionate,d-s-pr,dspro,o,doprs,27944
 metamorphosis,m-e-tm-o-r-f-s2s,metmorfss,,efmorst,27946
 inculcate,n-k-u-l,nkul,,klnu,27960
 scenic,s2-e-n-e-k,seneko,o,eknos,27964
 surmount,s2-e-mn-t,semmto,o,emost,27973
 drudge,d-r-j,drj,,djr,28036
-Bolivia,b-o-l,bolo,o,blo,28041
+bolivia,b-o-l,bolo,o,blo,28041
 anticipation,a-/-s-e-p-sh,asepz,,aepsz,28046
 homicide,^-h-\-o-m-s-i,homsi,,himos,28051
 nitric,n-i-t-r-k,nitrk,,iknrt,28053
@@ -5681,7 +5681,7 @@ chintz,ch-e-nt-s,centso,o,cenost,29264
 cordage,k-o-d-j,kodj,,djko,29265
 evolve,e-v-o-l,evol,,elov,29297
 algebra,a-l-j,aljo,o,ajlo,29446
-Sudan,s2-u-d-a-n,sudano,o,adnosu,29462
+sudan,s2-u-d-a-n,sudano,o,adnosu,29462
 defunct,df-nk,dfq,,dfq,29536
 irascible,i-r-a-s-b,irasb,,abirs,29539
 demarcation,tm-r-k-a-sh,tmrkaz,,akmrtz,29588
@@ -5702,7 +5702,7 @@ idiot,e-d-o-t,edot,,deot,29791
 lineal,l-e-n-l,lenl,,eln,29792
 biology,b-/-o2,boi,i,bio,29802
 evoke,e-v-k,evk,,ekv,29813
-Newark,n-u-r-k,nurk,,knru,29819
+newark,n-u-r-k,nurk,,knru,29819
 shipment,sh-m,zmo,o,moz,29829
 uncivilized,n-s2-v-i-s2-d,nsvisd,,dinsv,29861
 munificent,m-u-n-f-e-s2-nt,munfesnt,,efmnstu,29907
@@ -5718,7 +5718,7 @@ hereunto,^-h-\-e2-n-t-u,hentu,,ehntu,29990
 functional,f-nk-/-l,fql,,flq,30062
 tariff,t-a-r-f,tarf,,afrt,30085
 violins,v-i-l-e-n-s,vilenso,o,eilnosv,30108
-Omaha,o-m-a,omao,o,amo,30129
+omaha,o-m-a,omao,o,amo,30129
 augury,o-g-r-e,ogreo,o,egor,30144
 larboard,l-a-r-b-o-d,larbod,,abdlor,30146
 mistletoe,m-s-e-l-t-o,mselto,,elmost,30147
@@ -5745,7 +5745,7 @@ parade,p-a-r-a-d,parad,,adpr,30540
 ordination,o-tn-sh,otnz,,notz,30549
 howsoever,a-u-s2-o-v,wsov,,osvw,30592
 pneumonia,n-u-mn-ea,numme,,emnu,30596
-Huntington,u-nt-/-tn,unttn,,ntu,30614
+huntington,u-nt-/-tn,unttn,,ntu,30614
 emanation,e-mn-sh,emmz,,emz,30631
 headless,^-h-\-e-d-l,hedlo,o,dehlo,30668
 curriculum,k-u-r-e-k,kurek,,ekru,30679
@@ -5763,12 +5763,12 @@ impel,m-pl,mplo,o,lmop,30959
 merchandise,m-e-ch-d-i-s,mecdis,,cdeims,30994
 alum,a-l-m,almo,o,almo,31007
 manganese,m-a-ng-a-n-e-s,manganes,,aegmns,31014
-Shanghai,sh-a-ng-i,zangi,,aginz,31016
+shanghai,sh-a-ng-i,zangi,,aginz,31016
 autonomy,o-tn-o-m-e,otnome,,emnot,31031
 mortify,m-o-df,modfu,u,dfmou,31035
 demise,tm-i-s,tmis,,imst,31052
 diploma,d-pl-o-m-a,dploma,,adlmop,31058
-Winnipeg,u-e-n-p-g,uenpg,,egnpu,31090
+winnipeg,u-e-n-p-g,uenpg,,egnpu,31090
 elementary,e-l-e-m-r-e,elemre,,elmr,31109
 irruption,e-r-p-sh,erpz,,eprz,31114
 asset,a-s2-e-t,aset,,aest,31134
@@ -5789,14 +5789,14 @@ nurture,n-e2-t-r,netr,,enrt,31385
 accommodation,a-k-d-sh,akdz,,adkz,31424
 banker,b-a-nk-e2,baqe,,abeq,31428
 embodies,m-b-o-s,mbos,,bmos,31430
-Indianapolis,nt-a-n-a-p,ntanap,,anpt,31444
+indianapolis,nt-a-n-a-p,ntanap,,anpt,31444
 causal,k-s2-l,ksl,,kls,31459
 affidavit,a-f-df,afdf,,adf,31488
 counterbalance,k-/-b-a-l,kbal,,abkl,31490
-Uruguay,u-r-u-g,urug,,gru,31510
+uruguay,u-r-u-g,urug,,gru,31510
 moneyed,mn-e-d,mmed,,dem,31527
 eerie,e-r-e,eree,e,er,31553
-Maltese,m-o-l-t-e-s,moltes,,elmost,31596
+maltese,m-o-l-t-e-s,moltes,,elmost,31596
 dimension,tm-e-n-sh,tmenzo,o,emnotz,31601
 belie,bl-i,blio,o,bilo,31627
 calamitous,k-a-l-a-m,kalam,,aklm,31628
@@ -5805,7 +5805,7 @@ patronage,p-t-r-n-j,ptrnj,,jnprt,31667
 insecurity,n-s2-e-k-/-r,nsekro,o,eknors,31677
 footlights,f-u-t-l-i-s,futlis,,filstu,31693
 obloquy,o-bl-o-k-e,obloqe,,beloq,31744
-Baltimore,b-o-l,bolu,u,blou,31777
+baltimore,b-o-l,bolu,u,blou,31777
 archery,a2-ch-e2-e,acee,,ace,31795
 fatuous,f-a-t-u-u-s,fatuuso,o,afostu,31799
 kindergarten,k-e-n-g-a2-tn,kengatn,,aegknt,31831
@@ -5814,7 +5814,7 @@ autocrat,o-t-o-k,otok,,kot,31932
 hereof,^-h-\-e-r-o,herou,u,ehoru,31966
 blackmail,bl-a-k-m-a,blakma,,abklm,31973
 hydraulic,^-h-\-i-d-r-o-l,hidrol,,dhilor,32043
-Paterson,p-t-r-s2-n,ptrsn,,nprst,32086
+paterson,p-t-r-s2-n,ptrsn,,nprst,32086
 evangelist,e-v-a-n-j-/-s2-t,evanjst,,aejnstv,32118
 calf,k-a-f,kafo,o,afko,32123
 changeless,ch-l,clu,u,clu,32138
@@ -5860,14 +5860,14 @@ habitat,^-h-\-a-b-t-a-t,habtat,,abht,33063
 centrifugal,s2-n-/-f,snf,,fns,33078
 aqueous,a-k-w-e-u-s,aqus,,aqsu,33092
 exasperate,e-s-a-s-p,xasp,,apsx,33098
-Ecuador,e-k-d-o-r,ekdor,,dekor,33151
+ecuador,e-k-d-o-r,ekdor,,dekor,33151
 cute,k-e-u-t,kuto,o,kotu,33156
 laud,l-o-d,lodu,u,dlou,33187
 apotheosis,a-p-th-e-ss,aphess,,aehps,33189
 inaugural,e-n-o-g-/-l,enogl,,eglno,33193
 marital,m-a-r-e-t-l,maretl,,aelmrt,33209
 custodian,k-u-s2-td-ea-n,kusdden,,deknsu,33237
-Lithuania,l-e-th-a-n-a,lehana,,aehln,33250
+lithuania,l-e-th-a-n-a,lehana,,aehln,33250
 coadjutor,k-o-a-j-t-e2,koajte,,aejkot,33252
 extirpate,e-s-/-p-a-t,xpat,,aptx,33255
 liner,l-a-n-e2,laneo,o,aelno,33258
@@ -5876,7 +5876,7 @@ garbage,g-a-r-b-j,garbj,,abgjr,33271
 collegiate,k-o-l-e-j-ea-t,kolejet,,ejklot,33285
 tandem,tn-tm,tntm,,mnt,33314
 maternity,m-a-tn-t-e,matnte,,aemnt,33358
-Yukon,e-u-k-n,ukn,,knu,33399
+yukon,e-u-k-n,ukn,,knu,33399
 absolutism,a-b-s2-o-s2-m,absosm,,abmos,33400
 crestfallen,k-r-e-s2-t-f-o-n,krestfon,,efknorst,33441
 juxtaposition,j-u-s2-t-p-o,justpo,,jopstu,33463
@@ -5895,7 +5895,7 @@ gazelle,g-a-s-e-l,gasel,,aegls,33653
 irremediable,e-r-e-mt-b,eremtb,,bemrt,33685
 cognizant,k-n-e-s2-nt,knesnt,,eknst,33698
 gambled,g-a-m-b-/-t,gambt,,abgmt,33756
-Celt,k-e-l-t,kelt,,eklt,33780
+celt,k-e-l-t,kelt,,eklt,33780
 elocution,e-l-o-k-sh,elokz,,ekloz,33788
 deprecate,d-pr-e-k,dprek,,dekpr,33824
 nibble,n-e-b,nebu,u,benu,33901
@@ -5912,11 +5912,11 @@ lice,l-i-s,lisu,u,ilsu,34316
 massacre,m-a-s2-k-r,maskr,,akmrs,34329
 nightgown,n-i-g-n,nign,,gin,34363
 abbreviation,a-br-e-v,abrev,,aberv,34375
-Valparaiso,v-a-l-p,valp,,alpv,34396
+valparaiso,v-a-l-p,valp,,alpv,34396
 illiberal,e-l-e-b-e-r,eleber,,belr,34415
 combatant,k-b-a-tn,kbatn,,abknt,34470
 espionage,e-s-p-n-j,espnj,,ejnps,34475
-Georgetown,j-o-j-t-n,jojtn,,jnot,34487
+georgetown,j-o-j-t-n,jojtn,,jnot,34487
 liturgy,l-e-t-j-e,letje,,ejlt,34525
 injuries,n-j-u-s,njusu,u,jnsu,34560
 inclement,e-/-mn-t,emmt,,emt,34599
@@ -5943,7 +5943,7 @@ magisterial,m-a-j-e-s2-t-e-r-l,majesterl,,aejlmrst,35248
 adventitious,a-v-nt-e-sh,avntez,,aentvz,35329
 betterment,b-t-e-m,btem,,bemt,35330
 bowsprit,b-o-s-pr-e-t,bospret,,beoprst,35332
-Seattle,s2-a-t-l,satl,,alst,35370
+seattle,s2-a-t-l,satl,,alst,35370
 motto,m-o-t-o,moto,,mot,35374
 millinery,m-e2-l-e2-n-e2-e2,melenee,,elmn,35393
 coerce,k-o-e-r-s,kyrs,,krsy,35432
@@ -5951,7 +5951,7 @@ furor,f-e-u-r-r,furr,,fru,35483
 uncharitable,n-ch-a2-t-b,ncatb,,abcnt,35504
 grammarian,g-r-a2-m-a2-n,graman,,agmnr,35512
 marmalade,m-a2-m-l-a2-d,mamlad,,adlm,35558
-Saskatchewan,ss2-k-a-ch,sskac,,acks,35566
+saskatchewan,ss2-k-a-ch,sskac,,acks,35566
 unassisted,n-ss2-td,nssdd,,dns,35576
 concomitant,k-k-m-e-tn,kkmetn,,ekmnt,35586
 lunacy,l-u-n-s-e,lunse,,elnsu,35588
@@ -5981,7 +5981,7 @@ incantation,n-k-t-sh,nktz,,kntz,36057
 licentiate,l-i-s2-n-sh-ea-t,lisnzet,,eilnstz,36058
 bounce,b-n-s,bnso,o,bnos,36083
 esthetic,e-s2-th-/-a,eshao,o,aehos,36120
-Milwaukee,m-e-l,melu,u,elmu,36134
+milwaukee,m-e-l,melu,u,elmu,36134
 ebullition,e-b-u-l-e-sh,ebulez,,beluz,36151
 inane,e-n-a-n,enan,,aen,36167
 balk,b-o-k,boko,o,bko,36175
@@ -6017,7 +6017,7 @@ mandarin,mn-d-a-r-e-n,mmdaren,,ademnr,37009
 ladylike,l-a-d-e-l-a,ladela,,adel,37040
 evaporate,e-v-a-p,evap,,aepv,37057
 emergence,e-m-e-j,emeju,u,ejmu,37184
-Rumania,r-u-mn-a,rumma,,amru,37223
+rumania,r-u-mn-a,rumma,,amru,37223
 immune,e-m-u-n,emun,,emnu,37242
 indigence,nt-j,ntj,,jnt,37244
 ocular,o-k-l-r,oklr,,klor,37250
@@ -6041,7 +6041,7 @@ influenza,n-fl-u-n-s-a,nflunsa,,aflnsu,37775
 odoriferous,o-d-e-r-e-f,oderef,,defor,37798
 irretrievable,e-r-/-v-b,ervb,,berv,37821
 basilica,b-a-s-e-l-e-k-a,baseleka,,abekls,37855
-Caracas,k-r-a-k-a-s,krakas,,akrs,37868
+caracas,k-r-a-k-a-s,krakas,,akrs,37868
 dejectedly,d-j-k-t-e,djkte,,dejkt,37896
 nitrogenous,n-i-t-r-o-j-u-s,nitrojus,,ijnorstu,37931
 tantamount,tn-t-mn-t,tntmmt,,mnt,37933
@@ -6064,9 +6064,9 @@ architect,a-k-t-e-k,aktek,,aekt,38363
 importune,m-p-o-r-tn,mportn,,mnoprt,38383
 keyboard,k-e-b-o-d,kebod,,bdeko,38384
 littoral,l-e-t-r-l,letrl,,elrt,38385
-Fahrenheit,f-a2-n-i,fanio,o,afino,38398
+fahrenheit,f-a2-n-i,fanio,o,afino,38398
 mentor,mn-t-r,mmtr,,mrt,38400
-Yucatan,e-u-k-tn,uktn,,kntu,38422
+yucatan,e-u-k-tn,uktn,,kntu,38422
 sweater,s2-u-e-t-e2,suete,,estu,38440
 unasked,n-s2-k-t,nskto,o,knost,38441
 amputation,a-m-p-u-sh,ampuz,,ampuz,38448
@@ -6088,7 +6088,7 @@ undetermined,n-e2-mn-/-t,nemmt,,emnt,38818
 acknowledgment,a-k-m,akm,,akm,38827
 interlocutor,n-/-l-o-k-t-e2,nlokte,,eklnot,38831
 casualty,k-a-sh-e-/-l,kazel,,aeklz,38846
-Yugoslavia,e-u-g-s-l-a-v,ugslav,,aglsuv,38873
+yugoslavia,e-u-g-s-l-a-v,ugslav,,aglsuv,38873
 horsehair,^-h-\-o-r-s-a-r,horsar,,ahors,38877
 cocktail,k-k-t-a-l,kktal,,aklt,38929
 durability,d-r-/-b,drbo,o,bdor,38931
@@ -6116,8 +6116,8 @@ differential,df-n-sh,dfnzo,o,dfnoz,39544
 libretto,l-e-br-e-t-o,lebreto,,belort,39549
 mountebank,mn-t-b-a-nk,mmtbaq,,abmqt,39551
 scheduled,s2-k-e-d-ld,skedld,,dekls,39591
-Tasmania,t-a-s2-mn-a,tasmma,,amst,39606
-Tokyo,t-o-k,toko,o,kot,39607
+tasmania,t-a-s2-mn-a,tasmma,,amst,39606
+tokyo,t-o-k,toko,o,kot,39607
 crucify,k-r-s2-f,krsf,,fkrs,39611
 global,g-l-o-bl,globl,,bglo,39656
 locus,l-o-k-u-s,lokuso,o,klosu,39661
@@ -6197,7 +6197,7 @@ lath,l-a-th,lahu,u,ahlu,42053
 lintel,l-e-nt-l,lentl,,elnt,42054
 chiffon,sh-e-f-n,zefn,,efnz,42078
 mound,mn-d,mmd,,dm,42089
-Yokohama,e-o-k-a-m-a,eokama,,aekmo,42126
+yokohama,e-o-k-a-m-a,eokama,,aekmo,42126
 beatitude,b-ea-t-e-t,betet,,bet,42212
 extradition,e-s-/-d-sh,xdz,,dxz,42266
 overawe,o-/-o,ooo,o,o,42275
@@ -6217,7 +6217,7 @@ judicature,j-d-e-k-a-t-r,jdekatr,,adejkrt,42589
 orally,o-r-ye,orye,,eory,42590
 colander,k-u-l-a-nt-r,kulantr,,aklnrtu,42639
 illustrator,e-l-u-s-r,elusr,,elrsu,42671
-Budapest,b-d-p-e-s,bdpes,,bdeps,42785
+budapest,b-d-p-e-s,bdpes,,bdeps,42785
 munition,m-u-n-sh,munz,,mnuz,42803
 appellate,a-p-e-l-a,apela,,aelp,42823
 eschew,e-s-ch-u,escu,,cesu,42826
@@ -6232,7 +6232,7 @@ anthracite,a-n-th-s-i,anhsi,,ahins,42990
 cognate,k-n-a-t,knat,,aknt,42994
 leviathan,l-e-v-i-th-a-n,levihan,,aehilnv,43027
 dissect,d-s2-e-k,dsek,,deks,43086
-Minneapolis,mn-a-p,mmap,,amp,43105
+minneapolis,mn-a-p,mmap,,amp,43105
 fabric,f-a-br-k,fabrk,,abfkr,43112
 nebula,n-e-bl-a,nebla,,abeln,43120
 draft,d-r-f,drf,,dfr,43129
@@ -6306,7 +6306,7 @@ ominous,o-mn-u-s,ommus,,mosu,45666
 propel,pr-pl,prplo,o,lopr,45669
 fatuity,f-a-t-e-u-t-e,fatute,,aeftu,45695
 hairdresser,^-h-\-a2-d-r-e-s-e-r,hadreser,,adehrs,45731
-Manitoba,mn-e-t-b-a,mmetba,,abemt,45792
+manitoba,mn-e-t-b-a,mmetba,,abemt,45792
 fondle,f-o-nt-l,fontl,,flnot,45805
 loquacity,l-o-k-/-s,loqs,,loqs,45809
 runt,r-nt,rntu,u,nrtu,45851
@@ -6359,10 +6359,10 @@ manumission,mn-u-m-sh,mmumz,,muz,47609
 refrigerator,r-fr-e-j-/-r,rfrejr,,efjr,47692
 antic,a-/-k,ake,e,aek,47709
 rectangle,r-e-k-t-a-ng,rektag,,aegkrt,47800
-Sonora,s2-n-o-r-a,snora,,anors,47826
+sonora,s2-n-o-r-a,snora,,anors,47826
 neckerchief,n-e-k-r-ch,nekrc,,ceknr,47839
 oat,o-t,otw,w,otw,47841
-Jacobean,j-a-k-o-b-n,jakobn,,abjkno,47859
+jacobean,j-a-k-o-b-n,jakobn,,abjkno,47859
 hostel,^-h-\-o-s2-t-l,hostlu,u,hlostu,47878
 excelsior,e-s-l-s2-o-r,xlsor,,lorsx,47891
 hyperbole,^-h-\-i-pr-bl-e,hiprble,,behilpr,48060
@@ -6373,7 +6373,7 @@ demerit,tm-e2-t,tmet,,emt,48164
 leakage,l-e-k-j,lekj,,ejkl,48258
 gobble,g-o-b,gob,,bgo,48301
 mend,mn-d,mmdo,o,dmo,48345
-Christchurch,k-r-i-s-ch,krisc,,cikrs,48364
+christchurch,k-r-i-s-ch,krisc,,cikrs,48364
 electrode,e-l-/-d,eldo,o,delo,48422
 mourn,m-o-n,mone,e,emno,48430
 barrage,b-a-r-a-sh,baraz,,abrz,48453
@@ -6401,7 +6401,7 @@ howitzer,^-h-\-a-u-t-s-e-r,hwtser,,ehrstw,49551
 obstreperous,o-b-s2-t-r-e-p,obstrep,,beoprst,49562
 reciprocate,r-s-e-pr,rsepr,,eprs,49602
 underwear,u-/-u-a-r,uuar,,aru,49653
-Hydra,^-h-\-i-d-r-a,hidra,,adhir,49705
+hydra,^-h-\-i-d-r-a,hidra,,adhir,49705
 coxswain,k-o-x-a-n,koxan,,aknox,49721
 hominy,^-h-\-o-mn-e,hommeo,o,ehmo,49728
 nudge,n-j,njo,o,jno,49820
@@ -6444,7 +6444,7 @@ constabulary,k-s2-t-b-/-r-e,kstbre,,bekrst,51199
 dockyard,d-o-k-a2-d,dokad,,adko,51245
 deteriorate,d-/-o-r-a,dorao,o,ador,51290
 inconvenienced,n-k-v-e-n-/-t,nkvent,,ekntv,51419
-Guam,g-w-a-m,gwam,,agmw,51484
+guam,g-w-a-m,gwam,,agmw,51484
 minaret,mn-a-r-e-t,mmaret,,aemrt,51509
 consonance,k-s2-n-a-n-s,ksnans,,akns,51587
 hereat,^-h-\-e2-t,heta,a,aeht,51656
@@ -6487,7 +6487,7 @@ despond,d-s-jnt,dsjnt,,djnst,53891
 grandiloquent,g-/-e-l-o-k,geloq,,egloq,53897
 mineralogy,mn-e-r-/-o2,mmero,,emor,53958
 monoplane,mn-o-pl-a-n,mmoplan,,almnop,53959
-Brisbane,br-e-s-b-n,bresbn,,benrs,53975
+brisbane,br-e-s-b-n,bresbn,,benrs,53975
 avoirdupois,a-v-d-p-o-e,avdpy,,adpvy,54308
 fudge,f-j,fjo,o,fjo,54317
 literate,l-e-t,letu,u,eltu,54321
@@ -6520,11 +6520,11 @@ exculpate,e-s2-k-l-p-a-t,xklpat,,aklptx,55408
 lira,l-e-r-a,lerao,o,aelor,55422
 concoct,k-k-k,kkk,,k,55455
 desecrate,d-s2-k-r-a,dskra,,adkrs,55456
-O.K.,o-k,oku,u,kou,55554
+o.k.,o-k,oku,u,kou,55554
 assess,a2-ss,asso,o,aos,55629
 tonsure,tn-sh-u,tnzuo,o,notuz,55658
 jocularity,j-o-k-l-/-r,joklr,,jklor,55696
-Nanking,n-a-nk-\-h,naqg,,agnq,55738
+nanking,n-a-nk-\-h,naqg,,agnq,55738
 tracer,t-r-a-s-e-r,traser,,aerst,55808
 amenity,a-m-/-nt,amnt,,amnt,55812
 acetate,a-s2-e-t-a,aseta,,aest,55876
@@ -6593,7 +6593,7 @@ intake,nt-a-k,ntako,o,aknot,59220
 irrigate,e-r-e-g,erego,o,egor,59286
 lessee,l-e-s-e,leseo,o,elos,59289
 oriole,o-r-e-o-l,oreolo,o,elor,59296
-Alberta,a-l-b,albu,u,ablu,59388
+alberta,a-l-b,albu,u,ablu,59388
 caoutchouc,k-u-ch-u-k,kucuk,,cku,59413
 hexagonal,^-h-\-e-s2-a-g,hesag,,aeghs,59426
 intransitive,nt-/-df,ntdf,,dfnt,59429
@@ -6642,8 +6642,8 @@ fluidity,fl-u-td-e,fludde,,deflu,61403
 cutlet,k-u-t-l-e,kutle,,ekltu,61468
 mower,m-o-r,morw,w,morw,61641
 mendacity,mn-d-/-s,mmds,,dms,61716
-Bogota,b-g-t-a,bgta,,abgt,61745
-Hawaii,^-h-\-a-u-i,hwi,,hiw,61756
+bogota,b-g-t-a,bgta,,abgt,61745
+hawaii,^-h-\-a-u-i,hwi,,hiw,61756
 gradient,g-r-a-tn-t,gratnt,,agnrt,61875
 centripetal,s2-n-/-p,snp,,nps,61935
 executrix,e-s2-k-/-r-e-x,xkrex,,ekrx,62010
@@ -6669,16 +6669,16 @@ mumps,mn-p-s,mmps,,mps,63018
 deform,df-m,dfm,,dfm,63060
 mendacious,mn-d-a-sh,mmdaz,,admz,63077
 agnosticism,a-g-n-o-s2-t-ss,agnostss,,agnost,63127
-Montevideo,mn-df,mmdf,,dfm,63211
+montevideo,mn-df,mmdf,,dfm,63211
 deflect,d-fl,dflu,u,dflu,63230
 duteous,td-u-s,dduso,o,dosu,63233
 hereto,^-h-\-e2-t-u,hetuo,o,ehotu,63249
 indefinite,n-df-n,ndfn,,dfn,63330
 liquidate,l-e-k-w-e-td,leqedd,,delq,63335
-Galveston,g-l-v-e-s2-tn,glvestn,,eglnstv,63377
+galveston,g-l-v-e-s2-tn,glvestn,,eglnstv,63377
 juridical,j-u-r-e-d-/-k,juredk,,dejkru,63427
 empiricism,m-p-e-r-ss,mperss,,emprs,63494
-Waterbury,u-o-t-br-e,uotbre,,beortu,63572
+waterbury,u-o-t-br-e,uotbre,,beortu,63572
 interchangeable,n-/-ch-b,ncb,,bcn,63588
 orderliness,o-d-e-n-e-s,odenes,,denos,63597
 comity,k-m-e-t-e,kmete,,ekmt,63647
@@ -6737,11 +6737,11 @@ magneto,m-/-t-o,mtoo,o,mot,67177
 disparate,d-s-p-a-r-a,dspara,,adprs,67249
 conic,k-n-e-k,knek,,ekn,67346
 obduracy,o-b-d-r-s-e,obdrse,,bdeors,67390
-Bangkok,b-a-nk-k-k,baqkk,,abkq,67414
+bangkok,b-a-nk-k-k,baqkk,,abkq,67414
 euphemism,e-u-f-m-s2-m,ufmsm,,fmsu,67470
 nationally,n-a-sh-ye,nazye,,aenyz,67484
 reelection,r-e-l-sh,relz,,elrz,67593
-Swansea,s2-o-n-s-e,sonse,,enos,67657
+swansea,s2-o-n-s-e,sonse,,enos,67657
 curable,k-e-u-b,kubo,o,bkou,67674
 tenuity,tn-e-u-t-e,tnute,,entu,67710
 cantor,k-t-e2,kteo,o,ekot,67720
@@ -6758,7 +6758,7 @@ ayes,i-s,isu,u,isu,68148
 disjunction,d-s-j-nk,dsjq,,djqs,68159
 benzene,b-n-s2-e-n,bnsen,,bens,68244
 luminosity,l-u-mn-/-s,lumms,,lmsu,68274
-Czechoslovakia,ch-k-s-l-v,ckslv,,cklsv,68308
+czechoslovakia,ch-k-s-l-v,ckslv,,cklsv,68308
 accretion,a-k-r-e-sh,akrez,,aekrz,68335
 globule,g-l-o-bl,globlo,o,bglo,68456
 agglomeration,a-g-l-o-m-sh,aglomz,,aglmoz,68604
@@ -6773,7 +6773,7 @@ cosmetic,k-o-s2-m-/-a,kosma,,akmos,69116
 managerial,mn-j-e-r-l,mmjerl,,ejlmr,69140
 feral,f-e-r-l,ferlo,o,eflor,69223
 microphone,m-i-k-r-o-f-n,mikrofn,,fikmnor,69240
-Chihuahua,ch-u-a,cua,,acu,69471
+chihuahua,ch-u-a,cua,,acu,69471
 dementia,d-e-mn-sh-ea,demmze,,demz,69829
 inanition,e-n-a-n-sh,enanz,,aenz,69841
 ??clat,e-k-l-a,ekla,,aekl,70000
@@ -6815,12 +6815,12 @@ against ,a-g,agw,w,agw,70035
 ageless,a-j-l,ajlo,o,ajlo,70036
 aggr-,ya-/,yai,i,aiy,70037
 aggress,ya-/-s,yaso,o,aosy,70038
-Aguascalientes,a-g-a-s2-k-l,agaskl,,agkls,70039
+aguascalientes,a-g-a-s2-k-l,agaskl,,agkls,70039
 ailanthus,a-l-a-n-th-u-s,alanhus,,ahlnsu,70040
 air-tight,a2-t-i-t,atit,,ait,70041
-Akron,a-k-r-n,akrn,,aknr,70042
-Alabama ,a-l,alw,w,alw,70043
-Alaska ,a-k,aka,a,ak,70044
+akron,a-k-r-n,akrn,,aknr,70042
+alabama ,a-l,alw,w,alw,70043
+alaska ,a-k,aka,a,ak,70044
 align,a-l-a-n,alano,o,alno,70045
 alimony,a-l-e-mn-e,alemme,,aelm,70046
 aliquot,a-l-e-k-w-o-t,aleqot,,aeloqt,70047
@@ -6832,8 +6832,8 @@ allocate,a-l-o-k,alok,,aklo,70052
 allopathy,a-l-o-p-th-e,alophe,,aehlop,70053
 allow us,a-l-s,alsu,u,alsu,70054
 alter-,^-o2-/,ok2,k2,2ko,70055
-American people,a-m-p-e-p,ampep,,aemp,70056
-Amish,a-m-sh,amzo,o,amoz,70057
+american people,a-m-p-e-p,ampep,,aemp,70056
+amish,a-m-sh,amzo,o,amoz,70057
 amortize,a-m-o-t-i-s,amotis,,aimost,70058
 amount of money,a-mn-e,ammeu,u,aemu,70059
 amounts of money,a-m-s2-mn-e,amsmme,,aems,70060
@@ -6844,7 +6844,7 @@ analyst ,a-n-l-e-s,anles,,aelns,70064
 and have,nt-v,ntvo,o,notv,70065
 and that,nt-th-a,ntha,,ahnt,70066
 and the,nt-th,nth,,hnt,70067
-Anglo-Saxon,a-ng-s-a-s,angsas,,agns,70068
+anglo-saxon,a-ng-s-a-s,angsas,,agns,70068
 annalist,a-n-l-e-s,anleso,o,aelnos,70069
 announce ,a-n-s,anso,o,anos,70070
 anonymity,a-n-o-n-/-mt,anonmt,,amnot,70071
@@ -6869,8 +6869,8 @@ arbitrage,a-r-b-t-r-j,arbtrj,,abjrt,70089
 archduchy,a2-ch-d-ch-e,acdce,,acde,70090
 are not,r-n,rno,o,nor,70091
 are you,r-u,rui,i,iru,70092
-Arizona ,a-s,ase,e,aes,70093
-Arkansas ,a-r,ary,y,ary,70094
+arizona ,a-s,ase,e,aes,70093
+arkansas ,a-r,ary,y,ary,70094
 arteriosclerosis,a2-t-e-r-s2-k-l-e-r-ss,atersklerss,,aeklrst,70095
 arthritis,a-r-th-r-i,arhri,,ahir,70096
 artichoke,a2-t-ch-k,atck,,ackt,70097
@@ -6906,7 +6906,7 @@ assistant passenger traffic manager,a-p-t-<-m,aptmo,o,amopt,70126
 assistant purchasing agent,a-/-pr-ch-/-a,aprca,,acpr,70127
 assistant ticket agent,a-t-e-k-a,ateka,,aekt,70128
 assonance,a-s2-n-a-n-s,asnans,,ans,70129
-Asuncion,a-s2-n-sh,asnz,,ansz,70130
+asuncion,a-s2-n-sh,asnz,,ansz,70130
 at a loss,t-l-o-s,tlos,,lost,70131
 at all events,t-o-e-v,tyv,,tvy,70132
 at all times,t-o-tm-s,totms,,most,70133
@@ -6933,7 +6933,7 @@ auscultation,o-s2-k-u-l-t-n,oskultn,,klnostu,70153
 austr-,o-s2-/,osi,i,ios,70154
 authenticate,o-th-e-nt,ohento,o,ehnot,70155
 autochthonous,o-t-o-k-th-o-n-u-s,otokhonus,,hknostu,70156
-Avenue ,a,ak1,k1,1ak,70157
+avenue ,a,ak1,k1,1ak,70157
 average ,a-v-r,avro,o,aorv,70158
 awes,o-s,osw,w,osw,70159
 babbit,b-a-b-t,babt,,abt,70160
@@ -6987,11 +6987,11 @@ booklets,b-k-l-es,bkles,,bekls,70207
 boracic,b-o-r-a-s2-k,borask,,abkors,70208
 borne in mind,b-o-m-i,bomi,,bimo,70209
 bothersome,b-o-th-s2-m,bohsm,,bhmos,70210
-British Columbia,b-s-e,bseo,o,beos,70211
+british columbia,b-s-e,bseo,o,beos,70211
 brother-in-law,br-u-th-l-o,bruhlo,,bhloru,70212
 brought up,br-o-t-p,brotp,,boprt,70213
-Bucharest,b-k-r-e-s,bkres,,bekrs,70214
-Bueno Aires,b-i-r-e-s,bires,,beirs,70215
+bucharest,b-k-r-e-s,bkres,,bekrs,70214
+bueno aires,b-i-r-e-s,bires,,beirs,70215
 bunion,b-n-u-n,bnun,,bnu,70216
 bureaucrat,b-u-/-a-t,buat,,abtu,70217
 burglarious,b-e-r-g-l-a-r,berglar,,abeglr,70218
@@ -7005,16 +7005,16 @@ by the,b-th,bh,,bh,70225
 by the way,b-u-a,buao,o,abou,70226
 by-law,bl-o,blou,u,blou,70227
 byway,b-u-a,buau,u,abu,70228
-C.O.D.,k-<-o-d,kodi,i,diko,70229
+c.o.d.,k-<-o-d,kodi,i,diko,70229
 caduceus,k-a-d-u-ss,kaduss,,adksu,70230
 calculable,k-a-l-b,kalbo,o,abklo,70231
-Calgary,k-a-l-g,kalg,,agkl,70232
+calgary,k-a-l-g,kalg,,agkl,70232
 calisthenics,k-a-l-e-s2-th-e-n,kaleshen,,aehklns,70233
 call ,k-o-l,koli,i,iklo,70234
 call your attention to the fact,k-u-tn-sh-f,kutnzf,,fkntuz,70235
 callosity,k-a-l-/-s,kals,,akls,70236
 calorie,k-a-l-r-e,kalre,,aeklr,70237
-Campeche,k-a-m-p-e-ch,kampec,,acekmp,70238
+campeche,k-a-m-p-e-ch,kampec,,acekmp,70238
 can be,k-b,kbo,o,bko,70239
 can be done,k-b-tn,kbtn,,bknt,70240
 can have,k-v,kvu,u,kuv,70241
@@ -7043,7 +7043,7 @@ cedilla,s2-e-d-e-l-a,sedela,,adels,70263
 celebrate,s-e-l-e-b,seleb,,bels,70264
 cenotaph,s2-e-n-o-t-a-f,senotaf,,aefnost,70265
 centi-,s2-e-n,sene,e,ens,70266
-Central America,s2-n-/-a-m,snam,,amns,70267
+central america,s2-n-/-a-m,snam,,amns,70267
 central division,s2-n-/-df,sndf,,dfns,70268
 cerebellum,s-e-r-bl-m,serblm,,belmrs,70269
 cerement,s-e-r-e-mn-t,seremmt,,emrst,70270
@@ -7067,16 +7067,16 @@ citizenry,s2-e-t-s-r-e,setsre,,erst,70287
 citric,s2-e-t-r-k,setrk,,ekrst,70288
 -city,/-s,sk1,k1,1ks,70289
 civil engineer,s2-n-j-e2,snje,,ejns,70290
-Civil Service,s-s,ssw,w,sw,70291
+civil service,s-s,ssw,w,sw,70291
 claim agent,k-/-a,kao,o,ako,70292
 claims ,k-l-a-s,klaso,o,aklos,70293
 -cle,/-k,kk2,k2,2k,70294
 clearage,k-l-e-/-j,klej,,ejkl,70295
-Clearfield,k-l-e-r-f,klerf,,efklr,70296
+clearfield,k-l-e-r-f,klerf,,efklr,70296
 climactic,k-l-i-m-a-k,klimak,,aiklm,70297
 clinic,k-l-e-n-e-k,klenek,,ekln,70298
 coagulate,k-a-g-/-u,kagu,,agku,70299
-Coahuila,k-o-e-l-a,kyla,,akly,70300
+coahuila,k-o-e-l-a,kyla,,akly,70300
 cobble,k-o-b,kob,,bko,70301
 coded,k-o-td,koddi,i,diko,70302
 codefendant,k-o-df-t,kodft,,dfkot,70303
@@ -7135,7 +7135,7 @@ corundum,k-o-r-nt,kornt,,knort,70355
 coruscate,k-o-r-u-s2-k,korusk,,korsu,70356
 coryza,k-o-r-i-s-a,korisa,,aikors,70357
 cosiness,k-o-s2-e-n-e-s,koseneso,o,eknos,70358
-Costa Rica,k-o-s-<-r,kosr,,kors,70359
+costa rica,k-o-s-<-r,kosr,,kors,70359
 cotemporaneous,k-o-tm-pr-a-n-u-s,kotmpranus,,akmnoprstu,70360
 could be done,k-d-b-tn,kdbtn,,bdknt,70361
 counterclaim,k-/-k-l-a-m,kklam,,aklm,70362
@@ -7170,9 +7170,9 @@ deadfall,td-f-o,ddfo,,dfo,70390
 deadliness,td-e-n-e-s,ddenes,,dens,70391
 deal ,d-e-l,dele,e,del,70392
 dear madam,d-m,dmu,u,dmu,70393
-dear Miss,tm-e-s,tmes,,emst,70394
-dear Mr.,tm-r,tmro,o,mort,70395
-dear Ms. ,tm-s,tmso,o,most,70396
+dear miss,tm-e-s,tmes,,emst,70394
+dear mr.,tm-r,tmro,o,mort,70395
+dear ms. ,tm-s,tmso,o,most,70396
 dear sir,d-s,dso,o,dos,70397
 debacle,d-b-/-k,dbk,,bdk,70398
 debate ,d-b-a,dba,,abd,70399
@@ -7201,14 +7201,14 @@ demurrage,tm-u-r-j,tmurj,,jmrtu,70421
 denature,tn-a-t-r,tnatr,,anrt,70422
 denim,tn-e-m,tnemo,o,emnot,70423
 dentistry,tn-t-e-s-r-e,tntesre,,enrst,70424
-Denver ,df,dfa,a,adf,70425
+denver ,df,dfa,a,adf,70425
 deodorize,d-o-d-e-r-i-s,doderis,,deiors,70426
-Department of Agriculture,d-ya,dyao,o,adoy,70427
+department of agriculture,d-ya,dyao,o,adoy,70427
 deport,d-p-o-t,dpot,,dopt,70428
 deposes,d-p-o-s,dposo,o,dops,70429
 depressant,d-pr-e-s2-nt,dpresnt,,denprst,70430
 derogative,d-r-o-g-v,drogv,,dgorv,70431
-Des Moines,tm-o-e,tmy,,mty,70432
+des moines,tm-o-e,tmy,,mty,70432
 detain,td-tn,ddtn,,dnt,70433
 devoid,df-o-e,dfy,,dfy,70434
 diabetes,d-i-b-t-e-s,dibtes,,bdeist,70435
@@ -7242,7 +7242,7 @@ dissoluble,d-s2-o-l-b,dsolb,,bdlos,70462
 distend,d-s2-tn-d,dstndo,o,dnost,70463
 distension,d-s2-tn-sh,dstnzo,o,dnostz,70464
 distrain,d-s-/-n,dsn,,dns,70465
-District of Columbia,d-s2-k-o-l,dskol,,dklos,70466
+district of columbia,d-s2-k-o-l,dskol,,dklos,70466
 divagate,d-i-v-g,divg,,dgiv,70467
 divert,df-e2-t,dfeto,o,defot,70468
 divisble,df-e-s-b,dfesb,,bdefs,70469
@@ -7278,7 +7278,7 @@ efflorescent,e-fl-r-e-s2-nt,eflresnt,,eflnrst,70498
 -egraph,^-e,ew,w,ew,70499
 -egraphy,^-ye,yek1,k1,1eky,70500
 either side,e-th2-s,ehs,,ehs,70501
-El Paso,e-l-p-a-s,elpas,,aelps,70502
+el paso,e-l-p-a-s,elpas,,aelps,70502
 elasicity,e-l-a-s-/-s,elass,,aels,70503
 election ,e-l-sh,elzu,u,eluz,70504
 electr-,e-l-/,elk2,k2,2ekl,70505
@@ -7368,11 +7368,11 @@ facultative,f-a-k-l-/-v,faklv,,afklv,70588
 faster than,f-a-s2-t-e-n,fasteno,o,aefnost,70589
 father-in-law,f-a-th2-l-o,fahloo,o,afhlo,70590
 federal ,f-e-d,fedi,i,defi,70591
-Federal employee,f-m-p-e,fmpe,,efmp,70592
-Federal Government,f-g-v,fgv,,fgv,70593
-Federal Reserve Bank,fr-b,frb,,bfr,70594
-Federal Reserve Board,fr-<-b,frbo,o,bfor,70595
-Federated Malay States,f-m-<-s,fmso,o,fmos,70596
+federal employee,f-m-p-e,fmpe,,efmp,70592
+federal government,f-g-v,fgv,,fgv,70593
+federal reserve bank,fr-b,frb,,bfr,70594
+federal reserve board,fr-<-b,frbo,o,bfor,70595
+federated malay states,f-m-<-s,fmso,o,fmos,70596
 felicitate,f-e-l-e-s2-t-a,felesta,,aeflst,70597
 femur,f-e-m-u-r,femur,,efmru,70598
 ferial,f-e-r-l,ferlu,u,eflru,70599
@@ -7431,7 +7431,7 @@ frightended,fr-i-nt,frint,,finrt,70651
 from the,f-m-th,fmh,,fhm,70652
 from time to time,tm-tm,tmtm,,mt,70653
 from you,f-m-u,fmuo,o,fmou,70654
-Ft. Worth,f-t-u-th,ftuh,,fhtu,70655
+ft. worth,f-t-u-th,ftuh,,fhtu,70655
 fugacious,f-e-u-g-a-sh,fugaz,,afguz,70656
 fumigate,f-e-u-m-e-g,fumeg,,efgmu,70657
 further than,f-th2-n,fhn,,fhn,70658
@@ -7457,7 +7457,7 @@ general purchasing agent,j-pr-ch-/-a,jprca,,acjpr,70677
 general ticket agent,j-t-e-k-a,jteka,,aejkt,70678
 genuflect,j-e-n-fl,jenfl,,efjln,70679
 geodetic,j-e-o-d-/-a,jeoda,,adejo,70680
-Georgia ,g-a,gau,u,agu,70681
+georgia ,g-a,gau,u,agu,70681
 germicide,j-e2-m-s-I,jemsi,,eijms,70682
 gerundive,j-e-r-nt-v,jerntv,,ejnrtv,70683
 gesso,j-e-s2-o,jeso,,ejos,70684
@@ -7475,27 +7475,27 @@ glyph,g-l-e-f,glefo,o,efglo,70695
 gnomon,n-o-mn,nommo,o,mno,70696
 gnostic,n-/-s2-t,nsto,o,nost,70697
 gob,g-o-b,gobo,o,bgo,70698
-God ,g-o-d,godi,i,dgio,70699
+god ,g-o-d,godi,i,dgio,70699
 good-bye,g-b-i,gbi,,bgi,70700
 goodliness,g-/-e-n-e-s,genes,,egns,70701
-Government of the United States,g-v-e-u-s,gvus,,gsuv,70702
+government of the united states,g-v-e-u-s,gvus,,gsuv,70702
 governness,g-v-e-s,gves,,egsv,70703
 -gram,/-g,gw,w,gw,70704
-Grand Haven,g-/-a-v-n,gavn,,agnv,70705
-Grand Rapids,g-/-r-a-p,grap,,agpr,70706
+grand haven,g-/-a-v-n,gavn,,agnv,70705
+grand rapids,g-/-r-a-p,grap,,agpr,70706
 grandiloquence,g-/-e-l-o-k,geloqo,o,egloq,70707
 granulate,g-r-a-n-/-u,granu,,agnru,70708
 gravamen,g-r-a-v-mn,gravmm,,agmrv,70709
-Great Britain,g-<-b,gb,,bg,70710
-Great Britain and Ireland,g-<-b-i,gbio,o,bgio,70711
+great britain,g-<-b,gb,,bg,70710
+great britain and ireland,g-<-b-i,gbio,o,bgio,70711
 great deal,g-r-l,grl,,glr,70712
 great pleasure,g-r-p,grp,,gpr,70713
 greater than,g-r-r-n,grrn,,gnr,70714
 -grim,/-g,gk1,k1,1gk,70715
 guarantor,g-a2-nt-r,gantr,,agnrt,70716
-Guatamala,g-a-tm,gatm,,agmt,70717
+guatamala,g-a-tm,gatm,,agmt,70717
 gubanatorial,g-b-n-a-t-r-l,gbnatrl,,abglnrt,70718
-Gudalajara,g-a-d-l,gadl,,adgl,70719
+gudalajara,g-a-d-l,gadl,,adgl,70719
 gunstock,g-n-s2-t-o,gnsto,,gnost,70720
 gusset,g-u-s2-e-t,guset,,egstu,70721
 gymnast,j-e-m-n-a-s,jemnaso,o,aejmnos,70722
@@ -7504,10 +7504,10 @@ habeas corpus,a-b-<-k,abk,,abk,70724
 habituate,^-h-\-a-b-t-e-u-t,habtut,,abhtu,70725
 had been,a-d-b,adb,,abd,70726
 hailstone,^-h-\-a-l-s2-t-o-n,halston,,ahlnost,70727
-Halloween,^-h-\-a-l-o-e-n,halyn,,ahlny,70728
+halloween,^-h-\-a-l-o-e-n,halyn,,ahlny,70728
 halogen,^-h-\-a-l-o-j,haloj,,ahjlo,70729
 hand in hand,^-h-\-nt-nt,hntnt,,hnt,70730
-Hankow,^-h-\-a-nk,haq,,ahq,70731
+hankow,^-h-\-a-nk,haq,,ahq,70731
 has been,a-s-b,asb,,abs,70732
 has been done,a-s-b-tn,asbtn,,abnst,70733
 has done,a-s2-tn,astn,,anst,70734
@@ -7515,7 +7515,7 @@ hassock,^-h-\-a-s2-k,hask,,ahks,70735
 have been,v-b,vbo,o,bov,70736
 have been able,v-b-a,vba,,abv,70737
 have done,v-tn,vtn,,ntv,70738
-Hawaii ,^-h-\-i,hiu,u,hiu,70739
+hawaii ,^-h-\-i,hiu,u,hiu,70739
 haycock,^-h-\-a-k-k,hakk,,ahk,70740
 he always,e-l-s,elsu,u,elsu,70741
 he can,e-k,eka,a,aek,70742
@@ -7563,9 +7563,9 @@ horrify,^-h-\-o-r-f,horf,,fhor,70783
 horsehide,^-h-\-o-r-s2-i-d,horsid,,dhiors,70784
 horsepower,^-h-\-p,hp,,hp,70785
 hortatory,^-h-\-o-t-a-t-r-e,hotatre,,aehort,70786
-House and Senate,u-s-s2-e-n,ussen,,ensu,70787
-House committee,u-s2-k-e,uske,,eksu,70788
-House of Representatives,u-s-r,usr,,rsu,70789
+house and senate,u-s-s2-e-n,ussen,,ensu,70787
+house committee,u-s2-k-e,uske,,eksu,70788
+house of representatives,u-s-r,usr,,rsu,70789
 how many of them,a-u-mn-e-th-m,wmmehm,,ehmw,70790
 humidify,^-h-\-e-u-m-e-df,humedf,,defhmu,70791
 humidor,^-h-\-e-u-m-e-d-r,humedr,,dehmru,70792
@@ -7582,41 +7582,41 @@ hypnosis,^-h-\-e-p-n-ss,hepnss,,ehnps,70802
 hypnotist,^-h-\-e-p-n-o-t-e-s,hepnotes,,ehnopst,70803
 hypoteneuse,^-h-\-i-p-tn-u-s,hiptnus,,hinpstu,70804
 hypothecate,^-h-\-i-p-th-e-k,hiphek,,ehikp,70805
-I always,a-l-s,alsi,i,ails,70806
-I am,a-m,amk1,k1,1akm,70807
-I am not,a-m-n,amno,o,amno,70808
-I am of the opinion,a-m-o-p-n,amopn,,amnop,70809
-I am sorry,a-m-s2-o,amso,,amos,70810
-I am sure,a-m-sh,amzu,u,amuz,70811
-I believe,a-b-e,abeu,u,abeu,70812
-I can,a-k,akw,w,akw,70813
-I cannot understand,a-k-n-/-s2-tn,aknstn,,aknst,70814
-I can't,a-k-t,aktu,u,aktu,70815
-I desire to thank you,a-d-s2-th-u,adshu,,adhsu,70816
-I do not,a-tn,atno,o,anot,70817
-I do not believe,a-tn-b-e,atnbe,,abent,70818
-I do not know,a-tn-o,atnoo,o,anot,70819
-I do not see,a-tn-s-e,atnse,,aenst,70820
-I do not understand,a-tn-/-s2-tn,atnstn,,anst,70821
-I don't,a-d-o-n,adono,o,adno,70822
-I had,i-d,idi,i,di,70823
-I have,a-v,avu,u,auv,70824
+i always,a-l-s,alsi,i,ails,70806
+i am,a-m,amk1,k1,1akm,70807
+i am not,a-m-n,amno,o,amno,70808
+i am of the opinion,a-m-o-p-n,amopn,,amnop,70809
+i am sorry,a-m-s2-o,amso,,amos,70810
+i am sure,a-m-sh,amzu,u,amuz,70811
+i believe,a-b-e,abeu,u,abeu,70812
+i can,a-k,akw,w,akw,70813
+i cannot understand,a-k-n-/-s2-tn,aknstn,,aknst,70814
+i can't,a-k-t,aktu,u,aktu,70815
+i desire to thank you,a-d-s2-th-u,adshu,,adhsu,70816
+i do not,a-tn,atno,o,anot,70817
+i do not believe,a-tn-b-e,atnbe,,abent,70818
+i do not know,a-tn-o,atnoo,o,anot,70819
+i do not see,a-tn-s-e,atnse,,aenst,70820
+i do not understand,a-tn-/-s2-tn,atnstn,,anst,70821
+i don't,a-d-o-n,adono,o,adno,70822
+i had,i-d,idi,i,di,70823
+i have,a-v,avu,u,auv,70824
 I hope,i-p,ip,,ip,70825
-I hope to hear,i-p-e-r,iper,,eipr,70826
-I must say,a-m-s-s-a,amssa,,ams,70827
-I should like to have,a-sh-d-l-a-v,azdlav,,adlvz,70828
-I should like to know,a-sh-d-l-a-n-o,azdlano,,adlnoz,70829
-I think it is,a-th-t-s,ahts,,ahst,70830
-I think that,a-th-th-a,ahha,,ah,70831
-I told him,a-t-o-m,atomo,o,amot,70832
-I understand,a-/-s2-tn,astno,o,anost,70833
-I understood,a-/-s2-t-u,astuo,o,aostu,70834
-I want,a-nt,anti,i,aint,70835
-I went,i-nt,intu,u,intu,70836
-I will,a-l,alk1,k1,1akl,70837
-I will be,a-l-b,albe,e,abel,70838
-I wish,a-u-sh,wz,,wz,70839
-I would,a-d,adi,i,adi,70840
+i hope to hear,i-p-e-r,iper,,eipr,70826
+i must say,a-m-s-s-a,amssa,,ams,70827
+i should like to have,a-sh-d-l-a-v,azdlav,,adlvz,70828
+i should like to know,a-sh-d-l-a-n-o,azdlano,,adlnoz,70829
+i think it is,a-th-t-s,ahts,,ahst,70830
+i think that,a-th-th-a,ahha,,ah,70831
+i told him,a-t-o-m,atomo,o,amot,70832
+i understand,a-/-s2-tn,astno,o,anost,70833
+i understood,a-/-s2-t-u,astuo,o,aostu,70834
+i want,a-nt,anti,i,aint,70835
+i went,i-nt,intu,u,intu,70836
+i will,a-l,alk1,k1,1akl,70837
+i will be,a-l-b,albe,e,abel,70838
+i wish,a-u-sh,wz,,wz,70839
+i would,a-d,adi,i,adi,70840
 ibex,i-b-e-x,ibex,,beix,70841
 ice house,i-s2-u-s,isus,,isu,70842
 ichor,i-k-r,ikr,,ikr,70843
@@ -7670,7 +7670,7 @@ in the course of time,n-k-r-s2-tm,nkrstm,,kmnrst,70890
 in the first instance,n-f-e-s2-n-s,nfesns,,efns,70891
 in the first place,n-f-e-s-/-p,nfesp,,efnps,70892
 in the future,n-f-t,nft,,fnt,70893
-in the House,n-u-s,nuso,o,nosu,70894
+in the house,n-u-s,nuso,o,nosu,70894
 in the market,mn-r,mmro,o,mor,70895
 in the matter,mn-a-t,mmat,,amt,70896
 in the meantime,mn-tm,mmtmo,o,mot,70897
@@ -7704,7 +7704,7 @@ indent,n-tn-t,ntnto,o,not,70924
 indention,n-tn-sh,ntnzo,o,notz,70925
 indestr-,nt-s-/,ntsu,u,nstu,70926
 indexes,nt-e-xs,ntexs,,enstx,70927
-Indiana ,e-n,enw,w,enw,70928
+indiana ,e-n,enw,w,enw,70928
 indicia,nt-sh-ea,ntze,,entz,70929
 indispensible,nt-s-p,ntsp,,npst,70930
 individualist,nt-v-/-s2-t,ntvsto,o,nostv,70931
@@ -7799,8 +7799,8 @@ itemized,a-tm-i-s2-d,atmisd,,adimst,71019
 itinerate,a-tn-r-a,atnra,,anrt,71020
 -itis,/-ts,tsi,i,ist,71021
 jejune,j-j-n,jjn,,jn,71022
-Jersey City,j-s2-e-t-e,jsete,,ejst,71023
-Jesus Christ,j-<-k,jk,,jk,71024
+jersey city,j-s2-e-t-e,jsete,,ejst,71023
+jesus christ,j-<-k,jk,,jk,71024
 jinrikisha,j-e-n-r-e-k-e-sh-a,jenrekeza,,aejknrz,71025
 jobbers,j-o-br-s,jobrs,,bjors,71026
 jocosity,j-o-k-/-s,joks,,jkos,71027
@@ -7810,14 +7810,14 @@ jounce,j-n-s,jns,,jns,71030
 jubilate,j-u-bl-a,jubla,,abjlu,71031
 judicative,j-d-e-k-v,jdekv,,dejkv,71032
 judicatory,j-d-e-k-/-r-e,jdekre,,dejkr,71033
-junior Senator from X,j-s2-n-/-X,jsnx,,jnsx,71034
+junior senator from x,j-s2-n-/-X,jsnx,,jnsx,71034
 just a moment,j-mn,jmm,,jm,71035
 just as,j-u-s-s,jusso,o,josu,71036
 justiciar,j-u-s2-t-e-sh-ea2,justeze,,ejstuz,71037
-Kansas City,k-s2-e-t-e,ksete,,ekst,71038
+kansas city,k-s2-e-t-e,ksete,,ekst,71038
 kaolin,k-a-o-l-e-n,kaolen,,aeklno,71039
 keep in mind,k-p-m-i,kpmi,,ikmp,71040
-Kentucky ,k-i,kio,o,iko,71041
+kentucky ,k-i,kio,o,iko,71041
 kersey,k-e-r-s-e,kerse,,ekrs,71042
 kilo-,k,kk3,k3,3k,71043
 kindly let us know,k-i-l-e-n-u,kilenu,,eiklnu,71044
@@ -7828,7 +7828,7 @@ knowingness,n-o-^-h-\-n-e-s,nohnes,,ehnos,71048
 kopeck,k-o-p-k,kopk,,kop,71049
 krypton,k-r-e-p-tn,kreptn,,eknprt,71050
 k-tm-d,k-tn-td,ktnddo,o,dknot,71051
-La Paz,l-a-p-a-s,lapas,,alps,71052
+la paz,l-a-p-a-s,lapas,,alps,71052
 laborious,l-a-br-u-s,labrus,,ablrsu,71053
 laburnum,l-a-b-e-n-u-m,labenum,,abelmnu,71054
 lacrosse,l-a-k-r-o-s,lakros,,aklors,71055
@@ -7839,8 +7839,8 @@ larger than,l-a-j-e2-n,lajen,,aejln,71059
 laryngitis,l-a-r-e-n-j-i,larenji,,aeijlnr,71060
 last year,l-a-s-e-r,laser,,aelrs,71061
 later-,l-a-/,lak1,k1,1akl,71062
-Latinist,l-a-tn-e-s,latnes,,aelnst,71063
-Latinity,l-a-t-/-nt,latnt,,alnt,71064
+latinist,l-a-tn-e-s,latnes,,aelnst,71063
+latinity,l-a-t-/-nt,latnt,,alnt,71064
 latitudinal,l-a-t-e-t-u-tn-l,latetutnl,,aelntu,71065
 lattermost,l-a-t-e-m-o,latemo,,aelmot,71066
 laudation,l-o-d-sh,lodz,,dloz,71067
@@ -7853,7 +7853,7 @@ leeway,l-e-/-u-a,leua,,aelu,71073
 legalism,l-e-g-s2-m,legsm,,eglms,71074
 legitimation,l-j-tm-sh,ljtmz,,jlmtz,71075
 legitimist,l-j-tm-e-s,ljtmes,,ejlmst,71076
-Lenigrad,l-e-n-e-n-g,leneng,,egln,71077
+lenigrad,l-e-n-e-n-g,leneng,,egln,71077
 lenitive,l-e-n-e-df,lenedf,,defln,71078
 lenticular,l-e-nt-e-k,lentek,,eklnt,71079
 lessor,l-e-s2-o-r,lesor,,elors,71080
@@ -7893,7 +7893,7 @@ locomotive engineer,l-o-k-df-n-j-e2,lokdfnje,,defjklno,71111
 long past due,l-ng-p-d-u,lngpdu,,dglnpu,71114
 longer than,l-ng-e2-n,lngen,,egln,71115
 look into the matter,l-u-m-a-t,lumat,,almtu,71116
-Los Angeles,l-o-s-a,losa,,alos,71117
+los angeles,l-o-s-a,losa,,alos,71117
 lowborn,l-o-b-o-n,lobon,,blno,71118
 low-spirited,l-o-s-pr-/-t,losprt,,loprst,71119
 lubricate,l-br-e-k,lbrek,,beklr,71120
@@ -7918,7 +7918,7 @@ magnifico,m-/-f-e-k-o,mfeko,,efkmo,71138
 magniloquent,m-/-l-o-k,mloq,,lmoq,71139
 maharaja,m-a-r-a-j-a,maraja,,ajmr,71140
 mail us,m-a-ss,massk1,k1,1akms,71141
-Maine ,m-e,mek1,k1,1ekm,71142
+maine ,m-e,mek1,k1,1ekm,71142
 make-believe,m-a-k-b-e,makbe,,abekm,71143
 maladministration,m-a-l-a-mn-e-s-sh,malammesz,,aelmsz,71144
 malapert,m-a-l-p-e2-t,malpet,,aelmpt,71145
@@ -7946,7 +7946,7 @@ maraud,m-a-r-o-d,marod,,admor,71166
 marconigram,m-a-r-k-n-e-/-g,markneg,,aegkmnr,71167
 marionette,m-a-r-e-n-e-t,marenet,,aemnrt,71168
 maritume,m-a-r-e-tm,maretm,,aemrt,71169
-Massachusetts ,m-a,mak5,k5,5akm,71170
+massachusetts ,m-a,mak5,k5,5akm,71170
 masterliness,m-a-s2-e-n-e-s,masenes,,aemns,71171
 masterwork,m-a-s-r-k,masrk,,akmrs,71172
 mastic,m-a-s2-t-e-k,mastek,,aekmst,71173
@@ -7975,7 +7975,7 @@ melifluous,m-e-l-e-f,melef,,eflm,71195
 meliorate,m-e-l-r-a,melra,,aelmr,71196
 melodeon,m-e-l-o-tn,melotn,,elmnot,71197
 member ,mn-b,mmbo,o,bmo,71198
-member of the House,mnu-s,mmus,,msu,71199
+member of the house,mnu-s,mmus,,msu,71199
 meningitis,mn-e-n-j-i,mmenji,,eijmn,71200
 menstruate,mn-s2-t-r-a,mmstra,,amrst,71201
 mensuration,mn-sh-u-sh,mmzuz,,muz,71202
@@ -7985,7 +7985,7 @@ mensurative,mn-sh-u-df,mmzudf,,dfmuz,71203
 mephitic,m-e-f-/-a,mefa,,aefm,71206
 mere fact that,m-e-f-th-a,mefha,,aefhm,71207
 merely ,m-e-r-e,mereu,u,emru,71208
-Messrs.,m-ss,msso,o,mos,71209
+messrs.,m-ss,msso,o,mos,71209
 metabolism,m-e-t-bl-s2-m,metblsm,,belmst,71210
 metamorphose,m-e-tm-o-r-f-s2,metmorfs,,efmorst,71211
 meteorite,m-e-t-o-r-i,metori,,eimort,71212
@@ -8007,7 +8007,7 @@ miscalculate,m-s2-k-a-l,mskal,,aklms,71227
 miscegenation,m-s-e-j-n-sh,msejnz,,ejmnsz,71228
 miscellanist,m-s-e-l-a-n-e-s,mselanes,,aelmns,71229
 mislike,m-s-l-a,msla,,alms,71230
-Mississippi ,m-s,mso,o,mos,71231
+mississippi ,m-s,mso,o,mos,71231
 misstate,m-ss2-t,msst,,mst,71232
 mistreat,m-s2-t-r-e-t,mstret,,emrst,71233
 -mity,/-mt,mti,i,imt,71234
@@ -8019,15 +8019,15 @@ moment ago,mn-g,mmgu,u,gmu,71239
 m-o-n/k,mn-/-k,mmko,o,kmo,71240
 monagamous,mn-o-g,mmog,,gmo,71241
 monagamy,mn-o-g,mmogo,o,gmo,71242
-Monday morning,m-u-mn-\-h,mummg,,gmu,71243
-Monday night,m-u-n-i,munio,o,imnou,71244
+monday morning,m-u-mn-\-h,mummg,,gmu,71243
+monday night,m-u-n-i,munio,o,imnou,71244
 monocle ,mn-/-k,mmku,u,kmu,71245
 monody,mn-o-d-e,mmode,,demo,71246
 monolith,mn-l-e-th,mmleh,,ehlm,71247
 monologist,mn-/-o-s2-t,mmost,,most,71248
 monotype,mn-o-t-i-p,mmotip,,imopt,71249
 monoxide,mn-o-s2-i-d,mmosid,,dimos,71250
-Monterrey,mn-t-e-r-e,mmtere,,emrt,71251
+monterrey,mn-t-e-r-e,mmtere,,emrt,71251
 months ago,mn-th-s2-g,mmhsg,,ghms,71252
 moratorium,m-o-r-a-t-o-r-m,moratorm,,amort,71253
 morbidity,m-o-b-td-e,mobdde,,bdemo,71254
@@ -8042,10 +8042,10 @@ motherliness,m-u-th-e-n-e-s,muhenes,,ehmnsu,71262
 mother-of-pearl,m-u-th-pr-l,muhprl,,hlmpru,71263
 mottle,m-o-t-l,motlu,u,lmotu,71264
 movability,m-u-/-b,mubo,o,bmou,71265
-Mr.,m-r,mru,u,mru,71266
-Mr. Chairman,m-ch-mn,mcmm,,cm,71267
-Mr. Speaker,m-r-s-p,mrsp,,mprs,71268
-Mrs.,m-r-s,mrsu,u,mrsu,71269
+mr.,m-r,mru,u,mru,71266
+mr. chairman,m-ch-mn,mcmm,,cm,71267
+mr. speaker,m-r-s-p,mrsp,,mprs,71268
+mrs.,m-r-s,mrsu,u,mrsu,71269
 muderess,m-e2-d-e2-r-e2-s,mederes,,demrs,71270
 muderous,m-e2-d-e2-r-u-s,mederus,,demrsu,71271
 mulct,m-u-l-k,mulk,,klmu,71272
@@ -8055,7 +8055,7 @@ multimillionaire,m-u-/-m-e-l-n-a2,mumelna,,aelmnu,71275
 mummer,mn-e2,mmew,w,emw,71276
 mummification,mn-/-f,mmfo,o,fmo,71277
 mummify,mn-f,mmfu,u,fmu,71278
-Muncie,mn-s-e,mmse,,ems,71279
+muncie,mn-s-e,mmse,,ems,71279
 murkiness,m-e-r-k-e-n-e-s,merkenes,,ekmnrs,71280
 muscadine,m-u-s2-k-a-tn,muskatn,,akmnstu,71281
 muskmelon,m-u-s2-k-m-e-l-n,muskmeln,,eklmnsu,71282
@@ -8087,22 +8087,22 @@ negotiation ,n-o-sh,nozo,o,noz,71307
 nepenthe,n-e-p-n-th-e,nepnhe,,ehnp,71308
 nescient,n-e-sh-t,nezt,,entz,71309
 neutrally,n-u-t-r-ya,nutrya,,anrtuy,71310
-Nevada ,n-v,nvw,w,nvw,71311
-New Albany,n-o-b-n-e,nobne,,beno,71312
-New Bedford,n-b-d-f-d,nbdfd,,bdfn,71313
-New Bern,n-b-e-n,nben,,ben,71314
-New Britain,n-br-e-tn,nbretn,,benrt,71315
-New Brunswick,n-<-b,nbo,o,bno,71316
-New Hampshire,n-\-h,ngi,i,gin,71317
-New Haven,n-^-h-\-a-v-n,nhavn,,ahnv,71318
-New Jersey,n-<-j,nji,i,ijn,71319
-New London,n-l-nt,nlnt,,lnt,71320
-New Mexico,n-/-m,nmu,u,mnu,71321
-New Orleans,n-o-l-e-n-s,nolens,,elnos,71322
+nevada ,n-v,nvw,w,nvw,71311
+new albany,n-o-b-n-e,nobne,,beno,71312
+new bedford,n-b-d-f-d,nbdfd,,bdfn,71313
+new bern,n-b-e-n,nben,,ben,71314
+new britain,n-br-e-tn,nbretn,,benrt,71315
+new brunswick,n-<-b,nbo,o,bno,71316
+new hampshire,n-\-h,ngi,i,gin,71317
+new haven,n-^-h-\-a-v-n,nhavn,,ahnv,71318
+new jersey,n-<-j,nji,i,ijn,71319
+new london,n-l-nt,nlnt,,lnt,71320
+new mexico,n-/-m,nmu,u,mnu,71321
+new orleans,n-o-l-e-n-s,nolens,,elnos,71322
 new year,n-u-r,nuru,u,nru,71323
-New York,n-o-k,noko,o,kno,71324
-New York ,n-i,niw,w,inw,71325
-New Zealand,n-<-s,nsk1,k1,1kns,71326
+new york,n-o-k,noko,o,kno,71324
+new york ,n-i,niw,w,inw,71325
+new zealand,n-<-s,nsk1,k1,1kns,71326
 nickeliferous,n-e-k-l-e-f,neklef,,efkln,71327
 nickelodeon,n-e-k-l-o-tn,neklotn,,eklnot,71328
 nickotine,n-e-k-tn,nektn,,eknt,71329
@@ -8120,9 +8120,9 @@ noncombatant,n-o-n-k-b-a-tn,nonkbatn,,abknot,71340
 nonexistence,n-o-n-e-ss,nonxs,,nosx,71341
 nonpareil,n-o-n-pr-e-l,nonprel,,elnopr,71342
 nonunion,n-o-n-e-u-n,nonun,,nou,71343
-North America,n-a-m,namo,o,amno,71344
-North Carolina,n-k,nke,e,ekn,71345
-North Dakota,n-d,ndi,i,din,71346
+north america,n-a-m,namo,o,amno,71344
+north carolina,n-k,nke,e,ekn,71345
+north dakota,n-d,ndi,i,din,71346
 northbound,n-b,nbu,u,bnu,71347
 northbound track,n-b-t,nbt,,bnt,71348
 northeast corner,n-e-s2-k,nesk,,ekns,71349
@@ -8134,16 +8134,16 @@ northerly direction,n-o-th-e-d,nohed,,dehno,71354
 northerly side,n-o-th-e-s,nohes,,ehnos,71355
 northwest corner,nu-k,nuk,,knu,71356
 northwest quarter,nu-k-t-e2,nuqte,,enqtu,71357
-Northwest Territories,nu-t-e2-t,nutet,,entu,71358
+northwest territories,nu-t-e2-t,nutet,,entu,71358
 northwesterly,nu-r-e,nure,,enru,71359
 northwesterly direction,nu-r-e-d,nured,,denru,71360
 northwesterly side,nu-r-e-s,nures,,enrsu,71361
 nos.,n-o-s,nosu,u,nosu,71362
 notarial,n-o-t-a-r-l,notarl,,alnort,71363
-Nova Scotia,n-<-s2-k,nsko,o,knos,71364
+nova scotia,n-<-s2-k,nsko,o,knos,71364
 novelette,n-o-v-e-t,novet,,enotv,71365
 now and then,n-a-u-th-n,nwhn,,hnw,71366
-Nuevo Leon,n-u-l-e-n,nulen,,elnu,71367
+nuevo leon,n-u-l-e-n,nulen,,elnu,71367
 numerate,n-e-u-m-r-a,numra,,amnru,71368
 nutr-,n-u-/,nuy,y,nuy,71369
 oaf,o-f,ofa,a,afo,71370
@@ -8189,7 +8189,7 @@ on hand,^-h-\-o-nt,hont,,hnot,71409
 on our,o-n-r,onr,,nor,71410
 on the,o-n-th,onh,,hno,71411
 on the floor,o-n-th-/-f,onhf,,fhno,71412
-on the floor of the House of Representatives,o-n-th-/-f-u-s-r,onhfusr,,fhnorsu,71413
+on the floor of the house of representatives,o-n-th-/-f-u-s-r,onhfusr,,fhnorsu,71413
 on the market,o-mn-r,ommr,,mor,71414
 on the other hand,o-n-u-th-nd,onuhnd,,dhnou,71415
 on the other side,o-n-u-th-s,onuhs,,hnosu,71416
@@ -8253,7 +8253,7 @@ pacifism,p-a-s2-f-s22-m,pasfsm,,afmps,71473
 pacifist,p-a-s2-f-e-s,pasfes,,aefps,71474
 pajama,p-a-j-m-a,pajma,,ajmp,71475
 parcel post,p-<-p,ppo,o,op,71476
-Pasadena,p-a-s2-tn-a,pastna,,anpst,71477
+pasadena,p-a-s2-tn-a,pastna,,anpst,71477
 passenger auditor,p-/-o,poo,o,op,71478
 passenger car,p-k-r,pkr,,kpr,71479
 passenger coach,p-k-o-ch,pkoc,,ckop,71480
@@ -8268,7 +8268,7 @@ per capita,pr-/-k-a-p,prkap,,akpr,71488
 per diem,pr-<-tm,prtm,,mprt,71489
 per se,pr-s-e,prsei,i,eiprs,71490
 perch ,pr-ch,prco,o,copr,71491
-Peterboro,p-t-r-br-o,ptrbro,,boprt,71492
+peterboro,p-t-r-br-o,ptrbro,,boprt,71492
 petr-,p-e-/,peo,o,eop,71493
 phoned,f-o-nt,fontu,u,fnotu,71495
 photo-,f,fk2,k2,2fk,71496
@@ -8279,21 +8279,21 @@ porn,p-o-n,ponu,u,nopu,71500
 pose ,p-o,pou,u,opu,71501
 posh,p-o-sh,pozu,u,opuz,71502
 post office,p-/-o-s,posw,w,opsw,71503
-Post Office Department,po-d,podo,o,dop,71504
+post office department,po-d,podo,o,dop,71504
 pound ,p,pk1,k1,1kp,71505
 poundal,p-n-l,pnl,,lnp,71506
 practicality,pr-k-/-l,prkl,,klpr,71507
 preferred stock,pr-e-f-s22-t-o-k,prefstok,,efkoprst,71508
-President of the United States,pr-e-s2-tn-e-u-s,prestnus,,enprstu,71509
+president of the united states,pr-e-s2-tn-e-u-s,prestnus,,enprstu,71509
 pretty much,pr-e-m-ch,premc,,cempr,71510
 price list,p-<-l-s,pls,,lps,71511
 prima facie,p-/-f,pf,,fp,71512
-Prince Edward Island,p-/-e-/-i,pei,,eip,71513
+prince edward island,p-/-e-/-i,pei,,eip,71513
 pro forma,pr-f-m-a,prfma,,afmpr,71514
 pro rata,pr-r-a,prra,,apr,71515
 pro tem,pr-o-tm,protm,,moprt,71516
 prompt attention,p-tn,ptn,,npt,71517
-Puerto Rico,p-<-r,prk1,k1,1kpr,71518
+puerto rico,p-<-r,prk1,k1,1kpr,71518
 pundit,p-n-td,pndd,,dnp,71519
 purchasing agent,pr-ch-/-a,prca,,acpr,71520
 purchasing department,pr-ch-/-d,prcd,,cdpr,71521
@@ -8324,34 +8324,34 @@ reline,r-e-l-a-n,relan,,aelnr,71545
 reorder,r-o-d,rodi,i,dior,71546
 reprsentation,r-p-sh,rpz,,prz,71547
 respectfully yours,r-u,ruw,w,ruw,71548
-Rhode Island,r-<-a,rao,o,aor,71549
-Rhode Island ,r-i,rii,i,ir,71550
+rhode island,r-<-a,rao,o,aor,71549
+rhode island ,r-i,rii,i,ir,71550
 right of way,r-i-/-n,rino,o,inor,71551
-Rio de Janeiro,r-e-d-j,redj,,dejr,71552
+rio de janeiro,r-e-d-j,redj,,dejr,71552
 -rity,/-r,rw,w,rw,71553
-Salt Lake City,s2-o-l-a-k-s,solaks,,aklos,71554
+salt lake city,s2-o-l-a-k-s,solaks,,aklos,71554
 same circumstances,s2-a-m-ss,samss,,ams,71555
-San Angelo,s2-a-n-a-n-j,sananj,,ajns,71556
-San Antonio,s2-a-n-a-n,sanano,o,anos,71557
-San Bernardino,s2-a-n-b-e2-n,sanben,,abens,71558
-San Diego,s2-a-n-d-a-g,sandag,,adgns,71559
-San Francisco,s2-a-n-f,sanf,,afns,71560
-San Juan,s2-a-n-w-o-n,sanwon,,anosw,71561
-San Rafael,s2-a-n-r-a-f,sanraf,,afnrs,71562
-Santa Barbara,s2-a-nt-b,santb,,abnst,71563
-Saskatoon,ss2-k-tn,ssktn,,knst,71564
-Scilily,ss-l-e,ssle,,els,71565
+san angelo,s2-a-n-a-n-j,sananj,,ajns,71556
+san antonio,s2-a-n-a-n,sanano,o,anos,71557
+san bernardino,s2-a-n-b-e2-n,sanben,,abens,71558
+san diego,s2-a-n-d-a-g,sandag,,adgns,71559
+san francisco,s2-a-n-f,sanf,,afns,71560
+san juan,s2-a-n-w-o-n,sanwon,,anosw,71561
+san rafael,s2-a-n-r-a-f,sanraf,,afnrs,71562
+santa barbara,s2-a-nt-b,santb,,abnst,71563
+saskatoon,ss2-k-tn,ssktn,,knst,71564
+scilily,ss-l-e,ssle,,els,71565
 seaway,s-e-/-n,sena,a,aens,71566
-Secretary of Agriculture,s2-e-k-ya,sekya,,aeksy,71567
-Secretary of Commerce,s2-e-k-m-ye,sekmye,,ekmsy,71568
-Secretary of State,s2-e-k-s2-t,sekst,,ekst,71569
-Secretary of the Interior,s2-e-k-n-/-o-r,seknor,,eknors,71570
+secretary of agriculture,s2-e-k-ya,sekya,,aeksy,71567
+secretary of commerce,s2-e-k-m-ye,sekmye,,ekmsy,71568
+secretary of state,s2-e-k-s2-t,sekst,,ekst,71569
+secretary of the interior,s2-e-k-n-/-o-r,seknor,,eknors,71570
 seep,s-e-p,sepe,e,eps,71571
 semester,s2-e2-m-e2-s2-t-e2,semeste,,emst,71572
 semiannual,s2-e-m-a-n-l,semanl,,aelmns,71573
-Senate ,s2-e-n,senw,w,ensw,71574
-Senate bill,s2-e-n-bl,senbl,,belns,71575
-senior Senator from X,s-s2-n-/-X,ssnx,,nsx,71576
+senate ,s2-e-n,senw,w,ensw,71574
+senate bill,s2-e-n-bl,senbl,,belns,71575
+senior senator from x,s-s2-n-/-X,ssnx,,nsx,71576
 set up,s2-e-t-p,setp,,epst,71577
 several years ago,s2-e-v-r-g,sevrg,,egrsv,71578
 -ship,/-sh,zw,w,wz,71579
@@ -8359,7 +8359,7 @@ shipping department,sh-/-d,zdo,o,doz,71580
 should be,sh-d-b,zdb,,bdz,71581
 should be able,sh-d-b-a,zdba,,abdz,71582
 should be done,sh-d-b-tn,zdbtn,,bdntz,71583
-so far as I know,s2-o-f-a-s2-n-o,sofasno,,afnos,71584
+so far as i know,s2-o-f-a-s2-n-o,sofasno,,afnos,71584
 so well,s2-o-l,solw,w,losw,71585
 so-called,s2-o-k-o-/-t,sokot,,kost,71586
 some of them,s2-m-th-m,smhm,,hms,71587
@@ -8371,9 +8371,9 @@ sooner or later,s2-n-l-a-t,snlat,,alnst,71592
 sooner than,s2-n-e2-n,snen,,ens,71593
 sophisticate,s2-o-f-/-s2-t-a,sofsta,,afost,71594
 sorority,s2-o-r-/-r,sorro,o,ors,71595
-South America,s-/-a-m,samu,u,amsu,71596
-South Carolina,s2-k,sko,o,kos,71597
-South Dakota,s2-d,sdo,o,dos,71598
+south america,s-/-a-m,samu,u,amsu,71596
+south carolina,s2-k,sko,o,kos,71597
+south dakota,s2-d,sdo,o,dos,71598
 southbound,s-b,sbu,u,bsu,71599
 southbound track,s-b-t,sbt,,bst,71600
 southeast corner,s-e-s2-k,sesk,,eks,71601
@@ -8391,15 +8391,15 @@ southwesterly direction,s2-u-r-e-d,sured,,dersu,71612
 southwesterly side,s2-u-r-e-s,sures,,ersu,71613
 spas,s-p-a-s,spaso,o,aops,71614
 specialize,s-p-i-s,spis,,ips,71615
-Spokane,s-p-k-a-n,spkan,,aknps,71616
+spokane,s-p-k-a-n,spkan,,aknps,71616
 square foot,s2-k-f,sqf,,fqs,71617
 square inch,s2-k-n-ch,sqnc,,cnqs,71618
 square yard,s2-k-a2-d,sqad,,adqs,71619
-St. Augustine,s2-t-o-g-u-s,stogus,,gostu,71620
-St. John,s2-t-j-o-n,stjon,,jnost,71621
-St. Joseph,s2-t-j-o,stjo,,jost,71622
-St. Louis,s2-t-l-u,stlu,,lstu,71623
-St. Paul,s2-t-pl,stpl,,lpst,71624
+st. augustine,s2-t-o-g-u-s,stogus,,gostu,71620
+st. john,s2-t-j-o-n,stjon,,jnost,71621
+st. joseph,s2-t-j-o,stjo,,jost,71622
+st. louis,s2-t-l-u,stlu,,lstu,71623
+st. paul,s2-t-pl,stpl,,lpst,71624
 statistic,s2-t-a-t,stati,i,aist,71625
 status quo,s2-t-a-t-u-s2-k-o,statusqo,,aoqstu,71626
 -stic,/-st,stk3,k3,3kst,71627
@@ -8408,22 +8408,22 @@ strum,s2-t-r-m,strmo,o,morst,71629
 subcommittee,s2-k-e,skeo,o,ekos,71630
 subcutaneous,s2-k-e-u-tn-u-s,skutnus,,knstu,71631
 such circumstances,s-ch-/-ss,scss,,cs,71632
-Sunday morning,s2-mn-\-h,smmg,,gms,71633
-Sunday night,s2-n-i,snio,o,inos,71634
+sunday morning,s2-mn-\-h,smmg,,gms,71633
+sunday night,s2-n-i,snio,o,inos,71634
 superintendent of eastern division,s-/-e-s2-df,sesdf,,defs,71635
 superintendent of motive power,s-<-m-<-p,smp,,mps,71636
 superintendent of shops,s-/-sh-o-p-s,szops,,opsz,71637
 superintendent of telegraph,s-/-t-e-l,stel,,elst,71638
 superintendent of transportation,s2-t-/-p-o-t-sh,stpotz,,opstz,71639
 superior ,s-/-r,sru,u,rsu,71640
-Supreme Court,s-/-k-t,skto,o,kost,71641
+supreme court,s-/-k-t,skto,o,kost,71641
 supression,s-/-sh,sz,,sz,71642
-Tacoma,t-a-k-m-a,takma,,akmt,71643
+tacoma,t-a-k-m-a,takma,,akmt,71643
 take advantage,t-a-v,tav,,atv,71644
 take away,t-a-/-n,tanu,u,antu,71645
 take-care,t-a-k-a,taka,,akt,71646
 taken ,t-a-n,tani,i,aint,71647
-Tampico,tm-p-k,tmpk,,kmpt,71648
+tampico,tm-p-k,tmpk,,kmpt,71648
 tanager,tn-j-e2,tnjeu,u,ejntu,71649
 tangerine,tn-j-e-r-e-n,tnjeren,,ejnrt,71650
 tantalum,tn-t-l-m,tntlm,,lmnt,71651
@@ -8450,8 +8450,8 @@ that the,th-a-th,haho,o,aho,71671
 that they,th-a-th-e,hahe,,aeh,71672
 that this,th-a-ths,hahs,,ahs,71673
 the fact,th-/-f,hfu,u,fhu,71674
-the floor of the House,th-/-f-u-s,hfus,,fhsu,71675
-The Hague,th-^-h-\-a-g,hhag,,agh,71676
+the floor of the house,th-/-f-u-s,hfus,,fhsu,71675
+the hague,th-^-h-\-a-g,hhag,,agh,71676
 there are,th2-r,hri,i,hir,71677
 there is,th2-s,hsa,a,ahs,71678
 there is not,th2-s2-nt,hsnt,,hnst,71679
@@ -8496,7 +8496,7 @@ to make,tm-a-k,tmak,,akmt,71718
 to me,tm-e,tmeo,o,emot,71719
 to mean,tm-e-n,tmen,,emnt,71720
 to meet,tm-e-t,tmeto,o,emot,71721
-to Mr.,tm-r,tmre,e,emrt,71722
+to mr.,tm-r,tmre,e,emrt,71722
 to my,tm-a,tma,,amt,71723
 to our,t-r,trw,w,rtw,71724
 to pay,t-p-a,tpa,,apt,71725
@@ -8532,7 +8532,7 @@ treaty ,t-r-e,treo,o,eort,71754
 two or three months,t-u-th2-e-mn-th-s,tuhemmhs,,ehmstu,71755
 two years ago,t-r-g,trg,,grt,71756
 typewrite,t-pr-i,tprio,o,ioprt,71757
-U.S.S.R.,e-u-s-s-r,ussro,o,orsu,71758
+u.s.s.r.,e-u-s-s-r,ussro,o,orsu,71758
 -ulate,/-u,uy,y,uy,71759
 ulna,u-n-a,unao,o,anou,71760
 ultra-,u-/,uk1,k1,1ku,71761
@@ -8547,9 +8547,9 @@ undamaged,n-tm-j-d,ntmjd,,djmnt,71769
 under separate cover,u-/-s2-k-v,uskv,,ksuv,71770
 under the circumstances,u-/-th-/-ss,uhss,,hsu,71771
 unforgivable,n-f-g-e-/-b,nfgeb,,befgn,71772
-United Kingdom,e-u-k,uko,o,kou,71773
-United States,e-u-s,usk1,k1,1ksu,71774
-United States of America,e-u-s-a,usao,o,aosu,71775
+united kingdom,e-u-k,uko,o,kou,71773
+united states,e-u-s,usk1,k1,1ksu,71774
+united states of america,e-u-s-a,usao,o,aosu,71775
 unknightly,u-n-ia,unia,,ainu,71776
 unlined,n-l-a-nt,nlant,,alnt,71777
 unseat,n-s2-e-t,nsetu,u,enstu,71778
@@ -8567,7 +8567,7 @@ v. m-e-t-l-k,m-e-t-r-g,metrg,,egmrt,71789
 v. n-e-s-o-s-b,n-e-s-s-b,nessb,,bens,71790
 v. n-k-b-u-s-b,n-k-b-u-b,nkbub,,bknu,71791
 v. n-s-u-f-b,n-s2-u-b,nsub,,bnsu,71792
-Vera Cruz,v-k-r-u-s,vkrus,,krsuv,71793
+vera cruz,v-k-r-u-s,vkrus,,krsuv,71793
 very cordially yours,v-k-u,vku,,kuv,71794
 very much,v-e-m-ch,vemc,,cemv,71795
 very truly yours,v-t-u,vtu,,tuv,71796
@@ -8575,7 +8575,7 @@ vice president,v-/-p,vpo,o,opv,71797
 -vity,/-v,vw,w,vw,71798
 -ward,/-d,dk3,k3,3dk,71799
 was not,o-s2-nt,osnt,,nost,71800
-Washington ,u-a,uau,u,au,71801
+washington ,u-a,uau,u,au,71801
 we admire,u-e-m-i,uemi,,eimu,71802
 we advise,u-e-v-i-s,uevis,,eisuv,71803
 we always,u-e-l-s,uels,,elsu,71804
@@ -8615,7 +8615,7 @@ week or two,e-k-t-u,ektu,,ektu,71837
 week or two ago,e-k-t-u-g,ektug,,egktu,71838
 weekend,e-k-nt,eknto,o,eknot,71839
 weeks ago,e-k-s2-g,eksg,,egks,71840
-West Virginia,uv,uvo,o,ouv,71841
+west virginia,uv,uvo,o,ouv,71841
 westbound,u-b,ub,,bu,71842
 westbound track,u-b-t,ubt,,btu,71843
 westerly direction,u-r-e-d,ured,,deru,71844
@@ -8636,7 +8636,7 @@ will be,l-b,lbo,o,blo,71858
 will be able,l-b-a,lba,,abl,71859
 will be done,l-b-tn,lbtn,,blnt,71860
 will you,l-u,luu,u,lu,71861
-Williamsport,u-e-l-m-s-p,uelmsp,,elmpsu,71862
+williamsport,u-e-l-m-s-p,uelmsp,,elmpsu,71862
 wire us,i-r-s,irso,o,iors,71863
 with or without,e-th-e-th-t,eheht,,eht,71864
 with reference to the matter,e-th-r-f-m-a-t,ehrfmat,,aefhmrt,71865
@@ -8666,7 +8666,7 @@ you may,u-m-a,umao,o,amou,71889
 you want,u-nt,unti,i,intu,71890
 you were,u-e2,ueu,u,eu,71891
 you would,u-d,udo,o,dou,71892
-Youngstown,ung-s2-t-n,ungstn,,gnstu,71893
+youngstown,ung-s2-t-n,ungstn,,gnstu,71893
 your immediate attention,u-m-e-tn-sh,umetnz,,emntuz,71894
 your inquiry,u-n-k-i,unqi,,inqu,71895
 your letter,u-l-e,ule,,elu,71896

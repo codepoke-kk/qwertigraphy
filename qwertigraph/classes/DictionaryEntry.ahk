@@ -12,8 +12,8 @@ class DictionaryEntry
 		this.keyer := fields[4]
 		this.chord := fields[5]
 		this.usage := fields[6]
-		this.hint := "-v1-"
 		this.dictionary := fields[7]
+		this.hint := "-v1-"
 		this.chordable := "Initializing"
 		this.saves := StrLen(this.word) - StrLen(this.qwerd)
 		this.power := StrLen(this.word) / StrLen(this.qwerd)

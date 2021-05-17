@@ -251,7 +251,7 @@ class EditorViewport
 {
 	map := ""
 	logQueue := new Queue("EditorQueue")
-	logVerbosity := 1
+	logVerbosity := 4
 	keyers := Array("","o","u","i","e","a","w","y")
 	
 	__New(map)
@@ -363,6 +363,7 @@ class EditorViewport
 		for foundKey, count in foundKeys {
 			if (foundKeys[foundKey] = requiredMatchCount) {
 				qwerd := this.map.qwerds.item(foundKey)
+                ; this.logEvent(3, "Qwerd's chordable is " qwerd.chordable ", but the chord's chordable is " this.map.chords.item(qwerd.chord).chordable)
 				LV_Add(, qwerd.word, qwerd.form, qwerd.qwerd, qwerd.keyer, qwerd.chord, qwerd.chordable, qwerd.usage, qwerd.dictionary)
 			} else {
 				this.logEvent(3, foundKey " matched " foundKeys[foundKey] " times, not " requiredMatchCount)

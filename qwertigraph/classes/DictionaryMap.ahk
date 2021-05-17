@@ -18,7 +18,7 @@ class DictionaryMap
 	displaceds := ComObjCreate("Scripting.Dictionary")
 	
 	logQueue := new Queue("DictionaryMapQueue")
-	logVerbosity := 3
+	logVerbosity := 1
 	
 	__New(qenv)
 	{
@@ -80,6 +80,7 @@ class DictionaryMap
 				}
 				
 				newEntry := new DictionaryEntry(A_LoopReadLine "," loadDictionary)
+                this.logEvent(4, "Spawned " newEntry.qwerd " as " newEntry.word "," newEntry.chord "," newEntry.usage "," newEntry.hint " from " A_LoopReadLine)
 				
 				if (this.qwerds.item(newEntry.qwerd).word) {
 					; If we already have this one, keep it as a displaced entry, but do not overwrite the existing entry
@@ -113,48 +114,59 @@ class DictionaryMap
 	}
 	
 	propagateEntryToMaps(newEntry) {
+        ; Evaluate chordability first
+		; Limit chord acceptance by length, by frequency of usage, and to only appear once 
+		if (StrLen(newEntry.chord) >= this.minimumChordLength) {
+			If (not this.chords.item(newEntry.chord).word) {
+				if (newEntry.Usage < this.maximumChordUsage) { 
+					chordability := "active"
+				} else { 
+					chordability := "rare"
+				}
+			} else { 
+				chordability := "unused"
+			}
+		} else { 
+			chordability := "short"
+		}
+        newEntry.chordable := chordability
+        
 		; Force lower entries to lower
 		StringLower, qwerdlower, % newEntry.qwerd
 		StringLower, wordlower, % newEntry.word
-		newEntrylower := new DictionaryEntry(wordlower "," newEntry.form "," qwerdlower "," newEntry.keyer "," newEntry.Usage "," newEntry.hint "," newEntry.dictionary)
+		newEntrylower := new DictionaryEntry(wordlower "," newEntry.form "," qwerdlower "," newEntry.keyer "," newEntry.chord "," newEntry.usage "," newEntry.dictionary)
+        newEntrylower.chordable := chordability
 		this.qwerds.item(newEntry.qwerd) := newEntrylower
 		this.hints.item(newEntry.word) := newEntrylower
 		
 		StringUpper, qwerdUPPER, % newEntry.qwerd
 		StringUpper, wordUPPER, % newEntry.word
-		newEntryUPPER := new DictionaryEntry(wordUPPER "," newEntry.form "," qwerdUPPER "," newEntry.keyer "," newEntry.Usage "," newEntry.hint "," newEntry.dictionary)
+		newEntryUPPER := new DictionaryEntry(wordUPPER "," newEntry.form "," qwerdUPPER "," newEntry.keyer "," newEntry.chord "," newEntry.usage "," newEntry.dictionary)
+        newEntryUPPER.chordable := chordability
 		this.qwerds.item(qwerdUPPER) := newEntryUPPER
 		this.hints.item(wordUPPER) := newEntryUPPER
 		
 		qwerdCapped := SubStr(qwerdUPPER, 1, 1) . SubStr(newEntry.qwerd, 2, (StrLen(newEntry.qwerd) - 1))
 		wordCapped := SubStr(wordUPPER, 1, 1) . SubStr(newEntry.word, 2, (StrLen(newEntry.word) - 1))
-		newEntryCapped := new DictionaryEntry(wordCapped "," newEntry.form "," qwerdCapped "," newEntry.keyer "," newEntry.Usage "," newEntry.hint "," newEntry.dictionary)
+		newEntryCapped := new DictionaryEntry(wordCapped "," newEntry.form "," qwerdCapped "," newEntry.keyer "," newEntry.chord "," newEntry.usage "," newEntry.dictionary)
+        newEntryCapped.chordable := chordability
 		this.qwerds.item(qwerdCapped) := newEntryCapped
 		this.hints.item(wordCapped) := newEntryCapped
 		
-		; Limit chord acceptance by length, by frequency of usage, and to only appear once 
-		if (StrLen(newEntry.chord) >= this.minimumChordLength) {
-			If (not this.chords.item(newEntry.chord).word) {
-				if (newEntry.Usage < this.maximumChordUsage) {
-					this.logEvent(4, "Adding chord " newEntry.chord " as " newEntry.word) 
-					newEntry.chordable := "active"
-					this.chords.item(newEntry.chord) := newEntry
-					
-					StringUpper, chordUPPER, % newEntry.chord
-					newChordEntryCapped := new DictionaryEntry(wordCapped "," newEntry.form "," chordUPPER "," newEntry.keyer "," newEntry.Usage "," newEntry.hint "," newEntry.dictionary)
-					newChordEntryCapped.chord := chordUPPER
-					newChordEntryCapped.chordable := true
-					this.chords.item(newChordEntryCapped.chord) := newChordEntryCapped
-				} else { 
-					newEntry.chordable := "rare"
-				}
-			} else { 
-				newEntry.chordable := "unused"
-			}
-		} else { 
-			newEntry.chordable := "short"
-		}
-	}	
+        if (chordability == "active") {
+            this.logEvent(4, "Adding chord " newEntry.chord " as " newEntry.word) 
+            this.chords.item(newEntry.chord) := newEntry
+            
+            StringUpper, chordUPPER, % newEntry.chord
+            newChordEntryCapped := new DictionaryEntry(wordCapped "," newEntry.form "," chordUPPER "," newEntry.keyer "," newEntry.chord "," newEntry.usage "," newEntry.dictionary)
+            newChordEntryCapped.chord := chordUPPER
+            newChordEntryCapped.chordable := "active"
+            this.chords.item(newChordEntryCapped.chord) := newChordEntryCapped
+            this.logEvent(4, "Added chord " newChordEntryCapped.chord " as " newChordEntryCapped.word)
+        }
+        
+        this.logEvent(4, "Marked qwerd " newEntry.qwerd "'s chord " newEntry.chord " as " newEntry.chordable) 
+	}
 	
 	deleteQwerdFromMaps(qwerdKey) {
 		this.logEvent(1, "Deleting entries related to " qwerdKey) 
