@@ -109,14 +109,22 @@ class MappingEngine_Chorded
 					this.AddToToken(key)
 				}
 			case ".", ",", "/", "'", ";", "[", "]", "\", "-", "=", "``": 
-				; Guard against 2 end keys sent before the SendToken method can return 
-				sendkey := this.keyboard.EndKeyQueue . key 
-				this.keyboard.EndKeyQueue := sendKey
+				; Guard against a second end key sent before the SendToken method Send first  
+                if (this.keyboard.EndKeyQueue) {
+                    sendkey := this.keyboard.EndKeyQueue
+                } else {
+                    sendkey := key
+                }
+                this.keyboard.EndKeyQueue := key
 				this.SendToken(sendkey)
 			case "Space":
-				; Guard against 2 end keys sent before the SendToken method can return 
-				sendkey := this.keyboard.EndKeyQueue . "{" key "}"
-				this.keyboard.EndKeyQueue := sendKey
+				; Guard against a second end key sent before the SendToken method Send first  
+                if (this.keyboard.EndKeyQueue) {
+                    sendkey := this.keyboard.EndKeyQueue
+                } else {
+                    sendkey := "{" key "}"
+                }
+                this.keyboard.EndKeyQueue := key
 				this.SendToken(sendKey)
 			case "Enter", "Tab", "Insert", "NumPadEnter":
 				sendKey := "{" key "}"
