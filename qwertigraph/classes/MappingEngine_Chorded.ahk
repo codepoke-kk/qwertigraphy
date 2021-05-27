@@ -19,7 +19,7 @@ class MappingEngine_Chorded
 	discard_ratio := ""
 	input_text_buffer := ""
 	logQueue := new Queue("EngineQueue")
-	logVerbosity := 1
+	logVerbosity := 2
 	tip_power_threshold := 1
 	speedQueue := new Queue("SpeedQueue")
 	coachQueue := new Queue("CoachQueue")
@@ -43,7 +43,9 @@ class MappingEngine_Chorded
 	keyboard.MaxChordLength := 0
 	keyboard.ChordReleaseStartTicks := 0
 	keyboard.AutoSpaceSent := true
-	keyboard.ChordReleaseWindow := 70
+	keyboard.AutoPunctuationSent := false
+	keyboard.ChordReleaseWindow := 150
+	keyboard.endKeyQueue := ""
 	
 	nullQwerd := new DictionaryEntry("null,,,,0,Could add,null_dictionary.csv")
 
@@ -107,10 +109,14 @@ class MappingEngine_Chorded
 					this.AddToToken(key)
 				}
 			case ".", ",", "/", "'", ";", "[", "]", "\", "-", "=", "``": 
-				sendkey := key 
+				; Guard against 2 end keys sent before the SendToken method can return 
+				sendkey := this.keyboard.EndKeyQueue . key 
+				this.keyboard.EndKeyQueue := sendKey
 				this.SendToken(sendkey)
 			case "Space":
-				sendKey := "{" key "}"
+				; Guard against 2 end keys sent before the SendToken method can return 
+				sendkey := this.keyboard.EndKeyQueue . "{" key "}"
+				this.keyboard.EndKeyQueue := sendKey
 				this.SendToken(sendKey)
 			case "Enter", "Tab", "Insert", "NumPadEnter":
 				sendKey := "{" key "}"
@@ -176,6 +182,12 @@ class MappingEngine_Chorded
 		} 
 		; Send, % sendKey
 		Send, % this.keyboard.Shfed this.keyboard.Ctled this.keyboard.Alted this.keyboard.Wined sendKey
+		if ((this.keyboard.AutoPunctuationSent) and (Instr(this.keyboard.EndKeys_hard, sendKey))) {
+			this.logEvent(4, "Adding trailing autospace back after deletion")
+			Send, {Space}
+		}
+		this.keyboard.AutoPunctuationSent := false
+		this.keyboard.EndKeyQueue := ""
 	}
 
 	ReceiveKeyUp(InputHook, VK, SC) {
@@ -251,12 +263,15 @@ class MappingEngine_Chorded
 	}
 
 	SendToken(key) {
+		this.logEvent(4, "Sending token with '" key "': AutoSpaceSent is " this.keyboard.AutoSpaceSent)
 		; Send through a valid qwerd because an end character was typed 
 		if (this.keyboard.AutoSpaceSent) {
 			; We sent a space after sending a chord. 
 			if (not this.keyboard.Token) {
 				; if this is a bare end key, then we need to delete that autospace
+				this.logEvent(4, "Deleting autospace and setting autopunctuation")
 				Send, {Backspace}
+				this.keyboard.AutoPunctuationSent := true
 			}
 		}
         ; Bug in 1.1.32.00 causes shift key to stick

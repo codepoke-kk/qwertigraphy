@@ -5,6 +5,7 @@ class DictionaryMap
 	dictionaryPickList := ""
 	dictionaryFullToShortNames := {}
 	dictionaryShortToFullNames := {}
+	chordOrder := "gtrfedwsqazxcvhyujikolpmnb"
 	minimumChordLength := 3
 	maximumChordUsage := 10000
 	dictionariesLoaded := 0
@@ -98,7 +99,7 @@ class DictionaryMap
 				}
 				
 				; Give the new entry a chord
-				newEntry.chord := this.AlphaOrder(newEntry.qwerd)
+				;newEntry.chord := this.AlphaOrder(newEntry.qwerd)
 				
 				this.propagateEntryToMaps(newEntry)
 
@@ -199,6 +200,11 @@ class DictionaryMap
 		
 		Sort, chord, UD,
 		return StrReplace(chord, ",")
+	}
+	
+	ChordSort(a1, a2) {
+		; This takes 3-6 times as long as a simple alpha sort. Only use for one-time functions 
+		return InStr(this.ChordOrder, a1) - InStr(this.ChordOrder, a2)
 	}
 
 	saveDictionaries() {
