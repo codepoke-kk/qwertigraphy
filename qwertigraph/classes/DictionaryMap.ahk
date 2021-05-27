@@ -19,7 +19,7 @@ class DictionaryMap
 	displaceds := ComObjCreate("Scripting.Dictionary")
 	
 	logQueue := new Queue("DictionaryMapQueue")
-	logVerbosity := 1
+	logVerbosity := 2
 	
 	__New(qenv)
 	{
