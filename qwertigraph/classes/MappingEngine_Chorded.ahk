@@ -1,3 +1,4 @@
+#InstallKeybdHook
 engine := {}
 
 class MappingEngine_Chorded
@@ -56,6 +57,7 @@ class MappingEngine_Chorded
 		
 	Start() 
 	{
+        this.ResyncModifierKeys
 		this.keyboard.Token := ""
 		this.input_text_buffer := ""
 		this.logEvent(1, "Starting" )
@@ -184,8 +186,8 @@ class MappingEngine_Chorded
 				this.CancelToken(key)
 			default:
 				sendKey := "{" key "}"
-				ToolTip, % "Unknown key: " key
-				SetTimer, ClearToolTipEngine, -1500
+				;ToolTip, % "Unknown key: " key
+				;SetTimer, ClearToolTipEngine, -1500
 				this.SendToken(key)
 		} 
 		; Send, % sendKey
@@ -283,7 +285,7 @@ class MappingEngine_Chorded
 			}
 		}
         ; Bug in 1.1.32.00 causes shift key to stick
-        Send, {LShift up}{RShift up}
+        this.ResyncModifierKeys
 		this.ExpandInput(this.keyboard.Token, key, (this.keyboard.Shfed this.keyboard.Ctled this.keyboard.Alted this.keyboard.Wined), (A_TickCount - this.keyboard.TokenStartTicks))
 		this.keyboard.Token := ""
 		this.keyboard.TokenStartTicks := A_TickCount
@@ -369,6 +371,23 @@ class MappingEngine_Chorded
 			}
 		} else {
 			this.logEvent(4, "Chord " chord " not found. Allow input to complete in serial fashion")
+		}
+	}
+	ResyncModifierKeys() {
+		this.ResyncModifierKey("LAlt")
+		this.ResyncModifierKey("RAlt")
+		this.ResyncModifierKey("LShift")
+		this.ResyncModifierKey("RShift")
+		this.ResyncModifierKey("LControl")
+		this.ResyncModifierKey("RControl")
+		this.ResyncModifierKey("LWin")
+		this.ResyncModifierKey("RWin")
+	}
+	ResyncModifierKey(key) {
+		if (GetKeyState(key, "P")) {
+			Send, % "{" key " down}"
+		} else {
+			Send, % "{" key " up}"
 		}
 	}
 
