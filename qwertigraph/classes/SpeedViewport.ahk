@@ -12,7 +12,8 @@ Gui, Font
 
 class SpeedViewport
 {
-	minimumSpeed := 6
+	minimumSpeed := 25
+	minimumTicksPerChar := 1000 * (1 / (this.minimumSpeed * 5 / 60))
 	dequeueInterval := 1000
 	showInterval := 10000
 	speedEvents := []
@@ -41,7 +42,12 @@ class SpeedViewport
 				this.speedEvents.Push(speedEvent)
 				this.in_chars += speedEvent.in_chars
 				this.out_chars += speedEvent.out_chars
-				this.ticks += speedEvent.ticks
+				; We need to hack the number of ticks to get a realistic look at speed, without losing character counts 
+				if (speedEvent.wpm > this.minimumSpeed) {
+					this.ticks += speedEvent.ticks
+				} else {
+					this.ticks += speedEvent.out_chars * this.minimumTicksPerChar
+				}
 			}
 		}
 	}

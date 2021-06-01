@@ -289,13 +289,14 @@ class EditorViewport
 		;global SaveProgress
 		
 		
-		this.logEvent(3, "RegexWord " RegexWord ", RegexForm " RegexForm ", RegexQwerd " RegexQwerd ", RegexKeyer " RegexKeyer ", RegexChord " RegexChord ", RegexChordable " RegexChordable ", RegexUsage " RegexUsage ", RegexDict " RegexDict )
+		this.logEvent(2, "RegexWord " RegexWord ", RegexForm " RegexForm ", RegexQwerd " RegexQwerd ", RegexKeyer " RegexKeyer ", RegexChord " RegexChord ", RegexChordable " RegexChordable ", RegexUsage " RegexUsage ", RegexDict " RegexDict )
 		
 		requiredMatchCount := 0
 		requiredMatchCount += (RegexWord) ? 1 : 0
 		requiredMatchCount += (RegexForm) ? 1 : 0
 		requiredMatchCount += (RegexQwerd) ? 1 : 0
 		requiredMatchCount += (RegexChord) ? 1 : 0
+		requiredMatchCount += (RegexChordable) ? 1 : 0
 		requiredMatchCount += (RegexKeyer) ? 1 : 0
 		requiredMatchCount += (RegexUsage) ? 1 : 0
 		requiredMatchCount += (RegexDict) ? 1 : 0
@@ -360,15 +361,18 @@ class EditorViewport
 		
 		Gui, ListView, EditorLV
 		LV_Delete()
+		foundCount := 0
 		for foundKey, count in foundKeys {
 			if (foundKeys[foundKey] = requiredMatchCount) {
 				qwerd := this.map.qwerds.item(foundKey)
+				foundCount += 1
                 ; this.logEvent(3, "Qwerd's chordable is " qwerd.chordable ", but the chord's chordable is " this.map.chords.item(qwerd.chord).chordable)
 				LV_Add(, qwerd.word, qwerd.form, qwerd.qwerd, qwerd.keyer, qwerd.chord, qwerd.chordable, qwerd.usage, qwerd.dictionary)
 			} else {
 				this.logEvent(3, foundKey " matched " foundKeys[foundKey] " times, not " requiredMatchCount)
 			}
 		}
+		this.logEvent(1, "Found " foundCount " matches")
 	}
 
 	autoQwerdForm() {

@@ -6,7 +6,7 @@ class DictionaryMap
 	dictionaryFullToShortNames := {}
 	dictionaryShortToFullNames := {}
 	chordOrder := "gtrfedwsqazxcvhyujikolpmnb"
-	minimumChordLength := 3
+	minimumChordLength := 2
 	maximumChordUsage := 10000
 	dictionariesLoaded := 0
 	longestQwerd := 0
@@ -140,6 +140,7 @@ class DictionaryMap
 		this.qwerds.item(newEntry.qwerd) := newEntrylower
 		this.hints.item(newEntry.word) := newEntrylower
 		
+		; Force upper entries to upper
 		StringUpper, qwerdUPPER, % newEntry.qwerd
 		StringUpper, wordUPPER, % newEntry.word
 		newEntryUPPER := new DictionaryEntry(wordUPPER "," newEntry.form "," qwerdUPPER "," newEntry.keyer "," newEntry.chord "," newEntry.usage "," newEntry.dictionary)
@@ -147,6 +148,7 @@ class DictionaryMap
 		this.qwerds.item(qwerdUPPER) := newEntryUPPER
 		this.hints.item(wordUPPER) := newEntryUPPER
 		
+		; Allow single-capped entries to use full proper casing all the way through as given 
 		qwerdCapped := SubStr(qwerdUPPER, 1, 1) . SubStr(newEntry.qwerd, 2, (StrLen(newEntry.qwerd) - 1))
 		wordCapped := SubStr(wordUPPER, 1, 1) . SubStr(newEntry.word, 2, (StrLen(newEntry.word) - 1))
 		newEntryCapped := new DictionaryEntry(wordCapped "," newEntry.form "," qwerdCapped "," newEntry.keyer "," newEntry.chord "," newEntry.usage "," newEntry.dictionary)
