@@ -2372,6 +2372,12 @@ deploys,dpls,dpls,,dlps,6078
 sealed,seld,seld,,dels,6078
 neighboring,nabrg,nabrgo,o,abgnor,6079
 partially,pAzle,pazle,,aelpz,6080
+redeploy,rdpl,rdpl,,dlpr,6080
+redeployed,rdpl-d,rdpld,,dlprd,6080
+redeploying,rdpl-\-h,rdplg,,dlprg,6080
+redeployment,rdplm,rdplm,,dlmpr,6080
+redeployments,rdplm-s,rdplms,,dlmprs,6080
+redeploys,rdpl-s,rdpls,,dlprs,6080
 declares,dklers,dklers,,deklrs,6082
 exclamation,esklmaz,xklmaz,,aklmxz,6083
 publicly,pbe,pbe,,bep,6084
