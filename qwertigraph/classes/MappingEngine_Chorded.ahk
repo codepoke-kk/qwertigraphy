@@ -57,7 +57,7 @@ class MappingEngine_Chorded
 		
 	Start() 
 	{
-        this.ResyncModifierKeys
+        this.ResyncModifierKeys()
 		this.keyboard.Token := ""
 		this.input_text_buffer := ""
 		this.logEvent(1, "Starting" )
@@ -255,6 +255,8 @@ class MappingEngine_Chorded
 	}
 
 	CancelToken(key) {
+		this.logEvent(3, "Cancelling token '" this.keyboard.Token "' with '" key " and resyncing modifier state")
+        this.ResyncModifierKeys()
 		; Send the empty key through to clear the input buffer
 		this.keyboard.Token := ""
 		this.input_text_buffer := ""
@@ -370,6 +372,7 @@ class MappingEngine_Chorded
 		Critical Off 
 	}
 	ResyncModifierKeys() {
+		this.logEvent(1, "Current keyboard state shfed: " this.keyboard.Shfed ", ctled: " this.keyboard.Ctled ", alted: " this.keyboard.Alted ", wined: " this.keyboard.Wined )
 		this.ResyncModifierKey("LAlt")
 		this.ResyncModifierKey("RAlt")
 		this.ResyncModifierKey("LShift")
@@ -380,6 +383,7 @@ class MappingEngine_Chorded
 		this.ResyncModifierKey("RWin")
 	}
 	ResyncModifierKey(key) {
+		this.logEvent(1, "Resyncing modifier " key " to " GetKeyState(key, "P"))
 		if (GetKeyState(key, "P")) {
 			Send, % "{" key " down}"
 		} else {
