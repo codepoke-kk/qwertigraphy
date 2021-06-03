@@ -182,8 +182,9 @@ class MappingEngine_Chorded
 		if (sendKey != ""){
 			Send, % this.keyboard.Shfed this.keyboard.Ctled this.keyboard.Alted this.keyboard.Wined sendKey
 		}
-		if ((this.keyboard.AutoPunctuationSent) and (Instr(this.keyboard.EndKeys_hard, sendKey))) {
-			this.logEvent(4, "Adding trailing autospace back after deletion")
+		; sendKey is blanked out, so be sure to check on the original key 
+		if ((this.keyboard.AutoPunctuationSent) and (Instr(this.keyboard.EndKeys_hard, key))) {
+			this.logEvent(4, "Adding trailing autospace back after deletion with " sendKey)
 			Send, {Space}
 		}
 		this.keyboard.AutoPunctuationSent := false
@@ -278,7 +279,7 @@ class MappingEngine_Chorded
 			}
 		}
         ; Bug in 1.1.32.00 causes shift key to stick
-        this.ResyncModifierKeys
+        this.ResyncModifierKeys()
 		this.ExpandInput(this.keyboard.Token, key, (this.keyboard.Shfed this.keyboard.Ctled this.keyboard.Alted this.keyboard.Wined), (A_TickCount - this.keyboard.TokenStartTicks))
 		; Now send the end character 
 		Send, % this.keyboard.Shfed this.keyboard.Ctled this.keyboard.Alted this.keyboard.Wined key
