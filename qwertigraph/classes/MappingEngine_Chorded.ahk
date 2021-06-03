@@ -20,7 +20,7 @@ class MappingEngine_Chorded
 	discard_ratio := ""
 	input_text_buffer := ""
 	logQueue := new Queue("EngineQueue")
-	logVerbosity := 2
+	logVerbosity := 4
 	tip_power_threshold := 1
 	speedQueue := new Queue("SpeedQueue")
 	coachQueue := new Queue("CoachQueue")
@@ -111,26 +111,14 @@ class MappingEngine_Chorded
 					this.AddToToken(key)
 				}
 			case ".", ",", "/", "'", ";", "[", "]", "\", "-", "=", "``": 
-				; Guard against a second end key sent before the SendToken method Send first  
-                if (this.keyboard.EndKeyQueue) {
-                    sendkey := this.keyboard.EndKeyQueue
-                } else {
-                    sendkey := key
-                }
-                this.keyboard.EndKeyQueue := key
-				this.SendToken(sendkey)
+				sendkey := ""
+				this.SendToken(key)
 			case "Space":
-				; Guard against a second end key sent before the SendToken method Send first  
-                if (this.keyboard.EndKeyQueue) {
-                    sendkey := this.keyboard.EndKeyQueue
-                } else {
-                    sendkey := "{" key "}"
-                }
-                this.keyboard.EndKeyQueue := key
-				this.SendToken(sendKey)
+				sendkey := ""
+				this.SendToken("{" key "}")
 			case "Enter", "Tab", "Insert", "NumPadEnter":
-				sendKey := "{" key "}"
-				this.SendToken(sendkey)
+				sendKey := ""
+				this.SendToken("{" key "}")
 			case "Home", "End", "PgUp", "PgDn", "Left", "Up", "Right", "Down", "NumpadHome", "NumpadEnd", "NumpadPgUp", "NumpadPgDn", "NumpadLeft", "NumpadUp", "NumpadRight", "NumpadDown", "NumpadDel", "Delete":
 				sendKey := "{" key "}"
 				this.CancelToken(sendkey)
@@ -188,10 +176,12 @@ class MappingEngine_Chorded
 				sendKey := "{" key "}"
 				;ToolTip, % "Unknown key: " key
 				;SetTimer, ClearToolTipEngine, -1500
-				this.SendToken(key)
+				this.SendToken("{" key "}")
 		} 
 		; Send, % sendKey
-		Send, % this.keyboard.Shfed this.keyboard.Ctled this.keyboard.Alted this.keyboard.Wined sendKey
+		if (sendKey != ""){
+			Send, % this.keyboard.Shfed this.keyboard.Ctled this.keyboard.Alted this.keyboard.Wined sendKey
+		}
 		if ((this.keyboard.AutoPunctuationSent) and (Instr(this.keyboard.EndKeys_hard, sendKey))) {
 			this.logEvent(4, "Adding trailing autospace back after deletion")
 			Send, {Space}
@@ -273,7 +263,8 @@ class MappingEngine_Chorded
 	}
 
 	SendToken(key) {
-		this.logEvent(4, "Sending token with '" key "': AutoSpaceSent is " this.keyboard.AutoSpaceSent)
+		Critical 
+		this.logEvent(3, "Sending critical token '" this.keyboard.Token "' with '" key "': AutoSpaceSent is " this.keyboard.AutoSpaceSent)
 		; Send through a valid qwerd because an end character was typed 
 		if (this.keyboard.AutoSpaceSent) {
 			; We sent a space after sending a chord. 
@@ -287,10 +278,13 @@ class MappingEngine_Chorded
         ; Bug in 1.1.32.00 causes shift key to stick
         this.ResyncModifierKeys
 		this.ExpandInput(this.keyboard.Token, key, (this.keyboard.Shfed this.keyboard.Ctled this.keyboard.Alted this.keyboard.Wined), (A_TickCount - this.keyboard.TokenStartTicks))
+		; Now send the end character 
+		Send, % this.keyboard.Shfed this.keyboard.Ctled this.keyboard.Alted this.keyboard.Wined key
 		this.keyboard.Token := ""
 		this.keyboard.TokenStartTicks := A_TickCount
 		this.keyboard.AutoSpaceSent := false
 		; SetTimer, ClearToolTipEngine, -1500
+		Critical Off 
 	}	
 
 	JoinChord(key) {
@@ -347,6 +341,7 @@ class MappingEngine_Chorded
 		}
 	}
 	SendChord() {
+		Critical
 		; Send through a possible chord
 		chord := this.map.AlphaOrder(this.keyboard.Token)
 		if (this.keyboard.Shfed) {
@@ -372,6 +367,7 @@ class MappingEngine_Chorded
 		} else {
 			this.logEvent(4, "Chord " chord " not found. Allow input to complete in serial fashion")
 		}
+		Critical Off 
 	}
 	ResyncModifierKeys() {
 		this.ResyncModifierKey("LAlt")
@@ -392,7 +388,7 @@ class MappingEngine_Chorded
 	}
 
 	ExpandInput(input_text, key, mods, ticks) {
-		this.logEvent(4, "Expanding |" input_text "|" key "|" mods "|" ticks "|" )
+		this.logEvent(2, "Expanding |" input_text "|" key "|" mods "|" ticks "|" )
 		if (key = "{Chord}") {
 			;ToolTip, % "Chording " input_text, A_CaretX, A_CaretY + 30
 			;SetTimer, ClearToolTipEngine, -1500
