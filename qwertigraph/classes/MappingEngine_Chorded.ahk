@@ -257,7 +257,7 @@ class MappingEngine_Chorded
 
 	CancelToken(key) {
 		this.logEvent(3, "Cancelling token '" this.keyboard.Token "' with '" key " and resyncing modifier state")
-        this.ResyncModifierKeys()
+        ; this.ResyncModifierKeys()
 		; Send the empty key through to clear the input buffer
 		this.keyboard.Token := ""
 		this.input_text_buffer := ""
@@ -278,8 +278,9 @@ class MappingEngine_Chorded
 				this.keyboard.AutoPunctuationSent := true
 			}
 		}
+        ; this.ResyncModifierKeys()
         ; Bug in 1.1.32.00 causes shift key to stick
-        this.ResyncModifierKeys()
+        Send, {LShift up}{RShift up}
 		this.ExpandInput(this.keyboard.Token, key, (this.keyboard.Shfed this.keyboard.Ctled this.keyboard.Alted this.keyboard.Wined), (A_TickCount - this.keyboard.TokenStartTicks))
 		; Now send the end character 
 		Send, % this.keyboard.Shfed this.keyboard.Ctled this.keyboard.Alted this.keyboard.Wined key
@@ -374,6 +375,7 @@ class MappingEngine_Chorded
 	}
 	ResyncModifierKeys() {
 		this.logEvent(1, "Current keyboard state shfed: " this.keyboard.Shfed ", ctled: " this.keyboard.Ctled ", alted: " this.keyboard.Alted ", wined: " this.keyboard.Wined )
+        ; return
 		this.ResyncModifierKey("LAlt")
 		this.ResyncModifierKey("RAlt")
 		this.ResyncModifierKey("LShift")
@@ -551,6 +553,7 @@ class MappingEngine_Chorded
 	ResetInput()
 	{
 		this.logEvent(2, "Input reset by function ")
+        this.ResyncModifierKeys()
 		;this.ih.Stop()
 		;this.Start()
 		this.CancelToken("{LButton}")
