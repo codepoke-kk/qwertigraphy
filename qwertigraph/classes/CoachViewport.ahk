@@ -298,12 +298,13 @@ class CoachViewport
 		if (coachEvent.power < this.tip_power_threshold) {
 			return
 		}
+		CoordMode, ToolTip, Relative
 		if (coachEvent.chordable = "active") {
-			Tooltip % coachEvent.word " = " coachEvent.qwerd " (" coachEvent.chord ")", A_CaretX, A_CaretY + 30
+			Tooltip % coachEvent.word " = " coachEvent.qwerd " (" coachEvent.chord ")", 0, 0 ; A_CaretX, A_CaretY + 30
 		} else {
-			Tooltip % coachEvent.word " = " coachEvent.qwerd, A_CaretX, A_CaretY + 30
+			Tooltip % coachEvent.word " = " coachEvent.qwerd, 10000, 10000 ;, A_CaretX, A_CaretY + 30
 		}
-		SetTimer, ClearToolTipCoaching, -1500
+		SetTimer, ClearToolTipCoaching, -5000
 		return 
 
 		ClearToolTipCoaching:
@@ -312,10 +313,11 @@ class CoachViewport
 	}
 	
 	flashTip_chord(coachEvent) {
+		CoordMode, ToolTip, Relative
 		if (coachEvent.chordable = "active") {
-			Tooltip % coachEvent.word " = ** " coachEvent.qwerd " (" coachEvent.chord ") **", A_CaretX, A_CaretY + 30
+			Tooltip % coachEvent.word " = ** " coachEvent.qwerd " (" coachEvent.chord ") **", 0, 0 ; A_CaretX, A_CaretY + 30
 		} 
-		SetTimer, ClearToolTipCoaching_chord, -1500
+		SetTimer, ClearToolTipCoaching_chord, -5000
 		return 
 
 		ClearToolTipCoaching_chord:

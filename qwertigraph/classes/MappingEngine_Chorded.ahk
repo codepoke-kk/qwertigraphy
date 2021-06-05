@@ -20,7 +20,7 @@ class MappingEngine_Chorded
 	discard_ratio := ""
 	input_text_buffer := ""
 	logQueue := new Queue("EngineQueue")
-	logVerbosity := 4
+	logVerbosity := 2
 	tip_power_threshold := 1
 	speedQueue := new Queue("SpeedQueue")
 	coachQueue := new Queue("CoachQueue")
@@ -257,7 +257,7 @@ class MappingEngine_Chorded
 
 	CancelToken(key) {
 		this.logEvent(3, "Cancelling token '" this.keyboard.Token "' with '" key " and resyncing modifier state")
-        ; this.ResyncModifierKeys()
+        this.ResyncModifierKeys()
 		; Send the empty key through to clear the input buffer
 		this.keyboard.Token := ""
 		this.input_text_buffer := ""
@@ -278,7 +278,7 @@ class MappingEngine_Chorded
 				this.keyboard.AutoPunctuationSent := true
 			}
 		}
-        ; this.ResyncModifierKeys()
+        this.ResyncModifierKeys()
         ; Bug in 1.1.32.00 causes shift key to stick
         Send, {LShift up}{RShift up}
 		this.ExpandInput(this.keyboard.Token, key, (this.keyboard.Shfed this.keyboard.Ctled this.keyboard.Alted this.keyboard.Wined), (A_TickCount - this.keyboard.TokenStartTicks))
@@ -374,7 +374,7 @@ class MappingEngine_Chorded
 		Critical Off 
 	}
 	ResyncModifierKeys() {
-		this.logEvent(1, "Current keyboard state shfed: " this.keyboard.Shfed ", ctled: " this.keyboard.Ctled ", alted: " this.keyboard.Alted ", wined: " this.keyboard.Wined )
+		this.logEvent(3, "Current keyboard state shfed: " this.keyboard.Shfed ", ctled: " this.keyboard.Ctled ", alted: " this.keyboard.Alted ", wined: " this.keyboard.Wined )
         ; return
 		this.ResyncModifierKey("LAlt")
 		this.ResyncModifierKey("RAlt")
@@ -386,11 +386,18 @@ class MappingEngine_Chorded
 		this.ResyncModifierKey("RWin")
 	}
 	ResyncModifierKey(key) {
-		this.logEvent(1, "Resyncing modifier " key " to " GetKeyState(key, "P"))
-		if (GetKeyState(key, "P")) {
-			Send, % "{" key " down}"
-		} else {
-			Send, % "{" key " up}"
+		this.logEvent(3, "Resyncing modifier " key " to " GetKeyState(key, "P"))
+		if (not GetKeyState(key, "P") = GetKeyState(key)) {
+		this.logEvent(1, "Modifier key " key " physical state " GetKeyState(key, "P") " does not match virtual " GetKeyState(key))
+			Msgbox, % "Modifier key " key " physical state " GetKeyState(key, "P") " does not match virtual " GetKeyState(key)
+		}
+		
+		if (false) {
+			if (GetKeyState(key, "P")) {
+				Send, % "{" key " down}"
+			} else {
+				Send, % "{" key " up}"
+			}
 		}
 	}
 
@@ -668,12 +675,13 @@ class MappingEngine_Chorded
 		if (coachEvent.power < this.tip_power_threshold) {
 			return
 		}
+		CoordMode, ToolTip, Relative
 		if (coachEvent.chordable = "active") {
-			Tooltip % coachEvent.word " = " coachEvent.qwerd " (" coachEvent.chord ")", A_CaretX, A_CaretY + 30
+			Tooltip % coachEvent.word " = " coachEvent.qwerd " (" coachEvent.chord ")", 0, 0 ; A_CaretX, A_CaretY + 30
 		} else {
 			Tooltip % coachEvent.word " = " coachEvent.qwerd, A_CaretX, A_CaretY + 30
 		}
-		SetTimer, ClearToolTipEngine, -1500
+		SetTimer, ClearToolTipEngine, -5000
 		return 
 
 		ClearToolTipEngine:

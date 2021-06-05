@@ -4,7 +4,7 @@
 SetBatchLines, -1
 SetKeyDelay, -1
 process, priority, ,high
-coordmode, mouse, screen
+CoordMode, ToolTip, Relative
 setworkingdir, %a_scriptdir%
 
 IfNotExist, dictionaries
