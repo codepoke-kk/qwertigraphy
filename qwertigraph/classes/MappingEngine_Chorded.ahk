@@ -20,7 +20,7 @@ class MappingEngine_Chorded
 	discard_ratio := ""
 	input_text_buffer := ""
 	logQueue := new Queue("EngineQueue")
-	logVerbosity := 2
+	logVerbosity := 4
 	tip_power_threshold := 1
 	speedQueue := new Queue("SpeedQueue")
 	coachQueue := new Queue("CoachQueue")
@@ -63,6 +63,14 @@ class MappingEngine_Chorded
 		this.logEvent(1, "Starting" )
 		this.ih := InputHook("EL0I1")
 		this.ih.KeyOpt("{All}", "NS")  ; End and Suppress
+		this.ih.KeyOpt("{LShift}", "V") 
+		this.ih.KeyOpt("{RShift}", "V") 
+		this.ih.KeyOpt("{LControl}", "V") 
+		this.ih.KeyOpt("{RControl}", "V") 
+		this.ih.KeyOpt("{LAlt}", "V") 
+		this.ih.KeyOpt("{rAlt}", "V") 
+		this.ih.KeyOpt("{LWin}", "V") 
+		this.ih.KeyOpt("{RWin}", "V") 
 		;this.ih.OnKeyDown := Func("this.ReceiveKeyDown")
 		this.ih.OnKeyDown := ObjBindMethod(this, "ReceiveKeyDown")
 		;this.ih.OnKeyUp := Func("this.ReceiveKeyUp")
@@ -85,26 +93,15 @@ class MappingEngine_Chorded
 		key := GetKeyName(Format("vk{:x}", VK))
 		Switch key
 		{
-			case "p": 
-				; We need a way to stop all input
-				if (this.keyboard.Alted and this.keyboard.Wined) {
-					sendkey := key
-					this.CancelToken(sendkey)
-					this.Stop()
-				} else {
-					; ToolTip, % "Our P has " this.keyboard.Ctled "and" this.keyboard.Wined "and" this.keyboard.Alted
-					this.AddToToken(key)
-					sendkey := key
-				}
 			case "a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m":
 				this.AddToToken(key)
 				sendkey := key
-			case "n", "o", "r", "q", "s", "t", "u", "v", "w", "x", "y", "z": 
+			case "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z":
 				this.AddToToken(key)
 				sendkey := key
 			case "1", "2", "3", "4", "5", "6", "7", "8", "9", "0":
 				sendkey := key
-				if (this.keyboard.Shfed) {
+				if (GetKeyState("Shift", "P")) {
                     shiftedKey := this.keyboard.ShiftedNumerals[key]
 					this.SendToken(shiftedKey)
 				} else {
@@ -119,59 +116,17 @@ class MappingEngine_Chorded
 			case "Enter", "Tab", "Insert", "NumPadEnter":
 				sendKey := ""
 				this.SendToken("{" key "}")
-			case "Home", "End", "PgUp", "PgDn", "Left", "Up", "Right", "Down", "NumpadHome", "NumpadEnd", "NumpadPgUp", "NumpadPgDn", "NumpadLeft", "NumpadUp", "NumpadRight", "NumpadDown", "NumpadDel", "Delete":
+			case "Home", "End", "PgUp", "PgDn", "Left", "Up", "Right", "Down", "Delete":
 				sendKey := "{" key "}"
+				this.CancelToken(sendkey)
+			case "NumpadHome", "NumpadEnd", "NumpadPgUp", "NumpadPgDn", "NumpadLeft", "NumpadUp", "NumpadRight", "NumpadDown", "NumpadDel":
+				sendkey := "{" RegExReplace(key, "Numpad") "}"
 				this.CancelToken(sendkey)
 			case "Backspace":
 				sendKey := "{" key "}"
 				this.RemoveKeyFromToken()
-			case "CapsLock":
-				if (this.keyboard.CapsLock) {
-					this.keyboard.Shfed := ""
-					this.keyboard.CapsLock := false
-				} else {
-					this.keyboard.Shfed := "+"
-					this.keyboard.CapsLock := true
-				}
+			case "LShift", "RShift", "LControl", "RControl", "LAlt", "RAlt", "LWin", "RWin":
 				sendKey := ""
-			case "LShift":
-				Send, {Lshift down}
-				this.keyboard.Shfed := "+"
-				sendKey := ""
-			case "RShift":
-				Send, {RShift down}
-				this.keyboard.Shfed := "+"
-				sendKey := ""
-			case "LControl":
-				Send, {LControl down}
-				this.keyboard.Ctled := "^"
-				sendKey := ""
-				this.CancelToken(key)
-			case "RControl":
-				Send, {RControl down}
-				this.keyboard.Ctled := "^"
-				sendKey := ""
-				this.CancelToken(key)
-			case "LAlt":
-				Send, {LAlt down}
-				this.keyboard.Alted := "!"
-				sendKey := ""
-				this.CancelToken(key)
-			case "RAlt":
-				Send, {RAlt down}
-				this.keyboard.Alted := "!"
-				sendKey := ""
-				this.CancelToken(key)
-			case "LWin":
-				Send, {LWin down}
-				this.keyboard.Wined := "#"
-				sendKey := ""
-				this.CancelToken(key)
-			case "RWin":
-				Send, {RWin down}
-				this.keyboard.Wined := "#"
-				sendKey := ""
-				this.CancelToken(key)
 			default:
 				sendKey := "{" key "}"
 				;ToolTip, % "Unknown key: " key
@@ -180,7 +135,9 @@ class MappingEngine_Chorded
 		} 
 		; Send, % sendKey
 		if (sendKey != ""){
-			Send, % this.keyboard.Shfed this.keyboard.Ctled this.keyboard.Alted this.keyboard.Wined sendKey
+			this.logEvent(1, "Sending {Blind}" sendKey)
+			SendInput, % "{Blind}" sendKey
+			;Msgbox, % "Sent {Blind}" sendKey
 		}
 		; sendKey is blanked out, so be sure to check on the original key 
 		if ((this.keyboard.AutoPunctuationSent) and (Instr(this.keyboard.EndKeys_hard, key))) {
@@ -189,6 +146,26 @@ class MappingEngine_Chorded
 		}
 		this.keyboard.AutoPunctuationSent := false
 		this.keyboard.EndKeyQueue := ""
+	}
+	
+	getModifierStates()	{
+		state := ""
+		if GetKeyState("LWin", "P") || GetKeyState("RWin", "P")	{
+			state .= "#"
+		}
+
+		if GetKeyState("LControl", "P")	{
+			state .= "^"
+		}
+
+		if GetKeyState("LAlt", "P")	{
+			state .= "!"
+		}
+
+		if GetKeyState("Shift", "P")	{
+			state .= "+"
+		}
+		return state
 	}
 
 	ReceiveKeyUp(InputHook, VK, SC) {
@@ -202,42 +179,12 @@ class MappingEngine_Chorded
 				this.LeaveChord(key)
 			case "0", "1", "2", "3", "4", "5", "6", "7", "8", "9":
 				this.LeaveChord(key)
-			case "LShift":
-				Send, {LShift up}
-				this.keyboard.Shfed := ""
-			case "RShift":
-				Send, {RShift up}
-				this.keyboard.Shfed := ""
-			case "LControl":
-				Send, {LControl up}
-				this.keyboard.Ctled := ""
-				this.CancelToken(key)
-			case "RControl":
-				Send, {RControl up}
-				this.keyboard.Ctled := ""
-				this.CancelToken(key)
-			case "LAlt":
-				Send, {LAlt up}
-				this.keyboard.Alted := ""
-				this.CancelToken(key)
-			case "RAlt":
-				Send, {RAlt up}
-				this.keyboard.Alted := ""
-				this.CancelToken(key)
-			case "LWin":
-				Send, {LWin up}
-				this.keyboard.Wined := ""
-				this.CancelToken(key)
-			case "RWin":
-				Send, {RWin up}
-				this.keyboard.Wined := ""
-				this.CancelToken(key)
-		} 
+		}
 	}
 
 	AddToToken(key) {
 		; Accumulate this letter
-		if (this.keyboard.Shfed) {
+		if (GetKeyState("Shift", "P")) {
 			StringUpper key, key
 		} 
 		this.keyboard.Token .= key
@@ -262,7 +209,7 @@ class MappingEngine_Chorded
 		this.keyboard.Token := ""
 		this.input_text_buffer := ""
 		this.keyboard.AutoSpaceSent := false
-		this.ExpandInput(this.keyboard.Token, key, (this.keyboard.Shfed this.keyboard.Ctled this.keyboard.Alted this.keyboard.Wined), (A_TickCount - this.keyboard.TokenStartTicks))
+		this.ExpandInput(this.keyboard.Token, key, "", (A_TickCount - this.keyboard.TokenStartTicks))
 	}
 
 	SendToken(key) {
@@ -281,9 +228,9 @@ class MappingEngine_Chorded
         this.ResyncModifierKeys()
         ; Bug in 1.1.32.00 causes shift key to stick
         Send, {LShift up}{RShift up}
-		this.ExpandInput(this.keyboard.Token, key, (this.keyboard.Shfed this.keyboard.Ctled this.keyboard.Alted this.keyboard.Wined), (A_TickCount - this.keyboard.TokenStartTicks))
+		this.ExpandInput(this.keyboard.Token, key, "", (A_TickCount - this.keyboard.TokenStartTicks))
 		; Now send the end character 
-		Send, % this.keyboard.Shfed this.keyboard.Ctled this.keyboard.Alted this.keyboard.Wined key
+		Send, % "{Blind}" key
 		this.keyboard.Token := ""
 		this.keyboard.TokenStartTicks := A_TickCount
 		this.keyboard.AutoSpaceSent := false
@@ -348,7 +295,7 @@ class MappingEngine_Chorded
 		Critical
 		; Send through a possible chord
 		chord := this.map.AlphaOrder(this.keyboard.Token)
-		if (this.keyboard.Shfed) {
+		if (GetKeyState("Shift", "P")) {
 			StringUpper, chord, chord
 		}
 		if (this.map.chords.item(chord).word) {
@@ -358,7 +305,7 @@ class MappingEngine_Chorded
 				this.logEvent(2, "Chord: allowed because no other key was struck")
 				; The sorted input is a valid chord, so push it as input
 				this.logEvent(4, "Chord " chord " found for " this.map.chords.item(chord).word)
-				this.ExpandInput(chord, "{Chord}", (this.keyboard.Shfed this.keyboard.Ctled this.keyboard.Alted this.keyboard.Wined), (A_TickCount - this.keyboard.TokenStartTicks))
+				this.ExpandInput(chord, "{Chord}", "", (A_TickCount - this.keyboard.TokenStartTicks))
 				Send, {Space}
 				; Mark that we sent this as a chord, so we know we need to send a backspace before the next end char
 				this.keyboard.AutoSpaceSent := true
@@ -374,22 +321,21 @@ class MappingEngine_Chorded
 		Critical Off 
 	}
 	ResyncModifierKeys() {
-		this.logEvent(3, "Current keyboard state shfed: " this.keyboard.Shfed ", ctled: " this.keyboard.Ctled ", alted: " this.keyboard.Alted ", wined: " this.keyboard.Wined )
-        ; return
-		this.ResyncModifierKey("LAlt")
-		this.ResyncModifierKey("RAlt")
-		this.ResyncModifierKey("LShift")
-		this.ResyncModifierKey("RShift")
-		this.ResyncModifierKey("LControl")
-		this.ResyncModifierKey("RControl")
-		this.ResyncModifierKey("LWin")
-		this.ResyncModifierKey("RWin")
+		;this.logEvent(3, "Current keyboard state shfed: " this.keyboard.Shfed ", ctled: " this.keyboard.Ctled ", alted: " this.keyboard.Alted ", wined: " this.keyboard.Wined )
+;		this.ResyncModifierKey("LAlt")
+;		this.ResyncModifierKey("RAlt")
+;		this.ResyncModifierKey("LShift")
+;		this.ResyncModifierKey("RShift")
+;		this.ResyncModifierKey("LControl")
+;		this.ResyncModifierKey("RControl")
+;		this.ResyncModifierKey("LWin")
+;		this.ResyncModifierKey("RWin")
 	}
 	ResyncModifierKey(key) {
 		this.logEvent(3, "Resyncing modifier " key " to " GetKeyState(key, "P"))
 		if (not GetKeyState(key, "P") = GetKeyState(key)) {
-		this.logEvent(1, "Modifier key " key " physical state " GetKeyState(key, "P") " does not match virtual " GetKeyState(key))
-			Msgbox, % "Modifier key " key " physical state " GetKeyState(key, "P") " does not match virtual " GetKeyState(key)
+			this.logEvent(1, "Modifier key " key " physical state " GetKeyState(key, "P") " does not match virtual " GetKeyState(key))
+			;Msgbox, % "Modifier key " key " physical state " GetKeyState(key, "P") " does not match virtual " GetKeyState(key)
 		}
 		
 		if (false) {
@@ -468,7 +414,7 @@ class MappingEngine_Chorded
 		} else if (key = "{Chord}") {
 			; This is a chorded expansion
 			; Do not try to match if the control key is down 
-			if (not InStr(mods, "^")) {
+			if (not (GetKeyState("LControl", "P") or GetKeyState("RControl", "P"))) {
 				; Success 
 				; Coach the found qwerd
 				this.pushCoaching(this.map.chords.item(inbound.token), true, false, false, key, 1)
@@ -483,7 +429,7 @@ class MappingEngine_Chorded
 		} else if (this.map.qwerds.item(inbound.token).word) {
 			; This is a serial expansion
 			; Do not try to match if the control key is down 
-			if (not InStr(mods, "^")) {
+			if (not (GetKeyState("LControl", "P") or GetKeyState("RControl", "P"))) {
 				; Success 
 				; Coach the found qwerd
 				this.pushCoaching(this.map.qwerds.item(inbound.token), true, false, false, key, 0)
