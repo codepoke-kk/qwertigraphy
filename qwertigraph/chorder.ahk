@@ -83,15 +83,14 @@ engine.Start()
 
 ; Enable/Disable
 !#p::
-	Pause toggle
-	if (engine.ih.InProgress) {
-		;engine.Stop()
-		;Msgbox, % "Stopped in launcher"
-	} else {
-		engine.Start()
-		; SetTimer, ClearModifiers, 5000
-		; Msgbox, % "Started and alt " GetKeyState("LAlt") " win " GetKeyState("LWin")
-	}
+    engine.Stop()
+    ; Msgbox, % "Chorder stopped Engine"
+    Pause toggle
+    Return
+!#;::
+    Pause toggle
+    engine.Start()
+    ; Msgbox, % "Chorder started Engine"
     Return
 
 ClearModifiers() {
@@ -99,20 +98,20 @@ ClearModifiers() {
 	Send {Blind}{LControl up}{RControl up}{LAlt up}{RAlt up}{LWin up}{RWin up}
 }
 
-^Space::
-^Enter::
-^NumPadEnter::
-^Tab::
-^.::
-^,::
-^/::
-^;::
-^[::
-	Send, % "{" SubStr(A_ThisHotkey, 2, StrLen(A_ThisHotkey) - 1) "}"
-	Return
+;^Space::
+;^Enter::
+;^NumPadEnter::
+;^Tab::
+;^.::
+;^,::
+;^/::
+;^;::
+;^[::
+;	Send, % "{" SubStr(A_ThisHotkey, 2, StrLen(A_ThisHotkey) - 1) "}"
+;	Return
 	
 
-ContextEditForm:
-EditorLVContextEditForm:
-	Msgbox, % "Hit"
+;ContextEditForm:
+;EditorLVContextEditForm:
+;	Msgbox, % "Hit"
 	
