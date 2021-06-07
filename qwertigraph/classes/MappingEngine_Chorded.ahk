@@ -202,9 +202,12 @@ class MappingEngine_Chorded
 
 	RemoveKeyFromToken() {
 		; This is a backspace
-		if (not StrLen(this.keyboard.Token)) {
+		if (GetKeyState("Control", "P")) {
+			this.logEvent(3, "Cancelling token due to Control backspace")
+			this.input_text_buffer := ""
+		} else if (not StrLen(this.keyboard.Token)) {
 			; If we are deleting things written before this token, we have to take from the buffer
-			this.input_text_buffer := SubStr(this.input_text_buffer, 1, (StrLen(this.input_text_buffer) - 1))
+			this.keyboard.Token := SubStr(this.input_text_buffer, 1, (StrLen(this.input_text_buffer) - 1))
 		}
 		this.keyboard.Token := SubStr(this.keyboard.Token, 1, (StrLen(this.keyboard.Token) - 1))
 		; We have to reset the deletion of the auto space, or it will double delete
@@ -213,7 +216,6 @@ class MappingEngine_Chorded
 
 	CancelToken(key) {
 		this.logEvent(3, "Cancelling token '" this.keyboard.Token "' with '" key " and resyncing modifier state")
-        this.ResyncModifierKeys()
 		; Send the empty key through to clear the input buffer
 		this.keyboard.Token := ""
 		this.input_text_buffer := ""
