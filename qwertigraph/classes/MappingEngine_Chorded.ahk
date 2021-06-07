@@ -107,9 +107,14 @@ class MappingEngine_Chorded
 				} else {
 					this.AddToToken(key)
 				}
-			case ".", ",", "/", "'", ";", "[", "]", "\", "-", "=", "``": 
+			case ".", ",", "/", "'", ";", "[", "]", "\", "-", "=": 
 				sendkey := ""
 				this.SendToken(key)
+			case "``": 
+                ; Let the backtick serve as a token cancel key. 
+                ; I could also let it pass through, then it would be backtick backspace to cancel, but let's try this 
+				sendKey := ""
+				this.CancelToken(sendkey)
 			case "Space":
 				sendkey := ""
 				this.SendToken("{" key "}")
