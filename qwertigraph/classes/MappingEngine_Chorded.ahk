@@ -135,7 +135,7 @@ class MappingEngine_Chorded
 		} 
 		; Send, % sendKey
 		if (sendKey != ""){
-			this.logEvent(1, "Sending {Blind}" sendKey)
+			this.logEvent(1, "Passthrough: {Blind}" sendKey)
 			SendInput, % "{Blind}" sendKey
 			;Msgbox, % "Sent {Blind}" sendKey
 		}
@@ -186,6 +186,10 @@ class MappingEngine_Chorded
 		; Accumulate this letter
 		if (GetKeyState("Shift", "P")) {
 			StringUpper key, key
+		} 
+		if (GetKeyState("Control", "P")) {
+			this.logEvent(3, "Cancelling key due to Control character")
+			key := ""
 		} 
 		this.keyboard.Token .= key
 		this.JoinChord(key)
