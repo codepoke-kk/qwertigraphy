@@ -207,7 +207,7 @@ class MappingEngine_Chorded
 			this.input_text_buffer := ""
 		} else if (not StrLen(this.keyboard.Token)) {
 			; If we are deleting things written before this token, we have to take from the buffer
-			this.keyboard.Token := SubStr(this.input_text_buffer, 1, (StrLen(this.input_text_buffer) - 1))
+			this.keyboard.Token := this.input_text_buffer
 		}
 		this.keyboard.Token := SubStr(this.keyboard.Token, 1, (StrLen(this.keyboard.Token) - 1))
 		; We have to reset the deletion of the auto space, or it will double delete
@@ -636,7 +636,7 @@ class MappingEngine_Chorded
 		if (coachEvent.chordable = "active") {
 			Tooltip % coachEvent.word " = " coachEvent.qwerd " (" coachEvent.chord ")", 0, 0 ; A_CaretX, A_CaretY + 30
 		} else {
-			Tooltip % coachEvent.word " = " coachEvent.qwerd, A_CaretX, A_CaretY + 30
+			Tooltip % coachEvent.word " = " coachEvent.qwerd, 0, 0 ; A_CaretX, A_CaretY + 30
 		}
 		SetTimer, ClearToolTipEngine, -5000
 		return 

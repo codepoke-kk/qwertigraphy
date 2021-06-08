@@ -302,7 +302,7 @@ class CoachViewport
 		if (coachEvent.chordable = "active") {
 			Tooltip % coachEvent.word " = " coachEvent.qwerd " (" coachEvent.chord ")", 0, 0 ; A_CaretX, A_CaretY + 30
 		} else {
-			Tooltip % coachEvent.word " = " coachEvent.qwerd, 10000, 10000 ;, A_CaretX, A_CaretY + 30
+			Tooltip % coachEvent.word " = " coachEvent.qwerd, 0, 0 ;, A_CaretX, A_CaretY + 30
 		}
 		SetTimer, ClearToolTipCoaching, -5000
 		return 
