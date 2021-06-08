@@ -392,6 +392,8 @@ occupiers,o-kp-r-s,okprs,,koprs,4190
 occupies,o-kp-s,okps,,kops,4190
 occupying,o-kp-\-h,okpg,,gkop,4190
 combinations,k-b-n-sh-s,kbnzs,,bknsz,4193
+underside,u-/-s-i,usio,o,iosu,4384
+undersides,u-/-s-i-s,usis,,isu,4384
 limiting,l-e-m-e-t-\-h,lemetg,,eglmt,4396
 limits,l-e-m-e-t-s,lemets,,elmst,4396
 nets,n-e-t-s,nets,,enst,4455
@@ -588,6 +590,15 @@ buttoning,b-u-tn-\-h,butng,,bgntu,9381
 buttons,b-u-tn-s,butns,,bnstu,9381
 editorials,e-td-r-l-s,eddrls,,delrs,9852
 certificates,s2-e-df-s,sedfs,,defs,9931
+persist,pr-ss,prssi,i,iprs,10535
+persisted,pr-ss-d,prssd,,dprs,10535
+persistence,pr-ss-n-s,prssns,,nprs,10535
+persistency,pr-ss-n-s-e,prssnse,,enprs,10535
+persistent,pr-ss-\-nt,prssnt,,nprst,10535
+persistently,pr-ss-\-nt-e,prssnte,,enprst,10535
+persistents,pr-ss-\-nt-s,prssnts,,nprst,10535
+persisting,pr-ss-\-h,prssg,,gprs,10535
+persists,pr-ss-s,prsss,,prs,10535
 outpost,a-u-p-o-s-t,wpost,,opstw,10999
 outposts,a-u-p-o-s-t-s,wposts,,opstw,10999
 output,a-u\--p,wp,,cpw,10999
