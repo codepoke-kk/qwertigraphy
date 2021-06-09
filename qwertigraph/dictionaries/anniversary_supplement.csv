@@ -244,6 +244,9 @@ parental,p-a-r-e-nt-l,parentl,o,aelnprt,1863
 transparency,t-\-p-a-r-e-n-s-e,tparense,,aenprst,1863
 transparent,t-\-p-a-r-e-nt,tparent,,aenprt,1863
 transparently,t-\-p-a-r-e-nt-e,tparente,,aenprt,1863
+controlled,^-k-/-l-d,kld,,klxd,1869
+controller,^-k-/-l-r,klr,,klxr,1869
+controllers,^-k-/-l-r-s,klrs,,klxrs,1869
 controlling,^-k-/-l-\-h,klg,,gkl,1869
 controls,^-k-/-l-s,kls,,kls,1869
 singer,s2-e-ng-e2,segeo,o,egos,1922
@@ -320,8 +323,6 @@ seeded,s2-e-d-d,sedd,,des,3202
 seeding,s2-e-d-\-h,sedg,,degs,3202
 seeds,s2-e-d-s,seds,,des,3202
 clerked,k-l-r-d,klrd,,dklr,3264
-clerking,k-l-r-\-h,klrg,,gklr,3264
-clerks,k-l-r-s,klrs,,klrs,3264
 picked,p-e-k-t,pekt,,ekpt,3272
 picking,p-e-k-\-h,pekg,,egkp,3272
 picks,p-e-k-s,peks,,ekps,3272
@@ -588,6 +589,7 @@ buttonholes,b-u-tn-o-l-s-^-<-h,butnols,,blnostu,9381
 buttonholing,b-u-tn-o-l-\-h-^-<-h,butnolg,,bglnotu,9381
 buttoning,b-u-tn-\-h,butng,,bgntu,9381
 buttons,b-u-tn-s,butns,,bnstu,9381
+clients,k-l-i-s,klis,,ikls,9528
 editorials,e-td-r-l-s,eddrls,,delrs,9852
 certificates,s2-e-df-s,sedfs,,defs,9931
 persist,pr-ss,prssi,i,iprs,10535
@@ -604,6 +606,10 @@ outposts,a-u-p-o-s-t-s,wposts,,opstw,10999
 output,a-u\--p,wp,,cpw,10999
 outputs,a-u\--p-s,wps,,psw,10999
 outputting,a-u-\-p-\-h,wpg,,gpw,10999
+emigration,e-m-g-r-a-z,emgrazo,o,aegmorz,11303
+immigration,e-m-g-r-a-z,emgraz,,aegmrz,11303
+migration,m-i-g-r-a-z,migraz,,agimrz,11303
+migrations,m-i-g-r-a-z-s,migrazs,,agimrzs,11303
 assign,a-s-i-n,asin,,ains,11390
 assigning,a-s-i-n-\-h,asing,,agins,11390
 assigns,a-s-i-n-s,asins,,ains,11390
@@ -767,6 +773,9 @@ singe,s-e-n-j,senj,,ejns,33893
 singed,senj-d,senjd,,dejns,33893
 singes,s-e-n-j-s,senjs,,ejns,33893
 inclusions,e-/-sh-s,ezos,o,eosz,37756
+migrated,m-i-g-r-a-d,migrad,,agimrd,37983
+migrating,m-i-g-r-a-\-h,migrag,,agimrg,37983
+migratory,m-i-g-r-a-\-r-e,migrare,,aegimr,37983
 installments,n-s2-t-o-l-m-s,nstolms,,lmnost,38139
 converged,k-v-e-j-d,kvejd,,dejkv,38983
 converges,k-v-e-j-s,kvejs,,ejksv,38983
@@ -811,6 +820,9 @@ deletions,d-l-e-sh-s,dlezs,,delsz,70417
 excluded,e-s-/-d-d,xdd,,cdx,70565
 excludes,e-s-/-d-s,xds,,dsx,70565
 excluding,e-s-/-d-\-h,xdg,,dgx,70565
+immigrated,e-m-e-g-d,emegd,,egimd,70854
+immigrates,e-m-e-g-s,emegs,,egims,70854
+immigrating,e-m-e-g-\-h,emegg,,egimg,70854
 good morning,g-m,gmu,u,gmu,70898
 inappreciated,e-n-a-pr-e-sh-d,enaprezd,,adenprz,70910
 questionnaires,k-sh-a2-s,qzas,,aqsz,71526
