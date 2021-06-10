@@ -1,6 +1,8 @@
 #InstallKeybdHook
 engine := {}
 
+#Include %A_AppData%\Qwertigraph\personal_functions.ahk
+
 class MappingEngine_Chorded
 {
 	Static MovementKeys := "{Delete}{Insert}{Home}{End}{PgUp}{PgDn}{left}{up}{right}{down}"
@@ -43,6 +45,7 @@ class MappingEngine_Chorded
 	keyboard.ChordLength := 0
 	keyboard.MaxChordLength := 0
 	keyboard.ChordReleaseStartTicks := 0
+	keyboard.ScriptCalled := false
 	keyboard.AutoSpaceSent := true
 	keyboard.AutoPunctuationSent := false
 	keyboard.ChordReleaseWindow := 150
@@ -53,10 +56,13 @@ class MappingEngine_Chorded
 	__New(map)
 	{
 		this.map := map
+		;HelloWorld("loading")
 	}
 		
 	Start() 
 	{
+		
+
         this.ResyncModifierKeys()
 		this.keyboard.Token := ""
 		this.input_text_buffer := ""
@@ -240,8 +246,12 @@ class MappingEngine_Chorded
         ; Bug in 1.1.32.00 causes shift key to stick
         Send, {LShift up}{RShift up}
 		this.ExpandInput(this.keyboard.Token, key, "", (A_TickCount - this.keyboard.TokenStartTicks))
-		; Now send the end character 
-		Send, % "{Blind}" key
+		if (not this.keyboard.ScriptCalled) {
+			; Now send the end character 
+			Send, % "{Blind}" key
+		} else {
+			this.keyboard.ScriptCalled := false
+		}
 		this.keyboard.Token := ""
 		this.keyboard.TokenStartTicks := A_TickCount
 		this.keyboard.AutoSpaceSent := false
@@ -317,9 +327,13 @@ class MappingEngine_Chorded
 				; The sorted input is a valid chord, so push it as input
 				this.logEvent(4, "Chord " chord " found for " this.map.chords.item(chord).word)
 				this.ExpandInput(chord, "{Chord}", "", (A_TickCount - this.keyboard.TokenStartTicks))
-				Send, {Space}
-				; Mark that we sent this as a chord, so we know we need to send a backspace before the next end char
-				this.keyboard.AutoSpaceSent := true
+				if (not this.keyboard.ScriptCalled) {
+					Send, {Space}
+					; Mark that we sent this as a chord, so we know we need to send a backspace before the next end char
+					this.keyboard.AutoSpaceSent := true
+				} else {
+					this.keyboard.ScriptCalled := false
+				}
 				; Reset the input token 
 				this.keyboard.Token := ""
 				this.keyboard.TokenStartTicks := A_TickCount
@@ -330,32 +344,6 @@ class MappingEngine_Chorded
 			this.logEvent(4, "Chord " chord " not found. Allow input to complete in serial fashion")
 		}
 		Critical Off 
-	}
-	ResyncModifierKeys() {
-		;this.logEvent(3, "Current keyboard state shfed: " this.keyboard.Shfed ", ctled: " this.keyboard.Ctled ", alted: " this.keyboard.Alted ", wined: " this.keyboard.Wined )
-;		this.ResyncModifierKey("LAlt")
-;		this.ResyncModifierKey("RAlt")
-;		this.ResyncModifierKey("LShift")
-;		this.ResyncModifierKey("RShift")
-;		this.ResyncModifierKey("LControl")
-;		this.ResyncModifierKey("RControl")
-;		this.ResyncModifierKey("LWin")
-;		this.ResyncModifierKey("RWin")
-	}
-	ResyncModifierKey(key) {
-		this.logEvent(3, "Resyncing modifier " key " to " GetKeyState(key, "P"))
-		if (not GetKeyState(key, "P") = GetKeyState(key)) {
-			this.logEvent(1, "Modifier key " key " physical state " GetKeyState(key, "P") " does not match virtual " GetKeyState(key))
-			;Msgbox, % "Modifier key " key " physical state " GetKeyState(key, "P") " does not match virtual " GetKeyState(key)
-		}
-		
-		if (false) {
-			if (GetKeyState(key, "P")) {
-				Send, % "{" key " down}"
-			} else {
-				Send, % "{" key " up}"
-			}
-		}
 	}
 
 	ExpandInput(input_text, key, mods, ticks) {
@@ -587,12 +575,24 @@ class MappingEngine_Chorded
 		}
 		this.logEvent(4, "Sending " deleteChars " backspaces")
 		Send, {Backspace %deleteChars%}
-		this.logEvent(4, "Sending '" word "'")
-        ; Msgbox, % "Hold"
-		Send, % word
 		
-		;;; Expand the qwerd into the buffer as well 
-		this.input_text_buffer := SubStr(this.input_text_buffer, 1, (StrLen(this.input_text_buffer) - (StrLen(qwerd)))) word
+		;;; Identify script calls and launch them from here
+		if (Instr(word, ")", , 0)) {
+			this.logEvent(2, "Scripting " word " from " qwerd " ending with " end_key)
+			function_name := Substr(word, 1, Instr(word, "(") - 1)
+			this.logEvent(4, "Function name is " function_name)
+			fn := Func(function_name)
+			this.logEvent(4, "Function is " fn.Name)
+			fn.Call(qwerd, word, end_key)
+			this.logEvent(4, "Call complete")
+			this.keyboard.ScriptCalled := true
+		} else {
+			this.logEvent(4, "Sending '" word "'")
+			; Msgbox, % "Hold"
+			Send, % word
+			;;; Expand the qwerd into the buffer as well 
+			this.input_text_buffer := SubStr(this.input_text_buffer, 1, (StrLen(this.input_text_buffer) - (StrLen(qwerd)))) word
+		}
 		
 		this.logEvent(4, "Buffer after expansion is '" this.input_text_buffer "'")
 		

@@ -1,0 +1,5 @@
+HelloWorld(message) {
+	MsgBox, % "Hello and " message 
+}
+
+HelloWorld("local")

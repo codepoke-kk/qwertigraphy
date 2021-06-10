@@ -1,7 +1,7 @@
 
 class QwertigraphyEnvironment
 {
-	personalizedFiles := {"templates\personal.template":"personal.csv", "templates\dictionary_load.template":"dictionary_load.list", "templates\negations.template":"negations.txt", "templates\retrains.template":"retrains.txt"}
+	personalizedFiles := {"templates\personal.template":"personal.csv", "templates\dictionary_load.template":"dictionary_load.list", "templates\negations.template":"negations.txt", "templates\retrains.template":"retrains.txt", "templates\personal_functions.template":"personal_functions.ahk"}
 	personalDataFolder := A_AppData "\Qwertigraph"
 	dictionaryListFile := this.personalDataFolder "\dictionary_load.list"
 	negationsFile := this.personalDataFolder "\negations.txt"

@@ -20,6 +20,7 @@ FileInstall, templates\dictionary_load.template, templates\dictionary_load.templ
 FileInstall, templates\negations.template, templates\negations.template, true
 FileInstall, templates\personal.template, templates\personal.template, true
 FileInstall, templates\retrains.template, templates\retrains.template, true
+FileInstall, templates\personal_functions.template, templates\personal_functions.template, true
 FileInstall, coach.ico, coach.ico, true
 
 Gui, Add, Tab3,x6 y40 w928 h526, Coach|Editor|Logs||GreggPad|Settings
@@ -72,8 +73,6 @@ logViewer.addQueue(pad.logQueue)
 #Include classes\SettingsViewport.ahk
 
 engine.Start()
-
-#Include *i personal.ahk
 
 
 ; Stop input when the mouse buttons are clicked
