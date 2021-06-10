@@ -8,7 +8,7 @@ class QwertigraphyEnvironment
 	retrainsFile := this.personalDataFolder "\retrains.txt"
 	
 	logQueue := new Queue("QEnvQueue")
-	logVerbosity := 1
+	logVerbosity := 2
 	
 	__New()
 	{

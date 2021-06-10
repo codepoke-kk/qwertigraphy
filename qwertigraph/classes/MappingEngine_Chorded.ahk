@@ -2,6 +2,7 @@
 engine := {}
 
 #Include %A_AppData%\Qwertigraph\personal_functions.ahk
+#Include scripts\default.ahk
 
 class MappingEngine_Chorded
 {
@@ -133,6 +134,24 @@ class MappingEngine_Chorded
 			case "NumpadHome", "NumpadEnd", "NumpadPgUp", "NumpadPgDn", "NumpadLeft", "NumpadUp", "NumpadRight", "NumpadDown", "NumpadDel":
 				sendkey := "{" RegExReplace(key, "Numpad") "}"
 				this.CancelToken(sendkey)
+			case "Numpad0", "Numpad1", "Numpad2", "Numpad3", "Numpad4", "Numpad5", "Numpad6", "Numpad7", "Numpad8", "Numpad9", "Numpad0":
+				sendkey := RegExReplace(key, "Numpad")
+				this.AddToToken(sendkey)
+			case "NumpadDot":
+				sendkey := ""
+				this.SendToken(".")
+			case "NumpadDiv":
+				sendkey := ""
+				this.SendToken("/")
+			case "NumpadMult":
+				sendkey := ""
+				this.SendToken("*")
+			case "NumpadSub":
+				sendkey := ""
+				this.SendToken("-")
+			case "NumpadAdd":
+				sendkey := ""
+				this.SendToken("+")
 			case "Backspace":
 				sendKey := "{" key "}"
 				this.RemoveKeyFromToken()
