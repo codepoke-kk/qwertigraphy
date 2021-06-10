@@ -1,5 +1,5 @@
-HelloWorld(message) {
-	MsgBox, % "Hello and " message 
+HelloWorld(qwerd, word, end_key) {
+	MsgBox, % "Hello and thank you for entering " qwerd " to call " word " launched with " end_key
 }
 
-HelloWorld("local")
+HelloWorld("including")
