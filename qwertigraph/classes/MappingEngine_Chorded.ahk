@@ -118,8 +118,11 @@ class MappingEngine_Chorded
 				sendkey := ""
 				this.SendToken(key)
 			case "/", ";", "[", "]", "\", "-", "=": 
-				sendkey := key
-				this.CancelToken(key)
+				; sendkey := key
+				; this.CancelToken(key)
+                ; Revert behavior
+				sendkey := ""
+				this.SendToken(key)
 			case "``": 
                 ; Let the backtick serve as a token cancel key. 
                 ; I could also let it pass through, then it would be backtick backspace to cancel, but let's try this 
