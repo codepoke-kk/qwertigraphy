@@ -114,9 +114,12 @@ class MappingEngine_Chorded
 				} else {
 					this.AddToToken(key)
 				}
-			case ".", ",", "/", "'", ";", "[", "]", "\", "-", "=": 
+			case ".", ",", "'",  "[", "]": 
 				sendkey := ""
 				this.SendToken(key)
+			case "/", ";", "[", "]", "\", "-", "=": 
+				sendkey := key
+				this.CancelToken(key)
 			case "``": 
                 ; Let the backtick serve as a token cancel key. 
                 ; I could also let it pass through, then it would be backtick backspace to cancel, but let's try this 
@@ -570,7 +573,8 @@ class MappingEngine_Chorded
 		; Did we find anything to expand?
 		inbound.hasToken := (StrLen(inbound.token) > 0)
 		; Could this be a command line parameter like "-r"? 
-		inbound.isCode := (((inbound.preceding_char == " ") or (inbound.preceding_char == "")) and ((inbound.initial_end_char) and (InStr("-:/", inbound.initial_end_char))))
+		; Adding ";" to the check here makes :q not expand. That's important to a vim user like me. 
+		inbound.isCode := (((inbound.preceding_char == " ") or (inbound.preceding_char == "")) and ((inbound.initial_end_char) and (InStr("-:;/", inbound.initial_end_char))))
 		; Might this be a password?
         inbound.isSensitive := RegexMatch(inbound.token, "[0-9!@#$%\^&*<>?]")
 		; Like "there's"
