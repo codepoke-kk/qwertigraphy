@@ -6,11 +6,7 @@ engine := {}
 
 class MappingEngine_Chorded
 {
-	Static MovementKeys := "{Delete}{Insert}{Home}{End}{PgUp}{PgDn}{left}{up}{right}{down}"
 	Static ContractedEndings := "s,d,t,m,re,ve,ll,r,v,l"
-	Static EndKeys_soft := "{LControl}{RControl}{backspace}{enter}{numpadenter}{tab}{Delete}{Insert}{Home}{End}{PgUp}{PgDn}{left}{up}{right}{down}{LButton}"
-	Static EndKeys_hard := " .,?!;:'""-_{{}{}}[]/\+=|()@#$%^&*<>"
-	Static EndKeys := MappingEngine_Chorded.EndKeys_soft MappingEngine_Chorded.EndKeys_hard
 	
 	map := ""
 	ih := ""
@@ -30,16 +26,8 @@ class MappingEngine_Chorded
 	penQueue := new Queue("PenQueue")
 	
 	keyboard := {}
-	keyboard.MovementKeys := "{home}{end}{pgup}{pgdn}{left}{up}{right}{down}{lbutton}{backspace}"
-	keyboard.EditKeys := "{enter}{numpadenter}{tab}{delete}{insert}"
-	keyboard.SpecialKeys := "{}!#^*"
 	keyboard.EndKeys_hard := " .,?!;:'""-_{{}{}}[]/\+=|()@#$%^&*<>"
     keyboard.ShiftedNumerals := {"1": "!", "2": "@", "3": "#", "4": "$", "5": "%", "6": "^", "7": "&", "8": "*", "9": "(", "0": ")"}
-	keyboard.DownKeys := ""
-	keyboard.Shfed := ""
-	keyboard.Ctled := ""
-	keyboard.Alted := ""
-	keyboard.Wined := ""
 	keyboard.Token := ""
 	keyboard.TokenStartTicks := A_TickCount
 	keyboard.CapsLock := false
@@ -50,7 +38,6 @@ class MappingEngine_Chorded
 	keyboard.AutoSpaceSent := true
 	keyboard.AutoPunctuationSent := false
 	keyboard.ChordReleaseWindow := 150
-	keyboard.endKeyQueue := ""
 	
 	nullQwerd := new DictionaryEntry("null,,,,0,Could add,null_dictionary.csv")
 
@@ -181,7 +168,6 @@ class MappingEngine_Chorded
 			Send, {Space}
 		}
 		this.keyboard.AutoPunctuationSent := false
-		this.keyboard.EndKeyQueue := ""
 	}
 	
 	getModifierStates()	{
@@ -269,7 +255,9 @@ class MappingEngine_Chorded
 		}
         this.ResyncModifierKeys()
         ; Bug in 1.1.32.00 causes shift key to stick
-        Send, {LShift up}{RShift up}
+		if (not (GetKeyState("Shift", "P"))) {
+			Send, {LShift up}{RShift up}
+		}
 		this.ExpandInput(this.keyboard.Token, key, "", (A_TickCount - this.keyboard.TokenStartTicks))
 		if (not this.keyboard.ScriptCalled) {
 			; Now send the end character 
