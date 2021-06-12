@@ -212,6 +212,7 @@ class MappingEngine_Chorded
 		if (GetKeyState("Control", "P")) {
 			this.logEvent(3, "Cancelling key due to Control character")
 			key := ""
+			this.keyboard.AutoSpaceSent := false 
 		} 
 		this.keyboard.Token .= key
 		this.JoinChord(key)
