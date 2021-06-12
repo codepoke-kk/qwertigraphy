@@ -27,7 +27,8 @@ class MappingEngine_Chorded
 	
 	keyboard := {}
 	keyboard.EndKeys_hard := " .,?!;:'""-_{{}{}}[]/\+=|()@#$%^&*<>"
-    keyboard.ShiftedNumerals := {"1": "!", "2": "@", "3": "#", "4": "$", "5": "%", "6": "^", "7": "&", "8": "*", "9": "(", "0": ")"}
+	keyboard.ShiftedNumerals := ["!", "@", "#", "$", "%", "^", "&", "*", "(", ")"]
+	;keyboard.ShiftedNumerals[0] := ")"
 	keyboard.Token := ""
 	keyboard.TokenStartTicks := A_TickCount
 	keyboard.CapsLock := false
@@ -96,11 +97,15 @@ class MappingEngine_Chorded
 			case "1", "2", "3", "4", "5", "6", "7", "8", "9", "0":
 				sendkey := key
 				if (GetKeyState("Shift", "P")) {
+					if (key == "0") {
+						key := "10"
+					}
                     shiftedKey := this.keyboard.ShiftedNumerals[key]
-					if (not InStr("@&", shiftedKey)) {
-						this.SendToken(shiftedKey)
-					} else {
+					if (InStr("@&", shiftedKey)) {
 						this.CancelToken(shiftedKey)
+					} else {
+						sendKey := ""
+						this.SendToken("{" shiftedKey "}")
 					}
 				} else {
 					this.AddToToken(key)
