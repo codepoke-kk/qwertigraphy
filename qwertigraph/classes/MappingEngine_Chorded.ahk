@@ -97,7 +97,11 @@ class MappingEngine_Chorded
 				sendkey := key
 				if (GetKeyState("Shift", "P")) {
                     shiftedKey := this.keyboard.ShiftedNumerals[key]
-					this.SendToken(shiftedKey)
+					if (not InStr("@&", shiftedKey)) {
+						this.SendToken(shiftedKey)
+					} else {
+						this.CancelToken(shiftedKey)
+					}
 				} else {
 					this.AddToToken(key)
 				}
@@ -117,7 +121,12 @@ class MappingEngine_Chorded
 				this.CancelToken(sendkey)
 			case "Space":
 				sendkey := ""
-				this.SendToken("{" key "}")
+				if (not GetKeyState("Control", "P")) {
+					this.SendToken("{" key "}")
+				} else {
+					this.CancelToken("{Ctrl-space}")
+					Send, % " "
+				}
 			case "Enter", "Tab", "Insert", "NumPadEnter":
 				sendKey := ""
 				this.SendToken("{" key "}")
