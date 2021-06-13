@@ -28,7 +28,6 @@ class MappingEngine_Chorded
 	keyboard := {}
 	keyboard.EndKeys_hard := " .,?!;:'""-_{{}{}}[]/\+=|()@#$%^&*<>"
 	keyboard.ShiftedNumerals := ["!", "@", "#", "$", "%", "^", "&", "*", "(", ")"]
-	;keyboard.ShiftedNumerals[0] := ")"
 	keyboard.Token := ""
 	keyboard.TokenStartTicks := A_TickCount
 	keyboard.CapsLock := false

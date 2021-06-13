@@ -76,6 +76,8 @@ logViewer.addQueue(pad.logQueue)
 
 engine.Start()
 
+#Include *i personal.ahk
+
 
 ; Stop input when the mouse buttons are clicked
 ~LButton::engine.ResetInput()
@@ -94,11 +96,12 @@ engine.Start()
     ; Msgbox, % "Chorder started Engine"
     Return
 
-ClearModifiers() {
-	Msgbox, % "Clearing"
-	Send {Blind}{LControl up}{RControl up}{LAlt up}{RAlt up}{LWin up}{RWin up}
-}
+;ClearModifiers() {
+;	Msgbox, % "Clearing"
+;	Send {Blind}{LControl up}{RControl up}{LAlt up}{RAlt up}{LWin up}{RWin up}
+;}
 
+; Ctrl-Space is now up to date, but I need to do the same for Enter and Tab 
 ;^Space::
 ;^Enter::
 ;^NumPadEnter::
