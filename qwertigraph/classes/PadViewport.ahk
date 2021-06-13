@@ -81,16 +81,17 @@ class PadViewport
 		
 	}
 	
+	;;;;; Disable, because Kaspersky does not like the way I'm writing and rewriting the file
 	DequeueEvents() {
 		this.LogEvent(4, "Dequeueing pen events for " this.penQueue.getSize())
 		Loop, % this.penQueue.getSize() {
 			penAction := this.penQueue.dequeue()
 			this.LogEvent(3, "Dequeued event for " penAction.form)
-			this.penEvents.Push(penAction)
+			;this.penEvents.Push(penAction)
 			if (penAction.form) {
-				this.visualizeForm(penAction.qwerd, penAction.form, penAction.ink)
+				;this.visualizeForm(penAction.qwerd, penAction.form, penAction.ink)
 			} else {
-				this.visualizeForm(penAction.word, "h", penAction.ink)
+				;this.visualizeForm(penAction.word, "h", penAction.ink)
 			}
 		}
 	}

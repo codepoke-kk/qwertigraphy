@@ -48,6 +48,8 @@ IfExist, %I_Icon%
 Menu, Tray, Icon, %I_Icon%
 
 qenv := new QwertigraphyEnvironment()
+
+#Include *i % qenv.personalDataFolder "\" personal_functions.ahk
 map := new DictionaryMap(qenv)
 engine := new MappingEngine_Chorded(map)
 		
@@ -74,7 +76,6 @@ logViewer.addQueue(pad.logQueue)
 
 engine.Start()
 
-#Include *i personal.ahk
 
 ; Stop input when the mouse buttons are clicked
 ~LButton::engine.ResetInput()

@@ -33,9 +33,14 @@ class LogViewport
 	logQueues := []
 	interval := 1000
 	logEvents := []
+	logFileName := ""
+	logFileHandle := ""
 	
 	__New()
 	{
+		FormatTime, logDateStamp, , yyyyMMddHHmm
+		this.logFileName := "chorder_" logDateStamp ".log"
+		this.logFileHandle := FileOpen(this.logFileName, "rw")
 		
         this.timer := ObjBindMethod(this, "DequeueEvents")
         timer := this.timer
@@ -92,6 +97,8 @@ class LogViewport
 		For index, logQueue in this.logQueues {
 			Loop, % logQueue.getSize() {
 				logEvent := logQueue.dequeue()
+				this.logFileHandle.WriteLine(logEvent.where "|" logEvent.when "|" logEvent.what "|" logEvent.how)
+				this.logFileHandle.Read(0)
 				this.logEvents.Push(logEvent)
 				LV_Add(, logEvent.where, logEvent.when, logEvent.what, logEvent.how)
 			}
