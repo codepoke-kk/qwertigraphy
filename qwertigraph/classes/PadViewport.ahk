@@ -19,7 +19,10 @@ class PadViewport
 	logQueue := new Queue("PadQueue")
 	logVerbosity := 1
 	
-	padPageFile := "greggpad.html"
+	padDisplayFolder := A_AppData "\Qwertigraph\Pad_Temp"
+	padPageName := "greggpad"
+	padTempPageNumber := 0
+	padPersistedPageNumber := 0
 	padPages := []
 	padPagesIndex := 0
 	pageWidth := 826
@@ -62,6 +65,12 @@ class PadViewport
         timer := this.timer
         SetTimer % timer, % this.interval
 		
+		IfNotExist, % this.padDisplayFolder
+		{
+			FileCreateDir, % this.padDisplayFolder
+			this.logEvent(2, "Created " this.padDisplayFolder)
+		}
+		
 		this.padPages[this.padPagesIndex] := "<path d="" M 29,50 l 1,0"" fill=""none"" stroke=""white"" stroke-width=""2"" />"
 		this.padPageHeader := "<!DOCTYPE html><meta http-equiv=""X-UA-Compatible"" content=""IE=9""><html><body><svg id=""GreggPad"" height=""" this.pageHeight """ width=""" this.pageWidth """>"
 		this.padPageFooter := "Sorry, your browser does not support inline SVG.</svg></body></html>"
@@ -87,26 +96,26 @@ class PadViewport
 		Loop, % this.penQueue.getSize() {
 			penAction := this.penQueue.dequeue()
 			this.LogEvent(3, "Dequeued event for " penAction.form)
-			;this.penEvents.Push(penAction)
+			this.penEvents.Push(penAction)
 			if (penAction.form) {
-				;this.visualizeForm(penAction.qwerd, penAction.form, penAction.ink)
+				this.visualizeForm(penAction.qwerd, penAction.form, penAction.ink)
 			} else {
-				;this.visualizeForm(penAction.word, "h", penAction.ink)
+				this.visualizeForm(penAction.word, "h", penAction.ink)
 			}
 		}
 	}
 	
 	showPadPage(penActions) {
-
-		this.LogEvent(4, "Adding " penActions)
+		this.padTempPageNumber += 1
+		this.LogEvent(4, "Adding " penActions " to temp page " this.padTempPageNumber)
 		padPageContent := this.padPageHeader this.padPageBackground penActions this.padPageFooter
-		
-		FileDelete, % this.padPageFile
-		FileAppend, % padPageContent, % this.padPageFile
+		padPageFile := this.padDisplayFolder "\" this.padPageName "_" this.padTempPageNumber ".html"
+		FileDelete, % padPageFile
+		FileAppend, % padPageContent, % padPageFile
 
 		this.LogEvent(4, "Final pad content " padPageContent)
-		this.LogEvent(4, "Pad location " A_ScriptDir "\" this.padPageFile)
-		oWB.Navigate(A_ScriptDir "\" this.padPageFile)
+		this.LogEvent(2, "Pad temp file location " padPageFile)
+		oWB.Navigate(padPageFile)
 		this.LogEvent(4, "Went there")
 	}
 	
@@ -175,6 +184,14 @@ class PadViewport
 		
 		; Only now if we need a new page, turn it
 		if (this.nibY > (this.pageHeight - this.verticalSpacing - this.qwertingVertical)) {
+			; Archive the current page and reset the temp index to start indexing back at 1. 
+			padLastTempPage := this.padDisplayFolder "\" this.padPageName "_" this.padTempPageNumber ".html"
+			padPersistPage := this.padDisplayFolder "\" this.padPageName "_archive_" this.padPersistPageNumber ".html"
+			this.LogEvent(2, "Archiving " padLastTempPage " to " padPersistPage)
+			FileCopy, padLastTempPage, padPersistPage
+			this.padTempPageNumber := 0
+			
+			; Reset the writing locations 
 			this.nibY := this.verticalSpacing
 			this.padPagesIndex += 1
 			this.padPages[this.padPagesIndex] := "<path d="" M 29,50 l 1,0"" fill=""none"" stroke=""white"" stroke-width=""2"" />"

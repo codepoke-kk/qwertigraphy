@@ -18,3 +18,15 @@
     - With standard QWERTY typing, you always know how many characters to backspace
     - With Qwertigraphy, a given qwerd can expand into a word of any length, so Control-Backspace will help
     - The cost, though, is that every "Control-Backspace" resets the history of what you have written 
+    
+    
+##### To do
+There are still a lot of things you cannot do with the Qwertigraph, that I would like to make it do someday. 
+- Persist settings across sessions 
+- Page back through the Pen Gregg Pad to see everything written 
+- Add ctrl-enter, tab, period, comma, and a few others 
+- Clean up auto-spacing behavior 
+- Clearly document how to use features (I'm still not doing this yet, because they are changing too quickly -- sorry)
+- Clearly document how to throw away my dictionary and use your own 
+- Make disabling chording a Setting 
+- Reset bug in which I lose the buffer somehow when backspacing past the beginning of a given entry field 
