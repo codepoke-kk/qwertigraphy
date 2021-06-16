@@ -5,8 +5,6 @@
 [Broken Qwertigraph?](https://github.com/codepoke-kk/qwertigraphy/blob/master/FixQwertigraph.md)
 
 There are two ways to go on this. If you just want to start using Qwertigraphy, download this:
-(The simplest version)
-https://github.com/codepoke-kk/qwertigraphy/release/trainer.exe
 (To allow chorded entry - hitting all the keys in a word at once)
 https://github.com/codepoke-kk/qwertigraphy/release/chorder.exe
 
@@ -26,7 +24,7 @@ AutoHotkey will not do anything when you install it. After installation, it awai
 If you are familiar with the ideas and uses of GitHub, you can go to the repository and clone, pull, or download at will. If all that was Greek to you, then download a zip file of the repository here. Unzip it anywhere you'd like on your computer. I keep mine in a qwertigraphy folder in "My Documents."
 https://github.com/codepoke-kk/qwertigraphy/archive/master.zip
 
-A low-quality video walk-through here: [Qwertigraphy Quick Start](https://www.youtube.com/watch?v=Eodl0zzjCcw&feature=youtu.be)
+A low-quality (and very dated at this point) video walk-through here. Replace all references to "trainer" with "chorder" as you watch and listen: [Qwertigraphy Quick Start](https://www.youtube.com/watch?v=Eodl0zzjCcw&feature=youtu.be)
 
 #### Step: Start the Qwertigraph
 Go to the /qwertigraph folder, and double click trainer.ahk. You should see the qwertigraph interface appear. Move it around as you wish. 
@@ -43,8 +41,8 @@ Now, go forth and type like usual. At the end of the day, come back to the coach
 ##### Tips:
 - No word will expand until you stroke an "end character". You have to hit some punctation key to let the Qwertigraph know you're done and ready to move on. 
 - Control-Backspace is your friend. If you meant some other word than the one the Qwertigraph typed, Control-Backspace will delete the entire word and let you start over again. (It's much lazier to hit Control-Backspace once than to hit Backspace a does times.)
-- Control-Windows-P will Pause the Qwertigraph if you need to type without its help. Control-Windows-P again will reactivate it. 
-- Hitting the Control key will cause the Qwertigraph to ignore whatever word you just typed and start listening all over again.
+- Control-Windows-P will Pause the Qwertigraph if you need to type without its help. Control-Windows-; will reactivate it. 
+- Hitting the Control-space key or the "backtick" key will cause the Qwertigraph to ignore whatever word you just typed and start listening all over again.
 - If you type out a word for which there's a "big win" lazy form, a pop-up tip will give you a hint to that effect. 
 
 ##### Words about letters
@@ -71,6 +69,9 @@ You can always tell the actual Gregg Shorthand form by looking at The Coach or T
 ##### Click "Search" in the top right, after typing for a while to see a sortable, filterable (someday) list of all the words you've typed in this session. 
 
 More can and should be written about this, but I'm too tired tonight. I rewrote The Coach from the ground up, and the whole documentation thing needs a total rework some day soon.
+
+#### Step: Watch The Gregg Pad
+##### The Gregg Pad shows you what the word you just typed will look like when when written with a pen. It's clunky and jagged compared to real Gregg Shorthand, but the idea is about right. It will also show you the qwerd for the last several words you just typed. This is its greatest value to the casual typist, and when I have the Qwertigraph visible on screen, it's typically on this tab.
 
 #### Step: Use the Editor
 This is really a whole instruction into itself, so I won't do much with it. I'll drop a couple hints here for the adventurous. 
