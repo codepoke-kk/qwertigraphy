@@ -41,7 +41,7 @@ Now, go forth and type like usual. At the end of the day, come back to the coach
 ##### Tips:
 - No word will expand until you stroke an "end character". You have to hit some punctation key to let the Qwertigraph know you're done and ready to move on. 
 - Control-Backspace is your friend. If you meant some other word than the one the Qwertigraph typed, Control-Backspace will delete the entire word and let you start over again. (It's much lazier to hit Control-Backspace once than to hit Backspace a does times.)
-- Control-Windows-P will Pause the Qwertigraph if you need to type without its help. Control-Windows-; will reactivate it. 
+- Windows-Alt-P will Pause the Qwertigraph if you need to type without its help. Windows-Alt-; will reactivate it. 
 - Hitting the Control-space key or the "backtick" key will cause the Qwertigraph to ignore whatever word you just typed and start listening all over again.
 - If you type out a word for which there's a "big win" lazy form, a pop-up tip will give you a hint to that effect. 
 
