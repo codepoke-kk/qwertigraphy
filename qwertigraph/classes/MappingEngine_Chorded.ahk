@@ -111,7 +111,12 @@ class MappingEngine_Chorded
 				}
 			case ".", ",", "'",  "[", "]": 
 				sendkey := ""
-				this.SendToken(key)
+				if (not GetKeyState("Control", "P")) {
+					this.SendToken("{" key "}")
+				} else {
+					this.CancelToken("{Ctrl-" key "}")
+					Send, % key
+				}
 			case "/", ";", "[", "]", "\", "-", "=": 
 				; sendkey := key
 				; this.CancelToken(key)
@@ -133,7 +138,12 @@ class MappingEngine_Chorded
 				}
 			case "Enter", "Tab", "Insert", "NumPadEnter":
 				sendKey := ""
-				this.SendToken("{" key "}")
+				if (not GetKeyState("Control", "P")) {
+					this.SendToken("{" key "}")
+				} else {
+					this.CancelToken("{Ctrl-" key "}")
+					Send, % "{" key "}"
+				}
 			case "Home", "End", "PgUp", "PgDn", "Left", "Up", "Right", "Down", "Delete":
 				sendKey := "{" key "}"
 				this.CancelToken(sendkey)
