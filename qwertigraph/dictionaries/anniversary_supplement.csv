@@ -19,6 +19,9 @@ workably,r-k-b-e,rkbe,,bekr,132
 working,r-k-\-h,rkg,,gkr,132
 workings,r-k-\-h-s,rkgs,,gkrs,132
 works,r-k-s,rks,,krs,132
+backend,b-a-k-n-t,baknt,,abknt,148
+backended,b-a-k-n-t-d,bakntd,,abkntd,148
+backends,b-a-k-n-t-s,baknts,,abknts,148
 don't,d-o-n,don,,dno,188
 i'm,i-m,im,,cim,188
 god,g,gu,u,gu,202
@@ -140,6 +143,7 @@ agreeing,^-ya-\-h,yag,,agy,746
 agrees,^-ya-s,yas,,asy,746
 resultant,r-s2-u-nt,rsunt,,nrstu,837
 resulting,r-s2-u-\-h,rsug,,grsu,837
+dating,td-\-h,ddg,,duxg,884
 conversational,k-v-e-sh-l,kvezl,,eklvz,888
 conversations,k-v-e-sh-s,kvezs,,eksvz,888
 directions,d-r-k-sh-s,drkzs,,dkrsz,907
@@ -286,6 +290,8 @@ realities,r-e-/-l-s,rels,,elrs,2364
 limitations,l-e-m-sh-s,lemzs,,elmsz,2368
 agreeably,^-yab-e,yabe,,abey,2378
 suggestions,s2-u-j-s,sujs,,jsu,2382
+errored,e-r-r-d,errd,,erzd,2517
+erroring,e-r-r-\-h,errg,,erzg,2517
 maintaining,mn-tn-\-h,mmtng,,gmnt,2559
 maintains,mn-tn-s,mmtns,,mnst,2559
 performed,pr-f-m-d,prfmd,,dfmpr,2589
@@ -808,9 +814,15 @@ singles,s2-e-ng-s,segs,,egs,65996
 condition,k-d-sh,kdz,,dkz,70330
 conditional,k-d-sh-l,kdzl,,dklz,70330
 conditionally,k-d-sh-ye,kdzy,,dkyz,70330
+conditionals,k-d-sh-l-s,kdzls,,dklzs,70330
 conditioned,k-d-sh-d,kdzd,,dkz,70330
 conditioning,k-d-sh-\-h,kdzg,,dgkz,70330
 conditions,k-d-sh-s,kdzs,,dksz,70330
+debug,d-b-u-g,dbug,,bdgu,70330
+debugged,d-b-u-g-d,dbugd,,bdgud,70330
+debugger,d-b-u-g-r,dbugr,,bdgur,70330
+debugging,d-b-u-g-\-h,dbugg,,bdgug,70330
+debugs,d-b-u-g-s,dbugs,,bdgus,70330
 unconditional,n-k-d-sh-l,nkdzl,,dklnz,70330
 unconditionally,n-k-d-sh-y,nkdzy,,dknyz,70330
 connecting,k-e-k-\-h,kekgo,o,egko,70334
