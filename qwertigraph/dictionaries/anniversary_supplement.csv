@@ -9,6 +9,9 @@ downsides,d-n-s-i-s,dnsis,,dins,18
 of,o,o,,,24
 being,b-\-h,bg,,bcg,41
 but,b,bu,u,bcu,50
+timed,tm-d,tmd,,mtvd,93
+timing,tm-\-h,tmg,,mtvg,93
+timings,tm-\-h-s,tmgs,,mtvgs,93
 should,sh-d,zd,,dz,97
 rework,r-e-r-k,rerk,,ekr,132
 reworked,r-e-r-k-d,rerkd,,dekr,132
@@ -19,9 +22,13 @@ workably,r-k-b-e,rkbe,,bekr,132
 working,r-k-\-h,rkg,,gkr,132
 workings,r-k-\-h-s,rkgs,,gkrs,132
 works,r-k-s,rks,,krs,132
+backed up,b-a-k-p-d,bakpd,,abkpd,148
 backend,b-a-k-n-t,baknt,,abknt,148
 backended,b-a-k-n-t-d,bakntd,,abkntd,148
 backends,b-a-k-n-t-s,baknts,,abknts,148
+backing up,b-a-k-p-\-h,bakpg,,abkpg,148
+backup,b-a-k-p,bakp,,abkp,148
+backups,b-a-k-p-s,bakps,,abkps,148
 don't,d-o-n,don,,dno,188
 i'm,i-m,im,,cim,188
 god,g,gu,u,gu,202
@@ -66,6 +73,13 @@ shortest,^-sh-\-s-t,zst,,stz,422
 shorts,^-sh-\-s,zso,o,osz,422
 shortsighted,^-sh-\s-i-td,zsitd,,distz,422
 shortsightedly,^-sh-\s-i-td-e,zsitde,,deistz,422
+meaning,m-e-n-\-h,meng,,emnog,424
+meaningful,m-e-n-\-h-\-f,mengf,,efgmn,424
+meaningfully,m-e-n-\-h-\-f-e,mengfe,,efgmne,424
+meaningless,m-e-n-\-h-\-l,mengl,,eglmn,424
+meaninglessness,m-e-n-\-h-\-l-n-e-s,menglnes,,eglmns,424
+meanings,m-e-n-\-h-s,mengs,,emnogs,424
+meanness,m-e-n-n-e-s,mennes,,emns,424
 questionable,k-n-b,qnb,,bnq,430
 questioned,k-n-d,qnd,,dnq,430
 questioner,k-n-r,qnr,,nqr,430
@@ -338,9 +352,17 @@ operationally,o-pr-a-sh-l-e,oprazle,,aeloprz,3048
 operations,o-pr-a-sh-s,oprazs,,aoprsz,3048
 securities,s2-e-k-/-r-s,sekrso,o,ekors,3065
 applications,a-pl-sh-s,aplzs,,alpsz,3097
+matched,m-a-ch-d,macd,,acmod,3098
+matching,m-a-ch-\-h,macg,,acmog,3098
+matchs,m-a-ch-s,macs,,acmos,3098
+mismatch,m-sm-a-ch,msmac,,acms,3098
+mismatched,m-sm-a-ch-d,msmacd,,acmsd,3098
+mismatching,m-sm-a-ch-\-h,msmacg,,acmsg,3098
+mismatchs,m-sm-a-ch-s,msmacs,,acmss,3098
+unmatched,n-m-a-ch-d,nmachd,,acdhmn,3098
 definitely,df-n-e,dfne,,defn,3128
-includes,e-/-d-s,edos,o,deos,3157
-including,e-/-d-\-h,edog,o,dego,3157
+includes,e-/-d-s,eds,,des,3157
+including,e-/-d-\-h,edg,,deg,3157
 seeded,s2-e-d-d,sedd,,des,3202
 seeding,s2-e-d-\-h,sedg,,degs,3202
 seeds,s2-e-d-s,seds,,des,3202
@@ -616,6 +638,10 @@ buttons,b-u-tn-s,butns,,bnstu,9381
 clients,k-l-i-s,klis,,ikls,9528
 editorials,e-td-r-l-s,eddrls,,delrs,9852
 certificates,s2-e-df-s,sedfs,,defs,9931
+overload,o-/-l-o-d,olod,,dlo,10530
+overloaded,o-/-l-o-d-d,olodd,,dlod,10530
+overloading,o-/-l-o-d-\-h,olodg,,dlog,10530
+overloads,o-/-l-o-d-s,olods,,dlos,10530
 persist,pr-ss,prssi,i,iprs,10535
 persisted,pr-ss-d,prssd,,dprs,10535
 persistence,pr-ss-n-s,prssns,,nprs,10535
@@ -774,6 +800,8 @@ disproved,d-s-pr-v-d,dsprvd,,dprsv,28203
 disproves,d-s-pr-v-s,dsprvs,,dprsv,28203
 disproving,d-s-pr-v-\-h,dsprvg,,dgprsv,28203
 operatic,o-pr-a-t-k,opratk,,akoprt,28396
+functionalities,f-nk-/-l-s,fqls,,flqs,30062
+functionality,f-nk-/-l,fqlo,o,flq,30062
 functionally,f-nk-/-l-e,fqle,,eflq,30062
 syntax,s-e-nt-a-x,sentax,,aenstx,30086
 irrevocable,e-r-v-k-b,ervkb,,bekrv,30778
@@ -796,7 +824,7 @@ doubleday,d-b-d-a,dbda,,abd,32627
 singe,s-e-n-j,senj,,ejns,33893
 singed,senj-d,senjd,,dejns,33893
 singes,s-e-n-j-s,senjs,,ejns,33893
-inclusions,e-/-sh-s,ezos,o,eosz,37756
+inclusions,e-/-sh-s,ezs,,esz,37756
 migrated,m-i-g-r-a-d,migrad,,agimrd,37983
 migrating,m-i-g-r-a-\-h,migrag,,agimrg,37983
 migratory,m-i-g-r-a-\-r-e,migrare,,aegimr,37983

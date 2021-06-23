@@ -33,11 +33,13 @@ class MappingEngine_Chorded
 	keyboard.CapsLock := false
 	keyboard.ChordLength := 0
 	keyboard.MaxChordLength := 0
+	keyboard.ChordPressStartTicks := 0
 	keyboard.ChordReleaseStartTicks := 0
 	keyboard.ScriptCalled := false
 	keyboard.AutoSpaceSent := true
 	keyboard.AutoPunctuationSent := false
 	keyboard.ChordReleaseWindow := 150
+    keyboard.ChordReleaseWindows := []
 	
 	nullQwerd := new DictionaryEntry("null,,,,0,Could add,null_dictionary.csv")
 
@@ -45,12 +47,13 @@ class MappingEngine_Chorded
 	{
 		this.map := map
 		;HelloWorld("loading")
+        
+        this.setKeyboardChordWindowIncrements()
 	}
 		
 	Start() 
 	{
 		
-
         this.ResyncModifierKeys()
 		this.keyboard.Token := ""
 		this.input_text_buffer := ""
@@ -309,6 +312,8 @@ class MappingEngine_Chorded
 		}
 		; In any case the max length should now be the chord length
 		this.keyboard.MaxChordLength := this.keyboard.ChordLength
+        ; Capturing this in order to have a bakp 
+        this.keyboard.ChordPressStartTicks := A_TickCount
 		this.logEvent(4, "Chord: joining " key " for count " this.keyboard.ChordLength)
 	}
 	LeaveChord(key) {
@@ -328,18 +333,22 @@ class MappingEngine_Chorded
 		} else if (this.keyboard.ChordLength = 1) {
 			; This is the release of the last key in the chord
 			chordWindow := A_TickCount - this.keyboard.ChordReleaseStartTicks
+            if (chordWindow == 0) {
+                ; If the system gets overloaded it will send all the key releases at once. This will keep chordWindow from being null
+                chordWindow := A_TickCount - this.keyboard.ChordPressStartTicks
+            }
 			if ((StrLen(this.keyboard.Token) >= this.map.minimumChordLength) 
 				and (chordWindow > 0) 
-				and (chordWindow < this.keyboard.ChordReleaseWindow) 
+				and (chordWindow < this.keyboard.ChordReleaseWindows[StrLen(this.keyboard.Token)]) 
 				and (StrLen(this.keyboard.Token) = this.keyboard.MaxChordLength)) {
 				; The time is quick enough to call a chord 
-				this.logEvent(2, "ChordWindow: completed " this.keyboard.Token " in " chordWindow "ms")
+				this.logEvent(2, "ChordWindow: completed " this.keyboard.Token " in " chordWindow "ms against allowed " this.keyboard.ChordReleaseWindows[StrLen(this.keyboard.Token)])
 				this.keyboard.ChordLength := 0
 				this.keyboard.MaxChordLength := 0
 				this.SendChord()
 			} else {
 				; Too slow. Let this be serial input
-				this.logEvent(2, "ChordWindow: too short or timed out " this.keyboard.Token " in " chordWindow "ms against " this.keyboard.ChordReleaseWindow)
+				this.logEvent(2, "ChordWindow: too short or timed out " this.keyboard.Token " in " chordWindow "ms against " this.keyboard.ChordReleaseWindow " and chord is complete is " (StrLen(this.keyboard.Token) = this.keyboard.MaxChordLength))
 				this.keyboard.ChordLength := 0
 				this.keyboard.MaxChordLength := 0
 			}
@@ -683,6 +692,14 @@ class MappingEngine_Chorded
 		  ToolTip
 		return 
 	}
+    
+    setKeyboardChordWindowIncrements() {
+        
+        increment := Round(this.keyboard.ChordReleaseWindow / 3)
+        Loop, 26 {
+            this.keyboard.ChordReleaseWindows[A_Index] := A_Index * increment
+        }
+    }
 
 	LogEvent(verbosity, message) 
 	{

@@ -89,6 +89,7 @@ SettingsChordWindow() {
 	GuiControlGet SettingsChordWindow
 	if (RegExMatch(SettingsChordWindow, "^\d+$")) {
 		engine.keyboard.ChordReleaseWindow := SettingsChordWindow
+        engine.setKeyboardChordWindowIncrements()
 	} else {
 		Msgbox, % "Could not understand " SettingsChordWindow
 	}
