@@ -112,7 +112,7 @@ class MappingEngine_Chorded
 			case ".", ",", "'",  "[", "]": 
 				sendkey := ""
 				if (not GetKeyState("Control", "P")) {
-					this.SendToken("{" key "}")
+					this.SendToken(key)
 				} else {
 					this.CancelToken("{Ctrl-" key "}")
 					Send, % key
