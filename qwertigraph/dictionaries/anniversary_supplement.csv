@@ -53,6 +53,12 @@ pour,p-o-r,por,,opr,324
 poured,p-o-r-d,pord,,dopr,324
 pouring,p-o-r-\-h,porg,,gopr,324
 pours,p-o-r-s,pors,,oprs,324
+kinged,k-e-ng-d,kegd,,egkd,357
+kinging,k-e-ng-\-h,kegg,,egkg,357
+kingliness,k-e-ng-e-n-e-s,kegenes,,egkns,357
+kingly,k-e-ng-e,kege,,egke,357
+kings,k-e-ng-s,kegs,,egks,357
+kingship,k-e-ng-/-sh,kegz,,egkz,357
 seconding,s2-e-k-nt-\-h,sekntg,,egknst,373
 secondly,s2-e-k-nt-e,seknte,,eknst,373
 seconds,s2-e-k-nt-s,seknts,,eknst,373
@@ -152,6 +158,10 @@ redirections,r-e-d-r-k-sh-s,redrkzs,,dekrsz,907
 authorities,o-th2-/-r-s,ohrso,o,hors,938
 authoritys,o-th2-/-r-s,ohrs,,hors,938
 breaking,br-a-k-\-h,brakg,,abgkr,981
+overstate,o-/-s2-t,ost,,ost,1000
+overstated,o-/-s2-t-d,ostd,,ostd,1000
+overstates,o-/-s2-t-s,osts,,osts,1000
+overstating,o-/-s2-t-\-h,ostg,,ostg,1000
 successes,s2-u-k-s,suks,,ksu,1001
 succession,s2-u-k-sh,sukz,,ksuz,1001
 successions,s2-u-k-sh-s,sukzs,,ksuz,1001
@@ -213,6 +223,7 @@ removes,r-e-m-u-s,remus,,emrsu,1657
 removing,r-e-m-u-\-h,remug,,egmru,1657
 currently,k-r-e-nt-e,krente,,eknrt,1668
 currents,k-r-e-nt-s,krents,,eknrst,1668
+kingdoms,k-e-ng-tm-s,kegtms,,egkmts,1692
 policies,p-o-l-s,pols,,lops,1698
 relations,r-e-l-a-sh-s,relazs,,aelrsz,1704
 relationship,r-e-l-a-sh-\-sh,relazz,,aelrz,1704
@@ -371,6 +382,8 @@ solutioned,s2-o-l-sh-d,solzd,,dlosz,3907
 solutioning,s2-o-l-sh-\-h,solzg,,glosz,3907
 solutions,s2-o-l-sh-s,solzs,,losz,3907
 executives,e-s2-e-k-v-s,xekvs,,eksvx,4030
+washer,u-o-sh-r,uozr,,ouzr,4064
+washes,u-o-sh-s,uozs,,ouzs,4064
 maximize,m-a-x-m-i-s,maxmis,,aimsx,4077
 maximized,m-a-x-m-i-s-d,maxmisd,,adimsx,4077
 maximizes,m-a-x-m-i-s-s,maxmiss,,aimsx,4077
