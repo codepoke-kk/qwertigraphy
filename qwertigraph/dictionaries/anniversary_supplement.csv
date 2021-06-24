@@ -97,6 +97,8 @@ unquestionably,n-k-n-b-e,nqnbe,,benq,430
 unquestioned,n-k-n-d,nqnd,,dnq,430
 unquestioning,n-k-n-\-h,nqng,,gnq,430
 coming,k-m-\-h,kmg,,gkm,435
+turnover,t-e-n-o,teno,,enot,460
+turnovers,t-e-n-o-s,tenos,,enots,460
 understandable,u-/-s2-tn-b,ustnb,,bnstu,467
 understandably,u-/-s2-tn-b-e,ustnbe,,benstu,467
 understanding,u-/-s2-tn-\-h,ustng,,gnstu,467
@@ -275,6 +277,10 @@ requires,r-k-i-s,rqis,,iqrs,1833
 requiring,r-k-i-\-h,rqig,,giqr,1833
 requisite,r-k-e-s-t,rqesto,o,eoqrst,1833
 requisites,r-k-e-s-t-s,rqests,,eqrst,1833
+failback,f-a-l-b-k,falbk,,abfkl,1836
+failbacks,f-a-l-b-k-s,falbks,,abfkls,1836
+failover,f-a-l-o,falo,,aflo,1836
+failovers,f-a-l-o-s,falos,,aflos,1836
 parent,p-a-r-e-nt,parento,o,aenoprt,1863
 parentage,p-a-r-e-nt-j,parentj,,aejnprt,1863
 parental,p-a-r-e-nt-l,parentl,o,aelnprt,1863
@@ -286,6 +292,7 @@ controller,^-k-/-l-r,klr,,klxr,1869
 controllers,^-k-/-l-r-s,klrs,,klxrs,1869
 controlling,^-k-/-l-\-h,klg,,gkl,1869
 controls,^-k-/-l-s,kls,,kls,1869
+customs,k-u-s-s,kuss,,ksus,1913
 singer,s2-e-ng-e2,segeo,o,egos,1922
 singers,s2-e-ng-e2-s,seges,,egs,1922
 singing,s2-e-ng-\-h,seggo,o,egos,1922
@@ -294,6 +301,8 @@ singular,s2-e-ng-u,segu,,egsu,1922
 singularity,s2-e-ng-u-\-r,segur,,egrsu,1922
 singularly,s2-e-ng-u-e,segueo,o,egosu,1922
 connections,k-e-k-sh-s,kekzs,,eksz,1927
+accustom,a-k-u-s,akusu,u,aksu,1935
+unaccustomed,n-a-k-u-s-/-t,nakust,,aknstu,1935
 protections,pr-o-t-e-k-sh-s,protekzs,,ekoprstz,1983
 successfully,s2-u-k-f-e,sukfe,,efksu,2078
 unsuccessful,n-s2-u-k-f,nsukf,,fknsu,2078
@@ -323,6 +332,13 @@ agreeably,^-yab-e,yabe,,abey,2378
 suggestions,s2-u-j-s,sujs,,jsu,2382
 errored,e-r-r-d,errd,,erzd,2517
 erroring,e-r-r-\-h,errg,,erzg,2517
+issuance,e-sh-u-n-s,ezuns,,ensuz,2555
+issuer,e-sh-u-r,ezur,,euzr,2555
+issuers,e-sh-u-r-s,ezurs,,euzrs,2555
+issues,e-sh-u-s,ezus,,euzs,2555
+issuing,e-sh-u-\-h,ezug,,euzg,2555
+tissue,t-e-sh-u,tezu,,etuz,2555
+tissues,t-e-sh-u-s,tezus,,etuzs,2555
 maintaining,mn-tn-\-h,mmtng,,gmnt,2559
 maintains,mn-tn-s,mmtns,,mnst,2559
 performed,pr-f-m-d,prfmd,,dfmpr,2589
@@ -649,6 +665,10 @@ buttonholing,b-u-tn-o-l-\-h-^-<-h,butnolg,,bglnotu,9381
 buttoning,b-u-tn-\-h,butng,,bgntu,9381
 buttons,b-u-tn-s,butns,,bnstu,9381
 clients,k-l-i-s,klis,,ikls,9528
+ignore,e-g-n-o-r,egnor,,egnor,9546
+ignored,e-g-n-o-r-d,egnord,,egnord,9546
+ignores,e-g-n-o-r-s,egnors,,egnors,9546
+ignoring,e-g-n-o-r-\-h,egnorg,,egnorg,9546
 editorials,e-td-r-l-s,eddrls,,delrs,9852
 certificates,s2-e-df-s,sedfs,,defs,9931
 overload,o-/-l-o-d,olod,,dlo,10530
@@ -676,6 +696,7 @@ migrations,m-i-g-r-a-z-s,migrazs,,agimrzs,11303
 assign,a-s-i-n,asin,,ains,11390
 assigning,a-s-i-n-\-h,asing,,agins,11390
 assigns,a-s-i-n-s,asins,,ains,11390
+customers,k-u-s-r-s,kusrs,,krsus,11568
 rout,r-a-o-t,rwt,,rtw,11813
 routs,r-a-o-t-s,rwts,,rstw,11813
 profile,pr-f-i-l,prfil,,filpr,11816
@@ -779,6 +800,7 @@ invulnerability,n-v-u-l-n-e-r-\-b,nvulnerbo,,belnoruv,24003
 invulnerable,n-v-u-l-n-e-r-b,nvulnerb,,belnruv,24003
 vulnerabilities,v-u-l-n-e-r-\-b-s,vulnerbos,,belnorsuv,24003
 vulnerability,v-u-l-n-e-r-\-b,vulnerbo,,belnoruv,24003
+fissures,f-e-sh-u-s,fezus,,efuzs,24109
 diagnose,d-i-g-n-o-s,dignos,,dginos,24781
 diagnosed,d-i-g-n-o-s-d,dignosd,,dginos,24781
 diagnoses,d-i-g-n-o-s-e-s,dignoses,,deginos,24781
