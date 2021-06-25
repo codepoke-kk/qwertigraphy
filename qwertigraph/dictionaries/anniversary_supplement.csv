@@ -7,6 +7,7 @@ down,d-n,dno,o,cdno,18
 downside,d-n-s-i,dnsi,,dins,18
 downsides,d-n-s-i-s,dnsis,,dins,18
 of,o,o,,,24
+you're,u-r,ur,,ru,39
 being,b-\-h,bg,,bcg,41
 but,b,bu,u,bcu,50
 they're,th-e-r,heor,,ehor,54
@@ -75,6 +76,7 @@ kingship,k-e-ng-/-sh,kegz,,egkz,357
 seconding,s2-e-k-nt-\-h,sekntg,,egknst,373
 secondly,s2-e-k-nt-e,seknte,,eknst,373
 seconds,s2-e-k-nt-s,seknts,,eknst,373
+calls,k-o-s,kos,,kozs,386
 shortest,^-sh-\-s-t,zst,,stz,422
 shorts,^-sh-\-s,zso,o,osz,422
 shortsighted,^-sh-\s-i-td,zsitd,,distz,422
@@ -231,6 +233,9 @@ constantine,k-s2-tn-e-n,kstnen,,eknst,1552
 constantly,k-s2-tn-e,kstne,,eknst,1552
 constants,k-s2-tn-s,kstns,,knst,1552
 interested,^-n-\-s-\-t,nst,,nst,1559
+complied,k-pl-i-d,kplid,,iklpd,1566
+complies,k-pl-i-s,kplis,,iklps,1566
+complying,k-pl-i-\-h,kplig,,iklpg,1566
 interesting,^-n-\-s-\-h,nsg,,gns,1575
 interestingly,^-n-\-s-\-g,nsge,,egns,1575
 doubled,d-b-d,dbd,,bcd,1600
