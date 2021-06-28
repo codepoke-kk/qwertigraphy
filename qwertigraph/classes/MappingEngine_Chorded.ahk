@@ -27,6 +27,8 @@ class MappingEngine_Chorded
 	
 	keyboard := {}
 	keyboard.EndKeys_hard := " .,?!;:'""-_{{}{}}[]/\+=|()@#$%^&*<>"
+	keyboard.Letters := ["a","b","c","d","e","f","g","h","i","j","k","l","m","n","o","p","q","r","s","t","u","v","w","x","y","z"]
+	keyboard.Numerals := ["1", "2", "3", "4", "5", "6", "7", "8", "9", "0"]
 	keyboard.ShiftedNumerals := ["!", "@", "#", "$", "%", "^", "&", "*", "(", ")"]
 	keyboard.Token := ""
 	keyboard.TokenStartTicks := A_TickCount
@@ -242,6 +244,7 @@ class MappingEngine_Chorded
 		} 
 		this.keyboard.Token .= key
 		this.JoinChord(key)
+		this.coachAhead(true)
 	}
 
 	RemoveKeyFromToken() {
@@ -249,13 +252,19 @@ class MappingEngine_Chorded
 		if (GetKeyState("Control", "P")) {
 			this.logEvent(3, "Cancelling token due to Control backspace")
 			this.input_text_buffer := ""
+			this.keyboard.Token := ""
 		} else if (not StrLen(this.keyboard.Token)) {
 			; If we are deleting things written before this token, we have to take from the buffer
-			this.keyboard.Token := this.input_text_buffer
+			this.keyboard.Token := RegExReplace(this.input_text_buffer, "^.*\W(\w*.)$", "$1")
+			this.input_text_buffer := SubStr(this.input_text_buffer, 1, (StrLen(this.input_text_buffer) - (StrLen(this.keyboard.Token) + 0)))
+			this.logEvent(3, "Inserting last word from input text buffer as token: " this.keyboard.Token)
+			this.keyboard.Token := SubStr(this.keyboard.Token, 1, (StrLen(this.keyboard.Token) - 1))
+		} else {
+			this.keyboard.Token := SubStr(this.keyboard.Token, 1, (StrLen(this.keyboard.Token) - 1))
 		}
-		this.keyboard.Token := SubStr(this.keyboard.Token, 1, (StrLen(this.keyboard.Token) - 1))
 		; We have to reset the deletion of the auto space, or it will double delete
 		this.keyboard.AutoSpaceSent := false
+		this.coachAhead(true)
 	}
 
 	CancelToken(key) {
@@ -265,6 +274,7 @@ class MappingEngine_Chorded
 		this.input_text_buffer := ""
 		this.keyboard.AutoSpaceSent := false
 		this.ExpandInput(this.keyboard.Token, key, "", (A_TickCount - this.keyboard.TokenStartTicks))
+		this.coachAhead(false)
 	}
 
 	SendToken(key) {
@@ -297,6 +307,7 @@ class MappingEngine_Chorded
 		this.keyboard.AutoSpaceSent := false
 		; SetTimer, ClearToolTipEngine, -1500
 		Critical Off 
+		this.coachAhead(false)
 	}	
 
 	JoinChord(key) {
@@ -390,6 +401,7 @@ class MappingEngine_Chorded
 			this.logEvent(4, "Chord " chord " not found. Allow input to complete in serial fashion")
 		}
 		Critical Off 
+		this.coachAhead(false)
 	}
 
 	ExpandInput(input_text, key, mods, ticks) {
@@ -673,6 +685,59 @@ class MappingEngine_Chorded
 		penAction := new PenEvent(qwerd.form, qwerd.qwerd, qwerd.word, ink)
 		this.penQueue.enqueue(penAction)
 		this.logEvent(4, "Enqueued pen action '" penAction.form "'")
+	}
+	
+	coachAhead(start) {
+		global engine
+		if (start) {
+			SetTimer, DoPresentCoachingAhead, -1000
+		} else {
+			SetTimer, DoPresentCoachingAhead, Off
+		}
+		return 
+
+		DoPresentCoachingAhead:
+		  engine.presentCoachingAhead()
+		return 
+	}
+	
+	presentCoachingAhead() {
+		this.logEvent(4, "Coaching ahead on " this.keyboard.token)
+		if (StrLen(this.keyboard.token) < 2) {
+			return
+		}
+		if (this.map.qwerds.item(this.keyboard.token).word) {
+			coachAheadWord := this.map.qwerds.item(this.keyboard.token).word
+		} else {
+			coachAheadWord := "--"
+		}
+		coachAheadQwerd := coachAheadWord
+		if (this.map.hints.item(this.keyboard.token).hint) {
+			coachAheadQwerd .= "`n< " this.keyboard.token " = " this.map.hints.item(this.keyboard.token).qwerd
+		} 
+		For letter_index, letter in this.keyboard.Letters
+		{
+			if (this.map.qwerds.item(this.keyboard.token letter).word) {
+				coachAheadQwerd .= "`n >> " this.keyboard.token letter " = " this.map.qwerds.item(this.keyboard.token  letter).word
+			} 
+		}
+			
+		; FlashTip shows the word then the qwerd. We want the opposite, so we'll lie to the coach event 
+		coaching := new CoachingEvent()
+		coaching.word := "> " this.keyboard.token
+		coaching.qwerd := coachAheadQwerd
+		coaching.chord := ""
+		coaching.chordable := "no"
+		coaching.chorded := ""
+		coaching.form := ""
+		coaching.saves := ""
+		coaching.power := 5
+		coaching.match := ""
+		coaching.cmatch := ""
+		coaching.miss := ""
+		coaching.other := ""
+		coaching.endKey := ""
+		this.flashTip(coaching)
 	}
 	
 	flashTip(coachEvent) {
