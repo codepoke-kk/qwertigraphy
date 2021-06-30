@@ -27,6 +27,16 @@ Gui, Add, Text, x12  y324 w444 h20 , Chord release milliseconds window (10 for n
 Gui, Add, Text, x12  y344 w160 h20 , Chord Window:
 Gui, Add, Edit, x172  y344 w40 h20 vSettingsChordWindow gSettingsChordWindow, % qenv.properties.ChordWindow
 
+Gui, Add, Text, x12  y404 w444 h20 , Coach-ahead delay milliseconds 
+Gui, Add, Text, x12  y424 w160 h20 , Coach ahead delay:
+Gui, Add, Edit, x172  y424 w40 h20 vSettingsCoachAheadWait gSettingsCoachAheadWait, % qenv.properties.CoachAheadWait
+Gui, Add, Text, x12  y444 w444 h20 , Coaching tip duration milliseconds 
+Gui, Add, Text, x12  y464 w160 h20 , Coach ahead duration:
+Gui, Add, Edit, x172  y464 w40 h20 vSettingsCoachAheadTipDuration gSettingsCoachAheadTipDuration, % qenv.properties.CoachAheadTipDuration
+Gui, Add, Text, x12  y484 w444 h20 , Coaching maximum number of vertical lines
+Gui, Add, Text, x12  y504 w160 h20 , Coaching max line count:
+Gui, Add, Edit, x172  y504 w40 h20 vSettingsCoachAheadLines gSettingsCoachAheadLines, % qenv.properties.CoachAheadLines
+
 SettingsLoggingLevelMap() {
 	global map
 	global qenv
@@ -110,6 +120,42 @@ SettingsChordWindow() {
 		engine.keyboard.ChordReleaseWindow := SettingsChordWindow
         engine.setKeyboardChordWindowIncrements()
 		qenv.properties.ChordWindow := SettingsChordWindow
+		qenv.saveProperties()
+	} else {
+		Msgbox, % "Could not understand " SettingsChordWindow
+	}
+}
+SettingsCoachAheadWait() {
+	global engine
+	global qenv
+	GuiControlGet SettingsCoachAheadWait
+	if (RegExMatch(SettingsCoachAheadWait, "^\d+$")) {
+		engine.keyboard.CoachAheadWait := SettingsCoachAheadWait
+		qenv.properties.CoachAheadWait := SettingsCoachAheadWait
+		qenv.saveProperties()
+	} else {
+		Msgbox, % "Could not understand " SettingsCoachAheadWait
+	}
+}
+SettingsCoachAheadTipDuration() {
+	global engine
+	global qenv
+	GuiControlGet SettingsCoachAheadTipDuration
+	if (RegExMatch(SettingsCoachAheadTipDuration, "^\d+$")) {
+		engine.keyboard.CoachAheadTipDuration := SettingsCoachAheadTipDuration
+		qenv.properties.CoachAheadTipDuration := SettingsCoachAheadTipDuration
+		qenv.saveProperties()
+	} else {
+		Msgbox, % "Could not understand " SettingsCoachAheadTipDuration
+	}
+}
+SettingsCoachAheadLines() {
+	global engine
+	global qenv
+	GuiControlGet SettingsCoachAheadLines
+	if (RegExMatch(SettingsCoachAheadLines, "^\d+$")) {
+		engine.keyboard.CoachAheadLines := SettingsCoachAheadLines
+		qenv.properties.CoachAheadLines := SettingsCoachAheadLines
 		qenv.saveProperties()
 	} else {
 		Msgbox, % "Could not understand " SettingsChordWindow

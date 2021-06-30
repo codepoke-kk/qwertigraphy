@@ -42,6 +42,9 @@ class MappingEngine_Chorded
 	keyboard.AutoPunctuationSent := false
 	keyboard.ChordReleaseWindow := 150
     keyboard.ChordReleaseWindows := []
+	keyboard.CoachAheadLines := 100
+	keyboard.CoachAheadTipDuration := 5000
+	keyboard.CoachAheadWait := 1000
 	
 	nullQwerd := new DictionaryEntry("null,,,,0,Could add,null_dictionary.csv")
 
@@ -49,6 +52,9 @@ class MappingEngine_Chorded
 	{
 		this.map := map
 		this.keyboard.ChordReleaseWindow := this.map.qenv.properties.ChordWindow
+		this.keyboard.CoachAheadLines := this.map.qenv.properties.CoachAheadLines
+		this.keyboard.CoachAheadTipDuration := this.map.qenv.properties.CoachAheadTipDuration
+		this.keyboard.CoachAheadWait := this.map.qenv.properties.CoachAheadWait
 		this.logVerbosity := this.map.qenv.properties.LoggingLevelEngine
 		
         this.setKeyboardChordWindowIncrements()
@@ -692,7 +698,7 @@ class MappingEngine_Chorded
 	coachAhead(start) {
 		global engine
 		if (start) {
-			SetTimer, DoPresentCoachingAhead, -1000
+			SetTimer, DoPresentCoachingAhead, % (-1 * this.keyboard.CoachAheadWait)
 		} else {
 			SetTimer, DoPresentCoachingAhead, Off
 		}
@@ -705,23 +711,33 @@ class MappingEngine_Chorded
 	
 	presentCoachingAhead() {
 		this.logEvent(4, "Coaching ahead on " this.keyboard.token)
-		if (StrLen(this.keyboard.token) < 2) {
+		if ((StrLen(this.keyboard.token) < 2) or (this.keyboard.CoachAheadLines < 1)) {
+			this.logEvent(4, "Bailing due to short token (" this.keyboard.token ") or no lines allowed (" this.keyboard.CoachAheadLines ")")
 			return
 		}
+		; Is this token a word 
 		if (this.map.qwerds.item(this.keyboard.token).word) {
 			coachAheadWord := this.map.qwerds.item(this.keyboard.token).word
 		} else {
 			coachAheadWord := "--"
 		}
+		; Track the height in lines of our flashable tip 
+		tip_line_count := 1
+		; Preload the qwerd with the word, to match existing format across multiple lines
 		coachAheadQwerd := coachAheadWord
 		if (this.map.hints.item(this.keyboard.token).hint) {
+			tip_line_count += 1
 			coachAheadQwerd .= "`n< " this.keyboard.token " = " this.map.hints.item(this.keyboard.token).qwerd
 		} 
 		For letter_index, letter in this.keyboard.Letters
 		{
-			if (this.map.qwerds.item(this.keyboard.token letter).word) {
-				coachAheadQwerd .= "`n >> " this.keyboard.token letter " = " this.map.qwerds.item(this.keyboard.token  letter).word
-			} 
+			; Only add a certain number of lines worth of tip data per config
+			if (tip_line_count < this.keyboard.CoachAheadLines) {
+				if (this.map.qwerds.item(this.keyboard.token letter).word) {
+					tip_line_count += 1
+					coachAheadQwerd .= "`n >> " this.keyboard.token letter " = " this.map.qwerds.item(this.keyboard.token  letter).word
+				}
+			}			
 		}
 			
 		; FlashTip shows the word then the qwerd. We want the opposite, so we'll lie to the coach event 
@@ -752,7 +768,7 @@ class MappingEngine_Chorded
 		} else {
 			Tooltip % coachEvent.word " = " coachEvent.qwerd, 0, 0 ; A_CaretX, A_CaretY + 30
 		}
-		SetTimer, ClearToolTipEngine, -5000
+		SetTimer, ClearToolTipEngine, % (-1 * this.keyboard.CoachAheadTipDuration)
 		return 
 
 		ClearToolTipEngine:

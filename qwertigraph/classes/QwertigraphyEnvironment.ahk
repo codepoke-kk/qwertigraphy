@@ -41,6 +41,41 @@ class QwertigraphyEnvironment
 			prop_fields := StrSplit(A_LoopReadLine, ",")
 			this.properties[prop_fields[1]] := prop_fields[2]
 		}
+		
+		this.injectMissingProperties()
+	}
+	
+	injectMissingProperties() {
+		if (not this.properties.ChordWindow) {
+			this.properties.ChordWindow := 300
+		}
+		if (not this.properties.CoachAheadLines) {
+			this.properties.CoachAheadLines := 100
+		}
+		if (not this.properties.CoachAheadTipDuration) {
+			this.properties.CoachAheadTipDuration := 5000
+		}
+		if (not this.properties.CoachAheadWait) {
+			this.properties.CoachAheadWait := 1000
+		}
+		if (not this.properties.LoggingLevelCoach) {
+			this.properties.LoggingLevelCoach := 1
+		}
+		if (not this.properties.LoggingLevelEditor) {
+			this.properties.LoggingLevelEditor := 1
+		}
+		if (not this.properties.LoggingLevelEngine) {
+			this.properties.LoggingLevelEngine := 1
+		}
+		if (not this.properties.LoggingLevelMap) {
+			this.properties.LoggingLevelMap := 1
+		}
+		if (not this.properties.LoggingLevelPad) {
+			this.properties.LoggingLevelPad := 1
+		}
+		if (not this.properties.PhraseEnthusiasm) {
+			this.properties.PhraseEnthusiasm := 200
+		}
 	}
 	
 	saveProperties() {
