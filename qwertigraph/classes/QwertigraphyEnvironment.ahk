@@ -1,11 +1,13 @@
 
 class QwertigraphyEnvironment
 {
-	personalizedFiles := {"templates\personal.template":"personal.csv", "templates\dictionary_load.template":"dictionary_load.list", "templates\negations.template":"negations.txt", "templates\retrains.template":"retrains.txt", "templates\personal_functions.template":"personal_functions.ahk"}
+	personalizedFiles := {"templates\personal.template":"personal.csv", "templates\dictionary_load.template":"dictionary_load.list", "templates\negations.template":"negations.txt", "templates\retrains.template":"retrains.txt", "templates\personal_functions.template":"personal_functions.ahk", "templates\qwertigraph.template":"qwertigraph.properties"}
 	personalDataFolder := A_AppData "\Qwertigraph"
 	dictionaryListFile := this.personalDataFolder "\dictionary_load.list"
 	negationsFile := this.personalDataFolder "\negations.txt"
 	retrainsFile := this.personalDataFolder "\retrains.txt"
+	propertiesFile := this.personalDataFolder "\qwertigraph.properties"
+	properties := {}
 	
 	logQueue := new Queue("QEnvQueue")
 	logVerbosity := 2
@@ -30,7 +32,31 @@ class QwertigraphyEnvironment
 			}
 		}
 		
+		; Read in the environment from properties
+		Loop,Read, % this.propertiesFile   
+		{
+			if (A_Index = 1) {
+				Continue 
+			}
+			prop_fields := StrSplit(A_LoopReadLine, ",")
+			this.properties[prop_fields[1]] := prop_fields[2]
+		}
 	}
+	
+	saveProperties() {
+		local
+		fileHandle := FileOpen(this.propertiesFile, "w")
+		header := "property,value`n"
+		fileHandle.Write(header)
+		
+		for property, value in this.properties {
+			propline := property "," value "`n"
+			fileHandle.Write(propline)
+		}
+		
+		fileHandle.Close()
+	}
+	
 	LogEvent(verbosity, message) 
 	{
 		if (verbosity <= this.logVerbosity) 

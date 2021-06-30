@@ -1,0 +1,8 @@
+property,value
+LoggingLevelMap,2
+LoggingLevelEngine,2
+LoggingLevelEditor,2
+LoggingLevelCoach,2
+LoggingLevelPad,2
+PhraseEnthusiasm,100
+ChordWindow,300

@@ -90,6 +90,8 @@ class CoachViewport
 	__New(map, speedViewer)
 	{
 		this.map := map
+		this.logVerbosity := this.map.qenv.properties.LoggingLevelCoach
+		this.phrasePowerThreshold := this.map.qenv.properties.PhraseEnthusiasm
 		this.speedViewer := speedViewer
 		
         this.timer := ObjBindMethod(this, "DequeueEvents")

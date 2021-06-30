@@ -13,6 +13,7 @@ oWB.Navigate(A_ScriptDir "\greggpad.html" )
 
 class PadViewport
 {
+	qenv := ""
 	penQueue := {}
 	interval := 1000
 	penEvents := []
@@ -57,8 +58,10 @@ class PadViewport
 
 
 	
-	__New(penQueue)
+	__New(qenv, penQueue)
 	{
+		this.qenv := qenv
+		this.logVerbosity := this.qenv.properties.LoggingLevelPad
 		this.penQueue := penQueue
 		
         this.timer := ObjBindMethod(this, "DequeueEvents")

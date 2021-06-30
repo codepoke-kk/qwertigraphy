@@ -25,6 +25,7 @@ class DictionaryMap
 	{
         local fields
 		this.qenv := qenv
+		this.logVerbosity := this.qenv.properties.LoggingLevelMap
 		
 		; Create the array of dictionary files to be loaded
 		this.logEvent(1, "Loading dictionaries list from " this.qenv.dictionaryListFile)
@@ -74,6 +75,7 @@ class DictionaryMap
 						this.upgradeDictionaryToV2(loadDictionary)
 						upgradeToV2Happened := true
 					} 
+					Continue 
 				}
 				
 				if (upgradeToV2Happened) {

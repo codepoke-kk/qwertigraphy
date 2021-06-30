@@ -258,6 +258,7 @@ class EditorViewport
 	{
 		this.map := map
 		this.qenv := this.map.qenv
+		this.logVerbosity := this.map.qenv.properties.LoggingLevelEditor
 		DictionaryDropDown := map.dictionaryPickList
 		
 	}

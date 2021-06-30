@@ -61,7 +61,7 @@ coach.addQueue(engine.coachQueue)
 
 editor := new EditorViewport(map)
 
-pad := new PadViewport(engine.penQueue)
+pad := new PadViewport(qenv, engine.penQueue)
 
 logViewer := new LogViewport()
 logViewer.addQueue(qenv.logQueue)

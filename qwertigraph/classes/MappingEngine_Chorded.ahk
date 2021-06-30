@@ -48,13 +48,15 @@ class MappingEngine_Chorded
 	__New(map)
 	{
 		this.map := map
-		;HelloWorld("loading")
-        
+		this.keyboard.ChordReleaseWindow := this.map.qenv.properties.ChordWindow
+		this.logVerbosity := this.map.qenv.properties.LoggingLevelEngine
+		
         this.setKeyboardChordWindowIncrements()
 	}
 		
 	Start() 
 	{
+		this.logEvent(1, "Property test: " this.map.qenv.properties.ChordWindow)
 		
         this.ResyncModifierKeys()
 		this.keyboard.Token := ""
