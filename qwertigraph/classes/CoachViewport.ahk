@@ -319,7 +319,7 @@ class CoachViewport
 		if (coachEvent.chordable = "active") {
 			Tooltip % coachEvent.word " = ** " coachEvent.qwerd " (" coachEvent.chord ") **", 0, 0 ; A_CaretX, A_CaretY + 30
 		} 
-		SetTimer, ClearToolTipCoaching_chord, -5000
+		SetTimer, ClearToolTipCoaching_chord, % (-1 * this.map.qenv.properties.CoachAheadTipDuration)
 		return 
 
 		ClearToolTipCoaching_chord:
