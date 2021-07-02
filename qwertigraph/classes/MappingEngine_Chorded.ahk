@@ -70,6 +70,7 @@ class MappingEngine_Chorded
 		this.logEvent(1, "Starting" )
 		this.ih := InputHook("EL0I1")
 		this.ih.KeyOpt("{All}", "NS")  ; End and Suppress
+		this.ih.KeyOpt("{CapsLock}", "V") 
 		this.ih.KeyOpt("{LShift}", "V") 
 		this.ih.KeyOpt("{RShift}", "V") 
 		this.ih.KeyOpt("{LControl}", "V") 
@@ -184,7 +185,7 @@ class MappingEngine_Chorded
 			case "Backspace":
 				sendKey := "{" key "}"
 				this.RemoveKeyFromToken()
-			case "LShift", "RShift", "LControl", "RControl", "LAlt", "RAlt", "LWin", "RWin":
+			case "LShift", "RShift", "LControl", "RControl", "LAlt", "RAlt", "LWin", "RWin", "CapsLock":
 				sendKey := ""
 			default:
 				sendKey := "{" key "}"
@@ -242,7 +243,7 @@ class MappingEngine_Chorded
 
 	AddToToken(key) {
 		; Accumulate this letter
-		if (GetKeyState("Shift", "P")) {
+		if ((GetKeyState("Shift", "P")) or (GetKeyState("CapsLock", "T"))) {
 			StringUpper key, key
 		} 
 		if (GetKeyState("Control", "P")) {
@@ -381,7 +382,7 @@ class MappingEngine_Chorded
 		Critical
 		; Send through a possible chord
 		chord := this.map.AlphaOrder(this.keyboard.Token)
-		if (GetKeyState("Shift", "P")) {
+		if ((GetKeyState("Shift", "P")) or (GetKeyState("CapsLock", "T"))) {
 			StringUpper, chord, chord
 		}
 		if (this.map.chords.item(chord).word) {
