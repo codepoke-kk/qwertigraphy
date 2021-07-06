@@ -10,7 +10,10 @@ of,o,o,,,24
 you're,u-r,ur,,ru,39
 being,b-\-h,bg,,bcg,41
 but,b,bu,u,bcu,50
+someday,s-m-d-a,smda,,adms,54
+they'd,th-e-d,heod,,deho,54
 they're,th-e-r,heor,,ehor,54
+they've,th-e-v,heov,,ehov,54
 wouldn't,d-n-t,dntooo,,dnt,54
 timed,tm-d,tmd,,mtvd,93
 timing,tm-\-h,tmg,,mtvg,93
@@ -335,11 +338,13 @@ wastefully,u-a-s2-t-f-e,uastfe,,aefstu,2311
 wastes,u-a-s2-t-s,uasts,,astu,2311
 wasting,u-a-s2-t-\-h,uastg,,agstu,2311
 realities,r-e-/-l-s,rels,,elrs,2364
+unreality,n-r-e-/-l,nrel,,elnr,2364
 limitations,l-e-m-sh-s,lemzs,,elmsz,2368
 agreeably,^-yab-e,yabe,,abey,2378
 suggestions,s2-u-j-s,sujs,,jsu,2382
 errored,e-r-r-d,errd,,erzd,2517
 erroring,e-r-r-\-h,errg,,erzg,2517
+agents,a-j-s,ajs,,ajs,2549
 issuance,e-sh-u-n-s,ezuns,,ensuz,2555
 issuer,e-sh-u-r,ezur,,euzr,2555
 issuers,e-sh-u-r-s,ezurs,,euzrs,2555
@@ -400,6 +405,9 @@ clerked,k-l-r-d,klrd,,dklr,3264
 picked,p-e-k-t,pekt,,ekpt,3272
 picking,p-e-k-\-h,pekg,,egkp,3272
 picks,p-e-k-s,peks,,ekps,3272
+realized,r-e-l-i-s-d,relisd,,eilrsd,3306
+realizes,r-e-l-i-s-s,reliss,,eilrss,3306
+realizing,r-e-l-i-s-\-h,relisg,,eilrsg,3306
 performances,pr-f-mn-s-s,prfmmss,,fmprs,3320
 detailing,td-a2-\-h,ddag,,adg,3339
 specification,s-p-e-s2-\-f,spesf,,efps,3371
@@ -622,6 +630,7 @@ kicking,k-e-k-\-h,kekg,,egk,7324
 kicks,k-e-k-s,keks,,eks,7324
 logic,l-o-j-k,lojk,,jklo,7324
 logical,l-o-j-/-k,lojko,o,jklo,7324
+agencies,a-j-s-e-s,ajses,,aejss,7542
 constance,k-s2-tn-s,kstnso,o,knost,7666
 constancy,k-s2-tn-s-e,kstnse,,eknst,7666
 proposition,pr-p-o-sh,prpoz,,oprz,7854
@@ -751,6 +760,10 @@ organizes,o-g-s,ogs,,gos,12648
 organizing,o-g-\-h,ogg,,cgo,12648
 unorganize,n-o-g,nogu,u,gnou,12648
 unorganized,n-o-g-d,nogd,,dgno,12648
+pharisee,f-a2-r-s-e,farse,,aefrs,12765
+pharisees,f-a2-r-s-e-s,farses,,aefrs,12765
+sadducee,s-a-d-s-e,sadse,,ades,12765
+sadducees,s-a-d-s-e-s,sadses,,adess,12765
 authoritatively,o-th-rdf-e,ohrdfe,,defhor,12938
 locomotives,l-o-k-m-o-df-s,lokmodfs,,dfklmos,13371
 symptom,s-e-m-tm,semtm,,emst,13544
@@ -763,6 +776,10 @@ workshop,r-k-sh-o-p,rkzop,,koprz,14772
 workshops,r-k-sh-o-p-s,rkzops,,koprsz,14772
 forthcoming,f-th-k-m-\-h,fhkmg,,fghkm,15126
 reservations,r-s-a-sh-s,rsazs,,arsz,15211
+overturn,^-o-\-t-e-n,oten,,enot,15426
+overturned,^-o-\-t-e-n-d,otend,,enotd,15426
+overturning,^-o-\-t-e-n-\-h,oteng,,enotg,15426
+overturns,^-o-\-t-e-n-s,otens,,enots,15426
 instructors,n-s-/-k-r-s,nskrs,,knrs,16231
 verification,v-e-r-\-f,verfo,o,eforv,16753
 verified,v-e-r-f-d,verfd,,defrv,16753
