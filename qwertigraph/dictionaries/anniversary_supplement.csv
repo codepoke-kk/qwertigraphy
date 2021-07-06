@@ -150,6 +150,10 @@ follower,f-o-r,foru,u,foru,696
 followers,f-o-r-s,fors,,fors,696
 following,f-o-\-h,fog,,fgo,696
 following up,f-o-p-\-h,fopg,,fgop,696
+windowed,u-e-nt-o-d,uentod,,enotud,721
+windowing,u-e-nt-o-\-h,uentog,,enotug,721
+windowless,u-e-nt-o-l-s,uentols,,elnostu,721
+windows,u-e-nt-o-s,uentos,,enotus,721
 outage,a-u-j,wj,,wj,730
 outages,a-u-j-s,wjs,,wjs,730
 config,k-f-e-g,kfeg,,efgk,735
@@ -174,6 +178,12 @@ figuring,f-e-g-r-\-h,fegrg,,efgr,735
 agreed,^-ya-d,yad,,ady,746
 agreeing,^-ya-\-h,yag,,agy,746
 agrees,^-ya-s,yas,,asy,746
+commanded,k-m-a-n-d,kmand,,akmnd,822
+commander,k-m-a-n-\-r,kmanr,,akmnr,822
+commanders,k-m-a-n-\-r-s,kmanrs,,akmnrs,822
+commanding,k-m-a-n-\-h,kmang,,akmng,822
+commando,k-m-a-n-o,kmano,,akmno,822
+commands,k-m-a-n-s,kmans,,akmns,822
 resultant,r-s2-u-nt,rsunt,,nrstu,837
 resulting,r-s2-u-\-h,rsug,,grsu,837
 dating,td-\-h,ddg,,duxg,884
@@ -331,6 +341,7 @@ anxiety,a-q-s-i,aqsi,,aiqs,2224
 anxieties,a-q-s-i-s,aqsis,,aiqs,2225
 changes,ch-s,cs,,cos,2261
 referenced,r-f-d,rfd,,dfr,2303
+references,r-f-s,rfs,,frvs,2303
 referencing,r-f-\-h,rfg,,fgr,2303
 wasted,u-a-s2-t-d,uastd,,adstu,2311
 wasteful,u-a-s2-t-f,uastf,,afstu,2311
@@ -577,6 +588,7 @@ disapproved,d-s-a-pr-v-d,dsaprvd,,adprsv,5852
 disapproves,d-s-a-pr-v-s,dsaprvs,,adprsv,5852
 disapproving,d-s-a-pr-v-\-h,dsaprvg,,adgprsv,5852
 removals,r-e-m-u-l-s,remuls,,elmrsu,5930
+preferences,pr-e-f-n-s-s,prefnss,,efnprss,5976
 consisting,k-ss-\-h,kssg,,kosg,6001
 functionaries,f-nk-r-e-s,fqres,,efqrs,6026
 functionary,f-nk-r-e,fqre,,efqr,6026
@@ -639,6 +651,8 @@ propositioning,pr-p-o-sh-\-h,prpozg,,goprz,7854
 propositions,pr-p-o-sh-s,prpozs,,oprsz,7854
 supposition,s-p-o-sh,spoz,,opsz,7854
 suppositions,s-p-o-sh-s,spozs,,opsz,7854
+invalidity,n-v-a-l-e-td-e,nvaledte,,adelnv,7867
+validity,v-a-l-e-td-e,valedte,,adeltv,7867
 ticketed,t-e-k-e-t-d,teketd,,dekt,7883
 ticketing,t-e-k-e-t-\-h,teketg,,egkt,7883
 delete,d-l-e-t,dlet,,delt,8274
@@ -722,6 +736,7 @@ persistently,pr-ss-\-nt-e,prssnte,,enprst,10535
 persistents,pr-ss-\-nt-s,prssnts,,nprst,10535
 persisting,pr-ss-\-h,prssg,,gprs,10535
 persists,pr-ss-s,prsss,,prs,10535
+commandments,k-m-a-n-m-s,kmanms,,akmns,10596
 outpost,a-u-p-o-s-t,wpost,,opstw,10999
 outposts,a-u-p-o-s-t-s,wposts,,opstw,10999
 output,a-u\--p,wp,,cpw,10999
@@ -743,6 +758,19 @@ profiler,pr-f-i-l-r,prfilr,,filpr,11816
 profilers,pr-f-i-l-r-s,prfilrs,,filprs,11816
 profiles,pr-f-i-l-s,prfils,,filprs,11816
 profiling,pr-f-i-l-\-h,prfilg,,fgilpr,11816
+invalid,n-v-a-l-e-d,nvaled,,adelnv,11895
+invalidate,n-v-a-l-e-d-d,nvaledd,,adelnv,11895
+invalidated,n-v-a-l-e-d-d-d,nvaleddd,,adelnvd,11895
+invalidates,n-v-a-l-e-d-d-s,nvaledds,,adelnvs,11895
+invalidating,n-v-a-l-e-d-d-\-h,nvaleddg,,adelnvg,11895
+invalids,n-v-a-l-e-d-s,nvaleds,,adelnvs,11895
+valid,v-a-l-e-d,valed,,adelv,11895
+validate,v-a-l-e-d-d,valedd,,adelvd,11895
+validated,v-a-l-e-d-d-d,valeddd,,adelvdd,11895
+validates,v-a-l-e-d-d-s,valedds,,adelvds,11895
+validating,v-a-l-e-d-d-\-h,valeddg,,adelvdg,11895
+validation,v-a-l-e-d-sh,valedz,,adelvz,11895
+validations,v-a-l-e-d-sh-s,valedzs,,adelvzs,11895
 automatically,o-tm-/-a-e,otmae,,aemot,12143
 click,k-l-e-k,klek,,ekl,12573
 clicked,k-l-e-k-t,klekt,,eklt,12573
@@ -943,6 +971,7 @@ deterrent,d-/-nt,dnto,o,dnot,53715
 certification,s2-e-df-sh,sedfz,,defsz,59944
 certifications,s2-e-df-sh-s,sedfzs,,defsz,59944
 singles,s2-e-ng-s,segs,,egs,65996
+commandeered,k-m-a-n-/-e-r-d,kmanerd,,aekmnrd,70319
 condition,k-d-sh,kdz,,dkz,70330
 conditional,k-d-sh-l,kdzl,,dklz,70330
 conditionally,k-d-sh-ye,kdzy,,dkyz,70330
