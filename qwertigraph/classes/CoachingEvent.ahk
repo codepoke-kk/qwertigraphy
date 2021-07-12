@@ -6,6 +6,7 @@ class CoachingEvent
 	chordable := false
 	chorded := false
 	form := ""
+	note := ""
 	saves := 0
 	power := 0
 	match := 0

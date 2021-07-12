@@ -722,31 +722,33 @@ class MappingEngine_Chorded
 		} else {
 			coachAheadWord := "--"
 		}
+		this.logEvent(4, "Coachahead word is " coachAheadWord)
 		; Track the height in lines of our flashable tip 
 		tip_line_count := 1
 		; Preload the qwerd with the word, to match existing format across multiple lines
-		coachAheadQwerd := coachAheadWord
+		coachAheadNote := ""
 		if (this.map.hints.item(this.keyboard.token).hint) {
 			tip_line_count += 1
-			unreliable := (InStr(this.map.hints.item(this.keyboard.token).dictionary, "cmu")) ? "?" : "" 
-			coachAheadQwerd .= "`n< " this.keyboard.token " " unreliable "= " this.map.hints.item(this.keyboard.token).qwerd
-		} 
+			coachAheadNote .= "`n< " this.keyboard.token " " this.map.hints.item(this.keyboard.token).reliability "= " this.map.hints.item(this.keyboard.token).qwerd
+		}
+		this.logEvent(4, "Coachahead note starts as " coachAheadNote)
 		For letter_index, letter in this.keyboard.Letters
 		{
 			; Only add a certain number of lines worth of tip data per config
 			if (tip_line_count < this.keyboard.CoachAheadLines) {
 				if (this.map.qwerds.item(this.keyboard.token letter).word) {
 					tip_line_count += 1
-					unreliable := (InStr(this.map.qwerds.item(this.keyboard.token letter).dictionary, "cmu")) ? "?" : "" 
-					coachAheadQwerd .= "`n >> " this.keyboard.token letter " " unreliable "= " this.map.qwerds.item(this.keyboard.token  letter).word
+					coachAheadNote .= "`n >> " this.map.qwerds.item(this.keyboard.token  letter).word " " this.map.qwerds.item(this.keyboard.token letter).reliability "= " this.keyboard.token letter
 				}
 			}			
 		}
+		this.logEvent(4, "Coachahead note ends as " coachAheadNote)
 			
 		; FlashTip shows the word then the qwerd. We want the opposite, so we'll lie to the coach event 
 		coaching := new CoachingEvent()
-		coaching.word := "> " this.keyboard.token
-		coaching.qwerd := coachAheadQwerd
+		coaching.word := coachAheadWord
+		coaching.qwerd := this.keyboard.token
+		coaching.note := coachAheadNote
 		coaching.chord := ""
 		coaching.chordable := "no"
 		coaching.chorded := ""
@@ -766,12 +768,11 @@ class MappingEngine_Chorded
 			return
 		}
 		CoordMode, ToolTip, Relative
-		unreliable := (InStr(this.map.qwerds.item(coachEvent.qwerd).dictionary, "cmu")) ? "?" : "" 
-		;MsgBox, % "flashing engine " coachEvent.qwerd " as " this.map.qwerds.item(coachEvent.qwerd).dictionary " and got " unreliable
+		; MsgBox, % "flashing engine " coachEvent.qwerd " as " this.map.qwerds.item(coachEvent.qwerd).dictionary " and got " this.map.qwerds.item(coachEvent.qwerd).reliability
 		if (coachEvent.chordable = "active") {
-			Tooltip % coachEvent.word " " unreliable "= " coachEvent.qwerd " (" coachEvent.chord ")", 0, 0 ; A_CaretX, A_CaretY + 30
+			Tooltip % coachEvent.word " " this.map.qwerds.item(coachEvent.qwerd).reliability "= " coachEvent.qwerd " (" coachEvent.chord ")" coachEvent.note, 0, 0 ; A_CaretX, A_CaretY + 30
 		} else {
-			Tooltip % coachEvent.word " " unreliable "= " coachEvent.qwerd, 0, 0 ; A_CaretX, A_CaretY + 30
+			Tooltip % coachEvent.word " " this.map.qwerds.item(coachEvent.qwerd).reliability "= " coachEvent.qwerd coachEvent.note, 0, 0 ; A_CaretX, A_CaretY + 30
 		}
 		SetTimer, ClearToolTipEngine, % (-1 * this.keyboard.CoachAheadTipDuration)
 		return 

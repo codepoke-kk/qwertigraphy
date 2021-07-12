@@ -301,12 +301,11 @@ class CoachViewport
 			return
 		}
 		CoordMode, ToolTip, Relative
-		unreliable := (InStr(this.map.qwerds.item(coachEvent.qwerd).dictionary, "cmu")) ? "?" : "" 
 		;MsgBox, % "flashing " coachEvent.qwerd " as " this.map.qwerds.item(coachEvent.qwerd).dictionary " and got " unreliable
 		if (coachEvent.chordable = "active") {
-			Tooltip % coachEvent.word " " unreliable "= " coachEvent.qwerd " (" coachEvent.chord ")", 0, 0 ; A_CaretX, A_CaretY + 30
+			Tooltip % coachEvent.word " " this.map.qwerds.item(coachEvent.qwerd).reliability "= " coachEvent.qwerd " (" coachEvent.chord ")", 0, 0 ; A_CaretX, A_CaretY + 30
 		} else {
-			Tooltip % coachEvent.word " " unreliable "= " coachEvent.qwerd, 0, 0 ;, A_CaretX, A_CaretY + 30
+			Tooltip % coachEvent.word " " this.map.qwerds.item(coachEvent.qwerd).reliability "= " coachEvent.qwerd, 0, 0 ;, A_CaretX, A_CaretY + 30
 		}
 		SetTimer, ClearToolTipCoaching, -5000
 		return 
@@ -318,10 +317,9 @@ class CoachViewport
 	
 	flashTip_chord(coachEvent) {
 		CoordMode, ToolTip, Relative
-		unreliable := (InStr(this.map.qwerds.item(coachEvent.qwerd).dictionary, "cmu")) ? "?" : "" 
 		;MsgBox, % "flashing chord " coachEvent.qwerd " as " this.map.qwerds.item(coachEvent.qwerd).dictionary " and got " unreliable
 		if (coachEvent.chordable = "active") {
-			Tooltip % coachEvent.word " " unreliable "= ** " coachEvent.qwerd " (" coachEvent.chord ") **", 0, 0 ; A_CaretX, A_CaretY + 30
+			Tooltip % coachEvent.word " " this.map.qwerds.item(coachEvent.qwerd).reliability "= ** " coachEvent.qwerd " (" coachEvent.chord ") **", 0, 0 ; A_CaretX, A_CaretY + 30
 		} 
 		SetTimer, ClearToolTipCoaching_chord, % (-1 * this.map.qenv.properties.CoachAheadTipDuration)
 		return 
