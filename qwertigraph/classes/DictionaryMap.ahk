@@ -140,7 +140,6 @@ class DictionaryMap
 		newEntrylower := new DictionaryEntry(wordlower "," newEntry.form "," qwerdlower "," newEntry.keyer "," newEntry.chord "," newEntry.usage "," newEntry.dictionary)
         newEntrylower.chordable := chordability
 		this.qwerds.item(newEntry.qwerd) := newEntrylower
-		this.hints.item(newEntry.word) := newEntrylower
 		
 		; Force upper entries to upper
 		StringUpper, qwerdUPPER, % newEntry.qwerd
@@ -148,7 +147,6 @@ class DictionaryMap
 		newEntryUPPER := new DictionaryEntry(wordUPPER "," newEntry.form "," qwerdUPPER "," newEntry.keyer "," newEntry.chord "," newEntry.usage "," newEntry.dictionary)
         newEntryUPPER.chordable := chordability
 		this.qwerds.item(qwerdUPPER) := newEntryUPPER
-		this.hints.item(wordUPPER) := newEntryUPPER
 		
 		; Allow single-capped entries to use full proper casing all the way through as given 
 		qwerdCapped := SubStr(qwerdUPPER, 1, 1) . SubStr(newEntry.qwerd, 2, (StrLen(newEntry.qwerd) - 1))
@@ -156,7 +154,18 @@ class DictionaryMap
 		newEntryCapped := new DictionaryEntry(wordCapped "," newEntry.form "," qwerdCapped "," newEntry.keyer "," newEntry.chord "," newEntry.usage "," newEntry.dictionary)
         newEntryCapped.chordable := chordability
 		this.qwerds.item(qwerdCapped) := newEntryCapped
-		this.hints.item(wordCapped) := newEntryCapped
+		
+		; With multiple qwerds possible for a word, we have to pick the right one to hint. 
+		if (not this.hints.item(newEntry.word).word) {
+			this.hints.item(newEntry.word) := newEntrylower
+			this.hints.item(wordUPPER) := newEntryUPPER
+			this.hints.item(wordCapped) := newEntryCapped
+		} else if (this.hints.item(newEntry.word).qwerd == newEntry.qwerd) {
+			; if the current hint is for this form, then update the current entry 
+			this.hints.item(newEntry.word) := newEntrylower
+			this.hints.item(wordUPPER) := newEntryUPPER
+			this.hints.item(wordCapped) := newEntryCapped
+		}
 		
         if (chordability == "active") {
             this.logEvent(4, "Adding chord " newEntry.chord " as " newEntry.word) 

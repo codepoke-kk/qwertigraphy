@@ -728,7 +728,8 @@ class MappingEngine_Chorded
 		coachAheadQwerd := coachAheadWord
 		if (this.map.hints.item(this.keyboard.token).hint) {
 			tip_line_count += 1
-			coachAheadQwerd .= "`n< " this.keyboard.token " = " this.map.hints.item(this.keyboard.token).qwerd
+			unreliable := (InStr(this.map.hints.item(this.keyboard.token).dictionary, "cmu")) ? "?" : "" 
+			coachAheadQwerd .= "`n< " this.keyboard.token " " unreliable "= " this.map.hints.item(this.keyboard.token).qwerd
 		} 
 		For letter_index, letter in this.keyboard.Letters
 		{
@@ -736,7 +737,8 @@ class MappingEngine_Chorded
 			if (tip_line_count < this.keyboard.CoachAheadLines) {
 				if (this.map.qwerds.item(this.keyboard.token letter).word) {
 					tip_line_count += 1
-					coachAheadQwerd .= "`n >> " this.keyboard.token letter " = " this.map.qwerds.item(this.keyboard.token  letter).word
+					unreliable := (InStr(this.map.qwerds.item(this.keyboard.token letter).dictionary, "cmu")) ? "?" : "" 
+					coachAheadQwerd .= "`n >> " this.keyboard.token letter " " unreliable "= " this.map.qwerds.item(this.keyboard.token  letter).word
 				}
 			}			
 		}
@@ -764,10 +766,12 @@ class MappingEngine_Chorded
 			return
 		}
 		CoordMode, ToolTip, Relative
+		unreliable := (InStr(this.map.qwerds.item(coachEvent.qwerd).dictionary, "cmu")) ? "?" : "" 
+		;MsgBox, % "flashing engine " coachEvent.qwerd " as " this.map.qwerds.item(coachEvent.qwerd).dictionary " and got " unreliable
 		if (coachEvent.chordable = "active") {
-			Tooltip % coachEvent.word " = " coachEvent.qwerd " (" coachEvent.chord ")", 0, 0 ; A_CaretX, A_CaretY + 30
+			Tooltip % coachEvent.word " " unreliable "= " coachEvent.qwerd " (" coachEvent.chord ")", 0, 0 ; A_CaretX, A_CaretY + 30
 		} else {
-			Tooltip % coachEvent.word " = " coachEvent.qwerd, 0, 0 ; A_CaretX, A_CaretY + 30
+			Tooltip % coachEvent.word " " unreliable "= " coachEvent.qwerd, 0, 0 ; A_CaretX, A_CaretY + 30
 		}
 		SetTimer, ClearToolTipEngine, % (-1 * this.keyboard.CoachAheadTipDuration)
 		return 
