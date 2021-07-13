@@ -13,7 +13,9 @@ class DictionaryEntry
 		this.chord := fields[5]
 		this.usage := fields[6]
 		this.dictionary := fields[7]
-		this.reliability := (InStr(this.dictionary, "cmu")) ? "?" : "" 
+		this.reliability := (InStr(this.dictionary, "personal")) ? "^" : "" 
+		this.reliability .= ((InStr(this.dictionary, "core")) or ((InStr(this.dictionary, "supplement")))) ? "+" : "" 
+		this.reliability .= (InStr(this.dictionary, "cmu")) ? "?" : "" 
 		this.hint := "-v1-"
 		this.chordable := "Initializing"
 		this.saves := StrLen(this.word) - StrLen(this.qwerd)
