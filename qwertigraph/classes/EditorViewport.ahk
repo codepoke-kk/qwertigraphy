@@ -173,6 +173,7 @@ EditorCreateRow_S() {
     editor.logEvent(3, "Listview context edit event adding S on row " FocusedRowNumber)
     editor.prepareEdit(FocusedRowNumber)
     editor.addValueToEditFields("s", "-s", "s", "s")
+    editor.autoChord()
 	editor.commitEdit()
 	editor.SearchMapEntries()
 }
@@ -187,6 +188,7 @@ EditorCreateRow_G() {
     editor.logEvent(3, "Listview context edit event adding G on row " FocusedRowNumber)
     editor.prepareEdit(FocusedRowNumber)
     editor.addValueToEditFields("ing", "-\-h", "g", "g")
+    editor.autoChord()
 	editor.commitEdit()
 	editor.SearchMapEntries()
 }
@@ -201,6 +203,7 @@ EditorCreateRow_D() {
     editor.logEvent(3, "Listview context edit event adding D on row " FocusedRowNumber)
     editor.prepareEdit(FocusedRowNumber)
     editor.addValueToEditFields("ed", "-d", "d", "d")
+    editor.autoChord()
 	editor.commitEdit()
 	editor.SearchMapEntries()
 }
@@ -215,6 +218,7 @@ EditorCreateRow_T() {
     editor.logEvent(3, "Listview context edit event adding T on row " FocusedRowNumber)
     editor.prepareEdit(FocusedRowNumber)
     editor.addValueToEditFields("ed", "-t", "t", "t")
+    editor.autoChord()
 	editor.commitEdit()
 	editor.SearchMapEntries()
 }
@@ -229,6 +233,7 @@ EditorCreateRow_R() {
     editor.logEvent(3, "Listview context edit event adding R on row " FocusedRowNumber)
     editor.prepareEdit(FocusedRowNumber)
     editor.addValueToEditFields("er", "-r", "r", "r")
+    editor.autoChord()
 	editor.commitEdit()
 	editor.SearchMapEntries()
 }
@@ -243,6 +248,7 @@ EditorCreateRow_LY() {
     editor.logEvent(3, "Listview context edit event adding LY on row " FocusedRowNumber)
     editor.prepareEdit(FocusedRowNumber)
     editor.addValueToEditFields("ly", "-e", "e", "e")
+    editor.autoChord()
 	editor.commitEdit()
 	editor.SearchMapEntries()
 }
@@ -399,12 +405,17 @@ class EditorViewport
 		if (RegexMatch(word, "qu")) {
 			qwerd := RegexReplace(qwerd, "k", "q")
 		}
+		qwerd := RegexReplace(qwerd, "th", "h")
+		qwerd := RegexReplace(qwerd, "ch", "c")
+		qwerd := RegexReplace(qwerd, "sh", "z")
 
 		; Prefixes
 		qwerd := RegexReplace(qwerd, "pr(e|o)", "pr")
 		qwerd := RegexReplace(qwerd, "per", "pr")
 		
 		qwerd := RegexReplace(qwerd, "-", "")
+		qwerd := RegexReplace(qwerd, "\d", "")
+		qwerd := RegexReplace(qwerd, "\W", "")
 		
 		GuiControl, Text, EditQwerd, %qwerd%
 
