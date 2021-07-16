@@ -492,7 +492,6 @@ clear,k-l-e,kle,,ekl,559
 late,l-a-t,lat,,alt,560
 american,a-m-n,amn,,amn,561
 bed,b-d,bd,,bcd,563
-laid,l-a-d,lado,o,adlo,564
 cold,k-o-ld,kold,,dklo,565
 bad,b-d,bdo,o,bdo,566
 sound,s2-nt,snt,,nst,567
@@ -1409,7 +1408,6 @@ bodies,b-o-s,bos,,bos,1806
 applied,a-pl-i-d,aplid,,adilp,1808
 soil,s2-o-e-l,syl,,lsy,1809
 gain,g-a-n,gan,,agn,1811
-stated,s2-t-/-t,stt,,stz,1812
 cover,k-v,kv,,ckv,1814
 couple,k-u-pl,kupl,,klpu,1817
 inside,n-s-i,nsi,,ins,1818
@@ -2071,7 +2069,6 @@ sailed,s-a-ld,sald,,adls,2955
 fever,f-e-v-r,fevr,,efrv,2958
 announcement,a-n-n-s2-m,annsm,,amns,2959
 problem,pr-bl,prbl,,blpr,2960
-parted,p-t-/-t,ptt,,ptv,2961
 tent,tn-t,tnt,,ntz,2964
 signed,s2-i-nt,sint,,inst,2968
 cent,s2-e-nt,sentu,u,enstu,2969
@@ -3864,7 +3861,6 @@ mutton,m-u-tn,mutn,,mntu,9071
 degradation,d-e-g-r-a-d-sh,degradz,,adegrz,9078
 tool,t-u-l,tul,,ltu,9084
 operate,o-pr-a,oprao,o,aopr,9085
-substituted,s-s2-t-/-t,sstt,,stz,9089
 mills,m-e-l-s,melso,o,elmos,9092
 via,v-ia,viao,o,aiov,9095
 hardest,^-h-\-a2-d-e-s,hadeso,o,adehos,9100
@@ -8264,7 +8260,6 @@ prompt attention,p-tn,ptn,,npt,71517
 puerto rico,p-<-r,prk1,k1,1kpr,71518
 pundit,p-n-td,pndd,,dnp,71519
 purchasing agent,pr-ch-/-a,prca,,acpr,71520
-purchasing department,pr-ch-/-d,prcd,,cdpr,71521
 purchasing power,pr-ch-/-p,prcp,,cpr,71522
 question of fact,k-sh-/-f,qzf,,fqz,71523
 question of time,k-sh-tm,qztm,,mqtz,71524
@@ -8322,7 +8317,7 @@ senior senator from x,s-s2-n-/-X,ssnx,,nsx,71576
 set up,s2-e-t-p,setp,,epst,71577
 several years ago,s2-e-v-r-g,sevrg,,egrsv,71578
 -ship,/-sh,zw,w,mwz,71579
-shipping department,sh-/-d,zdo,o,doz,71580
+shipping department,sh-/-d,zdu,u,duz,71580
 should be,sh-d-b,zdb,,bdz,71581
 should be able,sh-d-b-a,zdba,,abdz,71582
 should be done,sh-d-b-tn,zdbtn,,bdntz,71583

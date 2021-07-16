@@ -13,6 +13,7 @@ class DictionaryMap
 	backupCount := 2
 	retrains := {}
 	negations := ComObjCreate("Scripting.Dictionary")
+	negationsChords := ComObjCreate("Scripting.Dictionary")
 	qwerds := ComObjCreate("Scripting.Dictionary")
 	chords := ComObjCreate("Scripting.Dictionary")
 	hints := ComObjCreate("Scripting.Dictionary")
@@ -50,6 +51,13 @@ class DictionaryMap
 		{
 			this.logEvent(4, "Loading negation " A_LoopReadLine)
 			this.negations.item(A_LoopReadLine) := 1
+		}
+		; Read in the negations for chords (case insensitive chords to never load) 
+		this.logEvent(2, "Loading negations for chords from " this.qenv.negationsChordsFile)
+		Loop,Read, % this.qenv.negationsChordsFile   ;read negations
+		{
+			this.logEvent(4, "Loading negation chord " A_LoopReadLine)
+			this.negationsChords.item(A_LoopReadLine) := 1
 		}
 		; Read in the retrains (words to flag when used, usually to break a bad habit) 
 		this.logEvent(2, "Loading retrains from " this.qenv.retrainsFile)
@@ -168,15 +176,19 @@ class DictionaryMap
 		}
 		
         if (chordability == "active") {
-            this.logEvent(4, "Adding chord " newEntry.chord " as " newEntry.word) 
-            this.chords.item(newEntry.chord) := newEntry
-            
-            StringUpper, chordUPPER, % newEntry.chord
-            newChordEntryCapped := new DictionaryEntry(wordCapped "," newEntry.form "," chordUPPER "," newEntry.keyer "," newEntry.chord "," newEntry.usage "," newEntry.dictionary)
-            newChordEntryCapped.chord := chordUPPER
-            newChordEntryCapped.chordable := "active"
-            this.chords.item(newChordEntryCapped.chord) := newChordEntryCapped
-            this.logEvent(4, "Added chord " newChordEntryCapped.chord " as " newChordEntryCapped.word)
+			if (not this.negationsChords.item(newEntry.chord)) {
+				this.logEvent(3, "Adding chord " newEntry.chord " as " newEntry.word) 
+				this.chords.item(newEntry.chord) := newEntry
+				
+				StringUpper, chordUPPER, % newEntry.chord
+				newChordEntryCapped := new DictionaryEntry(wordCapped "," newEntry.form "," chordUPPER "," newEntry.keyer "," newEntry.chord "," newEntry.usage "," newEntry.dictionary)
+				newChordEntryCapped.chord := chordUPPER
+				newChordEntryCapped.chordable := "active"
+				this.chords.item(newChordEntryCapped.chord) := newChordEntryCapped
+				this.logEvent(4, "Added chord " newChordEntryCapped.chord " as " newChordEntryCapped.word)
+			} else {
+				this.logEvent(1, "Declining to add chord " newEntry.chord " as " newEntry.word " due to prevention in negations_chords.txt") 
+			}
         }
         
         this.logEvent(4, "Marked qwerd " newEntry.qwerd "'s chord " newEntry.chord " as " newEntry.chordable) 
