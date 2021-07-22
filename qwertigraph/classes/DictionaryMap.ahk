@@ -108,9 +108,6 @@ class DictionaryMap
 					this.longestQwerd := StrLen(newEntry.qwerd)
 				}
 				
-				; Give the new entry a chord
-				;newEntry.chord := this.AlphaOrder(newEntry.qwerd)
-				
 				this.propagateEntryToMaps(newEntry)
 
 			}
@@ -125,6 +122,7 @@ class DictionaryMap
 	}
 	
 	propagateEntryToMaps(newEntry) {
+		this.logEvent(4, "Propagating " newEntry.qwerd " as " newEntry.word "," newEntry.chord "," newEntry.usage "," newEntry.hint)
         ; Evaluate chordability first
 		; Limit chord acceptance by length, by frequency of usage, and to only appear once 
 		if (StrLen(newEntry.chord) >= this.minimumChordLength) {
@@ -147,7 +145,7 @@ class DictionaryMap
 		StringLower, wordlower, % newEntry.word
 		newEntrylower := new DictionaryEntry(wordlower "," newEntry.form "," qwerdlower "," newEntry.keyer "," newEntry.chord "," newEntry.usage "," newEntry.dictionary)
         newEntrylower.chordable := chordability
-		this.qwerds.item(newEntry.qwerd) := newEntrylower
+		this.qwerds.item(qwerdlower) := newEntrylower
 		
 		; Force upper entries to upper
 		StringUpper, qwerdUPPER, % newEntry.qwerd
@@ -165,29 +163,29 @@ class DictionaryMap
 		
 		; With multiple qwerds possible for a word, we have to pick the right one to hint. 
 		if (not this.hints.item(newEntry.word).word) {
-			this.hints.item(newEntry.word) := newEntrylower
+			this.hints.item(wordlower) := newEntrylower
 			this.hints.item(wordUPPER) := newEntryUPPER
 			this.hints.item(wordCapped) := newEntryCapped
 		} else if (this.hints.item(newEntry.word).qwerd == newEntry.qwerd) {
 			; if the current hint is for this form, then update the current entry 
-			this.hints.item(newEntry.word) := newEntrylower
+			this.hints.item(wordlower) := newEntrylower
 			this.hints.item(wordUPPER) := newEntryUPPER
 			this.hints.item(wordCapped) := newEntryCapped
 		}
 		
         if (chordability == "active") {
-			if (not this.negationsChords.item(newEntry.chord)) {
-				this.logEvent(3, "Adding chord " newEntry.chord " as " newEntry.word) 
-				this.chords.item(newEntry.chord) := newEntry
+			if (not this.negationsChords.item(newEntrylower.chord)) {
+				this.logEvent(3, "Adding chord " newEntrylower.chord " as " newEntrylower.word) 
+				this.chords.item(newEntry.chord) := newEntrylower
 				
-				StringUpper, chordUPPER, % newEntry.chord
-				newChordEntryCapped := new DictionaryEntry(wordCapped "," newEntry.form "," chordUPPER "," newEntry.keyer "," newEntry.chord "," newEntry.usage "," newEntry.dictionary)
+				StringUpper, chordUPPER, % newEntrylower.chord
+				newChordEntryCapped := new DictionaryEntry(wordCapped "," newEntrylower.form "," chordUPPER "," newEntrylower.keyer "," newEntrylower.chord "," newEntrylower.usage "," newEntrylower.dictionary)
 				newChordEntryCapped.chord := chordUPPER
 				newChordEntryCapped.chordable := "active"
 				this.chords.item(newChordEntryCapped.chord) := newChordEntryCapped
 				this.logEvent(4, "Added chord " newChordEntryCapped.chord " as " newChordEntryCapped.word)
 			} else {
-				this.logEvent(1, "Declining to add chord " newEntry.chord " as " newEntry.word " due to prevention in negations_chords.txt") 
+				this.logEvent(1, "Declining to add chord " newEntrylower.chord " as " newEntrylower.word " due to prevention in negations_chords.txt") 
 			}
         }
         
@@ -279,16 +277,16 @@ class DictionaryMap
 			}
 		}
 		
-		; Create a new array with sortable, lowercase-only qwerds by prepending the usage number 
+		; Create a new array with sortable, proper cased qwerds by prepending the usage number 
 		sortableForms := {}
 		sortedCount := 0
 		for word, garbage in this.qwerds {
 			qwerd := this.qwerds.item(word)
-			if (not qwerd.isLower) {
-				this.logEvent(4, "Skipping qwerd for not being lowercase " qwerd.qwerd)
+			if (not qwerd.isProper) {
+				this.logEvent(4, "Skipping qwerd for not being propercase " qwerd.qwerd)
 				continue
 			} else {
-				this.logEvent(4, "Keeping qwerd for being lowercase " qwerd.qwerd)
+				this.logEvent(4, "Keeping qwerd for being propercase " qwerd.qwerd)
 			}
 			sortedCount += 1
 			sortableKey :=  SubStr("0000000", StrLen(qwerd.usage)) qwerd.usage "_" qwerd.word
@@ -301,11 +299,11 @@ class DictionaryMap
 		; Keep words that were in a dictionary, but displaced by words in a higher priority dictionary
 		for word, garbage in this.displaceds {
 			qwerd := this.displaceds.item(word)
-			if (not qwerd.isLower) {
-				this.logEvent(4, "Skipping qwerd for not being lowercase " qwerd.qwerd)
+			if (not qwerd.isProper) {
+				this.logEvent(4, "Skipping qwerd for not being propercase " qwerd.qwerd)
 				continue
 			} else {
-				this.logEvent(4, "Keeping qwerd for being lowercase " qwerd.qwerd)
+				this.logEvent(4, "Keeping qwerd for being propercase " qwerd.qwerd)
 			}
 			sortedCount += 1
 			sortableKey :=  SubStr("0000000", StrLen(qwerd.usage)) qwerd.usage "_" qwerd.word

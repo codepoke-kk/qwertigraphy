@@ -23,6 +23,13 @@ class DictionaryEntry
 		this.isPhrase := InStr(this.word, " ") > 0
 		StringLower, loweredQwerd, % this.qwerd
 		this.isLower := (loweredQwerd == this.qwerd)
+		StringUpper, upperedQwerd, % this.qwerd
+		StringUpper, upperedWord, % this.word
+		this.isUpper := (upperedQwerd == this.qwerd)
+		this.isCapped := ((SubStr(upperedWord,1,1)) == (SubStr(this.word,1,1)))
+		this.isProper := (((not this.isUpper) and (not this.isLower)) 
+			or (this.isUpper and ((StrLen(this.word) == 1))) 
+			or (this.isCapped and (StrLen(this.qwerd) == 1)))
     }
 	
 	generateHint() {
