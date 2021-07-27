@@ -110,6 +110,7 @@ Men,mn,Mm,,cmz,118
 Own,o-n,Onu,u,nou,119
 Shall,sh,Z,,cvz,120
 Came,k-a-m,Kam,,akm,121
+Product,pr-o-d-u-k,Produk,,dkopru,122
 Project,pr-j-k,Prjk,,jkpr,122
 Without,e-th-t,Eht,,eht,123
 Come,k-m,Km,,kmv,124
@@ -2703,7 +2704,6 @@ Lend,l-e-nt,Lenti,i,eilnt,4383
 Undertake,u-/-t-a-k,Utak,,aktu,4384
 Taxes,t-a-xs,Taxs,,astx,4386
 Retire,r-e-t-i2,Reti,,eirt,4389
-Program,pr-/-g,Prgo,o,gopr,4391
 Limit,l-e-m-e-t,Lemet,,elmt,4396
 Mate,m-a-t,Matu,u,amtu,4397
 Procure,pr-o-k-r,Prokr,,kopr,4399
@@ -3704,7 +3704,6 @@ Passenger,p-a-j,Pajo,o,ajop,8250
 Detect,td-e-k,Ddek,,dek,8275
 Differently,df-e,Dfe,,def,8278
 Shoe,sh-u,Zuu,u,buz,8286
-Productive,pr-o-k-v,Prokv,,koprv,8288
 Confine,k-f-i-n,Kfin,,fikn,8296
 Confer,k-f-e-r,Kfero,o,efkor,8298
 Rub,r-u-b,Rubo,o,boru,8325
@@ -5535,7 +5534,8 @@ Shortage,sh-/-j,Zj,,cjz,27735
 Grasshopper,g-r-a-s2-o-pr,Grasopr,,agoprs,27743
 Dividend,df-tn,Dftno,o,dfnot,27764
 Orchard,o-ch-e2-d,Oced,,cdeo,27768
-Progressive,pr-g-v,Prgv,,gprv,27772
+Progress,pr-g,Prg,,gpr,27772
+Progression,pr-g-sh,Prgz,,gprz,27772
 Jeopardy,j-e-p-a2-d-e,Jepade,,adejp,27776
 Jockey,j-o-k-e,Jokeo,o,ejko,27777
 Buxom,b-u-x-m,Buxm,,bmux,27797

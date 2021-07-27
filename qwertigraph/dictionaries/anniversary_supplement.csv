@@ -14,6 +14,7 @@ They'd,th-e-d,Heod,,deho,54
 They're,th-e-r,Heor,,ehor,54
 They've,th-e-v,Heov,,ehov,54
 Wouldn't,d-n-t,Dntooo,,dnt,54
+You're,u-r,Ur,,rux,78
 Timed,tm-d,Tmd,,mtvd,93
 Timing,tm-\-h,Tmg,,mtvg,93
 Timings,tm-\-h-s,Tmgs,,mtvgs,93
@@ -22,6 +23,7 @@ Muster,m-u-s-t-e2,Muste,,emstu,103
 Mustered,m-u-s-t-e2-d,Musted,,emstud,103
 Mustering,m-u-s-t-e2-\-h,Musteg,,emstug,103
 Musters,m-u-s-t-e2-s,Mustes,,emstus,103
+Products,pr-o-d-u-k-s,Produks,,dkoprsu,122
 Rework,r-e-r-k,Rerk,,ekr,132
 Reworked,r-e-r-k-d,Rerkd,,dekr,132
 Reworking,r-e-r-k-\-h,Rerkg,,egkr,132
@@ -59,10 +61,12 @@ Lookups,l-u-k-p-s,Lukps,,klpsu,216
 All-nighter,o-n-i-r,Onir,,inor,217
 All-nighters,o-n-i-r-s,Onirs,,inors,217
 Homework,^-h-\-o-m-r-k,Homrk,,hkmor,246
+User,e-u-r,Uru,u,rux,257
+Users,e-u-r-s,Urs,,rsu,257
 Lighting,l-i-\-h,Lig,,gil,271
 Presented,pr-d,Prd,,dpr,276
 Presenter,pr-r,Prr,,cpr,276
-Presenting,pr-\-h,Prg,,gpr,276
+Presenting,pr-\-h,Prgo,o,gopr,276
 Poorer,p-u-r,Pur,,pru,282
 Poorest,p-u-s-t,Pust,,pstu,282
 Certainly,s2-e-tn-e,Setne,,enst,283
@@ -565,7 +569,6 @@ Maximizes,m-a-x-m-i-s-s,Maxmiss,,aimsx,4077
 Maximizing,m-a-x-m-i-s-\-h,Maxmisg,,agimsx,4077
 Maximo,m-a-x-m-o,Maxmo,,amox,4077
 Maximums,m-a-x-mn-s,Maxmms,,amsx,4077
-Products,pr-o-k-s,Proks,o,koprs,4118
 Editors,e-td-e2-s,Eddes,,des,4123
 Editorship,e-td-e2-sh,Eddez,,dez,4123
 Editorships,e-td-e2-sh-s,Eddezs,,desz,4123
@@ -767,7 +770,6 @@ Delete,d-l-e-t,Dlet,,delt,8274
 Deleted,d-l-e-t-d,Dletd,,delt,8274
 Deletes,d-l-e-t-s,Dlets,,delst,8274
 Deleting,d-l-e-t-\-h,Dletg,,deglt,8274
-Productivity,pr-o-k-v-t-e,Prokvte,,ekoprtv,8288
 Import,m-p-o-t,Mpot,,mopt,8595
 Importation,m-p-o-t-sh,Mpotz,,moptz,8595
 Imported,m-p-o-t-d,Mpotd,,dmopt,8595
@@ -1051,6 +1053,13 @@ Shortcoming,sh-/-k-m-\-h,Zkmg,,gkmz,27735
 Shortcomings,sh-/-k-m-\-h-s,Zkmgs,,gkmsz,27735
 Shortness,sh-/-n-e-s,Znes,,ensz,27735
 Shortwave,sh-/-u-a-v,Zuav,,auvz,27735
+Progressed,pr-g-d,Prgd,,dgpr,27772
+Progresses,pr-g-s,Prgs,,gprs,27772
+Progressing,pr-g-\-h,Prgg,,gpr,27772
+Progressions,pr-g-sh-s,Prgzs,,gprsz,27772
+Progressive,pr-g-v,Prgv,,gprv,27772
+Progressively,pr-g-v-e,Prgve,,egprv,27772
+Progressives,pr-g-v-s,Prgvs,,gprsv,27772
 Disproved,d-s-pr-v-d,Dsprvd,,dprsv,28203
 Disproves,d-s-pr-v-s,Dsprvs,,dprsv,28203
 Disproving,d-s-pr-v-\-h,Dsprvg,,dgprsv,28203
