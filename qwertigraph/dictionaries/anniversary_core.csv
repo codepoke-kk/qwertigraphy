@@ -568,7 +568,7 @@ Fellow,f-e-l-o,Feloo,o,eflo,654
 Church,ch-e2-ch,Cec,,cez,655
 Attention,tn-sh,Tnz,,ntz,656
 Wind,u-e-nt,Uent,,entu,658
-Per,pr,Pro,o,opr,659
+Per,pr,Proo,oo,opr,659
 Company,k-p,Kpo,o,kop,661
 Walked,u-o-k-t,Uokt,,kotu,662
 Chief,ch-e-f,Cef,,cef,663
@@ -822,7 +822,6 @@ Killed,k-e-ld,Keld,,dekl,985
 Threw,th-r-u,Hruo,o,horu,986
 Physical,f-e-s-/-k,Fesk,,efks,987
 Religion,r-e-l-e-j-n,Relejn,,ejlnr,988
-Watch,u-o-ch,Uoc,,cou,990
 Understood,u-/-s2-t-u,Ustu,,stu,991
 Forget,f-g-e-t,Fget,,efgt,992
 Instant,n-s,Ns,,nsz,994
@@ -859,7 +858,6 @@ Dress,d-r-e-s,Dres,,ders,1044
 Ourselves,r-ss,Rss,,mrs,1045
 Conduct,k-d-u-k,Kduk,,dku,1046
 Lead,l-e-d,Ledu,u,delu,1048
-Lying,l-i-\-h,Lig,,gil,1050
 Grave,g-r-a-v,Grav,,agrv,1051
 Possession,p-o-ss,Poss,,ops,1052
 Legal,l-e-g,Lego,o,eglo,1053
@@ -1023,7 +1021,7 @@ Seek,s2-e-k,Sek,,eks,1265
 Obtained,o-b-tn-d,Obtnd,,bdnot,1266
 National,n-a-sh-l,Nazl,,alnz,1268
 Tall,t-o-l,Tol,,lot,1269
-Principal,pr,Pra,a,apr,1270
+Principal,pr,Prx,x,prx,1270
 Portion,p-o-r-sh,Porz,,oprz,1272
 Add,a-d,Ado,o,ado,1276
 Measure,m-e-sh-u,Mezu,,emuz,1277
@@ -1153,7 +1151,8 @@ Habit,^-h-\-a-b-t,Habt,,abht,1452
 Weak,e-k,Eko,o,eko,1453
 Congress,k-g,Kg,,cgk,1455
 Distinguished,d-s2-t-/-t,Dstt,,dst,1456
-Pray,pr-a,Prao,o,aopr,1458
+Pray,pr-a,Pra,,apr,1458
+Prays,pr-a-s,Praso,o,aoprs,1458
 Freedom,fr-e-tm,Fretm,,efmrt,1460
 Stage,s2-t-a-j,Staj,,ajst,1461
 Angry,a-ng-r-e,Angre,,aegnr,1462
@@ -1697,7 +1696,7 @@ Image,e-m-j,Emj,,ejm,2281
 Sentiment,s2-e-nt-e-m,Sentem,,emnst,2283
 Ruin,r-u-n,Runo,o,noru,2284
 Resolution,r-s2-o-l-s2h,Rsolsh,,hlors,2285
-Belonged,bl-ng-/-t,Blngt,,bglnt,2286
+Belonged,bl-ng-/-t,Blgt,,bglt,2286
 Argument,a-g-m,Agm,,agm,2287
 Arise,a-r-i-s,Aris,,airs,2288
 Melancholy,m-e-l-a-n,Melano,o,aelmno,2289
@@ -2267,7 +2266,7 @@ Concern,k-s2-e2-n,Ksen,,ekns,3356
 Drunk,d-r-nk,Drq,,dqr,3357
 Satisfy,s2-a-t,Sati,i,aist,3358
 Financial,f-e-n-a-n,Fenan,,aefn,3360
-Thereby,th2-b,Hb,,bch,3366
+Thereby,th2-b,Hbi,i,bhi,3366
 Ton,t-n,Tnu,u,ntu,3367
 Administration,a-mn-e-s-sh,Ammesz,,aemsz,3370
 Specific,s-p-e-s2-k,Spesk,,ekps,3371
@@ -2597,7 +2596,6 @@ Climate,k-l-i-m-a-t,Klimat,,aiklmt,4104
 Mischief,m-s-ch,Msc,,cms,4106
 Therein,th2-n,Hnu,u,hnu,4111
 Coal,k-o-l,Kol,,klo,4112
-Product,pr-o,Proo,o,opr,4118
 Editor,e-td-e2,Edde,,dez,4123
 Openly,o-p-n-e,Opne,,enop,4125
 Healthy,^-h-\-e-l-th-e,Helhe,,ehl,4126
@@ -2693,7 +2691,7 @@ Whatsoever,o-t-s2-o-v,Otsov,,ostv,4351
 Hopeless,^-h-\-o-pl,Hopl,,hlop,4354
 Steamer,s2-t-e2-m-e2,Steme,,emst,4355
 Contest,k-t-e-s,Ktes,,ekst,4356
-Longed,l-ng-/-t,Lngt,,glnt,4357
+Longed,l-ng-/-t,Lgt,,glt,4357
 Advise,v-i-s,Visu,u,isuv,4358
 Requested,r-k-e-s-/-t,Rqest,,eqrst,4363
 Duchess,d-ch-e-s,Dces,,cdes,4367
@@ -6493,7 +6491,6 @@ Gravitate,g-r-a-v-t-a,Gravta,,agrtv,56711
 Inveigle,n-v-e-g-l,Nvegl,,eglnv,56714
 Actuate,a-k-t-e-u-t,Aktut,,aktu,56753
 Acolyte,a-k-o-l-i,Akoli,,aiklo,56871
-Prepaid,pr-e-p-d,Prepd,,depr,57051
 Humane,^-h-\-e-u-m-a-n,Humanu,u,ahmnu,57074
 Flotsam,fl-o-t-s2-m,Flotsm,,flmost,57090
 Intestate,nt-e-s2-t-a,Ntesta,,aenst,57095
@@ -6533,7 +6530,7 @@ Neolithic,n-e-o-l-e-th,Neoleh,,ehlno,59149
 Booklet,b-k-l-e,Bkle,,bekl,59160
 Execrate,e-s2-e-k-r-a,Xekra,,aekrx,59167
 Gentian,j-e-n-sh,Jenz,,ejnz,59169
-Longest,l-ng-e-s,Lnges,,eglns,59175
+Longest,l-ng-e-s,Lges,,egls,59175
 Intake,nt-a-k,Ntako,o,aknot,59220
 Irrigate,e-r-e-g,Erego,o,egor,59286
 Lessee,l-e-s-e,Leseo,o,elos,59289
@@ -6657,7 +6654,7 @@ Lineament,l-e-n-a-m,Lenam,,aelmn,65549
 Occupational,o-kp-/-l,Okpl,,klop,65560
 Equilateral,e-k-w-e-l-a-t,Eqelat,,aelqt,65622
 Litmus,l-e-t-m-u-s,Letmus,,elmstu,65633
-Elongation,e-l-ng-sh,Elngz,,eglnz,65795
+Elongation,e-l-ng-sh,Elgz,,eglz,65795
 Joviality,j-o-v-/-l,Jovl,,jlov,65981
 Obsidian,o-b-s2-e-tn,Obsetn,,benost,65993
 Commendatory,k-mn-td-r-e,Kmmddre,,dekmr,66235
@@ -7341,7 +7338,7 @@ Folder,f-o-ld-r,Foldr,,dflor,70621
 Foot ,f,Fk1,k1,1fk,70622
 For a certain time,f-s22-e-tn-tm,Fsetntm,,efmnst,70623
 For a day or two,f-d-a-t-u,Fdatu,,adftu,70624
-For a long time,fl-ng-tm,Flngtm,,fglmnt,70625
+For a long time,fl-ng-tm,Flgtm,,fglmt,70625
 For a number of years,f-n-u-m-e-r-s,Fnumers,,efmnrsu,70626
 For example,f-e-s2-a-m,Fesam,,aefms,70627
 For him,f-e-m,Femo,o,efmo,70628
@@ -7829,7 +7826,7 @@ Little or nothing,l-e-t-n-\-h,Letng,,eglnt,71109
 Locomotive engineer,l-o-k-df-n-j-e2,Lokdfnje,,defjklno,71111
 -logical,/-o2,Ok3,k3,3ko,71112
 -logy,/-o2,Ok4,k4,4ko,71113
-Long past due,l-ng-p-d-u,Lngpdu,,dglnpu,71114
+Long past due,l-ng-p-d-u,Lgpdu,,dglpu,71114
 Longer than,l-ng-e2-n,Lgen,,egln,71115
 Look into the matter,l-u-m-a-t,Lumat,,almtu,71116
 Los angeles,l-o-s-a,Losa,,alos,71117
