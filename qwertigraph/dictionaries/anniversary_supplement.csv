@@ -7,7 +7,6 @@ Down,d-n,Dno,o,cdno,18
 Downside,d-n-s-i,Dnsi,,dins,18
 Downsides,d-n-s-i-s,Dnsis,,dins,18
 Of,o,O,,,24
-You're,u-r,Ur,,ru,39
 Being,b-\-h,Bg,,bcg,41
 But,b,Bu,u,bcu,50
 Someday,s-m-d-a,Smda,,adms,54
@@ -147,6 +146,7 @@ Serviceable,^-s2-b,Sb,,bcs,601
 Serviceably,^-s2-b-e,Sbe,,bes,601
 Serviced,^-s2-d,Sd,,cds,601
 Servicing,^-s2-\-h,Sg,,cgs,601
+Opinions,o-p-n-s,Opns,,nops,626
 Agreements,^-ya-m-s,Yams,,amsy,631
 Papered,p-a-pr-d,Paprd,,adpr,649
 Papering,p-a-pr-\-h,Paprg,,agpr,649
@@ -526,6 +526,8 @@ Assumption,a-s2-m-sh,Asmz,,amsz,3493
 Assumptions,a-s2-m-sh-s,Asmzs,,amszs,3493
 Unassuming,u-n-a-s2-m-\-h,Unasmg,,agmnsu,3493
 Occupations,o-kp-s,Okps,,kops,3498
+Balancer,b-a-l-r,Balr,,ablr,3523
+Balancers,b-a-l-r-s,Balrs,,ablrs,3523
 Invitations,n-v-e-t-sh-s,Nvetzs,,enstvz,3582
 Established,e-s2-t-b-d,Estbd,,bestd,3682
 Establishes,e-s2-t-b-s,Estbs,,bests,3682
@@ -1039,6 +1041,7 @@ Cooperatives,k-o-o-p-v-s,Koopvs,,kopsv,26301
 Monitored,mn-e-t-e2-d,Mmeted,,demt,26517
 Monitoring,mn-e-t-e2-\-h,Mmeteg,,egmt,26517
 Monitors,mn-e-t-e2-s,Mmetes,,emst,26517
+Unmonitored,u-mn-e-t-e2-d,Umneted,,demntu,26517
 Specified,s-p-e-s-d,Spesd,,deps,26856
 Specifies,s-p-e-s-s,Spess,,eps,26856
 Specifing,s-p-e-s-\-h,Spesg,,egps,26856
@@ -1100,12 +1103,17 @@ Captioned,k-a-p-sh-d,Kapzd,,adkpz,44771
 Captioning,k-a-p-sh-\-h,Kapzg,,agkpz,44771
 Captions,k-a-p-sh-s,Kapzs,,akpsz,44771
 Capernaum,k-a-p-n-u-m,Kapnum,,akmnpu,45030
+Outcomes,a-u-k-m-s,Wkms,,kmsw,46539
 Reorganization,r-o-g-sh,Rogz,,gorz,47478
 Reorganized,r-o-g-d,Rogd,,dgor,47478
 Reorganizes,r-o-g-s,Rogs,,gors,47478
 Reorganizing,r-o-g-\-h,Rogg,,gor,47478
 Poorhouse,p-u-u-s2-^-^-^-h,Puus,,psu,47516
 Deterrent,d-/-nt,Dnto,o,dnot,53715
+Opine,o-p-i-n,Opin,,inop,54408
+Opined,o-p-i-n-d,Opind,,dinop,54408
+Opines,o-p-i-n-s,Opins,,inops,54408
+Opining,o-p-i-n-\-h,Oping,,ginop,54408
 Certification,s2-e-df-sh,Sedfz,,defsz,59944
 Certifications,s2-e-df-sh-s,Sedfzs,,defsz,59944
 Singles,s2-e-ng-s,Segs,,egs,65996
@@ -1142,6 +1150,7 @@ Immigrates,e-m-e-g-s,Emegs,,egims,70854
 Immigrating,e-m-e-g-\-h,Emegg,,egimg,70854
 Good morning,g-m,Gmu,u,gmu,70898
 Inappreciated,e-n-a-pr-e-sh-d,Enaprezd,,adenprz,70910
+Opinionatedly,o-p-n-a-td-e,Opnadde,,adenop,71437
 Questionnaires,k-sh-a2-s,Qzas,,aqsz,71526
 Reconditioned,r-k-d-sh-d,Rkdzd,,dkrz,71538
 Reconditioning,r-k-d-sh-\-h,Rkdzg,,dgkrz,71538
