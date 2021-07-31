@@ -145,24 +145,31 @@ class DictionaryMap
 		StringLower, wordlower, % newEntry.word
 		newEntrylower := new DictionaryEntry(wordlower "," newEntry.form "," qwerdlower "," newEntry.keyer "," newEntry.chord "," newEntry.usage "," newEntry.dictionary)
         newEntrylower.chordable := chordability
-		this.qwerds.item(qwerdlower) := newEntrylower
+		if (not this.negations.item(qwerdlower)) {
+			this.qwerds.item(qwerdlower) := newEntrylower
+		}
 		
 		; Force upper entries to upper
 		StringUpper, qwerdUPPER, % newEntry.qwerd
 		StringUpper, wordUPPER, % newEntry.word
 		newEntryUPPER := new DictionaryEntry(wordUPPER "," newEntry.form "," qwerdUPPER "," newEntry.keyer "," newEntry.chord "," newEntry.usage "," newEntry.dictionary)
         newEntryUPPER.chordable := chordability
-		this.qwerds.item(qwerdUPPER) := newEntryUPPER
+		if (not this.negations.item(qwerdUPPER)) {
+			this.qwerds.item(qwerdUPPER) := newEntryUPPER
+		}
 		
 		; Allow single-capped entries to use full proper casing all the way through as given 
 		qwerdCapped := SubStr(qwerdUPPER, 1, 1) . SubStr(newEntry.qwerd, 2, (StrLen(newEntry.qwerd) - 1))
 		wordCapped := SubStr(wordUPPER, 1, 1) . SubStr(newEntry.word, 2, (StrLen(newEntry.word) - 1))
 		newEntryCapped := new DictionaryEntry(wordCapped "," newEntry.form "," qwerdCapped "," newEntry.keyer "," newEntry.chord "," newEntry.usage "," newEntry.dictionary)
         newEntryCapped.chordable := chordability
-		this.qwerds.item(qwerdCapped) := newEntryCapped
+		if (not this.negations.item(qwerdCapped)) {
+			this.qwerds.item(qwerdCapped) := newEntryCapped
+		}
 		
 		; With multiple qwerds possible for a word, we have to pick the right one to hint. 
 		if (not this.hints.item(newEntry.word).word) {
+			; If we don't already have a hint, then this is the one 
 			this.hints.item(wordlower) := newEntrylower
 			this.hints.item(wordUPPER) := newEntryUPPER
 			this.hints.item(wordCapped) := newEntryCapped
