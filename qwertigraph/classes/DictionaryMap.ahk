@@ -178,7 +178,7 @@ class DictionaryMap
 			this.hints.item(wordlower) := newEntrylower
 			this.hints.item(wordUPPER) := newEntryUPPER
 			this.hints.item(wordCapped) := newEntryCapped
-		}
+		} ; If the current hint is for another form of the word, then do nothing 
 		
         if (chordability == "active") {
 			if (not this.negationsChords.item(newEntrylower.chord)) {
