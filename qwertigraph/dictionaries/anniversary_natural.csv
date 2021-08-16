@@ -20,10 +20,10 @@ Learned,l-e-n-/-t,Lend,,deLn,712
 Happened,^-h-\-a-jnt,Hapnd,,adHnp,715
 Arrived,a-r-i-/-t,Arid,,Adir,766
 Covered,k-v-/-t,Kvd,,dKv,788
-Dinner,tn-r,dnr,,dnr,794
+Dinner,tn-r,Dnr,,dnr,794
 Stopped,ss2-t,Ssd,,dSs,796
 Sudden,s2-u-tn,Sudn,,dnSu,815
-Danger,tn-j-e2,dnje,,dejn,818
+Danger,tn-j-e2,Dnje,,dejn,818
 Wished,u-sh-t,Uzd,,dUz,821
 Started,s2-t-a2-td,Statd,,adStt,829
 Considered,k-s-/-t,Ksd,,dKs,830
@@ -62,7 +62,7 @@ Liked,l-a-/-t,Lado,o,adLo,1443
 Noticed,n-e-s2-t,Nesdo,o,deNos,1444
 Distinguished,d-s2-t-/-t,Dstd,,Ddst,1456
 Suggested,s2-u-j-/-t,Sujd,,djSu,1490
-Dangerous,tn-j-u-s,dnjus,,djnsu,1502
+Dangerous,tn-j-u-s,Dnjus,,djnsu,1502
 Dressed,d-r-e-s2-t,Dresd,,Dders,1517
 Extraordinary,e-s-/-o-tn,Xodn,,dnoX,1521
 Treated,t-r-e-td,Tretd,,derTt,1537
@@ -109,7 +109,8 @@ Lighted,l-i-/-t,Lido,o,diLo,2302
 Mounted,mn-td,Mmtd,,dMmt,2326
 Acted,a-k-t,Akdo,o,Adko,2344
 Ashamed,a-sh-a-mt,Azamd,,Aadmz,2347
-Announced,a-n-n-s2-t,Annsd,,Adnns,2434
+Announced,a-n-n-s2-t,Annsd,,adns,2434
+Unannounced,u-na-n-n-s2-t,Unannsd,,anstu,2434
 Assumed,a-s2-m-/-t,Asmd,,Adms,2443
 Attempted,a-tm-td,Atmtd,,Admtt,2478
 Selected,s-e-l-e-k-t,Selekd,,deeklS,2527
@@ -118,7 +119,7 @@ Burned,b-e2-n-/-t,Bendo,o,Bdeno,2541
 Mixed,m-e-x-t,Mexd,,deMx,2545
 Wooden,u-u-tn,Uudn,,dnUu,2558
 Opposed,o-p-o-/-t,Opod,,dOop,2625
-Deny,tn-i,dni,,din,2631
+Deny,tn-i,Dni,,din,2631
 Insisted,n-ss-/-t,Nssd,,dNss,2685
 Leaned,l-e-nt,Lendo,o,deLno,2696
 Referred,r-f-/-t,Rfd,,dfR,2718
@@ -135,8 +136,8 @@ Residence,r-e-s2-e-tn-s,Resedns,,deenRss,3006
 Completed,kp-/-t,Kpdu,u,dKpu,3023
 Uncompleted,n-kp-/-t,Nkp/d,,/dkNp,3023
 Exhausted,e-s2-o-s-/-t,Xosd,,dosX,3154
-Predetermined,pr-e-/-e2-mn-/-t,Preemnd,,deemnPr,3162
 Determined,e2-mn-/-t,Emmd,,dEmm,3162
+Predetermined,pr-e-/-e2-mn-/-t,Preemnd,,deemnPr,3162
 Inspired,n-s-p-i-/-t,Nspid,,diNps,3183
 Fitted,f-e-td,Fetd,,deFt,3205
 Picked,p-e-k-t,Pekd,,dekP,3272
@@ -161,10 +162,10 @@ Confused,k-f-e-u-/-t,Kfud,,dfKu,3688
 Situated,s2-e-t-e-u-td,Setutd,,deSttu,3776
 Dreamed,d-r-e-mt,Dremd,,Ddemr,3780
 Disappointed,d-o-e-/-t,Dyd,,Ddy,3814
-Identified,a-tn-df-d,Adndfd,,Adddfn,3839
-Identifies,a-tn-df-s,Adndfs,,Addfns,3839
-Identifying,a-tn-df-\-h,Adndfg,,Addfgn,3839
 Identify,a-tn-df,Adndf,,Addfn,3839
+Identified,a-tn-df-d,Adndfd,,Adddfn,3839
+Identifying,a-tn-df-\-h,Adndfg,,Addfgn,3839
+Identifies,a-tn-df-s,Adndfs,,Addfns,3839
 Trained,t-r-a-nt,Trand,,adnrT,3840
 Warned,u-o-nt,Uond,,dnoU,3882
 Owned,o-nt,Ondu,u,dnOu,3912
@@ -192,16 +193,16 @@ Hired,^-h-\-i-r-/-t,Hird,,dHir,4812
 Adapted,a-d-a-p-/-t,Adapdo,o,Aaddop,4814
 Crowned,k-r-nt,Krnd,,dKnr,4876
 Instructed,n-s-/-k-t,Nskd,,dkNs,4932
-Dense,tn-s,dnso,o,dnos,4995
-shipped,sh-/-t,zdo,o,doz,5000
-billed,bl-/-t,bldo,o,bdlo,5000
+Dense,tn-s,Dnso,o,dnos,4995
+Billed,bl-/-t,Bldo,o,bdlo,5000
+Shipped,sh-/-t,Zdo,o,doz,5000
 Planned,pl-a-nt,Plandu,u,adlnPu,5060
 Governed,g-v-/-t,Gvd,,dGv,5121
 Packed,p-a-k-t,Pakd,,adkP,5131
 Traced,t-r-a-s2-t,Trasd,,adrsT,5198
 Dignified,d-e-g-n-f-/-t,Degnfd,,Ddefgn,5241
-Dated,td-/-t,Dtd,,Ddt,5335
 Dated,td-/-t,Ddd,,Ddd,5335
+Dated,td-/-t,Dtd,,Ddt,5335
 Identical,a-tn-/-k,Adnk,,Adkn,5668
 Edinburgh,e-tn-br-o,Ednbro,,bdEnor,5707
 Earned,e2-n-/-t,Endu,u,dEnu,6069
@@ -230,7 +231,7 @@ Equipped,e-k-w-e-p-t,Eqepd,,dEepq,7888
 Resident,r-s2-e-tn,Rsedn,,denRs,8343
 Disgusted,d-s2-g-u-s-/-t,Dsgusd,,Ddgssu,8431
 Weakened,e-k-nt,Eknd,,dEkn,8531
-Denmark,tn-m-a-r-k,dnmark,,adkmnr,8671
+Denmark,tn-m-a-r-k,Dnmark,,adkmnr,8671
 Edited,e-td-d,Edtd,o,ddEt,8828
 Frowned,fr-nt,Frndo,o,dFnor,8972
 Commented,k-mn-td,Kmmtd,,dKmmt,9209
@@ -240,8 +241,8 @@ Trimmed,t-r-e-mt,Tremd,,demrT,9657
 Impudent,m-p-e-u-tn,Mpudn,,dMnpu,9689
 Loosened,l-u-s2-nt,Lusnd,,dLnsu,9894
 Cleaned,k-l-e-nt,Klend,,deKln,9929
-Dungeon,tn-j-n,dnjn,,djnn,9935
-Dingy,tn-j-e,dnjeo,o,dejno,9999
+Dungeon,tn-j-n,Dnjn,,djnn,9935
+Dingy,tn-j-e,Dnjeo,o,dejno,9999
 Expired,e-s-p-i-/-t,Xpid,,dipX,10150
 Respond,r-s-jnt,Rspnd,,dnpRs,10268
 Divined,df-i-nt,Dfindo,o,Ddfino,10413
@@ -257,37 +258,37 @@ Inexperienced,n-s-p-e-/-t,Nsped,,deNps,12129
 Graduated,g-r-a-d-e-u-td,Gradutd,,addGrtu,12538
 Incidentally,n-s2-e-tn-ye,Nsednye,,deeNnsy,12560
 Clicked,k-l-e-k-t,Klekd,,deKkl,12573
-Pending,jnt-\-h,pndg,,dgnp,12959
+Pending,jnt-\-h,Pndg,,dgnp,12959
 Consigned,k-s2-i-nt,Ksind,,diKns,13318
 Courted,k-o-td,Kotd,,dKot,13526
 Unchanged,n-ch-/-t,Ncd,,cdN,13864
 Unacquainted,n-a-k-a-/-t,Naqad,,aadNq,14159
 Mohammedan,m-^-h-\-a-m-tn,Mhamdn,,adhMmn,14240
-Denounce,tn-n-s,dnns,,dnns,14264
+Denounce,tn-n-s,Dnns,,dnns,14264
 Bothered,b-o-th-/-t,Bohd,,Bdho,14482
 Shortened,sh-/-nt,Znd,,dnZ,14581
 Discordant,d-s2-k-o-tn,Dskodn,,Ddknos,14606
 Adjourned,a-j-e2-nt,Ajend,,Adejn,15051
-Dandy,tn-d-e,dndeo,o,ddeno,17119
+Dandy,tn-d-e,Dndeo,o,ddeno,17119
 Undecided,n-d-s-i-/-t,Ndsid,,ddiNs,17356
 Endanger,n-tn-j-e2,Ndnje,,dejNn,17391
-Denomination,tn-o-mn-sh,dnommz,,dmmnoz,17567
+Denomination,tn-o-mn-sh,Dnommz,,dmmnoz,17567
 Antecedent,a-/-s2-e-tn,Asedno,o,Adenos,17598
 Harden,^-h-\-a2-tn,Hadn,,adHn,17706
-Density,tn-/-s,dnse,e,dens,18162
+Density,tn-/-s,Dnse,e,dens,18162
 Fined,f-i-nt,Findo,o,dFino,18255
 Cadence,k-a-tn-s,Kadns,,adKns,18277
 Canned,k-a-nt,Kando,o,adKno,18752
 Insured,n-sh-/-t,Nzd,,dNz,18999
 Certified,s2-e-df-/-t,Sedfd,,ddefS,19031
 Carpenter,k-r-jnt-r,Krpntr,,Knprrt,19076
-Consolidated,k-s2-o-l-e-td-/-t,Ksoledtd,,ddeKlost,19306
 Consolidated,k-s2-o-l-e-td-/-t,Ksoleddd,,dddeKlos,19306
+Consolidated,k-s2-o-l-e-td-/-t,Ksoledtd,,ddeKlost,19306
 Outstanding,a-u-s2-tn-\-h,Wsdng,,dgnsW,19713
 Uneducated,n-e-d-u-/-t,Nedud,,ddeNu,20217
 Inordinate,e-n-o-tn-a-t,Enodnat,,adEnnot,20229
-Unconnected,n-k-e-k-t,Nkekd,,dekkN,20484
-Denver,tn-v,dnv,,dnv,20738
+Unconnected,n-k-e-k-t,Nkekd,,eknt,20484
+Denver,tn-v,Dnv,,dnv,20738
 Horned,^-h-\-o-r-nt,Hornd,,dHnor,21266
 Disconnected,d-s2-k-e-k-t,Dskekd,,Ddekks,22359
 Disobedient,d-s2-o-b-tn-t,Dsobdnt,,bDdnost,22441
@@ -298,12 +299,12 @@ Flippant,fl-e-jnt,Flepnt,,eFlnpt,25102
 Intendant,n-tn-tn,Ndndn,,ddNnn,25561
 Endorsed,nt-o-s2-t,Ntosd,,dNost,25672
 Ascendant,a-s2-e-n-tn,Asendn,,Adenns,26801
-Dentist,tn-t-e-s,dntes,,denst,27394
+Dentist,tn-t-e-s,Dntes,,denst,27394
 Insubordination,n-s2-o-tn-sh,Nsodnz,,dNnosz,27592
 Deadened,td-nt,Ddnd,,Dddn,27677
 Dividend,df-tn,Dfdno,o,Ddfno,27764
 Linden,l-e-n-tn,Lendn,,deLnn,29141
-Dent,tn-t,dnto,o,dnot,29634
+Dent,tn-t,Dnto,o,dnot,29634
 Maidenly,m-a-tn-e,Madne,,adeMn,29704
 Ordinarily,o-tn-e,Odne,,denO,30240
 Ordination,o-tn-sh,Odnz,,dnOz,30549
@@ -325,15 +326,15 @@ Mined,m-i-nt,Mindu,u,diMnu,40477
 Inexpedient,n-e-s-p-tn-t,Nxpdnt,,dNnptx,41085
 Mordant,m-o-r-tn,Mordn,,dMnor,41355
 Unbalanced,n-b-a-l-/-t,Nbald,,abdlN,41963
-Tendon,tn-tn,dndn,,ddnn,42471
+Tendon,tn-tn,Dndn,,ddnn,42471
 Compendium,k-jnt-m,Kpndm,,dKmnp,42873
 Adjusted,a-j-u-s-/-t,Ajusd,,Adjsu,43396
 Append,a-jnt,Apndo,o,Adnop,44058
-Denizen,tn-e-s2-e-n,dnesen,,deenns,45175
+Denizen,tn-e-s2-e-n,Dnesen,,deenns,45175
 Unexpressed,n-e-s-pr-/-t,Nxprd,,dNprx,46836
-Dandelion,tn-d-e-l-i-n,dndelin,,ddeilnn,48679
+Dandelion,tn-d-e-l-i-n,Dndelin,,ddeilnn,48679
 Leavened,l-e-v-nt,Levndo,o,deLnov,50341
-Denominate,tn-o-mn-a-t,dnommat,,admmnot,50766
+Denominate,tn-o-mn-a-t,Dnommat,,admmnot,50766
 Inconvenienced,n-k-v-e-n-/-t,Nkvend,,dekNnv,51419
 Coordinate,k-o-o-tn-a-t,Koodnat,,adKnoot,51800
 Despond,d-s-jnt,Dspnd,,Ddnps,53891
@@ -358,10 +359,10 @@ Could be done,k-d-b-tn,Kdbdn,,bddKn,70361
 Credential,k-r-e-tn-sh,Krednz,,deKnrz,70365
 Decadance,d-e-k-a-tn-s,Dekadns,,aDdekns,70402
 Decedent,d-s2-e-tn,Dsedno,o,Ddenos,70404
-Denature,tn-a-t-r,dnatr,,adnrt,70422
-Denim,tn-e-m,dnemo,o,demno,70423
-Dentistry,tn-t-e-s-r-e,dntesre,,deenrst,70424
-Dint ,tn-t,dntu,u,dntu,70443
+Denature,tn-a-t-r,Dnatr,,adnrt,70422
+Denim,tn-e-m,Dnemo,o,demno,70423
+Dentistry,tn-t-e-s-r-e,Dntesre,,deenrst,70424
+Dint ,tn-t,Dntu,u,dntu,70443
 Dissidence,d-s2-e-tn-s,Dsedns,,Ddenss,70461
 Figured,f-e-g-r-/-t,Fegrd,,deFgr,70611
 Frightended,fr-i-nt,Frind,,dFinr,70651
@@ -392,9 +393,9 @@ Nickelodeon,n-e-k-l-o-tn,Neklodn,,deklNno,71328
 Opinionated,o-p-n-a-td,Opnatd,,adnOpt,71437
 Ordinal,o-tn-l,Odnl,,dlnO,71443
 Pasadena,p-a-s2-tn-a,Pasdna,,aadnPs,71477
-Pending bill,jnt-b,pndb,,bdnp,71484
-Pending legislation,jnt-l-j,pndlj,,djlnp,71485
-Pending resolution,jnt-r-s2-o-sh,pndrsoz,,dnoprsz,71486
+Pending bill,jnt-b,Pndb,,bdnp,71484
+Pending legislation,jnt-l-j,Pndlj,,djlnp,71485
+Pending resolution,jnt-r-s2-o-sh,Pndrsoz,,dnoprsz,71486
 Phoned,f-o-nt,Fondu,u,dFnou,71495
 President of the united states,pr-e-s2-tn-e-u-s,Presdnus,,denPrssu,71509
 Readdressed,r-ea-d-r-/-t,Redrd,,ddeRr,71528
@@ -418,9 +419,3 @@ Will be done,l-b-tn,Lbdn,,bdLn,71860
 Would be done,d-b-tn,Dbdn,,bDdn,71874
 You do not,u-tn,Udn,,dnU,71884
 You do not know,u-tn-o,Udno,,dnoU,71885
-Code,k-o-/-t,Kod,,dko,204
-Announced,a-n-n-s2-t,Annsd,,adns,2434
-Unannounced,u-na-n-n-s2-t,Unannsd,,anstu,2434
-Billed,bl-/-t,Bldo,o,bdlo,5000
-Shipped,sh-/-t,Zdo,o,doz,5000
-Unconnected,n-k-e-k-t,Nkekd,,eknt,20484

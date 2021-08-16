@@ -182,7 +182,7 @@ class DictionaryMap
 		
         if (chordability == "active") {
 			if (not this.negationsChords.item(newEntrylower.chord)) {
-				this.logEvent(3, "Adding chord " newEntrylower.chord " as " newEntrylower.word) 
+				this.logEvent(4, "Adding chord " newEntrylower.chord " as " newEntrylower.word) 
 				this.chords.item(newEntry.chord) := newEntrylower
 				
 				StringUpper, chordUPPER, % newEntrylower.chord
@@ -296,7 +296,7 @@ class DictionaryMap
 				this.logEvent(4, "Keeping qwerd for being propercase " qwerd.qwerd)
 			}
 			sortedCount += 1
-			sortableKey :=  SubStr("0000000", StrLen(qwerd.usage)) qwerd.usage "_" qwerd.word
+			sortableKey :=  SubStr("0000000", StrLen(qwerd.usage)) qwerd.usage "_" qwerd.qwerd
 			sortableForms[sortableKey] := qwerd
 			if (qwerd.word = "look" or qwerd.word = "execution" or qwerd.word = "services") {
 				this.logEvent(1, "Created sortable for " sortableKey " as " sortableForms[sortableKey].qwerd)  
@@ -313,7 +313,7 @@ class DictionaryMap
 				this.logEvent(4, "Keeping qwerd for being propercase " qwerd.qwerd)
 			}
 			sortedCount += 1
-			sortableKey :=  SubStr("0000000", StrLen(qwerd.usage)) qwerd.usage "_" qwerd.word
+			sortableKey :=  SubStr("0000000", StrLen(qwerd.usage)) qwerd.usage "_" qwerd.qwerd
 			sortableForms[sortableKey] := qwerd
 			if (qwerd.word = "look" or qwerd.word = "execution" or qwerd.word = "services") {
 				this.logEvent(1, "Created displaced sortable for " sortableKey " as " sortableForms[sortableKey].qwerd)  
@@ -331,6 +331,7 @@ class DictionaryMap
 			fileHandles[dictionary] := fileHandle
 			header := "word,form,qwerd,keyer,chord,usage`n"
 			fileHandles[dictionary].Write(header)
+            this.logEvent(2, "Writing to new dictionary " newdict)
 		}
 		
 		; Loop across the sorted forms and write them 
@@ -345,7 +346,7 @@ class DictionaryMap
 			; msgbox, % "Looping with " sortableKey "=" form.word
 			dictline := qwerd.word "," qwerd.form "," qwerd.qwerd "," qwerd.keyer "," qwerd.chord "," qwerd.usage "`n"
 			this.logEvent(4, "Writing " dictline " to " qwerd.dictionary)
-			if (qwerd.word = "look" or qwerd.word = "execution" or qwerd.word = "services") {
+			if (qwerd.word = "Asked" or qwerd.word = "Called" or qwerd.word = "Looked") {
 				this.logEvent(1, "Writing sortable for " dictline " to " qwerd.dictionary)  
 			}
 			fileHandles[qwerd.dictionary].Write(dictline)
