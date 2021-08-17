@@ -110,8 +110,8 @@ Men,mn,Mm,,cmz,118
 Own,o-n,Onu,u,nou,119
 Shall,sh,Z,,cvz,120
 Came,k-a-m,Kam,,akm,121
-Product,pr-o-d-u-k,Produk,,dkopru,122
 Project,pr-j-k,Prjk,,jkpr,122
+Product,pr-o-d-u-k,Produk,,dkopru,122
 Without,e-th-t,Eht,,eht,123
 Come,k-m,Km,,kmv,124
 Make,m-a-k,Mak,,akm,125
@@ -123,7 +123,6 @@ Himself,e-m-s,Ems,,ems,131
 Work,r-k,Rk,,krz,132
 How,a-u,Wo,o,cow,133
 Go,g,G,,cgm,134
-Am,m,Mu,u,muv,135
 Way,u-a,Ua,,aux,136
 Even,e-v-n,Evn,,env,137
 Many,mn-e,Mme,,bem,139
@@ -150,7 +149,7 @@ Also,o-s2-o,Oso,,osz,160
 Again,a-g-n,Agn,,agn,161
 Against,a-g-n-s,Agns,,agns,162
 Place,pl-a-s,Plas,,alps,163
-Away,/-n,Na,a,acn,164
+Away,/-n,Nn,n,nzx,164
 Get,g-e-t,Geto,o,egot,165
 Young,u-ng,Ug,,cgu,166
 Die,d-i,Di,,cdi,167
@@ -188,7 +187,6 @@ Seemed,s2-e-mt,Semt,,emst,199
 House,^-h-\-u-s,Hus,,hsu,200
 Got,g-t,Gt,,cgt,201
 Head,^-h-\-e-d,Hed,,deh,203
-Called,k-o-/-t,Kot,,kot,204
 Looked,l-u-/-t,Lut,,ltu,205
 Whole,^-h-\-o-l,Hol,,hlo,206
 Set,s2-e-t,Seto,o,eost,207
@@ -206,7 +204,7 @@ Knew,n-u,Nuo,o,nou,221
 Heart,^-h-\-a2-t,Hato,o,ahot,222
 Seen,s2-e-n,Sen,,ens,223
 Days,d-a-s,Das,,ads,224
-Name,n-a,Nao,o,ano,225
+Name,n-a,Na,,anz,225
 Among,m-ng,Mg,,gmn,226
 Better,b-t-e2,Bte,,bet,227
 Full,f-u,Fuo,o,fou,228
@@ -580,7 +578,6 @@ Object,o-b,Ob,,boz,668
 Unless,n-l,Nl,,lmn,669
 Duty,td-e,Dde,,dev,670
 Drew,d-r-u,Dru,,dru,671
-Single,s2-e-ng,Seg,,egs,672
 Distance,d-s2-tn-s,Dstns,,dnst,673
 Deal,d-e2,Deo,o,deo,675
 Visit,v-e-s2-e-t,Veset,,estv,676
@@ -901,7 +898,7 @@ Wonderful,u-u-n-f,Uunf,,fnu,1103
 Prevent,pr-e-v-nt,Prevnt,,enprtv,1105
 Expect,e-s-p,Xpo,o,opx,1106
 Camp,k-a-m-p,Kamp,,akmp,1107
-Move,m-u,Muo,o,mou,1108
+Move,m-u,Mu,,mu,1108
 Winter,u-e-nt-r,Uentr,,enrtu,1109
 Excellent,e-s2-l,Xl,,clx,1110
 America,a-m,Amu,u,amu,1112
@@ -1370,7 +1367,6 @@ Partly,p-t-e,Pteu,u,eptu,1766
 Fruit,fr-u-t,Frut,,frtu,1767
 Deeply,d-e-p-e,Depe,,dep,1768
 East,e-s2-t,Est,,est,1769
-Connected,k-e-k-t,Kekt,,ekt,1770
 Brilliant,br-e-l,Brel,,belr,1772
 Supply,s-pl-i,Spli,,ilps,1774
 Coat,k-o-t,Koti,i,ikot,1775
@@ -1436,7 +1432,7 @@ Brain,br-a-n,Bran,,abnr,1859
 Surrounded,s-e-r-nt-d,Serntd,,denrst,1862
 Parents,p-a-r-e-nt-s,Parentso,o,aenoprst,1863
 Rare,r-a-r,Rar,,arx,1864
-Entrance,n-/-n-s,Nns,,nsz,1866
+Noun,n-/-n,Nnu,u,nuz,1866
 Introduced,n-/-d-u-s2-t,Ndust,,dnstu,1867
 Control,^-k-/-l,Kl,,klx,1869
 Careful,k-a-f,Kaf,,afk,1870
@@ -1777,7 +1773,6 @@ Asleep,a-s-l-e-p,Aslep,,aelps,2425
 Violence,v-i-l-e-n-s,Vilens,,eilnsv,2426
 Male,m-a2,Mau,u,amu,2428
 Spare,s-p-a-r,Spar,,aprs,2432
-Announced,a-n-n-s2-t,Annst,,anst,2434
 Solid,s2-o-l-e-d,Soled,,delos,2436
 Poem,p-o-e-m,Pym,,mpy,2437
 Elizabeth,e-l-e-s-b-th,Elesbh,,behls,2439
@@ -3546,7 +3541,7 @@ Abbey,a-b-e,Abeo,o,abeo,7306
 Barrel,br-l,Brl,,blr,7307
 Countless,k-nt-l,Kntl,,klnt,7321
 Essay,e-s-a,Esao,o,aeos,7322
-Kick,k-e-k,Kek,,ekz,7324
+Kick,k-e-k,Kekzz,,ekz,7324
 Condemn,k-tm,Ktm,,kmt,7326
 Favored,f-a-/-t,Fati,i,afit,7333
 Sweetest,s2-u-e-t-e-s,Suetes,,estu,7338
@@ -5084,7 +5079,6 @@ Tires,t-yi2,Tyi,,ity,20441
 Advertise,a-v-t,Avt,,atv,20452
 Odium,o-tm,Otmo,o,mot,20462
 Facetious,f-a-s-e-sh,Fasez,,aefsz,20479
-Unconnected,n-k-e-k-t,Nkekt,,eknt,20484
 Chronicler,k-r-o-n-/-k-r,Kronkr,,knor,20505
 Autobiography,o-t-b-/-o-e,Otby,,boty,20521
 Buyer,b-i-r,Bir,,bir,20548
@@ -6370,7 +6364,6 @@ Brochure,br-o-sh-u,Brozu,,boruz,50471
 Ye,ye,Yeu,u,euy,50507
 El,e-l,Elk1,k1,1ekl,50587
 Incivility,n-s2-v-/-l,Nsvl,,lnsv,50604
-Noun,n-n,Nn,,cnz,50613
 Nuncio,n-u-n-sh-o,Nunzo,,nouz,50614
 Bureaucratic,b-u-/-a,Bua,,abu,50635
 Hummock,^-h-\-u-m-o-k,Humok,,hkmou,50685

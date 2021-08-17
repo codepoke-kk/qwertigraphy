@@ -8,8 +8,8 @@ Mor,m,Mi,i,imv,73
 Good,gd,Gd,,cdg,113
 Mr,mestE,Meste,,emst,114
 Que,keu,Quo,o,oqu,139
-Laster,lasr,Lasr,,alrs,151
 Lasting,lasg,Lasg,,agls,151
+Laster,lasr,Lasr,,alrs,151
 Lasts,lass,Lass,,als,151
 Mrs,mss,Mss,,msz,217
 Having,vg,Vg,,cgv,219
@@ -84,15 +84,14 @@ Getting,getg,Getg,,egt,782
 Thoughts,Hots,Hots,,host,793
 Parts,pts,Pts,,pst,797
 Leaving,levg,Levgo,o,eglov,798
-Moved,mud,Mud,,dmu,807
 Writing,rig,Rig,,gir,832
 Boys,boes,Bys,,bsy,833
 Horses,hoss,Hoss,,hos,834
 Charles,corls,Corls,,clors,840
 William,lY m,Ly m,,lmy,850
 Provided,prvid,Prvid,,diprv,859
-Provider,prvir,Prvir,,iprv,859
 Providing,prvig,Prvig,,giprv,859
+Provider,prvir,Prvir,,iprv,859
 German,jEmn,Jemn,,ejmn,861
 Exclaimed,esklamd,Xklamd,,adklmx,864
 Etc,tsetr,Tsetr,,erst,867
@@ -140,16 +139,16 @@ Straight,strat,Strat,,arst,1038
 Matters,mats,Mats,,amst,1062
 Using,usg,Usg,,gsu,1063
 Obliged,obld,Obld,,bdlo,1064
-Morally,mory,Mory,,mory,1069
 Morals,morls,Morls,,lmors,1069
+Morally,mory,Mory,,mory,1069
 Keeping,kepg,Kepg,,egkp,1071
 Meeting,metg,Metg,,egmt,1072
 Running,rng,Rng,,gnr,1078
 Flowers,flrs,Flrs,,flrs,1080
 James,jams,Jams,,ajms,1087
 Steps,steps,Stepso,o,eopst,1088
-Wooded,uudt,Uudt,,dtu,1096
 Woods,uuds,Uuds,,dsu,1096
+Wooded,uudt,Uudt,,dtu,1096
 Pale,pal,Pal,,alp,1103
 Worthy,uuhe,Uuhe,,ehu,1107
 Deux,du,Dua,a,adu,1132
@@ -181,8 +180,8 @@ Serving,sevg,Sevg,,egsv,1257
 Possessed,psest,Psest,,epst,1260
 Peter,petE,Pete,,ept,1276
 Indians,ndeans,Ndens,,dens,1285
-Quicker,qekr,Qekr,,ekqr,1299
 Quickly,qeke,Qeke,,ekq,1299
+Quicker,qekr,Qekr,,ekqr,1299
 Ideas,AY0 des,Ay0 des,,0adesy,1300
 Sky,ski,Ski,,iks,1302
 Auch,oc,Oc,,cov,1303
@@ -218,14 +217,14 @@ Spanish,spanz,Spanz,,anpsz,1406
 Frequently,freqnte,Freqnte,,efnqrt,1408
 Opening,opng,Opng,,gnop,1415
 Played,plad,Plad,,adlp,1417
+Sharply,zarpe,Zarpe,,aeprz,1420
+Sharpest,zarpes,Zarpes,,aeprsz,1420
 Sharpen,zarpn,Zarpn,,anprz,1420
 Sharpened,zarpnd,Zarpnd,,adnprz,1420
+Sharpness,zarpnes,Zarpnes,,aenprsz,1420
 Sharpening,zarpng,Zarpng,,agnprz,1420
 Sharpens,zarpns,Zarpns,,anprsz,1420
 Sharper,zarpr,Zarpr,,aprz,1420
-Sharpest,zarpes,Zarpes,,aeprsz,1420
-Sharply,zarpe,Zarpe,,aeprz,1420
-Sharpness,zarpnes,Zarpnes,,aenprsz,1420
 Forgotten,fgtn,Fgtn,,fgnt,1424
 Jack,jak,Jak,,ajk,1427
 Sons,sns,Sns,,nsx,1428
@@ -296,7 +295,6 @@ Finals,finls,Finls,,filns,1673
 Ceased,sest,Sest,,est,1678
 Philip,felp,Felp,,eflp,1687
 Calling,kog,Kog,,gko,1691
-Moving,mug,Mug,,gmu,1692
 Moi,muo,Muoo,o,mou,1698
 Burning,bEng,Beng,,begn,1699
 Bearing,barg,Barg,,abgr,1700
@@ -340,7 +338,6 @@ Edward,eduEd,Edued,,deu,1865
 Centre,sentE,Senteo,o,enost,1875
 Bringing,brg,Brg,,bgr,1878
 Reasons,rsns,Rsns,,nrs,1884
-Attached,atact,Atact,,act,1886
 Sein,sin,Sinu,u,insu,1896
 Features,fecrs,Fecrs,,cefrs,1899
 Objects,obs,Obs,,bos,1904
@@ -529,7 +526,6 @@ Mode,mod,Mod,,dmo,2635
 Priests,prests,Prsts,,prst,2637
 Loving,lvg,Lvg,,glv,2639
 Sind,send,Sendo,o,denos,2644
-Movements,mums,Mums,,msu,2649
 Pursued,prsud,Prsud,,dprsu,2652
 Treaty,trete,Trete,,ert,2657
 Stared,stEd,Sted,,dest,2659
@@ -570,7 +566,6 @@ Afterward,aftuEd,Aftued,,adeftu,2773
 Existed,essd,Xsd,,dsx,2775
 Existing,essg,Xsg,,gsx,2775
 Threatened,Hretnd,Hretnd,,dehnrt,2776
-Separated,sepratd,Sepratd,,adeprst,2778
 Descended,dsend,Dsend,,dens,2781
 Supported,spotd,Spotd,,dopst,2782
 Remarks,rms,Rmso,o,mors,2784
@@ -619,7 +614,6 @@ Voir,vuor,Vuor,,oruv,2901
 Beast,bst,Bst,,bst,2902
 Astonished,astnzt,Astnzt,,anstz,2905
 Prayers,prars,Prars,,aprs,2906
-Brow,brao,Brw,,brw,2909
 Lofty,lofe,Lofe,,eflo,2910
 Apt,apt,Aptu,u,aptu,2911
 Province,prvns,Prvns,,nprsv,2912
@@ -841,11 +835,11 @@ Courts,kots,Kots,,kost,3507
 Astonishment,astnzm,Astnzm,,amnstz,3508
 Samuel,samul,Samul,,almsu,3510
 Limbs,lems,Lems,,elms,3513
-Structural,strktrl,Strktrl,,klrst,3514
 Structure,strktr,Strktr,,krst,3514
 Structured,strktrd,Strktrd,,dkrst,3514
-Structures,strktrs,Strktrs,,krst,3514
 Structuring,strktrg,Strktrg,,gkrst,3514
+Structural,strktrl,Strktrl,,klrst,3514
+Structures,strktrs,Strktrs,,krst,3514
 Tones,tons,Tonso,o,nost,3520
 Attempts,atmts,Atmts,,amst,3521
 Wearing,arg,Arg,,agr,3523
@@ -868,8 +862,8 @@ Gallant,galnt,Galnt,,aglnt,3563
 Grows,gros,Grosu,u,gorsu,3564
 Obedience,obdns,Obdns,,bdnos,3568
 Enterprise,NPris,Npris,,inprs,3569
-Enterprises,NPriss,Npriss,,inprs,3569
 Enterprising,NPrisg,Nprisg,,ginprs,3569
+Enterprises,NPriss,Npriss,,inprs,3569
 Fury,fre,Freo,o,efor,3571
 Stout,staot,Stwt,,stw,3572
 Alles,als,Alsa,a,als,3573
@@ -893,8 +887,8 @@ Breeze,brez,Brez,,berz,3618
 Intervals,nVls,Nvls,,lnsv,3622
 Jumped,jmpt,Jmpt,,jmpt,3630
 Rival,rivl,Rivlo,o,ilorv,3631
-Submits,smets,Smets,,emst,3632
 Submitting,smetg,Smetg,,egmst,3632
+Submits,smets,Smets,,emst,3632
 Originally,rejnle,Rejnle,,ejlnr,3635
 Opportunities,oprs,Oprs,,oprs,3636
 Bride,brid,Brid,,bdir,3641
@@ -1280,8 +1274,8 @@ Steal,stel,Stelo,o,elost,4513
 Corresponding,kresg,Kresg,,egkrs,4514
 Andrew,andru,Andru,,adnru,4515
 Protested,protesd,Prtesd,,deprst,4517
-Protester,protesr,Prtesr,,eprst,4517
 Protesting,protesg,Prtesg,,egprst,4517
+Protester,protesr,Prtesr,,eprst,4517
 Protests,protess,Prtess,,eprst,4517
 Parallel,perll,Prll,,lpr,4518
 Expressions,esprezs,Xprzs,,prsxz,4523
@@ -1296,8 +1290,8 @@ Recollection,rklekz,Rklekz,,eklrz,4539
 Vu,vu,Vuu,u,muv,4541
 Infringement,nfrenjm,Nfrenjm,,efjmnr,4548
 Protestant,protesNt,Prtesnt,,enprst,4550
-Protestantism,protesntsm,Prtesntsm,,emnprst,4550
 Protestants,protesNts,Prtesnts,,enprst,4550
+Protestantism,protesntsm,Prtesntsm,,emnprst,4550
 Traces,trass,Trass,,arst,4555
 Heels,els,Els,,els,4557
 Periodic,preodk,Prodk,,dkopr,4560
@@ -1550,7 +1544,6 @@ Borrowed,borod,Borod,,bdor,5088
 Apprehension,aprhenz,Aprhenz,,aehnprz,5092
 Betray,btra,Btra,,abrt,5095
 Blowing,blog,Blog,,bglo,5096
-Separation,spraz,Spraz,,aprsz,5097
 Pot,pot,Poti,i,iopt,5098
 Carved,korvd,Korvd,,dkorv,5101
 Dreary,drere,Drere,,der,5103
@@ -1566,8 +1559,8 @@ Struggled,strgld,Strgld,,dglrst,5122
 Problems,prbls,Prbls,,blprs,5124
 Treasures,trezs,Trezs,,erstz,5126
 Attributed,atrebd,Atrebd,,abdert,5128
-Attributes,atrebs,Atrebs,,aberst,5128
 Attributing,atrebg,Atrebg,,abegrt,5128
+Attributes,atrebs,Atrebs,,aberst,5128
 Quoth,qoH,Qoh,,hoq,5129
 Solemnly,some,Someo,o,emos,5133
 Infinitely,nfnte,Nfnte,,efnt,5137
@@ -1610,10 +1603,10 @@ Tossed,tost,Tost,,ost,5196
 Polished,polzt,Polzt,,loptz,5197
 Austrian,ostrean,Ostren,,enorst,5198
 Chap,cap,Capu,u,acpu,5200
-Entertainer,NTnr,Ntnr,,nrt,5201
-Entertainers,NTnrs,Ntnrs,,nrst,5201
 Entertaining,NTng,Ntng,,gnt,5201
 Entertainingly,NTnge,Ntnge,,egnt,5201
+Entertainer,NTnr,Ntnr,,nrt,5201
+Entertainers,NTnrs,Ntnrs,,nrst,5201
 Thirst,Hest,Hest,,ehst,5204
 Mig,meg,Mego,o,egmo,5205
 Firing,firg,Firg,,fgir,5207
@@ -1739,7 +1732,6 @@ Beer,ber,Bero,o,beor,5441
 Dreaded,dredt,Dredt,,dert,5442
 Paths,pahs,Pahs,,ahps,5443
 Possessions,psezs,Psezs,,epsz,5445
-Moves,mus,Mus,,msu,5446
 Shops,zops,Zops,,opsz,5447
 Continual,ktnul,Ktnul,,klntu,5448
 Muscles,msls,Msls,,lms,5450
@@ -2053,7 +2045,6 @@ Damned,dmd,Dmdo,o,dmo,6010
 Undertaken,Utakn,Utakn,,akntu,6012
 Stake,stak,Stak,,akst,6013
 Indispensable,ndspensb,Ndspensb,,bdenps,6016
-Brows,braos,Brws,,brsw,6017
 Hanged,hagd,Hagd,,adgh,6018
 Preaching,precg,Prcg,,cgpr,6020
 Bows,baos,Bws,,bsw,6022
@@ -2091,10 +2082,10 @@ Reflections,rflekzs,Rflekzs,,efklrsz,6074
 Constituted,ksttutd,Ksttutd,,dkstu,6077
 Deploy,dpl,Dpl,,dlp,6078
 Deployed,dpld,Dpld,,dlp,6078
-Deployer,dplr,Dplro,o,dlopr,6078
-Deployers,dplrs,Dplrso,o,dloprs,6078
 Deployment,dplm,Dplm,,dlmp,6078
 Deployments,dplms,Dplms,,dlmps,6078
+Deployer,dplr,Dplro,o,dlopr,6078
+Deployers,dplrs,Dplrso,o,dloprs,6078
 Deploys,dpls,Dpls,,dlps,6078
 Sealed,seld,Seld,,dels,6078
 Neighboring,nabrg,Nabrgo,o,abgnor,6079
@@ -2615,8 +2606,8 @@ Coffin,kofn,Kofn,,fkno,6948
 Tranquil,traql,Traql,,alqrt,6951
 Sensations,snsazs,Snsazs,,ansz,6952
 Contributed,kBd,Kbd,,bdk,6953
-Contributes,kBs,Kbs,,bks,6953
 Contributing,kBg,Kbg,,bgk,6953
+Contributes,kBs,Kbs,,bks,6953
 Keenly,kene,Kene,,ekn,6955
 Parole,prol,Prlo,o,lopr,6957
 Perceiving,prsevg,Prsevg,,egprsv,6958
@@ -2977,7 +2968,6 @@ Rhode,rod,Roda,a,ador,7533
 Monarchy,mnerke,Mnerke,,ekmnr,7534
 Weariness,uerens,Uerens,,enrsu,7537
 Mistakes,msts,Msts,,mst,7538
-Pronounce,prnns,Prnns,,nprs,7541
 Penetrate,pentrat,Pentrat,,aenprt,7542
 Rags,rags,Ragso,o,agors,7546
 Maidens,madns,Madnso,o,admnos,7548
@@ -2994,7 +2984,6 @@ Dante,dnt,Dnt,,dnt,7566
 Contribution,kBz,Kbz,,bkz,7567
 Contributions,kBzs,Kbzs,,bksz,7567
 Gothic,gohk,Gohk,,ghko,7568
-Kicked,kekt,Kekto,o,ekot,7570
 Venetian,vnez,Vnez,,envz,7571
 Jacket,jakt,Jakt,,ajkt,7572
 Shudder,zdE,Zde,,dez,7573
@@ -3808,7 +3797,6 @@ Mac,mak,Maku,u,akmu,8856
 Lily,lee,Leeo,o,elo,8857
 Toes,tos,Tose,e,eost,8858
 Dey,da,Dau,u,adu,8859
-Denounced,dnnst,Dnnst,,dnst,8860
 Toast,tost,Tostu,u,ostu,8862
 Boasted,bostd,Bostd,,bdost,8867
 Permanently,pEmonentle,Pemonentle,,elmnopt,8870
@@ -4199,11 +4187,11 @@ Berries,beres,Beres,,bers,9513
 Heal,el,Eluu,uu,elu,9514
 Achilles,akeles,Akeles,,aekls,9515
 Authentically,oHente,Ohente,,ehnot,9516
-Authenticates,oHents,Ohents,,ehnost,9516
 Authenticating,oHentg,Ohentg,,eghnot,9516
+Authenticates,oHents,Ohents,,ehnost,9516
+Authenticity,oHentS,Ohentso,o,ehnost,9516
 Authentication,oHentz,Ohentz,,ehnotz,9516
 Authentications,oHentzs,Ohentzs,,ehnostz,9516
-Authenticity,oHentS,Ohentso,o,ehnost,9516
 Weise,ues,Ueso,o,eosu,9517
 Invincible,nvensb,Nvensb,,bensv,9518
 Claws,klos,Klosu,u,klosu,9519
@@ -5228,7 +5216,6 @@ Tides,tids,Tidso,o,diost,11152
 Sumptuous,smpcus,Smpcus,,cmpsu,11153
 Curling,kelg,Kelgo,o,egklo,11154
 Tints,tents,Tentso,o,enost,11157
-Separating,sepratg,Sepratg,,aegprst,11159
 Bully,bule,Bule,,belu,11161
 Decorations,dkrazs,Dkrazs,,adkrsz,11163
 Adelaide,adlad,Adlad,,adl,11165
@@ -5874,7 +5861,6 @@ Digits,dejts,Dejts,,dejst,12181
 Greed,gred,Gred,,degr,12182
 Tremor,tremE,Treme,,emrt,12183
 Infants,nfnts,Nfnts,,fnst,12186
-Onion,nn,Nnu,u,nuv,12188
 Pitiless,petels,Petels,,elpst,12189
 Worrying,uueg,Uueg,,egu,12190
 Disabled,dsbd,Dsbd,,bds,12193
@@ -5970,8 +5956,8 @@ Delays,dlas,Dlas,,adls,12330
 Foolishly,fulze,Fulze,,efluz,12331
 Silks,selks,Selks,,ekls,12332
 Orlando,rlando,Rlando,,adlnor,12333
-Variability,varB,Varbo,o,aborv,12334
 Variable,varb,Varb,,abrv,12334
+Variability,varB,Varbo,o,aborv,12334
 Variables,varbs,Varbs,,abrsv,12334
 Sebastian,sbasz,Sbasz,,absz,12335
 Archives,arkivs,Arkivs,,aikrsv,12336
@@ -6536,7 +6522,6 @@ Vp,vepe,Vepe,,epv,13205
 Zest,zest,Zesto,o,eostz,13207
 Thomson,tmsn,Tmsn,,mnst,13209
 Glimmering,glemrg,Glemrg,,eglmr,13212
-Nouns,nns,Nnso,o,nos,13213
 Yawning,eong,Eong,,egno,13215
 Stronghold,strhold,Strhold,,dhlorst,13216
 Exacted,esaktd,Xaktd,,adktx,13217
@@ -6692,7 +6677,6 @@ Correspondents,kresnts,Kresnts,,eknrst,13448
 Courtier,koter,Koter,,ekort,13451
 Fumes,feums,Fums,,fmsu,13452
 Interfering,ntrferg,Ntrferg,,efgnrt,13453
-Separates,seprats,Seprats,,aeprst,13456
 Sheds,zeds,Zeds,,desz,13457
 Showy,zoe,Zyo,o,oyz,13458
 Unions,unns,Unns,,nsu,13459
@@ -7355,9 +7339,9 @@ Narrowed,nerod,Nerod,,denor,14530
 Strategic,strtejk,Strtejk,,ejkrst,14531
 Transited,tTd,Ttd,,cdt,14532
 Transiting,tTg,Ttg,,gtv,14532
-Transitive,tTv,Ttv,,ctv,14532
 Transitory,tTre,Ttre,,ert,14532
 Transits,tTs,Tts,,stx,14532
+Transitive,tTv,Ttv,,ctv,14532
 Starboard,storbEd,Storbed,,bdeorst,14533
 Intercepted,ntrseptd,Ntrseptd,,denprst,14535
 Caliph,kalf,Kalf,,afkl,14537
@@ -8044,7 +8028,6 @@ Blunders,blUs,Blus,,blsu,15616
 Tramping,trampg,Trampg,,agmprt,15618
 Humiliated,humeleatd,Humeletd,,dehlmtu,15624
 Colin,koln,Koln,,klno,15626
-Attaches,atacs,Atacs,,acst,15627
 Emancipated,emanspatd,Emanspatd,,ademnpst,15628
 Jahr,jA,Jaa,a,acj,15632
 Perpetrated,peptratd,Peptratd,,adeprt,15634
@@ -8280,7 +8263,6 @@ Prevalence,prevlns,Prvlns,,lnprsv,15997
 Trespass,trespas,Trespas,,aeprst,15998
 Classified,klasfid,Klasfid,,adfikls,15999
 Neatness,netns,Netns,,enst,16000
-Pronouncing,prnnsg,Prnnsg,,gnprs,16001
 Galilee,galle,Galle,,aegl,16002
 Gick,jek,Jeko,o,ejko,16003
 Relinquished,rlquzt,Rlquzt,,lqrtuz,16004
@@ -8695,9 +8677,9 @@ Sinclair,snklar,Snklar,,aklnrs,16664
 Winthrop,uenHrp,Uenhrp,,ehnpru,16666
 Interspersed,ntrspest,Ntrspest,,enprst,16667
 Realism,r-e-\-s-m,Resm,,emrs,16668
-Realist,r-e-\-s-t,Restu,u,erstu,16668
 Realistic,r-e-\-s-t,Resti,i,eirst,16668
 Realists,r-e-\-s-t-s,Rests,,erstus,16668
+Realist,r-e-\-s-t,Restu,u,erstu,16668
 Emulation,mulaz,Mulaz,,almuz,16672
 Rotation,rotaz,Rotaz,,aortz,16673
 Freemen,fremn,Fremn,,efmnr,16674
@@ -8962,7 +8944,6 @@ Grimm,grem,Gremo,o,egmor,17053
 Evoked,evokt,Evokt,,ekotv,17054
 Wounding,undg,Undg,,dgnu,17055
 Whitney,uetne,Uetne,,entu,17056
-Attaching,atacg,Atacg,,acgt,17057
 Prematurely,premcure,Prmcure,,cempru,17059
 Hayes,has,Hasi,i,ahis,17060
 Blasts,blasts,Blastso,o,ablost,17063
@@ -8982,7 +8963,6 @@ Tacit,tast,Tasto,o,aost,17085
 Observable,absevb,Absevb,,abesv,17089
 Saber,sabr,Sabro,o,abors,17090
 Tunis,tns,Tnsy,y,nsty,17092
-Announces,annss,Annss,,ans,17093
 Nemo,nemo,Nemoo,o,emno,17095
 Nella,nel,Nely,y,elny,17097
 Omar,omor,Omor,,mor,17098
@@ -10008,7 +9988,6 @@ Haber,habr,Habr,,abhr,18778
 Infatuated,nfacuatd,Nfacuatd,,acdfntu,18779
 Propounded,prpndt,Prpndt,,dnprt,18780
 Apologized,apoljizd,Apoljizd,,adijlopz,18781
-Denouncing,dnnsg,Dnnsg,,dgns,18782
 Placidly,plasde,Plasde,,adelps,18784
 Sensibilities,snsbltes,Snsbltes,,belnst,18785
 Carbonic,korbonk,Korbonk,,bknor,18787
@@ -10086,8 +10065,8 @@ Reverses,rvess,Rvess,,ersv,18923
 Marse,mors,Morso,o,mors,18924
 Spelled,spld,Spld,,dlps,18925
 Stomachs,stmks,Stmks,,kmst,18926
-Diffidence,dfnts,Dfnts,,dfnst,18928
 Diffidently,dfnte,Dfnte,,defnt,18928
+Diffidence,dfnts,Dfnts,,dfnst,18928
 Unqualified,nkofT,Nqoft,,fnoqt,18928
 Balkan,bolkn,Bolkn,,bklno,18929
 Ritter,retE,Rete,,ert,18930
@@ -10118,8 +10097,8 @@ Portfolio,prtfoleo,Prtfoleo,,efloprt,18970
 Carte,kAt,Kati,i,aikt,18971
 Pinnacle,penkl,Penkl,,eklnp,18972
 Residences,rsednss,Rsednss,,denrs,18973
-Complexities,kplestes,Kplxtes,,eklpstx,18976
 Complexity,kpleste,Kplxte,,eklptx,18976
+Complexities,kplestes,Kplxtes,,eklpstx,18976
 Composure,kPozE,Kpoze,,ekopz,18977
 Gallon,galn,Galn,,agln,18978
 Ref,ref,Refo,o,efor,18979
@@ -11360,7 +11339,6 @@ Whistles,uesls,Uesls,,elsu,21131
 Affluence,afluns,Afluns,,aflnsu,21132
 Buff,bf,Bfu,u,bfu,21133
 Moralist,molst,Molst,,lmost,21136
-Pronouns,pronAW0 ns,Prnaw0 ns,,0anprsw,21137
 Roscoe,rosko,Rosko,,kors,21139
 Explicitly,espleste,Xplxte,,elptx,21140
 Manifesting,manfstg,Manfstg,,afgmnst,21142
@@ -11924,8 +11902,8 @@ Worshipful,uezpf,Uezpf,,efpuz,22104
 Tara,tE,Teww,ww,etw,22105
 Caravans,karvans,Karvans,,aknrsv,22106
 Autograph,otO,Otoi,i,iot,22109
-Autographed,otOt,Otot,,otz,22109
 Autographs,otOs,Otoso,o,ost,22109
+Autographed,otOt,Otot,,otz,22109
 Fares,fers,Fersi,i,efirs,22110
 Flux,flks,Flks,,fkls,22111
 Mercifully,mesfle,Mesfle,,eflms,22113
@@ -12122,7 +12100,6 @@ Butchers,bucrs,Bucrs,,bcrsu,22431
 Parity,perte,Prteu,u,eprtu,22434
 Pedantic,pdntk,Pdntk,,dknpt,22435
 Banging,bagg,Bagg,,abg,22436
-Browser,braosr,Brwsr,,brsw,22437
 Transforming,tfmg,Tfmg,,fgmt,22439
 Amanda,amand,Amand,,admn,22440
 Fax,faks,Faks,,afks,22441
@@ -13587,8 +13564,8 @@ Disinclined,dsnklind,Dsnklind,,diklns,25111
 Felony,felne,Felne,,efln,25113
 Firstborn,fesbon,Fesbon,,befnos,25114
 Risque,rska,Rsqa,,aqrs,25115
-Sided,sidt,Sidt,,dist,25116
 Siding,sidg,Sidg,,dgis,25116
+Sided,sidt,Sidt,,dist,25116
 Dividends,devdnds,Devdnds,,densv,25119
 Monsignor,monsenY r,Monseny r,,emnorsy,25124
 Acacia,akaz,Akaz,,akz,25125
@@ -13740,7 +13717,6 @@ Dexter,dekstE,Dekste,,dekst,25421
 Argentine,arjntn,Arjntn,,ajnrt,25424
 Darrin,darn,Darnu,u,adnru,25425
 Evadne,evedne,Evedne,,denv,25426
-Pronounces,prnnss,Prnnss,,nprs,25428
 Ratify,ratf,Ratf,,afrt,25429
 Resigning,rsing,Rsing,,ginrs,25430
 Swaggering,suagrg,Suagrg,,agrsu,25432
@@ -13824,7 +13800,6 @@ Bosses,boss,Bosso,o,bos,25590
 Exhorting,esotg,Xotg,,gotx,25591
 Elena,elno,Elno,,elno,25593
 Apologise,apoljis,Apoljis,,aijlops,25594
-Attachments,atacms,Atacms,,acmst,25595
 Fluctuating,flkcuatg,Flkcuatg,,acfgkltu,25596
 Schooled,skld,Skldo,o,dklos,25598
 Shackles,zakls,Zakls,,aklsz,25599
@@ -15121,7 +15096,6 @@ Mote,mot,Moty,y,moty,28005
 Notables,notbs,Notbs,,bnost,28006
 Parlors,porlrs,Porlrs,,loprs,28007
 Scrubby,skrbe,Skrbe,,bekrs,28009
-Separately,seprte,Seprte,,eprst,28010
 Nemesis,nemss,Nemss,,emns,28014
 Cannibal,kb,Kbu,u,bku,28016
 Finishes,fenzs,Fenzs,,efnsz,28019
@@ -15139,7 +15113,6 @@ Lagoons,lgns,Lgnso,o,glnos,28044
 Crimean,krmen,Krmen,,ekmnr,28050
 Kazan,kazn,Kazn,,aknz,28051
 Mckinley,mkene,Mkene,,ekmn,28052
-Attache,atza,Atza,,atz,28053
 Correspondingly,kresG,Kresgu,u,egkrsu,28054
 Fiftieth,fefteh,Fefteh,,efht,28055
 Boxed,bokst,Bokst,,bkost,28061
@@ -16158,7 +16131,6 @@ Bailiffs,balfs,Balfs,,abfls,30180
 Embryonic,mbreonek,Mbreonek,,bekmnor,30182
 Premieres,prmers,Prmerso,o,emoprs,30187
 Figaro,fegro,Fegro,,efgor,30193
-Sieg,seg,Sega,a,aegs,30194
 Whistler,ueslr,Ueslr,,elrsu,30195
 Coterie,kotre,Kotre,,ekort,30198
 Crackle,krakl,Krakl,,aklr,30199
@@ -16316,8 +16288,8 @@ Maudlin,modln,Modln,,dlmno,30531
 Stiffening,stefng,Stefng,,efgnst,30533
 Abdul,abdul,Abdulo,o,abdlou,30536
 Josh,joz,Joz,,joz,30540
-Authenticated,oHentd,Ohentd,,dehnot,30542
 Unauthenticated,unoHentT,Nohentd,,dehnot,30542
+Authenticated,oHentd,Ohentd,,dehnot,30542
 Indulges,ndljs,Ndljs,,djlns,30544
 Palsy,pose,Poseu,u,eopsu,30545
 Unwary,nare,Nare,,aenr,30547
@@ -16538,7 +16510,6 @@ Freddy,frede,Fredeo,o,defor,31017
 Tomlinson,tmlnsn,Tmlnsn,,lmnst,31019
 Deliberated,dlebd,Dlebd,,bdel,31024
 Hygiene,hijen,Hijen,,ehijn,31026
-Mover,mur,Mure,e,emru,31028
 Mowing,maog,Mwg,,gmw,31029
 Ramifications,ramfkazs,Ramfkazs,,afkmrsz,31031
 Undergoes,Ugos,Ugos,,gosu,31032
@@ -18094,7 +18065,6 @@ Hardin,hAdn,Hadnu,u,adhnu,34370
 Mesdames,mdms,Mdms,,dms,34371
 Ox,oks,Okso,o,kos,34373
 Parthenon,pAhnn,Pahnn,,ahnp,34374
-Browsing,braosg,Brwsg,,bgrsw,34378
 Hilltop,heltp,Heltp,,ehlpt,34381
 Omnibuses,omnbss,Omnbss,,bmnos,34384
 Spray,spra,Sprao,o,aoprs,34387
@@ -18139,8 +18109,8 @@ Grier,grir,Grir,,gir,34491
 Latham,laHm,Lahm,,ahlm,34493
 Compress,kpres,Kpres,,ekprs,34495
 Compressed,kpresd,Kpresd,,dekprs,34495
-Compresses,kpress,Kpress,,ekprs,34495
 Compressing,kpresg,Kpresg,,egkprs,34495
+Compresses,kpress,Kpress,,ekprs,34495
 Compression,kprez,Kprez,,ekprz,34495
 Compressions,kprezs,Kprezs,,ekprsz,34495
 Intuitively,ntutve,Ntutve,,entuv,34499
@@ -18609,7 +18579,6 @@ Bloch,blok,Bloko,o,bklo,35556
 Davids,davds,Davds,,adsv,35557
 Townshend,tnznd,Tnznd,,dntz,35559
 Ulm,lm,Lmo,o,lmo,35560
-Announcements,annsms,Annsms,,amns,35561
 Basses,bass,Bassi,i,abis,35562
 Bracket,brakt,Brakto,o,abkort,35563
 Capsule,kapsl,Kapsl,,aklps,35564
@@ -19449,7 +19418,6 @@ Mediate,medeat,Medet,,demt,37513
 Geary,gere,Gere,,egr,37517
 Parkman,porkmn,Porkmn,,kmnopr,37518
 Abortion,aboz,Aboz,,aboz,37520
-Denounces,dnnss,Dnnss,,dns,37525
 Necessitates,nsestats,Nsestats,,aenst,37529
 Pillaging,peljg,Peljg,,egjlp,37530
 Ret,ret,Retu,u,ertu,37531
@@ -19842,8 +19810,8 @@ Coralie,koe,Kyu,u,kuy,38458
 Esteban,estbon,Estbon,,benost,38459
 Merrimac,mermek,Mermek,,ekmr,38461
 Keyboarded,kebodd,Kebodd,,bdeko,38467
-Keyboarder,kebodr,Kebodr,,bdekor,38467
 Keyboarding,kebodg,Kebodg,,bdegko,38467
+Keyboarder,kebodr,Kebodr,,bdekor,38467
 Keyboards,kebods,Kebods,,bdekos,38467
 Seminaries,semneres,Semneres,,emnrs,38473
 Zephyr,zefr,Zefr,,efrz,38477
@@ -20155,7 +20123,6 @@ Lynchburg,lencbrg,Lencbrg,,bceglnr,39287
 Mena,men,Menoo,oo,emno,39288
 Anarchist,anrkst,Anrkst,,aknrst,39291
 Blackening,blakg,Blakg,,abgkl,39292
-Browse,braos,Brwso,o,borsw,39293
 Carnation,kornaz,Kornaz,,aknorz,39294
 Crosse,kros,Krosi,i,ikors,39296
 Lettering,leg,Lega,a,aegl,39298
@@ -21362,8 +21329,8 @@ Kenya,kenu,Kenuo,o,eknou,42343
 Consults,kslts,Kslts,,klst,42345
 Desperado,dsprodo,Dsprdo,,doprs,42346
 Extradited,esDid,Xdid,,dix,42349
-Extradites,esDis,Xdis,,disx,42349
 Extraditing,esDig,Xdig,,dgix,42349
+Extradites,esDis,Xdis,,disx,42349
 Extraditions,esDzs,Xdzs,,dsxz,42349
 Heim,him,Himu,u,himu,42352
 Monotheism,mnehesem,Mnehesem,,ehmns,42356
@@ -22629,9 +22596,9 @@ Governance,gvns,Gvns,,gnsv,45850
 Plotters,plotrs,Plotrs,,loprst,45854
 Polemical,plemkl,Plemkl,,eklmp,45855
 Referendum,rfEndm,Rfendm,,defmnr,45857
-Suction,sekz,Sekzo,o,ekosz,45859
 Suctioned,sekzd,Sekzdo,o,dekosz,45859
 Suctioning,sekzg,Sekzgo,o,egkosz,45859
+Suction,sekz,Sekzo,o,ekosz,45859
 Suctions,sekzs,Sekzso,o,ekosz,45859
 Vociferated,vsefrtd,Vsefrtd,,defrstv,45863
 Boyer,boer,Byro,o,bory,45870
@@ -24064,8 +24031,8 @@ Torbert,tobEt,Tobet,,beot,50086
 Aspersions,aspezs,Aspezs,,aepsz,50088
 Cameras,kamrs,Kamrs,,akmrs,50090
 Contravened,kVend,Kvendo,o,deknov,50093
-Contravenes,kVens,Kvenso,o,eknosv,50093
 Contravening,kVeng,Kvengo,o,egknov,50093
+Contravenes,kVens,Kvenso,o,eknosv,50093
 Detractors,dtraktrs,Dtraktrs,,adkrst,50095
 Dissimilarity,dsmlarte,Dsmlarte,,adelmrst,50097
 Enhances,nhanss,Nhanss,,ahns,50098
@@ -24225,7 +24192,6 @@ Salty,sote,Sotei,i,eiost,50492
 Speranza,spronz,Sprnz,,nprsz,50494
 Teems,tems,Temsu,u,emstu,50496
 Transferable,tfeb,Tfeb,,beft,50499
-Unannounced,nnnst,Nnnst,,nst,50500
 Weeded,uedt,Uedto,o,deotu,50503
 Lilith,lelH,Lelh,,ehl,50507
 Nab,nab,Nabu,u,abnu,50508
@@ -24865,7 +24831,6 @@ Obliteration,abltraz,Abltraz,,ablrtz,52498
 Polyglot,plglot,Plglot,,glopt,52499
 Quelling,qelg,Qelg,,eglq,52501
 Rightness,rins,Rins,,inrs,52503
-Separations,sprazs,Sprazs,,aprsz,52505
 Skylark,skilrk,Skilrk,,iklrs,52506
 Baskerville,bskrvl,Bskrvl,,bklrsv,52513
 Clowes,klaos,Klwso,o,klosw,52515
@@ -24913,7 +24878,6 @@ Acreage,akrj,Akrj,,ajkr,52642
 Disbursed,dsbest,Dsbest,,bdest,52646
 Havens,havns,Havns,,ahnsv,52652
 Infusing,nfeusg,Nfusg,,fgnsu,52654
-Pronouncement,prnnsm,Prnnsm,,mnprs,52662
 Tinkering,tqrg,Tqrg,,gqrt,52669
 Galle,gal,Galuu,uu,aglu,52678
 Heman,emn,Emnu,u,emnu,52679
@@ -25472,7 +25436,6 @@ Promoted,prmotd,Prmotd,,dmoprt,54471
 Rotate,rotat,Rotat,,aort,54473
 Spurts,spEts,Spetso,o,eopst,54478
 Thresh,Hrez,Hrez,,ehrz,54481
-Unattached,ntact,Ntact,,acnt,54482
 Barham,bAhm,Bahm,,abhm,54484
 Dingley,degge,Degge,,deg,54486
 Lichter,lektE,Lekte,,eklt,54487
@@ -27556,7 +27519,6 @@ Simson,semsn,Semsn,,emns,61465
 Banister,banstE,Bansteo,o,abenost,61467
 Bawd,bod,Boda,a,abdo,61468
 Bodied,bod,Bodw,w,bdow,61470
-Browsed,braosd,Brwsd,,bdrsw,61471
 Deriding,dridg,Dridg,,dgir,61477
 Emissions,emezs,Emezs,,emsz,61480
 Flange,flanj,Flanj,,afjln,61484
@@ -28216,11 +28178,11 @@ Eglise,gles,Gleso,o,eglos,64003
 Hees,es,Esaa,aa,aes,64008
 Hilts,helts,Helts,,ehlst,64009
 Hopp,hop,Hopa,a,ahop,64010
-Infrastructurally,nStrke,Nstrke,,eknrst,64011
 Infrastructure,nStrk,Nstrk,,knrst,64011
 Infrastructureed,nStrkd,Nstrkd,,dknrst,64011
-Infrastructures,nStrks,Nstrks,,knrst,64011
+Infrastructurally,nStrke,Nstrke,,eknrst,64011
 Infrastructuring,nStrkg,Nstrkg,,gknrst,64011
+Infrastructures,nStrks,Nstrks,,knrst,64011
 Instigate,nstgat,Nstgat,,agnst,64012
 Intrudes,ntruds,Ntruds,,dnrstu,64013
 Lach,lac,Laca,a,acl,64017
@@ -28472,7 +28434,6 @@ Conserving,ksevg,Ksevgo,o,egkosv,64929
 Doan,don,Donw,w,dnow,64932
 Gauging,gajg,Gajg,,agj,64938
 Horsed,horst,Horst,,horst,64941
-Movers,murs,Mursa,a,amrsu,64951
 Propagandist,prpgandst,Prpgandst,,adgnprst,64958
 Sconce,sks,Sksu,u,ksu,64961
 Soapy,sope,Sope,,eops,64962
@@ -28616,7 +28577,6 @@ Rebellious,rbelus,Rbelus,,belrsu,65547
 Reset,rset,Rsetu,u,erstu,65548
 Sandbags,sandbags,Sandbagso,o,abdgnos,65554
 Semel,seml,Seml,,elms,65556
-Separateness,seprtns,Seprtns,,enprst,65557
 Squashed,sqozt,Sqozt,,oqstz,65560
 Stipends,stipnds,Stipnds,,dinpst,65561
 Wartime,uotm,Uotm,,motu,65566
@@ -28853,7 +28813,6 @@ Farrow,fero,Feroa,a,aefor,66529
 Nesbit,nesbt,Nesbt,,benst,66536
 Ormes,oms,Oms,,mos,66537
 Preuss,prus,Pruso,o,oprsu,66539
-Separatists,seprtsts,Seprtsts,,eprst,66543
 Terrence,tEns,Tensa,a,aenst,66545
 Tubal,tUW1b,Tuw1b,,1btuw,66546
 Willson,lsn,Lsnu,u,lnsu,66552
@@ -28999,8 +28958,8 @@ Penultimate,pnltmt,Pnltmt,,lmnpt,67170
 Scarcer,skasE,Skaseo,o,aekos,67178
 Timeline,tmln,Tmln,,lmnt,67184
 Timelined,tmlnd,Tmlnd,,dlmnt,67184
-Timelines,tmlns,Tmlns,,lmnst,67184
 Timelining,tmlng,Tmlng,,glmnt,67184
+Timelines,tmlns,Tmlns,,lmnst,67184
 Toboggan,tbogn,Tbogn,,bgnot,67185
 Tranche,tranc,Tranc,,acnrt,67186
 Wattled,uotld,Uotld,,dlotu,67195
@@ -29630,14 +29589,13 @@ Culvert,klvEt,Klvet,,ekltv,69703
 Dicker,dekr,Dekru,u,dekru,69706
 Disintegrate,dsentgrat,Dsentgrat,,adegnrst,69707
 Electrolyte,elLit,Ellit,,eilt,69709
-Electrolytes,elLits,Ellits,,eilst,69709
 Electrolytic,elLitk,Ellitk,,eiklt,69709
+Electrolytes,elLits,Ellits,,eilst,69709
 Faile,fal,Fali,i,afil,69710
 Observatories,absevtores,Absevtores,,abeorstv,69722
 Pacto,pakto,Paktoo,o,akopt,69724
 Parsed,porst,Porst,,oprst,69726
 Preemption,preempz,Prempz,,emprz,69730
-Separatist,seprtst,Seprtst,,eprst,69739
 Unregulated,nregulatd,Nregulatd,,adeglnrtu,69743
 Wobbly,uobe,Uobe,,beou,69745
 Calif,kalf,Kalfo,o,afklo,69753
