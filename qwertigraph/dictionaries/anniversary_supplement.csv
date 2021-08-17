@@ -556,6 +556,7 @@ Occupations,o-kp-s,Okps,,kops,3498
 Balancer,b-a-l-r,Balr,,ablr,3523
 Balancers,b-a-l-r-s,Balrs,,ablrs,3523
 Invitations,n-v-e-t-sh-s,Nvetzs,,enstvz,3582
+Externals,e-s-/-n-l-s,Xnls,,lnsx,3593
 Established,e-s2-t-b-d,Estbd,,bestd,3682
 Establishing,e-s2-t-b-\-h,Estbg,,bestg,3682
 Establishes,e-s2-t-b-s,Estbs,,bests,3682
@@ -583,6 +584,7 @@ Preparations,pr-e-p-sh-s,Prepzs,,eprsz,3873
 Solutioned,s2-o-l-sh-d,Solzd,,dlosz,3907
 Solutioning,s2-o-l-sh-\-h,Solzg,,glosz,3907
 Solutions,s2-o-l-sh-s,Solzs,,losz,3907
+Internals,n-/-n-l-s,Nnls,,lns,3908
 Executives,e-s2-e-k-v-s,Xekvs,,eksvx,4030
 Washer,u-o-sh-r,Uozr,,ouzr,4064
 Washes,u-o-sh-s,Uozs,,ouzs,4064
@@ -667,6 +669,7 @@ Organism,o-g-n-s-m,Ognsm,,gmnos,5141
 Organisms,o-g-n-s-m-s,Ognsms,,gmnos,5141
 Selections,s-e-l-e-k-sh-s,Selekzs,,eklsz,5218
 Speakers,s-p-/-r-s,Sprs,,prs,5224
+Attachments,a-t-ch-m-s,Atcms,,acmst,5233
 Logged,l-o-g-d,Logd,,dglo,5239
 Logging,l-o-g-\-h,Logg,,glo,5239
 Beforehand,b-f-n-t,Bfnt,,bfnt,5240
@@ -805,6 +808,10 @@ Delete,d-l-e-t,Dlet,,delt,8274
 Deleted,d-l-e-t-d,Dletd,,delt,8274
 Deleting,d-l-e-t-\-h,Dletg,,deglt,8274
 Deletes,d-l-e-t-s,Dlets,,delst,8274
+Attached,a-t-ch-d,Atcd,,acdt,8525
+Attaching,a-t-ch-\-h,Atcg,,acgt,8525
+Attaches,a-t-ch-s,Atcs,,acst,8525
+Unattached,u-n-a-t-ch-d,Unatcd,,acdnt,8525
 Import,m-p-o-t,Mpot,,mopt,8595
 Imported,m-p-o-t-d,Mpotd,,dmopt,8595
 Importing,m-p-o-t-\-h,Mpotg,,gmopt,8595
@@ -1102,6 +1109,8 @@ Progressive,pr-g-v,Prgv,,gprv,27772
 Progressively,pr-g-v-e,Prgve,,egprv,27772
 Progressives,pr-g-v-s,Prgvs,,gprsv,27772
 Progressions,pr-g-sh-s,Prgzs,,gprsz,27772
+Attache,a-t-a-sh-a,Ataza,,atz,28053
+Attaches,a-t-a-sh-a-s,Atazas,,astz,28053
 Disproved,d-s-pr-v-d,Dsprvd,,dprsv,28203
 Disproving,d-s-pr-v-\-h,Dsprvg,,dgprsv,28203
 Disproves,d-s-pr-v-s,Dsprvs,,dprsv,28203
@@ -1141,6 +1150,13 @@ Installments,n-s2-t-o-l-m-s,Nstolms,,lmnost,38139
 Converged,k-v-e-j-d,Kvejd,,dejkv,38983
 Converging,k-v-e-j-\-h,Kvejg,,egjkv,38983
 Converges,k-v-e-j-s,Kvejs,,ejksv,38983
+Brow,br-a-u,Brw,,brw,39293
+Browse,br-a-u-s,Brws,,brsw,39293
+Browsed,br-a-u-s-d,Brwsd,,bdrsw,39293
+Browsing,br-a-u-s-\-h,Brwsg,,bgrsw,39293
+Brows,br-a-u-s-o,Brwso,o,borsw,39293
+Browser,br-a-u-s-r,Brwsr,,brsw,39293
+Browsers,br-a-u-s-r-s,Brwsrs,,brsw,39293
 Installs,n-s2-t-o-l-s,Nstols,,lnost,39681
 Workroom,r-k-r-m,Rkrm,,kmr,40538
 Workrooms,r-k-r-m-s,Rkrms,,kmrs,40538
@@ -1174,6 +1190,8 @@ Techniques,t-e-k-n-e-k-s,Tekneqs,,eknqst,69046
 Technology,t-e-k-n-\-o,Tekno,,eknot,69046
 Technologies,t-e-k-n-\-o-s,Teknos,,eknost,69046
 Managerially,mn-j-e-r-l-e,Mmjerle,,ejlmre,69140
+Code,k-o-t,Kot,,kot,70302
+Called,k-o-t,Kota,a,akot,70302
 Commandeered,k-m-a-n-/-e-r-d,Kmanerd,,aekmnrd,70319
 Debug,d-b-u-g,Dbug,,bdgu,70330
 Debugged,d-b-u-g-d,Dbugd,,bdgud,70330
@@ -1216,5 +1234,3 @@ Templating,tm-pl-a-\-h,Tmplag,,aglmpt,71659
 Templates,tm-pl-a-s,Tmplas,,almpst,71659
 To be,t-b,Tb,,bct,71706
 You can,u-k,Uk,,cku,71882
-Entrance,n-/-n-s,Nns,,nsz,1866
-Announced,a-n-n-s2-t,Annst,,anst,2434

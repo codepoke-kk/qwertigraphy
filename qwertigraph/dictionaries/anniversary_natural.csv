@@ -1,6 +1,5 @@
 word,form,qwerd,keyer,chord,usage
 Seemed,s2-e-mt,Semd,,demS,199
-Called,k-o-/-t,Kod,,dKo,204
 Looked,l-u-/-t,Lud,,dLu,205
 Asked,s2-k-t,Skd,,dkS,239
 Hundred,^-h-\-u-nt,Hund,,dHnu,302
@@ -13,6 +12,8 @@ Carried,k-a-e-/-t,Kaed,,adeK,477
 Reached,r-e-ch-t,Recd,,cdeR,495
 Appeared,a-pr-/-t,Aprd,,Adpr,498
 Opened,o-jnt,Opnd,,dnOp,585
+Microservice,m-i-k-r-^-s2,Msy,,msy,601
+Microservices,m-i-k-r-^-s2-s,Msys,,msy,601
 Placed,pl-a-s2-t,Plasd,,adlPs,606
 Remained,r-e-mn-/-t,Remmd,,demmR,625
 Walked,u-o-k-t,Uokd,,dkoU,662
@@ -353,6 +354,7 @@ Adenoid,a-tn-o-e,Adny,,Adny,70024
 After-dinner,a-f-tn-r,Afdnr,,Adfnr,70034
 Appendicitis,a-jnt-s-i,Apndsi,,Adinps,70082
 Can be done,k-b-tn,Kbdn,,bdKn,70240
+Code,k-o-t,Kod,,dko,70302
 Collodion,k-o-l-o-tn,Kolodn,,dKlnoo,70312
 Contused,k-t-e-u-/-t,Ktud,,dKtu,70342
 Could be done,k-d-b-tn,Kdbdn,,bddKn,70361
