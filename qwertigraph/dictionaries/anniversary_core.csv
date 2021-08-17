@@ -425,7 +425,7 @@ Ready,r-e-d-e,Rede,,der,475
 Force,f-s2,Fs,,cfs,476
 Carried,k-a-e-/-t,Kaet,,aekt,477
 Can't,k-t,Kto,o,kot,478
-Early,e-r-e,Ereo,o,eor,479
+Early,e-r-e,Ere,,erz,479
 Talk,t-o-k,Tok,,kot,480
 Account,a-k-t,Akt,,akt,481
 Answer,a-n-s,Ans,,ans,482
@@ -590,7 +590,7 @@ Carry,k-a-e,Kae,,aek,685
 Immediately,e-m-e,Eme,,emz,686
 Captain,k-a-p-tn,Kaptn,,aknpt,687
 Try,t-r-i,Tri,,irt,689
-Rich,r-e-ch,Rec,,cer,690
+Rich,r-e-ch,Reci,i,ceir,690
 Plain,pl-a-n,Plano,o,alnop,691
 Sweet,s2-u-e-t,Suet,,estu,692
 Minutes,mn-e-t-s,Mmets,,emst,695
@@ -630,7 +630,7 @@ Simple,s2-e-m-p,Semp,,emps,733
 Lips,l-e-p-s,Leps,,elps,734
 Figure,f-e-g-r,Fegr,,efgr,735
 Ago,a-g,Ag,,agx,736
-Reach,r-e-ch,Reco,o,ceor,737
+Reach,r-e-ch,Rec,,cer,737
 Easily,e-s-ye,Esye,,esy,738
 Noble,n-o-b,Nob,,bno,739
 Whatever,o-t-e-v,Otev,,eotv,740
@@ -1117,7 +1117,7 @@ Bore,b-o-r,Bor,,bor,1416
 Grown,g-r-o-n,Gron,,gnor,1417
 Published,p-b-/-t,Pbt,,bpt,1418
 Midst,m-e-d-s,Meds,,dems,1420
-Divine,df-i-n,Dfin,,dfin,1421
+Divine,df-i-n,Dfini,i,dfin,1421
 Tells,t-ye2,Tyeo,o,eoty,1423
 Papers,p-a-pr-s,Paprs,,aprs,1424
 Carriage,k-r-j,Krjo,o,jkor,1425
@@ -1749,7 +1749,7 @@ Reputation,r-p-u-sh,Rpuz,,pruz,2373
 Harm,^-h-\-a2-m,Hamo,o,ahmo,2375
 Listening,l-e-s2-n-\-h,Lesng,,eglns,2376
 Agreeable,^-yab,Yab,,aby,2378
-Suggestion,s2-u-j,Suj,,jsu,2382
+Suggestion,s2-u-j,Sujo,o,josu,2382
 Comfortable,k-f-t-b,Kftb,,bfkt,2383
 Egypt,e-j-e-p,Ejep,,ejp,2387
 Classes,k-l-a-ss,Klass,,akls,2388
@@ -2293,7 +2293,8 @@ Sale,s-a-l,Salo,o,alos,3428
 Eaten,e-tn,Etn,,ent,3429
 Shortly,sh-/-e,Zeo,o,eoz,3430
 Favorite,f-a-/-e-t,Faet,,aeft,3431
-Suggest,s2-u-g,Sug,,gsu,3432
+Suggest,s2-u-j,Suj,,jsu,3432
+Suggestive,s2-u-j-v,Sujv,,jsuv,3432
 Maiden,m-a-tn,Matn,,amnt,3435
 Convey,k-v-a,Kva,,akv,3437
 Absent,a-b-s,Absu,u,absu,3438
@@ -3198,7 +3199,7 @@ Cathedral,k-a-th-e-d,Kahed,,adehk,5902
 Survey,s2-e-v-a,Seva,,aesv,5904
 Cash,k-a-sh,Kazo,o,akoz,5905
 Allowance,a-l-n-s,Alns,,alns,5907
-Defiance,df-i-n-s,Dfins,,dfins,5911
+Defiance,df-i-n-s,Dfinso,o,dfinos,5911
 Goddess,g-d-e-s,Gdes,,degs,5913
 Thursday,th-r-s,Hrs,,hrs,5915
 Debate,d-b-a-t,Dbat,,abdt,5917
@@ -3891,7 +3892,7 @@ Lifeless,l-a-fl,Lafl,,afl,9326
 Adverse,a-v-e-s,Aves,,aesv,9332
 Negotiation,n-e-g-o-sh,Negoz,,egnoz,9334
 Rug,r-u-g,Rugo,o,goru,9336
-Define,df-i-n,Dfino,o,dfino,9338
+Define,df-i-n,Dfin,,dfin,9338
 Infer,n-f-e-r,Nfero,o,efnor,9343
 Mar,m-a2,Mak2,k2,2akm,9351
 Asiatic,a-sh-/-a,Aza,,avz,9359
@@ -4704,7 +4705,7 @@ Bail,b-a-l,Balo,o,ablo,16054
 Inequality,n-e-k-u,Nequ,,enqu,16059
 Truck,t-r-u-k,Truk,,krtu,16104
 Negotiate,n-e-g-o-sh,Negozo,o,egnoz,16111
-Divines,df-i-n-s,Dfinso,o,dfinos,16123
+Divines,df-i-n-s,Dfinsi,i,dfins,16123
 Amend,a-mn,Ammo,o,amo,16127
 Elevator,e2-l-v-a-t-e2,Elvate,,aeltv,16130
 Frolic,fr-l-e-k,Frlek,,efklr,16145
@@ -5310,7 +5311,7 @@ Unanswerable,n-a-n-s-b,Nansb,,abns,23877
 Mansfield,mn-s2-f,Mmsf,,fms,23879
 Burrow,b-u-r-o,Buro,,boru,23882
 Carbide,k-r-b-i,Krbi,,bikr,23886
-Defines,df-i-n-s,Dfinsu,u,dfinsu,23896
+Defines,df-i-n-s,Dfins,,dfins,23896
 Missile,m-s-e-l,Msel,,elms,23920
 Paraguay,p-/-g,Pgu,u,gpu,23934
 Indestructible,nt-s-/-k-b,Ntskb,,bknst,23940
