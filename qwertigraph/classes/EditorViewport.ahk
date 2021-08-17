@@ -25,6 +25,8 @@ global BackupCount
 editor := {}
 DictionaryDropDown := {}
 
+
+Gui MainGUI:Default 
 Gui, Tab, Editor		
 ; Add regex search fields
 Gui, Add, Edit, -WantReturn x12  y64 w160 h20 vRegexWord,  
@@ -123,6 +125,7 @@ EditorSaveDictionaries() {
 
 EditorLV() {
 	global editor
+	Gui MainGUI:Default 
     editor.logEvent(2, "Listview event " A_GuiEvent " on " A_EventInfo)
     if (A_GuiEvent = "DoubleClick") {
         editor.prepareEdit(A_EventInfo)
@@ -138,6 +141,7 @@ EditorLV() {
 
 EditorEditRow() {
 	global editor
+	Gui MainGUI:Default 
 	Gui, ListView, EditorLV
 	editor.logEvent(1, "Listview ContextMenu edit")
     FocusedRowNumber := LV_GetNext(0, "F")  ; Find the focused row.
@@ -150,6 +154,7 @@ EditorEditRow() {
 }
 EditorDeleteRow() {
 	global editor
+	Gui MainGUI:Default 
 	Gui, ListView, EditorLV
 	editor.logEvent(1, "Listview ContextMenu edit")
     FocusedRowNumber := LV_GetNext(0, "F")  ; Find the focused row.
@@ -164,6 +169,7 @@ EditorDeleteRow() {
 }
 EditorCreateRow_S() {
 	global editor
+	Gui MainGUI:Default 
 	Gui, ListView, EditorLV
     FocusedRowNumber := LV_GetNext(0, "F")  ; Find the focused row.
     if not FocusedRowNumber { ; No row is focused.
@@ -179,6 +185,7 @@ EditorCreateRow_S() {
 }
 EditorCreateRow_G() {
 	global editor
+	Gui MainGUI:Default 
 	Gui, ListView, EditorLV
     FocusedRowNumber := LV_GetNext(0, "F")  ; Find the focused row.
     if not FocusedRowNumber { ; No row is focused.
@@ -194,6 +201,7 @@ EditorCreateRow_G() {
 }
 EditorCreateRow_D() {
 	global editor
+	Gui MainGUI:Default 
 	Gui, ListView, EditorLV
     FocusedRowNumber := LV_GetNext(0, "F")  ; Find the focused row.
     if not FocusedRowNumber { ; No row is focused.
@@ -209,6 +217,7 @@ EditorCreateRow_D() {
 }
 EditorCreateRow_T() {
 	global editor
+	Gui MainGUI:Default 
 	Gui, ListView, EditorLV
     FocusedRowNumber := LV_GetNext(0, "F")  ; Find the focused row.
     if not FocusedRowNumber { ; No row is focused.
@@ -224,6 +233,7 @@ EditorCreateRow_T() {
 }
 EditorCreateRow_R() {
 	global editor
+	Gui MainGUI:Default 
 	Gui, ListView, EditorLV
     FocusedRowNumber := LV_GetNext(0, "F")  ; Find the focused row.
     if not FocusedRowNumber { ; No row is focused.
@@ -239,6 +249,7 @@ EditorCreateRow_R() {
 }
 EditorCreateRow_LY() {
 	global editor
+	Gui MainGUI:Default 
 	Gui, ListView, EditorLV
     FocusedRowNumber := LV_GetNext(0, "F")  ; Find the focused row.
     if not FocusedRowNumber { ; No row is focused.
@@ -271,6 +282,7 @@ class EditorViewport
 	
 	listViewEvent() {
 		
+		Gui MainGUI:Default 
 		this.logEvent(2, "Listview event " A_GuiEvent " on " A_EventInfo)
 		if (A_GuiEvent = "DoubleClick") {
 			this.prepareEdit(A_EventInfo)
@@ -284,6 +296,7 @@ class EditorViewport
 		
 	searchMapEntries() {
 		local 
+		Gui MainGUI:Default
 		GuiControlGet RegexDict
 		GuiControlGet RegexWord
 		GuiControlGet RegexForm
@@ -384,6 +397,7 @@ class EditorViewport
 
 	autoQwerdForm() {
         local
+		Gui MainGUI:Default
 		GuiControlGet form, , EditForm
 		GuiControlGet word, , EditWord
 		
@@ -423,6 +437,7 @@ class EditorViewport
 				
 	autoKey() {
         local
+		Gui MainGUI:Default
 		GuiControlGet word, , EditWord
 		GuiControlGet qwerd, , EditQwerd
 		GuiControlGet keyer, , EditKeyer
@@ -439,6 +454,7 @@ class EditorViewport
 	}			
 	autoChord() {
         local
+		Gui MainGUI:Default
 		GuiControlGet qwerd, , EditQwerd
 		
 		this.logEvent(3, "Generating auto chord for " qwerd)
@@ -452,6 +468,7 @@ class EditorViewport
 
 	getNextKeyer(qwerdKey, qwerd, word) {
         local 
+		Gui MainGUI:Default
 		this.logEvent(3, "Getting next keyer for " qwerd " and " qwerdKey)
 		allMatchingKeys := {}
 		allMatchingKeysCount := 0
@@ -505,6 +522,7 @@ class EditorViewport
 
 	addValueToEditFields(WordAdd, FormAdd, QwerdAdd, ChordAdd) {
         local
+		Gui MainGUI:Default
 		GuiControlGet word, , EditWord
 		GuiControlGet form, , EditForm
 		GuiControlGet qwerd, , EditQwerd
@@ -532,6 +550,7 @@ class EditorViewport
 
 	prepareEdit(RowNumber) {
         local
+		Gui MainGUI:Default
 		this.logEvent(2, "Preparing edit for ListView row " RowNumber)
 		
 		Gui, ListView, EditorLV
@@ -575,6 +594,7 @@ class EditorViewport
 	
 	commitEdit() {
         local
+		Gui MainGUI:Default
 		global DictionaryEntry
 		this.logEvent(3, "Commiting edit to qwerd")
 		
@@ -618,7 +638,7 @@ class EditorViewport
 	}
 
 	deleteForm() {
-		
+		Gui MainGUI:Default
 		; Grab values the user has edited and wants to commit 
 		GuiControlGet qwerdKey, , EditQwerd
 		

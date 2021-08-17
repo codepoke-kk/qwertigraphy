@@ -13,6 +13,7 @@ Global CoachEventsLV
 ; Predefine a coach object. The Trainer will redefine it. 
 coach := {}
 
+Gui MainGUI:Default
 Gui, Tab, Coach
 
 
@@ -107,6 +108,7 @@ class CoachViewport
 	
 	filterCoachEvents() {
 		local garbage
+		Gui MainGUI:Default
 		GuiControlGet RegexCoachSavings
 		GuiControlGet RegexCoachWord
 		GuiControlGet RegexCoachQwerd

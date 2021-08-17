@@ -5,6 +5,7 @@ global SettingsLoggingLevelEditor
 global SettingsLoggingLevelCoach
 global SettingsLoggingLevelPad
 
+Gui MainGUI:Default 
 Gui, Tab, Settings
 ; Add regex search fields
 Gui, Add, Text, x12  y64 w444 h20 , Logging Level Settings (1 for low logging up to 4 for high logging)
@@ -40,6 +41,7 @@ Gui, Add, Edit, x172  y504 w40 h20 vSettingsCoachAheadLines gSettingsCoachAheadL
 SettingsLoggingLevelMap() {
 	global map
 	global qenv
+	Gui MainGUI:Default 
 	GuiControlGet SettingsLoggingLevelMap
 	if (RegExMatch(SettingsLoggingLevelMap, "^[012345]$")) {
 		map.logVerbosity := SettingsLoggingLevelMap
@@ -52,6 +54,7 @@ SettingsLoggingLevelMap() {
 SettingsLoggingLevelEngine() {
 	global engine
 	global qenv
+	Gui MainGUI:Default 
 	GuiControlGet SettingsLoggingLevelEngine
 	if (RegExMatch(SettingsLoggingLevelEngine, "^[012345]$")) {
 		if (RegExMatch(SettingsLoggingLevelEngine, "4")) {
@@ -67,6 +70,7 @@ SettingsLoggingLevelEngine() {
 SettingsLoggingLevelEditor() {
 	global editor
 	global qenv
+	Gui MainGUI:Default 
 	GuiControlGet SettingsLoggingLevelEditor
 	if (RegExMatch(SettingsLoggingLevelEditor, "^[012345]$")) {
 		editor.logVerbosity := SettingsLoggingLevelEditor
@@ -79,6 +83,7 @@ SettingsLoggingLevelEditor() {
 SettingsLoggingLevelCoach() {
 	global coach
 	global qenv
+	Gui MainGUI:Default 
 	GuiControlGet SettingsLoggingLevelCoach
 	if (RegExMatch(SettingsLoggingLevelCoach, "^[012345]$")) {
 		coach.logVerbosity := SettingsLoggingLevelCoach
@@ -91,6 +96,7 @@ SettingsLoggingLevelCoach() {
 SettingsLoggingLevelPad() {
 	global pad
 	global qenv
+	Gui MainGUI:Default 
 	GuiControlGet SettingsLoggingLevelPad
 	if (RegExMatch(SettingsLoggingLevelPad, "^[012345]$")) {
 		pad.logVerbosity := SettingsLoggingLevelPad
@@ -103,6 +109,7 @@ SettingsLoggingLevelPad() {
 SettingsPhraseEnthusiasm() {
 	global coach
 	global qenv
+	Gui MainGUI:Default 
 	GuiControlGet SettingsPhraseEnthusiasm
 	if (RegExMatch(SettingsPhraseEnthusiasm, "^\d+$")) {
 		coach.phrasePowerThreshold := SettingsPhraseEnthusiasm
@@ -115,6 +122,7 @@ SettingsPhraseEnthusiasm() {
 SettingsChordWindow() {
 	global engine
 	global qenv
+	Gui MainGUI:Default 
 	GuiControlGet SettingsChordWindow
 	if (RegExMatch(SettingsChordWindow, "^\d+$")) {
 		engine.keyboard.ChordReleaseWindow := SettingsChordWindow
@@ -128,6 +136,7 @@ SettingsChordWindow() {
 SettingsCoachAheadWait() {
 	global engine
 	global qenv
+	Gui MainGUI:Default 
 	GuiControlGet SettingsCoachAheadWait
 	if (RegExMatch(SettingsCoachAheadWait, "^\d+$")) {
 		engine.keyboard.CoachAheadWait := SettingsCoachAheadWait
@@ -140,6 +149,7 @@ SettingsCoachAheadWait() {
 SettingsCoachAheadTipDuration() {
 	global engine
 	global qenv
+	Gui MainGUI:Default 
 	GuiControlGet SettingsCoachAheadTipDuration
 	if (RegExMatch(SettingsCoachAheadTipDuration, "^\d+$")) {
 		engine.keyboard.CoachAheadTipDuration := SettingsCoachAheadTipDuration
@@ -152,6 +162,7 @@ SettingsCoachAheadTipDuration() {
 SettingsCoachAheadLines() {
 	global engine
 	global qenv
+	Gui MainGUI:Default 
 	GuiControlGet SettingsCoachAheadLines
 	if (RegExMatch(SettingsCoachAheadLines, "^\d+$")) {
 		engine.keyboard.CoachAheadLines := SettingsCoachAheadLines

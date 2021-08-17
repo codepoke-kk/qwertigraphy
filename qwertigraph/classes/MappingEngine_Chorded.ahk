@@ -24,6 +24,7 @@ class MappingEngine_Chorded
 	speedQueue := new Queue("SpeedQueue")
 	coachQueue := new Queue("CoachQueue")
 	penQueue := new Queue("PenQueue")
+	dashboardQueue := new Queue("DashboardQueue")
 	
 	keyboard := {}
 	keyboard.EndKeys_hard := " .,?!;:'""-_{{}{}}[]/\+=|()@#$%^&*<>"
@@ -485,6 +486,7 @@ class MappingEngine_Chorded
 				; Coach the found qwerd
 				this.pushCoaching(this.map.chords.item(inbound.token), true, false, false, key, 1)
 				this.pushPenStroke(this.map.chords.item(inbound.token), "blue")
+				this.pushDashboardQwerd(this.map.chords.item(inbound.token), "blue")
 				; "Push Input" is where the magic happens on screen
 				final_characters_count := this.pushInput(inbound.token, this.map.chords.item(inbound.token).word, key)
 			} else {
@@ -500,6 +502,7 @@ class MappingEngine_Chorded
 				; Coach the found qwerd
 				this.pushCoaching(this.map.qwerds.item(inbound.token), true, false, false, key, 0)
 				this.pushPenStroke(this.map.qwerds.item(inbound.token), "blue")
+				this.pushDashboardQwerd(this.map.qwerds.item(inbound.token), "blue")
 				; "Push Input" is where the magic happens on screen
 				final_characters_count := this.pushInput(inbound.token, this.map.qwerds.item(inbound.token).word, key)
 			} else {
@@ -515,6 +518,7 @@ class MappingEngine_Chorded
 				if (this.map.hints.item(inbound.token).hint) {
 					this.pushCoaching(this.map.hints.item(inbound.token), false, true, false, key, 0)
 					this.pushPenStroke(this.map.hints.item(inbound.token), "red")
+					this.pushDashboardQwerd(this.map.hints.item(inbound.token), "red")
 		
 					;;; Hintable
 					this.logEvent(2, "Matched a hint " this.map.hints.item(inbound.token).hint)
@@ -694,6 +698,12 @@ class MappingEngine_Chorded
 		penAction := new PenEvent(qwerd.form, qwerd.qwerd, qwerd.word, ink)
 		this.penQueue.enqueue(penAction)
 		this.logEvent(4, "Enqueued pen action '" penAction.form "'")
+	}
+	
+	pushDashboardQwerd(qwerd, ink) {
+		dashboardQwerd := new DashboardEvent(qwerd.form, qwerd.qwerd, qwerd.word, ink)
+		this.dashboardQueue.enqueue(dashboardQwerd)
+		this.logEvent(1, "Enqueued dashboard action '" dashboardQwerd.form "'")
 	}
 	
 	coachAhead(start) {

@@ -7,9 +7,10 @@ global strokes := ComObjCreate("Scripting.Dictionary")
 global vowelStrokes := ComObjCreate("Scripting.Dictionary")
 #Include classes\strokes.ahk
 
-Gui, Tab, GreggPad
-Gui, Add, ActiveX, x12 y64 w826 h476 voWB, internet.explorer
+Gui, MainGUI: Tab, GreggPad
+Gui, MainGUI: Add, ActiveX, x12 y64 w826 h476 voWB, internet.explorer
 oWB.Navigate(A_ScriptDir "\greggpad.html" )
+
 
 class PadViewport
 {

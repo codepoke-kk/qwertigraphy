@@ -3,12 +3,12 @@ Global SessionSpeedMessage
 Global CurrentSpeedMessage
 
 ; Add header text
-Gui, Tab
-Gui, Font, s18, Verdana  ;
-Gui, Add, Text, x12  y9 w250  h28 vCurrentSpeedMessage, % "0 WPM/0 WPM" 
-Gui, Font, s8, Verdana  ;
-Gui, Add, Text, x270  y9 w650  h48 vSessionSpeedMessage, % "0 WPM/0 WPM`nInput characters: 0, Output characters: 0" 
-Gui, Font
+Gui, MainGUI: Tab
+Gui, MainGUI: Font, s18, Verdana  ;
+Gui, MainGUI: Add, Text, x12  y9 w250  h28 vCurrentSpeedMessage, % "0 WPM/0 WPM" 
+Gui, MainGUI: Font, s8, Verdana  ;
+Gui, MainGUI: Add, Text, x270  y9 w650  h48 vSessionSpeedMessage, % "0 WPM/0 WPM`nInput characters: 0, Output characters: 0" 
+Gui, MainGUI: Font
 
 class SpeedViewport
 {

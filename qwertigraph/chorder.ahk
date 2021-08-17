@@ -23,9 +23,10 @@ FileInstall, templates\retrains.template, templates\retrains.template, true
 FileInstall, templates\personal_functions.template, templates\personal_functions.template, true
 FileInstall, coach.ico, coach.ico, true
 
-Gui, Add, Tab3,x6 y40 w928 h526, Coach|Editor|Logs||GreggPad|Settings
-Gui, Show, x262 y118 w940 h570, % "Qwertigraph Trainer"
+Gui, MainGUI: Add, Tab3,x6 y40 w928 h526, Coach|Editor|Logs||GreggPad|Settings
+Gui, MainGUI: Show, x262 y118 w940 h570, % "Qwertigraph Trainer"
 
+#Include classes\Gdip_All.ahk
 #Include classes\QwertigraphyEnvironment.ahk
 #Include classes\DictionaryEntry.ahk
 #Include classes\DictionaryMap.ahk
@@ -40,7 +41,8 @@ Gui, Show, x262 y118 w940 h570, % "Qwertigraph Trainer"
 #Include classes\EditorViewport.ahk
 #Include classes\PenEvent.ahk
 #Include classes\PadViewport.ahk
-#Include classes\QwertigraphyEnvironment.ahk
+#Include classes\DashboardEvent.ahk
+#Include classes\DashboardViewport.ahk
 
 ; Make the pretty icon
 I_Icon = coach.ico
@@ -61,7 +63,8 @@ coach.addQueue(engine.coachQueue)
 
 editor := new EditorViewport(map)
 
-pad := new PadViewport(qenv, engine.penQueue)
+greggpad := new PadViewport(qenv, engine.penQueue)
+dashboard := new DashboardViewport(qenv, engine.dashboardQueue)
 
 logViewer := new LogViewport()
 logViewer.addQueue(qenv.logQueue)
@@ -69,7 +72,8 @@ logViewer.addQueue(map.logQueue)
 logViewer.addQueue(engine.logQueue)
 logViewer.addQueue(coach.logQueue)
 logViewer.addQueue(editor.logQueue)
-logViewer.addQueue(pad.logQueue)
+logViewer.addQueue(greggpad.logQueue)
+logViewer.addQueue(dashboard.logQueue)
 ;
 
 #Include classes\SettingsViewport.ahk
@@ -95,27 +99,3 @@ engine.Start()
     engine.Start()
     ; Msgbox, % "Chorder started Engine"
     Return
-
-;ClearModifiers() {
-;	Msgbox, % "Clearing"
-;	Send {Blind}{LControl up}{RControl up}{LAlt up}{RAlt up}{LWin up}{RWin up}
-;}
-
-; Ctrl-Space is now up to date, but I need to do the same for Enter and Tab 
-;^Space::
-;^Enter::
-;^NumPadEnter::
-;^Tab::
-;^.::
-;^,::
-;^/::
-;^;::
-;^[::
-;	Send, % "{" SubStr(A_ThisHotkey, 2, StrLen(A_ThisHotkey) - 1) "}"
-;	Return
-	
-
-;ContextEditForm:
-;EditorLVContextEditForm:
-;	Msgbox, % "Hit"
-	

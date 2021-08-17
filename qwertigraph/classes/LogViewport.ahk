@@ -7,6 +7,7 @@ global LogEventsLV
 
 logViewer := {}
 
+Gui MainGUI:Default 
 Gui, Tab, Logs
 ; Add regex search fields
 Gui, Add, Edit, -WantReturn x12  y64 w90 h20 vRegexWhere,  
@@ -57,6 +58,7 @@ class LogViewport
 	
 	filterLogEvents() {
         local
+		Gui MainGUI:Default 
 		GuiControlGet RegexWhere
 		GuiControlGet RegexWhen
 		GuiControlGet RegexWhat
@@ -96,6 +98,7 @@ class LogViewport
 	
 	DequeueEvents() {
         local
+		Gui MainGUI:Default 
 		Gui, ListView, LogEventsLV
 		For index, logQueue in this.logQueues {
 			Loop, % logQueue.getSize() {
