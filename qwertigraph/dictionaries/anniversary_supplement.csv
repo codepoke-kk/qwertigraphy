@@ -200,6 +200,7 @@ Configures,k-f-e-g-r-s,Kfegrs,,efgkrs,735
 Configuration,k-f-e-g-r-sh,Kfegrz,,efgkrz,735
 Configurations,k-f-e-g-r-sh-s,Kfegrzs,,efgkrsz,735
 Configs,k-f-e-g-s,Kfegs,,efgks,735
+Ongoing,o-n-g-\-h,Ongg,,gno,737
 Agreed,^-ya-d,Yad,,ady,746
 Agreeing,^-ya-\-h,Yag,,agy,746
 Agrees,^-ya-s,Yas,,asy,746
@@ -275,6 +276,8 @@ Searching,s2-e-ch-\-h,Secg,,cegs,1201
 Searchlight,s2-e-ch-l-i,Secli,,ceils,1201
 Searchlights,s2-e-ch-l-i-s,Seclis,,ceils,1201
 Searches,s2-e-ch-s,Secs,,ces,1201
+Ones,u-n-s-e,Unse,,ensu,1211
+Reports,r-pr-s,Rprs,,prs,1256
 Secured,s2-e-k-r-d,Sekrd,,dekrs,1260
 Securing,s2-e-k-r-\-h,Sekrg,,egkrs,1260
 Secures,s2-e-k-r-s,Sekrs,,ekrs,1260
@@ -429,7 +432,7 @@ Unreality,n-r-e-/-l,Nrel,,elnr,2364
 Realities,r-e-/-l-s,Rels,,elrs,2364
 Limitations,l-e-m-sh-s,Lemzs,,elmsz,2368
 Agreeably,^-yab-e,Yabe,,abey,2378
-Suggestions,s2-u-j-s,Sujs,,jsu,2382
+Suggestions,s2-u-j-s,Sujso,o,josu,2382
 Confusions,k-f-e-u-sh-s,Kfuzs,,fksuz,2394
 Preparatory,pr-e-p-\-r-e,Prepre,,epr,2440
 Errored,e-r-r-d,Errd,,erzd,2517
@@ -538,11 +541,10 @@ Performances,pr-f-mn-s-s,Prfmmss,,fmprs,3320
 Detailing,td-a2-\-h,Ddag,,adg,3339
 Specification,s-p-e-s2-\-f,Spesf,,efps,3371
 Specifications,s-p-e-s2-\-f-s,Spesfs,,efps,3371
-Suggesting,s2-u-g-\-h,Sugg,,gsu,3432
-Suggests,s2-u-g-s,Sugs,,gsu,3432
-Suggestive,s2-u-g-v,Sugv,,gsuv,3432
-Suggestively,s2-u-g-v-e,Sugve,,egsuv,3432
-Suggestiveness,s2-u-g-v-n-s,Sugvns,,gnsuv,3432
+Suggesting,s2-u-j-\-h,Sujg,,gjsu,3432
+Suggests,s2-u-j-s,Sujs,,jsu,3432
+Suggestively,s2-u-j-v-e,Sujve,,ejsuv,3432
+Suggestiveness,s2-u-j-v-n-s,Sujvns,,jnsuv,3432
 Resource,r-s2-o-s2,Rsos,,ors,3455
 Resourceful,r-s2-o-s2-f,Rsosf,,fors,3455
 Resourcefulness,r-s2-o-s2-f-n-s,Rsosfns,,fnors,3455
@@ -628,6 +630,9 @@ Contraction,k-/-k-sh,Kkz,,kzx,4212
 Contractions,k-/-k-sh-s,Kkzs,,kszx,4212
 Underside,u-/-s-i,Usio,o,iosu,4384
 Undersides,u-/-s-i-s,Usis,,isu,4384
+Irreproachable,e-r-p-r-c-b,Erprcb,,bcepr,4387
+Reproach,r-p-r-c,Rprc,,cpr,4387
+Reproachful,r-p-r-c-f,Rprcf,,cfpr,4387
 Limiting,l-e-m-e-t-\-h,Lemetg,,eglmt,4396
 Limits,l-e-m-e-t-s,Lemets,,elmst,4396
 Netted,n-e-t-d,Netd,,dent,4455
@@ -902,6 +907,7 @@ Assign,a-s-i-n,Asin,,ains,11390
 Assigning,a-s-i-n-\-h,Asing,,agins,11390
 Assigns,a-s-i-n-s,Asins,,ains,11390
 Customers,k-u-s-r-s,Kusrs,,krsus,11568
+Repress,r-p-r-e-s,Rpres,,eprs,11664
 Rout,r-a-o-t,Rwt,,rtw,11813
 Routs,r-a-o-t-s,Rwts,,rstw,11813
 Profile,pr-f-i-l,Prfil,,filpr,11816
@@ -963,6 +969,13 @@ Shortening,sh-/-n-\-h,Zng,,gnz,14581
 Shortens,sh-/-n-s,Zns,,nsz,14581
 Workshop,r-k-sh-o-p,Rkzop,,koprz,14772
 Workshops,r-k-sh-o-p-s,Rkzops,,koprsz,14772
+Graph,g-r-a-f,Graf,,afgr,15063
+Graphed,g-r-a-f-d,Grafd,,adfgr,15063
+Graphing,g-r-a-f-\-h,Grafg,,afgr,15063
+Graphite,g-r-a-f-i-t,Grafit,,afgirt,15063
+Graphically,g-r-a-f-/-k-e,Grafke,,aefgkr,15063
+Graphical,g-r-a-f-/-k,Grafko,o,afgkor,15063
+Graphs,g-r-a-f-s,Grafs,,afgrs,15063
 Forthcoming,f-th-k-m-\-h,Fhkmg,,fghkm,15126
 Reservations,r-s-a-sh-s,Rsazs,,arsz,15211
 Overturn,^-o-\-t-e-n,Oten,,enot,15426
