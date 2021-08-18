@@ -4,7 +4,7 @@ Class DashboardViewport
    interval := 500
    qwerds := []
    logQueue := new Queue("DashboardQueue")
-   logVerbosity := 4
+   logVerbosity := 2
    
    ; Properties for dashboard
    Width := 600
@@ -120,6 +120,10 @@ Class DashboardViewport
          this.LogEvent(3, "Visualizing " queueIndex " as " this.qwerds[queueIndex].form " at " this.nibStart.x "," this.nibStart.y)
          this.DrawQwerd(this.qwerds[queueIndex])
          queueIndex--
+         if (this.nibStart.x < -100) {
+            this.LogEvent(3, "Dashboard full with " queueIndex " words remaining")
+            break
+         }
       }
    }
    
