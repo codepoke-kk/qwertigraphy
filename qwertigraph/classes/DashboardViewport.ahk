@@ -7,6 +7,7 @@ Class DashboardViewport
    logVerbosity := 2
    
    ; Properties for dashboard
+   Show := 1
    Width := 600
    Height := 105
    CornerRadius := 10
@@ -113,6 +114,7 @@ Class DashboardViewport
       ; Set the nib start points
       this.nibStart := {"x": this.Width, "y": this.Height}
       
+      this.LogEvent(3, "Show is " this.Show)
       this.LogEvent(3, "Visualizing " this.qwerds.MaxIndex() " events at " this.nibStart.x "," this.nibStart.y)
       queueIndex := this.qwerds.MaxIndex()
       Loop, % this.qwerds.MaxIndex()
@@ -237,6 +239,14 @@ Class DashboardViewport
       local
       dims := StrSplit(coord, ",")
       Return {"x": dims[1] + 0, "y": dims[2] + 0}
+   }
+   
+   ShowHide() {
+      if (this.Show) {
+         Gui, DashboardGUI: Show, NA
+      } else {
+         Gui, DashboardGUI: Show, Hide
+      }
    }
 	
    DequeueEvents() {

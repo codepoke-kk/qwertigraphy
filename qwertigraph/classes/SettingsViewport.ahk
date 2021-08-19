@@ -7,6 +7,7 @@ global SettingsLoggingLevelPad
 
 Gui MainGUI:Default 
 Gui, Tab, Settings
+;;; Column 1 
 ; Add regex search fields
 Gui, Add, Text, x12  y64 w444 h20 , Logging Level Settings (1 for low logging up to 4 for high logging)
 Gui, Add, Text, x12  y84 w160 h20 , Dictionary Map:
@@ -19,6 +20,8 @@ Gui, Add, Text, x12  y144 w160 h20 , Coach:
 Gui, Add, Edit, x172  y144 w20 h20 vSettingsLoggingLevelCoach gSettingsLoggingLevelCoach, % qenv.properties.LoggingLevelCoach
 Gui, Add, Text, x12  y164 w160 h20 , Gregg Pad:
 Gui, Add, Edit, x172  y164 w20 h20 vSettingsLoggingLevelPad gSettingsLoggingLevelPad, % qenv.properties.LoggingLevelPad
+Gui, Add, Text, x12  y184 w160 h20 , Dashboard:
+Gui, Add, Edit, x172  y184 w20 h20 vSettingsLoggingLevelDashboard gSettingsLoggingLevelDashboard, % qenv.properties.LoggingLevelDashboard
 
 Gui, Add, Text, x12  y244 w444 h20 , Phrase suggestion enthusiasm (1 for low no recommendations to 4000+ for all of them)
 Gui, Add, Text, x12  y264 w160 h20 , Enthusiasm:
@@ -37,6 +40,12 @@ Gui, Add, Edit, x172  y464 w40 h20 vSettingsCoachAheadTipDuration gSettingsCoach
 Gui, Add, Text, x12  y484 w444 h20 , Coaching maximum number of vertical lines
 Gui, Add, Text, x12  y504 w160 h20 , Coaching max line count:
 Gui, Add, Edit, x172  y504 w40 h20 vSettingsCoachAheadLines gSettingsCoachAheadLines, % qenv.properties.CoachAheadLines
+
+
+;;; Column 2
+Gui, Add, Text, x456  y64 w444 h20 , Dashboard Settings
+Gui, Add, Text, x456  y84 w160 h20 , Show Dashboard:
+Gui, Add, Edit, x612  y84 w20 h20 vSettingsDashboardShow gSettingsDashboardShow, % qenv.properties.DashboardShow
 
 SettingsLoggingLevelMap() {
 	global map
@@ -106,6 +115,19 @@ SettingsLoggingLevelPad() {
 		Msgbox, % "Could not understand " SettingsLoggingLevelPad
 	}
 }
+SettingsLoggingLevelDashboard() {
+	global dashboard
+	global qenv
+	Gui MainGUI:Default 
+	GuiControlGet SettingsLoggingLevelDashboard
+	if (RegExMatch(SettingsLoggingLevelDashboard, "^[012345]$")) {
+		dashboard.logVerbosity := SettingsLoggingLevelDashboard
+		qenv.properties.LoggingLevelDashboard := SettingsLoggingLevelDashboard
+		qenv.saveProperties()
+	} else {
+		Msgbox, % "Could not understand " SettingsLoggingLevelDashboard
+	}
+}
 SettingsPhraseEnthusiasm() {
 	global coach
 	global qenv
@@ -170,5 +192,19 @@ SettingsCoachAheadLines() {
 		qenv.saveProperties()
 	} else {
 		Msgbox, % "Could not understand " SettingsChordWindow
+	}
+}
+SettingsDashboardShow() {
+	global dashboard
+	global qenv
+	Gui MainGUI:Default 
+	GuiControlGet SettingsDashboardShow
+	if (RegExMatch(SettingsDashboardShow, "^[012345]$")) {
+		dashboard.show := SettingsDashboardShow
+		dashboard.ShowHide()
+		qenv.properties.DashboardShow := SettingsDashboardShow
+		qenv.saveProperties()
+	} else {
+		Msgbox, % "Could not understand " SettingsDashboardShow
 	}
 }
