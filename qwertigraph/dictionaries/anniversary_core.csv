@@ -2973,7 +2973,7 @@ Din,d-e-n,Denu,u,denu,5142
 Commons,k-mn-s,Kmms,,kms,5143
 Brush,br-sh,Brz,,brz,5146
 Withdraw,e-th-d-r-o,Ehdro,,dehor,5148
-Opera,o-pr-a,Opra,,aopr,5156
+Opera,o-pr-a,Oprao,o,aopr,5156
 Oppose,o-p-o,Opo,,opz,5159
 Curiously,k-e-u-e,Kue,,eku,5164
 Louisiana,l-a,Lau,u,alu,5170
@@ -3839,7 +3839,7 @@ Herewith,^-h-\-e2-th,Heh,,beh,9068
 Mutton,m-u-tn,Mutn,,mntu,9071
 Degradation,d-e-g-r-a-d-sh,Degradz,,adegrz,9078
 Tool,t-u-l,Tul,,ltu,9084
-Operate,o-pr-a,Oprao,o,aopr,9085
+Operate,o-pr-a,Opra,,aopr,9085
 Mills,m-e-l-s,Melso,o,elmos,9092
 Via,v-ia,Viao,o,aiov,9095
 Hardest,^-h-\-a2-d-e-s,Hadeso,o,adehos,9100
@@ -4548,6 +4548,10 @@ Defendant,df-t,Dft,,dft,14412
 Focus,f-k-u-s,Fkus,,fksu,14413
 Condescension,k-d-s2-e-n-sh,Kdsenz,,deknsz,14419
 Transit,t-/-t,Tto,o,otz,14449
+Transitory,t-/-t-r-e,Ttre,,ert,14449
+Transition,t-/-sh,Tz,,tz,14449
+Transitional,t-/-sh-l,Tzl,,ltz,14449
+Transitionally,t-/-sh-y,Tzy,,tyz,14449
 Astronomy,a-s2-t-r-o-n,Astrono,o,anorst,14451
 Aperture,a-p-e2-t-r,Apetr,,aeprt,14467
 Detroit,d-/-o-e,Dyo,o,doy,14468
@@ -6532,6 +6536,7 @@ Alberta,a-l-b,Albu,u,ablu,59388
 Caoutchouc,k-u-ch-u-k,Kucuk,,cku,59413
 Hexagonal,^-h-\-e-s2-a-g,Hesag,,aeghs,59426
 Intransitive,nt-/-df,Ntdf,,dfnt,59429
+Transitive,t-/-df,Tdf,,dft,59429
 Dirigible,d-e-r-e-j,Derej,,dejr,59478
 Additionally,a-d-sh-ya,Adzya,,adyz,59537
 Complainant,k-p-/-nt,Kpnt,,knpt,59549
@@ -8429,7 +8434,6 @@ To point out,t-o-e-t,Tyt,,txy,71727
 To reduce,t-r-u-s,Trus,,rstu,71728
 To say,t-s-a,Tsa,,ast,71729
 To see,t-s-e,Tse,,est,71730
-To ship,t-sh,Tz,,tvz,71731
 To some extent,t-u-s2-m-e-s,Tusmes,,emstu,71732
 To stop,t-ss,Tsso,o,ost,71733
 To such an extent,t-s-ch-e-s,Tsces,,cest,71734
