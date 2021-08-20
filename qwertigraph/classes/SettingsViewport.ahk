@@ -46,6 +46,8 @@ Gui, Add, Edit, x172  y504 w40 h20 vSettingsCoachAheadLines gSettingsCoachAheadL
 Gui, Add, Text, x456  y64 w444 h20 , Dashboard Settings
 Gui, Add, Text, x456  y84 w160 h20 , Show Dashboard:
 Gui, Add, Edit, x612  y84 w20 h20 vSettingsDashboardShow gSettingsDashboardShow, % qenv.properties.DashboardShow
+Gui, Add, Text, x456  y104 w160 h20 , Seconds before AutoHide :
+Gui, Add, Edit, x612  y104 w20 h20 vSettingsDashboardAutohideSeconds gSettingsDashboardAutohideSeconds, % qenv.properties.DashboardAutohideSeconds
 
 SettingsLoggingLevelMap() {
 	global map
@@ -206,5 +208,18 @@ SettingsDashboardShow() {
 		qenv.saveProperties()
 	} else {
 		Msgbox, % "Could not understand " SettingsDashboardShow
+	}
+}
+SettingsDashboardAutohideSeconds() {
+	global dashboard
+	global qenv
+	Gui MainGUI:Default 
+	GuiControlGet SettingsDashboardAutohideSeconds
+	if (RegExMatch(SettingsDashboardAutohideSeconds, "^\d+$")) {
+		dashboard.AutohideSeconds := SettingsDashboardAutohideSeconds
+		qenv.properties.DashboardAutohideSeconds := SettingsDashboardAutohideSeconds
+		qenv.saveProperties()
+	} else {
+		Msgbox, % "Could not understand " DashboardAutohideSeconds
 	}
 }

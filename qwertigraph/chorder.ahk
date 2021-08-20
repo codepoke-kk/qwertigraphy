@@ -54,7 +54,7 @@ qenv := new QwertigraphyEnvironment()
 #Include *i % qenv.personalDataFolder "\" personal_functions.ahk
 map := new DictionaryMap(qenv)
 engine := new MappingEngine_Chorded(map)
-		
+
 speedViewer := new SpeedViewport()
 speedViewer.addQueue(engine.speedQueue)
 		
@@ -65,6 +65,8 @@ editor := new EditorViewport(map)
 
 greggpad := new PadViewport(qenv, engine.penQueue)
 dashboard := new DashboardViewport(qenv, engine.dashboardQueue)
+		
+speedViewer.dashboard := dashboard
 
 logViewer := new LogViewport()
 logViewer.addQueue(qenv.logQueue)

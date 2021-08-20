@@ -15,12 +15,13 @@ class SpeedViewport
 	minimumSpeed := 25
 	minimumTicksPerChar := 1000 * (1 / (this.minimumSpeed * 5 / 60))
 	dequeueInterval := 1000
-	showInterval := 10000
+	showInterval := 3000
 	speedEvents := []
 	speedQueues := []
 	in_chars := 0
 	out_chars := 0
 	ticks := 1
+	dashboard := ""
 	
 	__New()
 	{
@@ -68,8 +69,13 @@ class SpeedViewport
 				} 
 			}
 		}
+		Gui MainGUI:Default 
+		keyedSpeed := Round(current_in_chars / (current_ticks / 12000))
+		enhancedSpeed := Round(current_out_chars / (current_ticks / 12000))
 		GuiControl,,CurrentSpeedMessage, % Round(current_in_chars / (current_ticks / 12000)) " WPM / " Round(current_out_chars / (current_ticks / 12000)) " WPM"
 		GuiControl,,SessionSpeedMessage, % Round(this.in_chars / (this.ticks / 12000)) " WPM / " Round(this.out_chars / (this.ticks / 12000)) " WPM`nInput characters: " this.in_chars ", Output characters: " this.out_chars
+		this.dashboard.speedKeyed := keyedSpeed
+		this.dashboard.speedEnhanced := enhancedSpeed
 	}
 	
 	addQueue(speedQueue) {

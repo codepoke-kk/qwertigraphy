@@ -5,9 +5,12 @@ Class DashboardViewport
    qwerds := []
    logQueue := new Queue("DashboardQueue")
    logVerbosity := 2
+   speedKeyed := 0
+   speedEnhanced := 0
    
    ; Properties for dashboard
-   Show := 1
+   Show := (this.map.qenv.properties.DashboardShow) ? this.map.qenv.properties.DashboardShow : 1
+   AutohideSeconds := (this.map.qenv.properties.DashboardAutohideSeconds) ? this.map.qenv.properties.DashboardAutohideSeconds : 30
    Width := 600
    Height := 105
    CornerRadius := 10
@@ -28,8 +31,11 @@ Class DashboardViewport
    FontName := "Arial"
    FormColor := 0x88000000
    FormPen := ""
+   FormWidth := 2
+   SpeedColor := "c88ff0000"
+   SpeedPen := ""
+   SpeedWidth := 6
    averageCharWidth := 14
-   formWidth := 2
    leftAnchor := 0
    topAnchor := 0
    qwerdSpacer := 5
@@ -43,12 +49,19 @@ Class DashboardViewport
    __New(qenv, dashboardQueue)
    {
       this.qenv := qenv
-      this.logVerbosity := 3 ; this.qenv.properties.LoggingLevelDashboard
+      this.logVerbosity := (this.qenv.properties.LoggingLevelDashboard) ? this.qenv.properties.LoggingLevelDashboard : 3
+      this.Show := (this.qenv.properties.DashboardShow) ? this.qenv.properties.DashboardShow : 1
+      this.AutohideSeconds := (this.qenv.properties.DashboardAutohideSeconds) ? this.qenv.properties.DashboardAutohideSeconds : 30
       this.dashboardQueue := dashboardQueue
 		
       this.timer := ObjBindMethod(this, "DequeueEvents")
       timer := this.timer
       SetTimer % timer, % this.interval
+      
+      this.LogEvent(4, "Creating Autohide Timer")
+      this.autoHidetimer := ObjBindMethod(this, "AutohideDashboard")
+      autoHidetimer := this.autoHidetimer
+      SetTimer % autoHidetimer, % (this.AutohideSeconds * 1000)
         
       ; Start gdi+
       If !this.pToken := Gdip_Startup()
@@ -83,7 +96,9 @@ Class DashboardViewport
       this.BackgroundPen := Gdip_CreatePen(this.BackgroundColor, 3)
 
       ; (ARGB = Transparency, red, green, blue) of width 3 (the thickness the pen will draw at) to draw a circle
-      this.FormPen := Gdip_CreatePen(this.formColor, this.formWidth)
+      this.FormPen := Gdip_CreatePen(this.FormColor, this.FormWidth)
+      ; (ARGB = Transparency, red, green, blue) of width 3 (the thickness the pen will draw at) to draw a circle
+      this.SpeedPen := Gdip_CreatePen(this.SpeedColor, this.SpeedWidth)
 
 
       ; Next we can check that the user actually has the font that we wish them to use
@@ -104,17 +119,30 @@ Class DashboardViewport
    DrawBackground() {
       Gdip_GraphicsClear(this.G)
       Gdip_DrawRoundedRectangle(this.G, this.BackgroundPen, 0, 0, this.Width, this.Height, this.CornerRadius)
+      
+      EnhancedSpeedOptions := "x20 y20 Left " this.SpeedColor " r4 s36 "
+      this.LogEvent(4, "Drawing enhanced speed " EnhancedSpeedOptions)
+      Gdip_TextToGraphics(this.G, this.speedEnhanced, EnhancedSpeedOptions, this.FontName, this.Width, this.Height)
+      KeyedSpeedOptions := "x20 y60 Left " this.SpeedColor " r4 s36 "
+      this.LogEvent(4, "Drawing keyed speed " KeyedSpeedOptions)
+      Gdip_TextToGraphics(this.G, this.speedKeyed, KeyedSpeedOptions, this.FontName, this.Width, this.Height)
       UpdateLayeredWindow(this.hwnd1, this.hdc, this.leftAnchor, this.topAnchor, this.Width, this.Height)
    }
    
    visualizeQueue() {
       ; Walk queue of qwerds from last back, drawing each qwerd as we go from right side of dashboard to left
       local
+      ; We saw a new qwerd, so reset the autohide timer
+      
+      this.LogEvent(4, "Setting Autohide Timer")
+      timer := this.autoHidetimer
+      SetTimer % timer, % (this.AutohideSeconds * 1000)
+      Gui, DashboardGUI: Show, NA
+      
       this.DrawBackground()
       ; Set the nib start points
       this.nibStart := {"x": this.Width, "y": this.Height}
       
-      this.LogEvent(3, "Show is " this.Show)
       this.LogEvent(3, "Visualizing " this.qwerds.MaxIndex() " events at " this.nibStart.x "," this.nibStart.y)
       queueIndex := this.qwerds.MaxIndex()
       Loop, % this.qwerds.MaxIndex()
@@ -263,6 +291,11 @@ Class DashboardViewport
       if (foundCount) {
          this.visualizeQueue()
       }
+   }
+   
+   AutohideDashboard() {
+      this.LogEvent(4, "Autohiding after " this.AutohideSeconds)
+      Gui, DashboardGUI: Show, Hide
    }
 
    LogEvent(verbosity, message) 
