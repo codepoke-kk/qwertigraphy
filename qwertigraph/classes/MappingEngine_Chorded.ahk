@@ -485,7 +485,7 @@ class MappingEngine_Chorded
 				; Success 
 				; Coach the found qwerd
 				this.pushCoaching(this.map.chords.item(inbound.token), true, false, false, key, 1)
-				this.pushPenStroke(this.map.chords.item(inbound.token), "blue")
+				;this.pushPenStroke(this.map.chords.item(inbound.token), "blue")
 				this.pushDashboardQwerd(this.map.chords.item(inbound.token), "blue")
 				; "Push Input" is where the magic happens on screen
 				final_characters_count := this.pushInput(inbound.token, this.map.chords.item(inbound.token).word, key)
@@ -501,7 +501,7 @@ class MappingEngine_Chorded
 				; Success 
 				; Coach the found qwerd
 				this.pushCoaching(this.map.qwerds.item(inbound.token), true, false, false, key, 0)
-				this.pushPenStroke(this.map.qwerds.item(inbound.token), "blue")
+				;this.pushPenStroke(this.map.qwerds.item(inbound.token), "blue")
 				this.pushDashboardQwerd(this.map.qwerds.item(inbound.token), "blue")
 				; "Push Input" is where the magic happens on screen
 				final_characters_count := this.pushInput(inbound.token, this.map.qwerds.item(inbound.token).word, key)
@@ -517,7 +517,7 @@ class MappingEngine_Chorded
 				final_characters_count := StrLen(inbound.token) + 1
 				if (this.map.hints.item(inbound.token).hint) {
 					this.pushCoaching(this.map.hints.item(inbound.token), false, true, false, key, 0)
-					this.pushPenStroke(this.map.hints.item(inbound.token), "red")
+					;this.pushPenStroke(this.map.hints.item(inbound.token), "red")
 					this.pushDashboardQwerd(this.map.hints.item(inbound.token), "red")
 		
 					;;; Hintable
@@ -527,7 +527,7 @@ class MappingEngine_Chorded
 					if (not inbound.isSensitive) {
 						this.nullQwerd.word := inbound.token
 						this.pushCoaching(this.nullQwerd, false, false, true, key, (StrLen(inbound.token)))
-						this.pushPenStroke(this.nullQwerd, "purple")
+						;this.pushPenStroke(this.nullQwerd, "purple")
 					}
 					;;; Ignorable 
 					this.logEvent(4, "Unknown qwerd " inbound.token)
@@ -694,11 +694,11 @@ class MappingEngine_Chorded
 		}
 	}
 	
-	pushPenStroke(qwerd, ink) {
-		penAction := new PenEvent(qwerd.form, qwerd.qwerd, qwerd.word, ink)
-		this.penQueue.enqueue(penAction)
-		this.logEvent(4, "Enqueued pen action '" penAction.form "'")
-	}
+	;pushPenStroke(qwerd, ink) {
+;		penAction := new PenEvent(qwerd.form, qwerd.qwerd, qwerd.word, ink)
+;		this.penQueue.enqueue(penAction)
+;		this.logEvent(4, "Enqueued pen action '" penAction.form "'")
+;	}
 	
 	pushDashboardQwerd(qwerd, ink) {
 		dashboardQwerd := new DashboardEvent(qwerd.form, qwerd.qwerd, qwerd.word, ink)

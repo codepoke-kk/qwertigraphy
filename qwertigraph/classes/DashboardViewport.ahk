@@ -1,3 +1,8 @@
+
+global strokes := ComObjCreate("Scripting.Dictionary")
+global vowelStrokes := ComObjCreate("Scripting.Dictionary")
+#Include classes\strokes.ahk
+
 Class DashboardViewport 
 {
    qwerdQueue := {}
@@ -16,6 +21,7 @@ Class DashboardViewport
    CornerRadius := 10
    BackGroundColor := 0x22000000
    BackGroundPen := ""
+   BackGroundBrush := ""
    hwnd1 := ""
    hbm := ""
    hdc := ""
@@ -92,7 +98,7 @@ Class DashboardViewport
       ; Set the smoothing mode to antialias = 4 to make shapes appear smoother (only used for vector drawing and filling)
       Gdip_SetSmoothingMode(this.G, 4)
       ; (ARGB = Transparency, red, green, blue) to draw a rounded rectangle with
-      ;this.pBrush := Gdip_BrushCreateSolid(this.BackgroundColor)
+      this.BackgroundBrush := Gdip_BrushCreateSolid(this.BackgroundColor)
       this.BackgroundPen := Gdip_CreatePen(this.BackgroundColor, 3)
 
       ; (ARGB = Transparency, red, green, blue) of width 3 (the thickness the pen will draw at) to draw a circle
@@ -118,7 +124,7 @@ Class DashboardViewport
    
    DrawBackground() {
       Gdip_GraphicsClear(this.G)
-      Gdip_DrawRoundedRectangle(this.G, this.BackgroundPen, 0, 0, this.Width, this.Height, this.CornerRadius)
+      Gdip_FillRoundedRectangle(this.G, this.BackgroundBrush, 0, 0, this.Width, this.Height, this.CornerRadius)
       
       EnhancedSpeedOptions := "x20 y20 Left " this.SpeedColor " r4 s36 "
       this.LogEvent(4, "Drawing enhanced speed " EnhancedSpeedOptions)
@@ -163,7 +169,8 @@ Class DashboardViewport
       this.nibStart.x -= qwerdWidth
       this.LogEvent(3, "Drawing " qwerd.form "/" qwerd.qwerd " at " this.nibStart.x "," this.lineHeight.text)
       ; Write the word when the qwerd is longer than it 
-      drawText := StrLen(qwerd.qwerd) > StrLen(qwerd.word) ? qwerd.word : qwerd.qwerd
+      ;drawText := StrLen(qwerd.qwerd) > StrLen(qwerd.word) ? qwerd.word : qwerd.qwerd
+      drawText := StrLen(qwerd.form) > StrLen(qwerd.word) ? qwerd.word : qwerd.form
       this.DrawText(drawText)
       this.DrawForm(qwerd.form)
    }
@@ -178,13 +185,12 @@ Class DashboardViewport
    
    DrawForm(form) {
       local
-      formStrokes := StrSplit(form, "-")
+      subpaths := this.GetSubPaths(form)
       nib := {"x": this.nibStart.x, "y": this.lineHeight.form}
-      for fsindex, formStroke in formStrokes { 
-         this.LogEvent(3, "Drawing formStroke " formStroke)
-         strokePath := this.GetStrokePath(formStroke)
-         this.LogEvent(3, "Stroke will be " strokePath)
-         strokeCoordinates := StrSplit(strokePath, " ")
+      for spindex, subpath in subpaths { 
+         this.LogEvent(3, "Drawing subpath " subpath)
+         this.LogEvent(3, "Stroke will be " subpath)
+         strokeCoordinates := StrSplit(subpath, " ")
          this.LogEvent(3, "Stroke type is " strokeCoordinates[1])
          if (strokeCoordinates[1] == "c") {
             p1 := this.CoordinateToPoint(strokeCoordinates[2])
@@ -206,10 +212,79 @@ Class DashboardViewport
             nib.x += end.x
             nib.y += end.y
          } else {
-            this.LogEvent(1, "Don't understand form " form ", stroke " formStrok ", of path " strokePath)
+            this.LogEvent(1, "Don't understand form " form ", subpath " subpath)
          }
       }
    }
+	GetSubPaths(form) {  
+		local
+		this.LogEvent(4, "Getting subpaths for " form)
+		subpaths := []
+		elements := StrSplit(form, "-")
+		for index, element in elements {
+			this.LogEvent(4, "Element " A_Index " = " element)
+		}
+		startIndex := 0
+		endIndex := elements.MaxIndex()
+		; Crawl elements looking for the longest element we can match from the left side anchor of the form
+		; As we match elements, start again from the left-most unmatched element until all are done 
+		stopper := 0
+		While (startIndex < endIndex) {
+			this.LogEvent(4, "While loop starting at " startIndex " working toward " endIndex)
+			; Loop enough times to see every possible match - break on first (longest) match
+			Loop, % (endIndex - startIndex) {
+				elementsInMatch := endIndex - startIndex - (A_Index - 1) 
+				this.LogEvent(4, "Seeking largest left-anchored match iteration using " elementsInMatch " elements")
+				candidateForm := ""
+				Loop, % elementsInMatch {
+					this.LogEvent(4, "Building candidate form adding " elements[A_Index + startIndex] "-")
+				    candidateForm .= elements[A_Index + startIndex] "-"
+				}
+				candidateForm := SubStr(candidateForm, 1, StrLen(candidateForm) - 1)
+				this.LogEvent(4, "Candidate form " candidateForm)
+				if (this.qenv.strokepaths.item(candidateForm).path) {
+					this.LogEvent(4, "Pushing " this.qenv.strokepaths.item(candidateForm).path " onto array with " subpaths.MaxIndex() " elements")
+					subpaths := this.GetSubPathStrokes(subpaths, this.qenv.strokepaths.item(candidateForm).path)
+					this.LogEvent(4, "Incrementing startIndex by number of elements matched " elementsInMatch)
+					startIndex += elementsInMatch
+					break
+				} else {
+					this.LogEvent(4, "No match")
+				}
+			}
+			stopper++
+			if (stopper > 20) {
+				this.LogEvent(1, "Infinite loop catchers says there were too many iterations in GetSubPaths for " form)
+				break
+			}
+		}
+		return subpaths
+	}
+	
+	GetSubPathStrokes(outArray, subPaths) {
+		local
+		this.LogEvent(4, "Splitting " subPaths " into strokes")
+		subPathStroke := ""
+		elements := StrSplit(subPaths, " ")
+		for index, element in elements {
+			if (InStr("lmc", element)) {
+				if (subPathStroke) {
+					this.LogEvent(3, "Adding " subPathStroke " into array")
+					outArray.Push(subPathStroke)
+				}
+				subPathStroke := element " "
+			} else {
+				subPathStroke .= element " "
+			}
+		}
+		if (subPathStroke) {
+			this.LogEvent(4, "Adding " subPathStroke " into array")
+			outArray.Push(subPathStroke)
+		}
+		this.LogEvent(4, "Returning array with " outArray.MaxIndex() " elements")
+		Return outArray
+	}
+
    
    GetWidthOfQwerd(qwerd) {
       local
@@ -254,10 +329,10 @@ Class DashboardViewport
       global strokes
       global vowelStrokes
       this.LogEvent(3, "Getting width of " stroke)
-      if (strokes.item(stroke)) {
-         Return strokes.item(stroke)
-      } else if (vowelStrokes.item(stroke)) {
-         Return vowelStrokes.item(stroke)
+      if (this.qenv.strokepaths.item(stroke)) {
+         Return this.qenv.strokepaths.item(stroke).path
+      ;} else if (vowelStrokes.item(stroke)) {
+      ;   Return vowelStrokes.item(stroke)
       } else {
          Return "l 20,0"
       }  

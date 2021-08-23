@@ -23,7 +23,7 @@ FileInstall, templates\retrains.template, templates\retrains.template, true
 FileInstall, templates\personal_functions.template, templates\personal_functions.template, true
 FileInstall, coach.ico, coach.ico, true
 
-Gui, MainGUI: Add, Tab3,x6 y40 w928 h526, Coach|Editor|Logs||GreggPad|Settings
+Gui, MainGUI: Add, Tab3,x6 y40 w928 h526, Coach|Editor|Logs||Settings|Strokepaths
 Gui, MainGUI: Show, x262 y118 w940 h570, % "Qwertigraph Trainer"
 
 #Include classes\Gdip_All.ahk
@@ -39,10 +39,11 @@ Gui, MainGUI: Show, x262 y118 w940 h570, % "Qwertigraph Trainer"
 #Include classes\CoachingEvent.ahk
 #Include classes\CoachViewport.ahk
 #Include classes\EditorViewport.ahk
-#Include classes\PenEvent.ahk
-#Include classes\PadViewport.ahk
+;#Include classes\PenEvent.ahk
+;#Include classes\PadViewport.ahk
 #Include classes\DashboardEvent.ahk
 #Include classes\DashboardViewport.ahk
+#Include classes\StrokepathsViewport.ahk
 
 ; Make the pretty icon
 I_Icon = coach.ico
@@ -63,10 +64,10 @@ coach.addQueue(engine.coachQueue)
 
 editor := new EditorViewport(map)
 
-greggpad := new PadViewport(qenv, engine.penQueue)
+;greggpad := new PadViewport(qenv, engine.penQueue)
 dashboard := new DashboardViewport(qenv, engine.dashboardQueue)
-		
 speedViewer.dashboard := dashboard
+stroker := new StrokepathsViewport(qenv, dashboard)
 
 logViewer := new LogViewport()
 logViewer.addQueue(qenv.logQueue)
@@ -74,8 +75,9 @@ logViewer.addQueue(map.logQueue)
 logViewer.addQueue(engine.logQueue)
 logViewer.addQueue(coach.logQueue)
 logViewer.addQueue(editor.logQueue)
-logViewer.addQueue(greggpad.logQueue)
+;logViewer.addQueue(greggpad.logQueue)
 logViewer.addQueue(dashboard.logQueue)
+logViewer.addQueue(stroker.logQueue)
 ;
 
 #Include classes\SettingsViewport.ahk

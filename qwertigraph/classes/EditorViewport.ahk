@@ -1,6 +1,6 @@
 
 global EditorTitle
-global FormsLV
+global EditorLV
 global RegexDict
 global RegexWord
 global RegexForm

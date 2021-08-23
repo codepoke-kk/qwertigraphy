@@ -10,6 +10,9 @@ class QwertigraphyEnvironment
 	propertiesFile := this.personalDataFolder "\qwertigraph.properties"
 	properties := {}
 	
+	strokepathsFile := "strokepaths\gregg.esv"
+	strokepaths := ComObjCreate("Scripting.Dictionary")
+	
 	logQueue := new Queue("QEnvQueue")
 	logVerbosity := 2
 	
@@ -44,6 +47,20 @@ class QwertigraphyEnvironment
 		}
 		
 		this.injectMissingProperties()
+		
+		; Read in the strokepaths
+		Loop,Read, % this.strokepathsFile   
+		{
+			if (A_Index = 1) {
+				Continue 
+			}
+			this.logEvent(4, "Reviewing strokes line " A_LoopReadLine)
+			strokefields := StrSplit(A_LoopReadLine, "=")
+			this.logEvent(4, "Split to " strokefields[1] " | " strokefields[2] )
+			strokepath := {"path": strokefields[1], "pattern": strokefields[2]}
+			this.strokepaths.item(strokepath.pattern) := strokepath
+		}
+		this.logEvent(2, "Created " this.strokepaths.Count " strokepaths")
 	}
 	
 	injectMissingProperties() {
@@ -88,6 +105,21 @@ class QwertigraphyEnvironment
 		for property, value in this.properties {
 			propline := property "," value "`n"
 			fileHandle.Write(propline)
+		}
+		
+		fileHandle.Close()
+	}
+	
+	saveStrokepaths() {
+		local
+		fileHandle := FileOpen(this.strokepathsFile, "w")
+		header := "path=pattern`n"
+		fileHandle.Write(header)
+		
+		for strokepathKey, garbage in this.strokepaths {
+			strokepath := this.strokepaths.item(strokepathKey)
+			pathline := strokepath.path "=" strokepath.pattern "`n"
+			fileHandle.Write(pathline)
 		}
 		
 		fileHandle.Close()
