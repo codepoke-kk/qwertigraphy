@@ -100,7 +100,7 @@ class StrokepathsViewport
 {
 	qenv := ""
 	logQueue := new Queue("StrokerQueue")
-	logVerbosity := 4
+	logVerbosity := 2
 	
 	__New(qenv, dashboard)
 	{
