@@ -1,7 +1,19 @@
 
-global strokes := ComObjCreate("Scripting.Dictionary")
-global vowelStrokes := ComObjCreate("Scripting.Dictionary")
-#Include classes\strokes.ahk
+;global strokes := ComObjCreate("Scripting.Dictionary")
+;global vowelStrokes := ComObjCreate("Scripting.Dictionary")
+; #Include classes\strokes.ahk
+;#######################################################################
+
+; This function is called every time the user clicks on the gui
+; The PostMessage will act on the last found window (this being the gui that launched the subroutine, hence the last parameter not being needed)
+dashboardhwnd1 := ""
+OnMessage(0x201, "WM_LBUTTONDOWN")
+WM_LBUTTONDOWN(wParam, lParam, msg, dashboardhwnd1)
+{
+	PostMessage 0xA1, 2
+}
+
+;#######################################################################
 
 Class DashboardViewport 
 {
@@ -19,7 +31,7 @@ Class DashboardViewport
    Width := 600
    Height := 105
    CornerRadius := 10
-   BackGroundColor := 0x22000000
+   BackGroundColor := 0xaaffffff
    BackGroundPen := ""
    BackGroundBrush := ""
    hwnd1 := ""
@@ -54,6 +66,7 @@ Class DashboardViewport
    
    __New(qenv, dashboardQueue)
    {
+      global dashboardhwnd1 
       this.qenv := qenv
       this.logVerbosity := (this.qenv.properties.LoggingLevelDashboard) ? this.qenv.properties.LoggingLevelDashboard : 3
       this.Show := (this.qenv.properties.DashboardShow) ? this.qenv.properties.DashboardShow : 1
@@ -87,6 +100,7 @@ Class DashboardViewport
 
       ; Get a handle to this window we have created in order to update it later
       this.hwnd1 := WinExist()
+      dashboardhwnd1 := this.hwnd1
       ; HandleBitMap - Create a gdi bitmap with width and height of what we are going to draw into it. This is the entire drawing area for everything
       this.hbm := CreateDIBSection(this.Width, this.Height)
       ; HandleDeviceContext - Get a device context compatible with the screen
