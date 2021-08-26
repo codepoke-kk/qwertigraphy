@@ -1,15 +1,10 @@
-
-;global strokes := ComObjCreate("Scripting.Dictionary")
-;global vowelStrokes := ComObjCreate("Scripting.Dictionary")
-; #Include classes\strokes.ahk
 ;#######################################################################
 
 ; This function is called every time the user clicks on the gui
-; The PostMessage will act on the last found window (this being the gui that launched the subroutine, hence the last parameter not being needed)
+; The PostMessage will act on the globally defined window handle 
 dashboardhwnd1 := ""
 OnMessage(0x201, "WM_LBUTTONDOWN")
-WM_LBUTTONDOWN(wParam, lParam, msg, dashboardhwnd1)
-{
+WM_LBUTTONDOWN(wParam, lParam, msg, dashboardhwnd1) {
 	PostMessage 0xA1, 2
 }
 
@@ -95,7 +90,7 @@ Class DashboardViewport
       this.leftAnchor := workingScreenLeft + (((workingScreenRight - workingScreenLeft)/2) - (this.Width/2))
 
       ; Create a layered window (+E0x80000 : must be used for UpdateLayeredWindow to work!) that is always on top (+AlwaysOnTop), has no taskbar entry or caption
-      Gui, DashboardGUI: -Caption +E0x80000 +LastFound +AlwaysOnTop +ToolWindow +OwnDialogs
+      Gui, DashboardGUI:New, -Caption +E0x80000 +LastFound +AlwaysOnTop +ToolWindow +OwnDialogs, QDashboard
       Gui, DashboardGUI: Show, NA
 
       ; Get a handle to this window we have created in order to update it later
@@ -137,6 +132,13 @@ Class DashboardViewport
    }
    
    DrawBackground() {
+      WinGetPos,x,y,width,height, QDashboard
+      if (x > 0) {
+         this.leftAnchor := x
+         this.topAnchor := y
+         this.Width := width
+         this.Height := height
+      }
       Gdip_GraphicsClear(this.G)
       Gdip_FillRoundedRectangle(this.G, this.BackgroundBrush, 0, 0, this.Width, this.Height, this.CornerRadius)
       
