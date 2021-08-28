@@ -1,3 +1,15 @@
+; To Do
+; Create a reusable bitmap for each qwerd
+; Refactor variables to wordText, qwerdText, qwerdForm, and penForm
+; Allow user to turn on/off display of wordText, qwerdText, qwerdForm, and penForm
+; Improve width calculation of qwerdBitmap
+; Create hashmap of qwerdBitmaps
+; Allow user to set the height/width of the dashboard
+; Colorize forms (red and blue)
+; Show the in-progress form at the far right every time (in green)
+; Fix bug where first form of the day is not drawn 
+
+
 ;#######################################################################
 
 ; This function is called every time the user clicks on the gui
