@@ -67,6 +67,7 @@ editor := new EditorViewport(map)
 ;greggpad := new PadViewport(qenv, engine.penQueue)
 dashboard := new DashboardViewport(qenv, engine.dashboardQueue)
 speedViewer.dashboard := dashboard
+engine.dashboard := dashboard
 stroker := new StrokepathsViewport(qenv, dashboard)
 
 logViewer := new LogViewport()

@@ -9,6 +9,7 @@ class MappingEngine_Chorded
 	Static ContractedEndings := "s,d,t,m,re,ve,ll,r,v,l"
 	
 	map := ""
+	dashboard := ""
 	ih := ""
 	last_end_key := ""
 	characters_typed_raw := ""
@@ -57,6 +58,7 @@ class MappingEngine_Chorded
 		this.keyboard.CoachAheadTipDuration := this.map.qenv.properties.CoachAheadTipDuration
 		this.keyboard.CoachAheadWait := this.map.qenv.properties.CoachAheadWait
 		this.logVerbosity := this.map.qenv.properties.LoggingLevelEngine
+		this.dashboard := ""
 		
         this.setKeyboardChordWindowIncrements()
 	}
@@ -518,7 +520,9 @@ class MappingEngine_Chorded
 				if (this.map.hints.item(inbound.token).hint) {
 					this.pushCoaching(this.map.hints.item(inbound.token), false, true, false, key, 0)
 					;this.pushPenStroke(this.map.hints.item(inbound.token), "red")
-					this.pushDashboardQwerd(this.map.hints.item(inbound.token), "red")
+					ink := (StrLen(this.map.hints.item(inbound.token).word) > StrLen(this.map.hints.item(inbound.token).qwerd)) ? "red" : "blue"
+         ; Msgbox, % "comparing "  " to "  " I get " ink 
+					this.pushDashboardQwerd(this.map.hints.item(inbound.token), ink)
 		
 					;;; Hintable
 					this.logEvent(2, "Matched a hint " this.map.hints.item(inbound.token).hint)
@@ -721,6 +725,26 @@ class MappingEngine_Chorded
 	}
 	
 	presentCoachingAhead() {
+		global engine
+		this.logEvent(1, "Coaching ahead on " this.keyboard.token)
+		if ((StrLen(this.keyboard.token) < 2) or (this.keyboard.CoachAheadLines < 1)) {
+			this.logEvent(4, "Bailing due to short token (" this.keyboard.token ") or no lines allowed (" this.keyboard.CoachAheadLines ")")
+			return
+		}
+		; Is this token a word 
+		coachAheadQwerd := ""
+		if (this.map.qwerds.item(this.keyboard.token).word) {
+			this.logEvent(1, "Found coach ahead for " this.map.qwerds.item(this.keyboard.token).word)
+			coachAheadQwerd := new DashboardEvent(this.map.qwerds.item(this.keyboard.token).form, this.keyboard.token, this.map.qwerds.item(this.keyboard.token).word, "green")
+		} else {
+			this.logEvent(1, "No found coach ahead")
+			coachAheadQwerd := new DashboardEvent("--", this.keyboard.token, "--", "green")
+		}
+		this.logEvent(1, "Replacing existing coach ahead qwerd " this.dashboard.coachAheadQwerd.word " with " coachAheadQwerd.qwerd)
+		engine.dashboard.coachAheadQwerd := coachAheadQwerd
+		engine.dashboard.visualizeQueue()
+	}
+	deprecated_presentCoachingAhead() {
 		this.logEvent(4, "Coaching ahead on " this.keyboard.token)
 		if ((StrLen(this.keyboard.token) < 2) or (this.keyboard.CoachAheadLines < 1)) {
 			this.logEvent(4, "Bailing due to short token (" this.keyboard.token ") or no lines allowed (" this.keyboard.CoachAheadLines ")")

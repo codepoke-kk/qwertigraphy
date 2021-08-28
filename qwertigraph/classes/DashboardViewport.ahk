@@ -31,12 +31,13 @@ Class DashboardViewport
    logVerbosity := 2
    speedKeyed := 0
    speedEnhanced := 0
+   coachAheadQwerd := new DashboardEvent("g-r-e-t-/-s", "grets", "Greetings", "green")
    
    ; Properties for dashboard
    Show := (this.map.qenv.properties.DashboardShow) ? this.map.qenv.properties.DashboardShow : 1
    AutohideSeconds := (this.map.qenv.properties.DashboardAutohideSeconds) ? this.map.qenv.properties.DashboardAutohideSeconds : 30
-   Width := 600
-   Height := 105
+   Width := 0
+   Height := 0
    CornerRadius := 10
    BackGroundColor := 0xaaffffff
    BackGroundPen := ""
@@ -55,7 +56,8 @@ Class DashboardViewport
    QwerdOptions := "x10 y10 w80 Left " this.QwerdColor " r4 s20 "
    FontName := "Arial"
    FormColor := 0x88000000
-   FormPen := ""
+   FormColors := {"black": 0x88000000, "red": 0x88880000, "blue": 0x88000088, "green": 0x88008800}
+   FormPens := {}
    FormWidth := 2
    SpeedColor := "c88ff0000"
    SpeedPen := ""
@@ -63,12 +65,12 @@ Class DashboardViewport
    averageCharWidth := 14
    leftAnchor := 0
    topAnchor := 0
-   qwerdSpacer := 5
+   qwerdSpacer := 9
    
    ; Properties for qwerd display
    ; The nib is where the next drawn point will land
    nibStart := {"x": this.Width, "y": this.Height}
-   lineHeight := {"text": 5, "form": 60}
+   lineHeight := {"wordtext": 2, "qwerdtext": 21, "penform": 57, "wordform": 92}
    nib := {"x": this.Width, "y": this.Height}
    
    __New(qenv, dashboardQueue)
@@ -97,7 +99,7 @@ Class DashboardViewport
 
       ; Set the width and height we want as our drawing area, to draw everything in. This will be the dimensions of our bitmap
       this.Width := 600
-      this.Height := 105
+      this.Height := 116
       SysGet, workingScreen, MonitorWorkArea, 1
       this.leftAnchor := workingScreenLeft + (((workingScreenRight - workingScreenLeft)/2) - (this.Width/2))
 
@@ -123,7 +125,10 @@ Class DashboardViewport
       this.BackgroundPen := Gdip_CreatePen(this.BackgroundColor, 3)
 
       ; (ARGB = Transparency, red, green, blue) of width 3 (the thickness the pen will draw at) to draw a circle
-      this.FormPen := Gdip_CreatePen(this.FormColor, this.FormWidth)
+      for ink, value in this.FormColors {
+         FormPen := Gdip_CreatePen(value, this.FormWidth)
+         this.FormPens[ink] := FormPen
+      }
       ; (ARGB = Transparency, red, green, blue) of width 3 (the thickness the pen will draw at) to draw a circle
       this.SpeedPen := Gdip_CreatePen(this.SpeedColor, this.SpeedWidth)
 
@@ -137,19 +142,18 @@ Class DashboardViewport
       }
       
       this.DrawBackground()
-      this.DrawForm("playing")
-      this.DrawText("plag")
       
       this.LogEvent(2, "Dashboard initialized")
    }
    
    DrawBackground() {
+      if (not this.Show) {
+         Return 
+      }
       WinGetPos,x,y,width,height, QDashboard
       if (x > 0) {
          this.leftAnchor := x
          this.topAnchor := y
-         this.Width := width
-         this.Height := height
       }
       Gdip_GraphicsClear(this.G)
       Gdip_FillRoundedRectangle(this.G, this.BackgroundBrush, 0, 0, this.Width, this.Height, this.CornerRadius)
@@ -168,6 +172,9 @@ Class DashboardViewport
       local
       ; We saw a new qwerd, so reset the autohide timer
       
+      if (not this.Show) {
+         Return 
+      }
       this.LogEvent(4, "Setting Autohide Timer")
       timer := this.autoHidetimer
       SetTimer % timer, % (this.AutohideSeconds * 1000)
@@ -176,8 +183,10 @@ Class DashboardViewport
       this.DrawBackground()
       ; Set the nib start points
       this.nibStart := {"x": this.Width, "y": this.Height}
-      
+      this.LogEvent(1, "Visualizing " this.coachAheadQwerd.word)
       this.LogEvent(3, "Visualizing " this.qwerds.MaxIndex() " events at " this.nibStart.x "," this.nibStart.y)
+      this.DrawQwerd(this.coachAheadQwerd)
+      
       queueIndex := this.qwerds.MaxIndex()
       Loop, % this.qwerds.MaxIndex()
       {
@@ -199,22 +208,45 @@ Class DashboardViewport
       ; Write the word when the qwerd is longer than it 
       ;drawText := StrLen(qwerd.qwerd) > StrLen(qwerd.word) ? qwerd.word : qwerd.qwerd
       drawText := StrLen(qwerd.form) > StrLen(qwerd.word) ? qwerd.word : qwerd.form
-      this.DrawText(drawText)
-      this.DrawForm(qwerd.form)
+      this.DrawWordText(qwerd.word)
+      this.DrawQwerdText(qwerd.qwerd)
+      this.DrawQwerdForm(qwerd.form)
+      this.DrawPenForm(qwerd.form, qwerd.ink)
    }
 
-   DrawText(text) {
+   DrawWordText(text) {
       local
-      QwerdOptions := "x" this.nibStart.x " y" this.lineHeight.text " Left " this.QwerdColor " r4 s20 "
+      QwerdOptions := "x" this.nibStart.x " y" this.lineHeight.wordtext " Left " this.QwerdColor " r4 s20 "
+      this.LogEvent(4, "Drawing as " QwerdOptions)
+      Gdip_TextToGraphics(this.G, text, QwerdOptions, this.FontName, this.Width, this.Height)
+      UpdateLayeredWindow(this.hwnd1, this.hdc, this.leftAnchor, this.topAnchor, this.Width, this.Height)
+   }
+
+   DrawQwerdText(text) {
+      local
+      QwerdOptions := "x" this.nibStart.x " y" this.lineHeight.qwerdtext " Left " this.QwerdColor " r4 s20 "
+      this.LogEvent(4, "Drawing as " QwerdOptions)
+      Gdip_TextToGraphics(this.G, text, QwerdOptions, this.FontName, this.Width, this.Height)
+      UpdateLayeredWindow(this.hwnd1, this.hdc, this.leftAnchor, this.topAnchor, this.Width, this.Height)
+   }
+
+   DrawQwerdForm(text) {
+      local
+      QwerdOptions := "x" this.nibStart.x " y" this.lineHeight.wordform " Left " this.QwerdColor " r4 s20 "
       this.LogEvent(4, "Drawing as " QwerdOptions)
       Gdip_TextToGraphics(this.G, text, QwerdOptions, this.FontName, this.Width, this.Height)
       UpdateLayeredWindow(this.hwnd1, this.hdc, this.leftAnchor, this.topAnchor, this.Width, this.Height)
    }
    
-   DrawForm(form) {
+   DrawPenForm(form, ink) {
       local
       subpaths := this.GetSubPaths(form)
-      nib := {"x": this.nibStart.x, "y": this.lineHeight.form}
+      nib := {"x": this.nibStart.x, "y": this.lineHeight.penform}
+      if (this.FormPens[ink]) {
+         formPen := this.FormPens[ink]
+      } else {
+         formPen := this.FormPens["black"]
+      }
       for spindex, subpath in subpaths { 
          this.LogEvent(3, "Drawing subpath " subpath)
          this.LogEvent(3, "Stroke will be " subpath)
@@ -225,13 +257,13 @@ Class DashboardViewport
             p2 := this.CoordinateToPoint(strokeCoordinates[3])
             end := this.CoordinateToPoint(strokeCoordinates[4])
             this.LogEvent(4, "Drawing bezier " nib.x "," nib.y " " nib.x+p1.x "," nib.y+p1.y " " nib.x+p2.x "," nib.y+p2.y " " nib.x+end.x "," nib.y+end.y)
-            Gdip_DrawBezier(this.G, this.FormPen, nib.x, nib.y, nib.x+p1.x, nib.y+p1.y, nib.x+p2.x, nib.y+p2.y, nib.x+end.x, nib.y+end.y)
+            Gdip_DrawBezier(this.G, formPen, nib.x, nib.y, nib.x+p1.x, nib.y+p1.y, nib.x+p2.x, nib.y+p2.y, nib.x+end.x, nib.y+end.y)
             nib.x += end.x
             nib.y += end.y
          } else if (strokeCoordinates[1] == "l") {
             end := this.CoordinateToPoint(strokeCoordinates[2])
             this.LogEvent(4, "Drawing line " nib.x "," nib.y " " nib.x+end.x "," nib.y+end.y)
-            Gdip_DrawLine(this.G, this.FormPen, nib.x, nib.y, nib.x+end.x, nib.y+end.y)
+            Gdip_DrawLine(this.G, formPen, nib.x, nib.y, nib.x+end.x, nib.y+end.y)
             nib.x += end.x
             nib.y += end.y
          } else if (strokeCoordinates[1] == "m") {
@@ -316,9 +348,11 @@ Class DashboardViewport
    
    GetWidthOfQwerd(qwerd) {
       local
-      qwerdWidth := this.GetWidthOfQwerdText(qwerd.qwerd)
-      formWidth := this.GetWidthOfQwerdForm(qwerd.form)
-      width := qwerdWidth > formWidth ? qwerdWidth : formWidth
+      qwerdTextWidth := this.GetWidthOfQwerdText(qwerd.qwerd)
+      wordTextWidth := this.GetWidthOfQwerdText(qwerd.word)
+      wordFormWidth := this.GetWidthOfQwerdText(qwerd.form)
+      PenFormWidth := this.GetWidthOfQwerdForm(qwerd.form)
+      width := Max(qwerdTextWidth, wordTextWidth, wordFormWidth, PenFormWidth)
       this.LogEvent(3, "Qwerd width is " width)
       Return width
    }
@@ -378,6 +412,9 @@ Class DashboardViewport
       } else {
          Gui, DashboardGUI: Show, Hide
       }
+   }
+   
+   SetPendingQwerd(qwerd) {
    }
 	
    DequeueEvents() {
