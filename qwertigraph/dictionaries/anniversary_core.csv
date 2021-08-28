@@ -915,7 +915,6 @@ Forms,f-m-s,Fms,,fms,1125
 Class,k-l-a-s,Klas,,akls,1126
 Start,s2-t-a2-t,Stat,,ast,1127
 Train,t-r-a-n,Tran,,anrt,1129
-Mentioned,mn-sh-d,Mmzd,,dmz,1130
 Minute,mn-e-t,Mmet,,emt,1131
 Lot,l-o-t,Loto,o,lot,1132
 Enter,^-n,Nk1,k1,1kn,1134
@@ -1248,7 +1247,7 @@ Edge,e-j,Ej,,cej,1589
 Loud,l-a-u,Lw,,clw,1591
 Capable,k-a-p,Kap,,akp,1592
 Moon,m-u-n,Mun,,mnu,1593
-Mention,mn-sh,Mmz,,mvz,1594
+Mention,mn-sh,Mnz,,mnz,1594
 Box,b-o-x,Boxo,o,box,1595
 Struggle,s2-t-r-g,Strg,,grst,1596
 Season,s-e-s2-n,Sesn,,ens,1597
@@ -1346,6 +1345,8 @@ Nearer,n-e2-/-r,Ner,,enr,1736
 Chosen,ch-o-s2-n,Cosn,,cnos,1737
 Affair,a-f-a-r,Afaro,o,afor,1738
 Explain,e-pl,Epl,,elp,1739
+Explain,e-s-pl,Xpl,,lpx,1739
+Expel,e-s-pl,Xplo,o,lopx,1739
 Satisfaction,s2-a-t-sh,Satz,,astz,1740
 Friendly,fr,Fru,u,fru,1742
 Happen,^-h-\-a-p-n,Hapn,,ahnp,1744
@@ -1463,7 +1464,6 @@ Gray,g-r-a,Gra,,agr,1906
 Strike,s2-t-r-i,Stri,,irst,1907
 Description,d-s2-k-r-sh,Dskrz,,dkrsz,1909
 Tea,t-e,Tei,i,eit,1911
-Precious,pr-e-sh-u-s,Prezus,,eprsuz,1912
 Custom,k-u-s,Kus,,ksu,1913
 Message,m-e-s-j,Mesj,,ejms,1914
 Choice,ch-o-e-s,Cys,,csy,1916
@@ -2876,7 +2876,8 @@ Collect,k-o-l,Kolo,o,klo,4890
 Smart,s2-m-a2-t,Smat,,amst,4893
 Frankly,fr-a-nk-e,Fraqe,,aefqr,4894
 Dumb,d-m,Dm,,dmx,4896
-Recommend,r-k-mn,Rkmm,,kmr,4899
+Recommend,r-k-mn,Rkmn,,kmnr,4899
+Recommendation,r-k-mn-sh,Rkmnz,,kmnrz,4899
 Appreciate,a-pr-e-sh,Aprez,,aeprz,4901
 Frontier,fr-nt-e-r,Frnter,,efnrt,4904
 Insist,n-ss,Nssu,u,nsu,4907
@@ -3513,7 +3514,6 @@ Empress,m-pr-e-s,Mpreso,o,emoprs,7200
 Prevailing,pr-e-v-a-\-h,Prevag,,aegprv,7205
 Shorter,sh-/-r,Zr,,mrz,7209
 Historic,^-h-\-e-s2-t-r-k,Hestrko,o,ehkorst,7210
-Exertion,e-s2-e-s2h,Xesh,,ehsx,7224
 Hostility,^-h-\-o-s2-t-/-l,Hostlo,o,hlost,7234
 Attribute,a-t-r-e-b,Atreb,,abert,7237
 Margin,m-a-j-n,Majn,,ajmn,7239
@@ -3769,7 +3769,6 @@ Denmark,tn-m-a-r-k,Tnmark,,akmnrt,8671
 Junction,j-nk,Jq,,cjq,8674
 Muscular,m-u-s2-k-l-r,Musklr,,klmrsu,8683
 Defy,df-i,Dfi,,dfi,8687
-Recommendation,r-k-mn-sh,Rkmmz,,kmrz,8695
 Gaiety,g-a-t-e,Gateo,o,aegot,8696
 Environment,n-v-i-r-mn,Nvirmm,,imnrv,8705
 Players,pl-a-r-s,Plars,,alprs,8709
@@ -4768,7 +4767,6 @@ Cheerless,ch-el2,Celo,o,celo,16675
 Erie,e-r-e,Erei,i,eir,16679
 Constituent,k-s2-t-u-nt,Kstunt,,knstu,16686
 Ecstatic,e-s2-t-/-a,Estao,o,aeost,16692
-Expel,e-s-pl,Xpl,,lpx,16725
 Informal,n-f-m-l,Nfml,,flmn,16756
 Rye,r-i,Riu,u,iru,16776
 Newer,n-u-r,Nuro,o,noru,16781
@@ -6572,7 +6570,7 @@ Bowlder,b-o-ld-r,Boldru,u,bdloru,60963
 Garrulity,g-a-r-/-l,Garl,,aglr,60980
 Arbitrate,a-r-b-t-r-a,Arbtra,,abrt,61104
 Feted,f-e-td,Feddo,o,defo,61113
-Aforementioned,a-f-mn-sh-d,Afmmzd,,adfmz,61239
+Aforementioned,a-f-mn-sh-d,Afmnzd,,adfmz,61239
 Dishonestly,d-s2-o-n-e-s-e,Dsoneseo,o,denos,61254
 Marvelous,m-a-r-v,Marvo,o,amorv,61336
 Egoist,e-g-o-s2-t,Egost,,egost,61397
@@ -7035,7 +7033,6 @@ Commandeer,k-m-a-n-/-e-r,Kmaner,,aekmnr,70319
 Commiserate,k-m-s-e-r-a,Kmsera,,aekmrs,70320
 Commit ,k-e,Kei,i,eik,70321
 Common stock,k-s2-t-o-k,Kstok,,kost,70322
-Communicant,k-m-u-/-nt,Kmunt,,kmntu,70323
 Community ,k-t-e,Kteu,u,ektu,70324
 Compensatory,k-s2-a-r-e,Ksare,,aekrs,70325
 Complin,k-pl-e-n,Kplen,,eklnp,70326
@@ -7273,7 +7270,6 @@ Evolvutionist,e-v-o-l-sh-e-s,Evolzes,,elosvz,70559
 Ex officio,e-s2-o-f-e-s2-o,Xofeso,,efosx,70560
 Ex post facto,e-s-p-/-f,Xpf,,fpx,70561
 Exacerbation,e-s2s-r-b-a-sh,Xsrbaz,,abrsxz,70562
-Excision,e-s-e-sh,Xez,,exz,70563
 Exclude,e-s-/-d,Xd,,cdx,70564
 Excruciate,e-s2-k-r-sh-ea-t,Xkrzet,,ekrtxz,70565
 Executant,e-s2-k-nt,Xknt,,kntx,70566
