@@ -1,12 +1,12 @@
 ; To Do
 ; Create a reusable bitmap for each qwerd
-; Refactor variables to wordText, qwerdText, qwerdForm, and penForm
+; partial - Refactor variables to wordText, qwerdText, qwerdForm, and penForm
 ; Allow user to turn on/off display of wordText, qwerdText, qwerdForm, and penForm
 ; Improve width calculation of qwerdBitmap
 ; Create hashmap of qwerdBitmaps
 ; Allow user to set the height/width of the dashboard
-; Colorize forms (red and blue)
-; Show the in-progress form at the far right every time (in green)
+; Done - Colorize forms (red and blue)
+; Done - Show the in-progress form at the far right every time (in green)
 ; Fix bug where first form of the day is not drawn 
 
 
@@ -62,7 +62,7 @@ Class DashboardViewport
    SpeedColor := "c88ff0000"
    SpeedPen := ""
    SpeedWidth := 6
-   averageCharWidth := 14
+   averageCharWidth := 11
    leftAnchor := 0
    topAnchor := 0
    qwerdSpacer := 9
@@ -188,7 +188,7 @@ Class DashboardViewport
       this.DrawQwerd(this.coachAheadQwerd)
       
       queueIndex := this.qwerds.MaxIndex()
-      Loop, % this.qwerds.MaxIndex()
+      Loop, % this.qwerds.MaxIndex() + 1
       {
          this.LogEvent(3, "Visualizing " queueIndex " as " this.qwerds[queueIndex].form " at " this.nibStart.x "," this.nibStart.y)
          this.DrawQwerd(this.qwerds[queueIndex])
@@ -419,6 +419,7 @@ Class DashboardViewport
 	
    DequeueEvents() {
       local 
+      global DashboardEvent
       this.LogEvent(4, "Dequeueing dashboard events for " this.dashboardQueue.getSize())
       foundCount := 0
       Loop, % this.dashboardQueue.getSize() {
@@ -429,6 +430,7 @@ Class DashboardViewport
       }
       ; If we got an event, visualize it 
       if (foundCount) {
+         this.coachAheadQwerd := new DashboardEvent("--", "", "--", "green")
          this.visualizeQueue()
       }
    }

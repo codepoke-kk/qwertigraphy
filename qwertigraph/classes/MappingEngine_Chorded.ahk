@@ -733,11 +733,14 @@ class MappingEngine_Chorded
 		}
 		; Is this token a word 
 		coachAheadQwerd := ""
-		if (this.map.qwerds.item(this.keyboard.token).word) {
-			this.logEvent(1, "Found coach ahead for " this.map.qwerds.item(this.keyboard.token).word)
+		if (this.map.qwerds.item(this.keyboard.token).qwerd) {
+			this.logEvent(4, "Found coach ahead for " this.map.qwerds.item(this.keyboard.token).qwerd)
 			coachAheadQwerd := new DashboardEvent(this.map.qwerds.item(this.keyboard.token).form, this.keyboard.token, this.map.qwerds.item(this.keyboard.token).word, "green")
+		} else if (this.map.hints.item(this.keyboard.token).word) {
+			this.logEvent(4, "Found coach ahead for " this.map.hints.item(this.keyboard.token).word)
+			coachAheadQwerd := new DashboardEvent(this.map.hints.item(this.keyboard.token).form, this.map.hints.item(this.keyboard.token).qwerd, this.map.hints.item(this.keyboard.token).word, "green")
 		} else {
-			this.logEvent(1, "No found coach ahead")
+			this.logEvent(4, "No found coach ahead")
 			coachAheadQwerd := new DashboardEvent("--", this.keyboard.token, "--", "green")
 		}
 		this.logEvent(1, "Replacing existing coach ahead qwerd " this.dashboard.coachAheadQwerd.word " with " coachAheadQwerd.qwerd)
