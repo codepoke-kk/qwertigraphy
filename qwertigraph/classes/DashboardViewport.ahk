@@ -32,6 +32,8 @@ Class DashboardViewport
    speedKeyed := 0
    speedEnhanced := 0
    coachAheadQwerd := new DashboardEvent("g-r-e-t-/-s", "grets", "Greetings", "green")
+   coachAheadHints := "Put some hints here`nAnd here`tfun"
+   coachAheadHeight := 0 ; 100
    
    ; Properties for dashboard
    Show := (this.map.qenv.properties.DashboardShow) ? this.map.qenv.properties.DashboardShow : 1
@@ -55,6 +57,7 @@ Class DashboardViewport
    QwerdColor := "c88000000"
    QwerdOptions := "x10 y10 w80 Left " this.QwerdColor " r4 s20 "
    FontName := "Arial"
+   HintsFontName := "Consolas"
    FormColor := 0x88000000
    FormColors := {"black": 0x88000000, "red": 0x88880000, "blue": 0x88000088, "green": 0x88008800}
    FormPens := {}
@@ -64,7 +67,7 @@ Class DashboardViewport
    SpeedWidth := 6
    averageCharWidth := 11
    leftAnchor := 0
-   topAnchor := 0
+   topAnchor := 15
    qwerdSpacer := 9
    
    ; Properties for qwerd display
@@ -99,7 +102,7 @@ Class DashboardViewport
 
       ; Set the width and height we want as our drawing area, to draw everything in. This will be the dimensions of our bitmap
       this.Width := 600
-      this.Height := 116
+      this.Height := 195
       SysGet, workingScreen, MonitorWorkArea, 1
       this.leftAnchor := workingScreenLeft + (((workingScreenRight - workingScreenLeft)/2) - (this.Width/2))
 
@@ -111,7 +114,7 @@ Class DashboardViewport
       this.hwnd1 := WinExist()
       dashboardhwnd1 := this.hwnd1
       ; HandleBitMap - Create a gdi bitmap with width and height of what we are going to draw into it. This is the entire drawing area for everything
-      this.hbm := CreateDIBSection(this.Width, this.Height)
+      this.hbm := CreateDIBSection(this.Width, (this.Height + this.coachAheadHeight))
       ; HandleDeviceContext - Get a device context compatible with the screen
       this.hdc := CreateCompatibleDC()
       ; ObjectBitMap - Select the bitmap into the device context
@@ -155,16 +158,33 @@ Class DashboardViewport
          this.leftAnchor := x
          this.topAnchor := y
       }
-      Gdip_GraphicsClear(this.G)
-      Gdip_FillRoundedRectangle(this.G, this.BackgroundBrush, 0, 0, this.Width, this.Height, this.CornerRadius)
+      if (! StrLen(this.coachAheadHints)) {
+         bgHeight := this.Height
+      } else {
+         bgHeight := this.Height + this.coachAheadHeight
+      }
       
+      this.LogEvent(1, "Height is  " bgHeight " on " this.coachAheadHints)
+      Gdip_GraphicsClear(this.G)
+      Gdip_FillRoundedRectangle(this.G, this.BackgroundBrush, 0, 0, this.Width, bgHeight, this.CornerRadius)
+      this.LogEvent(1, "Just drew  " bgHeight)
+      
+      ; Draw WPM Meter
       EnhancedSpeedOptions := "x20 y20 Left " this.SpeedColor " r4 s36 "
       this.LogEvent(4, "Drawing enhanced speed " EnhancedSpeedOptions)
-      Gdip_TextToGraphics(this.G, this.speedEnhanced, EnhancedSpeedOptions, this.FontName, this.Width, this.Height)
+      Gdip_TextToGraphics(this.G, this.speedEnhanced, EnhancedSpeedOptions, this.FontName, this.Width, bgHeight)
       KeyedSpeedOptions := "x20 y60 Left " this.SpeedColor " r4 s36 "
       this.LogEvent(4, "Drawing keyed speed " KeyedSpeedOptions)
-      Gdip_TextToGraphics(this.G, this.speedKeyed, KeyedSpeedOptions, this.FontName, this.Width, this.Height)
-      UpdateLayeredWindow(this.hwnd1, this.hdc, this.leftAnchor, this.topAnchor, this.Width, this.Height)
+      Gdip_TextToGraphics(this.G, this.speedKeyed, KeyedSpeedOptions, this.FontName, this.Width, bgHeight)
+      
+      ; Draw pending hints
+      HintOptions := "x10 y" (this.Height - 69) " Left " this.FormColors["green"] " r4 s16 "
+      this.LogEvent(1, "Drawing " this.coachAheadHints " as " HintOptions)
+      Gdip_TextToGraphics(this.G, this.coachAheadHints, HintOptions, this.HintsFontName, this.Width, this.coachAheadHeight)
+      
+      UpdateLayeredWindow(this.hwnd1, this.hdc, this.leftAnchor, this.topAnchor, this.Width, bgHeight)
+      
+      
    }
    
    visualizeQueue() {
@@ -292,6 +312,7 @@ Class DashboardViewport
 		While (startIndex < endIndex) {
 			this.LogEvent(4, "While loop starting at " startIndex " working toward " endIndex)
 			; Loop enough times to see every possible match - break on first (longest) match
+            matchDetector := 0
 			Loop, % (endIndex - startIndex) {
 				elementsInMatch := endIndex - startIndex - (A_Index - 1) 
 				this.LogEvent(4, "Seeking largest left-anchored match iteration using " elementsInMatch " elements")
@@ -307,11 +328,17 @@ Class DashboardViewport
 					subpaths := this.GetSubPathStrokes(subpaths, this.qenv.strokepaths.item(candidateForm).path)
 					this.LogEvent(4, "Incrementing startIndex by number of elements matched " elementsInMatch)
 					startIndex += elementsInMatch
+                    matchDetector := 1
 					break
 				} else {
 					this.LogEvent(4, "No match")
 				}
 			}
+            if (! matchDetector) {
+               ; We went through the whole list of strokes and found no matches 
+				this.LogEvent(1, "No matches were detected in GetSubPaths for " form)
+                break
+            }
 			stopper++
 			if (stopper > 20) {
 				this.LogEvent(1, "Infinite loop catchers says there were too many iterations in GetSubPaths for " form)

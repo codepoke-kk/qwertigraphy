@@ -725,8 +725,14 @@ class MappingEngine_Chorded
 	}
 	
 	presentCoachingAhead() {
+		global engine 
+		this.presentGraphicalCoachingAhead()
+		this.presentTextualCoachingAhead()
+		engine.dashboard.visualizeQueue()
+	}
+	presentGraphicalCoachingAhead() {
 		global engine
-		this.logEvent(1, "Coaching ahead on " this.keyboard.token)
+		this.logEvent(1, "Graphical coaching ahead on " this.keyboard.token)
 		if ((StrLen(this.keyboard.token) < 2) or (this.keyboard.CoachAheadLines < 1)) {
 			this.logEvent(4, "Bailing due to short token (" this.keyboard.token ") or no lines allowed (" this.keyboard.CoachAheadLines ")")
 			return
@@ -741,14 +747,14 @@ class MappingEngine_Chorded
 			coachAheadQwerd := new DashboardEvent(this.map.hints.item(this.keyboard.token).form, this.map.hints.item(this.keyboard.token).qwerd, this.map.hints.item(this.keyboard.token).word, "green")
 		} else {
 			this.logEvent(4, "No found coach ahead")
-			coachAheadQwerd := new DashboardEvent("--", this.keyboard.token, "--", "green")
+			coachAheadQwerd := new DashboardEvent(this.keyboard.token, this.keyboard.token, "--", "green")
 		}
-		this.logEvent(1, "Replacing existing coach ahead qwerd " this.dashboard.coachAheadQwerd.word " with " coachAheadQwerd.qwerd)
 		engine.dashboard.coachAheadQwerd := coachAheadQwerd
-		engine.dashboard.visualizeQueue()
+		this.logEvent(4, "Replacing existing coach ahead qwerd " this.dashboard.coachAheadQwerd.word " with " coachAheadQwerd.qwerd)
 	}
-	deprecated_presentCoachingAhead() {
-		this.logEvent(4, "Coaching ahead on " this.keyboard.token)
+	presentTextualCoachingAhead() {
+		global engine
+		this.logEvent(4, "Textual coaching ahead on " this.keyboard.token)
 		if ((StrLen(this.keyboard.token) < 2) or (this.keyboard.CoachAheadLines < 1)) {
 			this.logEvent(4, "Bailing due to short token (" this.keyboard.token ") or no lines allowed (" this.keyboard.CoachAheadLines ")")
 			return
@@ -760,44 +766,45 @@ class MappingEngine_Chorded
 			coachAheadWord := "--"
 		}
 		this.logEvent(4, "Coachahead word is " coachAheadWord)
-		; Track the height in lines of our flashable tip 
-		tip_line_count := 1
-		; Preload the qwerd with the word, to match existing format across multiple lines
 		coachAheadNote := ""
-		if (this.map.hints.item(this.keyboard.token).hint) {
-			tip_line_count += 1
-			coachAheadNote .= "`n< " this.keyboard.token " " this.map.hints.item(this.keyboard.token).reliability "= " this.map.hints.item(this.keyboard.token).qwerd
-		}
-		this.logEvent(4, "Coachahead note starts as " coachAheadNote)
-		For letter_index, letter in this.keyboard.Letters
+		For letter_index, letter in ["e", "u", "i", "o"]
 		{
-			; Only add a certain number of lines worth of tip data per config
-			if (tip_line_count < this.keyboard.CoachAheadLines) {
-				if (this.map.qwerds.item(this.keyboard.token letter).word) {
-					tip_line_count += 1
-					coachAheadNote .= "`n >> " this.map.qwerds.item(this.keyboard.token  letter).word " " this.map.qwerds.item(this.keyboard.token letter).reliability "= " this.keyboard.token letter
-				}
-			}			
+			if (this.map.qwerds.item(this.keyboard.token letter).word) {
+				coachAheadPhrase := Format("{:2} {:1}= {:-10}", letter, this.map.qwerds.item(this.keyboard.token letter).reliability, this.map.qwerds.item(this.keyboard.token letter).word)
+				this.logEvent(4, "Adding phrase to coaching " coachAheadPhrase)
+			} else {
+				coachAheadPhrase := Format("{:2} {:1}= {:-10}", letter, " ", "")
+				this.logEvent(4, "Adding phrase to coaching " coachAheadPhrase)
+			}
+			coachAheadNote .= coachAheadPhrase
 		}
-		this.logEvent(4, "Coachahead note ends as " coachAheadNote)
-			
-		; FlashTip shows the word then the qwerd. We want the opposite, so we'll lie to the coach event 
-		coaching := new CoachingEvent()
-		coaching.word := coachAheadWord
-		coaching.qwerd := this.keyboard.token
-		coaching.note := coachAheadNote
-		coaching.chord := ""
-		coaching.chordable := "no"
-		coaching.chorded := ""
-		coaching.form := ""
-		coaching.saves := ""
-		coaching.power := 5
-		coaching.match := ""
-		coaching.cmatch := ""
-		coaching.miss := ""
-		coaching.other := ""
-		coaching.endKey := ""
-		this.flashTip(coaching)
+		coachAheadNote .= "`n"
+		For letter_index, letter in ["a", "w", "d", "t"]
+		{
+			if (this.map.qwerds.item(this.keyboard.token letter).word) {
+				coachAheadPhrase := Format("{:2} {:1}= {:-10}", letter, this.map.qwerds.item(this.keyboard.token letter).reliability, this.map.qwerds.item(this.keyboard.token letter).word)
+				this.logEvent(4, "Adding phrase to coaching " coachAheadPhrase)
+			} else {
+				coachAheadPhrase := Format("{:2} {:1}= {:-10}", letter, " ", "")
+				this.logEvent(4, "Adding phrase to coaching " coachAheadPhrase)
+			}
+			coachAheadNote .= coachAheadPhrase
+		}
+		coachAheadNote .= "`n"
+		For letter_index, letter in ["s", "g", "n", "r"]
+		{
+			if (this.map.qwerds.item(this.keyboard.token letter).word) {
+				coachAheadPhrase := Format("{:2} {:1}= {:-10}", letter, this.map.qwerds.item(this.keyboard.token letter).reliability, this.map.qwerds.item(this.keyboard.token letter).word)
+				this.logEvent(4, "Adding phrase to coaching " coachAheadPhrase)
+			} else {
+				coachAheadPhrase := Format("{:2} {:1}= {:-10}", letter, " ", "")
+				this.logEvent(4, "Adding phrase to coaching " coachAheadPhrase)
+			}
+			coachAheadNote .= coachAheadPhrase
+		}
+		this.logEvent(1, "Coachahead note " coachAheadNote)
+		
+		engine.dashboard.coachAheadHints := coachAheadNote
 	}
 	
 	flashTip(coachEvent) {
