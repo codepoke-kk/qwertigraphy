@@ -41,7 +41,7 @@ Class DashboardViewport
    Width := 0
    Height := 0
    CornerRadius := 10
-   BackGroundColor := 0xaaffffff
+   BackGroundColor := 0xccffffff
    BackGroundPen := ""
    BackGroundBrush := ""
    hwnd1 := ""
