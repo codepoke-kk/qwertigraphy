@@ -73,7 +73,7 @@ Class DashboardViewport
    ; Properties for qwerd display
    ; The nib is where the next drawn point will land
    nibStart := {"x": this.Width, "y": this.Height}
-   lineHeight := {"wordtext": 2, "qwerdtext": 21, "penform": 57, "wordform": 92}
+   lineHeight := {"wordtext": 2, "wordform": 24, "penform": 60, "qwerdtext": 92}
    nib := {"x": this.Width, "y": this.Height}
    
    __New(qenv, dashboardQueue)
@@ -229,9 +229,9 @@ Class DashboardViewport
       ;drawText := StrLen(qwerd.qwerd) > StrLen(qwerd.word) ? qwerd.word : qwerd.qwerd
       drawText := StrLen(qwerd.form) > StrLen(qwerd.word) ? qwerd.word : qwerd.form
       this.DrawWordText(qwerd.word)
-      this.DrawQwerdText(qwerd.qwerd)
       this.DrawQwerdForm(qwerd.form)
       this.DrawPenForm(qwerd.form, qwerd.ink)
+      this.DrawQwerdText(qwerd.qwerd)
    }
 
    DrawWordText(text) {
@@ -242,17 +242,17 @@ Class DashboardViewport
       UpdateLayeredWindow(this.hwnd1, this.hdc, this.leftAnchor, this.topAnchor, this.Width, this.Height)
    }
 
-   DrawQwerdText(text) {
+   DrawQwerdForm(text) {
       local
-      QwerdOptions := "x" this.nibStart.x " y" this.lineHeight.qwerdtext " Left " this.QwerdColor " r4 s20 "
+      QwerdOptions := "x" this.nibStart.x " y" this.lineHeight.wordform " Left " this.QwerdColor " r4 s20 "
       this.LogEvent(4, "Drawing as " QwerdOptions)
       Gdip_TextToGraphics(this.G, text, QwerdOptions, this.FontName, this.Width, this.Height)
       UpdateLayeredWindow(this.hwnd1, this.hdc, this.leftAnchor, this.topAnchor, this.Width, this.Height)
    }
 
-   DrawQwerdForm(text) {
+   DrawQwerdText(text) {
       local
-      QwerdOptions := "x" this.nibStart.x " y" this.lineHeight.wordform " Left " this.QwerdColor " r4 s20 "
+      QwerdOptions := "x" this.nibStart.x " y" this.lineHeight.qwerdtext " Left " this.QwerdColor " r4 s20 "
       this.LogEvent(4, "Drawing as " QwerdOptions)
       Gdip_TextToGraphics(this.G, text, QwerdOptions, this.FontName, this.Width, this.Height)
       UpdateLayeredWindow(this.hwnd1, this.hdc, this.leftAnchor, this.topAnchor, this.Width, this.Height)
