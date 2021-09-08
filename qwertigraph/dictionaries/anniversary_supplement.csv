@@ -68,6 +68,10 @@ Lookups,l-u-k-p-s,Lukps,,klpsu,216
 All-nighter,o-n-i-r,Onir,,inor,217
 All-nighters,o-n-i-r-s,Onirs,,inors,217
 Homework,^-h-\-o-m-r-k,Homrk,,hkmor,246
+Username,e-u-r-n-a,Urna,,anru,257
+Username/password,e-u-r-n-a-p,Urnap,,anpru,257
+Username and password,e-u-r-n-a-p,Urnapo,o,anopru,257
+Usernames,e-u-r-n-a-s,Urnas,,anrsu,257
 Users,e-u-r-s,Urs,,rsu,257
 User,e-u-r,Uru,u,rux,257
 Lighting,l-i-\-h,Lig,,gil,271
@@ -1039,6 +1043,7 @@ Buttonholed,b-u-tn-o-l-d-^-<-h,Butnold,,bdlnotu,9381
 Buttonholing,b-u-tn-o-l-\-h-^-<-h,Butnolg,,bglnotu,9381
 Buttonholes,b-u-tn-o-l-s-^-<-h,Butnols,,blnostu,9381
 Buttons,b-u-tn-s,Butns,,bnstu,9381
+OAuth,o-o-th,Ooh,,hoz,9433
 Clients,k-l-i-s,Klis,,ikls,9528
 Ignore,e-g-n-o-r,Egnor,,egnor,9546
 Ignored,e-g-n-o-r-d,Egnord,,egnord,9546
