@@ -1,3 +1,4 @@
+; This is awkward, but I'm going to do 2 tabs with this one class
 
 Global RegexCoachSavings
 Global RegexCoachWord
@@ -10,27 +11,24 @@ Global RegexCoachMiss
 Global RegexCoachOther
 Global CoachEventsLV
 
+Global RegexHistoricalSavings
+Global RegexHistoricalWord
+Global RegexHistoricalQwerd
+Global RegexHistoricalForm
+Global RegexHistoricalSaves
+Global RegexHistoricalPower
+Global RegexHistoricalMatch
+Global RegexHistoricalMiss
+Global RegexHistoricalOther
+Global HistoricalEventsLV
+
 ; Predefine a coach object. The Trainer will redefine it. 
 coach := {}
 
 Gui MainGUI:Default
+
+;;; First build the Coach tab 
 Gui, Tab, Coach
-
-
-;; Add regex search fields
-;Gui, Add, Edit, -WantReturn x12  y64 w90 h20 vRegexWhere,  
-;Gui, Add, Edit, -WantReturn x102 y64 w100  h20 vRegexWhen,  
-;Gui, Add, Edit, -WantReturn x202 y64 w576  h20 vRegexWhat, 
-;Gui, Add, Edit, -WantReturn x778 y64 w60  h20 vRegexHow,
-;Gui, Add, Button, Default x838 y64 w90 h20 gSearchLogEvents, Search
-;
-;; Add the data ListView
-;Gui, Add, ListView, x12 y84 w916 h420 vLogEventsLV, Where|When|What|How
-;LV_ModifyCol(4, "Integer")  ; For sorting, indicate that the Usage column is an integer.
-;LV_ModifyCol(1, 90)
-;LV_ModifyCol(2, 100)
-;LV_ModifyCol(3, 576)
-;LV_ModifyCol(4, 30)
 
 ; Add regex search fields
 Gui, Add, Edit, -WantReturn x12  y64 w50 h20 vRegexCoachSavings, 
@@ -73,20 +71,69 @@ CoachFilterCoachEvents() {
 	coach.filterCoachEvents()
 }
 
+;;; Now build the Historical tab
+Gui, Tab, Historical
+
+; Add regex search fields
+Gui, Add, Edit, -WantReturn x12  y64 w50 h20 vRegexHistoricalSavings, 
+Gui, Add, Edit, -WantReturn x62  y64 w180 h20 vRegexHistoricalWord,  
+Gui, Add, Edit, -WantReturn x242 y64 w80 h20 vRegexHistoricalQwerd,  
+Gui, Add, Edit, -WantReturn x322 y64 w80 h20 vRegexHistoricalChord,   
+Gui, Add, Edit, -WantReturn x402 y64 w60 h20 vRegexHistoricalChordable,  
+Gui, Add, Edit, -WantReturn x462 y64 w80 h20 vRegexHistoricalForm, 
+Gui, Add, Edit, -WantReturn x542 y64 w50 h20 vRegexHistoricalPower, 
+Gui, Add, Edit, -WantReturn x592 y64 w50 h20 vRegexHistoricalSaves, 
+Gui, Add, Edit, -WantReturn x642 y64 w50 h20 vRegexHistoricalMatch, 
+Gui, Add, Edit, -WantReturn x692 y64 w50 h20 vRegexHistoricalCMatch, 
+Gui, Add, Edit, -WantReturn x742 y64 w50 h20 vRegexHistoricalMiss, 
+Gui, Add, Edit, -WantReturn x792 y64 w50 h20 vRegexHistoricalOther, 
+Gui, Add, Button, x838 y64 w90 h20 gHistoricalFilterHistoricalEvents, Filter
+
+; Add the data ListView
+Gui, Add, ListView, x12 y84 w916 h476 vHistoricalEventsLV, Savings|Word|Qwerd|Chord|Chordable|Form|Power|Saves|Matches|Chords|Misses|Other
+LV_ModifyCol(1, "Integer")  ; For sorting, indicate columns are integer.
+LV_ModifyCol(7, "Float")  
+LV_ModifyCol(8, "Integer")  
+LV_ModifyCol(9, "Integer")  
+LV_ModifyCol(10, "Integer")  
+LV_ModifyCol(11, "Integer")  
+LV_ModifyCol(1, 50)
+LV_ModifyCol(2, 180)
+LV_ModifyCol(3, 80)
+LV_ModifyCol(4, 80)
+LV_ModifyCol(5, 60)
+LV_ModifyCol(6, 80)
+LV_ModifyCol(7, 50)
+LV_ModifyCol(8, 50)
+LV_ModifyCol(9, 50)
+LV_ModifyCol(10, 50)
+LV_ModifyCol(11, 50)
+LV_ModifyCol(12, 50)
+
+HistoricalFilterHistoricalEvents() {
+	global coach
+	coach.filterHistoricalEvents()
+}
+
 class CoachViewport
 {
 	map := ""
 	speedViewer := ""
 	coachQueues := []
 	interval := 1000
+	odometer_interval := (15 * 60 * 1000)
 	phrasePowerThreshold := 100
 	tip_power_threshold := 1
 	coachEvents := ComObjCreate("Scripting.Dictionary")
+	lifetimeEvents := ComObjCreate("Scripting.Dictionary")
 	phrases := ComObjCreate("Scripting.Dictionary")
 	phrase_buffer := ""
 	qwerds_buffer := ""
 	logQueue := new Queue("CoachQueue")
 	logVerbosity := 2
+		
+	odometerSession := ""
+	odometerLifetime := ""
 	
 	__New(map, speedViewer)
 	{
@@ -94,10 +141,18 @@ class CoachViewport
 		this.logVerbosity := this.map.qenv.properties.LoggingLevelCoach
 		this.phrasePowerThreshold := this.map.qenv.properties.PhraseEnthusiasm
 		this.speedViewer := speedViewer
+		this.odometerSessionFile := this.map.qenv.personalDataFolder "\odometerSession.ssv"
+		this.odometerLifetimeFile := this.map.qenv.personalDataFolder "\odometerLifetime.ssv"
 		
-        this.timer := ObjBindMethod(this, "DequeueEvents")
-        timer := this.timer
-        SetTimer % timer, % this.interval
+		this.persistLifetimeOdometer()
+		
+        this.dequeue_timer := ObjBindMethod(this, "DequeueEvents")
+        dequeue_timer := this.dequeue_timer
+        SetTimer % dequeue_timer, % this.interval
+		
+        this.odometer_timer := ObjBindMethod(this, "saveSessionOdometer")
+        odometer_timer := this.odometer_timer
+        SetTimer % odometer_timer, % this.odometer_interval
 		this.LogEvent(2, "Coach initialized")
 	}
  
@@ -170,6 +225,75 @@ class CoachViewport
 				LV_Add(, word.savings, word.word, word.qwerd, word.chord, word.chordable, word.form, word.power, word.saves, word.match, word.cmatch, word.miss, word.other)
 			}
 		}
+		this.saveSessionOdometer()
+	}
+	
+	
+	filterHistoricalEvents() {
+		local garbage
+		Gui MainGUI:Default
+		GuiControlGet RegexHistoricalSavings
+		GuiControlGet RegexHistoricalWord
+		GuiControlGet RegexHistoricalQwerd
+		GuiControlGet RegexHistoricalChord
+		GuiControlGet RegexHistoricalChordable
+		GuiControlGet RegexHistoricalForm
+		GuiControlGet RegexHistoricalPower
+		GuiControlGet RegexHistoricalSaves
+		GuiControlGet RegexHistoricalMatch
+		GuiControlGet RegexHistoricalCMatch
+		GuiControlGet RegexHistoricalMiss
+		GuiControlGet RegexHistoricalOther
+		
+		;global SaveProgress
+		
+		
+		this.logEvent(3, "RegexHistoricalSavings " RegexHistoricalSavings ", RegexHistoricalWord " RegexHistoricalWord ", RegexHistoricalQwerd " RegexHistoricalQwerd ", RegexHistoricalChord " RegexHistoricalChord ", RegexHistoricalChordable " RegexHistoricalChordable ", RegexHistoricalForm " RegexHistoricalForm ", RegexHistoricalPower " RegexHistoricalPower ", RegexHistoricalSaves " RegexHistoricalSaves ", RegexHistoricalMatch " RegexHistoricalMatch ", RegexHistoricalCMatch " RegexHistoricalCMatch ", RegexHistoricalMiss " RegexHistoricalMiss ", RegexHistoricalOther " RegexHistoricalOther)
+		
+		requiredMatchCount := 0
+		requiredMatchCount += (RegexHistoricalSavings) ? 1 : 0
+		requiredMatchCount += (RegexHistoricalWord) ? 1 : 0
+		requiredMatchCount += (RegexHistoricalQwerd) ? 1 : 0
+		requiredMatchCount += (RegexHistoricalChord) ? 1 : 0
+		requiredMatchCount += (RegexHistoricalChordable) ? 1 : 0
+		requiredMatchCount += (RegexHistoricalForm) ? 1 : 0
+		requiredMatchCount += (RegexHistoricalPower) ? 1 : 0
+		requiredMatchCount += (RegexHistoricalSaves) ? 1 : 0
+		requiredMatchCount += (RegexHistoricalMatch) ? 1 : 0
+		requiredMatchCount += (RegexHistoricalCMatch) ? 1 : 0
+		requiredMatchCount += (RegexHistoricalMiss) ? 1 : 0
+		requiredMatchCount += (RegexHistoricalOther) ? 1 : 0
+		
+		Gui, ListView, HistoricalEventsLV
+		LV_Delete()
+		
+		for wordKey, garbage in this.lifetimeEvents {
+			word := this.lifetimeEvents.item(wordKey)
+			foundKey := 0
+			foundKey += this.testField("RegexHistoricalSavings", wordKey, word.savings, RegexHistoricalSavings)
+			foundKey += this.testField("RegexHistoricalWord", wordKey, word.word, RegexHistoricalWord)
+			foundKey += this.testField("RegexHistoricalQwerd", wordKey, word.qwerd, RegexHistoricalQwerd)
+			foundKey += this.testField("RegexHistoricalChord", wordKey, word.chord, RegexHistoricalChord)
+			foundKey += this.testField("RegexHistoricalChordable", wordKey, word.chordable, RegexHistoricalChordable)
+			foundKey += this.testField("RegexHistoricalForm", wordKey, word.form, RegexHistoricalForm)
+			foundKey += this.testField("RegexHistoricalPower", wordKey, word.power, RegexHistoricalPower)
+			foundKey += this.testField("RegexHistoricalSaves", wordKey, word.saves, RegexHistoricalSaves)
+			foundKey += this.testField("RegexHistoricalMatch", wordKey, word.match, RegexHistoricalMatch)
+			foundKey += this.testField("RegexHistoricalCMatch", wordKey, word.cmatch, RegexHistoricalCMatch)
+			foundKey += this.testField("RegexHistoricalMiss", wordKey, word.miss, RegexHistoricalMiss)
+			foundKey += this.testField("RegexHistoricalOther", wordKey, word.other, RegexHistoricalOther)
+			;if (RegexHistoricalSavings) {
+			;	if (RegExMatch(word.savings,RegexHistoricalSavings)) {
+			;		this.logEvent(4, "RegexHistoricalSavings matched " wordKey)
+			;		foundKeys[wordKey] := (foundKeys[wordKey]) ? foundKeys[wordKey] + 1 : 1
+			;	}
+			;}
+		
+			if (foundKey >= requiredMatchCount) {
+				LV_Add(, word.savings, word.word, word.qwerd, word.chord, word.chordable, word.form, word.power, word.saves, word.match, word.cmatch, word.miss, word.other)
+			}
+		}
+		this.saveSessionOdometer()
 	}
 	
 	testField(fieldName,wordKey,haystack,needle) {
@@ -207,9 +331,9 @@ class CoachViewport
 	}
 	
 	coachItem(coachEvent) {
-		eventKey := coachEvent.word
+		eventKey := coachEvent.qwerd
 		StringLower, eventKey, eventKey
-		coachEvent.word := eventKey
+		coachEvent.qwerd := eventKey
 		if (not this.coachEvents.item(eventKey)) {
 			this.coachEvents.item(eventKey) := coachEvent
 		} else {
@@ -298,37 +422,168 @@ class CoachViewport
 		}
 	}
 	
+	persistLifetimeOdometer() {
+		this.LogEvent(2, "Persisting lifetime odometer")
+		this.loadSessionOdometer()
+		this.loadLifetimeOdometer()
+		this.accrueLastSessionEventsToLifetime()
+		this.saveLifetimeOdometer()
+		this.coachEvents.RemoveAll
+		this.LogEvent(2, "Finished persisting lifetime odometer")
+	}
+	
+	loadSessionOdometer() {
+		Loop,Read, % this.odometerSessionFile
+		{
+			if (A_Index = 1) {
+				Continue 
+			}
+			; savings;word;qwerd;chord;form;power;saves;matches;chords;misses;other
+			event_fields := StrSplit(A_LoopReadLine, ";")
+			coaching := new CoachingEvent()
+			coaching.savings := event_fields[1]
+			coaching.word := event_fields[2]
+			coaching.qwerd := event_fields[3]
+			coaching.chord := event_fields[4]
+			coaching.chordable := ""
+			coaching.chorded := ""
+			coaching.form := event_fields[5]
+			coaching.saves := event_fields[7]
+			coaching.power := event_fields[6]
+			coaching.match := event_fields[8]
+			coaching.cmatch := event_fields[9]
+			coaching.miss := event_fields[10]
+			coaching.other := event_fields[11]
+			coaching.endKey := ""
+			this.coachEvents.item(coaching.qwerd) := coaching
+		}
+		this.LogEvent(2, "Loaded last session coaching odometer " )
+	}
+	
+	loadLifetimeOdometer() {
+		Loop,Read, % this.odometerLifetimeFile
+		{
+			if (A_Index = 1) {
+				Continue 
+			}
+			; savings;word;qwerd;chord;form;power;saves;matches;chords;misses;other
+			event_fields := StrSplit(A_LoopReadLine, ";")
+			coaching := new CoachingEvent()
+			coaching.savings := event_fields[1]
+			coaching.word := event_fields[2]
+			coaching.qwerd := event_fields[3]
+			coaching.chord := event_fields[4]
+			coaching.chordable := ""
+			coaching.chorded := ""
+			coaching.form := event_fields[5]
+			coaching.saves := event_fields[7]
+			coaching.power := event_fields[6]
+			coaching.match := event_fields[8]
+			coaching.cmatch := event_fields[9]
+			coaching.miss := event_fields[10]
+			coaching.other := event_fields[11]
+			coaching.endKey := ""
+			this.lifetimeEvents.item(coaching.qwerd) := coaching
+		}
+		this.LogEvent(2, "Loaded current lifetime odometer " )
+	}
+	
+	accrueLastSessionEventsToLifetime() {
+		local
+		global CoachingEvent
+		for qwerd, garbage in this.coachEvents {
+			sessionEvent := this.coachEvents.item(qwerd)
+			if (! this.lifetimeEvents.item(qwerd).qwerd) {
+				coaching := new CoachingEvent()
+				coaching.word := sessionEvent.word
+				coaching.qwerd := sessionEvent.qwerd
+				coaching.chord := sessionEvent.chord
+				coaching.chordable := sessionEvent.chordable
+				coaching.chorded := sessionEvent.chorded
+				coaching.form := sessionEvent.form
+				coaching.saves := 0
+				coaching.power := sessionEvent.power
+				coaching.match := 0
+				coaching.cmatch := 0
+				coaching.miss := 0
+				coaching.other := 0
+				coaching.endKey := sessionEvent.key
+				this.lifetimeEvents.item(qwerd) := coaching
+			} 
+			; accrue found values 
+			this.lifetimeEvents.item(qwerd).savings += sessionEvent.savings
+			this.lifetimeEvents.item(qwerd).saves += sessionEvent.saves
+			this.lifetimeEvents.item(qwerd).match += sessionEvent.match
+			this.lifetimeEvents.item(qwerd).cmatch += sessionEvent.cmatch
+			this.lifetimeEvents.item(qwerd).miss += sessionEvent.miss
+			this.lifetimeEvents.item(qwerd).other += sessionEvent.other
+		}
+	}
+	
+	saveLifetimeOdometer() {
+		local
+		fileHandle := FileOpen(this.odometerLifetimeFile, "w")
+		header := "savings;word;qwerd;chord;form;power;saves;matches;chords;misses;other`n"
+		fileHandle.Write(header)
+		
+		for qwerd, garbage in this.lifetimeEvents {
+			event := this.lifetimeEvents.item(qwerd)
+			odometerline := event.savings ";" event.word ";" event.qwerd ";" event.chord ";" event.form ";" event.power ";" event.saves ";" event.match ";" event.cmatch ";" event.miss ";" event.other "`n"
+			fileHandle.Write(odometerline)
+		}
+		
+		fileHandle.Close()
+	}
+	
+	saveSessionOdometer() {
+		local
+		fileHandle := FileOpen(this.odometerSessionFile, "w")
+		header := "savings;word;qwerd;chord;form;power;saves;matches;chords;misses;other`n"
+		fileHandle.Write(header)
+		
+		for qwerd, garbage in this.coachEvents {
+			event := this.coachEvents.item(qwerd)
+			odometerline := event.savings ";" event.word ";" event.qwerd ";" event.chord ";" event.form ";" event.power ";" event.saves ";" event.match ";" event.cmatch ";" event.miss ";" event.other "`n"
+			fileHandle.Write(odometerline)
+		}
+		
+		fileHandle.Close()
+	}
+	
 	flashTip(coachEvent) {
-		if (coachEvent.power < this.tip_power_threshold) {
-			return
-		}
-		CoordMode, ToolTip, Relative
-		;MsgBox, % "flashing " coachEvent.qwerd " as " this.map.qwerds.item(coachEvent.qwerd).dictionary " and got " unreliable
-		if (coachEvent.chordable = "active") {
-			Tooltip % coachEvent.word " " this.map.qwerds.item(coachEvent.qwerd).reliability "= " coachEvent.qwerd " (" coachEvent.chord ")", 0, 0 ; A_CaretX, A_CaretY + 30
-		} else {
-			Tooltip % coachEvent.word " " this.map.qwerds.item(coachEvent.qwerd).reliability "= " coachEvent.qwerd, 0, 0 ;, A_CaretX, A_CaretY + 30
-		}
-		SetTimer, ClearToolTipCoaching, -5000
-		return 
-
-		ClearToolTipCoaching:
-		  ToolTip
-		return 
+		; Deprecated due to dashboard
+		return
+;		if (coachEvent.power < this.tip_power_threshold) {
+;			return
+;		}
+;		CoordMode, ToolTip, Relative
+;		;MsgBox, % "flashing " coachEvent.qwerd " as " this.map.qwerds.item(coachEvent.qwerd).dictionary " and got " unreliable
+;		if (coachEvent.chordable = "active") {
+;			Tooltip % coachEvent.word " " this.map.qwerds.item(coachEvent.qwerd).reliability "= " coachEvent.qwerd " (" coachEvent.chord ")", 0, 0 ; ;A_CaretX, A_CaretY + 30
+;		} else {
+;			Tooltip % coachEvent.word " " this.map.qwerds.item(coachEvent.qwerd).reliability "= " coachEvent.qwerd, 0, 0 ;, A_CaretX, A_CaretY + 30
+;		}
+;		SetTimer, ClearToolTipCoaching, -5000
+;		return 
+;
+;		ClearToolTipCoaching:
+;		  ToolTip
+;		return 
 	}
 	
 	flashTip_chord(coachEvent) {
-		CoordMode, ToolTip, Relative
-		;MsgBox, % "flashing chord " coachEvent.qwerd " as " this.map.qwerds.item(coachEvent.qwerd).dictionary " and got " unreliable
-		if (coachEvent.chordable = "active") {
-			Tooltip % coachEvent.word " " this.map.qwerds.item(coachEvent.qwerd).reliability "= ** " coachEvent.qwerd " (" coachEvent.chord ") **", 0, 0 ; A_CaretX, A_CaretY + 30
-		} 
-		SetTimer, ClearToolTipCoaching_chord, % (-1 * this.map.qenv.properties.CoachAheadTipDuration)
-		return 
-
-		ClearToolTipCoaching_chord:
-		  ToolTip
-		return 
+		return
+;		CoordMode, ToolTip, Relative
+;		;MsgBox, % "flashing chord " coachEvent.qwerd " as " this.map.qwerds.item(coachEvent.qwerd).dictionary " and got " unreliable
+;		if (coachEvent.chordable = "active") {
+;			Tooltip % coachEvent.word " " this.map.qwerds.item(coachEvent.qwerd).reliability "= ** " coachEvent.qwerd " (" coachEvent.chord ") **", 0, 0 ; ;A_CaretX, A_CaretY + 30
+;		} 
+;		SetTimer, ClearToolTipCoaching_chord, % (-1 * this.map.qenv.properties.CoachAheadTipDuration)
+;		return 
+;
+;		ClearToolTipCoaching_chord:
+;		  ToolTip
+;		return 
 	}
 
 	LogEvent(verbosity, message) 

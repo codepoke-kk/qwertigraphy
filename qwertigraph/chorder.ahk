@@ -23,7 +23,7 @@ FileInstall, templates\retrains.template, templates\retrains.template, true
 FileInstall, templates\personal_functions.template, templates\personal_functions.template, true
 FileInstall, coach.ico, coach.ico, true
 
-Gui, MainGUI: Add, Tab3,x6 y40 w928 h526, Coach|Editor|Logs||Settings|Strokepaths
+Gui, MainGUI: Add, Tab3,x6 y40 w928 h526, Coach|Historical|Editor|Logs||Settings|Strokepaths
 Gui, MainGUI: Show, x262 y118 w940 h570, % "Qwertigraph Trainer"
 
 #Include classes\Gdip_All.ahk

@@ -164,7 +164,7 @@ Class DashboardViewport
          bgHeight := this.Height + this.coachAheadHeight
       }
       
-      this.LogEvent(1, "Height is  " bgHeight " on " this.coachAheadHints)
+      this.LogEvent(4, "Height is  " bgHeight " on " this.coachAheadHints)
       Gdip_GraphicsClear(this.G)
       Gdip_FillRoundedRectangle(this.G, this.BackgroundBrush, 0, 0, this.Width, bgHeight, this.CornerRadius)
       this.LogEvent(1, "Just drew  " bgHeight)
@@ -179,7 +179,7 @@ Class DashboardViewport
       
       ; Draw pending hints
       HintOptions := "x10 y" (this.Height - 69) " Left " this.FormColors["green"] " r4 s16 "
-      this.LogEvent(1, "Drawing " this.coachAheadHints " as " HintOptions)
+      this.LogEvent(3, "Drawing " this.coachAheadHints " as " HintOptions)
       Gdip_TextToGraphics(this.G, this.coachAheadHints, HintOptions, this.HintsFontName, this.Width, this.coachAheadHeight)
       
       UpdateLayeredWindow(this.hwnd1, this.hdc, this.leftAnchor, this.topAnchor, this.Width, bgHeight)
@@ -203,7 +203,7 @@ Class DashboardViewport
       this.DrawBackground()
       ; Set the nib start points
       this.nibStart := {"x": this.Width, "y": this.Height}
-      this.LogEvent(1, "Visualizing " this.coachAheadQwerd.word)
+      this.LogEvent(2, "Visualizing " this.coachAheadQwerd.word)
       this.LogEvent(3, "Visualizing " this.qwerds.MaxIndex() " events at " this.nibStart.x "," this.nibStart.y)
       this.DrawQwerd(this.coachAheadQwerd)
       
@@ -292,7 +292,7 @@ Class DashboardViewport
             nib.x += end.x
             nib.y += end.y
          } else {
-            this.LogEvent(1, "Don't understand form " form ", subpath " subpath)
+            this.LogEvent(2, "Don't understand form " form ", subpath " subpath)
          }
       }
    }
