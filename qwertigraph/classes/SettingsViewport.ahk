@@ -199,6 +199,7 @@ SettingsCoachAheadLines() {
 SettingsDashboardShow() {
 	global dashboard
 	global qenv
+	global SettingsDashboardShow
 	Gui MainGUI:Default 
 	GuiControlGet SettingsDashboardShow
 	if (RegExMatch(SettingsDashboardShow, "^[012345]$")) {

@@ -104,3 +104,13 @@ engine.Start()
     engine.Start()
     ; Msgbox, % "Chorder started Engine"
     Return
+!#d::
+	Gui MainGUI:Default 
+	GuiControlGet SettingsDashboardShow
+    newShowSetting := (RegExMatch(SettingsDashboardShow, "^0$")) ? 1 : 0
+    GuiControl, Text, SettingsDashboardShow, %newShowSetting%
+    dashboard.show := newShowSetting
+    dashboard.ShowHide()
+    qenv.properties.DashboardShow := newShowSetting
+    qenv.saveProperties()
+    Return
