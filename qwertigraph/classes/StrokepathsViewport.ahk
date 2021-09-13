@@ -100,13 +100,13 @@ class StrokepathsViewport
 {
 	qenv := ""
 	logQueue := new Queue("StrokerQueue")
-	logVerbosity := 2
+	logVerbosity := 1
 	
 	__New(qenv, dashboard)
 	{
 		this.qenv := qenv
 		this.dashboard := dashboard
-		this.logVerbosity := 4 ; this.map.qenv.properties.LoggingLevelStroker
+		this.logVerbosity := 1 ; this.map.qenv.properties.LoggingLevelStroker
 		
 		this.logEvent(3, "Initializing strokepaths " this.qenv.strokepaths.Count)
 		
@@ -184,7 +184,7 @@ class StrokepathsViewport
 				this.logEvent(3, foundKey " matched " foundKeys[foundKey] " times, not " requiredMatchCount)
 			}
 		}
-		this.logEvent(1, "Found " foundCount " matches")
+		this.logEvent(3, "Found " foundCount " matches")
 	}
 
 	prepareStrokepath(RowNumber) {

@@ -167,7 +167,7 @@ Class DashboardViewport
       this.LogEvent(4, "Height is  " bgHeight " on " this.coachAheadHints)
       Gdip_GraphicsClear(this.G)
       Gdip_FillRoundedRectangle(this.G, this.BackgroundBrush, 0, 0, this.Width, bgHeight, this.CornerRadius)
-      this.LogEvent(1, "Just drew  " bgHeight)
+      this.LogEvent(3, "Just drew  " bgHeight)
       
       ; Draw WPM Meter
       EnhancedSpeedOptions := "x20 y20 Left " this.SpeedColor " r4 s36 "
@@ -336,7 +336,7 @@ Class DashboardViewport
 			}
             if (! matchDetector) {
                ; We went through the whole list of strokes and found no matches 
-				this.LogEvent(1, "No matches were detected in GetSubPaths for " form)
+				this.LogEvent(3, "No matches were detected in GetSubPaths for " form)
                 break
             }
 			stopper++

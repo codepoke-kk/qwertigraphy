@@ -65,7 +65,7 @@ class MappingEngine_Chorded
 		
 	Start() 
 	{
-		this.logEvent(1, "Property test: " this.map.qenv.properties.ChordWindow)
+		this.logEvent(3, "Property test: " this.map.qenv.properties.ChordWindow)
 		
         this.ResyncModifierKeys()
 		this.keyboard.Token := ""
@@ -198,7 +198,7 @@ class MappingEngine_Chorded
 		} 
 		; Send, % sendKey
 		if (sendKey != ""){
-			this.logEvent(1, "Passthrough: {Blind}" sendKey)
+			this.logEvent(3, "Passthrough: {Blind}" sendKey)
 			SendInput, % "{Blind}" sendKey
 			;Msgbox, % "Sent {Blind}" sendKey
 		}
@@ -514,7 +514,8 @@ class MappingEngine_Chorded
 			}
 		} else {
 			; This buffered input was not a special character, nor a qwerd
-			this.logEvent(4, "No match on '" inbound.token "' and input text was '" input_text "'")
+			this.logEvent(1, "Passing " inbound.token)
+			this.logEvent(4, "Input text was " input_text)
 			if (input_text) {
 				final_characters_count := StrLen(inbound.token) + 1
 				if (this.map.hints.item(inbound.token).hint) {
@@ -642,7 +643,7 @@ class MappingEngine_Chorded
 	pushInput(qwerd, word, end_key) {
 		
 		;;; Expand the qwerd into its word 
-		this.logEvent(2, "Pushing " qwerd " to " word " ending with " end_key)
+		this.logEvent(1, "Pushing " qwerd " to " word end_key)
 		final_characters_count := StrLen(word) + 1
 		; expand this qwerd by first deleting the qwerd itself and its end character if not suppressed
 		deleteChars := StrLen(qwerd)
@@ -707,7 +708,7 @@ class MappingEngine_Chorded
 	pushDashboardQwerd(qwerd, ink) {
 		dashboardQwerd := new DashboardEvent(qwerd.form, qwerd.qwerd, qwerd.word, ink)
 		this.dashboardQueue.enqueue(dashboardQwerd)
-		this.logEvent(1, "Enqueued dashboard action '" dashboardQwerd.form "'")
+		this.logEvent(3, "Enqueued dashboard action '" dashboardQwerd.form "'")
 	}
 	
 	coachAhead(start) {
@@ -732,7 +733,7 @@ class MappingEngine_Chorded
 	}
 	presentGraphicalCoachingAhead() {
 		global engine
-		this.logEvent(1, "Graphical coaching ahead on " this.keyboard.token)
+		this.logEvent(2, "Graphical coaching ahead on " this.keyboard.token)
 		if ((StrLen(this.keyboard.token) < 1) or (this.keyboard.CoachAheadLines < 1)) {
 			this.logEvent(4, "Bailing due to short token (" this.keyboard.token ") or no lines allowed (" this.keyboard.CoachAheadLines ")")
 			return
@@ -805,7 +806,7 @@ class MappingEngine_Chorded
 			}
 			coachAheadNote .= coachAheadPhrase
 		}
-		this.logEvent(1, "Coachahead note " coachAheadNote)
+		this.logEvent(2, "Coachahead note " coachAheadNote)
 		
 		engine.dashboard.coachAheadHints := coachAheadNote
 	}
