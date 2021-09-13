@@ -517,6 +517,12 @@ class CoachViewport
 			this.lifetimeEvents.item(qwerd).cmatch += sessionEvent.cmatch
 			this.lifetimeEvents.item(qwerd).miss += sessionEvent.miss
 			this.lifetimeEvents.item(qwerd).other += sessionEvent.other
+			; Update lifetime values from latest session values. 
+			this.lifetimeEvents.item(qwerd).word := sessionEvent.word
+			this.lifetimeEvents.item(qwerd).form := sessionEvent.form
+			this.lifetimeEvents.item(qwerd).chord := sessionEvent.chord
+			this.lifetimeEvents.item(qwerd).power := sessionEvent.power
+			this.lifetimeEvents.item(qwerd).saves := sessionEvent.saves
 		}
 	}
 	

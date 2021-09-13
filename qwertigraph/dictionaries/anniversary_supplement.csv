@@ -10,6 +10,7 @@ Of,o,O,,,24
 Being,b-\-h,Bg,,bcg,41
 But,b,Bu,u,bcu,50
 Wouldn't,d-n-t,Dntooo,,dnt,54
+They'll,th-e-l,Helu,u,ehlu,54
 They'd,th-e-d,Heod,,deho,54
 They're,th-e-r,Heor,,ehor,54
 They've,th-e-v,Heov,,ehov,54
@@ -49,6 +50,10 @@ Backup,b-a-k-p,Bakp,,abkp,148
 Backed up,b-a-k-p-d,Bakpd,,abkpd,148
 Backing up,b-a-k-p-\-h,Bakpg,,abkpg,148
 Backups,b-a-k-p-s,Bakps,,abkps,148
+Righted,r-i-d,Rid,,dir,187
+Rightful,r-i-f,Rif,,fir,187
+Rightfully,r-i-f-e,Rife,,efir,187
+Rightness,r-i-n-e-s,Rines,,einrs,187
 Don't,d-o-n,Don,,dno,188
 I'm,i-m,Im,,cim,188
 Telling,t-e-\-h,Teg,,egt,195
@@ -90,6 +95,9 @@ Poured,p-o-r-d,Pord,,dopr,324
 Pouring,p-o-r-\-h,Porg,,gopr,324
 Pours,p-o-r-s,Pors,,oprs,324
 Outpouring,a-u-p-o-r-\-h,Wporg,,goprw,324
+Friended,fr-d,Frd,,dfr,327
+Friending,fr-\-h,Frg,,fgr,327
+Friends,fr-s,Frs,,frs,327
 Kinged,k-e-ng-d,Kegd,,egkd,357
 Kingly,k-e-ng-e,Kege,,egke,357
 Kingliness,k-e-ng-e-n-e-s,Kegenes,,egkns,357
@@ -137,6 +145,8 @@ Accountably,a-k-t-b-e,Aktbe,,abekt,481
 Accounted,a-k-t-d,Aktd,,adkt,481
 Accounting,a-k-t-\-h,Aktg,,agkt,481
 Accounts,a-k-t-s,Akts,,akst,481
+Seeming,s2-e-m-\-h,Semg,,egms,506
+Seems,s2-e-m-s,Sems,,ems,506
 Unspoken,n-s-p-k-n,Nspkn,,knps,509
 Spoken,s-p-k-n,Spkn,,knps,509
 Spokes,s-p-k-s,Spks,,kps,509
@@ -184,6 +194,7 @@ Follow up,f-o-p,Fop,,fop,696
 Following up,f-o-p-\-h,Fopg,,fgop,696
 Followers,f-o-r-s,Fors,,fors,696
 Follower,f-o-r,Foru,u,foru,696
+Writing,r-i-\-h,Rig,,gir,699
 Windowed,u-e-nt-o-d,Uentod,,enotud,721
 Windowing,u-e-nt-o-\-h,Uentog,,enotug,721
 Windowless,u-e-nt-o-l-s,Uentols,,elnostu,721
@@ -357,6 +368,12 @@ Preparing,pr-e-p-\-h,Prepg,,egpr,1440
 Preparer,pr-e-p-r,Prepr,,epr,1440
 Preparers,pr-e-p-r-s,Preprs,,eprs,1440
 Prepares,pr-e-p-s,Preps,,eprs,1440
+Prayed,pr-a-d,Prad,,adpr,1458
+Praying,pr-a-\-h,Prag,,agpr,1458
+Prayer,pr-a-r,Prar,,apr,1458
+Prayerfully,pr-a-r-f-e,Prare,,aepr,1458
+Prayerful,pr-a-r-f,Prarf,,apr,1458
+Prayers,pr-a-r-s,Prars,,aprs,1458
 Addressing,a-d-r-\-h,Adrg,,adgr,1549
 Addresses,a-d-r-s,Adrs,,adrs,1549
 Constantly,k-s2-tn-e,Kstne,,eknst,1552
@@ -435,6 +452,7 @@ Qualitatively,k-u-df-e,Qudfe,,defqu,1727
 Explaining,e-s-pl-\-h,Xplg,,glpx,1739
 Explanatory,e-s-pl-\-r-e,Xplre,,elprx,1739
 Explains,e-s-pl-s,Xpls,,lpsx,1739
+Friendliest,fr-l-s-t,Frlst,,flrst,1742
 Happened,^-h-\-a-p-n-d,Hapnd,,adhnp,1744
 Happening,^-h-\-a-p-n-\-h,Hapng,,aghnp,1744
 Happenings,^-h-\-a-p-n-s\--h,Hapngs,,aghnps,1744
@@ -447,6 +465,7 @@ Appliances,a-pl-i-n-s-s,Aplinss,,ailnps,1758
 Applies,a-pl-i-s,Aplis,,ailps,1758
 Connect,k-e-k,Kek,,ekz,1770
 Connected,k-e-k-t,Kekt,,ekt,1770
+Friendships,fr-/-sh-s,Frzs,,frsz,1791
 Protecting,pr-o-t-e-k-\-h,Protekg,,egkoprt,1802
 Protector,pr-o-t-e-k-r,Protekr,,ekoprt,1802
 Protectorate,pr-o-t-e-k-r-a,Protekra,,aekoprt,1802
@@ -495,6 +514,7 @@ Connections,k-e-k-sh-s,Kekzs,,eksz,1927
 Accustom,a-k-u-s,Akusu,u,aksu,1935
 Unaccustomed,n-a-k-u-s-/-t,Nakust,,aknstu,1935
 Septuagint,s-e-p-j,Sepj,,ejps,1973
+Writers,r-i-r-s,Rirs,,irs,1976
 Protections,pr-o-t-e-k-sh-s,Protekzs,,ekoprstz,1983
 Explanations,e-s-pl-sh-s,Xplzs,,lpsxz,2074
 Unsuccessful,n-s2-u-k-f,Nsukf,,fknsu,2078
@@ -899,6 +919,14 @@ Functioning,f-nk-\-h,Fqg,,fgq,6026
 Functionary,f-nk-r-e,Fqre,,efqr,6026
 Functionaries,f-nk-r-e-s,Fqres,,efqrs,6026
 Functions,f-nk-s,Fqs,,fqs,6026
+Unrighteous,n-r-i-ch-u-s,Nricus,,cinrsu,6052
+Unrighteously,n-r-i-ch-u-s-e,Nricuse,,ceinrsu,6052
+Unrighteousness,n-r-i-ch-u-s-n-e-s,Nricusnes,,ceinrsu,6052
+Unrighteousnesses,n-r-i-ch-u-s-n-e-s-s,Nricusness,,ceinrsu,6052
+Righteous,r-i-ch-u-s,Ricus,,cirsu,6052
+Righteously,r-i-ch-u-s-e,Ricuse,,ceirsu,6052
+Righteousness,r-i-ch-u-s-n-e-s,Ricusnes,,ceinrsu,6052
+Righteousnesses,r-i-ch-u-s-n-e-s-s,Ricusness,,ceinrsu,6052
 Goals,g-o-l-s,Gols,,glos,6082
 Modified,m-o-df-d,Modfd,,dfmo,6086
 Modifying,m-o-df-\-h,Modfg,,dfgmo,6086
@@ -952,6 +980,8 @@ Technician,t-e-k-n-sh,Teknz,,ekntz,7169
 Technicians,t-e-k-n-sh-s,Teknzs,,eknstz,7169
 Exertion,e-s2-e-s2h,Xez,,exz,7224
 Exertions,e-s2-e-s2h-s,Xezs,,esxz,7224
+Needle,n-e-d-l,Nedlo,,delno,7255
+Needles,n-e-d-l-s,Nedlos,,delnos,7255
 Illogic,e-l-o-j-k,Elojk,,ejklo,7324
 Illogical,e-l-o-j-/-k,Elojko,o,ejklo,7324
 Kicked,k-e-k-d,Kekdzz,,dek,7324
@@ -980,6 +1010,14 @@ Invalidity,n-v-a-l-e-td-e,Nvaledte,,adelnv,7867
 Validity,v-a-l-e-td-e,Valedte,,adeltv,7867
 Ticketed,t-e-k-e-t-d,Teketd,,dekt,7883
 Ticketing,t-e-k-e-t-\-h,Teketg,,egkt,7883
+Needful,n-e-d-f,Nedf,,defn,7996
+Needfully,n-e-d-f-e,Nedfe,,defn,7996
+Theological,h-e-\-o-k,Heok,,ehko,8166
+Theologically,h-e-\-o-k-e,Heoke,,ehko,8166
+Theologian,h-e-\-o-n,Heon,,ehno,8166
+Theologians,h-e-\-o-n-s,Heons,,ehnos,8166
+Theology,h-e-\-o,Heoo,o,eho,8166
+Theologies,h-e-\-o-s,Heos,,ehos,8166
 Delete,d-l-e-t,Dlet,,delt,8274
 Deleted,d-l-e-t-d,Dletd,,delt,8274
 Deleting,d-l-e-t-\-h,Dletg,,deglt,8274
@@ -997,6 +1035,8 @@ Imports,m-p-o-t-s,Mpots,,mopst,8595
 Importation,m-p-o-t-sh,Mpotz,,moptz,8595
 Environmental,n-v-i-r-mn-l,Nvirmml,,ilmnrv,8705
 Environments,n-v-i-r-mn-s,Nvirmms,,imnrsv,8705
+Needlessly,n-e-d-l-e,Nedle,,deln,8765
+Needless,n-e-d-l,Nedlu,u,delno,8765
 Combining,k-b-i-\-h,Kbig,,bgik,8790
 Combines,k-b-i-s,Kbis,,biks,8790
 Reschedule,r-s2-k-e-d-l,Rskedl,,deklrs,8811
@@ -1145,6 +1185,9 @@ Pharisees,f-a2-r-s-e-s,Farses,,aefrs,12765
 Sadducee,s-a-d-s-e,Sadse,,ades,12765
 Sadducees,s-a-d-s-e-s,Sadses,,adess,12765
 Authoritatively,o-th-rdf-e,Ohrdfe,,defhor,12938
+Needy,n-e-d-e,Nede,,den,13093
+Neediness,n-e-d-e-n-s,Nedens,,dens,13093
+Neediest,n-e-d-e-s-t,Nedest,,denst,13093
 Locomotives,l-o-k-m-o-df-s,Lokmodfs,,dfklmos,13371
 Symptom,s-e-m-tm,Semtm,,emst,13544
 Symptomatic,s-e-m-tm-\-a,Semtma,,aemst,13544
@@ -1180,6 +1223,9 @@ Overturn,^-o-\-t-e-n,Oten,,enot,15426
 Overturned,^-o-\-t-e-n-d,Otend,,enotd,15426
 Overturning,^-o-\-t-e-n-\-h,Oteng,,enotg,15426
 Overturns,^-o-\-t-e-n-s,Otens,,enots,15426
+Galilee,g-a-l-l-e,Galle,,aegl,16002
+Friendliness,fr-l-n-s,Frlns,,flnrs,16206
+Unseemly,n-s2-e-m-e,Nseme,,emns,16215
 Instructors,n-s-/-k-r-s,Nskrs,,knrs,16231
 Verify,v-e-r-f,Verf,,efrv,16753
 Verified,v-e-r-f-d,Verfd,,defrv,16753
@@ -1267,6 +1313,7 @@ Entailed,n-ta-l-d,Ntald,,adlnt,21539
 Entailing,n-ta-l-\-h,Ntalg,,aglnt,21539
 Entails,n-ta-l-s,Ntals,,alnst,21539
 Assignments,a-s2-i-mn-s,Asimms,,aims,21884
+Unwritten,n-r-e-tn,Nretn,,enrt,22085
 Installations,n-s2-t-o-l-a-sh-s,Nstolazs,,alnostz,22364
 Censored,s2-e-n-s2-o-r-d,Sensord,,enorsd,22710
 Censoring,s2-e-n-s2-o-r-\-h,Sensorg,,enorsg,22710
@@ -1287,6 +1334,7 @@ Fissures,f-e-sh-u-s,Fezus,,efuzs,24109
 Expounding,e-s-p-n-\-h,Xpng,,gnpx,24186
 Expounds,e-s-p-n-s,Xpns,,npsx,24186
 Expounded,e-s-p-n-t,Xpnt,,nptx,24186
+Galileo,g-a-l-l-e-o,Galleo,,aeglo,24229
 Diagnose,d-i-g-n-o-s,Dignos,,dginos,24781
 Diagnosed,d-i-g-n-o-s-d,Dignosd,,dginos,24781
 Diagnoses,d-i-g-n-o-s-e-s,Dignoses,,deginos,24781
@@ -1298,6 +1346,7 @@ Diagnosticians,d-i-g-n-o-s-t-sh-s,Dignostzs,,dginostz,24781
 Diagnostic,d-i-g-n-\-s-t,Dignst,,dginst,24781
 Diagnostics,d-i-g-n-\-s-t-s,Dignsts,,dginst,24781
 Certifying,s2-e-df-\-h,Sedfg,,defgs,25044
+Befriended,b-fr-d,Bfrd,,bdfr,25083
 Internet,n-/-nt,Nnt,,ntz,25973
 Athletic,a-th-l-/-a,Ahla,,ahl,26269
 Athletics,a-th-l-/-a-s,Ahlas,,ahls,26269
@@ -1377,6 +1426,9 @@ Doubleday,d-b-d-a,Dbda,,abd,32627
 Singe,s-e-n-j,Senj,,ejns,33893
 Singed,senj-d,Senjd,,dejns,33893
 Singes,s-e-n-j-s,Senjs,,ejns,33893
+Spray,s-p-r-a,Spra,,aprs,34387
+Sprayed,s-p-r-a-d,Sprad,,adprs,34387
+Sprays,s-p-r-a-s,Spras,,aprs,34387
 Sergeant,s-e2-jnt,Sejnt,,ejnst,37586
 Sergeants,s-e2-jnt-s,Sejnts,,ejnsts,37586
 Inclusions,e-/-sh-s,Ezs,,esz,37756
@@ -1408,6 +1460,9 @@ Captioning,k-a-p-sh-\-h,Kapzg,,agkpz,44771
 Captions,k-a-p-sh-s,Kapzs,,akpsz,44771
 Capernaum,k-a-p-n-u-m,Kapnum,,akmnpu,45030
 Outcomes,a-u-k-m-s,Wkms,,kmsw,46539
+Galilean,g-a-l-l-e-n,Gallen,,aegln,46629
+Galileans,g-a-l-l-e-n-s,Gallens,,aeglns,46629
+Rewritten,r-r-e-tn,Rretn,,enrt,47374
 Reorganized,r-o-g-d,Rogd,,dgor,47478
 Reorganizing,r-o-g-\-h,Rogg,,gor,47478
 Reorganizes,r-o-g-s,Rogs,,gors,47478
@@ -1419,8 +1474,11 @@ Opine,o-p-i-n,Opin,,inop,54408
 Opined,o-p-i-n-d,Opind,,dinop,54408
 Opining,o-p-i-n-\-h,Oping,,ginop,54408
 Opines,o-p-i-n-s,Opins,,inops,54408
+Rewrite,r-r-i,Rri,,irx,58803
+Rewriting,r-r-i-\-h,Rrig,,gir,58803
 Certification,s2-e-df-sh,Sedfz,,defsz,59944
 Certifications,s2-e-df-sh-s,Sedfzs,,defsz,59944
+Spraying,s-p-r-a-g,Spragi,i,agiprs,61211
 Singles,s2-e-ng-s,Segs,,egs,65996
 Coverage,k-v-j,Kvj,,jkv,68140
 Tech,t-e-k-n,Tekn,,eknt,69046

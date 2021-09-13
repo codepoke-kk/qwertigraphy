@@ -733,7 +733,7 @@ class MappingEngine_Chorded
 	presentGraphicalCoachingAhead() {
 		global engine
 		this.logEvent(1, "Graphical coaching ahead on " this.keyboard.token)
-		if ((StrLen(this.keyboard.token) < 2) or (this.keyboard.CoachAheadLines < 1)) {
+		if ((StrLen(this.keyboard.token) < 1) or (this.keyboard.CoachAheadLines < 1)) {
 			this.logEvent(4, "Bailing due to short token (" this.keyboard.token ") or no lines allowed (" this.keyboard.CoachAheadLines ")")
 			return
 		}
@@ -755,7 +755,7 @@ class MappingEngine_Chorded
 	presentTextualCoachingAhead() {
 		global engine
 		this.logEvent(4, "Textual coaching ahead on " this.keyboard.token)
-		if ((StrLen(this.keyboard.token) < 2) or (this.keyboard.CoachAheadLines < 1)) {
+		if ((StrLen(this.keyboard.token) < 1) or (this.keyboard.CoachAheadLines < 1)) {
 			this.logEvent(4, "Bailing due to short token (" this.keyboard.token ") or no lines allowed (" this.keyboard.CoachAheadLines ")")
 			return
 		}
@@ -767,22 +767,25 @@ class MappingEngine_Chorded
 		}
 		this.logEvent(4, "Coachahead word is " coachAheadWord)
 		coachAheadNote := ""
-		For letter_index, letter in ["e", "u", "i", "o"]
+		For letter_index, letter in ["u", "i", "o", ""]
 		{
+			; Show the whole qwerd as the last coach ahead hint in this line. That requires some adjustment. 
+			printLetter := (StrLen(letter)) ? letter : this.keyboard.token 
+			printWord := Substr(this.map.qwerds.item(this.keyboard.token letter).word, 1, (11 - StrLen(printLetter)))
 			if (this.map.qwerds.item(this.keyboard.token letter).word) {
-				coachAheadPhrase := Format("{:2} {:1}= {:-10}", letter, this.map.qwerds.item(this.keyboard.token letter).reliability, this.map.qwerds.item(this.keyboard.token letter).word)
+				coachAheadPhrase := Format("{:2} {:1}= {:-10}", printLetter, this.map.qwerds.item(this.keyboard.token letter).reliability, printWord)
 				this.logEvent(4, "Adding phrase to coaching " coachAheadPhrase)
 			} else {
-				coachAheadPhrase := Format("{:2} {:1}= {:-10}", letter, " ", "")
+				coachAheadPhrase := Format("{:2} {:1}= {:-10}", printLetter, " ", "")
 				this.logEvent(4, "Adding phrase to coaching " coachAheadPhrase)
 			}
 			coachAheadNote .= coachAheadPhrase
 		}
 		coachAheadNote .= "`n"
-		For letter_index, letter in ["a", "w", "d", "t"]
+		For letter_index, letter in ["e", "a", "d", "t"]
 		{
 			if (this.map.qwerds.item(this.keyboard.token letter).word) {
-				coachAheadPhrase := Format("{:2} {:1}= {:-10}", letter, this.map.qwerds.item(this.keyboard.token letter).reliability, this.map.qwerds.item(this.keyboard.token letter).word)
+				coachAheadPhrase := Format("{:2} {:1}= {:-10}", letter, this.map.qwerds.item(this.keyboard.token letter).reliability, Substr(this.map.qwerds.item(this.keyboard.token letter).word, 1, 10))
 				this.logEvent(4, "Adding phrase to coaching " coachAheadPhrase)
 			} else {
 				coachAheadPhrase := Format("{:2} {:1}= {:-10}", letter, " ", "")
@@ -794,7 +797,7 @@ class MappingEngine_Chorded
 		For letter_index, letter in ["s", "g", "n", "r"]
 		{
 			if (this.map.qwerds.item(this.keyboard.token letter).word) {
-				coachAheadPhrase := Format("{:2} {:1}= {:-10}", letter, this.map.qwerds.item(this.keyboard.token letter).reliability, this.map.qwerds.item(this.keyboard.token letter).word)
+				coachAheadPhrase := Format("{:2} {:1}= {:-10}", letter, this.map.qwerds.item(this.keyboard.token letter).reliability, Substr(this.map.qwerds.item(this.keyboard.token letter).word, 1, 10))
 				this.logEvent(4, "Adding phrase to coaching " coachAheadPhrase)
 			} else {
 				coachAheadPhrase := Format("{:2} {:1}= {:-10}", letter, " ", "")
