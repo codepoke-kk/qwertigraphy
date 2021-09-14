@@ -38,6 +38,7 @@ Workflows,r-k-f-l-o-s,Rkflos,,fklors,132
 Working,r-k-\-h,Rkg,,gkr,132
 Workings,r-k-\-h-s,Rkgs,,gkrs,132
 Works,r-k-s,Rks,,krs,132
+Going,g-\-h,Gg,,g,134
 Thinkable,th-\-b,Hb,,bhz,144
 Thinkably,th-\-b-e,Hbe,,beh,144
 Thinker,th-\-h-r,Hhr,,hrz,144
@@ -440,6 +441,12 @@ Removables,r-e-m-u-b-s,Remubs,,bemrsu,1657
 Removed,r-e-m-u-d,Remud,,demru,1657
 Removing,r-e-m-u-\-h,Remug,,egmru,1657
 Removes,r-e-m-u-s,Remus,,emrsu,1657
+Slowed,s-l-o-d,Slod,,dlos,1663
+Slowing,s-l-o-\-h,Slog,,glos,1663
+Slowness,s-l-o-n-s,Slons,,lnos,1663
+Slower,s-l-o-r,Slor,,lors,1663
+Slows,s-l-o-s,Slos,,los,1663
+Slowest,s-l-o-s-t,Slost,,lost,1663
 Currently,k-r-e-nt-e,Krente,,eknrt,1668
 Currents,k-r-e-nt-s,Krents,,eknrst,1668
 Kingdoms,k-e-ng-tm-s,Kegtms,,egkmts,1692
@@ -627,6 +634,9 @@ Operational,o-pr-a-sh-l,Oprazl,,aloprz,3048
 Operationally,o-pr-a-sh-l-e,Oprazle,,aeloprz,3048
 Operations,o-pr-a-sh-s,Oprazs,,aoprsz,3048
 Securities,s2-e-k-/-r-s,Sekrso,o,ekors,3065
+Exchanged,e-s2-ch-d,Xcd,,cdx,3094
+Exchanging,e-s2-ch-\-h,Xcg,,cgx,3094
+Exchanges,e-s2-ch-s,Xcs,,csx,3094
 Applications,a-pl-sh-s,Aplzs,,alpsz,3097
 Matched,m-a-ch-d,Macd,,acmod,3098
 Matching,m-a-ch-\-h,Macg,,acmog,3098
@@ -654,6 +664,11 @@ Mismanagement,m-s-mn-j-m,Msmmjm,,jms,3158
 Mismanages,m-s-mn-j-s,Msmmjs,,jmss,3158
 Unmanageable,n-mn-j-b,Nmmjb,,bjmn,3158
 Unmanageably,n-mn-j-b-e,Nmmjbe,,bjmne,3158
+Coached,k-o-ch-d,Kocd,,cdko,3161
+Coaching,k-o-ch-\-h,Kocg,,cgko,3161
+Coachman,k-o-ch-m-a-n,Kocman,,ackmno,3161
+Coachmen,k-o-ch-m-e-n,Kocmen,,cekmno,3161
+Coaches,k-o-ch-s,Kocs,,ckos,3161
 Determinate,e2-mn-a-t,Emmat,,aemt,3162
 Determinates,e2-mn-a-t-s,Emmats,,aemts,3162
 Determining,e2-mn-\-h,Emmg,,emzg,3162
@@ -1495,6 +1510,7 @@ Techniques,t-e-k-n-e-k-s,Tekneqs,,eknqst,69046
 Technology,t-e-k-n-\-o,Tekno,,eknot,69046
 Technologies,t-e-k-n-\-o-s,Teknos,,eknost,69046
 Managerially,mn-j-e-r-l-e,Mmjerle,,ejlmre,69140
+As low as,s-l-o-s2,Slosq,,los,70105
 Code,k-o-t,Kot,,kot,70302
 Called,k-o-t,Kota,a,akot,70302
 Commandeered,k-m-a-n-/-e-r-d,Kmanerd,,aekmnrd,70319
