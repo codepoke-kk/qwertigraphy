@@ -157,6 +157,10 @@ Spokesmen,s-p-k-s-m,Spksmo,o,kmops,509
 Outspoken,w-s-p-k-n,Wspkn,,knpsw,509
 Outspokenly,w-s-p-k-n-e,Wspkne,,eknpsw,509
 Chapters,ch-a-p-t-e2-s,Captes,,acepst,538
+Changed,ch-d,Cd,,cd,550
+Changed,ch-d,Cdo,,cdo,550
+Changing,ch-\-h,Cg,,cg,550
+Changer,ch-r,Cr,,cr,550
 Positioned,p-o-sh-d,Pozd,,dopz,556
 Positioning,p-o-sh-\-h,Pozg,,gopz,556
 Positions,p-o-sh-s,Pozs,,opsz,556
@@ -636,6 +640,11 @@ Standardized,s2-tn-a-d-i-s-d,Stnadisd,,adinst,3032
 Standardizing,s2-tn-a-d-i-s-\-h,Stnadisg,,adginst,3032
 Standardizes,s2-tn-a-d-i-s-s,Stnadiss,,adinst,3032
 Standards,s2-tn-a-d-s,Stnads,,adnst,3032
+Angel,a-n-j-l,Anjl,,ajln,3034
+Angelic,a-n-j-l-k,Anjlk,,ajkln,3034
+Angels,a-n-j-l-s,Anjls,,ajlns,3034
+Archangel,a-r-k-a-n-j-l,Arkanjl,,ajklnr,3034
+Archangels,a-r-k-a-n-j-l-s,Arkanjls,,ajklnrs,3034
 Empire,m-p-i,Mpi,,impv,3037
 Empires,m-p-i-s,Mpis,,impvs,3037
 Operational,o-pr-a-sh-l,Oprazl,,aloprz,3048
@@ -813,6 +822,11 @@ Contractors,k-/-k-r-s,Kkrs,,krsx,4212
 Contracts,k-/-k-s,Kks,,ksz,4212
 Contraction,k-/-k-sh,Kkz,,kzx,4212
 Contractions,k-/-k-sh-s,Kkzs,,kszx,4212
+Replaced,r-pl-a-s-d,Rplasd,,adlprs,4225
+Replacing,r-pl-a-s-\-h,Rplasg,,aglprs,4225
+Replacement,r-pl-a-s-m,Rplasm,,almprs,4225
+Replacements,r-pl-a-s-m-s,Rplasms,,almprs,4225
+Replaces,r-pl-a-s-s,Rplass,,alprs,4225
 Underside,u-/-s-i,Usio,o,iosu,4384
 Undersides,u-/-s-i-s,Usis,,isu,4384
 Irreproachable,e-r-p-r-c-b,Erprcb,,bcepr,4387
@@ -1379,6 +1393,7 @@ Retrieving,r-\-v-\-h,Rvg,,grv,22760
 Retrieval,r-\-v-l,Rvl,,lrv,22760
 Retrievals,r-\-v-l-s,Rvls,,lrsv,22760
 Retrieves,r-\-v-s,Rvs,,rsv,22760
+Unchanging,n-ch-/-h,Ncg,,cgn,23067
 Applicants,a-pl-e-k-nt-s,Apleknts,,aeklnpst,23395
 Invulnerable,n-v-u-l-n-e-r-b,Nvulnerb,,belnruv,24003
 Invulnerability,n-v-u-l-n-e-r-\-b,Nvulnerbo,,belnoruv,24003
@@ -1399,6 +1414,7 @@ Diagnostician,d-i-g-n-o-s-t-sh,Dignostz,,dginostz,24781
 Diagnosticians,d-i-g-n-o-s-t-sh-s,Dignostzs,,dginostz,24781
 Diagnostic,d-i-g-n-\-s-t,Dignst,,dginst,24781
 Diagnostics,d-i-g-n-\-s-t-s,Dignsts,,dginst,24781
+Changeablely,ch-b-e,Cbe,,bce,24875
 Certifying,s2-e-df-\-h,Sedfg,,defgs,25044
 Befriended,b-fr-d,Bfrd,,bdfr,25083
 Internet,n-/-nt,Nnt,,ntz,25973
@@ -1501,6 +1517,7 @@ Brows,br-a-u-s-o,Brwso,o,borsw,39293
 Browser,br-a-u-s-r,Brwsr,,brsw,39293
 Browsers,br-a-u-s-r-s,Brwsrs,,brsw,39293
 Installs,n-s2-t-o-l-s,Nstols,,lnost,39681
+Outgoing,a-u-g-g,Wgg,,gw,39889
 Workroom,r-k-r-m,Rkrm,,kmr,40538
 Workrooms,r-k-r-m-s,Rkrms,,kmrs,40538
 Unrequited,n-r-e-k-\-n-^-<-i-t-d,Nreqitd,,deinqrt,41094
@@ -1533,6 +1550,7 @@ Rewriting,r-r-i-\-h,Rrig,,gir,58803
 Certification,s2-e-df-sh,Sedfz,,defsz,59944
 Certifications,s2-e-df-sh-s,Sedfzs,,defsz,59944
 Spraying,s-p-r-a-g,Spragi,i,agiprs,61211
+Interchange,n-/-ch,Ncu,u,cnu,63588
 Singles,s2-e-ng-s,Segs,,egs,65996
 Coverage,k-v-j,Kvj,,jkv,68140
 Tech,t-e-k-n,Tekn,,eknt,69046
