@@ -388,6 +388,9 @@ Prayer,pr-a-r,Prar,,apr,1458
 Prayerfully,pr-a-r-f-e,Prare,,aepr,1458
 Prayerful,pr-a-r-f,Prarf,,apr,1458
 Prayers,pr-a-r-s,Prars,,aprs,1458
+Staged,s2-t-a-j-d,Stajd,,adjst,1461
+Staging,s2-t-a-j-\-h,Stajg,,agjst,1461
+Stages,s2-t-a-j-s,Stajs,,ajst,1461
 Addressing,a-d-r-\-h,Adrg,,adgr,1549
 Addresses,a-d-r-s,Adrs,,adrs,1549
 Constantly,k-s2-tn-e,Kstne,,eknst,1552
@@ -551,6 +554,9 @@ Universally,e-u-n-v-e,Unve,,enuv,2153
 Universality,e-u-n-v-\-l,Unvl,,lnuv,2153
 Unrelated,n-r-e-l-a-/-t,Nrelat,,aelnrt,2159
 Temples,tm-pl-s,Tmpls,,lmpst,2206
+Link,l-e-nk,Leq,,elq,2210
+Linked,l-e-nk-d,Leqd,,delq,2210
+Linking,l-e-nk-\-h,Leqg,,eglq,2210
 Sourced,s2-o-s-d,Sosd,,dos,2223
 Sourcing,s2-o-s-\-h,Sosg,,gos,2223
 Sources,s2-o-s-s,Soss,,cos,2223
@@ -880,6 +886,8 @@ Appropriateness,a-pr-a-n-s,Aprans,,anprs,4822
 Appropriates,a-pr-a-s,Apras,,aprs,4822
 Appropriation,a-pr-a-sh,Apraz,,aprz,4822
 Appropriations,a-pr-a-sh-s,Aprazs,,aprsz,4822
+Peril,p-e-r-l,Perl,,elpr,4883
+Perils,p-e-r-l-s,Perls,,elprs,4883
 Recommended,r-k-mn-d,Rkmnd,,dkmnr,4899
 Recommending,r-k-mn-\-h,Rkmng,,gkmnr,4899
 Recommends,r-k-mn-s,Rkmns,,kmnrs,4899
@@ -1009,6 +1017,8 @@ Greeted,g-r-e-t-d,Gretd,,degrt,6766
 Greeting,g-r-e-t-\-h,Gretg,,egrt,6766
 Definitions,df-n-sh-s,Dfnzs,,dfnsz,6911
 Identities,a-tn-t-e-s,Atntes,,aenst,6977
+Perilous,p-e-r-l-u-s,Perlus,,elprsu,6982
+Perilously,p-e-r-l-u-s-e,Perluse,,elprsu,6982
 Alignment,a-l-a-n-m,Alanm,,almn,7000
 Alignments,a-l-a-n-m-s,Alanms,,almns,7000
 Aligned,a-l-a-n-d,Aland,,alnod,7004
@@ -1246,6 +1256,9 @@ Needy,n-e-d-e,Nede,,den,13093
 Neediness,n-e-d-e-n-s,Nedens,,dens,13093
 Neediest,n-e-d-e-s-t,Nedest,,denst,13093
 Locomotives,l-o-k-m-o-df-s,Lokmodfs,,dfklmos,13371
+Pearl,pr-l,Prl,,lpr,13389
+Pearly,pr-l-e,Prle,,elpr,13389
+Pearls,pr-l-s,Prls,,lprs,13389
 Symptom,s-e-m-tm,Semtm,,emst,13544
 Symptomatic,s-e-m-tm-\-a,Semtma,,aemst,13544
 Symptoms,s-e-m-tm-s,Semtms,,emst,13544
@@ -1265,6 +1278,7 @@ Suffragettes,s-u-f-r-j-e-t-s,Sufrjets,,efjrstu,14512
 Shorten,sh-/-n,Zn,,cnz,14581
 Shortening,sh-/-n-\-h,Zng,,gnz,14581
 Shortens,sh-/-n-s,Zns,,nsz,14581
+Stag,s-t-a-g,Stagu,u,agstu,14671
 Workshop,r-k-sh-o-p,Rkzop,,koprz,14772
 Workshops,r-k-sh-o-p-s,Rkzops,,koprsz,14772
 Graph,g-r-a-f,Graf,,afgr,15063
@@ -1291,6 +1305,10 @@ Verification,v-e-r-\-f,Verfo,o,eforv,16753
 Verifier,v-e-r-f-r,Verfr,,efrv,16753
 Verifiers,v-e-r-f-r-s,Verfrs,,efrsv,16753
 Verifies,v-e-r-f-s,Verfs,,efrsv,16753
+Stagnant,s-t-a-g-n,Stagn,,agnst,16849
+Stagnate,s-t-a-g-n-a-t,Stagnat,,agnst,16849
+Stagnation,s-t-a-g-n-a-sh,Stagnaz,,agnstz,16849
+Stagnantly,s-t-a-g-n-e,Stagne,,aegnst,16849
 Qualifying,k-o-f-\-h,Qofg,,fgoq,16962
 Qualification,k-o-\-f,Qofo,o,foq,16962
 Qualifications,k-o-\-f-s,Qofs,,foqs,16962
@@ -1347,6 +1365,10 @@ Notifying,n-o-df-\-h,Nodfg,,dfgno,20151
 Notifies,n-o-df-s,Nodfs,,dfnos,20151
 Notification,n-o-t-\-f,Notf,,fnot,20151
 Notifications,n-o-t-\-f-s,Notfs,,fnost,20151
+Stagger,s-t-a-g-r,Stagr,,agrst,20168
+Staggered,s-t-a-g-r-d,Stagrd,,adgrst,20168
+Staggering,s-t-a-g-r-\-h,Stagrg,,agrst,20168
+Staggers,s-t-a-g-r-s,Stagrs,,agrst,20168
 Components,k-p-o-n-s,Kpons,,knops,20428
 Inventoried,n-v-nt-re-d,Nvntred,,denrtv,20433
 Inventorying,n-v-nt-re-\-h,Nvntreg,,egnrtv,20433
@@ -1417,6 +1439,8 @@ Diagnostics,d-i-g-n-\-s-t-s,Dignsts,,dginst,24781
 Changeablely,ch-b-e,Cbe,,bce,24875
 Certifying,s2-e-df-\-h,Sedfg,,defgs,25044
 Befriended,b-fr-d,Bfrd,,bdfr,25083
+Hostage,h-\-o-s-t-j,Hostj,,hjost,25947
+Hostages,h-\-o-s-t-j-s,Hostjs,,hjost,25947
 Internet,n-/-nt,Nnt,,ntz,25973
 Athletic,a-th-l-/-a,Ahla,,ahl,26269
 Athletics,a-th-l-/-a-s,Ahlas,,ahls,26269
@@ -1436,6 +1460,14 @@ Specified,s-p-e-s-d,Spesd,,deps,26856
 Specifing,s-p-e-s-\-h,Spesg,,egps,26856
 Specifies,s-p-e-s-s,Spess,,eps,26856
 Definitively,df-n-e-df-e,Dfnedfe,,defn,26967
+Blink,bl-e-nk,Bleq,,belq,27400
+Blinked,bl-e-nk-d,Bleqd,,bdelq,27400
+Blinking,bl-e-nk-\-h,Bleqg,,beglq,27400
+Blinks,bl-e-nk-s,Bleqs,,belqs,27400
+Clink,k-l-e-nk,Kleq,,eklq,27400
+Clinked,k-l-e-nk-d,Kleqd,,deklq,27400
+Clinking,k-l-e-nk-\-h,Kleqg,,egklq,27400
+Clinks,k-l-e-nk-s,Kleqs,,eklqs,27400
 Shortages,sh-/-j-s,Zjs,,jsz,27735
 Shortcoming,sh-/-k-m-\-h,Zkmg,,gkmz,27735
 Shortcomings,sh-/-k-m-\-h-s,Zkmgs,,gkmsz,27735
@@ -1496,6 +1528,7 @@ Doubleday,d-b-d-a,Dbda,,abd,32627
 Singe,s-e-n-j,Senj,,ejns,33893
 Singed,senj-d,Senjd,,dejns,33893
 Singes,s-e-n-j-s,Senjs,,ejns,33893
+Underfoot,u-/-f-u-t,Ufut,,ftu,34261
 Spray,s-p-r-a,Spra,,aprs,34387
 Sprayed,s-p-r-a-d,Sprad,,adprs,34387
 Sprays,s-p-r-a-s,Spras,,aprs,34387
@@ -1509,6 +1542,7 @@ Installments,n-s2-t-o-l-m-s,Nstolms,,lmnost,38139
 Converged,k-v-e-j-d,Kvejd,,dejkv,38983
 Converging,k-v-e-j-\-h,Kvejg,,egjkv,38983
 Converges,k-v-e-j-s,Kvejs,,ejksv,38983
+Imperiled,m-p-e-r-l-d,Mperld,,delmpr,39120
 Brow,br-a-u,Brw,,brw,39293
 Browse,br-a-u-s,Brws,,brsw,39293
 Browsed,br-a-u-s-d,Brwsd,,bdrsw,39293
