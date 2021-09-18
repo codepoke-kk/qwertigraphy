@@ -365,13 +365,13 @@ class MappingEngine_Chorded
 				and (chordWindow < this.keyboard.ChordReleaseWindows[StrLen(this.keyboard.Token)]) 
 				and (StrLen(this.keyboard.Token) = this.keyboard.MaxChordLength)) {
 				; The time is quick enough to call a chord 
-				this.logEvent(2, "ChordWindow: completed " this.keyboard.Token " in " chordWindow "ms against allowed " this.keyboard.ChordReleaseWindows[StrLen(this.keyboard.Token)])
+				this.logEvent(2, "ChordWindow: completed '" this.keyboard.Token "' in " chordWindow "ms against allowed " this.keyboard.ChordReleaseWindows[StrLen(this.keyboard.Token)])
 				this.keyboard.ChordLength := 0
 				this.keyboard.MaxChordLength := 0
 				this.SendChord()
 			} else {
 				; Too slow. Let this be serial input
-				this.logEvent(2, "ChordWindow: too short or timed out " this.keyboard.Token " in " chordWindow "ms against " this.keyboard.ChordReleaseWindow " and chord is complete is " (StrLen(this.keyboard.Token) = this.keyboard.MaxChordLength))
+				this.logEvent(2, "ChordWindow: too short or timed out '" this.keyboard.Token "' in " chordWindow "ms against " this.keyboard.ChordReleaseWindow " and chord is complete is " (StrLen(this.keyboard.Token) = this.keyboard.MaxChordLength))
 				this.keyboard.ChordLength := 0
 				this.keyboard.MaxChordLength := 0
 			}
@@ -417,13 +417,13 @@ class MappingEngine_Chorded
 	}
 
 	ExpandInput(input_text, key, mods, ticks) {
-		this.logEvent(2, "Expanding |" input_text "|" key "|" mods "|" ticks "|" )
+		this.logEvent(2, "Expanding |'" input_text "'|" key "|" mods "|" ticks "|" )
 		if (key = "{Chord}") {
 			;ToolTip, % "Chording " input_text, A_CaretX, A_CaretY + 30
 			;SetTimer, ClearToolTipEngine, -1500
-			this.logEvent(4, "Chording " input_text )
+			this.logEvent(4, "Chording '" input_text "'")
 		} else {
-			this.logEvent(4, "Serialing " input_text)
+			this.logEvent(4, "Serialing '" input_text "'")
 			this.keyboard.MaxChordLength := 0
 		}
         
@@ -514,7 +514,7 @@ class MappingEngine_Chorded
 			}
 		} else {
 			; This buffered input was not a special character, nor a qwerd
-			this.logEvent(1, "Passing " inbound.token)
+			this.logEvent(1, "Passing '" inbound.token "'")
 			this.logEvent(4, "Input text was " input_text)
 			if (input_text) {
 				final_characters_count := StrLen(inbound.token) + 1

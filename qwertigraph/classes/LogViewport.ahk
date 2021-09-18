@@ -38,8 +38,9 @@ class LogViewport
 	logFileName := ""
 	logFileHandle := ""
 	
-	__New()
+	__New(qenv)
 	{
+		this.qenv := qenv
         if (this.logToFile) {
             FormatTime, logDateStamp, , yyyyMMddHHmm
             this.logFileName := "chorder_" logDateStamp ".log"
@@ -103,6 +104,7 @@ class LogViewport
 		For index, logQueue in this.logQueues {
 			Loop, % logQueue.getSize() {
 				logEvent := logQueue.dequeue()
+				logEvent.what := this.qenv.redactSenstiveInString(logEvent.what)
                 if (this.logToFile) {
                     this.logFileHandle.WriteLine(logEvent.where "|" logEvent.when "|" logEvent.what "|" logEvent.how)
                     this.logFileHandle.Read(0)

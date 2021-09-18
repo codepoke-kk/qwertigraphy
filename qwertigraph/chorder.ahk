@@ -70,7 +70,7 @@ speedViewer.dashboard := dashboard
 engine.dashboard := dashboard
 stroker := new StrokepathsViewport(qenv, dashboard)
 
-logViewer := new LogViewport()
+logViewer := new LogViewport(qenv)
 logViewer.addQueue(qenv.logQueue)
 logViewer.addQueue(map.logQueue)
 logViewer.addQueue(engine.logQueue)

@@ -142,6 +142,12 @@ class QwertigraphyEnvironment
 		}
 		Return token
 	}
+   
+	redactSenstiveInString(instring) {
+		local
+		outstring := RegexReplace(instring, "'[^' ]\d[^' ]+'", "'****'")
+		Return outstring
+	}
 	
 	LogEvent(verbosity, message) 
 	{
