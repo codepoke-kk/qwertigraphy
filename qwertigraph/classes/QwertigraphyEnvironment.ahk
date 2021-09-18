@@ -13,6 +13,8 @@ class QwertigraphyEnvironment
 	strokepathsFile := "strokepaths\gregg.esv"
 	strokepaths := ComObjCreate("Scripting.Dictionary")
 	
+    desensitizedQwerd := new DashboardEvent("****", "****", "****", "****")
+	
 	logQueue := new Queue("QEnvQueue")
 	logVerbosity := 2
 	
@@ -123,6 +125,22 @@ class QwertigraphyEnvironment
 		}
 		
 		fileHandle.Close()
+	}
+   
+	redactSenstiveQwerd(qwerd) {
+		local
+		if (RegexMatch(qwerd.qwerd, "^\d{2,}$")) {
+			Return this.desensitizedQwerd
+		}
+		Return qwerd
+	}
+   
+	redactSenstiveToken(token) {
+		local
+		if (RegexMatch(token, "^\d{2,}$")) {
+			Return "****"
+		}
+		Return token
 	}
 	
 	LogEvent(verbosity, message) 

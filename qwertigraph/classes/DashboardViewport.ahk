@@ -32,7 +32,7 @@ Class DashboardViewport
    speedKeyed := 0
    speedEnhanced := 0
    coachAheadQwerd := new DashboardEvent("g-r-e-t-/-s", "grets", "Greetings", "green")
-   coachAheadHints := "Put some hints here`nAnd here`tfun"
+   coachAheadHints := ""
    coachAheadHeight := 0 ; 100
    
    ; Properties for dashboard
@@ -222,6 +222,7 @@ Class DashboardViewport
    
    DrawQwerd(qwerd) {
       local
+      qwerd := this.qenv.redactSenstiveQwerd(qwerd)
       qwerdWidth := this.GetWidthOfQwerd(qwerd)
       this.nibStart.x -= qwerdWidth
       this.LogEvent(3, "Drawing " qwerd.form "/" qwerd.qwerd " at " this.nibStart.x "," this.lineHeight.text)
