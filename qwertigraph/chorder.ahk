@@ -23,8 +23,8 @@ FileInstall, templates\retrains.template, templates\retrains.template, true
 FileInstall, templates\personal_functions.template, templates\personal_functions.template, true
 FileInstall, coach.ico, coach.ico, true
 
-Gui, MainGUI: Add, Tab3,x6 y40 w928 h526, Coach|Historical|Editor|Logs||Settings|Strokepaths
-Gui, MainGUI: Show, x262 y118 w940 h570, % "Qwertigraph Trainer"
+Gui, MainGUI: Add, Tab3,x6 y40 w928 h526, Coach|Historical|Editor|Logs||Settings|Strokepaths|Player
+Gui, MainGUI: Show, x262 y118 w940 h570, % "Qwertigraph"
 
 #Include classes\Gdip_All.ahk
 #Include classes\QwertigraphyEnvironment.ahk
@@ -44,6 +44,7 @@ Gui, MainGUI: Show, x262 y118 w940 h570, % "Qwertigraph Trainer"
 #Include classes\DashboardEvent.ahk
 #Include classes\DashboardViewport.ahk
 #Include classes\StrokepathsViewport.ahk
+#Include classes\PlayerViewport.ahk
 
 ; Make the pretty icon
 I_Icon = coach.ico
@@ -69,6 +70,7 @@ dashboard := new DashboardViewport(qenv, engine.dashboardQueue)
 speedViewer.dashboard := dashboard
 engine.dashboard := dashboard
 stroker := new StrokepathsViewport(qenv, dashboard)
+player := new PlayerViewport(engine)
 
 logViewer := new LogViewport(qenv)
 logViewer.addQueue(qenv.logQueue)
