@@ -342,6 +342,7 @@ Moving,m-u-\-h,Mug,,gmu,1108
 Mover,m-u-r,Mur,,mru,1108
 Movers,m-u-r-s,Murs,,mrsu,1108
 Moves,m-u-s,Mus,,msu,1108
+Examples,e-s2-a-m-p-s,Xamps,,ampsx,1119
 Upstart,p-s2-t-a2-t,Pstat,,apst,1127
 Upstarts,p-s2-t-a2-t-s,Pstats,,apst,1127
 Restart,r-s2-t-a2-t,Rstat,,arst,1127
@@ -419,6 +420,7 @@ Prayers,pr-a-r-s,Prars,,aprs,1458
 Staged,s2-t-a-j-d,Stajd,,adjst,1461
 Staging,s2-t-a-j-\-h,Stajg,,agjst,1461
 Stages,s2-t-a-j-s,Stajs,,ajst,1461
+Wore,u-o-r,Uor,,orux,1520
 Guarded,g-a2-d-d,Gadd,,adg,1522
 Guardedly,g-a2-d-d-e,Gadde,,adeg,1522
 Guarding,g-a2-d-\-h,Gadg,,adg,1522
@@ -468,7 +470,7 @@ Sandboxed,s-b-o-x-d,Sboxd,,bdosx,1595
 Sandboxing,s-b-o-x-\-h,Sboxg,,bgosx,1595
 Sandboxes,s-b-o-x-s,Sboxs,,bosx,1595
 Doubled,d-b-d,Dbd,,bcd,1600
-Doubleing,d-b-\-h,Dbg,,bdg,1600
+Doubling,d-b-\-h,Dbg,,bdg,1600
 Doubles,d-b-s,Dbs,,bds,1600
 Titled,t-i-t-d,Titd,,itvd,1615
 Titling,t-i-t-\-h,Titg,,itvg,1615
@@ -677,6 +679,8 @@ Regeneration,r-j-e-n-r-a-sh,Rjenraz,,aejnrz,2984
 Executioner,e-s2-k-sh-r,Xkzr,,krxz,3011
 Executioners,e-s2-k-sh-r-s,Xkzrs,,krsxz,3011
 Executions,e-s2-k-sh-s,Xkzso,o,kosxz,3011
+Swearing,s2-u-a-r-\-h,Suarg,,agrsu,3012
+Swears,s2-u-a-r-s,Suars,,arsu,3012
 Uncompleted,n-kp-/-t,Nkp/t,,/knpt,3023
 Standardize,s2-tn-a-d-i-s,Stnadis,,adinst,3032
 Standardized,s2-tn-a-d-i-s-d,Stnadisd,,adinst,3032
@@ -923,6 +927,8 @@ Converted,k-v-e2-t-d,Kvetd,,dektv,4741
 Converting,k-v-e2-t-\-h,Kvetg,,egktv,4741
 Converts,k-v-e2-t-s,Kvets,,ekstv,4741
 Conversion,k-v-e-sh,Kvez,,ekvz,4741
+Swore,s-u-o-r,Suor,,orsu,4756
+Sworn,s-u-o-r-n,Suorn,,norsu,4756
 Relates,r-e-l-a-s,Relas,,aelrs,4800
 Appropriated,a-pr-a-d,Aprad,,adpr,4822
 Appropriately,a-pr-a-e,Aprae,,aepr,4822
@@ -1204,6 +1210,8 @@ Ignore,e-g-n-o-r,Egnor,,egnor,9546
 Ignored,e-g-n-o-r-d,Egnord,,egnord,9546
 Ignoring,e-g-n-o-r-\-h,Egnorg,,egnorg,9546
 Ignores,e-g-n-o-r-s,Egnors,,egnors,9546
+Utility,e-u-t-\-l,Utl,,ltu,9586
+Utilities,e-u-t-\-l-s,Utls,,lstu,9586
 Editorials,e-td-r-l-s,Eddrls,,delrs,9852
 Inoffensively,e-n-o-f-e-n-s-v-e,Enofensve,,efnosv,9857
 Offenses,o-f-e-n-s-s,Ofenss,,efnos,9857
@@ -1259,6 +1267,14 @@ Assigning,a-s-i-n-\-h,Asing,,agins,11390
 Assigns,a-s-i-n-s,Asins,,ains,11390
 Customers,k-u-s-r-s,Kusrs,,krsus,11568
 Repress,r-p-r-e-s,Rpres,,eprs,11664
+Utilitarian,e-u-t-l-e-t,Eutlet,,eltu,11788
+Utilitarians,e-u-t-l-e-t-s,Eutlets,,elstu,11788
+Utilitarianism,e-u-t-l-e-t-\-s-m,Eutletsm,,elmstu,11788
+Utilizable,e-u-t-l-i-s-b,Utlisb,,bilstu,11788
+Utilized,e-u-t-l-i-s-d,Utlisd,,dilstu,11788
+Utilizing,e-u-t-l-i-s-\-h,Utlisg,,gilstu,11788
+Utilizes,e-u-t-l-i-s-s,Utliss,,ilstu,11788
+Utilization,e-u-t-l-i-sh,Utliz,,iltuz,11788
 Rout,r-a-o-t,Rwt,,rtw,11813
 Routs,r-a-o-t-s,Rwts,,rstw,11813
 Profile,pr-f-i-l,Prfil,,filpr,11816
@@ -1598,6 +1614,7 @@ Concurrently,k-k-r-e-nt-e,Kkrente,,eknrt,32396
 Recurrent,r-k-r-e-nt,Rkrent,,eknrt,32396
 Undercurrent,u-k-r-e-nt,Ukrent,,eknrtu,32396
 Undercurrents,u-k-r-e-nt-s,Ukrents,,eknrstu,32396
+Futility,f-e-u-t-\-l,Futlo,o,fltu,32520
 Doubleday,d-b-d-a,Dbda,,abd,32627
 Bodyguard,b-o-g-a2-d,Bogad,,abdgo,33273
 Bodyguards,b-o-g-a2-d-s,Bogads,,abdgos,33273
@@ -1637,6 +1654,9 @@ Brows,br-a-u-s-o,Brwso,o,borsw,39293
 Browser,br-a-u-s-r,Brwsr,,brsw,39293
 Browsers,br-a-u-s-r-s,Brwsrs,,brsw,39293
 Installs,n-s2-t-o-l-s,Nstols,,lnost,39681
+Forswear,f-s2-u-a-r,Fsuar,,afrsu,39785
+Forswearing,f-s2-u-a-r-\-h,Fsuarg,,afgrsu,39785
+Forswears,f-s2-u-a-r-s,Fsuars,,afrsu,39785
 Outgoing,a-u-g-g,Wgg,,gw,39889
 Workroom,r-k-r-m,Rkrm,,kmr,40538
 Workrooms,r-k-r-m-s,Rkrms,,kmrs,40538
@@ -1727,6 +1747,7 @@ Guarantors,g-a2-nt-r-s,Gantrs,,agnrst,70716
 Immigrated,e-m-e-g-d,Emegd,,egimd,70854
 Immigrating,e-m-e-g-\-h,Emegg,,egimg,70854
 Immigrates,e-m-e-g-s,Emegs,,egims,70854
+Good luck,g-l-u-k,Gluk,,gklu,70898
 Good morning,g-m,Gmu,u,gmu,70898
 Inappreciated,e-n-a-pr-e-sh-d,Enaprezd,,adenprz,70910
 Opinionatedly,o-p-n-a-td-e,Opnadde,,adenop,71437
