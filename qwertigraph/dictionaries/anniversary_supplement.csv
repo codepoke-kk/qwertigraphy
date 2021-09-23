@@ -61,7 +61,7 @@ I'm,i-m,Im,,cim,188
 Telling,t-e-\-h,Teg,,egt,195
 Teller,t-e-r,Ter,,ert,195
 Tells,t-e-s,Tes,,est,195
-God,g,Gu,u,gu,202
+God,g,Gu,u,gux,202
 Setting,s2-e-t-\-h,Setg,,estg,207
 Sets,s2-e-t-s,Sets,,eosts,207
 Settings,s2-e-t-\-s,Setso,o,eost,207
@@ -139,6 +139,7 @@ Questionings,k-n-\-h-s,Qngs,,gnqs,430
 Questioner,k-n-r,Qnr,,nqr,430
 Questions,k-n-s,Qns,,nqs,430
 Coming,k-m-\-h,Kmg,,gkm,435
+Possibles,p-o-s-s,Poss,,ops,439
 Turnover,t-e-n-o,Teno,,enot,460
 Turnovers,t-e-n-o-s,Tenos,,enots,460
 Understandable,u-/-s2-tn-b,Ustnb,,bnstu,467
@@ -236,6 +237,8 @@ Ongoing,o-n-g-\-h,Ongg,,gno,737
 Agreed,^-ya-d,Yad,,ady,746
 Agreeing,^-ya-\-h,Yag,,agy,746
 Agrees,^-ya-s,Yas,,asy,746
+Impossibly,m-p-o-s-e,Mpose,,emops,763
+Impossibles,m-p-o-s-s,Mposs,,mops,763
 Bounded,b-n-d,Bnd,,bdn,790
 Bounding,b-n-\-h,Bng,,bgn,790
 Bounder,b-n-r,Bnr,,bnr,790
@@ -360,6 +363,12 @@ Surprised,s-e-pr-i-s-d,Seprisd,,deiprs,1168
 Surprising,s-e-pr-i-s-\-h,Seprisg,,egiprs,1168
 Surprisingly,s-e-pr-i-s-\-h-e,Seprisge,,egiprs,1168
 Surprises,s-e-pr-i-s-s,Sepriss,,eiprs,1168
+Crowding,k-r-a-u-\-h,Krwg,,gkrw,1176
+Crowds,k-r-a-u-s,Krws,,krsw,1176
+Crowded,k-r-a-u-\-t,Krwt,,krtw,1176
+Overcrowded,o-\-k-r-a-u-\-t,Okrwt,,kortw,1176
+Judged,j-j-d,Jjd,,dj,1190
+Judges,j-j-s,Jjs,,js,1190
 Movements,m-u-m-s,Mums,,msu,1193
 Searchable,s2-e-ch-b,Secb,,bces,1201
 Searchably,s2-e-ch-b-e,Secbe,,bces,1201
@@ -559,6 +568,11 @@ Singularity,s2-e-ng-u-\-r,Segur,,egrsu,1922
 Connections,k-e-k-sh-s,Kekzs,,eksz,1927
 Accustom,a-k-u-s,Akusu,u,aksu,1935
 Unaccustomed,n-a-k-u-s-/-t,Nakust,,aknstu,1935
+Computerize,k-p-u-/-r-i-s,Kpuris,,ikprsu,1944
+Computerized,k-p-u-/-r-i-s-d,Kpurisd,,dikprsu,1944
+Computerizing,k-p-u-/-r-i-s-\-h,Kpurisg,,gikprsu,1944
+Computerizes,k-p-u-/-r-i-s-s,Kpuriss,,ikprsu,1944
+Computers,k-p-u-/-r-s,Kpurs,,kprsu,1944
 Septuagint,s-e-p-j,Sepj,,ejps,1973
 Writers,r-i-r-s,Rirs,,irs,1976
 Protections,pr-o-t-e-k-sh-s,Protekzs,,ekoprstz,1983
@@ -669,6 +683,7 @@ Standardized,s2-tn-a-d-i-s-d,Stnadisd,,adinst,3032
 Standardizing,s2-tn-a-d-i-s-\-h,Stnadisg,,adginst,3032
 Standardizes,s2-tn-a-d-i-s-s,Stnadiss,,adinst,3032
 Standards,s2-tn-a-d-s,Stnads,,adnst,3032
+Possibilities,p-o-s-/-b-s,Posbs,,bops,3033
 Angel,a-n-j-l,Anjl,,ajln,3034
 Angelic,a-n-j-l-k,Anjlk,,ajkln,3034
 Angels,a-n-j-l-s,Anjls,,ajlns,3034
@@ -776,6 +791,12 @@ Reestablish,r-e-s2-t-b,Restb,,berst,3682
 Reestablished,r-e-s2-t-b-d,Restbd,,berstd,3682
 Reestablishing,r-e-s2-t-b-\-h,Restbg,,berstg,3682
 Reestablishes,r-e-s2-t-b-s,Restbs,,bersts,3682
+Disciplined,d-s-pl-e-n-d,Dsplend,,delnps,3709
+Disciplining,d-s-pl-e-n-\-h,Dspleng,,deglnps,3709
+Disciplinary,d-s-pl-e-n-r-e,Dsplenre,,delnprs,3709
+Disciplinarian,d-s-pl-e-n-r-e-n,Dsplenren,,delnprs,3709
+Disciplines,d-s-pl-e-n-s,Dsplens,,delnps,3709
+Undisciplined,n-d-s-pl-e-n-d,Ndsplend,,delnps,3709
 Pounded,p-n-d,Pnd,,dnp,3714
 Pounding,p-n-\-h,Png,,gnp,3714
 Pounds,p-n-s,Pns,,nps,3714
@@ -1175,6 +1196,9 @@ Buttonholes,b-u-tn-o-l-s-^-<-h,Butnols,,blnostu,9381
 Buttons,b-u-tn-s,Butns,,bnstu,9381
 OAuth,o-o-th,Ooh,,hoz,9433
 Conceit,k-s-e-t,Kseto,o,ekost,9446
+Discipled,d-s-i-p-d,Dsipd,,dips,9451
+Discipling,d-s-i-p-\-h,Dsipg,,dgips,9451
+Disciples,d-s-i-p-s,Dsips,,dips,9451
 Clients,k-l-i-s,Klis,,ikls,9528
 Ignore,e-g-n-o-r,Egnor,,egnor,9546
 Ignored,e-g-n-o-r-d,Egnord,,egnord,9546
@@ -1297,6 +1321,9 @@ Targets,t-a-r-g-e-t-s,Targets,,aegrst,13508
 Symptom,s-e-m-tm,Semtm,,emst,13544
 Symptomatic,s-e-m-tm-\-a,Semtma,,aemst,13544
 Symptoms,s-e-m-tm-s,Semtms,,emst,13544
+Judgemental,j-j-m-l,Jjml,,jlm,13895
+Judgementally,j-j-m-l-e,Jjmle,,ejlm,13895
+Judgements,j-j-m-s,Jjms,,jms,13895
 Pronounce,pr-n-n-s,Prnns,,nprs,14110
 Pronounced,pr-n-n-s-d,Prnnsd,,dnprs,14110
 Pronouncing,pr-n-n-s-\-h,Prnnsg,,gnprs,14110
@@ -1469,6 +1496,9 @@ Expounding,e-s-p-n-\-h,Xpng,,gnpx,24186
 Expounds,e-s-p-n-s,Xpns,,npsx,24186
 Expounded,e-s-p-n-t,Xpnt,,nptx,24186
 Galileo,g-a-l-l-e-o,Galleo,,aeglo,24229
+Computational,k-p-u-sh-l,Kpuzl,,klpuz,24409
+Computationally,k-p-u-sh-l-e,Kpuzle,,eklpuz,24409
+Computations,k-p-u-sh-s,Kpuzs,,kpsuz,24409
 Diagnose,d-i-g-n-o-s,Dignos,,dginos,24781
 Diagnosed,d-i-g-n-o-s-d,Dignosd,,dginos,24781
 Diagnoses,d-i-g-n-o-s-e-s,Dignoses,,deginos,24781
@@ -1528,6 +1558,7 @@ Attaches,a-t-a-sh-a-s,Atazas,,astz,28053
 Disproved,d-s-pr-v-d,Dsprvd,,dprsv,28203
 Disproving,d-s-pr-v-\-h,Dsprvg,,dgprsv,28203
 Disproves,d-s-pr-v-s,Dsprvs,,dprsv,28203
+Impossibility,m-p-o-s-/-b,Mposb,,bmops,28275
 Operatic,o-pr-a-t-k,Opratk,,akoprt,28396
 Egress,e-g-r-e-s,Egres,,egrs,28487
 Egressed,e-g-r-e-s-d,Egresd,,degrs,28487
@@ -1577,6 +1608,9 @@ Underfoot,u-/-f-u-t,Ufut,,ftu,34261
 Spray,s-p-r-a,Spra,,aprs,34387
 Sprayed,s-p-r-a-d,Sprad,,adprs,34387
 Sprays,s-p-r-a-s,Spras,,aprs,34387
+Computed,k-p-u-d,Kpud,,dkpu,34914
+Computing,k-p-u-\-h,Kpug,,gkpu,34914
+Computes,k-p-u-s,Kpus,,kpsu,34914
 Sergeant,s-e2-jnt,Sejnt,,ejnst,37586
 Sergeants,s-e2-jnt-s,Sejnts,,ejnsts,37586
 Inclusions,e-/-sh-s,Ezs,,esz,37756
@@ -1615,6 +1649,10 @@ Caption,k-a-p-sh,Kapz,,akpz,44771
 Captioned,k-a-p-sh-d,Kapzd,,adkpz,44771
 Captioning,k-a-p-sh-\-h,Kapzg,,agkpz,44771
 Captions,k-a-p-sh-s,Kapzs,,akpsz,44771
+Misjudge,m-s-j-j,Msjj,,jms,44819
+Misjudged,m-s-j-j-d,Msjjd,,djms,44819
+Misjudging,m-s-j-j-\-h,Msjjg,,gjms,44819
+Misjudges,m-s-j-j-s,Msjjs,,jms,44819
 Capernaum,k-a-p-n-u-m,Kapnum,,akmnpu,45030
 Outcomes,a-u-k-m-s,Wkms,,kmsw,46539
 Galilean,g-a-l-l-e-n,Gallen,,aegln,46629
@@ -1637,6 +1675,10 @@ Certification,s2-e-df-sh,Sedfz,,defsz,59944
 Certifications,s2-e-df-sh-s,Sedfzs,,defsz,59944
 Spraying,s-p-r-a-g,Spragi,i,agiprs,61211
 Interchange,n-/-ch,Ncu,u,cnu,63588
+Adjudge,a-j-j,Ajj,,ajx,64745
+Adjudged,a-j-j-d,Ajjd,,adj,64745
+Adjudging,a-j-j-\-h,Ajjg,,agj,64745
+Adjudges,a-j-j-s,Ajjs,,ajs,64745
 Singles,s2-e-ng-s,Segs,,egs,65996
 Coverage,k-v-j,Kvj,,jkv,68140
 Tech,t-e-k-n,Tekn,,eknt,69046
