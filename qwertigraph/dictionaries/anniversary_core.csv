@@ -492,7 +492,6 @@ Clear,k-l-e,Kle,,ekl,559
 Late,l-a-t,Lat,,alt,560
 American,a-m-n,Amn,,amn,561
 Bed,b-d,Bd,,bcd,563
-Cold,k-o-ld,Kold,,dklo,565
 Bad,b-d,Bdo,o,bdo,566
 Sound,s2-nt,Snt,,nst,567
 Remember,r-e-mn,Remm,,emr,568
@@ -1097,7 +1096,7 @@ Thin,th-e-n,Heno,o,ehno,1385
 Failed,f-a-ld,Fald,,adfl,1386
 Fate,f-a-t,Fato,o,afot,1388
 Phrase,fr-a-s,Fras,,afrs,1389
-November,n-v,Nvo,o,nov,1392
+November,n-v,Nvoo,o,nov,1392
 Waited,u-a-td,Uadd,,adu,1394
 Coast,k-o-s2-t,Kost,,kost,1396
 Hall,^-h-\-o-l,Holo,o,hlo,1397
@@ -1171,7 +1170,6 @@ Approach,a-pr-ch,Aprc,,acpr,1481
 Weight,u-a-t,Uato,o,aotu,1482
 Truly,t-r-u-e,Trueo,o,eortu,1483
 Material,m-a-t-e-r,Mater,,aemrt,1484
-Fingers,f-e-ng-ye2,Fengye,,efgny,1487
 Suggested,s2-u-j-/-t,Sujt,,jstu,1490
 Rode,r-o-d,Rodo,o,dor,1491
 Total,t-o-t,Totu,u,otu,1492
@@ -1797,7 +1795,8 @@ Market,m-r,Mro,o,mor,2470
 Punishment,p-n-sh-m,Pnzm,,mnpz,2471
 Kitchen,k-e-ch-n,Kecn,,cekn,2472
 Noon,n-u-n,Nunu,u,nuz,2474
-Finger,f-e2-ng-e2,Fenge,,efgn,2476
+Finger,f-e2-ng-e2,Feqe,,efq,2476
+Fingerling,f-e2-ng-e2-l,Feqel,,eflq,2476
 Handed,^-h-\-nt-d,Hntd,,dhnt,2477
 Attempted,a-tm-td,Atmdd,,admt,2478
 Frequent,fr-e-k,Freq,,efqr,2479
@@ -2247,7 +2246,6 @@ Resist,r-ss,Rsso,o,ors,3331
 Handle,^-h-\-nt-l,Hntl,,hlnt,3332
 Masses,m-a-ss,Massu,u,amsu,3333
 Lesson,l-e-s2-n,Lesno,o,elnos,3334
-Discourse,d-s2-k-r-s,Dskrs,,dkrs,3335
 Enable,e-n-b,Enb,,ben,3336
 Consists,k-ss-s,Ksss,,ksz,3338
 Detail,td-a2,Dda,,adn,3339
@@ -2593,7 +2591,6 @@ Assigned,a-s2-i-nt,Asint,,ainst,4100
 Climate,k-l-i-m-a-t,Klimat,,aiklmt,4104
 Mischief,m-s-ch,Msc,,cms,4106
 Therein,th2-n,Hnu,u,hnu,4111
-Coal,k-o-l,Kol,,klo,4112
 Editor,e-td-e2,Edde,,dez,4123
 Openly,o-p-n-e,Opne,,enop,4125
 Healthy,^-h-\-e-l-th-e,Helhe,,ehl,4126
@@ -2808,7 +2805,6 @@ Indirect,nt-r-k,Ntrk,,knrt,4696
 Welfare,l-f-a-r,Lfar,,aflr,4697
 Session,s-e-sh,Sez,,esz,4699
 Japan,j-a-p-n,Japn,,ajnp,4700
-Compare,k-pr,Kpr,,kpr,4702
 Wagon,u-a-g-n,Uagn,,agnu,4703
 Charitable,ch-a2-t-b,Catb,,abct,4708
 Consequential,k-s2-e-k-sh,Kseqz,,ekqsz,4710
@@ -2872,7 +2868,7 @@ Latest,l-a-t-e-s,Lates,,aelst,4878
 Convent,k-v-nt,Kvnt,,kntv,4880
 Sermon,s2-e2-mn,Semm,,ems,4881
 Fairy,f-a-r-e,Fareu,u,aefru,4888
-Collect,k-o-l,Kolo,o,klo,4890
+Collect,k-o-l,Kol,,klo,4890
 Smart,s2-m-a2-t,Smat,,amst,4893
 Frankly,fr-a-nk-e,Fraqe,,aefqr,4894
 Dumb,d-m,Dm,,dmx,4896
@@ -2896,7 +2892,7 @@ Guilt,g-e-l-t,Gelt,,eglt,4933
 Backward,b-a-k-d,Bakd,,abdk,4935
 Adopt,a-d-p,Adp,,adp,4936
 Fund,f-nt,Fnto,o,fnot,4942
-Teachers,t-e-ch-ye2,Tecye,,cety,4943
+Teachers,t-e-ch-ye2,Tecy,,cety,4943
 Friday,fr-i,Fri,,fir,4946
 Philadelphia,f-e-l-a,Fela,,aefl,4947
 Raw,r-o,Rou,u,oru,4948
@@ -2946,7 +2942,6 @@ Planned,pl-a-nt,Plantu,u,alnptu,5060
 Descend,d-s2-e-n,Dsen,,dens,5063
 Fortnight,f-t-n-i,Ftni,,fint,5065
 Document,d-o-k-m,Dokm,,dkmo,5069
-Recollect,r-e-k-o-l,Rekol,,eklor,5071
 Tend,tn-d,Tnd,,dnt,5073
 Manly,m-a-n-e,Maneu,u,aemnu,5076
 Promotion,pr-m-o-sh,Prmoz,,moprz,5077
@@ -3621,7 +3616,7 @@ Industrious,nt-s2-u-s,Ntsus,,nstu,7695
 Satin,s2-a-tn,Satn,,anst,7705
 Recourse,r-e-k-r-s,Rekrs,,ekrs,7706
 Montana,m-o-nt,Monto,o,mnot,7707
-Keeper,k-p-/-r,Kpro,o,kopr,7711
+Keeper,k-p-/-r,Kpr,,kpr,7711
 Rains,r-a-n-s,Rans,,anrs,7714
 Ascend,a-s2-e-n,Asen,,aens,7727
 Cable,k-a-b,Kabo,o,abko,7733
@@ -3659,6 +3654,7 @@ Lists,l-s-s,Lss,,lsx,7981
 Notorious,n-o-t-r-u-s,Notrus,,norstu,7986
 Excursion,e-s2-k-r-sh,Xkrz,,krxz,7990
 Menace,mn-a-s,Mmas,,ams,8013
+Reject,r-j-k,Rjk,,jkr,8015
 Utah,e-u-t,Uto,o,otu,8022
 Diligence,d-e-l-e-j,Delej,,dejl,8026
 Belgium,bl-j-m,Bljm,,bjlm,8031
@@ -3784,7 +3780,7 @@ Needless,n-e-d-l,Nedl,,deln,8765
 Hardware,^-h-\-a2-d-w-a2,Hadwa,,adhw,8769
 Electricity,e-l-/-s,Elso,o,elos,8780
 Layer,l-a-r,Laro,o,alor,8783
-Involve,n-v-o,Nvoo,o,nov,8785
+Involve,n-v-o,Nvo,,nov,8785
 Hypothesis,^-h-\-i-p-th-e-ss,Hiphess,,ehips,8786
 Irritation,e2-t-sh,Etz,,etz,8788
 Combine,k-b-i,Kbi,,bik,8790
@@ -4288,6 +4284,7 @@ Savings,s2-a-v-/-s2,Savs,,asv,12002
 Lovingly,l-v-/-e,Lveo,o,elov,12009
 Atlanta,a-t-l-a,Atla,,alt,12015
 Cement,s2-e-mn-t,Semmt,,emst,12025
+Collective,k-o-l-\-v,Kolv,,klov,12054
 Chemistry,k-e-m-e-s-r-e,Kemesre,,ekmrs,12060
 Dictate,d-e-k-t-a,Dekta,,adekt,12063
 Scout,s2-k-a-u-t,Skwt,,kstw,12070
@@ -5352,6 +5349,7 @@ Computation,k-p-u-sh,Kpuz,,kpuz,24409
 Gender,jnt-r,Jntr,,jnrt,24433
 Doge,d-o-j,Dojo,o,djo,24438
 Dual,d-u-l,Dulu,u,dlu,24445
+Obviate,o-b-v-ea-t,Obvet,,beotv,24446
 Opposes,o-p-o-s,Oposo,o,ops,24446
 Ultimo,u-t,Utu,u,tuz,24469
 Infrequent,n-fr-e-k,Nfreq,,efnqr,24487
@@ -6566,6 +6564,7 @@ Legatee,l-e-g-a-t-e,Legateo,o,aeglot,60311
 Depositary,d-p-o-s-/-r-e,Dposreo,o,deoprs,60390
 Florist,fl-r-e-s,Flres,,eflrs,60395
 Ironwork,i-r-n-r-k,Irnrk,,iknr,60401
+Objector,o-b-\-r,Obr,,bor,60487
 Inexact,n-e-s2-a-k,Nxak,,aknx,60549
 Lucent,l-u-s2-nt,Lusnto,o,lnostu,60555
 Circumscribe,s2-/-s2-k-r,Sskr,,krs,60700

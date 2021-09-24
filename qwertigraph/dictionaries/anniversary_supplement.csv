@@ -194,6 +194,13 @@ Paperwork,p-a-pr-k,Paprk,,akpr,649
 Paperworked,p-a-pr-k-d,Paprkd,,adkpr,649
 Paperworking,p-a-pr-k-\-h,Paprkg,,agkpr,649
 Paperworks,p-a-pr-k-s,Paprks,,akprs,649
+Objected,o-b-d,Obd,,bdo,668
+Objectify,o-b-f,Obf,,bfo,668
+Objectified,o-b-f-d,Obfd,,bdfo,668
+Objectifying,o-b-f-\-h,Obfg,,bfgo,668
+Objectifies,o-b-f-s,Obfs,,bfos,668
+Objecting,o-b-\-h,Obg,,bgo,668
+Objects,o-b-s,Obs,,bos,668
 Singled,s2-e-ng-d,Segd,,degs,672
 Singly,s2-e-ng-e,Sege,,egs,672
 Singling,s2-e-ng-\-h,Segg,,egs,672
@@ -420,6 +427,7 @@ Prayers,pr-a-r-s,Prars,,aprs,1458
 Staged,s2-t-a-j-d,Stajd,,adjst,1461
 Staging,s2-t-a-j-\-h,Stajg,,agjst,1461
 Stages,s2-t-a-j-s,Stajs,,ajst,1461
+Fingers,f-e-ng-ye2,Feqy,,efqy,1487
 Wore,u-o-r,Uor,,orux,1520
 Guarded,g-a2-d-d,Gadd,,adg,1522
 Guardedly,g-a2-d-d-e,Gadde,,adeg,1522
@@ -475,6 +483,7 @@ Doubles,d-b-s,Dbs,,bds,1600
 Titled,t-i-t-d,Titd,,itvd,1615
 Titling,t-i-t-\-h,Titg,,itvg,1615
 Titles,t-i-t-s,Tits,,itvs,1615
+Collections,k-o-l-sh-s,Kolzs,,klosz,1620
 Separated,s-e-pr-d,Seprd,,deprs,1638
 Separately,s-e-pr-e,Sepre,,eprs,1638
 Separating,s-e-pr-\-h,Seprg,,egprs,1638
@@ -582,6 +591,8 @@ Explanations,e-s-pl-sh-s,Xplzs,,lpsxz,2074
 Unsuccessful,n-s2-u-k-f,Nsukf,,fknsu,2078
 Unsuccessfully,n-s2-u-k-f-e,Nsukfe,,efknsu,2078
 Successfully,s2-u-k-f-e,Sukfe,,efksu,2078
+Teaching,t-e-ch-\-h,Tecg,,cegt,2088
+Teachings,t-e-ch-\-h-s,Tecgs,,cegst,2088
 Developments,dfl-m-s,Dflms,,dflms,2110
 Typed,t-i-p-d,Tipd,,dipt,2117
 Typing,t-i-p-\-h,Tipg,,gipt,2117
@@ -622,6 +633,9 @@ Agreeably,^-yab-e,Yabe,,abey,2378
 Suggestions,s2-u-j-s,Sujso,o,josu,2382
 Confusions,k-f-e-u-sh-s,Kfuzs,,fksuz,2394
 Preparatory,pr-e-p-\-r-e,Prepre,,epr,2440
+Fingered,f-e2-ng-e2-d,Feqed,,defq,2476
+Fingering,f-e2-ng-e2-\-h,Feqeg,,efgq,2476
+Fingerlings,f-e2-ng-e2-l-s,Feqels,,eflqs,2476
 Errored,e-r-r-d,Errd,,erzd,2517
 Erroring,e-r-r-\-h,Errg,,erzg,2517
 Agents,a-j-s,Ajs,,ajs,2549
@@ -712,6 +726,9 @@ Mismatching,m-sm-a-ch-\-h,Msmacg,,acmsg,3098
 Mismatches,m-sm-a-ch-s,Msmacs,,acmss,3098
 Unmatched,n-m-a-ch-d,Nmachd,,acdhmn,3098
 Definitely,df-n-e,Dfne,,defn,3128
+Described,d-s2-k-r-d,Dskrd,,dkrs,3131
+Describing,d-s2-k-r-\-h,Dskrg,,dgkrs,3131
+Describes,d-s2-k-r-s,Dskrs,,dkrs,3131
 Activities,a-k-v-t-e-s,Akvtes,,aekstv,3132
 Including,e-/-d-\-h,Edg,,deg,3157
 Includes,e-/-d-s,Eds,,des,3157
@@ -750,6 +767,7 @@ Historically,^-h-\-e-s2-t-r-/-k-e,Hestrke,,ehkrst,3194
 Seeded,s2-e-d-d,Sedd,,des,3202
 Seeding,s2-e-d-\-h,Sedg,,degs,3202
 Seeds,s2-e-d-s,Seds,,des,3202
+Obviously,o-b-v-e,Obve,,beov,3252
 Clerked,k-l-r-d,Klrd,,dklr,3264
 Picking,p-e-k-\-h,Pekg,,egkp,3272
 Picks,p-e-k-s,Peks,,ekps,3272
@@ -830,6 +848,9 @@ Compositions,k-p-o-sh-s,Kpozs,,kopsz,3767
 Identified,a-tn-df-d,Atndfd,,adfnt,3839
 Identifying,a-tn-df-\-h,Atndfg,,adfgnt,3839
 Identifies,a-tn-df-s,Atndfs,,adfnst,3839
+Objectionable,o-b-sh-b,Obzb,,boz,3864
+Objectionably,o-b-sh-b-e,Obzbe,,beoz,3864
+Objections,o-b-sh-s,Obzs,,bosz,3864
 Care,k-a,Ka,,akc,3865
 Preparations,pr-e-p-sh-s,Prepzs,,eprsz,3873
 Solutioned,s2-o-l-sh-d,Solzd,,dlosz,3907
@@ -845,6 +866,7 @@ Maximizing,m-a-x-m-i-s-\-h,Maxmisg,,agimsx,4077
 Maximizes,m-a-x-m-i-s-s,Maxmiss,,aimsx,4077
 Maximums,m-a-x-mn-s,Maxmms,,amsx,4077
 Maximo,m-a-x-m-o,Maxmo,,amox,4077
+Coal,k-o-l,Kolo,,klo,4112
 Editors,e-td-e2-s,Eddes,,des,4123
 Editorship,e-td-e2-sh,Eddez,,dez,4123
 Editorships,e-td-e2-sh-s,Eddezs,,desz,4123
@@ -939,6 +961,9 @@ Appropriation,a-pr-a-sh,Apraz,,aprz,4822
 Appropriations,a-pr-a-sh-s,Aprazs,,aprsz,4822
 Peril,p-e-r-l,Perl,,elpr,4883
 Perils,p-e-r-l-s,Perls,,elprs,4883
+Collected,k-o-l-d,Kold,,dklo,4890
+Collecting,k-o-l-\-h,Kolg,,gklo,4890
+Collects,k-o-l-s,Kols,,klos,4890
 Recommended,r-k-mn-d,Rkmnd,,dkmnr,4899
 Recommending,r-k-mn-\-h,Rkmng,,gkmnr,4899
 Recommends,r-k-mn-s,Rkmns,,kmnrs,4899
@@ -954,6 +979,12 @@ Documenting,d-o-k-m-\-h,Dokmg,,dgkmo,5069
 Documentary,d-o-k-m-r-e,Dokmre,,dekmor,5069
 Documents,d-o-k-m-s,Dokms,,dkmos,5069
 Documentation,d-o-k-m-sh,Dokmz,,dkmoz,5069
+Recollect,r-e-k-o-l,Rekol,,eklor,5071
+Recollected,r-e-k-o-l-d,Rekold,,deklor,5071
+Recollecting,r-e-k-o-l-\-h,Rekolg,,egklor,5071
+Recollects,r-e-k-o-l-s,Rekols,,eklors,5071
+Recollection,r-e-k-o-l-sh,Rekolz,,eklorz,5071
+Recollections,r-e-k-o-l-sh-s,Rekolzs,,eklorsz,5071
 Organic,o-g-n-e-k,Ognek,,egkno,5141
 Organist,o-g-n-e-s,Ognes,,egnos,5141
 Organically,o-g-n-\-k-e,Ognke,,egkno,5141
@@ -1114,6 +1145,7 @@ Denouncing,dn-n-s-\-h,Dnnsg,,dgns,7553
 Denounces,dn-n-s-s,Dnnss,,dns,7553
 Constancy,k-s2-tn-s-e,Kstnse,,eknst,7666
 Constance,k-s2-tn-s,Kstnso,o,knost,7666
+Keepers,k-p-/-r-s,Kprs,,kprs,7711
 Proposition,pr-p-o-sh,Prpoz,,oprz,7854
 Propositioned,pr-p-o-sh-d,Prpozd,,doprz,7854
 Propositioning,pr-p-o-sh-\-h,Prpozg,,goprz,7854
@@ -1126,6 +1158,9 @@ Ticketed,t-e-k-e-t-d,Teketd,,dekt,7883
 Ticketing,t-e-k-e-t-\-h,Teketg,,egkt,7883
 Needful,n-e-d-f,Nedf,,defn,7996
 Needfully,n-e-d-f-e,Nedfe,,defn,7996
+Rejected,r-j-k-d,Rjkd,,djkr,8015
+Rejecting,r-j-k-\-h,Rjkg,,gjkr,8015
+Rejects,r-j-k-s,Rjks,,jkrs,8015
 Theological,h-e-\-o-k,Heok,,ehko,8166
 Theologically,h-e-\-o-k-e,Heoke,,ehko,8166
 Theologian,h-e-\-o-n,Heon,,ehno,8166
@@ -1143,6 +1178,7 @@ Unattached,u-n-a-t-ch-d,Unatcd,,acdnt,8525
 Guaranteed,g-a2-nt-e-d,Ganted,,adegnt,8549
 Guaranteeing,g-a2-nt-e-\-h,Ganteg,,aegnt,8549
 Guarantees,g-a2-nt-e-s,Gantes,,aegnst,8549
+Objectives,o-b-/-v-s,Obvs,,bosv,8583
 Import,m-p-o-t,Mpot,,mopt,8595
 Imported,m-p-o-t-d,Mpotd,,dmopt,8595
 Importing,m-p-o-t-\-h,Mpotg,,gmopt,8595
@@ -1154,6 +1190,9 @@ Environmental,n-v-i-r-mn-l,Nvirmml,,ilmnrv,8705
 Environments,n-v-i-r-mn-s,Nvirmms,,imnrsv,8705
 Needlessly,n-e-d-l-e,Nedle,,deln,8765
 Needless,n-e-d-l,Nedlu,u,delno,8765
+Involved,n-v-o-d,Nvod,,dnov,8785
+Involving,n-v-o-\-h,Nvog,,gnov,8785
+Involves,n-v-o-s,Nvos,,nosv,8785
 Combining,k-b-i-\-h,Kbig,,bgik,8790
 Combines,k-b-i-s,Kbis,,biks,8790
 Reschedule,r-s2-k-e-d-l,Rskedl,,deklrs,8811
@@ -1224,6 +1263,7 @@ Abounded,a-b-n-d,Abnd,,abdn,9888
 Abounding,a-b-n-\-h,Abng,,abgn,9888
 Abounds,a-b-n-s,Abns,,abns,9888
 Certificates,s2-e-df-s,Sedfs,,defs,9931
+Indescribably,nt-s2-k-r-b-e,Ntskrbe,,beknrst,10106
 Expire,e-s-p-i,Xpi,,ipx,10150
 Expiring,e-s-p-i-\-h,Xpig,,ipxg,10150
 Expires,e-s-p-i-s,Xpis,,ipxs,10150
@@ -1296,6 +1336,7 @@ Validating,v-a-l-e-d-d-\-h,Valeddg,,adelvdg,11895
 Validates,v-a-l-e-d-d-s,Valedds,,adelvds,11895
 Validation,v-a-l-e-d-sh,Valedz,,adelvz,11895
 Validations,v-a-l-e-d-sh-s,Valedzs,,adelvzs,11895
+Collectively,k-o-l-\-v-e,Kolve,,eklov,12054
 Automatically,o-tm-/-a-e,Otmae,,aemot,12143
 Greets,g-r-e-t-s,Gretso,o,egorst,12162
 Conclusively,k-k-v-e,Kkve,,ekv,12171
@@ -1304,6 +1345,8 @@ Click,k-l-e-k,Klek,,ekl,12573
 Clicking,k-l-e-k-\-h,Klekg,,egkl,12573
 Clicks,k-l-e-k-s,Kleks,,ekls,12573
 Clicked,k-l-e-k-t,Klekt,,eklt,12573
+Rejection,r-j-k-sh,Rjkz,,jkrz,12605
+Rejections,r-j-k-sh-s,Rjkzs,,jkrsz,12605
 Disorganize,d-s-o-g,Dsog,,dgos,12648
 Disorganized,d-s-o-g-d,Dsogd,,dgos,12648
 Disorganizing,d-s-o-g-\-h,Dsogg,,dgos,12648
@@ -1337,6 +1380,8 @@ Targets,t-a-r-g-e-t-s,Targets,,aegrst,13508
 Symptom,s-e-m-tm,Semtm,,emst,13544
 Symptomatic,s-e-m-tm-\-a,Semtma,,aemst,13544
 Symptoms,s-e-m-tm-s,Semtms,,emst,13544
+Forefinger,f-f-e2-ng-e2,Ffeqe,,efq,13694
+Forefingers,f-f-e2-ng-e2-s,Ffeqes,,efqs,13694
 Judgemental,j-j-m-l,Jjml,,jlm,13895
 Judgementally,j-j-m-l-e,Jjmle,,ejlm,13895
 Judgements,j-j-m-s,Jjms,,jms,13895
@@ -1347,6 +1392,7 @@ Pronouncement,pr-n-n-s-m,Prnnsm,,mnprs,14110
 Pronouncements,pr-n-n-s-m-s,Prnnsms,,mnprs,14110
 Pronouns,pr-n-n-s,Prnnso,o,noprs,14110
 Pronounces,pr-n-n-s-s,Prnnss,,nprs,14110
+Collectors,k-o-l-r-s,Kolrs,,klors,14252
 Transitioned,t-/-sh-d,Tzd,,dtz,14449
 Transitioning,t-/-sh-\-h,Tzg,,gtz,14449
 Transitions,t-/-sh-s,Tzs,,stz,14449
@@ -1515,6 +1561,8 @@ Galileo,g-a-l-l-e-o,Galleo,,aeglo,24229
 Computational,k-p-u-sh-l,Kpuzl,,klpuz,24409
 Computationally,k-p-u-sh-l-e,Kpuzle,,eklpuz,24409
 Computations,k-p-u-sh-s,Kpuzs,,kpsuz,24409
+Obviated,o-b-v-ea-t-d,Obvetd,,bdeotv,24446
+Obviation,o-b-v-ea-sh,Obvez,,beovz,24446
 Diagnose,d-i-g-n-o-s,Dignos,,dginos,24781
 Diagnosed,d-i-g-n-o-s-d,Dignosd,,dginos,24781
 Diagnoses,d-i-g-n-o-s-e-s,Dignoses,,deginos,24781
@@ -1693,6 +1741,7 @@ Rewrite,r-r-i,Rri,,irx,58803
 Rewriting,r-r-i-\-h,Rrig,,gir,58803
 Certification,s2-e-df-sh,Sedfz,,defsz,59944
 Certifications,s2-e-df-sh-s,Sedfzs,,defsz,59944
+Objectors,o-b-\-r-s,Obrs,,bors,60487
 Spraying,s-p-r-a-g,Spragi,i,agiprs,61211
 Interchange,n-/-ch,Ncu,u,cnu,63588
 Adjudge,a-j-j,Ajj,,ajx,64745
