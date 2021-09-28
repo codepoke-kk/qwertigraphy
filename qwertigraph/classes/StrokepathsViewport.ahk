@@ -10,7 +10,7 @@ global SaveStrokepaths
 strokePaths := {}
 
 Gui MainGUI:Default 
-Gui, Tab, Strokepaths	
+Gui, Tab, Strokes	
 ; Add regex search fields
 Gui, Add, Edit, -WantReturn x12 y64 w645 h20 vRegexPath, 
 Gui, Add, Edit, -WantReturn x657 y64 w180  h20 vRegexPattern,  
@@ -139,7 +139,7 @@ class StrokepathsViewport
 	SearchStrokepathEntries() {
 		local
 		Gui MainGUI:Default
-		Gui, Tab, Strokepaths
+		Gui, Tab, Strokes
 		GuiControlGet RegexPath
 		GuiControlGet RegexPattern
 		

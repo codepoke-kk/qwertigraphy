@@ -100,6 +100,7 @@ Outpouring,a-u-p-o-r-\-h,Wporg,,goprw,324
 Friended,fr-d,Frd,,dfr,327
 Friending,fr-\-h,Frg,,fgr,327
 Friends,fr-s,Frs,,frs,327
+Persons,pr-ss,Prsso,o,oprs,329
 Ensure,e-n-sh-u,Enzu,,enuz,351
 Unsure,u-n-sh-u,Unzu,,nuz,351
 Sureness,sh-u-n-e-s,Zunes,,ensuz,351
@@ -551,6 +552,11 @@ Failback,f-a-l-b-k,Falbk,,abfkl,1836
 Failbacks,f-a-l-b-k-s,Falbks,,abfkls,1836
 Failover,f-a-l-o,Falo,,aflo,1836
 Failovers,f-a-l-o-s,Falos,,aflos,1836
+Processed,pr-ss-d,Prssd,,dprs,1854
+Processing,pr-ss-\-h,Prssg,,gprs,1854
+Processor,pr-ss-r,Prssr,,prs,1854
+Processors,pr-ss-r-s,Prssrs,,prs,1854
+Processes,pr-ss-s,Prsss,,prs,1854
 Parentage,p-a-r-e-nt-j,Parentj,,aejnprt,1863
 Parental,p-a-r-e-nt-l,Parentl,o,aelnprt,1863
 Parent,p-a-r-e-nt,Parento,o,aenoprt,1863
@@ -797,6 +803,9 @@ Balancing,b-a-l-\-h,Balg,,abgl,3523
 Balancer,b-a-l-r,Balr,,ablr,3523
 Balancers,b-a-l-r-s,Balrs,,ablrs,3523
 Invitations,n-v-e-t-sh-s,Nvetzs,,enstvz,3582
+Processional,pr-s-e-sh-l,Prsezl,,elprsz,3592
+Processionals,pr-s-e-sh-l-s,Prsezls,,elprsz,3592
+Processions,pr-s-e-sh-s,Prsezs,,eprsz,3592
 Externals,e-s-/-n-l-s,Xnls,,lnsx,3593
 Imperfect,m-pr-f,Mprf,,fmpr,3629
 Imperfectly,m-pr-f-e,Mprfe,,efmpr,3629
@@ -1271,15 +1280,12 @@ Overload,o-/-l-o-d,Olod,,dlo,10530
 Overloaded,o-/-l-o-d-d,Olodd,,dlod,10530
 Overloading,o-/-l-o-d-\-h,Olodg,,dlog,10530
 Overloads,o-/-l-o-d-s,Olods,,dlos,10530
-Persisted,pr-ss-d,Prssd,,dprs,10535
-Persisting,pr-ss-\-h,Prssg,,gprs,10535
 Persist,pr-ss,Prssi,i,iprs,10535
 Persistence,pr-ss-n-s,Prssns,,nprs,10535
 Persistency,pr-ss-n-s-e,Prssnse,,enprs,10535
 Persistent,pr-ss-\-nt,Prssnt,,nprst,10535
 Persistently,pr-ss-\-nt-e,Prssnte,,enprst,10535
 Persistents,pr-ss-\-nt-s,Prssnts,,nprst,10535
-Persists,pr-ss-s,Prsss,,prs,10535
 Commandments,k-m-a-n-m-s,Kmanms,,akmns,10596
 Commune,k-m-u-n,Kmun,,kmnu,10730
 Communed,k-m-u-n-d,Kmund,,dkmnu,10730
@@ -1534,6 +1540,9 @@ Entailing,n-ta-l-\-h,Ntalg,,aglnt,21539
 Entails,n-ta-l-s,Ntals,,alnst,21539
 Assignments,a-s2-i-mn-s,Asimms,,aims,21884
 Unwritten,n-r-e-tn,Nretn,,enrt,22085
+Evangel,e-v-a-n-j,Evanj,,aejnv,22125
+Evangelicals,e-v-a-n-j-/-k-s,Evanjks,,aejknsv,22125
+Evangels,e-v-a-n-j-s,Evanjs,,aejnsv,22125
 Installations,n-s2-t-o-l-a-sh-s,Nstolazs,,alnostz,22364
 Censored,s2-e-n-s2-o-r-d,Sensord,,enorsd,22710
 Censoring,s2-e-n-s2-o-r-\-h,Sensorg,,enorsg,22710
@@ -1657,6 +1666,8 @@ Revokes,r-v-k-s,Rvks,,krsv,30778
 Revoked,r-v-k-t,Rvkt,,krtv,30778
 Counterbalanced,k-/-b-a-l-d,Kbald,,abdkl,31490
 Insecurities,n-s2-e-k-/-r-s,Nsekrs,,eknrs,31677
+Evangelistic,e-v-a-n-j-/-s2-t-k,Evanjstk,,aejknstv,32118
+Evangelists,e-v-a-n-j-/-s2-t-s,Evanjsts,,aejnstv,32118
 Concurrent,k-k-r-e-nt,Kkrent,,eknrt,32396
 Concurrently,k-k-r-e-nt-e,Kkrente,,eknrt,32396
 Recurrent,r-k-r-e-nt,Rkrent,,eknrt,32396
