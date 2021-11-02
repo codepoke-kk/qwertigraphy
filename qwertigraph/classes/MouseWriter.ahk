@@ -74,12 +74,6 @@ Class MouseWriter {
 		this.writeroutput := writeroutput
 		this.Width := A_ScreenWidth, this.Height := A_ScreenHeight
 		
-		; 
-		
-		; pen states
-		; Waiting - pen is moving up and left to its starting position for the next penform. Any movement down and/or right will start
-		; Writing - pen is moving in any direction and all movements are part of the penform. Any large movement up and left will end
-		; Sending - after a large movement up and left, a momentary state while the penform is sent. Immediately changes to waiting 
 		this.state := "waiting"  
 		; 
 		this.baseMark := 0
@@ -113,13 +107,19 @@ Class MouseWriter {
 
 
 		;------------------------------------------------  create some brushes and pencils ------------------------------------
-		this.pPen := Gdip_CreatePen("0xFF000000" , 5)  
+		this.pPen := Gdip_CreatePen("0xFF000000" , 3)  
 		this.BackGroundColor := 0xccffffff
 		this.BackgroundBrush := Gdip_BrushCreateSolid(this.BackgroundColor)    
 		this.baseBrush := Gdip_BrushCreateSolid("0xff9999ff")
 		this.baseBounds := {"minX": 500, "minY": 200, "maxX": 575, "maxY": 275, "width": 75, "height": 75}
 		this.startBounds := {"minX": 580, "minY": 280, "maxX": 585, "maxY": 285, "width": 5, "height": 5}
-        
+        this.segmentPens := {}
+		this.segmentPens["final"] := Gdip_CreatePen("0xff33ff33", 2)
+		this.segmentPens["recurve"] := Gdip_CreatePen("0xffff3333", 2)
+		this.segmentPens["discontinuity"] := Gdip_CreatePen("0xff3333ff", 2)
+		this.segmentPens["intersection"] := Gdip_CreatePen("0xff33ffff", 2)
+		this.segmentPens["disjoin"] := Gdip_CreatePen("0xffffff33", 2)
+		
 		scanInterval := 50
 		this.scantimer := ObjBindMethod(this, "ScanInputs")
         scantimer := this.scantimer
@@ -129,6 +129,7 @@ Class MouseWriter {
 	
 	EnqueueMark(mark) {
 		;GuiControl, , % this.writeroutput, % "Enqueuing new mark" 
+		; Let's go strictly off deltas, and see how that works
 		this.markQueue.enqueue(mark)
 	}
 	
@@ -144,7 +145,14 @@ Class MouseWriter {
 			return
 		}
 		Loop, % this.markQueue.getSize() {
-			this.AddMark(this.markQueue.dequeue())
+			mark := this.markQueue.dequeue()
+			; Attempt smoothing
+			;if ((!mark.dt) and ((mark.x = this.marks[this.marks.MaxIndex()].x) and (mark.y = this.marks[this.marks.MaxIndex()].y))) {
+			if (this.lastMark) {
+				mark.x := this.lastMark.x + mark.dx
+				mark.y := this.lastMark.y + mark.dy
+			}
+			this.AddMark(mark)
 		}
 		;GuiControl, , % this.writeroutput, % "Dequeued marks" 
 		UpdateLayeredWindow(this.writerhwnd, this.hdc, 0, 0, this.Width, this.Height)
@@ -212,15 +220,24 @@ Class MouseWriter {
 	
 	SendPenform() {
 		GuiControl, , % this.writeroutput, % "Sending " this.marks.MaxIndex() " penform marks" 
-		this.decoder.DecodePenForm(this.marks)
-		;FileDelete, "mark.csv"
-		;fileHandle := FileOpen("mark.csv", "w")
-		;header := "x,y,dx,dy,dt,t`n"
-		;fileHandle.Write(header)
-		;for index, mark in this.marks 
-		;{
-		;	fileHandle.Write(mark.Serialize() "`n")
-		;}
-		;filehandle.Close()
+		segments := this.decoder.DecodePenForm(this.marks)
+		for index, segment in segments 
+		{
+			GuiControl, , % this.writeroutput, % "Drawing " segment.type " at " this.marks[segment.endindex].x "," this.marks[segment.endindex].y
+			Gdip_DrawEllipse(this.G, this.segmentPens[segment.type], this.marks[segment.endindex].x - 5, this.marks[segment.endindex].y - 5, 10, 10)
+		}
+		
+		FileDelete, "marks.csv"
+		fileHandle := FileOpen("marks.csv", "w")
+		header := "x,y,dx,dy,dt,t`n"
+		fileHandle.Write(header)
+		for index, mark in this.marks 
+		{
+			fileHandle.Write(mark.Serialize() "`n")
+		}
+		filehandle.Close()
+		
+		this.marks := []
+		
 	}
 }

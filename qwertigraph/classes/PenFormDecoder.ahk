@@ -28,22 +28,25 @@ Class PenFormDecoder {
 	
 	__New(decoderoutput) {
 		this.pi := 4 * ATan(1)
+		this.threequarterpi := 4 * ATan(1) + 2 * ATan(1)
+		this.twothirdspi := 8 * ATan(1) / 3
 		this.halfpi := 2 * ATan(1)
+		this.thirdpi := 4 * ATan(1) / 3
 		this.quarterpi := ATan(1)
 		this.eighthpi := ATan(1) / 2
 		this.decoderoutput := decoderoutput
 		this.lastMark := 0
 		
 		GuiControl, , % this.decoderoutput, % "Loaded decoder"
-		; this.AugmentMarks()
-		; this.SegmentPenForm()
 	}
 	
 	DecodePenForm(marks) {
 		this.marks := marks
+		this.segments := []
 		GuiControl, , % this.decoderoutput, % "Received " this.marks.MaxIndex() " marks"
 		this.AugmentMarks()
 		this.SegmentPenForm()
+		Return this.segments 
 	}
 	
 	AugmentMarks() {
@@ -62,74 +65,191 @@ Class PenFormDecoder {
 	}
 	
 	SegmentPenForm() {
-		segmentMarks := []
-		for index, mark in this.marks 
-		{
-			if (this.DetectNewSegment(segmentMarks)) {
-				segment := this.GetSegment(segmentMarks) 
-				this.segments.Push(segment)
-				segmentMarks := []
-				GuiControl, , % this.decoderoutput, % "New segment " segment.length "@" segment.rads " covering " segment.area
-			}
-			segmentMarks.Push(mark)
-		}
-		if (segmentMarks.MaxIndex()) {
-			segment := this.GetSegment(segmentMarks) 
+		inflections := this.GetInflections()
+		startIndex := 1
+		for index, inflection in inflections {
+			GuiControl, , % this.decoderoutput, % "Looping inflection " inflection.x "," inflection.y " at " inflection.index
+			segment := this.GetSegment("disjoin", startIndex, inflection.index) 
 			this.segments.Push(segment)
-			GuiControl, , % this.decoderoutput, % "Final segment " segment.length "@" segment.rads " covering " segment.area
+			startIndex := inflection.index
 		}
+		GuiControl, , % this.decoderoutput, % "Last non-inflection from " startIndex " to " this.marks.MaxIndex()
+		segment := this.GetSegment("final", startIndex, this.marks.MaxIndex()) 
+		this.segments.Push(segment)
+		Return
+		startIndex := 1
+		for endindex, mark in this.marks 
+		{
+			segmenttype := this.DetectNewSegment(startindex, endindex)
+			if (segmenttype) {
+				segment := this.GetSegment(segmenttype, startIndex, endindex) 
+				this.segments.Push(segment)
+				startIndex := endindex + 1
+				;GuiControl, , % this.decoderoutput, % "New segment " segment.length "@" segment.rads " covering " segment.area
+			}
+		}
+		segment := this.GetSegment("final", startIndex, endindex) 
+		this.segments.Push(segment)
+		;GuiControl, , % this.decoderoutput, % "Final segment " segment.length "@" segment.rads " covering " segment.area
 	}
 	
-	GetSegment(segmentMarks) {
-		segment := {"marks": segmentMarks, "start": segmentMarks[1], "end": segmentMarks[segmentMarks.MaxIndex()]
-			, "length": 0, "rads": 0, "apogeeIndex": 0, "height": 0, "area": 0}
-		segment.length := this.GetLength(segment.start, segment.end)
-		segment.rads := this.GetRads((segment.end.x - segment.start.x), (segment.end.y - segment.start.y))
+	GetSegment(segmenttype, startindex, endindex) {
+		segment := {"startindex": startindex, "endindex": endindex, "type": segmenttype, "length": 0, "rads": 0, "apogeeIndex": 0, "height": 0, "area": 0}
+		segment.length := this.GetLength(this.marks[segment.startindex], this.marks[segment.endindex])
+		segment.rads := this.GetRads((this.marks[segment.endindex].x - this.marks[segment.startindex].x), (this.marks[segment.endindex].y - this.marks[segment.startindex].y))
 		segment.apogeeIndex := this.GetApogeeIndex(segment)
 		segment.height := this.GetHeight(segment)
 		segment.area := this.GetArea(segment)
-		;GuiControl, , % this.decoderoutput, % "New segment " segment.length "@" segment.rads " covering " segment.area
+		GuiControl, , % this.decoderoutput, % "New " segment.type " segment " segment.length "@" segment.rads " with height " segment.height " covering " segment.area
 		Return segment 
 	}
 	
-	DetectNewSegment(segmentMarks) {
-		if (this.DetectNewCurve(segmentMarks)) {
-			Return true
-		} else if (this.DetectDiscontinuity(segmentMarks)) {
-			Return true
-		} else if (this.DetectIntersection(segmentMarks)) {
-			Return true
-		} else if (this.DetectDisjoin(segmentMarks)) {
-			Return true
+	GetInflections() {
+		inflections := []
+		firstMark := this.marks[1]
+		lastMark := this.marks[this.marks.MaxIndex()]
+		if (this.marks.MaxIndex() < 10) {
+			; Just guess at anything of less than this many marks
+			inflection := {"x": ((lastMark.x - firstMark.x > 0) ? -1 : 1), "y": ((lastMark.y - firstMark.y > 0) ? -1 : 1), "index": this.marks.MaxIndex()}
+			inflections.Push(inflection)
+			Return inflections
+		}
+		proceeding := (this.marks[8].x - firstMark.x) > 0 ? 1 : -1
+		diving := (this.marks[8].y - firstMark.y) > 0 ? 1 : -1
+		for index, mark in this.marks {
+			if (index + 6 <= this.marks.Maxindex()) {
+				; Don't analyze the last 6 marks
+				;GuiControl, , % this.decoderoutput, % "Analyzing " index " with " proceeding "," diving
+				if (mark.dx * proceeding < 0) {
+					; Direction has flipped, now see whether this is transient or a real turn
+					if ((this.marks[index + 6].x - mark.x) * proceeding <= 0) {
+						proceeding := -(proceeding)
+						;GuiControl, , % this.decoderoutput, % "Found x inflection and proceeding is now " proceeding
+						if (inflections.MaxIndex() and (index - inflections[inflections.MaxIndex()].index < 5)) {
+							; if we already have an inflection within 5 index of this point, then blend these two 
+							inflections[inflections.MaxIndex()].x := proceeding
+							inflections[inflections.MaxIndex()].index := (index - 1 + inflections[inflections.MaxIndex()].index) / 2
+						} else {
+							;GuiControl, , % this.decoderoutput, % "Creating new x inflection and proceeding is now " proceeding
+							inflection := {"x": proceeding, "y": 0, "index": index - 1}
+							inflections.Push(inflection)
+						}
+					} else {
+						;GuiControl, , % this.decoderoutput, % "Ignoring this x flip as transient"
+					}
+				}
+				if (mark.dy * proceeding < 0) {
+					; Direction has flipped, now see whether this is transient or a real turn
+					if ((this.marks[index + 6].y - mark.y) * diving <= 0) {
+						diving := -(diving)
+						;GuiControl, , % this.decoderoutput, % "Found y inflection and diving is now " diving 
+						if (inflections.MaxIndex() and (index - inflections[inflections.MaxIndex()].index < 5)) {
+							;GuiControl, , % this.decoderoutput, % "Blending with inflections[ " inflections.MaxIndex() "]"
+							; if we already have an inflection within 5 index of this point, then blend these two 
+							inflections[inflections.MaxIndex()].y := diving
+							inflections[inflections.MaxIndex()].index := (index - 1 + inflections[inflections.MaxIndex()].index) / 2
+							;GuiControl, , % this.decoderoutput, % "Blending with inflections[ " inflections.MaxIndex() "] now at index " inflections[inflections.MaxIndex].index
+						} else {
+							;GuiControl, , % this.decoderoutput, % "Creating new y inflection"
+							inflection := {"x": 0, "y": diving, "index": index - 1}
+							inflections.Push(inflection)
+						}
+					} else {
+						;GuiControl, , % this.decoderoutput, % "Ignoring this y flip as transient"
+					}
+				}
+			}
+			;GuiControl, , % this.decoderoutput, % "Inflection count after " index " is " inflections.MaxIndex()
+		}
+		GuiControl, , % this.decoderoutput, % "Inflection count after " index " is " inflections.MaxIndex()
+		Return inflections
+	}
+	
+	DetectNewSegment(startindex, endindex) {
+		if (this.DetectDiscontinuity(startindex, endindex)) {
+			Return "discontinuity"
+		} else if (this.DetectRecurve(startindex, endindex)) {
+			Return "recurve"
+		} else if (this.DetectIntersection(startindex, endindex)) {
+			Return "intersection"
+		} else if (this.DetectDisjoin(startindex, endindex)) {
+			Return "disjoin"
 		} else {
-			Return false
+			Return ""
 		}
 	}
 	
-	DetectNewCurve(segmentMarks) {
-		Return false 
-	}
-	DetectDiscontinuity(segmentMarks) {
-		i := segmentMarks.MaxIndex()
-		if ( i < 10) {
+	DetectRecurve(startindex, endindex) {
+		; The first few marks of a new outline are shaky. Make sure we skip them. 
+		if ((endindex - startindex < 30) or (this.marks.MaxIndex() - endindex < 30)) {
 			Return false
 		}
-		trunkStart := segmentMarks[i-9]
-		trunkEnd := segmentMarks[i-5]
-		growthStart := segmentMarks[i-4]
-		growthEnd := segmentMarks[i]
+		trunkStart := this.marks[endindex-23]
+		trunkMid1 := this.marks[endindex-16]
+		trunkMid2 := this.marks[endindex-9]
+		trunkEnd := this.marks[endindex-3]
+		growthStart := this.marks[endindex+3]
+		growthMid1 := this.marks[endindex+9]
+		growthMid2 := this.marks[endindex+16]
+		growthEnd := this.marks[endindex+23]
+		trunkRads1 := this.GetRads(trunkMid1.x - trunkStart.x, trunkMid1.y - trunkStart.y)
+		trunkRads2 := this.GetRads(trunkMid2.x - trunkMid1.x, trunkMid2.y - trunkMid1.y)
+		trunkRads3 := this.GetRads(trunkEnd.x - trunkMid2.x, trunkEnd.y - trunkMid2.y)
+		branchRads := this.GetRads(growthStart.x - trunkEnd.x, growthStart.y - trunkEnd.y)
+		growthRads1 := this.GetRads(growthMid1.x - growthStart.x, growthMid1.y - growthStart.y)
+		growthRads2 := this.GetRads(growthMid2.x - growthMid1.x, growthMid2.y - growthMid1.y)
+		growthRads3 := this.GetRads(growthEnd.x - growthMid2.x, growthEnd.y - growthMid2.y)
+		trunkDiffRads := trunkRads3 - trunkRads1
+		trunkDirection := Abs(trunkDiffRads) / trunkDiffRads
+		branchDiffRads := growthRads1 - trunkRads3
+		growthDiffRads := growthRads3 - growthRads1
+		growthDirection := Abs(growthDiffRads) / growthDiffRads
+		
+		if (growthDirection != trunkDirection) {
+			if (growthDirection > 0) {
+				if ((growthRads3 > growthRads2)
+				and (growthRads2 > growthRads1)
+				and (branchRads < .2)
+				and (trunkRads3 < trunkRads2)
+				and (trunkRads2 < trunkRads1)) {
+					GuiControl, , % this.decoderoutput, % "Recurve with " trunkRads1 "," trunkRads2 "," trunkRads3 "," branchRads "," growthRads1 "," growthRads2 "," growthRads3
+					GuiControl, , % this.decoderoutput, % "Recurve with " trunkDiffRads " through " branchDiffRads " to " growthDiffRads " ending at index " endindex
+					Return true 
+				} else if ((growthRads3 < growthRads2)
+				and (growthRads2 < growthRads1)
+				and (branchRads < .2)
+				and (trunkRads3 > trunkRads2)
+				and (trunkRads2 > trunkRads1)) {
+					GuiControl, , % this.decoderoutput, % "Recurve with " trunkRads1 "," trunkRads2 "," trunkRads3 "," branchRads "," growthRads1 "," growthRads2 "," growthRads3
+					GuiControl, , % this.decoderoutput, % "Recurve with " trunkDiffRads " through " branchDiffRads " to " growthDiffRads " ending at index " endindex
+					Return true 
+				}
+			}
+		}
+	}
+	DetectDiscontinuity(startindex, endindex) {
+		; Look at the angles backward 5 and forward 5. If they differ by more than half-pi and less than 3/4 pi, then it's a new segment 
+		;GuiControl, , % this.decoderoutput, % "Seeking discontinuity at index " endindex " from base " startindex
+		; The first few marks of a new outline are shaky. Make sure we skip them. 
+		if ((endindex - startindex < 15) or (this.marks.MaxIndex() - endindex < 5)) {
+			Return false
+		}
+		trunkStart := this.marks[endindex-5]
+		trunkEnd := this.marks[endindex-1]
+		growthStart := this.marks[endindex]
+		growthEnd := this.marks[endindex+4]
 		trunkRads := this.GetRads(trunkEnd.x - trunkStart.x, trunkEnd.y - trunkStart.y)
 		growthRads := this.GetRads(growthEnd.x - growthStart.x, growthEnd.y - growthStart.y)
 		
-		if (Abs(growthRads - trunkRads) > this.quarterpi) {
-			GuiControl, , % this.decoderoutput, % "Discontinuity with " trunkRads " to " growthRads " at index " i
+		if ((Abs(growthRads - trunkRads) > this.halfpi) and (Abs(growthRads - trunkRads) < this.threequarterpi)) {
+			GuiControl, , % this.decoderoutput, % "Discontinuity with " trunkRads " to " growthRads " ending at index " endindex
 			Return true 
 		}
 	}
-	DetectIntersection(segmentMarks) {
+	DetectIntersection(startindex, endindex) {
 		Return false 
 	}
-	DetectDisjoin(segmentMarks) {
+	DetectDisjoin(startindex, endindex) {
 		Return false 
 	}
 	
@@ -170,8 +290,8 @@ Class PenFormDecoder {
 	}
 	
 	GetApogeeIndex(segment) {
-		startMark := segment.marks[1]
-		pinMark := segment.marks[3]
+		startMark := this.marks[segment.startindex]
+		pinMark := segment.marks[segment.startindex + 2]
 		pinRads := this.GetRads(pinMark.x - startMark.x, pinMark.y, startMark.y)
 		;GuiControl, , % this.decoderoutput, % "Start Rads are " pinRads " and seeking " segment.rads 
 		
@@ -179,12 +299,12 @@ Class PenFormDecoder {
 		pinRadsSide := pinRads > segment.rads ? 1 : -1
 		pinIndex := 1
 		
-		increment := segment.marks.MaxIndex()
+		increment := segment.endindex - segment.startindex
 		While (increment) {
 			increment := Round((increment / 2) - .5)
 			pinIndex := (pinRads > segment.rads) ? pinIndex + (pinRadsSide * increment) : pinIndex - (pinRadsSide * increment)
-			pinMark := segment.marks[pinIndex]
-			startMark := segment.marks[pinIndex - 2]
+			pinMark := this.marks[pinIndex + segment.startindex]
+			startMark := this.marks[pinIndex + segment.startindex - 2]
 			;GuiControl, , % this.decoderoutput, % startMark.x "," startMark.y " to " pinMark.x "," pinMark.y
 			pinRads := this.GetRads(pinMark.x - startMark.x, pinMark.y - startMark.y)
 			;GuiControl, , % this.decoderoutput, % "Testing from " pinIndex " got " pinRads
@@ -195,10 +315,10 @@ Class PenFormDecoder {
 	
 	
 	GetHeight(segment) {
-		apogeeMark := segment.marks[segment.apogeeIndex]
-		;GuiControl, , % this.decoderoutput, % "Checking " segment.marks[1].x "," segment.marks[1].y " to " segment.marks[segment.marks.MaxIndex()].x "," segment.marks[segment.marks.MaxIndex()].y " against " apogeeMark.x "," apogeeMark.y
-		slopeSegment := (segment.marks[segment.marks.MaxIndex()].y - segment.marks[1].y) / (segment.marks[segment.marks.MaxIndex()].x - segment.marks[1].x)
-		interceptSegment := segment.marks[1].y - (slopeSegment * segment.marks[1].x)
+		apogeeMark := this.marks[segment.apogeeIndex]
+		;GuiControl, , % this.decoderoutput, % "Checking " this.marks[segment.startindex].x "," this.marks[segment.startindex].y " to " this.marks[segment.endindex].x "," this.marks[segment.endindex].y " against " apogeeMark.x "," apogeeMark.y
+		slopeSegment := (this.marks[segment.endindex].y - this.marks[segment.startindex].y) / (this.marks[segment.endindex].x - this.marks[segment.startindex].x)
+		interceptSegment := this.marks[segment.startindex].y - (slopeSegment * this.marks[segment.startindex].x)
 		;GuiControl, , % this.decoderoutput, % "Segment is y = " slopeSegment " * x + " interceptSegment
 		slopePerpendicular := -(1 / slopeSegment)
 		interceptPerpendicular := apogeeMark.y - (slopePerpendicular * apogeeMark.x)
@@ -212,9 +332,9 @@ Class PenFormDecoder {
 	}
 	
 	GetArea(segment) {
-		startMark := segment.marks[1]
-		endMark := segment.marks[segment.marks.MaxIndex()]
-		apogeeMark := segment.marks[segment.apogeeIndex]
+		startMark := this.marks[segment.startindex]
+		endMark := this.marks[segment.endindex]
+		apogeeMark := this.marks[segment.apogeeIndex]
 		;GuiControl, , % this.decoderoutput, % "start " startMark.x "," startMark.y " end " endMark.x "," endMark.y " apogee " apogeeMark.x "," apogeeMark.y 
 		crossProduct := (endMark.x - startMark.x) * (endMark.y - apogeeMark.y) - (endMark.y - startMark.y) * (endMark.x - apogeeMark.x)
 		indicator := crossProduct / Abs(crossProduct)
