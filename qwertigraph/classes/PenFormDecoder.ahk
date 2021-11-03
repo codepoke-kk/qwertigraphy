@@ -69,7 +69,7 @@ Class PenFormDecoder {
 		startIndex := 1
 		for index, inflection in inflections {
 			GuiControl, , % this.decoderoutput, % "Looping inflection " inflection.x "," inflection.y " at " inflection.index
-			segment := this.GetSegment("disjoin", startIndex, inflection.index) 
+			segment := this.GetSegment(inflection.type, startIndex, inflection.index) 
 			this.segments.Push(segment)
 			startIndex := inflection.index
 		}
@@ -162,6 +162,24 @@ Class PenFormDecoder {
 			;GuiControl, , % this.decoderoutput, % "Inflection count after " index " is " inflections.MaxIndex()
 		}
 		GuiControl, , % this.decoderoutput, % "Inflection count after " index " is " inflections.MaxIndex()
+		for index, inflection in inflections {
+			trunkMark := this.marks[inflection.index - 6]
+			branchMark := this.marks[inflection.index]
+			growthMark := this.marks[inflection.index + 6]
+			trunkRads := this.GetRads(branchMark.x - trunkMark.x, branchMark.y - trunkMark.y)
+			growthRads := this.GetRads(growthMark.x - branchMark.x, growthMark.y - branchMark.y)
+			rads := growthRads - trunkRads
+			if (abs(rads) < this.eighthpi) {
+				inflection.type := "intersection"
+			} else if (abs(rads) < this.thirdpi) {
+				inflection.type := "disjoin"
+			} else if (abs(rads) < this.twothirdspi) {
+				inflection.type := "recurve"
+			} else {
+				inflection.type := "discontinuity"
+			}
+			GuiControl, , % this.decoderoutput, % "Inflection " index " covers " rads " rads from " trunkRads " to " growthRads
+		}
 		Return inflections
 	}
 	
