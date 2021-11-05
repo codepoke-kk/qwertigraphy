@@ -40,12 +40,70 @@ Class PenFormDecoder {
 		GuiControl, , % this.decoderoutput, % "Loaded decoder"
 	}
 	
+	SmoothPenForm(marks) {
+		smooths := []
+		dxs := []
+		dys := []
+		for index, mark in marks {
+			dxs.Push(mark.dx)
+			dys.Push(mark.dy)
+		}
+		smoothDxs := this.SmoothDeltas(dxs)
+		smoothDys := this.SmoothDeltas(dys)
+		GuiControl, , % this.decoderoutput, % "Smoothed dxs " smoothDxs.MaxIndex() " from " dxs.MaxIndex()
+		lastMark := marks[1]
+		lastMark.x -= 100
+		lastMark.y += 100
+		;lastMark := New WriterMark(firstMark.x, firstMark.x, firstMark.dx, firstMark.dy, firstMark.dt, firstMark.t)
+		for index, mark in marks {
+			smooth := New WriterMark(lastMark.x + smoothDxs[index], lastMark.y + smoothDys[index], smoothDxs[index], smoothDys[index], mark.dt, mark.t)
+			smooths.Push(smooth)
+			lastMark := smooth
+		}
+		
+		Return smooths
+	}
+	SmoothDeltas(deltas) {
+		;GuiControl, , % this.decoderoutput, % "Smoothing " deltas.MaxIndex()
+		smoothDeltas := []
+		for index, delta in deltas {
+			;smoothDeltas.Push(delta * 3)
+			;GuiControl, , % this.decoderoutput, % "Smoothing  " index
+			averageDelta := this.SliceAndAverageArray(deltas, index - 4, index + 4) * .2
+			;GuiControl, , % this.decoderoutput, % "Average delta  " averageDelta
+			inclinedAverage := (averageDelta > delta) ? Ceil(averageDelta) : Floor(averageDelta)
+			carry := delta - inclinedAverage
+			smoothDeltas.Push(inclinedAverage)
+			delta := inclinedAverage
+			if (index < deltas.MaxIndex()) {
+				deltas[index + 1] += carry
+			}
+		}
+		;GuiControl, , % this.decoderoutput, % "Returning " smoothDeltas.MaxIndex()
+		Return smoothDeltas
+	}
+	SliceAndAverageArray(arr, begin, end) {
+		begin := Max(1, begin)
+		end := Min(end, arr.MaxIndex())
+		sum := 0
+		elements := (end - begin) + 1
+		index := 0
+		;GuiControl, , % this.decoderoutput, % "Slice looping " elements " elements" 
+		Loop, % elements {
+			sum += arr[begin + index]
+			index += 1
+			;GuiControl, , % this.decoderoutput, % "Added " arr[begin + index] " to sum and got " sum " at index " index
+		}
+		;GuiControl, , % this.decoderoutput, % "Slice begin " begin ", end " end ", sum " sum ", elements " elements
+		Return (sum / elements)
+	}
+	
 	DecodePenForm(marks) {
 		this.marks := marks
 		this.segments := []
 		GuiControl, , % this.decoderoutput, % "Received " this.marks.MaxIndex() " marks"
 		this.AugmentMarks()
-		this.SegmentPenForm()
+		this.segments := this.SegmentPenForm()
 		Return this.segments 
 	}
 	
@@ -65,32 +123,80 @@ Class PenFormDecoder {
 	}
 	
 	SegmentPenForm() {
-		inflections := this.GetInflections()
+		inflections := this.GetInflections(this.marks)
+		segments := this.GetSegments(this.marks, inflections)
+		Return segments 
+		
+;		startIndex := 1
+;		for index, inflection in inflections {
+;			GuiControl, , % this.decoderoutput, % "Looping inflection " index " is " inflection.x "," inflection.y " at " inflection.index
+;			segment := this.GetSegment(inflection.type, startIndex, inflection.index) 
+;			this.segments.Push(segment)
+;			startIndex := inflection.index
+;		}
+;		GuiControl, , % this.decoderoutput, % "Last non-inflection from " startIndex " to " this.marks.MaxIndex()
+;		segment := this.GetSegment("final", startIndex, this.marks.MaxIndex()) 
+;		this.segments.Push(segment)
+;		Return
+
+
+
+;		startIndex := 1
+;		for endindex, mark in this.marks 
+;		{
+;			segmenttype := this.DetectNewSegment(startindex, endindex)
+;			if (segmenttype) {
+;				segment := this.GetSegment(segmenttype, startIndex, endindex) 
+;				this.segments.Push(segment)
+;				startIndex := endindex + 1
+;				;GuiControl, , % this.decoderoutput, % "New segment " segment.length "@" segment.rads " covering " segment.area
+;			}
+;		}
+;		segment := this.GetSegment("final", startIndex, endindex) 
+;		this.segments.Push(segment)
+;		;GuiControl, , % this.decoderoutput, % "Final segment " segment.length "@" segment.rads " covering " segment.area
+	}
+	
+	GetSegments(marks, inflections) {
+		segments := []
 		startIndex := 1
+		; Loop across all inflections, looking forward to see how this segment plays with the future segments 
 		for index, inflection in inflections {
-			GuiControl, , % this.decoderoutput, % "Looping inflection " inflection.x "," inflection.y " at " inflection.index
-			segment := this.GetSegment(inflection.type, startIndex, inflection.index) 
-			this.segments.Push(segment)
-			startIndex := inflection.index
-		}
-		GuiControl, , % this.decoderoutput, % "Last non-inflection from " startIndex " to " this.marks.MaxIndex()
-		segment := this.GetSegment("final", startIndex, this.marks.MaxIndex()) 
-		this.segments.Push(segment)
-		Return
-		startIndex := 1
-		for endindex, mark in this.marks 
-		{
-			segmenttype := this.DetectNewSegment(startindex, endindex)
-			if (segmenttype) {
-				segment := this.GetSegment(segmenttype, startIndex, endindex) 
-				this.segments.Push(segment)
-				startIndex := endindex + 1
-				;GuiControl, , % this.decoderoutput, % "New segment " segment.length "@" segment.rads " covering " segment.area
+			; types are continuous, curve, turn, reversal
+			; If inflection is a reversal, then this is a segment end in itself
+			if (inflection.type := "reversal") {
+				segment := this.GetSegment("discontinuity", startIndex, inflection.index)
+				startIndex := segment.endindex + 1
+				segments.Push(segment)
+			} else if (index = inflections.MaxIndex()) {
+				segment := this.GetSegment("final", startIndex, marks.MaxIndex())
+				segments.Push(segment)
+			} else {
+				; Else, some next inflection probably indicates where this one ends
+				if (inflection.index + 5 <= inflections[index + 1].index) {
+					; If the next is nearby, then just subsume it into this one
+					; No operation
+				} else if (inflection.sign != inflections[index + 1].sign) {
+					; If the next bends the other way, then segment end is probably between them
+					segment := this.GetSegment("recurve", startIndex, ((inflection.index + inflections[index + 1]) / 2))
+					startIndex := segment.endindex + 1
+					segments.Push(segment)
+				} else if ((inflection.sign = inflections[index + 1].sign)
+					and (inflection.sign = inflections[index + 2].sign)
+					and (inflection.sign = inflections[index + 3].sign)) {
+					; If the next 3 all bend this direction, then look for a loop
+					segment := this.GetSegment("loop", startIndex, (inflections[index + 3].index))
+					startIndex := segment.endindex + 1
+					segments.Push(segment)
+				} else {
+					; If the trunk of this segment is straight, and the bend is significant, this may be a straight segment 
+					segment := this.GetSegment("recurve", startIndex, inflection.index)
+					startIndex := segment.endindex + 1
+					segments.Push(segment)
+				}
 			}
 		}
-		segment := this.GetSegment("final", startIndex, endindex) 
-		this.segments.Push(segment)
-		;GuiControl, , % this.decoderoutput, % "Final segment " segment.length "@" segment.rads " covering " segment.area
+		Return segments 
 	}
 	
 	GetSegment(segmenttype, startindex, endindex) {
@@ -104,28 +210,28 @@ Class PenFormDecoder {
 		Return segment 
 	}
 	
-	GetInflections() {
+	GetInflections(marks) {
 		inflections := []
-		firstMark := this.marks[1]
-		lastMark := this.marks[this.marks.MaxIndex()]
-		if (this.marks.MaxIndex() < 10) {
+		firstMark := marks[1]
+		lastMark := marks[marks.MaxIndex()]
+		if (marks.MaxIndex() < 10) {
 			; Just guess at anything of less than this many marks
-			inflection := {"x": ((lastMark.x - firstMark.x > 0) ? -1 : 1), "y": ((lastMark.y - firstMark.y > 0) ? -1 : 1), "index": this.marks.MaxIndex()}
+			inflection := {"x": ((lastMark.x - firstMark.x > 0) ? -1 : 1), "y": ((lastMark.y - firstMark.y > 0) ? -1 : 1), "index": marks.MaxIndex()}
 			inflections.Push(inflection)
 			Return inflections
 		}
-		proceeding := (this.marks[8].x - firstMark.x) > 0 ? 1 : -1
-		diving := (this.marks[8].y - firstMark.y) > 0 ? 1 : -1
-		for index, mark in this.marks {
-			if (index + 6 <= this.marks.Maxindex()) {
+		proceeding := (marks[8].x - firstMark.x) > 0 ? 1 : -1
+		diving := (marks[8].y - firstMark.y) > 0 ? 1 : -1
+		for index, mark in marks {
+			if (index + 6 <= marks.Maxindex()) {
 				; Don't analyze the last 6 marks
 				;GuiControl, , % this.decoderoutput, % "Analyzing " index " with " proceeding "," diving
 				if (mark.dx * proceeding < 0) {
 					; Direction has flipped, now see whether this is transient or a real turn
-					if ((this.marks[index + 6].x - mark.x) * proceeding <= 0) {
+					if ((marks[index + 6].x - mark.x) * proceeding <= 0) {
 						proceeding := -(proceeding)
 						;GuiControl, , % this.decoderoutput, % "Found x inflection and proceeding is now " proceeding
-						if (inflections.MaxIndex() and (index - inflections[inflections.MaxIndex()].index < 5)) {
+						if (inflections.MaxIndex() and (index - inflections[inflections.MaxIndex()].index < 6)) {
 							; if we already have an inflection within 5 index of this point, then blend these two 
 							inflections[inflections.MaxIndex()].x := proceeding
 							inflections[inflections.MaxIndex()].index := (index - 1 + inflections[inflections.MaxIndex()].index) / 2
@@ -140,10 +246,10 @@ Class PenFormDecoder {
 				}
 				if (mark.dy * proceeding < 0) {
 					; Direction has flipped, now see whether this is transient or a real turn
-					if ((this.marks[index + 6].y - mark.y) * diving <= 0) {
+					if ((marks[index + 6].y - mark.y) * diving <= 0) {
 						diving := -(diving)
 						;GuiControl, , % this.decoderoutput, % "Found y inflection and diving is now " diving 
-						if (inflections.MaxIndex() and (index - inflections[inflections.MaxIndex()].index < 5)) {
+						if (inflections.MaxIndex() and (index - inflections[inflections.MaxIndex()].index < 6)) {
 							;GuiControl, , % this.decoderoutput, % "Blending with inflections[ " inflections.MaxIndex() "]"
 							; if we already have an inflection within 5 index of this point, then blend these two 
 							inflections[inflections.MaxIndex()].y := diving
@@ -163,20 +269,22 @@ Class PenFormDecoder {
 		}
 		GuiControl, , % this.decoderoutput, % "Inflection count after " index " is " inflections.MaxIndex()
 		for index, inflection in inflections {
-			trunkMark := this.marks[inflection.index - 6]
-			branchMark := this.marks[inflection.index]
-			growthMark := this.marks[inflection.index + 6]
+			trunkMark := marks[inflection.index - 6]
+			branchMark := marks[inflection.index]
+			growthMark := marks[inflection.index + 6]
 			trunkRads := this.GetRads(branchMark.x - trunkMark.x, branchMark.y - trunkMark.y)
 			growthRads := this.GetRads(growthMark.x - branchMark.x, growthMark.y - branchMark.y)
 			rads := growthRads - trunkRads
+			inflection.rads := rads
+			inflection.sign := Abs(rads) / rads
 			if (abs(rads) < this.eighthpi) {
-				inflection.type := "intersection"
+				inflection.type := "continuous"
 			} else if (abs(rads) < this.thirdpi) {
-				inflection.type := "disjoin"
+				inflection.type := "curve"
 			} else if (abs(rads) < this.twothirdspi) {
-				inflection.type := "recurve"
+				inflection.type := "turn"
 			} else {
-				inflection.type := "discontinuity"
+				inflection.type := "reversal"
 			}
 			GuiControl, , % this.decoderoutput, % "Inflection " index " covers " rads " rads from " trunkRads " to " growthRads
 		}

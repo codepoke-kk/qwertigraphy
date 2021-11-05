@@ -50,7 +50,6 @@ MouseEvent(MouseID, dx := 0, dy := 0){
 		mark := New WriterMark(mouseX, mouseY, dx, dy, dt, t)
 		writer.EnqueueMark(mark)
 	} else {
-		writer.lastMark := 0
 		writer.waiting := true
 	}
 	; writer.DrawMarks()
@@ -77,7 +76,6 @@ Class MouseWriter {
 		this.state := "waiting"  
 		; 
 		this.baseMark := 0
-		this.lastMark := 0
 		; define the size of the current penform as it's written 
 		this.eastMark := 0
 		this.southMark := 0
@@ -108,17 +106,22 @@ Class MouseWriter {
 
 		;------------------------------------------------  create some brushes and pencils ------------------------------------
 		this.pPen := Gdip_CreatePen("0xFF000000" , 3)  
+		this.smoothPen := Gdip_CreatePen("0xFF0000ff" , 3)  
 		this.BackGroundColor := 0xccffffff
 		this.BackgroundBrush := Gdip_BrushCreateSolid(this.BackgroundColor)    
 		this.baseBrush := Gdip_BrushCreateSolid("0xff9999ff")
 		this.baseBounds := {"minX": 500, "minY": 200, "maxX": 575, "maxY": 275, "width": 75, "height": 75}
 		this.startBounds := {"minX": 580, "minY": 280, "maxX": 585, "maxY": 285, "width": 5, "height": 5}
         this.segmentPens := {}
-		this.segmentPens["final"] := Gdip_CreatePen("0xff33ff33", 2)
-		this.segmentPens["recurve"] := Gdip_CreatePen("0xffff3333", 2)
-		this.segmentPens["discontinuity"] := Gdip_CreatePen("0xff3333ff", 2)
-		this.segmentPens["intersection"] := Gdip_CreatePen("0xff33ffff", 2)
-		this.segmentPens["disjoin"] := Gdip_CreatePen("0xffffff33", 2)
+		this.segmentPens["final"] := Gdip_CreatePen("0xff33ff33", 2) ; green
+		this.segmentPens["recurve"] := Gdip_CreatePen("0xff3333ff", 2) ; blue
+		this.segmentPens["intersection"] := Gdip_CreatePen("0xff33ffff", 2) ; yellow
+		this.segmentPens["discontinuity"] := Gdip_CreatePen("0xffffff33", 2) ; purple
+		this.segmentPens["disjoin"] := Gdip_CreatePen("0xffff3333", 2) ; red
+		this.segmentPens["continuous"] := Gdip_CreatePen("0xff9999ff", 2) ; blue
+		this.segmentPens["curve"] := Gdip_CreatePen("0xff33ff33", 2) ; green
+		this.segmentPens["turn"] := Gdip_CreatePen("0xffffff33", 2) ; yellow
+		this.segmentPens["reversal"] := Gdip_CreatePen("0xffff3333", 2) ; red
 		
 		scanInterval := 50
 		this.scantimer := ObjBindMethod(this, "ScanInputs")
@@ -133,7 +136,6 @@ Class MouseWriter {
 		this.markQueue.enqueue(mark)
 	}
 	
-	
 	ScanInputs() {
 		;GuiControl, , % this.writeroutput, % "Scanning for marks" 
 		this.DequeueMarks()
@@ -145,12 +147,11 @@ Class MouseWriter {
 			return
 		}
 		Loop, % this.markQueue.getSize() {
+			lastMark := this.marks[this.marks.MaxIndex()]
 			mark := this.markQueue.dequeue()
-			; Attempt smoothing
-			;if ((!mark.dt) and ((mark.x = this.marks[this.marks.MaxIndex()].x) and (mark.y = this.marks[this.marks.MaxIndex()].y))) {
-			if (this.lastMark) {
-				mark.x := this.lastMark.x + mark.dx
-				mark.y := this.lastMark.y + mark.dy
+			if (lastMark) {
+				mark.x := lastMark.x + mark.dx
+				mark.y := lastMark.y + mark.dy
 			}
 			this.AddMark(mark)
 		}
@@ -161,13 +162,9 @@ Class MouseWriter {
 	AddMark(mark) { 
 		Gui WriterGuiLog:Default
 		;GuiControl, , % this.writeroutput, % "Adding mark" 
-		if (this.lastMark) {
-			;GuiControl, , % this.writeroutput, % "Wrote new mark" 
-			Gdip_DrawLine(this.G, this.pPen, this.lastMark.x, this.lastMark.y, mark.x, mark.y)
-		} 
+		Gdip_DrawLine(this.G, this.pPen, mark.x - mark.dx, mark.y - mark.dy, mark.x, mark.y)
 		this.DetectStart(mark)
 		this.marks.Push(mark)
-		this.lastMark := mark
 	}
 	
 	DetectStart(mark) {
@@ -219,6 +216,13 @@ Class MouseWriter {
 	}
 	
 	SendPenform() {
+		GuiControl, , % this.writeroutput, % "Getting smooth marks"
+		this.marks := this.decoder.SmoothPenForm(this.marks)
+		for index, mark in this.marks {
+			Gdip_DrawLine(this.G, this.smoothPen, mark.x - mark.dx, mark.y - mark.dy, mark.x, mark.y)
+		}
+		UpdateLayeredWindow(this.writerhwnd, this.hdc, 0, 0, this.Width, this.Height)
+
 		GuiControl, , % this.writeroutput, % "Sending " this.marks.MaxIndex() " penform marks" 
 		segments := this.decoder.DecodePenForm(this.marks)
 		for index, segment in segments 
