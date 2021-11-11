@@ -216,6 +216,7 @@ Class MouseWriter {
 	}
 	
 	SendPenform() {
+		roughMarks := this.marks
 		GuiControl, , % this.writeroutput, % "Getting smooth marks"
 		this.marks := this.decoder.SmoothPenForm(this.marks)
 		for index, mark in this.marks {
@@ -231,6 +232,15 @@ Class MouseWriter {
 			Gdip_DrawEllipse(this.G, this.segmentPens[segment.type], this.marks[segment.endindex].x - 5, this.marks[segment.endindex].y - 5, 10, 10)
 		}
 		
+		FileDelete, "marksr.csv"
+		fileHandle := FileOpen("marksr.csv", "w")
+		header := "x,y,dx,dy,dt,t`n"
+		fileHandle.Write(header)
+		for index, mark in roughMarks 
+		{
+			fileHandle.Write(mark.Serialize() "`n")
+		}
+		filehandle.Close()
 		FileDelete, "marks.csv"
 		fileHandle := FileOpen("marks.csv", "w")
 		header := "x,y,dx,dy,dt,t`n"

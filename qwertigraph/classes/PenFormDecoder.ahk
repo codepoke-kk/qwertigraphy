@@ -48,8 +48,10 @@ Class PenFormDecoder {
 			dxs.Push(mark.dx)
 			dys.Push(mark.dy)
 		}
-		smoothDxs := this.SmoothDeltas(dxs)
-		smoothDys := this.SmoothDeltas(dys)
+		ddxs := this.GetDDeltas(dxs)
+		ddys := this.GetDDeltas(dys)
+		smoothDxs := this.SmoothDeltas(dxs, ddxs)
+		smoothDys := this.SmoothDeltas(dys, ddys)
 		GuiControl, , % this.decoderoutput, % "Smoothed dxs " smoothDxs.MaxIndex() " from " dxs.MaxIndex()
 		lastMark := marks[1]
 		lastMark.x -= 100
@@ -63,24 +65,33 @@ Class PenFormDecoder {
 		
 		Return smooths
 	}
-	SmoothDeltas(deltas) {
+	SmoothDeltas(deltas, dDeltas) {
 		;GuiControl, , % this.decoderoutput, % "Smoothing " deltas.MaxIndex()
 		smoothDeltas := []
 		for index, delta in deltas {
 			;smoothDeltas.Push(delta * 3)
 			;GuiControl, , % this.decoderoutput, % "Smoothing  " index
-			averageDelta := this.SliceAndAverageArray(deltas, index - 4, index + 4) * .2
-			;GuiControl, , % this.decoderoutput, % "Average delta  " averageDelta
-			inclinedAverage := (averageDelta > delta) ? Ceil(averageDelta) : Floor(averageDelta)
-			carry := delta - inclinedAverage
-			smoothDeltas.Push(inclinedAverage)
-			delta := inclinedAverage
+			dDelta := dDeltas[index]
+			averageDDelta := Round(this.SliceAndAverageArray(dDeltas, index - 2, index + 2))
+			carry := dDelta - averageDDelta
+			smoothDeltas.Push(delta - carry)
+			delta := delta - carry
 			if (index < deltas.MaxIndex()) {
 				deltas[index + 1] += carry
 			}
 		}
 		;GuiControl, , % this.decoderoutput, % "Returning " smoothDeltas.MaxIndex()
 		Return smoothDeltas
+	}
+	GetDDeltas(deltas) {
+		;GuiControl, , % this.decoderoutput, % "Smoothing " deltas.MaxIndex()
+		dDeltas := []
+		for index, delta in deltas {
+			prior := (index = 1) ? delta : deltas[index - 1]
+			dDeltas.Push(delta - prior)
+		}
+		;GuiControl, , % this.decoderoutput, % "Returning " smoothDeltas.MaxIndex()
+		Return dDeltas
 	}
 	SliceAndAverageArray(arr, begin, end) {
 		begin := Max(1, begin)
