@@ -9,13 +9,17 @@ setworkingdir, %a_scriptdir%
 
 IfNotExist, dictionaries
     FileCreateDir, dictionaries
+IfNotExist, strokepaths
+    FileCreateDir, strokepaths
 IfNotExist, templates
     FileCreateDir, templates
 FileInstall, dictionaries\anniversary_core.csv, dictionaries\anniversary_core.csv, true
 FileInstall, dictionaries\anniversary_supplement.csv, dictionaries\anniversary_supplement.csv, true
+FileInstall, dictionaries\anniversary_supplement_corrected_d_ending.csv, dictionaries\anniversary_supplement_corrected_d_ending.csv, true
 FileInstall, dictionaries\anniversary_phrases.csv, dictionaries\anniversary_phrases.csv, true
 FileInstall, dictionaries\anniversary_modern.csv, dictionaries\anniversary_modern.csv, true
 FileInstall, dictionaries\anniversary_cmu.csv, dictionaries\anniversary_cmu.csv, true
+FileInstall, strokepaths\gregg.esv, strokepaths\gregg.esv, true
 FileInstall, templates\dictionary_load.template, templates\dictionary_load.template, true
 FileInstall, templates\negations.template, templates\negations.template, true
 FileInstall, templates\personal.template, templates\personal.template, true
