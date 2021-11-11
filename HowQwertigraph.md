@@ -37,7 +37,7 @@ AutoHotkey will not do anything when you install it. After installation, it awai
 If you are familiar with the ideas and uses of GitHub, you can go to the repository and clone, pull, or download at will. If all that was Greek to you, then download a zip file of the repository here. Unzip it anywhere you'd like on your computer. I keep mine in a qwertigraphy folder in "My Documents."
 https://github.com/codepoke-kk/qwertigraphy/archive/master.zip
 
-A low-quality (and very dated at this point) video walk-through here. Replace all references to "trainer" with "chorder" as you watch and listen: [Qwertigraphy Quick Start](https://www.youtube.com/watch?v=Eodl0zzjCcw&feature=youtu.be)
+A low-quality (and very dated at this point) video walk-through here. Replace all references to "trainer" with "chorder" as you watch and listen: [Qwertigraphy Quick Start](https://www.youtube.com/watch?v=aPxECydje50)
 
 #### Step: Start the Qwertigraph
 Go to the /qwertigraph folder, and double click chorder.ahk. You should see the qwertigraph interface appear. Move it around as you wish. 
