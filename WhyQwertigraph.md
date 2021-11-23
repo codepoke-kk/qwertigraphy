@@ -4,7 +4,7 @@
 [How to Qwertigraph?](https://github.com/codepoke-kk/qwertigraphy/blob/master/HowQwertigraph.md) | 
 [Broken Qwertigraph?](https://github.com/codepoke-kk/qwertigraphy/blob/master/FixQwertigraph.md)
 
-Because you are lazy all the best ways. 
+Because you are lazy in all the best ways. 
 
 If you type 500 words per day at 30 Words Per Minute, using the Qwertigraph your fingers will only work as if you had typed 300 and you will finish in 10 minutes instead of 16. In a year you'll have saved a whole day's worth of typing and avoided carpal tunnel syndrome to boot. 
 

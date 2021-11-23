@@ -35,6 +35,7 @@ Gui, MainGUI: Show, x262 y118 w940 h570, % "Qwertigraph"
 #Include classes\DictionaryEntry.ahk
 #Include classes\DictionaryMap.ahk
 #Include classes\MappingEngine_Chorded.ahk
+#Include classes\AuxKeyboardEngine.ahk
 #Include classes\Queue.ahk
 #Include classes\LoggingEvent.ahk
 #Include classes\LogViewport.ahk
@@ -59,7 +60,9 @@ qenv := new QwertigraphyEnvironment()
 
 #Include *i % qenv.personalDataFolder "\" personal_functions.ahk
 map := new DictionaryMap(qenv)
-engine := new MappingEngine_Chorded(map)
+aux := new AuxKeyboardEngine()
+engine := new MappingEngine_Chorded(map, aux)
+aux.engine := engine 
 
 speedViewer := new SpeedViewport()
 speedViewer.addQueue(engine.speedQueue)
@@ -79,6 +82,7 @@ player := new PlayerViewport(engine)
 logViewer := new LogViewport(qenv)
 logViewer.addQueue(qenv.logQueue)
 logViewer.addQueue(map.logQueue)
+logViewer.addQueue(aux.logQueue)
 logViewer.addQueue(engine.logQueue)
 logViewer.addQueue(coach.logQueue)
 logViewer.addQueue(editor.logQueue)
@@ -109,6 +113,12 @@ engine.Start()
     Pause toggle
     engine.Start()
     ; Msgbox, % "Chorder started Engine"
+    Return
+!#o::
+    aux.Stop()
+    Return
+!#l::
+    aux.Start()
     Return
 !#d::
 	Gui MainGUI:Default 

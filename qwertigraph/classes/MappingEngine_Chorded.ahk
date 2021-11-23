@@ -50,9 +50,10 @@ class MappingEngine_Chorded
 	
 	nullQwerd := new DictionaryEntry("null,,,,0,Could add,null_dictionary.csv")
 
-	__New(map)
+	__New(map, aux)
 	{
 		this.map := map
+		this.aux := aux
 		this.keyboard.ChordReleaseWindow := this.map.qenv.properties.ChordWindow
 		this.keyboard.CoachAheadLines := this.map.qenv.properties.CoachAheadLines
 		this.keyboard.CoachAheadTipDuration := this.map.qenv.properties.CoachAheadTipDuration
@@ -168,7 +169,8 @@ class MappingEngine_Chorded
 				sendkey := "{" RegExReplace(key, "Numpad") "}"
 				this.CancelToken(sendkey)
 			case "Numpad0", "Numpad1", "Numpad2", "Numpad3", "Numpad4", "Numpad5", "Numpad6", "Numpad7", "Numpad8", "Numpad9", "Numpad0":
-				sendkey := RegExReplace(key, "Numpad")
+				mappedKey := this.aux.RemapKey(key)
+				sendkey := mappedKey
 				this.AddToToken(sendkey)
 			case "NumpadDot":
 				sendkey := ""
@@ -241,6 +243,8 @@ class MappingEngine_Chorded
 				this.LeaveChord(key)
 			case "0", "1", "2", "3", "4", "5", "6", "7", "8", "9":
 				this.LeaveChord(key)
+			case "Numpad0", "Numpad1", "Numpad2", "Numpad3", "Numpad4", "Numpad5", "Numpad6", "Numpad7", "Numpad8", "Numpad9", "Numpad0":
+				this.aux.LeaveChord(key)
 		}
 	}
 
@@ -282,6 +286,7 @@ class MappingEngine_Chorded
 	CancelToken(key) {
 		this.logEvent(3, "Cancelling token '" this.keyboard.Token "' with '" key " and resyncing modifier state")
 		; Send the empty key through to clear the input buffer
+		this.aux.Flush()
 		this.keyboard.Token := ""
 		this.input_text_buffer := ""
 		this.keyboard.AutoSpaceSent := false
@@ -290,6 +295,7 @@ class MappingEngine_Chorded
 	}
 
 	SendToken(key) {
+		this.aux.Flush()
 		Critical 
 		this.logEvent(3, "Sending critical token '" this.keyboard.Token "' with '" key "': AutoSpaceSent is " this.keyboard.AutoSpaceSent)
 		; Send through a valid qwerd because an end character was typed 
@@ -382,6 +388,7 @@ class MappingEngine_Chorded
 		}
 	}
 	SendChord() {
+		this.aux.Flush()
 		Critical
 		; Send through a possible chord
 		chord := this.map.AlphaOrder(this.keyboard.Token)
