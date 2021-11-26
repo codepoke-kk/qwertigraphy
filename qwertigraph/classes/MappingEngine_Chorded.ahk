@@ -102,7 +102,12 @@ class MappingEngine_Chorded
 	ReceiveKeyDown(InputHook, VK, SC) {
 		local key
 		; ToolTip, % "VK: " VK ", SC: " SC
-		key := GetKeyName(Format("vk{:x}", VK))
+		if (not SC = 284) {
+			key := GetKeyName(Format("vk{:x}", VK)) ; (The VK does not distinguish between Enter and NumpadEnter)
+		} else {
+			key := "NumpadEnter"
+		}
+		this.logEvent(2, "Receiving keydown on " VK " and " SC " translated to " key)
 		Switch key
 		{
 			case "a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m":
@@ -154,7 +159,7 @@ class MappingEngine_Chorded
 					this.CancelToken("{Ctrl-space}")
 					Send, % " "
 				}
-			case "Enter", "Tab", "Insert", "NumPadEnter":
+			case "Enter", "Tab", "Insert":
 				sendKey := ""
 				if (not GetKeyState("Control", "P")) {
 					this.SendToken("{" key "}")
@@ -172,21 +177,10 @@ class MappingEngine_Chorded
 				mappedKey := this.aux.RemapKey(key)
 				sendkey := mappedKey
 				this.AddToToken(sendkey)
-			case "NumpadDot":
-				sendkey := ""
-				this.SendToken(".")
-			case "NumpadDiv":
-				sendkey := ""
-				this.SendToken("/")
-			case "NumpadMult":
-				sendkey := ""
-				this.SendToken("*")
-			case "NumpadSub":
-				sendkey := ""
-				this.SendToken("-")
-			case "NumpadAdd":
-				sendkey := ""
-				this.SendToken("+")
+			case "Numlock", "NumpadDot", "NumpadDiv", "NumpadMult", "NumpadSub", "NumpadAdd", "NumpadEnter":
+				mappedKey := this.aux.RemapKey(key)
+				sendkey := mappedKey
+				this.AddToToken(sendkey)
 			case "Backspace":
 				sendKey := "{" key "}"
 				this.RemoveKeyFromToken()
@@ -196,7 +190,7 @@ class MappingEngine_Chorded
 				sendKey := "{" key "}"
 				;ToolTip, % "Unknown key: " key
 				;SetTimer, ClearToolTipEngine, -1500
-				this.SendToken("{" key "}")
+				;this.SendToken("{" key "}")
 		} 
 		; Send, % sendKey
 		if (sendKey != ""){
@@ -234,7 +228,11 @@ class MappingEngine_Chorded
 
 	ReceiveKeyUp(InputHook, VK, SC) {
 		local key
-		key := GetKeyName(Format("vk{:x}", VK))
+		if (not SC = 284) {
+			key := GetKeyName(Format("vk{:x}", VK)) ; (The VK does not distinguish between Enter and NumpadEnter)
+		} else {
+			key := "NumpadEnter"
+		}
 		Switch key
 		{
 			case "a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m":
@@ -244,6 +242,8 @@ class MappingEngine_Chorded
 			case "0", "1", "2", "3", "4", "5", "6", "7", "8", "9":
 				this.LeaveChord(key)
 			case "Numpad0", "Numpad1", "Numpad2", "Numpad3", "Numpad4", "Numpad5", "Numpad6", "Numpad7", "Numpad8", "Numpad9", "Numpad0":
+				this.aux.LeaveChord(key)
+			case "Numlock", "NumpadDot", "NumpadDiv", "NumpadMult", "NumpadSub", "NumpadAdd", "NumpadEnter":
 				this.aux.LeaveChord(key)
 		}
 	}
@@ -284,7 +284,7 @@ class MappingEngine_Chorded
 	}
 
 	CancelToken(key) {
-		this.logEvent(3, "Cancelling token '" this.keyboard.Token "' with '" key " and resyncing modifier state")
+		this.logEvent(3, "Cancelling token '" this.keyboard.Token "' with '" key "' and resyncing modifier state")
 		; Send the empty key through to clear the input buffer
 		this.aux.Flush()
 		this.keyboard.Token := ""
