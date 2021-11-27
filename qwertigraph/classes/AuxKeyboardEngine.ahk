@@ -88,6 +88,7 @@ class AuxKeyboardEngine
 				rekey := ""
 				this.logEvent(4, "Control key down")
 			} else if (this.keymap[key] = "{Alt}") {
+				Send, {LAlt down}
 				this.alted := "!" 
 				rekey := ""
 				this.logEvent(4, "Alt key down")
@@ -167,6 +168,10 @@ class AuxKeyboardEngine
 					SetNumLockState , % this.numlocked
 				} 
 			}
+			if (this.keymap[key] = "{Alt}") {
+				Send, {LAlt up}
+			}
+				
 		}
 		; Clear the chord buffer for a fresh start 
 		this.Flush()
