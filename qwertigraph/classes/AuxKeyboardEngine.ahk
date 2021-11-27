@@ -146,7 +146,11 @@ class AuxKeyboardEngine
 				; We can only watch for this on the first key up. 
 				; If a modifier key is not the first key up, then this will send the modifier's value if we reset and keep watching 
 				if ((this.keymap[key] = "{LShift}") or (this.keymap[key] = "{RShift}")) {
-					this.engine.SendToken(this.keymap[this.chord])
+					if (not this.keymap[this.keymap[key]] = "{Backspace}") {
+						this.engine.SendToken(this.keymap[this.chord])
+					} else {
+						this.engine.RemoveKeyFromToken()
+					}
 					Send, % this.keymap[this.keymap[key]]
 					this.logEvent(4, "Shift key sent bare")
 				} else if (this.keymap[key] = "{Control}") {

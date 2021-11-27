@@ -1,6 +1,6 @@
 key,character
 {LShift},{Space}
-{RShift},{Del}
+{RShift},{Backspace}
 {Control},{Enter}
 {Alt},{Esc}
 {Reset},{NumLock}
@@ -10,7 +10,9 @@ NumpadDot,{RShift}
 NumpadEnter,{Control}
 NumpadSub,{Alt}
 NumpadAdd,{Tab}
-Numpad7;Numpad8;Numpad9,{Backspace}
+NumpadDiv,(
+NumpadMult,)
+Numpad7;Numpad8;Numpad9,{Del}
 Numpad4;Numpad5;Numpad6,.
 Numpad1;Numpad2;Numpad3,{Comma}
 Numpad7,a
