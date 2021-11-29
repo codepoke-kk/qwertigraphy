@@ -131,13 +131,19 @@ class AuxKeyboardEngine
 				} else if (not RegExMatch(this.keymap[this.chord],"\{")) { 
 					this.logEvent(3, "Chord is not a control character. Adding " this.keymap[this.chord] " to token")
 					if (not this.shifted) {
-						this.engine.keyboard.Token .= this.keymap[this.chord]
+                        this.engine.keyboard.Token .= this.keymap[this.chord]
 					} else {
 						StringUpper, upperKey, % this.keymap[this.chord]
 						this.engine.keyboard.Token .= upperKey
 					} 
 					; Send to screen 
+                    this.logEvent(3, "Sending to screen " this.shifted . this.controlled . this.alted . this.winned . this.keymap[this.chord])
 					Send, % this.shifted . this.controlled . this.alted . this.winned . this.keymap[this.chord]
+                    ; We need to cancel the token if we sent it as a control character 
+                    if (this.controlled or this.alted or this.winned) {
+                        this.logEvent(3, "Chord is modded. Cancelling existing token")
+                        this.engine.CancelToken("{Modded}")
+                    }
 				} else {
 					this.logEvent(3, "Chord is a control character. Sending token with " this.keymap[this.chord])
 					this.engine.SendToken(this.keymap[this.chord])
