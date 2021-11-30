@@ -15,6 +15,7 @@ NumpadMult,)
 Numpad7;Numpad8;Numpad9,{Del}
 Numpad4;Numpad5;Numpad6,.
 Numpad1;Numpad2;Numpad3,{Comma}
+Numpad1;Numpad5;Numpad9,{CapLock}
 Numpad7,a
 Numpad7;Numpad8,i
 Numpad7;Numpad5,'

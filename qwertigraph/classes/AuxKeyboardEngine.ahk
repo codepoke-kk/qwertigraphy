@@ -14,6 +14,7 @@ class AuxKeyboardEngine
 		this.keymapCount := 0
 		this.keysdown := 0
 		this.enabled := true
+		this.caplocked := ""
 		this.shifted := ""
 		this.controlled := ""
 		this.alted := ""
@@ -75,7 +76,10 @@ class AuxKeyboardEngine
 	
 	RemapKey(key) {
 		if (this.enabled) {
+			; Count the number of keys down, though we only care if it's 1 or greater 
 			this.keysdown += 1
+			; We will mark any and every mod key for its mod value 
+			; These, therefore, can never be used in a chord
 			if (this.keymap[key] = "{Reset}") { 
 				rekey := ""
 				this.logEvent(4, "Reset key down")
@@ -97,28 +101,37 @@ class AuxKeyboardEngine
 				rekey := ""
 				this.logEvent(4, "Win key down")
 			} else if (this.keymap[key]) {
+				; Special keys are done. If we did not find anything, and this is a mapped key, then add it to the chord
 				this.logEvent(4, "Matched valid keymap for " key)
 				rekey := ""
 				this.chord .= "" . key
 				this.logEvent(2, "Swallowing " key " into chord as " this.chord)
 			} else {
+				; If we don't care what this is, then strip the "numpad" from it and send it back to be handled as a normal key 
 				rekey := RegExReplace(key, "Numpad")
 				this.logEvent(2, "Forwarding unmatched " key " as " rekey)
 			}
 		} else {
+			; If we are disabled then strip the "numpad" from it and send it back to be handled as a normal key 
 			rekey := RegExReplace(key, "Numpad")
 			this.logEvent(2, "Forwarding unmatched " key " as " rekey)
 		}
 		Return rekey
 	}
 	LeaveChord(key) {
+		; By and large, we send things upon the release of the first key, then reset everything so we ignore subsequent key releases 
 		this.logEvent(4, "Testing leaving chord with " key " against " this.chord)
+		; If this is not critical, this method can be called simultaneously by multiple key releases from the same chord 
 		Critical 
 		chordLength := StrLen(this.chord)
 		if (this.enabled) {
 			if (chordLength and this.keymap[this.chord]) {
+				; We have a real chord. Now, which type 
+				; Apply cap locking here
+				if (this.caplocked) {
+					this.shifted := "+"
+				}
 				this.logEvent(3, "Matched chord " this.chord " as " this.keymap[this.chord])
-				; Send to token
 				if ((StrLen(this.keymap[this.chord]) = 1) and (not RegExMatch(this.keymap[this.chord], "[a-zA-Z0-9]"))) {
 					this.logEvent(3, "Chord is non-text, sending and ending")
 					this.engine.SendToken(this.keymap[this.chord])
@@ -128,6 +141,15 @@ class AuxKeyboardEngine
 					this.engine.RemoveKeyFromToken()
 					; Send to screen 
 					Send, % this.shifted . this.controlled . this.alted . this.winned . this.keymap[this.chord]
+				} else if (this.keymap[this.chord] = "{CapLock}") {
+					this.logEvent(3, "Chord is CapLock. Setting.")
+					if (this.caplocked = "set") {
+						this.caplocked := ""
+					} else if (this.caplocked = "once") {
+						this.caplocked := "set"
+					} else if (this.caplocked = "") {
+						this.caplocked := "once"
+					}
 				} else if (not RegExMatch(this.keymap[this.chord],"\{")) { 
 					this.logEvent(3, "Chord is not a control character. Adding " this.keymap[this.chord] " to token")
 					if (not this.shifted) {
@@ -144,6 +166,9 @@ class AuxKeyboardEngine
                         this.logEvent(3, "Chord is modded. Cancelling existing token")
                         this.engine.CancelToken("{Modded}")
                     }
+					if (this.caplocked = "once") {
+						this.caplocked := ""
+					}
 				} else {
 					this.logEvent(3, "Chord is a control character. Sending token with " this.keymap[this.chord])
 					this.engine.SendToken(this.keymap[this.chord])
