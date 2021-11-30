@@ -479,9 +479,9 @@ class MappingEngine_Chorded
 					final_characters_count := StrLen(inbound.token) + 1
 			}
 			this.logEvent(4, "Completed contraction " inbound.token)
-		} else if (inbound.isCode) {
-			this.logEvent(4, "Token is code and should not expand")
-			final_characters_count := StrLen(inbound.token) + 1
+;		} else if (inbound.isCode) {
+;			this.logEvent(4, "Token is code and should not expand")
+;			final_characters_count := StrLen(inbound.token) + 1
 		} else if (inbound.isAffix) {
 			this.logEvent(4, "Handling join character")
 			; If the last input began with -
