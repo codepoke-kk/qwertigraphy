@@ -62,7 +62,7 @@ LnNumpad7;LnNumpad2,+
 LnNumpad4,4
 LnNumpad4;LnNumpad8,{f4}
 LnNumpad4;LnNumpad5,$
-LnNumpad4;LnNumpad2,0
+LnNumpad4;LnNumpad2,{0}
 LnNumpad1,1
 LnNumpad1;LnNumpad8,{f10}
 LnNumpad1;LnNumpad5,{f1}
@@ -96,7 +96,7 @@ LsNumpad4;LsNumpad5;LsNumpad6,.
 LsNumpad1;LsNumpad2;LsNumpad3,{Comma}
 LsNumpad7,(
 LsNumpad7;LsNumpad8,[
-LsNumpad7;LsNumpad5,{
+LsNumpad7;LsNumpad5,{{}
 LsNumpad7;LsNumpad2,<
 LsNumpad4,'
 LsNumpad4;LsNumpad8,~
@@ -108,7 +108,7 @@ LsNumpad1;LsNumpad5,+
 LsNumpad1;LsNumpad2,_
 LsNumpad8,)
 LsNumpad8;LsNumpad9,]
-LsNumpad8;LsNumpad6,}
+LsNumpad8;LsNumpad6,{}}
 LsNumpad8;LsNumpad3,>
 LsNumpad5,/
 LsNumpad5;LsNumpad9,|
