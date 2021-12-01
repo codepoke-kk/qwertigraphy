@@ -14,6 +14,7 @@ class AuxKeyboardEngine
 		this.keymapCount := 0
 		this.keysdown := 0
 		this.enabled := true
+		this.layer := ""
 		this.caplocked := ""
 		this.shifted := ""
 		this.controlled := ""
@@ -78,6 +79,10 @@ class AuxKeyboardEngine
 		if (this.enabled) {
 			; Count the number of keys down, though we only care if it's 1 or greater 
 			this.keysdown += 1
+			; Implement layers by prepending a layer marker to every one of the 9 digit keys (not the zero key)
+			if (RegExMatch(key, "^Numpad[1-9]$")) {
+				key := this.layer . key
+			}
 			; We will mark any and every mod key for its mod value 
 			; These, therefore, can never be used in a chord
 			if (this.keymap[key] = "{Reset}") { 
@@ -149,6 +154,20 @@ class AuxKeyboardEngine
 						this.caplocked := "set"
 					} else if (this.caplocked = "") {
 						this.caplocked := "once"
+					}
+				} else if (this.keymap[this.chord] = "{Layer_Numbers}") {
+					this.logEvent(3, "Chord is Numbers Layer. Setting.")
+					if (this.layer = "Ln") {
+						this.layer := ""
+					} else {
+						this.layer := "Ln"
+					}
+				} else if (this.keymap[this.chord] = "{Layer_Symbols}") {
+					this.logEvent(3, "Chord is Symbols Layer. Setting.")
+					if (this.layer = "Ls") {
+						this.layer := ""
+					} else {
+						this.layer := "Ls"
 					}
 				} else if (not RegExMatch(this.keymap[this.chord],"\{")) { 
 					this.logEvent(3, "Chord is not a control character. Adding " this.keymap[this.chord] " to token")
