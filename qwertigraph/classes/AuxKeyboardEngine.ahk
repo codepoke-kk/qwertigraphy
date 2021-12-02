@@ -13,8 +13,6 @@ class AuxKeyboardEngine
 		this.keymap := {}
 		this.keymapCount := 0
 		this.keysdown := 0
-        this.lastkeypresstime := A_TickCount
-        this.lockholddelay := 1000
 		this.enabled := true
 		this.layer := ""
         this.layerlocked := ""
@@ -82,7 +80,6 @@ class AuxKeyboardEngine
 		if (this.enabled) {
 			; Count the number of keys down, though we only care if it's 1 or greater 
 			this.keysdown += 1
-            this.lastkeypresstime := A_TickCount
 			; Implement layers by prepending a layer marker to every one of the 9 digit keys (not the zero key)
 			if (RegExMatch(key, "^Numpad[1-9]$")) {
 				key := this.layer . key
@@ -113,7 +110,7 @@ class AuxKeyboardEngine
 				; Special keys are done. If we did not find anything, and this is a mapped key, then add it to the chord
 				this.logEvent(4, "Matched valid keymap for " key)
 				rekey := ""
-				this.chord .= "" . key
+                this.chord .= "" . key
 				this.logEvent(2, "Swallowing " key " into chord as " this.chord)
 			} else {
 				; If we don't care what this is, then strip the "numpad" from it and send it back to be handled as a normal key 
@@ -145,6 +142,14 @@ class AuxKeyboardEngine
 					this.logEvent(3, "Chord is non-text, sending and ending")
 					this.engine.SendToken(this.keymap[this.chord])
 					Send, % this.keymap[this.chord]
+					if (this.caplocked = "once") {
+						this.caplocked := ""
+					}
+					if (this.layerlocked = "once") {
+						this.layerlocked := ""
+						this.layer := ""
+                        this.logEvent(4, "After cancel layer is " this.layer " and lock state is " this.layerlocked)
+					}
 				} else if (this.keymap[this.chord] = "{Backspace}") {
 					this.logEvent(3, "Chord is backspace. Shortening token by 1")
 					this.engine.RemoveKeyFromToken()
@@ -162,33 +167,31 @@ class AuxKeyboardEngine
 				} else if (this.keymap[this.chord] = "{Layer_Numbers}") {
 					this.logEvent(3, "Chord is Numbers Layer. Setting.")
 					if (this.layer = "Ln") {
-						this.layer := ""
-                        this.layerlocked := ""
+                        if (this.layerlocked = "once") {
+                            this.layerlocked := "set"
+                        } else {
+                            this.layer := ""
+                            this.layerlocked := ""
+                        }
 					} else {
 						this.layer := "Ln"
-                        holdticks := A_TickCount - this.lastkeypresstime
-                        if (holdticks < this.lockholddelay) {
-                            this.layerlocked := "once"
-                        } else {
-                            this.layerlocked := "set"
-                        }
-                        this.logEvent(4, "Layer lock hold time was " holdticks " so lock state is " this.layerlocked)
+                        this.layerlocked := "once"
 					}
+                    this.logEvent(4, "Layer is " this.layer " and lock state is " this.layerlocked)
 				} else if (this.keymap[this.chord] = "{Layer_Symbols}") {
 					this.logEvent(3, "Chord is Symbols Layer. Setting.")
 					if (this.layer = "Ls") {
-						this.layer := ""
-                        this.layerlocked := ""
+                        if (this.layerlocked = "once") {
+                            this.layerlocked := "set"
+                        } else {
+                            this.layer := ""
+                            this.layerlocked := ""
+                        }
 					} else {
 						this.layer := "Ls"
-                        holdticks := A_TickCount - this.lastkeypresstime
-                        if (holdticks < this.lockholddelay) {
-                            this.layerlocked := "once"
-                        } else {
-                            this.layerlocked := "set"
-                        }
-                        this.logEvent(4, "Layer lock hold time was " holdticks " so lock state is " this.layerlocked)
+                        this.layerlocked := "once"
 					}
+                    this.logEvent(4, "Layer is " this.layer " and lock state is " this.layerlocked)
 				} else if (not RegExMatch(this.keymap[this.chord],"\{")) { 
 					this.logEvent(3, "Chord is not a control character. Adding " this.keymap[this.chord] " to token")
 					if (not this.shifted) {
@@ -211,6 +214,7 @@ class AuxKeyboardEngine
 					if (this.layerlocked = "once") {
 						this.layerlocked := ""
 						this.layer := ""
+                        this.logEvent(4, "After cancel layer is " this.layer " and lock state is " this.layerlocked)
 					}
 				} else {
 					this.logEvent(3, "Chord is a control character. Sending token with " this.keymap[this.chord])

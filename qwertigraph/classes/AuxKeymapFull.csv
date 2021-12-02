@@ -33,7 +33,7 @@ Numpad8;Numpad9,m
 Numpad8;Numpad6,"
 Numpad8;Numpad3,$
 Numpad5,o
-Numpad5;Numpad9,!
+Numpad5;Numpad9,{!}
 Numpad5;Numpad6,u
 Numpad5;Numpad3,w
 Numpad2,t
@@ -58,7 +58,7 @@ LnNumpad1;LnNumpad2;LnNumpad3,{Comma}
 LnNumpad7,7
 LnNumpad7;LnNumpad8,&
 LnNumpad7;LnNumpad5,{f7}
-LnNumpad7;LnNumpad2,+
+LnNumpad7;LnNumpad2,{+}
 LnNumpad4,4
 LnNumpad4;LnNumpad8,{f4}
 LnNumpad4;LnNumpad5,$
@@ -66,7 +66,7 @@ LnNumpad4;LnNumpad2,{0}
 LnNumpad1,1
 LnNumpad1;LnNumpad8,{f10}
 LnNumpad1;LnNumpad5,{f1}
-LnNumpad1;LnNumpad2,!
+LnNumpad1;LnNumpad2,{!}
 LnNumpad8,8
 LnNumpad8;LnNumpad9,*
 LnNumpad8;LnNumpad6,{f8}
@@ -85,12 +85,12 @@ LnNumpad9;LnNumpad4,{f9}
 LnNumpad9;LnNumpad1,=
 LnNumpad6,6
 LnNumpad6;LnNumpad7,{f6}
-LnNumpad6;LnNumpad4,^
+LnNumpad6;LnNumpad4,{^}
 LnNumpad6;LnNumpad1,/
 LnNumpad3,3
 LnNumpad3;LnNumpad7,{f12}
 LnNumpad3;LnNumpad4,{f3}
-LnNumpad3;LnNumpad1,#
+LnNumpad3;LnNumpad1,{#}
 LsNumpad7;LsNumpad8;LsNumpad9,{Del}
 LsNumpad4;LsNumpad5;LsNumpad6,.
 LsNumpad1;LsNumpad2;LsNumpad3,{Comma}
