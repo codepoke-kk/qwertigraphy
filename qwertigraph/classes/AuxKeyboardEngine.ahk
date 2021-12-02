@@ -142,19 +142,13 @@ class AuxKeyboardEngine
 					this.logEvent(3, "Chord is non-text, sending and ending")
 					this.engine.SendToken(this.keymap[this.chord])
 					Send, % this.keymap[this.chord]
-					if (this.caplocked = "once") {
-						this.caplocked := ""
-					}
-					if (this.layerlocked = "once") {
-						this.layerlocked := ""
-						this.layer := ""
-                        this.logEvent(4, "After cancel layer is " this.layer " and lock state is " this.layerlocked)
-					}
+					this.ToggleLayerLock()
 				} else if (this.keymap[this.chord] = "{Backspace}") {
 					this.logEvent(3, "Chord is backspace. Shortening token by 1")
 					this.engine.RemoveKeyFromToken()
 					; Send to screen 
 					Send, % this.shifted . this.controlled . this.alted . this.winned . this.keymap[this.chord]
+					this.ToggleLayerLock()
 				} else if (this.keymap[this.chord] = "{CapLock}") {
 					this.logEvent(3, "Chord is CapLock. Setting.")
 					if (this.caplocked = "set") {
@@ -208,19 +202,14 @@ class AuxKeyboardEngine
                         this.logEvent(3, "Chord is modded. Cancelling existing token")
                         this.engine.CancelToken("{Modded}")
                     }
-					if (this.caplocked = "once") {
-						this.caplocked := ""
-					}
-					if (this.layerlocked = "once") {
-						this.layerlocked := ""
-						this.layer := ""
-                        this.logEvent(4, "After cancel layer is " this.layer " and lock state is " this.layerlocked)
-					}
+					this.ToggleLayerLock()
 				} else {
-					this.logEvent(3, "Chord is a control character. Sending token with " this.keymap[this.chord])
-					this.engine.SendToken(this.keymap[this.chord])
+					this.logEvent(3, "Chord is a control character. Sending token with " this.shifted . this.controlled . this.alted . this.winned . this.keymap[this.chord])
+					this.engine.SendToken(this.shifted . this.controlled . this.alted . this.winned . this.keymap[this.chord])
+					this.ToggleLayerLock()
 				}
 			} else if (this.keysdown) {
+                ; If no chord or no match
 				; We can only watch for this on the first key up. 
 				; If a modifier key is not the first key up, then this will send the modifier's value if we reset and keep watching 
 				if ((this.keymap[key] = "{LShift}") or (this.keymap[key] = "{RShift}")) {
@@ -259,6 +248,17 @@ class AuxKeyboardEngine
 		this.Flush()
 		Critical Off
 	}
+    
+    ToggleLayerLock() {
+        if (this.caplocked = "once") {
+            this.caplocked := ""
+        }
+        if (this.layerlocked = "once") {
+            this.layerlocked := ""
+            this.layer := ""
+            this.logEvent(4, "After cancel layer is " this.layer " and lock state is " this.layerlocked)
+        }
+    }
 	
 	LogEvent(verbosity, message) 
 	{

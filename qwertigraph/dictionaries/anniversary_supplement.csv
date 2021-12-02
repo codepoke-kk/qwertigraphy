@@ -287,7 +287,12 @@ Commanders,k-m-a-n-\-r-s,Kmanrs,,akmnrs,822
 Commands,k-m-a-n-s,Kmans,,akmns,822
 Resulting,r-s2-u-\-h,Rsug,,grsu,837
 Resultant,r-s2-u-nt,Rsunt,,nrstu,837
-Dating,td-\-h,Ddg,,duxg,884
+Dating,td-\-h,Dtg,,dgt,884
+Update,u-p-td,Updt,,dptu,884
+Updated,u-p-td-t,Updtd,,dptu,884
+Updating,u-p-td-\-h,Updtg,,dgptu,884
+Updates,u-p-td-s,Updts,,dpstu,884
+Updated,u-p-td-t,Updtt,,dptu,884
 Originally,o-r-e-j-e,Oreje,,ejor,885
 Originality,o-r-e-j-\-l,Orejl,,ejlor,885
 Origin,o-r-e-j-n,Orejn,,ejnor,885
@@ -608,6 +613,10 @@ Anxiety,a-q-s-i,Aqsi,,aiqs,2224
 Anxieties,a-q-s-i-s,Aqsis,,aiqs,2225
 Changes,ch-s,Cs,,cos,2261
 Images,e-m-j-s,Emjs,,ejms,2281
+Resolute,r-s2-o-l-u-t,Rsolut,,lorstu,2285
+Resolutely,r-s2-o-l-u-t-e,Rsolute,,elorstu,2285
+Resolution,r-s2-o-l-s2h,Rsolz,,lorsz,2285
+Resolutions,r-s2-o-l-s2h-s,Rsolzs,,lorsz,2285
 Referenced,r-f-d,Rfd,,dfr,2303
 Referencing,r-f-\-h,Rfg,,fgr,2303
 References,r-f-s,Rfs,,frvs,2303
@@ -1014,6 +1023,9 @@ Directories,d-r-k-/-r-e-s,Drkres,,dekrs,5660
 Directors,d-r-k-/-r-s,Drkrs,,dkrs,5660
 Redirector,r-e-d-r-k-/-r,Redrkr,,dekr,5660
 Redirectors,r-e-d-r-k-/-r-s,Redrkrs,,dekrs,5660
+Resolve,r-s-o-l-v,Rsolv,,lorsv,5667
+Resolving,r-s-o-l-v-\-h,Rsolvg,,glorsv,5667
+Resolves,r-s-o-l-v-s,Rsolvs,,lorsv,5667
 Networked,n-e-t-r-k-d,Netrkd,,deknrt,5683
 Networking,n-e-t-r-k-\-h,Netrkg,,egknrt,5683
 Networks,n-e-t-r-k-s,Netrks,,eknrst,5683
@@ -1685,6 +1697,8 @@ Browsing,br-a-u-s-\-h,Brwsg,,bgrsw,39293
 Brows,br-a-u-s-o,Brwso,o,borsw,39293
 Browser,br-a-u-s-r,Brwsr,,brsw,39293
 Browsers,br-a-u-s-r-s,Brwsrs,,brsw,39293
+Installer,n-s2-t-o-l-r,Nstolr,,lnorst,39681
+Installers,n-s2-t-o-l-r-s,Nstolrs,,lnorst,39681
 Installs,n-s2-t-o-l-s,Nstols,,lnost,39681
 Forswear,f-s2-u-a-r,Fsuar,,afrsu,39785
 Forswearing,f-s2-u-a-r-\-h,Fsuarg,,afgrsu,39785
