@@ -170,14 +170,15 @@ class MappingEngine_Chorded
 			case "Home", "End", "PgUp", "PgDn", "Left", "Up", "Right", "Down", "Delete":
 				sendKey := "{" key "}"
 				this.CancelToken(sendkey)
-			case "NumpadHome", "NumpadEnd", "NumpadPgUp", "NumpadPgDn", "NumpadLeft", "NumpadUp", "NumpadRight", "NumpadDown", "NumpadDel":
-				sendkey := "{" RegExReplace(key, "Numpad") "}"
-				this.CancelToken(sendkey)
 			case "Numpad0", "Numpad1", "Numpad2", "Numpad3", "Numpad4", "Numpad5", "Numpad6", "Numpad7", "Numpad8", "Numpad9", "Numpad0":
 				mappedKey := this.aux.RemapKey(key)
 				sendkey := mappedKey
 				this.AddToToken(sendkey)
 			case "Numlock", "NumpadDot", "NumpadDiv", "NumpadMult", "NumpadSub", "NumpadAdd", "NumpadEnter":
+				mappedKey := this.aux.RemapKey(key)
+				sendkey := mappedKey
+				this.AddToToken(sendkey)
+			case "NumpadHome", "NumpadUp", "NumpadPgUp", "NumpadRight", "NumpadPgDn", "NumpadDown", "NumpadEnd", "NumpadLeft", "NumpadClear", "NumpadIns", "NumpadDel":
 				mappedKey := this.aux.RemapKey(key)
 				sendkey := mappedKey
 				this.AddToToken(sendkey)
@@ -244,6 +245,8 @@ class MappingEngine_Chorded
 			case "Numpad0", "Numpad1", "Numpad2", "Numpad3", "Numpad4", "Numpad5", "Numpad6", "Numpad7", "Numpad8", "Numpad9", "Numpad0":
 				this.aux.LeaveChord(key)
 			case "Numlock", "NumpadDot", "NumpadDiv", "NumpadMult", "NumpadSub", "NumpadAdd", "NumpadEnter":
+				this.aux.LeaveChord(key)
+			case "NumpadHome", "NumpadUp", "NumpadPgUp", "NumpadRight", "NumpadPgDn", "NumpadDown", "NumpadEnd", "NumpadLeft", "NumpadClear", "NumpadIns", "NumpadDel":
 				this.aux.LeaveChord(key)
 		}
 	}

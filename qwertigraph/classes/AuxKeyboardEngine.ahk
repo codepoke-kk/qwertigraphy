@@ -78,6 +78,7 @@ class AuxKeyboardEngine
 	
 	RemapKey(key) {
 		if (this.enabled) {
+            this.logEvent(4, "Working " key)
 			; Count the number of keys down, though we only care if it's 1 or greater 
 			this.keysdown += 1
 			; Implement layers by prepending a layer marker to every one of the 9 digit keys (not the zero key)
@@ -115,12 +116,12 @@ class AuxKeyboardEngine
 			} else {
 				; If we don't care what this is, then strip the "numpad" from it and send it back to be handled as a normal key 
 				rekey := RegExReplace(key, "Numpad")
-				this.logEvent(2, "Forwarding unmatched " key " as " rekey)
+				this.logEvent(2, "Forwarding enabled but unmatched " key " as " rekey)
 			}
 		} else {
 			; If we are disabled then strip the "numpad" from it and send it back to be handled as a normal key 
 			rekey := RegExReplace(key, "Numpad")
-			this.logEvent(2, "Forwarding unmatched " key " as " rekey)
+			this.logEvent(2, "Forwarding disabled and unmatched " key " as " rekey)
 		}
 		Return rekey
 	}
@@ -211,27 +212,64 @@ class AuxKeyboardEngine
 			} else if (this.keysdown) {
                 ; If no chord or no match
 				; We can only watch for this on the first key up. 
-				; If a modifier key is not the first key up, then this will send the modifier's value if we reset and keep watching 
-				if ((this.keymap[key] = "{LShift}") or (this.keymap[key] = "{RShift}")) {
+				; If a modifier key is not the first key up, then this will send the modifier's value if we reset and keep watching
+                if (this.keysdown > 1) {
+                    ; We have multiple control keys down, which means we are trying to modify one with the other 
+                    this.logEvent(4, "Multiple bare control keys down")
+                    ;;;;;; I use redirection like this.keymap["_Alt"] so the keys can be remapped 
+                    if ((key = this.keymap["_Alt"] and GetKeyState(this.keymap["_Control"], "P") and GetKeyState(this.keymap["_LShift"], "P")) 
+                            or (key = this.keymap["_Control"] and GetKeyState(this.keymap["_Alt"], "P") and GetKeyState(this.keymap["_LShift"], "P"))
+                            or (key = this.keymap["_LShift"] and GetKeyState(this.keymap["_Control"], "P") and GetKeyState(this.keymap["_Alt"], "P"))){
+                        ; control-shift-escape
+                        this.engine.SendToken("^+{Esc}")
+                        Send, % "^+{Esc}"
+                        this.logEvent(4, "Space, Control, and Esc keys sent bare as ^+{Esc}")
+                    } else if ((key = this.keymap["_Alt"] and GetKeyState(this.keymap["_LShift"], "P")) or (key = this.keymap["_LShift"] and GetKeyState(this.keymap["_Alt"], "P"))){
+                        ; alt-space
+                        this.engine.SendToken("!{Space}")
+                        Send, % "!{Space}"
+                        this.logEvent(4, "Space and Control key sent bare as !{Space}")
+                    } else if ((key = this.keymap["_LShift"] and GetKeyState(this.keymap["_Control"], "P")) or (key = this.keymap["_Control"] and GetKeyState(this.keymap["_LShift"], "P"))) {
+                        ; control-enter
+                        ; Windows default here is to pop up a choice dialog, but I'm using this to cancel tokens
+                        this.engine.CancelToken("^{Enter}")
+                        ; Send, % "{LControl down}" 
+                        Send, % "{Enter}"
+                        ; Send, % "{LControl up}"
+                        this.logEvent(4, "LSpace, and Control key sent bare as ^{Enter}")
+                    } else if ((key = this.keymap["_RShift"] and GetKeyState(this.keymap["_Control"], "P")) or (key = this.keymap["_Control"] and GetKeyState(this.keymap["_RShift"], "P"))) {
+                        ; shift-enter
+                        ; Send, % "+{Enter}"
+                        this.engine.SendToken("+{Enter}")
+                        this.logEvent(4, "RSpace and Enter key sent bare as +{Enter}")
+                    } else if ((key = this.keymap["_Alt"] and GetKeyState(this.keymap["_Control"], "P")) or (key = this.keymap["_Control"] and GetKeyState(this.keymap["_Alt"], "P"))) {
+                        ; alt-enter
+                        this.engine.SendToken("!{Enter}")
+                        Send, % "!{Enter}"
+                        this.logEvent(4, "Esc and Enter key sent bare as !{Enter}")
+                    } else {
+                        this.logEvent(4, "No code for this entry")
+                    }
+				} else if ((this.keymap[key] = "{LShift}") or (this.keymap[key] = "{RShift}")) {
 					if (not this.keymap[this.keymap[key]] = "{Backspace}") {
-						this.engine.SendToken(this.keymap[this.chord])
+						this.engine.SendToken(this.controlled . this.alted . this.winned .this.keymap[this.chord])
 					} else {
 						this.engine.RemoveKeyFromToken()
 					}
-					Send, % this.keymap[this.keymap[key]]
-					this.logEvent(4, "Shift key sent bare")
+					Send, % this.controlled . this.alted . this.winned . this.keymap[this.keymap[key]]
+					this.logEvent(4, "Shift key sent bare as " this.controlled . this.alted . this.winned . this.keymap[this.keymap[key]])
 				} else if (this.keymap[key] = "{Control}") {
-					this.engine.SendToken(this.keymap[this.chord])
-					Send, % this.keymap[this.keymap[key]]
-					this.logEvent(4, "Control key sent bare")
+					this.engine.SendToken(this.shifted . this.alted . this.winned . this.keymap[this.chord])
+					Send, % this.shifted . this.alted . this.winned . this.keymap[this.keymap[key]]
+					this.logEvent(4, "Control key sent bare as " this.shifted . this.alted . this.winned . this.keymap[this.keymap[key]])
 				} else if (this.keymap[key] = "{Alt}") {
-					this.engine.SendToken(this.keymap[this.chord])
-					Send, % this.keymap[this.keymap[key]]
-					this.logEvent(4, "Alt key sent bare")
+					this.engine.SendToken(this.shifted . this.controlled . this.winned . this.keymap[this.chord])
+					Send, % this.shifted . this.controlled . this.winned . this.keymap[this.keymap[key]]
+					this.logEvent(4, "Alt key sent bare as " this.shifted . this.controlled . this.winned . this.keymap[this.keymap[key]])
 				} else if (this.keymap[key] = "{Win}") {
-					this.engine.SendToken(this.keymap[this.chord])
-					Send, % this.keymap[this.keymap[key]]
-					this.logEvent(4, "Win key sent bare")
+					this.engine.SendToken(this.shifted . this.controlled . this.alted . this.keymap[this.chord])
+					Send, % this.shifted . this.controlled . this.alted . this.keymap[this.keymap[key]]
+					this.logEvent(4, "Win key sent bare as " this.shifted . this.controlled . this.alted . this.keymap[this.keymap[key]])
 				} else if (this.keymap[key] = "{Reset}") {
 					this.logEvent(3, "Chord is Reset. Cancelling token and sending " this.keymap[this.keymap[key]])
 					this.engine.CancelToken(this.keymap[key])

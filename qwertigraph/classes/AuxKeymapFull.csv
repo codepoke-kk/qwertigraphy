@@ -1,4 +1,11 @@
 key,character
+_LShift,Numpad0
+_RShift,NumpadDot
+_LShiftNav,NumpadIns
+_RShiftNav,NumpadDel
+_Control,NumpadEnter
+_Alt,NumpadSub
+_Win,.
 {LShift},{Space}
 {RShift},{Backspace}
 {Control},{Enter}
@@ -130,3 +137,14 @@ LsNumpad3,{Volume_Mute}
 LsNumpad3;LsNumpad7,.
 LsNumpad3;LsNumpad4,.
 LsNumpad3;LsNumpad1,.
+NumpadHome,{Home}
+NumpadUp,{Up}
+NumpadPgUp,{PgUp}
+NumpadRight,{Right}
+NumpadPgDn,{PgDn}
+NumpadDown,{Down}
+NumpadEnd,{End}
+NumpadLeft,{Left}
+NumpadClear,{Clear}
+NumpadIns,{Ins}
+NumpadDel,{Del}
