@@ -1,8 +1,5 @@
 ; At this point, ctrl-click works, which is nice. 
-; I should go back and make shift-click work, but Windows cancels numlock while shift is down
-; Fixing that will require very careful handling of the shift key being down and lifted for input. Maybe not possible 
-; But ctrl-click was mandatory :-)
-
+; Current bug: Ctrl-Click also send "Enter" upon release
 
 class AuxKeyboardEngine
 {
@@ -28,6 +25,19 @@ class AuxKeyboardEngine
 		this.winned := "" 
 		this.numlocked := true 
 		SetNumLockState , % this.numlocked
+        
+        this.NumpadShiftedRemap := {}
+        this.NumpadShiftedRemap["NumpadHome"] := "Numpad7"
+        this.NumpadShiftedRemap["NumpadUp"] := "Numpad8"
+        this.NumpadShiftedRemap["NumpadPgUp"] := "Numpad9"
+        this.NumpadShiftedRemap["NumpadRight"] := "Numpad6"
+        this.NumpadShiftedRemap["NumpadPgDn"] := "Numpad3"
+        this.NumpadShiftedRemap["NumpadDown"] := "Numpad2"
+        this.NumpadShiftedRemap["NumpadEnd"] := "Numpad1"
+        this.NumpadShiftedRemap["NumpadLeft"] := "Numpad4"
+        this.NumpadShiftedRemap["NumpadClear"] := "Numpad5"
+        this.NumpadShiftedRemap["NumpadIns"] := "Numpad0"
+        this.NumpadShiftedRemap["NumpadDel"] := "NumpadDot"
 	
 		Loop,Read, % this.auxmap  
 		{
@@ -83,7 +93,14 @@ class AuxKeyboardEngine
 	
 	RemapKey(key) {
 		if (this.enabled) {
-            this.logEvent(4, "Working " key)
+            this.logEvent(4, "Remapping " key)
+            ; I have to override the desire of Windows to cancel numlock when shift is down 
+            if (this.numlocked and this.NumpadShiftedRemap[key] ) {
+                key := this.NumpadShiftedRemap[key]
+                this.logEvent(4, "Double remapped key to " key " to override shift-numlock issue")
+            } else {
+                ; this.logEvent(4, "No double remap of " key " needed because state " GetKeyState("LShift") ", numlock " this.numlocked " and double remap of " this.NumpadShiftedRemap[key])
+            }
 			; Count the number of keys down, though we only care if it's 1 or greater 
 			this.keysdown += 1
 			; Implement layers by prepending a layer marker to every one of the 9 digit keys (not the zero key)
@@ -97,8 +114,7 @@ class AuxKeyboardEngine
 				this.logEvent(4, "Reset key down")
 			} else if ((this.keymap[key] = "{LShift}") or (this.keymap[key] = "{RShift}")) {
 				this.shifted := "+" 
-                ; I have to manually handle shift, because shift+numpad kills the numpad in Windows 
-                ; Send, {LShift down}
+                Send, {LShift down}
 				rekey := ""
 				this.logEvent(4, "Shift key down")
 			} else if (this.keymap[key] = "{Control}") {
@@ -141,8 +157,12 @@ class AuxKeyboardEngine
 		Critical 
 		chordLength := StrLen(this.chord)
 		if (this.enabled) {
+            if (this.numlocked and this.NumpadShiftedRemap[key] ) {
+                key := this.NumpadShiftedRemap[key]
+                this.logEvent(4, "Remapped key to " key " to override shift-numlock issue")
+            }
 			if (chordLength and this.keymap[this.chord]) {
-				; We have a real chord. Now, which type 
+				; We have a real chord. Now, which type?
 				; Apply cap locking here
 				if (this.caplocked) {
 					this.shifted := "+"
@@ -151,13 +171,13 @@ class AuxKeyboardEngine
 				if ((StrLen(this.keymap[this.chord]) = 1) and (not RegExMatch(this.keymap[this.chord], "[a-zA-Z0-9]"))) {
 					this.logEvent(3, "Chord is non-text, sending and ending")
 					this.engine.SendToken(this.keymap[this.chord])
-					Send, % this.keymap[this.chord]
+					Send, % this.shifted . this.keymap[this.chord]
 					this.ToggleLayerLock()
 				} else if (this.keymap[this.chord] = "{Backspace}") {
 					this.logEvent(3, "Chord is backspace. Shortening token by 1")
 					this.engine.RemoveKeyFromToken()
 					; Send to screen 
-					Send, % this.shifted . this.controlled . this.alted . this.winned . this.keymap[this.chord]
+					Send, % this.shifted this.keymap[this.chord]
 					this.ToggleLayerLock()
 				} else if (this.keymap[this.chord] = "{CapLock}") {
 					this.logEvent(3, "Chord is CapLock. Setting.")
@@ -205,7 +225,7 @@ class AuxKeyboardEngine
 						this.engine.keyboard.Token .= upperKey
 					} 
 					; Send to screen 
-                    this.logEvent(3, "Sending to screen " this.keymap[this.chord]) " with " this.shifted . this.controlled . this.alted . this.winned
+                    this.logEvent(3, "Sending to screen " this.keymap[this.chord]) " with " this.shifted 
 					Send, % this.shifted . this.keymap[this.chord]
                     ; We need to cancel the token if we sent it as a control character 
                     if (this.controlled or this.alted or this.winned) {
@@ -230,9 +250,9 @@ class AuxKeyboardEngine
                             or (key = this.keymap["_Control"] and GetKeyState(this.keymap["_Alt"], "P") and GetKeyState(this.keymap["_LShift"], "P"))
                             or (key = this.keymap["_LShift"] and GetKeyState(this.keymap["_Control"], "P") and GetKeyState(this.keymap["_Alt"], "P"))){
                         ; control-shift-escape
-                        this.engine.SendToken("+{Esc}")
-                        Send, % "+{Esc}"
-                        this.logEvent(4, "Space, Control, and Esc keys sent bare as +{Esc}")
+                        this.engine.SendToken("{Esc}")
+                        Send, % "{Esc}"
+                        this.logEvent(4, "Space, Control, and Esc keys sent bare as {Esc}")
                     } else if ((key = this.keymap["_Alt"] and GetKeyState(this.keymap["_LShift"], "P")) or (key = this.keymap["_LShift"] and GetKeyState(this.keymap["_Alt"], "P"))){
                         ; alt-space
                         this.engine.SendToken("{Space}")
@@ -248,9 +268,9 @@ class AuxKeyboardEngine
                         this.logEvent(4, "LSpace, and Control key sent bare as {Enter}")
                     } else if ((key = this.keymap["_RShift"] and GetKeyState(this.keymap["_Control"], "P")) or (key = this.keymap["_Control"] and GetKeyState(this.keymap["_RShift"], "P"))) {
                         ; shift-enter
-                        ; Send, % "+{Enter}"
-                        this.engine.SendToken("+{Enter}")
-                        this.logEvent(4, "RSpace and Enter key sent bare as +{Enter}")
+                        ; Send, % "{Enter}"
+                        this.engine.SendToken("{Enter}")
+                        this.logEvent(4, "RSpace and Enter key sent bare as {Enter}")
                     } else if ((key = this.keymap["_Alt"] and GetKeyState(this.keymap["_Control"], "P")) or (key = this.keymap["_Control"] and GetKeyState(this.keymap["_Alt"], "P"))) {
                         ; alt-enter
                         this.engine.SendToken("{Enter}")
@@ -263,10 +283,9 @@ class AuxKeyboardEngine
 				} else if ((this.keymap[key] = "{LShift}") or (this.keymap[key] = "{RShift}")) {
                     ; if only the control key is pressed, then we meant it as its bare character
                     ; but if the actual control key it represents is down, then we cannot cancel its control function 
-                    ; I cannot do this with Shift, because shift+numpad kills numpad in Windows 
-                    ; if (not GetKeyState("LShift", "P")) {
-                    ;     Send, {LShift up}
-                    ; }
+                    if (not GetKeyState("LShift", "P")) {
+                        Send, {LShift up}
+                    }
 					if (not this.keymap[this.keymap[key]] = "{Backspace}") {
 						this.engine.SendToken(this.keymap[this.chord])
 					} else {
@@ -316,9 +335,9 @@ class AuxKeyboardEngine
             this.logEvent(4, "Key up after all keys up")
             ; We must cancel all control character keydowns 
             if ((this.keymap[key] = "{LShift}") or (this.keymap[key] = "{RShift}")) {
-                ; if (not GetKeyState("LShift", "P")) {
-                ;     Send, {LShift up}
-                ; }
+                if (not GetKeyState("LShift", "P")) {
+                    Send, {LShift up}
+                }
             } else if (this.keymap[key] = "{Control}") {
                 this.logEvent(4, "Control Key coming up after all keys up")
                 if (not GetKeyState("LControl", "P")) {
