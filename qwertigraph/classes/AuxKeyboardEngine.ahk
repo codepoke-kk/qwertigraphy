@@ -1,3 +1,8 @@
+; At this point, ctrl-click works, which is nice. 
+; I should go back and make shift-click work, but Windows cancels numlock while shift is down
+; Fixing that will require very careful handling of the shift key being down and lifted for input. Maybe not possible 
+; But ctrl-click was mandatory :-)
+
 
 class AuxKeyboardEngine
 {
@@ -92,10 +97,13 @@ class AuxKeyboardEngine
 				this.logEvent(4, "Reset key down")
 			} else if ((this.keymap[key] = "{LShift}") or (this.keymap[key] = "{RShift}")) {
 				this.shifted := "+" 
+                ; I have to manually handle shift, because shift+numpad kills the numpad in Windows 
+                ; Send, {LShift down}
 				rekey := ""
 				this.logEvent(4, "Shift key down")
 			} else if (this.keymap[key] = "{Control}") {
 				this.controlled := "^" 
+                Send, {LControl down}
 				rekey := ""
 				this.logEvent(4, "Control key down")
 			} else if (this.keymap[key] = "{Alt}") {
@@ -105,6 +113,7 @@ class AuxKeyboardEngine
 				this.logEvent(4, "Alt key down")
 			} else if (this.keymap[key] = "{Win}") {
 				this.winned := "#" 
+				Send, {LWin down}
 				rekey := ""
 				this.logEvent(4, "Win key down")
 			} else if (this.keymap[key]) {
@@ -196,8 +205,8 @@ class AuxKeyboardEngine
 						this.engine.keyboard.Token .= upperKey
 					} 
 					; Send to screen 
-                    this.logEvent(3, "Sending to screen " this.shifted . this.controlled . this.alted . this.winned . this.keymap[this.chord])
-					Send, % this.shifted . this.controlled . this.alted . this.winned . this.keymap[this.chord]
+                    this.logEvent(3, "Sending to screen " this.keymap[this.chord]) " with " this.shifted . this.controlled . this.alted . this.winned
+					Send, % this.shifted . this.keymap[this.chord]
                     ; We need to cancel the token if we sent it as a control character 
                     if (this.controlled or this.alted or this.winned) {
                         this.logEvent(3, "Chord is modded. Cancelling existing token")
@@ -205,12 +214,12 @@ class AuxKeyboardEngine
                     }
 					this.ToggleLayerLock()
 				} else {
-					this.logEvent(3, "Chord is a control character. Sending token with " this.shifted . this.controlled . this.alted . this.winned . this.keymap[this.chord])
-					this.engine.SendToken(this.shifted . this.controlled . this.alted . this.winned . this.keymap[this.chord])
+					this.logEvent(3, "Chord is a control character. Sending token " this.keymap[this.chord]) " with " this.shifted . this.controlled . this.alted . this.winned
+					this.engine.SendToken(this.keymap[this.chord])
 					this.ToggleLayerLock()
 				}
 			} else if (this.keysdown) {
-                ; If no chord or no match
+                ; If no chord or no match, then this is one or more control characters
 				; We can only watch for this on the first key up. 
 				; If a modifier key is not the first key up, then this will send the modifier's value if we reset and keep watching
                 if (this.keysdown > 1) {
@@ -221,22 +230,22 @@ class AuxKeyboardEngine
                             or (key = this.keymap["_Control"] and GetKeyState(this.keymap["_Alt"], "P") and GetKeyState(this.keymap["_LShift"], "P"))
                             or (key = this.keymap["_LShift"] and GetKeyState(this.keymap["_Control"], "P") and GetKeyState(this.keymap["_Alt"], "P"))){
                         ; control-shift-escape
-                        this.engine.SendToken("^+{Esc}")
-                        Send, % "^+{Esc}"
-                        this.logEvent(4, "Space, Control, and Esc keys sent bare as ^+{Esc}")
+                        this.engine.SendToken("+{Esc}")
+                        Send, % "+{Esc}"
+                        this.logEvent(4, "Space, Control, and Esc keys sent bare as +{Esc}")
                     } else if ((key = this.keymap["_Alt"] and GetKeyState(this.keymap["_LShift"], "P")) or (key = this.keymap["_LShift"] and GetKeyState(this.keymap["_Alt"], "P"))){
                         ; alt-space
-                        this.engine.SendToken("!{Space}")
-                        Send, % "!{Space}"
-                        this.logEvent(4, "Space and Control key sent bare as !{Space}")
+                        this.engine.SendToken("{Space}")
+                        Send, % "{Space}"
+                        this.logEvent(4, "Space and Control key sent bare as {Space}")
                     } else if ((key = this.keymap["_LShift"] and GetKeyState(this.keymap["_Control"], "P")) or (key = this.keymap["_Control"] and GetKeyState(this.keymap["_LShift"], "P"))) {
                         ; control-enter
                         ; Windows default here is to pop up a choice dialog, but I'm using this to cancel tokens
-                        this.engine.CancelToken("^{Enter}")
+                        this.engine.CancelToken("{Enter}")
                         ; Send, % "{LControl down}" 
                         Send, % "{Enter}"
                         ; Send, % "{LControl up}"
-                        this.logEvent(4, "LSpace, and Control key sent bare as ^{Enter}")
+                        this.logEvent(4, "LSpace, and Control key sent bare as {Enter}")
                     } else if ((key = this.keymap["_RShift"] and GetKeyState(this.keymap["_Control"], "P")) or (key = this.keymap["_Control"] and GetKeyState(this.keymap["_RShift"], "P"))) {
                         ; shift-enter
                         ; Send, % "+{Enter}"
@@ -244,31 +253,57 @@ class AuxKeyboardEngine
                         this.logEvent(4, "RSpace and Enter key sent bare as +{Enter}")
                     } else if ((key = this.keymap["_Alt"] and GetKeyState(this.keymap["_Control"], "P")) or (key = this.keymap["_Control"] and GetKeyState(this.keymap["_Alt"], "P"))) {
                         ; alt-enter
-                        this.engine.SendToken("!{Enter}")
-                        Send, % "!{Enter}"
-                        this.logEvent(4, "Esc and Enter key sent bare as !{Enter}")
+                        this.engine.SendToken("{Enter}")
+                        Send, % "{Enter}"
+                        this.logEvent(4, "Esc and Enter key sent bare as {Enter}")
                     } else {
                         this.logEvent(4, "No code for this entry")
                     }
+                ; this.keysdown <= 1
 				} else if ((this.keymap[key] = "{LShift}") or (this.keymap[key] = "{RShift}")) {
+                    ; if only the control key is pressed, then we meant it as its bare character
+                    ; but if the actual control key it represents is down, then we cannot cancel its control function 
+                    ; I cannot do this with Shift, because shift+numpad kills numpad in Windows 
+                    ; if (not GetKeyState("LShift", "P")) {
+                    ;     Send, {LShift up}
+                    ; }
 					if (not this.keymap[this.keymap[key]] = "{Backspace}") {
-						this.engine.SendToken(this.controlled . this.alted . this.winned .this.keymap[this.chord])
+						this.engine.SendToken(this.keymap[this.chord])
 					} else {
 						this.engine.RemoveKeyFromToken()
 					}
-					Send, % this.controlled . this.alted . this.winned . this.keymap[this.keymap[key]]
-					this.logEvent(4, "Shift key sent bare as " this.controlled . this.alted . this.winned . this.keymap[this.keymap[key]])
+					Send, % this.keymap[this.keymap[key]]
+					this.logEvent(4, "Shift key sent bare as " this.keymap[this.keymap[key]] " with " this.controlled . this.alted . this.winned)
 				} else if (this.keymap[key] = "{Control}") {
-					this.engine.SendToken(this.shifted . this.alted . this.winned . this.keymap[this.chord])
-					Send, % this.shifted . this.alted . this.winned . this.keymap[this.keymap[key]]
-					this.logEvent(4, "Control key sent bare as " this.shifted . this.alted . this.winned . this.keymap[this.keymap[key]])
+                    this.logEvent(4, "Found control key coming up")
+                    ; if only the control key is pressed, then we meant it as its bare character
+                    ; but if the actual control key it represents is down, then we cannot cancel its control function 
+                    if (not GetKeyState("LControl", "P")) {
+                        this.logEvent(4, "Lifting LControl")
+                        Send, {LControl up}
+                    } else {
+                        this.logEvent(4, "Not lifting LControl because " GetKeyState("LControl", "P"))
+                    }
+					this.engine.SendToken(this.shifted . this.keymap[this.chord])
+					Send, % this.shifted . this.keymap[this.keymap[key]]
+					this.logEvent(4, "Control key sent bare as " this.shifted . this.keymap[this.keymap[key]])
 				} else if (this.keymap[key] = "{Alt}") {
-					this.engine.SendToken(this.shifted . this.controlled . this.winned . this.keymap[this.chord])
-					Send, % this.shifted . this.controlled . this.winned . this.keymap[this.keymap[key]]
-					this.logEvent(4, "Alt key sent bare as " this.shifted . this.controlled . this.winned . this.keymap[this.keymap[key]])
+                    ; if only the control key is pressed, then we meant it as its bare character
+                    ; but if the actual control key it represents is down, then we cannot cancel its control function 
+                    if (not GetKeyState("LAlt", "P")) {
+                        Send, {LAlt up}
+                    }
+					this.engine.SendToken(this.shifted . this.keymap[this.chord])
+					Send, % this.shifted . this.keymap[this.keymap[key]]
+					this.logEvent(4, "Alt key sent bare as " this.shifted . this.keymap[this.keymap[key]])
 				} else if (this.keymap[key] = "{Win}") {
-					this.engine.SendToken(this.shifted . this.controlled . this.alted . this.keymap[this.chord])
-					Send, % this.shifted . this.controlled . this.alted . this.keymap[this.keymap[key]]
+                    ; if only the control key is pressed, then we meant it as its bare character
+                    ; but if the actual control key it represents is down, then we cannot cancel its control function 
+                    if (not GetKeyState("LWin", "P")) {
+                        Send, {LWin up}
+                    }
+					this.engine.SendToken(this.shifted . this.keymap[this.chord])
+					Send, % this.shifted . this.keymap[this.keymap[key]]
 					this.logEvent(4, "Win key sent bare as " this.shifted . this.controlled . this.alted . this.keymap[this.keymap[key]])
 				} else if (this.keymap[key] = "{Reset}") {
 					this.logEvent(3, "Chord is Reset. Cancelling token and sending " this.keymap[this.keymap[key]])
@@ -276,10 +311,28 @@ class AuxKeyboardEngine
 					this.numlocked := !this.numlocked
 					SetNumLockState , % this.numlocked
 				} 
-			}
-			if (this.keymap[key] = "{Alt}") {
-				Send, {LAlt up}
-			}
+			} 
+            
+            this.logEvent(4, "Key up after all keys up")
+            ; We must cancel all control character keydowns 
+            if ((this.keymap[key] = "{LShift}") or (this.keymap[key] = "{RShift}")) {
+                ; if (not GetKeyState("LShift", "P")) {
+                ;     Send, {LShift up}
+                ; }
+            } else if (this.keymap[key] = "{Control}") {
+                this.logEvent(4, "Control Key coming up after all keys up")
+                if (not GetKeyState("LControl", "P")) {
+                    Send, {LControl up}
+                }
+            } else if (this.keymap[key] = "{Alt}") {
+                if (not GetKeyState("LAlt", "P")) {
+                    Send, {LAlt up}
+                }
+            } else if (this.keymap[key] = "{Win}") {
+                if (not GetKeyState("LWin", "P")) {
+                    Send, {LWin up}
+                }
+            }
 				
 		}
 		; Clear the chord buffer for a fresh start 
