@@ -5,7 +5,7 @@ class AuxKeyboardEngine
 {
 	logQueue := new Queue("AuxEngineQueue")
 	logVerbosity := 4
-	enabled := true
+	enabled := false
 
 	__New() {
 		local
@@ -15,7 +15,7 @@ class AuxKeyboardEngine
 		this.keymap := {}
 		this.keymapCount := 0
 		this.keysdown := 0
-		this.enabled := true
+		this.enabled := false
 		this.layer := ""
         this.layerlocked := ""
 		this.caplocked := ""
@@ -72,7 +72,7 @@ class AuxKeyboardEngine
 		}
 		this.logEvent(2, "Loaded from " this.auxmap " " this.keymapCount " characters with " this.keymap["Numpad0"])
 		
-		this.Start()
+		; this.Start()
 	}
 	Start() {
 		this.logEvent(2, "Auxilliary Keyboard Engine started with " this.keymap.MaxIndex() " keys")
@@ -145,7 +145,7 @@ class AuxKeyboardEngine
 			}
 		} else {
 			; If we are disabled then strip the "numpad" from it and send it back to be handled as a normal key 
-			rekey := RegExReplace(key, "Numpad")
+			rekey := "{" . RegExReplace(key, "Numpad") . "}"
 			this.logEvent(2, "Forwarding disabled and unmatched " key " as " rekey)
 		}
 		Return rekey
