@@ -102,10 +102,30 @@ class MappingEngine_Chorded
 	ReceiveKeyDown(InputHook, VK, SC) {
 		local key
 		; ToolTip, % "VK: " VK ", SC: " SC
-		if (not SC = 284) {
-			key := GetKeyName(Format("vk{:x}", VK)) ; (The VK does not distinguish between Enter and NumpadEnter)
-		} else {
+		if (SC = 284) {
+            ; (The VK does not distinguish between Enter and NumpadEnter)
 			key := "NumpadEnter"
+		} else if (SC = 331) {
+            ; The aux keyboard will pirate the arrow keys, because they are sent as Numpad keys. Convert them to main keyboard keys 
+			key := "Left"
+		} else if (SC = 336) {
+			key := "Down"
+		} else if (SC = 333) {
+			key := "Right"
+		} else if (SC = 328) {
+			key := "Up"
+		} else if (SC = 339) {
+			key := "Del"
+		} else if (SC = 335) {
+			key := "End"
+		} else if (SC = 337) {
+			key := "PgDn"
+		} else if (SC = 327) {
+			key := "Home"
+		} else if (SC = 329) {
+			key := "PgUp"
+		} else {
+            key := GetKeyName(Format("vk{:x}", VK)) 
 		}
 		this.logEvent(2, "Receiving keydown on " VK " and " SC " translated to " key)
 		Switch key
