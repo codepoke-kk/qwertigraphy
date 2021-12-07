@@ -592,6 +592,7 @@ class MappingEngine_Chorded
 	{
 		this.logEvent(2, "Input reset by function ")
         this.ResyncModifierKeys()
+		this.aux.Flush()
 		;this.ih.Stop()
 		;this.Start()
 		this.CancelToken("{LButton}")
