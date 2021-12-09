@@ -15,6 +15,8 @@ class AuxKeyboardEngine
 		this.keymap := {}
 		this.keymapCount := 0
 		this.keysdown := 0
+        this.lastkey := ""
+        this.lastkeycount := 0
 		this.enabled := false
 		this.layer := ""
         this.layerlocked := ""
@@ -83,6 +85,7 @@ class AuxKeyboardEngine
 		this.enabled := false 
 	}
 	Flush() {
+        this.logEvent(2, "Auxilliary Keyboard Engine flushed")
 		this.chord := ""
 		this.shifted := ""
 		this.controlled := ""
@@ -97,12 +100,20 @@ class AuxKeyboardEngine
             ; I have to override the desire of Windows to cancel numlock when shift is down 
             if (this.numlocked and this.NumpadShiftedRemap[key] ) {
                 key := this.NumpadShiftedRemap[key]
-                this.logEvent(4, "Double remapped key to " key " to override shift-numlock issue")
+                this.logEvent(4, "Double remapped key to " key " to override shift-cancels-numlock issue")
             } else {
                 ; this.logEvent(4, "No double remap of " key " needed because state " GetKeyState("LShift") ", numlock " this.numlocked " and double remap of " this.NumpadShiftedRemap[key])
             }
-			; Count the number of keys down, though we only care if it's 1 or greater 
-			this.keysdown += 1
+            ; Don't count keys sent by "repeat key" by the OS when a key is held down
+            if (key != this.lastkey) {
+                ; Count the number of keys down
+                this.keysdown += 1
+                this.lastkey := key
+                this.logEvent(4, "Incremented keysdown to " this.keysdown " because " key " != " this.lastkey)
+            } else {
+                this.lastkeycount += 1
+                this.logEvent(4, "Incremented lastkeycount to " this.lastkeycount)
+            }
 			; Implement layers by prepending a layer marker to every one of the 9 digit keys (not the zero key)
 			if (RegExMatch(key, "^Numpad[1-9]$")) {
 				key := this.layer . key
@@ -157,6 +168,7 @@ class AuxKeyboardEngine
 		Critical 
 		chordLength := StrLen(this.chord)
 		if (this.enabled) {
+            this.logEvent(4, "keysdown is " this.keysdown ", key is " key ", and lastkey is " this.lastkey)
             if (this.numlocked and this.NumpadShiftedRemap[key] ) {
                 key := this.NumpadShiftedRemap[key]
                 this.logEvent(4, "Remapped key to " key " to override shift-numlock issue")
@@ -286,13 +298,17 @@ class AuxKeyboardEngine
                     if (not GetKeyState("LShift", "P")) {
                         Send, {LShift up}
                     }
-					if (not this.keymap[this.keymap[key]] = "{Backspace}") {
-						this.engine.SendToken(this.keymap[this.chord])
-					} else {
-						this.engine.RemoveKeyFromToken()
-					}
-					Send, % this.keymap[this.keymap[key]]
-					this.logEvent(4, "Shift key sent bare as " this.keymap[this.keymap[key]] " with " this.controlled . this.alted . this.winned)
+                    if (this.lastkeycount < 2) {
+                        if (not this.keymap[this.keymap[key]] = "{Backspace}") {
+                            this.engine.SendToken(this.keymap[this.chord])
+                        } else {
+                            this.engine.RemoveKeyFromToken()
+                        }
+                        Send, % this.keymap[this.keymap[key]]
+                        this.logEvent(4, "Shift key sent bare as " this.keymap[this.keymap[key]] " with " this.controlled . this.alted . this.winned)
+                    } else {
+                        this.logEvent(4, "Shift key not sent due to repeat key of " this.lastkeycount)
+                    }
 				} else if (this.keymap[key] = "{Control}") {
                     this.logEvent(4, "Found control key coming up")
                     ; if only the control key is pressed, then we meant it as its bare character
@@ -303,27 +319,39 @@ class AuxKeyboardEngine
                     } else {
                         this.logEvent(4, "Not lifting LControl because " GetKeyState("LControl", "P"))
                     }
-					this.engine.SendToken(this.shifted . this.keymap[this.chord])
-					Send, % this.shifted . this.keymap[this.keymap[key]]
-					this.logEvent(4, "Control key sent bare as " this.shifted . this.keymap[this.keymap[key]])
+                    if (this.lastkeycount < 2) {
+                        this.engine.SendToken(this.shifted . this.keymap[this.chord])
+                        Send, % this.shifted . this.keymap[this.keymap[key]]
+                        this.logEvent(4, "Control key sent bare as " this.shifted . this.keymap[this.keymap[key]])
+                    } else {
+                        this.logEvent(4, "Shift key not sent due to repeat key of " this.lastkeycount)
+                    }
 				} else if (this.keymap[key] = "{Alt}") {
                     ; if only the control key is pressed, then we meant it as its bare character
                     ; but if the actual control key it represents is down, then we cannot cancel its control function 
                     if (not GetKeyState("LAlt", "P")) {
                         Send, {LAlt up}
                     }
-					this.engine.SendToken(this.shifted . this.keymap[this.chord])
-					Send, % this.shifted . this.keymap[this.keymap[key]]
-					this.logEvent(4, "Alt key sent bare as " this.shifted . this.keymap[this.keymap[key]])
+                    if (this.lastkeycount < 2) {
+                        this.engine.SendToken(this.shifted . this.keymap[this.chord])
+                        Send, % this.shifted . this.keymap[this.keymap[key]]
+                        this.logEvent(4, "Alt key sent bare as " this.shifted . this.keymap[this.keymap[key]])
+                    } else {
+                        this.logEvent(4, "Shift key not sent due to repeat key of " this.lastkeycount)
+                    }
 				} else if (this.keymap[key] = "{Win}") {
                     ; if only the control key is pressed, then we meant it as its bare character
                     ; but if the actual control key it represents is down, then we cannot cancel its control function 
                     if (not GetKeyState("LWin", "P")) {
                         Send, {LWin up}
                     }
-					this.engine.SendToken(this.shifted . this.keymap[this.chord])
-					Send, % this.shifted . this.keymap[this.keymap[key]]
-					this.logEvent(4, "Win key sent bare as " this.shifted . this.controlled . this.alted . this.keymap[this.keymap[key]])
+                    if (this.lastkeycount < 2) {
+                        this.engine.SendToken(this.shifted . this.keymap[this.chord])
+                        Send, % this.shifted . this.keymap[this.keymap[key]]
+                        this.logEvent(4, "Win key sent bare as " this.shifted . this.controlled . this.alted . this.keymap[this.keymap[key]])
+                    } else {
+                        this.logEvent(4, "Shift key not sent due to repeat key of " this.lastkeycount)
+                    }
 				} else if (this.keymap[key] = "{Reset}") {
 					this.logEvent(3, "Chord is Reset. Cancelling token and sending " this.keymap[this.keymap[key]])
 					this.engine.CancelToken(this.keymap[key])
@@ -352,6 +380,9 @@ class AuxKeyboardEngine
                     Send, {LWin up}
                 }
             }
+            
+            this.lastkey := ""
+            this.lastkeycount := 0
 				
 		}
 		; Clear the chord buffer for a fresh start 
