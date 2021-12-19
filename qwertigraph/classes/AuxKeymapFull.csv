@@ -23,6 +23,7 @@ Numpad7;Numpad8;Numpad9,{Del}
 Numpad4;Numpad5;Numpad6,.
 Numpad1;Numpad2;Numpad3,{Comma}
 Numpad1;Numpad5;Numpad9,{CapLock}
+Numpad7;Numpad5;Numpad3,{WinLock}
 Numpad7,a
 Numpad7;Numpad8,i
 Numpad7;Numpad5,'
@@ -129,11 +130,11 @@ LsNumpad9,{Volume_Up}
 LsNumpad9;LsNumpad7,.
 LsNumpad9;LsNumpad4,.
 LsNumpad9;LsNumpad1,.
-LsNumpad6,{Volume_Down}
+LsNumpad6,{Volume_Mute}
 LsNumpad6;LsNumpad7,.
 LsNumpad6;LsNumpad4,{Pause}
 LsNumpad6;LsNumpad1,.
-LsNumpad3,{Volume_Mute}
+LsNumpad3,{Volume_Down}
 LsNumpad3;LsNumpad7,.
 LsNumpad3;LsNumpad4,.
 LsNumpad3;LsNumpad1,.

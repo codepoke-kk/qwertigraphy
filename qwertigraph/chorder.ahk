@@ -76,6 +76,7 @@ editor := new EditorViewport(map)
 dashboard := new DashboardViewport(qenv, engine.dashboardQueue)
 speedViewer.dashboard := dashboard
 engine.dashboard := dashboard
+aux.dashboard := dashboard 
 stroker := new StrokepathsViewport(qenv, dashboard)
 player := new PlayerViewport(engine)
 

@@ -84,6 +84,7 @@ Class DashboardViewport
       this.Show := (this.qenv.properties.DashboardShow) ? this.qenv.properties.DashboardShow : 1
       this.AutohideSeconds := (this.qenv.properties.DashboardAutohideSeconds) ? this.qenv.properties.DashboardAutohideSeconds : 30
       this.dashboardQueue := dashboardQueue
+      this.auxKeyboardState := ""
 		
       this.timer := ObjBindMethod(this, "DequeueEvents")
       timer := this.timer
@@ -176,6 +177,12 @@ Class DashboardViewport
       KeyedSpeedOptions := "x20 y60 Left " this.SpeedColor " r4 s36 "
       this.LogEvent(4, "Drawing keyed speed " KeyedSpeedOptions)
       Gdip_TextToGraphics(this.G, this.speedKeyed, KeyedSpeedOptions, this.FontName, this.Width, bgHeight)
+      
+      ; Draw Aux Keyboard status
+      AuxKeyboardOptions := "x20 y100 Left " this.SpeedColor " r4 s16 "
+      this.LogEvent(4, "Drawing aux keyboard " AuxKeyboardOptions)
+      Gdip_TextToGraphics(this.G, this.auxKeyboardState, AuxKeyboardOptions, this.FontName, this.Width, bgHeight)
+      
       
       ; Draw pending hints
       HintOptions := "x10 y" (this.Height - 69) " Left " this.FormColors["green"] " r4 s16 "

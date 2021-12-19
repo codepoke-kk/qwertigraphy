@@ -5,7 +5,8 @@ class AuxKeyboardEngine
 {
 	logQueue := new Queue("AuxEngineQueue")
 	logVerbosity := 4
-	enabled := false
+	enabled := true
+    dashboard := ""
 
 	__New() {
 		local
@@ -17,10 +18,11 @@ class AuxKeyboardEngine
 		this.keysdown := 0
         this.lastkey := ""
         this.lastkeycount := 0
-		this.enabled := false
+		this.enabled := true
 		this.layer := ""
         this.layerlocked := ""
 		this.caplocked := ""
+        this.winlocked := ""
 		this.shifted := ""
 		this.controlled := ""
 		this.alted := ""
@@ -108,8 +110,8 @@ class AuxKeyboardEngine
             if (key != this.lastkey) {
                 ; Count the number of keys down
                 this.keysdown += 1
-                this.lastkey := key
                 this.logEvent(4, "Incremented keysdown to " this.keysdown " because " key " != " this.lastkey)
+                this.lastkey := key
             } else {
                 this.lastkeycount += 1
                 this.logEvent(4, "Incremented lastkeycount to " this.lastkeycount)
@@ -128,6 +130,11 @@ class AuxKeyboardEngine
                 Send, {LShift down}
 				rekey := ""
 				this.logEvent(4, "Shift key down")
+			} else if (this.keymap[key] = "{Tab}") {
+				this.logEvent(4, "Matched valid keymap for " key " as " this.keymap[key])
+				rekey := ""
+                this.chord .= "" . key
+				this.logEvent(2, "Swallowing " key " into chord as " this.chord)
 			} else if (this.keymap[key] = "{Control}") {
 				this.controlled := "^" 
                 Send, {LControl down}
@@ -179,6 +186,10 @@ class AuxKeyboardEngine
 				if (this.caplocked) {
 					this.shifted := "+"
 				}
+				if (this.winlocked) {
+					this.winned := "#"
+                    Send, {LWin down}
+				}
 				this.logEvent(3, "Matched chord " this.chord " as " this.keymap[this.chord])
 				if ((StrLen(this.keymap[this.chord]) = 1) and (not RegExMatch(this.keymap[this.chord], "[a-zA-Z0-9]"))) {
 					this.logEvent(3, "Chord is non-text, sending and ending")
@@ -199,6 +210,15 @@ class AuxKeyboardEngine
 						this.caplocked := "set"
 					} else if (this.caplocked = "") {
 						this.caplocked := "once"
+					}
+				} else if (this.keymap[this.chord] = "{WinLock}") {
+					this.logEvent(3, "Chord is WinLock. Setting.")
+					if (this.winlocked = "set") {
+						this.winlocked := ""
+					} else if (this.winlocked = "once") {
+						this.winlocked := "set"
+					} else if (this.winlocked = "") {
+						this.winlocked := "once"
 					}
 				} else if (this.keymap[this.chord] = "{Layer_Numbers}") {
 					this.logEvent(3, "Chord is Numbers Layer. Setting.")
@@ -229,7 +249,7 @@ class AuxKeyboardEngine
 					}
                     this.logEvent(4, "Layer is " this.layer " and lock state is " this.layerlocked)
 				} else if (not RegExMatch(this.keymap[this.chord],"\{")) { 
-					this.logEvent(3, "Chord is not a control character. Adding " this.keymap[this.chord] " to token")
+					this.logEvent(3, "Chord is not an end character. Adding " this.keymap[this.chord] " to token")
 					if (not this.shifted) {
                         this.engine.keyboard.Token .= this.keymap[this.chord]
 					} else {
@@ -246,8 +266,8 @@ class AuxKeyboardEngine
                     }
 					this.ToggleLayerLock()
 				} else {
-					this.logEvent(3, "Chord is a control character. Sending token " this.keymap[this.chord]) " with " this.shifted . this.controlled . this.alted . this.winned
-					this.engine.SendToken(this.keymap[this.chord])
+					this.logEvent(3, "Chord is an end character. Sending token " this.keymap[this.chord]) " with " this.shifted . this.controlled . this.alted . this.winned
+					this.engine.SendToken(this.shifted . this.keymap[this.chord])
 					this.ToggleLayerLock()
 				}
 			} else if (this.keysdown) {
@@ -271,18 +291,18 @@ class AuxKeyboardEngine
                         Send, % "{Space}"
                         this.logEvent(4, "Space and Control key sent bare as {Space}")
                     } else if ((key = this.keymap["_LShift"] and GetKeyState(this.keymap["_Control"], "P")) or (key = this.keymap["_Control"] and GetKeyState(this.keymap["_LShift"], "P"))) {
-                        ; control-enter
-                        ; Windows default here is to pop up a choice dialog, but I'm using this to cancel tokens
-                        this.engine.CancelToken("{Enter}")
-                        ; Send, % "{LControl down}" 
-                        Send, % "{Enter}"
-                        ; Send, % "{LControl up}"
-                        this.logEvent(4, "LSpace, and Control key sent bare as {Enter}")
-                    } else if ((key = this.keymap["_RShift"] and GetKeyState(this.keymap["_Control"], "P")) or (key = this.keymap["_Control"] and GetKeyState(this.keymap["_RShift"], "P"))) {
                         ; shift-enter
-                        ; Send, % "{Enter}"
+                        ; Windows default here is to pop up a choice dialog, but I'm using this to cancel tokens
+                        this.controlled := ""
+                        Send, % "{LControl up}"
                         this.engine.SendToken("{Enter}")
-                        this.logEvent(4, "RSpace and Enter key sent bare as {Enter}")
+                        ; Send, % "+{Enter}"
+                        this.logEvent(4, "LShift and Enter key sent bare as +{Enter}")
+                    } else if ((key = this.keymap["_RShift"] and GetKeyState(this.keymap["_Control"], "P")) or (key = this.keymap["_Control"] and GetKeyState(this.keymap["_RShift"], "P"))) {
+                        ; control-backspace
+                        ; Send, % "{Backspace}"
+                        this.engine.SendToken("{Backspace}")
+                        this.logEvent(4, "BackSpace and Control key sent bare as ^{Backspace}")
                     } else if ((key = this.keymap["_Alt"] and GetKeyState(this.keymap["_Control"], "P")) or (key = this.keymap["_Control"] and GetKeyState(this.keymap["_Alt"], "P"))) {
                         ; alt-enter
                         this.engine.SendToken("{Enter}")
@@ -381,6 +401,16 @@ class AuxKeyboardEngine
                 }
             }
             
+            if (GetKeyState("LWin") and (not GetKeyState("LWin", "P"))) {
+                this.logEvent(4, "Winned, so sending key up")
+                Send, {LWin up}
+            }
+            
+            ; I should probably make this a queue solution, but I need it now 
+            if (this.dashboard) {
+                this.dashboard.auxKeyboardState := this.winned . this.shifted . this.controlled . this.alted . this.layer
+            }
+            
             this.lastkey := ""
             this.lastkeycount := 0
 				
@@ -393,6 +423,11 @@ class AuxKeyboardEngine
     ToggleLayerLock() {
         if (this.caplocked = "once") {
             this.caplocked := ""
+            this.logEvent(4, "Cancelled capslock after once")
+        }
+        if (this.winlocked = "once") {
+            this.winlocked := ""
+            this.logEvent(4, "Cancelled winlock after once")
         }
         if (this.layerlocked = "once") {
             this.layerlocked := ""
