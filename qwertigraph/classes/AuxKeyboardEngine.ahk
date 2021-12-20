@@ -276,15 +276,23 @@ class AuxKeyboardEngine
 				; If a modifier key is not the first key up, then this will send the modifier's value if we reset and keep watching
                 if (this.keysdown > 1) {
                     ; We have multiple control keys down, which means we are trying to modify one with the other 
-                    this.logEvent(4, "Multiple bare control keys down")
+                    this.logEvent(4, "Multiple bare control keys down and " key " coming up")
                     ;;;;;; I use redirection like this.keymap["_Alt"] so the keys can be remapped 
-                    if ((key = this.keymap["_Alt"] and GetKeyState(this.keymap["_Control"], "P") and GetKeyState(this.keymap["_LShift"], "P")) 
-                            or (key = this.keymap["_Control"] and GetKeyState(this.keymap["_Alt"], "P") and GetKeyState(this.keymap["_LShift"], "P"))
-                            or (key = this.keymap["_LShift"] and GetKeyState(this.keymap["_Control"], "P") and GetKeyState(this.keymap["_Alt"], "P"))){
+                    if (key = this.keymap["_Alt"] and GetKeyState(this.keymap["_Control"], "P") and GetKeyState(this.keymap["_LShift"], "P")){
+                        ; control-alt-delete
+                        this.engine.CancelToken("{Del}")
+                        run taskmgr
+                        this.logEvent(4, "Space, Control, and Esc keys down and Esc released so running task manager")
+                    } else if (key = this.keymap["_Control"] and GetKeyState(this.keymap["_Alt"], "P") and GetKeyState(this.keymap["_LShift"], "P")){
                         ; control-shift-escape
-                        this.engine.SendToken("{Esc}")
-                        Send, % "{Esc}"
-                        this.logEvent(4, "Space, Control, and Esc keys sent bare as {Esc}")
+                        this.engine.CancelToken("{Esc}")
+                        Send, % "^+{Esc}"
+                        this.logEvent(4, "Space, Control, and Esc keys down and Control released so sending bare as ^+{Esc}")
+                    } else if (key = this.keymap["_LShift"] and GetKeyState(this.keymap["_Control"], "P") and GetKeyState(this.keymap["_Alt"], "P")){
+                        ; control-alt-end
+                        this.engine.CancelToken("{End}")
+                        Send, % "^!{End}"
+                        this.logEvent(4, "Space, Control, and Esc keys down and Space released so sending bare as ^!{End}")
                     } else if ((key = this.keymap["_Alt"] and GetKeyState(this.keymap["_LShift"], "P")) or (key = this.keymap["_LShift"] and GetKeyState(this.keymap["_Alt"], "P"))){
                         ; alt-space
                         this.engine.SendToken("{Space}")
@@ -292,17 +300,19 @@ class AuxKeyboardEngine
                         this.logEvent(4, "Space and Control key sent bare as {Space}")
                     } else if ((key = this.keymap["_LShift"] and GetKeyState(this.keymap["_Control"], "P")) or (key = this.keymap["_Control"] and GetKeyState(this.keymap["_LShift"], "P"))) {
                         ; shift-enter
-                        ; Windows default here is to pop up a choice dialog, but I'm using this to cancel tokens
                         this.controlled := ""
-                        Send, % "{LControl up}"
-                        this.engine.SendToken("{Enter}")
-                        ; Send, % "+{Enter}"
+                        Send, {LControl up}
+                        this.engine.SendToken("+{Enter}")
                         this.logEvent(4, "LShift and Enter key sent bare as +{Enter}")
-                    } else if ((key = this.keymap["_RShift"] and GetKeyState(this.keymap["_Control"], "P")) or (key = this.keymap["_Control"] and GetKeyState(this.keymap["_RShift"], "P"))) {
+                    } else if (key = this.keymap["_RShift"] and GetKeyState(this.keymap["_Control"], "P")) {
                         ; control-backspace
                         ; Send, % "{Backspace}"
                         this.engine.SendToken("{Backspace}")
-                        this.logEvent(4, "BackSpace and Control key sent bare as ^{Backspace}")
+                        this.logEvent(4, "BackSpace and Control key and BackSpace released first, so sent bare as ^{Backspace}")
+                    } else if (key = this.keymap["_Control"] and GetKeyState(this.keymap["_RShift"], "P")) {
+                        ; control-enter
+                        ; This cannot be reached on my keyboard, due to ghosting. When NumpadDot is down, my keyboard also reports Numpad0 is down 
+                        ; this.logEvent(4, "BackSpace and Control key and Enter released first, so sent bare as ^{Enter}")
                     } else if ((key = this.keymap["_Alt"] and GetKeyState(this.keymap["_Control"], "P")) or (key = this.keymap["_Control"] and GetKeyState(this.keymap["_Alt"], "P"))) {
                         ; alt-enter
                         this.engine.SendToken("{Enter}")
