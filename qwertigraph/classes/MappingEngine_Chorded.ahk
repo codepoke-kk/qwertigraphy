@@ -152,7 +152,7 @@ class MappingEngine_Chorded
 				} else {
 					this.AddToToken(key)
 				}
-			case ".", ",", "'",  "[", "]": 
+			case ".", ",", "'", """", "[", "]": 
 				sendkey := ""
 				if (not GetKeyState("Control", "P")) {
 					this.SendToken(key)
@@ -160,17 +160,17 @@ class MappingEngine_Chorded
 					this.CancelToken("{Ctrl-" key "}")
 					Send, % key
 				}
-			case "/", ";", "[", "]", "\", "-", "=": 
+			case "/", ";", "[", "]", "\", "-", "=", "``": 
 				; sendkey := key
 				; this.CancelToken(key)
                 ; Revert behavior
 				sendkey := ""
 				this.SendToken(key)
-			case "``": 
-                ; Let the backtick serve as a token cancel key. 
-                ; I could also let it pass through, then it would be backtick backspace to cancel, but let's try this 
-				sendKey := ""
-				this.CancelToken(sendkey)
+			;case "``": 
+            ;    ; Let the backtick serve as a token cancel key. 
+            ;    ; I could also let it pass through, then it would be backtick backspace to cancel, but let's try this 
+			;	sendKey := ""
+			;	this.CancelToken(sendkey)
 			case "Space":
 				sendkey := ""
 				if (not GetKeyState("Control", "P")) {

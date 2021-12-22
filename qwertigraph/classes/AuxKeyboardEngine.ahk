@@ -363,8 +363,9 @@ class AuxKeyboardEngine
                         Send, {LAlt up}
                     }
                     if (this.lastkeycount < 2) {
-                        this.engine.SendToken(this.shifted . this.keymap[this.chord])
+                        Send, u
                         Send, % this.shifted . this.keymap[this.keymap[key]]
+                        this.engine.CancelToken(this.keymap[this.keymap[key]])
                         this.logEvent(4, "Alt key sent bare as " this.shifted . this.keymap[this.keymap[key]])
                     } else {
                         this.logEvent(4, "Shift key not sent due to repeat key of " this.lastkeycount)
