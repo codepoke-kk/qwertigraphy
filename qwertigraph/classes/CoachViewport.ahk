@@ -416,7 +416,8 @@ class CoachViewport
 				this.flashTip(coaching)
 			}
 		}
-		if (coachEvent.endKey != " ") {
+		if (coachEvent.endKey != "{Space}") {
+			this.LogEvent(4, "Clearing phrase buffer with end key " coachEvent.endKey)
 			this.phrase_buffer := ""
 			this.qwerds_buffer := ""
 		}
