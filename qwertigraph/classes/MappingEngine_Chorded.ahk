@@ -561,6 +561,7 @@ class MappingEngine_Chorded
 					; This is an unknown word and qwerd. Send it to coaching, but only if it's not too strange
 					if (not inbound.isSensitive) {
 						this.nullQwerd.word := inbound.token
+						this.nullQwerd.qwerd := inbound.token
 						this.pushCoaching(this.nullQwerd, false, false, true, key, (StrLen(inbound.token)))
 						;this.pushPenStroke(this.nullQwerd, "purple")
 					}
