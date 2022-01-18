@@ -34,7 +34,7 @@ Gui, MainGUI: Show, x262 y118 w940 h570, % "Qwertigraph"
 #Include classes\QwertigraphyEnvironment.ahk
 #Include classes\DictionaryEntry.ahk
 #Include classes\DictionaryMap.ahk
-#Include classes\MappingEngine_Chorded.ahk
+#Include classes\MappingEngine.ahk
 #Include classes\AuxKeyboardEngine.ahk
 #Include classes\Queue.ahk
 #Include classes\LoggingEvent.ahk
@@ -61,7 +61,7 @@ qenv := new QwertigraphyEnvironment()
 #Include *i % qenv.personalDataFolder "\" personal_functions.ahk
 map := new DictionaryMap(qenv)
 aux := new AuxKeyboardEngine()
-engine := new MappingEngine_Chorded(map, aux)
+engine := new MappingEngine(map, aux)
 aux.engine := engine 
 
 speedViewer := new SpeedViewport()
@@ -85,6 +85,12 @@ logViewer.addQueue(qenv.logQueue)
 logViewer.addQueue(map.logQueue)
 logViewer.addQueue(aux.logQueue)
 logViewer.addQueue(engine.logQueue)
+logViewer.addQueue(engine.listener.logQueue)
+logViewer.addQueue(engine.accumulator.logQueue)
+logViewer.addQueue(engine.serialsender.logQueue)
+logViewer.addQueue(engine.chordsender.logQueue)
+logViewer.addQueue(engine.expander.logQueue)
+logViewer.addQueue(engine.coacher.logQueue)
 logViewer.addQueue(coach.logQueue)
 logViewer.addQueue(editor.logQueue)
 ;logViewer.addQueue(greggpad.logQueue)

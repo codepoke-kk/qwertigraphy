@@ -4,13 +4,18 @@ engine := {}
 #Include %A_AppData%\Qwertigraph\personal_functions.ahk
 #Include scripts\default.ahk
 
-class MappingEngine_Chorded
-{
+#Include classes\EngineParts\Listener.ahk
+#Include classes\EngineParts\Accumulator.ahk
+#Include classes\EngineParts\SerialSender.ahk
+#Include classes\EngineParts\ChordSender.ahk
+#Include classes\EngineParts\Expander.ahk
+#Include classes\EngineParts\Coacher.ahk
+
+class MappingEngine {
 	Static ContractedEndings := "s,d,t,m,re,ve,ll,r,v,l"
 	
 	map := ""
 	dashboard := ""
-	ih := ""
 	last_end_key := ""
 	characters_typed_raw := ""
 	characters_typed_final := ""
@@ -50,53 +55,25 @@ class MappingEngine_Chorded
 	
 	nullQwerd := new DictionaryEntry("null,,,,0,Could add,null_dictionary.csv")
 
-	__New(map, aux)
-	{
+	__New(map, aux)	{
 		this.map := map
 		this.aux := aux
-		this.keyboard.ChordReleaseWindow := this.map.qenv.properties.ChordWindow
-		this.keyboard.CoachAheadLines := this.map.qenv.properties.CoachAheadLines
-		this.keyboard.CoachAheadTipDuration := this.map.qenv.properties.CoachAheadTipDuration
-		this.keyboard.CoachAheadWait := this.map.qenv.properties.CoachAheadWait
-		this.logVerbosity := this.map.qenv.properties.LoggingLevelEngine
-		this.dashboard := ""
 		
-        this.setKeyboardChordWindowIncrements()
+		this.listener := New Listener(this)
+		this.accumulator := New Accumulator(this)
+		this.serialsender := New SerialSender(this)
+		this.chordsender := New ChordSender(this)
+		this.expander := New Expander(this)
+		this.coacher := New Coacher(this)
+		
 	}
 		
-	Start() 
-	{
-		this.logEvent(3, "Property test: " this.map.qenv.properties.ChordWindow)
+	Start() {
 		
-        this.ResyncModifierKeys()
-		this.keyboard.Token := ""
-		this.input_text_buffer := ""
-		this.logEvent(1, "Starting" )
-		this.ih := InputHook("EL0I1")
-		this.ih.KeyOpt("{All}", "NS")  ; End and Suppress
-		this.ih.KeyOpt("{CapsLock}", "V") 
-		this.ih.KeyOpt("{LShift}", "V") 
-		this.ih.KeyOpt("{RShift}", "V") 
-		this.ih.KeyOpt("{LControl}", "V") 
-		this.ih.KeyOpt("{RControl}", "V") 
-		this.ih.KeyOpt("{LAlt}", "V") 
-		this.ih.KeyOpt("{rAlt}", "V") 
-		this.ih.KeyOpt("{LWin}", "V") 
-		this.ih.KeyOpt("{RWin}", "V") 
-		;this.ih.OnKeyDown := Func("this.ReceiveKeyDown")
-		this.ih.OnKeyDown := ObjBindMethod(this, "ReceiveKeyDown")
-		;this.ih.OnKeyUp := Func("this.ReceiveKeyUp")
-		this.ih.OnKeyUp := ObjBindMethod(this, "ReceiveKeyUp")
-		this.ih.Start()	
+		this.listener.Start()
 	}	 
 		
-	Stop() 
-	{
-		this.logEvent(1, "Stopping" )
-		this.ih.KeyOpt("{All}", "-N-S")  ; Undo end and Suppress
-		this.ih.Stop()
-		this.keyboard.Token := ""
-		this.logEvent(1, "Stopped" )
+	Stop() 	{
 	}
 	
 	ReceiveKeyDown(InputHook, VK, SC) {
@@ -609,8 +586,7 @@ class MappingEngine_Chorded
 		}
 	}
 	
-	ResetInput()
-	{
+	ResetInput() {
 		this.logEvent(2, "Input reset by function ")
         this.ResyncModifierKeys()
 		this.aux.Flush()
@@ -664,7 +640,7 @@ class MappingEngine_Chorded
 		; Might this be a password?
         inbound.isSensitive := RegexMatch(inbound.token, "[0-9!@#$%\^&*<>?]")
 		; Like "there's"
-		inbound.isContraction := ((inbound.initial_end_char == "'") and (inbound.preceding_char) and (InStr(MappingEngine_Chorded.ContractedEndings,inbound.token)))
+		inbound.isContraction := ((inbound.initial_end_char == "'") and (inbound.preceding_char) and (InStr(MappingEngine.ContractedEndings,inbound.token)))
 		inbound.isAffix := false
 		
 		this.logEvent(4, "Inbound pre|end1|token|end2 |" inbound.preceding_char "|" inbound.initial_end_char "|" inbound.token "|" inbound.final_end_char "|")
@@ -730,13 +706,7 @@ class MappingEngine_Chorded
 			this.flashTip(coaching)
 		}
 	}
-	
-	;pushPenStroke(qwerd, ink) {
-;		penAction := new PenEvent(qwerd.form, qwerd.qwerd, qwerd.word, ink)
-;		this.penQueue.enqueue(penAction)
-;		this.logEvent(4, "Enqueued pen action '" penAction.form "'")
-;	}
-	
+		
 	pushDashboardQwerd(qwerd, ink) {
 		dashboardQwerd := new DashboardEvent(qwerd.form, qwerd.qwerd, qwerd.word, ink)
 		this.dashboardQueue.enqueue(dashboardQwerd)
@@ -764,6 +734,7 @@ class MappingEngine_Chorded
 		this.presentTextualCoachingAhead(token)
 		engine.dashboard.visualizeQueue()
 	}
+
 	presentGraphicalCoachingAhead(token) {
 		global engine
 		this.logEvent(2, "Graphical coaching ahead on " token)
@@ -786,6 +757,7 @@ class MappingEngine_Chorded
 		engine.dashboard.coachAheadQwerd := coachAheadQwerd
 		this.logEvent(4, "Replacing existing coach ahead qwerd " this.dashboard.coachAheadQwerd.word " with " coachAheadQwerd.qwerd)
 	}
+
 	presentTextualCoachingAhead(token) {
 		global engine
 		this.logEvent(4, "Textual coaching ahead on " token)
