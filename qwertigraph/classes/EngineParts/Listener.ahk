@@ -5,7 +5,7 @@ Class Listener {
 		this.title := "Listener"
 		this.name := "listener"
 		this.engine := engine 
-		this.logQueue := new Queue("Engine" this.title "Queue")
+		this.logQueue := engine.logQueue
 		this.logVerbosity := 4
 		
 		this.ih := ""
@@ -13,8 +13,9 @@ Class Listener {
 		this.logEvent(3, "Engine " this.title " instantiated")
 	}
 	
-	Start() {
+	Start(accumulator) {
 		this.logEvent(4, "Engine " this.title " starting")
+		this.accumulator := accumulator
 		
 		this.ih := InputHook("EL0I1")
 		this.ih.KeyOpt("{All}", "NS")  ; End and Suppress
@@ -39,7 +40,7 @@ Class Listener {
 		this.logEvent(1, "Stopping" )
 		this.ih.KeyOpt("{All}", "-N-S")  ; Undo end and Suppress
 		this.ih.Stop()
-		this.keyboard.Token := ""
+		this.engine.keyboard.Token := ""
 		this.logEvent(1, "Stopped" )
 	}	
 	
@@ -84,8 +85,12 @@ Class Listener {
 			; cancel will clear the token with no expansion
 		Switch key
 		{
-			case "a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z":
-				; Basic letters
+			case "a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m":
+				; Basic letters split up because AHK can only see the first 20
+				this.AddKeyToToken(key)
+				sendkey := key
+			case "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z":
+				; Basic letters split up because AHK can only see the first 20
 				this.AddKeyToToken(key)
 				sendkey := key
 			case "1", "2", "3", "4", "5", "6", "7", "8", "9", "0":
@@ -95,7 +100,7 @@ Class Listener {
 					if (key == "0") {
 						key := "10"
 					}
-                    shiftedKey := this.keyboard.ShiftedNumerals[key]
+                    shiftedKey := this.engine.keyboard.ShiftedNumerals[key]
 					if (InStr("@&", shiftedKey)) {
 						this.CancelToken(shiftedKey)
 					} else {
@@ -134,6 +139,7 @@ Class Listener {
 			case "LShift", "RShift", "LControl", "RControl", "LAlt", "RAlt", "LWin", "RWin", "CapsLock":
 				; Handle these just by sending nothing
 				sendKey := ""
+				this.IgnoreKey(key)
 			case "Numpad0", "Numpad1", "Numpad2", "Numpad3", "Numpad4", "Numpad5", "Numpad6", "Numpad7", "Numpad8", "Numpad9", "Numpad0":
 				mappedKey := this.aux.RemapKey(key)
 				sendkey := mappedKey
@@ -156,11 +162,11 @@ Class Listener {
 			;Msgbox, % "Sent {Blind}" sendKey
 		}
 		; sendKey is blanked out, so be sure to check on the original key 
-		if ((this.keyboard.AutoPunctuationSent) and (Instr(this.keyboard.EndKeys_hard, key))) {
+		if ((this.engine.keyboard.AutoPunctuationSent) and (Instr(this.engine.keyboard.EndKeys_hard, key))) {
 			this.logEvent(4, "Adding trailing autospace back after deletion with " sendKey)
 			Send, {Space}
 		}
-		this.keyboard.AutoPunctuationSent := false
+		this.engine.keyboard.AutoPunctuationSent := false
 	}
 
 	ReceiveKeyUp(InputHook, VK, SC) {
@@ -187,18 +193,25 @@ Class Listener {
 		}
 	}
 	
+	IgnoreKey(key) {
+		this.logEvent(4, "Ignoring key: " key)
+	}
 	AddKeyToToken(key) {
 		this.logEvent(4, "Adding key to token: " key)
+		this.accumulator.AddKeyToToken(key)
 	}
 	RemoveKeyFromToken() {
 		this.logEvent(4, "Removing key from token")
+		this.accumulator.RemoveKeyFromToken(key)
 	}
 	EndToken(key) {
 		this.logEvent(4, "Ending token: " key)
+		this.accumulator.EndToken(key)
 		Send, % "{Blind}" key
 	}
 	CancelToken(key) {
 		this.logEvent(4, "Cancelling token: " key)
+		this.accumulator.CancelToken(key)
 	}
 
 

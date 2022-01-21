@@ -5,7 +5,7 @@ Class Coacher {
 		this.title := "Coacher"
 		this.name := "coacher"
 		this.engine := engine 
-		this.logQueue := new Queue("Engine" this.title "Queue")
+		this.logQueue := engine.logQueue
 		this.logVerbosity := 4
 		
 		this.logEvent(3, "Engine " this.title " instantiated")

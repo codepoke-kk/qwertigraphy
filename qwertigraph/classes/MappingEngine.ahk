@@ -4,11 +4,13 @@ engine := {}
 #Include %A_AppData%\Qwertigraph\personal_functions.ahk
 #Include scripts\default.ahk
 
+#Include classes\EngineParts\Keyboard.ahk
 #Include classes\EngineParts\Listener.ahk
 #Include classes\EngineParts\Accumulator.ahk
-#Include classes\EngineParts\SerialSender.ahk
-#Include classes\EngineParts\ChordSender.ahk
-#Include classes\EngineParts\Expander.ahk
+#Include classes\EngineParts\TokenEvent.ahk
+#Include classes\EngineParts\SerialExpander.ahk
+#Include classes\EngineParts\ChordExpander.ahk
+#Include classes\EngineParts\Sender.ahk
 #Include classes\EngineParts\Coacher.ahk
 
 class MappingEngine {
@@ -32,48 +34,32 @@ class MappingEngine {
 	penQueue := new Queue("PenQueue")
 	dashboardQueue := new Queue("DashboardQueue")
 	
-	keyboard := {}
-	keyboard.EndKeys_hard := " .,?!;:'""-_{{}{}}[]/\+=|()@#$%^&*<>"
-	keyboard.Letters := ["a","b","c","d","e","f","g","h","i","j","k","l","m","n","o","p","q","r","s","t","u","v","w","x","y","z"]
-	keyboard.Numerals := ["1", "2", "3", "4", "5", "6", "7", "8", "9", "0"]
-	keyboard.ShiftedNumerals := ["!", "@", "#", "$", "%", "^", "&", "*", "(", ")"]
-	keyboard.Token := ""
-	keyboard.TokenStartTicks := A_TickCount
-	keyboard.CapsLock := false
-	keyboard.ChordLength := 0
-	keyboard.MaxChordLength := 0
-	keyboard.ChordPressStartTicks := 0
-	keyboard.ChordReleaseStartTicks := 0
-	keyboard.ScriptCalled := false
-	keyboard.AutoSpaceSent := true
-	keyboard.AutoPunctuationSent := false
-	keyboard.ChordReleaseWindow := 150
-    keyboard.ChordReleaseWindows := []
-	keyboard.CoachAheadLines := 100
-	keyboard.CoachAheadTipDuration := 5000
-	keyboard.CoachAheadWait := 1000
-	
 	nullQwerd := new DictionaryEntry("null,,,,0,Could add,null_dictionary.csv")
 
 	__New(map, aux)	{
 		this.map := map
 		this.aux := aux
 		
+		this.keyboard := New Keyboard(this)
 		this.listener := New Listener(this)
 		this.accumulator := New Accumulator(this)
-		this.serialsender := New SerialSender(this)
-		this.chordsender := New ChordSender(this)
-		this.expander := New Expander(this)
+		this.serialexpander := New SerialExpander(this)
+		this.chordexpander := New ChordExpander(this)
+		this.sender := New Sender(this)
 		this.coacher := New Coacher(this)
 		
 	}
 		
 	Start() {
-		
-		this.listener.Start()
+		this.listener.Start(this.accumulator)
 	}	 
-		
 	Stop() 	{
+	}
+	
+	NotifyEndToken(token) {
+		this.logEvent(4, "Notified serial token ended by " token.ender " with " token.input)
+		expanded_token := this.serialexpander.Expand(token)
+		sent_token := this.sender.Send(expanded_token)
 	}
 	
 	ReceiveKeyDown(InputHook, VK, SC) {
@@ -587,12 +573,12 @@ class MappingEngine {
 	}
 	
 	ResetInput() {
-		this.logEvent(2, "Input reset by function ")
-        this.ResyncModifierKeys()
-		this.aux.Flush()
+		;this.logEvent(2, "Input reset by function ")
+        ;this.ResyncModifierKeys()
+		;this.aux.Flush()
 		;this.ih.Stop()
 		;this.Start()
-		this.CancelToken("{LButton}")
+		;this.CancelToken("{LButton}")
 	}
 	
 	getInPlayChars(buffer) {

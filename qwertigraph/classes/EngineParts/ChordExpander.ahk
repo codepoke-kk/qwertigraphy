@@ -1,11 +1,11 @@
 ﻿
-Class ChordSender {
+Class ChordExpander {
 
 	__New(engine) {
-		this.title := "ChordSender"
-		this.name := "chordsender"
+		this.title := "ChordExpander"
+		this.name := "chordexpander"
 		this.engine := engine 
-		this.logQueue := new Queue("Engine" this.title "Queue")
+		this.logQueue := engine.logQueue
 		this.logVerbosity := 4
 		
 		this.logEvent(3, "Engine " this.title " instantiated")
