@@ -1,3 +1,10 @@
+/*
+- Edge cases to remember when testing 
+Alt-tab must work 
+Shifted number keys must work 
+Shifted symbol keys must work 
+*/
+
 #InstallKeybdHook
 engine := {}
 
@@ -12,6 +19,8 @@ engine := {}
 #Include classes\EngineParts\ChordExpander.ahk
 #Include classes\EngineParts\Sender.ahk
 #Include classes\EngineParts\Coacher.ahk
+#Include classes\EngineParts\Dashboarder.ahk
+#Include classes\EngineParts\Recorder.ahk
 
 class MappingEngine {
 	Static ContractedEndings := "s,d,t,m,re,ve,ll,r,v,l"
@@ -47,6 +56,9 @@ class MappingEngine {
 		this.chordexpander := New ChordExpander(this)
 		this.sender := New Sender(this)
 		this.coacher := New Coacher(this)
+		this.dashboarder := New Dashboarder(this)
+		this.recorder := New Recorder(this)
+		this.record := []
 		
 	}
 		
@@ -60,6 +72,10 @@ class MappingEngine {
 		this.logEvent(4, "Notified serial token ended by " token.ender " with " token.input)
 		expanded_token := this.serialexpander.Expand(token)
 		sent_token := this.sender.Send(expanded_token)
+		coached_token := this.coacher.Coach(sent_token)
+		dashboarded_token := this.dashboarder.Indicate(coached_token)
+		this.recorder.Record(dashboarded_token)
+		this.logEvent(4, "Completed handling of token #" this.record.MaxIndex())
 	}
 	
 	ReceiveKeyDown(InputHook, VK, SC) {

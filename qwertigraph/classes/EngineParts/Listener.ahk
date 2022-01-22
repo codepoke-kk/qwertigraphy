@@ -207,7 +207,6 @@ Class Listener {
 	EndToken(key) {
 		this.logEvent(4, "Ending token: " key)
 		this.accumulator.EndToken(key)
-		Send, % "{Blind}" key
 	}
 	CancelToken(key) {
 		this.logEvent(4, "Cancelling token: " key)

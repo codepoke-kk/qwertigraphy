@@ -13,6 +13,10 @@ Class Accumulator {
 	
 	AddKeyToToken(key) {
 		this.logEvent(4, "Adding key " key " to token " this.engine.keyboard.Token)
+		if ((GetKeyState("Shift", "P")) or (GetKeyState("CapsLock", "T"))) {
+			this.logEvent(4, "Uppercasing " key)
+			StringUpper key, key
+		} 
 		this.engine.keyboard.Token .= key
 	}
 	RemoveKeyFromToken() {
