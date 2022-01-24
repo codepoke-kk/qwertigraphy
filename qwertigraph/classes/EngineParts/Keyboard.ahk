@@ -17,8 +17,7 @@ Class Keyboard {
 		this.TokenStartTicks := A_TickCount
 		this.ChordPressStartTicks := 0
 		this.ScriptCalled := false
-		this.AutoSpaceSent := true
-		this.AutoPunctuationSent := false
+		this.AutoSpaceSent := false 
 		this.ChordMinimumLength := 2
 		this.ChordReleaseWindow := 150
 		this.ChordReleaseWindows := []

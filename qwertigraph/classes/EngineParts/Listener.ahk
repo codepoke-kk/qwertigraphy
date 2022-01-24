@@ -126,21 +126,21 @@ Class Listener {
 				; Handle these just by sending nothing
 				this.IgnoreKey(key)
 			case "Numpad0", "Numpad1", "Numpad2", "Numpad3", "Numpad4", "Numpad5", "Numpad6", "Numpad7", "Numpad8", "Numpad9", "Numpad0":
-				mappedKey := key ; this.aux.RemapKey(key)
+				mappedKey := this.engine.aux.RemapKey(key)
 				this.AddKeyToToken(mappedKey)
 				SendInput, % "{Blind} " mappedKey
 			case "Numlock", "NumpadDot", "NumpadDiv", "NumpadMult", "NumpadSub", "NumpadAdd", "NumpadEnter":
-				mappedKey := key ; this.aux.RemapKey(key)
+				mappedKey := this.engine.aux.RemapKey(key)
 				this.AddKeyToToken(mappedKey)
 				SendInput, % "{Blind} " mappedKey
 			case "NumpadHome", "NumpadUp", "NumpadPgUp", "NumpadRight", "NumpadPgDn", "NumpadDown", "NumpadEnd", "NumpadLeft", "NumpadClear", "NumpadIns", "NumpadDel":
 				this.logEvent(4, "Numpad nav: " key)
-				this.CancelToken("{" key "}")
-				modifierString := this.getModifierString()
-				SendInput, % modifierString "{" key "}"
-				;mappedKey := this.aux.RemapKey(key)
-				;this.AddKeyToToken(mappedKey)
-				;SendInput, % "{Blind} " mappedKey
+				;this.CancelToken("{" key "}")
+				;modifierString := this.getModifierString()
+				;SendInput, % modifierString "{" key "}"
+				mappedKey := this.engine.aux.RemapKey(key)
+				this.AddKeyToToken(mappedKey)
+				SendInput, % "{Blind} " mappedKey
 			default:
 				this.logEvent(4, "Defaulting unrecognized input as: {Blind} {" key "}")
 				SendInput, % "{Blind} {" key "}"
@@ -163,11 +163,11 @@ Class Listener {
 			case "0", "1", "2", "3", "4", "5", "6", "7", "8", "9":
 				this.engine.chordexpander.LeaveChord(key)
 			case "Numpad0", "Numpad1", "Numpad2", "Numpad3", "Numpad4", "Numpad5", "Numpad6", "Numpad7", "Numpad8", "Numpad9", "Numpad0":
-				this.aux.LeaveChord(key)
+				this.engine.aux.LeaveChord(key)
 			case "Numlock", "NumpadDot", "NumpadDiv", "NumpadMult", "NumpadSub", "NumpadAdd", "NumpadEnter":
-				this.aux.LeaveChord(key)
+				this.engine.aux.LeaveChord(key)
 			case "NumpadHome", "NumpadUp", "NumpadPgUp", "NumpadRight", "NumpadPgDn", "NumpadDown", "NumpadEnd", "NumpadLeft", "NumpadClear", "NumpadIns", "NumpadDel":
-				this.aux.LeaveChord(key)
+				this.engine.aux.LeaveChord(key)
 		}
 	}
 	
@@ -197,6 +197,10 @@ Class Listener {
 		this.logEvent(4, "Ending token: " key)
 		if (GetKeyState("Control", "P")) {
 			this.CancelToken(key)
+			if (InStr("{Space},.'""", key)) {
+				this.logEvent(4, "Passing token through after cancelling, due to ctrl key: " key)
+				Send, % key
+			}
 		} else {
 			this.accumulator.EndToken(key)
 			this.logEvent(4, "Serial token kills chord")
