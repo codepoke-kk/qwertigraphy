@@ -25,12 +25,10 @@ Class Listener {
 		this.ih.KeyOpt("{LControl}", "V") 
 		this.ih.KeyOpt("{RControl}", "V") 
 		this.ih.KeyOpt("{LAlt}", "V") 
-		this.ih.KeyOpt("{rAlt}", "V") 
+		this.ih.KeyOpt("{RAlt}", "V") 
 		this.ih.KeyOpt("{LWin}", "V") 
 		this.ih.KeyOpt("{RWin}", "V") 
-		;this.ih.OnKeyDown := Func("this.ReceiveKeyDown")
-		this.ih.OnKeyDown := ObjBindMethod(this, "ReceiveKeyDown")
-		;this.ih.OnKeyUp := Func("this.ReceiveKeyUp")
+		this.ih.OnKeyDown := ObjBindMethod(this, "ReceiveKeyDown")						
 		this.ih.OnKeyUp := ObjBindMethod(this, "ReceiveKeyUp")
 		this.ih.Start()	
 		this.logEvent(3, "Engine " this.title " started")
@@ -42,7 +40,7 @@ Class Listener {
 		this.ih.Stop()
 		this.engine.keyboard.Token := ""
 		this.logEvent(1, "Stopped" )
-	}	
+	}
 	
 	ReceiveKeyDown(InputHook, VK, SC) {
 		local key
@@ -88,85 +86,65 @@ Class Listener {
 			case "a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m":
 				; Basic letters split up because AHK can only see the first 20
 				this.AddKeyToToken(key)
-				sendkey := key
+				SendInput, % "{Blind}" key
 			case "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z":
 				; Basic letters split up because AHK can only see the first 20
 				this.AddKeyToToken(key)
-				sendkey := key
+				SendInput, % "{Blind}" key
 			case "1", "2", "3", "4", "5", "6", "7", "8", "9", "0":
 				; Number keys can either be shifted or unshifted
-				sendkey := key
 				if (GetKeyState("Shift", "P")) {
 					if (key == "0") {
-						key := "10"
+				 		key := "10"
 					}
-                    shiftedKey := this.engine.keyboard.ShiftedNumerals[key]
-					if (InStr("@&", shiftedKey)) {
-						this.CancelToken(shiftedKey)
-					} else {
-						sendKey := ""
-						this.EndToken("{" shiftedKey "}")
-					}
+					shiftedKey := this.engine.keyboard.ShiftedNumerals[key]
+					this.EndToken("{" shiftedKey "}")
 				} else {
 					this.AddKeyToToken(key)
-				}
+					SendInput, % "{Blind}" key
+				 }
 			case ".", ",", "'", """", "[", "]", "/", ";", "[", "]", "\", "-", "=", "``": 
 				; These are punctuation keys that can be combined with ctrl to cancel a token, or sent plain to end a token
-				sendkey := ""
-				if (not GetKeyState("Control", "P")) {
-					this.EndToken(key)
-				} else {
-					this.CancelToken("{Ctrl-" key "}")
-					Send, % key
-				}
+				this.EndToken(key)
 			case "Space", "Enter", "Tab", "Insert":
 				; These are like punctation, but must be sent in curly braces
-				sendkey := ""
-				if (not GetKeyState("Control", "P")) {
-					this.EndToken("{" key "}")
-				} else {
-					this.CancelToken("{Ctrl-" key "}")
-					Send, % "{" key "}"
-				}
-			case "Home", "End", "PgUp", "PgDn", "Left", "Up", "Right", "Down", "Delete":
+				this.EndToken("{" key "}")
+			case "Home", "End", "PgUp", "PgDn", "Left", "Up", "Right", "Down", "Delete", "Del":
 				; Navigation always cancels the token
-				sendKey := "{" key "}"
-				this.CancelToken(sendkey)
+				this.CancelToken("{" key "}")
+				modifierString := this.getModifierString()
+				SendInput, % modifierString "{" key "}"
 			case "Backspace":
 				; Backspace is its own thing. We have to manage the token and even pull old tokens back from cache
-				sendKey := "{" key "}"
+				this.logEvent(4, "About to backspace")
 				this.RemoveKeyFromToken()
+				this.logEvent(4, "Removed token")
+				modifierString := this.getModifierString()
+				SendInput, % modifierString "{" key "}"
+				this.logEvent(4, "Sent backspace")
 			case "LShift", "RShift", "LControl", "RControl", "LAlt", "RAlt", "LWin", "RWin", "CapsLock":
 				; Handle these just by sending nothing
-				sendKey := ""
 				this.IgnoreKey(key)
 			case "Numpad0", "Numpad1", "Numpad2", "Numpad3", "Numpad4", "Numpad5", "Numpad6", "Numpad7", "Numpad8", "Numpad9", "Numpad0":
-				mappedKey := this.aux.RemapKey(key)
-				sendkey := mappedKey
-				this.AddKeyToToken(sendkey)
+				mappedKey := key ; this.aux.RemapKey(key)
+				this.AddKeyToToken(mappedKey)
+				SendInput, % "{Blind} " mappedKey
 			case "Numlock", "NumpadDot", "NumpadDiv", "NumpadMult", "NumpadSub", "NumpadAdd", "NumpadEnter":
-				mappedKey := this.aux.RemapKey(key)
-				sendkey := mappedKey
-				this.AddKeyToToken(sendkey)
+				mappedKey := key ; this.aux.RemapKey(key)
+				this.AddKeyToToken(mappedKey)
+				SendInput, % "{Blind} " mappedKey
 			case "NumpadHome", "NumpadUp", "NumpadPgUp", "NumpadRight", "NumpadPgDn", "NumpadDown", "NumpadEnd", "NumpadLeft", "NumpadClear", "NumpadIns", "NumpadDel":
-				mappedKey := this.aux.RemapKey(key)
-				sendkey := mappedKey
-				this.AddKeyToToken(sendkey)
+				this.logEvent(4, "Numpad nav: " key)
+				this.CancelToken("{" key "}")
+				modifierString := this.getModifierString()
+				SendInput, % modifierString "{" key "}"
+				;mappedKey := this.aux.RemapKey(key)
+				;this.AddKeyToToken(mappedKey)
+				;SendInput, % "{Blind} " mappedKey
 			default:
-				sendKey := "{" key "}"
+				this.logEvent(4, "Defaulting unrecognized input as: {Blind} {" key "}")
+				SendInput, % "{Blind} {" key "}"
 		} 
-		; Send, % sendKey
-		if (sendKey != ""){
-			this.logEvent(3, "Passthrough: {Blind}" sendKey)
-			SendInput, % "{Blind}" sendKey
-			;Msgbox, % "Sent {Blind}" sendKey
-		}
-		; sendKey is blanked out, so be sure to check on the original key 
-		if ((this.engine.keyboard.AutoPunctuationSent) and (Instr(this.engine.keyboard.EndKeys_hard, key))) {
-			this.logEvent(4, "Adding trailing autospace back after deletion with " sendKey)
-			Send, {Space}
-		}
-		this.engine.keyboard.AutoPunctuationSent := false
 	}
 
 	ReceiveKeyUp(InputHook, VK, SC) {
@@ -179,11 +157,11 @@ Class Listener {
 		Switch key
 		{
 			case "a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m":
-				this.LeaveChord(key)
+				this.engine.chordexpander.LeaveChord(key)
 			case "n", "o", "p", "r", "q", "s", "t", "u", "v", "w", "x", "y", "z": 
-				this.LeaveChord(key)
+				this.engine.chordexpander.LeaveChord(key)
 			case "0", "1", "2", "3", "4", "5", "6", "7", "8", "9":
-				this.LeaveChord(key)
+				this.engine.chordexpander.LeaveChord(key)
 			case "Numpad0", "Numpad1", "Numpad2", "Numpad3", "Numpad4", "Numpad5", "Numpad6", "Numpad7", "Numpad8", "Numpad9", "Numpad0":
 				this.aux.LeaveChord(key)
 			case "Numlock", "NumpadDot", "NumpadDiv", "NumpadMult", "NumpadSub", "NumpadAdd", "NumpadEnter":
@@ -198,22 +176,60 @@ Class Listener {
 	}
 	AddKeyToToken(key) {
 		this.logEvent(4, "Adding key to token: " key)
-		this.accumulator.AddKeyToToken(key)
+		if (GetKeyState("Control", "P")) {
+			this.CancelToken("{" key "}")
+		} else {
+			if ((not this.engine.keyboard.Token) and (not this.engine.keyboard.ChordPressStartTicks)) {
+				
+				this.logEvent(4, "First key added to token, so opens possible chord")
+				this.engine.keyboard.ChordPressStartTicks := A_TickCount
+			}
+			this.accumulator.AddKeyToToken(key)
+		}
 	}
 	RemoveKeyFromToken() {
 		this.logEvent(4, "Removing key from token")
 		this.accumulator.RemoveKeyFromToken(key)
+		this.logEvent(4, "Backspace kills chord")
+		this.engine.keyboard.ChordPressStartTicks := 0
 	}
 	EndToken(key) {
 		this.logEvent(4, "Ending token: " key)
-		this.accumulator.EndToken(key)
+		if (GetKeyState("Control", "P")) {
+			this.CancelToken(key)
+		} else {
+			this.accumulator.EndToken(key)
+			this.logEvent(4, "Serial token kills chord")
+			this.engine.keyboard.ChordPressStartTicks := 0
+		}
 	}
 	CancelToken(key) {
 		this.logEvent(4, "Cancelling token: " key)
 		this.accumulator.CancelToken(key)
+		this.logEvent(4, "Cancel token kills chord")
+		this.engine.keyboard.ChordPressStartTicks := 0
 	}
 
 
+	getModifierString()	{
+		state := ""
+		if GetKeyState("LWin", "P") || GetKeyState("RWin", "P")	{
+			state .= "#"
+		}
+
+		if GetKeyState("LControl", "P")	{
+			state .= "^"
+		}
+
+		if GetKeyState("LAlt", "P")	{
+			state .= "!"
+		}
+
+		if GetKeyState("Shift", "P")	{
+			state .= "+"
+		}
+		return state
+	}
 
 	LogEvent(verbosity, message) 
 	{

@@ -15,7 +15,47 @@ Class SerialExpander {
 	
 	Expand(token) {
 		this.logEvent(4, "Expanding after " token.ender " with " token.input)
-		if (this.engine.map.qwerds.item(token.input).word) {
+		
+		lastToken := 0
+		lastToken := this.engine.record[this.engine.record.MaxIndex()]
+		if ((lastToken) and (lastToken.ender == "'") and (InStr("s|d|r|v|l", token.input))) {
+			this.logEvent(4, "Handling " lastToken.ender token.input " as a contraction")
+			Switch token.input 
+			{
+				Case "s":
+					this.nullQwerd.word := "s"
+					this.nullQwerd.qwerd := " s"
+					token.qwerd := this.nullQwerd
+					token.output := this.nullQwerd.word
+					token.match := 1
+				Case "d":
+					this.nullQwerd.word := "d"
+					this.nullQwerd.qwerd := "d"
+					token.qwerd := this.nullQwerd
+					token.output := this.nullQwerd.word
+					token.match := 1
+				Case "r":
+					this.nullQwerd.word := "re"
+					this.nullQwerd.qwerd := "r"
+					token.qwerd := this.nullQwerd
+					token.output := this.nullQwerd.word
+					token.match := 1
+				Case "v":
+					this.nullQwerd.word := "ve"
+					this.nullQwerd.qwerd := "v"
+					token.qwerd := this.nullQwerd
+					token.output := this.nullQwerd.word
+					token.match := 1
+				Case "l":
+					this.nullQwerd.word := "ll"
+					this.nullQwerd.qwerd := "l"
+					token.qwerd := this.nullQwerd
+					token.output := this.nullQwerd.word
+					token.match := 1
+				Default:
+					this.logEvent(1, "Cannot reach this line handling " lastToken.ender token.input " as contraction")
+			}
+		} else if (this.engine.map.qwerds.item(token.input).word) {
 			token.qwerd := this.engine.map.qwerds.item(token.input)
 			token.output := token.qwerd.word
 			token.match := 1

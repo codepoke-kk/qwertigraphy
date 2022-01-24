@@ -14,25 +14,33 @@ Class Sender {
 	Send(token) {
 		this.logEvent(4, "Sending " token.input " as " token.output)
 		
+		if ((this.engine.keyboard.AutoSpaceSent) and (not token.output)) {
+			; We sent a space after sending a chord and this is a bare end key. We need to delete that autospace
+			this.logEvent(4, "Deleting autospace and setting autopunctuation")
+			Send, {Backspace} 
+			this.engine.keyboard.AutoPunctuationSent := true
+		}
+		this.engine.keyboard.AutoSpaceSent := false
+		
 		if (not StrLen(token.output)) {
 			this.logEvent(4, "Token input " token.input " unmatched")
 			token.active_edited := false 
-			Send, % token.ender
+			Send, % "{Blind}" token.ender
 			return token
 		} else if (token.input == token.output) {
 			this.logEvent(4, "Token input " token.input " matched output")
 			token.active_edited := false 
-			Send, % token.ender
+			Send, % "{Blind}" token.ender
 			return token
 		} else {
 			token.active_edited := true 
 			token.deleted_characters := StrLen(token.input)
 			this.logEvent(4, "Sending " token.deleted_characters " backspaces")
-			Send, % "{Backspace " token.deleted_characters "}"
+			Send, % "{Blind}" "{Backspace " token.deleted_characters "}"
 			this.logEvent(4, "Sending " token.output)
 			Send, % token.output
 			this.logEvent(4, "Sending " token.ender)
-			Send, % token.ender
+			Send, % "{Blind}" token.ender
 			return token
 		}
 	}

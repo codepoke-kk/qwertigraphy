@@ -15,19 +15,22 @@ Class Keyboard {
 		this.Token := ""
 		this.TokenEndKey := ""
 		this.TokenStartTicks := A_TickCount
-		this.CapsLock := false
-		this.ChordLength := 0
-		this.MaxChordLength := 0
 		this.ChordPressStartTicks := 0
-		this.ChordReleaseStartTicks := 0
 		this.ScriptCalled := false
 		this.AutoSpaceSent := true
 		this.AutoPunctuationSent := false
+		this.ChordMinimumLength := 2
 		this.ChordReleaseWindow := 150
 		this.ChordReleaseWindows := []
 		this.CoachAheadLines := 100
 		this.CoachAheadTipDuration := 5000
 		this.CoachAheadWait := 1000
+		
+		; I need to allow longer for a chord release. So, a 2-key chord gets 100ms, but a 4-key chord gets 200ms from first press to first release 
+        increment := Round(this.ChordReleaseWindow / 3)
+        Loop, 26 {
+            this.ChordReleaseWindows[A_Index] := increment + (A_Index * increment)
+        }
 		
 		this.logEvent(3, "Engine " this.title " instantiated")
 	}
