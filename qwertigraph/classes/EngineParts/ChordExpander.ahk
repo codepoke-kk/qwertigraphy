@@ -40,14 +40,20 @@ Class ChordExpander {
 		}
 		if (this.engine.map.chords.item(chord).word) {
 			this.logEvent(4, "Chord " chord " found for " this.engine.map.chords.item(chord).word)
-			token := New TokenEvent(this.engine.keyboard.Token, "{Space}")
+            if (Instr(this.engine.map.chords.item(chord).word, ")", , 0)) {
+                this.logEvent(4, "Chord is for a script. Sending no End Character")
+                ender := ""
+            } else {
+                ender := "{Space}"
+            }
+			token := New TokenEvent(this.engine.keyboard.Token, ender)
 			token.input := chord
 			token.qwerd := this.engine.map.chords.item(chord)
 			token.output := token.qwerd.word
 			token.match := 1
 			this.engine.keyboard.Token := ""
 			this.engine.NotifyChordedToken(token)
-			this.engine.keyboard.AutoSpaceSent := true 
+			this.engine.keyboard.AutoSpaceSent := ender 
 			;this.ExpandInput(chord, "{Chord}", "", (A_TickCount - this.keyboard.TokenStartTicks))
 			;if (not this.keyboard.ScriptCalled) {
 			;	Send, {Space}
