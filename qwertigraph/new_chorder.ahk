@@ -105,7 +105,6 @@ engine.Start()
 
 #Include *i personal.ahk
 
-
 ; Stop input when the mouse buttons are clicked
 ~LButton::engine.ResetInput()
 ~RButton::engine.ResetInput()

@@ -32,6 +32,18 @@ Class Sender {
 			token.active_edited := false 
 			Send, % "{Blind}" token.ender
 			return token
+		} else if (Instr(token.output, ")", , 0)) {
+			this.logEvent(4, "Token output " token.output " is a script call")
+			token.deleted_characters := StrLen(token.input)
+			this.logEvent(4, "Sending " token.deleted_characters " backspaces")
+			Send, % "{Blind}" "{Backspace " token.deleted_characters "}"
+			function_name := Substr(token.output, 1, Instr(token.output, "(") - 1)
+			this.logEvent(4, "Function name is " function_name)
+			fn := Func(function_name)
+			this.logEvent(4, "Function is " fn.Name)
+			fn.Call(token.input, token.output, token.ender)
+			this.logEvent(4, "Call complete")
+			return token
 		} else {
 			token.active_edited := true 
 			token.deleted_characters := StrLen(token.input)

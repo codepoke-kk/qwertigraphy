@@ -34,7 +34,7 @@ class LogViewport
 	logQueues := []
 	interval := 1000
 	logEvents := []
-    logToFile := false
+    logToFile := true 
 	logFileName := ""
 	logFileHandle := ""
 	
