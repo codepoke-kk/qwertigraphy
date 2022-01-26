@@ -4,7 +4,7 @@
 class AuxKeyboardEngine
 {
 	logQueue := new Queue("AuxEngineQueue")
-	logVerbosity := 1
+	logVerbosity := 4
 	enabled := true
     dashboard := ""
 
@@ -193,12 +193,12 @@ class AuxKeyboardEngine
 				this.logEvent(3, "Matched chord " this.chord " as " this.keymap[this.chord])
 				if ((StrLen(this.keymap[this.chord]) = 1) and (not RegExMatch(this.keymap[this.chord], "[a-zA-Z0-9]"))) {
 					this.logEvent(3, "Chord is non-text, sending and ending")
-					this.engine.SendToken(this.keymap[this.chord])
+					this.engine.listener.EndToken(this.keymap[this.chord])
 					Send, % this.shifted . this.keymap[this.chord]
 					this.ToggleLayerLock()
 				} else if (this.keymap[this.chord] = "{Backspace}") {
 					this.logEvent(3, "Chord is backspace. Shortening token by 1")
-					this.engine.RemoveKeyFromToken()
+					this.engine.listener.RemoveKeyFromToken()
 					; Send to screen 
 					Send, % this.shifted this.keymap[this.chord]
 					this.ToggleLayerLock()
@@ -262,12 +262,12 @@ class AuxKeyboardEngine
                     ; We need to cancel the token if we sent it as a control character 
                     if (this.controlled or this.alted or this.winned) {
                         this.logEvent(3, "Chord is modded. Cancelling existing token")
-                        this.engine.CancelToken("{Modded}")
+                        this.engine.listener.EndToken("{Modded}")
                     }
 					this.ToggleLayerLock()
 				} else {
-					this.logEvent(3, "Chord is an end character. Sending token " this.keymap[this.chord]) " with " this.shifted . this.controlled . this.alted . this.winned
-					this.engine.SendToken(this.shifted . this.keymap[this.chord])
+					this.logEvent(3, "Chord is an end character. Sending token " this.keymap[this.chord] " with " this.shifted . this.controlled . this.alted . this.winned)
+					this.engine.listener.EndToken(this.shifted . this.keymap[this.chord])
 					this.ToggleLayerLock()
 				}
 			} else if (this.keysdown) {
@@ -280,34 +280,34 @@ class AuxKeyboardEngine
                     ;;;;;; I use redirection like this.keymap["_Alt"] so the keys can be remapped 
                     if (key = this.keymap["_Alt"] and GetKeyState(this.keymap["_Control"], "P") and GetKeyState(this.keymap["_LShift"], "P")){
                         ; control-alt-delete
-                        this.engine.CancelToken("{Del}")
+                        this.engine.listener.EndToken("{Del}")
                         run taskmgr
                         this.logEvent(4, "Space, Control, and Esc keys down and Esc released so running task manager")
                     } else if (key = this.keymap["_Control"] and GetKeyState(this.keymap["_Alt"], "P") and GetKeyState(this.keymap["_LShift"], "P")){
                         ; control-shift-escape
-                        this.engine.CancelToken("{Esc}")
+                        this.engine.listener.EndToken("{Esc}")
                         Send, % "^+{Esc}"
                         this.logEvent(4, "Space, Control, and Esc keys down and Control released so sending bare as ^+{Esc}")
                     } else if (key = this.keymap["_LShift"] and GetKeyState(this.keymap["_Control"], "P") and GetKeyState(this.keymap["_Alt"], "P")){
                         ; control-alt-end
-                        this.engine.CancelToken("{End}")
+                        this.engine.listener.EndToken("{End}")
                         Send, % "^!{End}"
                         this.logEvent(4, "Space, Control, and Esc keys down and Space released so sending bare as ^!{End}")
                     } else if ((key = this.keymap["_Alt"] and GetKeyState(this.keymap["_LShift"], "P")) or (key = this.keymap["_LShift"] and GetKeyState(this.keymap["_Alt"], "P"))){
                         ; alt-space
-                        this.engine.SendToken("{Space}")
+                        this.engine.listener.EndToken("{Space}")
                         Send, % "{Space}"
                         this.logEvent(4, "Space and Control key sent bare as {Space}")
                     } else if ((key = this.keymap["_LShift"] and GetKeyState(this.keymap["_Control"], "P")) or (key = this.keymap["_Control"] and GetKeyState(this.keymap["_LShift"], "P"))) {
                         ; shift-enter
                         this.controlled := ""
                         Send, {LControl up}
-                        this.engine.SendToken("+{Enter}")
+                        this.engine.listener.EndToken("+{Enter}")
                         this.logEvent(4, "LShift and Enter key sent bare as +{Enter}")
                     } else if (key = this.keymap["_RShift"] and GetKeyState(this.keymap["_Control"], "P")) {
                         ; control-backspace
                         ; Send, % "{Backspace}"
-                        this.engine.SendToken("{Backspace}")
+                        this.engine.listener.EndToken("{Backspace}")
                         this.logEvent(4, "BackSpace and Control key and BackSpace released first, so sent bare as ^{Backspace}")
                     } else if (key = this.keymap["_Control"] and GetKeyState(this.keymap["_RShift"], "P")) {
                         ; control-enter
@@ -315,7 +315,7 @@ class AuxKeyboardEngine
                         ; this.logEvent(4, "BackSpace and Control key and Enter released first, so sent bare as ^{Enter}")
                     } else if ((key = this.keymap["_Alt"] and GetKeyState(this.keymap["_Control"], "P")) or (key = this.keymap["_Control"] and GetKeyState(this.keymap["_Alt"], "P"))) {
                         ; alt-enter
-                        this.engine.SendToken("{Enter}")
+                        this.engine.listener.EndToken("{Enter}")
                         Send, % "{Enter}"
                         this.logEvent(4, "Esc and Enter key sent bare as {Enter}")
                     } else {
@@ -330,9 +330,9 @@ class AuxKeyboardEngine
                     }
                     if (this.lastkeycount < 2) {
                         if (not this.keymap[this.keymap[key]] = "{Backspace}") {
-                            this.engine.SendToken(this.keymap[this.chord])
+                            this.engine.listener.EndToken(this.keymap[this.chord])
                         } else {
-                            this.engine.RemoveKeyFromToken()
+                            this.engine.listener.RemoveKeyFromToken()
                         }
                         Send, % this.keymap[this.keymap[key]]
                         this.logEvent(4, "Shift key sent bare as " this.keymap[this.keymap[key]] " with " this.controlled . this.alted . this.winned)
@@ -350,7 +350,7 @@ class AuxKeyboardEngine
                         this.logEvent(4, "Not lifting LControl because " GetKeyState("LControl", "P"))
                     }
                     if (this.lastkeycount < 2) {
-                        this.engine.SendToken(this.shifted . this.keymap[this.chord])
+                        this.engine.listener.EndToken(this.shifted . this.keymap[this.chord])
                         Send, % this.shifted . this.keymap[this.keymap[key]]
                         this.logEvent(4, "Control key sent bare as " this.shifted . this.keymap[this.keymap[key]])
                     } else {
@@ -365,7 +365,7 @@ class AuxKeyboardEngine
                     if (this.lastkeycount < 2) {
                         Send, u
                         Send, % this.shifted . this.keymap[this.keymap[key]]
-                        this.engine.CancelToken(this.keymap[this.keymap[key]])
+                        this.engine.listener.EndToken(this.keymap[this.keymap[key]])
                         this.logEvent(4, "Alt key sent bare as " this.shifted . this.keymap[this.keymap[key]])
                     } else {
                         this.logEvent(4, "Shift key not sent due to repeat key of " this.lastkeycount)
@@ -377,7 +377,7 @@ class AuxKeyboardEngine
                         Send, {LWin up}
                     }
                     if (this.lastkeycount < 2) {
-                        this.engine.SendToken(this.shifted . this.keymap[this.chord])
+                        this.engine.listener.EndToken(this.shifted . this.keymap[this.chord])
                         Send, % this.shifted . this.keymap[this.keymap[key]]
                         this.logEvent(4, "Win key sent bare as " this.shifted . this.controlled . this.alted . this.keymap[this.keymap[key]])
                     } else {
@@ -385,7 +385,7 @@ class AuxKeyboardEngine
                     }
 				} else if (this.keymap[key] = "{Reset}") {
 					this.logEvent(3, "Chord is Reset. Cancelling token and sending " this.keymap[this.keymap[key]])
-					this.engine.CancelToken(this.keymap[key])
+					this.engine.listener.EndToken(this.keymap[key])
 					this.numlocked := !this.numlocked
 					SetNumLockState , % this.numlocked
 				} 
