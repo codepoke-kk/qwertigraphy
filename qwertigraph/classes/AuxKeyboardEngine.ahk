@@ -262,7 +262,7 @@ class AuxKeyboardEngine
                     ; We need to cancel the token if we sent it as a control character 
                     if (this.controlled or this.alted or this.winned) {
                         this.logEvent(3, "Chord is modded. Cancelling existing token")
-                        this.engine.listener.EndToken("{Modded}")
+                        this.engine.listener.CancelToken("{Modded}")
                     }
 					this.ToggleLayerLock()
 				} else {
