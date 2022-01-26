@@ -194,7 +194,7 @@ class AuxKeyboardEngine
 				if ((StrLen(this.keymap[this.chord]) = 1) and (not RegExMatch(this.keymap[this.chord], "[a-zA-Z0-9]"))) {
 					this.logEvent(3, "Chord is non-text, sending and ending")
 					this.engine.listener.EndToken(this.keymap[this.chord])
-					Send, % this.shifted . this.keymap[this.chord]
+					; Send, % this.shifted . this.keymap[this.chord]
 					this.ToggleLayerLock()
 				} else if (this.keymap[this.chord] = "{Backspace}") {
 					this.logEvent(3, "Chord is backspace. Shortening token by 1")
