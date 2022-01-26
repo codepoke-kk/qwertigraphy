@@ -7,6 +7,11 @@ process, priority, ,high
 CoordMode, ToolTip, Relative
 setworkingdir, %a_scriptdir%
 
+;engine := 0 ; Need the variable 
+Msgbox, % "Starting"
+
+OnExit("ExitFunc")
+
 IfNotExist, dictionaries
     FileCreateDir, dictionaries
 IfNotExist, strokepaths
@@ -106,9 +111,20 @@ engine.Start()
 #Include *i personal.ahk
 
 
+ExitFunc(ExitReason, ExitCode)
+{
+   global
+   ; gdi+ may now be shutdown on exiting the program
+   Msgbox, % "Shutting down GDIP"
+   Gdip_Shutdown(dashboard.pToken)
+   Msgbox, % "Shut down GDIP"
+}
+
 ; Stop input when the mouse buttons are clicked
-~LButton::engine.ResetInput()
-~RButton::engine.ResetInput()
+~LButton::
+~RButton::
+    engine.ResetInput()
+    Return 
 
 
 ; Enable/Disable

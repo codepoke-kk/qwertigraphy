@@ -127,19 +127,15 @@ Class Listener {
 				this.IgnoreKey(key)
 			case "Numpad0", "Numpad1", "Numpad2", "Numpad3", "Numpad4", "Numpad5", "Numpad6", "Numpad7", "Numpad8", "Numpad9", "Numpad0":
 				mappedKey := this.engine.aux.RemapKey(key)
+				this.logEvent(4, "Aux keyboard: " key "->" mappedKey)
 				this.AddKeyToToken(mappedKey)
-				this.logEvent(4, "Numpad nav: " key)
-				;SendInput, % "{Blind} " mappedKey
 			case "NumpadHome", "NumpadUp", "NumpadPgUp", "NumpadRight", "NumpadPgDn", "NumpadDown", "NumpadEnd", "NumpadLeft", "NumpadClear", "NumpadIns", "NumpadDel":
-				this.logEvent(4, "Numpad nav: " key)
-				;this.CancelToken("{" key "}")
-				;modifierString := this.getModifierString()
-				;SendInput, % modifierString "{" key "}"
 				mappedKey := this.engine.aux.RemapKey(key)
+				this.logEvent(4, "Aux keyboard: " key "->" mappedKey)
 				this.AddKeyToToken(mappedKey)
-				;SendInput, % "{Blind} " mappedKey
 			case "Numlock", "NumpadDot", "NumpadDiv", "NumpadMult", "NumpadSub", "NumpadAdd", "NumpadEnter":
 				mappedKey := this.engine.aux.RemapKey(key)
+				this.logEvent(4, "Aux keyboard: " key "->" mappedKey)
 				this.AddKeyToToken(mappedKey)
                 ;SendInput, % "{Blind} " mappedKey
 			default:

@@ -71,18 +71,19 @@ class MappingEngine {
 		this.listener.Stop(this.accumulator)
 	}
 	
-	NotifyEndToken(token) {
+	NotifySerialToken(token) {
 		this.logEvent(4, "Notified serial token ended by " token.ender " with " token.input)
 		expanded_token := this.serialexpander.Expand(token)
-		sent_token := this.sender.Send(expanded_token)
-		coached_token := this.coacher.Coach(sent_token)
-		dashboarded_token := this.dashboarder.Indicate(coached_token)
-		this.recorder.Record(dashboarded_token)
-		this.logEvent(4, "Completed handling of token #" this.record.MaxIndex())
+		this.NotifyExpandedToken(expanded_token)
+		;sent_token := this.sender.Send(expanded_token)
+		;coached_token := this.coacher.Coach(sent_token)
+		;dashboarded_token := this.dashboarder.Indicate(coached_token)
+		;this.recorder.Record(dashboarded_token)
+		;this.logEvent(4, "Completed handling of token #" this.record.MaxIndex())
 	}
 	
-	NotifyChordedToken(token) {
-		this.logEvent(4, "Notified chorded token ended by " token.ender " with " token.input)
+	NotifyExpandedToken(token) {
+		this.logEvent(4, "Notified expanded token ended by " token.ender " with " token.input)
 		sent_token := this.sender.Send(token)
 		coached_token := this.coacher.Coach(sent_token)
 		dashboarded_token := this.dashboarder.Indicate(coached_token)
@@ -104,113 +105,6 @@ class MappingEngine {
 		this.logEvent(4, "In play chars are '" in_play_chars "'")
         
 		return in_play_chars
-	}
-	
-	parseInbound(in_play_chars, end_char) {
-		; Strategy: Reverse the chars, the first live characters are the token, then the first end char, and the preceding character 
-		;	Make decisions based upon those 4 pieces of data
-		inbound := {}
-		inbound.final_end_char := end_char
-		DllCall("msvcrt.dll\_wcsrev", "Ptr", &in_play_chars, "CDecl")
-		finding_preceding_char := false 
-		token := ""
-		Loop, Parse, in_play_chars 
-		{
-			if (finding_preceding_char) {
-				inbound.preceding_char := A_LoopField
-				break
-			}
-			if (InStr("abcdefghijklmnopqrstuzwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789", A_LoopField)) {
-				; Not an end char, so add this to the token
-				token .= A_LoopField
-			} else {
-				inbound.initial_end_char := A_LoopField
-				finding_preceding_char := true 
-			}
-		}
-		DllCall("msvcrt.dll\_wcsrev", "Ptr", &token, "CDecl")
-		inbound.token := token
-		
-		;;; Decisions
-		; Did we find anything to expand?
-		inbound.hasToken := (StrLen(inbound.token) > 0)
-		; Could this be a command line parameter like "-r"? 
-		; Adding ";" to the check here makes :q not expand. That's important to a vim user like me. 
-		inbound.isCode := (((inbound.preceding_char == " ") or (inbound.preceding_char == "")) and ((inbound.initial_end_char) and (InStr("-:;/", inbound.initial_end_char))))
-		; Might this be a password?
-        inbound.isSensitive := RegexMatch(inbound.token, "[0-9!@#$%\^&*<>?]")
-		; Like "there's"
-		inbound.isContraction := ((inbound.initial_end_char == "'") and (inbound.preceding_char) and (InStr(MappingEngine.ContractedEndings,inbound.token)))
-		inbound.isAffix := false
-		
-		this.logEvent(4, "Inbound pre|end1|token|end2 |" inbound.preceding_char "|" inbound.initial_end_char "|" inbound.token "|" inbound.final_end_char "|")
-		this.logEvent(4, "hasToken = " inbound.hasToken ", and isCode = " inbound.isCode ", and isSensitive = " inbound.isSensitive ", and isContraction = " inbound.isContraction)
-		return inbound
-	}
-	
-	pushInput(qwerd, word, end_key) {
-		
-		;;; Expand the qwerd into its word 
-		this.logEvent(1, "Pushing " qwerd " to " word end_key)
-		final_characters_count := StrLen(word) + 1
-		; expand this qwerd by first deleting the qwerd itself and its end character if not suppressed
-		deleteChars := StrLen(qwerd)
-		if (not this.keyboard.AutoSpaceSent) {
-			;deleteChars++
-		}
-		this.logEvent(4, "Sending " deleteChars " backspaces")
-		Send, {Backspace %deleteChars%}
-		
-		;;; Identify script calls and launch them from here
-		if (Instr(word, ")", , 0)) {
-			this.logEvent(2, "Scripting " word " from " qwerd " ending with " end_key)
-			function_name := Substr(word, 1, Instr(word, "(") - 1)
-			this.logEvent(4, "Function name is " function_name)
-			fn := Func(function_name)
-			this.logEvent(4, "Function is " fn.Name)
-			fn.Call(qwerd, word, end_key)
-			this.logEvent(4, "Call complete")
-			this.keyboard.ScriptCalled := true
-		} else {
-			this.logEvent(4, "Sending '" word "'")
-			; Msgbox, % "Hold"
-			Send, % word
-			;;; Expand the qwerd into the buffer as well 
-			this.input_text_buffer := SubStr(this.input_text_buffer, 1, (StrLen(this.input_text_buffer) - (StrLen(qwerd)))) word
-		}
-		
-		this.logEvent(4, "Buffer after expansion is '" this.input_text_buffer "'")
-		
-		return final_characters_count
-	}
-	
-	pushCoaching(qwerd, match, miss, other, key, chorded) {
-		coaching := new CoachingEvent()
-		coaching.word := qwerd.word
-		coaching.qwerd := qwerd.qwerd
-		coaching.chord := qwerd.chord
-		coaching.chordable := qwerd.chordable
-		coaching.chorded := chorded
-		coaching.form := qwerd.form
-		coaching.saves := qwerd.saves
-		coaching.power := qwerd.power
-		coaching.match := match
-		coaching.cmatch := chorded
-		coaching.miss := miss
-		coaching.other := other
-		coaching.endKey := key
-		this.coachQueue.enqueue(coaching)
-		this.logEvent(3, "Enqueued coaching " coaching.word " (" coaching.chord "," coaching.chordable ")")
-		
-		if (miss) { 
-			this.flashTip(coaching)
-		}
-	}
-		
-	pushDashboardQwerd(qwerd, ink) {
-		dashboardQwerd := new DashboardEvent(qwerd.form, qwerd.qwerd, qwerd.word, ink)
-		this.dashboardQueue.enqueue(dashboardQwerd)
-		this.logEvent(3, "Enqueued dashboard action '" dashboardQwerd.form "'")
 	}
 	
 	coachAhead(start) {

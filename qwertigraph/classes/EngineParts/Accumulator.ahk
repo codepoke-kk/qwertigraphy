@@ -32,7 +32,7 @@ Class Accumulator {
 		this.logEvent(4, "Key " key " ending token " this.engine.keyboard.Token)
 		token := New TokenEvent(this.engine.keyboard.Token, key)
 		this.engine.keyboard.Token := ""
-		this.engine.NotifyEndToken(token)
+		this.engine.NotifySerialToken(token)
 	}
 	CancelToken(key) {
 		this.logEvent(4, "Key " key " cancelling token " this.engine.keyboard.Token)

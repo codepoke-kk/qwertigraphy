@@ -52,7 +52,7 @@ Class ChordExpander {
 			token.output := token.qwerd.word
 			token.match := 1
 			this.engine.keyboard.Token := ""
-			this.engine.NotifyChordedToken(token)
+			this.engine.NotifyExpandedToken(token)
 			this.engine.keyboard.AutoSpaceSent := ender 
 			;this.ExpandInput(chord, "{Chord}", "", (A_TickCount - this.keyboard.TokenStartTicks))
 			;if (not this.keyboard.ScriptCalled) {

@@ -33,7 +33,7 @@ Class Sender {
 			Send, % "{Blind}" token.ender
 			return token
 		} else if (Instr(token.output, ")", , 0)) {
-			this.logEvent(4, "Token output " token.output " is a script call")
+			this.logEvent(4, "Token output " token.output " is a script call with end character " token.ender)
 			token.deleted_characters := StrLen(token.input)
 			this.logEvent(4, "Sending " token.deleted_characters " backspaces")
 			Send, % "{Blind}" "{Backspace " token.deleted_characters "}"
@@ -42,6 +42,10 @@ Class Sender {
 			fn := Func(function_name)
 			this.logEvent(4, "Function is " fn.Name)
 			fn.Call(token.input, token.output, token.ender)
+			if (token.ender) {
+				this.logEvent(4, "Sending " token.ender)
+				Send, % "{Blind}" token.ender
+			}
 			this.logEvent(4, "Call complete")
 			return token
 		} else {
