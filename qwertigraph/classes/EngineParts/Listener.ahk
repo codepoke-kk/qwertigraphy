@@ -139,8 +139,8 @@ Class Listener {
 				this.AddKeyToToken(mappedKey)
                 ;SendInput, % "{Blind} " mappedKey
 			default:
-				this.logEvent(4, "Defaulting unrecognized input as: {Blind} {" key "}")
-				SendInput, % "{Blind} {" key "}"
+				this.logEvent(4, "Defaulting unrecognized input as: {" key "}")
+				SendInput, % "{" key "}"
 		} 
 	}
 
