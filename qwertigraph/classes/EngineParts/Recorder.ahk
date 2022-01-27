@@ -12,16 +12,14 @@ Class Recorder {
 	}
 	
 	Record(token) {
-		this.logEvent(4, "Recording " token.input)
+        token.index := this.engine.record.MaxIndex() + 1
 		this.engine.record.Push(token)
+		this.logEvent("R", token.index "()," token.input "," token.output "," token.method ",-" token.deleted_characters)
 	}
 
 	LogEvent(verbosity, message) 
 	{
-		if (verbosity <= this.logVerbosity) 
-		{
-			event := new LoggingEvent(this.name,A_Now,message,verbosity)
-			this.logQueue.enqueue(event)
-		}
+        event := new LoggingEvent(this.name,A_Now,message,verbosity)
+        this.logQueue.enqueue(event)
 	}
 }

@@ -118,7 +118,7 @@ Class Listener {
 				; Backspace is its own thing. We have to manage the token and even pull old tokens back from cache
 				this.logEvent(4, "About to backspace")
 				this.RemoveKeyFromToken()
-				this.logEvent(4, "Removed token")
+				this.logEvent(4, "Removed from token")
 				modifierString := this.getModifierString()
 				SendInput, % modifierString "{" key "}"
 				this.logEvent(4, "Sent backspace")

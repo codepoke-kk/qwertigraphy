@@ -50,6 +50,7 @@ Class ChordExpander {
 			token.input := chord
 			token.qwerd := this.engine.map.chords.item(chord)
 			token.output := token.qwerd.word
+            token.method := "c"
 			token.match := 1
 			this.engine.keyboard.Token := ""
 			this.engine.NotifyExpandedToken(token)

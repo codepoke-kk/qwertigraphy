@@ -24,13 +24,16 @@ Class Accumulator {
 		if (StrLen(this.engine.keyboard.Token)) {
 			this.engine.keyboard.Token := SubStr(this.engine.keyboard.Token, 1, (StrLen(this.engine.keyboard.Token) - 1))
 		} else {
-			this.engine.keyboard.Token := this.engine.record[this.engine.record.MaxIndex()].output 
-			this.logEvent(4, "No characters to remove, retrieving previous token output as: " this.engine.keyboard.Token)
+            bufferToken := this.engine.record[this.engine.record.MaxIndex()]
+            bufferWord := bufferToken.output ? bufferToken.output : bufferToken.input 
+			this.engine.keyboard.Token := bufferWord 
+			this.logEvent(4, "No characters to remove, reloading previous token output as: " this.engine.keyboard.Token)
 		}
 	}
 	EndToken(key) {
 		this.logEvent(4, "Key " key " ending token " this.engine.keyboard.Token)
 		token := New TokenEvent(this.engine.keyboard.Token, key)
+        token.method := "s"
 		this.engine.keyboard.Token := ""
 		this.engine.NotifySerialToken(token)
 	}

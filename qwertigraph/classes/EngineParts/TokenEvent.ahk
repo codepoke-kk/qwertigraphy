@@ -3,6 +3,8 @@ Class TokenEvent {
 
 	__New(input, ender) {
 		this.created := A_TickCount
+        this.index := -1
+        this.method := "none"
 		this.input := input
 		this.ender := ender
 		this.output := ""

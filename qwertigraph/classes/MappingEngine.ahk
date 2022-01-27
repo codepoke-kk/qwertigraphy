@@ -72,6 +72,7 @@ class MappingEngine {
 	}
 	
 	NotifySerialToken(token) {
+        ; Called by the Accumulator upon EndToken
 		this.logEvent(4, "Notified serial token ended by " token.ender " with " token.input)
 		expanded_token := this.serialexpander.Expand(token)
 		this.NotifyExpandedToken(expanded_token)
@@ -83,6 +84,7 @@ class MappingEngine {
 	}
 	
 	NotifyExpandedToken(token) {
+        ; Called by the ChordExpander upon SendChord
 		this.logEvent(4, "Notified expanded token ended by " token.ender " with " token.input)
 		sent_token := this.sender.Send(token)
 		coached_token := this.coacher.Coach(sent_token)
