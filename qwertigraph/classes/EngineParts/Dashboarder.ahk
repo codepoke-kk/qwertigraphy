@@ -20,10 +20,13 @@ Class Dashboarder {
 			token.ink := "red"
 		}
         token.ticks := A_TickCount - token.created
-        this.in_chars := StrLen(token.qwerd)
-        this.out_chars := StrLen(token.word)
+        token.in_chars := StrLen(token.qwerd)
+        token.out_chars := StrLen(token.word)
+        token.wpm := (token.in_chars / (token.ticks / 12000))
+        this.logEvent(4, "Speed of: " token.word " = ticks " token.ticks ", in " token.in_chars ", out " token.out_chars ", wpm " token.wpm)
         
 		this.engine.dashboardQueue.enqueue(token)
+		this.engine.speedQueue.enqueue(token)
 		this.logEvent(4, "Enqueued dashboard qwerd " token.qwerd " with word " token.word " and form " token.form)
 		return token
 	}

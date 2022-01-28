@@ -7,6 +7,7 @@ Class Accumulator {
 		this.engine := engine 
 		this.logQueue := engine.logQueue
 		this.logVerbosity := 4
+        this.starttime := 0
 		
 		this.logEvent(3, "Engine " this.title " instantiated")
 	}
@@ -17,6 +18,12 @@ Class Accumulator {
 			this.logEvent(4, "Uppercasing " key)
 			StringUpper key, key
 		} 
+        if (not this.engine.keyboard.Token) {
+            if ((not this.starttime) or (this.starttime < (A_TickCount - 1000))) {
+                ; Set the start time or reset it if it's been more than 1 second since last entry
+                this.starttime := A_TickCount
+            }
+        }
 		this.engine.keyboard.Token .= key
 	}
 	RemoveKeyFromToken() {
@@ -33,7 +40,9 @@ Class Accumulator {
 	EndToken(key) {
 		this.logEvent(4, "Key " key " ending token " this.engine.keyboard.Token)
 		token := New TokenEvent(this.engine.keyboard.Token, key)
+        token.created := this.starttime
         token.method := "s"
+        this.starttime := A_TickCount
 		this.engine.keyboard.Token := ""
 		this.engine.NotifySerialToken(token)
 	}

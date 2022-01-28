@@ -58,11 +58,11 @@ class SpeedViewport
 		current_in_chars := 0
 		current_out_chars := 0
 		current_ticks := 0
-		current_horizon := ""
-		current_horizon += -15, Seconds
+		current_horizon := A_TickCount - 15000
+		; current_horizon += -15, Seconds
 		For index, speedEvent in this.speedEvents {
 			if (speedEvent.wpm > this.minimumSpeed) {
-				if (speedEvent.when > current_horizon) {
+				if (speedEvent.created > current_horizon) {
 					current_in_chars += speedEvent.in_chars
 					current_out_chars += speedEvent.out_chars
 					current_ticks += speedEvent.ticks
@@ -70,12 +70,10 @@ class SpeedViewport
 			}
 		}
 		Gui MainGUI:Default 
-		keyedSpeed := Round(current_in_chars / (current_ticks / 12000))
-		enhancedSpeed := Round(current_out_chars / (current_ticks / 12000))
 		GuiControl,,CurrentSpeedMessage, % Round(current_in_chars / (current_ticks / 12000)) " WPM / " Round(current_out_chars / (current_ticks / 12000)) " WPM"
 		GuiControl,,SessionSpeedMessage, % Round(this.in_chars / (this.ticks / 12000)) " WPM / " Round(this.out_chars / (this.ticks / 12000)) " WPM`nInput characters: " this.in_chars ", Output characters: " this.out_chars
-		this.dashboard.speedKeyed := keyedSpeed
-		this.dashboard.speedEnhanced := enhancedSpeed
+		this.dashboard.speedKeyed := Round(current_in_chars / (current_ticks / 12000))
+		this.dashboard.speedEnhanced := Round(current_out_chars / (current_ticks / 12000))
 	}
 	
 	addQueue(speedQueue) {

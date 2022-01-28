@@ -28,7 +28,7 @@ Class DashboardViewport
    interval := 500
    qwerds := []
    logQueue := new Queue("DashboardQueue")
-   logVerbosity := 2
+   logVerbosity := 4
    speedKeyed := 0
    speedEnhanced := 0
    coachAheadQwerd := new DashboardEvent("g-r-e-t-/-s", "grets", "Greetings", "green")
@@ -172,10 +172,10 @@ Class DashboardViewport
       
       ; Draw WPM Meter
       EnhancedSpeedOptions := "x20 y20 Left " this.SpeedColor " r4 s36 "
-      this.LogEvent(4, "Drawing enhanced speed " EnhancedSpeedOptions)
+      this.LogEvent(1, "Drawing enhanced speed " EnhancedSpeedOptions " as " this.speedEnhanced)
       Gdip_TextToGraphics(this.G, this.speedEnhanced, EnhancedSpeedOptions, this.FontName, this.Width, bgHeight)
       KeyedSpeedOptions := "x20 y60 Left " this.SpeedColor " r4 s36 "
-      this.LogEvent(4, "Drawing keyed speed " KeyedSpeedOptions)
+      this.LogEvent(1, "Drawing keyed speed " KeyedSpeedOptions " as " this.speedKeyed)
       Gdip_TextToGraphics(this.G, this.speedKeyed, KeyedSpeedOptions, this.FontName, this.Width, bgHeight)
       
       ; Draw Aux Keyboard status

@@ -115,7 +115,7 @@ ExitFunc(ExitReason, ExitCode)
    global
    ; gdi+ may now be shutdown on exiting the program
    Gdip_Shutdown(dashboard.pToken)
-   Msgbox, % "Shut down GDIP"
+   ; Msgbox, % "Shut down GDIP"
 }
 
 ; Stop input when the mouse buttons are clicked
