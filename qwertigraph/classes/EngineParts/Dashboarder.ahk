@@ -13,10 +13,7 @@ Class Dashboarder {
 	
 	Indicate(token) {
 		this.logEvent(4, "Indicating " token.input)
-		
-		token.form := token.qwerdobject.form
-		token.qwerd := token.qwerdobject.qwerd
-		token.word := token.qwerdobject.word
+
 		if (token.match) {
 			token.ink := "blue"
 		} else {
@@ -24,7 +21,7 @@ Class Dashboarder {
 		}
 		
 		this.engine.dashboardQueue.enqueue(token)
-		this.logEvent(4, "Enqueued dashboard action '" token.form "'")
+		this.logEvent(4, "Enqueued dashboard qwerd " token.qwerd " with word " token.word " and form " token.form)
 		return token
 	}
 

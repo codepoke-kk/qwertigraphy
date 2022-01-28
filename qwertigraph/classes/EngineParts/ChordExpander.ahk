@@ -52,6 +52,7 @@ Class ChordExpander {
 			token.output := token.qwerdobject.word
             token.method := "c"
 			token.match := 1
+            token.chorded := 1
 			this.engine.keyboard.Token := ""
 			this.engine.NotifyExpandedToken(token)
 			this.engine.keyboard.AutoSpaceSent := ender 

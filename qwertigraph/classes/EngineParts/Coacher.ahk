@@ -12,23 +12,22 @@ Class Coacher {
 	}
 	
 	Coach(token) {
-		this.logEvent(4, "Coaching " token.input " as " token.output)
-		coaching := new CoachingEvent()
-		coaching.word := token.qwerd.word
-		coaching.qwerd := token.qwerd.qwerd
-		coaching.chord := token.qwerd.chord
-		coaching.chordable := token.qwerd.chordable
-		coaching.chorded := token.chorded
-		coaching.form := token.qwerd.form
-		coaching.saves := token.qwerd.saves
-		coaching.power := token.qwerd.power
-		coaching.match := token.match
-		coaching.cmatch := token.chorded
-		coaching.miss := token.miss
-		coaching.other := token.other
-		coaching.endKey := token.ender
-		this.engine.coachQueue.enqueue(coaching)
-		this.logEvent(4, "Enqueued coaching " coaching.word " (" coaching.chord "," coaching.chordable ")")
+        if ((not token.output) and (this.engine.map.hints.item(token.input).word)) {
+            this.logEvent(4, "Coaching " this.engine.map.hints.item(token.input).word " as " token.input)
+            token.qwerd := this.engine.map.hints.item(token.input).qwerd
+            token.word := this.engine.map.hints.item(token.input).word
+            token.form := this.engine.map.hints.item(token.input).form
+        } else {
+            token.form := token.qwerdobject.form
+            token.qwerd := token.qwerdobject.qwerd
+            token.word := token.qwerdobject.word
+            this.logEvent(4, "Coaching for " token.output " as " token.word)
+        }
+        token.chordable := token.qwerdobject.chordable
+        token.saves := token.qwerdobject.saves
+        token.power := token.qwerdobject.power
+		this.engine.coachQueue.enqueue(token)
+		this.logEvent(4, "Enqueued coaching " token.word " (" token.chord ")")
 		return token
 	}
 
