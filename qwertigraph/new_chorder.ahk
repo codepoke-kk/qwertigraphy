@@ -8,7 +8,6 @@ CoordMode, ToolTip, Relative
 setworkingdir, %a_scriptdir%
 
 ;engine := 0 ; Need the variable 
-Msgbox, % "Starting"
 
 OnExit("ExitFunc")
 
@@ -115,7 +114,6 @@ ExitFunc(ExitReason, ExitCode)
 {
    global
    ; gdi+ may now be shutdown on exiting the program
-   Msgbox, % "Shutting down GDIP"
    Gdip_Shutdown(dashboard.pToken)
    Msgbox, % "Shut down GDIP"
 }

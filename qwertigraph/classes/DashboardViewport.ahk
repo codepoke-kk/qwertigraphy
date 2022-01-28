@@ -210,14 +210,14 @@ Class DashboardViewport
       this.DrawBackground()
       ; Set the nib start points
       this.nibStart := {"x": this.Width, "y": this.Height}
-      this.LogEvent(2, "Visualizing " this.coachAheadQwerd.word)
+      this.LogEvent(2, "Visualizing " this.coachAheadQwerd.qwerd)
       this.LogEvent(3, "Visualizing " this.qwerds.MaxIndex() " events at " this.nibStart.x "," this.nibStart.y)
       this.DrawQwerd(this.coachAheadQwerd)
       
       queueIndex := this.qwerds.MaxIndex()
       Loop, % this.qwerds.MaxIndex() + 1
       {
-         this.LogEvent(3, "Visualizing " queueIndex " as " this.qwerds[queueIndex].form " at " this.nibStart.x "," this.nibStart.y)
+         this.LogEvent(2, "Visualizing " queueIndex " as " this.qwerds[queueIndex].form " at " this.nibStart.x "," this.nibStart.y)
          this.DrawQwerd(this.qwerds[queueIndex])
          queueIndex--
          if (this.nibStart.x < -100) {
@@ -232,7 +232,7 @@ Class DashboardViewport
       qwerd := this.qenv.redactSenstiveQwerd(qwerd)
       qwerdWidth := this.GetWidthOfQwerd(qwerd)
       this.nibStart.x -= qwerdWidth
-      this.LogEvent(3, "Drawing " qwerd.form "/" qwerd.qwerd " at " this.nibStart.x "," this.lineHeight.text)
+      this.LogEvent(2, "Drawing " qwerd.word "/" qwerd.form "/" qwerd.qwerd " at " this.nibStart.x "," this.lineHeight.text)
       ; Write the word when the qwerd is longer than it 
       ;drawText := StrLen(qwerd.qwerd) > StrLen(qwerd.word) ? qwerd.word : qwerd.qwerd
       drawText := StrLen(qwerd.form) > StrLen(qwerd.word) ? qwerd.word : qwerd.form

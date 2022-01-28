@@ -48,8 +48,8 @@ Class ChordExpander {
             }
 			token := New TokenEvent(this.engine.keyboard.Token, ender)
 			token.input := chord
-			token.qwerd := this.engine.map.chords.item(chord)
-			token.output := token.qwerd.word
+			token.qwerdobject := this.engine.map.chords.item(chord)
+			token.output := token.qwerdobject.word
             token.method := "c"
 			token.match := 1
 			this.engine.keyboard.Token := ""
