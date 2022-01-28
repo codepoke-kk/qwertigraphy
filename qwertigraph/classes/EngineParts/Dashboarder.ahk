@@ -19,7 +19,10 @@ Class Dashboarder {
 		} else {
 			token.ink := "red"
 		}
-		
+        token.ticks := A_TickCount - token.created
+        this.in_chars := StrLen(token.qwerd)
+        this.out_chars := StrLen(token.word)
+        
 		this.engine.dashboardQueue.enqueue(token)
 		this.logEvent(4, "Enqueued dashboard qwerd " token.qwerd " with word " token.word " and form " token.form)
 		return token

@@ -12,11 +12,19 @@ Class Coacher {
 	}
 	
 	Coach(token) {
-        if ((not token.output) and (this.engine.map.hints.item(token.input).word)) {
-            this.logEvent(4, "Coaching " this.engine.map.hints.item(token.input).word " as " token.input)
-            token.qwerd := this.engine.map.hints.item(token.input).qwerd
-            token.word := this.engine.map.hints.item(token.input).word
-            token.form := this.engine.map.hints.item(token.input).form
+        if (not token.output) {
+            if (this.engine.map.hints.item(token.input).word) {
+                this.logEvent(4, "Coaching " this.engine.map.hints.item(token.input).word " as " token.input)
+                token.qwerd := this.engine.map.hints.item(token.input).qwerd
+                token.word := this.engine.map.hints.item(token.input).word
+                token.form := this.engine.map.hints.item(token.input).form
+            } else {
+                this.logEvent(4, "Unknown and uncoachable " token.input) 
+                token.form := token.qwerdobject.form
+                token.qwerd := token.qwerdobject.qwerd
+                token.word := token.qwerdobject.word
+                token.other := 1
+            }
         } else {
             token.form := token.qwerdobject.form
             token.qwerd := token.qwerdobject.qwerd
@@ -26,6 +34,7 @@ Class Coacher {
         token.chordable := token.qwerdobject.chordable
         token.saves := token.qwerdobject.saves
         token.power := token.qwerdobject.power
+        token.cmatch := token.chorded
 		this.engine.coachQueue.enqueue(token)
 		this.logEvent(4, "Enqueued coaching " token.word " (" token.chord ")")
 		return token
