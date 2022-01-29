@@ -25,6 +25,7 @@ Class Accumulator {
             }
         }
 		this.engine.keyboard.Token .= key
+		this.engine.coacher.CoachAhead(this.engine.keyboard.Token)
 	}
 	RemoveKeyFromToken() {
 		this.logEvent(4, "Removing one character from token " this.engine.keyboard.Token)

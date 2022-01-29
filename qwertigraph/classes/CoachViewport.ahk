@@ -53,6 +53,7 @@ LV_ModifyCol(8, "Integer")
 LV_ModifyCol(9, "Integer")  
 LV_ModifyCol(10, "Integer")  
 LV_ModifyCol(11, "Integer")  
+LV_ModifyCol(12, "Integer")  
 LV_ModifyCol(1, 50)
 LV_ModifyCol(2, 180)
 LV_ModifyCol(3, 80)
@@ -97,6 +98,7 @@ LV_ModifyCol(8, "Integer")
 LV_ModifyCol(9, "Integer")  
 LV_ModifyCol(10, "Integer")  
 LV_ModifyCol(11, "Integer")  
+LV_ModifyCol(12, "Integer")  
 LV_ModifyCol(1, 50)
 LV_ModifyCol(2, 180)
 LV_ModifyCol(3, 80)
@@ -323,6 +325,7 @@ class CoachViewport
 				if (coachEvent.miss or coachEvent.other) {
 					coachEvent.saves *= -1
 				}
+				coachEvent.savings := 0
 				this.coachItem(coachEvent)
 				this.coachPhrasing(coachEvent)
 				this.coachChording(coachEvent)

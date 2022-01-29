@@ -115,6 +115,9 @@ ExitFunc(ExitReason, ExitCode)
    global
    ; gdi+ may now be shutdown on exiting the program
    Gdip_Shutdown(dashboard.pToken)
+   engine.Stop()
+   engine := ""
+   Sleep, 1500
    ; Msgbox, % "Shut down GDIP"
 }
 

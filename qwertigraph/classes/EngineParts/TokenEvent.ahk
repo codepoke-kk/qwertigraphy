@@ -16,6 +16,7 @@ Class TokenEvent {
 		this.qwerd := ""
 		this.word := ""
 		this.form := ""
+		this.chord := ""
 		this.match := 0
 		this.cmatch := 0
 		this.chorded := 0

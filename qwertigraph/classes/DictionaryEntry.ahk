@@ -10,7 +10,7 @@ class DictionaryEntry
 		this.form := fields[2]
 		this.qwerd := fields[3]
 		this.keyer := fields[4]
-		this.chord := fields[5]
+		this.chord := StrLen(fields[5]) ? fields[5] : ""
 		this.usage := fields[6]
 		this.dictionary := fields[7]
 		this.reliability := (InStr(this.dictionary, "personal")) ? "^" : "" 
