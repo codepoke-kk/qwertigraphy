@@ -53,7 +53,7 @@ Class Coacher {
 		in_chars := this.engine.map.qenv.redactSenstiveToken(accumulated)
 		this.presentGraphicalCoachingAhead(in_chars)
 		this.presentTextualCoachingAhead(in_chars)
-		this.engine.dashboard.visualizeQueue()
+		; this.engine.dashboard.visualizeQueue()
 	}
 	
 	presentGraphicalCoachingAhead(in_chars) {
