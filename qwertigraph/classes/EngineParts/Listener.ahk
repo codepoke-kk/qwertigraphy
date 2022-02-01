@@ -81,6 +81,7 @@ Class Listener {
 			; add will append this key to the pending token
 			; end will notify other code this token is ready to evaluate
 			; cancel will clear the token with no expansion
+		Critical 
 		Switch key
 		{
 			case "a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m":
@@ -142,6 +143,7 @@ Class Listener {
 				this.logEvent(4, "Defaulting unrecognized input as: {" key "}")
 				SendInput, % "{" key "}"
 		} 
+		Critical Off 
 	}
 
 	ReceiveKeyUp(InputHook, VK, SC) {
@@ -151,6 +153,7 @@ Class Listener {
 		} else {
 			key := "NumpadEnter"
 		}
+		Critical 
 		Switch key
 		{
 			case "a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m":
@@ -166,6 +169,7 @@ Class Listener {
 			case "NumpadHome", "NumpadUp", "NumpadPgUp", "NumpadRight", "NumpadPgDn", "NumpadDown", "NumpadEnd", "NumpadLeft", "NumpadClear", "NumpadIns", "NumpadDel":
 				this.engine.aux.LeaveChord(key)
 		}
+		Critical Off
 	}
 	
 	IgnoreKey(key) {

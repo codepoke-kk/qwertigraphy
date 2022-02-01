@@ -8,6 +8,7 @@
 ; Done - Colorize forms (red and blue)
 ; Done - Show the in-progress form at the far right every time (in green)
 ; Fix bug where first form of the day is not drawn 
+; https://www.autohotkey.com/boards/viewtopic.php?t=25966
 
 
 ;#######################################################################
@@ -41,7 +42,7 @@ Class DashboardViewport
    Width := 0
    Height := 0
    CornerRadius := 10
-   BackGroundColor := 0xccffffff
+   BackGroundColor := 0xffffffff
    BackGroundPen := ""
    BackGroundBrush := ""
    hwnd1 := ""
@@ -72,9 +73,9 @@ Class DashboardViewport
    
    ; Properties for qwerd display
    ; The nib is where the next drawn point will land
-   nibStart := {"x": this.Width, "y": this.Height}
+   nibStart := {"x": this.dashwindow.width, "y": this.Height}
    lineHeight := {"wordtext": 2, "wordform": 24, "penform": 60, "qwerdtext": 92}
-   nib := {"x": this.Width, "y": this.Height}
+   nib := {"x": this.dashwindow.width, "y": this.Height}
    
    __New(qenv, dashboardQueue)
    {
@@ -85,15 +86,11 @@ Class DashboardViewport
       this.AutohideSeconds := (this.qenv.properties.DashboardAutohideSeconds) ? this.qenv.properties.DashboardAutohideSeconds : 30
       this.dashboardQueue := dashboardQueue
       this.auxKeyboardState := ""
+      this.lastRefresh := A_TickCount
 		
       this.timer := ObjBindMethod(this, "DequeueEvents")
       timer := this.timer
       SetTimer % timer, % this.interval
-      
-      this.LogEvent(4, "Creating Autohide Timer")
-      this.autoHidetimer := ObjBindMethod(this, "AutohideDashboard")
-      autoHidetimer := this.autoHidetimer
-      SetTimer % autoHidetimer, % (this.AutohideSeconds * 1000)
         
       ; Start gdi+
       If !this.pToken := Gdip_Startup()
@@ -101,21 +98,19 @@ Class DashboardViewport
           MsgBox "Gdiplus failed to start. Please ensure you have gdiplus on your system"
       }
 
-      ; Set the width and height we want as our drawing area, to draw everything in. This will be the dimensions of our bitmap
-      this.Width := 600
-      this.Height := 195
-      SysGet, workingScreen, MonitorWorkArea, 1
-      this.leftAnchor := workingScreenLeft + (((workingScreenRight - workingScreenLeft)/2) - (this.Width/2))
+      this.orientation := "vertical"
+      this.DefineSizes()
+
 
       ; Create a layered window (+E0x80000 : must be used for UpdateLayeredWindow to work!) that is always on top (+AlwaysOnTop), has no taskbar entry or caption
-      Gui, DashboardGUI:New, -Caption +E0x80000 +LastFound +AlwaysOnTop +ToolWindow +OwnDialogs, QDashboard
+      Gui, DashboardGUI:New, -Caption +E0x80000 +LastFound +OwnDialogs, QDashboard
       Gui, DashboardGUI: Show, NA
 
       ; Get a handle to this window we have created in order to update it later
       this.hwnd1 := WinExist()
-      dashboardhwnd1 := this.hwnd1
+      ; dashboardhwnd1 := this.hwnd1
       ; HandleBitMap - Create a gdi bitmap with width and height of what we are going to draw into it. This is the entire drawing area for everything
-      this.hbm := CreateDIBSection(this.Width, (this.Height + this.coachAheadHeight))
+      this.hbm := CreateDIBSection(this.dashwindow.width, this.dashwindow.height)
       ; HandleDeviceContext - Get a device context compatible with the screen
       this.hdc := CreateCompatibleDC()
       ; ObjectBitMap - Select the bitmap into the device context
@@ -150,126 +145,192 @@ Class DashboardViewport
       this.LogEvent(2, "Dashboard initialized")
    }
    
+   DefineSizes() {
+      ; Set the width and height we want as our drawing area, to draw everything in. This will be the dimensions of our bitmap
+      
+      SysGet, Mon1, MonitorWorkArea, 1
+      this.workingwindow := {"left": Mon1Left, "right": Mon1Right, "top": Mon1Top, "bottom": Mon1Bottom}
+      this.dashwindow := {}
+      this.partnerwindow := {}
+      this.cell := {} ; this will be the top left corner of each dashboard qwerd entry
+      
+      if (this.orientation == "vertical") {
+         this.dashwindow.width := 220
+         this.dashwindow.left := Mon1Right - this.dashwindow.width
+         this.dashwindow.right := Mon1Right
+         this.dashwindow.top := Mon1Top
+         this.dashwindow.bottom := Mon1Bottom
+         this.dashwindow.height := Mon1Bottom - Mon1Top
+         this.partnerwindow := {"left": Mon1Left, "right": (Mon1Right - (this.dashwindow.width + 1)), "top": Mon1Top, "bottom": Mon1Bottom}
+         this.cell.x := 0
+         this.cell.y := 0
+         this.cell.width := this.dashwindow.width
+         this.cell.height := 50
+         this.cell.word := {"x": 20, "y": 22}
+         this.cell.qwerd := {"x": 1, "y": 1}
+         this.cell.form := {"x": -1, "y": -1}
+         this.cell.penform := {"x": (this.cell.width - 20), "y": 20}
+      } else {
+         this.dashwindow.height := 200
+         this.dashwindow.left := Mon1Left
+         this.dashwindow.right := Mon1Right
+         this.dashwindow.top := Mon1Top
+         this.dashwindow.bottom := Mon1Top + this.dashwindow.height
+         this.dashwindow.width := Mon1Right - Mon1Left
+         this.partnerwindow := {"left": Mon1Left, "right": Mon1Right - (this.dashwindow.width + 1), "top": Mon1Top, "bottom": Mon1Bottom}
+         this.cell.x := 0
+         this.cell.y := 0
+         this.cell.width := 200
+         this.cell.height := this.dashwindow.height
+         this.cell.word := {"x": 1, "y": 1}
+         this.cell.qwerd := {"x": 20, "y": 20}
+         this.cell.form := {"x": -1, "y": -1}
+         this.cell.penform := {"x": (this.cell.width - 10), "y": 40}
+      }
+   }
+   
    DrawBackground() {
       if (not this.Show) {
          Return 
       }
-      WinGetPos,x,y,width,height, QDashboard
-      if (x > 0) {
-         this.leftAnchor := x
-         this.topAnchor := y
-      }
-      if (! StrLen(this.coachAheadHints)) {
-         bgHeight := this.Height
-      } else {
-         bgHeight := this.Height + this.coachAheadHeight
-      }
       
-      this.LogEvent(4, "Height is  " bgHeight " on " this.coachAheadHints)
+      this.LogEvent(4, "Height is " this.dashwindow.height)
       Gdip_GraphicsClear(this.G)
-      Gdip_FillRoundedRectangle(this.G, this.BackgroundBrush, 0, 0, this.Width, bgHeight, this.CornerRadius)
-      this.LogEvent(3, "Just drew  " bgHeight)
+      Gdip_FillRoundedRectangle(this.G, this.BackgroundBrush, 0, 0, this.dashwindow.width, this.dashwindow.height, this.CornerRadius)
+      this.LogEvent(3, "Just drew " this.dashwindow.height)
       
       ; Draw WPM Meter
       EnhancedSpeedOptions := "x20 y20 Left " this.SpeedColor " r4 s36 "
       this.LogEvent(1, "Drawing enhanced speed " EnhancedSpeedOptions " as " this.speedEnhanced)
-      Gdip_TextToGraphics(this.G, this.speedEnhanced, EnhancedSpeedOptions, this.FontName, this.Width, bgHeight)
+      Gdip_TextToGraphics(this.G, this.speedEnhanced, EnhancedSpeedOptions, this.FontName, this.dashwindow.width, this.dashwindow.height)
       KeyedSpeedOptions := "x20 y60 Left " this.SpeedColor " r4 s36 "
       this.LogEvent(1, "Drawing keyed speed " KeyedSpeedOptions " as " this.speedKeyed)
-      Gdip_TextToGraphics(this.G, this.speedKeyed, KeyedSpeedOptions, this.FontName, this.Width, bgHeight)
+      Gdip_TextToGraphics(this.G, this.speedKeyed, KeyedSpeedOptions, this.FontName, this.dashwindow.width, this.dashwindow.height)
       
       ; Draw Aux Keyboard status
-      AuxKeyboardOptions := "x20 y100 Left " this.SpeedColor " r4 s16 "
-      this.LogEvent(4, "Drawing aux keyboard " AuxKeyboardOptions)
-      Gdip_TextToGraphics(this.G, this.auxKeyboardState, AuxKeyboardOptions, this.FontName, this.Width, bgHeight)
+      ;AuxKeyboardOptions := "x20 y100 Left " this.SpeedColor " r4 s16 "
+      ;this.LogEvent(4, "Drawing aux keyboard " AuxKeyboardOptions)
+      ;Gdip_TextToGraphics(this.G, this.auxKeyboardState, AuxKeyboardOptions, this.FontName, this.dashwindow.width, this.dashwindow.height)
       
       
       ; Draw pending hints
-      HintOptions := "x10 y" (this.Height - 69) " Left " this.FormColors["green"] " r4 s16 "
-      this.LogEvent(3, "Drawing " this.coachAheadHints " as " HintOptions)
-      Gdip_TextToGraphics(this.G, this.coachAheadHints, HintOptions, this.HintsFontName, this.Width, this.coachAheadHeight)
+      ;HintOptions := "x10 y" (this.Height - 69) " Left " this.FormColors["green"] " r4 s16 "
+      ;this.LogEvent(3, "Drawing " this.coachAheadHints " as " HintOptions)
+      ;Gdip_TextToGraphics(this.G, this.coachAheadHints, HintOptions, this.HintsFontName, this.dashwindow.width, this.coachAheadHeight)
       
-      UpdateLayeredWindow(this.hwnd1, this.hdc, this.leftAnchor, this.topAnchor, this.Width, bgHeight)
-      
-      
+      UpdateLayeredWindow(this.hwnd1, this.hdc, this.dashwindow.left, this.dashwindow.top, this.dashwindow.width, this.dashwindow.height)
+   }
+   
+   BackstepCell() {
+      if (this.orientation == "vertical") {
+         this.cell.y -= this.cell.height
+      } else {
+         this.cell.x -= this.cell.width
+      }
    }
    
    visualizeQueue() {
       ; Walk queue of qwerds from last back, drawing each qwerd as we go from right side of dashboard to left
       local
-      ; We saw a new qwerd, so reset the autohide timer
-      
       if (not this.Show) {
          Return 
       }
-      this.LogEvent(4, "Setting Autohide Timer")
-      timer := this.autoHidetimer
-      SetTimer % timer, % (this.AutohideSeconds * 1000)
-      Gui, DashboardGUI: Show, NA
+      
+      
+      ;if ((this.lastRefresh + 1000) < A_TickCount) {
+         this.LogEvent(4, "Aborting refresh at " A_TickCount " since " this.lastRefresh)
+         ;return
+      ;}
+      this.lastRefresh := A_TickCount
       
       this.DrawBackground()
       ; Set the nib start points
-      this.nibStart := {"x": this.Width, "y": this.Height}
-      this.LogEvent(2, "Visualizing " this.coachAheadQwerd.qwerd)
-      this.LogEvent(3, "Visualizing " this.qwerds.MaxIndex() " events at " this.nibStart.x "," this.nibStart.y)
+      
+      if (this.orientation == "vertical") {
+         this.cell.x := 0
+         this.cell.y := this.dashwindow.bottom
+      } else {
+         this.cell.x := this.dashwindow.right
+         this.cell.y := 0
+      }
+      this.LogEvent(2, "Starting visualization at " this.cell.x "," this.cell.y)
+      this.BackstepCell()
+      
+      this.LogEvent(2, "Visualizing coachahead qwerd " this.coachAheadQwerd.qwerd " at " this.cell.x "," this.cell.y)
       this.DrawQwerd(this.coachAheadQwerd)
+      
+      this.BackstepCell()
+      this.LogEvent(3, "Visualizing " this.qwerds.MaxIndex() " events starting at " this.cell.x "," this.cell.y)
       
       queueIndex := this.qwerds.MaxIndex()
       Loop, % this.qwerds.MaxIndex() + 1
       {
-         this.LogEvent(2, "Visualizing " queueIndex " as " this.qwerds[queueIndex].form " at " this.nibStart.x "," this.nibStart.y)
+         this.LogEvent(2, "Visualizing " queueIndex " as " this.qwerds[queueIndex].form " at " this.cell.x "," this.cell.y)
          this.DrawQwerd(this.qwerds[queueIndex])
+         this.BackstepCell()
          queueIndex--
-         if (this.nibStart.x < -100) {
+         if ((this.cell.x < -100) or (this.cell.y < -100)) {
             this.LogEvent(3, "Dashboard full with " queueIndex " words remaining")
             break
          }
       }
+      
+      UpdateLayeredWindow(this.hwnd1, this.hdc, this.dashwindow.left, this.dashwindow.top, this.dashwindow.width, this.dashwindow.height)
    }
    
    DrawQwerd(qwerd) {
       local
       qwerd := this.qenv.redactSenstiveQwerd(qwerd)
-      qwerdWidth := this.GetWidthOfQwerd(qwerd)
-      this.nibStart.x -= qwerdWidth
-      this.LogEvent(2, "Drawing " qwerd.word "/" qwerd.form "/" qwerd.qwerd " at " this.nibStart.x "," this.lineHeight.text)
-      ; Write the word when the qwerd is longer than it 
-      ;drawText := StrLen(qwerd.qwerd) > StrLen(qwerd.word) ? qwerd.word : qwerd.qwerd
-      drawText := StrLen(qwerd.form) > StrLen(qwerd.word) ? qwerd.word : qwerd.form
+      this.LogEvent(2, "Drawing " qwerd.word "/" qwerd.form "/" qwerd.qwerd " at " this.cell.x "," this.cell.y)
       this.DrawWordText(qwerd.word)
-      this.DrawQwerdForm(qwerd.form)
+      ; this.DrawQwerdForm(qwerd.form)
       this.DrawPenForm(qwerd.form, qwerd.ink)
-      this.DrawQwerdText(qwerd.qwerd)
+      this.DrawQwerdText(qwerd.qwerd "/" qwerd.form)
+      UpdateLayeredWindow(this.hwnd1, this.hdc, this.dashwindow.left, this.dashwindow.top, this.dashwindow.width, this.dashwindow.height)
    }
 
    DrawWordText(text) {
       local
-      QwerdOptions := "x" this.nibStart.x " y" this.lineHeight.wordtext " Left " this.QwerdColor " r4 s20 "
+      if (this.cell.word.x < 0) {
+         return
+      }
+      QwerdOptions := "x" (this.cell.x + this.cell.word.x) " y" (this.cell.y + this.cell.word.y) " Left " this.QwerdColor " r4 s20 "
       this.LogEvent(4, "Drawing as " QwerdOptions)
-      Gdip_TextToGraphics(this.G, text, QwerdOptions, this.FontName, this.Width, this.Height)
-      UpdateLayeredWindow(this.hwnd1, this.hdc, this.leftAnchor, this.topAnchor, this.Width, this.Height)
+      Gdip_TextToGraphics(this.G, text, QwerdOptions, this.FontName, this.dashwindow.width, this.dashwindow.height)
+      UpdateLayeredWindow(this.hwnd1, this.hdc, this.dashwindow.left, this.dashwindow.top, this.dashwindow.width, this.dashwindow.height)
    }
 
    DrawQwerdForm(text) {
       local
-      QwerdOptions := "x" this.nibStart.x " y" this.lineHeight.wordform " Left " this.QwerdColor " r4 s20 "
+      if (this.cell.form.x < 0) {
+         return
+      }
+      QwerdOptions := "x" (this.cell.x + this.cell.form.x) " y" (this.cell.y + this.cell.form.y) " Left " this.QwerdColor " r4 s20 "
       this.LogEvent(4, "Drawing as " QwerdOptions)
-      Gdip_TextToGraphics(this.G, text, QwerdOptions, this.FontName, this.Width, this.Height)
-      UpdateLayeredWindow(this.hwnd1, this.hdc, this.leftAnchor, this.topAnchor, this.Width, this.Height)
+      Gdip_TextToGraphics(this.G, text, QwerdOptions, this.FontName, this.dashwindow.width, this.dashwindow.height)
+      UpdateLayeredWindow(this.hwnd1, this.hdc, this.dashwindow.left, this.dashwindow.top, this.dashwindow.width, this.dashwindow.height)
    }
 
    DrawQwerdText(text) {
       local
-      QwerdOptions := "x" this.nibStart.x " y" this.lineHeight.qwerdtext " Left " this.QwerdColor " r4 s20 "
+      if (this.cell.qwerd.x < 0) {
+         return
+      }
+      QwerdOptions := "x" (this.cell.x + this.cell.qwerd.x) " y" (this.cell.y + this.cell.qwerd.y) " Left " this.QwerdColor " r4 s20 "
       this.LogEvent(4, "Drawing as " QwerdOptions)
-      Gdip_TextToGraphics(this.G, text, QwerdOptions, this.FontName, this.Width, this.Height)
-      UpdateLayeredWindow(this.hwnd1, this.hdc, this.leftAnchor, this.topAnchor, this.Width, this.Height)
+      Gdip_TextToGraphics(this.G, text, QwerdOptions, this.FontName, this.dashwindow.width, this.dashwindow.height)
+      UpdateLayeredWindow(this.hwnd1, this.hdc, this.dashwindow.left, this.dashwindow.top, this.dashwindow.width, this.dashwindow.height)
    }
    
    DrawPenForm(form, ink) {
       local
+      if (this.cell.penform.x < 0) {
+         return
+      }
       subpaths := this.GetSubPaths(form)
-      nib := {"x": this.nibStart.x, "y": this.lineHeight.penform}
+      qwerdWidth := this.GetWidthOfQwerd(form)
+      nib := {"x": (this.cell.x + this.cell.penform.x - qwerdWidth), "y": (this.cell.y + this.cell.penform.y)}
+      this.LogEvent(3, "nib will start at " nib.x "," nib.y " after qwerdWidth of " qwerdWidth)
       if (this.FormPens[ink]) {
          formPen := this.FormPens[ink]
       } else {
@@ -381,13 +442,9 @@ Class DashboardViewport
 	}
 
    
-   GetWidthOfQwerd(qwerd) {
+   GetWidthOfQwerd(form) {
       local
-      qwerdTextWidth := this.GetWidthOfQwerdText(qwerd.qwerd)
-      wordTextWidth := this.GetWidthOfQwerdText(qwerd.word)
-      wordFormWidth := this.GetWidthOfQwerdText(qwerd.form)
-      PenFormWidth := this.GetWidthOfQwerdForm(qwerd.form)
-      width := Max(qwerdTextWidth, wordTextWidth, wordFormWidth, PenFormWidth)
+      width := this.GetWidthOfQwerdForm(form)
       this.LogEvent(3, "Qwerd width is " width)
       Return width
    }

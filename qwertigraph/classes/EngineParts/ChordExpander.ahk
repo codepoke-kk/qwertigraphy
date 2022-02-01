@@ -32,7 +32,6 @@ Class ChordExpander {
 	}
 	
 	SendChord() {
-		Critical
 		; Send through a possible chord
 		chord := this.engine.map.AlphaOrder(this.engine.keyboard.Token)
 		if ((GetKeyState("Shift", "P")) or (GetKeyState("CapsLock", "T"))) {
@@ -65,7 +64,6 @@ Class ChordExpander {
 		} else {
 			this.logEvent(4, "Chord " chord " not found. Allow input to complete in serial fashion")
 		}
-		Critical Off 
 	}
 
 	LogEvent(verbosity, message) 
