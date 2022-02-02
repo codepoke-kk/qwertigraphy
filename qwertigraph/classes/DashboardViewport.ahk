@@ -56,15 +56,16 @@ Class DashboardViewport
    ;pToken := ""
    
    ; Properties for writing
-   QwerdColor := "c88000000"
+   QwerdColor := "cff000000"
    QwerdOptions := "x10 y10 w80 Left " this.QwerdColor " r4 s20 "
    FontName := "Arial"
    HintsFontName := "Consolas"
-   FormColor := 0x88000000
-   FormColors := {"black": 0x88000000, "red": 0x88880000, "blue": 0x88000088, "green": 0x88008800}
+   FormColor := 0xff000000
+   FormColors := {"black": 0xff000000, "red": 0xffbb0000, "blue": 0xff0000bb, "green": 0xff00bb00}
    FormPens := {}
+   FormBrushes := {}
    FormWidth := 2
-   SpeedColor := "c88ff0000"
+   SpeedColor := "cffff0000"
    SpeedPen := ""
    SpeedWidth := 6
    averageCharWidth := 11
@@ -126,10 +127,15 @@ Class DashboardViewport
       this.BackgroundPen := Gdip_CreatePen(this.BackgroundColor, 3)
 
       ; (ARGB = Transparency, red, green, blue) of width 3 (the thickness the pen will draw at) to draw a circle
-      for ink, value in this.FormColors {
+      For ink, value in this.FormColors 
+      {
+         this.LogEvent(4, "Creating pen and brush from " ink " as " value)
          FormPen := Gdip_CreatePen(value, this.FormWidth)
          this.FormPens[ink] := FormPen
+         FormBrush := Gdip_BrushCreateSolid(value)
+         this.FormBrushes[ink] := FormBrush
       }
+      
       ; (ARGB = Transparency, red, green, blue) of width 3 (the thickness the pen will draw at) to draw a circle
       this.SpeedPen := Gdip_CreatePen(this.SpeedColor, this.SpeedWidth)
 
@@ -169,8 +175,8 @@ Class DashboardViewport
          this.cell.x := 0
          this.cell.y := 0
          this.cell.width := this.dashwindow.width
+         this.cell.qwerd := {"x": 8, "y": 1}
          this.cell.word := {"x": 20, "y": 22}
-         this.cell.qwerd := {"x": 1, "y": 1}
          this.cell.form := {"x": -1, "y": -1}
          this.cell.penform := {"x": (this.cell.width - 20), "y": 20}
       } else {
@@ -284,7 +290,10 @@ Class DashboardViewport
    DrawQwerd(qwerd) {
       local
       qwerd := this.qenv.redactSenstiveQwerd(qwerd)
-      this.LogEvent(2, "Drawing " qwerd.word "/" qwerd.form "/" qwerd.qwerd " at " this.cell.x "," this.cell.y)
+      this.LogEvent(2, "Drawing " qwerd.word "/" qwerd.form "/" qwerd.qwerd " in ink " qwerd.ink " at " this.cell.x "," this.cell.y)
+      ; testgray := Gdip_BrushCreateSolid(0x99999999)
+      ; Gdip_FillRectangle(this.G, testgray, 0, 200, 5, this.cell.height)
+      Gdip_FillRectangle(this.G, this.FormBrushes[qwerd.ink], this.cell.x, this.cell.y, 5, this.cell.height)
       this.DrawWordText(qwerd.word)
       ; this.DrawQwerdForm(qwerd.form)
       this.DrawPenForm(qwerd.form, qwerd.ink)

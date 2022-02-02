@@ -60,20 +60,22 @@ Class Coacher {
 		this.logEvent(2, "Graphical coaching ahead on " in_chars)
 		; Is this token a word 
 		coachAheadQwerd := new TokenEvent(in_chars, "")
-		coachAheadQwerd.qwerd := in_chars
 		coachAheadQwerd.ink := "green"
 		if (this.engine.map.qwerds.item(in_chars).qwerd) {
-			this.logEvent(4, "Found coach ahead for " this.engine.map.qwerds.item(in_chars).qwerd)
+			this.logEvent(4, "Found coach ahead match for " this.engine.map.qwerds.item(in_chars).qwerd)
+            coachAheadQwerd.qwerd := this.engine.map.qwerds.item(in_chars).qwerd
 			coachAheadQwerd.word := this.engine.map.qwerds.item(in_chars).word
 			coachAheadQwerd.form := this.engine.map.qwerds.item(in_chars).form
 			coachAheadQwerd.chord := this.engine.map.qwerds.item(in_chars).chord
 		} else if (this.engine.map.hints.item(in_chars).word) {
-			this.logEvent(4, "Found coach ahead for " this.map.hints.item(token).word)
+			this.logEvent(4, "Found coach ahead hint for " this.engine.map.hints.item(in_chars).word)
+            coachAheadQwerd.qwerd := this.engine.map.hints.item(in_chars).qwerd
 			coachAheadQwerd.word := this.engine.map.hints.item(in_chars).word
 			coachAheadQwerd.form := this.engine.map.hints.item(in_chars).form
 			coachAheadQwerd.chord := this.engine.map.hints.item(in_chars).chord
 		} else {
 			this.logEvent(4, "No found coach ahead")
+            coachAheadQwerd.qwerd := in_chars
 			coachAheadQwerd.word := in_chars
 			coachAheadQwerd.form := "--"
 			coachAheadQwerd.chord := "--"
