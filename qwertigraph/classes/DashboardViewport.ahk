@@ -157,18 +157,18 @@ Class DashboardViewport
       this.cell := {} ; this will be the top left corner of each dashboard qwerd entry
       
       if (this.orientation == "vertical") {
+         this.cell.height := 50
          this.dashwindow.width := 220
          this.dashwindow.left := Mon1Right - this.dashwindow.width
          this.dashwindow.right := Mon1Right
          this.dashwindow.top := Mon1Top
          this.dashwindow.bottom := Mon1Bottom
          this.dashwindow.height := Mon1Bottom - Mon1Top
-         this.dashwindow.coachAheadTop := this.dashwindow.bottom - 230
+         this.dashwindow.coachAheadTop := this.dashwindow.bottom - (230 + this.cell.height)
          this.partnerwindow := {"left": Mon1Left, "right": (Mon1Right - (this.dashwindow.width + 1)), "top": Mon1Top, "bottom": Mon1Bottom}
          this.cell.x := 0
          this.cell.y := 0
          this.cell.width := this.dashwindow.width
-         this.cell.height := 50
          this.cell.word := {"x": 20, "y": 22}
          this.cell.qwerd := {"x": 1, "y": 1}
          this.cell.form := {"x": -1, "y": -1}
@@ -217,7 +217,7 @@ Class DashboardViewport
       
       
       ; Draw pending hints
-      HintOptions := "x10 y" (this.dashwindow.coachAheadTop) " Left " this.FormColors["green"] " r4 s16 "
+      HintOptions := "x10 y" (this.dashwindow.coachAheadTop + this.cell.height) " Left " this.FormColors["green"] " r4 s16 "
       this.LogEvent(3, "Drawing coachahead as " HintOptions)
       Gdip_TextToGraphics(this.G, this.coachAheadNote, HintOptions, this.HintsFontName, this.dashwindow.width, this.dashwindow.height)
       
@@ -259,8 +259,8 @@ Class DashboardViewport
       this.LogEvent(2, "Starting visualization at " this.cell.x "," this.cell.y)
       this.BackstepCell()
       
-      this.LogEvent(2, "Visualizing coachahead qwerd " this.coachAheadQwerd.qwerd " at " this.cell.x "," this.cell.y)
-      this.DrawQwerd(this.coachAheadQwerd)
+      ;this.LogEvent(2, "Visualizing coachahead qwerd " this.coachAheadQwerd.qwerd " at " ;this.cell.x "," this.cell.y)
+      ;this.DrawQwerd(this.coachAheadQwerd)
       
       this.BackstepCell()
       this.LogEvent(3, "Visualizing " this.qwerds.MaxIndex() " events starting at " this.cell.x "," this.cell.y)
@@ -549,9 +549,21 @@ Class DashboardViewport
         this.logEvent(4, "Coaching note: " this.coachAheadNote)
 
         Gdip_FillRectangle(this.G, this.BackgroundBrush, 0, this.dashwindow.coachAheadTop, this.dashwindow.width, this.dashwindow.height)
+        
+      
+        if (this.orientation == "vertical") {
+         this.cell.x := 0
+         this.cell.y := this.dashwindow.coachAheadTop
+        } else {
+         this.cell.x := this.dashwindow.right
+         this.cell.y := 0
+        }
+
+        this.LogEvent(2, "Visualizing coachahead qwerd " this.coachAheadQwerd.qwerd " at " this.cell.x "," this.cell.y)
+        this.DrawQwerd(this.coachAheadQwerd)
 
         ; Draw pending hints
-        HintOptions := "x10 y" (this.dashwindow.coachAheadTop) " Left " this.FormColors["green"] " r4 s16 "
+        HintOptions := "x10 y" (this.dashwindow.coachAheadTop + this.cell.height) " Left " this.FormColors["green"] " r4 s16 "
         this.LogEvent(3, "Drawing coachahead as " HintOptions)
         Gdip_TextToGraphics(this.G, this.coachAheadNote, HintOptions, this.HintsFontName, this.dashwindow.width, this.dashwindow.height)
 
