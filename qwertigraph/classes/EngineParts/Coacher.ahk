@@ -50,9 +50,9 @@ Class Coacher {
 			return
 		}
 		
-		in_chars := this.engine.map.qenv.redactSenstiveToken(accumulated)
-		this.presentGraphicalCoachingAhead(in_chars)
-		this.presentTextualCoachingAhead(in_chars)
+		;in_chars := this.engine.map.qenv.redactSenstiveToken(accumulated)
+		;this.presentGraphicalCoachingAhead(in_chars)
+		;this.presentTextualCoachingAhead(in_chars)
 		; this.engine.dashboard.visualizeQueue()
 	}
 	

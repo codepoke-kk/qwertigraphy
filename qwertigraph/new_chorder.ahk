@@ -77,7 +77,7 @@ coach.addQueue(engine.coachQueue)
 editor := new EditorViewport(map)
 
 ;greggpad := new PadViewport(qenv, engine.penQueue)
-dashboard := new DashboardViewport(qenv, engine.dashboardQueue)
+dashboard := new DashboardViewport(qenv, engine)
 speedViewer.dashboard := dashboard
 engine.dashboard := dashboard
 aux.dashboard := dashboard 

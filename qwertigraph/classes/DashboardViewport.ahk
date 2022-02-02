@@ -33,6 +33,7 @@ Class DashboardViewport
    speedKeyed := 0
    speedEnhanced := 0
    coachAheadQwerd := new DashboardEvent("g-r-e-t-/-s", "grets", "Greetings", "green")
+   comingSoonKeys := ["", "o", "i", "u", "e", "a", "d", "t", "s", "g", "n", "r"]
    coachAheadHints := ""
    coachAheadHeight := 0 ; 100
    
@@ -77,14 +78,15 @@ Class DashboardViewport
    lineHeight := {"wordtext": 2, "wordform": 24, "penform": 60, "qwerdtext": 92}
    nib := {"x": this.dashwindow.width, "y": this.Height}
    
-   __New(qenv, dashboardQueue)
+   __New(qenv, engine)
    {
       global dashboardhwnd1 
       this.qenv := qenv
       this.logVerbosity := (this.qenv.properties.LoggingLevelDashboard) ? this.qenv.properties.LoggingLevelDashboard : 3
       this.Show := (this.qenv.properties.DashboardShow) ? this.qenv.properties.DashboardShow : 1
       this.AutohideSeconds := (this.qenv.properties.DashboardAutohideSeconds) ? this.qenv.properties.DashboardAutohideSeconds : 30
-      this.dashboardQueue := dashboardQueue
+      this.engine := engine 
+      this.dashboardQueue := engine.dashboardQueue
       this.auxKeyboardState := ""
       this.lastRefresh := A_TickCount
 		
@@ -161,6 +163,7 @@ Class DashboardViewport
          this.dashwindow.top := Mon1Top
          this.dashwindow.bottom := Mon1Bottom
          this.dashwindow.height := Mon1Bottom - Mon1Top
+         this.dashwindow.coachAheadTop := this.dashwindow.bottom - 230
          this.partnerwindow := {"left": Mon1Left, "right": (Mon1Right - (this.dashwindow.width + 1)), "top": Mon1Top, "bottom": Mon1Bottom}
          this.cell.x := 0
          this.cell.y := 0
@@ -214,9 +217,9 @@ Class DashboardViewport
       
       
       ; Draw pending hints
-      ;HintOptions := "x10 y" (this.Height - 69) " Left " this.FormColors["green"] " r4 s16 "
-      ;this.LogEvent(3, "Drawing " this.coachAheadHints " as " HintOptions)
-      ;Gdip_TextToGraphics(this.G, this.coachAheadHints, HintOptions, this.HintsFontName, this.dashwindow.width, this.coachAheadHeight)
+      HintOptions := "x10 y" (this.dashwindow.coachAheadTop) " Left " this.FormColors["green"] " r4 s16 "
+      this.LogEvent(3, "Drawing coachahead as " HintOptions)
+      Gdip_TextToGraphics(this.G, this.coachAheadNote, HintOptions, this.HintsFontName, this.dashwindow.width, this.dashwindow.height)
       
       UpdateLayeredWindow(this.hwnd1, this.hdc, this.dashwindow.left, this.dashwindow.top, this.dashwindow.width, this.dashwindow.height)
    }
@@ -248,7 +251,7 @@ Class DashboardViewport
       
       if (this.orientation == "vertical") {
          this.cell.x := 0
-         this.cell.y := this.dashwindow.bottom
+         this.cell.y := this.dashwindow.coachAheadTop
       } else {
          this.cell.x := this.dashwindow.right
          this.cell.y := 0
@@ -525,11 +528,34 @@ Class DashboardViewport
          this.coachAheadQwerd := new DashboardEvent("--", "", "--", "green")
          this.visualizeQueue()
       }
+      this.ComingSoon()
    }
    
-   AutohideDashboard() {
-      this.LogEvent(4, "Autohiding after " this.AutohideSeconds)
-      Gui, DashboardGUI: Show, Hide
+   ComingSoon() {
+        if (not this.engine.keyboard.Token) {
+           Return 
+        }
+        this.LogEvent(4, "Coming soon " this.engine.keyboard.Token)
+        this.coachAheadNote := this.engine.keyboard.Token " "
+        For letter_index, letter in this.comingSoonKeys {
+           if (this.engine.map.qwerds.item(this.engine.keyboard.Token . letter).word) {
+                coachAheadPhrase := Format("{:2} {:1}= {:-10}", letter, this.engine.map.qwerds.item(this.engine.keyboard.Token . letter).reliability, this.engine.map.qwerds.item(this.engine.keyboard.Token . letter).word)
+            } else {
+                coachAheadPhrase := Format("{:2} {:1}= {:-10}", letter, " ", "")
+            }
+            this.logEvent(4, "Adding phrase to coaching " coachAheadPhrase)
+            this.coachAheadNote .= coachAheadPhrase "`n"
+        }
+        this.logEvent(4, "Coaching note: " this.coachAheadNote)
+
+        Gdip_FillRectangle(this.G, this.BackgroundBrush, 0, this.dashwindow.coachAheadTop, this.dashwindow.width, this.dashwindow.height)
+
+        ; Draw pending hints
+        HintOptions := "x10 y" (this.dashwindow.coachAheadTop) " Left " this.FormColors["green"] " r4 s16 "
+        this.LogEvent(3, "Drawing coachahead as " HintOptions)
+        Gdip_TextToGraphics(this.G, this.coachAheadNote, HintOptions, this.HintsFontName, this.dashwindow.width, this.dashwindow.height)
+
+        UpdateLayeredWindow(this.hwnd1, this.hdc, this.dashwindow.left, this.dashwindow.top, this.dashwindow.width, this.dashwindow.height)
    }
 
    LogEvent(verbosity, message) 
