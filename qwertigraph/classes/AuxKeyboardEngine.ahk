@@ -4,7 +4,7 @@
 class AuxKeyboardEngine
 {
 	logQueue := new Queue("AuxEngineQueue")
-	logVerbosity := 1
+	logVerbosity := 4
 	enabled := true
     dashboard := ""
 
@@ -418,14 +418,16 @@ class AuxKeyboardEngine
             }
             
             ; I should probably make this a queue solution, but I need it now 
-            if (this.dashboard) {
-                this.dashboard.auxKeyboardState := this.winned . this.shifted . this.controlled . this.alted . this.layer
-            }
+            ;if (true or this.dashboard) {
+            ;}
             
             this.lastkey := ""
             this.lastkeycount := 0
 				
 		}
+        this.logEvent(4, "Sending aux keyboard state as aux:" this.winlocked . this.caplocked . this.layer)
+        this.dashboard.auxKeyboardState := "aux:" this.winlocked . this.caplocked . this.layer
+
 		; Clear the chord buffer for a fresh start 
 		this.Flush()
 		Critical Off

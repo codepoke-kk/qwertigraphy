@@ -43,7 +43,6 @@ Class DashboardViewport
    Width := 0
    Height := 0
    CornerRadius := 10
-   BackGroundColor := 0xffffffff
    BackGroundPen := ""
    BackGroundBrush := ""
    hwnd1 := ""
@@ -60,6 +59,9 @@ Class DashboardViewport
    QwerdOptions := "x10 y10 w80 Left " this.QwerdColor " r4 s20 "
    FontName := "Arial"
    HintsFontName := "Consolas"
+   TranscriptBackGroundColor := 0xffffffee
+   CoachAheadBackGroundColor := 0xffeeffee
+   IndicatorsBackGroundColor := 0xffeeeeff
    FormColor := 0xff000000
    FormColors := {"black": 0xff000000, "red": 0xffbb0000, "blue": 0xff0000bb, "green": 0xff00bb00}
    FormPens := {}
@@ -123,8 +125,12 @@ Class DashboardViewport
       ; Set the smoothing mode to antialias = 4 to make shapes appear smoother (only used for vector drawing and filling)
       Gdip_SetSmoothingMode(this.G, 4)
       ; (ARGB = Transparency, red, green, blue) to draw a rounded rectangle with
-      this.BackgroundBrush := Gdip_BrushCreateSolid(this.BackgroundColor)
-      this.BackgroundPen := Gdip_CreatePen(this.BackgroundColor, 3)
+
+      this.TranscriptBackgroundBrush := Gdip_BrushCreateSolid(this.TranscriptBackgroundColor)
+      this.CoachAheadBackgroundBrush := Gdip_BrushCreateSolid(this.CoachAheadBackgroundColor)
+      this.IndicatorsBackgroundBrush := Gdip_BrushCreateSolid(this.IndicatorsBackgroundColor)
+      ;this.BackgroundBrush := Gdip_BrushCreateSolid(this.BackgroundColor)
+      ;this.BackgroundPen := Gdip_CreatePen(this.BackgroundColor, 3)
 
       ; (ARGB = Transparency, red, green, blue) of width 3 (the thickness the pen will draw at) to draw a circle
       For ink, value in this.FormColors 
@@ -170,7 +176,9 @@ Class DashboardViewport
          this.dashwindow.top := Mon1Top
          this.dashwindow.bottom := Mon1Bottom
          this.dashwindow.height := Mon1Bottom - Mon1Top
-         this.dashwindow.coachAheadTop := this.dashwindow.bottom - (230 + this.cell.height)
+         this.dashwindow.indicatorsTop := this.dashwindow.bottom - 100
+         this.dashwindow.coachAheadTop := this.dashwindow.indicatorsTop - 280
+         this.dashwindow.transcriptBottom := this.dashwindow.coachAheadTop
          this.partnerwindow := {"left": Mon1Left, "right": (Mon1Right - (this.dashwindow.width + 1)), "top": Mon1Top, "bottom": Mon1Bottom}
          this.cell.x := 0
          this.cell.y := 0
@@ -204,28 +212,34 @@ Class DashboardViewport
       }
       
       this.LogEvent(4, "Height is " this.dashwindow.height)
-      Gdip_GraphicsClear(this.G)
-      Gdip_FillRoundedRectangle(this.G, this.BackgroundBrush, 0, 0, this.dashwindow.width, this.dashwindow.height, this.CornerRadius)
-      this.LogEvent(3, "Just drew " this.dashwindow.height)
+      ; Gdip_GraphicsClear(this.G)
       
-      ; Draw WPM Meter
-      EnhancedSpeedOptions := "x20 y20 Left " this.SpeedColor " r4 s36 "
-      this.LogEvent(1, "Drawing enhanced speed " EnhancedSpeedOptions " as " this.speedEnhanced)
-      Gdip_TextToGraphics(this.G, this.speedEnhanced, EnhancedSpeedOptions, this.FontName, this.dashwindow.width, this.dashwindow.height)
-      KeyedSpeedOptions := "x20 y60 Left " this.SpeedColor " r4 s36 "
-      this.LogEvent(1, "Drawing keyed speed " KeyedSpeedOptions " as " this.speedKeyed)
-      Gdip_TextToGraphics(this.G, this.speedKeyed, KeyedSpeedOptions, this.FontName, this.dashwindow.width, this.dashwindow.height)
-      
-      ; Draw Aux Keyboard status
-      ;AuxKeyboardOptions := "x20 y100 Left " this.SpeedColor " r4 s16 "
-      ;this.LogEvent(4, "Drawing aux keyboard " AuxKeyboardOptions)
-      ;Gdip_TextToGraphics(this.G, this.auxKeyboardState, AuxKeyboardOptions, this.FontName, this.dashwindow.width, this.dashwindow.height)
-      
+      ; Clear transcript area
+      Gdip_FillRectangle(this.G, this.TranscriptBackgroundBrush, 0, 0, this.dashwindow.width, this.dashwindow.coachAheadTop)
+      this.LogEvent(3, "Just erased " 0 " to " this.dashwindow.coachAheadTop)
+
       
       ; Draw pending hints
+      Gdip_FillRectangle(this.G, this.CoachAheadBackgroundBrush, 0, this.dashwindow.coachAheadTop, this.dashwindow.width, this.dashwindow.indicatorsTop - this.dashwindow.coachAheadTop)
+      this.LogEvent(3, "Just erased " this.dashwindow.coachAheadTop " to " (this.dashwindow.indicatorsTop - this.dashwindow.coachAheadTop))
       HintOptions := "x10 y" (this.dashwindow.coachAheadTop + this.cell.height) " Left " this.FormColors["green"] " r4 s16 "
       this.LogEvent(3, "Drawing coachahead as " HintOptions)
       Gdip_TextToGraphics(this.G, this.coachAheadNote, HintOptions, this.HintsFontName, this.dashwindow.width, this.dashwindow.height)
+      
+      ; Draw WPM Meter
+      Gdip_FillRectangle(this.G, this.IndicatorsBackgroundBrush, 0, this.dashwindow.indicatorsTop, this.dashwindow.width, this.dashwindow.height - this.dashwindow.indicatorsTop)
+      this.LogEvent(3, "Just erased " this.dashwindow.indicatorsTop " to " (this.dashwindow.height - this.dashwindow.indicatorsTop))
+      EnhancedSpeedOptions := "x20 y" this.dashwindow.indicatorsTop " Left " this.SpeedColor " r4 s32 "
+      this.LogEvent(1, "Drawing enhanced speed " EnhancedSpeedOptions " as " this.speedEnhanced)
+      Gdip_TextToGraphics(this.G, (this.speedEnhanced . " wpm"), EnhancedSpeedOptions, this.FontName, this.dashwindow.width, this.dashwindow.height)
+      KeyedSpeedOptions := "x20 y" (this.dashwindow.indicatorsTop + 35)  " Left " this.SpeedColor " r4 s28 "
+      this.LogEvent(1, "Drawing keyed speed " KeyedSpeedOptions " as " this.speedKeyed)
+      Gdip_TextToGraphics(this.G, (this.speedKeyed . " wpm"), KeyedSpeedOptions, this.FontName, this.dashwindow.width, this.dashwindow.height)
+      
+      ; Draw Aux Keyboard status
+      AuxKeyboardOptions := "x20 y" (this.dashwindow.indicatorsTop + 70)  " Left " this.SpeedColor " r4 s16 "
+      this.LogEvent(4, "Drawing aux keyboard state " this.auxKeyboardState " as " AuxKeyboardOptions)
+      Gdip_TextToGraphics(this.G, this.auxKeyboardState, AuxKeyboardOptions, this.FontName, this.dashwindow.width, this.dashwindow.height)
       
       UpdateLayeredWindow(this.hwnd1, this.hdc, this.dashwindow.left, this.dashwindow.top, this.dashwindow.width, this.dashwindow.height)
    }
@@ -257,13 +271,13 @@ Class DashboardViewport
       
       if (this.orientation == "vertical") {
          this.cell.x := 0
-         this.cell.y := this.dashwindow.coachAheadTop
+         this.cell.y := this.dashwindow.transcriptBottom
       } else {
          this.cell.x := this.dashwindow.right
          this.cell.y := 0
       }
       this.LogEvent(2, "Starting visualization at " this.cell.x "," this.cell.y)
-      this.BackstepCell()
+      ;this.BackstepCell()
       
       ;this.LogEvent(2, "Visualizing coachahead qwerd " this.coachAheadQwerd.qwerd " at " ;this.cell.x "," this.cell.y)
       ;this.DrawQwerd(this.coachAheadQwerd)
@@ -293,7 +307,7 @@ Class DashboardViewport
       this.LogEvent(2, "Drawing " qwerd.word "/" qwerd.form "/" qwerd.qwerd " in ink " qwerd.ink " at " this.cell.x "," this.cell.y)
       ; testgray := Gdip_BrushCreateSolid(0x99999999)
       ; Gdip_FillRectangle(this.G, testgray, 0, 200, 5, this.cell.height)
-      Gdip_FillRectangle(this.G, this.FormBrushes[qwerd.ink], this.cell.x, this.cell.y, 5, this.cell.height)
+      Gdip_FillRectangle(this.G, this.FormBrushes[qwerd.ink], this.cell.x + 2, this.cell.y, 7, this.cell.height)
       this.DrawWordText(qwerd.word)
       ; this.DrawQwerdForm(qwerd.form)
       this.DrawPenForm(qwerd.form, qwerd.ink)
@@ -545,21 +559,21 @@ Class DashboardViewport
            Return 
         }
         this.LogEvent(4, "Coming soon " this.engine.keyboard.Token)
-        this.coachAheadNote := this.engine.keyboard.Token " "
+        this.coachAheadNote := this.engine.keyboard.Token
         For letter_index, letter in this.comingSoonKeys {
            if (this.engine.map.qwerds.item(this.engine.keyboard.Token . letter).word) {
-                coachAheadPhrase := Format("{:2} {:1}= {:-10}", letter, this.engine.map.qwerds.item(this.engine.keyboard.Token . letter).reliability, this.engine.map.qwerds.item(this.engine.keyboard.Token . letter).word)
+                coachAheadPhrase := Format("{:2} {:1}= {:-20}", letter, this.engine.map.qwerds.item(this.engine.keyboard.Token . letter).reliability, this.engine.map.qwerds.item(this.engine.keyboard.Token . letter).word)
             } else {
-                coachAheadPhrase := Format("{:2} {:1}= {:-10}", letter, " ", "")
+                coachAheadPhrase := Format("{:2} {:1}= {:-20}", letter, " ", "")
             }
             this.logEvent(4, "Adding phrase to coaching " coachAheadPhrase)
             this.coachAheadNote .= coachAheadPhrase "`n"
         }
         this.logEvent(4, "Coaching note: " this.coachAheadNote)
 
-        Gdip_FillRectangle(this.G, this.BackgroundBrush, 0, this.dashwindow.coachAheadTop, this.dashwindow.width, this.dashwindow.height)
+        Gdip_FillRectangle(this.G, this.CoachAheadBackgroundBrush, 0, this.dashwindow.coachAheadTop, this.dashwindow.width, this.dashwindow.indicatorsTop - this.dashwindow.coachAheadTop)
+        this.LogEvent(3, "Just erased " this.dashwindow.coachAheadTop " to " (this.dashwindow.indicatorsTop - this.dashwindow.coachAheadTop))
         
-      
         if (this.orientation == "vertical") {
          this.cell.x := 0
          this.cell.y := this.dashwindow.coachAheadTop
