@@ -6,7 +6,7 @@
 ; Create hashmap of qwerdBitmaps
 ; Allow user to set the height/width of the dashboard
 ; Done - Colorize forms (red and blue)
-; Done - Show the in-progress form at the far right every time (in green)
+; Done - Show the in-progress form at the far right every time (in white)
 ; Fix bug where first form of the day is not drawn 
 ; https://www.autohotkey.com/boards/viewtopic.php?t=25966
 
@@ -32,7 +32,7 @@ Class DashboardViewport
    logVerbosity := 4
    speedKeyed := 0
    speedEnhanced := 0
-   coachAheadQwerd := new DashboardEvent("g-r-e-t-/-s", "grets", "Greetings", "green")
+   coachAheadQwerd := new DashboardEvent("g-r-e-t-/-s", "grets", "Greetings", "white")
    comingSoonKeys := ["", "o", "i", "u", "e", "a", "d", "t", "s", "g", "n", "r"]
    coachAheadHints := ""
    coachAheadHeight := 0 ; 100
@@ -63,7 +63,7 @@ Class DashboardViewport
    CoachAheadBackGroundColor := 0xffeeffee
    IndicatorsBackGroundColor := 0xffeeeeff
    FormColor := 0xff000000
-   FormColors := {"black": 0xff000000, "red": 0xffbb0000, "blue": 0xff0000bb, "green": 0xff00bb00}
+   FormColors := {"black": 0xff000000, "red": 0xffbb0000, "blue": 0xff0000bb, "green": 0xff00bb00, "olive": 0xff808000, "gold": 0xffcccc00, "white": 0xffffffff}
    FormPens := {}
    FormBrushes := {}
    FormWidth := 2
@@ -222,7 +222,7 @@ Class DashboardViewport
       ; Draw pending hints
       Gdip_FillRectangle(this.G, this.CoachAheadBackgroundBrush, 0, this.dashwindow.coachAheadTop, this.dashwindow.width, this.dashwindow.indicatorsTop - this.dashwindow.coachAheadTop)
       this.LogEvent(3, "Just erased " this.dashwindow.coachAheadTop " to " (this.dashwindow.indicatorsTop - this.dashwindow.coachAheadTop))
-      HintOptions := "x10 y" (this.dashwindow.coachAheadTop + this.cell.height) " Left " this.FormColors["green"] " r4 s16 "
+      HintOptions := "x10 y" (this.dashwindow.coachAheadTop + this.cell.height) " Left " this.FormColors["white"] " r4 s16 "
       this.LogEvent(3, "Drawing coachahead as " HintOptions)
       Gdip_TextToGraphics(this.G, this.coachAheadNote, HintOptions, this.HintsFontName, this.dashwindow.width, this.dashwindow.height)
       
@@ -307,6 +307,15 @@ Class DashboardViewport
       this.LogEvent(2, "Drawing " qwerd.word "/" qwerd.form "/" qwerd.qwerd " in ink " qwerd.ink " at " this.cell.x "," this.cell.y)
       ; testgray := Gdip_BrushCreateSolid(0x99999999)
       ; Gdip_FillRectangle(this.G, testgray, 0, 200, 5, this.cell.height)
+      if ((qwerd.ink == "blue") and (qwerd.chorded)) {
+        qwerd.ink := "gold"
+      }
+      if ((qwerd.ink == "red") and (qwerd.qwerd == "")) {
+        qwerd.ink := "olive"
+      }
+      if ((qwerd.ink == "red") and (StrLen(qwerd.qwerd) >= StrLen(qwerd.word))) {
+        qwerd.ink := "olive"
+      }
       Gdip_FillRectangle(this.G, this.FormBrushes[qwerd.ink], this.cell.x + 2, this.cell.y, 7, this.cell.height)
       this.DrawWordText(qwerd.word)
       ; this.DrawQwerdForm(qwerd.form)
@@ -548,7 +557,7 @@ Class DashboardViewport
       }
       ; If we got an event, visualize it 
       if (foundCount) {
-         this.coachAheadQwerd := new DashboardEvent("--", "", "--", "green")
+         this.coachAheadQwerd := new DashboardEvent("--", "", "--", "white")
          this.visualizeQueue()
       }
       this.ComingSoon()
@@ -586,7 +595,7 @@ Class DashboardViewport
         this.DrawQwerd(this.coachAheadQwerd)
 
         ; Draw pending hints
-        HintOptions := "x10 y" (this.dashwindow.coachAheadTop + this.cell.height) " Left " this.FormColors["green"] " r4 s16 "
+        HintOptions := "x10 y" (this.dashwindow.coachAheadTop + this.cell.height) " Left " this.FormColors["white"] " r4 s16 "
         this.LogEvent(3, "Drawing coachahead as " HintOptions)
         Gdip_TextToGraphics(this.G, this.coachAheadNote, HintOptions, this.HintsFontName, this.dashwindow.width, this.dashwindow.height)
 

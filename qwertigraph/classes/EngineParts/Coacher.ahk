@@ -60,7 +60,7 @@ Class Coacher {
 		this.logEvent(2, "Graphical coaching ahead on " in_chars)
 		; Is this token a word 
 		coachAheadQwerd := new TokenEvent(in_chars, "")
-		coachAheadQwerd.ink := "green"
+		coachAheadQwerd.ink := "white"
 		if (this.engine.map.qwerds.item(in_chars).qwerd) {
 			this.logEvent(4, "Found coach ahead match for " this.engine.map.qwerds.item(in_chars).qwerd)
             coachAheadQwerd.qwerd := this.engine.map.qwerds.item(in_chars).qwerd
