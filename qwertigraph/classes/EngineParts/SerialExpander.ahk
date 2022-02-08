@@ -40,6 +40,12 @@ Class SerialExpander {
 					token.qwerdobject := this.nullQwerd
 					token.output := this.nullQwerd.word
 					token.match := 1
+				Case "re":
+					this.nullQwerd.word := "re"
+					this.nullQwerd.qwerd := "re"
+					token.qwerdobject := this.nullQwerd
+					token.output := this.nullQwerd.word
+					token.match := 1
 				Case "r":
 					this.nullQwerd.word := "re"
 					this.nullQwerd.qwerd := "r"
@@ -55,6 +61,12 @@ Class SerialExpander {
 				Case "l":
 					this.nullQwerd.word := "ll"
 					this.nullQwerd.qwerd := "l"
+					token.qwerdobject := this.nullQwerd
+					token.output := this.nullQwerd.word
+					token.match := 1
+				Case "ll":
+					this.nullQwerd.word := "ll"
+					this.nullQwerd.qwerd := "ll"
 					token.qwerdobject := this.nullQwerd
 					token.output := this.nullQwerd.word
 					token.match := 1
