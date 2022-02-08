@@ -6,7 +6,7 @@ Class Keyboard {
 		this.name := "keyboard"
 		this.engine := engine 
 		this.logQueue := engine.logQueue
-		this.logVerbosity := 4
+		this.logVerbosity := this.engine.LogVerbosity
 		
 		this.EndKeys_hard := " .,?!;:'""-_{{}{}}[]/\+=|()@#$%^&*<>"
 		this.Letters := ["a","b","c","d","e","f","g","h","i","j","k","l","m","n","o","p","q","r","s","t","u","v","w","x","y","z"]

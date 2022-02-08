@@ -6,7 +6,7 @@ Class Recorder {
 		this.name := "recorder"
 		this.engine := engine 
 		this.logQueue := engine.logQueue
-		this.logVerbosity := 4
+		this.logVerbosity := this.engine.LogVerbosity
 		
 		this.logEvent(3, "Engine " this.title " instantiated")
 	}

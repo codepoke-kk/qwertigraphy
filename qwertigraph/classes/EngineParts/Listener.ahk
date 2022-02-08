@@ -6,7 +6,7 @@ Class Listener {
 		this.name := "listener"
 		this.engine := engine 
 		this.logQueue := engine.logQueue
-		this.logVerbosity := 4
+		this.logVerbosity := this.engine.LogVerbosity
 		
 		this.ih := ""
 		

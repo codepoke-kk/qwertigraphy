@@ -6,7 +6,7 @@ Class SerialExpander {
 		this.name := "serialexpander"
 		this.engine := engine 
 		this.logQueue := engine.logQueue
-		this.logVerbosity := 4
+		this.logVerbosity := this.engine.LogVerbosity
 		
 		this.nullQwerd := new DictionaryEntry("null,,,,0,Could add,null_dictionary.csv")
 		

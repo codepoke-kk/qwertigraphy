@@ -6,7 +6,7 @@ Class Accumulator {
 		this.name := "accumulator"
 		this.engine := engine 
 		this.logQueue := engine.logQueue
-		this.logVerbosity := 4
+		this.logVerbosity := this.engine.LogVerbosity
         this.starttime := 0
 		
 		this.logEvent(3, "Engine " this.title " instantiated")
