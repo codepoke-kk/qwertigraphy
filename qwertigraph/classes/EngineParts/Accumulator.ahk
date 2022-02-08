@@ -29,18 +29,16 @@ Class Accumulator {
 	}
 	RemoveKeyFromToken() {
 		this.logEvent(4, "Removing one character from token " this.engine.keyboard.Token)
-		if (StrLen(this.engine.keyboard.Token)) {
+		if (GetKeyState("Control", "P")) {
+			this.engine.keyboard.Token := "" 
+			this.logEvent(4, "Ctrl-Backspace clears token")
+		} else if (StrLen(this.engine.keyboard.Token)) {
 			this.engine.keyboard.Token := SubStr(this.engine.keyboard.Token, 1, (StrLen(this.engine.keyboard.Token) - 1))
 		} else {
-            if (GetKeyState("Control", "P")) {
-                this.engine.keyboard.Token := "" 
-                this.logEvent(4, "Ctrl-Backspace clears token")
-            } else {
-                bufferToken := this.engine.record[this.engine.record.MaxIndex()]
-                bufferWord := bufferToken.output ? bufferToken.output : bufferToken.input 
-                this.engine.keyboard.Token := bufferWord 
-                this.logEvent(4, "No characters to remove, reloading previous token output as: " this.engine.keyboard.Token)
-            }
+			bufferToken := this.engine.record[this.engine.record.MaxIndex()]
+			bufferWord := bufferToken.output ? bufferToken.output : bufferToken.input 
+			this.engine.keyboard.Token := bufferWord 
+			this.logEvent(4, "No characters to remove, reloading previous token output as: " this.engine.keyboard.Token)
 		}
 	}
 	EndToken(key) {

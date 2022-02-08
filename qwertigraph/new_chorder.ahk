@@ -143,6 +143,9 @@ ExitFunc(ExitReason, ExitCode)
 
 
 ; Enable/Disable
+!#f::
+    dashboard.ExposeDashboard("right")
+    Return
 !#p::
     engine.Stop()
     ; Msgbox, % "Chorder stopped Engine"

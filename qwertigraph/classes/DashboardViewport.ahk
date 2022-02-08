@@ -180,6 +180,8 @@ Class DashboardViewport
          this.dashwindow.coachAheadTop := this.dashwindow.indicatorsTop - 280
          this.dashwindow.transcriptBottom := this.dashwindow.coachAheadTop
          this.partnerwindow := {"left": Mon1Left, "right": (Mon1Right - (this.dashwindow.width + 1)), "top": Mon1Top, "bottom": Mon1Bottom}
+         this.partnerwindow.width := this.partnerwindow.right - this.partnerwindow.left
+         this.partnerwindow.height := this.partnerwindow.bottom - this.partnerwindow.top
          this.cell.x := 0
          this.cell.y := 0
          this.cell.width := this.dashwindow.width
@@ -600,6 +602,50 @@ Class DashboardViewport
         Gdip_TextToGraphics(this.G, this.coachAheadNote, HintOptions, this.HintsFontName, this.dashwindow.width, this.dashwindow.height)
 
         UpdateLayeredWindow(this.hwnd1, this.hdc, this.dashwindow.left, this.dashwindow.top, this.dashwindow.width, this.dashwindow.height)
+   }
+   
+   ExposeDashboard(location) {
+      this.LogEvent(3, "Exposing dashboard to the " location " against " this.dashwindow.left "," this.dashwindow.top "/" this.dashwindow.width "," this.dashwindow.height)
+      SysGet, Mon1, MonitorWorkArea, 1
+      ;dashwindow := {"left": Mon1Right - 220, "right": Mon1Right, "top": Mon1Top, "bottom": Mon1Bottom}
+      ;partnerwindow := {"left": Mon1Left, "right": (Mon1Right - 221), "top": Mon1Top, "bottom": Mon1Bottom, "width": (Mon1Right - 221) - (Mon1Left), "height": Mon1Bottom - Mon1Top}
+      windowIgnoreList := {"": true, "QDashboard": true, "Shell_TrayWnd": true}
+
+      active_id := Winexist("A")
+      qdash_id := Winexist("QDashboard")
+
+      WinGet, id, List,,, Program Manager
+      Loop, %id%
+      {
+          this_id := id%A_Index%
+          WinGetClass, this_class, ahk_id %this_id%
+          WinGetTitle, this_title, ahk_id %this_id%
+          WinGetPos, appL, appT, appW, appH, %this_title% ; %this_id%
+          WinActivate, ahk_id %this_id%
+
+          if ((windowIgnoreList[this_class]) or (windowIgnoreList[this_title])) {
+              ; Ignore all named windows 
+              this.LogEvent(3, "Ignoring ahk_class " this_class ", " this_title " At " appL "," appT "/" appW "," appH)
+              ; IfMsgBox, NO, break
+          } else if ((appL > Mon1Right) or (appL + appW < Mon1Left) or (appT > Mon1Bottom) or (appT + appH < Mon1Top)) {
+              this.LogEvent(3, "Leaving invisible ahk_class " this_class ", " this_title " At " appL "," appT "/" appW "," appH)
+              ; Ignore windows the Windows system hides off the screen
+          } else {
+              this.LogEvent(3, "Evaluating ahk_class " this_class ", " this_title " At " appL "," appT "/" appW "," appH)
+              if (appL + appW > this.dashwindow.left) {
+                  ww := this.partnerwindow.width > appW ? appW : this.partnerwindow.width
+                  wh := this.partnerwindow.height > appH ? appH : this.partnerwindow.height
+                  wl := appL + ww <= this.partnerwindow.right ? appL : this.partnerwindow.right - ww
+                  wt := appT + wh <= this.partnerwindow.bottom ? appT : this.partnerwindow.bottom - wh
+                  this.LogEvent(3, "Moving ahk_class " this_class ", " this_title " to " wl "," wt "/" ww "," wh)
+                  WinMove, %this_title%, , %wl%, %wt%, %ww%, %wh% 
+              }
+          }
+      }
+
+      Winactivate, ahk_id %qdash_id%
+      Winactivate, ahk_id %active_id%
+
    }
 
    LogEvent(verbosity, message) 

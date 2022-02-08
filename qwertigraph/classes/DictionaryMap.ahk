@@ -367,6 +367,35 @@ class DictionaryMap
 			FileCopy, %newdict%, %dictionary%, true
 			FileDelete, %newdict%
 		}
+		
+		
+		
+		; Open the export dictionary for writing 
+		exportdict := "qwertigraph.export"
+		fileHandle := FileOpen(exportdict, "w")
+		fileHandles[exportdict] := fileHandle
+		header := "word,form,qwerd,keyer,chord,usage`n"
+		fileHandles[exportdict].Write(header)
+		this.logEvent(2, "Writing to export dictionary " exportdict)
+		
+		for word, garbage in this.qwerds {
+			qwerd := this.qwerds.item(word)
+			if (not qwerd.isLower) {
+				this.logEvent(4, "Skipping qwerd for not being lowercase " qwerd.qwerd)
+				continue
+			} else if (qwerd.usage > 40000) {
+				this.logEvent(4, "Skipping qwerd for not being used " qwerd.usage)
+				continue
+			} else {
+				this.logEvent(4, "Keeping qwerd for being willofoutercase " qwerd.qwerd)
+			}
+			dictline := qwerd.word "," qwerd.form "," qwerd.qwerd "," qwerd.keyer "," qwerd.chord "," qwerd.usage "`n"
+			this.logEvent(4, "Writing " dictline " to " exportdict)
+			; Also write to the export dictionary 
+			fileHandles[exportdict].Write(dictline)
+		}
+		
+		fileHandles[exportdict].Close()
 
 	}
 	
