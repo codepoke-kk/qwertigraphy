@@ -19,6 +19,8 @@ You're,u-r,Ur,,rux,78
 Timed,tm-d,Tmd,,mtvd,93
 Timing,tm-\-h,Tmg,,mtvg,93
 Timings,tm-\-h-s,Tmgs,,mtvgs,93
+Timeout,tm-a-u,Tmw,o,mtw,93
+Timeouts,tm-a-u-s,Tmws,,mstw,93
 Should,sh-d,Zd,,dz,97
 Muster,m-u-s-t-e2,Muste,,emstu,103
 Mustered,m-u-s-t-e2-d,Musted,,emstud,103
@@ -103,6 +105,10 @@ Friended,fr-d,Frd,,dfr,327
 Friending,fr-\-h,Frg,,fgr,327
 Friends,fr-s,Frs,,frs,327
 Persons,pr-ss,Prsso,o,oprs,329
+Highlight,^-h-\-i-l-i,Hili,,hil,333
+Highlighted,^-h-\-i-l-i-d,Hilid,,dhil,333
+Highlighting,^-h-\-i-l-i-\-h,Hilig,,ghil,333
+Highlights,^-h-\-i-l-i-s,Hilis,,hils,333
 Ensure,e-n-sh-u,Enzu,,enuz,351
 Unsure,u-n-sh-u,Unzu,,nuz,351
 Sureness,sh-u-n-e-s,Zunes,,ensuz,351
@@ -116,6 +122,8 @@ Kings,k-e-ng-s,Kegs,,egks,357
 Kingship,k-e-ng-/-sh,Kegz,,egkz,357
 Secondly,s2-e-k-nt-e,Seknte,,eknst,373
 Seconding,s2-e-k-nt-\-h,Sekntg,,egknst,373
+Secondary,s2-e-k-nt-r-e,Sekntre,,eknrst,373
+Secondarily,s2-e-k-nt-r-ye,Sekntry,,eknrsty,373
 Seconds,s2-e-k-nt-s,Seknts,,eknst,373
 Calls,k-o-s,Kos,,kozs,386
 Speaking,s-p-\-h,Spg,,gps,388
@@ -430,6 +438,9 @@ Guarded,g-a2-d-d,Gadd,,adg,1522
 Guardedly,g-a2-d-d-e,Gadde,,adeg,1522
 Guarding,g-a2-d-\-h,Gadg,,adg,1522
 Guards,g-a2-d-s,Gads,,adgs,1522
+Heated,^-h-\-e-t-d,Hetd,,deht,1547
+Heater,^-h-\-e-t-r,Hetr,,ehrt,1547
+Heats,^-h-\-e-t-s,Hets,,ehst,1547
 Addressing,a-d-r-\-h,Adrg,,adgr,1549
 Addresses,a-d-r-s,Adrs,,adrs,1549
 Constantly,k-s2-tn-e,Kstne,,eknst,1552
@@ -585,6 +596,10 @@ Computers,k-p-u-/-r-s,Kpurs,,kprsu,1944
 Septuagint,s-e-p-j,Sepj,,ejps,1973
 Writers,r-i-r-s,Rirs,,irs,1976
 Protections,pr-o-t-e-k-sh-s,Protekzs,,ekoprstz,1983
+Absolutely,a-b-s2-o-e,Absoe,,abeos,2053
+Absolution,a-b-s2-o-l-sh,Absolz,,ablosz,2053
+Absolutions,a-b-s2-o-l-sh-s,Absolzs,,ablosz,2053
+Absolutes,a-b-s2-o-s,Absos,,abos,2053
 Explanations,e-s-pl-sh-s,Xplzs,,lpsxz,2074
 Unsuccessful,n-s2-u-k-f,Nsukf,,fknsu,2078
 Unsuccessfully,n-s2-u-k-f-e,Nsukfe,,efknsu,2078
@@ -654,6 +669,9 @@ Performer,pr-f-m-r,Prfmr,,fmpr,2589
 Performers,pr-f-m-r-s,Prfmrs,,fmprs,2589
 Performs,pr-f-m-s,Prfms,,fmprs,2589
 Key,k-e,Ke,,cek,2598
+Heating,^-h-\-e-t-\-h,Hetg,,eght,2648
+Hitting,^-h-\-e-t-\-h,Hetgu,u,eghtu,2648
+Hits,^-h-\-e-t-s,Hetsu,u,ehstu,2648
 Availability,a-v-a-l-\-b,Avalbo,,ablov,2653
 Routing,r-u-t-\-h,Rutg,,rtug,2671
 Router,r-u-t-r,Rutr,,rtur,2671
@@ -792,6 +810,7 @@ Occupations,o-kp-s,Okps,,kops,3498
 Balancing,b-a-l-\-h,Balg,,abgl,3523
 Balancer,b-a-l-r,Balr,,ablr,3523
 Balancers,b-a-l-r-s,Balrs,,ablrs,3523
+Comparisons,k-pr-s2-n-s,Kprsns,,knprs,3575
 Invitations,n-v-e-t-sh-s,Nvetzs,,enstvz,3582
 Processional,pr-s-e-sh-l,Prsezl,,elprsz,3592
 Processionals,pr-s-e-sh-l-s,Prsezls,,elprsz,3592
@@ -1029,6 +1048,7 @@ Networking,n-e-t-r-k-\-h,Netrkg,,egknrt,5683
 Networks,n-e-t-r-k-s,Netrks,,eknrst,5683
 Workmanlike,r-k-mn-l,Rkmml,,klmr,5688
 Workman,r-k-mn,Rkmmu,u,kmru,5688
+Heathen,h-e-h-e-n,Hehen,,ehn,5689
 Equanimity,e-k-a-m-\-<-<-n->->-nt,Eqamt,,aemqt,5752
 Developed,dfl-d,Dfld,,dfl,5759
 Developing,dfl-\-h,Dflg,,dfgl,5759
@@ -1079,6 +1099,10 @@ Extracting,e-s-/-k-\-h,Xkg,,gkx,6269
 Extracts,e-s-/-k-s,Xks,,ksx,6269
 Extraction,e-s-/-k-sh,Xkz,,kxz,6269
 Extractions,e-s-/-k-sh-s,Xkzs,,ksxz,6269
+Compare,k-pr,Kpr,,kpr,6355
+Compared,k-pr-d,Kprd,,dkpr,6355
+Comparing,k-pr-\-h,Kprg,,gkpr,6355
+Compares,k-pr-s,Kprs,,kprs,6355
 Boundaries,b-n-r-e-s,Bnres,,benrs,6400
 Executable,e-s2-k-b,Xkb,,bkx,6515
 Executables,e-s2-k-b-s,Xkbs,,bksx,6515
@@ -1098,6 +1122,11 @@ Inconsistency,n-k-ss-n-s-e,Nkssnse,,ekns,6724
 Inconsistencies,n-k-ss-n-s-e-s,Nkssnses,,eknss,6724
 Inconsistent,n-k-ss-/-nt,Nkssnt,,knst,6724
 Greeting,g-r-e-t-\-h,Gretg,,egrt,6766
+Expertise,e2-s-p-e2-t-e-s,Espetes,,epst,6892
+Experts,e2-s-p-e2-t-s,Espets,,epst,6892
+Expert,e2-s-p-e2-t,Xpet,,eptx,6892
+Expertise,e2-s-p-e2-t-e-s,Xpetes,,epstx,6892
+Experts,e2-s-p-e2-t-s,Xpets,,epstx,6892
 Definitions,df-n-sh-s,Dfnzs,,dfnsz,6911
 Identities,a-tn-t-e-s,Atntes,,aenst,6977
 Perilous,p-e-r-l-u-s,Perlus,,elprsu,6982
@@ -1141,7 +1170,7 @@ Denouncing,dn-n-s-\-h,Dnnsg,,dgns,7553
 Denounces,dn-n-s-s,Dnnss,,dns,7553
 Constancy,k-s2-tn-s-e,Kstnse,,eknst,7666
 Constance,k-s2-tn-s,Kstnso,o,knost,7666
-Keepers,k-p-/-r-s,Kprs,,kprs,7711
+Keepers,k-p-/-r-s,Kprso,o,koprs,7711
 Proposition,pr-p-o-sh,Prpoz,,oprz,7854
 Propositioned,pr-p-o-sh-d,Prpozd,,doprz,7854
 Propositioning,pr-p-o-sh-\-h,Prpozg,,goprz,7854
@@ -1294,6 +1323,10 @@ Assign,a-s-i-n,Asin,,ains,11390
 Assigning,a-s-i-n-\-h,Asing,,agins,11390
 Assigns,a-s-i-n-s,Asins,,ains,11390
 Customers,k-u-s-r-s,Kusrs,,krsus,11568
+Comparable,k-pr-b,Kprb,,bkpr,11637
+Comparablely,k-pr-b-e,Kprbe,,bekpr,11637
+Comparables,k-pr-b-s,Kprbs,,bkprs,11637
+Incomparablely,n-k-pr-b-e,Nkprbe,,beknpr,11637
 Repress,r-p-r-e-s,Rpres,,eprs,11664
 Exporting,e-s-p-o-t-\-h,Xpotg,,goptx,11727
 Exporter,e-s-p-o-t-r,Xpotr,,oprtx,11727
@@ -1360,6 +1393,13 @@ Authoritatively,o-th-rdf-e,Ohrdfe,,defhor,12938
 Needy,n-e-d-e,Nede,,den,13093
 Neediness,n-e-d-e-n-s,Nedens,,dens,13093
 Neediest,n-e-d-e-s-t,Nedest,,denst,13093
+Compartment,k-p-t-m,Kptm,,kmpt,13302
+Compartmental,k-p-t-m-l,Kptml,,klmpt,13302
+Compartmentalize,k-p-t-m-l-i-s,Kptmlis,,iklmpst,13302
+Compartmentalized,k-p-t-m-l-i-s-d,Kptmlisd,,diklmpst,13302
+Compartmentalizing,k-p-t-m-l-i-s-\-h,Kptmlisg,,giklmpst,13302
+Compartmentalizes,k-p-t-m-l-i-s-s,Kptmliss,,iklmpst,13302
+Compartments,k-p-t-m-s,Kptms,,kmpst,13302
 Locomotives,l-o-k-m-o-df-s,Lokmodfs,,dfklmos,13371
 Pearl,pr-l,Prl,,lpr,13389
 Pearly,pr-l-e,Prle,,elpr,13389
@@ -1464,6 +1504,9 @@ Persecutes,pr-s2-k-e-u-s,Prskus,,kprsus,18426
 Persecution,pr-s2-k-e-u-sh,Prskuz,,kprsuz,18426
 Persecutions,pr-s2-k-e-u-sh-s,Prskuzs,,kprsuzs,18426
 Appreciatively,a-pr-e-sh-/-v-e,Aprezve,,aeprvz,18471
+Hitched,^-h-\-e-ch-d,Hecd,,cdeh,18574
+Hitching,^-h-\-e-ch-\-h,Hecg,,cegh,18574
+Hitches,^-h-\-e-ch-s,Hecs,,cehs,18574
 Input,n-p,Np,u,npv,19335
 Inputing,n-p-\-h,Npg,,npvg,19335
 Inputs,n-p-s,Nps,,npvs,19335
@@ -1648,6 +1691,10 @@ Revocably,r-v-k-b-e,Rvkbe,,bekrv,30778
 Revoking,r-v-k-\-h,Rvkg,,gkrv,30778
 Revokes,r-v-k-s,Rvks,,krsv,30778
 Counterbalanced,k-/-b-a-l-d,Kbald,,abdkl,31490
+Highland,^-h-\-i-l-a-nt,Hilant,,ahilnt,31526
+Highlander,^-h-\-i-l-a-nt-r,Hilantr,,ahilnrt,31526
+Highlanders,^-h-\-i-l-a-nt-r-s,Hilantrs,,ahilnrst,31526
+Highlands,^-h-\-i-l-a-nt-s,Hilants,,ahilnst,31526
 Insecurities,n-s2-e-k-/-r-s,Nsekrs,,eknrs,31677
 Evangelistic,e-v-a-n-j-/-s2-t-k,Evanjstk,,aejknstv,32118
 Evangelists,e-v-a-n-j-/-s2-t-s,Evanjsts,,aejnstv,32118
@@ -1725,6 +1772,22 @@ Reorganizing,r-o-g-\-h,Rogg,,gor,47478
 Reorganizes,r-o-g-s,Rogs,,gors,47478
 Reorganization,r-o-g-sh,Rogz,,gorz,47478
 Poorhouse,p-u-u-s2-^-^-^-h,Puus,,psu,47516
+Scan,s-k-a-n,Skan,,akns,52987
+Scanned,s-k-a-n-d,Skand,,adkns,52987
+Scandal,s-k-a-nd-l,Skandl,,adklns,52987
+Scandalize,s-k-a-nd-l-i-s,Skandlis,,adiklns,52987
+Scandalized,s-k-a-nd-l-i-s-d,Skandlisd,,adiklns,52987
+Scandalizing,s-k-a-nd-l-i-s-\-h,Skandlisg,,adgiklns,52987
+Scandalizes,s-k-a-nd-l-i-s-s,Skandliss,,adiklns,52987
+Scandals,s-k-a-nd-l-s,Skandls,,adklns,52987
+Scandalous,s-k-a-nd-l-u-s,Skandlus,,adklnsu,52987
+Scandalously,s-k-a-nd-l-u-s-e,Skandluse,,adeklnsu,52987
+Scanning,s-k-a-n-\-h,Skang,,agkns,52987
+Scans,s-k-a-n-s,Skans,,akns,52987
+Scant,s-k-a-n-t,Skant,,aknst,52987
+Scanty,s-k-a-n-t-e,Skante,,aeknst,52987
+Scantiness,s-k-a-n-t-e-n-e-s,Skantenes,,aeknst,52987
+Scantily,s-k-a-n-t-ye,Skanty,,aknsty,52987
 Deterrent,d-/-nt,Dnto,o,dnot,53715
 Tellers,t-e-r-s,Tersu,u,erstu,53719
 Opine,o-p-i-n,Opin,,inop,54408
@@ -1786,12 +1849,25 @@ Excluded,e-s-/-d-d,Xdd,,cdx,70565
 Excluding,e-s-/-d-\-h,Xdg,,dgx,70565
 Excludes,e-s-/-d-s,Xds,,dsx,70565
 Guarantors,g-a2-nt-r-s,Gantrs,,agnrst,70716
+High-handedly,^-h-\-i-^-h-\-nt-d-e,Hihntde,,dehint,70770
+Highway s,i2-n-s,Ins,,ins,70771
 Immigrated,e-m-e-g-d,Emegd,,egimd,70854
 Immigrating,e-m-e-g-\-h,Emegg,,egimg,70854
 Immigrates,e-m-e-g-s,Emegs,,egims,70854
 Good luck,g-l-u-k,Gluk,,gklu,70898
 Good morning,g-m,Gmu,u,gmu,70898
 Inappreciated,e-n-a-pr-e-sh-d,Enaprezd,,adenprz,70910
+Disintegrate,d-s-nt-e-g-r-a,Dsntegra,,adegnrst,70963
+Disintegrated,d-s-nt-e-g-r-a-d,Dsntegrad,,adegnrst,70963
+Disintegrating,d-s-nt-e-g-r-a-\-h,Dsntegrag,,adegnrst,70963
+Disintegrates,d-s-nt-e-g-r-a-s,Dsntegras,,adegnrst,70963
+Disintegration,d-s-nt-e-g-r-a-sh,Dsntegraz,,adegnrstz,70963
+Disintegrations,d-s-nt-e-g-r-a-sh-s,Dsntegrazs,,adegnrstz,70963
+Integrated,nt-e-g-r-a-d,Ntegrad,,adegnrt,70963
+Integrating,nt-e-g-r-a-\-h,Ntegrag,,aegnrt,70963
+Integrates,nt-e-g-r-a-s,Ntegras,,aegnrst,70963
+Integration,nt-e-g-r-a-sh,Ntegraz,,aegnrtz,70963
+Integrations,nt-e-g-r-a-sh-s,Ntegrazs,,aegnrstz,70963
 Opinionatedly,o-p-n-a-td-e,Opnadde,,adenop,71437
 Questionnaires,k-sh-a2-s,Qzas,,aqsz,71526
 Reconditioned,r-k-d-sh-d,Rkdzd,,dkrz,71538
