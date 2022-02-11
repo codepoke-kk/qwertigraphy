@@ -18,7 +18,7 @@ Class SerialExpander {
 		
 		lastToken := 0
 		lastToken := this.engine.record[this.engine.record.MaxIndex()]
-		if ((lastToken) and (lastToken.ender == "'") and (InStr("s|d|m|r|v|l", token.input))) {
+		if ((lastToken) and (lastToken.ender == "'") and (InStr("s|d|m|re|r|v|l|ll", token.input))) {
 			this.logEvent(4, "Handling " lastToken.ender token.input " as a contraction")
 			Switch token.input 
 			{
@@ -58,15 +58,15 @@ Class SerialExpander {
 					token.qwerdobject := this.nullQwerd
 					token.output := this.nullQwerd.word
 					token.match := 1
-				Case "l":
-					this.nullQwerd.word := "ll"
-					this.nullQwerd.qwerd := "l"
-					token.qwerdobject := this.nullQwerd
-					token.output := this.nullQwerd.word
-					token.match := 1
 				Case "ll":
 					this.nullQwerd.word := "ll"
 					this.nullQwerd.qwerd := "ll"
+					token.qwerdobject := this.nullQwerd
+					token.output := this.nullQwerd.word
+					token.match := 1
+				Case "l":
+					this.nullQwerd.word := "ll"
+					this.nullQwerd.qwerd := "l"
 					token.qwerdobject := this.nullQwerd
 					token.output := this.nullQwerd.word
 					token.match := 1

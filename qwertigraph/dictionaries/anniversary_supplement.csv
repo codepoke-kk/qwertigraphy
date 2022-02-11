@@ -138,6 +138,7 @@ Meaningless,m-e-n-\-h-\-l,Mengl,,eglmn,424
 Meaninglessness,m-e-n-\-h-\-l-n-e-s,Menglnes,,eglmns,424
 Meanings,m-e-n-\-h-s,Mengs,,emnogs,424
 Meanness,m-e-n-n-e-s,Mennes,,emns,424
+Abled,a-bl-d,Abld,,abdl,427
 Unquestionable,n-k-n-b,Nqnb,,bnq,430
 Unquestionably,n-k-n-b-e,Nqnbe,,benq,430
 Unquestioned,n-k-n-d,Nqnd,,dnq,430
@@ -160,6 +161,8 @@ Understands,u-/-s2-tn-s,Ustns,,nstu,467
 Overwritten,o-r-e-tn,Oretn,,enort,469
 Accountable,a-k-t-b,Aktb,,abkt,481
 Accountably,a-k-t-b-e,Aktbe,,abekt,481
+Accountability,a-k-t-\-b,Aktbo,o,abkot,481
+Accounted,a-k-t-d,Aktd,,adkt,481
 Accounting,a-k-t-\-h,Aktg,,agkt,481
 Accounts,a-k-t-s,Akts,,akst,481
 Characters,k-a-k-s,Kaks,,aks,494
@@ -192,6 +195,7 @@ Serviceable,^-s2-b,Sb,,bcs,601
 Serviceably,^-s2-b-e,Sbe,,bes,601
 Serviced,^-s2-d,Sd,,cds,601
 Servicing,^-s2-\-h,Sg,,cgs,601
+Desiring,d-s-\-h,Dsg,,dgs,609
 Opinions,o-p-n-s,Opns,,nops,626
 Histories,^-h-\-e-s2-t-r-e-s,Hestres,,ehrst,629
 Agreements,^-ya-m-s,Yams,,amsy,631
@@ -742,6 +746,8 @@ Mismatched,m-sm-a-ch-d,Msmacd,,acmsd,3098
 Mismatching,m-sm-a-ch-\-h,Msmacg,,acmsg,3098
 Mismatches,m-sm-a-ch-s,Msmacs,,acmss,3098
 Unmatched,n-m-a-ch-d,Nmachd,,acdhmn,3098
+Disability,d-s-a-/-b,Dsabo,o,abdos,3126
+Disabilities,d-s-a-/-b-s,Dsabs,,abds,3126
 Definitely,df-n-e,Dfne,,defn,3128
 Described,d-s2-k-r-d,Dskrd,,dkrs,3131
 Describing,d-s2-k-r-\-h,Dskrg,,dgkrs,3131
@@ -831,6 +837,7 @@ Reestablish,r-e-s2-t-b,Restb,,berst,3682
 Reestablished,r-e-s2-t-b-d,Restbd,,berstd,3682
 Reestablishing,r-e-s2-t-b-\-h,Restbg,,berstg,3682
 Reestablishes,r-e-s2-t-b-s,Restbs,,bersts,3682
+Advisedly,v-i-s2-d-e,Visde,,deisv,3701
 Disciplined,d-s-pl-e-n-d,Dsplend,,delnps,3709
 Disciplining,d-s-pl-e-n-\-h,Dspleng,,deglnps,3709
 Disciplinary,d-s-pl-e-n-r-e,Dsplenre,,delnprs,3709
@@ -908,6 +915,10 @@ Occupants,o-kp-nt-s,Okpnts,,knopst,4190
 Occupier,o-kp-r,Okpr,,kopr,4190
 Occupiers,o-kp-r-s,Okprs,,koprs,4190
 Combinations,k-b-n-sh-s,Kbnzs,,bknsz,4193
+Desirables,d-s-b-s,Dsbs,,bds,4196
+Desirability,d-s-\-b,Dsbu,u,bdsu,4196
+Undesirable,n-d-s-b,Ndsb,,bdns,4196
+Undesirables,n-d-s-b-s,Ndsbs,,bdns,4196
 Contracted,k-/-k-d,Kkd,,dkx,4212
 Contracting,k-/-k-\-h,Kkg,,gkx,4212
 Contractor,k-/-k-r,Kkr,,krx,4212
@@ -920,6 +931,15 @@ Replacing,r-pl-a-s-\-h,Rplasg,,aglprs,4225
 Replacement,r-pl-a-s-m,Rplasm,,almprs,4225
 Replacements,r-pl-a-s-m-s,Rplasms,,almprs,4225
 Replaces,r-pl-a-s-s,Rplass,,alprs,4225
+Advising,v-i-s-\-h,Visg,,gisv,4358
+Adviser,v-i-s-r,Visr,,irsv,4358
+Advisory,v-i-s-r-e,Visre,,eirsv,4358
+Advisor,v-i-s-r,Visro,o,iorsv,4358
+Advisers,v-i-s-r-s,Visrs,,irsv,4358
+Advisors,v-i-s-r-s,Visrso,o,iorsv,4358
+Advises,v-i-s-s,Viss,,isv,4358
+Amiably,a-m-b-e,Ambe,,abem,4370
+Amiability,a-m-\-b,Ambu,u,abmu,4370
 Underside,u-/-s-i,Usio,o,iosu,4384
 Undersides,u-/-s-i-s,Usis,,isu,4384
 Irreproachable,e-r-p-r-c-b,Erprcb,,bcepr,4387
@@ -965,6 +985,18 @@ Conversion,k-v-e-sh,Kvez,,ekvz,4741
 Swore,s-u-o-r,Suor,,orsu,4756
 Sworn,s-u-o-r-n,Suorn,,norsu,4756
 Relates,r-e-l-a-s,Relas,,aelrs,4800
+Adaptable,a-d-a-p-b,Adapb,,abdp,4814
+Adaptably,a-d-a-p-b-e,Adapbe,,abdep,4814
+Adaptability,a-d-a-p-/-b,Adapbo,o,abdop,4814
+Adapting,a-d-a-p-\-h,Adapg,,adgp,4814
+Adapter,a-d-a-p-/-r,Adapr,,adpr,4814
+Adapters,a-d-a-p-/-r-s,Adaprs,,adprs,4814
+Adapts,a-d-a-p-s,Adaps,,adps,4814
+Adapted,a-d-a-p-/-t,Adapt,,adpt,4814
+Adaptive,a-d-a-p-/-v,Adapv,,adpv,4814
+Adaptively,a-d-a-p-/-v-e,Adapve,,adepv,4814
+Adaptation,a-d-a-p-sh,Adapz,,adpz,4814
+Adaptations,a-d-a-p-sh-s,Adapzs,,adpsz,4814
 Appropriated,a-pr-a-d,Aprad,,adpr,4822
 Appropriately,a-pr-a-e,Aprae,,aepr,4822
 Appropriating,a-pr-a-\-h,Aprag,,agpr,4822
@@ -1194,6 +1226,7 @@ Theologies,h-e-\-o-s,Heos,,ehos,8166
 Delete,d-l-e-t,Dlet,,delt,8274
 Deleting,d-l-e-t-\-h,Dletg,,deglt,8274
 Deletes,d-l-e-t-s,Dlets,,delst,8274
+Abilities,a-b-s,Abso,o,abos,8337
 Attached,a-t-ch-d,Atcd,,acdt,8525
 Attaching,a-t-ch-\-h,Atcg,,acgt,8525
 Attaches,a-t-ch-s,Atcs,,acst,8525
@@ -1215,6 +1248,7 @@ Needless,n-e-d-l,Nedlu,u,delno,8765
 Involved,n-v-o-d,Nvod,,dnov,8785
 Involving,n-v-o-\-h,Nvog,,gnov,8785
 Involves,n-v-o-s,Nvos,,nosv,8785
+Irritations,e2-t-sh-s,Etzs,,estz,8788
 Combining,k-b-i-\-h,Kbig,,bgik,8790
 Combines,k-b-i-s,Kbis,,biks,8790
 Reschedule,r-s2-k-e-d-l,Rskedl,,deklrs,8811
@@ -1298,6 +1332,7 @@ Persistency,pr-ss-n-s-e,Prssnse,,enprs,10535
 Persistent,pr-ss-\-nt,Prssnt,,nprst,10535
 Persistently,pr-ss-\-nt-e,Prssnte,,enprst,10535
 Persistents,pr-ss-\-nt-s,Prssnts,,nprst,10535
+Unaccountably,n-a-k-t-b-e,Naktbe,,abeknt,10544
 Commandments,k-m-a-n-m-s,Kmanms,,akmns,10596
 Commune,k-m-u-n,Kmun,,kmnu,10730
 Communed,k-m-u-n-d,Kmund,,dkmnu,10730
@@ -1514,6 +1549,12 @@ Entitling,nt-i-t-\-h,Ntitg,,intg,19335
 Entitlement,nt-i-t-m,Ntitm,,imnt,19335
 Entitlements,nt-i-t-m-s,Ntitms,,imnts,19335
 Entitles,nt-i-t-s,Ntits,,ints,19335
+Irritated,e2-t-a-d,Etad,,adet,19488
+Irritating,e2-t-a-\-h,Etag,,aegt,19488
+Irritates,e2-t-a-s,Etas,,aest,19488
+Irritable,e2-t-b,Etbo,o,beot,19488
+Irritability,e2-t-\-b,Etbu,u,betu,19488
+Irritant,e2-t-nt,Etnt,,ent,19488
 Impact,m-p-a-k,Mpak,,akmp,19533
 Impacted,m-p-a-k-d,Mpakd,,akmpd,19533
 Impactful,m-p-a-k-f,Mpakf,,afkmp,19533
@@ -1704,6 +1745,7 @@ Recurrent,r-k-r-e-nt,Rkrent,,eknrt,32396
 Undercurrent,u-k-r-e-nt,Ukrent,,eknrtu,32396
 Undercurrents,u-k-r-e-nt-s,Ukrents,,eknrstu,32396
 Futility,f-e-u-t-\-l,Futlo,o,fltu,32520
+Accountants,a-k-tn-s,Aktns,,aknst,32605
 Doubleday,d-b-d-a,Dbda,,abd,32627
 Bodyguard,b-o-g-a2-d,Bogad,,abdgo,33273
 Bodyguards,b-o-g-a2-d-s,Bogads,,abdgos,33273
@@ -1749,8 +1791,10 @@ Forswear,f-s2-u-a-r,Fsuar,,afrsu,39785
 Forswearing,f-s2-u-a-r-\-h,Fsuarg,,afgrsu,39785
 Forswears,f-s2-u-a-r-s,Fsuars,,afrsu,39785
 Outgoing,a-u-g-g,Wgg,,gw,39889
+Disabled,d-s-a-b-d,Dsabd,,abds,40302
 Workroom,r-k-r-m,Rkrm,,kmr,40538
 Workrooms,r-k-r-m-s,Rkrms,,kmrs,40538
+Advisability,v-i-s-/-b,Visbo,o,biosv,40845
 Requiem,r-e-k-\-n-^-<-e-m,Reqem,,emqr,41094
 Requiems,r-e-k-\-n-^-<-e-m-s,Reqems,,emqrs,41094
 Requite,r-e-k-\-n-^-<-i-t,Reqit,,eiqrt,41094
