@@ -197,6 +197,7 @@ Serviced,^-s2-d,Sd,,cds,601
 Servicing,^-s2-\-h,Sg,,cgs,601
 Desiring,d-s-\-h,Dsg,,dgs,609
 Opinions,o-p-n-s,Opns,,nops,626
+Variously,v-a-r-s-e,Varse,,aersv,627
 Histories,^-h-\-e-s2-t-r-e-s,Hestres,,ehrst,629
 Agreements,^-ya-m-s,Yams,,amsy,631
 Papered,p-a-pr-d,Paprd,,adpr,649
@@ -276,6 +277,11 @@ Rebounds,r-b-n-s,Rbns,,bnrs,790
 Unbound,u-b-n,Ubn,,bnu,790
 Unbounded,u-b-n-d,Ubnd,,bdnu,790
 Outbound,w-b-n,Wbn,,bnw,790
+Disrespect,d-s-r-e-s,Dsres,,ders,791
+Disrespectful,d-s-r-e-s-f,Dsresf,,defrs,791
+Respected,r-e-s-d,Resd,,ders,791
+Respecting,r-e-s-\-h,Resg,,egrs,791
+Respects,r-e-s-s,Ress,,ers,791
 Disquiet,d-s-k-i-t,Dsqit,,diqst,792
 Disquieting,d-s-k-i-t-\-h,Dsqitg,,dgiqst,792
 Quietly,k-i-t-e,Qite,,eiqt,792
@@ -469,6 +475,8 @@ Sufferer,s2-u-f-\-r,Sufr,,frsu,1571
 Suffers,s2-u-f-s,Sufs,,fsu,1571
 Interesting,^-n-\-s-\-h,Nsg,,gns,1575
 Interestingly,^-n-\-s-\-g,Nsge,,egns,1575
+Capability,k-a-p-\-b,Kapb,,abkp,1592
+Capabilities,k-a-p-\-b-s,Kapbs,,abkps,1592
 Mentioned,mn-sh-d,Mnzd,,dmnz,1594
 Mentioning,mn-sh-\-h,Mnzg,,gmnz,1594
 Mentions,mn-sh-s,Mnzs,,mnsz,1594
@@ -540,6 +548,9 @@ Appliance,a-pl-i-n-s,Aplins,,ailnps,1758
 Appliances,a-pl-i-n-s-s,Aplinss,,ailnps,1758
 Applies,a-pl-i-s,Aplis,,ailps,1758
 Connect,k-e-k,Kek,,ekz,1770
+Brilliancy,br-e-l-e,Brele,,belor,1772
+Brilliancies,br-e-l-e-s,Breles,,belrs,1772
+Brilliance,br-e-l,Brelo,o,belor,1772
 Friendships,fr-/-sh-s,Frzs,,frsz,1791
 Protecting,pr-o-t-e-k-\-h,Protekg,,egkoprt,1802
 Protector,pr-o-t-e-k-r,Protekr,,ekoprt,1802
@@ -577,6 +588,7 @@ Controlling,^-k-/-l-\-h,Klg,,gkl,1869
 Controller,^-k-/-l-r,Klr,,klxr,1869
 Controllers,^-k-/-l-r-s,Klrs,,klxrs,1869
 Controls,^-k-/-l-s,Kls,,kls,1869
+Varietys,vr-i-s,Vris,,irsv,1877
 Sacrificed,s2-a-k-r-e-f-d,Sakrefd,,adefkrs,1894
 Sacrificial,s2-a-k-r-e-f-e-sh,Sakrefez,,aefkrsz,1894
 Sacrificially,s2-a-k-r-e-f-e-sh-e,Sakrefeze,,aefkrsz,1894
@@ -600,6 +612,7 @@ Computers,k-p-u-/-r-s,Kpurs,,kprsu,1944
 Septuagint,s-e-p-j,Sepj,,ejps,1973
 Writers,r-i-r-s,Rirs,,irs,1976
 Protections,pr-o-t-e-k-sh-s,Protekzs,,ekoprstz,1983
+Liabilities,l-i-/-b-s,Libs,,bils,2027
 Absolutely,a-b-s2-o-e,Absoe,,abeos,2053
 Absolution,a-b-s2-o-l-sh,Absolz,,ablosz,2053
 Absolutions,a-b-s2-o-l-sh-s,Absolzs,,ablosz,2053
@@ -788,7 +801,12 @@ Historically,^-h-\-e-s2-t-r-/-k-e,Hestrke,,ehkrst,3194
 Seeded,s2-e-d-d,Sedd,,des,3202
 Seeding,s2-e-d-\-h,Sedg,,degs,3202
 Seeds,s2-e-d-s,Seds,,des,3202
+Unsuitable,n-s2-u-t-b,Nsutb,,bnstu,3236
+Suitably,s2-u-t-b-e,Sutbe,,bestu,3236
+Suitability,s2-u-t-\-b,Sutbo,o,bostu,3236
 Obviously,o-b-v-e,Obve,,beov,3252
+Respectably,r-e-s-b-e,Resbe,,bers,3253
+Respectability,r-e-s-\-b,Resbo,o,beors,3253
 Clerked,k-l-r-d,Klrd,,dklr,3264
 Picking,p-e-k-\-h,Pekg,,egkp,3272
 Picks,p-e-k-s,Peks,,ekps,3272
@@ -884,6 +902,8 @@ Internals,n-/-n-l-s,Nnls,,lns,3908
 Executives,e-s2-e-k-v-s,Xekvs,,eksvx,4030
 Washer,u-o-sh-r,Uozr,,ouzr,4064
 Washes,u-o-sh-s,Uozs,,ouzs,4064
+Incapability,n-k-a-p-\-b,Nkapb,,abknp,4072
+Incapabilities,n-k-a-p-\-b-s,Nkapbs,,abknps,4072
 Maximize,m-a-x-m-i-s,Maxmis,,aimsx,4077
 Maximized,m-a-x-m-i-s-d,Maxmisd,,adimsx,4077
 Maximizing,m-a-x-m-i-s-\-h,Maxmisg,,agimsx,4077
@@ -966,6 +986,7 @@ Nettled,n-e-t-l-d,Netld,,delnt,4455
 Nettles,n-e-t-l-s,Netls,,elnst,4455
 Nets,n-e-t-s,Nets,,enst,4455
 Expectations,e-s-p-sh-s,Xpzs,,psxz,4458
+Alliances,a-l-i-n-s-s,Alinss,,ailns,4526
 Normally,n-o-m-ye,Nomy,,mnoy,4590
 Concluding,k-k-\-h-o,Kkgo,o,gko,4613
 Concludes,k-k-s-o,Kkso,o,kos,4613
@@ -1006,6 +1027,7 @@ Appropriation,a-pr-a-sh,Apraz,,aprz,4822
 Appropriations,a-pr-a-sh-s,Aprazs,,aprsz,4822
 Peril,p-e-r-l,Perl,,elpr,4883
 Perils,p-e-r-l-s,Perls,,elprs,4883
+Probabilities,pr-\-b-s,Prbso,o,boprs,4887
 Collected,k-o-l-d,Kold,,dklo,4890
 Collecting,k-o-l-\-h,Kolg,,gklo,4890
 Collects,k-o-l-s,Kols,,klos,4890
@@ -1147,6 +1169,8 @@ Conversant,k-v-e-s-nt,Kvesnt,,eknstv,6622
 Conversantly,k-v-e-s-nt-e,Kvesnte,,eknstv,6622
 Converses,k-v-e-s-s,Kvess,,eksv,6622
 Devices,df-i-s-s,Dfiss,,dfis,6640
+Valiant,v-a-l-ea-nt,Valeant,,aelntv,6704
+Valiantly,v-a-l-ea-nt-e,Valeante,,aelntv,6704
 Consistence,k-ss-n-s,Kssns,,kns,6724
 Consistency,k-ss-n-s-e,Kssnse,,ekns,6724
 Consistently,k-ss-/-nt-e,Kssnte,,knste,6724
@@ -1203,6 +1227,9 @@ Denounces,dn-n-s-s,Dnnss,,dns,7553
 Constancy,k-s2-tn-s-e,Kstnse,,eknst,7666
 Constance,k-s2-tn-s,Kstnso,o,knost,7666
 Keepers,k-p-/-r-s,Kprso,o,koprs,7711
+Varied,v-a-r-e-d,Vared,,aderv,7794
+Varying,v-a-r-e-\-h,Vareg,,aegrv,7794
+Varies,v-a-r-e-s,Vares,,aersv,7794
 Proposition,pr-p-o-sh,Prpoz,,oprz,7854
 Propositioned,pr-p-o-sh-d,Prpozd,,doprz,7854
 Propositioning,pr-p-o-sh-\-h,Prpozg,,goprz,7854
@@ -1350,6 +1377,10 @@ Outputting,a-u-\-p-\-h,Wpg,,gpw,10999
 Outpost,a-u-p-o-s-t,Wpost,,opstw,10999
 Outposts,a-u-p-o-s-t-s,Wposts,,opstw,10999
 Outputs,a-u\--p-s,Wps,,psw,10999
+Unreliable,n-r-e-l-i-b,Nrelib,,beilnr,11229
+Unreliability,n-r-e-l-i-\-b,Nrelibo,o,beilnor,11229
+Reliably,r-e-l-i-b-e,Relibe,,beilr,11229
+Reliability,r-e-l-i-\-b,Relibo,o,beilor,11229
 Immigration,e-m-g-r-a-z,Emgraz,,aegmrz,11303
 Emigration,e-m-g-r-a-z,Emgrazo,o,aegmorz,11303
 Migration,m-i-g-r-a-z,Migraz,,agimrz,11303
@@ -1375,6 +1406,11 @@ Utilized,e-u-t-l-i-s-d,Utlisd,,dilstu,11788
 Utilizing,e-u-t-l-i-s-\-h,Utlisg,,gilstu,11788
 Utilizes,e-u-t-l-i-s-s,Utliss,,ilstu,11788
 Utilization,e-u-t-l-i-sh,Utliz,,iltuz,11788
+Reliance,r-e-l-i-n-s,Relins,,eilnrs,11798
+Reliant,r-e-l-i-nt,Relint,,eilnrt,11798
+Self-reliance,^-s-\-r-e-l-i-n-s,Srelins,,eilnrst,11798
+Self-reliant,^-s-\-r-e-l-i-nt,Srelint,,eilnrst,11798
+Self-reliantly,^-s-\-r-e-l-i-nt-e,Srelinte,,eilnrst,11798
 Rout,r-a-o-t,Rwt,,rtw,11813
 Routs,r-a-o-t-s,Rwts,,rstw,11813
 Profile,pr-f-i-l,Prfil,,filpr,11816
@@ -1401,6 +1437,10 @@ Automatically,o-tm-/-a-e,Otmae,,aemot,12143
 Greets,g-r-e-t-s,Gretso,o,egorst,12162
 Conclusively,k-k-v-e,Kkve,,ekv,12171
 Explicitly,e-s-pl-e-s2-t-e,Xpleste,,elpstx,12274
+Variable,v-a-r-b,Varb,,abrv,12334
+Variably,v-a-r-b-e,Varbe,,aberv,12334
+Variability,v-a-r-\-b,Varbo,o,aborv,12334
+Variables,v-a-r-b-s,Varbs,,abrsv,12334
 Click,k-l-e-k,Klek,,ekl,12573
 Clicking,k-l-e-k-\-h,Klekg,,egkl,12573
 Clicks,k-l-e-k-s,Kleks,,ekls,12573
@@ -1424,6 +1464,11 @@ Pharisee,f-a2-r-s-e,Farse,,aefrs,12765
 Pharisees,f-a2-r-s-e-s,Farses,,aefrs,12765
 Sadducee,s-a-d-s-e,Sadse,,ades,12765
 Sadducees,s-a-d-s-e-s,Sadses,,adess,12765
+Variance,v-a-r-ea-n-s,Varens,,aenrsv,12782
+Variant,v-a-r-ea-nt,Varent,,aenrtv,12782
+Variants,v-a-r-ea-nt-s,Varents,,aenrstv,12782
+Variation,v-a-r-ea-sh,Varez,,aervz,12782
+Variations,v-a-r-ea-sh-s,Varezs,,aersvz,12782
 Authoritatively,o-th-rdf-e,Ohrdfe,,defhor,12938
 Needy,n-e-d-e,Nede,,den,13093
 Neediness,n-e-d-e-n-s,Nedens,,dens,13093
@@ -1608,6 +1653,8 @@ Entail,n-ta-l,Ntal,,alnt,21539
 Entailed,n-ta-l-d,Ntald,,adlnt,21539
 Entailing,n-ta-l-\-h,Ntalg,,aglnt,21539
 Entails,n-ta-l-s,Ntals,,alnst,21539
+Pliancy,p-l-i-n-s-e,Plinse,,eilnps,21607
+Pliant,p-l-i-nt,Plint,,ilnpt,21607
 Assignments,a-s2-i-mn-s,Asimms,,aims,21884
 Unwritten,n-r-e-tn,Nretn,,enrt,22085
 Evangel,e-v-a-n-j,Evanj,,aejnv,22125
@@ -1624,6 +1671,9 @@ Retrieving,r-\-v-\-h,Rvg,,grv,22760
 Retrieval,r-\-v-l,Rvl,,lrv,22760
 Retrievals,r-\-v-l-s,Rvls,,lrsv,22760
 Retrieves,r-\-v-s,Rvs,,rsv,22760
+Appprobation,a-pr-b-a-z,Aprbaz,,abprz,22854
+Probation,pr-b-a-z,Prbaz,,abprz,22854
+Probationary,pr-b-a-z-r-e,Prbazre,,abeprz,22854
 Unchanging,n-ch-/-h,Ncg,,cgn,23067
 Applicants,a-pl-e-k-nt-s,Apleknts,,aeklnpst,23395
 Invulnerable,n-v-u-l-n-e-r-b,Nvulnerb,,belnruv,24003
@@ -1635,6 +1685,8 @@ Vanguard,v-a-n-g-a2-d,Vangad,,adgnv,24126
 Vanguards,v-a-n-g-a2-d-s,Vangads,,adgnsv,24126
 Expounding,e-s-p-n-\-h,Xpng,,gnpx,24186
 Expounds,e-s-p-n-s,Xpns,,npsx,24186
+Reprobate,r-pr-b-a-t,Rprbat,,abprt,24227
+Reprobates,r-pr-b-a-t-s,Rprbats,,abprst,24227
 Galileo,g-a-l-l-e-o,Galleo,,aeglo,24229
 Computational,k-p-u-sh-l,Kpuzl,,klpuz,24409
 Computationally,k-p-u-sh-l-e,Kpuzle,,eklpuz,24409
@@ -1682,6 +1734,7 @@ Clink,k-l-e-nk,Kleq,,eklq,27400
 Clinked,k-l-e-nk-d,Kleqd,,deklq,27400
 Clinking,k-l-e-nk-\-h,Kleqg,,egklq,27400
 Clinks,k-l-e-nk-s,Kleqs,,eklqs,27400
+Stability,s2-t-/-b,Stbo,o,bost,27482
 Shortages,sh-/-j-s,Zjs,,jsz,27735
 Shortcoming,sh-/-k-m-\-h,Zkmg,,gkmz,27735
 Shortcomings,sh-/-k-m-\-h-s,Zkmgs,,gkmsz,27735
@@ -1747,6 +1800,8 @@ Undercurrents,u-k-r-e-nt-s,Ukrents,,eknrstu,32396
 Futility,f-e-u-t-\-l,Futlo,o,fltu,32520
 Accountants,a-k-tn-s,Aktns,,aknst,32605
 Doubleday,d-b-d-a,Dbda,,abd,32627
+Improbable,m-pr-b,Mprb,,bmpr,32653
+Improbably,m-pr-b-e,Mprbe,,bempr,32653
 Bodyguard,b-o-g-a2-d,Bogad,,abdgo,33273
 Bodyguards,b-o-g-a2-d-s,Bogads,,abdgos,33273
 Singe,s-e-n-j,Senj,,ejns,33893
@@ -1756,9 +1811,13 @@ Underfoot,u-/-f-u-t,Ufut,,ftu,34261
 Spray,s-p-r-a,Spra,,aprs,34387
 Sprayed,s-p-r-a-d,Sprad,,adprs,34387
 Sprays,s-p-r-a-s,Spras,,aprs,34387
+Pliable,pl-i-b,Plib,,bilp,34627
+Pliably,pl-i-b-e,Plibe,,beilp,34627
+Pliability,pl-i-\-b,Plibo,o,bilop,34627
 Computed,k-p-u-d,Kpud,,dkpu,34914
 Computing,k-p-u-\-h,Kpug,,gkpu,34914
 Computes,k-p-u-s,Kpus,,kpsu,34914
+Dalliance,d-a-l-e-a-n-s,Dalens,,adelns,37431
 Sergeant,s-e2-jnt,Sejnt,,ejnst,37586
 Sergeants,s-e2-jnt-s,Sejnts,,ejnsts,37586
 Inclusions,e-/-sh-s,Ezs,,esz,37756
@@ -1807,6 +1866,8 @@ Misjudged,m-s-j-j-d,Msjjd,,djms,44819
 Misjudging,m-s-j-j-\-h,Msjjg,,gjms,44819
 Misjudges,m-s-j-j-s,Msjjs,,jms,44819
 Capernaum,k-a-p-n-u-m,Kapnum,,akmnpu,45030
+Probate,pr-b-a-t,Prbat,,abprt,45784
+Probates,pr-b-a-t-s,Prbats,,abprst,45784
 Outcomes,a-u-k-m-s,Wkms,,kmsw,46539
 Galilean,g-a-l-l-e-n,Gallen,,aegln,46629
 Galileans,g-a-l-l-e-n-s,Gallens,,aeglns,46629
@@ -1838,6 +1899,7 @@ Opine,o-p-i-n,Opin,,inop,54408
 Opined,o-p-i-n-d,Opind,,dinop,54408
 Opining,o-p-i-n-\-h,Oping,,ginop,54408
 Opines,o-p-i-n-s,Opins,,inops,54408
+Compliant,k-p-l-i-nt,Kplint,,iklnpt,58475
 Rewrite,r-r-i,Rri,,irx,58803
 Rewriting,r-r-i-\-h,Rrig,,gir,58803
 Certification,s2-e-df-sh,Sedfz,,defsz,59944
@@ -1850,6 +1912,8 @@ Adjudged,a-j-j-d,Ajjd,,adj,64745
 Adjudging,a-j-j-\-h,Ajjg,,agj,64745
 Adjudges,a-j-j-s,Ajjs,,ajs,64745
 Singles,s2-e-ng-s,Segs,,egs,65996
+Rehabilitate,r-e-^-h-\-b-e-l-t-a,Rehbelta,,abehlrt,66158
+Rehabilitation,r-e-^-h-\-b-e-l-t-sh,Rehbeltz,,behlrtz,66158
 Coverage,k-v-j,Kvj,,jkv,68140
 Tech,t-e-k-n,Tekn,,eknt,69046
 Technique,t-e-k-n-e-k,Tekneq,,eknqt,69046
