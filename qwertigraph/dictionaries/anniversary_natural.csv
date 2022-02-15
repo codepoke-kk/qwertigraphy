@@ -251,7 +251,10 @@ Cleaned,k-l-e-nt,Klend,,deKln,9929
 Dungeon,tn-j-n,Dnjn,,djnn,9935
 Dingy,tn-j-e,Dnjeo,o,dejno,9999
 Expired,e-s-p-i-/-t,Xpid,,dipX,10150
-Respond,r-s-jnt,Rspnd,,dnpRs,10268
+Respond,r-s-jnt,Rspnd,,dnprs,10268
+Responded,r-s-jnt-d,Rspndd,,dnprs,10268
+Responding,r-s-jnt-\-h,Rspndg,,dgnprs,10268
+Responds,r-s-jnt-s,Rspnds,,dnprs,10268
 Divined,df-i-nt,Dfindo,o,Ddfino,10413
 Bidden,b-tn,Bdno,o,Bdno,10605
 Rained,r-a-nt,Rando,o,adnoR,10945
@@ -281,7 +284,10 @@ Undecided,n-d-s-i-/-t,Ndsid,,ddiNs,17356
 Endanger,n-tn-j-e2,Ndnje,,dejNn,17391
 Denomination,tn-o-mn-sh,Dnommz,,dmmnoz,17567
 Antecedent,a-/-s2-e-tn,Asedno,o,Adenos,17598
-Harden,^-h-\-a2-tn,Hadn,,adHn,17706
+Harden,^-h-\-a2-tn,Hadn,,adhn,17706
+Hardened,^-h-\-a2-tn-d,Hadnd,,adhn,17706
+Hardening,^-h-\-a2-tn-\-h,Hadng,,adghn,17706
+Hardens,^-h-\-a2-tn-s,Hadns,,adhns,17706
 Density,tn-/-s,Dnse,e,dens,18162
 Fined,f-i-nt,Findo,o,dFino,18255
 Cadence,k-a-tn-s,Kadns,,adKns,18277
