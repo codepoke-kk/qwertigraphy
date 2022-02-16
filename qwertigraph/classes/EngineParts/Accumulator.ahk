@@ -8,6 +8,8 @@ Class Accumulator {
 		this.logQueue := engine.logQueue
 		this.logVerbosity := this.engine.LogVerbosity
         this.starttime := 0
+        this.retrievedTokenIndex := 0
+        this.retrievedEnder := 0
 		
 		this.logEvent(3, "Engine " this.title " instantiated")
 	}
@@ -31,14 +33,39 @@ Class Accumulator {
 		this.logEvent(4, "Removing one character from token " this.engine.keyboard.Token)
 		if (GetKeyState("Control", "P")) {
 			this.engine.keyboard.Token := "" 
+            this.retrievedTokenIndex := 0
+            this.retrievedEnder := 0
 			this.logEvent(4, "Ctrl-Backspace clears token")
 		} else if (StrLen(this.engine.keyboard.Token)) {
 			this.engine.keyboard.Token := SubStr(this.engine.keyboard.Token, 1, (StrLen(this.engine.keyboard.Token) - 1))
 		} else {
-			bufferToken := this.engine.record[this.engine.record.MaxIndex()]
-			bufferWord := bufferToken.output ? bufferToken.output : bufferToken.input 
-			this.engine.keyboard.Token := bufferWord 
-			this.logEvent(4, "No characters to remove, reloading previous token output as: " this.engine.keyboard.Token)
+            ; Not simple. 
+            ; This process allows us to walk back a long way into the buffer as the user backspaces across several words 
+            ; I may need to fix a problem where a user backspaces maybe 4 words, types 1, then backspaces 2 more. Right now that fails 
+            this.logEvent(4, "Backspacing into buffer from position " this.retrievedTokenIndex)
+            if (not this.retrievedTokenIndex) { 
+                this.logEvent(4, "Have no retrieved token - taking the last one at " this.engine.record.MaxIndex())
+                this.retrievedTokenIndex := this.engine.record.MaxIndex()
+                this.retrievedEnder := 0
+                bufferToken := this.engine.record[this.retrievedTokenIndex]
+                bufferWord := bufferToken.output ? bufferToken.output : bufferToken.input 
+            } else {
+                if (not this.retrievedEnder) {
+                    this.retrievedEnder := 1
+                    this.logEvent(4, "Have retrieved token, but have not retrieved ender - taking dummy token")
+                    bufferWord := "" 
+                } else {
+                    this.retrievedTokenIndex -= 1
+                    bufferToken := this.engine.record[this.retrievedTokenIndex]
+                    bufferWord := bufferToken.output ? bufferToken.output : bufferToken.input 
+                    if (this.retrievedTokenIndex == (this.engine.record.MaxIndex() - 1)) {
+                        bufferWord := SubStr(bufferWord, 1, (StrLen(bufferWord) - 1))
+                    }
+                    this.logEvent(4, "Have already retrieved ender - taking previous token at " this.retrievedTokenIndex)
+                }
+            }
+            this.engine.keyboard.Token := bufferWord 
+			this.logEvent(4, "No characters to remove, reloading token #" this.retrievedTokenIndex " output as: " this.engine.keyboard.Token)
 		}
 	}
 	EndToken(key) {
@@ -48,6 +75,8 @@ Class Accumulator {
         token.method := "s"
         this.starttime := A_TickCount
 		this.engine.keyboard.Token := ""
+        this.retrievedTokenIndex := 0
+        this.retrievedEnder := 0
 		this.engine.NotifySerialToken(token)
 	}
 	CancelToken(key) {

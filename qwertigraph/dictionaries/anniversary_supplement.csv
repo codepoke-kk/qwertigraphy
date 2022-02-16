@@ -181,6 +181,7 @@ Hardwood,^-h-\-a2-d-u-d,Hadud,,adhu,448
 Hardwoods,^-h-\-a2-d-u-d-s,Haduds,,adhsu,448
 Hardship,^-h-\-a2-d-\-sh,Hadz,,adhz,448
 Hardships,^-h-\-a2-d-\-sh-s,Hadzs,,adhsz,448
+Subject,s-j,Sj,,js,459
 Turnover,t-e-n-o,Teno,,enot,460
 Turnovers,t-e-n-o-s,Tenos,,enots,460
 Understandable,u-/-s2-tn-b,Ustnb,,bnstu,467
@@ -434,7 +435,7 @@ Surprises,s-e-pr-i-s-s,Sepriss,,eiprs,1168
 Crowding,k-r-a-u-\-h,Krwg,,gkrw,1176
 Crowds,k-r-a-u-s,Krws,,krsw,1176
 Judged,j-j-d,Jjd,,dj,1190
-Judges,j-j-s,Jjs,,js,1190
+Judges,j-j-s,Jjs,,jsz,1190
 Movements,m-u-m-s,Mums,,msu,1193
 Searchable,s2-e-ch-b,Secb,,bces,1201
 Searchably,s2-e-ch-b-e,Secbe,,bces,1201
@@ -694,6 +695,10 @@ Sources,s2-o-s-s,Soss,,cos,2223
 Anxiety,a-q-s-i,Aqsi,,aiqs,2224
 Anxieties,a-q-s-i-s,Aqsis,,aiqs,2225
 Changes,ch-s,Cs,,cos,2261
+Distemper,d-s-tm-pr,Dstmpr,,dmprst,2265
+Tempered,tm-pr-d,Tmprd,,dmprt,2265
+Tempering,tm-pr-\-h,Tmprg,,gmprt,2265
+Tempers,tm-pr-s,Tmprs,,mprst,2265
 Images,e-m-j-s,Emjs,,ejms,2281
 Resolute,r-s2-o-l-u-t,Rsolut,,lorstu,2285
 Resolutely,r-s2-o-l-u-t-e,Rsolute,,elorstu,2285
@@ -1199,6 +1204,7 @@ Developer,dfl-r,Dflr,,dflr,5759
 Developers,dfl-r-s,Dflrs,,dflrs,5759
 Develops,dfl-s,Dfls,,dfls,5759
 Cakes,k-a-k-s,Kakso,o,akso,5764
+Contemporaries,k-tm-pr-r-e-s,Ktmprres,,ekmprst,5798
 Patterned,p-a-tn-d,Patnd,,adnpt,5806
 Patterning,p-a-tn-\-h,Patng,o,agnpt,5806
 Approved,a-pr-v-d,Aprvd,,adprv,5852
@@ -1379,6 +1385,10 @@ Imports,m-p-o-t-s,Mpots,,mopst,8595
 Importation,m-p-o-t-sh,Mpotz,,moptz,8595
 Environmental,n-v-i-r-mn-l,Nvirmml,,ilmnrv,8705
 Environments,n-v-i-r-mn-s,Nvirmms,,imnrsv,8705
+Temporal,tm-pr-l,Tmprl,,lmprt,8713
+Temporally,tm-pr-l-e,Tmprle,,elmprt,8713
+Temporality,tm-pr-\-l,Tmprlo,o,lmoprt,8713
+Temporalities,tm-pr-\-l-s,Tmprls,,lmprst,8713
 Needlessly,n-e-d-l-e,Nedle,,deln,8765
 Needless,n-e-d-l,Nedlu,u,delno,8765
 Involved,n-v-o-d,Nvod,,dnov,8785
@@ -1496,6 +1506,7 @@ Persistently,pr-ss-\-nt-e,Prssnte,,enprst,10535
 Persistents,pr-ss-\-nt-s,Prssnts,,nprst,10535
 Unaccountably,n-a-k-t-b-e,Naktbe,,abeknt,10544
 Commandments,k-m-a-n-m-s,Kmanms,,akmns,10596
+Temperance,tm-p,Tmpo,o,mopt,10725
 Commune,k-m-u-n,Kmun,,kmnu,10730
 Communed,k-m-u-n-d,Kmund,,dkmnu,10730
 Communing,k-m-u-n-\-h,Kmung,,gkmnu,10730
@@ -1877,6 +1888,7 @@ Monitors,mn-e-t-e2-s,Mmetes,,emst,26517
 Unmonitored,u-mn-e-t-e2-d,Umneted,,demntu,26517
 Criticized,k-r-e-t-ss-d,Kretssd,,dekrst,26526
 Criticizing,k-r-e-t-ss-\-h,Kretssg,,egkrst,26526
+Contemporaneously,k-tm-pr-a-n-u-s-e,Ktmpranuse,,aekmnprstu,26848
 Specified,s-p-e-s-d,Spesd,,deps,26856
 Specifing,s-p-e-s-\-h,Spesg,,egps,26856
 Specifies,s-p-e-s-s,Spess,,eps,26856
@@ -2060,6 +2072,13 @@ Opined,o-p-i-n-d,Opind,,dinop,54408
 Opining,o-p-i-n-\-h,Oping,,ginop,54408
 Opines,o-p-i-n-s,Opins,,inops,54408
 Compliant,k-p-l-i-nt,Kplint,,iklnpt,58475
+Temporize,tm-pr-i-s,Tmpris,,imprst,58750
+Temporization,tm-pr-i-s-a-sh,Tmprisaz,,aimprstz,58750
+Temporizations,tm-pr-i-s-a-sh-s,Tmprisazs,,aimprstz,58750
+Temporized,tm-pr-i-s-d,Tmprisd,,dimprst,58750
+Temporizer,tm-pr-i-s-e-r,Tmpriser,,eimprst,58750
+Temporizing,tm-pr-i-s-\-h,Tmprisg,,gimprst,58750
+Temporizes,tm-pr-i-s-s,Tmpriss,,imprst,58750
 Rewrite,r-r-i,Rri,,irx,58803
 Rewriting,r-r-i-\-h,Rrig,,gir,58803
 Certification,s2-e-df-sh,Sedfz,,defsz,59944
@@ -2165,6 +2184,10 @@ Questionnaires,k-sh-a2-s,Qzas,,aqsz,71526
 Reconditioned,r-k-d-sh-d,Rkdzd,,dkrz,71538
 Reconditioning,r-k-d-sh-\-h,Rkdzg,,dgkrz,71538
 Reconditions,r-k-d-sh-s,Rkdzs,,dkrsz,71538
+Temperament,tm-pr-a-m,Tmpram,,amprt,71657
+Temperaments,tm-pr-a-m-s,Tmprams,,amprst,71657
+Temperamental,tm-pr-\-m,Tmprm,,mprt,71657
+Temperamentally,tm-pr-\-m-e,Tmprme,,emprt,71657
 Templated,tm-pl-a-d,Tmplad,,adlmpt,71659
 Templating,tm-pl-a-\-h,Tmplag,,aglmpt,71659
 Templates,tm-pl-a-s,Tmplas,,almpst,71659

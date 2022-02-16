@@ -14,7 +14,7 @@ Class Sender {
 	Send(token) {
 		this.logEvent(4, "Sending " token.input " as " token.output)
 		
-		if ((this.engine.keyboard.AutoSpaceSent) and (not token.output)) {
+		if ((this.engine.keyboard.AutoSpaceSent) and (not token.input)) {
 			; We sent a space after sending a chord and this is a bare end key. We need to delete that autospace
 			this.logEvent(4, "Deleting autospace and setting autopunctuation")
 			Send, {Backspace} 
