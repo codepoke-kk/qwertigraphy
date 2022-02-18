@@ -7,6 +7,7 @@ Received,r-s-e-/-t,Rsed,,deRs,310
 Passed,p-a-s2-t,Pasdo,o,adoPs,319
 United,e-u-n-i-/-t,Unid,,dinU,389
 Replied,r-e-p-/-t,Repd,,depR,415
+Family,f-a-m-ya,Famy,,afmy,431
 Followed,f-o-/-t,Fod,,dFo,462
 Carried,k-a-e-/-t,Kaed,,adeK,477
 Reached,r-e-ch-t,Recd,,cdeR,495
@@ -24,6 +25,7 @@ Windowed,u-e-nt-o-d,Uendod,,denou,721
 Windowing,u-e-nt-o-\-h,Uendog,,degnou,721
 Windowless,u-e-nt-o,Uendols,,delnosu,721
 Windows,u-e-nt-o-s,Uendos,,denosu,721
+Easily,e-s-ye,Esy,,esy,738
 Arrived,a-r-i-/-t,Arid,,Adir,766
 Covered,k-v-/-t,Kvd,,dkv,788
 Dinner,tn-r,Dnr,,dnr,794
@@ -51,6 +53,7 @@ Caused,k-s2-/-t,Ksdo,o,dKos,1056
 Forced,f-s22-t,Fsd,,dFs,1087
 Ordinary,o-tn,Odn,,dnO,1088
 Marked,m-a-r-k-t,Markd,,adkMr,1099
+Finally,f-i-n-ye,Finy,,finy,1141
 Promised,pr-m-e-s2-t,Prmesd,,demPrs,1148
 Talked,t-o-k-t,Tokd,,dkoT,1202
 Posted,p-o-s2-td,Postd,,doPst,1227
@@ -102,6 +105,7 @@ Affected,a-f-k-t,Afkd,,Adfk,2135
 Adopted,a-d-p-/-t,Adpd,,Addp,2138
 Acquainted,a-k-a-/-t,Aqad,,Aadq,2139
 Helped,^-h-\-e-l-p-t,Helpd,,deHlp,2140
+Readily,r-e-d-ya,Redy,,dery,2155
 Unrelated,n-r-e-l-a-/-t,Nrelad,,adelNr,2159
 Related,r-e-l-a-/-t,Relad,,adelR,2159
 Feared,f-e-r-/-t,Ferd,,deFr,2174
@@ -141,6 +145,7 @@ Conducted,k-d-u-k-t,Kdukd,,ddKku,2992
 Residence,r-e-s2-e-tn-s,Resedns,,deenRss,3006
 Completed,kp-/-t,Kpdu,u,dKpu,3023
 Uncompleted,n-kp-/-t,Nkp/d,,/dkNp,3023
+Steadily,s2-td-ya,Sddy,,dsy,3076
 Exhausted,e-s2-o-s-/-t,Xosd,,dosX,3154
 Determined,e2-mn-/-t,Emmd,,dEmm,3162
 Predetermined,pr-e-/-e2-mn-/-t,Preemnd,,deemnPr,3162
@@ -192,6 +197,7 @@ Longed,l-ng-/-t,Lgd,,dgL,4357
 Requested,r-k-e-s-/-t,Rqesd,,deqRs,4363
 Suited,s2-u-td,Sutd,,dStu,4369
 Tempted,tm-td,Tmtd,,dmTt,4419
+Happily,^-h-\-a-p-ya,Hapy,,ahpy,4431
 Purchased,pr-ch-/-t,Prcd,,cdPr,4439
 Abundant,a-b-n-tn,Abndn,,Abdnn,4532
 Constructed,k-s2-/-k-t,Kskd,,dKks,4685
@@ -203,7 +209,7 @@ Instructed,n-s-/-k-t,Nskd,,dkNs,4932
 Dense,tn-s,Dnso,o,dnos,4995
 Billed,bl-/-t,Bldo,o,bdlo,5000
 Shipped,sh-/-t,Zdo,o,doz,5000
-Planned,pl-a-nt,Plandu,u,adlnPu,5060
+Planned,pl-a-nt,Pland,,adlnp,5060
 Governed,g-v-/-t,Gvd,,dGv,5121
 Packed,p-a-k-t,Pakd,,adkP,5131
 Traced,t-r-a-s2-t,Trasd,,adrsT,5198
@@ -255,6 +261,7 @@ Respond,r-s-jnt,Rspnd,,dnprs,10268
 Responded,r-s-jnt-d,Rspndd,,dnprs,10268
 Responding,r-s-jnt-\-h,Rspndg,,dgnprs,10268
 Responds,r-s-jnt-s,Rspnds,,dnprs,10268
+Primarily,pr-i-m-r-ye,Primry,,impry,10273
 Divined,df-i-nt,Dfindo,o,Ddfino,10413
 Bidden,b-tn,Bdno,o,Bdno,10605
 Rained,r-a-nt,Rando,o,adnoR,10945
@@ -302,6 +309,8 @@ Uneducated,n-e-d-u-/-t,Nedud,,ddeNu,20217
 Inordinate,e-n-o-tn-a-t,Enodnat,,adEnnot,20229
 Unconnected,n-k-e-k-t,Nkekd,,eknt,20484
 Denver,tn-v,Dnv,,dnv,20738
+Initiation,e-n-e-sh-ea-sh,Enezaz,,aenz,21045
+Initiations,e-n-e-sh-ea-sh-s,Enezazs,,aensz,21045
 Horned,^-h-\-o-r-nt,Hornd,,dHnor,21266
 Assignment,a-s2-i-mn,Asinm,,aims,21884
 Assignments,a-s2-i-mn-s,Asinms,,aimns,21884
@@ -321,7 +330,7 @@ Dividend,df-tn,Dfdno,o,Ddfno,27764
 Linden,l-e-n-tn,Lendn,,deLnn,29141
 Dent,tn-t,Dnto,o,dnot,29634
 Maidenly,m-a-tn-e,Madne,,adeMn,29704
-Ordinarily,o-tn-e,Odne,,denO,30240
+Ordinarily,o-tn-e,Odne,,deno,30240
 Ordination,o-tn-sh,Odnz,,dnOz,30549
 Revoked,r-v-k-t,Rvkd,,dkRv,30778
 Guerdon,g-e2-tn,Gedn,,deGn,31345
@@ -416,6 +425,7 @@ President of the united states,pr-e-s2-tn-e-u-s,Presdnus,,denPrssu,71509
 Readdressed,r-ea-d-r-/-t,Redrd,,ddeRr,71528
 Should be done,sh-d-b-tn,Zdbdn,,bddnZ,71583
 So-called,s2-o-k-o-/-t,Sokod,,dkooS,71586
+Temporarily,tm-pr-r-ye,Tmprry,,mprty,71659
 They do not,th-e-tn,Hedno,o,deHno,71682
 They do not know,th-e-tn-o,Hednoo,o,deHnoo,71683
 Time-honored,tm-o-n-e2-/-t,Tmoned,,demnoT,71695

@@ -942,7 +942,6 @@ Breath,br-e-th,Breh,,behr,1165
 Similar,s2-e-m-e-l,Semel,,elms,1167
 Surprise,s-e-pr-i-s,Sepris,,eiprs,1168
 Obtain,o-b-tn,Obtn,,bnot,1170
-March,m-a-ch,Mac,,acm,1171
 Dog,d-o-g,Dogo,o,dgo,1172
 Iron,i-r-n,Irn,,inr,1173
 Gentlemen,jnt,Jnt,,jnt,1174
@@ -1563,7 +1562,6 @@ Successful,s2-u-k-f,Sukf,,fksu,2078
 Branches,br-a-n-ch-s,Brancs,,abcnrs,2079
 Observe,o-b-s-e,Obse,,beos,2084
 Ease,e-s,Eso,o,eos,2085
-Lake,l-a-k,Lak,,akl,2086
 Teach,t-e-ch,Tec,,cet,2088
 Worship,u-u-/-sh,Uuz,,uxz,2089
 Stock,s2-t-o,Stoo,o,ost,2090
@@ -1666,6 +1664,7 @@ Ends,nt-s,Nts,,nst,2238
 Win,u-e-n,Uen,,enu,2240
 Sang,s2-a-ng,Sago,o,ags,2242
 Guilty,g-e-l-t-e,Gelte,,eglt,2244
+Lack,l-a-k,Lak,,akl,2245
 Lack,l-a-k,Lako,o,aklo,2245
 Doctrine,d-o-k-t,Dokt,,dkot,2246
 Belong,bl-ng,Blg,,bgl,2248
@@ -2123,7 +2122,6 @@ Scotland,s2-k-o-t,Skot,,kost,3093
 Exchange,e-s2-ch,Xc,,cvx,3094
 Beaten,b-e-tn,Betno,o,benot,3095
 Application,a-pl-sh,Aplz,,alpz,3097
-Match,m-a-ch,Maco,o,acmo,3098
 Ours,r-s2,Rsi,i,irs,3099
 Owe,o,Oa,a,aox,3102
 Remote,r-e-m-o-t,Remot,,emort,3103
@@ -3764,7 +3762,7 @@ Players,pl-a-r-s,Plars,,alprs,8709
 Reporter,r-pr-r,Rprr,,prz,8711
 Horizontal,^-h-\-o-r-e-s2-nt,Horesnt,,ehnorst,8715
 Confinement,k-f-i-mn,Kfimm,,fikm,8720
-Nail,n-a-l,Nalo,o,alno,8725
+Nail,n-a-l,Nal,,aln,8725
 Delivery,d-l,Dlo,o,dlo,8730
 Immortality,e-m-o-t-/-l,Emotlo,o,elmot,8732
 Thrilled,th-r-e-ld,Hreld,,dehlr,8736
@@ -5644,7 +5642,6 @@ Idyllic,a-d-l-k,Adlk,,adkl,29921
 Inverse,n-v-e-s,Nveso,o,enosv,29922
 Chamois,sh-a-m-e,Zame,,aemz,29932
 Opal,o-pl,Opl,,lop,29935
-Detract,d-/-k,Dk,,dkn,29965
 Hereunto,^-h-\-e2-n-t-u,Hentu,,ehntu,29990
 Functional,f-nk-/-l,Fql,,flq,30062
 Tariff,t-a-r-f,Tarf,,afrt,30085
@@ -5765,7 +5762,6 @@ Churl,ch-e-r-l,Cerl,,celr,32487
 Indissoluble,nt-s2-o-l-b,Ntsolb,,blnost,32490
 Dilatory,d-e-l-a-t-r-e,Delatre,,adelrt,32501
 Futile,f-e-u-t-l,Futl,,fltu,32520
-Intractable,n-/-k-b,Nkb,,bkn,32522
 Demolition,tm-o-l-e-sh,Tmolez,,elmotz,32530
 Inextricable,n-e-s-/-k-b,Nxkb,,bknx,32535
 Lathe,l-a-th,Lah,,ahl,32551
@@ -6051,7 +6047,6 @@ Locus,l-o-k-u-s,Lokuso,o,klosu,39661
 Comptroller,k-/-l-r,Klro,o,klor,39670
 Install,n-s2-t-o-l,Nstol,,lnost,39681
 Distort,d-s2-t-o-t,Dstot,,dost,39725
-Clearance,k-l-e-/-n-s,Klens,,eklns,39775
 Foreknowledge,f-n-o-l,Fnol,,flno,39777
 Automaton,o-tm-a-tn,Otmatn,,amnot,39821
 Cinder,s2-e-nt-r,Sentr,,enrst,39822
