@@ -136,6 +136,9 @@ Referred,r-f-/-t,Rfd,,dfR,2718
 Burden,b-e2-tn,Bedn,,Bden,2744
 Rested,r-e-s-/-t,Resdo,o,deoRs,2755
 Incident,n-s2-e-tn,Nsedn,,deNns,2842
+Incidental,n-s2-e-tn-l,Nsednl,,elnst,2842
+Incidentals,n-s2-e-tn-l-s,Nsednls,,delns,2842
+Incidents,n-s2-e-tn-s,Nsedns,,dens,2842
 Noted,n-o-td,Notd,,dNot,2858
 Confined,k-f-i-nt,Kfind,,dfiKn,2891
 Hated,^-h-\-a-td,Hatd,,adHt,2910
@@ -273,6 +276,7 @@ Leaden,l-e-tn,Ledn,,deLn,11916
 Outlined,a-u-l-a-nt,Wland,,adlnW,12087
 Inexperienced,n-s-p-e-/-t,Nsped,,deNps,12129
 Graduated,g-r-a-d-e-u-td,Gradutd,,addGrtu,12538
+Incidentally,n-s2-e-tn-ye,Nsedny,,densy,12560
 Incidentally,n-s2-e-tn-ye,Nsednye,,deeNnsy,12560
 Clicked,k-l-e-k-t,Klekd,,deKkl,12573
 Pending,jnt-\-h,Pndg,,dgnp,12959
