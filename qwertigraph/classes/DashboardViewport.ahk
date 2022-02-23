@@ -566,7 +566,7 @@ Class DashboardViewport
    }
    
    ComingSoon() {
-        if (not this.engine.keyboard.Token) {
+        if ((not this.engine.keyboard.Token) or (InStr("0123456789", SubStr(this.engine.keyboard.Token,1,1)))) {
            Return 
         }
         this.LogEvent(4, "Coming soon " this.engine.keyboard.Token)

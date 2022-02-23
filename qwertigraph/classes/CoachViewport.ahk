@@ -318,8 +318,13 @@ class CoachViewport
 		For index, coachQueue in this.coachQueues {
 			Loop, % coachQueue.getSize() {
 				coachEvent := coachQueue.dequeue()
+                coachEvent := this.map.qenv.redactSenstiveQwerd(coachEvent)
 				if (not coachEvent.word) {
 					; Ignore null words
+					Continue
+				}
+				if (coachEvent.word == "****") {
+					; Ignore sensitive words
 					Continue
 				}
 				if (coachEvent.miss or coachEvent.other) {
