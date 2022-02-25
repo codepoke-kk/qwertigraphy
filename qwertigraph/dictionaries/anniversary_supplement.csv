@@ -99,6 +99,11 @@ Username and password,e-u-r-n-a-p,Urnapo,o,anopru,257
 Usernames,e-u-r-n-a-s,Urnas,,anrsu,257
 Users,e-u-r-s,Urs,,rsu,257
 User,e-u-r,Uru,u,rux,257
+Loaded,l-o-d-d,Lodd,,dlo,269
+Loading,l-o-d-\-h,Lodg,,dglo,269
+Loader,l-o-d-r,Lodr,,dlor,269
+Loaders,l-o-d-r-s,Lodrs,,dlors,269
+Loads,l-o-d-s,Lods,,dlos,269
 Lighting,l-i-\-h,Lig,,gil,271
 Presented,pr-d,Prd,,dpr,276
 Presenting,pr-\-h,Prgo,o,gopr,276
@@ -812,7 +817,10 @@ Communications,k-m-u-s,Kmus,,kmsu,2754
 Communicative,k-m-u-\-v,Kmuv,,kmuv,2754
 Fixing,f-e-x-\-h,Fexg,,efxg,2771
 Fixes,f-e-x-s,Fexs,,efxs,2771
+Critical,k-r-/-ya,Kry,,kry,2776
 Critically,k-r-/-ya-e,Kryae,,aekry,2776
+Critically,k-r-/-ya-e,Krye,,ekry,2776
+Uncritical,n-k-r-/-ya,Nkry,,knry,2776
 Uncritical,n-k-r-/-ya,Nkrya,,aknry,2776
 Editions,e-d-sh-s,Edzs,,desz,2816
 Communities,k-/-nt-s,Knts,,knst,2828
@@ -1717,8 +1725,10 @@ Forefinger,f-f-e2-ng-e2,Ffeqe,,efq,13694
 Forefingers,f-f-e2-ng-e2-s,Ffeqes,,efqs,13694
 Hypocrite,^-h-\-e-p-k-r-e-t,Hepkret,,ehkprt,13868
 Hypocrites,^-h-\-e-p-k-r-e-t-s,Hepkrets,,ehkprst,13868
+Hypocritical,^-h-\-e-p-k-r-ya,Hepkry,,ehkpry,13868
 Hypocritical,^-h-\-e-p-k-r-ya,Hepkrya,,aehkpry,13868
 Hypocritically,^-h-\-e-p-k-r-ya-e,Hepkryae,,aehkpry,13868
+Hypocritically,^-h-\-e-p-k-r-ya-e,Hepkrye,,ehkpry,13868
 Judgemental,j-j-m-l,Jjml,,jlm,13895
 Judgementally,j-j-m-l-e,Jjmle,,ejlm,13895
 Judgements,j-j-m-s,Jjms,,jms,13895
@@ -2256,6 +2266,7 @@ Correlates,k-o-r-e-l-a-s,Korelas,,aeklors,70352
 Correlation,k-o-r-e-l-a-sh,Korelaz,,aeklorz,70352
 Correlations,k-o-r-e-l-a-sh-s,Korelazs,,aeklorsz,70352
 Deletions,d-l-e-sh-s,Dlezs,,delsz,70417
+Diacritical,d-i-k-r-/-y-a,Dikry,,dikry,70436
 Excluded,e-s-/-d-d,Xdd,,cdx,70565
 Excluding,e-s-/-d-\-h,Xdg,,dgx,70565
 Excludes,e-s-/-d-s,Xds,,dsx,70565
@@ -2279,7 +2290,9 @@ Transsexual,^-t-\-s-e-s-l,Tsxl,,lstx,70776
 Transsexually,^-t-\-s-e-s-l-e,Tsxle,,elstx,70776
 Transsexuality,^-t-\-s-e-s-\-l,Tsxlo,o,lostx,70776
 Transsexuals,^-t-\-s-e-s-l-s,Tsxls,,lstx,70776
+Hypercritical,^-h-\-i-p-e-r-k-r-/-ya,Hiperkry,,ehikpry,70799
 Hypercritically,^-h-\-i-p-e-r-k-r-/-ya-e,Hiperkryae,,aehikpry,70799
+Hypercritically,^-h-\-i-p-e-r-k-r-/-ya-e,Hiperkrye,,ehikpry,70799
 Immigrated,e-m-e-g-d,Emegd,,egimd,70854
 Immigrating,e-m-e-g-\-h,Emegg,,egimg,70854
 Immigrates,e-m-e-g-s,Emegs,,egims,70854
