@@ -1,5 +1,10 @@
 ### Customizing the Qwertigraph
 
+[Why Qwertigraph?](https://github.com/codepoke-kk/qwertigraphy/blob/master/WhyQwertigraph.md) | 
+[How to Qwertigraph?](https://github.com/codepoke-kk/qwertigraphy/blob/master/HowQwertigraph.md) | 
+[Broken Qwertigraph?](https://github.com/codepoke-kk/qwertigraphy/blob/master/FixQwertigraph.md) | 
+[Customize Qwertigraph?](https://github.com/codepoke-kk/qwertigraphy/blob/master/CustomizeQwertigraph.md)
+
 You say you don't like Anniversary Gregg Shorthand, but you don't want to write your own Qwertigraph? You're in luck. You can throw out the default dictionaries, and create your own with common sense, panache, and deep efficiency. The Qwertigraph is your playground!
 
 The Qwertigraph is controlled by layers of dictionaries. Each dictionary will contain its own entries built to its own theory. Replace the dictionaries and the Qwertigraph is your own.  

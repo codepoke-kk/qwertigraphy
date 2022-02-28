@@ -2,7 +2,8 @@
 
 [Why Qwertigraph?](https://github.com/codepoke-kk/qwertigraphy/blob/master/WhyQwertigraph.md) | 
 [How to Qwertigraph?](https://github.com/codepoke-kk/qwertigraphy/blob/master/HowQwertigraph.md) | 
-[Broken Qwertigraph?](https://github.com/codepoke-kk/qwertigraphy/blob/master/FixQwertigraph.md)
+[Broken Qwertigraph?](https://github.com/codepoke-kk/qwertigraphy/blob/master/FixQwertigraph.md) | 
+[Customize Qwertigraph?](https://github.com/codepoke-kk/qwertigraphy/blob/master/CustomizeQwertigraph.md)
 
 #### Finite Time
 I work two jobs. This is a labor of amusement for me, so I'll get to things when I get to them. I wish I could bring everything up to my vision now, and bring my vision up to the highest levels, but I'm happy typing along with what I've got. We'll get to the next level, but at a more 19th century pace than is common these days.
@@ -25,6 +26,8 @@ I cannot reproduce this bug at will, so I cannot begin to swat it, but AutoHotke
 
 Not being able to reproduce the problem, I cannot tell whether the problem is with AutoHotkey or the Qwertigraph. 
 
+Also under some conditions, Kaspersky thinks the Qwertigraph is a Trojan. I use it for a few weeks, and then it stumbles again. If I figure out how to repro the problem, I will report it to them again. For now, I just suffer through the fix. Let Kaspersky decide whether it needs to do a full cleanup. After it's done, restore chorder.ahk. I use GitHub, so I create a dummy file and then choose to restore that file to its archived state. You can also download it again from the source. 
+
 ##### Under some conditions, the Qwertigraph is too slow
 When the computer is chugging away on some background task, keystroke input and output will get jumbled. In those situations, there's nothing for it but to let the computer catch up. On a blue-sky day, the Qwertigraph does quite nicely with 360 WPM input and 600 WPM output. When your antivirus is chugging away, it's certainly not a blue sky day. I did rework the engine significantly to reduce this issue to its current minimum. 
 
@@ -37,5 +40,7 @@ I'd love to see this on *nix, but I have no such computers and no idea what tool
 #### I really need this thing on my phone
 I've started the process of making this happen, but it will be a long while. I'm updating the dictionary. There would be no way to make a personalized dictionary, and I'm pretty sure that's a desirable feature for all users.
 
+Right now, the best hope is that TextExpander will enable the property "Keep Delimiter" on their iPhone application. If they do, I will be able to export the Qwertigraph dictionaries into Text Expander form, and it will all work. 
+
 #### Other Shorthands 
-There are other versions of Gregg and other Shorthands. I see no impediment to other dictionaries, but I'm not going to do them. My tiny brain is stretching to relearn Anniversary Gregg. If you do some other Shorthand and wish to port it into Qwertigraph, you have my blessing. You understand the mission. I wish you luck and speed.
+There are other versions of Gregg and other Shorthands. I see no impediment to other dictionaries, but I'm not going to do them. My tiny brain is stretching to relearn Anniversary Gregg. If you do some other Shorthand and wish to port it into Qwertigraph, you have my blessing. You understand the mission. I'll be glad to help you get started with the conversion. 
