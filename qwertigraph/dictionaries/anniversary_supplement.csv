@@ -231,6 +231,11 @@ Notebook,n-o-t-b-k,Notbk,o,bknot,584
 Notebooks,n-o-t-b-k-s,Notbks,o,bknost,584
 Noting,n-o-t-\-h,Notog,o,gnot,584
 Notes,n-o-t-s,Nots,,nost,584
+Runnable,r-n-b,Rnb,,bnr,586
+Runnably,r-n-b-e,Rnbe,,benr,586
+Runing,r-n-\-h,Rng,,gnr,586
+Runer,r-n-r,Rnr,,nr,586
+Runs,r-n-s,Rns,,nrs,586
 Importantly,m-p-e,Mpe,,emp,598
 Serviceable,^-s2-b,Sb,,bcs,601
 Serviceably,^-s2-b-e,Sbe,,bes,601
@@ -357,6 +362,15 @@ Properly,pr-pr-e,Prpre,,epr,828
 Properness,pr-pr-n-e-s,Prprnes,,enprs,828
 Resulting,r-s2-u-\-h,Rsug,,grsu,837
 Resultant,r-s2-u-nt,Rsunt,,nrstu,837
+Individually,nt-v-e,Ntve,,entv,842
+Individualize,nt-v-i-s,Ntvis,,instv,842
+Individualized,nt-v-i-s-d,Ntvisd,,dinstv,842
+Individualizing,nt-v-i-s-\-h,Ntvisg,,ginstv,842
+Individualizes,nt-v-i-s-s,Ntviss,,instv,842
+Individuality,nt-v-\-l,Ntvl,,lntv,842
+Individuals,nt-v-s,Ntvs,,nstv,842
+Individualism,nt-v-s-m,Ntvsm,,mnstv,842
+Individualisms,nt-v-s-m-s,Ntvsms,,mnstv,842
 Dating,td-\-h,Dtg,,dgt,884
 Update,u-p-td,Updt,,dptu,884
 Updated,u-p-td-t,Updtd,,dptu,884
@@ -2171,6 +2185,7 @@ Misjudges,m-s-j-j-s,Msjjs,,jms,44819
 Capernaum,k-a-p-n-u-m,Kapnum,,akmnpu,45030
 Probate,pr-b-a-t,Prbat,,abprt,45784
 Probates,pr-b-a-t-s,Prbats,,abprst,45784
+Runts,r-nt-s,Rnts,,nrst,45851
 Outcomes,a-u-k-m-s,Wkms,,kmsw,46539
 Galilean,g-a-l-l-e-n,Gallen,,aegln,46629
 Galileans,g-a-l-l-e-n-s,Gallens,,aeglns,46629
@@ -2265,6 +2280,9 @@ Correlated,k-o-r-e-l-a-d,Korelad,,adeklor,70352
 Correlates,k-o-r-e-l-a-s,Korelas,,aeklors,70352
 Correlation,k-o-r-e-l-a-sh,Korelaz,,aeklorz,70352
 Correlations,k-o-r-e-l-a-sh-s,Korelazs,,aeklorsz,70352
+Credentialed,k-r-e-tn-sh-d,Kretnzd,,deknrtz,70365
+Credentialing,k-r-e-tn-sh-\-h,Kretnzg,,egknrtz,70365
+Credentials,k-r-e-tn-sh-s,Kretnzs,,eknrstz,70365
 Deletions,d-l-e-sh-s,Dlezs,,delsz,70417
 Diacritical,d-i-k-r-/-y-a,Dikry,,dikry,70436
 Excluded,e-s-/-d-d,Xdd,,cdx,70565
