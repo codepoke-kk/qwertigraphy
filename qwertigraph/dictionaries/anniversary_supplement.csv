@@ -371,6 +371,14 @@ Individuality,nt-v-\-l,Ntvl,,lntv,842
 Individuals,nt-v-s,Ntvs,,nstv,842
 Individualism,nt-v-s-m,Ntvsm,,mnstv,842
 Individualisms,nt-v-s-m-s,Ntvsms,,mnstv,842
+Accession,a-k-s-e-sh,Aksez,,aeksz,871
+Accessions,a-k-s-e-sh-s,Aksezs,,aeksz,871
+Accessibility,a-k-ss-\-b,Akssb,,abks,871
+Accessed,a-k-ss-d,Akssd,,adks,871
+Accessing,a-k-ss-\-h,Akssg,,agks,871
+Accessory,a-k-ss-r-e,Akssre,,aekrs,871
+Accessories,a-k-ss-r-e-s,Akssres,,aekrs,871
+Accesss,a-k-ss-s,Aksss,,aks,871
 Dating,td-\-h,Dtg,,dgt,884
 Update,u-p-td,Updt,,dptu,884
 Updated,u-p-td-t,Updtd,,dptu,884
@@ -980,6 +988,9 @@ Processional,pr-s-e-sh-l,Prsezl,,elprsz,3592
 Processionals,pr-s-e-sh-l-s,Prsezls,,elprsz,3592
 Processions,pr-s-e-sh-s,Prsezs,,eprsz,3592
 Externals,e-s-/-n-l-s,Xnls,,lnsx,3593
+Federalist,f-e-d-r-l-e-s,Fedrles,,deflrs,3599
+Federalists,f-e-d-r-l-e-s-s,Fedrless,,deflrs,3599
+Federals,f-e-d-r-l-s,Fedrls,,deflrs,3599
 Clubbed,k-l-b-d,Klbd,,bdkl,3609
 Clubbing,k-l-b-\-h,Klbg,,bgkl,3609
 Clubs,k-l-b-s,Klbs,,bkls,3609
@@ -1259,6 +1270,7 @@ Blocking,bl-o-k-\-h,Blokg,,bgklo,5423
 Blockage,bl-o-k-j,Blokj,,bjklo,5423
 Blockages,bl-o-k-j-s,Blokjs,,bjklos,5423
 Blocks,bl-o-k-s,Bloks,,bklos,5423
+Accessibly,a-k-ss-e,Aksse,,aeks,5463
 Availed,a-v-a-l-d,Avald,,adlv,5529
 Availing,a-v-a-l-\-h,Avalg,,aglv,5529
 Avails,a-v-a-l-s,Avals,,alsv,5529
@@ -1355,6 +1367,12 @@ Inconsistency,n-k-ss-n-s-e,Nkssnse,,ekns,6724
 Inconsistencies,n-k-ss-n-s-e-s,Nkssnses,,eknss,6724
 Inconsistent,n-k-ss-/-nt,Nkssnt,,knst,6724
 Greeting,g-r-e-t-\-h,Gretg,,egrt,6766
+Confederated,k-f-e-d-r-a-d,Kfedrad,,adefkr,6831
+Confederating,k-f-e-d-r-a-\-h,Kfedrag,,adefgkr,6831
+Confederates,k-f-e-d-r-a-s,Kfedras,,adefkrs,6831
+Confederacy,k-f-e-d-r-a-s-e,Kfedrase,,adefkrs,6831
+Confederation,k-f-e-d-r-a-sh,Kfedraz,,adefkrz,6831
+Confederations,k-f-e-d-r-a-sh-s,Kfedrazs,,adefkrsz,6831
 Expertise,e2-s-p-e2-t-e-s,Espetes,,epst,6892
 Experts,e2-s-p-e2-t-s,Espets,,epst,6892
 Expert,e2-s-p-e2-t,Xpet,,eptx,6892
@@ -1881,6 +1899,11 @@ Impactful,m-p-a-k-f,Mpakf,,afkmp,19533
 Impactfully,m-p-a-k-f-e,Mpakfe,,afkmpe,19533
 Impacting,m-p-a-k-\-h,Mpakg,,akmpg,19533
 Impacts,m-p-a-k-s,Mpaks,,akmps,19533
+Federate,f-e-d-r-a,Fedra,,adefr,19649
+Federated,f-e-d-r-a-d,Fedrad,,adefr,19649
+Federating,f-e-d-r-a-\-h,Fedrag,,adefgr,19649
+Federates,f-e-d-r-a-s,Fedras,,adefrs,19649
+Federations,f-e-d-r-a-sh-s,Fedrazs,,adefrsz,19649
 Requirements,r-k-i-m-s,Rqims,,imqrs,19812
 Notified,n-o-df-d,Nodfd,,dfno,20151
 Notifying,n-o-df-\-h,Nodfg,,dfgno,20151
@@ -2288,6 +2311,9 @@ Diacritical,d-i-k-r-/-y-a,Dikry,,dikry,70436
 Excluded,e-s-/-d-d,Xdd,,cdx,70565
 Excluding,e-s-/-d-\-h,Xdg,,dgx,70565
 Excludes,e-s-/-d-s,Xds,,dsx,70565
+Federalist,f-e-d-e-s,Fedes,,defs,70591
+Federalists,f-e-d-e-s-s,Fedess,,defs,70591
+Federals,f-e-d-s,Feds,,defs,70591
 Guarantors,g-a2-nt-r-s,Gantrs,,agnrst,70716
 High-handedly,^-h-\-i-^-h-\-nt-d-e,Hihntde,,dehint,70770
 Highway s,i2-n-s,Ins,,ins,70771

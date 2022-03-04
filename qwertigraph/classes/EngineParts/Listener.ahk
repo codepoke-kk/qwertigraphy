@@ -28,7 +28,7 @@ Class Listener {
 		this.ih.KeyOpt("{RAlt}", "V") 
 		this.ih.KeyOpt("{LWin}", "V") 
 		this.ih.KeyOpt("{RWin}", "V") 
-		this.ih.OnKeyDown := ObjBindMethod(this, "ReceiveKeyDown")						
+		this.ih.OnKeyDown := ObjBindMethod(this, "ReceiveKeyDown")
 		this.ih.OnKeyUp := ObjBindMethod(this, "ReceiveKeyUp")
 		this.ih.Start()	
 		this.logEvent(3, "Engine " this.title " started")

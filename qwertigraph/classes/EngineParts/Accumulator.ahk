@@ -9,6 +9,7 @@ Class Accumulator {
 		this.logVerbosity := this.engine.LogVerbosity
         this.starttime := 0
         this.retrievedTokenIndex := 0
+        this.retrievedTokenHorizon := 0
         this.retrievedEnder := 0
 		
 		this.logEvent(3, "Engine " this.title " instantiated")
@@ -55,13 +56,18 @@ Class Accumulator {
                     this.logEvent(4, "Have retrieved token, but have not retrieved ender - taking dummy token")
                     bufferWord := "" 
                 } else {
-                    this.retrievedTokenIndex -= 1
-                    bufferToken := this.engine.record[this.retrievedTokenIndex]
-                    bufferWord := bufferToken.output ? bufferToken.output : bufferToken.input 
-                    if (this.retrievedTokenIndex == (this.engine.record.MaxIndex() - 1)) {
-                        bufferWord := SubStr(bufferWord, 1, (StrLen(bufferWord) - 1))
+                    if (this.retrievedTokenIndex > this.retrievedTokenHorizon) {
+                        this.retrievedTokenIndex -= 1
+                        bufferToken := this.engine.record[this.retrievedTokenIndex]
+                        bufferWord := bufferToken.output ? bufferToken.output : bufferToken.input 
+                        if (this.retrievedTokenIndex == (this.engine.record.MaxIndex() - 1)) {
+                            bufferWord := SubStr(bufferWord, 1, (StrLen(bufferWord) - 1))
+                        }
+                        this.logEvent(4, "Have already retrieved ender - taking previous token at " this.retrievedTokenIndex)
+                    } else {
+                        this.logEvent(4, "Have already retrieved all tokens back to token horizon")
+                        bufferWord := "" 
                     }
-                    this.logEvent(4, "Have already retrieved ender - taking previous token at " this.retrievedTokenIndex)
                 }
             }
             this.engine.keyboard.Token := bufferWord 
@@ -77,11 +83,18 @@ Class Accumulator {
 		this.engine.keyboard.Token := ""
         this.retrievedTokenIndex := 0
         this.retrievedEnder := 0
+        if ((key != "{Space}") and (not InStr(",.;:'""", key))) {
+            this.retrievedTokenHorizon := this.engine.record.MaxIndex() + 2
+            this.logEvent(4, "Set token retrieval token horizon to " this.retrievedTokenHorizon)
+        }
 		this.engine.NotifySerialToken(token)
 	}
 	CancelToken(key) {
-		this.logEvent(4, "Key " key " cancelling token " this.engine.keyboard.Token)
+		this.logEvent(4, "Key " key " cancel token " this.engine.keyboard.Token " and set horizon to " this.engine.record.MaxIndex() + 2)
 		this.engine.keyboard.Token := ""
+        this.retrievedTokenIndex := 0
+        this.retrievedEnder := 0
+        this.retrievedTokenHorizon := this.engine.record.MaxIndex() + 2
 	}
 
 	LogEvent(verbosity, message) 
