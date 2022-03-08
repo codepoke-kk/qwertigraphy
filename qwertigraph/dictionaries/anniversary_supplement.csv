@@ -223,6 +223,8 @@ Unsound,n-s2-nt,Nsnt,,nst,567
 Sounding,s2-nt-\-h,Sntg,,gnst,567
 Soundings,s2-nt-\-h-s,Sntgs,,gnst,567
 Sounds,s2-nt-s,Snts,,nst,567
+Receiving,r-s2-e-\-h,Rseg,,egrs,580
+Receives,r-s2-e-s,Rses,,ers,580
 Granddaughter,g-/-d-o-t-e2,Gdote,,degot,583
 Granddaughters,g-/-d-o-t-e2-s,Gdotes,,degost,583
 Stepdaughter,s-t-e-p-d-o-t-e2,Stepdote,,deopst,583
@@ -233,8 +235,9 @@ Noting,n-o-t-\-h,Notog,o,gnot,584
 Notes,n-o-t-s,Nots,,nost,584
 Runnable,r-n-b,Rnb,,bnr,586
 Runnably,r-n-b-e,Rnbe,,benr,586
-Runing,r-n-\-h,Rng,,gnr,586
-Runer,r-n-r,Rnr,,nr,586
+Running,r-n-\-h,Rng,,gnr,586
+Runner,r-n-r,Rnr,,nr,586
+Runners,r-n-r-s,Rnrs,,nrs,586
 Runs,r-n-s,Rns,,nrs,586
 Importantly,m-p-e,Mpe,,emp,598
 Serviceable,^-s2-b,Sb,,bcs,601
@@ -1693,6 +1696,7 @@ Collectively,k-o-l-\-v-e,Kolve,,eklov,12054
 Automatically,o-tm-/-a-e,Otmae,,aemot,12143
 Greets,g-r-e-t-s,Gretso,o,egorst,12162
 Conclusively,k-k-v-e,Kkve,,ekv,12171
+Receivers,r-s-e-r-s,Rsers,,ers,12211
 Explicitly,e-s-pl-e-s2-t-e,Xpleste,,elpstx,12274
 Variable,v-a-r-b,Varb,,abrv,12334
 Variably,v-a-r-b-e,Varbe,,aberv,12334
