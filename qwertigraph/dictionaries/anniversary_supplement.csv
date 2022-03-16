@@ -137,6 +137,7 @@ Highlight,^-h-\-i-l-i,Hili,,hil,333
 Highlighted,^-h-\-i-l-i-d,Hilid,,dhil,333
 Highlighting,^-h-\-i-l-i-\-h,Hilig,,ghil,333
 Highlights,^-h-\-i-l-i-s,Hilis,,hils,333
+Leaving,l-e-v-\-h,Levg,,eglv,350
 Ensure,e-n-sh-u,Enzu,,enuz,351
 Unsure,u-n-sh-u,Unzu,,nuz,351
 Sureness,sh-u-n-e-s,Zunes,,ensuz,351
@@ -179,6 +180,8 @@ Questioner,k-n-r,Qnr,,nqr,430
 Questions,k-n-s,Qns,,nqs,430
 Coming,k-m-\-h,Kmg,,gkm,435
 Possibles,p-o-s-s,Poss,,ops,439
+Living,l-a-v-\-h,Lavg,,aglv,445
+Lives,l-a-v-s,Lavs,,alsv,445
 Hardly,^-h-\-a2-d-e,Hade,,adeh,448
 Hardy,^-h-\-a2-d-e,Hadeo,o,adeho,448
 Harding,^-h-\-a2-d-\-h,Hadg,,adgh,448
@@ -213,6 +216,7 @@ Outspokenly,w-s-p-k-n-e,Wspkne,,eknpsw,509
 Chapters,ch-a-p-t-e2-s,Captes,,acepst,538
 Changing,ch-\-h,Cg,,cg,550
 Changer,ch-r,Cr,,cr,550
+Changed,ch-t,Ct,,ctz,550
 Positioned,p-o-sh-d,Pozd,,dopz,556
 Positioning,p-o-sh-\-h,Pozg,,gopz,556
 Positional,p-o-sh-l,Pozl,,lopz,556
@@ -278,6 +282,14 @@ Follow up,f-o-p,Fop,,fop,696
 Following up,f-o-p-\-h,Fopg,,fgop,696
 Followers,f-o-r-s,Fors,,fors,696
 Follower,f-o-r,Foru,u,foru,696
+Troubled,t-r-b-d,Trbd,,bdrt,697
+Troubling,t-r-b-\-h,Trbg,,bgrt,697
+Troubles,t-r-b-s,Trbs,,brst,697
+Troubleshoot,t-r-b-sh,Trbz,,brtz,697
+Troubleshot,t-r-b-sh-d,Trbzd,,bdrtz,697
+Troubleshooting,t-r-b-sh-\-h,Trbzg,,bgrtz,697
+Troubleshooter,t-r-b-sh-r,Trbzr,,brtz,697
+Troubleshoots,t-r-b-sh-s,Trbzs,,brstz,697
 Writing,r-i-\-h,Rig,,gir,699
 Influenced,n-f-d,Nfd,,dfn,717
 Influencing,n-f-\-h,Nfg,,fgn,717
@@ -945,6 +957,7 @@ Historically,^-h-\-e-s2-t-r-/-k-e,Hestrke,,ehkrst,3194
 Seeded,s2-e-d-d,Sedd,,des,3202
 Seeding,s2-e-d-\-h,Sedg,,degs,3202
 Seeds,s2-e-d-s,Seds,,des,3202
+Livelihood,l-a-v-e-\-d,Laved,,adelv,3204
 Unsuitable,n-s2-u-t-b,Nsutb,,bnstu,3236
 Suitably,s2-u-t-b-e,Sutbe,,bestu,3236
 Suitability,s2-u-t-\-b,Sutbo,o,bostu,3236
@@ -1370,6 +1383,7 @@ Inconsistency,n-k-ss-n-s-e,Nkssnse,,ekns,6724
 Inconsistencies,n-k-ss-n-s-e-s,Nkssnses,,eknss,6724
 Inconsistent,n-k-ss-/-nt,Nkssnt,,knst,6724
 Greeting,g-r-e-t-\-h,Gretg,,egrt,6766
+Troublesome,t-r-b-s-m,Trbsm,,bmrst,6782
 Confederated,k-f-e-d-r-a-d,Kfedrad,,adefkr,6831
 Confederating,k-f-e-d-r-a-\-h,Kfedrag,,adefgkr,6831
 Confederates,k-f-e-d-r-a-s,Kfedras,,adefkrs,6831
