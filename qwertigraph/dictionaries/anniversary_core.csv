@@ -199,7 +199,6 @@ Both,b-o-th,Boh,,bho,213
 Told,t-o,Tou,u,otu,214
 Let,l-e,Le,,elz,215
 Look,l-u,Lu,,luv,216
-Night,n-i,Nio,o,ino,217
 Heard,^-h-\-e2-d,Hedo,o,deho,219
 Mind,m-i-n,Min,,imn,220
 Knew,n-u,Nuo,o,nou,221
@@ -1278,6 +1277,7 @@ Noise,n-o-e-s,Nys,,nsy,1645
 Demand,tm-a-n,Tman,,amnt,1646
 Hoped,^-h-\-o-p-t,Hopt,,hopt,1648
 Listen,l-e-s2-n,Lesn,,elns,1649
+Listening,l-e-s2-n-\-h,Lesng,,eglns,1649
 Release,r-e-l-e-s,Reles,,elrs,1650
 Pair,p-a-r,Paro,o,aopr,1651
 Buy,b-i,Bio,o,bio,1655
@@ -1740,7 +1740,6 @@ Limitation,l-e-m-sh,Lemz,,elmz,2368
 Distinct,d-s2-t,Dsto,o,dost,2372
 Reputation,r-p-u-sh,Rpuz,,pruz,2373
 Harm,^-h-\-a2-m,Hamo,o,ahmo,2375
-Listening,l-e-s2-n-\-h,Lesng,,eglns,2376
 Agreeable,^-yab,Yab,,aby,2378
 Suggestion,s2-u-j,Sujo,o,josu,2382
 Comfortable,k-f-t-b,Kftb,,bfkt,2383
@@ -2318,7 +2317,6 @@ Cure,k-e-u,Kuo,o,kou,3495
 Misfortune,m-s2-f-tn,Msftn,,fmnst,3496
 Occupation,o-kp,Okp,,kop,3498
 Pretended,pr-e-tn-/-t,Pretnt,,enprt,3500
-Autumn,o-tm,Otm,,mot,3501
 Missed,m-e-s2-t,Mest,,emst,3503
 Privilege,pr-e-v,Prev,,eprv,3505
 Simplicity,s2-e-m-p-/-s2,Semps,,emps,3507
@@ -2747,7 +2745,6 @@ Interfere,n-/-f-e-r,Nfer,,efnr,4551
 Humor,^-h-\-e2-u-m-e2,Heume,,ehmu,4555
 Wheat,^-h-\-u-e-t,Huet,,ehtu,4559
 Relieve,r-e-l-e-v,Relev,,elrv,4561
-Complain,kp,Kpi,i,ikp,4567
 Piano,p-ea-n-o,Peno,,enop,4572
 Funny,f-n-e,Fne,,efn,4574
 Gown,g-n,Gnu,u,gnu,4576
@@ -2940,7 +2937,7 @@ Manly,m-a-n-e,Maneu,u,aemnu,5076
 Promotion,pr-m-o-sh,Prmoz,,moprz,5077
 Thoughtful,th-o-t-f,Hotf,,fhot,5083
 Punish,p-n-sh,Pnz,,npz,5086
-Complaint,kp,Kpa,a,akp,5092
+Complaint,k-p,Kpa,a,akp,5092
 Fountain,f-n-tn,Fntn,,fnt,5103
 Awaiting,^-h-\-u-a-t-\-h,Huatg,,aghtu,5109
 Consolation,k-s2-o-l-a-sh,Ksolaz,,aklosz,5110
@@ -7704,7 +7701,6 @@ It seems to me,t-s2-e-tm-e,Tsetme,,emst,71015
 It was,t-o-s,Tos,,ost,71016
 It was not,t-o-s2-nt,Tosnt,,nost,71017
 It will,t-l,Tl,,clt,71018
-Itemized,a-tm-i-s2-d,Atmisd,,adimst,71019
 Itinerate,a-tn-r-a,Atnra,,anrt,71020
 -itis,/-ts,Tsi,i,ist,71021
 Jejune,j-j-n,Jjn,,jnx,71022
