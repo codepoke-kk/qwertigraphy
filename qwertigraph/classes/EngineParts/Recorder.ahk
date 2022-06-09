@@ -14,7 +14,7 @@ Class Recorder {
 	Record(token) {
         token.index := this.engine.record.MaxIndex() + 1
 		this.engine.record.Push(token)
-		this.logEvent("R", token.index "()," token.input "," token.output "," token.method ",-" token.deleted_characters)
+		this.logEvent("R", token.index "()," token.input "," token.output "," token.ender "," token.method ",-" token.deleted_characters)
 	}
 
 	LogEvent(verbosity, message) 

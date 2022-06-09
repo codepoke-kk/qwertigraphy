@@ -17,8 +17,14 @@ Class SerialExpander {
 		this.logEvent(4, "Expanding after " token.ender " with " token.input)
 		
 		lastToken := 0
+		nextToLastToken := 0
 		lastToken := this.engine.record[this.engine.record.MaxIndex()]
-		if ((lastToken) and (lastToken.ender == "'") and (InStr("s|d|m|re|r|v|l|ll", token.input))) {
+		nextToLastToken := this.engine.record[this.engine.record.MaxIndex() - 1]
+        
+        this.logEvent(4, "Double depth data are lastToken ender " lastToken.ender ", lastToken input " lastToken.input ", nextToLastToken ender " nextToLastToken.ender)
+        
+        ; hard coded contraction handling
+		if ((lastToken) and (lastToken.ender == "'") and (InStr("|s|d|m|re|r|v|l|ll|t|", token.input))) {
 			this.logEvent(4, "Handling " lastToken.ender token.input " as a contraction")
 			Switch token.input 
 			{
@@ -70,9 +76,23 @@ Class SerialExpander {
 					token.qwerdobject := this.nullQwerd
 					token.output := this.nullQwerd.word
 					token.match := 1
+				Case "t":
+					this.nullQwerd.word := "t"
+					this.nullQwerd.qwerd := "t"
+					token.qwerdobject := this.nullQwerd
+					token.output := this.nullQwerd.word
+					token.match := 1
 				Default:
 					this.logEvent(1, "Cannot reach this line handling " lastToken.ender token.input " as contraction")
 			}
+        ; hard coded command line switch handling (things like 'command -sw ' don't expand)
+		} else if ((lastToken) and (nextToLastToken) and (lastToken.ender == "-") and (lastToken.input == "") and (nextToLastToken.ender == "{Space}")) {
+			this.logEvent(4, "Handling " lastToken.ender token.input " as a command line switch")
+			this.nullQwerd.word := token.input
+            this.nullQwerd.qwerd := token.input
+            token.qwerdobject := this.nullQwerd
+            token.output := this.nullQwerd.word
+            token.match := 1
 		} else if (this.engine.map.qwerds.item(token.input).word) {
 			token.qwerdobject := this.engine.map.qwerds.item(token.input)
 			token.output := token.qwerdobject.word
