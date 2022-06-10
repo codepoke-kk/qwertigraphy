@@ -23,6 +23,13 @@ Class SerialExpander {
         
         this.logEvent(4, "Double depth data are lastToken ender " lastToken.ender ", lastToken input " lastToken.input ", nextToLastToken ender " nextToLastToken.ender)
         
+        ; hard coded use semicolon to glue two words together 
+		if ((token.input) and (lastToken) and (lastToken.ender == ";")) {
+            ; Any normal use of ; will have token ending with ;, then a space. If the previous token has a semicolon, then glue it 
+			this.logEvent(4, "Handling " token.input lastToken.ender " as a glued word")
+            token.extra_backspaces := 1
+		}
+        
         ; hard coded contraction handling
 		if ((lastToken) and (lastToken.ender == "'") and (InStr("|s|d|m|re|r|v|l|ll|t|", token.input))) {
 			this.logEvent(4, "Handling " lastToken.ender token.input " as a contraction")
@@ -93,7 +100,7 @@ Class SerialExpander {
             token.qwerdobject := this.nullQwerd
             token.output := this.nullQwerd.word
             token.match := 1
-		} else if (this.engine.map.qwerds.item(token.input).word) {
+        } else if (this.engine.map.qwerds.item(token.input).word) {
 			token.qwerdobject := this.engine.map.qwerds.item(token.input)
 			token.output := token.qwerdobject.word
 			token.match := 1

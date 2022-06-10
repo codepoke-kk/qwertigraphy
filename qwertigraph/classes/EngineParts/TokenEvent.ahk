@@ -10,6 +10,7 @@ Class TokenEvent {
 		this.output := ""
 		this.qwerdobject := ""
 		this.backspaces := 0
+		this.extra_backspaces := 0 ; Use these to glue words together or modify for grammar rules 
 		this.active_edited := false 
 		this.deleted_characters := 0
         ; coach + dashboard
