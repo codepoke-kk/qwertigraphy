@@ -24,7 +24,7 @@ Class SerialExpander {
         this.logEvent(4, "Double depth data are lastToken ender " lastToken.ender ", lastToken input " lastToken.input ", nextToLastToken ender " nextToLastToken.ender)
         
         ; hard coded use semicolon to glue two words together 
-		if ((token.input) and (lastToken) and (lastToken.ender == ";")) {
+		if ((token.input) and (lastToken) and (lastToken.input) and (lastToken.ender == ";")) {
             ; Any normal use of ; will have token ending with ;, then a space. If the previous token has a semicolon, then glue it 
 			this.logEvent(4, "Handling " token.input lastToken.ender " as a glued word")
             token.extra_backspaces := 1
