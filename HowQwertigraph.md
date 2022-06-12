@@ -42,13 +42,13 @@ Go to the /qwertigraph folder, and double click chorder.ahk. You should see two 
 I use the Dashboard a lot, and I expect you will too, but it was important not to make it "always on top", because that breaks much more than it fixes. The compromise I've settled upon for now is to make it retrievable. Any "Maximized" window will cover it up. This is a good thing. When I don't care to use the Dashboard, I just maximize whatever I'm working on and am glad it's not there. If, however, I want to see the Dashboard while I work I have to make the current window resizable. After that, I can click "Win-Alt-F" to let the Qwertigraph automatically position the window I'm working in pretty near to the Dashboard. It's still a bit wonky, but it works and I am happy enough with it for now. 
 
 #### Step: Use the Qwertigraph
-Open a simple text editor, a new email, or anything else into which you might wish to type some text. Type "It's time to start". If all has gone well, the Dashboard should show in red numbers how quickly you typed that line, and it should show the same number twice. This is because the system did not expand any qwerds, so your input and output were the same. 
+Open a simple text editor, a new email, or anything else into which you might wish to type some text. Type "It's time to start". If all has gone well, the Dashboard should show in red numbers how quickly you typed that line, and it should show the same number twice. This is because the system did not expand any qwerds, so your input and output were the same. You should also notice some red marks in the Dashboard, as it tries to tell you these are words you could have typed faster. 
 
 Now type:
 
 > T's tm to stat
 
-The Dashboard now should show a little difference between the bottom red number and the top, because the Qwertigraph expanded 3 qwerds. Your document should have the same sentence twice, because the Qwertigraph expanded those three qwerds into the same 3 words. 
+The Dashboard now should show a little difference between the bottom red number and the top, because the Qwertigraph expanded 3 qwerds. Your document should have the same sentence twice, because the Qwertigraph expanded those three qwerds into the same 3 words. Lastly, the Dashboard should show 4 blue tips (success) and 1 gold tip (your way of typing "to" was as fast as the Gregg way).
 
 Now, go forth and type like usual. At the end of the day, come back to the Qwertigraph GUI and click the Coach tab to see which words you would profit most from learning. Click the "Savings" column header to sort your possible savings from lowest to highest, and start learning from the top. 
 
@@ -58,6 +58,7 @@ Now, go forth and type like usual. At the end of the day, come back to the Qwert
 - Control-Backspace is also a big reset key. The Qwertigraph keeps a little buffer of the last several words you typed, and if you backspace 12 times, then turn whatever's left into the qwerd you want, it will often be able to expand that qwerd. It's kind of like magic. Control-backspace empties that buffer. This is for two reasons. The important one is that the magic it's like is sometimes black magic. Hitting a number of backspaces then typing something will sometimes cause the Qwertigraph to think it's clever enough to expand some qwerd that's really just an artifact of its own confusion. Control-backspace can resolve some confusion for the poor Qwertigraph engine. 
 - Windows-Alt-P will Pause the Qwertigraph if you need to type without its help. Windows-Alt-; will reactivate it. 
 - Hitting the Control-space key key will cause the Qwertigraph to leave whatever word you just typed without expanding it, and start listening all over again. So will clicking the mouse. 
+- The semicolon (;) is the "glue" character. If you type 2 words separated by a semicolon, instead of a space, the semicolon will be deleted and the 2 words will be glued together. You can use that for writing hashtag-type words or using prefixes and suffixes.
 
 ##### Words about Gregg Theory
 Gregg Shorthand users and non-users alike will have questions about why some of the qwerds are spelled the way they are. I'll do that explanation some other day, but for now I'll supply these little hints.
@@ -76,6 +77,8 @@ Gregg Shorthand users and non-users alike will have questions about why some of 
 
 ##### Keyers
 Gregg Shorthand uses exactly the same pen form for several words. For example, THE, THERE, and THEIR are all written using the H, which is the TH sound. The Qwertigraph needs to know which of those words the Qwertigrapher means, so they are keyed using vowels. The most commonly used word is THE, so a pure H is the word THE. Adding an O to the H makes the word THEIR. Adding an I to the H makes THERE. You will see many Qwertigraphy words that end with O, U, and I. You will see a few ending in E, A, W, and Y. These are often keyed words. Whenever you see one, you can bet there's an unkeyed qwerd already representing some more frequently used word. 
+
+There are a few hyphenated words in the dictionary. Prefixed, hyphenated words use a 'qq' as the keyer whenever possible (e.g. fqq for "photo-") and suffixed, hyphenated words use a 'pp' as the keyer (e.g. dpp for "-hood"). Think of the "q" as being at the left side of the keyboard and the "p" as being on the right side to remember that.
 
 You can always tell the actual Gregg Shorthand form by looking at The Coach or The Editor. The "form" is exactly how the word is written in Gregg.
 
