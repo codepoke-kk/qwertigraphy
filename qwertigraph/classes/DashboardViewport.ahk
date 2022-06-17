@@ -108,7 +108,7 @@ Class DashboardViewport
 
 
       ; Create a layered window (+E0x80000 : must be used for UpdateLayeredWindow to work!) that is always on top (+AlwaysOnTop), has no taskbar entry or caption
-      Gui, DashboardGUI:New, -Caption +E0x80000 +LastFound +OwnDialogs, QDashboard
+      Gui, DashboardGUI:New, -Caption +E0x80000 +LastFound +OwnDialogs +ToolWindow, QDashboard
       Gui, DashboardGUI: Show, NA
 
       ; Get a handle to this window we have created in order to update it later
