@@ -108,6 +108,7 @@ Username and password,e-u-r-n-a-p,Urnapo,o,anopru,257
 Usernames,e-u-r-n-a-s,Urnas,,anrsu,257
 Users,e-u-r-s,Urs,,rsu,257
 User,e-u-r,Uru,u,rux,257
+Doing,d-u-\-h,Dug,,dgu,259
 Loaded,l-o-d-d,Lodd,,dlo,269
 Loading,l-o-d-\-h,Lodg,,dglo,269
 Loader,l-o-d-r,Lodr,,dlor,269
@@ -529,6 +530,11 @@ Crowding,k-r-a-u-\-h,Krwg,,gkrw,1176
 Crowds,k-r-a-u-s,Krws,,krsw,1176
 Judged,j-j-d,Jjd,,dj,1190
 Judges,j-j-s,Jjs,,jsz,1190
+Served,s2-e-v-d,Sevd,,desv,1191
+Serving,s2-e-v-\-h,Sevg,,egsv,1191
+Server,s2-e-v-r,Sevr,,ersv,1191
+Servers,s2-e-v-r-s,Sevrs,,ersv,1191
+Serves,s2-e-v-s,Sevs,,esv,1191
 Movements,m-u-m-s,Mums,,msu,1193
 Losing,l-u-s-\-h,Lusg,,glsu,1200
 Loser,l-u-s-r,Lusr,,lrsu,1200
@@ -2657,3 +2663,14 @@ Typewrites,t-pr-i-s,Tpris,,iprst,71757
 Typewrote,t-pr-o,Tpro,,oprt,71757
 You can,u-k,Uk,,cku,71882
 Youngstown,ung-s2-t-n,Ugstn,,gnstu,71893
+Deploy,d-pl,Dpl,,dlp,90131
+Deployable,d-pl-b,Dplb,,bdlp,90131
+Deployability,d-pl-\-b,Dplbo,o,bdlop,90131
+Deployables,d-pl-b-s,Dplbs,,bdlps,90131
+Deployed,d-pl-d,Dpld,,dlp,90131
+Deploying,d-pl-\-h,Dplg,,dglp,90131
+Deployment,d-pl-m,Dplm,,dlmp,90131
+Deployments,d-pl-m-s,Dplms,,dlmps,90131
+Deplore,d-pl-r,Dplr,,dlpr,90131
+Deployer,d-pl-r,Dplro,o,dlopr,90131
+Deploys,d-pl-s,Dpls,,dlps,90131
