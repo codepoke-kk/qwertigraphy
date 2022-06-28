@@ -6,6 +6,10 @@ Phones,f-o-n-s,Fons,,fnos,7
 Down,d-n,Dno,o,cdno,18
 Downside,d-n-s-i,Dnsi,,dins,18
 Downsides,d-n-s-i-s,Dnsis,,dins,18
+Builder,bld-r,Bldr,,bdlr,22
+Rebuild,r-bld,Rbld,,bdlr,22
+Rebuilding,r-bld-\-h,Rbldg,,bdglr,22
+Rebuilds,r-bld-s,Rblds,,bdlrs,22
 Of,o,O,,,24
 Being,b-\-h,Bg,,bcg,41
 But,b,Bu,u,bcu,50
@@ -297,6 +301,7 @@ Heaviest,^-h-\-e-v-e-s-t,Hevest,,ehstv,680
 Heavily,^-h-\-e-v-ye,Hevy,,ehvy,680
 Unthinking,n-th-^-h-\-\-h,Nhhh,,hnz,683
 Captains,k-a-p-tn-s,Kaptns,,aknpst,687
+Trying,t-r-i-\-h,Trig,,girt,689
 Following,f-o-\-h,Fog,,fgo,696
 Follow up,f-o-p,Fop,,fop,696
 Following up,f-o-p-\-h,Fopg,,fgop,696
@@ -480,6 +485,8 @@ Successive,s2-u-k-v,Sukv,,ksuv,1001
 Successively,s2-u-k-v-e,Sukve,,eksuv,1001
 Succession,s2-u-k-sh,Sukz,,ksuz,1001
 Successions,s2-u-k-sh-s,Sukzs,,ksuz,1001
+Rebuilt,r-bl,Rbl,,blr,1002
+Promising,pr-m-e-s-\-h,Prmesg,,egmprs,1066
 Completely,kp-e,Kpe,,ekp,1081
 Completeness,kp-n-s,Kpns,,knps,1081
 Completes,kp-s,Kps,,kps,1081
@@ -1008,6 +1015,7 @@ Operational,o-pr-a-sh-l,Oprazl,,aloprz,3048
 Operationally,o-pr-a-sh-l-e,Oprazle,,aeloprz,3048
 Operations,o-pr-a-sh-s,Oprazs,,aoprsz,3048
 Securities,s2-e-k-/-r-s,Sekrso,o,ekors,3065
+Builds,bld-/-s2,Bldso,o,bdlos,3083
 Exchanged,e-s2-ch-d,Xcd,,cdx,3094
 Exchanging,e-s2-ch-\-h,Xcg,,cgx,3094
 Exchanges,e-s2-ch-s,Xcs,,csx,3094
