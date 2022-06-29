@@ -3,6 +3,11 @@ Seeing,s-e-\-h,Seg,,egs,6
 Sees,s-e-s,Seso,,eos,6
 Phoning,f-o-n-\-h,Fong,,fgno,7
 Phones,f-o-n-s,Fons,,fnos,7
+Stored,s2-t-o-r-d,Stord,,dorst,16
+Storing,s2-t-o-r-\-h,Storg,,gorst,16
+Storeroom,s2-t-o-r-r-m,Storrm,,morst,16
+Storerooms,s2-t-o-r-r-m-s,Storrms,,morst,16
+Stores,s2-t-o-r-s,Stors,,orst,16
 Down,d-n,Dno,o,cdno,18
 Downside,d-n-s-i,Dnsi,,dins,18
 Downsides,d-n-s-i-s,Dnsis,,dins,18
@@ -32,6 +37,7 @@ Mustered,m-u-s-t-e2-d,Musted,,emstud,103
 Mustering,m-u-s-t-e2-\-h,Musteg,,emstug,103
 Musters,m-u-s-t-e2-s,Mustes,,emstus,103
 Products,pr-o-d-u-k-s,Produks,,dkoprsu,122
+Making,m-a-k-\-h,Makg,,agkm,125
 Rework,r-e-r-k,Rerk,,ekr,132
 Reworked,r-e-r-k-d,Rerkd,,dekr,132
 Reworking,r-e-r-k-\-h,Rerkg,,egkr,132
@@ -46,6 +52,7 @@ Working,r-k-\-h,Rkg,,gkr,132
 Workings,r-k-\-h-s,Rkgs,,gkrs,132
 Works,r-k-s,Rks,,krs,132
 Going,g-\-h,Gg,,g,134
+Ways,u-a-s,Uas,,asu,136
 Saying,s-a-\-h,Sag,,ags,141
 Sayings,s-s-\-h,Ssg,,gsz,141
 Thinkable,th-\-b,Hb,,bhz,144
@@ -59,6 +66,10 @@ Backup,b-a-k-p,Bakp,,abkp,148
 Backed up,b-a-k-p-d,Bakpd,,abkpd,148
 Backing up,b-a-k-p-\-h,Bakpg,,abkpg,148
 Backups,b-a-k-p-s,Bakps,,abkps,148
+Backstop,b-a-k-s-t-p,Bakstp,,abkpst,148
+Backstopped,b-a-k-s-t-p-d,Bakstpd,,abdkpst,148
+Backstopping,b-a-k-s-t-p-\-h,Bakstpg,,abgkpst,148
+Backstops,b-a-k-s-t-p-s,Bakstps,,abkpst,148
 Nicodemus,n-e-k-dm-u-s,Nekdmus,,dekmnsu,153
 Youngster,u-ng-s-t-e2,Ugste,,egstu,166
 Precious,pr-e-sh-u-s,Prezuso,o,eoprsuz,174
@@ -82,6 +93,7 @@ Findings,f-i-\-h-s,Figs,,fgis,208
 Finder,f-i-r,Fir,,fir,208
 Finders,f-i-r-s,Firs,,firs,208
 Finds,f-i-s,Fis,,fis,208
+Looking,l-u-\-h,Lug,,glu,216
 Lookup,l-u-k-p,Lukp,,klpu,216
 Lookups,l-u-k-p-s,Lukps,,klpsu,216
 Night,n-i,Nio,o,inop,217
@@ -102,6 +114,10 @@ Godfathers,g-d-f-a-th-s,Gdfahs,,adfghs,250
 Grandfather,^-g-\--f-a-th,Gfah,,afgh,250
 Grandfathers,^-g-\--f-a-th-s,Gfahs,,afghs,250
 Stepfather,s-t-e-p-f-a-th,Stepfah,,aefhpst,250
+Usable,e-u-b,Ub,,blsu,257
+Usably,e-u-b-e,Ube,,beu,257
+Usability,e-u-\-b,Ubo,o,bou,257
+Using,e-u-\-h,Ugo,o,gou,257
 Username,e-u-r-n-a,Urna,,anru,257
 Username/password,e-u-r-n-a-p,Urnap,,anpru,257
 Username and password,e-u-r-n-a-p,Urnapo,o,anopru,257
@@ -181,6 +197,7 @@ Meaninglessness,m-e-n-\-h-\-l-n-e-s,Menglnes,,eglmns,424
 Meanings,m-e-n-\-h-s,Mengs,,emnogs,424
 Meanness,m-e-n-n-e-s,Mennes,,emns,424
 Abled,a-bl-d,Abld,,abdl,427
+Hello,h-\-l-o,Hlo,,hlo,427
 Unquestionable,n-k-n-b,Nqnb,,bnq,430
 Unquestionably,n-k-n-b-e,Nqnbe,,benq,430
 Unquestioned,n-k-n-d,Nqnd,,dnq,430
@@ -231,11 +248,14 @@ Spokesman,s-p-k-s-m,Spksm,,kmps,509
 Spokesmen,s-p-k-s-m,Spksmo,o,kmops,509
 Outspoken,w-s-p-k-n,Wspkn,,knpsw,509
 Outspokenly,w-s-p-k-n-e,Wspkne,,eknpsw,509
+Stories,s2-t-o-r-e-s,Storeso,o,eorst,515
 Brothered,br-u-th-d,Bruhd,,bdhru,526
 Brotherhood,br-u-th-\-d,Bruhdo,o,bdhoru,526
 Brotherly,br-u-th-e,Bruhe,,behru,526
 Brothering,br-u-th-\-h,Bruhg,,bghru,526
 Brothers,br-u-th-s,Bruhs,,bhrsu,526
+Standby,s2-tn-b,Stnb,,bnst,528
+Standbys,s2-tn-b-s,Stnbs,,bnst,528
 Chapters,ch-a-p-t-e2-s,Captes,,acepst,538
 Changing,ch-\-h,Cg,,cg,550
 Changer,ch-r,Cr,,cr,550
@@ -354,6 +374,17 @@ Outgrew,a-u-g-r-u,Wgru,,gruw,758
 Impossibly,m-p-o-s-e,Mpose,,emops,763
 Impossibles,m-p-o-s-s,Mposs,,mops,763
 Faiths,f-a-th-s,Fahso,o,afhos,777
+Systematic,s2s-\-a,Ssa,,asz,778
+Systematically,s2s-\-a-e,Ssae,,aes,778
+Systemic,s2s-k,Ssk,,ksz,778
+Systemically,s2s-k-e,Sske,,eks,778
+Systems,s2s-s,Sss,,s,778
+Systematize,s2s-t-i-s,Sstis,,istz,778
+Systematized,s2s-t-i-s-d,Sstisd,,dist,778
+Systematizing,s2s-t-i-s-\-h,Sstisg,,gist,778
+Systematizes,s2s-t-i-s-s,Sstiss,,ist,778
+Systematical,s2s-\-ya,Ssy,,asz,778
+Systematically,s2s-\-ye,Ssye,,esy,778
 Bounded,b-n-d,Bnd,,bdn,790
 Bounding,b-n-\-h,Bng,,bgn,790
 Bounder,b-n-r,Bnr,,bnr,790
@@ -449,7 +480,6 @@ Origination,o-r-e-j-n-sh,Orejnz,,ejnorz,885
 Originations,o-r-e-j-n-sh-s,Orejnzs,,ejnorsz,885
 Originals,o-r-e-j-s,Orejs,,ejors,885
 Conversational,k-v-e-sh-l,Kvezl,,eklvz,888
-Conversations,k-v-e-sh-s,Kvezs,,eksvz,888
 Directions,d-r-k-sh-s,Drkzs,,dkrsz,907
 Redirection,r-e-d-r-k-sh,Redrkz,,dekrz,907
 Redirections,r-e-d-r-k-sh-s,Redrkzs,,dekrsz,907
@@ -518,6 +548,7 @@ Finale,f-i-n-l-a,Finla,,afiln,1141
 Proved,pr-v-d,Prvd,,dprv,1144
 Proving,pr-v-\-h,Prvg,,gprv,1144
 Proves,pr-v-s,Prvs,,prsv,1144
+Servants,s2-e-v-nt-s,Sevnts,,enstv,1155
 Surprised,s-e-pr-i-s-d,Seprisd,,deiprs,1168
 Surprising,s-e-pr-i-s-\-h,Seprisg,,egiprs,1168
 Surprisingly,s-e-pr-i-s-\-h-e,Seprisge,,egiprs,1168
@@ -1099,6 +1130,11 @@ Positively,p-o-s2-df-e,Posdfe,,defops,3340
 Positives,p-o-s2-df-s,Posdfs,,dfops,3340
 Specification,s-p-e-s2-\-f,Spesf,,efps,3371
 Specifications,s-p-e-s2-\-f-s,Spesfs,,efps,3371
+Tested,t-e-s-d,Tesd,,dest,3381
+Testing,t-e-s-\-h,Tesg,,egst,3381
+Tester,t-e-s-r,Tesr,,erst,3381
+Testers,t-e-s-r-s,Tesrs,,erst,3381
+Tests,t-e-s-s,Tess,,est,3381
 Suggesting,s2-u-j-\-h,Sujg,,gjsu,3432
 Suggests,s2-u-j-s,Sujs,,jsu,3432
 Suggestively,s2-u-j-v-e,Sujve,,ejsuv,3432
@@ -1116,6 +1152,7 @@ Assumption,a-s2-m-sh,Asmz,,amsz,3493
 Assumptions,a-s2-m-sh-s,Asmzs,,amszs,3493
 Unassuming,u-n-a-s2-m-\-h,Unasmg,,agmnsu,3493
 Occupations,o-kp-s,Okps,,kops,3498
+Vanities,v-/-nt-s,Vnts,,nstv,3520
 Balancing,b-a-l-\-h,Balg,,abgl,3523
 Balancer,b-a-l-r,Balr,,ablr,3523
 Balancers,b-a-l-r-s,Balrs,,ablrs,3523
@@ -1324,6 +1361,7 @@ Convertibles,k-v-e2-t-b-s,Kvetbs,,bekstv,4741
 Converting,k-v-e2-t-\-h,Kvetg,,egktv,4741
 Converts,k-v-e2-t-s,Kvets,,ekstv,4741
 Conversion,k-v-e-sh,Kvez,,ekvz,4741
+Conversions,k-v-e-sh-s,Kvezs,,eksvz,4741
 Swore,s-u-o-r,Suor,,orsu,4756
 Sworn,s-u-o-r-n,Suorn,,norsu,4756
 Relates,r-e-l-a-s,Relas,,aelrs,4800
@@ -1569,6 +1607,8 @@ Aligned,a-l-a-n-d,Aland,,alnod,7004
 Aligning,a-l-a-n-\-h,Alang,,alnog,7004
 Align,a-l-a-n,Alano,o,alno,7004
 Aligns,a-l-a-n-s,Alans,,alnos,7004
+Engineered,n-j-n-e2-d,Njned,,dejn,7020
+Engineering,n-j-n-e2-\-h,Njneg,,egjn,7020
 Renewable,r-e-n-u-\-b,Renub,,benru,7087
 Renewably,r-e-n-u-\-b-e,Renube,,benru,7087
 Renewables,r-e-n-u-\-b-s,Renubs,,benrsu,7087
@@ -1906,6 +1946,16 @@ Conclusively,k-k-v-e,Kkve,,ekv,12171
 Receivers,r-s-e-r-s,Rsers,,ers,12211
 Fasting,f-a-s2-t-g,Fastg,,afgst,12221
 Explicitly,e-s-pl-e-s2-t-e,Xpleste,,elpstx,12274
+Impotent,m-p-tn-t,Mptnt,,mnpt,12302
+Potency,p-tn-s-e,Ptnse,,enpst,12302
+Potent,p-tn-t,Ptnt,,npt,12302
+Potentate,p-tn-t-a,Ptnta,,anpt,12302
+Potentates,p-tn-t-a-s,Ptntas,,anpst,12302
+Potential,p-tn-t-sh,Ptntz,,nptz,12302
+Potentially,p-tn-t-sh-e,Ptntze,,enptz,12302
+Potentiality,p-tn-t-sh-\-l,Ptntzl,,lnptz,12302
+Potentialities,p-tn-t-sh-\-l-s,Ptntzls,,lnpstz,12302
+Potentials,p-tn-t-sh-s,Ptntzs,,npstz,12302
 Variable,v-a-r-b,Varb,,abrv,12334
 Variably,v-a-r-b-e,Varbe,,aberv,12334
 Variability,v-a-r-\-b,Varbo,o,aborv,12334
@@ -2138,6 +2188,7 @@ Federating,f-e-d-r-a-\-h,Fedrag,,adefgr,19649
 Federates,f-e-d-r-a-s,Fedras,,adefrs,19649
 Federations,f-e-d-r-a-sh-s,Fedrazs,,adefrsz,19649
 Requirements,r-k-i-m-s,Rqims,,imqrs,19812
+Plenipotentiary,pl-e-n-e-p,Plenep,,elnp,20082
 Notified,n-o-df-d,Nodfd,,dfno,20151
 Notifying,n-o-df-\-h,Nodfg,,dfgno,20151
 Notifies,n-o-df-s,Nodfs,,dfnos,20151
@@ -2177,6 +2228,8 @@ Implementation,m-pl-e-m-a-sh,Mplemaz,,aelmpz,20778
 Implementations,m-pl-e-m-a-sh-s,Mplemazs,,aelmpsz,20778
 Implemented,m-pl-e-m-d,Mplemd,,delmp,20778
 Implementing,m-pl-e-m-\-h,Mplemg,,eglmp,20778
+Implementor,m-pl-e-m-r,Mplemr,,elmpr,20778
+Implementors,m-pl-e-m-r-s,Mplemrs,,elmprs,20778
 Implements,m-pl-e-m-s,Mplems,,elmps,20778
 Inflections,n-fl-sh-s,Nflzs,,flnsz,21083
 Babylon,b-a-b-n,Babn,,abo,21199
@@ -2663,6 +2716,13 @@ Typewrites,t-pr-i-s,Tpris,,iprst,71757
 Typewrote,t-pr-o,Tpro,,oprt,71757
 You can,u-k,Uk,,cku,71882
 Youngstown,ung-s2-t-n,Ugstn,,gnstu,71893
+Versionable,v-e2-z-b,Vezb,,bevz,90037
+Versionably,v-e2-z-b-e,Vezbe,,bevz,90037
+Versionability,v-e2-z-\-b,Vezbo,o,beovz,90037
+Versioned,v-e2-z-d,Vezdo,o,deovz,90037
+Versioning,v-e2-z-\-h,Vezgo,o,egovz,90037
+Version,v-e2-z,Vezo,o,eovz,90037
+Versions,v-e2-z-s,Vezso,o,eosvz,90037
 Deploy,d-pl,Dpl,,dlp,90131
 Deployable,d-pl-b,Dplb,,bdlp,90131
 Deployability,d-pl-\-b,Dplbo,o,bdlop,90131
