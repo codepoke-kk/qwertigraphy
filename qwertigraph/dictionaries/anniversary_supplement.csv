@@ -763,6 +763,12 @@ Slows,s-l-o-s,Slos,,los,1663
 Slowest,s-l-o-s-t,Slost,,lost,1663
 Currently,k-r-e-nt-e,Krente,,eknrt,1668
 Currents,k-r-e-nt-s,Krents,,eknrst,1668
+Joining,j-o-e-n-\-h,Jyng,,gjny,1678
+Joins,j-o-e-n-s,Jyns,,jnsy,1678
+Rejoin,r-j-o-e-n,Rjyn,,jnry,1678
+Rejoined,r-j-o-e-n-d,Rjynd,,djnry,1678
+Rejoining,r-j-o-e-n-\-h,Rjyng,,gjnry,1678
+Rejoins,r-j-o-e-n-s,Rjyns,,jnrsy,1678
 Kingdoms,k-e-ng-tm-s,Kegtms,,egkmts,1692
 Policies,p-o-l-s,Pols,,lops,1698
 Relations,r-e-l-a-sh-s,Relazs,,aelrsz,1704
@@ -913,6 +919,9 @@ Vindication,v-nt-e-k-sh,Vntekz,,ekntvz,2146
 Vindications,v-nt-e-k-sh-s,Vntekzs,,eknstvz,2146
 Universally,e-u-n-v-e,Unve,,enuv,2153
 Universality,e-u-n-v-\-l,Unvl,,lnuv,2153
+Exactly,e-s2-a-k-e,Xake,,aekx,2154
+Exacting,e-s2-a-k-\-h,Xakg,,agkx,2154
+Exacts,e-s2-a-k-s,Xaks,,aksx,2154
 Temples,tm-pl-s,Tmpls,,lmpst,2206
 Link,l-e-nk,Leq,,elq,2210
 Linked,l-e-nk-d,Leqd,,delq,2210
@@ -977,6 +986,9 @@ Performing,pr-f-m-\-h,Prfmg,,fgmpr,2589
 Performer,pr-f-m-r,Prfmr,,fmpr,2589
 Performers,pr-f-m-r-s,Prfmrs,,fmprs,2589
 Performs,pr-f-m-s,Prfms,,fmprs,2589
+Paused,p-o-s-d,Posd,,dops,2596
+Pausing,p-o-s-\-h,Posg,,gops,2596
+Pauses,p-o-ss,Possu,u,opsu,2596
 Key,k-e,Ke,,cek,2598
 Permitting,pr-m-e-t-\-h,Prmetg,,egmprt,2627
 Permits,pr-m-e-t-s,Prmets,,emprst,2627
@@ -1024,6 +1036,10 @@ Pressures,pr-e-sh-u-s,Prezus,,eprsuz,2853
 Arrive,a-r-i,Ari,,airz,2901
 Arriving,a-r-i-\-h,Arig,,agir,2901
 Arrives,a-r-i-s,Aris,,airs,2901
+Damage,tm-j,Tmj,,jmt,2935
+Damaged,tm-j-d,Tmjd,,djmt,2935
+Damaging,tm-j-\-h,Tmjg,,gjmt,2935
+Damages,tm-j-s,Tmjs,,jmst,2935
 Announcements,a-n-n-s2-m-s,Annsms,,amns,2959
 Degeneration,d-j-e-n-r-a-sh,Djenraz,,adejnrz,2984
 Generational,j-e-n-r-a-sh-l,Jenrazl,,aejlnrz,2984
@@ -1130,6 +1146,21 @@ Positively,p-o-s2-df-e,Posdfe,,defops,3340
 Positives,p-o-s2-df-s,Posdfs,,dfops,3340
 Specification,s-p-e-s2-\-f,Spesf,,efps,3371
 Specifications,s-p-e-s2-\-f-s,Spesfs,,efps,3371
+Created,k-r-ea-t-d,Kretd,,dekrt,3378
+Creator,k-r-ea-t-e2,Krete,,ekrt,3378
+Creators,k-r-ea-t-e2-s,Kretes,,ekrst,3378
+Creating,k-r-ea-t-\-h,Kretg,,egkrt,3378
+Creature,k-r-ea-t-r,Kretr,,ekrt,3378
+Creatures,k-r-ea-t-r-s,Kretrs,,ekrst,3378
+Creates,k-r-ea-t-s,Krets,,ekrst,3378
+Creation,k-r-ea-sh,Krez,,ekrz,3378
+Creations,k-r-ea-sh-s,Krezs,,ekrsz,3378
+Recreate,r-e-k-r-ea-t,Rekret,,ekrt,3378
+Recreated,r-e-k-r-ea-t-d,Rekretd,,dekrt,3378
+Recreating,r-e-k-r-ea-t-\-h,Rekretg,,egkrt,3378
+Recreates,r-e-k-r-ea-t-s,Rekrets,,ekrst,3378
+Recreation,r-e-k-r-ea-sh,Rekrez,,ekrz,3378
+Recreations,r-e-k-r-ea-sh-s,Rekrezs,,ekrsz,3378
 Tested,t-e-s-d,Tesd,,dest,3381
 Testing,t-e-s-\-h,Tesg,,egst,3381
 Tester,t-e-s-r,Tesr,,erst,3381
@@ -2587,6 +2618,7 @@ Vegetations,v-e-j-t-sh-s,Vejtzs,,ejstvz,59534
 Certification,s2-e-df-sh,Sedfz,,defsz,59944
 Certifications,s2-e-df-sh-s,Sedfzs,,defsz,59944
 Objectors,o-b-\-r-s,Obrs,,bors,60487
+Inexactly,n-e-s2-a-k-e,Nxake,,aeknx,60549
 Spraying,s-p-r-a-g,Spragi,i,agiprs,61211
 Interchange,n-/-ch,Ncu,u,cnu,63588
 Adjudge,a-j-j,Ajj,,ajx,64745
@@ -2696,6 +2728,7 @@ Integrating,nt-e-g-r-a-\-h,Ntegrag,,aegnrt,70963
 Integrates,nt-e-g-r-a-s,Ntegras,,aegnrst,70963
 Integration,nt-e-g-r-a-sh,Ntegraz,,aegnrtz,70963
 Integrations,nt-e-g-r-a-sh-s,Ntegrazs,,aegnrstz,70963
+Joint resolutions,j-<-r-s2-o-sh-s,Jrsozs,,jorsz,71028
 Non,n-o-n,Nonq,q,noq,71218
 Non-,n-o-n,Nonqq,qq,noq,71218
 Opinionatedly,o-p-n-a-td-e,Opnadde,,adenop,71437
@@ -2734,3 +2767,8 @@ Deployments,d-pl-m-s,Dplms,,dlmps,90131
 Deplore,d-pl-r,Dplr,,dlpr,90131
 Deployer,d-pl-r,Dplro,o,dlopr,90131
 Deploys,d-pl-s,Dpls,,dlps,90131
+Purgatory,pr-g-a-t-r-e,Prgatre,,aegprt,91179
+Purge,pr-j,Prj,,jpr,91179
+Purged,pr-j-d,Prjd,,djpr,91179
+Purging,pr-j-\-h,Prjg,,gjpr,91179
+Purges,pr-j-s,Prjs,,jprs,91179
