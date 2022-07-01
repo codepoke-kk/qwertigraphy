@@ -782,7 +782,7 @@ Bit,b-e-t,Betu,u,betu,940
 Chair,ch-a2,Ca,,acv,941
 Cry,k-r-i,Kri,,ikr,942
 Hot,^-h-\-o-t,Hoto,o,hot,943
-Named,n-a-/-t,Nato,o,anot,946
+Named,n-a-/-t,Natu,u,antu,946
 Summer,s2-m-e2,Sme,,ems,947
 Afternoon,a-f-n-u-n,Afnun,,afnu,948
 Allow,a-l,Al,,alx,949
@@ -988,7 +988,6 @@ Space,s-p-a-s,Spas,,aps,1229
 Request,r-k-e-s,Rqes,,eqrs,1230
 Fully,f-u,Fuu,u,fuv,1231
 Sad,s2-a-d,Sado,o,ados,1232
-Quick,k-w-e-k,Qek,,ekq,1233
 Evidence,e-v-tn,Evtn,,entv,1235
 Fancy,f-a-n-s-e,Fanse,,aefns,1238
 Choose,ch-u-s,Cus,,csu,1239
@@ -2019,7 +2018,6 @@ Somebody,s2-m-b-o,Smbo,,bmos,2907
 Intimate,n-tm-a-t,Ntmat,,amnt,2909
 Hated,^-h-\-a-td,Hadd,,adh,2910
 Contempt,k-tm-t,Ktmt,,kmt,2911
-Unusual,nu-sh,Nuz,,nuz,2912
 Holds,^-h-\-o-ld-s,Holdso,o,dhlos,2913
 Suspected,ss-/-k-t,Sskt,,kst,2915
 Landed,l-a-nt-d,Lantd,,adlnt,2918
@@ -2420,7 +2418,6 @@ International,n-/-n-a-sh-l,Nnazl,,alnz,3740
 Farmer,f-a2-m-e2,Fameo,o,aefmo,3742
 Instruction,n-s-/-k-sh,Nskz,,knsz,3748
 Intellect,n-/-e-k,Neku,u,eknu,3749
-Namely,n-a-e,Naeo,o,aeno,3757
 Behalf,b-f,Bfo,o,bfo,3758
 Austria,o-s-/-a,Osa,,aos,3759
 Clock,k-l-o-k,Klok,,klo,3761
@@ -3465,7 +3462,6 @@ Excellency,e-s2-l-e,Xle,,elx,7089
 Counter,^-k,Kk1,k1,1ck,7090
 Confidential,k-f-tn-sh,Kftnz,,fkntz,7102
 Nevada,n-e-v,Nevo,o,enov,7104
-Unusually,nu-sh-e,Nuze,,enuz,7111
 Authorized,o-th-r-i-s2-d,Ohrisd,,dhiors,7122
 Museum,m-u-s2-e-m,Musem,,emsu,7134
 Guidance,g-i-tn-s,Gitns,,ginst,7138
@@ -3776,7 +3772,6 @@ Role,r-o-l,Rolo,o,lor,8850
 Superfluous,s-/-f,Sf,,fsx,8859
 Kid,k-e-d,Ked,,dek,8862
 Exert,e-s2-e-t,Xeto,o,eotx,8866
-Ore,o-r,Ori,i,ior,8870
 Judicious,j-d-e-sh-u-s,Jdezus,,dejsuz,8878
 Flourish,fl-r-sh,Flrz,,flrz,8879
 Yacht,e-o-t,Eot,,eot,8888
@@ -7567,7 +7562,6 @@ In the matter,mn-a-t,Mmat,,amt,70896
 In the meantime,mn-tm,Mmtmo,o,mot,70897
 In the morning,n-th-mn-\-h,Nhmmg,,ghmn,70898
 In the second place,n-s2-e-k-/-p,Nsekp,,eknps,70899
-In the usual manner,nu-sh-mn-e2,Nuzmme,,emnuz,70900
 In the world,n-u-u,Nuuo,o,nou,70901
 In this,n-ths,Nhs,,hns,70902
 In touch ,t-ch,Tco,o,cot,70903
@@ -8190,7 +8184,6 @@ Purchasing power,pr-ch-/-p,Prcp,,cpr,71522
 Question of fact,k-sh-/-f,Qzf,,fqz,71523
 Question of time,k-sh-tm,Qztm,,mqtz,71524
 Questionnaire,k-sh-a2,Qza,,aqz,71525
-Quicker than,k-w-e-k-r-n,Qekrn,,eknqr,71526
 Rather than,r-a-th-n,Rahn,,ahnr,71527
 Readdressed,r-ea-d-r-/-t,Redrt,,dert,71528
 Reappoint,r-o-e,Ryo,o,ory,71530
@@ -8228,7 +8221,6 @@ San rafael,s2-a-n-r-a-f,Sanraf,,afnrs,71562
 Santa barbara,s2-a-nt-b,Santb,,abnst,71563
 Saskatoon,ss2-k-tn,Ssktn,,knst,71564
 Scilily,ss-l-e,Ssle,,els,71565
-Seaway,s-e-/-n,Sena,a,aens,71566
 Secretary of agriculture,s2-e-k-ya,Sekya,,aeksy,71567
 Secretary of commerce,s2-e-k-m-ye,Sekmye,,ekmsy,71568
 Secretary of state,s2-e-k-s2-t,Sekst,,ekst,71569
@@ -8437,7 +8429,8 @@ Unlined,n-l-a-nt,Nlant,,alnt,71777
 Unseat,n-s2-e-t,Nsetu,u,enstu,71778
 Up to the time,u-p-tm,Uptm,,mptu,71779
 Upon the subject,p-o-n-s-j,Ponsj,,jnops,71780
-Usually ,u-sh,Uzu,u,uzz,71781
+Usually,u-sh-e,Uze,,euz,71781
+Usually,u-sh,Uzu,u,uzz,71781
 V. h-u-s-a-r,^-h-\-u-a-r,Huar,,ahru,71782
 V. h-u-s-i-f,^-h-\-u-i-f,Huif,,fhiu,71783
 V. l-e-nt-e-k,l-e-d-e-k,Ledek,,dekl,71784

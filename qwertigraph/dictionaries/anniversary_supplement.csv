@@ -17,6 +17,7 @@ Rebuilding,r-bld-\-h,Rbldg,,bdglr,22
 Rebuilds,r-bld-s,Rblds,,bdlrs,22
 Of,o,O,,,24
 Being,b-\-h,Bg,,bcg,41
+Having,v-\-h,Vg,,gv,47
 But,b,Bu,u,bcu,50
 Wouldn't,d-n-t,Dntooo,,dnt,54
 They'll,th-e-l,Helu,u,ehlu,54
@@ -99,6 +100,15 @@ Lookups,l-u-k-p-s,Lukps,,klpsu,216
 Night,n-i,Nio,o,inop,217
 All-nighter,o-n-i-r,Onir,,inor,217
 All-nighters,o-n-i-r-s,Onirs,,inors,217
+Naming,n-a-\-h,Nag,,agn,225
+Rename,r-e-n-a,Rena,,aenr,225
+Renamed,r-e-n-a-d,Renad,,adenr,225
+Renaming,r-e-n-a-\-h,Renag,,aegnr,225
+Renames,r-e-n-a-s,Renas,,aenrs,225
+Surname,s-e2-n-a,Sena,,aens,225
+Surnamed,s-e2-n-a-d,Senad,,adens,225
+Surnaming,s-e2-n-a-\-h,Senag,,aegns,225
+Surnames,s-e2-n-a-s,Senas,,aens,225
 Homework,^-h-\-o-m-r-k,Homrk,,hkmor,246
 Fathered,f-a-th-d,Fahd,,adfh,250
 Fatherhood,f-a-th-\-d,Fahdo,o,adfho,250
@@ -180,6 +190,12 @@ Seconding,s2-e-k-nt-\-h,Sekntg,,egknst,373
 Secondary,s2-e-k-nt-r-e,Sekntre,,eknrst,373
 Secondarily,s2-e-k-nt-r-ye,Sekntry,,eknrsty,373
 Seconds,s2-e-k-nt-s,Seknts,,eknst,373
+Returnable,r-e-t-b,Retb,,bert,375
+Returnably,r-e-t-b-e,Retbe,,bert,375
+Returnability,r-e-t-\-b,Retbo,o,beort,375
+Returnables,r-e-t-b-s,Retbs,,berst,375
+Returning,r-e-t-\-h,Retg,,egrt,375
+Returns,r-e-t-s,Rets,,erst,375
 Calling,k-o-\-h,Kog,,gko,386
 Calls,k-o-s,Kos,,kozs,386
 Callout,k-o-a-u,Kow,,kow,386
@@ -232,7 +248,10 @@ Understandably,u-/-s2-tn-b-e,Ustnbe,,benstu,467
 Understanding,u-/-s2-tn-\-h,Ustng,,gnstu,467
 Understandings,u-/-s2-tn-s-\-h,Ustngs,,gnstu,467
 Understands,u-/-s2-tn-s,Ustns,,nstu,467
-Overwritten,o-r-e-tn,Oretn,,enort,469
+Overwritten,^-o-\-r-e-tn,Oretn,,enort,469
+Overwrite,^-o-\-r-i,Ori,,iorz,469
+Overwriting,^-o-\-r-i-\-h,Orig,,gior,469
+Overwrites,^-o-\-r-i-s,Oris,,iors,469
 Accountable,a-k-t-b,Aktb,,abkt,481
 Accountably,a-k-t-b-e,Aktbe,,abekt,481
 Accountability,a-k-t-\-b,Aktbo,o,abkot,481
@@ -296,6 +315,7 @@ Opinions,o-p-n-s,Opns,,nops,626
 Variously,v-a-r-s-e,Varse,,aersv,627
 Histories,^-h-\-e-s2-t-r-e-s,Hestres,,ehrst,629
 Agreements,^-ya-m-s,Yams,,amsy,631
+Rewrote,r-e-r-o-t,Rerot,,eort,635
 Papered,p-a-pr-d,Paprd,,adpr,649
 Papering,p-a-pr-\-h,Paprg,,agpr,649
 Paperwork,p-a-pr-k,Paprk,,akpr,649
@@ -487,6 +507,7 @@ Heavenward,^-h-\-e-v-n-\-d,Hevnd,,dehnv,933
 Heavenly,^-h-\-e-v-n-e,Hevne,,ehnv,933
 Authorities,o-th2-/-r-s,Ohrs,,hors,938
 Authorities,o-th2-/-r-s,Ohrso,o,hors,938
+Unnamed,u-n-a-/-t,Unat,,antu,946
 Permissioned,pr-m-sh-d,Prmzd,,dmprz,960
 Permissioning,pr-m-sh-\-h,Prmzg,,gmprz,960
 Permissions,pr-m-sh-s,Prmzs,,mprsz,960
@@ -583,6 +604,9 @@ Searchlights,s2-e-ch-l-i-s,Seclis,,ceils,1201
 Searches,s2-e-ch-s,Secs,,ces,1201
 Ones,u-n-s-e,Unse,,ensu,1211
 Path,p-a-th,Pah,,ahpz,1225
+Quick,k-\-w-^-e-k,Qek,,ekq,1233
+Quickly,k-\-w-^-e-k-e,Qeke,,ekq,1233
+Quicken,k-\-w-^-e-k-n,Qekn,,eknq,1233
 Reports,r-pr-s,Rprs,,prs,1256
 Secured,s2-e-k-r-d,Sekrd,,dekrs,1260
 Securing,s2-e-k-r-\-h,Sekrg,,egkrs,1260
@@ -965,6 +989,10 @@ Preparatory,pr-e-p-\-r-e,Prepre,,epr,2440
 Fingered,f-e2-ng-e2-d,Feqed,,defq,2476
 Fingering,f-e2-ng-e2-\-h,Feqeg,,efgq,2476
 Fingerlings,f-e2-ng-e2-l-s,Feqels,,eflqs,2476
+Frequented,fr-e-k-d,Freqd,,defqr,2479
+Frequently,fr-e-k-e,Freqe,,efqr,2479
+Frequenting,fr-e-k-\-h,Freqg,,efgqr,2479
+Frequents,fr-e-k-s,Freqs,,efqrs,2479
 Oppositional,o-p-o-sh-l,Opozl,,lopz,2486
 Oppositions,o-p-o-sh-s,Opozs,,opsz,2486
 Errored,e-r-r-d,Errd,,erzd,2517
@@ -979,6 +1007,9 @@ Tissue,t-e-sh-u,Tezu,,etuz,2555
 Tissues,t-e-sh-u-s,Tezus,,etuzs,2555
 Maintaining,mn-tn-\-h,Mmtng,,gmnt,2559
 Maintains,mn-tn-s,Mmtns,,mnst,2559
+Maintainance,mn-tn-a-n-s,Mntnans,,amnst,2559
+Maintainable,mn-tn-b,Mntnb,,bmnt,2559
+Maintainably,mn-tn-b-e,Mntnbe,,bemnt,2559
 Mainframe,m-a-n-fr-a-m,Manfram,,afmnr,2577
 Mainframes,m-a-n-fr-a-m-s,Manframs,,afmnrs,2577
 Performed,pr-f-m-d,Prfmd,,dfmpr,2589
@@ -1000,6 +1031,8 @@ Routing,r-u-t-\-h,Rutg,,rtug,2671
 Router,r-u-t-r,Rutr,,rtur,2671
 Routers,r-u-t-r-s,Rutrs,,rturs,2671
 Routes,r-u-t-s,Ruts,,rstu,2671
+Existed,e-s-e-s-d,Xesd,,desx,2688
+Existing,e-s-e-s-\-h,Xesg,,egsx,2688
 Characteristically,k-a-k-/-s2-t-e,Kakste,,aekst,2724
 Characteristics,k-a-k-/-s2-t-s,Kaksts,,akst,2724
 Commenting,k-mn-t-\-h,Kmmtg,,gkmt,2738
@@ -1036,6 +1069,7 @@ Pressures,pr-e-sh-u-s,Prezus,,eprsuz,2853
 Arrive,a-r-i,Ari,,airz,2901
 Arriving,a-r-i-\-h,Arig,,agir,2901
 Arrives,a-r-i-s,Aris,,airs,2901
+Unusual,n-u-sh,Nuz,,nuz,2912
 Damage,tm-j,Tmj,,jmt,2935
 Damaged,tm-j-d,Tmjd,,djmt,2935
 Damaging,tm-j-\-h,Tmjg,,gjmt,2935
@@ -1240,6 +1274,7 @@ Committees,k-e-t-e-s,Ketes,,ekst,3731
 Instructional,n-s-/-k-sh-l,Nskzl,,klnsz,3748
 Instructionally,n-s-/-k-sh-l-e,Nskzle,,eklnsz,3748
 Instructions,n-s-/-k-sh-s,Nskzs,,knsz,3748
+Namely,n-a-e,Nae,,aen,3757
 Reservable,r-s2-e-v-b,Rsevb,,bersv,3764
 Reservably,r-s2-e-v-b-e,Rsevbe,,bersv,3764
 Reserved,r-s2-e-v-d,Rsevd,,dersv,3764
@@ -1506,6 +1541,7 @@ Accessibly,a-k-ss-e,Aksse,,aeks,5463
 Availed,a-v-a-l-d,Avald,,adlv,5529
 Availing,a-v-a-l-\-h,Avalg,,aglv,5529
 Avails,a-v-a-l-s,Avals,,alsv,5529
+Accurately,a-k-r-a-e,Akrae,,aekr,5541
 Approvals,a-pr-v-l-s,Aprvls,,alprsv,5616
 Disapproval,d-s-a-pr-v-l,Daprvl,,adlprv,5616
 Directory,d-r-k-/-r-e,Drkre,,dekr,5660
@@ -1594,6 +1630,11 @@ Compare,k-pr,Kpr,,kpr,6355
 Compared,k-pr-d,Kprd,,dkpr,6355
 Comparing,k-pr-\-h,Kprg,,gkpr,6355
 Compares,k-pr-s,Kprs,,kprs,6355
+Ornamented,o-n-a-m-d,Onamd,,admno,6391
+Ornamenting,o-n-a-m-\-h,Onamg,,agmno,6391
+Ornamental,o-n-a-m-l,Onaml,,almno,6391
+Ornamentally,o-n-a-m-l-e,Onamle,,aelmno,6391
+Ornaments,o-n-a-m-s,Onams,,amnos,6391
 Boundaries,b-n-r-e-s,Bnres,,benrs,6400
 Executable,e-s2-k-b,Xkb,,bkx,6515
 Executables,e-s2-k-b-s,Xkbs,,bksx,6515
@@ -1645,6 +1686,7 @@ Renewably,r-e-n-u-\-b-e,Renube,,benru,7087
 Renewables,r-e-n-u-\-b-s,Renubs,,benrsu,7087
 Renewing,r-e-n-u-\-h,Renug,,egnru,7087
 Renews,r-e-n-u-s,Renus,,enrsu,7087
+Unusually,n-u-sh-e,Nuze,,enuz,7111
 Malign,m-a-l-i-n,Malin,,ailmn,7114
 Maligned,m-a-l-i-n-d,Malind,,ailmnd,7114
 Malignly,m-a-l-i-n-e,Maline,,aeilmn,7114
@@ -1720,6 +1762,9 @@ Delete,d-l-e-t,Dlet,,delt,8274
 Deleting,d-l-e-t-\-h,Dletg,,deglt,8274
 Deletes,d-l-e-t-s,Dlets,,delst,8274
 Abilities,a-b-s,Abso,o,abos,8337
+Behavioral,b-^-h-\-a-v-r-l,Bhavrl,,abhlrv,8429
+Behaviorally,b-^-h-\-a-v-r-l-e,Bhavrle,,abehlrv,8429
+Behaviors,b-^-h-\-a-v-r-s,Bhavrs,,abhrsv,8429
 Transport,t-/-p-o-t,Tpot,,opt,8504
 Transported,t-/-p-o-t-d,Tpotd,,dopt,8504
 Transporting,t-/-p-o-t-\-h,Tpotg,,gopt,8504
@@ -2057,6 +2102,7 @@ Symptomatic,s-e-m-tm-\-a,Semtma,,aemst,13544
 Symptoms,s-e-m-tm-s,Semtms,,emst,13544
 Forefinger,f-f-e2-ng-e2,Ffeqe,,efq,13694
 Forefingers,f-f-e2-ng-e2-s,Ffeqes,,efqs,13694
+Frequencies,fr-e-k-s,Freqso,o,efoqrs,13798
 Hypocrite,^-h-\-e-p-k-r-e-t,Hepkret,,ehkprt,13868
 Hypocrites,^-h-\-e-p-k-r-e-t-s,Hepkrets,,ehkprst,13868
 Hypocritical,^-h-\-e-p-k-r-ya,Hepkry,,ehkpry,13868
@@ -2174,6 +2220,7 @@ Authorization,o-th-r-e-s-a-sh,Ohresaz,,aehorsz,17721
 Authorizations,o-th-r-e-s-a-sh-s,Ohresazs,,aehorsz,17721
 Authorizing,o-th-r-i-s-\-h,Ohrisg,,ghiors,17721
 Authorizes,o-th-r-i-s-s,Ohriss,,hiors,17721
+Nicknames,n-e-k-n-a-s,Neknas,,aekns,17878
 Executors,e-s2-k-/-r-s,Xkrs,,krsx,18142
 Covet,k-u-v-e-t,Kuvet,,ektuv,18148
 Coveting,k-u-v-e-t-\-h,Kuvetg,,egktuv,18148
@@ -2324,6 +2371,7 @@ Computational,k-p-u-sh-l,Kpuzl,,klpuz,24409
 Computationally,k-p-u-sh-l-e,Kpuzle,,eklpuz,24409
 Computations,k-p-u-sh-s,Kpuzs,,kpsuz,24409
 Obviation,o-b-v-ea-sh,Obvez,,beovz,24446
+Infrequently,n-fr-e-k-e,Nfreqe,,efnqr,24487
 Diagnose,d-i-g-n-o-s,Dignos,,dginos,24781
 Diagnosed,d-i-g-n-o-s-d,Dignosd,,dginos,24781
 Diagnoses,d-i-g-n-o-s-e-s,Dignoses,,deginos,24781
@@ -2713,6 +2761,7 @@ Immigrating,e-m-e-g-\-h,Emegg,,egimg,70854
 Immigrates,e-m-e-g-s,Emegs,,egims,70854
 Good luck,g-l-u-k,Gluk,,gklu,70898
 Good morning,g-m,Gmu,u,gmu,70898
+In the usual manner,n-u-sh-mn-e2,Nuzmme,,emnuz,70900
 Inappreciated,e-n-a-pr-e-sh-d,Enaprezd,,adenprz,70910
 Inflected,n-fl-d,Nfldo,o,dflno,70941
 Inflecting,n-fl-\-h,Nflgo,o,fglno,70941
@@ -2731,7 +2780,14 @@ Integrations,nt-e-g-r-a-sh-s,Ntegrazs,,aegnrstz,70963
 Joint resolutions,j-<-r-s2-o-sh-s,Jrsozs,,jorsz,71028
 Non,n-o-n,Nonq,q,noq,71218
 Non-,n-o-n,Nonqq,qq,noq,71218
+Modulate,m-o-d-\-l-a-t,Modlat,,adlmot,71236
+Modulated,m-o-d-\-l-a-t-d,Modlatd,,adlmot,71236
+Modulating,m-o-d-\-l-a-t-\-h,Modlatg,,adglmot,71236
+Modulates,m-o-d-\-l-a-t-s,Modlats,,adlmost,71236
+Module,m-o-d-\-l,Modlo,o,dlmo,71236
+Modules,m-o-d-\-l-s,Modls,,dlmos,71236
 Opinionatedly,o-p-n-a-td-e,Opnadde,,adenop,71437
+Quicker than,k-\-w-^-e-k-r-n,Qekrn,,eknqr,71526
 Questionnaires,k-sh-a2-s,Qzas,,aqsz,71526
 Reconditioned,r-k-d-sh-d,Rkdzd,,dkrz,71538
 Reconditioning,r-k-d-sh-\-h,Rkdzg,,dgkrz,71538
@@ -2767,8 +2823,31 @@ Deployments,d-pl-m-s,Dplms,,dlmps,90131
 Deplore,d-pl-r,Dplr,,dlpr,90131
 Deployer,d-pl-r,Dplro,o,dlopr,90131
 Deploys,d-pl-s,Dpls,,dlps,90131
+Chase,ch-a-s,Cas,,acs,90354
+Chased,ch-a-s-d,Casd,,acds,90354
+Chasing,ch-a-s-\-h,Casg,,acgs,90354
+Chases,ch-a-s-s,Cass,,acs,90354
+Coexist,k-o-e-ss,Koxs,,kosx,90575
+Coexisted,k-o-e-ss-d,Koxsd,,dkosx,90575
+Coexistence,k-o-e-ss-e-n-s,Koxsens,,eknosx,90575
+Coexisting,k-o-e-ss-\-h,Koxsg,,gkosx,90575
+Coexists,k-o-e-ss-s,Koxss,,kosx,90575
 Purgatory,pr-g-a-t-r-e,Prgatre,,aegprt,91179
 Purge,pr-j,Prj,,jpr,91179
 Purged,pr-j-d,Prjd,,djpr,91179
 Purging,pr-j-\-h,Prjg,,gjpr,91179
 Purges,pr-j-s,Prjs,,jprs,91179
+Query,q-e-\-n-^-r-e,Qere,,eqr,91365
+Queriable,q-e-\-n-^-r-e-b,Qereb,,beqr,91365
+Queriably,q-e-\-n-^-r-e-b-e,Qerebe,,beqr,91365
+Queriability,q-e-\-n-^-r-e-\-b,Qerebo,o,beoqr,91365
+Queried,q-e-\-n-^-r-e-d,Qered,,deqr,91365
+Querying,q-e-\-n-^-r-e-\-h,Qereg,,egqr,91365
+Queries,q-e-\-n-^-r-e-s,Qeres,,eqrs,91365
+Inaccurate,n-a-k-r-a,Nakra,,aknr,91642
+Inaccurately,n-a-k-r-a-e,Nakrae,,aeknr,91642
+Behave,b-^-h-\-a-v,Bhav,,abhv,92692
+Behaved,b-^-h-\-a-v-d,Bhavd,,abdhv,92692
+Behaving,b-^-h-\-a-v-\-h,Bhavg,,abghv,92692
+Behaves,b-^-h-\-a-v-s,Bhavs,,abhsv,92692
+Quicksand,k-\-w-^-e-k-s-a-nt,Qeksand,,adeknqs,92847
