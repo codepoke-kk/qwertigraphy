@@ -567,7 +567,6 @@ Church,ch-e2-ch,Cec,,cez,655
 Attention,tn-sh,Tnz,,ntz,656
 Wind,u-e-nt,Uent,,entu,658
 Per,pr,Proo,oo,opr,659
-Company,k-p,Kpo,o,kop,661
 Walked,u-o-k-t,Uokt,,kotu,662
 Chief,ch-e-f,Cef,,cef,663
 Strength,s2-t-r,Stro,o,orst,664
@@ -601,7 +600,6 @@ Chance,ch-a-n-s,Cans,,acns,700
 Regard,r-e,Reo,o,eor,701
 Filled,f-e-ld,Feld,,defl,702
 Trees,t-r-e-s,Tres,,erst,703
-Won't,o-nt,Onto,o,not,704
 Presence,pr,Pru,u,pru,705
 Merely,m-e2-e2,Mee,,emz,706
 Secret,s2-e-k-r-e-t,Sekret,,ekrst,707
@@ -1608,7 +1606,6 @@ Readily,r-e-d-ya,Redya,,adery,2155
 Ignorant,e-g,Ego,o,ego,2156
 Voyage,v-o-e-j,Vyj,,jvy,2157
 Related,r-e-l-a-/-t,Relad,,adelr,2159
-Related,r-e-l-a-/-t,Relat,,aelrt,2159
 Latin,l-a-tn,Latn,,alnt,2164
 Foolish,f-u-l-sh,Fulz,,fluz,2165
 Trial,t-r-i-l,Tril,,ilrt,2167
@@ -2504,7 +2501,6 @@ Romance,r-o-mn-s,Romms,,mors,3938
 Artillery,a2-t-e-l,Atel,,aelt,3942
 Persuade,pr-s-w-a-d,Prswad,,adprsw,3945
 Metal,m-e-t-l,Metl,,elmt,3946
-Wont,o-nt,Onti,i,inot,3949
 Countess,k-nt-e-s,Kntes,,eknst,3952
 Dramatic,d-r-a-m-/-a,Dramao,o,admor,3955
 Abide,a-b-i,Abi,,abi,3958
@@ -2642,7 +2638,6 @@ Learnt,l-e-n-t,Lentu,u,elntu,4299
 Luxury,l-u-x,Lux,,lux,4301
 Handkerchief,^-h-\-a-nk-e-r-ch,Haqerc,,acehqr,4304
 Interval,n-/-v-l,Nvlo,o,lnov,4306
-Delicious,d-l-e-sh,Dlez,,delz,4307
 Executed,e-s2-k-/-t,Xkt,,ktx,4310
 Remedy,r-e-mt-e,Remte,,emrt,4316
 Curtain,k-e2-tn,Ketn,,eknt,4317
@@ -3100,7 +3095,7 @@ Florida,fl-a,Fla,,afl,5639
 Legitimate,l-j-tm-a-t,Ljtmat,,ajlmt,5644
 Aren't,r-nt,Rnto,o,nort,5653
 Petition,p-e-t-sh,Petz,,eptz,5655
-Background,b-a-k-g,Bakg,,abgk,5656
+Background,b-a-k-g,Bakgo,o,abgko,5656
 Enthusiastic,n-th-u-s-/-s2-t,Nhusst,,hnstu,5658
 Director,d-r-k-/-r,Drkr,,dkr,5660
 Bath,b-a-th,Baho,o,abho,5661
@@ -4233,7 +4228,6 @@ Muzzle,m-u-s-l,Musl,,lmsu,11913
 Leaden,l-e-tn,Letn,,elnt,11916
 Extant,e-s2-t-a-nt,Xtant,,antx,11930
 Thanking,th-^->-^-h-\-\-h,Hhgo,o,gho,11932
-Unsatisfactory,n-s2-a-t,Nsat,,anst,11940
 Haul,^-h-\-o-l,Holi,i,hilo,11952
 Inexorable,n-e-s2-o-r-b,Nxorb,,bnorx,11972
 Masterly,m-a-s-e,Mase,,aems,11974
@@ -5071,7 +5065,6 @@ Initiation,e-n-e-sh-ea-sh,Enezez,,enz,21045
 Promptness,pr-mt-n-e-s,Prmtnes,,emnprst,21046
 Herring,^-h-\-e-r-\-h,Hergo,o,eghor,21082
 Inflection,n-fl-sh,Nflz,,flnz,21083
-Awning,o-n-\-h,Ong,,gno,21094
 Opportune,o-pr-tn,Oprtn,,noprt,21106
 Austerity,o-s2-t-/-r,Ostr,,orst,21113
 Chloride,k-l-o-r-i,Klori,,iklor,21159
@@ -5370,7 +5363,6 @@ Narrowest,n-a-r-o-s2-t,Narost,,anorst,25427
 Serial,s-e-r-ea-l,Serel,,elrs,25429
 Infinitesimal,n-f-e-n-e-t-e-s,Nfenetes,,efnst,25435
 Garage,g-a-r-a-sh,Garaz,,agrz,25464
-Avoids,v-o-e-s,Vyso,o,osvy,25469
 Drastic,d-r-/-s2-t,Drst,,drst,25471
 Infuse,n-f-e-u,Nfuo,o,fnou,25472
 Buoy,b-o-e,Bya,a,aby,25485
@@ -6723,7 +6715,6 @@ Amounts of money,a-m-s2-mn-e,Amsmme,,aems,70060
 Amphibian,a-m-f-e-b-n,Amfebn,,abefmn,70061
 Amplifier,a-m-p-fr,Ampfr,,afmpr,70062
 Amputate,a-m-p-u-t,Amput,,amptu,70063
-Analyst ,a-n-l-e-s,Anles,,aelns,70064
 And have,nt-v,Ntvo,o,notv,70065
 And that,nt-th-a,Ntha,,ahnt,70066
 And the,nt-th,Nth,,hnt,70067
@@ -7067,7 +7058,7 @@ Deism,d-e-s2-m,Desm,,dems,70412
 Deist,d-e-s2-t,Destu,u,destu,70413
 Deject,d-j-k,Djk,,djk,70414
 Deka-,d-e-k,Dekqq,qq,dekq,70415
-Deletion,d-l-e-sh,Dlezo,o,deloz,70416
+Deletion,d-l-e-sh,Dlez,,delz,70416
 Delicatessen,d-e-l-e-k-e-s2-n,Delekesn,,deklns,70417
 Demobilize,tm-o-bl-i-s,Tmoblis,,bilmost,70418
 Democrat ,tm-r,Tmru,u,mrtu,70419
