@@ -94,7 +94,6 @@ Did,td,Dd,,cdv,100
 Such,s-ch,Sc,,csx,101
 Great,g-r,Gr,,cgr,102
 Must,m-s,Ms,,msz,103
-Two,t-u,Tuo,o,otu,104
 Before,b-f,Bf,,bcf,105
 Us,u-s,Uso,o,osu,106
 Over,^-o,Ou,u,ouz,107
@@ -1856,7 +1855,6 @@ Pause,p-o-s,Posu,u,opsu,2596
 Mortal,m-o-t-l,Motl,,lmot,2600
 Merry,m-e-r-e,Mereo,o,emor,2601
 Atmosphere,a-t-m-o-s,Atmos,,amost,2603
-Oil,o-e-l,Yl,,cly,2607
 Assure,a-sh-u,Azu,,auz,2611
 Nervous,n-e-v-u-s,Nevus,,ensuv,2612
 Distinction,d-s2-t-sh,Dstz,,dstz,2613
@@ -2801,7 +2799,6 @@ Experiences,s-p-e-s,Spes,,eps,4769
 Engage,n-g-a,Nga,,agn,4770
 Courtesy,k-e2-t-s-e2,Ketse,,ekst,4777
 Civilized,s2-v-i-s2-d,Svisd,,disv,4783
-Acres,a-k-r-s,Akrso,o,akors,4784
 Everyone,e-v-u-n,Evun,,enuv,4787
 Pennsylvania,p-a,Pao,o,aop,4789
 Carries,k-a-e-s,Kaes,,aeks,4791
@@ -3387,7 +3384,6 @@ Inasmuch,n-s2-m-ch,Nsmc,,cmns,6811
 Detailed,td-a-ld,Ddald,,adl,6812
 Obstacle,o-b-s-/-k,Obsk,,bkos,6813
 Scared,s2-k-a-r-/-t,Skart,,akrst,6820
-Downstairs,d-n-s2-t-ya,Dnstya,,adnsty,6825
 Diameter,d-i-m-e-t-e2,Dimete,,deimt,6826
 Confederate,k-f-e-d-r-a,Kfedra,,adefkr,6831
 Canadian,k-a-n-n,Kanno,o,akno,6842
@@ -3578,7 +3574,6 @@ Binding,b-i-nt-\-h,Bintg,,bgint,7690
 Skirt,s2-k-e2-t,Sket,,ekst,7692
 Industrious,nt-s2-u-s,Ntsus,,nstu,7695
 Satin,s2-a-tn,Satn,,anst,7705
-Recourse,r-e-k-r-s,Rekrs,,ekrs,7706
 Montana,m-o-nt,Monto,o,mnot,7707
 Keeper,k-p-/-r,Kpro,o,kopr,7711
 Rains,r-a-n-s,Rans,,anrs,7714
@@ -5713,6 +5708,7 @@ Escutcheon,e-s2-k-ch-n,Eskcn,,cekns,32250
 Escapade,e-s2-k-p-a,Eskpa,,aekps,32263
 Publisher,p-b-/-r,Pbr,,bpr,32299
 Illegible,e-l-e-j-b,Elejbo,o,bejlo,32327
+Recurrent,r-e-k-r-e-nt,Rekrent,,eknrt,32396
 Immigrant,e-m-e-g,Emegu,u,egmu,32438
 Corroborate,k-r-o-b,Krob,,bkor,32457
 Inquietude,n-k-i-t-u,Nqitu,,inqtu,32460
@@ -6867,7 +6863,7 @@ Bueno aires,b-i-r-e-s,Bires,,beirs,70215
 Bunion,b-n-u-n,Bnun,,bnu,70216
 Bureaucrat,b-u-/-a-t,Buat,,abtu,70217
 Burglarious,b-e-r-g-l-a-r,Berglar,,abeglr,70218
-By express,b-e-s-pr,Bespr,,beprs,70219
+By express,b-e-s-pr,Bxpr,,bprx,70219
 By means of which,b-mn-s-ch,Bmmsc,,bcms,70220
 By reaon of the,br-s2-th,Brsh,,bhrs,70221
 By reason of my,br-s2-m-a,Brsma,,abmrs,70222
@@ -7218,7 +7214,6 @@ Expositor,e-s-p-o-s-/-r,Xposr,,oprsx,70574
 Expropriate,e-s-pr-pr-ea-t,Xprpret,,eprtx,70575
 Expulsive,e-s-pl-s2-v,Xplsv,,lpsvx,70576
 Expunge,e-s-p-n-j,Xpnj,,jnpx,70577
-Expurgate,e-s-pr-g,Xprg,,gprx,70578
 Extant ,e-s2-tn-t,Xtntu,u,ntux,70579
 Extradite,e-s-/-d-i,Xdi,,dix,70580
 Extrude,e-s-/-d,Xdo,o,dox,70581
