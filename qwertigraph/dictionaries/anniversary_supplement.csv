@@ -16,7 +16,7 @@ Down,d-n,Dno,o,cdno,18
 Downs,d-n-s,Dnsa,a,adns,18
 Downside,d-n-s-i,Dnsi,,dins,18
 Downsides,d-n-s-i-s,Dnsis,,dins,18
-Building,bld-\-h,Bldgo,o,bdglo,22
+Building,bld-\-h,Bldg,,bdgl,22
 Builder,bld-r,Bldr,,bdlr,22
 Rebuild,r-bld,Rbld,,bdlr,22
 Rebuilding,r-bld-\-h,Rbldg,,bdglr,22
@@ -44,6 +44,11 @@ Muster,m-u-s-t-e2,Muste,,emstu,103
 Mustered,m-u-s-t-e2-d,Musted,,emstud,103
 Mustering,m-u-s-t-e2-\-h,Musteg,,emstug,103
 Musters,m-u-s-t-e2-s,Mustes,,emstus,103
+Clarify,k-l-a-r-f,Klarf,,afklr,104
+Clarified,k-l-a-r-f-d,Klarfd,,adfklr,104
+Clarifying,k-l-a-r-f-\-h,Klarfg,,afgklr,104
+Clarification,k-l-a-r-\-f,Klarfo,o,afklor,104
+Clarifications,k-l-a-r-\-f-s,Klarfs,,afklrs,104
 Two,t-u,Tuo,o,otuz,104
 Owning,o-n-\-h,Ong,,gno,119
 Products,pr-o-d-u-k-s,Produks,,dkoprsu,122
@@ -138,10 +143,18 @@ Godfathers,g-d-f-a-th-s,Gdfahs,,adfghs,250
 Grandfather,^-g-\--f-a-th,Gfah,,afgh,250
 Grandfathers,^-g-\--f-a-th-s,Gfahs,,afghs,250
 Stepfather,s-t-e-p-f-a-th,Stepfah,,aefhpst,250
+Coin,k-oe-n,Kyn,,kny,257
+Coined,k-oe-n-d,Kynd,,dkny,257
+Coining,k-oe-n-\-h,Kyng,,gkny,257
+Coinage,k-oe-n-j,Kynj,,jkny,257
+Coinages,k-oe-n-j-s,Kynjs,,jknsy,257
+Coins,k-oe-n-s,Kyns,,knsy,257
 Usable,e-u-b,Ub,,blsu,257
 Usably,e-u-b-e,Ube,,beu,257
 Usability,e-u-\-b,Ubo,o,bou,257
 Using,e-u-\-h,Ugo,o,gou,257
+Usage,e-u-\-j,Uj,,ju,257
+Usages,e-u-\-j-s,Ujs,,jsu,257
 Username,e-u-r-n-a,Urna,,anru,257
 Username/password,e-u-r-n-a-p,Urnap,,anpru,257
 Username and password,e-u-r-n-a-p,Urnapo,o,anopru,257
@@ -511,6 +524,7 @@ Quietness,k-i-t-n-s,Qitns,,inqst,792
 Quieter,k-i-t-r,Qitr,,iqrt,792
 Quiets,k-i-t-s,Qits,,iqst,792
 Quietest,k-i-t-s-t,Qitst,,iqst,792
+Besides,b-s-i-s,Bsis,,bis,793
 Expressions,e-s-pr-e-sh-s,Xprezs,,eprsxz,795
 Wondered,u-u-n-d,Uund,,dnu,803
 Wondering,u-u-n-\-h,Uung,,gnu,803
@@ -758,6 +772,12 @@ Preparer,pr-e-p-r,Prepr,,epr,1440
 Preparers,pr-e-p-r-s,Preprs,,eprs,1440
 Prepares,pr-e-p-s,Preps,,eprs,1440
 Unnoticed,u-n-e-s2-t,Unesd,,densu,1444
+Throwing,th-r-o-\-h,Hrog,,ghor,1450
+Throws,th-r-o-s,Hros,,hors,1450
+Resilience,r-s-e-l-e-n-s,Rselens,,elnrs,1450
+Resiliency,r-s-e-l-e-n-s-e,Rselense,,elnrs,1450
+Resilient,r-s-e-l-e-nt,Rselent,,elnrst,1450
+Resiliently,r-s-e-l-e-nt-e,Rselente,,elnrst,1450
 Prayed,pr-a-d,Prad,,adpr,1458
 Praying,pr-a-\-h,Prag,,agpr,1458
 Prayer,pr-a-r,Prar,,apr,1458
@@ -821,7 +841,6 @@ Sufferance,s2-u-f-n-s,Sufns,,fnsu,1571
 Sufferer,s2-u-f-\-r,Sufr,,frsu,1571
 Suffers,s2-u-f-s,Sufs,,fsu,1571
 Interesting,^-n-\-s-\-h,Nsg,,gns,1575
-Interestingly,^-n-\-s-\-g,Nsge,,egns,1575
 Arrival,a-r-i,Ario,o,aior,1580
 Arrivals,a-r-i-s,Ariso,o,aiors,1580
 Finaled,f-i-n-l-d,Finld,,dfiln,1586
@@ -1190,6 +1209,10 @@ Existed,e-s-e-s-d,Xesd,,desx,2688
 Existing,e-s-e-s-\-h,Xesg,,egsx,2688
 Characteristically,k-a-k-/-s2-t-e,Kakste,,aekst,2724
 Characteristics,k-a-k-/-s2-t-s,Kaksts,,akst,2724
+Sensitive,s2-e-n-s-df,Sensdf,,defns,2737
+Sensitives,s2-e-n-s-df-s,Sensdfs,,defns,2737
+Sensitivity,s2-e-n-s-df-t-e,Sensdfte,,defnst,2737
+Sensitivities,s2-e-n-s-df-t-e-s,Sensdftes,,defnst,2737
 Commenting,k-mn-t-\-h,Kmmtg,,gkmt,2738
 Commentary,k-mn-t-r-e,Kmmtre,,ekmnrt,2738
 Commentaries,k-mn-t-r-e-s,Kmmtres,,ekmnrst,2738
@@ -1209,6 +1232,8 @@ Uncritical,n-k-r-/-ya,Nkry,,knry,2776
 Uncritical,n-k-r-/-ya,Nkrya,,aknry,2776
 Editions,e-d-sh-s,Edzs,,desz,2816
 Communities,k-/-nt-s,Knts,,knst,2828
+Organizational,o-g-l,Ogl,,glo,2829
+Organizationally,o-g-l-e,Ogle,,eglo,2829
 Organizations,o-g-s,Ogs,,gos,2829
 Incidental,n-s2-e-tn-l,Nsetnl,,elnst,2842
 Incidentals,n-s2-e-tn-l-s,Nsetnls,,elnst,2842
@@ -1401,6 +1426,11 @@ Vanities,v-/-nt-s,Vnts,,nstv,3520
 Balancing,b-a-l-\-h,Balg,,abgl,3523
 Balancer,b-a-l-r,Balr,,ablr,3523
 Balancers,b-a-l-r-s,Balrs,,ablrs,3523
+Data,d-t-a,Dta,,adt,3533
+Database,d-t-a-b,Dtab,,abdt,3533
+Databased,d-t-a-b-d,Dtabd,,abdt,3533
+Databasing,d-t-a-b-\-h,Dtabg,,abdgt,3533
+Databases,d-t-a-b-s,Dtabs,,abdst,3533
 Irresponsibility,e-r-p-/-b,Erpb,,bepr,3534
 Responsibilities,r-p-/-b-s,Rpbs,,bprs,3534
 Comparisons,k-pr-s2-n-s,Kprsns,,knprs,3575
@@ -1606,6 +1636,9 @@ Nettled,n-e-t-l-d,Netld,,delnt,4455
 Nettles,n-e-t-l-s,Netls,,elnst,4455
 Nets,n-e-t-s,Nets,,enst,4455
 Expectations,e-s-p-sh-s,Xpzs,,psxz,4458
+Pushed,p-sh-d,Pzd,,dpz,4460
+Pushing,p-sh-\-h,Pzg,,gpz,4460
+Pushs,p-sh-s,Pzs,,psz,4460
 Outshine,a-u-sh-i-n,Wzin,,inwz,4496
 Alliances,a-l-i-n-s-s,Alinss,,ailns,4526
 Complaining,k-p-\-h,Kpgo,o,gkop,4567
@@ -1687,6 +1720,7 @@ Organs,o-g-n-s,Ogns,,gnos,5141
 Organism,o-g-n-s-m,Ognsm,,gmnos,5141
 Organisms,o-g-n-s-m-s,Ognsms,,gmnos,5141
 Operas,o-pr-a-s,Opras,,aoprs,5156
+Insignificance,n-s2-e-g-n-e-f,Nsegnef,,efgns,5200
 Selections,s-e-l-e-k-sh-s,Selekzs,,eklsz,5218
 Complained,k-p-d,Kpdo,o,dkop,5225
 Attachments,a-t-ch-m-s,Atcms,,acmst,5233
@@ -1706,6 +1740,9 @@ Selecting,s-e-l-e-k-\-h,Selekg,,egkls,5294
 Selects,s-e-l-e-k-s,Seleks,,ekls,5294
 Selective,s-e-l-e-k-v,Selekv,,eklsv,5294
 Selectively,s-e-l-e-k-v-e,Selekve,,eklsv,5294
+Insignificantly,n-s2-g-e,Nsge,,egns,5302
+Insignificant,n-s2-g,Nsgo,o,gnos,5302
+Significantly,s2-g-e,Sge,,egs,5302
 Invited,n-v-i-d,Nvid,,dinv,5305
 Inviting,n-v-i-\-h,Nvig,,ginv,5305
 Invites,n-v-i-s,Nvis,,insv,5305
@@ -2218,6 +2255,9 @@ Migrations,m-i-g-r-a-z-s,Migrazs,,agimrzs,11303
 Assign,a-s-i-n,Asin,,ains,11390
 Assigning,a-s-i-n-\-h,Asing,,agins,11390
 Assigns,a-s-i-n-s,Asins,,ains,11390
+Tanked,t-a-nk-d,Taqd,,adqt,11495
+Tanking,t-a-nk-\-h,Taqg,,agqt,11495
+Tanks,t-a-nk-s,Taqs,,aqst,11495
 Customers,k-u-s-r-s,Kusrs,,krsus,11568
 Comparable,k-pr-b,Kprb,,bkpr,11637
 Comparablely,k-pr-b-e,Kprbe,,bekpr,11637
@@ -3224,6 +3264,10 @@ Queriability,q-e-\-n-^-r-e-\-b,Qerebo,o,beoqr,91365
 Queried,q-e-\-n-^-r-e-d,Qered,,deqr,91365
 Querying,q-e-\-n-^-r-e-\-h,Qereg,,egqr,91365
 Queries,q-e-\-n-^-r-e-s,Qeres,,eqrs,91365
+Spike,s-p-i-k,Spik,,ikps,91500
+Spiked,s-p-i-k-d,Spikd,,dikps,91500
+Spiking,s-p-i-k-\-h,Spikg,,gikps,91500
+Spikes,s-p-i-k-s,Spiks,,ikps,91500
 Inaccurate,n-a-k-r-a,Nakra,,aknr,91642
 Inaccurately,n-a-k-r-a-e,Nakrae,,aeknr,91642
 Milepost,m-i-p-o-s-t,Mipost,,imopst,91705

@@ -31,7 +31,7 @@ FileInstall, templates\retrains.template, templates\retrains.template, true
 FileInstall, templates\personal_functions.template, templates\personal_functions.template, true
 FileInstall, coach.ico, coach.ico, true
 
-Gui, MainGUI: Add, Tab3,x6 y40 w928 h526, Coach|Historical|Editor|Logs||Settings|Strokes|Player
+Gui, MainGUI: Add, Tab3,x6 y40 w928 h526, Coach|Historical|Editor|Logs||Settings|Strokes|Clipper|Player
 Gui, MainGUI: Show, x262 y118 w940 h570, % "Qwertigraph"
 
 #Include classes\Gdip_All.ahk
@@ -53,6 +53,7 @@ Gui, MainGUI: Show, x262 y118 w940 h570, % "Qwertigraph"
 #Include classes\DashboardEvent.ahk
 #Include classes\DashboardViewport.ahk
 #Include classes\StrokepathsViewport.ahk
+#Include classes\ClipperViewport.ahk
 #Include classes\PlayerViewport.ahk
 
 ; Make the pretty icon

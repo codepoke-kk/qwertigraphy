@@ -149,3 +149,11 @@ OutputAdminPud() {
     }
     Send % Decrypt(admpud)
 }
+
+PasteFromSlot(slot) {
+	Gui MainGUI:Default 
+    slotnumber := SubStr(slot, -1, 1)
+    fieldname := "ClipperP" . slotnumber
+	GuiControlGet fieldvalue,, % fieldname
+    Send % fieldvalue
+}
