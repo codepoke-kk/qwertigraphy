@@ -1,0 +1,17 @@
+word,form,qwerd,keyer,chord,usage
+OutputStandardPud(),b1,B1,,1b,1
+OutputStandardNapud(),b2,B2,,2b,1
+OutputAdminPud(),b3,B3,,3b,1
+OutputAdminNapud(),b4,B4,,4b,1
+SendDate(),d1,D1,,1d,1
+Pastefromslot(),p1,P1,,1p,1
+Pastefromslot(),p2,P2,,2p,1
+Pastefromslot(),p3,P3,,3p,1
+Pastefromslot(),p4,P4,,4p,1
+Pastefromslot(),p5,P5,,5p,1
+Pastefromslot(),p6,P6,,6p,1
+Pastefromslot(),p7,P7,,7p,1
+Pastefromslot(),p8,P8,,8p,1
+Pastefromslot(),p9,P9,,9p,1
+Pastefromslot(),p0,P0,,0p,1
+SendTime(),t1,T1,,1t,1
