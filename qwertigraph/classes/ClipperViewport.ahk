@@ -21,7 +21,7 @@ Gui, Add, Edit, x42  y144 w780 h20 vClipperP4, kevinknox@embarqmail.com
 Gui, Add, Edit, x42  y164 w780 h20 vClipperP5, https://facebook.com
 Gui, Add, Edit, x42  y184 w780 h20 vClipperP6, https://youtube.com
 Gui, Add, Edit, x42  y204 w780 h20 vClipperP7, The greatest of these is love.
-Gui, Add, Edit, x42  y224 w780 h20 vClipperP8, Ever tried. Ever failed. No matter. Try again. Fail again. Fail better. - Samuel Becket
+Gui, Add, Edit, x42  y224 w780 h20 vClipperP8, Ever tried. Ever failed. No matter. Try again. Fail again. Fail better. - Samuel Beckett
 Gui, Add, Edit, x42  y244 w780 h20 vClipperP9, I have seen the moment of my greatness flicker, and I have seen the eternal Footman hold my coat, and snicker, and in short, I was afraid. - T.S. Eliot, The Love Song of J. Alfred Prufrock
 Gui, Add, Edit, x42  y264 w780 h20 vClipperP0, I have heard the mermaids singing, each to each. I do not think that they will sing to me. - T.S. Eliot, The Love Song of J. Alfred Prufrock
 
