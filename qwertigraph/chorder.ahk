@@ -84,6 +84,7 @@ engine.dashboard := dashboard
 aux.dashboard := dashboard 
 stroker := new StrokepathsViewport(qenv, dashboard)
 player := new PlayerViewport(engine)
+clipper := new ClipperViewport(qenv)
 
 logViewer := new LogViewport(qenv)
 logViewer.addQueue(qenv.logQueue)
