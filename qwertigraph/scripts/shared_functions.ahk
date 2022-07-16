@@ -13,7 +13,7 @@ SendTime(qwerd, word, end_key) {
 ;;; Clipper method
 PasteFromSlot(slot) {
 	Gui MainGUI:Default 
-    slotnumber := SubStr(slot, -1, 1)
+    RegExMatch(slot, "(\d)", slotnumber)
     fieldname := "ClipperP" . slotnumber
 	GuiControlGet fieldvalue,, % fieldname
     Send % fieldvalue

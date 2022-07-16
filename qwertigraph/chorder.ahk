@@ -55,6 +55,7 @@ Gui, MainGUI: Show, x262 y118 w940 h570, % "Qwertigraph"
 #Include classes\StrokepathsViewport.ahk
 #Include classes\ClipperViewport.ahk
 #Include classes\PlayerViewport.ahk
+#Include scripts\shared_functions.ahk
 
 ; Make the pretty icon
 I_Icon = coach.ico
