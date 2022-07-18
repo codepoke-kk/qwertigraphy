@@ -32,6 +32,11 @@ They'd,th-e-d,Heod,,deho,54
 They're,th-e-r,Heor,,ehor,54
 They've,th-e-v,Heov,,ehov,54
 Someday,s-m-d-a,Smda,,adms,54
+Weird,u-e-r-d,Uerd,,deru,62
+Weirded,u-e-r-d-d,Uerdd,,deru,62
+Weirdly,u-e-r-d-e,Uerde,,deru,62
+Weirding,u-e-r-d-\-h,Uerdg,,degru,62
+Weirds,u-e-r-d-s,Uerds,,dersu,62
 You're,u-r,Ur,,rux,78
 Overtime,o-/-tm,Otm,o,mot,93
 Timed,tm-d,Tmd,,mtvd,93
@@ -194,7 +199,6 @@ Disbelieved,d-s-b-e-d,Dsbed,,bdes,312
 Disbelieving,d-s-b-e-\-h,Dsbeg,,bdegs,312
 Disbelieves,d-s-b-e-s,Dsbes,,bdes,312
 Unbelieving,n-b-e-\-h,Nbeg,,begn,312
-Read,r-e-d,Redw,w,derw,323
 Downpour,dn-p-o-r,Dnpor,,dnopr,324
 Pour,p-o-r,Por,,oprz,324
 Poured,p-o-r-d,Pord,,dopr,324
@@ -279,6 +283,11 @@ Livery,l-a-v-r-e,Lavre,,aelrv,445
 Liveries,l-a-v-r-e-s,Lavres,,aelrsv,445
 Livers,l-a-v-r-s,Lavrs,,alrsv,445
 Lives,l-a-v-s,Lavs,,alsv,445
+Doubted,d-a-u-d,Dwd,,dw,447
+Doubting,d-a-u-\-h,Dwg,,dgw,447
+Doubts,d-a-u-s,Dws,,dsw,447
+Redoubt,r-e-d-a-u,Redw,,derw,447
+Redoubts,r-e-d-a-u-s,Redws,,dersw,447
 Hardly,^-h-\-a2-d-e,Hade,,adeh,448
 Hardy,^-h-\-a2-d-e,Hadeo,o,adeho,448
 Harding,^-h-\-a2-d-\-h,Hadg,,adgh,448
@@ -949,6 +958,13 @@ Connectors,k-e-k-r-s,Kekrs,,ekrs,1770
 Brilliancy,br-e-l-e,Brele,,belor,1772
 Brilliancies,br-e-l-e-s,Breles,,belrs,1772
 Brilliance,br-e-l,Brelo,o,belor,1772
+Supplying,s-pl-i-\-h,Splig,,gilps,1774
+Supplier,s-pl-i-r,Splir,,ilprs,1774
+Suppliers,s-pl-i-r-s,Splirs,,ilprs,1774
+Supplies,s-pl-i-s,Splis,,ilps,1774
+Enjoyed,n-j-o-e-d,Njyd,,djny,1785
+Enjoying,n-j-o-e-\-h,Njyg,,gjny,1785
+Enjoys,n-j-o-e-s,Njys,,jnsy,1785
 Friendships,fr-/-sh-s,Frzs,,frsz,1791
 Protecting,pr-o-t-e-k-\-h,Protekg,,egkoprt,1802
 Protector,pr-o-t-e-k-r,Protekr,,ekoprt,1802
@@ -1128,6 +1144,8 @@ Wasteful,u-a-s2-t-f,Uastf,,afstu,2311
 Wastefully,u-a-s2-t-f-e,Uastfe,,aefstu,2311
 Wasting,u-a-s2-t-\-h,Uastg,,agstu,2311
 Wastes,u-a-s2-t-s,Uasts,,astu,2311
+Forgiving,f-g-e-\-h,Fgeg,,efg,2359
+Forgives,f-g-e-s,Fges,,efgs,2359
 Unreality,n-r-e-/-l,Nrel,,elnr,2364
 Realities,r-e-/-l-s,Rels,,elrs,2364
 Permanente,pr-mn-a,Prmna,,amnpr,2366
@@ -1207,6 +1225,8 @@ Decisioning,d-s-e-sh-\-h,Dsezg,,degsz,2681
 Decisions,d-s-e-sh-s,Dsezs,,desz,2681
 Existed,e-s-e-s-d,Xesd,,desx,2688
 Existing,e-s-e-s-\-h,Xesg,,egsx,2688
+Voting,v-t-\-h,Vtg,,gtv,2703
+Votes,v-t-s,Vts,,stv,2703
 Characteristically,k-a-k-/-s2-t-e,Kakste,,aekst,2724
 Characteristics,k-a-k-/-s2-t-s,Kaksts,,akst,2724
 Sensitive,s2-e-n-s-df,Sensdf,,defns,2737
@@ -1406,6 +1426,7 @@ Suggesting,s2-u-j-\-h,Sujg,,gjsu,3432
 Suggests,s2-u-j-s,Sujs,,jsu,3432
 Suggestively,s2-u-j-v-e,Sujve,,ejsuv,3432
 Suggestiveness,s2-u-j-v-n-s,Sujvns,,jnsuv,3432
+Teachers,t-e2-ch-e2-s,Teces,,cest,3443
 Resource,r-s2-o-s2,Rsos,,ors,3455
 Resourceful,r-s2-o-s2-f,Rsosf,,fors,3455
 Resourcefulness,r-s2-o-s2-f-n-s,Rsosfns,,fnors,3455
@@ -1426,6 +1447,7 @@ Vanities,v-/-nt-s,Vnts,,nstv,3520
 Balancing,b-a-l-\-h,Balg,,abgl,3523
 Balancer,b-a-l-r,Balr,,ablr,3523
 Balancers,b-a-l-r-s,Balrs,,ablrs,3523
+Doubtfully,d-a-u-f-e,Dwfe,,defw,3528
 Data,d-t-a,Dta,,adt,3533
 Database,d-t-a-b,Dtab,,abdt,3533
 Databased,d-t-a-b-d,Dtabd,,abdt,3533
@@ -1465,6 +1487,7 @@ Reestablish,r-e-s2-t-b,Restb,,berst,3682
 Reestablished,r-e-s2-t-b-d,Restbd,,berstd,3682
 Reestablishing,r-e-s2-t-b-\-h,Restbg,,berstg,3682
 Reestablishes,r-e-s2-t-b-s,Restbs,,bersts,3682
+Enjoyments,n-j-o-e-m-s,Njyms,,jmnsy,3690
 Advisedly,v-i-s2-d-e,Visde,,deisv,3701
 Disciplined,d-s-pl-e-n-d,Dsplend,,delnps,3709
 Disciplining,d-s-pl-e-n-\-h,Dspleng,,deglnps,3709
@@ -1499,6 +1522,7 @@ Reserviors,r-s2-e-v-o-r-\-<-n-s,Rsevors,,eorsv,3764
 Reserves,r-s2-e-v-s,Rsevs,,ersv,3764
 Decomposition,d-e-k-p-o-sh,Dkpoz,,dkopz,3767
 Compositions,k-p-o-sh-s,Kpozs,,kopsz,3767
+Undoubted,n-d-a-u-/-t,Ndwt,,dntw,3796
 Misinform,m-s-n-m-f,Msnmf,,fmns,3807
 Misinformed,m-s-n-m-f-d,Msnmfd,,dfmns,3807
 Misinforming,m-s-n-m-f-\-h,Msnmfg,,fgmns,3807
@@ -1701,6 +1725,11 @@ Awkwardnesss,o-k-d-n-e-s-s,Okdness,,deknos,4968
 Researched,r-s2-e-ch-d,Rsecd,,cders,4980
 Researching,r-s2-e-ch-\-h,Rsecg,,cegrs,4980
 Researchs,r-s2-e-ch-s,Rsecs,,cers,4980
+Rejoiced,r-j-o-e-s-d,Rjysd,,djrsy,4988
+Rejoiceful,r-j-o-e-s-f,Rjysf,,fjrsy,4988
+Rejoicefully,r-j-o-e-s-f-e,Rjysfe,,efjrsy,4988
+Rejoicing,r-j-o-e-s-\-h,Rjysg,,gjrsy,4988
+Rejoices,r-j-o-e-s-s,Rjyss,,jrsy,4988
 Documented,d-o-k-m-d,Dokmd,,dkmo,5069
 Documenting,d-o-k-m-\-h,Dokmg,,dgkmo,5069
 Documentary,d-o-k-m-r-e,Dokmre,,dekmor,5069
@@ -1880,6 +1909,7 @@ Modification,m-o-d-\-f,Modfi,i,dfimo,6086
 Modifications,m-o-d-\-f-s,Modfs,,dfmos,6086
 Modifies,m-o-df-s,Modfso,o,dfmos,6086
 Preachers,pr-e2-ch-e2-s,Preces,,ceprs,6137
+Momentarily,m-o-m-r-ye,Momry,,mory,6159
 Faster,f-a-s2-t-e2,Faste,,aefst,6175
 Extracted,e-s-/-k-d,Xkd,,dkx,6269
 Extracting,e-s-/-k-\-h,Xkg,,gkx,6269
@@ -2045,6 +2075,16 @@ Abilities,a-b-s,Abso,o,abos,8337
 Behavioral,b-^-h-\-a-v-r-l,Bhavrl,,abhlrv,8429
 Behaviorally,b-^-h-\-a-v-r-l-e,Bhavrle,,abehlrv,8429
 Behaviors,b-^-h-\-a-v-r-s,Bhavrs,,abhrsv,8429
+Grading,g-r-a-\-h,Grag,,agr,8441
+Grades,g-r-a-s,Graso,o,agors,8441
+Graded,g-r-a-t,Grat,,agrt,8441
+Upgrade,u-p-g-r-a,Upgra,,agpru,8441
+Upgradable,u-p-g-r-a-b,Upgrab,,abgpru,8441
+Upgradably,u-p-g-r-a-b-e,Upgrabe,,abegpru,8441
+Upgradability,u-p-g-r-a-\-b,Upgrabo,o,abgopru,8441
+Upgraded,u-p-g-r-a-d,Upgrad,,adgpru,8441
+Upgrading,u-p-g-r-a-\-h,Upgrag,,agpru,8441
+Upgrades,u-p-g-r-a-s,Upgras,,agprsu,8441
 Transport,t-/-p-o-t,Tpot,,opt,8504
 Transported,t-/-p-o-t-d,Tpotd,,dopt,8504
 Transporting,t-/-p-o-t-\-h,Tpotg,,gopt,8504
@@ -2508,6 +2548,9 @@ Programming,pr-\-g-\-h,Prgga,a,agpr,17132
 Programmer,pr-\-g-r,Prgra,a,agpr,17132
 Programmers,pr-\-g-r-s,Prgrsa,a,agprs,17132
 Programs,pr-\-g-s,Prgsa,a,agprs,17132
+Degraded,d-e-g-r-a-d,Degrad,,adegr,17145
+Degrading,d-e-g-r-a-\-h,Degrag,,adegr,17145
+Degrades,d-e-g-r-a-s,Degras,,adegrs,17145
 Confusing,k-f-e-u-\-h,Kfug,,fgku,17213
 Confusingly,k-f-e-u-\-h-e,Kfuge,,efgku,17213
 Confuses,k-f-e-u-s,Kfus,,fksu,17213
@@ -2586,6 +2629,7 @@ Federating,f-e-d-r-a-\-h,Fedrag,,adefgr,19649
 Federates,f-e-d-r-a-s,Fedras,,adefrs,19649
 Federations,f-e-d-r-a-sh-s,Fedrazs,,adefrsz,19649
 Requirements,r-k-i-m-s,Rqims,,imqrs,19812
+Enjoyably,n-j-o-e-b-e,Njybe,,bejny,19860
 Plenipotentiary,pl-e-n-e-p,Plenep,,elnp,20082
 Indecisions,nt-s-e-sh-s,Ntsezs,,enstz,20145
 Notified,n-o-df-d,Nodfd,,dfno,20151
@@ -3108,6 +3152,8 @@ Excludes,e-s-/-d-s,Xds,,dsx,70565
 Federalist,f-e-d-e-s,Fedes,,defs,70591
 Federalists,f-e-d-e-s-s,Fedess,,defs,70591
 Federals,f-e-d-s,Feds,,defs,70591
+Forgivably,f-g-e-/-b-e,Fgebe,,befg,70638
+Forgivability,f-g-e-/-b,Fgebo,o,befgo,70638
 Guarantors,g-a2-nt-r-s,Gantrs,,agnrst,70716
 High-handedly,^-h-\-i-^-h-\-nt-d-e,Hihntde,,dehint,70770
 Highway s,i2-n-s,Ins,,ins,70771
