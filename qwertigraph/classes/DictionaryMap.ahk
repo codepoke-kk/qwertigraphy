@@ -346,7 +346,7 @@ class DictionaryMap
 			; msgbox, % "Looping with " sortableKey "=" form.word
 			dictline := qwerd.word "," qwerd.form "," qwerd.qwerd "," qwerd.keyer "," qwerd.chord "," qwerd.usage "`n"
 			this.logEvent(4, "Writing " dictline " to " qwerd.dictionary)
-			if (qwerd.word = "Asked" or qwerd.word = "Called" or qwerd.word = "Looked") {
+			if (qwerd.word = "Changed" or qwerd.word = "Called" or qwerd.word = "Looked") {
 				this.logEvent(1, "Writing sortable for " dictline " to " qwerd.dictionary)  
 			}
 			fileHandles[qwerd.dictionary].Write(dictline)

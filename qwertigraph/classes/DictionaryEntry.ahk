@@ -29,7 +29,7 @@ class DictionaryEntry
 		this.isCapped := ((SubStr(upperedWord,1,1)) == (SubStr(this.word,1,1)))
 		this.isProper := (((not this.isUpper) and (not this.isLower)) 
 			or (this.isUpper and ((StrLen(this.word) == 1))) 
-			or (this.isUpper and (InStr(this.word, "()"))) 
+			or (this.isUpper and (RegexMatch(this.word, "[0-9()]"))) 
 			or (this.isCapped and (StrLen(this.qwerd) == 1)))
     }
 	

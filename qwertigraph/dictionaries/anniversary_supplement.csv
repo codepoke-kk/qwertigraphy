@@ -98,6 +98,7 @@ Youngster,u-ng-s-t-e2,Ugste,,egstu,166
 Precious,pr-e-sh-u-s,Prezuso,o,eoprsuz,174
 Parted,p-t-d,Ptd,,dpt,174
 Parting,p-t-\-h,Ptg,,gpt,174
+Putting,p-\-h,Pg,,gp,181
 Righted,r-i-d,Rid,,dir,187
 Rightful,r-i-f,Rif,,fir,187
 Rightfully,r-i-f-e,Rife,,efir,187
@@ -616,6 +617,10 @@ Origination,o-r-e-j-n-sh,Orejnz,,ejnorz,885
 Originations,o-r-e-j-n-sh-s,Orejnzs,,ejnorsz,885
 Originals,o-r-e-j-s,Orejs,,ejors,885
 Conversational,k-v-e-sh-l,Kvezl,,eklvz,888
+Paragraph,^-p-/-g,Pga,a,agp,893
+Paragraphed,^-p-/-g-d,Pgd,,dgp,893
+Paragraphing,^-p-/-g-\-h,Pgg,,gp,893
+Paragraphs,^-p-/-g-s,Pgs,,gps,893
 Directions,d-r-k-sh-s,Drkzs,,dkrsz,907
 Redirection,r-e-d-r-k-sh,Redrkz,,dekrz,907
 Redirections,r-e-d-r-k-sh-s,Redrkzs,,dekrsz,907
@@ -2451,6 +2456,7 @@ Symptoms,s-e-m-tm-s,Semtms,,emst,13544
 Forefinger,f-f-e2-ng-e2,Ffeqe,,efq,13694
 Forefingers,f-f-e2-ng-e2-s,Ffeqes,,efqs,13694
 Frequencies,fr-e-k-s,Freqso,o,efoqrs,13798
+Changed,ch-/-t,Ct,,cdt,13864
 Hypocrite,^-h-\-e-p-k-r-e-t,Hepkret,,ehkprt,13868
 Hypocrites,^-h-\-e-p-k-r-e-t-s,Hepkrets,,ehkprst,13868
 Hypocritical,^-h-\-e-p-k-r-ya,Hepkry,,ehkpry,13868
