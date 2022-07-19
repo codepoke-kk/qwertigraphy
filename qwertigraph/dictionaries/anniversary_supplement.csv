@@ -181,6 +181,8 @@ Poorest,p-u-s-t,Pust,,pstu,282
 Certainly,s2-e-tn-e,Setne,,enst,283
 Certainty,s2-e-tn-t-e,Setnte,,enst,283
 Certainties,s2-e-tn-t-e-s,Setntes,,enst,283
+Ordering,o-d-\-h,Odg,,dgo,304
+Orders,o-d-s,Ods,,dos,304
 Voiced,v-o-e-s-d,Vysd,,dsvy,311
 Voicing,v-o-e-s-\-h,Vysg,,gsvy,311
 Voicemail,v-o-e-s-m,Vysm,,msvy,311
@@ -378,6 +380,8 @@ Unsound,n-s2-nt,Nsnt,,nst,567
 Sounding,s2-nt-\-h,Sntg,,gnst,567
 Soundings,s2-nt-\-h-s,Sntgs,,gnst,567
 Sounds,s2-nt-s,Snts,,nst,567
+Forwarder,f-d-r,Fdr,,dfr,572
+Forwarders,f-d-r-s,Fdrs,,dfrs,572
 Receiving,r-s2-e-\-h,Rseg,,egrs,580
 Receives,r-s2-e-s,Rses,,ers,580
 Granddaughter,g-/-d-o-t-e2,Gdote,,degot,583
@@ -395,6 +399,7 @@ Runner,r-n-r,Rnr,,cnr,586
 Runners,r-n-r-s,Rnrs,,nrs,586
 Runs,r-n-s,Rns,,nrs,586
 Importantly,m-p-e,Mpe,,emp,598
+Krishna,k-r-e-sh-n,Krezn,,eknrz,600
 Serviceable,^-s2-b,Sb,,bcs,601
 Serviceably,^-s2-b-e,Sbe,,bes,601
 Serviced,^-s2-d,Sd,,cds,601
@@ -654,6 +659,8 @@ Successively,s2-u-k-v-e,Sukve,,eksuv,1001
 Succession,s2-u-k-sh,Sukz,,ksuz,1001
 Successions,s2-u-k-sh-s,Sukzs,,ksuz,1001
 Rebuilt,r-bl,Rbl,,blr,1002
+Offering,o-f-\-h,Ofg,,fgo,1034
+Offers,o-f-s,Ofs,,fos,1034
 Promising,pr-m-e-s-\-h,Prmesg,,egmprs,1066
 Completely,kp-e,Kpe,,ekp,1081
 Completeness,kp-n-s,Kpns,,knps,1081
@@ -1390,7 +1397,7 @@ Finishing,f-e-n-sh-\-h,Fenzg,,efgnz,3312
 Finisher,f-e-n-sh-r,Fenzr,,efnrz,3312
 Finishers,f-e-n-sh-r-s,Fenzrs,,efnrsz,3312
 Finishs,f-e-n-sh-s,Fenzs,,efnsz,3312
-Performances,pr-f-mn-s-s,Prfmmss,,fmprs,3320
+Performances,pr-f-mn-s-s,Prfmnss,,fmnprs,3320
 Detailing,td-a2-\-h,Ddag,,adg,3339
 Positively,p-o-s2-df-e,Posdfe,,defops,3340
 Positives,p-o-s2-df-s,Posdfs,,dfops,3340
@@ -2141,6 +2148,7 @@ Instructing,n-s-/-k-\-h,Nskg,,gkns,8912
 Instructs,n-s-/-k-s,Nsks,,kns,8912
 Instructive,n-s-/-k-v,Nskv,,knsv,8912
 Instructively,n-s-/-k-v-e,Nskve,,eknsv,8912
+Audacity,o-d-/-s,Odso,o,dos,8951
 Inoperative,n-o-pr-a-\-v,Noprav,,anoprv,9085
 Operated,o-pr-a-d,Oprad,,adopr,9085
 Operating,o-pr-a-\-h,Oprag,,agopr,9085
@@ -2278,6 +2286,9 @@ Partitioning,p-t-sh-\-h,Ptzg,,gptz,10750
 Partitions,p-t-sh-s,Ptzs,,pstz,10750
 Sometimes,s2-tm-s,Stms,,mst,10789
 Renewals,r-e-n-u-l-s,Renuls,,elnrsu,10904
+Accommodated,a-k-td-d,Akdtd,,adkt,10926
+Accommodating,a-k-td-\-h,Akdtg,,adgkt,10926
+Accommodates,a-k-td-s,Akdts,,adkst,10926
 Corrections,k-r-sh-s,Krzso,o,korsz,10981
 Output,a-u\--p,Wp,,cpw,10999
 Outputting,a-u-\-p-\-h,Wpg,,gpw,10999
@@ -2872,6 +2883,7 @@ Revocably,r-v-k-b-e,Rvkbe,,bekrv,30778
 Revoking,r-v-k-\-h,Rvkg,,gkrv,30778
 Revokes,r-v-k-s,Rvks,,krsv,30778
 Fasts,f-a-s2-t-s,Fastso,o,afost,31053
+Accommodations,a-k-d-sh-s,Akdzs,,adksz,31424
 Counterbalanced,k-/-b-a-l-d,Kbald,,abdkl,31490
 Highland,^-h-\-i-l-a-nt,Hilant,,ahilnt,31526
 Highlander,^-h-\-i-l-a-nt-r,Hilantr,,ahilnrt,31526
@@ -3296,6 +3308,8 @@ Filters,f-e-l-t-e2-s,Feltes,,eflst,90826
 Filteration,f-e-l-t-r-a-sh,Feltraz,,aeflrtz,90826
 Filterations,f-e-l-t-r-a-sh-s,Feltrazs,,aeflrstz,90826
 Complains,k-p-s,Kpso,o,kops,90909
+Straightforward,s-t-r-a-t-f-d,Stratfd,,adfrst,91152
+Straightforwardly,s-t-r-a-t-f-d-e,Stratfde,,adefrst,91152
 Purgatory,pr-g-a-t-r-e,Prgatre,,aegprt,91179
 Purge,pr-j,Prj,,jpr,91179
 Purged,pr-j-d,Prjd,,djpr,91179
@@ -3325,6 +3339,7 @@ Tracts,t-r-a-k-t-s,Trakts,,akrst,91733
 Widget,u-e-j-e-t,Wejet,,ejtw,91983
 Widgets,u-e-j-e-t-s,Wejets,,ejstw,91983
 Nuclear,n-u-k-l-ea-r,Nukler,,eklnru,92038
+Offing,o-f-\-h,Ofgo,o,fgo,92132
 Prefers,pr-e-f-s,Prefs,,efprs,92587
 Behave,b-^-h-\-a-v,Bhav,,abhv,92692
 Behaved,b-^-h-\-a-v-d,Bhavd,,abdhv,92692

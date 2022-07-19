@@ -56,6 +56,8 @@ class ClipperViewport
 	__New(qenv)
 	{
 		this.qenv := qenv
+        this.padlength := 31
+        this.padboundary := "zjacq"
 	}
  
  	WmCommand(wParam, lParam){
@@ -66,12 +68,25 @@ class ClipperViewport
 			this.loadClips()
 		}
 	}
+    GeneratePadding(padlen) {
+        Local
+        pad := ""
+        Loop, %padlen% {
+            Random, letter, 97, 122
+            pad := pad . Chr(letter)
+        }
+        Return, pad
+    }
     Encrypt(clipperkey, plaintext) {
     
         ; Only encrypt if we have a key 
         if (!StrLen(clipperkey)) { 
             Return plaintext 
         }
+    
+        padding := this.GeneratePadding(this.padlength)
+        plaintext := padding . this.padboundary . plaintext
+        
         functionkey := clipperkey
         ; the simple encryption used here requires the key be longer than the plaintext
         ; I'm just going to concatenate the key to itself as many times as needed 
@@ -110,7 +125,17 @@ class ClipperViewport
         {
             Decrypted .= Chr(((Asc(A_LoopField)-32)^(Asc(SubStr(functionkey,A_Index,1))-32))+32)
         }
-        Return Decrypted
+        
+        if (SubStr(Decrypted, this.padlength + 1, StrLen(this.padboundary)) != this.padboundary) {
+            ; Did not find the embedded pad boundary, which means we did not decrypt. Give no clues.
+            ; If you're reading this, you can crack this. But if you're reading this, nothing I can do could stop you
+            ; Putting this readable boundary into the decrypted string gives you a target
+            ; But it allows me to detect decryption failure and hide partial decryption hints from the UI
+            ; I'm happy to learn from any willing to teach 
+            Return "Decryption failure"
+        }
+        
+        Return SubStr(Decrypted, (this.padlength + StrLen(this.padboundary) + 1))
     }
     
 	saveClips() {
