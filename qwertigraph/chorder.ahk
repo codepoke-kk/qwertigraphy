@@ -1,4 +1,4 @@
-#NoEnv 
+#NoEnv
 #Warn
 #SingleInstance Force
 SetBatchLines, -1
@@ -7,7 +7,7 @@ process, priority, ,high
 CoordMode, ToolTip, Relative
 setworkingdir, %a_scriptdir%
 
-;engine := 0 ; Need the variable 
+;engine := 0 ; Need the variable
 
 OnExit("ExitFunc")
 
@@ -68,11 +68,11 @@ qenv := new QwertigraphyEnvironment()
 map := new DictionaryMap(qenv)
 aux := new AuxKeyboardEngine()
 engine := new MappingEngine(map, aux)
-aux.engine := engine 
+aux.engine := engine
 
 speedViewer := new SpeedViewport()
 speedViewer.addQueue(engine.speedQueue)
-		
+
 coach := new CoachViewport(map, speedViewer)
 coach.addQueue(engine.coachQueue)
 
@@ -82,10 +82,11 @@ editor := new EditorViewport(map)
 dashboard := new DashboardViewport(qenv, engine)
 speedViewer.dashboard := dashboard
 engine.dashboard := dashboard
-aux.dashboard := dashboard 
+aux.dashboard := dashboard
 stroker := new StrokepathsViewport(qenv, dashboard)
 player := new PlayerViewport(engine)
 clipper := new ClipperViewport(qenv)
+clipper.initialize()
 
 logViewer := new LogViewport(qenv)
 logViewer.addQueue(qenv.logQueue)
@@ -117,7 +118,7 @@ ExitFunc(ExitReason, ExitCode)
 {
    global
    ; gdi+ may now be shutdown on exiting the program
-   
+
    fh := logviewer.logFileHandle
    fh.WriteLine("Shutdown initiating at " A_Now)
    Gdip_Shutdown(dashboard.pToken)
@@ -142,7 +143,7 @@ ExitFunc(ExitReason, ExitCode)
 ~LButton::
 ~RButton::
     engine.ResetInput()
-    Return 
+    Return
 
 
 ; Enable/Disable
@@ -166,7 +167,7 @@ ExitFunc(ExitReason, ExitCode)
     aux.Start()
     Return
 !#d::
-	Gui MainGUI:Default 
+	Gui MainGUI:Default
 	GuiControlGet SettingsDashboardShow
     newShowSetting := (RegExMatch(SettingsDashboardShow, "^0$")) ? 1 : 0
     GuiControl, Text, SettingsDashboardShow, %newShowSetting%

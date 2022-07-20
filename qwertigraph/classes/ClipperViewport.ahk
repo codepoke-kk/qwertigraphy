@@ -73,6 +73,16 @@ class ClipperViewport
         this.padboundary := "zjacq"
 	}
 
+    initialize() {
+        Gui MainGUI:Default
+        Gui, Tab, Clipper
+
+        if (this.qenv.Properties.ClipperCurrentFilename) {
+            GuiControl, Text, ClipperFilename, % this.qenv.Properties.ClipperCurrentFilename
+            this.loadClips()
+        }
+    }
+
  	WmCommand(wParam, lParam){
 		if (lParam = this.hClipperSave) {
 			this.saveClips()
@@ -188,6 +198,10 @@ class ClipperViewport
         fileHandleClipper.WriteLine(this.Encrypt(clipperkey, p8))
         fileHandleClipper.WriteLine(this.Encrypt(clipperkey, p9))
         fileHandleClipper.Close()
+
+
+        this.qenv.Properties.ClipperCurrentFilename := filename
+		this.qenv.saveProperties()
     }
 
 	loadClips() {
