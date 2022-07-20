@@ -1,7 +1,10 @@
 
-Gui MainGUI:Default 
+Gui MainGUI:Default
 Gui, Tab, Clipper
 
+
+Gui, Add, Button, Default x838 y86 w90 h20 gClipperHide, Hide
+Gui, Add, Button, Default x838 y106 w90 h20 gClipperShow, Show
 
 Gui, Add, Text, x12  y64 w160 h20 , Pastable Fields:
 Gui, Add, Text, x12  y86 w160 h20 , P1:
@@ -49,17 +52,27 @@ ClipperLoad() {
 	clipper.loadClips()
 }
 
+ClipperHide() {
+	global clipper
+	clipper.hideClips()
+}
+
+ClipperShow() {
+	global clipper
+	clipper.showClips()
+}
+
 class ClipperViewport
 {
 	interval := 500
-	
+
 	__New(qenv)
 	{
 		this.qenv := qenv
         this.padlength := 31
         this.padboundary := "zjacq"
 	}
- 
+
  	WmCommand(wParam, lParam){
 		if (lParam = this.hClipperSave) {
 			this.saveClips()
@@ -78,19 +91,19 @@ class ClipperViewport
         Return, pad
     }
     Encrypt(clipperkey, plaintext) {
-    
-        ; Only encrypt if we have a key 
-        if (!StrLen(clipperkey)) { 
-            Return plaintext 
+
+        ; Only encrypt if we have a key
+        if (!StrLen(clipperkey)) {
+            Return plaintext
         }
-    
+
         padding := this.GeneratePadding(this.padlength)
         plaintext := padding . this.padboundary . plaintext
-        
+
         functionkey := clipperkey
         ; the simple encryption used here requires the key be longer than the plaintext
-        ; I'm just going to concatenate the key to itself as many times as needed 
-        Loop 
+        ; I'm just going to concatenate the key to itself as many times as needed
+        Loop
         {
             if (StrLen(functionkey) > StrLen(plaintext)) {
                 break
@@ -98,22 +111,22 @@ class ClipperViewport
             functionkey .= clipperkey
         }
         Encrypted := ""
-        Loop, Parse, plaintext 
+        Loop, Parse, plaintext
         {
             Encrypted .= Chr(((Asc(A_LoopField)-32)^(Asc(SubStr(functionkey,A_Index,1))-32))+32)
         }
-        
+
         Return Encrypted
     }
     Decrypt(clipperkey, cipherhash) {
-        ; Only decrypt if we have a key 
+        ; Only decrypt if we have a key
         if (!StrLen(clipperkey)) {
-            Return cipherhash 
+            Return cipherhash
         }
         functionkey := clipperkey
         ; the simple encryption used here requires the key be longer than the plaintext
-        ; I'm just going to concatenate the key to itself as many times as needed 
-        Loop 
+        ; I'm just going to concatenate the key to itself as many times as needed
+        Loop
         {
             if (StrLen(functionkey) > StrLen(cipherhash)) {
                 break
@@ -121,38 +134,38 @@ class ClipperViewport
             functionkey .= clipperkey
         }
         Decrypted := ""
-        Loop, Parse, cipherhash 
+        Loop, Parse, cipherhash
         {
             Decrypted .= Chr(((Asc(A_LoopField)-32)^(Asc(SubStr(functionkey,A_Index,1))-32))+32)
         }
-        
+
         if (SubStr(Decrypted, this.padlength + 1, StrLen(this.padboundary)) != this.padboundary) {
             ; Did not find the embedded pad boundary, which means we did not decrypt. Give no clues.
             ; If you're reading this, you can crack this. But if you're reading this, nothing I can do could stop you
             ; Putting this readable boundary into the decrypted string gives you a target
             ; But it allows me to detect decryption failure and hide partial decryption hints from the UI
-            ; I'm happy to learn from any willing to teach 
+            ; I'm happy to learn from any willing to teach
             Return "Decryption failure"
         }
-        
+
         Return SubStr(Decrypted, (this.padlength + StrLen(this.padboundary) + 1))
     }
-    
+
 	saveClips() {
         home := this.qenv.personalDataFolder
         GuiControlGet filename,, ClipperFilename
         GuiControlGet clipperkey,, ClipperKey
         GuiControlGet clipperverify,, ClipperVerify
-        
+
         if (StrLen(clipperkey)) {
-            
+
             if (clipperverify != clipperkey) {
                 Msgbox % "The key you entered for verification does not match the key currently in the encryption key field. If you do not know that key, you will not be able to retrieve the data there encrypted. Please verify again. Clips not saved."
-                Return 
+                Return
             }
         }
-        
-        
+
+
         GuiControlGet p0,, ClipperP0
         GuiControlGet p1,, ClipperP1
         GuiControlGet p2,, ClipperP2
@@ -176,17 +189,44 @@ class ClipperViewport
         fileHandleClipper.WriteLine(this.Encrypt(clipperkey, p9))
         fileHandleClipper.Close()
     }
-    
+
 	loadClips() {
         home := this.qenv.personalDataFolder
         GuiControlGet filename,, ClipperFilename
         GuiControlGet clipperkey,, ClipperKey
-        
+
         iterator := 0
         Loop,Read, % home "\" filename   ;read clips
 		{
             GuiControl, Text, % "ClipperP" iterator, % this.decrypt(clipperkey, A_LoopReadLine)
             iterator++
 		}
+
+    }
+
+    hideClips() {
+        GuiControl, Hide, ClipperP1
+        GuiControl, Hide, ClipperP2
+        GuiControl, Hide, ClipperP3
+        GuiControl, Hide, ClipperP4
+        GuiControl, Hide, ClipperP5
+        GuiControl, Hide, ClipperP6
+        GuiControl, Hide, ClipperP7
+        GuiControl, Hide, ClipperP8
+        GuiControl, Hide, ClipperP9
+        GuiControl, Hide, ClipperP0
+    }
+
+    showClips() {
+        GuiControl, Show, ClipperP1
+        GuiControl, Show, ClipperP2
+        GuiControl, Show, ClipperP3
+        GuiControl, Show, ClipperP4
+        GuiControl, Show, ClipperP5
+        GuiControl, Show, ClipperP6
+        GuiControl, Show, ClipperP7
+        GuiControl, Show, ClipperP8
+        GuiControl, Show, ClipperP9
+        GuiControl, Show, ClipperP0
     }
 }
