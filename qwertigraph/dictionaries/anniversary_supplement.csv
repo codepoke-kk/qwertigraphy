@@ -56,6 +56,13 @@ Clarification,k-l-a-r-\-f,Klarfo,o,afklor,104
 Clarifications,k-l-a-r-\-f-s,Klarfs,,afklrs,104
 Two,t-u,Tuo,o,otuz,104
 Owning,o-n-\-h,Ong,,gno,119
+Projected,pr-j-k-d,Prjkd,,djkpr,122
+Projecting,pr-j-k-\-h,Prjkg,,gjkpr,122
+Projectile,pr-j-k-i-l,Prjkil,,ijklpr,122
+Projectiles,pr-j-k-i-l-s,Prjkils,,ijklprs,122
+Projects,pr-j-k-s,Prjks,,jkprs,122
+Projection,pr-j-k-sh,Prjkz,,jkprz,122
+Projections,pr-j-k-sh-s,Prjkzs,,jkprsz,122
 Products,pr-o-d-u-k-s,Produks,,dkoprsu,122
 Making,m-a-k-\-h,Makg,,agkm,125
 Rework,r-e-r-k,Rerk,,ekr,132
@@ -249,6 +256,7 @@ Returning,r-e-t-\-h,Retg,,egrt,375
 Returns,r-e-t-s,Rets,,erst,375
 Becoming,b-k-\-h,Bkg,,bgk,381
 Becomes,b-k-s,Bks,,bks,381
+Thousands,th-a-u-s,Hws,,hsw,382
 Calling,k-o-\-h,Kog,,gko,386
 Calls,k-o-s,Kos,,kozs,386
 Callout,k-o-a-u,Kow,,kow,386
@@ -382,6 +390,9 @@ Unsound,n-s2-nt,Nsnt,,nst,567
 Sounding,s2-nt-\-h,Sntg,,gnst,567
 Soundings,s2-nt-\-h-s,Sntgs,,gnst,567
 Sounds,s2-nt-s,Snts,,nst,567
+Remembered,r-e-mn-d,Remmd,,demr,568
+Remembering,r-e-mn-\-h,Remmg,,egmr,568
+Remembers,r-e-mn-s,Remms,,emrs,568
 Forwarder,f-d-r,Fdr,,dfr,572
 Forwarders,f-d-r-s,Fdrs,,dfrs,572
 Receiving,r-s2-e-\-h,Rseg,,egrs,580
@@ -542,6 +553,7 @@ Quiets,k-i-t-s,Qits,,iqst,792
 Quietest,k-i-t-s-t,Qitst,,iqst,792
 Besides,b-s-i-s,Bsis,,bis,793
 Expressions,e-s-pr-e-sh-s,Xprezs,,eprsxz,795
+Walks,u-o-k-s,Uoks,,kosu,802
 Wondered,u-u-n-d,Uund,,dnu,803
 Wondering,u-u-n-\-h,Uung,,gnu,803
 Wonderland,u-u-n-l,Uunl,,lnu,803
@@ -585,6 +597,8 @@ Supporting,s-/-t-\-h,Stgi,i,gist,858
 Supports,s-/-t-s,Stsi,i,ist,858
 Supportively,s-/-t-v-e,Stvei,i,eistv,858
 Supportive,s-/-t-v,Stvi,i,istv,858
+Fighting,f-i-t-\-h,Fitg,,fgit,861
+Fights,f-i-t-s,Fitso,o,fiost,861
 Experienced,e-s-p-d,Xpd,,dpx,862
 Experiencing,e-s-p-\-h,Xpg,,gpx,862
 Accession,a-k-s-e-sh,Aksez,,aeksz,871
@@ -714,6 +728,11 @@ March,m-a-ch,Maco,o,acmo,1171
 Marches,m-a-ch-s,Macso,o,acmos,1171
 Crowding,k-r-a-u-\-h,Krwg,,gkrw,1176
 Crowds,k-r-a-u-s,Krws,,krsw,1176
+Ruled,r-l-d,Rld,,dlr,1180
+Ruling,r-l-\-h,Rlg,,glr,1180
+Ruler,r-l-r,Rlr,,lr,1180
+Rulers,r-l-r-s,Rlrs,,lrs,1180
+Rules,r-l-s,Rls,,lrs,1180
 Judged,j-j-d,Jjd,,dj,1190
 Judges,j-j-s,Jjs,,jsz,1190
 Served,s2-e-v-d,Sevd,,desv,1191
@@ -748,6 +767,8 @@ Reports,r-pr-s,Rprs,,prs,1256
 Secured,s2-e-k-r-d,Sekrd,,dekrs,1260
 Securing,s2-e-k-r-\-h,Sekrg,,egkrs,1260
 Secures,s2-e-k-r-s,Sekrs,,ekrs,1260
+Measured,m-e-sh-u-d,Mezud,,demuz,1277
+Measuring,m-e-sh-u-\-h,Mezug,,egmuz,1277
 Licensed,l-i-s2-n-s-d,Lisnsd,,dilns,1293
 Licensing,l-i-s2-n-s-\-h,Lisnsg,,gilns,1293
 Licenses,l-i-s2-n-s-s,Lisnss,,ilns,1293
@@ -1228,7 +1249,6 @@ Reroute,r-e-r-u-t,Rerut,,ertu,2671
 Rerouted,r-e-r-u-t-d,Rerutd,,dertu,2671
 Rerouting,r-e-r-u-t-\-h,Rerutg,,egrtu,2671
 Reroutes,r-e-r-u-t-s,Reruts,,erstu,2671
-Routed,r-u-t-d,Rutd,,drtu,2671
 Routing,r-u-t-\-h,Rutg,,rtug,2671
 Router,r-u-t-r,Rutr,,rtur,2671
 Routers,r-u-t-r-s,Rutrs,,rturs,2671
@@ -1491,6 +1511,8 @@ Perfected,pr-f-d,Prfd,,dfpr,3629
 Perfectly,pr-f-e,Prfe,,efpr,3629
 Perfecting,pr-f-\-h,Prfg,,fgpr,3629
 Perfects,pr-f-s,Prfs,,fprs,3629
+Perfection,pr-f-s2h,Prfz,,fprz,3629
+Perfections,pr-f-s2h-s,Prfzs,,fprsz,3629
 Correspondences,k-r-e-s-s,Kress,,ekrs,3646
 Associations,a-s2-o-sh-s,Asozs,,aosz,3676
 Established,e-s2-t-b-d,Estbd,,bestd,3682
@@ -1924,6 +1946,9 @@ Modifies,m-o-df-s,Modfso,o,dfmos,6086
 Preachers,pr-e2-ch-e2-s,Preces,,ceprs,6137
 Momentarily,m-o-m-r-ye,Momry,,mory,6159
 Faster,f-a-s2-t-e2,Faste,,aefst,6175
+Spoil,s-p-o-e-l,Spyl,,lpsy,6243
+Spoiling,s-p-o-e-l-\-h,Spylg,,glpsy,6243
+Spoils,s-p-o-e-l-s,Spyls,,lpsy,6243
 Extracted,e-s-/-k-d,Xkd,,dkx,6269
 Extracting,e-s-/-k-\-h,Xkg,,gkx,6269
 Extracts,e-s-/-k-s,Xks,,ksx,6269
@@ -2079,7 +2104,6 @@ Theologians,h-e-\-o-n-s,Heons,,ehnos,8166
 Theology,h-e-\-o,Heoo,o,eho,8166
 Theologies,h-e-\-o-s,Heos,,ehos,8166
 Delete,d-l-e-t,Dlet,,delt,8274
-Deleted,d-l-e-t-d,Dletd,,delt,8274
 Deleting,d-l-e-t-\-h,Dletg,,deglt,8274
 Deleter,d-l-e-t-r,Dletr,,delrt,8274
 Deleters,d-l-e-t-r-s,Dletrs,,delrst,8274
@@ -2619,6 +2643,7 @@ Diagrammatic,d-i-\-g-\-a,Digaa,a,adgi,18617
 Diagramed,d-i-\-g-d,Digd,,dgi,18617
 Diagraming,d-i-\-g-\-h,Digg,,dgi,18617
 Diagrams,d-i-\-g-s,Digs,,dgis,18617
+Measurement,m-e-sh-u-m,Mezum,,emuz,18979
 Augmented,o-g-m-d,Ogmd,,dgmo,19321
 Augmenting,o-g-m-\-h,Ogmg,,gmo,19321
 Augments,o-g-m-s,Ogms,,gmos,19321
