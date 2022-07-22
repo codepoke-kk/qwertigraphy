@@ -180,7 +180,6 @@ Overnight,Oni,Onio,o,ino,90233
 Moore,mur,Muro,o,moru,90235
 DUTCH,dc,Dc,,cdm,90236
 Vs,vess,Vesso,o,eosv,90237
-Mor,m,Mi,i,imv,90238
 Stale,stal,Stal,,alst,90239
 Hey,ha,Haii,ii,ahi,90240
 Overall,Ool,Ool,,loz,90241
@@ -675,7 +674,6 @@ Unavailable,nvalb,Nvalb,,ablnv,90793
 Blocked,blokt,Blokt,o,bklot,90794
 Lifted,leftd,Leftd,,deflt,90795
 Attacked,atakt,Atakt,,akt,90796
-Reacted,raktd,Raktd,,adkrt,90797
 Shooting,zutg,Zutg,,gtuz,90798
 Hap,hap,Hapo,o,ahop,90799
 Packet,pakt,Pakto,o,akopt,90800
@@ -722,7 +720,6 @@ Pane,pan,Pany,y,anpy,90841
 Charmed,cAmd,Camd,,acdm,90842
 Hash,haz,Hazu,u,ahuz,90843
 Codes,kods,Kods,,dkos,90844
-Generators,jenratrs,Jenratrs,,aejnrst,90845
 Nope,nop,Nop,,nop,90846
 Defeats,dfets,Dfets,,defst,90847
 Canceled,ksld,Ksldo,o,dklos,90848
@@ -966,7 +963,6 @@ Wired,ird,Ird,,dir,91115
 Wireless,uirls,Uirls,,ilrsu,91116
 Hoy,hoe,Hyu,u,huy,91119
 Lining,ling,Lingu,u,gilnu,91120
-Reacting,raktg,Raktg,,agkrt,91121
 Software,sofur,Sofur,,forsu,91122
 Flows,flos,Flos,,flos,91123
 Recording,rkdg,Rkdg,,dgkr,91124
@@ -1005,7 +1001,6 @@ Schemes,skems,Skems,,ekms,91164
 Drained,drand,Drand,,adnr,91165
 Classic,klask,Klask,,akls,91166
 Bearing,barg,Barg,,abgr,91168
-Straining,strang,Strang,,agnrst,91169
 Whining,uing,Uing,,ginu,91170
 Corrupted,krptd,Krptd,,dkprt,91172
 Integral,ntgrl,Ntgrl,,glnrt,91173
@@ -1088,7 +1083,6 @@ Designs,dsins,Dsins,,dins,91255
 Unresponsive,nresponsv,Nresponsv,,enoprsv,91257
 Culminated,klmnatd,Klmnatd,,adklmnt,91258
 Causing,ksg,Ksgo,o,gkos,91261
-Repairs,rpars,Rpars,,aprs,91262
 Blamed,blamd,Blamd,,abdlm,91263
 Informally,nfmly,Nfmly,,flmny,91264
 Engaged,ngajd,Ngajd,,adgjn,91265
@@ -1278,7 +1272,6 @@ Whoops,uups,Uups,,psu,91461
 Juggling,jglg,Jglg,,gjl,91463
 Visual,vezul,Vezul,,eluvz,91464
 Libraries,librres,Librres,,beilrs,91465
-Generated,jenratd,Jenratd,,adejnrt,91466
 Unreadable,nredb,Nredb,,bdenr,91467
 Compiler,kPilr,Kpilr,,iklpr,91468
 Overcoming,Okmg,Okmg,,gkmo,91469
@@ -1425,7 +1418,6 @@ Prob,prb,Prbi,i,bipr,91626
 Limb,lem,Lem,,elm,91627
 Moss,mos,Mosu,u,mosu,91628
 Wheeling,uelg,Uelg,,eglu,91629
-Repairing,rparg,Rparg,,agpr,91630
 Tainted,tntd,Tntd,,dnt,91631
 Palisade,palsad,Palsad,,adlps,91632
 Ole,ol,Olo,o,lox,91633
@@ -1696,7 +1688,6 @@ Mending,mndg,Mndg,,dgmn,91919
 Surviving,sEvivg,Sevivg,,egisv,91920
 Hurricanes,hekans,Hekans,,aehkns,91921
 Tornadoes,trnados,Trnados,,adnorst,91922
-Generator,jenEatE,Jenete,,ejnt,91924
 Distressing,dstresg,Dstresg,,degrst,91925
 Woe,uo,Uoe,e,eou,91926
 Optimistic,ptmestk,Ptmestk,,ekmpst,91927
@@ -1827,7 +1818,6 @@ Granddaughter,grandotE,Grandote,,adegnort,92062
 Drake,drak,Drak,,adkr,92063
 Dia,de,Deuu,uu,deu,92064
 Candace,kds,Kds,,dks,92065
-Generating,jenratg,Jenratg,,aegjnrt,92066
 Lacks,laks,Lakso,u,aklos,92067
 Claude,klod,Klod,,dklo,92068
 Bothering,bohrg,Bohrg,,bghor,92069
@@ -1920,7 +1910,6 @@ Sums,sms,Sms,,msz,92164
 Exclusively,esklusve,Xklusve,,eklsuvx,92165
 Ref,ref,Refo,o,efor,92166
 Attentions,tnzs,Tnzs,,nstz,92167
-Experienced,spet,Spet,,epst,92168
 Voltage,voltj,Voltj,,jlotv,92169
 Considering,ksg,Ksg,,gks,92170
 Pierre,peer,Peer,,epr,92171
@@ -2420,7 +2409,6 @@ Harmlessly,hAmlse,Hamlse,,aehlms,92706
 Deserves,dsevs,Dsevs,,desv,92707
 Unpunished,npnzt,Npnzt,,nptz,92708
 Echoed,ekod,Ekod,,deko,92709
-Reaction,rakz,Rakz,,akrz,92710
 Bubbled,bAH1bd,Bah1bd,,1abdh,92711
 Reopened,ropnd,Ropnd,,dnopr,92712
 Impersonal,mprsl,Mprsl,,lmprs,92714
@@ -2562,7 +2550,6 @@ Flew,flu,Flu,,flu,92859
 Trickling,treklg,Treklg,,egklrt,92860
 Simplify,sempf,Sempf,,efmps,92862
 Extremely,esMe,Xme,,emx,92863
-Genera,jenr,Jenr,,ejnr,92864
 Intensive,ntnsv,Ntnsv,,nstv,92865
 Charges,js,Jso,o,jos,92866
 Proceeded,prsedt,Prsedt,,deprst,92867
@@ -2608,7 +2595,6 @@ Wasp,uosp,Uosp,,opsu,92913
 Pest,pest,Pesto,o,eopst,92914
 Predict,prdekt,Prdekt,,dekprt,92915
 Concentration,knsntraz,Knsntraz,,aknrstz,92916
-Strain,stran,Stran,,anrst,92917
 Nie,ne,Neuu,uu,enu,92918
 Magically,majkle,Majkle,,aejklm,92919
 Blast,blast,Blasto,o,ablost,92920

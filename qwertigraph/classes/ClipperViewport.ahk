@@ -81,6 +81,7 @@ class ClipperViewport
             GuiControl, Text, ClipperFilename, % this.qenv.Properties.ClipperCurrentFilename
             this.loadClips()
         }
+        this.hideClips()
     }
 
  	WmCommand(wParam, lParam){
