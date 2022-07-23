@@ -26,17 +26,17 @@ editor := {}
 DictionaryDropDown := {}
 
 
-Gui MainGUI:Default 
-Gui, Tab, Editor		
+Gui MainGUI:Default
+Gui, Tab, Editor
 ; Add regex search fields
-Gui, Add, Edit, -WantReturn x12  y64 w160 h20 vRegexWord,  
-Gui, Add, Edit, -WantReturn x172 y64 w90  h20 vRegexForm,  
-Gui, Add, Edit, -WantReturn x262 y64 w90  h20 vRegexQwerd, 
-Gui, Add, Edit, -WantReturn x352 y64 w30  h20 vRegexKeyer, 
-Gui, Add, Edit, -WantReturn x382 y64 w80 h20 vRegexChord, 
-Gui, Add, Edit, -WantReturn x462 y64 w80 h20 vRegexChordable, 
-Gui, Add, Edit, -WantReturn x542 y64 w60  h20 vRegexUsage,  
-Gui, Add, Edit, -WantReturn x602 y64 w236 h20 vRegexDict, 
+Gui, Add, Edit, -WantReturn x12  y64 w160 h20 vRegexWord,
+Gui, Add, Edit, -WantReturn x172 y64 w90  h20 vRegexForm,
+Gui, Add, Edit, -WantReturn x262 y64 w90  h20 vRegexQwerd,
+Gui, Add, Edit, -WantReturn x352 y64 w30  h20 vRegexKeyer,
+Gui, Add, Edit, -WantReturn x382 y64 w80 h20 vRegexChord,
+Gui, Add, Edit, -WantReturn x462 y64 w80 h20 vRegexChordable,
+Gui, Add, Edit, -WantReturn x542 y64 w60  h20 vRegexUsage,
+Gui, Add, Edit, -WantReturn x602 y64 w236 h20 vRegexDict,
 Gui, Add, Button, Default x838 y64 w90 h20 gEditorSearchMapEntries, Search
 
 ; Add the data ListView
@@ -49,19 +49,19 @@ LV_ModifyCol(4, 30)
 LV_ModifyCol(5, 80)
 LV_ModifyCol(6, 80)
 LV_ModifyCol(7, 60)
-LV_ModifyCol(8, 216) ; 3 pixels short to avoid the h_scrollbar 
+LV_ModifyCol(8, 216) ; 3 pixels short to avoid the h_scrollbar
 
 ; Add edit fields and controls
-Gui, Add, Edit, x12  y540 w160 h20 vEditWord,  
-Gui, Add, Edit, x172 y540 w70  h20 vEditForm,  
-Gui, Add, Button, x242 y540 w20 h20 gEditorAutoQwerdForm, L> 
-Gui, Add, Edit, x262 y540 w90  h20 vEditQwerd, 
-Gui, Add, Button, x352 y540 w20 h20 gEditorAutoKey, K> 
-Gui, Add, Edit, x372 y540 w30  h20 vEditKeyer,  
-Gui, Add, Button, x402 y540 w20 h20 gEditorAutoChord, C> 
-Gui, Add, Edit, x422 y540 w50 h20 vEditChord,  
-Gui, Add, Edit, x472 y540 w80 h20 Disabled vEditChordable, 
-Gui, Add, Edit, x552 y540 w50  h20 vEditUsage, 
+Gui, Add, Edit, x12  y540 w160 h20 vEditWord,
+Gui, Add, Edit, x172 y540 w70  h20 vEditForm,
+Gui, Add, Button, x242 y540 w20 h20 gEditorAutoQwerdForm, L>
+Gui, Add, Edit, x262 y540 w90  h20 vEditQwerd,
+Gui, Add, Button, x352 y540 w20 h20 gEditorAutoKey, K>
+Gui, Add, Edit, x372 y540 w30  h20 vEditKeyer,
+Gui, Add, Button, x402 y540 w20 h20 gEditorAutoChord, C>
+Gui, Add, Edit, x422 y540 w50 h20 vEditChord,
+Gui, Add, Edit, x472 y540 w80 h20 Disabled vEditChordable,
+Gui, Add, Edit, x552 y540 w50  h20 vEditUsage,
 Gui, Add, DropDownList, x602 y540 w236 r5 vEditDict, %dictionaryDropDown%
 Gui, Add, Button, x838 y539 w90 h20 gEditorCommitEdit, Commit
 Gui, Add, Button, x838 y500 w90 h30 gEditorSaveDictionaries vSaveDictionaries , Save
@@ -74,25 +74,14 @@ Gui, Add, Button, x838 y90 w90 h20 gEditorOpenPersonalizations, Personalizations
 Gui, Add, Button, x838 y130 w90 h20 gEditorEditRow, Edit
 Gui, Add, Button, x838 y150 w90 h20 gEditorDeleteRow, Delete
 Gui, Add, Button, x838 y170 w90 h20 gEditorCreateRow_S, Add S
-Gui, Add, Button, x838 y190 w90 h20 gEditorCreateRow_G, Add G
-Gui, Add, Button, x838 y210 w90 h20 gEditorCreateRow_D, Add D
+Gui, Add, Button, x838 y190 w90 h20 gEditorCreateRow_D, Add D
+Gui, Add, Button, x838 y210 w90 h20 gEditorCreateRow_G, Add G
 Gui, Add, Button, x838 y230 w90 h20 gEditorCreateRow_T, Add T
 Gui, Add, Button, x838 y250 w90 h20 gEditorCreateRow_R, Add R
 Gui, Add, Button, x838 y270 w90 h20 gEditorCreateRow_LY, Add LY
-;Gui, Add, Edit, x815 y74 w20 h20 vBackupCount, 2
-;Gui, Add, Text, x840 y74 w105 h20, Backups to retain 
-
-; Create a popup menu to be used as the context menu:
-;Menu, EditorLVContextMenu, Add, Edit, ContextEditForm
-;Menu, FormsLVContextMenu, Add, Delete, ContextDeleteForm
-;Menu, FormsLVContextMenu, Add, Add 's', ContextAddToForm_S
-;Menu, FormsLVContextMenu, Add, Add 'g', ContextAddToForm_G
-;Menu, FormsLVContextMenu, Add, Add 'd', ContextAddToForm_D
-;Menu, FormsLVContextMenu, Add, Add 't', ContextAddToForm_T
-;Menu, FormsLVContextMenu, Add, Add 'r', ContextAddToForm_R
-;Menu, FormsLVContextMenu, Add, Add 'ly', ContextAddToForm_LY
-;Menu, FormsLVContextMenu, Default, Edit  ; Make "Edit" a bold font to indicate that double-click does the same thing.
-
+Gui, Add, Button, x838 y290 w90 h20 gEditorCreateRow_ION, Add ION
+Gui, Add, Button, x838 y310 w90 h20 gEditorCreateRow_ES, Add ES
+Gui, Add, Button, x838 y330 w90 h20 gEditorCreateRow_SDG, Add S+D+G
 
 EditorSearchMapEntries() {
 	global editor
@@ -125,7 +114,7 @@ EditorSaveDictionaries() {
 
 EditorLV() {
 	global editor
-	Gui MainGUI:Default 
+	Gui MainGUI:Default
     editor.logEvent(2, "Listview event " A_GuiEvent " on " A_EventInfo)
     if (A_GuiEvent = "DoubleClick") {
         editor.prepareEdit(A_EventInfo)
@@ -137,11 +126,11 @@ EditorLV() {
         Msgbox, % "You edited row " A_EventInfo " to: " RowText
     }
 }
-	
+
 
 EditorEditRow() {
 	global editor
-	Gui MainGUI:Default 
+	Gui MainGUI:Default
 	Gui, ListView, EditorLV
 	editor.logEvent(1, "Listview ContextMenu edit")
     FocusedRowNumber := LV_GetNext(0, "F")  ; Find the focused row.
@@ -154,7 +143,7 @@ EditorEditRow() {
 }
 EditorDeleteRow() {
 	global editor
-	Gui MainGUI:Default 
+	Gui MainGUI:Default
 	Gui, ListView, EditorLV
 	editor.logEvent(1, "Listview ContextMenu edit")
     FocusedRowNumber := LV_GetNext(0, "F")  ; Find the focused row.
@@ -169,7 +158,7 @@ EditorDeleteRow() {
 }
 EditorCreateRow_S() {
 	global editor
-	Gui MainGUI:Default 
+	Gui MainGUI:Default
 	Gui, ListView, EditorLV
     FocusedRowNumber := LV_GetNext(0, "F")  ; Find the focused row.
     if not FocusedRowNumber { ; No row is focused.
@@ -183,9 +172,25 @@ EditorCreateRow_S() {
 	editor.commitEdit()
 	editor.SearchMapEntries()
 }
+EditorCreateRow_ES() {
+	global editor
+	Gui MainGUI:Default
+	Gui, ListView, EditorLV
+    FocusedRowNumber := LV_GetNext(0, "F")  ; Find the focused row.
+    if not FocusedRowNumber { ; No row is focused.
+		editor.logEvent(1, "Listview edit event with no row selected")
+        return
+	}
+    editor.logEvent(3, "Listview context edit event adding ES on row " FocusedRowNumber)
+    editor.prepareEdit(FocusedRowNumber)
+    editor.addValueToEditFields("es", "-s", "s", "s")
+    editor.autoChord()
+	editor.commitEdit()
+	editor.SearchMapEntries()
+}
 EditorCreateRow_G() {
 	global editor
-	Gui MainGUI:Default 
+	Gui MainGUI:Default
 	Gui, ListView, EditorLV
     FocusedRowNumber := LV_GetNext(0, "F")  ; Find the focused row.
     if not FocusedRowNumber { ; No row is focused.
@@ -201,7 +206,7 @@ EditorCreateRow_G() {
 }
 EditorCreateRow_D() {
 	global editor
-	Gui MainGUI:Default 
+	Gui MainGUI:Default
 	Gui, ListView, EditorLV
     FocusedRowNumber := LV_GetNext(0, "F")  ; Find the focused row.
     if not FocusedRowNumber { ; No row is focused.
@@ -217,7 +222,7 @@ EditorCreateRow_D() {
 }
 EditorCreateRow_T() {
 	global editor
-	Gui MainGUI:Default 
+	Gui MainGUI:Default
 	Gui, ListView, EditorLV
     FocusedRowNumber := LV_GetNext(0, "F")  ; Find the focused row.
     if not FocusedRowNumber { ; No row is focused.
@@ -233,7 +238,7 @@ EditorCreateRow_T() {
 }
 EditorCreateRow_R() {
 	global editor
-	Gui MainGUI:Default 
+	Gui MainGUI:Default
 	Gui, ListView, EditorLV
     FocusedRowNumber := LV_GetNext(0, "F")  ; Find the focused row.
     if not FocusedRowNumber { ; No row is focused.
@@ -249,7 +254,7 @@ EditorCreateRow_R() {
 }
 EditorCreateRow_LY() {
 	global editor
-	Gui MainGUI:Default 
+	Gui MainGUI:Default
 	Gui, ListView, EditorLV
     FocusedRowNumber := LV_GetNext(0, "F")  ; Find the focused row.
     if not FocusedRowNumber { ; No row is focused.
@@ -263,6 +268,46 @@ EditorCreateRow_LY() {
 	editor.commitEdit()
 	editor.SearchMapEntries()
 }
+EditorCreateRow_ION() {
+	global editor
+	Gui MainGUI:Default
+	Gui, ListView, EditorLV
+    FocusedRowNumber := LV_GetNext(0, "F")  ; Find the focused row.
+    if not FocusedRowNumber { ; No row is focused.
+		editor.logEvent(1, "Listview edit event with no row selected")
+        return
+	}
+    editor.logEvent(3, "Listview context edit event adding ION on row " FocusedRowNumber)
+    editor.prepareEdit(FocusedRowNumber)
+    editor.addValueToEditFields("ion", "-sh", "z", "z")
+    editor.autoChord()
+	editor.commitEdit()
+	editor.SearchMapEntries()
+}
+EditorCreateRow_SDG() {
+	global editor
+	Gui MainGUI:Default
+	Gui, ListView, EditorLV
+    FocusedRowNumber := LV_GetNext(0, "F")  ; Find the focused row.
+    if not FocusedRowNumber { ; No row is focused.
+		editor.logEvent(1, "Listview edit event with no row selected")
+        return
+	}
+    editor.logEvent(3, "Listview context edit event adding S+D+G on row " FocusedRowNumber)
+    editor.prepareEdit(FocusedRowNumber)
+    editor.addValueToEditFields("s", "-s", "s", "s")
+    editor.autoChord()
+	editor.commitEdit()
+    editor.prepareEdit(FocusedRowNumber)
+    editor.addValueToEditFields("ed", "-d", "d", "d")
+    editor.autoChord()
+	editor.commitEdit()
+    editor.prepareEdit(FocusedRowNumber)
+    editor.addValueToEditFields("ing", "-\-h", "g", "g")
+    editor.autoChord()
+	editor.commitEdit()
+	editor.SearchMapEntries()
+}
 
 class EditorViewport
 {
@@ -270,19 +315,19 @@ class EditorViewport
 	logQueue := new Queue("EditorQueue")
 	logVerbosity := 2
 	keyers := Array("","o","u","i","e","a","w","y")
-	
+
 	__New(map)
 	{
 		this.map := map
 		this.qenv := this.map.qenv
 		this.logVerbosity := this.map.qenv.properties.LoggingLevelEditor
 		DictionaryDropDown := map.dictionaryPickList
-		
+
 	}
-	
+
 	listViewEvent() {
-		
-		Gui MainGUI:Default 
+
+		Gui MainGUI:Default
 		this.logEvent(2, "Listview event " A_GuiEvent " on " A_EventInfo)
 		if (A_GuiEvent = "DoubleClick") {
 			this.prepareEdit(A_EventInfo)
@@ -293,9 +338,9 @@ class EditorViewport
 			Msgbox, % "You edited row " A_EventInfo " to: " RowText
 		}
 	}
-		
+
 	searchMapEntries() {
-		local 
+		local
 		Gui MainGUI:Default
 		GuiControlGet RegexDict
 		GuiControlGet RegexWord
@@ -305,12 +350,12 @@ class EditorViewport
 		GuiControlGet RegexChord
 		GuiControlGet RegexChordable
 		GuiControlGet RegexUsage
-		
+
 		;global SaveProgress
-		
-		
+
+
 		this.logEvent(2, "RegexWord " RegexWord ", RegexForm " RegexForm ", RegexQwerd " RegexQwerd ", RegexKeyer " RegexKeyer ", RegexChord " RegexChord ", RegexChordable " RegexChordable ", RegexUsage " RegexUsage ", RegexDict " RegexDict )
-		
+
 		requiredMatchCount := 0
 		requiredMatchCount += (RegexWord) ? 1 : 0
 		requiredMatchCount += (RegexForm) ? 1 : 0
@@ -324,7 +369,7 @@ class EditorViewport
 		for qwerdKey, garbage in this.map.qwerds {
 			StringLower, qwerdKey, qwerdKey
 			if (foundKeys[qwerdKey]) {
-				; Must be case insensitive in this searching 
+				; Must be case insensitive in this searching
 				continue
 			}
 			qwerd := this.map.qwerds.item(qwerdKey)
@@ -377,8 +422,8 @@ class EditorViewport
 				}
 			}
 		}
-		
-		
+
+
 		Gui, ListView, EditorLV
 		LV_Delete()
 		foundCount := 0
@@ -400,9 +445,9 @@ class EditorViewport
 		Gui MainGUI:Default
 		GuiControlGet form, , EditForm
 		GuiControlGet word, , EditWord
-		
+
 		this.logEvent(3, "Generating auto qwerd for " form)
-	 
+
 		; Lowercase the whole word
 		StringLower, qwerd, form
 
@@ -426,15 +471,15 @@ class EditorViewport
 		; Prefixes
 		qwerd := RegexReplace(qwerd, "pr(e|o)", "pr")
 		qwerd := RegexReplace(qwerd, "per", "pr")
-		
+
 		qwerd := RegexReplace(qwerd, "-", "")
 		qwerd := RegexReplace(qwerd, "\d", "")
 		qwerd := RegexReplace(qwerd, "\W", "")
-		
+
 		GuiControl, Text, EditQwerd, %qwerd%
 
 	}
-				
+
 	autoKey() {
         local
 		Gui MainGUI:Default
@@ -442,42 +487,42 @@ class EditorViewport
 		GuiControlGet qwerd, , EditQwerd
 		GuiControlGet keyer, , EditKeyer
 		GuiControlGet dict, , EditDict
-		
+
 		this.logEvent(3, "Mapping to dict " dict)
 		dictionary := this.map.dictionaryShortToFullNames[dict]
 		qwerdKey := dictionary "!!" word
 		this.logEvent(3, "Seeking keyer for " qwerdKey)
 		newKeyer := this.getNextKeyer(qwerdKey, qwerd, word)
 		this.logEvent(2, "Setting newKeyer to " newKeyer)
-		
+
 		GuiControl, Text, EditKeyer, %newKeyer%
-	}			
+	}
 	autoChord() {
         local
 		Gui MainGUI:Default
 		GuiControlGet qwerd, , EditQwerd
-		
+
 		this.logEvent(3, "Generating auto chord for " qwerd)
-	 
+
 		; Lowercase the whole word
 		StringLower, chord, qwerd
 		chord := this.map.AlphaOrder(chord)
-		
+
 		GuiControl, Text, EditChord, %chord%
 	}
 
 	getNextKeyer(qwerdKey, qwerd, word) {
-        local 
+        local
 		Gui MainGUI:Default
 		this.logEvent(3, "Getting next keyer for " qwerd " and " qwerdKey)
 		allMatchingKeys := {}
 		allMatchingKeysCount := 0
-		
+
 		if (qwerd = "") {
 			this.logEvent(4, "Empty lazy form. Returning nill")
 			Return
 		}
-		
+
 		; Loop across all forms and keep every form that begins with this lazy key
 		for loopQwerdKey, garbage in this.map.qwerds {
 			loopQwerd := this.map.qwerds.item(loopQwerdKey)
@@ -487,7 +532,7 @@ class EditorViewport
 			}
 		}
 		this.logEvent(4, "Possible matching qwerds: " allMatchingKeys.MaxIndex() "(" allMatchingKeys.Length() ")")
-			
+
 		; Loop across all keyers in sequence, looking for the first that's not matched
 		for index, keyer in this.keyers {
 			keyedQwerd := qwerd . keyer
@@ -516,7 +561,7 @@ class EditorViewport
 				Return keyer
 			}
 		}
-		this.logEvent(3, "No keyer found in available options") 
+		this.logEvent(3, "No keyer found in available options")
 		Return "qq"
 	}
 
@@ -528,31 +573,44 @@ class EditorViewport
 		GuiControlGet qwerd, , EditQwerd
 		GuiControlGet chord, , EditChord
 		GuiControlGet keyer, , EditKeyer
-		
-		; I'm not ready to build a full grammar here, but removing "e" is going to save time 
-		if (InStr("er|ed|ing", WordAdd)) {
-			; remove "e" from the end of the word when adding er, ed, or ing
+
+		Switch WordAdd
+		{
+		Case "s":
+			word := RegExReplace(word, "y$", "ie")
+		Case "es":
+			word := RegExReplace(word, "e$", "")
+			word := RegExReplace(word, "y$", "i")
+		Case "er":
+			word := RegExReplace(word, "e$", "")
+		Case "ed":
+			word := RegExReplace(word, "e$", "")
+		Case "ing":
+			word := RegExReplace(word, "e$", "")
+		Case "ly":
+			word := RegExReplace(word, "le$", "")
+		Case "ion":
 			word := RegExReplace(word, "e$", "")
 		}
-		
+
 		; When a keyer exists, we have to remove it from the lazy form
 		if (StrLen(keyer)) {
 			; remove keyer from the end of the lazy form before adding LazyAdd
 			qwerd := RegExReplace(qwerd, keyer "$", "")
 		}
-		
+
 		GuiControl, Text, EditWord, %word%%WordAdd%
 		GuiControl, Text, EditForm, %form%%FormAdd%
 		GuiControl, Text, EditQwerd, %qwerd%%QwerdAdd%
 		GuiControl, Text, EditChord, %chord%%ChordAdd%
-		GuiControl, Text, EditKeyer, 
+		GuiControl, Text, EditKeyer,
 	}
 
 	prepareEdit(RowNumber) {
         local
 		Gui MainGUI:Default
 		this.logEvent(2, "Preparing edit for ListView row " RowNumber)
-		
+
 		Gui, ListView, EditorLV
 		; Get the data from the edited row
 		LV_GetText(EditWord, RowNumber, 1)
@@ -563,7 +621,7 @@ class EditorViewport
 		LV_GetText(EditChordable, RowNumber, 6)
 		LV_GetText(EditUsage, RowNumber, 7)
 		LV_GetText(EditDict, RowNumber, 8)
-		
+
 		; Push the data into the editing fields
 		GuiControl, Text, EditWord, %EditWord%
 		GuiControl, Text, EditForm, %EditForm%
@@ -578,27 +636,27 @@ class EditorViewport
 ;		} else {
 ;			GuiControl, Text, EditChord, %EditChord%
 ;		}
-		
+
 		; First convert the requested dictionary to its full name for display to the user
 		EditDict := this.map.dictionaryFullToShortNames[EditDict]
-		; Next change the dictionary if they're trying to edit a core dictionary 
-		if (InStr(EditDict, "_core.csv")) { 
+		; Next change the dictionary if they're trying to edit a core dictionary
+		if (InStr(EditDict, "_core.csv")) {
 			supplemental_dict := RegExReplace(EditDict, "_core.csv", "_supplement.csv")
 			dictList := RegexReplace(this.map.dictionaryPickList, supplemental_dict "\|?", supplemental_dict "||")
 		} else {
 			dictList := RegexReplace(this.map.dictionaryPickList, EditDict "\|?", EditDict "||")
 		}
-		
+
 		GuiControl, , EditDict, %dictList%
 	}
-	
+
 	commitEdit() {
         local
 		Gui MainGUI:Default
 		global DictionaryEntry
 		this.logEvent(3, "Commiting edit to qwerd")
-		
-		; Grab values the user has edited and wants to commit 
+
+		; Grab values the user has edited and wants to commit
 		GuiControlGet word, , EditWord
 		GuiControlGet form, , EditForm
 		GuiControlGet qwerd, , EditQwerd
@@ -606,24 +664,24 @@ class EditorViewport
 		GuiControlGet chord, , EditChord
 		GuiControlGet usage, , EditUsage
 		GuiControlGet dictionary, , EditDict
-		
+
 		; Convert the dictionary from its short name to its full name for storage
 		dictionary := this.map.dictionaryShortToFullNames[dictionary]
-		
-;		; Generate an autochord if it's requested by checkbox or explicit field value 
+
+;		; Generate an autochord if it's requested by checkbox or explicit field value
 ;		GuiControlGet autoChord, , AutoGenChords
 ;		;if ( chord = "Auto" ) or ( autoChord) {
-;		chord := word " = " qwerd " (" form ")  [" (StrLen(word) - StrLen(qwerd)) "]" 
-		
+;		chord := word " = " qwerd " (" form ")  [" (StrLen(word) - StrLen(qwerd)) "]"
+
 		newEntryCsv := word "," form "," qwerd "," keyer "," chord "," usage "," dictionary
 		this.logEvent(2, "Commiting fields: " newEntryCsv)
 		newEntry := new DictionaryEntry(newEntryCsv)
-		   
+
 		this.map.propagateEntryToMaps(newEntry)
-		
+
 		;GuiControl, Enable, SaveDictionaries
-		
-		; Reload the search view with the new value 
+
+		; Reload the search view with the new value
 		this.searchMapEntries()
 	}
 
@@ -632,26 +690,26 @@ class EditorViewport
 		this.map.saveDictionaries()
         Msgbox, % "Save complete"
 	}
-	
+
 	openPersonalizations() {
 		Run, % A_Windir "\explorer.exe " this.qenv.personalDataFolder
 	}
 
 	deleteForm() {
 		Gui MainGUI:Default
-		; Grab values the user has edited and wants to commit 
+		; Grab values the user has edited and wants to commit
 		GuiControlGet qwerdKey, , EditQwerd
-		
+
 		this.logEvent(3, "Deleting " qwerdKey)
 		this.map.deleteQwerdFromMaps(qwerdKey)
-		
-		; Reload the search view with the new value 
+
+		; Reload the search view with the new value
 		this.searchForms()
 	}
 
-	LogEvent(verbosity, message) 
+	LogEvent(verbosity, message)
 	{
-		if (verbosity <= this.logVerbosity) 
+		if (verbosity <= this.logVerbosity)
 		{
 			event := new LoggingEvent("editor",A_Now,message,verbosity)
 			this.logQueue.enqueue(event)

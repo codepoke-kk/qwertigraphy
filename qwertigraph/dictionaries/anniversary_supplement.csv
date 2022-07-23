@@ -797,6 +797,9 @@ Animals,a-n-e-m-s,Anems,,aemns,1326
 Actively,a-k-v-e,Akve,,aekv,1349
 Inactive,n-a-k-v,Nakv,,aknv,1349
 Inactivity,n-a-k-v-t-e,Nakvte,,aekntv,1349
+Slighted,s-l-i-d,Slid,,dils,1405
+Slighting,s-l-i-\-h,Slig,,gils,1405
+Slights,s-l-i-s,Slis,,ils,1405
 Encrypt,n-\-k,Nk,,knx,1413
 Encryptable,n-\-k-b,Nkb,,bkn,1413
 Encryptably,n-\-k-b-e,Nkbe,,bekn,1413
@@ -1630,6 +1633,10 @@ Internally,n-/-n-l-e,Nnle,,eln,3908
 Internals,n-/-n-l-s,Nnls,,lns,3908
 Criticisms,k-r-e-t-ss-s,Kretsss,,ekrst,3923
 Criticizes,k-r-e-t-ss-s,Kretssso,o,ekorst,3923
+Translate,t-/-l-a,Tla,,altz,3986
+Translated,t-/-l-a-d,Tlad,,adlt,3986
+Translating,t-/-l-a-\-h,Tlag,,aglt,3986
+Translates,t-/-l-a-s,Tlas,,alst,3986
 Inevitable,e-n-e-v-t-b,Enevtb,,bentv,4012
 Inevitably,e-n-e-v-t-b-e,Enevtbe,,bentv,4012
 Inevitability,e-n-e-v-t-\-b,Enevtbo,o,benotv,4012
@@ -1912,6 +1919,16 @@ Networks,n-e-t-r-k-s,Netrks,,eknrst,5683
 Workmanlike,r-k-mn-l,Rkmml,,klmr,5688
 Workman,r-k-mn,Rkmmu,u,kmru,5688
 Heathen,h-e-h-e-n,Hehen,,ehn,5689
+Murder,m-e2-d-e2,Mede,,dem,5712
+Murdered,m-e2-d-e2-d,Meded,,dem,5712
+Murdering,m-e2-d-e2-\-h,Medeg,,degm,5712
+Murderer,m-e2-d-e2-r,Meder,,demr,5712
+Murderers,m-e2-d-e2-r-s,Meders,,demrs,5712
+Murderous,m-e2-d-e2-r-u-s,Mederus,,demrsu,5712
+Murderously,m-e2-d-e2-r-u-s-e,Mederuse,,demrsu,5712
+Murders,m-e2-d-e2-s,Medes,,dems,5712
+Partially,p-a-r-sh-e,Parze,,aeprz,5712
+Partials,p-a-r-sh-s,Parzs,,aprsz,5712
 Youngest,u-ng-e-s,Uges,,egsu,5724
 Amaze,a-m-a-s,Amas,,ams,5749
 Amazed,a-m-a-s-d,Amasd,,adms,5749
@@ -2148,7 +2165,6 @@ Theologians,h-e-\-o-n-s,Heons,,ehnos,8166
 Theology,h-e-\-o,Heoo,o,eho,8166
 Theologies,h-e-\-o-s,Heos,,ehos,8166
 Delete,d-l-e-t,Dlet,,delt,8274
-Deleted,d-l-e-t-d,Dletd,,delt,8274
 Deleting,d-l-e-t-\-h,Dletg,,deglt,8274
 Deleter,d-l-e-t-r,Dletr,,delrt,8274
 Deleters,d-l-e-t-r-s,Dletrs,,delrst,8274
@@ -3186,7 +3202,7 @@ Authenticates,o-th-e-nt-s,Ohents,,ehnost,70155
 Authenticate,o-th-e-nt,Ohentu,u,ehnot,70155
 Authentication,o-th-e-nt-sh,Ohentz,,ehnotz,70155
 Authentications,o-th-e-nt-sh-s,Ohentzs,,ehnostz,70155
-Believably,b-e-b-e,Bebe,,be,70188
+Believably,b-e-b-e,Bebe,,bez,70188
 Unbelievable,n-b-e-b,Nbeb,,ben,70188
 Unbelievably,n-b-e-b-e,Nbebe,,ben,70188
 Clearages,k-l-e-/-j-s,Klejs,,ejkls,70295
