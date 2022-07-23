@@ -145,15 +145,20 @@ EditorDeleteRow() {
 	global editor
 	Gui MainGUI:Default
 	Gui, ListView, EditorLV
-	editor.logEvent(1, "Listview ContextMenu edit")
-    FocusedRowNumber := LV_GetNext(0, "F")  ; Find the focused row.
-    if not FocusedRowNumber { ; No row is focused.
-		editor.logEvent(1, "Listview edit event with no row selected")
-        return
+	editor.logEvent(1, "Listview multideletion event on " LV_GetCount("S") " rows")
+	RowNumber := 0  ; This causes the first loop iteration to start the search at the top of the list.
+	Loop
+	{
+		RowNumber := LV_GetNext(RowNumber)
+		if not RowNumber {
+			break
+		}
+		editor.logEvent(2, "Deleting row number " RowNumber )
+		LV_GetText(qwerdKey, RowNumber, 3)
+		editor.logEvent(2, "Found qwerd " qwerdKey)
+		editor.prepareEdit(RowNumber)
+		editor.map.deleteQwerdFromMaps(qwerdKey)
 	}
-    editor.logEvent(3, "Listview context delete event on row " FocusedRowNumber)
-    editor.prepareEdit(FocusedRowNumber)
-    editor.deleteForm()
 	editor.SearchMapEntries()
 }
 EditorCreateRow_S() {
