@@ -4,36 +4,36 @@ Class SerialExpander {
 	__New(engine) {
 		this.title := "SerialExpander"
 		this.name := "serialexpander"
-		this.engine := engine 
+		this.engine := engine
 		this.logQueue := engine.logQueue
 		this.logVerbosity := this.engine.LogVerbosity
-		
+
 		this.nullQwerd := new DictionaryEntry("null,,,,0,Could add,null_dictionary.csv")
-		
+
 		this.logEvent(3, "Engine " this.title " instantiated")
 	}
-	
+
 	Expand(token) {
 		this.logEvent(4, "Expanding after " token.ender " with " token.input)
-		
+
 		lastToken := 0
 		nextToLastToken := 0
 		lastToken := this.engine.record[this.engine.record.MaxIndex()]
 		nextToLastToken := this.engine.record[this.engine.record.MaxIndex() - 1]
-        
+
         this.logEvent(4, "Double depth data are lastToken ender " lastToken.ender ", lastToken input " lastToken.input ", nextToLastToken ender " nextToLastToken.ender)
-        
-        ; hard coded use semicolon to glue two words together 
-		if ((token.input) and (lastToken) and (lastToken.input) and (lastToken.ender == ";")) {
-            ; Any normal use of ; will have token ending with ;, then a space. If the previous token has a semicolon, then glue it 
-			this.logEvent(4, "Handling " token.input lastToken.ender " as a glued word")
+
+        ; hard coded use semicolon to glue two words together
+		if ((token.input) and (this.engine.Accumulator.retrievedTokenHorizon < this.engine.record.MaxIndex()) and (lastToken) and (lastToken.input) and (lastToken.ender == ";")) {
+            ; Any normal use of ; will have token ending with ;, then a space. If the previous token has a semicolon, then glue it
+			this.logEvent(3, "Handling " token.input lastToken.ender " as a glued word")
             token.extra_backspaces := 1
 		}
-        
+
         ; hard coded contraction handling
 		if ((lastToken) and (lastToken.ender == "'") and (InStr("|s|d|m|re|r|v|l|ll|t|", token.input))) {
 			this.logEvent(4, "Handling " lastToken.ender token.input " as a contraction")
-			Switch token.input 
+			Switch token.input
 			{
 				Case "s":
 					this.nullQwerd.word := "s"
@@ -114,9 +114,9 @@ Class SerialExpander {
 		return token
 	}
 
-	LogEvent(verbosity, message) 
+	LogEvent(verbosity, message)
 	{
-		if (verbosity <= this.logVerbosity) 
+		if (verbosity <= this.logVerbosity)
 		{
 			event := new LoggingEvent(this.name,A_Now,message,verbosity)
 			this.logQueue.enqueue(event)
