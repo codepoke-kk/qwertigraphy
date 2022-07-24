@@ -64,6 +64,7 @@ Gui, Add, Edit, x472 y540 w80 h20 Disabled vEditChordable,
 Gui, Add, Edit, x552 y540 w50  h20 vEditUsage,
 Gui, Add, DropDownList, x602 y540 w236 r5 vEditDict, %dictionaryDropDown%
 Gui, Add, Button, x838 y539 w90 h20 gEditorCommitEdit, Commit
+Gui, Add, Text, x838 y480 w90 h30 vEditsStatus, Edits: None
 Gui, Add, Button, x838 y500 w90 h30 gEditorSaveDictionaries vSaveDictionaries , Save
 ;Disabled
 ;Gui, Add, Progress, x12 y545 w700 h5 cOlive vSaveProgress, 1
@@ -710,6 +711,12 @@ class EditorViewport
 
 		; Reload the search view with the new value
 		this.searchForms()
+	}
+
+	updateEditsStatus(updated) {
+		this.logEvent(2, "Setting edits status to " updated)
+		GuiControl, Text, EditsStatus, % "Edits: " updated
+
 	}
 
 	LogEvent(verbosity, message)

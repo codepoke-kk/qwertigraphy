@@ -18,81 +18,81 @@ class DictionaryMap
 	chords := ComObjCreate("Scripting.Dictionary")
 	hints := ComObjCreate("Scripting.Dictionary")
 	displaceds := ComObjCreate("Scripting.Dictionary")
-	
+
 	logQueue := new Queue("DictionaryMapQueue")
 	logVerbosity := 2
-	
+
 	__New(qenv)
 	{
         local fields
 		this.qenv := qenv
 		this.logVerbosity := this.qenv.properties.LoggingLevelMap
-		
+
 		; Create the array of dictionary files to be loaded
 		this.logEvent(1, "Loading dictionaries list from " this.qenv.dictionaryListFile)
 		Loop, read, % this.qenv.dictionaryListFile
 		{
 			if (! RegexMatch(A_LoopReadLine, "^;")) {
 				this.logEvent(2, "Adding dictionary " A_LoopReadLine)
-				personalizedDict := RegExReplace(A_LoopReadLine, "AppData", this.qenv.personalDataFolder) 
+				personalizedDict := RegExReplace(A_LoopReadLine, "AppData", this.qenv.personalDataFolder)
 				this.dictionaries.Push(personalizedDict)
 				dictShortName := RegExReplace(personalizedDict, "^(.*\\)", "")
 				this.dictionaryFullToShortNames[personalizedDict] := dictShortName
-				this.dictionaryPickList := this.dictionaryPickList "|" dictShortName 
+				this.dictionaryPickList := this.dictionaryPickList "|" dictShortName
 				this.dictionaryShortToFullNames[dictShortName] := personalizedDict
 			} else {
 				this.logEvent(2, "Skipping dictionary " A_LoopReadLine)
 			}
 		}
-		
-		; Read in the negations (case sensitive words to never load) 
+
+		; Read in the negations (case sensitive words to never load)
 		this.logEvent(2, "Loading negations from " this.qenv.negationsFile)
 		Loop,Read, % this.qenv.negationsFile   ;read negations
 		{
 			this.logEvent(4, "Loading negation " A_LoopReadLine)
 			this.negations.item(A_LoopReadLine) := 1
 		}
-		; Read in the negations for chords (case insensitive chords to never load) 
+		; Read in the negations for chords (case insensitive chords to never load)
 		this.logEvent(2, "Loading negations for chords from " this.qenv.negationsChordsFile)
 		Loop,Read, % this.qenv.negationsChordsFile   ;read negations
 		{
 			this.logEvent(4, "Loading negation chord " A_LoopReadLine)
 			this.negationsChords.item(A_LoopReadLine) := 1
 		}
-		; Read in the retrains (words to flag when used, usually to break a bad habit) 
+		; Read in the retrains (words to flag when used, usually to break a bad habit)
 		this.logEvent(2, "Loading retrains from " this.qenv.retrainsFile)
 		Loop,Read, % this.qenv.retrainsFile   ;read retrains
 		{
 			this.logEvent(4, "Loading retrain " A_LoopReadLine)
 			this.retrains[A_LoopReadLine] := 1
 		}
-		
+
 		; Considering retrains and negations, load all definitions
 		for index, loadDictionary in this.dictionaries
 		{
 			this.logEvent(2, "Loading dictionary " loadDictionary)
-			; preload variable as false to capture any event making it true 
-			upgradeToV2Happened := false 
-			Loop,Read, % loadDictionary   ;read dictionary into Scripting.Dictionaries 
+			; preload variable as false to capture any event making it true
+			upgradeToV2Happened := false
+			Loop,Read, % loadDictionary   ;read dictionary into Scripting.Dictionaries
 			{
 				NumLines:=A_Index-1
 				if (A_Index = 1) {
-					; We do nothing with the title row, except check to see whether this is a v2 dictionary 
+					; We do nothing with the title row, except check to see whether this is a v2 dictionary
 					if (A_LoopReadLine ~= "hint") {
 						this.logEvent(1, loadDictionary " is v1 and must be upgrade to v2")
 						this.upgradeDictionaryToV2(loadDictionary)
 						upgradeToV2Happened := true
-					} 
-					Continue 
+					}
+					Continue
 				}
-				
+
 				if (upgradeToV2Happened) {
 					Continue
 				}
-				
+
 				newEntry := new DictionaryEntry(A_LoopReadLine "," loadDictionary)
                 this.logEvent(4, "Spawned " newEntry.qwerd " as " newEntry.word "," newEntry.chord "," newEntry.usage "," newEntry.hint " from " A_LoopReadLine)
-				
+
 				if (this.qwerds.item(newEntry.qwerd).word) {
 					; If we already have this one, keep it as a displaced entry, but do not overwrite the existing entry
 					this.displaceds.item(newEntry.qwerd) := newEntry
@@ -103,43 +103,43 @@ class DictionaryMap
 					this.displaceds.item(newEntry.qwerd) := newEntry
 					continue
 				}
-				
+
 				if (StrLen(newEntry.qwerd) > this.longestQwerd) {
 					this.longestQwerd := StrLen(newEntry.qwerd)
 				}
-				
+
 				this.propagateEntryToMaps(newEntry)
 
 			}
 			this.logEvent(1, "Loaded dictionary " loadDictionary " resulting in " NumLines " entries")
 		}
-				
+
 		if (upgradeToV2Happened) {
 			Msgbox, % "After dictionary upgrade, you must restart this script. Please close it and restart it"
 		}
 		this.dictionariesLoaded := 1
 		;MsgBox, % "Dictionaries fully loaded"
 	}
-	
+
 	propagateEntryToMaps(newEntry) {
 		this.logEvent(4, "Propagating " newEntry.qwerd " as " newEntry.word "," newEntry.chord "," newEntry.usage "," newEntry.hint)
         ; Evaluate chordability first
-		; Limit chord acceptance by length, by frequency of usage, and to only appear once 
+		; Limit chord acceptance by length, by frequency of usage, and to only appear once
 		if (StrLen(newEntry.chord) >= this.minimumChordLength) {
 			If (not this.chords.item(newEntry.chord).word) {
-				if (newEntry.Usage < this.maximumChordUsage) { 
+				if (newEntry.Usage < this.maximumChordUsage) {
 					chordability := "active"
-				} else { 
+				} else {
 					chordability := "rare"
 				}
-			} else { 
+			} else {
 				chordability := "unused"
 			}
-		} else { 
+		} else {
 			chordability := "short"
 		}
         newEntry.chordable := chordability
-        
+
 		; Force lower entries to lower
 		StringLower, qwerdlower, % newEntry.qwerd
 		StringLower, wordlower, % newEntry.word
@@ -148,7 +148,7 @@ class DictionaryMap
 		if (not this.negations.item(qwerdlower)) {
 			this.qwerds.item(qwerdlower) := newEntrylower
 		}
-		
+
 		; Force upper entries to upper
 		StringUpper, qwerdUPPER, % newEntry.qwerd
 		StringUpper, wordUPPER, % newEntry.word
@@ -157,8 +157,8 @@ class DictionaryMap
 		if (not this.negations.item(qwerdUPPER)) {
 			this.qwerds.item(qwerdUPPER) := newEntryUPPER
 		}
-		
-		; Allow single-capped entries to use full proper casing all the way through as given 
+
+		; Allow single-capped entries to use full proper casing all the way through as given
 		qwerdCapped := SubStr(qwerdUPPER, 1, 1) . SubStr(newEntry.qwerd, 2, (StrLen(newEntry.qwerd) - 1))
 		wordCapped := SubStr(wordUPPER, 1, 1) . SubStr(newEntry.word, 2, (StrLen(newEntry.word) - 1))
 		newEntryCapped := new DictionaryEntry(wordCapped "," newEntry.form "," qwerdCapped "," newEntry.keyer "," newEntry.chord "," newEntry.usage "," newEntry.dictionary)
@@ -166,25 +166,25 @@ class DictionaryMap
 		if (not this.negations.item(qwerdCapped)) {
 			this.qwerds.item(qwerdCapped) := newEntryCapped
 		}
-		
-		; With multiple qwerds possible for a word, we have to pick the right one to hint. 
+
+		; With multiple qwerds possible for a word, we have to pick the right one to hint.
 		if (not this.hints.item(newEntry.word).word) {
-			; If we don't already have a hint, then this is the one 
+			; If we don't already have a hint, then this is the one
 			this.hints.item(wordlower) := newEntrylower
 			this.hints.item(wordUPPER) := newEntryUPPER
 			this.hints.item(wordCapped) := newEntryCapped
 		} else if (this.hints.item(newEntry.word).qwerd == newEntry.qwerd) {
-			; if the current hint is for this form, then update the current entry 
+			; if the current hint is for this form, then update the current entry
 			this.hints.item(wordlower) := newEntrylower
 			this.hints.item(wordUPPER) := newEntryUPPER
 			this.hints.item(wordCapped) := newEntryCapped
-		} ; If the current hint is for another form of the word, then do nothing 
-		
+		} ; If the current hint is for another form of the word, then do nothing
+
         if (chordability == "active") {
 			if (not this.negationsChords.item(newEntrylower.chord)) {
-				this.logEvent(4, "Adding chord " newEntrylower.chord " as " newEntrylower.word) 
+				this.logEvent(4, "Adding chord " newEntrylower.chord " as " newEntrylower.word)
 				this.chords.item(newEntry.chord) := newEntrylower
-				
+
 				StringUpper, chordUPPER, % newEntrylower.chord
 				newChordEntryCapped := new DictionaryEntry(wordCapped "," newEntrylower.form "," chordUPPER "," newEntrylower.keyer "," newEntrylower.chord "," newEntrylower.usage "," newEntrylower.dictionary)
 				newChordEntryCapped.chord := chordUPPER
@@ -192,61 +192,67 @@ class DictionaryMap
 				this.chords.item(newChordEntryCapped.chord) := newChordEntryCapped
 				this.logEvent(4, "Added chord " newChordEntryCapped.chord " as " newChordEntryCapped.word)
 			} else {
-				this.logEvent(1, "Declining to add chord " newEntrylower.chord " as " newEntrylower.word " due to prevention in negations_chords.txt") 
+				this.logEvent(1, "Declining to add chord " newEntrylower.chord " as " newEntrylower.word " due to prevention in negations_chords.txt")
 			}
         }
-        
-        this.logEvent(4, "Marked qwerd " newEntry.qwerd "'s chord " newEntry.chord " as " newEntry.chordable) 
+
+        this.logEvent(4, "Marked qwerd " newEntry.qwerd "'s chord " newEntry.chord " as " newEntry.chordable)
+		this.qenv.editor.updateEditsStatus("Pending")
+        this.logEvent(4, "Marked edits pending")
+
+
 	}
-	
+
 	deleteQwerdFromMaps(qwerdKey) {
-		this.logEvent(1, "Deleting entries related to " qwerdKey) 
+		this.logEvent(1, "Deleting entries related to " qwerdKey)
 		oldEntry := this.qwerds.item(qwerdKey)
 		this.qwerds.remove(qwerdKey)
 		; If the same word is deleted under two different qwerds, the hint is whacked
 		if (this.hints.item(oldEntry.word)) {
 			this.hints.remove(oldEntry.word)
 		}
-		
+
 		StringUpper, qwerdUPPER, % oldEntry.qwerd
 		StringUpper, wordUPPER, % oldEntry.word
 		this.qwerds.remove(qwerdUPPER)
 		if (this.hints.item(wordUPPER)) {
 			this.hints.remove(wordUPPER)
 		}
-		
+
 		qwerdCapped := SubStr(qwerdUPPER, 1, 1) . SubStr(oldEntry.qwerd, 2, (StrLen(oldEntry.qwerd) - 1))
 		wordCapped := SubStr(wordUPPER, 1, 1) . SubStr(oldEntry.word, 2, (StrLen(oldEntry.word) - 1))
 		this.qwerds.remove(qwerdCapped)
 		if (this.hints.item(wordCapped)) {
 			this.hints.remove(wordCapped)
 		}
-	}	
-	
-	AlphaOrder(input_text) {		
+		this.qenv.editor.updateEditsStatus("Pending")
+        this.logEvent(4, "Marked edits pending")
+	}
+
+	AlphaOrder(input_text) {
 		chord := ""
 		loop, parse, input_text
 			chord .= A_LoopField ","
-		
+
 		Sort, chord, UD,
 		return StrReplace(chord, ",")
 	}
-	
+
 	ChordSort(a1, a2) {
-		; This takes 3-6 times as long as a simple alpha sort. Only use for one-time functions 
+		; This takes 3-6 times as long as a simple alpha sort. Only use for one-time functions
 		return InStr(this.ChordOrder, a1) - InStr(this.ChordOrder, a2)
 	}
 
 	saveDictionaries() {
-        local dictline
-		this.logEvent(1, "Saving dictionaries") 
+		local dictline
+		this.logEvent(1, "Saving dictionaries")
 		if ( not this.dictionariesLoaded ) {
 			this.logEvent(1, "Dictionaries not yet loaded. Stopping")
 			Msgbox, % "Please wait for all dictionaries to load"
 			Return
 		}
-		
-		; Backup all dictionary files with this date stamp, unless already done 
+
+		; Backup all dictionary files with this date stamp, unless already done
 		; Keep 1 backup per hour
 		FormatTime, bakDateStamp, , yyyyMMddHH
 		for dictIndex, dictionary in this.dictionaries {
@@ -257,7 +263,7 @@ class DictionaryMap
 				FileCopy, %dictionary%, %bakdict%
 			}
 		}
-		
+
 		; Removed unwanted backups
 		; GuiControlGet BackupCount
 		for dictIndex, dictionary in this.dictionaries {
@@ -265,7 +271,7 @@ class DictionaryMap
 			FileList := ""
 			Loop, Files, %dictionary%*.bak, F  ; Include Files and Directories
 				FileList .= A_LoopFileTimeModified "`t" A_LoopFilePath "`n"
-				
+
 			retainedCount := 0
 			Sort, FileList, R ; Sort by date.
 			Loop, Parse, FileList, `n
@@ -283,8 +289,8 @@ class DictionaryMap
 				}
 			}
 		}
-		
-		; Create a new array with sortable, proper cased qwerds by prepending the usage number 
+
+		; Create a new array with sortable, proper cased qwerds by prepending the usage number
 		sortableForms := {}
 		sortedCount := 0
 		for word, garbage in this.qwerds {
@@ -299,9 +305,9 @@ class DictionaryMap
 			sortableKey :=  SubStr("0000000", StrLen(qwerd.usage)) qwerd.usage "_" qwerd.qwerd
 			sortableForms[sortableKey] := qwerd
 			if (qwerd.word = "look" or qwerd.word = "execution" or qwerd.word = "services") {
-				this.logEvent(1, "Created sortable for " sortableKey " as " sortableForms[sortableKey].qwerd)  
+				this.logEvent(1, "Created sortable for " sortableKey " as " sortableForms[sortableKey].qwerd)
 			}
-			this.logEvent(4, "Created sortable " sortableForms[sortableKey].qwerd)   
+			this.logEvent(4, "Created sortable " sortableForms[sortableKey].qwerd)
 		}
 		; Keep words that were in a dictionary, but displaced by words in a higher priority dictionary
 		for word, garbage in this.displaceds {
@@ -316,50 +322,50 @@ class DictionaryMap
 			sortableKey :=  SubStr("0000000", StrLen(qwerd.usage)) qwerd.usage "_" qwerd.qwerd
 			sortableForms[sortableKey] := qwerd
 			if (qwerd.word = "look" or qwerd.word = "execution" or qwerd.word = "services") {
-				this.logEvent(1, "Created displaced sortable for " sortableKey " as " sortableForms[sortableKey].qwerd)  
+				this.logEvent(1, "Created displaced sortable for " sortableKey " as " sortableForms[sortableKey].qwerd)
 			}
-			this.logEvent(4, "Created displaced sortable " sortableForms[sortableKey].qwerd)   
+			this.logEvent(4, "Created displaced sortable " sortableForms[sortableKey].qwerd)
 		}
 		this.logEvent(2, "Saving " sortedCount " qwerds")
-		
+
 		; Open all the dictionaries for writing
-		fileHandles := {}
+		filehandles := {}
 		for index, dictionary in this.dictionaries
 		{
 			newdict := dictionary . ".new"
-			fileHandle := FileOpen(newdict, "w")
-			fileHandles[dictionary] := fileHandle
+			filehandle := FileOpen(newdict, "w")
+			filehandles[dictionary] := filehandle
 			header := "word,form,qwerd,keyer,chord,usage`n"
-			fileHandles[dictionary].Write(header)
+			filehandles[dictionary].Write(header)
             this.logEvent(2, "Writing to new dictionary " newdict)
 		}
-		
-		; Loop across the sorted forms and write them 
-		; Write each to its own dictionary 
+
+		; Loop across the sorted forms and write them
+		; Write each to its own dictionary
 		writtenCount := 0
-		; GuiControl,Show, SaveProgress 
+		; GuiControl,Show, SaveProgress
 		for sortableKey, qwerd in sortableForms {
 			this.logEvent(4, "Writing " sortableKey)
 			writtenCount += 1
 			; progress := Round(100*(writtenCount/sortedCount))
-			; GuiControl,, SaveProgress, %progress%  
+			; GuiControl,, SaveProgress, %progress%
 			; msgbox, % "Looping with " sortableKey "=" form.word
 			dictline := qwerd.word "," qwerd.form "," qwerd.qwerd "," qwerd.keyer "," qwerd.chord "," qwerd.usage "`n"
 			this.logEvent(4, "Writing " dictline " to " qwerd.dictionary)
 			if (qwerd.word = "Changed" or qwerd.word = "Called" or qwerd.word = "Looked") {
-				this.logEvent(1, "Writing sortable for " dictline " to " qwerd.dictionary)  
+				this.logEvent(1, "Writing sortable for " dictline " to " qwerd.dictionary)
 			}
-			fileHandles[qwerd.dictionary].Write(dictline)
+			filehandles[qwerd.dictionary].Write(dictline)
 		}
 		this.logEvent(2, "Wrote " writtenCount " qwerds")
-		
-		; Close all the dictionaries 
+
+		; Close all the dictionaries
 		for index, dictionary in this.dictionaries
 		{
 			this.logEvent(2, "Closing " dictionary)
-			fileHandles[dictionary].Close()
+			filehandles[dictionary].Close()
 		}
-		
+
 		; Overwrite the current dictionaries with the new
 		for dictIndex, dictionary in this.dictionaries {
 			newdict := dictionary . ".new"
@@ -367,17 +373,17 @@ class DictionaryMap
 			FileCopy, %newdict%, %dictionary%, true
 			FileDelete, %newdict%
 		}
-		
-		
-		
-		; Open the export dictionary for writing 
+
+
+
+		; Open the export dictionary for writing
 		exportdict := "qwertigraph.export"
-		fileHandle := FileOpen(exportdict, "w")
-		fileHandles[exportdict] := fileHandle
+		filehandle := FileOpen(exportdict, "w")
+		filehandles[exportdict] := filehandle
 		header := "word,form,qwerd,keyer,chord,usage`n"
-		fileHandles[exportdict].Write(header)
+		filehandles[exportdict].Write(header)
 		this.logEvent(2, "Writing to export dictionary " exportdict)
-		
+
 		for word, garbage in this.qwerds {
 			qwerd := this.qwerds.item(word)
 			if (not qwerd.isLower) {
@@ -391,30 +397,32 @@ class DictionaryMap
 			}
 			dictline := qwerd.word "," qwerd.form "," qwerd.qwerd "," qwerd.keyer "," qwerd.chord "," qwerd.usage "`n"
 			this.logEvent(4, "Writing " dictline " to " exportdict)
-			; Also write to the export dictionary 
-			fileHandles[exportdict].Write(dictline)
+			; Also write to the export dictionary
+			filehandles[exportdict].Write(dictline)
 		}
-		
-		fileHandles[exportdict].Close()
 
+		filehandles[exportdict].Close()
+
+		this.qenv.editor.updateEditsStatus("Saved")
+        this.logEvent(4, "Marked edits saved")
 	}
-	
+
 	upgradeDictionaryToV2(dictionary) {
         local line
 		this.logEvent(2, "Upgrading " dictionary " to v2")
-		
-		; First create a backup of the v1 dictionary 
+
+		; First create a backup of the v1 dictionary
 		backupdict := dictionary . ".v1backup"
 		newdict := dictionary . ".v2temp"
 		this.logEvent(2, "Backing up old " dictionary " as " backupdict)
 		FileCopy, %dictionary%, %backupdict%, true
-		
+
 		fileHandle := FileOpen(newdict, "w")
 		header := "word,form,qwerd,keyer,chord,usage`n"
 		fileHandle.Write(header)
-			
+
 		; Next read in the rows of the dictionary
-		Loop,Read, % dictionary 
+		Loop,Read, % dictionary
 		{
 			if (A_Index = 1) {
 				continue
@@ -429,21 +437,21 @@ class DictionaryMap
 			entry.usage := fields[5]
 			entry.hint := fields[6]
 			entry.chord := this.AlphaOrder(entry.qwerd)
-			
+
 			dictline := entry.word "," entry.form "," entry.qwerd "," entry.keyer "," entry.chord "," entry.usage "`n"
 			fileHandle.Write(dictline)
 		}
-		
+
 		fileHandle.Close()
-		
+
 		this.logEvent(1, "Permanently copying " newdict " as " dictionary)
 		FileCopy, %newdict%, %dictionary%, true
 		FileDelete, %newdict%
 	}
 
-LogEvent(verbosity, message) 
+LogEvent(verbosity, message)
 	{
-		if (verbosity <= this.logVerbosity) 
+		if (verbosity <= this.logVerbosity)
 		{
 			event := new LoggingEvent("map",A_Now,message,verbosity)
 			this.logQueue.enqueue(event)
