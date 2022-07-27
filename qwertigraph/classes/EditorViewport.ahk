@@ -299,16 +299,29 @@ EditorCreateRow_SDG() {
 		editor.logEvent(1, "Listview edit event with no row selected")
         return
 	}
+    
+    editor.logEvent(2, "Getting data from ListView from row " FocusedRowNumber)
+
+    ; Get the data from the edited row
+    LV_GetText(EditWord, FocusedRowNumber, 1)
+    LV_GetText(EditForm, FocusedRowNumber, 2)
+    LV_GetText(EditQwerd, FocusedRowNumber, 3)
+    LV_GetText(EditKeyer, FocusedRowNumber, 4)
+    LV_GetText(EditChord, FocusedRowNumber, 5)
+    LV_GetText(EditChordable, FocusedRowNumber, 6)
+    LV_GetText(EditUsage, FocusedRowNumber, 7)
+    LV_GetText(EditDict, FocusedRowNumber, 8)
+
     editor.logEvent(3, "Listview context edit event adding S+D+G on row " FocusedRowNumber)
-    editor.prepareEdit(FocusedRowNumber)
+    editor.prepareEditFromData(EditWord, EditForm, EditQwerd, EditKeyer, EditChord, EditChordable, EditUsage, EditDict)
     editor.addValueToEditFields("s", "-s", "s", "s")
     editor.autoChord()
 	editor.commitEdit()
-    editor.prepareEdit(FocusedRowNumber)
+    editor.prepareEditFromData(EditWord, EditForm, EditQwerd, EditKeyer, EditChord, EditChordable, EditUsage, EditDict)
     editor.addValueToEditFields("ed", "-d", "d", "d")
     editor.autoChord()
 	editor.commitEdit()
-    editor.prepareEdit(FocusedRowNumber)
+    editor.prepareEditFromData(EditWord, EditForm, EditQwerd, EditKeyer, EditChord, EditChordable, EditUsage, EditDict)
     editor.addValueToEditFields("ing", "-\-h", "g", "g")
     editor.autoChord()
 	editor.commitEdit()
@@ -611,11 +624,11 @@ class EditorViewport
 		GuiControl, Text, EditChord, %chord%%ChordAdd%
 		GuiControl, Text, EditKeyer,
 	}
-
+    
 	prepareEdit(RowNumber) {
         local
 		Gui MainGUI:Default
-		this.logEvent(2, "Preparing edit for ListView row " RowNumber)
+		this.logEvent(2, "Preparing edit for ListView from row " RowNumber)
 
 		Gui, ListView, EditorLV
 		; Get the data from the edited row
@@ -627,6 +640,15 @@ class EditorViewport
 		LV_GetText(EditChordable, RowNumber, 6)
 		LV_GetText(EditUsage, RowNumber, 7)
 		LV_GetText(EditDict, RowNumber, 8)
+
+        ; I split this into a way to get data and a way to then fill the edit fields to enable multi-edits from one selection 
+        this.prepareEditFromData(EditWord, EditForm, EditQwerd, EditKeyer, EditChord, EditChordable, EditUsage, EditDict)
+	}
+    
+    prepareEditFromData(EditWord, EditForm, EditQwerd, EditKeyer, EditChord, EditChordable, EditUsage, EditDict) {
+        local
+		Gui MainGUI:Default
+		this.logEvent(2, "Preparing edit for ListView from data for " EditQwerd)
 
 		; Push the data into the editing fields
 		GuiControl, Text, EditWord, %EditWord%
@@ -654,7 +676,8 @@ class EditorViewport
 		}
 
 		GuiControl, , EditDict, %dictList%
-	}
+    
+    }
 
 	commitEdit() {
         local
