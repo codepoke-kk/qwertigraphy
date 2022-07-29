@@ -726,7 +726,7 @@ Experience,e-s-p,Xp,,cpx,862
 Medium,m-e-tm,Metm,,emt,864
 Stone,s2-t-o-n,Ston,,nost,865
 Begin,b-g-e-n,Bgen,,begn,866
-Domain,d-o-mn,Domm,,dmo,868
+Domain,d-o-mn,Domn,,dmno,868
 Personal,pr-s,Prso,o,oprs,870
 Access,a-k-ss,Akss,,aks,871
 Learn,l-e-n,Len,,eln,874
@@ -1320,7 +1320,6 @@ Belief,b-e,Beu,u,beu,1729
 Civil,s2-v,Sv,,svz,1730
 Bird,b-e2-d,Bedo,o,bdeo,1731
 Dozen,d-u-s2-n,Dusn,,dnsu,1733
-Committed,k-m-e-td,Kmedd,,dekm,1734
 Station,s2-t-sh,Stz,,stz,1735
 Nearer,n-e2-/-r,Ner,,enr,1736
 Chosen,ch-o-s2-n,Cosn,,cnos,1737
@@ -1374,7 +1373,6 @@ Rough,r-u-f,Ruf,,fru,1800
 Minister,mn-e2-s2-t-e2,Mmeste,,emst,1801
 Protect,pr-o-t-e-k,Protek,,ekoprt,1802
 Intention,n-tn-sh,Ntnz,,ntz,1803
-Assistance,ss2-tn-s,Sstns,,nst,1804
 Highly,^-h-\-ia,Hia,,ahi,1805
 Bodies,b-o-s,Bos,,bos,1806
 Applied,a-pl-i-d,Aplid,,adilp,1808
@@ -1822,7 +1820,7 @@ Cloth,k-l-o-th,Kloh,,hklo,2551
 Independent,nt-p,Ntp,,npt,2554
 Issue,e-sh-u,Ezu,,euz,2555
 Wooden,u-u-tn,Uutn,,ntu,2558
-Maintain,mn-tn,Mmtno,o,mnot,2559
+Maintain,mn-tn,Mntn,,mnot,2559
 Knight,n-i,Niu,u,inu,2560
 Readers,r-e-d-ye2,Redye,,dery,2561
 Charm,ch-a2-m,Cam,,acm,2564
@@ -1864,7 +1862,6 @@ Constitution,k-s2-t-sh,Kstz,,kstz,2633
 Entering,n-/-\-h,Ngo,o,gno,2640
 Verse,v-e-s,Ves,,esv,2641
 Leader,l-e2-d-e2,Lede,,del,2642
-Charged,ch-j-d,Cjd,,cdj,2643
 Dim,d-e-m,Dem,,dem,2645
 Derive,d-r-i,Driu,u,diru,2646
 Throat,th-r-o-t,Hrot,,hort,2647
@@ -1986,7 +1983,6 @@ Writes,r-i-s,Risu,u,irsu,2874
 Knife,n-i-f,Nif,,fin,2875
 Mississippi,m-e-ss,Messo,o,emos,2876
 Studied,s2-td-e-d,Sdded,,des,2877
-Maintained,mn-tn-d,Mmtnd,,dmnt,2878
 Fears,f-e-r-s,Ferso,o,efors,2879
 Annual,a-n-l,Anl,,aln,2883
 Failure,f-a-l-r,Falr,,aflr,2886
@@ -2031,7 +2027,6 @@ Debt,td,Ddi,i,div,2970
 Passes,p-a-ss,Passo,o,aops,2976
 Sounded,s2-nt-d,Sntd,,dnst,2978
 Cape,k-a-p,Kapu,u,akpu,2979
-Scarce,s2-k-r-s,Skrs,,krs,2980
 Provision,pr-v-e-sh,Prvez,,eprvz,2983
 Generation,j-e-n-r-a-sh,Jenraz,,aejnrz,2984
 Sisters,ss2-t-ye2,Ssty,,sty,2986
@@ -3056,7 +3051,6 @@ Substantial,s-s2-tn-sh,Sstnz,,nstz,5561
 Alternate,o-t-e-n-a-t,Otenat,,aenot,5563
 Salary,s-a-l-r-e,Salre,,aelrs,5568
 Terribly,t-e-r-b-e,Terbe,,bert,5570
-Pathetic,p-th-/-a,Pha,,ahp,5571
 Exciting,e-s2-i-t-\-h,Xitg,,gitx,5576
 Acquire,a-k-i,Aqi,,aiq,5581
 Ambassador,a-m-b-a-s,Ambas,,abms,5584
@@ -3213,7 +3207,7 @@ Goal,g-o-l,Gol,,glo,6082
 Modify,m-o-df,Modfo,o,dfmo,6086
 Carpet,k-r-p-t,Krpt,,kprt,6089
 Kindred,k-e-nt-r-e-d,Kentred,,deknrt,6093
-Dominion,d-o-mn-u-n,Dommun,,dmnou,6094
+Dominion,d-o-mn-u-n,Domnun,,dmnou,6094
 Genus,j-e-n-u-s,Jenuso,o,ejnosu,6099
 Constitute,k-s2-t,Kstu,u,kstu,6101
 Extension,e-s2-tn-sh,Xtnz,,ntxz,6107
@@ -4132,7 +4126,6 @@ Demonstrate,tm-o-n-s,Tmons,,mnost,11267
 Percentage,pr-s2-e-nt-j,Prsentj,,ejnprst,11271
 Calendar,k-a-l-e-nt,Kalent,,aeklnt,11272
 Innate,e-n-a-t,Enat,,aent,11273
-Subscription,s-s2-k-r-sh,Sskrz,,krsz,11284
 Electrical,e-l-/-k-l,Elkl,,ekl,11291
 Supervision,s-/-v-e-sh,Svez,,esvz,11293
 Incorporated,n-k-r-p-/-t,Nkrpt,,knprt,11311
@@ -4330,7 +4323,7 @@ Civic,s2-v-k,Svk,,ksv,12978
 Scarf,s2-k-a-r-f,Skarf,,afkrs,12989
 Efficacy,e-f-k-s-e,Efkse,,efks,12991
 Leipzig,l-i-p-s2-g,Lipsg,,gilps,13007
-Domination,d-o-mn-sh,Dommz,,dmoz,13031
+Domination,d-o-mn-sh,Domnz,,dmnoz,13031
 Fry,fr-i,Friu,u,firu,13033
 Housekeeping,^-h-\-u-s2-k-p-\-h,Huskpg,,ghkpsu,13050
 Expiration,e-s-pr-a-sh,Xpraz,,aprxz,13052
@@ -6487,7 +6480,7 @@ Ironwork,i-r-n-r-k,Irnrk,,iknr,60401
 Objector,o-b-\-r,Obr,,bor,60487
 Inexact,n-e-s2-a-k,Nxak,,aknx,60549
 Lucent,l-u-s2-nt,Lusnto,o,lnostu,60555
-Circumscribe,s2-/-s2-k-r,Sskr,,krs,60700
+Circumscribe,s2-/-s2-k-r,Sskro,o,kors,60700
 Convulse,k-v-l-s,Kvls,,klsv,60703
 Mechanician,m-e-k-a-n-sh,Mekanz,,aekmnz,60838
 Bowlder,b-o-ld-r,Boldru,u,bdloru,60963
