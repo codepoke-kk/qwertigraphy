@@ -620,7 +620,6 @@ Wrong,r-o-ng,Rog,,gor,725
 Months,mn-th-s,Mmhs,,hms,726
 Silence,s2-i-l,Sil,,ils,727
 Broken,br-o-k-n,Brokn,,bknor,728
-Raised,r-a-s2-d,Rasd,,adrs,729
 Outside,a-u-s-i,Wsi,,isw,730
 Caught,k-o-t,Koto,o,kot,732
 Simple,s2-e-m-p,Semp,,emps,733
@@ -665,7 +664,6 @@ Faith,f-a-th,Faho,o,afho,777
 System,s2s,Sso,o,osz,778
 Entirely,nt-ia,Ntia,,aint,782
 Smile,s2-m-i2,Smi,,ims,783
-Goes,g-s,Gs,,cgs,785
 Usual,e-u-sh,Uzo,o,ouz,786
 Covered,k-v-/-t,Kvt,,ktv,788
 Appearance,a-pr-n-s,Aprns,,anprs,789
@@ -944,6 +942,7 @@ Marry,m-a-r-e,Mare,,aemr,1175
 Crowd,k-r-a-u,Krw,,krw,1176
 Sought,s2-ot,Soto,o,ost,1177
 Rule,r-l,Rl,,clr,1180
+Go,g,G,,gzx,1182
 Page,p-a-j,Paj,,ajp,1182
 Accept,a-k-s2,Aks,,aks,1183
 Shore,sh-o-r,Zor,,orz,1186
@@ -1539,7 +1538,6 @@ Local,l-o-k,Lok,,klo,2063
 Lover,l-v-r,Lvr,,lrv,2067
 Increasing,n-k-r-e-s-\-h,Nkresg,,egknrs,2068
 Vision,v-e-sh,Vez,,evz,2069
-Pages,p-a-j-s,Pajs,,ajps,2070
 Severe,s2-e-v-e-r,Sever,,ersv,2072
 Explanation,e-s-pl-sh,Xplz,,lpxz,2074
 Services,^-s2-s2,Ssi,i,isz,2075
@@ -2382,7 +2380,6 @@ Confused,k-f-e-u-/-t,Kfut,,fktu,3688
 Enjoyment,n-j-o-e-m,Njym,,jmny,3690
 Flour,fl-r,Flru,u,flru,3693
 Monarch,mn-a-r-k,Mmark,,akmr,3695
-Messenger,m-e2-s-j-e2,Mesje,,ejms,3696
 Talent,t-a-l-e-nt,Talento,o,aelnot,3700
 Advised,v-i-s2-d,Visd,,disv,3701
 Exclusion,e-s-/-sh,Xz,,cxz,3707
@@ -2418,7 +2415,6 @@ Glow,g-l-o,Glou,u,glou,3779
 Dreamed,d-r-e-mt,Dremt,,demrt,3780
 Revenge,r-v-e-n-j,Rvenj,,ejnrv,3787
 Vulgar,v-u-g-r,Vugr,,gruv,3788
-Careless,k-a2-l,Kal,,akl,3790
 Sore,s2-o-r,Soru,u,orsu,3791
 Comparatively,k-pr-v-e,Kprve,,ekprv,3794
 Tremendous,t-r-e-mn-s,Tremms,,emrst,3795
@@ -2475,7 +2471,7 @@ Formal,f-m-l,Fml,,flm,3894
 Pink,p-e-nk,Peq,,epq,3896
 Desk,d-e-s2-k,Desko,o,dekos,3898
 Impatient,m-p-a-sh-t,Mpazt,,amptz,3900
-Calculate,k-a-l,Kalo,o,aklo,3906
+Calculate,k-a-l,Kal,,akl,3906
 Solution,s2-o-l-sh,Solz,,losz,3907
 Internal,n-/-n-l,Nnl,,lnz,3908
 Restless,r-e-s-l,Resl,,elrs,3909
@@ -6866,12 +6862,10 @@ By-law,bl-o,Blou,u,blou,70227
 Byway,b-u-a,Buau,u,abu,70228
 C.o.d.,k-<-o-d,Kodi,i,diko,70229
 Caduceus,k-a-d-u-ss,Kaduss,,adksu,70230
-Calculable,k-a-l-b,Kalbo,o,abklo,70231
-Calgary,k-a-l-g,Kalg,,agkl,70232
+Calculable,k-a-l-b,Kalb,,abklo,70231
 Calisthenics,k-a-l-e-s2-th-e-n,Kaleshen,,aehklns,70233
 Call ,k-o-l,Koli,i,iklo,70234
 Call your attention to the fact,k-u-tn-sh-f,Kutnzf,,fkntuz,70235
-Callosity,k-a-l-/-s,Kals,,akls,70236
 Calorie,k-a-l-r-e,Kalre,,aeklr,70237
 Campeche,k-a-m-p-e-ch,Kampec,,acekmp,70238
 Can be,k-b,Kbo,o,bko,70239
