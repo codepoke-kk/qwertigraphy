@@ -276,6 +276,11 @@ Callout,k-o-a-u,Kow,,kow,386
 Callouts,k-o-a-u-s,Kows,,kosw,386
 Speaking,s-p-\-h,Spg,,gps,388
 Speaks,s-p-s,Sps,,ps,388
+Unison,e-u-n-e-s-n,Unesn,,ensu,389
+Unite,e-u-n-i,Uni,,inu,389
+Uniting,e-u-n-i-\-h,Unig,,ginu,389
+Unites,e-u-n-i-s,Unis,,insu,389
+Unity,e-u-\-nt,Unt,,ntu,389
 Feeling,f-e-l-\-h,Felg,,efgl,396
 Shortsightedly,^-sh-\s-i-td-e,Zsitde,,deistz,422
 Shorts,^-sh-\-s,Zso,o,osz,422
@@ -931,6 +936,12 @@ Falsify,f-o-s-f,Fosf,,fos,1329
 Falsified,f-o-s-f-d,Fosfd,,dfos,1329
 Falsifying,f-o-s-f-\-h,Fosfg,,fgos,1329
 Falsifies,f-o-s-f-s,Fosfs,,fos,1329
+Activate,a-k-v-a-t,Akvat,,aktv,1349
+Activated,a-k-v-a-t-d,Akvatd,,adktv,1349
+Activating,a-k-v-a-t-\-h,Akvatg,,agktv,1349
+Activates,a-k-v-a-t-s,Akvats,,akstv,1349
+Activation,a-k-v-a-sh,Akvaz,,akvz,1349
+Activations,a-k-v-a-sh-s,Akvazs,,aksvz,1349
 Actively,a-k-v-e,Akve,,aekv,1349
 Inactive,n-a-k-v,Nakv,,aknv,1349
 Inactivity,n-a-k-v-t-e,Nakvte,,aekntv,1349
@@ -1406,6 +1417,9 @@ Preferring,pr-e-f-\-h,Prefg,,efgpr,2532
 Rewarded,r-e-/-d-d,Redd,,der,2536
 Rewarding,r-e-/-d-\-h,Redg,,degr,2536
 Rewards,r-e-/-d-s,Reds,,ders,2536
+Delayed,d-l-a-d,Dlad,,adl,2546
+Delaying,d-l-a-\-h,Dlag,,adgl,2546
+Delays,d-l-a-s,Dlas,,adls,2546
 Agents,a-j-s,Ajs,,ajs,2549
 Issuing,e-sh-u-\-h,Ezug,,euzg,2555
 Issuance,e-sh-u-n-s,Ezuns,,ensuz,2555
@@ -1511,7 +1525,7 @@ Unusual,n-u-sh,Nuz,,nuz,2912
 Suspect,ss-/-k,Ssk,,ksz,2915
 Suspected,ss-/-k-d,Sskd,,dks,2915
 Suspecting,ss-/-k-\-h,Sskg,,gks,2915
-Suspects,ss-/-k-s,Ssks,,ks,2915
+Suspects,ss-/-k-s,Ssks,,ksz,2915
 Damage,tm-j,Tmj,,jmt,2935
 Damaged,tm-j-d,Tmjd,,djmt,2935
 Damaging,tm-j-\-h,Tmjg,,gjmt,2935
@@ -1712,6 +1726,7 @@ Databases,d-a-t-b-s,Datbs,,abdst,3533
 Metadata,m-e-td-a-t,Metdat,,ademt,3533
 Irresponsibility,e-r-p-/-b,Erpb,,bepr,3534
 Responsibilities,r-p-/-b-s,Rpbs,,bprs,3534
+Introductions,n-/-d-u-k-s,Nduks,,dknsu,3557
 Comparisons,k-pr-s2-n-s,Kprsns,,knprs,3575
 Invitational,n-v-e-t-sh-l,Nvetzl,,elntvz,3582
 Invitationals,n-v-e-t-sh-l-s,Nvetzls,,elnstvz,3582
@@ -1938,6 +1953,7 @@ Reproach,r-p-r-c,Rprc,,cpr,4387
 Reproachful,r-p-r-c-f,Rprcf,,cfpr,4387
 Limiting,l-e-m-e-t-\-h,Lemetg,,eglmt,4396
 Limits,l-e-m-e-t-s,Lemets,,elmst,4396
+Introduces,n-/-d-u-s-s,Nduss,,dnsu,4404
 Protestation,pr-o-t-e-s-a-sh,Protesaz,,aeoprstz,4432
 Protestations,pr-o-t-e-s-a-sh-s,Protesazs,,aeoprstz,4432
 Protested,pr-o-t-e-s-d,Protesd,,deoprst,4432
@@ -2470,6 +2486,8 @@ Needlessly,n-e-d-l-e,Nedle,,deln,8765
 Needless,n-e-d-l,Nedlu,u,delno,8765
 Involved,n-v-o-d,Nvod,,dnov,8785
 Involving,n-v-o-\-h,Nvog,,gnov,8785
+Involvement,n-v-o-m,Nvom,,mnov,8785
+Involvements,n-v-o-m-s,Nvoms,,mnosv,8785
 Involves,n-v-o-s,Nvos,,nosv,8785
 Irritations,e2-t-sh-s,Etzs,,estz,8788
 Combining,k-b-i-\-h,Kbig,,bgik,8790
@@ -2530,6 +2548,7 @@ Conceit,k-s-e-t,Kseto,o,ekost,9446
 Discipled,d-s-i-p-d,Dsipd,,dips,9451
 Discipling,d-s-i-p-\-h,Dsipg,,dgips,9451
 Disciples,d-s-i-p-s,Dsips,,dips,9451
+Units,e-u-n-e-t-s,Unets,,enstu,9514
 Fasten,f-a-s2-t-n,Fastn,,afnst,9521
 Fastened,f-a-s2-t-n-d,Fastnd,,adfnst,9521
 Fastening,f-a-s2-t-n-\-h,Fastng,,afgnst,9521
@@ -2577,6 +2596,7 @@ Indescribably,nt-s2-k-r-b-e,Ntskrbe,,beknrst,10106
 Expire,e-s-p-i,Xpi,,ipx,10150
 Expiring,e-s-p-i-\-h,Xpig,,ipxg,10150
 Expires,e-s-p-i-s,Xpis,,ipxs,10150
+Investments,n-v-e-s2-m-s,Nvesms,,emnsv,10182
 Steadfast,s-td-f-a-s2-t,Stdfast,,adfst,10207
 Steadfastly,s-td-f-a-s2-t-e,Stdfaste,,adefst,10207
 Steadfastness,s-td-f-a-s2-t-n-e-s,Stdfastnes,,adefnst,10207
@@ -2593,6 +2613,12 @@ Irregularities,e-r-e-g-s,Eregs,,egrs,10347
 Irregularity,e-r-e-g,Eregu,u,eglrtu,10347
 Regulate,r-e-g-\-u,Regu,,egru,10347
 Regularity,r-e-g-\-u,Reguo,o,egoru,10347
+Investigate,n-v-e-s2-g,Nvesg,,egnsv,10481
+Investigated,n-v-e-s2-g-d,Nvesgd,,degnsv,10481
+Investigating,n-v-e-s2-g-\-h,Nvesgg,,egnsv,10481
+Investigates,n-v-e-s2-g-s,Nvesgs,,egnsv,10481
+Investigation,n-v-e-s2-g-sh,Nvesgz,,egnsvz,10481
+Investigations,n-v-e-s2-g-sh-s,Nvesgzs,,egnsvz,10481
 Overload,o-/-l-o-d,Olod,,dlo,10530
 Overloaded,o-/-l-o-d-d,Olodd,,dlod,10530
 Overloading,o-/-l-o-d-\-h,Olodg,,dlog,10530
@@ -2658,6 +2684,11 @@ Comparablely,k-pr-b-e,Kprbe,,bekpr,11637
 Comparables,k-pr-b-s,Kprbs,,bkprs,11637
 Incomparablely,n-k-pr-b-e,Nkprbe,,beknpr,11637
 Repress,r-p-r-e-s,Rpres,,eprs,11664
+Invested,n-v-e-s-d,Nvesd,,densv,11695
+Investing,n-v-e-s-\-h,Nvesgo,o,egnosv,11695
+Investor,n-v-e-s-r,Nvesr,,enrsv,11695
+Investors,n-v-e-s-r-s,Nvesrs,,enrsv,11695
+Invests,n-v-e-s-s,Nvess,,ensv,11695
 Exporting,e-s-p-o-t-\-h,Xpotg,,goptx,11727
 Exporter,e-s-p-o-t-r,Xpotr,,oprtx,11727
 Exporters,e-s-p-o-t-r-s,Xpotrs,,oprstx,11727
@@ -2896,6 +2927,9 @@ Qualifications,k-o-\-f-s,Qofs,,foqs,16962
 Paradoxical,p-/-d-o-x-\-k,Pdoxk,,dkopx,16982
 Paradoxically,p-/-d-o-x-\-k-e,Pdoxke,,dekopx,16982
 Paradoxes,p-/-d-o-x-s,Pdoxs,,dopsx,16982
+Ambiguously,a-m-b-g-e,Ambge,,abegm,17126
+Ambiguity,a-m-b-ge-u-t-e,Ambgute,,abegmtu,17126
+Ambiguities,a-m-b-ge-u-t-e-s,Ambgutes,,abegmstu,17126
 Program,pr-\-g,Prga,a,agpr,17132
 Programmability,pr-\-g-\-b,Prgb,,bgpr,17132
 Programmable,pr-\-g-b,Prgba,a,abgpr,17132
@@ -3742,6 +3776,16 @@ Purging,pr-j-\-h,Prjg,,gjpr,91179
 Purges,pr-j-s,Prjs,,jprs,91179
 Downstream,d-n-s-t-r-e-m,Dnstrem,,demnrst,91188
 Downstreams,d-n-s-t-r-e-m-s,Dnstrems,,demnrst,91188
+Refine,r-f-i-n,Rfin,,finr,91276
+Refined,r-f-i-n-d,Rfind,,dfinr,91276
+Refiner,r-f-i-n-e2,Rfine,,efinr,91276
+Refinery,r-f-i-n-e2-e,Rfinee,,efinr,91276
+Refineries,r-f-i-n-e2-e-s,Rfinees,,efinrs,91276
+Refiners,r-f-i-n-e2-s,Rfines,,efinrs,91276
+Refining,r-f-i-n-\-h,Rfing,,fginr,91276
+Refinement,r-f-i-nm,Rfinm,,fimnr,91276
+Refinements,r-f-i-nm-s,Rfinms,,fimnrs,91276
+Refines,r-f-i-n-s,Rfins,,finrs,91276
 Query,q-e-\-n-^-r-e,Qere,,eqr,91365
 Queriable,q-e-\-n-^-r-e-b,Qereb,,beqr,91365
 Queriably,q-e-\-n-^-r-e-b-e,Qerebe,,beqr,91365
