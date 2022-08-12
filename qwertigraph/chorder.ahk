@@ -106,6 +106,7 @@ logViewer.addQueue(editor.logQueue)
 ;logViewer.addQueue(greggpad.logQueue)
 logViewer.addQueue(dashboard.logQueue)
 logViewer.addQueue(stroker.logQueue)
+logViewer.addQueue(clipper.logQueue)
 ;
 
 #Include classes\SettingsViewport.ahk

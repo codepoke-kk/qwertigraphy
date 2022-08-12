@@ -65,6 +65,8 @@ ClipperShow() {
 class ClipperViewport
 {
 	interval := 500
+	logQueue := new Queue("ClipperQueue")
+	logVerbosity := 1
 
 	__New(qenv)
 	{
@@ -101,6 +103,8 @@ class ClipperViewport
         }
         Return, pad
     }
+
+    ; abcdefghijklmnopqrstuvwxyz ABCDEFGHIJKLMNOPQRSTUVWXYZ 1234567890 !@#$%^&*()
     Encrypt(clipperkey, plaintext) {
 
         ; Only encrypt if we have a key
@@ -109,6 +113,7 @@ class ClipperViewport
         }
 
         padding := this.GeneratePadding(this.padlength)
+		this.logEvent(4, "Encrypting with padding " padding)
         plaintext := padding . this.padboundary . plaintext
 
         functionkey := clipperkey
@@ -127,6 +132,7 @@ class ClipperViewport
             Encrypted .= Chr(((Asc(A_LoopField)-32)^(Asc(SubStr(functionkey,A_Index,1))-32))+32)
         }
 
+        this.logEvent(4, "Encrypted hash is " Encrypted)
         Return Encrypted
     }
     Decrypt(clipperkey, cipherhash) {
@@ -134,6 +140,7 @@ class ClipperViewport
         if (!StrLen(clipperkey)) {
             Return cipherhash
         }
+        this.logEvent(4, "Cipher hash is " cipherhash)
         functionkey := clipperkey
         ; the simple encryption used here requires the key be longer than the plaintext
         ; I'm just going to concatenate the key to itself as many times as needed
@@ -144,6 +151,7 @@ class ClipperViewport
             }
             functionkey .= clipperkey
         }
+		this.logEvent(4, "Decrypting with functionkey " functionkey)
         Decrypted := ""
         Loop, Parse, cipherhash
         {
@@ -187,7 +195,7 @@ class ClipperViewport
         GuiControlGet p7,, ClipperP7
         GuiControlGet p8,, ClipperP8
         GuiControlGet p9,, ClipperP9
-        fileHandleClipper := FileOpen(home "\" filename, "w")
+        fileHandleClipper := FileOpen(home "\" filename, "w", "UTF-16")
         fileHandleClipper.WriteLine(this.Encrypt(clipperkey, p0))
         fileHandleClipper.WriteLine(this.Encrypt(clipperkey, p1))
         fileHandleClipper.WriteLine(this.Encrypt(clipperkey, p2))
@@ -201,6 +209,8 @@ class ClipperViewport
         fileHandleClipper.Close()
 
 
+        this.logEvent(1, "Saved clipper clips")
+
         this.qenv.Properties.ClipperCurrentFilename := filename
 		this.qenv.saveProperties()
     }
@@ -211,11 +221,12 @@ class ClipperViewport
         GuiControlGet clipperkey,, ClipperKey
 
         iterator := 0
-        Loop,Read, % home "\" filename   ;read clips
+        Loop,Read, % home "\" filename, "UTF-16"   ;read clips
 		{
             GuiControl, Text, % "ClipperP" iterator, % this.decrypt(clipperkey, A_LoopReadLine)
             iterator++
 		}
+        this.logEvent(1, "Loaded clipper clips")
 
     }
 
@@ -244,4 +255,13 @@ class ClipperViewport
         GuiControl, Show, ClipperP9
         GuiControl, Show, ClipperP0
     }
+
+	LogEvent(verbosity, message)
+	{
+		if (verbosity <= this.logVerbosity)
+		{
+			event := new LoggingEvent("clipper",A_Now,message,verbosity)
+			this.logQueue.enqueue(event)
+		}
+	}
 }
