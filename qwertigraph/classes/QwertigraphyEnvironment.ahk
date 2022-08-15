@@ -129,7 +129,8 @@ class QwertigraphyEnvironment
    
 	redactSenstiveQwerd(qwerd) {
 		local
-		if (RegexMatch(qwerd.qwerd, "^\d{2,}$")) {
+		; if (RegexMatch(qwerd.qwerd, "^\d{2,}$")) {
+		if (RegexMatch(qwerd.qwerd, "^.*\d.*$")) {
 			Return this.desensitizedQwerd
 		}
 		Return qwerd
@@ -137,7 +138,8 @@ class QwertigraphyEnvironment
    
 	redactSenstiveToken(token) {
 		local
-		if (RegexMatch(token, "^\d{2,}$")) {
+		; if (RegexMatch(token, "^\d{2,}$")) {
+		if (RegexMatch(token, "^.*\d.*$")) {
 			Return "****"
 		}
 		Return token
