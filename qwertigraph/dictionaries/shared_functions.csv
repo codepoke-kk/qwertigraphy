@@ -1,8 +1,10 @@
 word,form,qwerd,keyer,chord,usage
 OutputStandardPud(),b1,B1,,1b,1
 OutputStandardNapud(),b2,B2,,2b,1
-OutputAdminPud(),b3,B3,,3b,1
-OutputAdminNapud(),b4,B4,,4b,1
+Resetstandardnapud(),b3,B3,,3b,1
+Outputadminpud(),b4,B4,,4b,1
+Outputadminnapud(),b5,B5,,5b,1
+Resetadminnapud(),b6,B6,,6b,1
 SendDate(),d1,D1,,1d,1
 Pastefromslot(),p0,P0,,0p,1
 Pastefromslot(),p1,P1,,1p,1

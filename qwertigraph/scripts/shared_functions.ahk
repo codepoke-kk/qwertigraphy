@@ -68,6 +68,11 @@ InputStandardNapud() {
     stdna := Encrypt(stdna)
     stdpud := Encrypt(stdpud)
 }
+ResetStandardNapud() {
+    global stdna
+    global stdpud
+    InputStandardNapud()
+}
 OutputStandardNapud() {
     global stdna
     global stdpud
@@ -96,6 +101,11 @@ InputAdminNapud() {
     engine.Start()
     admna := Encrypt(admna)
     admpud := Encrypt(admpud)
+}
+ResetAdminNapud() {
+    global admna
+    global admpud
+    InputAdminNapud()
 }
 OutputAdminNapud() {
     global admna
