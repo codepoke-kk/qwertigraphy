@@ -57,6 +57,8 @@ Decrypt(cipherhash) {
 
 stdna := ""
 admna := ""
+syana := ""
+;;; methods for a standard username 
 InputStandardNapud() {
     global stdna
     global stdpud
@@ -91,6 +93,7 @@ OutputStandardPud() {
     }
     Send % Decrypt(stdpud)
 }
+;;; methods for an admin username 
 InputAdminNapud() {
     global admna
     global admpud
@@ -124,4 +127,39 @@ OutputAdminPud() {
         InputAdminNapud()
     }
     Send % Decrypt(admpud)
+}
+;;; methods for a service account 
+InputServiceAccountNapud() {
+    global syana
+    global syapud
+    global engine
+    engine.Stop()
+    InputBox, syana, Service Account Name, Name
+    InputBox, syapud, Service Account PUD, PUD, HIDE
+    engine.Start()
+    syana := Encrypt(syana)
+    syapud := Encrypt(syapud)
+}
+ResetServiceAccountNapud() {
+    global syana
+    global syapud
+    InputServiceAccountNapud()
+}
+OutputServiceAccountNapud() {
+    global syana
+    global syapud
+    if (syana == "") {
+        InputServiceAccountNapud()
+    }
+    Send % Decrypt(syana)
+    Send {Tab}
+    Send % Decrypt(syapud)
+}
+OutputServiceAccountPud() {
+    global syana
+    global syapud
+    if (syana == "") {
+        InputServiceAccountNapud()
+    }
+    Send % Decrypt(syapud)
 }

@@ -5,6 +5,9 @@ Resetstandardnapud(),b3,B3,,3b,1
 Outputadminpud(),b4,B4,,4b,1
 Outputadminnapud(),b5,B5,,5b,1
 Resetadminnapud(),b6,B6,,6b,1
+Outputserviceaccountpud(),b7,B7,,7b,1
+Outputserviceaccountnapud(),b8,B8,,8b,1
+Resetserviceaccountnapud(),b9,B9,,9b,1
 SendDate(),d1,D1,,1d,1
 Pastefromslot(),p0,P0,,0p,1
 Pastefromslot(),p1,P1,,1p,1
