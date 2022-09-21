@@ -132,7 +132,6 @@ Too,t-u,Tuu,u,tuz,143
 Think,th-\-h,Hh,,chv,144
 Under,^-u,Uu,u,cuv,145
 Life,l-a-f,Laf,,afl,146
-Went,e-nt,Ent,,ent,147
 Back,b-a-k,Bak,,abk,148
 Same,s2-a-m,Sam,,ams,149
 Last,l-a-s,Las,,als,150
@@ -219,7 +218,6 @@ Cannot,k-n,Kn,,ckn,238
 Asked,s2-k-t,Skt,,kst,239
 Small,s2-m-o,Smo,,mos,240
 Enough,n-u-f,Nuf,,fnu,241
-Want,o-nt,Ont,,not,242
 Side,s-i,Sio,o,ios,243
 Woman,u-mn,Umm,,mux,244
 However,a-u-v,Wv,,cvw,245
@@ -236,9 +234,6 @@ Taken,t-a-k-n,Takn,,aknt,256
 Use,e-u,Ui,i,ciu,257
 Hands,^-h-\-nt-s,Hnts,,hnst,258
 Does,d-u-s,Dus,,dsu,259
-Until,nt-e,Nte,,ent,260
-End,nt,Nto,o,not,261
-Turned,t-e-n-/-t,Tent,,ent,262
 Rather,r-a-th,Rah,,ahr,263
 Best,b-e-s,Bes,,bes,265
 Since,s2-e-n-s,Sens,,ens,266
@@ -376,7 +371,6 @@ Manner,mn-e2,Mmeu,u,emu,423
 Mean,m-e-n,Meno,o,emno,424
 City,s2-e-t-e,Sete,,est,425
 Fell,f-e-l,Felo,o,eflo,426
-Able,a-bl,Abl,,abl,427
 Need,n-e-d,Ned,,den,428
 French,fr-e-n-ch,Frenc,,cefnr,429
 Question,k-n,Qn,,cnq,430
@@ -406,7 +400,6 @@ Beautiful,b-t-e-f,Btef,,beft,456
 Sense,s2-e-n-s,Senso,o,enos,457
 Close,k-l-o-s,Klos,,klos,458
 Turn,t-e-n,Tenu,u,entu,460
-Town,t-n,Tno,o,not,461
 Followed,f-o-/-t,Fot,,fot,462
 Law,l-o,Loo,o,lmo,463
 Evening,e-v-n-\-h,Evng,,egnv,464
@@ -503,9 +496,7 @@ Knowledge,n-o-l,Nol,,lno,577
 Pay,p-a,Pa,,acp,579
 Receive,r-s2-e,Rse,,ers,580
 Blood,bl-u-d,Blud,,bdlu,581
-Army,a2-m-e,Ame,,aem,582
 Daughter,d-o-t-e2,Dote,,deot,583
-Note,n-o-t,Noto,o,not,584
 Opened,o-jnt,Ojnt,,jnot,585
 Run,r-n,Rn,,cnr,586
 Fall,f-o,Fo,,fov,589
@@ -742,10 +733,8 @@ Produced,pr-o-d-u-s2-t,Produst,,doprstu,891
 Cast,k-a-s2-t,Kast,,akst,894
 Month,mn-th,Mmh,,hmx,895
 Top,t-o-p,Topo,o,opt,896
-Tone,t-o-n,Tono,o,not,898
 Laughed,l-a-f-t,Laft,,aflt,899
 Intended,n-tn-/-t,Ntnt,,ntz,901
-Indian,nt-ea-n,Nten,,ent,903
 Direction,d-r-k-sh,Drkz,,dkrz,907
 Gives,g-e-s,Ges,,egs,908
 Terrible,t-e-r-b,Terb,,bert,909
@@ -873,7 +862,6 @@ Shot,sh-o-t,Zot,,otz,1083
 Difficulty,df-k,Dfko,o,dfko,1084
 Courage,k-r-j,Krj,,jkr,1086
 Forced,f-s22-t,Fst,,fst,1087
-Ordinary,o-tn,Otn,,not,1088
 Mighty,m-a-t-e,Mateo,o,aemot,1089
 Fallen,f-o-n,Fono,o,fno,1090
 Native,n-a-df,Nadf,,adfn,1091
@@ -1251,7 +1239,6 @@ Companion,k-p-a-n-u-n,Kpanun,,aknpu,1632
 Faithful,f-a-th2-f,Fahf,,afh,1633
 Minds,m-i-s,Miso,o,imos,1634
 Height,^-h-\-i-t,Hito,o,hiot,1635
-Nice,n-i-s,Nis,,ins,1636
 Destroy,d-s-/-o-e,Dsy,,dsy,1637
 Separate,s-e-pr,Sepr,,eprs,1638
 Absence,a-b-s,Abs,,abs,1640
@@ -1378,7 +1365,6 @@ Soil,s2-o-e-l,Syl,,lsy,1809
 Gain,g-a-n,Gan,,agn,1811
 Cover,k-v,Kv,,ckv,1814
 Couple,k-u-pl,Kupl,,klpu,1817
-Inside,n-s-i,Nsi,,ins,1818
 Fought,f-ot,Foto,o,fot,1821
 Count,k-nt,Knt,,knt,1822
 Breakfast,br-e-k-f-a-s,Brekfas,,abefkrs,1823
@@ -1532,7 +1518,6 @@ Manners,mn-ye2,Mmye,,emy,2059
 Victory,v-e-k-t-r-e,Vektre,,ekrtv,2062
 Local,l-o-k,Lok,,klo,2063
 Lover,l-v-r,Lvr,,lrv,2067
-Increasing,n-k-r-e-s-\-h,Nkresg,,egknrs,2068
 Vision,v-e-sh,Vez,,evz,2069
 Severe,s2-e-v-e-r,Sever,,ersv,2072
 Explanation,e-s-pl-sh,Xplz,,lpxz,2074
@@ -1752,7 +1737,6 @@ Benefit,b-n-f,Bnf,,bfn,2446
 Household,^-h-\-u-s-/-o-ld,Husold,,dhlosu,2449
 Estate,e-s2-t,Estu,u,estu,2452
 Painful,p-a-n-f,Panf,,afnp,2453
-Rolled,r-o-ld,Rold,,dlor,2455
 Boston,b-o-s,Boso,o,bos,2456
 Hem,^-h-\-e-m,Hemo,o,ehmo,2458
 Towns,t-n-s,Tns,,nst,2460
@@ -2246,7 +2230,6 @@ Mutual,m-u-t-l,Mutl,,lmtu,3416
 Construction,k-s2-/-k-s2h,Ksksh,,hks,3424
 Cotton,k-o-tn,Kotn,,knot,3425
 Sale,s-a-l,Salo,o,alos,3428
-Eaten,e-tn,Etn,,ent,3429
 Shortly,sh-/-e,Zeo,o,eoz,3430
 Favorite,f-a-/-e-t,Faet,,aeft,3431
 Suggest,s2-u-j,Suj,,jsu,3432
@@ -2293,7 +2276,6 @@ Scale,s2-k-a-l,Skal,,akls,3515
 Furnish,f-n-sh,Fnz,,fnz,3516
 Vanity,v-/-nt,Vnt,,ntv,3520
 Hostile,^-h-\-o-s2-t-l,Hostl,,hlost,3522
-Balance,b-a-l,Bal,,abl,3523
 Republic,r-p,Rpo,o,opr,3525
 Doubtful,d-a-u-f,Dwf,,dfw,3528
 Ministers,mn-e-s2-t-ye2,Mmestye,,emsty,3529
@@ -2506,7 +2488,6 @@ Strict,s2-t-r-k,Strko,o,korst,4004
 Renewed,r-e-n-u-d,Renud,,denru,4006
 Professional,pr-f-e-sh-l,Prfezl,,eflprz,4010
 Steam,s2-t-e-m,Stemo,o,emost,4012
-Mail,m-a2,Mae,e,aem,4020
 Remainder,r-e2-mn-e2,Remme,,emr,4025
 Heap,^-h-\-e-p,Hep,,ehp,4028
 Trick,t-r-e-k,Trek,,ekrt,4029
@@ -2785,7 +2766,6 @@ Pennsylvania,p-a,Pao,o,aop,4789
 Carries,k-a-e-s,Kaes,,aeks,4791
 Relate,r-e-l-a,Rela,,aelr,4800
 Probability,pr-/-b,Prbo,o,bopr,4802
-Tennessee,tn,Tne,e,ent,4807
 Sweetness,s2-u-e-t-n-e-s,Suetnes,,enstu,4808
 Hired,^-h-\-i-r-/-t,Hirt,,hirt,4812
 Adapt,a-d-a-p,Adap,,adp,4814
@@ -2902,7 +2882,6 @@ Fountain,f-n-tn,Fntn,,fnt,5103
 Awaiting,^-h-\-u-a-t-\-h,Huatg,,aghtu,5109
 Consolation,k-s2-o-l-a-sh,Ksolaz,,aklosz,5110
 Barren,b-a-r-e-n,Baren,,abenr,5114
-Entertain,n-/-tn,Ntno,o,not,5116
 Childish,ch-i-ld-sh,Cildz,,cdilz,5117
 Industrial,nt-s-l,Ntsl,,lnst,5118
 Governed,g-v-/-t,Gvt,,gtv,5121
@@ -4648,7 +4627,6 @@ Furthest,f-th2-e-s,Fhes,,efhs,16305
 Extricate,e-s-/-k-a-t,Xkat,,aktx,16321
 Indigenous,nt-j-n-u-s,Ntjnus,,jnstu,16325
 Hereupon,^-h-\-e-r-p-o-n,Herpon,,ehnopr,16334
-Inert,e-n-e2-t,Enet,,ent,16336
 Inlet,n-l-e,Nle,,eln,16351
 Microscope,m-i-k-r-o-s2-k-p,Mikroskp,,ikmoprs,16352
 Despicable,d-s-p-k-b,Dspkb,,bdkps,16369
@@ -4658,7 +4636,6 @@ Bunting,b-n-t-\-h,Bntg,,bgnt,16375
 Admonition,a-nm-sh,Anmz,,amnz,16392
 Infirm,n-f-e-m,Nfem,,efmn,16424
 Brand,br-a-nt,Branto,o,abnort,16434
-Ensign,n-s2-i-n,Nsin,,ins,16435
 Fortify,f-df,Fdfo,o,dfo,16440
 Hiss,^-h-\-e-s,Heso,o,ehos,16441
 Miner,m-i-n-e2,Mineu,u,eimnu,16444
@@ -4759,7 +4736,6 @@ Denomination,tn-o-mn-sh,Tnommz,,mnotz,17567
 Monumental,mn-u-/-m,Mmumo,o,mou,17572
 Antecedent,a-/-s2-e-tn,Asetno,o,aenost,17598
 Surety,sh-u-t-e,Zute,,etuz,17607
-Label,l-a-bl,Labl,,abl,17618
 Catholicism,k-a-th-ss,Kahss,,ahks,17625
 Diocese,d-ia-ss,Diass,,adis,17675
 Aboriginal,a-b-o-r-e-j,Aborej,,abejor,17685
@@ -5541,7 +5517,6 @@ Demarcation,tm-r-k-a-sh,Tmrkaz,,akmrtz,29588
 Misuse,m-s2-e-u,Msu,,msu,29594
 Crucible,k-r-s-b,Krsb,,bkrs,29605
 Affectionately,a-f-k-sh-a-t-e,Afkzate,,aefktz,29618
-Dent,tn-t,Tnto,o,not,29634
 Ditty,td-e,Ddei,i,dei,29652
 Graduation,g-r-a-d-e-u-sh,Graduz,,adgruz,29654
 Concentric,k-s2-n-/-k,Ksnk,,kns,29662
@@ -5897,11 +5872,9 @@ Tantamount,tn-t-mn-t,Tntmmt,,mnt,37933
 Migrate,m-i-g-r-a,Migra,,agimr,37983
 Tamper,tm-pr,Tmpro,o,moprt,37986
 Cockade,k-k-a-d,Kkad,,adk,38043
-Teen,t-e-n,Tene,e,ent,38051
 Heroine,^-h-\-e-r-o-e-n,Heryn,,ehnry,38071
 Lifelike,l-a-fl-a,Lafla,,afl,38096
 Aluminum,a-l-u-mn,Alumm,,almu,38107
-Tenet,tn-e-t,Tnet,,ent,38123
 Installment,n-s2-t-o-l-m,Nstolm,,lmnost,38139
 Mangy,mn-j-e,Mmjeu,u,ejmu,38140
 Limousine,l-e-m-s2-e-n,Lemsen,,elmns,38177
@@ -6314,7 +6287,6 @@ Maces,m-a-ss,Massw,w,amsw,52690
 Fulcrum,f-u-k-r-m,Fukrm,,fkmru,52785
 Infuriate,n-f-e-u-r-ea-t,Nfuret,,efnrtu,53068
 Jaundice,j-o-nt-e-s,Jontes,,ejnost,53219
-Inanity,e-n-/-nt,Ennt,,ent,53278
 Conundrum,k-n-u-n,Knun,,knu,53334
 Yeah,ye,Yei,i,eiy,53377
 Binnacle,b-n-/-k,Bnk,,bkn,53384
@@ -6596,7 +6568,6 @@ Evaluation,e-v-l-sh,Evlz,,elvz,67975
 Imperturbability,m-p-e2-t-/-b,Mpetbo,o,bemopt,67981
 Alumni,a-l-m-n-i,Almni,,ailmn,68050
 Muriatic,m-u-r-/-a,Mura,,amru,68084
-Oaten,o-tn,Otno,o,not,68088
 Ayes,i-s,Isu,u,isu,68148
 Disjunction,d-s-j-nk,Dsjq,,djqs,68159
 Benzene,b-n-s2-e-n,Bnsen,,bens,68244
@@ -7076,7 +7047,6 @@ Divagate,d-i-v-g,Divg,,dgiv,70467
 Divert,df-e2-t,Dfeto,o,defot,70468
 Divisble,df-e-s-b,Dfesb,,bdefs,70469
 D-l-e-sh,d-e-l-sh,Delzu,u,deluz,70470
-Do you know,tn-o,Tnoo,o,not,70471
 Do you know whether or not,tn-o-e-n,Tnyn,,nty,70472
 Do you want,d-u-u-nt,Duunt,,dntu,70473
 Doctorate,d-r-/-a-t,Drat,,adrt,70474
@@ -7518,7 +7488,6 @@ Inapt,e-n-a-p-t,Enapt,,aenpt,70911
 Incandesce,n-k-d-e-s,Nkdes,,dekns,70912
 Incarcerate,n-k-r-s-e-r-a,Nkrsera,,aeknrs,70913
 Incinerate,n-s2-e-n-r-a,Nsenra,,aenrs,70914
-Incise,n-s-i-s,Nsis,,ins,70915
 Incombustible,n-k-b-u-s-b,Nkbusb,,bknsu,70916
 Income tax,n-k-t-a-x,Nktax,,akntx,70917
 Incommensurate,n-k-mn-sh-u-t,Nkmmzut,,kmntuz,70918
@@ -7527,7 +7496,6 @@ Inculpate,n-k-l-p-a-t,Nklpat,,aklnpt,70920
 Incunabula,n-k-e-u-n-a-b,Nkunab,,abknu,70921
 Indefatiguable,n-df-a-t,Ndfat,,adfnt,70922
 Indemify,n-tm-n-f,Ntmnf,,fmnt,70923
-Indent,n-tn-t,Ntnto,o,not,70924
 Indention,n-tn-sh,Ntnzo,o,notz,70925
 Indestr-,nt-s-/,Ntsqq,qq,nqst,70926
 Indexes,nt-e-xs,Ntexs,,enstx,70927
@@ -7582,14 +7550,12 @@ Interscholastic,n-/-s2-k-l-/-s2-t,Nsklst,,klnst,70975
 Interstice,n-/-s2-t-e-s,Nstes,,enst,70976
 Interstitial,n-/-s2-t-e-sh,Nstez,,enstz,70977
 Into the,nt-u-th,Ntuh,,hntu,70978
-Intone,nt-o-n,Nton,,not,70979
 Intr-,n-/,Nirqq,irqq,inrq,70980
 Intra-,n-a-/,Naqq,qq,anq,70981
 Intrans-,nt-/,Ntqq,qq,ntq,70982
 Intransigence,nt-/-j,Ntjo,o,jnot,70983
 Intransigent,nt-/-jnt,Ntjnto,o,jnot,70984
 Intrastate,n-a-/-s2-t,Nasto,o,anost,70985
-Introit,n-/-e-t,Nete,e,ent,70986
 Inunction,e-n-u-nk,Enuq,,enqu,70987
 Inundate,n-n-td,Nndd,,bdn,70988
 Invar,n-v-a-r,Nvar,,anrv,70989
@@ -7761,7 +7727,6 @@ Mandible,mn-d-b,Mmdb,,bdm,71156
 Manic,mn-e-k,Mmeko,o,ekmo,71157
 Manicure,mn-a-k-r,Mmakr,,akmr,71158
 Manicurist,mn-a-k-r-e-s,Mmakres,,aekmrs,71159
-Manly ,mn-e,Mmea,a,aem,71160
 Mannerless,mn-e-r-l,Mmerlo,o,elmor,71161
 Manoral,mn-o-r-l,Mmorlo,o,lmor,71162
 Mantlepiece,mn-t-l-p-e-s,Mmtlpes,,elmpst,71163
@@ -8064,7 +8029,6 @@ Ostracize,o-s2-t-r-a-ss,Ostrasso,o,aorst,71459
 Otiose,o-sh-e-o--s,Ozeos,,eosz,71460
 Ought to be,o-t-b,Otb,,bot,71461
 Ought to have,o-t-v,Otv,,otv,71462
-Ought to know,o-tn-o,Otnoo,o,not,71463
 Ought to receive,o-t-r-s-e,Otrse,,eorst,71464
 Our personal attention,r-pr-s2-tn-sh,Rprstnz,,nprstz,71465
 Out of stock,a-u-s2-t-o,Wsto,,ostw,71466
@@ -8339,7 +8303,6 @@ Told us,t-o-s,Toso,o,ost,71746
 Tonsil,tn-s-e-l,Tnsel,,elnst,71747
 Tonsilitis,tn-s-e-l-i,Tnseli,,eilnst,71748
 Tonsorial,tn-s2-o-r-l,Tnsorl,,lnorst,71749
-Tontine,t-o-n-tn,Tontn,,not,71750
 Tractor,t-r-a-k-r,Trakr,,akrt,71751
 Traffic manager,t-<-m,Tmu,u,mtu,71752
 Transfuse,t-/-f-e-u,Tfu,,ftu,71753
@@ -8448,7 +8411,6 @@ Who have,^-h-\-u-v,Huvo,o,houv,71855
 Whole lot,^-h-\-o-l-o-t,Holot,,hlot,71856
 Why not,i2-n,Ini,i,bin,71857
 Will be,l-b,Lbo,o,blo,71858
-Will be able,l-b-a,Lba,,abl,71859
 Will be done,l-b-tn,Lbtn,,blnt,71860
 Will you,l-u,Luu,u,luz,71861
 Williamsport,u-e-l-m-s-p,Uelmsp,,elmpsu,71862
