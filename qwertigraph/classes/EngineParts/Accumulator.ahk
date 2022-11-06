@@ -45,8 +45,14 @@ Class Accumulator {
             ; I may need to fix a problem where a user backspaces maybe 4 words, types 1, then backspaces 2 more. Right now that fails
             this.logEvent(4, "Backspacing into buffer from position " this.retrievedTokenIndex)
             if (not this.retrievedTokenIndex) {
-                this.logEvent(4, "Have no retrieved token - taking the last one at " this.engine.record.MaxIndex())
-                this.retrievedTokenIndex := this.engine.record.MaxIndex()
+                if (this.retrievedTokenHorizon) {
+                    ; 20221104 - Bug fix: The code was allowing the buffer to go back before the horizon if an arrow key was used 
+                    this.logEvent(4, "Have no retrieved token - taking the horizon at " this.retrievedTokenHorizon)
+                    this.retrievedTokenIndex := this.retrievedTokenHorizon
+                } else {
+                    this.logEvent(4, "Have no retrieved token - taking the last one at " this.engine.record.MaxIndex())
+                    this.retrievedTokenIndex := this.engine.record.MaxIndex()
+                }
                 this.retrievedEnder := 0
                 bufferToken := this.engine.record[this.retrievedTokenIndex]
                 bufferWord := bufferToken.output ? bufferToken.output : bufferToken.input

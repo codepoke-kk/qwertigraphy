@@ -340,6 +340,7 @@ class EditorViewport
 		this.map := map
 		this.qenv := this.map.qenv
 		this.logVerbosity := this.map.qenv.properties.LoggingLevelEditor
+        this.editsCount := 0
 		DictionaryDropDown := map.dictionaryPickList
 
 	}
@@ -525,7 +526,8 @@ class EditorViewport
 
 		; Lowercase the whole word
 		StringLower, chord, qwerd
-		chord := this.map.AlphaOrder(chord)
+        ; Disable chording, unless the prepended q is explicitly deleted
+		chord := "q" . this.map.AlphaOrder(chord)
 
 		GuiControl, Text, EditChord, %chord%
 	}
@@ -737,6 +739,11 @@ class EditorViewport
 	}
 
 	updateEditsStatus(updated) {
+        ; Let's try showing a count of edits 
+        if (updated = "Pending") {
+            this.editsCount += 1
+            updated := this.editsCount
+        }
 		this.logEvent(2, "Setting edits status to " updated)
 		GuiControl, Text, EditsStatus, % "Edits: " updated
 
