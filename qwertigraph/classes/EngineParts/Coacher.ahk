@@ -57,7 +57,7 @@ Class Coacher {
 	}
 	
 	presentGraphicalCoachingAhead(in_chars) {
-		this.logEvent(2, "Graphical coaching ahead on " in_chars)
+		this.logEvent(4, "Graphical coaching ahead on " in_chars)
 		; Is this token a word 
 		coachAheadQwerd := new TokenEvent(in_chars, "")
 		coachAheadQwerd.ink := "white"
@@ -131,7 +131,7 @@ Class Coacher {
 			}
 			coachAheadNote .= coachAheadPhrase
 		}
-		this.logEvent(2, "Coachahead note " coachAheadNote)
+		this.logEvent(4, "Coachahead note " coachAheadNote)
 		
 		this.engine.dashboard.coachAheadHints := coachAheadNote
 	}

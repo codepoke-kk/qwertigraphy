@@ -38,7 +38,7 @@ class MappingEngine {
 	discard_ratio := ""
 	input_text_buffer := ""
 	logQueue := new Queue("EngineQueue")
-	logVerbosity := 4
+	logVerbosity := 3
 	tip_power_threshold := 1
 	speedQueue := new Queue("SpeedQueue")
 	coachQueue := new Queue("CoachQueue")

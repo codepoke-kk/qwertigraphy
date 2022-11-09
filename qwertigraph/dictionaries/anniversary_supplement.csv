@@ -3,6 +3,9 @@ Seeing,s-e-\-h,Seg,,qegs,6
 Sees,s-e-s,Seso,,qeos,6
 Phoning,f-o-n-\-h,Fong,,qfgno,7
 Phones,f-o-n-s,Fons,,qfnos,7
+Centered,^-s2-n-d,Snd,,qdns,9
+Centering,^-s2-n-\-h,Sng,,qgns,9
+Centers,^-s2-n-s,Sns,,qns,9
 Teamed,t-e-m-d,Temd,,qdemt,13
 Teaming,t-e-m-\-h,Temg,,qegmt,13
 Teamwork,t-e-m-r-k,Temrk,,qekmrt,13
@@ -1654,6 +1657,7 @@ Empires,m-p-i-s,Mpis,,qimpvs,3037
 Operational,o-pr-a-sh-l,Oprazl,,qaloprz,3048
 Operationally,o-pr-a-sh-l-e,Oprazle,,qaeloprz,3048
 Operations,o-pr-a-sh-s,Oprazs,,qaoprsz,3048
+Exists,e-ss-s,Xess,,qesx,3052
 Securities,s2-e-k-/-r-s,Sekrso,o,qekors,3065
 Builds,bld-/-s2,Blds,,qbdls,3083
 Buildings,bld-/-s2,Bldsg,g,qbdgls,3083
@@ -2135,6 +2139,7 @@ Appropriateness,a-pr-a-n-s,Aprans,,qanprs,4822
 Appropriates,a-pr-a-s,Apras,,qaprs,4822
 Appropriation,a-pr-a-sh,Apraz,,qaprz,4822
 Appropriations,a-pr-a-sh-s,Aprazs,,qaprsz,4822
+Engines,n-j-n-s,Njns,,qjns,4829
 Peril,p-e-r-l,Perl,,qelpr,4883
 Perils,p-e-r-l-s,Perls,,qelprs,4883
 Probabilities,pr-\-b-s,Prbso,o,qboprs,4887
@@ -2184,6 +2189,11 @@ Organism,o-g-n-s-m,Ognsm,,qgmnos,5141
 Organisms,o-g-n-s-m-s,Ognsms,,qgmnos,5141
 Operas,o-pr-a-s,Opras,,qaoprs,5156
 Insignificance,n-s2-e-g-n-e-f,Nsegnef,,qefgns,5200
+Partnered,p-t-n-e2-d,Ptned,,qdenpt,5207
+Partnering,p-t-n-e2-\-h,Ptneg,,qegnpt,5207
+Partners,p-t-n-e2-s,Ptnes,,qenpst,5207
+Partnership,p-t-n-e2-sh,Ptnez,,qenptz,5207
+Partnerships,p-t-n-e2-sh-s,Ptnezs,,qenpstz,5207
 Warned,u-o-n-d,Uond,,dnou,5216
 Warning,u-o-n-\-h,Uong,,gnou,5216
 Warnings,u-o-n-\-h-s,Uongs,,gnosu,5216
@@ -2454,6 +2464,7 @@ Align,a-l-a-n,Alano,o,qalno,7004
 Aligns,a-l-a-n-s,Alans,,qalnos,7004
 Engineered,n-j-n-e2-d,Njned,,qdejn,7020
 Engineering,n-j-n-e2-\-h,Njneg,,qegjn,7020
+Engineers,n-j-n-e2-s,Njnes,,qejns,7020
 Renewable,r-e-n-u-\-b,Renub,,qbenru,7087
 Renewably,r-e-n-u-\-b-e,Renube,,qbenru,7087
 Renewables,r-e-n-u-\-b-s,Renubs,,qbenrsu,7087

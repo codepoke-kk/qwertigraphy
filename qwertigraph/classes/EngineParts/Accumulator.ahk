@@ -8,7 +8,9 @@ Class Accumulator {
 		this.logQueue := engine.logQueue
 		this.logVerbosity := this.engine.LogVerbosity
         this.starttime := 0
+        ; Records index of token retrieved back into the buffer
         this.retrievedTokenIndex := 0
+        ; Records the index of the last token we know we can retrieve from buffer
         this.retrievedTokenHorizon := 0
         this.retrievedEnder := 0
 
@@ -31,26 +33,26 @@ Class Accumulator {
 		this.engine.coacher.CoachAhead(this.engine.keyboard.Token)
 	}
 	RemoveKeyFromToken() {
-		this.logEvent(4, "Removing one character from token " this.engine.keyboard.Token)
+		this.logEvent(3, "Removing one character from token " this.engine.keyboard.Token)
 		if (GetKeyState("Control", "P")) {
 			this.engine.keyboard.Token := ""
             this.retrievedTokenIndex := 0
             this.retrievedEnder := 0
-			this.logEvent(4, "Ctrl-Backspace clears token")
+			this.logEvent(3, "Ctrl-Backspace clears token")
 		} else if (StrLen(this.engine.keyboard.Token)) {
 			this.engine.keyboard.Token := SubStr(this.engine.keyboard.Token, 1, (StrLen(this.engine.keyboard.Token) - 1))
 		} else {
             ; Not simple.
             ; This process allows us to walk back a long way into the buffer as the user backspaces across several words
             ; I may need to fix a problem where a user backspaces maybe 4 words, types 1, then backspaces 2 more. Right now that fails
-            this.logEvent(4, "Backspacing into buffer from position " this.retrievedTokenIndex)
+            this.logEvent(3, "Backspacing into buffer from position " this.retrievedTokenIndex)
             if (not this.retrievedTokenIndex) {
                 if (this.retrievedTokenHorizon) {
                     ; 20221104 - Bug fix: The code was allowing the buffer to go back before the horizon if an arrow key was used 
-                    this.logEvent(4, "Have no retrieved token - taking the horizon at " this.retrievedTokenHorizon)
+                    this.logEvent(3, "Have no retrieved token - taking the horizon at " this.retrievedTokenHorizon)
                     this.retrievedTokenIndex := this.retrievedTokenHorizon
                 } else {
-                    this.logEvent(4, "Have no retrieved token - taking the last one at " this.engine.record.MaxIndex())
+                    this.logEvent(3, "Have no retrieved token - taking the last one at " this.engine.record.MaxIndex())
                     this.retrievedTokenIndex := this.engine.record.MaxIndex()
                 }
                 this.retrievedEnder := 0
@@ -59,25 +61,26 @@ Class Accumulator {
             } else {
                 if (not this.retrievedEnder) {
                     this.retrievedEnder := 1
-                    this.logEvent(4, "Have retrieved token, but have not retrieved ender - taking dummy token")
+                    this.logEvent(3, "Have retrieved token, but have not retrieved ender - taking dummy token")
                     bufferWord := ""
                 } else {
                     if (this.retrievedTokenIndex > this.retrievedTokenHorizon) {
                         this.retrievedTokenIndex -= 1
                         bufferToken := this.engine.record[this.retrievedTokenIndex]
                         bufferWord := bufferToken.output ? bufferToken.output : bufferToken.input
-                        if (this.retrievedTokenIndex == (this.engine.record.MaxIndex() - 1)) {
-                            bufferWord := SubStr(bufferWord, 1, (StrLen(bufferWord) - 1))
-                        }
-                        this.logEvent(4, "Have already retrieved ender - taking previous token at " this.retrievedTokenIndex)
+                        ; The new method of end detection makes this unnecessary
+                        ;if (this.retrievedTokenIndex == (this.engine.record.MaxIndex() - 1)) {
+                        ;    bufferWord := SubStr(bufferWord, 1, (StrLen(bufferWord) - 1))
+                        ;}
+                        this.logEvent(3, "Have already retrieved ender - taking previous token at " this.retrievedTokenIndex)
                     } else {
-                        this.logEvent(4, "Have already retrieved all tokens back to token horizon")
+                        this.logEvent(3, "Have already retrieved all tokens back to token horizon")
                         bufferWord := ""
                     }
                 }
             }
             this.engine.keyboard.Token := bufferWord
-			this.logEvent(4, "No characters to remove, reloading token #" this.retrievedTokenIndex " output as: " this.engine.keyboard.Token)
+			this.logEvent(3, "No characters to remove, reloading token #" this.retrievedTokenIndex " output as: " this.engine.keyboard.Token)
 		}
 	}
 	EndToken(key) {
@@ -95,9 +98,14 @@ Class Accumulator {
         this.retrievedEnder := 0
         ; We set the horizon to this token +2 if the end character is navigation
         ; Bug 20221108 - The end character can be "{Space}" or " " sometimes, so check both 
-        if ((key != "{Space}") and (not InStr(" ,.;:'""", key))) {
+        if ((key = "{Space}") or (key = " ")) {
+            ; We need to say the last retrieved token is one above this token to refresh the top of the buffer
+            this.retrievedTokenIndex := this.engine.record.MaxIndex() + 2
+            this.retrievedEnder := key
+            this.logEvent(3, "Set token retrieval token index to " this.retrievedTokenIndex)
+        } else if (not InStr(",.;:'""", key)) {
             this.retrievedTokenHorizon := this.engine.record.MaxIndex() + 2
-            this.logEvent(4, "Set token retrieval token horizon to " this.retrievedTokenHorizon)
+            this.logEvent(3, "Set token retrieval token horizon to " this.retrievedTokenHorizon)
         }
 		this.engine.NotifySerialToken(token)
 	}

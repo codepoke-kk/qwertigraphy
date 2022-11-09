@@ -232,10 +232,10 @@ Class DashboardViewport
       Gdip_FillRectangle(this.G, this.IndicatorsBackgroundBrush, 0, this.dashwindow.indicatorsTop, this.dashwindow.width, this.dashwindow.height - this.dashwindow.indicatorsTop)
       this.LogEvent(3, "Just erased " this.dashwindow.indicatorsTop " to " (this.dashwindow.height - this.dashwindow.indicatorsTop))
       EnhancedSpeedOptions := "x20 y" this.dashwindow.indicatorsTop " Left " this.SpeedColor " r4 s32 "
-      this.LogEvent(1, "Drawing enhanced speed " EnhancedSpeedOptions " as " this.speedEnhanced)
+      this.LogEvent(2, "Drawing enhanced speed " EnhancedSpeedOptions " as " this.speedEnhanced)
       Gdip_TextToGraphics(this.G, (this.speedEnhanced . " wpm"), EnhancedSpeedOptions, this.FontName, this.dashwindow.width, this.dashwindow.height)
       KeyedSpeedOptions := "x20 y" (this.dashwindow.indicatorsTop + 35)  " Left " this.SpeedColor " r4 s28 "
-      this.LogEvent(1, "Drawing keyed speed " KeyedSpeedOptions " as " this.speedKeyed)
+      this.LogEvent(2, "Drawing keyed speed " KeyedSpeedOptions " as " this.speedKeyed)
       Gdip_TextToGraphics(this.G, (this.speedKeyed . " wpm"), KeyedSpeedOptions, this.FontName, this.dashwindow.width, this.dashwindow.height)
       
       ; Draw Aux Keyboard status
