@@ -93,7 +93,9 @@ Class Accumulator {
 		this.engine.keyboard.Token := ""
         this.retrievedTokenIndex := 0
         this.retrievedEnder := 0
-        if ((key != "{Space}") and (not InStr(",.;:'""", key))) {
+        ; We set the horizon to this token +2 if the end character is navigation
+        ; Bug 20221108 - The end character can be "{Space}" or " " sometimes, so check both 
+        if ((key != "{Space}") and (not InStr(" ,.;:'""", key))) {
             this.retrievedTokenHorizon := this.engine.record.MaxIndex() + 2
             this.logEvent(4, "Set token retrieval token horizon to " this.retrievedTokenHorizon)
         }
