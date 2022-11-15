@@ -4,7 +4,7 @@
 class AuxKeyboardEngine
 {
 	logQueue := new Queue("AuxEngineQueue")
-	logVerbosity := 4
+	logVerbosity := 2
 	enabled := true
     dashboard := ""
 

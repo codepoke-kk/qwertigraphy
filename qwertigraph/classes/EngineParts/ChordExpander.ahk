@@ -22,7 +22,7 @@ Class ChordExpander {
 			and (chordWindow > 0) 
 			and (chordWindow < this.engine.keyboard.ChordReleaseWindows[StrLen(this.engine.keyboard.Token)])) {
 			; The time is quick enough to call a chord 
-			this.logEvent(2, "ChordWindow: completed")
+			this.logEvent(2, "ChordWindow: completed with " this.engine.keyboard.Token)
 			this.SendChord()
 		} else {
 			; Too slow. Let this be serial input
@@ -34,11 +34,13 @@ Class ChordExpander {
 	SendChord() {
 		; Send through a possible chord
 		chord := this.engine.map.AlphaOrder(this.engine.keyboard.Token)
-		if ((GetKeyState("Shift", "P")) or (GetKeyState("CapsLock", "T"))) {
+        this.logEvent(2, "Have possible chord " chord)
+		if ((GetKeyState("Shift", "P")) or (GetKeyState("CapsLock", "T")) or (SubStr(this.engine.map.chords.item(chord).word, 1, 2) = "i ")) {
 			StringUpper, chord, chord
+			this.logEvent(2, "Uppercased chord to " chord)
 		}
 		if (this.engine.map.chords.item(chord).word) {
-			this.logEvent(4, "Chord " chord " found for " this.engine.map.chords.item(chord).word)
+			this.logEvent(3, "Chord " chord " found for " this.engine.map.chords.item(chord).word)
             if (Instr(this.engine.map.chords.item(chord).word, ")", , 0)) {
                 this.logEvent(4, "Chord is for a script. Sending no End Character")
                 ender := ""
@@ -55,14 +57,8 @@ Class ChordExpander {
 			this.engine.keyboard.Token := ""
 			this.engine.NotifyExpandedToken(token)
 			this.engine.keyboard.AutoSpaceSent := ender 
-			;this.ExpandInput(chord, "{Chord}", "", (A_TickCount - this.keyboard.TokenStartTicks))
-			;if (not this.keyboard.ScriptCalled) {
-			;	Send, {Space}
-			;	; Mark that we sent this as a chord, so we know we need to send a backspace before the next end char
-			;	this.keyboard.AutoSpaceSent := true
-			;} 
 		} else {
-			this.logEvent(4, "Chord " chord " not found. Allow input to complete in serial fashion")
+			this.logEvent(3, "Chord " chord " not found. Allow input to complete in serial fashion")
 		}
 	}
 

@@ -126,11 +126,14 @@ class DictionaryMap
         ; Evaluate chordability first
 		; Limit chord acceptance by length, by frequency of usage, and to only appear once
 		if (StrLen(newEntry.chord) >= this.minimumChordLength) {
-			If (not this.chords.item(newEntry.chord).word) {
-				if (newEntry.Usage < this.maximumChordUsage) {
+			if (not this.chords.item(newEntry.chord).word) {
+                if (SubStr(newEntry.chord, 1, 1) == "q") {
+                    chordability := "blocked"
+				} else if (newEntry.Usage < this.maximumChordUsage) {
 					chordability := "active"
 				} else {
 					chordability := "rare"
+                    this.logEvent(2, "Chordability of " newEntry.chord " is rare - you might need to modify its Usage manually")
 				}
 			} else {
 				chordability := "unused"
@@ -139,6 +142,10 @@ class DictionaryMap
 			chordability := "short"
 		}
         newEntry.chordable := chordability
+    
+        if (newEntry.chord == "0av") {
+            this.logEvent(1, "Chordability of 0av is "  chordability)
+        }
 
 		; Force lower entries to lower
 		StringLower, qwerdlower, % newEntry.qwerd
@@ -190,7 +197,7 @@ class DictionaryMap
 				newChordEntryCapped.chord := chordUPPER
 				newChordEntryCapped.chordable := "active"
 				this.chords.item(newChordEntryCapped.chord) := newChordEntryCapped
-				this.logEvent(4, "Added chord " newChordEntryCapped.chord " as " newChordEntryCapped.word)
+				this.logEvent(3, "Added chord " newChordEntryCapped.chord " as " newChordEntryCapped.word)
 			} else {
 				this.logEvent(1, "Declining to add chord " newEntrylower.chord " as " newEntrylower.word " due to prevention in negations_chords.txt")
 			}
