@@ -137,7 +137,9 @@ Loving,l-v-\-h,Lvg,,qglv,197
 Loves,l-v-s,Lvs,,qlsv,197
 God,g,Gu,u,qgux,202
 Setting,s2-e-t-\-h,Setg,,qestg,207
+Settings,s2-e-t-\-h-s,Setgs,,qegst,207
 Sets,s2-e-t-s,Sets,,qeosts,207
+Settings,s2-e-t-\-s,Setsg,g,qegst,207
 Settings,s2-e-t-\-s,Setso,o,qeost,207
 Finding,f-i-\-h,Fig,,qfgi,208
 Findings,f-i-\-h-s,Figs,,qfgis,208
@@ -924,6 +926,9 @@ Surprised,s-e-pr-i-s-d,Seprisd,,qdeiprs,1168
 Surprising,s-e-pr-i-s-\-h,Seprisg,,qegiprs,1168
 Surprisingly,s-e-pr-i-s-\-h-e,Seprisge,,qegiprs,1168
 Surprises,s-e-pr-i-s-s,Sepriss,,qeiprs,1168
+Obtained,o-b-tn-d,Obtnd,,qbdnot,1170
+Obtaining,o-b-tn-\-h,Obtng,,qbgnot,1170
+Obtains,o-b-tn-s,Obtns,,qbnost,1170
 Marched,m-a-ch-d,Macdo,o,qacdmo,1171
 Marching,m-a-ch-\-h,Macgo,o,qacgmo,1171
 March,m-a-ch,Maco,o,qacmo,1171
@@ -1514,9 +1519,10 @@ Issuers,e-sh-u-r-s,Ezurs,,qeuzrs,2555
 Issues,e-sh-u-s,Ezus,,qeuzs,2555
 Tissue,t-e-sh-u,Tezu,,qetuz,2555
 Tissues,t-e-sh-u-s,Tezus,,qetuzs,2555
-Maintainance,mn-tn-a-n-s,Mntnans,,qamnst,2559
-Maintainanced,mn-tn-a-n-s-d,Mntnansd,,qadmnst,2559
-Maintainancing,mn-tn-a-n-s-\-h,Mntnansg,,qagmnst,2559
+Maintenance,mn-tn-a-n-s,Mntnans,,qamnst,2559
+Maintenanced,mn-tn-a-n-s-d,Mntnansd,,qadmnst,2559
+Maintenancing,mn-tn-a-n-s-\-h,Mntnansg,,qagmnst,2559
+Maintenances,mn-tn-a-n-s-s,Mntnanss,,qamnst,2559
 Maintainable,mn-tn-b,Mntnb,,qbmnt,2559
 Maintainably,mn-tn-b-e,Mntnbe,,qbemnt,2559
 Maintained,mn-tn-d,Mntnd,,qdmnt,2559
@@ -2167,6 +2173,8 @@ Rejoiceful,r-j-o-e-s-f,Rjysf,,qfjrsy,4988
 Rejoicefully,r-j-o-e-s-f-e,Rjysfe,,qefjrsy,4988
 Rejoicing,r-j-o-e-s-\-h,Rjysg,,qgjrsy,4988
 Rejoices,r-j-o-e-s-s,Rjyss,,qjrsy,4988
+Backout,b-a-k-a-u,Bakw,,qabkw,5000
+Backouts,b-a-k-a-u-s,Bakws,,qabksw,5000
 Meetings,m-e-t-/-s,Metsg,g,qegmst,5038
 Documented,d-o-k-m-d,Dokmd,,qdkmo,5069
 Documenting,d-o-k-m-\-h,Dokmg,,qdgkmo,5069
@@ -3772,6 +3780,7 @@ Transsexuals,^-t-\-s-e-s-l-s,Tsxls,,qlstx,70776
 Hypercritical,^-h-\-i-p-e-r-k-r-/-ya,Hiperkry,,qehikpry,70799
 Hypercritically,^-h-\-i-p-e-r-k-r-/-ya-e,Hiperkryae,,qaehikpry,70799
 Hypercritically,^-h-\-i-p-e-r-k-r-/-ya-e,Hiperkrye,,qehikpry,70799
+I have,a-v,Av0,0,av0,70824
 Immigrated,e-m-e-g-d,Emegd,,qegimd,70854
 Immigrating,e-m-e-g-\-h,Emegg,,qegimg,70854
 Immigrates,e-m-e-g-s,Emegs,,qegims,70854
