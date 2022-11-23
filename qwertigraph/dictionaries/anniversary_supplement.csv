@@ -2470,6 +2470,12 @@ Aligned,a-l-a-n-d,Aland,,qalnod,7004
 Aligning,a-l-a-n-\-h,Alang,,qalnog,7004
 Align,a-l-a-n,Alano,o,qalno,7004
 Aligns,a-l-a-n-s,Alans,,qalnos,7004
+Align,a-l-i-n,Alin,,qailn,7004
+Aligned,a-l-i-n-d,Alind,,qadiln,7004
+Aligning,a-l-i-n-\-h,Aling,,qagiln,7004
+Alignment,a-l-i-n-m,Alinm,,qailmn,7004
+Alignments,a-l-i-n-m-s,Alinms,,qailmns,7004
+Aligns,a-l-i-n-s,Alins,,qailns,7004
 Engineered,n-j-n-e2-d,Njned,,qdejn,7020
 Engineering,n-j-n-e2-\-h,Njneg,,qegjn,7020
 Engineers,n-j-n-e2-s,Njnes,,qejns,7020
@@ -2825,9 +2831,9 @@ Immigration,e-m-g-r-a-z,Emgraz,,qaegmrz,11303
 Emigration,e-m-g-r-a-z,Emgrazo,o,qaegmorz,11303
 Migration,m-i-g-r-a-z,Migraz,,qagimrz,11303
 Migrations,m-i-g-r-a-z-s,Migrazs,,qagimrzs,11303
-Assign,a-s-i-n,Asin,,qains,11390
-Assigning,a-s-i-n-\-h,Asing,,qagins,11390
-Assigns,a-s-i-n-s,Asins,,qains,11390
+Assign,a-s2-i-n,Asin,,qains,11390
+Assigning,a-s2-i-n-\-h,Asing,,qagins,11390
+Assigns,a-s2-i-n-s,Asins,,qains,11390
 Tanked,t-a-nk-d,Taqd,,qadqt,11495
 Tanking,t-a-nk-\-h,Taqg,,qagqt,11495
 Tanks,t-a-nk-s,Taqs,,qaqst,11495
@@ -3242,6 +3248,7 @@ Entails,n-ta-l-s,Ntals,,qalnst,21539
 Pliancy,p-l-i-n-s-e,Plinse,,qeilnps,21607
 Pliant,p-l-i-nt,Plint,,qilnpt,21607
 Assignments,a-s2-i-mn-s,Asimms,,qaims,21884
+Assignments,a-s2-i-mn-s,Asinms,,qaimns,21884
 Unwritten,n-r-e-tn,Nretn,,qenrt,22085
 Evangel,e-v-a-n-j,Evanj,,qaejnv,22125
 Evangelicals,e-v-a-n-j-/-k-s,Evanjks,,qaejknsv,22125
