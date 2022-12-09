@@ -142,7 +142,7 @@ class DictionaryMap
 			chordability := "short"
 		}
         newEntry.chordable := chordability
-    
+
         if (newEntry.chord == "0av") {
             this.logEvent(1, "Chordability of 0av is "  chordability)
         }
@@ -189,8 +189,13 @@ class DictionaryMap
 
         if (chordability == "active") {
 			if (not this.negationsChords.item(newEntrylower.chord)) {
-				this.logEvent(4, "Adding chord " newEntrylower.chord " as " newEntrylower.word)
-				this.chords.item(newEntry.chord) := newEntrylower
+				if (newEntry.isProper) {
+					this.logEvent(4, "Adding capped chord " newEntryCapped.chord " as " newEntryCapped.word)
+					this.chords.item(newEntry.chord) := newEntryCapped
+				} else {
+					this.logEvent(4, "Adding lowered chord " newEntrylower.chord " as " newEntrylower.word)
+					this.chords.item(newEntry.chord) := newEntrylower
+				}
 
 				StringUpper, chordUPPER, % newEntrylower.chord
 				newChordEntryCapped := new DictionaryEntry(wordCapped "," newEntrylower.form "," chordUPPER "," newEntrylower.keyer "," newEntrylower.chord "," newEntrylower.usage "," newEntrylower.dictionary)

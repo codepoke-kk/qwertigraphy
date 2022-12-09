@@ -4,24 +4,24 @@ Class ChordExpander {
 	__New(engine) {
 		this.title := "ChordExpander"
 		this.name := "chordexpander"
-		this.engine := engine 
+		this.engine := engine
 		this.logQueue := engine.logQueue
 		this.logVerbosity := this.engine.LogVerbosity
-		
+
 		this.logEvent(3, "Engine " this.title " instantiated")
 	}
-	
+
 	LeaveChord(key) {
 		if (not this.engine.keyboard.ChordPressStartTicks) {
 			this.logEvent(4, "No chord started. Leaving")
-			return 
+			return
 		}
 		chordWindow := A_TickCount - this.engine.keyboard.ChordPressStartTicks
 		this.logEvent(4, "Evaluating chord of length " StrLen(this.engine.keyboard.Token) " after release of " key " in " chordWindow "ms against window of " this.engine.keyboard.ChordReleaseWindows[StrLen(this.engine.keyboard.Token)] "ms")
-		if ((StrLen(this.engine.keyboard.Token) >= this.engine.keyboard.ChordMinimumLength) 
-			and (chordWindow > 0) 
+		if ((StrLen(this.engine.keyboard.Token) >= this.engine.keyboard.ChordMinimumLength)
+			and (chordWindow > 0)
 			and (chordWindow < this.engine.keyboard.ChordReleaseWindows[StrLen(this.engine.keyboard.Token)])) {
-			; The time is quick enough to call a chord 
+			; The time is quick enough to call a chord
 			this.logEvent(2, "ChordWindow: completed with " this.engine.keyboard.Token)
 			this.SendChord()
 		} else {
@@ -30,7 +30,7 @@ Class ChordExpander {
 		}
 		this.engine.keyboard.ChordPressStartTicks := 0
 	}
-	
+
 	SendChord() {
 		; Send through a possible chord
 		chord := this.engine.map.AlphaOrder(this.engine.keyboard.Token)
@@ -56,15 +56,15 @@ Class ChordExpander {
             token.chorded := 1
 			this.engine.keyboard.Token := ""
 			this.engine.NotifyExpandedToken(token)
-			this.engine.keyboard.AutoSpaceSent := ender 
+			this.engine.keyboard.AutoSpaceSent := ender
 		} else {
 			this.logEvent(3, "Chord " chord " not found. Allow input to complete in serial fashion")
 		}
 	}
 
-	LogEvent(verbosity, message) 
+	LogEvent(verbosity, message)
 	{
-		if (verbosity <= this.logVerbosity) 
+		if (verbosity <= this.logVerbosity)
 		{
 			event := new LoggingEvent(this.name,A_Now,message,verbosity)
 			this.logQueue.enqueue(event)
