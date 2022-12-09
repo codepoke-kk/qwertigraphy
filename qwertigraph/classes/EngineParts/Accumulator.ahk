@@ -48,7 +48,7 @@ Class Accumulator {
             this.logEvent(3, "Backspacing into buffer from position " this.retrievedTokenIndex)
             if (not this.retrievedTokenIndex) {
                 if (this.retrievedTokenHorizon) {
-                    ; 20221104 - Bug fix: The code was allowing the buffer to go back before the horizon if an arrow key was used 
+                    ; 20221104 - Bug fix: The code was allowing the buffer to go back before the horizon if an arrow key was used
                     this.logEvent(3, "Have no retrieved token - taking the horizon at " this.retrievedTokenHorizon)
                     this.retrievedTokenIndex := this.retrievedTokenHorizon
                 } else {
@@ -88,6 +88,10 @@ Class Accumulator {
 			this.logEvent(2, "Key " key " is actually a colon")
 			key := ":"
 		}
+        if ((GetKeyState("Shift")) and (InStr("'", key))) {
+			this.logEvent(2, "Key " key " is actually a double quote")
+			key := """"
+		}
 		this.logEvent(4, "Key " key " ending token " this.engine.keyboard.Token)
 		token := New TokenEvent(this.engine.keyboard.Token, key)
         token.created := this.starttime
@@ -97,7 +101,7 @@ Class Accumulator {
         this.retrievedTokenIndex := 0
         this.retrievedEnder := 0
         ; We set the horizon to this token +2 if the end character is navigation
-        ; Bug 20221108 - The end character can be "{Space}" or " " sometimes, so check both 
+        ; Bug 20221108 - The end character can be "{Space}" or " " sometimes, so check both
         if ((key = "{Space}") or (key = " ")) {
             ; We need to say the last retrieved token is one above this token to refresh the top of the buffer
             this.retrievedTokenIndex := this.engine.record.MaxIndex() + 2
