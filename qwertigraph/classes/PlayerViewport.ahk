@@ -1,16 +1,16 @@
 
-Gui MainGUI:Default 
+Gui MainGUI:Default
 Gui, Tab, Player
-;;; Column 1 
+;;; Column 1
 ; Add regex search fields
 Gui, Add, Text, x12  y64 w160 h20 , Input Text:
 Gui, Add, Edit, x12  y84 w800 h400 vPlayerInputText gPlayerInputText, Enter text to play here
 Gui, Add, Edit, x12  y484 w800 h20 vPlayerOutputText, Text will be played here
 
-Gui, Add, Button, Default x838 y64 w90 h20 gPlayerPlayText, Play
+Gui, Add, Button, x838 y64 w90 h20 gPlayerPlayText, Play
 
 PlayerInputText() {
-	; No op 
+	; No op
 }
 
 PlayerPlayText() {
@@ -22,23 +22,23 @@ PlayerPlayText() {
 class PlayerViewport
 {
 	interval := 500
-	
+
 	__New(engine)
 	{
 		this.engine := engine
 	}
- 
+
  	WmCommand(wParam, lParam){
 		if (lParam = this.hPlayerPlayText) {
 			this.playInputText()
 		}
 	}
-	
+
 	playInputText() {
 		local
 		global PlayerInputText
 		global PlayerOutputFocus
-		Gui MainGUI:Default 
+		Gui MainGUI:Default
 		GuiControlGet PlayerInputText
 		GuiControl, Focus, PlayerOutputText
 		Send, ^a{del}
@@ -55,11 +55,11 @@ class PlayerViewport
 				case "1", "2", "3", "4", "5", "6", "7", "8", "9", "0":
 					Send, % key
 					this.engine.AddToToken(key)
-				case " ", ".", ",", "'", "[", "]": 
+				case " ", ".", ",", "'", "[", "]":
 					this.engine.SendToken(key)
 				default:
 					this.SendToken("{" key "}")
-			} 
+			}
 
 			Sleep, 100
 		}

@@ -2668,6 +2668,7 @@ Polite,p-o-l-i,Poli,,qilop,4513
 Norman,n-o-mn,Nomm,,qmno,4514
 Relating,r-e-l-a-\-h,Relag,,qaeglr,4517
 Offended,o-f-nt-d,Ofntd,,qdfnot,4523
+Alliance,a-l-i-n-s,Alins,,qailns,4526
 Immortal,e-m-o-t-l,Emotl,,qelmot,4529
 String,s2-t-r-e-ng,Streg,,qegrst,4530
 Abundant,a-b-n-tn,Abntn,,qabnt,4532
@@ -3503,7 +3504,6 @@ Annoyance,a-n-o-e-n-s,Anyns,,qansy,7617
 Bags,b-a-g-s,Bagso,o,qabgos,7620
 Phase,f-a-s,Faso,o,qafos,7621
 Happiest,^-h-\-a-p-e-/-s2-t,Hapest,,qaehpst,7623
-For example,f-e-s2-a-m,Fxam,,fmx,7627
 Font,f-o-nt,Fonto,o,qfnot,7629
 Frantic,fr-a-nt,Frant,,qafnrt,7630
 Pin,p-e-n,Penu,u,qenpu,7634
@@ -3536,7 +3536,6 @@ Jenny,j-e-n-e,Jeneu,u,qejnu,7813
 Illustrate,e-l-u-s,Eluso,o,qelosu,7814
 Resign,r-s2-i-n,Rsin,,qinrs,7818
 Instinctive,n-s2-t-e-nk-/-v,Nsteqv,,qenqstv,7819
-I have,a-v,Avu,u,auv,7824
 Birthday,b-e-r-th-d-a,Berhda,,qabdehr,7824
 Housekeeper,^-h-\-u-s2-k-p-/-r,Huskpr,,qhkprsu,7827
 Owes,o-s,Osu,u,qosu,7833
@@ -5054,7 +5053,6 @@ Afghanistan,a-f-g-a-n,Afgan,,qafgn,21864
 Regina,r-e-j,Rej,,qejr,21865
 Ottawa,o-t-a,Otao,o,qaot,21877
 Assignment,a-s2-i-mn,Asimm,,qaims,21884
-Assignment,a-s2-i-mn,Asinm,,qaimns,21884
 Eliminate,e-l-e-mn-a-t,Elemmat,,qaelmt,21902
 Claimant,k-l-a-/-nt,Klant,,qaklnt,21940
 Impede,m-p-e-d,Mped,,qdemp,21944
@@ -7390,6 +7388,7 @@ I do not see,a-tn-s-e,Atnse,,qaenst,70820
 I do not understand,a-tn-/-s2-tn,Atnstn,,qanst,70821
 I don't,a-d-o-n,Adono,o,qadno,70822
 I had,i-d,Idi,i,qbdi,70823
+I have,a-v,Avu,u,qauv,70824
 I hope to hear,i-p-e-r,Iper,,qeipr,70826
 I must say,a-m-s-s-a,Amssa,,qams,70827
 I should like to have,a-sh-d-l-a-v,Azdlav,,qadlvz,70828
@@ -8384,6 +8383,7 @@ Week or two,e-k-t-u,Ektu,,qektu,71837
 Week or two ago,e-k-t-u-g,Ektug,,qegktu,71838
 Weekend,e-k-nt,Eknto,o,qeknot,71839
 Weeks ago,e-k-s2-g,Eksg,,qegks,71840
+West virginia,uv,Uvo,o,qouv,71841
 Westbound track,u-b-t,Ubt,,qbtu,71843
 Westerly direction,u-r-e-d,Ured,,qderu,71844
 Westerly side,u-r-e-s,Ures,,qersu,71845

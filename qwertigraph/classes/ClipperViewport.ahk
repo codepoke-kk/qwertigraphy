@@ -3,8 +3,8 @@ Gui MainGUI:Default
 Gui, Tab, Clipper
 
 
-Gui, Add, Button, Default x838 y86 w90 h20 gClipperHide, Hide
-Gui, Add, Button, Default x838 y106 w90 h20 gClipperShow, Show
+Gui, Add, Button, x838 y86 w90 h20 gClipperHide, Hide
+Gui, Add, Button, x838 y106 w90 h20 gClipperShow, Show
 
 Gui, Add, Text, x12  y64 w160 h20 , Pastable Fields:
 Gui, Add, Text, x12  y86 w160 h20 , P1:
@@ -29,8 +29,8 @@ Gui, Add, Edit, x42  y244 w780 h20 vClipperP9, I have seen the moment of my grea
 Gui, Add, Edit, x42  y264 w780 h20 vClipperP0, I have heard the mermaids singing, each to each. I do not think that they will sing to me. - T.S. Eliot, The Love Song of J. Alfred Prufrock
 
 
-Gui, Add, Button, Default x838 y324 w90 h20 gClipperLoad, Load
-Gui, Add, Button, Default x838 y364 w90 h20 gClipperSave, Save
+Gui, Add, Button, x838 y324 w90 h20 gClipperLoad, Load
+Gui, Add, Button, x838 y364 w90 h20 gClipperSave, Save
 
 Gui, Add, Text, x12  y326 w200 h20 , Clips file name:
 Gui, Add, Edit, x222  y324 w400 h20 vClipperFilename, clipper.clips
