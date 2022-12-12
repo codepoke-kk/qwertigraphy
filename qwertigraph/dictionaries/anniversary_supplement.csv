@@ -270,6 +270,7 @@ Highlight,^-h-\-i-l-i,Hili,,qhil,333
 Highlighted,^-h-\-i-l-i-d,Hilid,,qdhil,333
 Highlighting,^-h-\-i-l-i-\-h,Hilig,,qghil,333
 Highlights,^-h-\-i-l-i-s,Hilis,,qhils,333
+Hopes,^-h-\-o-p-s,Hops,,qhops,348
 Leaving,l-e-v-\-h,Levg,,qeglv,350
 Ensure,e-n-sh-u,Enzu,,qenuz,351
 Unsure,u-n-sh-u,Unzu,,qnuz,351
@@ -360,6 +361,7 @@ Hardship,^-h-\-a2-d-\-sh,Hadz,,qadhz,448
 Hardships,^-h-\-a2-d-\-sh-s,Hadzs,,qadhsz,448
 Blackout,bl-a-k-a-u,Blakw,,qabklw,455
 Blackouts,bl-a-k-a-u-s,Blakws,,qabklsw,455
+Beautifully,b-t-e-f-e,Btefe,,qbeft,456
 Closest,k-l-o-s-e-s,Kloses,,qeklos,458
 Closing,k-l-o-s-\-h,Klosg,,qgklos,458
 Closer,k-l-o-s-r,Klosr,,qklors,458
@@ -634,10 +636,15 @@ Reaching,r-e-ch-\-h,Recg,,qcegr,737
 Agreed,^-ya-d,Yad,,qady,746
 Agreeing,^-ya-\-h,Yag,,qagy,746
 Agrees,^-ya-s,Yas,,qasy,746
+Staying,s2-t-a-\-h,Stag,,qagst,752
+Stays,s2-t-a-s,Stas,,qast,752
 Properties,pr-p-t-s,Prpts,,qprst,755
 Outgrew,a-u-g-r-u,Wgru,,qgruw,758
 Impossibly,m-p-o-s-e,Mpose,,qemops,763
 Impossibles,m-p-o-s-s,Mposs,,qmops,763
+Pleased,pl-d,Pld,,qdlp,769
+Pleasing,pl-\-h,Plg,,qglp,769
+Pleases,pl-s,Pls,,qlps,769
 Faiths,f-a-th-s,Fahso,o,qafhos,777
 Systematic,s2s-\-a,Ssa,,qasz,778
 Systematically,s2s-\-a-e,Ssae,,qaes,778
@@ -864,6 +871,8 @@ Equalized,e-k-l-i-s-d,Eqlisd,,qeilqsd,982
 Equalizing,e-k-l-i-s-\-h,Eqlisg,,qeilqsg,982
 Equalizes,e-k-l-i-s-s,Eqliss,,qeilqss,982
 Equals,e-k-l-s,Eqls,,qelqs,982
+Physically,f-e-s-/-k-e,Feske,,qefks,987
+Physicals,f-e-s-/-k-s,Fesks,,qefks,987
 Watch,u-o-ch,Uoc,,qcoux,990
 Watched,u-o-ch-d,Uocd,,qcdou,990
 Watchful,u-o-ch-f,Uocf,,qcfou,990
@@ -1083,6 +1092,9 @@ Redirect,r-e-d-r-k,Redrk,,qdekr,1429
 Redirected,r-e-d-r-k-d,Redrkd,,qdekr,1429
 Redirecting,r-e-d-r-k-\-h,Redrkg,,qdegkr,1429
 Redirects,r-e-d-r-k-s,Redrks,,qdekrs,1429
+Comforted,k-f-t-d,Kftd,,qdfkt,1431
+Comforting,k-f-t-\-h,Kftg,,qfgkt,1431
+Comforts,k-f-t-s,Kfts,,qfkst,1431
 Unprepared,n-pr-e-p-d,Nprepd,,qdenpr,1440
 Prepared,pr-e-p-d,Prepd,,qdepr,1440
 Preparedness,pr-e-p-d-n-s,Prepdns,,qdenprs,1440
@@ -1256,6 +1268,11 @@ Slows,s-l-o-s,Slos,,qlos,1663
 Slowest,s-l-o-s-t,Slost,,qlost,1663
 Currently,k-r-e-nt-e,Krente,,qeknrt,1668
 Currents,k-r-e-nt-s,Krents,,qeknrst,1668
+Continued,k-tn-u-d,Ktnud,,qdkntu,1670
+Continuing,k-tn-u-\-h,Ktnug,,qgkntu,1670
+Continuum,k-tn-u-m,Ktnum,,qkmntu,1670
+Continuums,k-tn-u-m-s,Ktnums,,qkmnstu,1670
+Continues,k-tn-u-s,Ktnus,,qknstu,1670
 Joining,j-o-e-n-\-h,Jyng,,qgjny,1678
 Joins,j-o-e-n-s,Jyns,,qjnsy,1678
 Rejoin,r-j-o-e-n,Rjyn,,qjnry,1678
@@ -1423,6 +1440,15 @@ Computerized,k-p-u-/-r-i-s-d,Kpurisd,,qdikprsu,1944
 Computerizing,k-p-u-/-r-i-s-\-h,Kpurisg,,qgikprsu,1944
 Computerizes,k-p-u-/-r-i-s-s,Kpuriss,,qikprsu,1944
 Computers,k-p-u-/-r-s,Kpurs,,qkprsu,1944
+Fault,f-o-t,Fot,,qfot,1958
+Faulted,f-o-t-d,Fotd,,qdfot,1958
+Faulting,f-o-t-\-h,Fotg,,qfgot,1958
+Faults,f-o-t-s,Fots,,qfost,1958
+Actualize,a-k-t-l-i-s,Aktlis,,qaiklst,1962
+Actualized,a-k-t-l-i-s-d,Aktlisd,,qadiklst,1962
+Actualizing,a-k-t-l-i-s-\-h,Aktlisg,,qagiklst,1962
+Actualizes,a-k-t-l-i-s-s,Aktliss,,qaiklst,1962
+Actuals,a-k-t-l-s,Aktls,,qaklst,1962
 Septuagint,s-e-p-j,Sepj,,qejps,1973
 Writers,r-i-r-s,Rirs,,qirs,1976
 Protections,pr-o-t-e-k-sh-s,Protekzs,,qekoprstz,1983
@@ -1526,8 +1552,12 @@ Universities,e-u-n-v-e-s2-t-e-s,Unvestes,,qenstuv,2367
 Limitations,l-e-m-sh-s,Lemzs,,qelmsz,2368
 Agreeably,^-yab-e,Yabe,,qabey,2378
 Suggestions,s2-u-j-s,Sujso,o,qjosu,2382
+Comfortably,k-f-t-b-e,Kftbe,,qbefkt,2383
 Confusions,k-f-e-u-sh-s,Kfuzs,,qfksuz,2394
 Preparatory,pr-e-p-\-r-e,Prepre,,qepr,2440
+Kitchened,k-e-ch-n-d,Kecnd,,qcdekn,2472
+Kitchening,k-e-ch-n-\-h,Kecng,,qcegkn,2472
+Kitchens,k-e-ch-n-s,Kecns,,qcekns,2472
 Fingered,f-e2-ng-e2-d,Feqed,,qdefq,2476
 Fingering,f-e2-ng-e2-\-h,Feqeg,,qefgq,2476
 Fingerlings,f-e2-ng-e2-l-s,Feqels,,qeflqs,2476
@@ -1592,6 +1622,12 @@ Hits,^-h-\-e-t-s,Hetsu,u,qehstu,2648
 Availability,a-v-a-l-\-b,Avalbo,,qablov,2653
 Unavailable,u-n-a-v-a-l-b,Unavalb,,qablnuv,2653
 Unavailability,u-n-a-v-a-l-\-b,Unavalbo,o,qablnouv,2653
+Ideally,a-d-e-l-e,Adele,,qadel,2665
+Idealist,a-d-e-l-e-s,Adeles,,qadels,2665
+Idealists,a-d-e-l-e-s-s,Adeless,,qadels,2665
+Ideals,a-d-e-l-s,Adels,,qadels,2665
+Idealistic,a-d-e-l-\-s-t,Adelst,,qadelst,2665
+Idealistically,a-d-e-l-\-s-t-e,Adelste,,qadelst,2665
 Reroute,r-e-r-u-t,Rerut,,qertu,2671
 Rerouted,r-e-r-u-t-d,Rerutd,,qdertu,2671
 Rerouting,r-e-r-u-t-\-h,Rerutg,,qegrtu,2671
@@ -1636,6 +1672,7 @@ Territorial,t-e-t-l,Tetl,,qelt,2795
 Territorially,t-e-t-l-e,Tetle,,qelt,2795
 Territoriality,t-e-t-\-l,Tetlo,o,qelot,2795
 Territories,t-e-t-s,Tets,,qest,2795
+Continual,k-tn-l,Ktnl,,qklnt,2797
 Editions,e-d-sh-s,Edzs,,qdesz,2816
 Communities,k-/-nt-s,Knts,,qknst,2828
 Organizational,o-g-l,Ogl,,qglo,2829
@@ -1820,6 +1857,7 @@ Satisfying,s2-a-t-\-h,Satg,,qagst,3358
 Satisfies,s2-a-t-s,Sats,,qast,3358
 Specification,s-p-e-s2-\-f,Spesf,,qefps,3371
 Specifications,s-p-e-s2-\-f-s,Spesfs,,qefps,3371
+Specifics,s-p-e-s2-k-s,Spesks,,qekps,3371
 Created,k-r-ea-t-d,Kretd,,qdekrt,3378
 Creator,k-r-ea-t-e2,Krete,,qekrt,3378
 Creators,k-r-ea-t-e2-s,Kretes,,qekrst,3378
@@ -1908,6 +1946,7 @@ Perfecting,pr-f-\-h,Prfg,,qfgpr,3629
 Perfects,pr-f-s,Prfs,,qfprs,3629
 Perfection,pr-f-s2h,Prfz,,qfprz,3629
 Perfections,pr-f-s2h-s,Prfzs,,qfprsz,3629
+Helplessness,^-h-\-e-l-pl-n-e-s,Helplnes,,qehlp,3635
 Correspondences,k-r-e-s-s,Kress,,qekrs,3646
 Associations,a-s2-o-sh-s,Asozs,,qaosz,3676
 Established,e-s2-t-b-d,Estbd,,qbestd,3682
@@ -1961,6 +2000,8 @@ Engagements,n-g-a-m-s,Ngams,,qagmns,3772
 Situate,s2-e-t-e-u-t,Setut,,qestu,3776
 Situating,s2-e-t-e-u-t-\-h,Setutg,,qegstu,3776
 Situates,s2-e-t-e-u-t-s,Setuts,,qestu,3776
+Glowed,g-l-o-d,Glod,,qdglo,3779
+Glowing,g-l-o-\-h,Glog,,qglo,3779
 Undoubted,n-d-a-u-/-t,Ndwt,,qdntw,3796
 Misinform,m-s-n-m-f,Msnmf,,qfmns,3807
 Misinformed,m-s-n-m-f-d,Msnmfd,,qdfmns,3807
@@ -1983,6 +2024,9 @@ Identifies,a-tn-df-s,Atndfs,,qadfnst,3839
 Platformed,pl-a-t-f-m-d,Platfmd,,qadflmpt,3844
 Platforming,pl-a-t-f-m-\-h,Platfmg,,qafglmpt,3844
 Platforms,pl-a-t-f-m-s,Platfms,,qaflmpst,3844
+Waked,u-a-k-d,Uakd,,qadku,3846
+Waking,u-a-k-\-h,Uakg,,qagku,3846
+Wakes,u-a-k-s,Uaks,,qaksu,3846
 Exempted,e-s2-e-mt-d,Xemtd,,qdemtx,3856
 Exempting,e-s2-e-mt-\-h,Xemtg,,qegmtx,3856
 Exempts,e-s2-e-mt-s,Xemts,,qemstx,3856
@@ -2109,6 +2153,7 @@ Replacement,r-pl-a-s-m,Rplasm,,qalmprs,4225
 Replacements,r-pl-a-s-m-s,Rplasms,,qalmprs,4225
 Replaces,r-pl-a-s-s,Rplass,,qalprs,4225
 Picturesquely,p-k-t-r-e-s2-k-e,Pqtreske,,qekpqrst,4237
+Hopelessly,^-h-\-o-pl-e,Hople,,qehlop,4354
 Advising,v-i-s-\-h,Visg,,qgisv,4358
 Adviser,v-i-s-r,Visr,,qirsv,4358
 Advisory,v-i-s-r-e,Visre,,qeirsv,4358
@@ -2247,6 +2292,9 @@ Recollection,r-e-k-o-l-sh,Rekolz,,qeklorz,5071
 Recollections,r-e-k-o-l-sh-s,Rekolzs,,qeklorsz,5071
 Complaints,k-p-s,Kpsa,a,qakps,5092
 Entertain,n-/-tn,Ntno,o,qnotz,5116
+Convinced,k-v-e-n-s-d,Kvensd,,qdeknsv,5129
+Convincing,k-v-e-n-s-\-h,Kvensg,,qegknsv,5129
+Convinces,k-v-e-n-s-s,Kvenss,,qeknsv,5129
 Organic,o-g-n-e-k,Ognek,,qegkno,5141
 Organist,o-g-n-e-s,Ognes,,qegnos,5141
 Organically,o-g-n-\-k-e,Ognke,,qegkno,5141
@@ -2466,6 +2514,7 @@ Ornamental,o-n-a-m-l,Onaml,,qalmno,6391
 Ornamentally,o-n-a-m-l-e,Onamle,,qaelmno,6391
 Ornaments,o-n-a-m-s,Onams,,qamnos,6391
 Boundaries,b-n-r-e-s,Bnres,,qbenrs,6400
+Uncomfortably,n-k-f-t-b-e,Nkftbe,,qbefknt,6437
 Executable,e-s2-k-b,Xkb,,qbkx,6515
 Executables,e-s2-k-b-s,Xkbs,,qbksx,6515
 Executing,e-s2-k-\-h,Xkog,o,qgkox,6515
@@ -2618,6 +2667,7 @@ Suppositions,s-p-o-sh-s,Spozs,,qopsz,7854
 Invalidity,n-v-a-l-e-td-e,Nvaledte,,qadelnv,7867
 Validity,v-a-l-e-td-e,Valedte,,qadeltv,7867
 Ticketing,t-e-k-e-t-\-h,Teketg,,qegkt,7883
+Hopefully,^-h-\-o-p-f-e,Hopfe,,qefhop,7957
 Needful,n-e-d-f,Nedf,,qdefn,7996
 Needfully,n-e-d-f-e,Nedfe,,qdefn,7996
 Rejected,r-j-k-d,Rjkd,,qdjkr,8015
@@ -2874,6 +2924,8 @@ Outputting,a-u-\-p-\-h,Wpg,,qgpw,10999
 Outpost,a-u-p-o-s-t,Wpost,,qopstw,10999
 Outposts,a-u-p-o-s-t-s,Wposts,,qopstw,10999
 Outputs,a-u\--p-s,Wps,,qpsw,10999
+Helpfully,^-h-\-e-l-p-f-e,Helpfe,,qefhlp,11072
+Helpfulness,^-h-\-e-l-p-f-n-e-s,Helpfnes,,qefhlnps,11072
 Unreliable,n-r-e-l-i-b,Nrelib,,qbeilnr,11229
 Unreliability,n-r-e-l-i-\-b,Nrelibo,o,qbeilnor,11229
 Reliably,r-e-l-i-b-e,Relibe,,qbeilr,11229
@@ -3135,6 +3187,7 @@ Unseemly,n-s2-e-m-e,Nseme,,qemns,16215
 Instructors,n-s-/-k-r-s,Nskrs,,qknrs,16231
 Inert,e-n-e2-t,Enet,,qentz,16336
 Ensign,n-s2-i-n,Nsin,,qinsz,16435
+Faultlessly,f-o-t-l-e,Fotle,,qeflot,16573
 Encipher,n-s2-i-f,Nsif,,qfins,16597
 Encipherable,n-s2-i-f-b,Nsifb,,qbfins,16597
 Enciphered,n-s2-i-f-d,Nsifd,,qdfins,16597
@@ -3163,6 +3216,9 @@ Qualifications,k-o-\-f-s,Qofs,,qfoqs,16962
 Paradoxical,p-/-d-o-x-\-k,Pdoxk,,qdkopx,16982
 Paradoxically,p-/-d-o-x-\-k-e,Pdoxke,,qdekopx,16982
 Paradoxes,p-/-d-o-x-s,Pdoxs,,qdopsx,16982
+Defaulted,df-o-t-d,Dfotd,,qdfot,17034
+Defaulting,df-o-t-\-h,Dfotg,,qdfgot,17034
+Defaults,df-o-t-s,Dfots,,qdfost,17034
 Ambiguously,a-m-b-g-e,Ambge,,qabegm,17126
 Ambiguity,a-m-b-ge-u-t-e,Ambgute,,qabegmtu,17126
 Ambiguities,a-m-b-ge-u-t-e-s,Ambgutes,,qabegmstu,17126
@@ -3270,6 +3326,10 @@ Staggered,s-t-a-g-r-d,Stagrd,,qadgrst,20168
 Staggering,s-t-a-g-r-\-h,Stagrg,,qagrst,20168
 Staggers,s-t-a-g-r-s,Stagrs,,qagrst,20168
 Incorrectly,n-k-r-e,Nkre,,qeknr,20209
+Gaped,g-a-p-d,Gapd,,qadgp,20287
+Gaping,g-a-p-\-h,Gapg,,qagp,20287
+Gape,g-a-p,Gapo,o,qagop,20287
+Gapes,g-a-p-s,Gapso,o,qagops,20287
 Components,k-p-o-n-s,Kpons,,qknops,20428
 Inventoried,n-v-nt-re-d,Nvntred,,qdenrtv,20433
 Inventorying,n-v-nt-re-\-h,Nvntreg,,qegnrtv,20433
@@ -4061,6 +4121,14 @@ Rage,r-a-j,Raj,,qajr,90998
 Raged,r-a-j-d,Rajd,,qadjr,90998
 Raging,r-a-j-\-h,Rajg,,qagjr,90998
 Rages,r-a-j-s,Rajs,,qajrs,90998
+Transform,^-t-\-f-m,Tfm,,qfmt,91048
+Transformed,^-t-\-f-m-d,Tfmd,,qdfmt,91048
+Transforming,^-t-\-f-m-\-h,Tfmg,,qfgmt,91048
+Transformer,^-t-\-f-m-r,Tfmr,,qfmrt,91048
+Transformers,^-t-\-f-m-r-s,Tfmrs,,qfmrst,91048
+Transforms,^-t-\-f-m-s,Tfms,,qfmst,91048
+Transformation,^-t-\-f-m-sh,Tfmz,,qfmtz,91048
+Transformations,^-t-\-f-m-sh-s,Tfmzs,,qfmstz,91048
 Straightforward,s-t-r-a-t-f-d,Stratfd,,qadfrst,91152
 Straightforwardly,s-t-r-a-t-f-d-e,Stratfde,,qadefrst,91152
 Purgatory,pr-g-a-t-r-e,Prgatre,,qaegprt,91179
@@ -4092,7 +4160,7 @@ Queried,q-e-\-n-^-r-e-d,Qered,,qdeqr,91365
 Querying,q-e-\-n-^-r-e-\-h,Qereg,,qegqr,91365
 Queries,q-e-\-n-^-r-e-s,Qeres,,qeqrs,91365
 Warnings,u-o-n-\-s,Uonsg,g,,91380
-Survival,s-e2-v-i-l,Sevilo,o,qeilosv,91438
+Survival,s-e2-v-i-l,Sevil,,qeilsv,91438
 Visual,v-e-sh-u-l,Vezul,,qeluvz,91464
 Visually,v-e-sh-u-l-e,Vezule,,qeluvz,91464
 Visualize,v-e-sh-u-l-i-s,Vezulis,,qeilsuvz,91464
