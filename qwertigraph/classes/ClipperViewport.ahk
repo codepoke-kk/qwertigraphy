@@ -49,6 +49,9 @@ ClipperSave() {
 
 ClipperLoad() {
 	global clipper
+    ; You must hit this button once before you can use the clips
+    ; Without this, I kept pasting encrypted text and that was a real problem
+    clipper.clipsLoaded := 1
 	clipper.loadClips()
 }
 
@@ -73,6 +76,7 @@ class ClipperViewport
 		this.qenv := qenv
         this.padlength := 31
         this.padboundary := "zjacq"
+        this.clipsLoaded := 0
 	}
 
     initialize() {
@@ -226,6 +230,7 @@ class ClipperViewport
             GuiControl, Text, % "ClipperP" iterator, % this.decrypt(clipperkey, A_LoopReadLine)
             iterator++
 		}
+        ; clips will load, whether encrypted or not, but you have to hit that button
         this.logEvent(1, "Loaded clipper clips")
 
     }

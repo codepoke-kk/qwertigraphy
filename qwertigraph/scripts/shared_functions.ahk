@@ -12,7 +12,12 @@ SendTime(qwerd, word, end_key) {
 
 ;;; Clipper method
 PasteFromSlot(slot) {
-	Gui MainGUI:Default 
+    global clipper
+    if (not clipper.clipsLoaded) {
+        MsgBox, % "Clips not loaded. You must load them first."
+        return
+    }
+	Gui MainGUI:Default
     RegExMatch(slot, "(\d)", slotnumber)
     fieldname := "ClipperP" . slotnumber
 	GuiControlGet fieldvalue,, % fieldname
@@ -38,17 +43,17 @@ Encrypt(plaintext) {
         dailyKey := GenerateKey(desiredKeyLength)
     }
     Encrypted := ""
-    Loop, Parse, plaintext 
+    Loop, Parse, plaintext
     {
         Encrypted .= Chr(((Asc(A_LoopField)-32)^(Asc(SubStr(dailyKey,A_Index,1))-32))+32)
     }
-    
+
     Return Encrypted
 }
 Decrypt(cipherhash) {
     global dailyKey
     Decrypted := ""
-    Loop, Parse, cipherhash 
+    Loop, Parse, cipherhash
     {
         Decrypted .= Chr(((Asc(A_LoopField)-32)^(Asc(SubStr(dailyKey,A_Index,1))-32))+32)
     }
@@ -58,7 +63,7 @@ Decrypt(cipherhash) {
 stdna := ""
 admna := ""
 syana := ""
-;;; methods for a standard username 
+;;; methods for a standard username
 InputStandardNapud() {
     global stdna
     global stdpud
@@ -93,7 +98,7 @@ OutputStandardPud() {
     }
     Send % Decrypt(stdpud)
 }
-;;; methods for an admin username 
+;;; methods for an admin username
 InputAdminNapud() {
     global admna
     global admpud
@@ -128,7 +133,7 @@ OutputAdminPud() {
     }
     Send % Decrypt(admpud)
 }
-;;; methods for a service account 
+;;; methods for a service account
 InputServiceAccountNapud() {
     global syana
     global syapud
