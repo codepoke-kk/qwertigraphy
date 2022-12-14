@@ -227,6 +227,7 @@ Lighting,l-i-\-h,Lig,,qgil,271
 Presented,pr-d,Prd,,qdpr,276
 Presenting,pr-\-h,Prgo,o,qgopr,276
 Presenter,pr-r,Prr,,qcpr,276
+Presenters,pr-r-s,Prrs,,qprs,276
 Watered,u-o-t-e2-d,Uoted,,qdeotu,278
 Waterfall,u-o-t-e2-f-o,Uotefo,,qefotu,278
 Waterfalls,u-o-t-e2-f-o-s,Uotefos,,qefostu,278
@@ -1195,7 +1196,8 @@ Unimaginably,u-n-e-m-a-j-/-b-e,Nemajbe,,qabejmn,1554
 Unimaginative,u-n-e-m-a-j-df,Nemajtv,,qaejmntv,1554
 Guessed,g-e-s-d,Gesd,,qdegs,1555
 Guessing,g-e-s-\-h,Gesg,,qegs,1555
-Guesss,g-e-s-s,Gess,,qegs,1555
+Guesses,g-e-s-s,Gess,,qegs,1555
+OpenLDAP,o-l-d-p,Oldp,,qdlop,1555
 Complied,k-pl-i-d,Kplid,,qiklpd,1566
 Complying,k-pl-i-\-h,Kplig,,qiklpg,1566
 Complies,k-pl-i-s,Kplis,,qiklps,1566
@@ -1245,6 +1247,7 @@ Sandboxed,s-b-o-x-d,Sboxd,,qbdosx,1595
 Sandboxing,s-b-o-x-\-h,Sboxg,,qbgosx,1595
 Sandboxes,s-b-o-x-s,Sboxs,,qbosx,1595
 Doubled,d-b-d,Dbd,,qbcd,1600
+Doubly,d-b-e,Dbe,,qbde,1600
 Doubling,d-b-\-h,Dbg,,qbdg,1600
 Doubles,d-b-s,Dbs,,qbds,1600
 Titling,t-i-t-\-h,Titg,,qitvg,1615
@@ -1514,6 +1517,12 @@ Types,t-i-p-s,Tips,,qipst,2117
 Mistook,m-s2-t-d,Mstd,,qdmst,2119
 Mistaking,m-s2-t-\-h,Mstg,,qgmst,2119
 Mistakes,m-s2-t-s,Msts,,qmst,2119
+Production,pr-o-k-sh,Prokz,,qkoprz,2124
+Productionize,pr-o-k-sh-i-s,Prokzis,,qikoprsz,2124
+Productionized,pr-o-k-sh-i-s-d,Prokzisd,,qdikoprsz,2124
+Productionizing,pr-o-k-sh-i-s-\-h,Prokzisg,,qgikoprsz,2124
+Productionizes,pr-o-k-sh-i-s-s,Prokziss,,qikoprsz,2124
+Productions,pr-o-k-sh-s,Prokzs,,qkoprsz,2124
 Guided,g-i-d-d,Gidd,,qdgi,2141
 Guiding,g-i-d-\-h,Gidg,,qdgi,2141
 Guides,g-i-d-s,Gids,,qdgis,2141
@@ -2143,6 +2152,10 @@ Maximizes,m-a-x-m-i-s-s,Maxmiss,,qaimsx,4077
 Maximums,m-a-x-mn-s,Maxmms,,qamsx,4077
 Maximo,m-a-x-m-o,Maxmo,,qamox,4077
 Coal,k-o-l,Kolo,,qklo,4112
+Product,pr-o-k,Prok,,qkopr,4118
+Producted,pr-o-k-d,Prokd,,qdkopr,4118
+Producting,pr-o-k-\-h,Prokg,,qgkopr,4118
+Products,pr-o-k-s,Proks,,qkoprs,4118
 Editors,e-td-e2-s,Eddes,,qdes,4123
 Editorship,e-td-e2-sh,Eddez,,qdez,4123
 Editorships,e-td-e2-sh-s,Eddezs,,qdesz,4123
@@ -2729,6 +2742,8 @@ Deleting,d-l-e-t-\-h,Dletg,,qdeglt,8274
 Deleter,d-l-e-t-r,Dletr,,qdelrt,8274
 Deleters,d-l-e-t-r-s,Dletrs,,qdelrst,8274
 Deletes,d-l-e-t-s,Dlets,,qdelst,8274
+Productive,pr-o-k-v,Prokv,,qkoprv,8288
+Productivity,pr-o-k-v-t-e,Prokvte,,qekoprtv,8288
 Abilities,a-b-s,Abso,o,qabos,8337
 Behavioral,b-^-h-\-a-v-r-l,Bhavrl,,qabhlrv,8429
 Behaviorally,b-^-h-\-a-v-r-l-e,Bhavrle,,qabehlrv,8429
@@ -3601,6 +3616,7 @@ Bespeaks,b-s-p-s,Bsps,,qbps,28509
 Merged,m-e-j-d,Mejd,,qdejm,28583
 Merging,m-e-j-\-h,Mejg,,qegjm,28583
 Merges,m-e-j-s,Mejs,,qejms,28583
+Unproductive,npdkv,Npdkv,,qdknpv,28866
 Diagonally,d-i-g-e,Dige,,qdegi,28892
 Fasted,f-a-s2-t-d,Fastd,,qadfst,28922
 Dent,tn-t,Tnto,o,qnotz,29634
