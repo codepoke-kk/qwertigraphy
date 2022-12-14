@@ -271,6 +271,7 @@ Highlighted,^-h-\-i-l-i-d,Hilid,,qdhil,333
 Highlighting,^-h-\-i-l-i-\-h,Hilig,,qghil,333
 Highlights,^-h-\-i-l-i-s,Hilis,,qhils,333
 Hopes,^-h-\-o-p-s,Hops,,qhops,348
+Alongside,a-l-ng-s-i,Algsi,,qagils,349
 Leaving,l-e-v-\-h,Levg,,qeglv,350
 Ensure,e-n-sh-u,Enzu,,qenuz,351
 Unsure,u-n-sh-u,Unzu,,qnuz,351
@@ -892,6 +893,8 @@ Successively,s2-u-k-v-e,Sukve,,qeksuv,1001
 Succession,s2-u-k-sh,Sukz,,qksuz,1001
 Successions,s2-u-k-sh-s,Sukzs,,qksuz,1001
 Rebuilt,r-bl,Rbl,,qblr,1002
+Rated,r-a-t-d,Ratd,,qadrt,1024
+Rating,r-a-t-\-h,Ratg,,qagrt,1024
 Offering,o-f-\-h,Ofg,,qfgo,1034
 Offers,o-f-s,Ofs,,qfos,1034
 Promising,pr-m-e-s-\-h,Prmesg,,qegmprs,1066
@@ -1035,6 +1038,9 @@ Reports,r-pr-s,Rprs,,qprs,1256
 Secured,s2-e-k-r-d,Sekrd,,qdekrs,1260
 Securing,s2-e-k-r-\-h,Sekrg,,qegkrs,1260
 Secures,s2-e-k-r-s,Sekrs,,qekrs,1260
+Portioned,p-o-r-sh-d,Porzd,,qdoprz,1272
+Portioning,p-o-r-sh-\-h,Porzg,,qgoprz,1272
+Portions,p-o-r-sh-s,Porzs,,qoprsz,1272
 Measured,m-e-sh-u-d,Mezud,,qdemuz,1277
 Measuring,m-e-sh-u-\-h,Mezug,,qegmuz,1277
 Licensed,l-i-s2-n-s-d,Lisnsd,,qdilns,1293
@@ -1509,6 +1515,11 @@ Universality,e-u-n-v-\-l,Unvl,,qlnuv,2153
 Exactly,e-s2-a-k-e,Xake,,qaekx,2154
 Exacting,e-s2-a-k-\-h,Xakg,,qagkx,2154
 Exacts,e-s2-a-k-s,Xaks,,qaksx,2154
+Proportionate,pr-pr-sh-a-t,Prprzat,,qaprtz,2173
+Proportionately,pr-pr-sh-a-t-e,Prprzate,,qaeprtz,2173
+Proportioned,pr-pr-sh-d,Prprzd,,qdprz,2173
+Proportioning,pr-pr-sh-\-h,Prprzg,,qgprz,2173
+Proportions,pr-pr-sh-s,Prprzs,,qprsz,2173
 Temples,tm-pl-s,Tmpls,,qlmpst,2206
 Link,l-e-nk,Leq,,qelq,2210
 Linked,l-e-nk-d,Leqd,,qdelq,2210
@@ -1556,6 +1567,9 @@ Agreeably,^-yab-e,Yabe,,qabey,2378
 Suggestions,s2-u-j-s,Sujso,o,qjosu,2382
 Comfortably,k-f-t-b-e,Kftbe,,qbefkt,2383
 Confusions,k-f-e-u-sh-s,Kfuzs,,qfksuz,2394
+Shopped,sh-o-p-d,Zopd,,qdopz,2401
+Shopping,sh-o-p-\-h,Zopg,,qgopz,2401
+Shops,sh-o-p-s,Zops,,qopsz,2401
 Preparatory,pr-e-p-\-r-e,Prepre,,qepr,2440
 Kitchened,k-e-ch-n-d,Kecnd,,qcdekn,2472
 Kitchening,k-e-ch-n-\-h,Kecng,,qcegkn,2472
@@ -1860,6 +1874,9 @@ Satisfies,s2-a-t-s,Sats,,qast,3358
 Specification,s-p-e-s2-\-f,Spesf,,qefps,3371
 Specifications,s-p-e-s2-\-f-s,Spesfs,,qefps,3371
 Specifics,s-p-e-s2-k-s,Spesks,,qekps,3371
+Creative,k-r-ea-df,Kredf,,qdefkr,3378
+Creatively,k-r-ea-df-e,Kredfe,,qdefkr,3378
+Creatives,k-r-ea-df-s,Kredfs,,qdefkrs,3378
 Created,k-r-ea-t-d,Kretd,,qdekrt,3378
 Creator,k-r-ea-t-e2,Krete,,qekrt,3378
 Creators,k-r-ea-t-e2-s,Kretes,,qekrst,3378
@@ -2421,6 +2438,7 @@ Youngest,u-ng-e-s,Uges,,qegsu,5724
 Amaze,a-m-a-s,Amas,,qams,5749
 Amazed,a-m-a-s-d,Amasd,,qadms,5749
 Amazing,a-m-a-s-\-h,Amasg,,qagms,5749
+Amazingly,a-m-a-s-\-h-e,Amasge,,qaegms,5749
 Amazes,a-m-a-s-s,Amass,,qams,5749
 Equanimity,e-k-a-m-\-<-<-n->->-nt,Eqamt,,qaemqt,5752
 Developed,dfl-d,Dfld,,qdfl,5759
@@ -2495,6 +2513,7 @@ Dominions,d-o-mn-u-n-s,Domnuns,,qdmnosu,6094
 Preachers,pr-e2-ch-e2-s,Preces,,qceprs,6137
 Momentarily,m-o-m-r-ye,Momry,,qmory,6159
 Faster,f-a-s2-t-e2,Faste,,qaefst,6175
+Archbishops,a2-ch-b-e-sh-s,Acbezs,,qabcesz,6205
 Spoil,s-p-o-e-l,Spyl,,qlpsy,6243
 Spoiling,s-p-o-e-l-\-h,Spylg,,qglpsy,6243
 Spoils,s-p-o-e-l-s,Spyls,,qlpsy,6243
@@ -3160,6 +3179,8 @@ Shortening,sh-/-n-\-h,Zng,,qgnz,14581
 Shortens,sh-/-n-s,Zns,,qnsz,14581
 Stag,s-t-a-g,Stagu,u,qagstu,14671
 Workshop,r-k-sh-o-p,Rkzop,,qkoprz,14772
+Workshopped,r-k-sh-o-p-d,Rkzopd,,qdkoprz,14772
+Workshopping,r-k-sh-o-p-\-h,Rkzopg,,qgkoprz,14772
 Workshops,r-k-sh-o-p-s,Rkzops,,qkoprsz,14772
 Safeguard,s-a-f-g-a2-d,Safgad,,qadfgs,14792
 Safeguarded,s-a-f-g-a2-d-d,Safgadd,,qadfgs,14792
@@ -3510,6 +3531,7 @@ Shortcoming,sh-/-k-m-\-h,Zkmg,,qgkmz,27735
 Shortcomings,sh-/-k-m-\-h-s,Zkmgs,,qgkmsz,27735
 Shortness,sh-/-n-e-s,Znes,,qensz,27735
 Shortwave,sh-/-u-a-v,Zuav,,qauvz,27735
+Grasshoppers,g-r-a-s2-o-pr-s,Grasoprs,,qagoprs,27743
 Progressed,pr-g-d,Prgd,,qdgpr,27772
 Progressing,pr-g-\-h,Prgg,,qgpr,27772
 Progresses,pr-g-s,Prgs,,qgprs,27772
@@ -3520,6 +3542,7 @@ Progressions,pr-g-sh-s,Prgzs,,qgprsz,27772
 Crypt,k-r-e-p-t,Krept,,qekprt,27800
 Cryptic,k-r-e-p-t-k,Kreptk,,qekprt,27800
 Crypts,k-r-e-p-t-s,Krepts,,qekprst,27800
+Disproportionately,d-s-pr-e,Dspre,,qdeprs,27944
 Attache,a-t-a-sh-a,Ataza,,qatz,28053
 Attaches,a-t-a-sh-a-s,Atazas,,qastz,28053
 Disproved,d-s-pr-v-d,Dsprvd,,qdprsv,28203
