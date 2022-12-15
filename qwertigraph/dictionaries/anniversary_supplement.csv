@@ -141,6 +141,8 @@ Loves,l-v-s,Lvs,,qlsv,197
 Bedpan,b-d-p,Bdp,,bdp,200
 Bedpanned,b-d-p-d,Bdpd,,bdpt,200
 Bedpanning,b-d-p-\-h,Bdpg,,bdgp,200
+Bedpanner,b-d-p-r,Bdpr,,qbdpr,200
+Bedpanners,b-d-p-r-s,Bdprs,,qbdprs,200
 Bedpans,b-d-p-s,Bdps,,bdps,200
 Bowel,b-a-u-l,Bwl,,qblw,200
 Bowels,b-a-u-l-s,Bwls,,qblsw,200
@@ -302,6 +304,8 @@ Kings,k-e-ng-s,Kegs,,qegks,357
 Kingship,k-e-ng-/-sh,Kegz,,qegkz,357
 Girls,g-l-s,Gls,,qgls,364
 Helping,^-h-\-e-l-p-\-h,Helpg,,qeghlp,370
+Helper,^-h-\-e-l-p-r,Helpr,,qehlpr,370
+Helpers,^-h-\-e-l-p-r-s,Helprs,,qehlprs,370
 Secondly,s2-e-k-nt-e,Seknte,,qeknst,373
 Seconding,s2-e-k-nt-\-h,Sekntg,,qegknst,373
 Secondary,s2-e-k-nt-r-e,Sekntre,,qeknrst,373
@@ -317,6 +321,7 @@ Natures,n-a-t-s,Nats,,qanst,377
 Becoming,b-k-\-h,Bkg,,qbgk,381
 Becomes,b-k-s,Bks,,qbks,381
 Thousands,th-a-u-s,Hws,,qhsw,382
+Bodily,b-o-e,Boe,,qbeo,383
 Calling,k-o-\-h,Kog,,qgko,386
 Calls,k-o-s,Kos,,qkozs,386
 Callout,k-o-a-u,Kow,,qkow,386
@@ -1079,6 +1084,11 @@ Falsify,f-o-s-f,Fosf,,qfos,1329
 Falsified,f-o-s-f-d,Fosfd,,qdfos,1329
 Falsifying,f-o-s-f-\-h,Fosfg,,qfgos,1329
 Falsifies,f-o-s-f-s,Fosfs,,qfos,1329
+Sectioned,s2-e-k-sh-d,Sekzd,,qdeksz,1332
+Sectioning,s2-e-k-sh-\-h,Sekzg,,qegksz,1332
+Sectional,s2-e-k-sh-l,Sekzl,,qeklsz,1332
+Sectionals,s2-e-k-sh-l-s,Sekzls,,qeklsz,1332
+Sections,s2-e-k-sh-s,Sekzs,,qeksz,1332
 Activate,a-k-v-a-t,Akvat,,qaktv,1349
 Activated,a-k-v-a-t-d,Akvatd,,qadktv,1349
 Activating,a-k-v-a-t-\-h,Akvatg,,qagktv,1349
@@ -1360,6 +1370,9 @@ Protectorates,pr-o-t-e-k-r-a-s,Protekras,,qaekoprst,1802
 Protectors,pr-o-t-e-k-r-s,Protekrs,,qekoprst,1802
 Protects,pr-o-t-e-k-s,Proteks,,qekoprst,1802
 Protective,pr-o-t-e-k-v,Protekv,,qekoprtv,1802
+Covered,k-v-d,Kvd,,qdkv,1814
+Covering,k-v-\-h,Kvg,,qgkv,1814
+Coverings,k-v-\-h-s,Kvgs,,qgksv,1814
 Covers,k-v-s,Kvs,,qksv,1814
 Coupled,k-u-pl-d,Kupld,,qdklpu,1817
 Coupling,k-u-pl-\-h,Kuplg,,qgklpu,1817
