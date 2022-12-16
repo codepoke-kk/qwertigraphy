@@ -1461,6 +1461,12 @@ Compels,k-pl-s,Kpls,,qklps,1895
 Compulsory,k-pl-s-r-e,Kplsre,,qeklprs,1895
 Compulsion,k-pl-sh,Kplz,,qklpz,1895
 Compulsions,k-pl-sh-s,Kplzs,,qklpsz,1895
+Customize,k-u-s-i-s,Kusis,,qiksu,1913
+Customized,k-u-s-i-s-d,Kusisd,,qdiksu,1913
+Customizing,k-u-s-i-s-\-h,Kusisg,,qgiksu,1913
+Customizes,k-u-s-i-s-s,Kusiss,,qiksu,1913
+Customization,k-u-s-i-s-sh,Kusisz,,qiksuz,1913
+Customizations,k-u-s-i-s-sh-s,Kusiszs,,qiksuz,1913
 Customs,k-u-s-s,Kuss,,qksus,1913
 Messaged,m-e-s-j-d,Mesjd,,qdejms,1914
 Messenger,m-e-s-j-e2,Mesje,,qejms,1914
@@ -3991,6 +3997,8 @@ Excludes,e-s-/-d-s,Xds,,qdsx,70565
 Federalist,f-e-d-e-s,Fedes,,qdefs,70591
 Federalists,f-e-d-e-s-s,Fedess,,qdefs,70591
 Federals,f-e-d-s,Feds,,qdefs,70591
+For the record,f-th-k,Fhk,,fhk,70630
+For the record,f-th-r-k,Fhrk,u,fhkr,70630
 Forgivably,f-g-e-/-b-e,Fgebe,,qbefg,70638
 Forgivability,f-g-e-/-b,Fgebo,o,qbefgo,70638
 Guarantors,g-a2-nt-r-s,Gantrs,,qagnrst,70716
