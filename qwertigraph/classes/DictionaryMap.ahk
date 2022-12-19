@@ -189,7 +189,7 @@ class DictionaryMap
 
         if (chordability == "active") {
 			if (not this.negationsChords.item(newEntrylower.chord)) {
-				if (newEntry.isProper) {
+				if (newEntry.isCamel) {
 					this.logEvent(4, "Adding capped chord " newEntryCapped.chord " as " newEntryCapped.word)
 					this.chords.item(newEntry.chord) := newEntryCapped
 				} else {
