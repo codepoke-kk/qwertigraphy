@@ -36,7 +36,6 @@ Not,n,Ni,i,qcin,40
 Be,b,B,,qbcm,41
 On,o-n,Ono,o,qnox,42
 At,t,Ti,i,qcit,43
-By,b,Bo,o,qbco,44
 Her,e-r,Ero,o,qeor,45
 Which,ch,C,,qcmv,46
 Have,v,V,,qcnv,47
@@ -374,7 +373,6 @@ Need,n-e-d,Ned,,qden,428
 French,fr-e-n-ch,Frenc,,qcefnr,429
 Question,k-n,Qn,,qcnq,430
 Family,f-a-m-ya,Famya,,qafmy,431
-Boy,b-o-e,Byo,o,qboy,432
 Cause,k-s2,Kso,o,qkos,433
 Strong,s2-t-r,Str,,qrst,435
 Ten,tn,Tn,,qntz,437
@@ -1078,7 +1076,6 @@ Faces,f-a-ss,Fass,,qafs,1411
 Forest,f-o-r-e-s,Fores,,qefors,1412
 Encore,a-n-k-o-r,Ankor,,qaknor,1413
 Rock,r-o-k,Rok,,qkor,1414
-Bore,b-o-r,Bor,,qbor,1416
 Grown,g-r-o-n,Gron,,qgnor,1417
 Published,p-b-/-t,Pbt,,qbpt,1418
 Midst,m-e-d-s,Meds,,qdems,1420
@@ -1243,7 +1240,6 @@ Noise,n-o-e-s,Nys,,qnsy,1645
 Demand,tm-a-n,Tman,,qamnt,1646
 Hoped,^-h-\-o-p-t,Hopt,,qhopt,1648
 Listen,l-e-s2-n,Lesn,,qelns,1649
-Listening,l-e-s2-n-\-h,Lesng,,qeglns,1649
 Release,r-e-l-e-s,Reles,,qelrs,1650
 Pair,p-a-r,Paro,o,qaopr,1651
 Buy,b-i,Bio,o,qbio,1655
@@ -1997,7 +1993,6 @@ Sailed,s-a-ld,Sald,,qadls,2955
 Fever,f-e-v-r,Fevr,,qefrv,2958
 Announcement,a-n-n-s2-m,Annsm,,qamns,2959
 Problem,pr-bl,Prbl,,qblpr,2960
-Tent,tn-t,Tnt,,qntz,2964
 Signed,s2-i-nt,Sint,,qinst,2968
 Cent,s2-e-nt,Sentu,u,qenstu,2969
 Debt,td,Ddi,i,qdiv,2970
@@ -2961,7 +2956,6 @@ Communicate,k-k-a-t,Kkat,,qakt,5369
 Loyalty,l-o-e,Lyu,u,qluy,5374
 Irregular,e-r-e-g,Ereg,,qegr,5381
 Produces,pr-o-d-u-ss,Produss,,qdoprsu,5385
-Joyous,j-o-e-s,Jys,,qjsy,5386
 Pupil,p-pl,Ppl,,qlpv,5394
 Briefly,br-e-f-e,Brefe,,qbefr,5399
 Lodge,l-o-j,Loj,,qjlo,5402
@@ -3368,7 +3362,6 @@ Mute,m-e-u-t,Muto,o,qmotu,6984
 Avenue,a-v-n-u,Avnu,,qanuv,6994
 Compensation,k-p-n-s-a-sh,Kpnsaz,,qaknpsz,7000
 Beggar,b-g-r,Bgro,o,qbgor,7010
-Emphasis,m-f-a-ss,Mfass,,qafms,7019
 Engineer,n-j-n-e2,Njne,,qejn,7020
 Circulation,s2-/-l-a-s2h,Slasho,o,qahlos,7022
 Iowa,i,Iu,u,qiuv,7023
@@ -4804,7 +4797,6 @@ Mandate,mn-td,Mmddu,u,qdmu,18622
 Misunderstand,m-s-/-s2-tn,Msstn,,qmnst,18631
 Bankruptcy,b-a-nk-p-s-e,Baqpse,,qabepqs,18634
 Canes,k-a-n-s,Kanso,o,qaknos,18635
-Emphasize,m-f-a-ss,Mfasso,o,qafmos,18646
 Deter,^-d,Dk1,k1,q1dk,18651
 Dynamite,d-i-n-a-m-i,Dinami,,qadimn,18652
 Bean,b-e-n,Benu,u,qbenu,18659
@@ -5226,7 +5218,6 @@ Genealogy,j-e-n-/-o2,Jenoo,o,qejno,24548
 Canary,k-a-n-r-e,Kanre,,qaeknr,24558
 Fount,f-nt,Fntu,u,qfntu,24559
 Oligarchy,o-l-e-g,Oleg,,qeglo,24575
-Eccentricity,e-s2-n-/-s,Esns,,qens,24586
 Incognito,n-k-n-e-t-o,Nkneto,,qeknot,24717
 Adieu,a-d-e-u,Aduo,o,qadou,24753
 Habitude,^-h-\-a-b-t-u,Habtu,,qabhtu,24787
@@ -5548,7 +5539,6 @@ Presentable,pr-b,Prbu,u,qbpru,30430
 Hyacinth,^-h-\-i-s2-e-n-th,Hisenh,,qehins,30466
 Memento,m-e-mn-t-o,Memmto,,qemot,30471
 Indelicate,nt-e-l-e-k,Ntelek,,qeklnt,30501
-Milliner,m-e2-l-e2-n-e2,Melene,,qelmn,30538
 Orgy,o-j-e,Oje,,qejo,30539
 Parade,p-a-r-a-d,Parad,,qadpr,30540
 Ordination,o-tn-sh,Otnz,,qnotz,30549
