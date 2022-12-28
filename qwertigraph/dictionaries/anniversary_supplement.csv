@@ -1272,6 +1272,12 @@ Heater,^-h-\-e-t-r,Hetr,,qehrt,1547
 Heats,^-h-\-e-t-s,Hets,,qehst,1547
 Addressing,a-d-r-\-h,Adrg,,qadgr,1549
 Addresses,a-d-r-s,Adrs,,qadrs,1549
+Resurrect,r-e-s-e-r-e-k,Reserek,,qekrs,1549
+Resurrected,r-e-s-e-r-e-k-d,Reserekd,,qdekrs,1549
+Resurrecting,r-e-s-e-r-e-k-\-h,Reserekg,,qegkrs,1549
+Resurrects,r-e-s-e-r-e-k-s,Resereks,,qekrs,1549
+Resurrection,r-e-s-e-r-e-k-sh,Reserekz,,qekrsz,1549
+Resurrections,r-e-s-e-r-e-k-sh-s,Reserekzs,,qekrsz,1549
 Constantly,k-s2-tn-e,Kstne,,qeknst,1552
 Constantine,k-s2-tn-e-n,Kstnen,,qeknst,1552
 Constants,k-s2-tn-s,Kstns,,qknst,1552
@@ -2907,7 +2913,6 @@ Theologians,h-e-\-o-n-s,Heons,,qehnos,8166
 Theology,h-e-\-o,Heoo,o,qeho,8166
 Theologies,h-e-\-o-s,Heos,,qehos,8166
 Delete,d-l-e-t,Dlet,,qdelt,8274
-Deleted,d-l-e-t-d,Dletd,,qdelt,8274
 Deleting,d-l-e-t-\-h,Dletg,,qdeglt,8274
 Deleter,d-l-e-t-r,Dletr,,qdelrt,8274
 Deleters,d-l-e-t-r-s,Dletrs,,qdelrst,8274
@@ -4136,6 +4141,9 @@ Vegetation,v-e-j-t-sh,Vejtz,,qejtvz,59534
 Vegetations,v-e-j-t-sh-s,Vejtzs,,qejstvz,59534
 Certification,s2-e-df-sh,Sedfz,,qdefsz,59944
 Certifications,s2-e-df-sh-s,Sedfzs,,qdefsz,59944
+Astounded,a-s2-t-nt-d,Astntd,,qadnst,60132
+Astounding,a-s2-t-nt-\-h,Astntg,,qagnst,60132
+Astounds,a-s2-t-nt-s,Astnts,,qanst,60132
 Objectors,o-b-\-r-s,Obrs,,qbors,60487
 Inexactly,n-e-s2-a-k-e,Nxake,,qaeknx,60549
 Spraying,s-p-r-a-g,Spragi,i,qagiprs,61211
