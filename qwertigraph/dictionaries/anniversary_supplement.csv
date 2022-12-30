@@ -1669,6 +1669,9 @@ Vindictively,v-nt-e-k-v-e,Vntekve,,qekntv,2146
 Vindictiveness,v-nt-e-k-v-n-e-s,Vntekvnes,,qeknstv,2146
 Vindication,v-nt-e-k-sh,Vntekz,,qekntvz,2146
 Vindications,v-nt-e-k-sh-s,Vntekzs,,qeknstvz,2146
+Visibly,v-e-s-b-e,Vesbe,,qbesv,2147
+Visibility,v-e-s-b,Vesbo,,qbeosv,2147
+Visibles,v-e-s-b-s,Vesbs,,qbesv,2147
 Universally,e-u-n-v-e,Unve,,qenuv,2153
 Universality,e-u-n-v-\-l,Unvl,,qlnuv,2153
 Exactly,e-s2-a-k-e,Xake,,qaekx,2154
@@ -2813,6 +2816,7 @@ Emphasis,m-f-a-ss,Mfassi,i,qafims,7019
 Engineered,n-j-n-e2-d,Njned,,qdejn,7020
 Engineering,n-j-n-e2-\-h,Njneg,,qegjn,7020
 Engineers,n-j-n-e2-s,Njnes,,qejns,7020
+Inspections,n-s-p-sh-s,Nspzs,,qnpsz,7065
 Renewable,r-e-n-u-\-b,Renub,,qbenru,7087
 Renewably,r-e-n-u-\-b-e,Renube,,qbenru,7087
 Renewables,r-e-n-u-\-b-s,Renubs,,qbenrsu,7087
@@ -3219,6 +3223,10 @@ Immigration,e-m-g-r-a-z,Emgraz,,qaegmrz,11303
 Emigration,e-m-g-r-a-z,Emgrazo,o,qaegmorz,11303
 Migration,m-i-g-r-a-z,Migraz,,qagimrz,11303
 Migrations,m-i-g-r-a-z-s,Migrazs,,qagimrzs,11303
+Inspect,n-s-p,Nsp,,qnps,11323
+Inspected,n-s-p-d,Nspd,,qdnps,11323
+Inspecting,n-s-p-\-h,Nspg,,qgnps,11323
+Inspects,n-s-p-s,Nsps,,qnps,11323
 Inquisitively,n-k-e-s2-df-e,Nqesdfe,,qdefnqs,11372
 Inquisitiveness,n-k-e-s2-df-n-e-s,Nqesdfnes,,qdefnqs,11372
 Assign,a-s2-i-n,Asin,,qains,11390
@@ -4289,6 +4297,7 @@ Hypercritically,^-h-\-i-p-e-r-k-r-/-ya-e,Hiperkrye,,qehikpry,70799
 Immigrated,e-m-e-g-d,Emegd,,qegimd,70854
 Immigrating,e-m-e-g-\-h,Emegg,,qegimg,70854
 Immigrates,e-m-e-g-s,Emegs,,qegims,70854
+Good afternoon,g-a-f,Gaf,,qafg,70898
 Good luck,g-l-u-k,Gluk,,qgklu,70898
 Good morning,g-m,Gmu,u,qgmu,70898
 In the usual manner,n-u-sh-mn-e2,Nuzmme,,qemnuz,70900
