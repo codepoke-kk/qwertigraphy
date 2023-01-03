@@ -1801,6 +1801,7 @@ Shopping,sh-o-p-\-h,Zopg,,qgopz,2401
 Shops,sh-o-p-s,Zops,,qopsz,2401
 Recently,r-s-e,Rseo,o,qeors,2402
 Preparatory,pr-e-p-\-r-e,Prepre,,qepr,2440
+Punishments,p-n-sh-m-s,Pnzms,,qmnpsz,2471
 Kitchened,k-e-ch-n-d,Kecnd,,qcdekn,2472
 Kitchening,k-e-ch-n-\-h,Kecng,,qcegkn,2472
 Kitchens,k-e-ch-n-s,Kecns,,qcekns,2472
@@ -2574,6 +2575,11 @@ Recollecting,r-e-k-o-l-\-h,Rekolg,,qegklor,5071
 Recollects,r-e-k-o-l-s,Rekols,,qeklors,5071
 Recollection,r-e-k-o-l-sh,Rekolz,,qeklorz,5071
 Recollections,r-e-k-o-l-sh-s,Rekolzs,,qeklorsz,5071
+Punishable,p-n-sh-b,Pnzb,,qbnpz,5086
+Punishably,p-n-sh-b-e,Pnzbe,,qbenpz,5086
+Punished,p-n-sh-d,Pnzd,,qdnpz,5086
+Punishing,p-n-sh-\-h,Pnzg,,qgnpz,5086
+Punishs,p-n-sh-s,Pnzs,,qnpsz,5086
 Complaints,k-p-s,Kpsa,a,qakps,5092
 Entertain,n-/-tn,Ntno,o,qnotz,5116
 Convinced,k-v-e-n-s-d,Kvensd,,qdeknsv,5129
@@ -3012,7 +3018,10 @@ Abilities,a-b-s,Abso,o,qabos,8337
 Behavioral,b-^-h-\-a-v-r-l,Bhavrl,,qabhlrv,8429
 Behaviorally,b-^-h-\-a-v-r-l-e,Bhavrle,,qabehlrv,8429
 Behaviors,b-^-h-\-a-v-r-s,Bhavrs,,qabhrsv,8429
+AlphaZero,a-l-f-sh,Alfz,,qaflz,8441
 Grading,g-r-a-\-h,Grag,,qagr,8441
+Grader,g-r-a-r,Grar,,qagr,8441
+Graders,g-r-a-r-s,Grars,,qagrs,8441
 Grades,g-r-a-s,Graso,o,qagors,8441
 Graded,g-r-a-t,Grat,,qagrt,8441
 Upgrade,u-p-g-r-a,Upgra,,qagpru,8441
@@ -4269,6 +4278,9 @@ Re,^-r,Rq,q,qqr,70009
 Re-,^-r,Rqq,qq,qqr,70009
 Aggregate,ya-/-g,Aga,,qag,70038
 Aggregation,ya-/-g-sh,Agaz,,qagz,70038
+Aggregated,ya-/-g-d,Agd,,qadg,70038
+Aggregating,ya-/-g-\-h,Agg,,qag,70038
+Aggregates,ya-/-g-s,Ags,,qags,70038
 Aggregation,ya-/-g-sh,Agz,,qagz,70038
 Aggregations,ya-/-g-sh-s,Agzs,,qagsz,70038
 Aggress,ya-/-s,Aso,o,qaos,70038
