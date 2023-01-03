@@ -718,6 +718,8 @@ Staying,s2-t-a-\-h,Stag,,qagst,752
 Stays,s2-t-a-s,Stas,,qast,752
 Properties,pr-p-t-s,Prpts,,qprst,755
 Outgrew,a-u-g-r-u,Wgru,,qgruw,758
+Afterthought,a-f-h-o-t,Afhot,,qafhot,759
+Afterthoughts,a-f-h-o-t-s,Afhots,,qafhost,759
 Impossibly,m-p-o-s-e,Mpose,,qemops,763
 Impossibles,m-p-o-s-s,Mposs,,qmops,763
 Pleased,pl-d,Pld,,qdlp,769
@@ -735,6 +737,14 @@ Systematizing,s2s-t-i-s-\-h,Sstisg,,qgist,778
 Systematizes,s2s-t-i-s-s,Sstiss,,qist,778
 Systematical,s2s-\-ya,Ssy,,qasz,778
 Systematically,s2s-\-ye,Ssye,,qesy,778
+Deuteronomy,d-u-t-m-e,Dutme,,qdemtu,782
+Deuteronomic,d-u-t-m-e-k,Dutmek,,qdekmtu,782
+Israel,E-s-r-ea-l,Esrel,,qelrs,782
+Israeli,E-s-r-ea-l-e,Esrele,,qelrs,782
+Israelis,E-s-r-ea-l-e-s,Esreles,,qelrs,782
+Israelite,E-s-r-ea-l-i-t,Esrelit,,qeilrst,782
+Israelites,E-s-r-ea-l-i-t-s,Esrelits,,qeilrst,782
+Entirety,nt-i-t-e,Ntite,,qeint,782
 Smiled,s2-m-i2-d,Smid,,qdims,783
 Smiling,s2-m-i2-\-h,Smig,,qgims,783
 Smiles,s2-m-i2-s,Smis,,qims,783
@@ -814,6 +824,9 @@ Joyful,j-o-e-f,Jyf,,qfjy,834
 Joyfully,j-o-e-f-e,Jyfe,,qefjy,834
 Joying,j-o-e-\-h,Jyg,,qgjy,834
 Joys,j-o-e-s,Jys,,qjsy,834
+Brightest,br-i-t-e-s,Brites,,qbeirst,836
+Nebuchadnezzar,n-e-b-s-a-r,Nebsar,,qabenrs,836
+Nebuchadrezzar,n-e-b-s-a-r,Nebsaro,o,qabenors,836
 Resulting,r-s2-u-\-h,Rsug,,qgrsu,837
 Resultant,r-s2-u-nt,Rsunt,,qnrstu,837
 Schooled,s2-k-l-d,Skld,,qdkls,838
@@ -963,6 +976,10 @@ Equals,e-k-l-s,Eqls,,qelqs,982
 Physically,f-e-s-/-k-e,Feske,,qefks,987
 Physicals,f-e-s-/-k-s,Fesks,,qefks,987
 Religions,r-e-l-e-j-n-s,Relejns,,qejlnrs,988
+Sabbatical,s-a-b-\-a,Saba,,qabs,990
+Sabbaticals,s-a-b-\-a-s,Sabas,,qabs,990
+Sabbath,s-a-b-h,Sabh,,qabhs,990
+Sabbaths,s-a-b-h-s,Sabhs,,qabhs,990
 Watch,u-o-ch,Uoc,,qcoux,990
 Watched,u-o-ch-d,Uocd,,qcdou,990
 Watchful,u-o-ch-f,Uocf,,qcfou,990
@@ -971,6 +988,7 @@ Watching,u-o-ch-\-h,Uocg,,qcgou,990
 Watcher,u-o-ch-r,Uocr,,qcoru,990
 Watchers,u-o-ch-r-s,Uocrs,,qcorsu,990
 Watchs,u-o-ch-s,Uocs,,qcosu,990
+Watched,u-o-ch-t,Uoct,,qcotu,990
 Overstate,o-/-s2-t,Ost,,qost,1000
 Overstating,o-/-s2-t-\-h,Ostg,,qostg,1000
 Overstates,o-/-s2-t-s,Osts,,qosts,1000
@@ -986,6 +1004,13 @@ Rated,r-a-t-d,Ratd,,qadrt,1024
 Rating,r-a-t-\-h,Ratg,,qagrt,1024
 Offering,o-f-\-h,Ofg,,qfgo,1034
 Offers,o-f-s,Ofs,,qfos,1034
+Suffice,s2-u-f-i-s,Sufis,,qfisu,1040
+Sufficed,s2-u-f-i-s-d,Sufisd,,qdfisu,1040
+Sufficing,s2-u-f-i-s-\-h,Sufisg,,qfgisu,1040
+Suffices,s2-u-f-i-s-s,Sufiss,,qfisu,1040
+Journeyed,j-e2-n-e-d,Jened,,qdejn,1042
+Journeying,j-e2-n-e-\-h,Jeneg,,qegjn,1042
+Journies,j-e2-n-e-s,Jenes,,qejns,1042
 Stopped,s2-t-p-d,Stpd,,qdpst,1059
 Stopping,s2-t-p-\-h,Stpg,,qgpst,1059
 Stoppage,s2-t-p-j,Stpj,,qjpst,1059
@@ -1075,6 +1100,7 @@ Marched,m-a-ch-d,Macdo,o,qacdmo,1171
 Marching,m-a-ch-\-h,Macgo,o,qacgmo,1171
 March,m-a-ch,Maco,o,qacmo,1171
 Marches,m-a-ch-s,Macso,o,qacmos,1171
+Gentleman,jnt,Jnta,a,qajnt,1174
 Crowding,k-r-a-u-\-h,Krwg,,qgkrw,1176
 Crowds,k-r-a-u-s,Krws,,qkrsw,1176
 Ruled,r-l-d,Rld,,qdlr,1180
@@ -1105,6 +1131,9 @@ Attacked,a-t-a-k-d,Atakd,,qadkt,1192
 Attacking,a-t-a-k-\-h,Atakg,,qagkt,1192
 Attacks,a-t-a-k-s,Ataks,,qakst,1192
 Movements,m-u-m-s,Mums,,qmsu,1193
+Traded,t-r-a-d,Trad,,qadrt,1199
+Trading,t-r-a-\-h,Trag,,qagrt,1199
+Trades,t-r-a-s,Tras,,qarst,1199
 Losing,l-u-s-\-h,Lusg,,qglsu,1200
 Loser,l-u-s-r,Lusr,,qlrsu,1200
 Losers,l-u-s-r-s,Lusrs,,qlrsu,1200
@@ -1281,6 +1310,9 @@ Regulator,r-e-g-\-u-r,Regur,,qegru,1501
 Regulators,r-e-g-\-u-r-s,Regurs,,qegrsu,1501
 Regulates,r-e-g-\-u-s,Regus,,qegrsu,1501
 Regulation,r-e-g-\-u-sh,Reguz,,qegruz,1501
+Sentenced,s2-e-n-tn-s-d,Sentnsd,,qdenst,1518
+Sentencing,s2-e-n-tn-s-\-h,Sentnsg,,qegnst,1518
+Sentences,s2-e-n-tn-s-s,Sentnss,,qenst,1518
 Wore,u-o-r,Uor,,qorux,1520
 Extraordinaire,e-s-/-o-tn-a,Xotna,,qanotx,1521
 Extraordinarily,e-s-/-o-tn-ye,Xotny,,qnotxy,1521
@@ -1328,8 +1360,10 @@ OpenLDAP,o-l-d-p,Oldp,,qdlop,1555
 Complied,k-pl-i-d,Kplid,,qiklpd,1566
 Complying,k-pl-i-\-h,Kplig,,qiklpg,1566
 Complies,k-pl-i-s,Kplis,,qiklps,1566
+Suffered,s2-u-f,Suf,,qfsu,1571
 Suffered,s2-u-f-d,Sufd,,qdfsu,1571
 Suffering,s2-u-f-\-h,Sufg,,qfgsu,1571
+Sufferings,s2-u-f-\-h-s,Sufgs,,qfgsu,1571
 Sufferance,s2-u-f-n-s,Sufns,,qfnsu,1571
 Sufferer,s2-u-f-\-r,Sufr,,qfrsu,1571
 Suffers,s2-u-f-s,Sufs,,qfsu,1571
@@ -1702,6 +1736,7 @@ Universality,e-u-n-v-\-l,Unvl,,qlnuv,2153
 Exactly,e-s2-a-k-e,Xake,,qaekx,2154
 Exacting,e-s2-a-k-\-h,Xakg,,qagkx,2154
 Exacts,e-s2-a-k-s,Xaks,,qaksx,2154
+Foolishly,f-u-l-sh-e,Fulze,,qefluz,2165
 Proportionate,pr-pr-sh-a-t,Prprzat,,qaprtz,2173
 Proportionately,pr-pr-sh-a-t-e,Prprzate,,qaeprtz,2173
 Proportioned,pr-pr-sh-d,Prprzd,,qdprz,2173
@@ -2609,6 +2644,7 @@ Improvised,m-pr-v-i-s-d,Mprvisd,,qdimprsv,5337
 Improvising,m-pr-v-i-s-\-h,Mprvisg,,qgimprsv,5337
 Improvises,m-pr-v-i-s-s,Mprviss,,qimprsv,5337
 Unimproved,n-m-pr-d,Nmprd,,qdmnpr,5337
+Journals,j-e2-n-s,Jens,,qejns,5344
 Irregularly,e-r-e-g-e,Erege,,qegr,5381
 Guardians,g-a2-d-ea2-n-s,Gadens,,qadegns,5419
 Guardianship,g-a2-d-ea2-n-sh,Gadenz,,qadegnz,5419
@@ -2961,7 +2997,6 @@ Theologians,h-e-\-o-n-s,Heons,,qehnos,8166
 Theology,h-e-\-o,Heoo,o,qeho,8166
 Theologies,h-e-\-o-s,Heos,,qehos,8166
 Delete,d-l-e-t,Dlet,,qdelt,8274
-Deleted,d-l-e-t-d,Dletd,,qdelt,8274
 Deleting,d-l-e-t-\-h,Dletg,,qdeglt,8274
 Deleter,d-l-e-t-r,Dletr,,qdelrt,8274
 Deleters,d-l-e-t-r-s,Dletrs,,qdelrst,8274
@@ -3013,7 +3048,6 @@ Constipates,k-s-t-p-a-t-s,Kstpats,,qakpst,8582
 Constipation,k-s-t-p-a-sh,Kstpaz,,qakpstz,8582
 Objectives,o-b-/-v-s,Obvs,,qbosv,8583
 Import,m-p-o-t,Mpot,,qmopt,8595
-Imported,m-p-o-t-d,Mpotd,,qdmopt,8595
 Importing,m-p-o-t-\-h,Mpotg,,qgmopt,8595
 Importer,m-p-o-t-r,Mpotr,,qmoprt,8595
 Importers,m-p-o-t-r-s,Mpotrs,,qmoprst,8595
@@ -3427,7 +3461,9 @@ Disordering,d-s2-o-d-\-h,Dsodg,,qdgos,13630
 Disorders,d-s2-o-d-s,Dsods,,qdos,13630
 Forefinger,f-f-e2-ng-e2,Ffeqe,,qefq,13694
 Forefingers,f-f-e2-ng-e2-s,Ffeqes,,qefqs,13694
+Journalists,j-e-n-/-s2-t-s,Jensts,,qejnst,13757
 Frequencies,fr-e-k-s,Freqso,o,qefoqrs,13798
+Celebrities,s-e-l-e-b-/-r-s,Selebrs,,qbelrs,13836
 Changed,ch-/-t,Ct,,qcdt,13864
 Hypocrite,^-h-\-e-p-k-r-e-t,Hepkret,,qehkprt,13868
 Hypocrites,^-h-\-e-p-k-r-e-t-s,Hepkrets,,qehkprst,13868
@@ -3737,8 +3773,8 @@ Implementors,m-pl-e-m-r-s,Mplemrs,,qelmprs,20778
 Implements,m-pl-e-m-s,Mplems,,qelmps,20778
 Inflections,n-fl-sh-s,Nflzs,,qflnsz,21083
 Babylon,b-a-b-n,Babn,,qabo,21199
-Babylonian,b-a-b-n-e-a-n,Babnean,,qaben,21199
 Babylonians,b-a-b-n-e-a-n-s,Babneans,,qabens,21199
+Babylonian,b-a-b-n-ea-n,Babnen,,qaben,21199
 Entail,n-ta-l,Ntal,,qalnt,21539
 Entailed,n-ta-l-d,Ntald,,qadlnt,21539
 Entailing,n-ta-l-\-h,Ntalg,,qaglnt,21539
@@ -4171,6 +4207,11 @@ Opine,o-p-i-n,Opin,,qinop,54408
 Opined,o-p-i-n-d,Opind,,qdinop,54408
 Opining,o-p-i-n-\-h,Oping,,qginop,54408
 Opines,o-p-i-n-s,Opins,,qinops,54408
+Commended,k-mn-d-d,Kmndd,,qdkmn,54559
+Commending,k-mn-d-\-h,Kmndg,,qdgkmn,54559
+Commends,k-mn-d-s,Kmnds,,qdkmns,54559
+Commendation,k-mn-d-sh,Kmndz,,qdkmnz,54559
+Commendations,k-mn-d-sh-s,Kmndzs,,qdkmnsz,54559
 Dealings,d-e2-/-s,Desg,g,qdegs,56004
 Dealings,d-e2-/-h-s,Desgs,,qdegs,56004
 Compliant,k-p-l-i-nt,Kplint,,qiklnpt,58475
@@ -4226,6 +4267,17 @@ Pre,^-pr,Prq,q,qpqr,70009
 Pre-,^-pr,Prqq,qq,qpqr,70009
 Re,^-r,Rq,q,qqr,70009
 Re-,^-r,Rqq,qq,qqr,70009
+Aggregate,ya-/-g,Aga,,qag,70038
+Aggregation,ya-/-g-sh,Agaz,,qagz,70038
+Aggregation,ya-/-g-sh,Agz,,qagz,70038
+Aggregations,ya-/-g-sh-s,Agzs,,qagsz,70038
+Aggress,ya-/-s,Aso,o,qaos,70038
+Aggressor,ya-/-s-r,Asr,,qars,70038
+Aggressors,ya-/-s-r-s,Asrs,,qars,70038
+Aggressive,ya-/-s-v,Asv,,qasv,70038
+Aggressively,ya-/-s-v-e,Asve,,qaesv,70038
+Aggression,ya-/-s-sh,Asz,,qasz,70038
+Aggressions,ya-/-s-sh-s,Aszs,,qasz,70038
 Analyst,a-n-l-e-s,Anles,,qaelns,70064
 Analysts,a-n-l-e-ss,Anless,,qaelns,70064
 As low as,s-l-o-s2,Slosq,,qlos,70105
@@ -4243,6 +4295,11 @@ Believably,b-e-b-e,Bebe,,qbez,70188
 Unbelievable,n-b-e-b,Nbeb,,qben,70188
 Unbelievably,n-b-e-b-e,Nbebe,,qben,70188
 Calculably,k-a-l-b-e,Kalbe,,qabekl,70231
+Celebrated,s-e-l-e-b-d,Selebd,,qbdels,70264
+Celebrating,s-e-l-e-b-\-h,Selebg,,qbegls,70264
+Celebrates,s-e-l-e-b-s,Selebs,,qbels,70264
+Celebration,s-e-l-e-b-sh,Selebz,,qbelsz,70264
+Celebrations,s-e-l-e-b-sh-s,Selebzs,,qbelsz,70264
 Clearages,k-l-e-/-j-s,Klejs,,qejkls,70295
 Code,k-o-t,Kod,,qdko,70302
 Coded,k-o-td,Kodt,,qdkot,70302
@@ -4742,6 +4799,12 @@ Reactivity,r-ea-k-v-t-e,Rakvte,,qaekrtv,92710
 Reaction,r-ea-k-sh,Rakz,,qakrz,92710
 Reactionary,r-ea-k-sh-r-e,Rakzre,,qaekrz,92710
 Reactions,r-ea-k-sh-s,Rakzs,,qakrsz,92710
+Fury,f-e-u-r-e,Fure,,qefru,92739
+Furied,f-e-u-r-e-d,Fured,,qdefru,92739
+Furying,f-e-u-r-e-\-h,Fureg,,qefgru,92739
+Furies,f-e-u-r-e-s,Fures,,qefrsu,92739
+Furious,f-e-u-r-u-s,Furus,,qfrsu,92739
+Furiously,f-e-u-r-u-s-e,Furuse,,qefrsu,92739
 Corrects,k-r-s,Krsu,u,qkrsu,92754
 Enhance,n-^-h-\-a-n-s,Nhans,,qahns,92802
 Enhanced,n-^-h-\-a-n-s-d,Nhansd,,qadhns,92802

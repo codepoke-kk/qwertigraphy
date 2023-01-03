@@ -29,7 +29,6 @@ His,s2,Su,u,qsuv,33
 With,e-th,Eh,,qehx,34
 It,t,T,,qcmt,35
 For,f,F,,qcfm,36
-As,a-s,Aso,o,qaos,37
 Had,a-d,Ad,,qacd,38
 You,u,U,,qcmu,39
 Not,n,Ni,i,qcin,40
@@ -823,7 +822,7 @@ Pain,p-a-n,Pan,,qanp,1035
 Wood,u-u-d,Uud,,qduz,1036
 Instance,n-s,Nso,o,qnos,1037
 Vain,v-a-n,Vano,o,qanov,1038
-Sufficient,s2-u-f,Suf,,qfsu,1040
+Sufficient,s2-u-f,Sufo,o,qfosu,1040
 Happiness,^-h-\-a-p-e2-n-e-s,Hapenes,,qaehnps,1041
 Journey,j-e2-n-e,Jeneo,o,qejno,1042
 Dress,d-r-e-s,Dres,,qders,1044
@@ -969,7 +968,7 @@ Fancy,f-a-n-s-e,Fanse,,qaefns,1238
 Choose,ch-u-s,Cus,,qcsu,1239
 Dry,d-r-i,Drio,o,qdior,1242
 Taste,t-a-s2-t,Tast,,qast,1243
-Confidence,k-f,Kf,,qfkn,1245
+Confidence,k-f,Kfo,o,qfko,1245
 Amount,a-mn-t,Ammt,,qamt,1246
 Health,^-h-\-e-l-th,Helh,,qehl,1247
 Liberty,l-e-b,Leb,,qbel,1248
@@ -1192,7 +1191,6 @@ Statement,s2-t-m,Stm,,qmst,1565
 Comply,k-pl-i,Kpli,,qiklp,1566
 Machine,m-a-sh-n,Mazn,,qamnz,1567
 Lovely,l-v-e,Lve,,qelv,1569
-Suffer,s2-u-f,Sufo,o,qfosu,1571
 Farther,f-a-th2,Fahu,u,qafhu,1572
 Interests,n-/-s-s,Nss,,qnsz,1575
 Rank,r-a-nk,Raq,,qaqr,1577
@@ -1825,7 +1823,6 @@ Vague,v-a-g,Vag,,qagv,2617
 Dawn,d-o-n,Dono,o,qdno,2618
 Claims,k-l-a-m-s,Klams,,qaklms,2620
 Farm,f-a2-m,Famo,o,qafmo,2622
-Trace,t-r-a-s,Tras,,qarst,2623
 Opposed,o-p-o-/-t,Opot,,qopt,2625
 Permit,pr-m-e-t,Prmet,,qemprt,2627
 Stronger,s2-t-r-r,Strr,,qrst,2628
@@ -2703,7 +2700,7 @@ Nonsense,n-o-n-s2-e-n-s,Nonsens,,qenos,4647
 Temptation,tm-t-sh,Tmtz,,qmtz,4651
 Strongest,s2-t-r-s2-t,Strst,,qrst,4653
 Disturb,d-s2-t-b,Dstb,,qbdst,4655
-Confident,k-f,Kfo,o,qfko,4657
+Confident,k-f,Kf,,qfk,4657
 Justify,j-u-s2-f,Jusf,,qfjsu,4660
 Dislike,d-s-l-a,Dsla,,qadls,4668
 Bone,b-o-n,Bonu,u,qbnou,4670
@@ -3747,7 +3744,6 @@ Tickets,t-e-k-e-t-s,Tekets,,qekst,9185
 Gratifying,g-r-a-df-\-h,Gradfg,,qadfgr,9191
 Imminent,e-mn,Emmu,u,qemu,9195
 Candid,k-td,Kddo,o,qdko,9199
-Commented,k-mn-td,Kmmdd,,qdkm,9209
 Obstinacy,o-b-s2-tn-s2-e,Obstnse,,qbenost,9210
 Sane,s2-a-n,Sanu,u,qansu,9212
 Mortality,m-o-t-/-l,Motlo,o,qlmot,9215
@@ -3842,13 +3838,11 @@ Psychological,s2-i-k-/-o2,Siko,,qikos,9714
 Markets,m-r-s,Mrso,o,qmors,9722
 Tension,tn-sh,Tnzo,o,qnotz,9723
 Magazines,m-a-g-s,Mags,,qagms,9738
-Commended,k-mn-td,Kmmddo,o,qdkmo,9753
 Creditors,k-r-e-/-r-s,Krers,,qekrs,9754
 Amsterdam,a-m-s2-t-e-tm,Amstetm,,qaemst,9781
 Heroism,^-h-\-e-r-o-s2-m,Herosm,,qehmors,9782
 Manger,mn-j-e2,Mmjeo,o,qejmo,9793
 Felicity,f-e-l-/-s,Felsu,u,qeflsu,9797
-Confide,k-f-i,Kfi,,qfik,9810
 Factories,f-a-k-t-r-e-s,Faktres,,qaefkrst,9812
 Monthly,mn-th-e,Mmhe,,qehm,9815
 Bud,b-u-d,Budo,o,qbdou,9817
@@ -6285,7 +6279,7 @@ Datum,d-a-tm,Datmo,o,qadmot,54423
 Concrete,k-k-r-e-t,Kkret,,qekrt,54470
 Inebriate,e-n-e-br-ea-t,Enebret,,qbenrt,54531
 Ligament,l-e-g-m,Legm,,qeglm,54534
-Commend,k-mn-d,Kmmd,,qdkm,54559
+Commend,k-mn-d,Kmnd,,qdkm,54559
 Hegemony,^-h-\-e-j-mn-e,Hejmme,,qehjm,54590
 Excerpt,e-s-e-p,Xep,,qepx,54632
 Maroon,m-a-r-u-n,Marun,,qamnru,54642
@@ -6503,7 +6497,7 @@ Litmus,l-e-t-m-u-s,Letmus,,qelmstu,65633
 Elongation,e-l-ng-sh,Elgz,,qeglz,65795
 Joviality,j-o-v-/-l,Jovl,,qjlov,65981
 Obsidian,o-b-s2-e-tn,Obsetn,,qbenost,65993
-Commendatory,k-mn-td-r-e,Kmmddre,,qdekmr,66235
+Commendatory,k-mn-td-r-e,Kmnddre,,qdekmr,66235
 Cranial,k-r-a-n-l,Kranl,,qaklnr,66239
 Discounts,d-e-s-s,Desso,o,qdeos,66242
 Hartshorn,^-h-\-a2-t-s2-o2-r-n,Hatsorn,,qahnorst,66248
@@ -6659,7 +6653,6 @@ Arthritis,a-r-th-r-i,Arhri,,qahir,70096
 Artichoke,a2-t-ch-k,Atck,,qackt,70097
 As a matter of course,a-s2-m-a-t-o-k,Asmatok,,qakmost,70098
 As a matter of fact,a-s2-m-a-tf,Asmatf,,qafmst,70099
-As a result,a-s-r,Asr,,qars,70100
 As a rule,a-s-r-l,Asrl,,qalrs,70101
 As follows,a-s2-f-o,Asfo,,qafos,70102
 As good as,s2-g-s,Sgs,,qgsv,70103
