@@ -240,6 +240,9 @@ Doing,d-u-\-h,Dug,,qdgu,259
 Until,nt-e,Nte,,qentz,260
 End,nt,Nto,o,qnotz,261
 Turned,t-e-n-/-t,Tent,,qentz,262
+Worded,u-d-d,Udd,,qdu,268
+Wording,u-d-\-h,Udg,,qdgu,268
+Words,u-d-s,Uds,,qdsu,268
 Loaded,l-o-d-d,Lodd,,qdlo,269
 Loading,l-o-d-\-h,Lodg,,qdglo,269
 Loader,l-o-d-r,Lodr,,qdlor,269
@@ -447,6 +450,7 @@ Overwrites,^-o-\-r-i-s,Oris,,qiors,469
 Accountable,a-k-t-b,Aktb,,qabkt,481
 Accountably,a-k-t-b-e,Aktbe,,qabekt,481
 Accountability,a-k-t-\-b,Aktbo,o,qabkot,481
+Accounted,a-k-t-d,Aktd,,qadkt,481
 Accounting,a-k-t-\-h,Aktg,,qagkt,481
 Accountings,a-k-t-\-h-s,Aktgs,,qagkst,481
 Accounts,a-k-t-s,Akts,,qakst,481
@@ -1214,6 +1218,8 @@ Synagogue,s-e-n-g-g,Sengg,,qegns,1368
 Synagogued,s-e-n-g-g-d,Senggd,,qdegns,1368
 Synagoguing,s-e-n-g-g-\-h,Senggg,,qegns,1368
 Synagogues,s-e-n-g-g-s,Senggs,,qegns,1368
+Previous,pr-e-v-s,Prevs,o,qeprsv,1384
+Previously,pr-e-v-s-e,Prevse,,qeprsv,1384
 Depopulate,d-p-o-p-\-u,Dpopu,,qdopu,1399
 Depopulated,d-p-o-p-\-u-d,Dpopud,,qdopu,1399
 Depopulating,d-p-o-p-\-u-\-h,Dpopug,,qdgopu,1399
@@ -1935,6 +1941,15 @@ Territorially,t-e-t-l-e,Tetle,,qelt,2795
 Territoriality,t-e-t-\-l,Tetlo,o,qelot,2795
 Territories,t-e-t-s,Tets,,qest,2795
 Continual,k-tn-l,Ktnl,,qklnt,2797
+Piped,p-i-p-d,Pipd,,qdip,2803
+Piping,p-i-p-\-h,Pipg,,qgip,2803
+Pipeline,p-i-p-l,Pipl,,qilp,2803
+Pipelined,p-i-p-l-d,Pipld,,qdilp,2803
+Pipelining,p-i-p-l-\-h,Piplg,,qgilp,2803
+Pipelines,p-i-p-l-s,Pipls,,qilps,2803
+Piper,p-i-p-r,Pipr,,qipr,2803
+Pipers,p-i-p-r-s,Piprs,,qiprs,2803
+Pipes,p-i-p-s,Pips,,qips,2803
 Editions,e-d-sh-s,Edzs,,qdesz,2816
 Communities,k-/-nt-s,Knts,,qknst,2828
 Organizational,o-g-l,Ogl,,qglo,2829
@@ -2174,7 +2189,6 @@ Unassuming,u-n-a-s2-m-\-h,Unasmg,,qagmnsu,3493
 Occupations,o-kp-s,Okps,,qkops,3498
 Privileged,pr-e-v-d,Prevd,,qdeprv,3505
 Privileging,pr-e-v-\-h,Prevg,,qegprv,3505
-Privileges,pr-e-v-s,Prevs,,qeprsv,3505
 Vanities,v-/-nt-s,Vnts,,qnstv,3520
 Balance,b-a-l,Bal,,qablz,3523
 Balancing,b-a-l-\-h,Balg,,qabgl,3523
@@ -2357,6 +2371,7 @@ Inevitably,e-n-e-v-t-b-e,Enevtbe,,qbentv,4012
 Inevitability,e-n-e-v-t-\-b,Enevtbo,o,qbenotv,4012
 Inevitabilities,e-n-e-v-t-\-b-s,Enevtbs,,qbenstv,4012
 Mail,m-a2,Mae,e,qaemz,4020
+Remainders,r-e2-mn-e2-s,Remmes,,qemrs,4025
 Executives,e-s2-e-k-v-s,Xekvs,,qeksvx,4030
 Refering,r-f-\-h,Rfgo,o,qfgor,4061
 Referrer,r-f-r,Rfr,,qfr,4061
@@ -3003,6 +3018,7 @@ Theologians,h-e-\-o-n-s,Heons,,qehnos,8166
 Theology,h-e-\-o,Heoo,o,qeho,8166
 Theologies,h-e-\-o-s,Heos,,qehos,8166
 Delete,d-l-e-t,Dlet,,qdelt,8274
+Deleted,d-l-e-t-d,Dletd,,qdelt,8274
 Deleting,d-l-e-t-\-h,Dletg,,qdeglt,8274
 Deleter,d-l-e-t-r,Dletr,,qdelrt,8274
 Deleters,d-l-e-t-r-s,Dletrs,,qdelrst,8274
@@ -3399,6 +3415,7 @@ Emerging,e-m-e-j-\-h,Emejg,,qegjm,12391
 Revisioned,r-v-e-sh-d,Rvezd,,qdervz,12437
 Revisioning,r-v-e-sh-\-h,Rvezg,,qegrvz,12437
 Revisions,r-v-e-sh-s,Rvezs,,qersvz,12437
+Memberships,mn-br-/-sh-s,Mmbrzs,,qbmrsz,12550
 Incidentally,n-s2-e-tn-ye,Nsetny,,qensty,12560
 Click,k-l-e-k,Klek,,qekl,12573
 Clicking,k-l-e-k-\-h,Klekg,,qegkl,12573
