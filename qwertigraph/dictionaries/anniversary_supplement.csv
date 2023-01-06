@@ -697,6 +697,16 @@ Configures,k-f-e-g-r-s,Kfegrs,,qefgkrs,735
 Configuration,k-f-e-g-r-sh,Kfegrz,,qefgkrz,735
 Configurations,k-f-e-g-r-sh-s,Kfegrzs,,qefgkrsz,735
 Configs,k-f-e-g-s,Kfegs,,qefgks,735
+Reconfig,r-e-k-f-e-g,Rekfeg,,qefgk,735
+Reconfiged,r-e-k-f-e-g-d,Rekfegd,,qdefgkr,735
+Reconfiging,r-e-k-f-e-g-\-h,Rekfegg,,qefgkr,735
+Reconfigure,r-e-k-f-e-g-r,Rekfegr,,qefgkr,735
+Reconfigured,r-e-k-f-e-g-r-d,Rekfegrd,,qdefgkr,735
+Reconfiguring,r-e-k-f-e-g-r-\-h,Rekfegrg,,qefgkr,735
+Reconfigures,r-e-k-f-e-g-r-s,Rekfegrs,,qefgkrs,735
+Reconfiguration,r-e-k-f-e-g-r-sh,Rekfegrz,,qefgkrz,735
+Reconfigurations,r-e-k-f-e-g-r-sh-s,Rekfegrzs,,qefgkrsz,735
+Reconfigs,r-e-k-f-e-g-s,Rekfegs,,qefgkrs,735
 Ongoing,o-n-g-\-h,Ongg,,qgno,737
 Reaching,r-e-ch-\-h,Recg,,qcegr,737
 Agreed,^-ya-d,Yad,,qady,746
@@ -1829,6 +1839,8 @@ Emotionally,e-m-o-sh-l-e,Emozle,,qelmoz,2500
 Emotions,e-m-o-sh-s,Emozs,,qemosz,2500
 Unemotional,u-n-e-m-o-sh-l,Unemozl,,qelmnouz,2500
 Unemotionally,u-n-e-m-o-sh-l-e,Unemozle,,qelmnouz,2500
+Erroneous,e-r-o-n-u-s,Eronus,,qenorsu,2517
+Erroneously,e-r-o-n-u-s-e,Eronuse,,qenorsu,2517
 Errored,e-r-r-d,Errd,,qerzd,2517
 Erroring,e-r-r-\-h,Errg,,qerzg,2517
 Prefer,pr-e-f,Pref,,qefpr,2532
@@ -2518,6 +2530,10 @@ Outshine,a-u-sh-i-n,Wzin,,qinwz,4496
 Alliances,a-l-i-n-s-s,Alinss,,qailns,4526
 Complaining,k-p-\-h,Kpgo,o,qgkop,4567
 Complain,k-p,Kpo,o,qkop,4567
+Funnied,f-n-e-d,Fned,,qdefn,4574
+Funnying,f-n-e-\-h,Fneg,,qefgn,4574
+Funnier,f-n-e-r,Fner,,qefnr,4574
+Funnies,f-n-e-s,Fnes,,qefns,4574
 Normally,n-o-m-ye,Nomy,,qmnoy,4590
 Concluding,k-k-\-h-o,Kkgo,o,qgko,4613
 Concludes,k-k-s-o,Kkso,o,qkos,4613
@@ -2698,6 +2714,10 @@ Blocking,bl-o-k-\-h,Blokg,,qbgklo,5423
 Blockage,bl-o-k-j,Blokj,,qbjklo,5423
 Blockages,bl-o-k-j-s,Blokjs,,qbjklos,5423
 Blocks,bl-o-k-s,Bloks,,qbklos,5423
+Forbided,f-b-d-d,Fbdd,,qbdf,5446
+Forbiding,f-b-d-\-h,Fbdg,,qbdfg,5446
+Forbids,f-b-d-s,Fbds,,qbdfs,5446
+Forbidden,f-b-tn,Fbtn,,qbfnt,5446
 Reviewed,r-v-e-u-d,Rvud,,qdruv,5458
 Reviewing,r-v-e-u-\-h,Rvug,,qgruv,5458
 Reviewer,r-v-e-u-r,Rvur,,qruv,5458
