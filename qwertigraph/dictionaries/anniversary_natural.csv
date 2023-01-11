@@ -3,6 +3,10 @@ Seemed,s2-e-mt,Semd,,,199
 Looked,l-u-/-t,Lud,,,205
 Asked,s2-k-t,Skd,,,239
 Hundred,^-h-\-u-nt,Hund,,,302
+Round,r-nt,Rnd,,qdnr,309
+Rounded,r-nt-d,Rndd,,qdnr,309
+Rounding,r-nt-\-h,Rndg,,qdgnr,309
+Rounds,r-nt-s,Rnds,,qdnrs,309
 Received,r-s-e-/-t,Rsed,,,310
 Passed,p-a-s2-t,Pasdo,o,,319
 Replied,r-e-p-/-t,Repd,,,415
@@ -77,6 +81,7 @@ Based,b-a-s2-t,Basd,,,1543
 Explained,e-s-pl-/-t,Xpld,,,1545
 Interested,^-n-\-s-\-t,Nsd,,,1559
 Admitted,a-m-e-td,Ametd,,,1618
+Admittedly,a-m-e-td-e,Ametde,,qademt,1618
 Hoped,^-h-\-o-p-t,Hopd,,,1648
 Gained,g-a-nt,Gand,,,1674
 Addressed,a-d-r-/-t,Adrd,,,1756
@@ -100,7 +105,6 @@ Reported,r-pr-/-t,Rprd,,,2058
 Interrupted,n-/-u-p-/-t,Nupd,,,2095
 Inclined,e-/-nt,Endo,o,,2122
 Affected,a-f-k-t,Afkd,,,2135
-Adopted,a-d-p-/-t,Adpd,,,2138
 Acquainted,a-k-a-/-t,Aqad,,,2139
 Helped,^-h-\-e-l-p-t,Helpd,,,2140
 Readily,r-e-d-ya,Redy,,,2155

@@ -1163,7 +1163,7 @@ Burst,br-s2-t,Brst,,qbrst,1527
 Calm,k-a-m,Kamo,o,qakmo,1528
 Forces,f-s2s,Fss,,qfsv,1529
 Mass,m-a-s,Masu,u,qamsu,1532
-Price,pr-i-s,Priso,o,qioprs,1533
+Price,pr-i-s,Pris,,qiprs,1533
 Science,s2-a-n-s,Sanso,o,qanos,1535
 Treated,t-r-e-td,Tredd,,qdert,1537
 Thank,th-^->-\-h,Hgo,o,qgho,1539
@@ -1497,7 +1497,6 @@ Acts,a-k-s,Akso,o,qakos,2044
 Causes,k-s2-s2,Kss,,qksz,2048
 Worn,u-o-r-n,Uorn,,qnoru,2051
 Plans,pl-a-n-s,Planso,o,qalnops,2052
-Contained,k-tn-d,Ktnd,,qdknt,2054
 Yesterday,e-s2-t,Esto,o,qeost,2056
 Salt,s2-o-l-t,Solt,,qlost,2057
 Reported,r-pr-/-t,Rprt,,qprt,2058
@@ -1938,7 +1937,6 @@ Supreme,s-/-m,Smy,y,qmsy,2852
 Pressure,pr-e-sh-u,Prezu,,qepruz,2853
 Prevented,pr-e-v-nt-d,Prevntd,,qdenprtv,2854
 Infinite,n-f-e-n-e-t,Nfenet,,qefnt,2856
-Contains,k-tn-s,Ktns,,qknst,2857
 Noted,n-o-td,Nodd,,qdno,2858
 Multitude,m-u-/-t-u,Mutu,,qmtu,2860
 Rid,r-e-d,Reda,a,qader,2861
