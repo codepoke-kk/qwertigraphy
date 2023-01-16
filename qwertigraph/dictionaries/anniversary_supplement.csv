@@ -1082,8 +1082,10 @@ Shares,sh-a2-s,Zasu,u,qasuz,1122
 Upstart,p-s2-t-a2-t,Pstat,,qapst,1127
 Upstarts,p-s2-t-a2-t-s,Pstats,,qapst,1127
 Restart,r-s2-t-a2-t,Rstat,,qarst,1127
+Restarted,r-s2-t-a2-t-d,Rstatd,,qadrst,1127
 Restarting,r-s2-t-a2-t-\-h,Rstatg,,qagrst,1127
 Restarter,r-s2-t-a2-t-r,Rstatr,,qarst,1127
+Restarters,r-s2-t-a2-t-r-s,Rstatrs,,qarst,1127
 Restarts,r-s2-t-a2-t-s,Rstats,,qarst,1127
 Starting,s2-t-a2-t-\-h,Statg,,qagst,1127
 Startle,s2-t-a2-t-l,Statl,,qalst,1127
@@ -1153,6 +1155,8 @@ Attackable,a-t-a-k-b,Atakb,,qabkt,1192
 Attackably,a-t-a-k-b-e,Atakbe,,qabekt,1192
 Attacked,a-t-a-k-d,Atakd,,qadkt,1192
 Attacking,a-t-a-k-\-h,Atakg,,qagkt,1192
+Attacker,a-t-a-k-r,Atakr,,qakrt,1192
+Attackers,a-t-a-k-r-s,Atakrs,,qakrst,1192
 Attacks,a-t-a-k-s,Ataks,,qakst,1192
 Movements,m-u-m-s,Mums,,qmsu,1193
 Traded,t-r-a-d,Trad,,qadrt,1199
@@ -1222,6 +1226,7 @@ Filer,f-i-l-r,Filr,,qfilr,1312
 Filers,f-i-l-r-s,Filrs,,qfilrs,1312
 Files,f-i-l-s,Fils,,qfils,1312
 Filings,f-i-l-\-s,Filsg,g,qfigls,1312
+Replies,r-e-p-s,Reps,,qeprs,1315
 Animals,a-n-e-m-s,Anems,,qaemns,1326
 Falsify,f-o-s-f,Fosf,,qfos,1329
 Falsified,f-o-s-f-d,Fosfd,,qdfos,1329
@@ -1429,6 +1434,12 @@ Sufferings,s2-u-f-\-h-s,Sufgs,,qfgsu,1571
 Sufferance,s2-u-f-n-s,Sufns,,qfnsu,1571
 Sufferer,s2-u-f-\-r,Sufr,,qfrsu,1571
 Suffers,s2-u-f-s,Sufs,,qfsu,1571
+Intercept,^-n-\-s-e-p,Nsep,,qenps,1575
+Intercepted,^-n-\-s-e-p-d,Nsepd,,qdenps,1575
+Intercepting,^-n-\-s-e-p-\-h,Nsepg,,qegnps,1575
+Intercepts,^-n-\-s-e-p-s,Nseps,,qenps,1575
+Interception,^-n-\-s-e-p-sh,Nsepz,,qenpsz,1575
+Interceptions,^-n-\-s-e-p-sh-s,Nsepzs,,qenpsz,1575
 Interesting,^-n-\-s-\-h,Nsg,,qgns,1575
 Arrival,a-r-i,Ario,o,qaior,1580
 Arrivals,a-r-i-s,Ariso,o,qaiors,1580
@@ -3250,6 +3261,8 @@ Rescheduled,r-s2-k-e-d-l-d,Rskedld,,qdeklrs,8811
 Rescheduling,r-s2-k-e-d-l-\-h,Rskedlg,,qdegklrs,8811
 Reschedules,r-s2-k-e-d-l-s,Rskedls,,qdeklrs,8811
 Scheduling,s2-k-e-d-l-\-h,Skedlg,,qdegkls,8811
+Scheduler,s2-k-e-d-l-r,Skedlr,,qdeklrs,8811
+Schedulers,s2-k-e-d-l-r-s,Skedlrs,,qdeklrs,8811
 Schedules,s2-k-e-d-l-s,Skedls,,qdekls,8811
 Edited,e-td-d,Eddd,o,qcde,8828
 Editing,e-td-\-h,Eddg,,qdeg,8828
