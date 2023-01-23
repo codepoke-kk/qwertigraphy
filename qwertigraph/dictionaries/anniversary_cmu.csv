@@ -80,7 +80,6 @@ Obstructed,abstrktd,Abstrktd,,,90112
 Hungerford,hggEfEd,Hggefed,,,90113
 Filling,felg,Felgo,o,,90114
 Mess,mes,Mesi,i,,90115
-Declared,dklerd,Dklerd,,,90118
 Tak,tak,Taku,u,,90119
 Ports,pots,Potsu,u,,90120
 Missing,msg,Msg,,,90121
@@ -103,7 +102,6 @@ Root,rut,Ruto,o,,90150
 Tung,tg,Tgu,u,,90151
 Tuning,tng,Tng,,,90152
 Adrian,adrean,Adren,,,90154
-Levels,levls,Levls,,,90155
 Studio,studeo,Studeo,,,90157
 Pageant,pajnt,Pajnt,,,90158
 Java,jov,Jov,,,90159
@@ -119,7 +117,6 @@ Appears,aprs,Aprs,,,90171
 Steps,steps,Stepso,o,,90173
 Stepping,stepg,Stepg,,,90174
 Donne,dn,Dnii,ii,,90176
-Playing,plag,Plag,,,90177
 Plague,plag,Plago,o,,90178
 Max,maks,Makso,o,,90179
 Yeast,yest,Yest,,,90180
@@ -454,7 +451,6 @@ Waiting,uatg,Uatg,,,90606
 Retirement,rtim,Rtim,,,90608
 Remaining,remng,Remng,,,90609
 Counting,kntg,Kntg,,,90610
-Breathing,brehg,Brehg,,,90612
 Threatening,Hretng,Hretng,,,90613
 Playbook,plabk,Plabk,,,90614
 Tougher,tfr,Tfro,o,,90615
@@ -827,7 +823,6 @@ Splitting,spletg,Spletg,,,91075
 Promises,prmess,Prmess,,,91076
 Volumes,volums,Volums,,,91077
 Aha,ho,Hoii,ii,,91079
-Player,plar,Plar,,,91080
 Usenet,usnt,Usnt,,,91081
 Signs,sins,Sinso,o,,91082
 Howdy,aude,Wde,,,91083
@@ -970,7 +965,6 @@ Blamed,blamd,Blamd,,,91263
 Informally,nfmly,Nfmly,,,91264
 Madge,maj,Maj,,,91266
 Maj,maj,Majo,o,,91267
-Acquired,akird,Aqird,,,91269
 Forego,fg,Fg,,,91271
 Borrowed,borod,Borod,,,91272
 Tighten,titn,Titn,,,91274
@@ -1007,7 +1001,6 @@ Dumps,dmps,Dmpso,o,,91310
 Overflowing,Oflog,Oflog,,,91311
 Threads,Hreds,Hreds,,,91312
 Posey,pose,Posei,i,,91314
-Vanish,vanz,Vanz,,,91316
 Scrip,skrep,Skrep,,,91317
 Melinda,mlend,Mlend,,,91318
 Breach,brec,Brec,,,91319
@@ -1537,7 +1530,6 @@ Omitting,ometg,Ometg,,,91957
 Timelines,tmlns,Tmlns,,,91958
 Timeline,tmln,Tmln,,,91959
 Contentious,ktnzs,Ktnzso,o,,91960
-Declares,dklers,Dklers,,,91961
 Interrupt,ntrpt,Ntrpt,,,91962
 Citizenship,setznzp,Setznzp,,,91964
 Wraps,raps,Rapso,o,,91965
@@ -1607,9 +1599,7 @@ Coding,kodg,Kodg,,,92037
 Awesome,osm,Osm,,,92039
 Hooked,hukt,Hukt,,,92040
 Gaining,gang,Gango,o,,92042
-Consolidate,ksoldat,Ksoldat,,,92043
 Views,veus,Vus,,,92044
-Consolidating,ksoledatg,Ksoledatg,,,92045
 Chunk,cq,Cqo,o,,92047
 Vanderbilt,vandrblt,Vandrblt,,,92048
 Signatures,segncrs,Segncrs,,,92050
@@ -1657,7 +1647,6 @@ Limping,lempg,Lempg,,,92094
 Billion,bln,Bln,,,92096
 Lobby,lobe,Lobeo,o,,92098
 Pride,prid,Prid,,,92099
-Reflected,rflkd,Rflkd,,,92100
 Cuss,ks,Ksy,y,,92101
 Chooses,cuss,Cusso,o,,92102
 Sporadic,spradk,Spradk,,,92103
@@ -1846,7 +1835,6 @@ Explorer,esplrr,Xplrr,,,92321
 Craft,kraft,Krafto,o,,92322
 Bombing,bomg,Bomg,,,92323
 Intimidated,ntmedatd,Ntmedatd,,,92324
-Levelled,levld,Levld,,,92325
 Tentative,tnttv,Tnttv,,,92326
 Transmitted,tMetd,Tmetd,,,92327
 Gus,gs,Gsu,u,,92328
@@ -1972,7 +1960,6 @@ Media,medea,Medeu,u,,92469
 Presumably,prsmbe,Prsmbe,,,92473
 Enables,enbs,Enbs,,,92475
 Brock,brok,Broko,o,,92476
-Reflects,rflks,Rflks,,,92477
 Horses,hoss,Hoss,,,92479
 Coombe,kmb,Kmb,,,92480
 Interruptions,ntrpzs,Ntrpzs,,,92481
@@ -2296,7 +2283,10 @@ Extremely,esMe,Xme,,,92863
 Intensive,ntnsv,Ntnsv,,,92865
 Proceeded,prsedt,Prsedt,,,92867
 Fiber,fibr,Fibro,o,,92868
+Breathed,breh-d,Brehd,,qbdehr,92869
+Breathing,breh-\-h,Brehg,,qbeghr,92869
 Breathe,breh,Breho,o,,92869
+Breathes,breh-s,Brehs,,qbehrs,92869
 Doctors,doktrs,Doktrs,,,92870
 Tuned,tnd,Tndo,o,,92871
 Mit,emite,Emite,,,92872
