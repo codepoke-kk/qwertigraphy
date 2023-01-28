@@ -618,7 +618,11 @@ Histories,^-h-\-e-s2-t-r-e-s,Hestres,,qehrst,629
 Played,pl-a-d,Plad,,qadlp,630
 Playing,pl-a-\-h,Plag,,qaglp,630
 Player,pl-a-r,Plar,,qalpr,630
-Plaies,pl-a-s,Plas,,qalps,630
+Place,pl-a-s,Plas,,qalps,630
+Placed,pl-a-s-d,Plasd,,qadlps,630
+Placing,pl-a-s-\-h,Plasg,,qaglps,630
+Plays,pl-a-s,Plaso,o,qalops,630
+Places,pl-a-s-s,Plass,,qalps,630
 Agreements,^-ya-m-s,Yams,,qamsy,631
 Rewrote,r-e-r-o-t,Rerot,,qeort,635
 Saving,s2-a-v-\-h,Savg,,qagsv,640
@@ -1281,6 +1285,9 @@ Populations,p-o-p-\-u-sh-s,Popuzs,,qopsuz,1399
 Slighted,s-l-i-d,Slid,,qdils,1405
 Slighting,s-l-i-\-h,Slig,,qgils,1405
 Slights,s-l-i-s,Slis,,qils,1405
+Grouped,g-r-u-p-d,Grupd,,qdgpru,1406
+Grouping,g-r-u-p-\-h,Grupg,,qgpru,1406
+Groups,g-r-u-p-s,Grups,,qgprsu,1406
 Encrypt,n-\-k,Nk,,qknx,1413
 Encryptable,n-\-k-b,Nkb,,qbkn,1413
 Encryptably,n-\-k-b-e,Nkbe,,qbekn,1413
@@ -2221,6 +2228,9 @@ Seeds,s2-e-d-s,Seds,,qdes,3202
 Livelihood,l-a-v-e-\-d,Laved,,qadelv,3204
 Livelihoods,l-a-v-e-\-d-s,Laveds,,qadelsv,3204
 Livelier,l-a-v-e-r,Laver,,qaelrv,3204
+Deliverable,d-l-b,Dlb,,qbdl,3213
+Deliverability,d-l-\-b,Dlbo,o,qbdlo,3213
+Deliverables,d-l-b-s,Dlbs,,qbdls,3213
 Delivering,d-l-\-h,Dlg,,qdgl,3213
 Delivers,d-l-s,Dls,,qdls,3213
 Payments,p-a-m-s,Pams,,qamps,3229
