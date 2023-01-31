@@ -518,6 +518,7 @@ Prettied,pr-e-d,Pred,,qdepr,540
 Prettying,pr-e-\-h,Preg,,qegpr,540
 Prettier,pr-e-r,Prer,,qepr,540
 Pretties,pr-e-s,Pres,,qeprs,540
+Acting,a-k-\-h,Akg,,qagk,541
 Excepted,s-e-p-d,Sepd,,qdeps,544
 Excepting,s-e-p-\-h,Sepg,,qegps,544
 Tabled,t-a-b-d,Tabd,,qabdt,545
@@ -1152,6 +1153,7 @@ Paginating,p-a-j-n-a-t-\-h,Pajnatg,,qagjnpt,1182
 Paginates,p-a-j-n-a-t-s,Pajnats,,qajnpst,1182
 Pagination,p-a-j-n-a-sh,Pajnaz,,qajnpz,1182
 Pages,p-a-j-s,Pajs,,qajps,1182
+Accepts,a-k-s2-s,Akssu,u,qaksu,1183
 Judged,j-j-d,Jjd,,qdj,1190
 Judges,j-j-s,Jjs,,qjsz,1190
 Served,s2-e-v-d,Sevd,,qdesv,1191
@@ -2257,6 +2259,9 @@ Tracking,t-r-a-k-\-h,Trakg,,qagkrt,3267
 Tracks,t-r-a-k-s,Traks,,qakrst,3267
 Picking,p-e-k-\-h,Pekg,,qegkp,3272
 Picks,p-e-k-s,Peks,,qekps,3272
+Assisted,ss2-t-d,Sstd,,qdst,3284
+Assisting,ss2-t-\-h,Sstg,,qgst,3284
+Assists,ss2-t-s,Ssts,,qst,3284
 Magicked,m-a-j-k-d,Majkd,,qadjkm,3285
 Magically,m-a-j-k-e,Majke,,qaejkm,3285
 Magicking,m-a-j-k-\-h,Majkg,,qagjkm,3285
@@ -2532,6 +2537,9 @@ Translated,t-/-l-a-d,Tlad,,qadlt,3986
 Translating,t-/-l-a-\-h,Tlag,,qaglt,3986
 Translates,t-/-l-a-s,Tlas,,qalst,3986
 Translations,t-/-l-a-sh-s,Tlazs,,qalstz,3986
+Acknowledged,a-k-d,Akda,a,qadk,3995
+Acknowledging,a-k-d-\-h,Akga,a,qagk,3995
+Acknowledges,a-k-s,Aksa,a,qaks,3995
 Professionals,pr-f-e-sh-l-s,Prfezls,,qeflprsz,4010
 Reconciliation,r-k-s-e-l-ea-sh,Rkselez,,qeklrsz,4010
 Reconciliations,r-k-s-e-l-ea-sh-s,Rkselezs,,qeklrsz,4010
@@ -3071,7 +3079,6 @@ Sustainability,ss2-tn-\-b,Sstnbo,o,qbnost,6583
 Sustainables,ss2-tn-b-s,Sstnbs,,qbnst,6583
 Sustained,ss2-tn-d,Sstnd,,qdnst,6583
 Sustaining,ss2-tn-\-h,Sstng,,qgnst,6583
-Sustains,ss2-tn-s,Sstns,,qnst,6583
 Conversed,k-v-e-s-d,Kvesd,,qdeksv,6622
 Conversely,k-v-e-s-e,Kvese,,qeksv,6622
 Conversing,k-v-e-s-\-h,Kvesg,,qegksv,6622
@@ -3120,6 +3127,8 @@ Experts,e2-s-p-e2-t-s,Espets,,qepst,6892
 Expert,e2-s-p-e2-t,Xpet,,qeptx,6892
 Expertise,e2-s-p-e2-t-e-s,Xpetes,,qepstx,6892
 Experts,e2-s-p-e2-t-s,Xpets,,qepstx,6892
+Assistants,ss2-tn-s,Sstns,,qnst,6910
+Assistance,ss2-tn-s,Sstnso,o,qnost,6910
 Definitions,df-n-sh-s,Dfnzs,,qdfnsz,6911
 Identities,a-tn-t-e-s,Atntes,,qaenst,6977
 Perilous,p-e-r-l-u-s,Perlus,,qelprsu,6982
@@ -4435,6 +4444,7 @@ Architectural,a-k-t-e-k-r-l,Aktekrl,,qaeklrt,38363
 Architecturally,a-k-t-e-k-r-l-e,Aktekrle,,qaeklrt,38363
 Architectures,a-k-t-e-k-r-s,Aktekrs,,qaekrst,38363
 Architects,a-k-t-e-k-s,Akteks,,qaekst,38363
+Acknowledgments,a-k-m-s,Akms,,qakms,38827
 Converged,k-v-e-j-d,Kvejd,,qdejkv,38983
 Converging,k-v-e-j-\-h,Kvejg,,qegjkv,38983
 Converges,k-v-e-j-s,Kvejs,,qejksv,38983
