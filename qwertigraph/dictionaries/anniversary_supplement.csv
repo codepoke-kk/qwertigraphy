@@ -1597,6 +1597,11 @@ Increasing,n-k-r-e-s-\-h,Nkresg,,qegknrs,1762
 Increases,n-k-r-e-s-s,Nkress,,qeknrs,1762
 Trajectory,t-r-a-j-k-t-r-e,Trajktre,,qaejkrt,1762
 Trajectories,t-r-a-j-k-t-r-e-s,Trajktres,,qaejkrst,1762
+Fruited,fr-u-t-d,Frutd,,qdfrtu,1767
+Fruitful,fr-u-t-f,Frutf,,qfrtu,1767
+Fruitfully,fr-u-t-f-e,Frutfe,,qefrtu,1767
+Fruiting,fr-u-t-\-h,Frutg,,qfgrtu,1767
+Fruits,fr-u-t-s,Fruts,,qfrstu,1767
 Connect,k-e-k,Kek,,qekz,1770
 Connector,k-e-k-r,Kekr,,qekrz,1770
 Connectors,k-e-k-r-s,Kekrs,,qekrs,1770
@@ -2176,7 +2181,7 @@ Mismatching,m-sm-a-ch-\-h,Msmacg,,qacmsg,3098
 Mismatches,m-sm-a-ch-s,Msmacs,,qacmss,3098
 Unmatched,n-m-a-ch-d,Nmachd,,qacdhmn,3098
 Disability,d-s-a-/-b,Dsabo,o,qabdos,3126
-Disabilities,d-s-a-/-b-s,Dsabs,,qabds,3126
+Disabilities,d-s-a-/-b-s,Dsabso,o,qabdos,3126
 Definitely,df-n-e,Dfne,,qdefn,3128
 Waved,u-a-v-d,Uavd,,qaduv,3130
 Waving,u-a-v-\-h,Uavg,,qaguv,3130
@@ -2468,6 +2473,9 @@ Uninformed,n-n-f-m-d,Nnfmd,,qdfmn,3807
 Uninformedly,n-n-f-m-d-e,Nnfmde,,qdefmn,3807
 Uncertainty,n-s2-e-tn-t-e,Nsetnte,,qenst,3813
 Uncertainties,n-s2-e-tn-t-e-s,Nsetntes,,qenst,3813
+Neglected,n-e-g-d,Negd,,qdegn,3827
+Neglecting,n-e-g-\-h,Negg,,qegn,3827
+Neglects,n-e-g-s,Negs,,qegns,3827
 Unsatisfactory,n-s2-a-t,Nsat,,qanst,3838
 Identified,a-tn-df-d,Atndfd,,qadfnt,3839
 Identifying,a-tn-df-\-h,Atndfg,,qadfgnt,3839
@@ -2930,6 +2938,7 @@ Murderously,m-e2-d-e2-r-u-s-e,Mederuse,,qdemrsu,5712
 Murders,m-e2-d-e2-s,Medes,,qdems,5712
 Partially,p-a-r-sh-e,Parze,,qaeprz,5712
 Partials,p-a-r-sh-s,Parzs,,qaprsz,5712
+Thankfully,th-/-f-e,Hfe,,qefh,5718
 Youngest,u-ng-e-s,Uges,,qegsu,5724
 Amaze,a-m-a-s,Amas,,qams,5749
 Amazed,a-m-a-s-d,Amasd,,qadms,5749
@@ -3372,6 +3381,7 @@ Defining,df-i-n-\-h,Dfing,,qdfgin,9338
 Inflicted,n-fl-d,Nfld,,qdfln,9372
 Inflicting,n-fl-\-h,Nflg,,qfgln,9372
 Inflicts,n-fl-s,Nfls,,qflns,9372
+Fruitlessly,fr-u-t-l-e,Frutle,,qeflrtu,9375
 Buttoned,b-u-tn-d,Butnd,,qbdntu,9381
 Buttoning,b-u-tn-\-h,Butng,,qbgntu,9381
 Buttonhole,b-u-tn-o-l-^-<-h,Butnol,,qblnotu,9381
@@ -3440,6 +3450,11 @@ Indescribably,nt-s2-k-r-b-e,Ntskrbe,,qbeknrst,10106
 Expire,e-s-p-i,Xpi,,qipx,10150
 Expiring,e-s-p-i-\-h,Xpig,,qipxg,10150
 Expires,e-s-p-i-s,Xpis,,qipxs,10150
+Exaggerate,e-s-a-j,Xaj,,qajx,10166
+Exaggerated,e-s-a-j-d,Xajd,,qadjx,10166
+Exaggerating,e-s-a-j-\-h,Xajg,,qagjx,10166
+Exaggeration,e-s-a-j,Xajo,o,qajox,10166
+Exaggerations,e-s-a-j-s,Xajs,,qajsx,10166
 Investments,n-v-e-s2-m-s,Nvesms,,qemnsv,10182
 Steadfast,s-td-f-a-s2-t,Stdfast,,qadfst,10207
 Steadfastly,s-td-f-a-s2-t-e,Stdfaste,,qadefst,10207
@@ -3931,6 +3946,9 @@ Duplication,d-u-p-sh,Dupz,,qdpuz,17827
 Duplications,d-u-p-sh-s,Dupzs,,qdpsuz,17827
 Nicknames,n-e-k-n-a-s,Neknas,,qaekns,17878
 Emergencies,e-m-e-j-s,Emejs,,qejms,18011
+Brightened,br-i-n-d,Brind,,qbdinr,18023
+Brightening,br-i-n-\-h,Bringo,o,qbginor,18023
+Brightens,br-i-n-s,Brins,,qbinrs,18023
 Executors,e-s2-k-/-r-s,Xkrs,,qkrsx,18142
 Covet,k-u-v-e-t,Kuvet,,qektuv,18148
 Coveting,k-u-v-e-t-\-h,Kuvetg,,qegktuv,18148
@@ -4445,6 +4463,10 @@ Outgoing,a-u-g-g,Wgg,,qgw,39889
 Semicolon,s2-e-m-e-k-o-l-n,Semekoln,,qeklmnos,40214
 Semicolons,s2-e-m-e-k-o-l-n-s,Semekolns,,qeklmnos,40214
 Disabled,d-s-a-b-d,Dsabd,,qabds,40302
+Disabling,d-s-a-b-\-h,Dsabg,,qabdgs,40302
+Disablement,d-s-a-b-m,Dsabm,,qabdms,40302
+Disablements,d-s-a-b-m-s,Dsabms,,qabdms,40302
+Disables,d-s-a-b-s,Dsabs,,qabds,40302
 Complicating,k-pl-e-k-\-h,Kplekg,,qegklp,40467
 Complicates,k-pl-e-k-s,Kpleks,,qeklps,40467
 Complicated,k-pl-e-k-\-t,Kplekt,,qeklpt,40467
@@ -4455,6 +4477,7 @@ Complicit,k-pl-e-s-e-t,Kpleset,,qeklpst,40467
 Complicitly,k-pl-e-s-e-t-e,Kplesete,,qeklpst,40467
 Workroom,r-k-r-m,Rkrm,,qkmr,40538
 Workrooms,r-k-r-m-s,Rkrms,,qkmrs,40538
+Neglectfully,n-e-g-/-f-e,Negfe,,qefgn,40741
 Advisability,v-i-s-/-b,Visbo,o,qbiosv,40845
 Requiem,r-e-k-\-n-^-<-e-m,Reqem,,qemqr,41094
 Requiems,r-e-k-\-n-^-<-e-m-s,Reqems,,qemqrs,41094
@@ -4681,6 +4704,15 @@ Disengaging,d-s2-n-g-a-\-h,Dsngag,,qadgns,70449
 Disengagements,d-s2-n-g-a-m-s,Dsngams,,qadgmns,70449
 Disengages,d-s2-n-g-a-s,Dsngas,,qadgns,70449
 Do you know,tn-o,Tnoo,o,qnotz,70471
+Erasably,e-r-a-s-b-e,Erasbe,,qabers,70541
+Erased,e-r-a-s-d,Erasd,,qaders,70541
+Erasing,e-r-a-s-\-h,Erasg,,qaegrs,70541
+Erase,e-r-a-s,Eraso,o,qaeors,70541
+Eraser,e-r-a-s-r,Erasr,,qaers,70541
+Erasers,e-r-a-s-r-s,Erasrs,,qaers,70541
+Erases,e-r-a-s-s,Erass,,qaers,70541
+Erasure,e-r-a-sh,Eraz,,qaerz,70541
+Erasures,e-r-a-sh-s,Erazs,,qaersz,70541
 Evaluated,e-v-l-e-u-t-d,Evlutd,,qdeltuv,70554
 Evaluating,e-v-l-e-u-t-\-h,Evlutg,,qegltuv,70554
 Evaluates,e-v-l-e-u-t-s,Evluts,,qelstuv,70554
