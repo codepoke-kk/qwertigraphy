@@ -272,6 +272,7 @@ Forming,f-m-\-h,Fmg,,qfgm,307
 Rounded,r-nt-d,Rntd,,qdnrt,309
 Rounding,r-nt-\-h,Rntg,,qgnrt,309
 Rounds,r-nt-s,Rnts,,qnrst,309
+Voice,v-o-e-s,Vys,,qsvy,311
 Voiced,v-o-e-s-d,Vysd,,qdsvy,311
 Voicing,v-o-e-s-\-h,Vysg,,qgsvy,311
 Voicemail,v-o-e-s-m,Vysm,,qmsvy,311
@@ -1605,6 +1606,9 @@ Applying,a-pl-i-\-h,Aplig,,qagilp,1758
 Appliance,a-pl-i-n-s,Aplins,,qailnps,1758
 Appliances,a-pl-i-n-s-s,Aplinss,,qailnps,1758
 Applies,a-pl-i-s,Aplis,,qailps,1758
+Not Applicable,n-a-pl-e-k,Naplek,,qaeklnp,1758
+Inapplicable,n-a-pl-e-k-b,Naplekb,,qabeklnp,1758
+Inapplicability,n-a-pl-e-k-\-b,Naplekbo,o,qabeklnop,1758
 Increased,n-k-r-e-s-d,Nkresd,,qdeknrs,1762
 Increasing,n-k-r-e-s-\-h,Nkresg,,qegknrs,1762
 Increases,n-k-r-e-s-s,Nkress,,qeknrs,1762
@@ -1760,7 +1764,7 @@ Connections,k-e-k-sh-s,Kekzs,,qeksz,1927
 Accustom,a-k-u-s,Akusu,u,qaksu,1935
 Avoided,v-o-e-d,Vyd,,qdvy,1938
 Avoiding,v-o-e-\-h,Vyg,,qgvy,1938
-Avoids,v-o-e-s,Vys,,qsvy,1938
+Avoids,v-o-e-s,Vysu,u,qsuvy,1938
 Computerize,k-p-u-/-r-i-s,Kpuris,,qikprsu,1944
 Computerized,k-p-u-/-r-i-s-d,Kpurisd,,qdikprsu,1944
 Computerizing,k-p-u-/-r-i-s-\-h,Kpurisg,,qgikprsu,1944
@@ -2449,6 +2453,10 @@ Preconceived,pr-e-k-s-e-d,Preksed,,qdekprs,3729
 Preconceiving,pr-e-k-s-e-\-h,Prekseg,,qegkprs,3729
 Preconceives,pr-e-k-s-e-s,Prekses,,qekprs,3729
 Committees,k-e-t-e-s,Ketes,,qekst,3731
+Spreadsheet,s-p-sh-e-t,Spzet,,qepstz,3732
+Spreadsheeted,s-p-sh-e-t-d,Spzetd,,qdepstz,3732
+Spreadsheeting,s-p-sh-e-t-\-h,Spzetg,,qegpstz,3732
+Spreadsheets,s-p-sh-e-t-s,Spzets,,qepstz,3732
 Internationally,n-/-n-a-sh-l-e,Nnazle,,qaelnz,3740
 Internationalize,n-/-n-a-sh-l-i-s,Nnazlis,,qailnsz,3740
 Internationalized,n-/-n-a-sh-l-i-s-d,Nnazlisd,,qadilnsz,3740
