@@ -2835,6 +2835,9 @@ Entertain,n-/-tn,Ntno,o,qnotz,5116
 Convinced,k-v-e-n-s-d,Kvensd,,qdeknsv,5129
 Convincing,k-v-e-n-s-\-h,Kvensg,,qegknsv,5129
 Convinces,k-v-e-n-s-s,Kvenss,,qeknsv,5129
+Jumped,j-m-p-d,Jmpd,,qdjmp,5134
+Jumping,j-m-p-\-h,Jmpg,,qgjmp,5134
+Jumps,j-m-p-s,Jmps,,qjmps,5134
 Organic,o-g-n-e-k,Ognek,,qegkno,5141
 Organist,o-g-n-e-s,Ognes,,qegnos,5141
 Organically,o-g-n-\-k-e,Ognke,,qegkno,5141
@@ -4533,6 +4536,10 @@ Requiems,r-e-k-\-n-^-<-e-m-s,Reqems,,qemqrs,41094
 Requite,r-e-k-\-n-^-<-i-t,Reqit,,qeiqrt,41094
 Argumentations,a-g-m-sh-s,Agmzs,,qagmsz,41580
 Beatitudes,b-ea-t-e-t-s,Betets,,qbest,42212
+Hedge,^-h-\-e-j,Hej,,qehj,43736
+Hedged,^-h-\-e-j-d,Hejd,,qdehj,43736
+Hedging,^-h-\-e-j-\-h,Hejg,,qeghj,43736
+Hedges,^-h-\-e-j-s,Hejs,,qehjs,43736
 Idiosyncrasies,e-d-o-s2-e-nk-s,Edoseqs,,qdeoqs,43737
 Dispatched,d-s-p-a-ch-d,Dspacd,,qacdps,43853
 Dispatching,d-s-p-a-ch-\-h,Dspacg,,qacdgps,43853
@@ -4771,6 +4778,7 @@ Excludes,e-s-/-d-s,Xds,,qdsx,70565
 Federalist,f-e-d-e-s,Fedes,,qdefs,70591
 Federalists,f-e-d-e-s-s,Fedess,,qdefs,70591
 Federals,f-e-d-s,Feds,,qdefs,70591
+For example,f-e-s2-a-m,Fxam,,qafmx,70627
 For the record,f-th-k,Fhk,,fhk,70630
 For the record,f-th-r-k,Fhrk,u,fhkr,70630
 Forgivably,f-g-e-/-b-e,Fgebe,,qbefg,70638
