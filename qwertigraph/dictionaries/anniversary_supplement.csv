@@ -375,6 +375,8 @@ Feeling,f-e-l-\-h,Felg,,qefgl,396
 Feelings,f-e-l-\-h-s,Felgs,,qefgls,396
 Feels,f-e-l-s,Fels,,qefls,396
 Humans,^-h-\-e-u-mn-s,Humms,,qhmsu,414
+Inhuman,^-h-\-n-e-u-mn,Nhumm,,qhmnu,414
+Inhumanly,^-h-\-n-e-u-mn-e,Nhumme,,qehmnu,414
 Shortsightedly,^-sh-\s-i-td-e,Zsitde,,qdeistz,422
 Shorts,^-sh-\-s,Zso,o,qosz,422
 Shortest,^-sh-\-s-t,Zst,,qstz,422
@@ -1451,6 +1453,7 @@ Guessed,g-e-s-d,Gesd,,qdegs,1555
 Guessing,g-e-s-\-h,Gesg,,qegs,1555
 Guesses,g-e-s-s,Gess,,qegs,1555
 OpenLDAP,o-l-d-p,Oldp,,qdlop,1555
+Statements,s2-t-m-s,Stmsa,a,qamst,1565
 Complied,k-pl-i-d,Kplid,,qiklpd,1566
 Complying,k-pl-i-\-h,Kplig,,qiklpg,1566
 Complies,k-pl-i-s,Kplis,,qiklps,1566
@@ -1680,6 +1683,8 @@ Processing,pr-ss-\-h,Prssg,,qgprs,1854
 Processor,pr-ss-r,Prssr,,qprs,1854
 Processors,pr-ss-r-s,Prssrs,,qprs,1854
 Processes,pr-ss-s,Prsss,,qprs,1854
+Surround,s-e-r-nt,Sernt,,qenrst,1862
+Surrounds,s-e-r-nt-s,Sernts,,qenrst,1862
 Grandparent,^-g-\-p-a-r-e-nt,Gparent,,qaegnprt,1863
 Grandparented,^-g-\-p-a-r-e-nt-d,Gparentd,,qadegnprt,1863
 Grandparenting,^-g-\-p-a-r-e-nt-\-h,Gparentg,,qaegnprt,1863
@@ -1978,6 +1983,11 @@ Delayed,d-l-a-d,Dlad,,qadl,2546
 Delaying,d-l-a-\-h,Dlag,,qadgl,2546
 Delays,d-l-a-s,Dlas,,qadls,2546
 Agents,a-j-s,Ajso,o,qajos,2549
+Clothed,k-l-o-th-d,Klohd,,qdhklo,2551
+Clothing,k-l-o-th-\-h,Klohg,,qghklo,2551
+Cloth,k-l-o-th,Kloho,o,qhklo,2551
+Clothes,k-l-o-th-s,Klohs,,qhklos,2551
+Cloths,k-l-o-th-s,Klohso,o,qhklos,2551
 Issuing,e-sh-u-\-h,Ezug,,qeuzg,2555
 Issuance,e-sh-u-n-s,Ezuns,,qensuz,2555
 Issuer,e-sh-u-r,Ezur,,qeuzr,2555
@@ -2433,6 +2443,9 @@ Perfections,pr-f-s2h-s,Prfzs,,qfprsz,3629
 Helplessness,^-h-\-e-l-pl-n-e-s,Helplnes,,qehlp,3635
 Correspondences,k-r-e-s-s,Kress,,qekrs,3646
 Associations,a-s2-o-sh-s,Asozs,,qaosz,3676
+Intending,n-tn-\-h,Ntng,,qgnt,3679
+Intent,n-tn-t,Ntnt,,qnt,3679
+Intents,n-tn-t-s,Ntnts,,qnst,3679
 Established,e-s2-t-b-d,Estbd,,qbestd,3682
 Establishing,e-s2-t-b-\-h,Estbg,,qbestg,3682
 Establishes,e-s2-t-b-s,Estbs,,qbests,3682
@@ -2625,6 +2638,7 @@ Discharged,d-s-ch-j-d,Dscjd,,qcdjs,4154
 Discharging,d-s-ch-j-\-h,Dscjg,,qcdgjs,4154
 Discharges,d-s-ch-j-s,Dscjs,,qcdjs,4154
 Improvements,m-pr-s,Mprs,,qmprs,4173
+Surroundings,s-e-r-nt-\-h-s,Serntgs,,qegnrst,4178
 Captive,k-a-p-df,Kapdf,,qadfkp,4183
 Captivate,k-a-p-df-a-t,Kapdfat,,qadfkpt,4183
 Captivating,k-a-p-df-a-t-\-h,Kapdfatg,,qadfgkpt,4183
@@ -2822,6 +2836,9 @@ Reflecting,r-fl-\-h,Rflg,,qfglr,4996
 Reflects,r-fl-s,Rfls,,qflrs,4996
 Backout,b-a-k-a-u,Bakw,,qabkw,5000
 Backouts,b-a-k-a-u-s,Bakws,,qabksw,5000
+Reminder,r-e-m-i-n-r,Reminr,,qeimnr,5021
+Reminders,r-e-m-i-n-r-s,Reminrs,,qeimnrs,5021
+Reminds,r-e-m-i-n-s,Remins,,qeimnrs,5021
 Meetings,m-e-t-/-s,Metsg,g,qegmst,5038
 Documented,d-o-k-m-d,Dokmd,,qdkmo,5069
 Documenting,d-o-k-m-\-h,Dokmg,,qdgkmo,5069
@@ -3142,6 +3159,14 @@ Greets,g-r-e-t-s,Grets,,qegrst,6766
 Troublesome,t-r-b-s-m,Trbsm,,qbmrst,6782
 Downstairs,d-n-s2-t-ya,Dnsty,,qdnsty,6825
 Diameters,d-i-m-e-t-e2-s,Dimetes,,qdeimst,6826
+Parable,^-p-\-b,Pba,a,qabp,6826
+Parabola,^-p-\-b-o-l-a,Pbola,,qablop,6826
+Parabolas,^-p-\-b-o-l-a-s,Pbolas,,qablops,6826
+Parabolic,^-p-\-b-o-l-k,Pbolk,,qbklop,6826
+Parabolically,^-p-\-b-o-l-\-k-e,Pbolke,,qbeklop,6826
+Parabolical,^-p-\-b-o-l-\-k,Pbolko,o,qbklop,6826
+Parabolics,^-p-\-b-o-l-k-s,Pbolks,,qbklops,6826
+Parables,^-p-\-b-s,Pbsa,a,qabps,6826
 Perimeter,p-e-m-e-t-e2,Pemete,,qempt,6826
 Perimetered,p-e-m-e-t-e2-d,Pemeted,,qdempt,6826
 Perimetering,p-e-m-e-t-e2-\-h,Pemeteg,,qegmpt,6826
@@ -3296,7 +3321,6 @@ Theologians,h-e-\-o-n-s,Heons,,qehnos,8166
 Theology,h-e-\-o,Heoo,o,qeho,8166
 Theologies,h-e-\-o-s,Heos,,qehos,8166
 Delete,d-l-e-t,Dlet,,qdelt,8274
-Deleted,d-l-e-t-d,Dletd,,qdelt,8274
 Deleting,d-l-e-t-\-h,Dletg,,qdeglt,8274
 Deleter,d-l-e-t-r,Dletr,,qdelrt,8274
 Deleters,d-l-e-t-r-s,Dletrs,,qdelrst,8274
@@ -3350,6 +3374,7 @@ Constipating,k-s-t-p-a-t-\-h,Kstpatg,,qagkpst,8582
 Constipates,k-s-t-p-a-t-s,Kstpats,,qakpst,8582
 Constipation,k-s-t-p-a-sh,Kstpaz,,qakpstz,8582
 Objectives,o-b-/-v-s,Obvs,,qbosv,8583
+Miraculously,m-e-r-a-k-e,Merake,,qaekmr,8588
 Import,m-p-o-t,Mpot,,qmopt,8595
 Importing,m-p-o-t-\-h,Mpotg,,qgmopt,8595
 Importer,m-p-o-t-r,Mpotr,,qmoprt,8595
@@ -4458,6 +4483,8 @@ Suffixed,s-u-f-e-s-d,Sufxd,,qdfsux,34154
 Suffixing,s-u-f-e-s-\-h,Sufxg,,qfgsux,34154
 Suffixes,s-u-f-e-ss,Sufxs,,qfsux,34154
 Underfoot,u-/-f-u-t,Ufut,,qftu,34261
+Oddity,o-td-e,Odte,,qdeot,34300
+Oddities,o-td-e-s,Odtes,,qdeost,34300
 Spray,s-p-r-a,Spra,,qaprs,34387
 Sprayed,s-p-r-a-d,Sprad,,qadprs,34387
 Sprays,s-p-r-a-s,Spras,,qaprs,34387
@@ -4498,7 +4525,6 @@ Architecturally,a-k-t-e-k-r-l-e,Aktekrle,,qaeklrt,38363
 Architectures,a-k-t-e-k-r-s,Aktekrs,,qaekrst,38363
 Architects,a-k-t-e-k-s,Akteks,,qaekst,38363
 Acknowledgments,a-k-m-s,Akms,,qakms,38827
-Deleteriously,d-l-e-t-e-r-e,Dletere,,qdelrt,38957
 Converged,k-v-e-j-d,Kvejd,,qdejkv,38983
 Converging,k-v-e-j-\-h,Kvejg,,qegjkv,38983
 Converges,k-v-e-j-s,Kvejs,,qejksv,38983
@@ -4617,6 +4643,8 @@ Commendation,k-mn-d-sh,Kmndz,,qdkmnz,54559
 Commendations,k-mn-d-sh-s,Kmndzs,,qdkmnsz,54559
 Dealings,d-e2-/-s,Desg,g,qdegs,56004
 Dealings,d-e2-/-h-s,Desgs,,qdegs,56004
+Inhumanely,^-h-\-n-e-u-m-a-n-e,Nhumane,,qaehmnu,57074
+Inhumane,^-h-\-n-e-u-m-a-n,Nhumanu,u,qahmnu,57074
 Compliant,k-p-l-i-nt,Kplint,,qiklnpt,58475
 Indicted,nt-i-t-d,Ntitdu,u,qdintu,58592
 Indicting,nt-i-t-\-h,Ntitgu,u,qgintu,58592
