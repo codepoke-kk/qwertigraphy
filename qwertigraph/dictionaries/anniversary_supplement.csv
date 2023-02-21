@@ -1557,6 +1557,8 @@ Removably,r-e-m-u-b-e,Remube,,qbemru,1657
 Removables,r-e-m-u-b-s,Remubs,,qbemrsu,1657
 Removed,r-e-m-u-d,Remud,,qdemru,1657
 Removing,r-e-m-u-\-h,Remug,,qegmru,1657
+Remover,r-e-m-u-r,Remur,,qemru,1657
+Removers,r-e-m-u-r-s,Remurs,,qemrsu,1657
 Removes,r-e-m-u-s,Remus,,qemrsu,1657
 Parasympathy,p-\-s2-e-m-th-e,Psemhe,,qehmps,1658
 Slowed,s-l-o-d,Slod,,qdlos,1663
@@ -1629,6 +1631,12 @@ Fruits,fr-u-t-s,Fruts,,qfrstu,1767
 Connect,k-e-k,Kek,,qekz,1770
 Connector,k-e-k-r,Kekr,,qekrz,1770
 Connectors,k-e-k-r-s,Kekrs,,qekrs,1770
+Reconnect,r-k-e-k,Rkek,,qekr,1770
+Reconnected,r-k-e-k-d,Rkekd,,qdekr,1770
+Reconnecting,r-k-e-k-\-h,Rkekg,,qegkr,1770
+Reconnects,r-k-e-k-s,Rkeks,,qekrs,1770
+Reconnection,r-k-e-k-sh,Rkekz,,qekrz,1770
+Reconnections,r-k-e-k-sh-s,Rkekzs,,qekrsz,1770
 Brilliancy,br-e-l-e,Brele,,qbelor,1772
 Brilliancies,br-e-l-e-s,Breles,,qbelrs,1772
 Brilliance,br-e-l,Brelo,o,qbelor,1772
@@ -5082,6 +5090,7 @@ Filtering,f-e-l-t-e2-\-h,Felteg,,qefglt,90826
 Filters,f-e-l-t-e2-s,Feltes,,qeflst,90826
 Filteration,f-e-l-t-r-a-sh,Feltraz,,qaeflrtz,90826
 Filterations,f-e-l-t-r-a-sh-s,Feltrazs,,qaeflrstz,90826
+Appointed,o-e-d,Ydo,o,qdoy,90879
 Complains,k-p-s,Kpso,o,qkops,90909
 Quarantine,k-\-n-^-o-r-a-nt,Qrant,,qanqrt,90998
 Quarantined,k-\-n-^-o-r-a-nt-d,Qrantd,,qadnqrt,90998

@@ -3120,6 +3120,7 @@ Chorus,k-o-r-u-s,Korus,,qkorsu,5992
 Consist,k-ss,Ksso,o,qkos,6001
 Pole,p-o-l,Polu,u,qlopu,6002
 Tuesday,t-u-s,Tuso,o,qostu,6004
+Assertion,a-s2-e-s2h,Asesh,,qaehs,6006
 Await,^-h-\-u-a-t,Huat,,qahtu,6017
 Machines,m-a-sh-n-s,Mazns,,qamnsz,6018
 Elbow,e-l-b-o,Elbo,,qbelo,6024
@@ -3692,6 +3693,7 @@ Curate,k-e-u-r-a,Kura,,qakru,8917
 Chickens,ch-e-k-n-s,Cekns,,qcekns,8924
 Ferocious,f-e-r-o-sh,Feroz,,qeforz,8930
 Epic,e-p-k,Epk,,qekp,8943
+Delegates,d-e-l-s,Dels,,qdels,8950
 Stocks,s2-t-o-s,Stoso,o,qost,8960
 Frivolous,fr-e-v,Frev,,qefrv,8962
 Frowned,fr-nt,Frnto,o,qfnort,8972
@@ -3859,6 +3861,7 @@ Certificate,s2-e-df,Sedf,,qdefs,9931
 Dungeon,tn-j-n,Tnjn,,qjnt,9935
 Brazil,br-a-s,Brasu,u,qabrsu,9964
 Gentry,jnt-r-e,Jntre,,qejnrt,9975
+Envious,n-v-u-s,Nvus,,qnsuv,9981
 Fortitude,f-t-e-t,Ftet,,qeft,9982
 Palestine,p-a-l-e-s2-tn,Palestn,,qaelnpst,9985
 Incomprehensible,n-k-pr-e-n-s-b,Nkprensb,,qbeknprs,9993
@@ -6646,6 +6649,7 @@ As soon as possible,s2-n-s-p,Snsp,,qnps,70110
 As the,a-s2-th,Asho,o,qahos,70111
 As to,a-s2-t-u,Astu,,qastu,70112
 As well as,s-l-s2,Sls,,qlsz,70113
+As yet,a-s2-e-t,Aseto,o,qaeost,70114
 As you,a-s2-u,Asuo,o,qaosu,70115
 Asininity,a-s2-e-n-/-nt,Asennt,,qaenst,70116
 Asperse,a-s-pr-s,Asprs,,qaprs,70117
@@ -6913,6 +6917,7 @@ De jure,d-<-j,Dj,,qdjm,70388
 Deadeye,td-i,Ddio,o,qdio,70389
 Deadfall,td-f-o,Ddfo,,qdfo,70390
 Deadliness,td-e-n-e-s,Ddenes,,qdens,70391
+Deal ,d-e-l,Dele,e,qdel,70392
 Dear madam,d-m,Dmu,u,qdmu,70393
 Dear miss,tm-e-s,Tmes,,qemst,70394
 Dear mr.,tm-r,Tmro,o,qmort,70395
