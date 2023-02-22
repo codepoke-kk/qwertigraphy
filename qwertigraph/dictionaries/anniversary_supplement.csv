@@ -894,6 +894,10 @@ Widened,u-i-d-n-d,Uidnd,,qdinu,847
 Widening,u-i-d-n-\-h,Uidng,,qdginu,847
 Widens,u-i-d-n-s,Uidns,,qdinsu,847
 Wider,u-i-d-r,Uidr,,qdiru,847
+Devalue,d-e-v-l,Devl,,qdelv,854
+Devalued,d-e-v-l-d,Devld,,qdelv,854
+Devaluing,d-e-v-l-\-h,Devlg,,qdeglv,854
+Devalues,d-e-v-l-s,Devls,,qdelsv,854
 Valuable,v-l-b,Vlb,,qblv,854
 Valuably,v-l-b-e,Vlbe,,qbelv,854
 Valuables,v-l-b-s,Vlbs,,qblsv,854
@@ -981,6 +985,9 @@ Reproduce,r-pr-o-d-u-s,Rprodus,,qdoprsu,911
 Reproduced,r-pr-o-d-u-s-d,Rprodusd,,qdoprsu,911
 Reproducing,r-pr-o-d-u-s-\-h,Rprodusg,,qdgoprsu,911
 Reproduces,r-pr-o-d-u-ss,Rproduss,,qdoprsu,911
+Walled,u-o-l-d,Uold,,qdlou,925
+Walling,u-o-l-\-h,Uolg,,qglou,925
+Walls,u-o-l-s,Uols,,qlosu,925
 Heavenward,^-h-\-e-v-n-\-d,Hevnd,,qdehnv,933
 Heavenly,^-h-\-e-v-n-e,Hevne,,qehnv,933
 Authorities,o-th2-/-r-s,Ohrs,,qhors,938
@@ -2579,6 +2586,9 @@ Internalizes,n-/-n-l-i-s-s,Nnliss,,qilns,3908
 Internals,n-/-n-l-s,Nnls,,qlns,3908
 Criticisms,k-r-e-t-ss-s,Kretsss,,qekrst,3923
 Criticizes,k-r-e-t-ss-s,Kretssso,o,qekorst,3923
+Admired,m-i2-d,Midu,u,qdimu,3977
+Admiring,m-i2-\-h,Migu,u,qgimu,3977
+Admires,m-i2-s,Misu,u,qimsu,3977
 Salvation,s-a-l-v-a-sh,Salvaz,,qalsvz,3986
 Salvations,s-a-l-v-a-sh-s,Salvazs,,qalsvz,3986
 Salvage,s-a-l-v-j,Salvj,,qajlsv,3986
@@ -5100,6 +5110,10 @@ Rage,r-a-j,Raj,,qajr,90998
 Raged,r-a-j-d,Rajd,,qadjr,90998
 Raging,r-a-j-\-h,Rajg,,qagjr,90998
 Rages,r-a-j-s,Rajs,,qajrs,90998
+Racket,r-a-k-t,Rakt,,qakrt,91010
+Rackets,r-a-k-t-s,Rakts,,qakrst,91010
+Racquet,r-a-k-e-t,Raqet,,qaeqrt,91010
+Racquets,r-a-k-e-t-s,Raqets,,qaeqrst,91010
 Transform,^-t-\-f-m,Tfm,,qfmt,91048
 Transformed,^-t-\-f-m-d,Tfmd,,qdfmt,91048
 Transforming,^-t-\-f-m-\-h,Tfmg,,qfgmt,91048

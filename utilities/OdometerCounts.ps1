@@ -1,8 +1,8 @@
-﻿#$odometer1 = 'C:\Users\kevin\AppData\Roaming\Qwertigraph\odometerLifetime_20220115.ssv'
-$odometer = 'C:\Users\s998010\AppData\Roaming\Qwertigraph\odometerLifetime.ssv'
+﻿$odometer1 = 'C:\Users\kevin\AppData\Roaming\Qwertigraph\odometerLifetime_20220115.ssv'
+$odometer2 = 'C:\Users\kevin\AppData\Roaming\Qwertigraph\odometerLifetime.ssv'
 
-$wordlines = Get-Content -Path $odometer
-#$wordlines += Get-Content -Path $odometer2
+$wordlines = Get-Content -Path $odometer1
+$wordlines += Get-Content -Path $odometer2
 
 $wins = 0
 foreach ($wordline in $wordlines) {
