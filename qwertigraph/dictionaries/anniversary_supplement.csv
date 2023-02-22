@@ -968,7 +968,7 @@ Origins,o-r-e-j-n-s,Orejns,,qejnors,885
 Origination,o-r-e-j-n-sh,Orejnz,,qejnorz,885
 Originations,o-r-e-j-n-sh-s,Orejnzs,,qejnorsz,885
 Originals,o-r-e-j-s,Orejs,,qejors,885
-Conversation,k-v-e-sh,Kvez,u,qekvz,888
+Conversation,k-v-e-sh,Kvez,,qekvz,888
 Conversational,k-v-e-sh-l,Kvezl,,qeklvz,888
 Conversationally,k-v-e-sh-l-e,Kvezle,,qeklvz,888
 Conversations,k-v-e-sh-s,Kvezs,,qeksvz,888
@@ -2396,6 +2396,7 @@ Teachers,t-e2-ch-e2-s,Teces,,qcest,3443
 Resource,r-s2-o-s2,Rsos,,qors,3455
 Resourceful,r-s2-o-s2-f,Rsosf,,qfors,3455
 Resourcefulness,r-s2-o-s2-f-n-s,Rsosfns,,qfnors,3455
+Employments,m-pl-m-s,Mplms,,qlmps,3465
 Passion,p-a-sh,Paz,,qapz,3467
 Passionately,p-a-sh-a-t-e,Pazate,,qaeptz,3467
 Passionless,p-a-sh-l,Pazl,,qalpz,3467
@@ -2455,7 +2456,9 @@ Federals,f-e-d-r-l-s,Fedrls,,qdeflrs,3599
 Clubbed,k-l-b-d,Klbd,,qbdkl,3609
 Clubbing,k-l-b-\-h,Klbg,,qbgkl,3609
 Clubs,k-l-b-s,Klbs,,qbkls,3609
+Wired,i-r-d,Ird,,qdir,3611
 Wiring,i-r-\-h,Irg,,qgir,3611
+Wireless,i-r-l,Irl,,qilr,3611
 Wires,i-r-s,Irs,,qirs,3611
 Imperfect,m-pr-f,Mprf,,qfmpr,3629
 Imperfectly,m-pr-f-e,Mprfe,,qefmpr,3629
@@ -2549,6 +2552,11 @@ Uncertainties,n-s2-e-tn-t-e-s,Nsetntes,,qenst,3813
 Neglected,n-e-g-d,Negd,,qdegn,3827
 Neglecting,n-e-g-\-h,Negg,,qegn,3827
 Neglects,n-e-g-s,Negs,,qegns,3827
+Employed,m-pl-d,Mpld,,qdlmp,3835
+Employee,m-pl-e,Mple,,qelmp,3835
+Employees,m-pl-e-s,Mples,,qelmps,3835
+Employing,m-pl-\-h,Mplg,,qglmp,3835
+Emploies,m-pl-s,Mpls,,qlmps,3835
 Unsatisfactory,n-s2-a-t,Nsat,,qanst,3838
 Identified,a-tn-df-d,Atndfd,,qadfnt,3839
 Identifying,a-tn-df-\-h,Atndfg,,qadfgnt,3839
@@ -2788,6 +2796,7 @@ Convergent,k-v-e-jnt,Kvejnt,,qejkntv,4741
 Convert,k-v-e2-t,Kvet,,qektv,4741
 Convertible,k-v-e2-t-b,Kvetb,,qbektv,4741
 Convertibles,k-v-e2-t-b-s,Kvetbs,,qbekstv,4741
+Converted,k-v-e2-t-d,Kvetd,,qdektv,4741
 Converting,k-v-e2-t-\-h,Kvetg,,qegktv,4741
 Converts,k-v-e2-t-s,Kvets,,qekstv,4741
 Swore,s-u-o-r,Suor,,qorsu,4756
@@ -3366,6 +3375,7 @@ Theologians,h-e-\-o-n-s,Heons,,qehnos,8166
 Theology,h-e-\-o,Heoo,o,qeho,8166
 Theologies,h-e-\-o-s,Heos,,qehos,8166
 Delete,d-l-e-t,Dlet,,qdelt,8274
+Deleted,d-l-e-t-d,Dletd,,qdelt,8274
 Deleting,d-l-e-t-\-h,Dletg,,qdeglt,8274
 Deleter,d-l-e-t-r,Dletr,,qdelrt,8274
 Deleters,d-l-e-t-r-s,Dletrs,,qdelrst,8274
