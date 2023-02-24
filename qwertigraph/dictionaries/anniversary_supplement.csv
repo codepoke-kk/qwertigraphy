@@ -2334,7 +2334,7 @@ Realizes,r-e-l-i-s-s,Reliss,,qeilrss,3306
 Finishing,f-e-n-sh-\-h,Fenzg,,qefgnz,3312
 Finisher,f-e-n-sh-r,Fenzr,,qefnrz,3312
 Finishers,f-e-n-sh-r-s,Fenzrs,,qefnrsz,3312
-Finishs,f-e-n-sh-s,Fenzs,,qefnsz,3312
+Finishes,f-e-n-sh-s,Fenzs,,qefnsz,3312
 Performances,pr-f-mn-s-s,Prfmnss,,qfmnprs,3320
 Handled,^-h-\-nt-l-d,Hntld,,qdhlnt,3332
 Handling,^-h-\-nt-l-\-h,Hntlg,,qghlnt,3332
@@ -2759,6 +2759,11 @@ Pusher,p-sh-r,Pzr,,qprz,4460
 Pushers,p-sh-r-s,Pzrs,,qprsz,4460
 Pushes,p-sh-s,Pzs,,qpsz,4460
 Outshine,a-u-sh-i-n,Wzin,,qinwz,4496
+Knocked,n-o-k-d,Nokd,,qdkno,4501
+Knocking,n-o-k-\-h,Nokg,,qgkno,4501
+Knocks,n-o-k-s,Noks,,qknos,4501
+Knockout,n-o-k-a-u,Nokw,,qknow,4501
+Knockouts,n-o-k-a-u-s,Nokws,,qknosw,4501
 Alliances,a-l-i-n-s-s,Alinss,,qailns,4526
 Complaining,k-p-\-h,Kpgo,o,qgkop,4567
 Complain,k-p,Kpo,o,qkop,4567
@@ -3154,6 +3159,9 @@ Ornamentally,o-n-a-m-l-e,Onamle,,qaelmno,6391
 Ornaments,o-n-a-m-s,Onams,,qamnos,6391
 Boundaries,b-n-r-e-s,Bnres,,qbenrs,6400
 Uncomfortably,n-k-f-t-b-e,Nkftbe,,qbefknt,6437
+Showered,sh-a-u-r-d,Zwrd,,qdrwz,6495
+Showering,sh-a-u-r-\-h,Zwrg,,qgrwz,6495
+Showers,sh-a-u-r-s,Zwrs,,qrswz,6495
 Profitably,pr-f-t-b-e,Prftbe,,qbefprt,6500
 Executable,e-s2-k-b,Xkb,,qbkx,6515
 Executables,e-s2-k-b-s,Xkbs,,qbksx,6515
