@@ -430,6 +430,7 @@ Closest,k-l-o-s-e-s,Kloses,,qeklos,458
 Closing,k-l-o-s-\-h,Klosg,,qgklos,458
 Closer,k-l-o-s-r,Klosr,,qklors,458
 Closers,k-l-o-s-r-s,Klosrs,,qklors,458
+Closes,k-l-o-s-s,Kloss,,qklos,458
 Subject,s-j,Sj,,qjs,459
 Subjected,s-j-d,Sjd,,qdjs,459
 Subjecting,s-j-\-h,Sjg,,qgjs,459
@@ -1226,6 +1227,10 @@ Requestors,r-k-e-s-r-s,Rqesrs,,qeqrs,1230
 Quick,k-\-w-^-e-k,Qek,,qekq,1233
 Quickly,k-\-w-^-e-k-e,Qeke,,qekq,1233
 Quicken,k-\-w-^-e-k-n,Qekn,,qeknq,1233
+Quickened,k-\-w-^-e-k-n-d,Qeknd,,qdeknq,1233
+Quickening,k-\-w-^-e-k-n-\-h,Qekng,,qegknq,1233
+Quickens,k-\-w-^-e-k-n-s,Qekns,,qeknqs,1233
+Quicker,k-\-w-^-e-k-r,Qekr,,qekqr,1233
 Feelings,f-e-l-/-s2,Felsg,g,qefgls,1249
 Reports,r-pr-s,Rprs,,qprs,1256
 Secured,s2-e-k-r-d,Sekrd,,qdekrs,1260
@@ -1320,9 +1325,6 @@ Groups,g-r-u-p-s,Grups,,qgprsu,1406
 Encrypt,n-\-k,Nk,,qknx,1413
 Encryptable,n-\-k-b,Nkb,,qbkn,1413
 Encryptably,n-\-k-b-e,Nkbe,,qbekn,1413
-Encrypted,n-\-k-d,Nkd,,qdkn,1413
-Encrypting,n-\-k-\-h,Nkg,,qgkn,1413
-Encrypts,n-\-k-s,Nks,,qkns,1413
 Encryption,n-\-k-\-sh,Nkz,,qknz,1413
 Unencrypt,u-n-\-k,Unk,,qknu,1413
 Unencrypted,u-n-\-k-d,Unkd,,qdknu,1413
@@ -2049,6 +2051,7 @@ Permits,pr-m-e-t-s,Prmets,,qemprst,2627
 Versed,v-e-s-d,Vesd,,qdesv,2641
 Versing,v-e-s-\-h,Vesg,,qegsv,2641
 Verses,v-e-s-s,Vess,,qesv,2641
+Leaders,l-e2-d-e2-s,Ledes,,qdels,2642
 Heating,^-h-\-e-t-\-h,Hetg,,qeght,2648
 Hitting,^-h-\-e-t-\-h,Hetgu,u,qeghtu,2648
 Hits,^-h-\-e-t-s,Hetsu,u,qehstu,2648
@@ -2248,7 +2251,6 @@ Waving,u-a-v-\-h,Uavg,,qaguv,3130
 Waves,u-a-v-s,Uavs,,qasuv,3130
 Described,d-s2-k-r-d,Dskrd,,qdkrs,3131
 Describing,d-s2-k-r-\-h,Dskrg,,qdgkrs,3131
-Describes,d-s2-k-r-s,Dskrs,,qdkrs,3131
 Activities,a-k-v-t-e-s,Akvtes,,qaekstv,3132
 Hunger,^-h-\-u-ng-e,Huge,,qeghu,3155
 Hungered,^-h-\-u-ng-e-d,Huged,,qdeghu,3155
@@ -2556,7 +2558,7 @@ Employed,m-pl-d,Mpld,,qdlmp,3835
 Employee,m-pl-e,Mple,,qelmp,3835
 Employees,m-pl-e-s,Mples,,qelmps,3835
 Employing,m-pl-\-h,Mplg,,qglmp,3835
-Emploies,m-pl-s,Mpls,,qlmps,3835
+Employees,m-pl-s,Mpls,,qlmps,3835
 Unsatisfactory,n-s2-a-t,Nsat,,qanst,3838
 Identified,a-tn-df-d,Atndfd,,qadfnt,3839
 Identifying,a-tn-df-\-h,Atndfg,,qadfgnt,3839
@@ -2793,10 +2795,11 @@ Consequentially,k-s2-e-k-sh-e,Kseqze,,qekqsz,4710
 Converge,k-v-e-j,Kvej,,qejkv,4741
 Convergence,k-v-e-j-n-s,Kvejns,,qejknsv,4741
 Convergent,k-v-e-jnt,Kvejnt,,qejkntv,4741
+Conversion,k-v-e-r-sh,Kverz,,qekrvz,4741
+Conversions,k-v-e-r-sh-s,Kverzs,,qekrsvz,4741
 Convert,k-v-e2-t,Kvet,,qektv,4741
 Convertible,k-v-e2-t-b,Kvetb,,qbektv,4741
 Convertibles,k-v-e2-t-b-s,Kvetbs,,qbekstv,4741
-Converted,k-v-e2-t-d,Kvetd,,qdektv,4741
 Converting,k-v-e2-t-\-h,Kvetg,,qegktv,4741
 Converts,k-v-e2-t-s,Kvets,,qekstv,4741
 Swore,s-u-o-r,Suor,,qorsu,4756
@@ -3157,6 +3160,11 @@ Extraction,e-s-/-k-sh,Xksza,a,qaksxz,6269
 Extractions,e-s-/-k-sh-s,Xkszsa,a,qaksxz,6269
 Critics,k-r-/-a-s,Kras,,qakrs,6348
 Evenings,e-v-n-/-s,Evnsg,g,qegnsv,6351
+Exposed,e-s-p-o-d,Xpod,,qdopx,6354
+Exposing,e-s-p-o-\-h,Xpog,,qgopx,6354
+Exposure,e-s-p-o-r,Xpor,,qoprx,6354
+Exposures,e-s-p-o-r-s,Xpors,,qoprsx,6354
+Exposes,e-s-p-o-s,Xpos,,qopsx,6354
 Compare,k-pr,Kpr,,qkpr,6355
 Compared,k-pr-d,Kprd,,qdkpr,6355
 Comparing,k-pr-\-h,Kprg,,qgkpr,6355
@@ -3375,7 +3383,6 @@ Theologians,h-e-\-o-n-s,Heons,,qehnos,8166
 Theology,h-e-\-o,Heoo,o,qeho,8166
 Theologies,h-e-\-o-s,Heos,,qehos,8166
 Delete,d-l-e-t,Dlet,,qdelt,8274
-Deleted,d-l-e-t-d,Dletd,,qdelt,8274
 Deleting,d-l-e-t-\-h,Dletg,,qdeglt,8274
 Deleter,d-l-e-t-r,Dletr,,qdelrt,8274
 Deleters,d-l-e-t-r-s,Dletrs,,qdelrst,8274
@@ -3580,6 +3587,8 @@ Clutters,k-l-u-t-e2-s,Klutes,,qeklstu,9921
 Certificates,s2-e-df-s,Sedfs,,qdefs,9931
 Quotations,k-w-o-t-sh-s,Qotzs,,qoqstz,10035
 Prettiest,pr-e-/-s2-t,Prest,,qeprst,10079
+Disclosures,d-s-k-/-r-s,Dskrs,,qdkrs,10086
+Enclosures,n-k-/-r-s,Nkrs,,qknrs,10086
 Indescribably,nt-s2-k-r-b-e,Ntskrbe,,qbeknrst,10106
 Expire,e-s-p-i,Xpi,,qipx,10150
 Expiring,e-s-p-i-\-h,Xpig,,qipxg,10150
@@ -3963,6 +3972,9 @@ Graphs,g-r-a-f-s,Grafs,,qafgrs,15063
 Forthcoming,f-th-k-m-\-h,Fhkmg,,qfghkm,15126
 Reservations,r-s-a-sh-s,Rsazs,,qarsz,15211
 Disappointing,d-o-e-\-h,Dyg,,qdgy,15349
+Enclosed,n-k-d,Nkd,,qdkn,15374
+Enclosing,n-k-\-h,Nkg,,qgkn,15374
+Encloses,n-k-s,Nks,,qkns,15374
 Overturn,^-o-\-t-e-n,Oten,,qenot,15426
 Overturned,^-o-\-t-e-n-d,Otend,,qenotd,15426
 Overturning,^-o-\-t-e-n-\-h,Oteng,,qenotg,15426
@@ -4880,6 +4892,7 @@ Evaluates,e-v-l-e-u-t-s,Evluts,,qelstuv,70554
 Excluded,e-s-/-d-d,Xdd,,qcdx,70565
 Excluding,e-s-/-d-\-h,Xdg,,qdgx,70565
 Excludes,e-s-/-d-s,Xds,,qdsx,70565
+Expositors,e-s-p-o-s-/-r-s,Xposrs,,qoprsx,70574
 Federalist,f-e-d-e-s,Fedes,,qdefs,70591
 Federalists,f-e-d-e-s-s,Fedess,,qdefs,70591
 Federals,f-e-d-s,Feds,,qdefs,70591
@@ -5257,6 +5270,14 @@ Repository,r-p-o-\-r-e,Rpore,,qeopr,92003
 Repositories,r-p-o-\-r-e-s,Rpores,,qeoprs,92003
 Reposes,r-p-o-s,Rposo,o,qoprs,92003
 Nuclear,n-u-k-l-ea-r,Nukler,,qeklnru,92038
+Impulses,m-pl-ss,Mplssu,u,qlmpsu,92081
+Impulse,m-pl-s,Mplsu,u,qlmpsu,92081
+Impulsively,m-pl-s-v-e,Mplsveu,u,qelmpsuv,92081
+Impulsive,m-pl-s-v,Mplsvu,u,qlmpsuv,92081
+Pulsed,pl-s-d,Plsdu,u,qdlpsu,92081
+Pulsing,pl-s-\-h,Plsgu,u,qglpsu,92081
+Pulses,pl-ss,Plssu,u,qlpsu,92081
+Pulse,pl-s,Plsu,u,qlpsu,92081
 Replica,r-e-pl-k-a,Replka,,qaeklpr,92121
 Replicas,r-e-pl-k-a-s,Replkas,,qaeklprs,92121
 Replicate,r-e-pl-k-a-t,Replkat,,qaeklprt,92121
