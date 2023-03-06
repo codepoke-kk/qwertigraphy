@@ -761,6 +761,8 @@ Reconfigurations,r-e-k-f-e-g-r-sh-s,Rekfegrzs,,qefgkrsz,735
 Reconfigs,r-e-k-f-e-g-s,Rekfegs,,qefgkrs,735
 Ongoing,o-n-g-\-h,Ongg,,qgno,737
 Reaching,r-e-ch-\-h,Recg,,qcegr,737
+Outreach,a-u-r-e-ch,Wrec,,qcerw,737
+Outreaches,a-u-r-e-ch-s,Wrecs,,qcersw,737
 Agreed,^-ya-d,Yad,,qady,746
 Agreeing,^-ya-\-h,Yag,,qagy,746
 Agrees,^-ya-s,Yas,,qasy,746
@@ -2180,6 +2182,11 @@ Communities,k-/-nt-s,Knts,,qknst,2828
 Organizational,o-g-l,Ogl,,qglo,2829
 Organizationally,o-g-l-e,Ogle,,qeglo,2829
 Organizations,o-g-s,Ogs,,qgos,2829
+Blessed,bl-e-s-d,Blesd,,qbdels,2831
+Blessing,bl-e-s-\-h,Blesg,,qbegls,2831
+Blessings,bl-e-s-\-h-s,Blesgs,,qbegls,2831
+Blesss,bl-e-s-s,Bless,,qbels,2831
+Blessings,bl-e-s-\-s,Blesz,,qbelsz,2831
 Incidental,n-s2-e-tn-l,Nsetnl,,qelnst,2842
 Incidentals,n-s2-e-tn-l-s,Nsetnls,,qelnst,2842
 Incidents,n-s2-e-tn-s,Nsetns,,qenst,2842
@@ -2446,6 +2453,11 @@ Christianities,k-r-e-s-ch-/-n-t-s,Krescnts,,qceknrst,3474
 Irresponsible,e-r-s-p,Ersp,,qeprs,3487
 Irresponsibly,e-r-s-p-e,Erspe,,qeprs,3487
 Responsibly,r-s-p-e,Rspe,,qeprs,3487
+Accompanied,a-k-p-e-d,Akped,,qadekp,3488
+Accompanying,a-k-p-e-\-h,Akpeg,,qaegkp,3488
+Accompaniment,a-k-p-e-m,Akpem,,qaekmp,3488
+Accompaniments,a-k-p-e-m-s,Akpems,,qaekmps,3488
+Accompanies,a-k-p-e-s,Akpes,,qaekps,3488
 Assumed,a-s2-m-d,Asmd,,qamsd,3493
 Assuming,a-s2-m-\-h,Asmg,,qamsg,3493
 Assumes,a-s2-m-s,Asms,,qamss,3493
@@ -2948,7 +2960,7 @@ Punishable,p-n-sh-b,Pnzb,,qbnpz,5086
 Punishably,p-n-sh-b-e,Pnzbe,,qbenpz,5086
 Punished,p-n-sh-d,Pnzd,,qdnpz,5086
 Punishing,p-n-sh-\-h,Pnzg,,qgnpz,5086
-Punishs,p-n-sh-s,Pnzs,,qnpsz,5086
+Punishes,p-n-sh-s,Pnzs,,qnpsz,5086
 Complaints,k-p-s,Kpsa,a,qakps,5092
 Entertain,n-/-tn,Ntno,o,qnotz,5116
 Convinced,k-v-e-n-s-d,Kvensd,,qdeknsv,5129
@@ -4823,6 +4835,7 @@ Pre,^-pr,Prq,q,qpqr,70009
 Pre-,^-pr,Prqq,qq,qpqr,70009
 Re,^-r,Rq,q,qqr,70009
 Re-,^-r,Rqq,qq,qqr,70009
+Accompany,a-k-p,Akpo,o,qakop,70010
 Acquisitively,a-k-e-s2-df-e,Aqesdfe,,qadefqs,70018
 Affirmed,a-f-e-m-d,Afemd,,qadefm,70033
 Affirming,a-f-e-m-\-h,Afemg,,qaefgm,70033
