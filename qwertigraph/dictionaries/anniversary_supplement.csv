@@ -1017,6 +1017,8 @@ Reproduce,r-pr-o-d-u-s,Rprodus,,qdoprsu,911
 Reproduced,r-pr-o-d-u-s-d,Rprodusd,,qdoprsu,911
 Reproducing,r-pr-o-d-u-s-\-h,Rprodusg,,qdgoprsu,911
 Reproduces,r-pr-o-d-u-ss,Rproduss,,qdoprsu,911
+Likelihood,l-a-e-\-d,Laed,,qadel,919
+Likelihoods,l-a-e-\-d-s,Laeds,,qadels,919
 Walled,u-o-l-d,Uold,,qdlou,925
 Walling,u-o-l-\-h,Uolg,,qglou,925
 Walls,u-o-l-s,Uols,,qlosu,925
@@ -2546,6 +2548,9 @@ Undisciplined,n-d-s-pl-e-n-d,Ndsplend,,qdelnps,3709
 Pounded,p-n-d,Pnd,,qdnp,3714
 Pounding,p-n-\-h,Png,,qgnp,3714
 Pounds,p-n-s,Pns,,qnps,3714
+Featured,f-e-t-r-d,Fetrd,,qdefrt,3715
+Featuring,f-e-t-r-\-h,Fetrg,,qefgrt,3715
+Features,f-e-t-r-s,Fetrs,,qefrst,3715
 Appointments,o-e-m-s,Yms,,qmsy,3727
 Conceivably,k-s-e-\-b-e,Ksebe,,qbeks,3729
 Conceiving,k-s-e-\-h,Kseg,,qegks,3729
@@ -2791,6 +2796,13 @@ Undersides,u-/-s-i-s,Usis,,qisu,4384
 Irreproachable,e-r-p-r-c-b,Erprcb,,qbcepr,4387
 Reproach,r-p-r-c,Rprc,,qcpr,4387
 Reproachful,r-p-r-c-f,Rprcf,,qcfpr,4387
+Retired,r-e-t-i2-d,Retid,,qdeirt,4389
+Retiree,r-e-t-i2-e,Retie,,qeirt,4389
+Retirees,r-e-t-i2-e-s,Reties,,qeirst,4389
+Retiring,r-e-t-i2-\-h,Retig,,qegirt,4389
+Retirement,r-e-t-i2-m,Retim,,qeimrt,4389
+Retirements,r-e-t-i2-m-s,Retims,,qeimrst,4389
+Retires,r-e-t-i2-s,Retis,,qeirst,4389
 Limiting,l-e-m-e-t-\-h,Lemetg,,qeglmt,4396
 Limits,l-e-m-e-t-s,Lemets,,qelmst,4396
 Introduces,n-/-d-u-s-s,Nduss,,qdnsu,4404
@@ -5193,6 +5205,7 @@ Coexisted,k-o-e-ss-d,Koxsd,,qdkosx,90575
 Coexistence,k-o-e-ss-e-n-s,Koxsens,,qeknosx,90575
 Coexisting,k-o-e-ss-\-h,Koxsg,,qgkosx,90575
 Coexists,k-o-e-ss-s,Koxss,,qkosx,90575
+Unlikely,n-l-a-e,Nlae,,qaeln,90579
 Infrastructure,n-f-r-a-s-t-r-k-t-r,Nfrastrktr,,qafknrst,90611
 Infrastructures,n-f-r-a-s-t-r-k-t-r-s,Nfrastrktrs,,qafknrst,90611
 Structure,s-t-r-k-t-r,Strktr,,qkrst,90611
