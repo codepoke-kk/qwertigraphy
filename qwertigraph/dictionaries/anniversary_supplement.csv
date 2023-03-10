@@ -251,7 +251,9 @@ End,nt,Nto,o,qnotz,261
 Turned,t-e-n-/-t,Tent,,qentz,262
 Worded,u-d-d,Udd,,qdu,268
 Wording,u-d-\-h,Udg,,qdgu,268
+Wordings,u-d-\-h-s,Udgs,,qdgsu,268
 Words,u-d-s,Uds,,qdsu,268
+Wordings,u-d-\-s,Udz,,qduz,268
 Loaded,l-o-d-d,Lodd,,qdlo,269
 Loading,l-o-d-\-h,Lodg,,qdglo,269
 Loader,l-o-d-r,Lodr,,qdlor,269
@@ -2981,6 +2983,14 @@ Convinces,k-v-e-n-s-s,Kvenss,,qeknsv,5129
 Jumped,j-m-p-d,Jmpd,,qdjmp,5134
 Jumping,j-m-p-\-h,Jmpg,,qgjmp,5134
 Jumps,j-m-p-s,Jmps,,qjmps,5134
+Untransferable,nt-/-f-e-r-b,Ntferb,,qbefnrt,5137
+Untransferably,nt-/-f-e-r-b-e,Ntferbe,,qbefnrt,5137
+Transferable,t-/-f-e-r-b,Tferb,,qbefrt,5137
+Transferably,t-/-f-e-r-b-e,Tferbe,,qbefrt,5137
+Transferables,t-/-f-e-r-b-s,Tferbs,,qbefrst,5137
+Transfered,t-/-f-e-r-d,Tferd,,qdefrt,5137
+Transfering,t-/-f-e-r-\-h,Tferg,,qefgrt,5137
+Transfers,t-/-f-e-r-s,Tfers,,qefrst,5137
 Organic,o-g-n-e-k,Ognek,,qegkno,5141
 Organist,o-g-n-e-s,Ognes,,qegnos,5141
 Organically,o-g-n-\-k-e,Ognke,,qegkno,5141
@@ -3449,6 +3459,7 @@ Theologians,h-e-\-o-n-s,Heons,,qehnos,8166
 Theology,h-e-\-o,Heoo,o,qeho,8166
 Theologies,h-e-\-o-s,Heos,,qehos,8166
 Delete,d-l-e-t,Dlet,,qdelt,8274
+Deleted,d-l-e-t-d,Dletd,,qdelt,8274
 Deleting,d-l-e-t-\-h,Dletg,,qdeglt,8274
 Deleter,d-l-e-t-r,Dletr,,qdelrt,8274
 Deleters,d-l-e-t-r-s,Dletrs,,qdelrst,8274
