@@ -274,6 +274,10 @@ Poorest,p-u-s-t,Pust,,qpstu,282
 Certainly,s2-e-tn-e,Setne,,qenst,283
 Certainty,s2-e-tn-t-e,Setnte,,qenst,283
 Certainties,s2-e-tn-t-e-s,Setntes,,qenst,283
+Empower,m-p-a-u,Mpw,,qmpw,289
+Empowered,m-p-a-u-d,Mpwd,,qdmpw,289
+Empowering,m-p-a-u-\-h,Mpwg,,qgmpw,289
+Empowers,m-p-a-u-s,Mpws,,qmpsw,289
 Powered,p-a-u-d,Pwd,,qdpw,289
 Powering,p-a-u-\-h,Pwg,,qgpw,289
 Powers,p-a-u-s,Pws,,qpsw,289
@@ -634,6 +638,7 @@ Serviceably,^-s2-b-e,Sbe,,qbes,601
 Serviced,^-s2-d,Sd,,qcds,601
 Servicing,^-s2-\-h,Sg,,qcgs,601
 Desiring,d-s-\-h,Dsg,,qdgs,609
+Desires,d-s-s,Dss,,qds,609
 Peaceable,p-e-s-b,Pesb,,qbeps,619
 Peaceably,p-e-s-b-e,Pesbe,,qbeps,619
 Peaced,p-e-s-d,Pesd,,qdeps,619
@@ -730,6 +735,9 @@ Wronged,r-o-ng-d,Rogd,,qdgor,725
 Wrongly,r-o-ng-e,Roge,,qegor,725
 Wronging,r-o-ng-\-h,Rogg,,qgor,725
 Wrongs,r-o-ng-s,Rogs,,qgors,725
+Silenced,s2-i-l-d,Sild,,qdils,727
+Silencing,s2-i-l-\-h,Silg,,qgils,727
+Silences,s2-i-l-s,Sils,,qils,727
 Outage,a-u-j,Wj,,qwj,730
 Outages,a-u-j-s,Wjs,,qwjs,730
 Disfigure,d-s-f-e-g-r,Dsfegr,,qdefgrs,735
@@ -2292,6 +2300,9 @@ Mismatched,m-sm-a-ch-d,Msmacd,,qacmsd,3098
 Mismatching,m-sm-a-ch-\-h,Msmacg,,qacmsg,3098
 Mismatches,m-sm-a-ch-s,Msmacs,,qacmss,3098
 Unmatched,n-m-a-ch-d,Nmachd,,qacdhmn,3098
+Distressed,d-s-/-s-d,Dssd,,qds,3120
+Distressing,d-s-/-s-\-h,Dssg,,qdgs,3120
+Distresss,d-s-/-s-s,Dsss,,qds,3120
 Disability,d-s-a-/-b,Dsabo,o,qabdos,3126
 Disabilities,d-s-a-/-b-s,Dsabso,o,qabdos,3126
 Definitely,df-n-e,Dfne,,qdefn,3128
@@ -3459,7 +3470,6 @@ Theologians,h-e-\-o-n-s,Heons,,qehnos,8166
 Theology,h-e-\-o,Heoo,o,qeho,8166
 Theologies,h-e-\-o-s,Heos,,qehos,8166
 Delete,d-l-e-t,Dlet,,qdelt,8274
-Deleted,d-l-e-t-d,Dletd,,qdelt,8274
 Deleting,d-l-e-t-\-h,Dletg,,qdeglt,8274
 Deleter,d-l-e-t-r,Dletr,,qdelrt,8274
 Deleters,d-l-e-t-r-s,Dletrs,,qdelrst,8274
