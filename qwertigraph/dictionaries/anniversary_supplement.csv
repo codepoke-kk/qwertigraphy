@@ -979,7 +979,7 @@ Accessed,a-k-ss-d,Akssd,,qadks,871
 Accessing,a-k-ss-\-h,Akssg,,qagks,871
 Accessory,a-k-ss-r-e,Akssre,,qaekrs,871
 Accessories,a-k-ss-r-e-s,Akssres,,qaekrs,871
-Accesss,a-k-ss-s,Aksss,,qaks,871
+Accesses,a-k-ss-s,Aksss,,qaks,871
 Learning,l-e-n-\-h,Leng,,qegln,874
 Learner,l-e-n-r,Lenr,,qelnr,874
 Learners,l-e-n-r-s,Lenrs,,qelnrs,874
@@ -1361,6 +1361,7 @@ Groups,g-r-u-p-s,Grups,,qgprsu,1406
 Encrypt,n-\-k,Nk,,qknx,1413
 Encryptable,n-\-k-b,Nkb,,qbkn,1413
 Encryptably,n-\-k-b-e,Nkbe,,qbekn,1413
+Encrypted,n-\-k-d,Nkd,,qdkn,1413
 Encryption,n-\-k-\-sh,Nkz,,qknz,1413
 Unencrypt,u-n-\-k,Unk,,qknu,1413
 Unencrypted,u-n-\-k-d,Unkd,,qdknu,1413
@@ -2401,6 +2402,11 @@ Performances,pr-f-mn-s-s,Prfmnss,,qfmnprs,3320
 Handled,^-h-\-nt-l-d,Hntld,,qdhlnt,3332
 Handling,^-h-\-nt-l-\-h,Hntlg,,qghlnt,3332
 Handles,^-h-\-nt-l-s,Hntls,,qhlnst,3332
+Enabled,e-n-b-d,Enbd,,qbden,3336
+Enabling,e-n-b-\-h,Enbg,,qbegn,3336
+Enablement,e-n-b-m,Enbm,,qbemn,3336
+Enablements,e-n-b-m-s,Enbms,,qbemns,3336
+Enables,e-n-b-s,Enbs,,qbens,3336
 Detailing,td-a2-\-h,Ddag,,qadg,3339
 Positively,p-o-s2-df-e,Posdfe,,qdefops,3340
 Positives,p-o-s2-df-s,Posdfs,,qdfops,3340
@@ -3267,6 +3273,7 @@ Showers,sh-a-u-r-s,Zwrs,,qrswz,6495
 Profitably,pr-f-t-b-e,Prftbe,,qbefprt,6500
 Executable,e-s2-k-b,Xkb,,qbkx,6515
 Executables,e-s2-k-b-s,Xkbs,,qbksx,6515
+Executing,e-s2-k-\-h,Xkg,,qgkx,6515
 Executing,e-s2-k-\-h,Xkog,o,qgkox,6515
 Executes,e-s2-k-s,Xks,,qksx,6515
 Executes,e-s2-k-s,Xkso,o,qkosx,6515
@@ -3525,6 +3532,7 @@ Constipation,k-s-t-p-a-sh,Kstpaz,,qakpstz,8582
 Objectives,o-b-/-v-s,Obvs,,qbosv,8583
 Miraculously,m-e-r-a-k-e,Merake,,qaekmr,8588
 Import,m-p-o-t,Mpot,,qmopt,8595
+Imported,m-p-o-t-d,Mpotd,,qdmopt,8595
 Importing,m-p-o-t-\-h,Mpotg,,qgmopt,8595
 Importer,m-p-o-t-r,Mpotr,,qmoprt,8595
 Importers,m-p-o-t-r-s,Mpotrs,,qmoprst,8595
@@ -4061,9 +4069,9 @@ Graphs,g-r-a-f-s,Grafs,,qafgrs,15063
 Forthcoming,f-th-k-m-\-h,Fhkmg,,qfghkm,15126
 Reservations,r-s-a-sh-s,Rsazs,,qarsz,15211
 Disappointing,d-o-e-\-h,Dyg,,qdgy,15349
-Enclosed,n-k-d,Nkd,,qdkn,15374
 Enclosing,n-k-\-h,Nkg,,qgkn,15374
 Encloses,n-k-s,Nks,,qkns,15374
+Enclosed,n-k-t,Nkt,,qknt,15374
 Overturn,^-o-\-t-e-n,Oten,,qenot,15426
 Overturned,^-o-\-t-e-n-d,Otend,,qenotd,15426
 Overturning,^-o-\-t-e-n-\-h,Oteng,,qenotg,15426
@@ -4747,7 +4755,7 @@ Dispatchs,d-s-p-a-ch-s,Dspacs,,qacdps,43853
 Patch,p-a-ch,Pac,,qacp,43853
 Patched,p-a-ch-d,Pacd,,qacdp,43853
 Patching,p-a-ch-\-h,Pacg,,qacgp,43853
-Patchs,p-a-ch-s,Pacs,,qacps,43853
+Patches,p-a-ch-s,Pacs,,qacps,43853
 Acquisitions,a-k-e-s-sh-s,Aqeszs,,qaeqsz,44056
 Caption,k-a-p-sh,Kapz,,qakpz,44771
 Captioned,k-a-p-sh-d,Kapzd,,qadkpz,44771
@@ -5409,6 +5417,11 @@ Transcribed,^-t-\-s2-k-r-d,Tskrd,,qdkrst,92145
 Transcribing,^-t-\-s2-k-r-\-h,Tskrg,,qgkrst,92145
 Transcript,^-t-\-s2-k-r,Tskro,o,qkorst,92145
 Transcribes,^-t-\-s2-k-r-s,Tskrs,,qkrst,92145
+Peripheral,pr-e-f-l,Prefl,,qeflpr,92180
+Peripherally,pr-e-f-l-e,Prefle,,qeflpr,92180
+Peripherals,pr-e-f-l-s,Prefls,,qeflprs,92180
+Periphery,pr-e-f-r-e,Prefre,,qefpr,92180
+Peripheries,pr-e-f-r-e-s,Prefres,,qefprs,92180
 Structural,s-t-r-k-t-r-l,Strktrl,,qklrst,92266
 Structurally,s-t-r-k-t-r-l-e,Strktrle,,qeklrst,92266
 Expand,e-s-p-a-nd,Xpand,,qadnpx,92309
