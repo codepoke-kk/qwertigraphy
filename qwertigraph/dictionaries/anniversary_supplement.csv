@@ -352,6 +352,8 @@ Numbered,n-u-m-d,Numd,,qdmnu,360
 Numbering,n-u-m-\-h,Numg,,qgmnu,360
 Numbers,n-u-m-s,Nums,,qmnsu,360
 Girls,g-l-s,Gls,,qgls,364
+Lettered,l-e-d,Led,,qdel,369
+Lettering,l-e-\-h,Lega,a,qaegl,369
 Helping,^-h-\-e-l-p-\-h,Helpg,,qeghlp,370
 Helper,^-h-\-e-l-p-r,Helpr,,qehlpr,370
 Helpers,^-h-\-e-l-p-r-s,Helprs,,qehlprs,370
@@ -639,6 +641,7 @@ Serviced,^-s2-d,Sd,,qcds,601
 Servicing,^-s2-\-h,Sg,,qcgs,601
 Desiring,d-s-\-h,Dsg,,qdgs,609
 Desires,d-s-s,Dss,,qds,609
+Letters,l-e-s,Les,,qelos,618
 Peaceable,p-e-s-b,Pesb,,qbeps,619
 Peaceably,p-e-s-b-e,Pesbe,,qbeps,619
 Peaced,p-e-s-d,Pesd,,qdeps,619
@@ -829,6 +832,7 @@ Entirety,nt-i-t-e,Ntite,,qeint,782
 Smiled,s2-m-i2-d,Smid,,qdims,783
 Smiling,s2-m-i2-\-h,Smig,,qgims,783
 Smiles,s2-m-i2-s,Smis,,qims,783
+Appearances,a-pr-n-s-s,Aprnss,,qanprs,789
 Bounded,b-n-d,Bnd,,qbdn,790
 Bounding,b-n-\-h,Bng,,qbgn,790
 Bounder,b-n-r,Bnr,,qbnr,790
@@ -1100,6 +1104,8 @@ Rated,r-a-t-d,Ratd,,qadrt,1024
 Rating,r-a-t-\-h,Ratg,,qagrt,1024
 Offering,o-f-\-h,Ofg,,qfgo,1034
 Offers,o-f-s,Ofs,,qfos,1034
+Pained,p-a-n-d,Pand,,qadnp,1035
+Paining,p-a-n-\-h,Pang,,qagnp,1035
 Suffice,s2-u-f-i-s,Sufis,,qfisu,1040
 Sufficed,s2-u-f-i-s-d,Sufisd,,qdfisu,1040
 Sufficing,s2-u-f-i-s-\-h,Sufisg,,qfgisu,1040
@@ -1271,6 +1277,9 @@ Reports,r-pr-s,Rprs,,qprs,1256
 Secured,s2-e-k-r-d,Sekrd,,qdekrs,1260
 Securing,s2-e-k-r-\-h,Sekrg,,qegkrs,1260
 Secures,s2-e-k-r-s,Sekrs,,qekrs,1260
+Seeked,s2-e-k-d,Sekd,,qdeks,1265
+Seeking,s2-e-k-\-h,Sekg,,qegks,1265
+Seeks,s2-e-k-s,Seks,,qeks,1265
 Nationals,n-a-sh-l-s,Nazls,,qalnsz,1268
 Portioned,p-o-r-sh-d,Porzd,,qdoprz,1272
 Portioning,p-o-r-sh-\-h,Porzg,,qgoprz,1272
@@ -1824,6 +1833,9 @@ Compels,k-pl-s,Kpls,,qklps,1895
 Compulsory,k-pl-s-r-e,Kplsre,,qeklprs,1895
 Compulsion,k-pl-sh,Kplz,,qklpz,1895
 Compulsions,k-pl-sh-s,Kplzs,,qklpsz,1895
+Labored,l-a-br-d,Labrd,,qabdlr,1899
+Laboring,l-a-br-\-h,Labrg,,qabglr,1899
+Labors,l-a-br-s,Labrs,,qablrs,1899
 Customize,k-u-s-i-s,Kusis,,qiksu,1913
 Customized,k-u-s-i-s-d,Kusisd,,qdiksu,1913
 Customizing,k-u-s-i-s-\-h,Kusisg,,qgiksu,1913
@@ -1957,6 +1969,14 @@ Proportionately,pr-pr-sh-a-t-e,Prprzate,,qaeprtz,2173
 Proportioned,pr-pr-sh-d,Prprzd,,qdprz,2173
 Proportioning,pr-pr-sh-\-h,Prprzg,,qgprz,2173
 Proportions,pr-pr-sh-s,Prprzs,,qprsz,2173
+Attended,a-tn-d-d,Atndd,,qadnt,2178
+Attendee,a-tn-d-e,Atnde,,qadent,2178
+Attendees,a-tn-d-e-s,Atndes,,qadenst,2178
+Attending,a-tn-d-\-h,Atndg,,qadgnt,2178
+Attendant,a-tn-d-nt,Atndnt,,qadnt,2178
+Attendants,a-tn-d-nt-s,Atndnts,,qadnst,2178
+Attends,a-tn-d-s,Atnds,,qadnst,2178
+Unattended,u-na-tn-d-d,Unatndd,,qadntu,2178
 Temples,tm-pl-s,Tmpls,,qlmpst,2206
 Link,l-e-nk,Leq,,qelq,2210
 Linked,l-e-nk-d,Leqd,,qdelq,2210
@@ -2023,6 +2043,7 @@ Appealed,a-p-e-l-d,Apeld,,qadelp,2419
 Appealing,a-p-e-l-\-h,Apelg,,qaeglp,2419
 Appeals,a-p-e-l-s,Apels,,qaelps,2419
 Preparatory,pr-e-p-\-r-e,Prepre,,qepr,2440
+Painfully,p-a-n-f-e,Panfe,,qaefnp,2453
 Punishments,p-n-sh-m-s,Pnzms,,qmnpsz,2471
 Kitchened,k-e-ch-n-d,Kecnd,,qcdekn,2472
 Kitchening,k-e-ch-n-\-h,Kecng,,qcegkn,2472
@@ -2678,6 +2699,9 @@ Internalizes,n-/-n-l-i-s-s,Nnliss,,qilns,3908
 Internals,n-/-n-l-s,Nnls,,qlns,3908
 Criticisms,k-r-e-t-ss-s,Kretsss,,qekrst,3923
 Criticizes,k-r-e-t-ss-s,Kretssso,o,qekorst,3923
+Painted,p-a-nt-d,Pantd,,qadnpt,3973
+Painting,p-a-nt-\-h,Pantg,,qagnpt,3973
+Paints,p-a-nt-s,Pants,,qanpst,3973
 Admired,m-i2-d,Midu,u,qdimu,3977
 Admiring,m-i2-\-h,Migu,u,qgimu,3977
 Admires,m-i2-s,Misu,u,qimsu,3977
@@ -2797,6 +2821,12 @@ Replacement,r-pl-a-s-m,Rplasm,,qalmprs,4225
 Replacements,r-pl-a-s-m-s,Rplasms,,qalmprs,4225
 Replaces,r-pl-a-s-s,Rplass,,qalprs,4225
 Picturesquely,p-k-t-r-e-s2-k-e,Pqtreske,,qekpqrst,4237
+Annoint,a-n-o-e-nt,Anynt,,qanty,4284
+Annointed,a-n-o-e-nt-d,Anyntd,,qadnty,4284
+Annointing,a-n-o-e-nt-\-h,Anyntg,,qagnty,4284
+Annointment,a-n-o-e-nt-m,Anyntm,,qamnty,4284
+Annointments,a-n-o-e-nt-m-s,Anyntms,,qamnsty,4284
+Annoints,a-n-o-e-nt-s,Anynts,,qansty,4284
 Invisibly,n-v-e-s-b-e,Nvesbe,,qbensv,4334
 Hopelessly,^-h-\-o-pl-e,Hople,,qehlop,4354
 Advising,v-i-s-\-h,Visg,,qgisv,4358
@@ -2868,6 +2898,7 @@ Concluding,k-k-\-h-o,Kkgo,o,qgko,4613
 Concludes,k-k-s-o,Kkso,o,qkos,4613
 Conclusion,k-k-sh,Kkzo,o,qkoz,4613
 Conclusions,k-k-sh-s,Kkzso,o,qkosz,4613
+Painters,p-a-nt-r-s,Pantrs,,qanprst,4624
 Miracles,m-e-r-/-k-s,Merks,,qekmrs,4684
 Indirectly,nt-r-k-e,Ntrke,,qeknrt,4696
 Sessioned,s-e-sh-d,Sezd,,qdesz,4699
@@ -3199,6 +3230,7 @@ Grandma,g-/-m-a,Gma,,qagm,5939
 Grandmas,g-/-m-a-s,Gmas,,qagms,5939
 Grandmothers,g-/-m-u-th-s,Gmuhs,,qghmsu,5939
 Workers,r-k-/-r-s,Rkrs,,qkrsz,5945
+Missionaries,m-e-sh-r-e-s,Mezres,,qemrsz,5960
 Preferences,pr-e-f-n-s-s,Prefnss,,qefnprss,5976
 Consisting,k-ss-\-h,Kssg,,qkosg,6001
 Functioned,f-nk-d,Fqd,,qdfq,6026
@@ -3532,7 +3564,6 @@ Constipation,k-s-t-p-a-sh,Kstpaz,,qakpstz,8582
 Objectives,o-b-/-v-s,Obvs,,qbosv,8583
 Miraculously,m-e-r-a-k-e,Merake,,qaekmr,8588
 Import,m-p-o-t,Mpot,,qmopt,8595
-Imported,m-p-o-t-d,Mpotd,,qdmopt,8595
 Importing,m-p-o-t-\-h,Mpotg,,qgmopt,8595
 Importer,m-p-o-t-r,Mpotr,,qmoprt,8595
 Importers,m-p-o-t-r-s,Mpotrs,,qmoprst,8595
@@ -3598,6 +3629,12 @@ Operators,o-pr-a-\-r-s,Oprars,,qaoprs,9085
 Operative,o-pr-a-\-v,Oprav,,qaoprv,9085
 Operatives,o-pr-a-\-v-s,Opravs,,qaoprsv,9085
 Hardiest,^-h-\-a2-d-e-s-t,Hadest,,qadehst,9100
+Interpreted,n-/-p-d,Npdo,o,qdnop,9125
+Interpreting,n-/-p-\-h,Npgo,o,qgnop,9125
+Interpret,n-/-p,Npo,o,qnop,9125
+Interprets,n-/-p-s,Npso,o,qnops,9125
+Interpretation,n-/-p-sh,Npzo,o,qnopz,9125
+Interpretations,n-/-p-sh-s,Npzso,o,qnopsz,9125
 Invention,n-v-n-sh,Nvnsh,,qhnsv,9171
 Inventions,n-v-n-sh-s,Nvnshs,,qhnsv,9171
 Invent,n-v-nt,Nvnt,,qntv,9171
@@ -4110,6 +4147,17 @@ Unfulfilling,n-f-u-f-\-h,Nfufg,,qfgnu,16270
 Unfulfills,n-f-u-f-s,Nfufs,,qfnsu,16270
 Inert,e-n-e2-t,Enet,,qentz,16336
 Ensign,n-s2-i-n,Nsin,,qinsz,16435
+Oriented,o-r-e-nt-d,Orentd,,qdenort,16524
+Orienting,o-r-e-nt-\-h,Orentg,,qegnort,16524
+Oriental,o-r-e-nt-l,Orentl,,qelnort,16524
+Orientals,o-r-e-nt-l-s,Orentls,,qelnorst,16524
+Orients,o-r-e-nt-s,Orents,,qenorst,16524
+Orientation,o-r-e-nt-sh,Orentz,,qenortz,16524
+Orientations,o-r-e-nt-sh-s,Orentzs,,qenorstz,16524
+Subtly,s-u-t-e,Sute,,qestu,16524
+Subtle,s-u-t-l,Sutl,,qlstu,16524
+Subtly,s-u-t-l-e,Sutle,,qelstu,16524
+Subtlety,s-u-t-\-l,Sutlo,o,qlostu,16524
 Faultlessly,f-o-t-l-e,Fotle,,qeflot,16573
 Encipher,n-s2-i-f,Nsif,,qfins,16597
 Encipherable,n-s2-i-f-b,Nsifb,,qbfins,16597
@@ -4813,6 +4861,11 @@ Commendations,k-mn-d-sh-s,Kmndzs,,qdkmnsz,54559
 Dealings,d-e2-/-s,Desg,g,qdegs,56004
 Dealings,d-e2-/-h-s,Desgs,,qdegs,56004
 Dealings,d-e2-/-s2,Dez,,qdegs,56004
+Misinterpreted,m-s2-n-/-p-d,Msnpd,,qdmnps,56394
+Misinterpreting,m-s2-n-/-p-\-h,Msnpg,,qgmnps,56394
+Misinterprets,m-s2-n-/-p-s,Msnps,,qmnps,56394
+Misinterpretation,m-s2-n-/-p-sh,Msnpz,,qmnpsz,56394
+Misinterpretations,m-s2-n-/-p-sh-s,Msnpzs,,qmnpsz,56394
 Inhumanely,^-h-\-n-e-u-m-a-n-e,Nhumane,,qaehmnu,57074
 Inhumane,^-h-\-n-e-u-m-a-n,Nhumanu,u,qahmnu,57074
 Mystified,m-e-s2-df-d,Mesdfd,,qdefms,58414
@@ -5089,6 +5142,9 @@ Nationalists,n-a-sh-l-e-s-s,Nazless,,qaelnsz,71303
 Nationalistically,n-a-sh-l-/-s2-t-e,Nazlste,,qaelnstz,71303
 Opinionatedly,o-p-n-a-td-e,Opnadde,,qadenop,71437
 Order blanks,o-d-/-b-s,Odbs,,qbdos,71442
+Orientated,o-r-e-nt-a-d,Orentad,,qadenort,71444
+Orientating,o-r-e-nt-a-\-h,Orentag,,qaegnort,71444
+Orientates,o-r-e-nt-a-s,Orentas,,qaenorst,71444
 Ought to know,o-tn-o,Otnoo,o,qnotz,71463
 Quicker than,k-\-w-^-e-k-r-n,Qekrn,,qeknqr,71526
 Questionnaires,k-sh-a2-s,Qzas,,qaqsz,71526
@@ -5271,6 +5327,7 @@ Filteration,f-e-l-t-r-a-sh,Feltraz,,qaeflrtz,90826
 Filterations,f-e-l-t-r-a-sh-s,Feltrazs,,qaeflrstz,90826
 Appointed,o-e-d,Ydo,o,qdoy,90879
 Complains,k-p-s,Kpso,o,qkops,90909
+Painless,p-a-n-l,Panl,,qalnp,90967
 Quarantine,k-\-n-^-o-r-a-nt,Qrant,,qanqrt,90998
 Quarantined,k-\-n-^-o-r-a-nt-d,Qrantd,,qadnqrt,90998
 Quarantining,k-\-n-^-o-r-a-nt-\-h,Qrantg,,qagnqrt,90998
