@@ -478,9 +478,14 @@ Overwritten,^-o-\-r-e-tn,Oretn,,qenort,469
 Overwrite,^-o-\-r-i,Ori,,qiorz,469
 Overwriting,^-o-\-r-i-\-h,Orig,,qgior,469
 Overwrites,^-o-\-r-i-s,Oris,,qiors,469
+Enforce,e-n-f-s2,Enfs,,qefns,476
+Enforced,e-n-f-s2-d,Enfsd,,qdefns,476
+Enforcing,e-n-f-s2-\-h,Enfsg,,qefgns,476
+Enforces,e-n-f-s2-s,Enfss,,qefns,476
 Forceful,f-s2-f,Fsf,,qfs,476
 Forcefully,f-s2-f-e,Fsfe,,qefs,476
 Forcing,f-s2-\-h,Fsg,,qfgs,476
+Unforced,n-f-s2-d,Nfsd,,qdfns,476
 Accountable,a-k-t-b,Aktb,,qabkt,481
 Accountably,a-k-t-b-e,Aktbe,,qabekt,481
 Accountability,a-k-t-\-b,Aktbo,o,qabkot,481
@@ -1462,7 +1467,7 @@ Delighting,d-l-i-\-h,Dlig,,qdgil,1475
 Delights,d-l-i-s,Dlis,,qdils,1475
 Approached,a-pr-ch-d,Aprcd,,qacdpr,1481
 Approaching,a-pr-ch-\-h,Aprcg,,qacgpr,1481
-Approachs,a-pr-ch-s,Aprcs,,qacprs,1481
+Approaches,a-pr-ch-s,Aprcs,,qacprs,1481
 Fingers,f-e-ng-ye2,Feqy,,qefqy,1487
 Unregulated,n-r-e-g-\-u-d,Nregud,,qdegnru,1501
 Regularly,r-e-g-e,Rege,,qegr,1501
@@ -1711,6 +1716,11 @@ Fruits,fr-u-t-s,Fruts,,qfrstu,1767
 Connect,k-e-k,Kek,,qekz,1770
 Connector,k-e-k-r,Kekr,,qekrz,1770
 Connectors,k-e-k-r-s,Kekrs,,qekrs,1770
+Interconnect,n-k-e-k,Nkek,,qekn,1770
+Interconnected,n-k-e-k-d,Nkekd,,qdekn,1770
+Interconnectedness,n-k-e-k-d-n-e-s,Nkekdnes,,qdekns,1770
+Interconnecting,n-k-e-k-\-h,Nkekg,,qegkn,1770
+Interconnects,n-k-e-k-s,Nkeks,,qekns,1770
 Reconnect,r-k-e-k,Rkek,,qekr,1770
 Reconnected,r-k-e-k-d,Rkekd,,qdekr,1770
 Reconnecting,r-k-e-k-\-h,Rkekg,,qegkr,1770
@@ -1737,6 +1747,9 @@ Enjoyed,n-j-o-e-d,Njyd,,qdjny,1785
 Enjoying,n-j-o-e-\-h,Njyg,,qgjny,1785
 Enjoys,n-j-o-e-s,Njys,,qjnsy,1785
 Friendships,fr-/-sh-s,Frzs,,qfrsz,1791
+Shamed,sh-a-m-d,Zamd,,qadmz,1799
+Shaming,sh-a-m-\-h,Zamg,,qagmz,1799
+Shames,sh-a-m-s,Zams,,qamsz,1799
 Protecting,pr-o-t-e-k-\-h,Protekg,,qegkoprt,1802
 Protector,pr-o-t-e-k-r,Protekr,,qekoprt,1802
 Protectorate,pr-o-t-e-k-r-a,Protekra,,qaekoprt,1802
@@ -2173,7 +2186,6 @@ Reroute,r-e-r-u-t,Rerut,,qertu,2671
 Rerouted,r-e-r-u-t-d,Rerutd,,qdertu,2671
 Rerouting,r-e-r-u-t-\-h,Rerutg,,qegrtu,2671
 Reroutes,r-e-r-u-t-s,Reruts,,qerstu,2671
-Routed,r-u-t-d,Rutd,,qdrtu,2671
 Routing,r-u-t-\-h,Rutg,,qgrtu,2671
 Router,r-u-t-r,Rutr,,qrtur,2671
 Routers,r-u-t-r-s,Rutrs,,qrturs,2671
@@ -2199,6 +2211,9 @@ Commenting,k-mn-t-\-h,Kmmtg,,qgkmt,2738
 Commentary,k-mn-t-r-e,Kmmtre,,qekmnrt,2738
 Commentaries,k-mn-t-r-e-s,Kmmtres,,qekmnrst,2738
 Comments,k-mn-t-s,Kmmts,,qkmst,2738
+Burdened,b-e2-tn-d,Betnd,,qbdent,2744
+Burdening,b-e2-tn-\-h,Betng,,qbegnt,2744
+Burdens,b-e2-tn-s,Betns,,qbenst,2744
 Communicable,k-m-u-\-b,Kmub,,qbkmu,2754
 Communicated,k-m-u-d,Kmud,,qdkmu,2754
 Communicating,k-m-u-\-h,Kmug,,qgkmu,2754
@@ -2672,6 +2687,7 @@ Unsatisfactory,n-s2-a-t,Nsat,,qanst,3838
 Identified,a-tn-df-d,Atndfd,,qadfnt,3839
 Identifying,a-tn-df-\-h,Atndfg,,qadfgnt,3839
 Identifies,a-tn-df-s,Atndfs,,qadfnst,3839
+Assemblies,a-s2-e-m-s,Asems,,qaems,3841
 Platformed,pl-a-t-f-m-d,Platfmd,,qadflmpt,3844
 Platforming,pl-a-t-f-m-\-h,Platfmg,,qafglmpt,3844
 Platforms,pl-a-t-f-m-s,Platfms,,qaflmpst,3844
@@ -3646,6 +3662,8 @@ Operators,o-pr-a-\-r-s,Oprars,,qaoprs,9085
 Operative,o-pr-a-\-v,Oprav,,qaoprv,9085
 Operatives,o-pr-a-\-v-s,Opravs,,qaoprsv,9085
 Hardiest,^-h-\-a2-d-e-s-t,Hadest,,qadehst,9100
+Assembled,a-s2-e-m-d,Asemd,,qadems,9104
+Assembling,a-s2-e-m-\-h,Asemg,,qaegms,9104
 Interpreted,n-/-p-d,Npdo,o,qdnop,9125
 Interpreting,n-/-p-\-h,Npgo,o,qgnop,9125
 Interpret,n-/-p,Npo,o,qnop,9125
@@ -5190,6 +5208,11 @@ Recommits,r-e-k-e-s,Rekes,,qekrs,71536
 Reconditioned,r-k-d-sh-d,Rkdzd,,qdkrz,71538
 Reconditioning,r-k-d-sh-\-h,Rkdzg,,qdgkrz,71538
 Reconditions,r-k-d-sh-s,Rkdzs,,qdkrsz,71538
+Reinforced,r-n-f-s2-d,Rnfsd,,qdfnrs,71540
+Reinforcing,r-n-f-s2-\-h,Rnfsg,,qfgnrs,71540
+Reinforcement,r-n-f-s2-m,Rnfsm,,qfmnrs,71540
+Reinforcements,r-n-f-s2-m-s,Rnfsms,,qfmnrs,71540
+Reinforces,r-n-f-s2-s,Rnfss,,qfnrs,71540
 Temperament,tm-pr-a-m,Tmpram,,qamprt,71657
 Temperaments,tm-pr-a-m-s,Tmprams,,qamprst,71657
 Temperamental,tm-pr-\-m,Tmprm,,qmprt,71657
@@ -5361,6 +5384,14 @@ Filtering,f-e-l-t-e2-\-h,Felteg,,qefglt,90826
 Filters,f-e-l-t-e2-s,Feltes,,qeflst,90826
 Filteration,f-e-l-t-r-a-sh,Feltraz,,qaeflrtz,90826
 Filterations,f-e-l-t-r-a-sh-s,Feltrazs,,qaeflrstz,90826
+Achieve,a-c-e-v,Acev,,qacev,90863
+Achieveable,a-c-e-v-b,Acevb,,qabcev,90863
+Achieveably,a-c-e-v-b-e,Acevbe,,qabcev,90863
+Achieved,a-c-e-v-d,Acevd,,qacdev,90863
+Achieving,a-c-e-v-\-h,Acevg,,qacegv,90863
+Achievement,a-c-e-v-m,Acevm,,qacemv,90863
+Achievements,a-c-e-v-m-s,Acevms,,qacemsv,90863
+Achieves,a-c-e-v-s,Acevs,,qacesv,90863
 Appointed,o-e-d,Ydo,o,qdoy,90879
 Complains,k-p-s,Kpso,o,qkops,90909
 Painless,p-a-n-l,Panl,,qalnp,90967
