@@ -28,7 +28,7 @@ Class SerialExpander {
 		}
 
         ; hard coded use semicolon to glue two words together
-		if ((token.input) and (this.engine.Accumulator.retrievedTokenHorizon < this.engine.record.MaxIndex()) and (lastToken) and (lastToken.input) and (lastToken.ender == ";")) {
+		if ((token.input) and (this.engine.Accumulator.retrievedTokenHorizon <= this.engine.record.MaxIndex()) and (lastToken) and (lastToken.input) and (lastToken.ender == ";")) {
             ; Any normal use of ; will have token ending with ;, then a space. If the previous token has a semicolon, then glue it
 			this.logEvent(2, "Handling " lastToken.ender token.input " as a glued word")
             token.extra_backspaces := 1
