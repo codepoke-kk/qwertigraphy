@@ -846,6 +846,7 @@ Systematical,s2s-\-ya,Ssy,,qasz,778
 Systematically,s2s-\-ye,Ssye,,qesy,778
 Deuteronomy,d-u-t-m-e,Dutme,,qdemtu,782
 Deuteronomic,d-u-t-m-e-k,Dutmek,,qdekmtu,782
+Deuteronomist,d-u-t-m-e-s-t,Dutmest,,qdemstu,782
 Israel,E-s-r-ea-l,Esrel,,qelrs,782
 Israeli,E-s-r-ea-l-e,Esrele,,qelrs,782
 Israelis,E-s-r-ea-l-e-s,Esreles,,qelrs,782
@@ -990,6 +991,8 @@ Experiences,e-s-p-s,Xps,,qpsx,862
 Began,b-g-e-n-d,Bgend,,qbdegn,866
 Beginning,b-g-e-n-\-h,Bgeng,,qbegn,866
 Beginnings,b-g-e-n-\-h-s,Bgengs,,qbegns,866
+Beginner,b-g-e-n-r,Bgenr,,qbegnr,866
+Beginners,b-g-e-n-r-s,Bgenrs,,qbegnrs,866
 Begins,b-g-e-n-s,Bgens,,qbegns,866
 Beginnings,b-g-e-n-\-s2,Bgenz,,qbegns,866
 Dominate,d-o-mn-a-t,Domnat,,qadmnot,868
@@ -1123,6 +1126,9 @@ Successively,s2-u-k-v-e,Sukve,,qeksuv,1001
 Succession,s2-u-k-sh,Sukz,,qksuz,1001
 Successions,s2-u-k-sh-s,Sukzs,,qksuz,1001
 Rebuilt,r-bl,Rbl,,qblr,1002
+Socially,s2-o-sh-e,Soze,,qeosz,1022
+Social media,s2-o-sh-<-m,Sozm,,qmosz,1022
+Socials,s2-o-sh-s,Sozs,,qosz,1022
 Rated,r-a-t-d,Ratd,,qadrt,1024
 Rating,r-a-t-\-h,Ratg,,qagrt,1024
 Offering,o-f-\-h,Ofg,,qfgo,1034
@@ -1537,6 +1543,7 @@ Imaginable,e-m-a-j-/-b,Emajb,,qabejm,1554
 Imaginably,e-m-a-j-/-b-e,Emajbe,,qabejm,1554
 Imagined,e-m-a-j-d,Emajd,,qadejm,1554
 Imagining,e-m-a-j-\-h,Emajg,,qaegjm,1554
+Imagines,e-m-a-j-s,Emajs,,qaejms,1554
 Imaginative,e-m-a-j-df,Emajtv,,qaejmtv,1554
 Imaginatively,e-m-a-j-df-e,Emajtve,,qaejmtv,1554
 Unimaginable,u-n-e-m-a-j-/-b,Nemajb,,qabejmn,1554
@@ -1671,6 +1678,9 @@ Rejoined,r-j-o-e-n-d,Rjynd,,qdjnry,1678
 Rejoining,r-j-o-e-n-\-h,Rjyng,,qgjnry,1678
 Rejoins,r-j-o-e-n-s,Rjyns,,qjnrsy,1678
 Kingdoms,k-e-ng-tm-s,Kegtms,,qegkmts,1692
+Cruelly,k-r-u-l-e,Krule,,qeklru,1693
+Cruelty,k-r-u-\-l,Krulo,o,qkloru,1693
+Cruelties,k-r-u-\-l-s,Kruls,,qklrsu,1693
 Shaped,sh-a-p-d,Zapd,,qadpz,1695
 Shaping,sh-a-p-\-h,Zapg,,qagpz,1695
 Shapes,sh-a-p-s,Zaps,,qapsz,1695
@@ -1682,7 +1692,7 @@ Professs,pr-f-e-s-s,Prfess,,qefprs,1703
 Relations,r-e-l-a-sh-s,Relazs,,qaelrsz,1704
 Relationship,r-e-l-a-sh-\-sh,Relazz,,qaelrz,1704
 Relationships,r-e-l-a-sh-\-sh-s,Relazzs,,qaelrsz,1704
-Imaginations,e-m-a-j-s,Emajs,,qaejms,1722
+Imaginations,e-m-a-j-s,Emajso,o,qaejmos,1722
 Practically,pr-k-e,Prke,,qekpr,1725
 Qualitative,k-u-df,Qudf,,qdfqu,1727
 Qualitatively,k-u-df-e,Qudfe,,qdefqu,1727
@@ -1945,6 +1955,15 @@ Stocking,s2-t-o-\-h,Stog,,qgost,2090
 Stockings,s2-t-o-\-h-s,Stogs,,qgost,2090
 Stocks,s2-t-o-s,Stos,,qost,2090
 Stockings,s2-t-o-\-s2,Stoz,,qgost,2090
+Confessed,k-f-e-s-d,Kfesd,,qdefks,2098
+Confessing,k-f-e-s-\-h,Kfesg,,qefgks,2098
+Confessor,k-f-e-s-r,Kfesr,,qefkrs,2098
+Confessors,k-f-e-s-r-s,Kfesrs,,qefkrs,2098
+Confesss,k-f-e-s-s,Kfess,,qefks,2098
+Confession,k-f-e-sh,Kfez,,qefkz,2098
+Confessional,k-f-e-sh-l,Kfezl,,qefklz,2098
+Confessionals,k-f-e-sh-l-s,Kfezls,,qefklsz,2098
+Confessions,k-f-e-sh-s,Kfezs,,qefksz,2098
 Selling,s-e-l-\-h,Selg,,qegls,2101
 Seller,s-e-l-r,Selr,,qelrs,2101
 Sellers,s-e-l-r-s,Selrs,,qelrs,2101
@@ -2257,7 +2276,7 @@ Organizations,o-g-s,Ogs,,qgos,2829
 Blessed,bl-e-s-d,Blesd,,qbdels,2831
 Blessing,bl-e-s-\-h,Blesg,,qbegls,2831
 Blessings,bl-e-s-\-h-s,Blesgs,,qbegls,2831
-Blesss,bl-e-s-s,Bless,,qbels,2831
+Blesses,bl-e-s-s,Blesso,o,qbelos,2831
 Blessings,bl-e-s-\-s,Blesz,,qbelsz,2831
 Incidental,n-s2-e-tn-l,Nsetnl,,qelnst,2842
 Incidentals,n-s2-e-tn-l-s,Nsetnls,,qelnst,2842
@@ -2284,6 +2303,14 @@ Repetitions,r-p-t-sh-s,Rptzs,,qprstz,2897
 Arrive,a-r-i,Ari,,qairz,2901
 Arriving,a-r-i-\-h,Arig,,qagir,2901
 Arrives,a-r-i-s,Aris,,qairs,2901
+Thrive,th-r-i,Hri,,qhir,2901
+Thrived,th-r-i-d,Hrid,,qdhir,2901
+Thriving,th-r-i-\-h,Hrig,,qghir,2901
+Thrives,th-r-i-s,Hris,,qhirs,2901
+Painstaking,p-a-n-s-t-a-k,Panstak,,qaknpst,2901
+Painstakingly,p-a-n-s-t-a-k-e,Panstake,,qaeknpst,2901
+Painstaking,p-t-a-,Pta,,qapt,2901
+Painstakingly,p-t-a--e,Ptae,,qaept,2901
 Unusual,n-u-sh,Nuz,,qnuz,2912
 Suspect,ss-/-k,Ssk,,qksz,2915
 Suspected,ss-/-k-d,Sskd,,qdks,2915
@@ -2916,6 +2943,11 @@ Pushing,p-sh-\-h,Pzg,,qgpz,4460
 Pusher,p-sh-r,Pzr,,qprz,4460
 Pushers,p-sh-r-s,Pzrs,,qprsz,4460
 Pushes,p-sh-s,Pzs,,qpsz,4460
+Climbed,k-l-i-m-d,Klimd,,qdiklm,4464
+Climbing,k-l-i-m-\-h,Klimg,,qgiklm,4464
+Climber,k-l-i-m-r,Klimr,,qiklmr,4464
+Climbers,k-l-i-m-r-s,Klimrs,,qiklmrs,4464
+Climbs,k-l-i-m-s,Klims,,qiklms,4464
 Outshine,a-u-sh-i-n,Wzin,,qinwz,4496
 Knocked,n-o-k-d,Nokd,,qdkno,4501
 Knocking,n-o-k-\-h,Nokg,,qgkno,4501
@@ -3200,6 +3232,7 @@ Resolving,r-s-o-l-v-\-h,Rsolvg,,qglorsv,5667
 Resolves,r-s-o-l-v-s,Rsolvs,,qlorsv,5667
 Identically,a-tn-/-k-e,Atnke,,qaeknt,5668
 Identicals,a-tn-/-k-s,Atnks,,qaknst,5668
+Disasters,d-ss2-t-e2-s,Dsstes,,qdest,5674
 Networked,n-e-t-r-k-d,Netrkd,,qdeknrt,5683
 Networking,n-e-t-r-k-\-h,Netrkg,,qegknrt,5683
 Networks,n-e-t-r-k-s,Netrks,,qeknrst,5683
@@ -4880,6 +4913,7 @@ Supervising,s-/-v-i-s-\-h,Svisg,,qgisv,47518
 Supervisory,s-/-v-i-s-r-e,Svisre,,qeirsv,47518
 Supervisors,s-/-v-i-s-r-s,Svisrs,,qirsv,47518
 Supervises,s-/-v-i-s-s,Sviss,,qisv,47518
+Hyperbolic,^-h-\-i-pr-bl-e-k,Hiprblek,,qbehiklpr,48060
 Extras,e-ss,Xso,o,qosx,48552
 Heartened,^-h-\-a2-tn-d,Hatnd,,qadhnt,49848
 Heartening,^-h-\-a2-tn-\-h,Hatng,,qaghnt,49848
@@ -5154,6 +5188,9 @@ Transsexual,^-t-\-s-e-s-l,Tsxl,,qlstx,70776
 Transsexually,^-t-\-s-e-s-l-e,Tsxle,,qelstx,70776
 Transsexuality,^-t-\-s-e-s-\-l,Tsxlo,o,qlostx,70776
 Transsexuals,^-t-\-s-e-s-l-s,Tsxls,,qlstx,70776
+Horrified,^-h-\-o-r-f-d,Horfd,,qdfhor,70783
+Horrifying,^-h-\-o-r-f-\-h,Horfg,,qfghor,70783
+Horrifies,^-h-\-o-r-f-s,Horfs,,qfhors,70783
 Hypercritical,^-h-\-i-p-e-r-k-r-/-ya,Hiperkry,,qehikpry,70799
 Hypercritically,^-h-\-i-p-e-r-k-r-/-ya-e,Hiperkryae,,qaehikpry,70799
 Hypercritically,^-h-\-i-p-e-r-k-r-/-ya-e,Hiperkrye,,qehikpry,70799
