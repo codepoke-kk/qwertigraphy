@@ -1269,7 +1269,6 @@ Attacks,a-t-a-k-s,Ataks,,qakst,1192
 Movements,m-u-m-s,Mums,,qmsu,1193
 Traded,t-r-a-d,Trad,,qadrt,1199
 Trading,t-r-a-\-h,Trag,,qagrt,1199
-Trades,t-r-a-s,Tras,,qarst,1199
 Losing,l-u-s-\-h,Lusg,,qglsu,1200
 Loser,l-u-s-r,Lusr,,qlrsu,1200
 Losers,l-u-s-r-s,Lusrs,,qlrsu,1200
@@ -2211,6 +2210,7 @@ Reroute,r-e-r-u-t,Rerut,,qertu,2671
 Rerouted,r-e-r-u-t-d,Rerutd,,qdertu,2671
 Rerouting,r-e-r-u-t-\-h,Rerutg,,qegrtu,2671
 Reroutes,r-e-r-u-t-s,Reruts,,qerstu,2671
+Routed,r-u-t-d,Rutd,,qdrtu,2671
 Routing,r-u-t-\-h,Rutg,,qgrtu,2671
 Router,r-u-t-r,Rutr,,qrtur,2671
 Routers,r-u-t-r-s,Rutrs,,qrturs,2671
@@ -2967,6 +2967,11 @@ Concludes,k-k-s-o,Kkso,o,qkos,4613
 Conclusion,k-k-sh,Kkzo,o,qkoz,4613
 Conclusions,k-k-sh-s,Kkzso,o,qkosz,4613
 Painters,p-a-nt-r-s,Pantrs,,qanprst,4624
+Accomplished,a-k-p-d,Akpd,,qadkp,4672
+Accomplishing,a-k-p-\-h,Akpg,,qagkp,4672
+Accomplishment,a-k-p-m,Akpm,,qakmp,4672
+Accomplishments,a-k-p-m-s,Akpms,,qakmps,4672
+Accomplishs,a-k-p-s,Akps,,qakps,4672
 Miracles,m-e-r-/-k-s,Merks,,qekmrs,4684
 Indirectly,nt-r-k-e,Ntrke,,qeknrt,4696
 Sessioned,s-e-sh-d,Sezd,,qdesz,4699
@@ -3584,6 +3589,7 @@ Theologians,h-e-\-o-n-s,Heons,,qehnos,8166
 Theology,h-e-\-o,Heoo,o,qeho,8166
 Theologies,h-e-\-o-s,Heos,,qehos,8166
 Delete,d-l-e-t,Dlet,,qdelt,8274
+Deleted,d-l-e-t-d,Dletd,,qdelt,8274
 Deleting,d-l-e-t-\-h,Dletg,,qdeglt,8274
 Deleter,d-l-e-t-r,Dletr,,qdelrt,8274
 Deleters,d-l-e-t-r-s,Dletrs,,qdelrst,8274
@@ -4132,6 +4138,7 @@ Crucifix,k-r-s-f-e-s,Krsfx,,qfkrsx,13979
 Crucifixes,k-r-s-f-e-ss,Krsfxs,,qfkrsx,13979
 Crucifixion,k-r-s-f-e-s-sh,Krsfxz,,qfkrsxz,13979
 Crucifixions,k-r-s-f-e-s-sh-s,Krsfxzs,,qfkrsxz,13979
+Nuisances,n-u-s2-n-s-s,Nusnss,,qnsu,13987
 Pronounce,pr-n-n-s,Prnns,,qnprs,14110
 Pronounced,pr-n-n-s-d,Prnnsd,,qdnprs,14110
 Pronouncing,pr-n-n-s-\-h,Prnnsg,,qgnprs,14110
@@ -4324,6 +4331,11 @@ Duplicity,d-u-p-s,Dupso,o,qdopsu,17827
 Duplication,d-u-p-sh,Dupz,,qdpuz,17827
 Duplications,d-u-p-sh-s,Dupzs,,qdpsuz,17827
 Nicknames,n-e-k-n-a-s,Neknas,,qaekns,17878
+Accumulated,a-k-/-u-d,Akud,,qadku,17982
+Accumulating,a-k-/-u-\-h,Akug,,qagku,17982
+Accumulates,a-k-/-u-s,Akus,,qaksu,17982
+Accumulation,a-k-/-u-sh,Akuz,,qakuz,17982
+Accumulations,a-k-/-u-sh-s,Akuzs,,qaksuz,17982
 Emergencies,e-m-e-j-s,Emejs,,qejms,18011
 Brightened,br-i-n-d,Brind,,qbdinr,18023
 Brightening,br-i-n-\-h,Bringo,o,qbginor,18023
@@ -4949,6 +4961,10 @@ Commending,k-mn-d-\-h,Kmndg,,qdgkmn,54559
 Commends,k-mn-d-s,Kmnds,,qdkmns,54559
 Commendation,k-mn-d-sh,Kmndz,,qdkmnz,54559
 Commendations,k-mn-d-sh-s,Kmndzs,,qdkmnsz,54559
+Trace,t-r-a-s,Tras,,qarst,55808
+Traced,t-r-a-s-d,Trasd,,qadrst,55808
+Tracing,t-r-a-s-\-h,Trasg,,qagrst,55808
+Traces,t-r-a-s-s,Trass,,qarst,55808
 Dealings,d-e2-/-s,Desg,g,qdegs,56004
 Dealings,d-e2-/-h-s,Desgs,,qdegs,56004
 Dealings,d-e2-/-s2,Dez,,qdegs,56004
@@ -5282,6 +5298,13 @@ Versioned,v-e2-z-d,Vezdo,o,qdeovz,90037
 Versioning,v-e2-z-\-h,Vezgo,o,qegovz,90037
 Version,v-e2-z,Vezo,o,qeovz,90037
 Versions,v-e2-z-s,Vezso,o,qeosvz,90037
+Challenge,c-a-l-e-n-j,Calenj,,qacejln,90042
+Challenged,c-a-l-e-n-j-d,Calenjd,,qacdejln,90042
+Challenger,c-a-l-e-n-j-e2,Calenje,,qacejln,90042
+Challengers,c-a-l-e-n-j-e2-s,Calenjes,,qacejlns,90042
+Challenging,c-a-l-e-n-j-\-h,Calenjg,,qacegjln,90042
+Challenges,c-a-l-e-n-j-s,Calenjs,,qacejlns,90042
+Unchallenged,n-c-a-l-e-n-j-d,Ncalenjd,,qacdejln,90042
 Infrastructure,n-f-s2-t-r,Nfstr,,qfnrst,90106
 Infrastructures,n-f-s2-t-r-s,Nfstrs,,qfnrst,90106
 Deploy,d-pl,Dpl,,qdlp,90131
