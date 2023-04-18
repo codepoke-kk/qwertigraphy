@@ -108,7 +108,9 @@ Helped,^-h-\-e-l-p-t,Helpd,,,2140
 Readily,r-e-d-ya,Redy,,,2155
 Unrelated,n-r-e-l-a-/-t,Nrelad,,,2159
 Feared,f-e-r-/-t,Ferd,,,2174
-Spend,s-jnt,Spndo,o,,2176
+Spend,s-jnt,Spnd,,,2176
+Spending,s-jnt-\-h,Spndg,,qdgnps,2176
+Spends,s-jnt-s,Spnds,,qdnps,2176
 Audience,o-tn-s,Odns,,,2184
 Extended,e-s2-tn-/-t,Xtndo,o,,2200
 Blessed,bl-e-s2-t,Blesdo,o,,2217
@@ -152,6 +154,12 @@ Inspired,n-s-p-i-/-t,Nspid,,,3183
 Fitted,f-e-td,Fetd,,,3205
 Picked,p-e-k-t,Pekd,,,3272
 Depend,d-jnt,Dpnd,,,3329
+Depended,d-jnt-d,Dpndd,,qdnp,3329
+Depending,d-jnt-\-h,Dpndg,,qdgnp,3329
+Dependence,d-jnt-n-s,Dpndns,,qdnps,3329
+Dependency,d-jnt-n-s-e,Dpndnse,,qdenps,3329
+Dependencies,d-jnt-n-s-e-s,Dpndnses,,qdenps,3329
+Depends,d-jnt-s,Dpnds,,qdnps,3329
 Unexpected,n-e-s-p-/-t,Nxpd,,,3341
 Unexpectedly,n-e-s-p-/-t-e,Nxpde,,,3341
 Ruined,r-u-nt,Rund,,,3405
@@ -317,7 +325,6 @@ Initiations,e-n-e-sh-ea-sh-s,Enezazs,,,21045
 Horned,^-h-\-o-r-nt,Hornd,,,21266
 Assignment,a-s2-i-mn,Asinm,,,21884
 Assignments,a-s2-i-mn-s,Asinms,,,21884
-Disconnected,d-s2-k-e-k-t,Dskekd,,,22359
 Disobedient,d-s2-o-b-tn-t,Dsobdnt,,,22441
 Indebtedness,n-td-/-t-n-e-s,Ndddnes,,,22869
 Credence,k-r-e-tn-s,Kredns,,,23522
