@@ -55,6 +55,8 @@ Weird,u-e-r-d,Uerd,,qderu,62
 Weirded,u-e-r-d-d,Uerdd,,qderu,62
 Weirdly,u-e-r-d-e,Uerde,,qderu,62
 Weirding,u-e-r-d-\-h,Uerdg,,qdegru,62
+Weirdness,u-e-r-d-n-e-s,Uerdnes,,qdenrsu,62
+Weirdnesses,u-e-r-d-n-e-s-s,Uerdness,,qdenrsu,62
 Weirds,u-e-r-d-s,Uerds,,qdersu,62
 Willingly,l-\-h-e,Lgei,i,qegil,68
 Willing,l-\-h,Lgi,i,qgil,68
@@ -2113,6 +2115,11 @@ Recently,r-s-e,Rseo,o,qeors,2402
 Appealed,a-p-e-l-d,Apeld,,qadelp,2419
 Appealing,a-p-e-l-\-h,Apelg,,qaeglp,2419
 Appeals,a-p-e-l-s,Apels,,qaelps,2419
+Blamed,bl-a-m-d,Blamd,,qabdlm,2440
+Blaming,bl-a-m-\-h,Blamg,,qabglm,2440
+Blamer,bl-a-m-r,Blamr,,qablmr,2440
+Blamers,bl-a-m-r-s,Blamrs,,qablmrs,2440
+Blames,bl-a-m-s,Blams,,qablms,2440
 Preparatory,pr-e-p-\-r-e,Prepre,,qepr,2440
 Painfully,p-a-n-f-e,Panfe,,qaefnp,2453
 Punishments,p-n-sh-m-s,Pnzms,,qmnpsz,2471
@@ -2238,6 +2245,7 @@ Reroute,r-e-r-u-t,Rerut,,qertu,2671
 Rerouted,r-e-r-u-t-d,Rerutd,,qdertu,2671
 Rerouting,r-e-r-u-t-\-h,Rerutg,,qegrtu,2671
 Reroutes,r-e-r-u-t-s,Reruts,,qerstu,2671
+Routed,r-u-t-d,Rutd,,qdrtu,2671
 Routing,r-u-t-\-h,Rutg,,qgrtu,2671
 Router,r-u-t-r,Rutr,,qrtur,2671
 Routers,r-u-t-r-s,Rutrs,,qrturs,2671
@@ -2555,6 +2563,7 @@ Testing,t-e-s-\-h,Tesg,,qegst,3381
 Tester,t-e-s-r,Tesr,,qerst,3381
 Testers,t-e-s-r-s,Tesrs,,qerst,3381
 Tests,t-e-s-s,Tess,,qest,3381
+Precise,pr-e-ss,Presso,o,qeoprs,3385
 Treasured,t-r-e-sh-u-d,Trezud,,qdertuz,3389
 Treasuring,t-r-e-sh-u-\-h,Trezug,,qegrtuz,3389
 Treasures,t-r-e-sh-u-s,Trezus,,qerstuz,3389
@@ -2738,6 +2747,9 @@ Uninformed,n-n-f-m-d,Nnfmd,,qdfmn,3807
 Uninformedly,n-n-f-m-d-e,Nnfmde,,qdefmn,3807
 Uncertainty,n-s2-e-tn-t-e,Nsetnte,,qenst,3813
 Uncertainties,n-s2-e-tn-t-e-s,Nsetntes,,qenst,3813
+Receptacle,r-s-e-p-\-k,Rsepk,,qekprs,3818
+Receptacles,r-s-e-p-\-k-s,Rsepks,,qekprs,3818
+Recession,r-s-e-sh,Rsez,,qersz,3818
 Neglected,n-e-g-d,Negd,,qdegn,3827
 Neglecting,n-e-g-\-h,Negg,,qegn,3827
 Neglects,n-e-g-s,Negs,,qegns,3827
@@ -3696,6 +3708,7 @@ Constipation,k-s-t-p-a-sh,Kstpaz,,qakpstz,8582
 Objectives,o-b-/-v-s,Obvs,,qbosv,8583
 Miraculously,m-e-r-a-k-e,Merake,,qaekmr,8588
 Import,m-p-o-t,Mpot,,qmopt,8595
+Imported,m-p-o-t-d,Mpotd,,qdmopt,8595
 Importing,m-p-o-t-\-h,Mpotg,,qgmopt,8595
 Importer,m-p-o-t-r,Mpotr,,qmoprt,8595
 Importers,m-p-o-t-r-s,Mpotrs,,qmoprst,8595
@@ -4270,6 +4283,7 @@ Alias,a-l-ea-s,Ales,,qaels,15754
 Aliased,a-l-ea-s-d,Alesd,,qadels,15754
 Aliasing,a-l-ea-s-\-h,Alesg,,qaegls,15754
 Aliases,a-l-ea-ss,Aless,,qaels,15754
+Blamelessly,bl-a-m-l-e,Blamle,,qabelm,15862
 Galilee,g-a-l-l-e,Galle,,qaegl,16002
 Elevate,e2-l-v-a-t,Elvat,,qaeltv,16130
 Elevated,e2-l-v-a-t-d,Elvatd,,qadeltv,16130
@@ -4963,6 +4977,7 @@ Dispatchs,d-s-p-a-ch-s,Dspacs,,qacdps,43853
 Patch,p-a-ch,Pac,,qacp,43853
 Patched,p-a-ch-d,Pacd,,qacdp,43853
 Patching,p-a-ch-\-h,Pacg,,qacgp,43853
+Patchings,p-a-ch-\-h-s,Pacgs,,qacgps,43853
 Patches,p-a-ch-s,Pacs,,qacps,43853
 Acquisitions,a-k-e-s-sh-s,Aqeszs,,qaeqsz,44056
 Emissions,e-m-sh-s,Emzs,,qemsz,44063
@@ -5646,6 +5661,7 @@ Wipe,u-i-p,Uip,,qipu,91852
 Wiped,u-i-p-d,Uipd,,qdipu,91852
 Wiping,u-i-p-\-h,Uipg,,qgipu,91852
 Wipes,u-i-p-s,Uips,,qipsu,91852
+Recipe,r-e-s-e-p-e,Resepe,,qeprs,91936
 Widget,u-e-j-e-t,Wejet,,qejtw,91983
 Widgets,u-e-j-e-t-s,Wejets,,qejstw,91983
 Reposed,r-p-o-d,Rpodo,o,qdopr,92003
@@ -5773,6 +5789,8 @@ Enhancement,n-^-h-\-a-n-s-m,Nhansm,,qahmns,92802
 Enhancements,n-^-h-\-a-n-s-m-s,Nhansms,,qahmns,92802
 Enhances,n-^-h-\-a-n-s-s,Nhanss,,qahns,92802
 Quicksand,k-\-w-^-e-k-s-a-nt,Qeksand,,qadeknqs,92847
+Recipient,r-s-e-p-e-nt,Rsepent,,qenprst,92879
+Recipients,r-s-e-p-e-nt-s,Rsepents,,qenprst,92879
 Strain,s-t-r-a-n,Stran,,qanrst,92917
 Straining,s-t-r-a-n-\-h,Strang,,qagnrst,92917
 Strains,s-t-r-a-n-s,Strans,,qanrst,92917
