@@ -493,6 +493,8 @@ Accounting,a-k-t-\-h,Aktg,,qagkt,481
 Accountings,a-k-t-\-h-s,Aktgs,,qagkst,481
 Accounts,a-k-t-s,Akts,,qakst,481
 Accountings,a-k-t-\-s2,Aktz,,qagkst,481
+Earthly,e-r-th-e,Erhe,,qehr,489
+Earths,e-r-th-s,Erhs,,qehrs,489
 Spirited,s-pr-d,Sprd,,qdprs,490
 Spiriting,s-pr-\-h,Sprg,,qgprs,490
 Spiritless,s-pr-l,Sprl,,qlprs,490
@@ -2983,6 +2985,7 @@ Knocks,n-o-k-s,Noks,,qknos,4501
 Knockout,n-o-k-a-u,Nokw,,qknow,4501
 Knockouts,n-o-k-a-u-s,Nokws,,qknosw,4501
 Alliances,a-l-i-n-s-s,Alinss,,qailns,4526
+Neighborhoods,n-a-br-/-d-s,Nabrds,,qabdnrs,4546
 Complaining,k-p-\-h,Kpgo,o,qgkop,4567
 Complain,k-p,Kpo,o,qkop,4567
 Funnied,f-n-e-d,Fned,,qdefn,4574
@@ -3006,6 +3009,8 @@ Accomplishment,a-k-p-m,Akpm,,qakmp,4672
 Accomplishments,a-k-p-m-s,Akpms,,qakmps,4672
 Accomplishs,a-k-p-s,Akps,,qakps,4672
 Miracles,m-e-r-/-k-s,Merks,,qekmrs,4684
+Worrier,u-u-e-r,Uuer,,qeru,4688
+Worriers,u-u-e-r-s,Uuers,,qersu,4688
 Indirectly,nt-r-k-e,Ntrke,,qeknrt,4696
 Sessioned,s-e-sh-d,Sezd,,qdesz,4699
 Sessioning,s-e-sh-\-h,Sezg,,qegsz,4699
@@ -3107,6 +3112,7 @@ Rejoiceful,r-j-o-e-s-f,Rjysf,,qfjrsy,4988
 Rejoicefully,r-j-o-e-s-f-e,Rjysfe,,qefjrsy,4988
 Rejoicing,r-j-o-e-s-\-h,Rjysg,,qgjrsy,4988
 Rejoices,r-j-o-e-s-s,Rjyss,,qjrsy,4988
+Appetites,a-p-t-i-s,Aptis,,qaipst,4994
 Reflected,r-fl-d,Rfld,,qdflr,4996
 Reflecting,r-fl-\-h,Rflg,,qfglr,4996
 Reflects,r-fl-s,Rfls,,qflrs,4996
@@ -3635,7 +3641,6 @@ Theologians,h-e-\-o-n-s,Heons,,qehnos,8166
 Theology,h-e-\-o,Heoo,o,qeho,8166
 Theologies,h-e-\-o-s,Heos,,qehos,8166
 Delete,d-l-e-t,Dlet,,qdelt,8274
-Deleted,d-l-e-t-d,Dletd,,qdelt,8274
 Deleting,d-l-e-t-\-h,Dletg,,qdeglt,8274
 Deleter,d-l-e-t-r,Dletr,,qdelrt,8274
 Deleters,d-l-e-t-r-s,Dletrs,,qdelrst,8274
@@ -5627,6 +5632,10 @@ Bathroom,b-a-th-r-m,Bahrm,,qabhmr,91852
 Bathroomed,b-a-th-r-m-d,Bahrmd,,qabdhmr,91852
 Bathrooming,b-a-th-r-m-\-h,Bahrmg,,qabghmr,91852
 Bathrooms,b-a-th-r-m-s,Bahrms,,qabhmrs,91852
+Toil,t-o-e-l,Tyl,,qlty,91852
+Toiled,t-o-e-l-d,Tyld,,qdlty,91852
+Toiling,t-o-e-l-\-h,Tylg,,qglty,91852
+Toils,t-o-e-l-s,Tyls,,qlsty,91852
 Toilet,t-o-e-l-t,Tylt,,qlty,91852
 Toileted,t-o-e-l-t-d,Tyltd,,qdlty,91852
 Toileting,t-o-e-l-t-\-h,Tyltg,,qglty,91852
