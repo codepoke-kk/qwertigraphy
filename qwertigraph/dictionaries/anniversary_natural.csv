@@ -99,7 +99,12 @@ Arranged,a-r-a-/-t,Arad,,,1986
 Concerned,k-s2-e2-n-/-t,Ksend,,,1993
 Visited,v-e-s2-e-td,Vesetd,,,2001
 Reported,r-pr-/-t,Rprd,,,2058
-Interrupted,n-/-u-p-/-t,Nupd,,,2095
+Interrupt,n-/-u-p,Nup,,qnpu,2095
+Interrupted,n-/-u-p-d,Nupd,,qdnpu,2095
+Interrupting,n-/-u-p-\-h,Nupg,,qgnpu,2095
+Interrupts,n-/-u-p-s,Nups,,qnpsu,2095
+Interruption,n-/-u-p-sh,Nupz,,qnpuz,2095
+Interruptions,n-/-u-p-sh-s,Nupzs,,qnpsuz,2095
 Inclined,e-/-nt,Endo,o,,2122
 Affected,a-f-k-t,Afkd,,,2135
 Acquainted,a-k-a-/-t,Aqad,,,2139
