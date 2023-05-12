@@ -497,6 +497,7 @@ Accounts,a-k-t-s,Akts,,qakst,481
 Accountings,a-k-t-\-s2,Aktz,,qagkst,481
 Earthly,e-r-th-e,Erhe,,qehr,489
 Earths,e-r-th-s,Erhs,,qehrs,489
+Holy Spirit,h-\-s-pr,Hspr,,qhprs,490
 Spirited,s-pr-d,Sprd,,qdprs,490
 Spiriting,s-pr-\-h,Sprg,,qgprs,490
 Spiritless,s-pr-l,Sprl,,qlprs,490
@@ -1572,7 +1573,7 @@ Statements,s2-t-m-s,Stmsa,a,qamst,1565
 Complied,k-pl-i-d,Kplid,,qiklpd,1566
 Complying,k-pl-i-\-h,Kplig,,qiklpg,1566
 Complies,k-pl-i-s,Kplis,,qiklps,1566
-Suffered,s2-u-f,Suf,,qfsu,1571
+Suffer,s2-u-f,Suf,,qfsu,1571
 Suffered,s2-u-f-d,Sufd,,qdfsu,1571
 Suffering,s2-u-f-\-h,Sufg,,qfgsu,1571
 Sufferings,s2-u-f-\-h-s,Sufgs,,qfgsu,1571
@@ -2135,6 +2136,11 @@ Frequenting,fr-e-k-\-h,Freqg,,qefgqr,2479
 Frequents,fr-e-k-s,Freqs,,qefqrs,2479
 Oppositional,o-p-o-sh-l,Opozl,,qlopz,2486
 Oppositions,o-p-o-sh-s,Opozs,,qopsz,2486
+Philosophize,f-e-l-o-s-i-s,Felosis,,qefilos,2488
+Philosophized,f-e-l-o-s-i-s-d,Felosisd,,qdefilos,2488
+Philosophizing,f-e-l-o-s-i-s-\-h,Felosisg,,qefgilos,2488
+Philosophizes,f-e-l-o-s-i-s-s,Felosiss,,qefilos,2488
+Philosophies,f-e-l-o-s-s,Feloss,,qeflos,2488
 Emotional,e-m-o-sh-l,Emozl,,qelmoz,2500
 Emotionally,e-m-o-sh-l-e,Emozle,,qelmoz,2500
 Emotions,e-m-o-sh-s,Emozs,,qemosz,2500
@@ -2245,7 +2251,6 @@ Reroute,r-e-r-u-t,Rerut,,qertu,2671
 Rerouted,r-e-r-u-t-d,Rerutd,,qdertu,2671
 Rerouting,r-e-r-u-t-\-h,Rerutg,,qegrtu,2671
 Reroutes,r-e-r-u-t-s,Reruts,,qerstu,2671
-Routed,r-u-t-d,Rutd,,qdrtu,2671
 Routing,r-u-t-\-h,Rutg,,qgrtu,2671
 Router,r-u-t-r,Rutr,,qrtur,2671
 Routers,r-u-t-r-s,Rutrs,,qrturs,2671
@@ -3047,6 +3052,7 @@ Roomed,r-m-d,Rmd,,qdmr,4762
 Rooming,r-m-\-h,Rmg,,qgmr,4762
 Rooms,r-m-s,Rms,,qmrs,4762
 Room,r-m,Rmu,u,qmru,4762
+Injustices,n-j-u-s-s-s,Njusss,,qjnsu,4766
 Engaged,n-g-a-d,Ngad,,qadgn,4770
 Engaging,n-g-a-\-h,Ngag,,qagn,4770
 Engages,n-g-a-s,Ngas,,qagns,4770
@@ -3653,7 +3659,6 @@ Theologians,h-e-\-o-n-s,Heons,,qehnos,8166
 Theology,h-e-\-o,Heoo,o,qeho,8166
 Theologies,h-e-\-o-s,Heos,,qehos,8166
 Delete,d-l-e-t,Dlet,,qdelt,8274
-Deleted,d-l-e-t-d,Dletd,,qdelt,8274
 Deleting,d-l-e-t-\-h,Dletg,,qdeglt,8274
 Deleter,d-l-e-t-r,Dletr,,qdelrt,8274
 Deleters,d-l-e-t-r-s,Dletrs,,qdelrst,8274
@@ -3709,7 +3714,6 @@ Constipation,k-s-t-p-a-sh,Kstpaz,,qakpstz,8582
 Objectives,o-b-/-v-s,Obvs,,qbosv,8583
 Miraculously,m-e-r-a-k-e,Merake,,qaekmr,8588
 Import,m-p-o-t,Mpot,,qmopt,8595
-Imported,m-p-o-t-d,Mpotd,,qdmopt,8595
 Importing,m-p-o-t-\-h,Mpotg,,qgmopt,8595
 Importer,m-p-o-t-r,Mpotr,,qmoprt,8595
 Importers,m-p-o-t-r-s,Mpotrs,,qmoprst,8595
@@ -5647,6 +5651,10 @@ Milepost,m-i-p-o-s-t,Mipost,,qimopst,91705
 Mileposts,m-i-p-o-s-t-s,Miposts,,qimopst,91705
 Milestone,m-i-s-t-o-n,Miston,,qimnost,91705
 Milestones,m-i-s-t-o-n-s,Mistons,,qimnost,91705
+Overlap,^-o-\-l-a-p,Olap,,qalop,91721
+Overlapped,^-o-\-l-a-p-d,Olapd,,qadlop,91721
+Overlapping,^-o-\-l-a-p-\-h,Olapg,,qaglop,91721
+Overlaps,^-o-\-l-a-p-s,Olaps,,qalops,91721
 Tract,t-r-a-k-t,Trakt,,qakrt,91733
 Tracts,t-r-a-k-t-s,Trakts,,qakrst,91733
 Bathroom,b-a-th-r-m,Bahrm,,qabhmr,91852
