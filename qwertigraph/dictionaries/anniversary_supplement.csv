@@ -1569,6 +1569,7 @@ Guessed,g-e-s-d,Gesd,,qdegs,1555
 Guessing,g-e-s-\-h,Gesg,,qegs,1555
 Guesses,g-e-s-s,Gess,,qegs,1555
 OpenLDAP,o-l-d-p,Oldp,,qdlop,1555
+OpenLDAP,o-p-l-d,Opld,,qdlop,1555
 Statements,s2-t-m-s,Stmsa,a,qamst,1565
 Complied,k-pl-i-d,Kplid,,qiklpd,1566
 Complying,k-pl-i-\-h,Kplig,,qiklpg,1566
@@ -2064,6 +2065,7 @@ Anxieties,a-q-s-i-s,Aqsis,,qaiqs,2225
 Lacked,l-a-k-d,Lakd,,qadkl,2245
 Lacking,l-a-k-\-h,Lakg,,qagkl,2245
 Lacks,l-a-k-s,Laks,,qakls,2245
+Doctrines,d-o-k-t-s,Dokts,,qdkost,2246
 Belonging,bl-ng-\-h,Blgg,,qbgl,2248
 Changes,ch-s,Cs,,qcos,2261
 Distemper,d-s-tm-pr,Dstmpr,,qdmprst,2265
@@ -2252,6 +2254,7 @@ Reroute,r-e-r-u-t,Rerut,,qertu,2671
 Rerouted,r-e-r-u-t-d,Rerutd,,qdertu,2671
 Rerouting,r-e-r-u-t-\-h,Rerutg,,qegrtu,2671
 Reroutes,r-e-r-u-t-s,Reruts,,qerstu,2671
+Routed,r-u-t-d,Rutd,,qdrtu,2671
 Routing,r-u-t-\-h,Rutg,,qgrtu,2671
 Router,r-u-t-r,Rutr,,qrtur,2671
 Routers,r-u-t-r-s,Rutrs,,qrturs,2671
@@ -2999,6 +3002,9 @@ Climbing,k-l-i-m-\-h,Klimg,,qgiklm,4464
 Climber,k-l-i-m-r,Klimr,,qiklmr,4464
 Climbers,k-l-i-m-r-s,Klimrs,,qiklmrs,4464
 Climbs,k-l-i-m-s,Klims,,qiklms,4464
+Extended,e-s2-tn-d,Xtnd,,qdntx,4484
+Extending,e-s2-tn-\-h,Xtng,,qgntx,4484
+Extends,e-s2-tn-s,Xtns,,qnstx,4484
 Outshine,a-u-sh-i-n,Wzin,,qinwz,4496
 Knocked,n-o-k-d,Nokd,,qdkno,4501
 Knocking,n-o-k-\-h,Nokg,,qgkno,4501
@@ -4766,6 +4772,7 @@ Bespeaks,b-s-p-s,Bsps,,qbps,28509
 Merged,m-e-j-d,Mejd,,qdejm,28583
 Merging,m-e-j-\-h,Mejg,,qegjm,28583
 Merges,m-e-j-s,Mejs,,qejms,28583
+Doctrinally,d-o-k-t-/-l-e,Doktle,,qdeklot,28634
 Unproductive,npdkv,Npdkv,,qdknpv,28866
 Diagonally,d-i-g-e,Dige,,qdegi,28892
 Fasted,f-a-s2-t-d,Fastd,,qadfst,28922
@@ -5025,6 +5032,10 @@ Extras,e-ss,Xso,o,qosx,48552
 Heartened,^-h-\-a2-tn-d,Hatnd,,qadhnt,49848
 Heartening,^-h-\-a2-tn-\-h,Hatng,,qaghnt,49848
 Heartens,^-h-\-a2-tn-s,Hatns,,qahnst,49848
+Dock,d-o-k,Dok,,qdko,51245
+Docked,d-o-k-d,Dokd,,qdko,51245
+Docking,d-o-k-\-h,Dokg,,qdgko,51245
+Docks,d-o-k-s,Doks,,qdkos,51245
 Inconsequential,n-k-s2-e-k-sh,Nkseqz,,qeknqsz,52316
 Inconsequentially,n-k-s2-e-k-sh-e,Nkseqze,,qeknqsz,52316
 Scan,s-k-a-n,Skan,,qakns,52987
