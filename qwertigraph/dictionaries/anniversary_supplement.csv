@@ -2055,6 +2055,7 @@ Linking,l-e-nk-\-h,Leqg,,qeglq,2210
 Refused,r-f-e-u-d,Rfud,,qdfru,2213
 Refusing,r-f-e-u-\-h,Rfug,,qfgru,2213
 Refuses,r-f-e-u-s,Rfus,,qfrsu,2213
+Patiently,p-a-sh-t-e,Pazte,,qaeptz,2220
 Sourced,s2-o-s-d,Sosd,,qdos,2223
 Sourcing,s2-o-s-\-h,Sosg,,qgos,2223
 Sources,s2-o-s-s,Soss,,qcos,2223
@@ -2433,8 +2434,10 @@ Definitely,df-n-e,Dfne,,qdefn,3128
 Waved,u-a-v-d,Uavd,,qaduv,3130
 Waving,u-a-v-\-h,Uavg,,qaguv,3130
 Waves,u-a-v-s,Uavs,,qasuv,3130
+Describe,d-s2-k-r,Dskr,,qdkrs,3131
 Described,d-s2-k-r-d,Dskrd,,qdkrs,3131
 Describing,d-s2-k-r-\-h,Dskrg,,qdgkrs,3131
+Describes,d-s2-k-r-s,Dskrs,,qdkrs,3131
 Activities,a-k-v-t-e-s,Akvtes,,qaekstv,3132
 Hunger,^-h-\-u-ng-e,Huge,,qeghu,3155
 Hungered,^-h-\-u-ng-e-d,Huged,,qdeghu,3155
@@ -3882,7 +3885,6 @@ Clutters,k-l-u-t-e2-s,Klutes,,qeklstu,9921
 Certificates,s2-e-df-s,Sedfs,,qdefs,9931
 Quotations,k-w-o-t-sh-s,Qotzs,,qoqstz,10035
 Prettiest,pr-e-/-s2-t,Prest,,qeprst,10079
-Disclosures,d-s-k-/-r-s,Dskrs,,qdkrs,10086
 Enclosures,n-k-/-r-s,Nkrs,,qknrs,10086
 Indescribably,nt-s2-k-r-b-e,Ntskrbe,,qbeknrst,10106
 Expire,e-s-p-i,Xpi,,qipx,10150
@@ -5540,7 +5542,9 @@ Summaries,s-m-r-e-s,Smres,,qemrs,90661
 Summarize,s-m-r-i-s,Smris,,qimrs,90661
 Summarization,s-m-r-i-s-a-sh,Smrisaz,,qaimrsz,90661
 Summarizations,s-m-r-i-s-a-sh-s,Smrisazs,,qaimrsz,90661
-Summarizion,s-m-r-i-s-sh,Smrisz,,qimrsz,90661
+Summarized,s-m-r-i-s-d,Smrisd,,qdimrs,90661
+Summarizing,s-m-r-i-s-\-h,Smrisg,,qgimrs,90661
+Summarizes,s-m-r-i-s-s,Smriss,,qimrs,90661
 Summarily,s-m-r-ye,Smry,,qmrsy,90661
 Summation,s-m-sh,Smzo,o,qmosz,90661
 Packet,p-a-k-e-t,Paket,,qaekpt,90800
