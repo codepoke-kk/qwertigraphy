@@ -1220,6 +1220,7 @@ Shares,sh-a2-s,Zasu,u,qasuz,1122
 Upstart,p-s2-t-a2-t,Pstat,,qapst,1127
 Upstarts,p-s2-t-a2-t-s,Pstats,,qapst,1127
 Restart,r-s2-t-a2-t,Rstat,,qarst,1127
+Restarted,r-s2-t-a2-t-d,Rstatd,,qadrst,1127
 Restarting,r-s2-t-a2-t-\-h,Rstatg,,qagrst,1127
 Restarter,r-s2-t-a2-t-r,Rstatr,,qarst,1127
 Restarters,r-s2-t-a2-t-r-s,Rstatrs,,qarst,1127
@@ -1999,6 +2000,7 @@ Colorion,k-u-l-sh,Kulz,,qkluz,1967
 Septuagint,s-e-p-j,Sepj,,qejps,1973
 Writers,r-i-r-s,Rirs,,qirs,1976
 Protections,pr-o-t-e-k-sh-s,Protekzs,,qekoprstz,1983
+Innocents,e-n-o-s-s,Enoss,,qenos,2006
 Circled,s2-e-k-l-d,Sekld,,qdekls,2018
 Circling,s2-e-k-l-\-h,Seklg,,qegkls,2018
 Circles,s2-e-k-l-s,Sekls,,qekls,2018
@@ -2362,6 +2364,7 @@ Fixes,f-e-x-s,Fexs,,qefxs,2771
 Critical,k-r-/-ya,Kry,,qkry,2776
 Critically,k-r-/-ya-e,Kryae,,qaekry,2776
 Critically,k-r-/-ya-e,Krye,,qekry,2776
+Criticality,k-r-/-ya,Kryo,o,qkory,2776
 Uncritical,n-k-r-/-ya,Nkry,,qknry,2776
 Uncritical,n-k-r-/-ya,Nkrya,,qaknry,2776
 Territory,t-e-t,Tet,,qetz,2795
@@ -2938,6 +2941,9 @@ Subsequents,s-s2-e-k-s,Sseqs,,qeqs,4063
 Washing,u-o-sh-\-h,Uozg,,qgouz,4064
 Washer,u-o-sh-r,Uozr,,qouzr,4064
 Washes,u-o-sh-s,Uozs,,qouzs,4064
+Recoverable,r-e-k-v-b,Rekvb,,qbekrv,4065
+Recoverably,r-e-k-v-b-e,Rekvbe,,qbekrv,4065
+Recoverability,r-e-k-v-\-b,Rekvbo,o,qbekorv,4065
 Recovered,r-e-k-v-d,Rekvd,,qdekrv,4065
 Recovery,r-e-k-v-e,Rekve,,qekrv,4065
 Recoveries,r-e-k-v-e-s,Rekves,,qekrsv,4065
@@ -3427,6 +3433,8 @@ Patterns,p-a-tn-s,Patns,,qanpst,5806
 Approved,a-pr-v-d,Aprvd,,qadprv,5852
 Approving,a-pr-v-\-h,Aprvg,,qagprv,5852
 Approvingly,a-pr-v-\-h-e,Aprvge,,qaegprv,5852
+Approver,a-pr-v-r,Aprvr,,qaprv,5852
+Approvers,a-pr-v-r-s,Aprvrs,,qaprsv,5852
 Approves,a-pr-v-s,Aprvs,,qaprsv,5852
 Disapprove,d-s-a-pr-v,Dsaprv,,qadprsv,5852
 Disapproved,d-s-a-pr-v-d,Dsaprvd,,qadprsv,5852
@@ -5653,6 +5661,12 @@ Summarizing,s-m-r-i-s-\-h,Smrisg,,qgimrs,90661
 Summarizes,s-m-r-i-s-s,Smriss,,qimrs,90661
 Summarily,s-m-r-ye,Smry,,qmrsy,90661
 Summation,s-m-sh,Smzo,o,qmosz,90661
+Token,t-o-k-n,Tokn,,qknot,90728
+Tokenize,t-o-k-n-i-s,Toknis,,qiknost,90728
+Tokenized,t-o-k-n-i-s-d,Toknisd,,qdiknost,90728
+Tokenizing,t-o-k-n-i-s-\-h,Toknisg,,qgiknost,90728
+Tokenizes,t-o-k-n-i-s-s,Tokniss,,qiknost,90728
+Tokens,t-o-k-n-s,Tokns,,qknost,90728
 Packet,p-a-k-e-t,Paket,,qaekpt,90800
 Packeted,p-a-k-e-t-d,Paketd,,qadekpt,90800
 Packeting,p-a-k-e-t-\-h,Paketg,,qaegkpt,90800
