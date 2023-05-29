@@ -1,0 +1,46 @@
+diff a/qwertigraph/dictionaries/anniversary_supplement.csv b/qwertigraph/dictionaries/anniversary_supplement.csv	(rejected hunks)
+@@ -567,6 +567,14 @@ Remembering,r-e-mn-\-h,Remmg,,qegmr,568
+ Remembers,r-e-mn-s,Remms,,qemrs,568
+ Forwarder,f-d-r,Fdr,,qdfr,572
+ Forwarders,f-d-r-s,Fdrs,,qdfrs,572
++Purposely,pr-p-e,Prpe,,qepr,576
++Purposeful,pr-p-\-f,Prpf,,qfpr,576
++Purposefully,pr-p-\-f-e,Prpfe,,qefpr,576
++Purposes,pr-p-s,Prps,,qprs,576
++Repurpose,r-pr-p,Rprp,,qpr,576
++Repurposed,r-pr-p-d,Rprpd,,qdpr,576
++Repurposing,r-pr-p-\-h,Rprpg,,qgpr,576
++Repurposes,r-pr-p-s,Rprps,,qprs,576
+ Receiving,r-s2-e-\-h,Rseg,,qegrs,580
+ Receives,r-s2-e-s,Rses,,qers,580
+ Army,a2-m-e,Ame,,qaemz,582
+@@ -2823,6 +2831,13 @@ Engines,n-j-n-s,Njns,,qjns,4829
+ Prejudiced,pr-e-j-d,Prejd,,qdejpr,4838
+ Prejudicing,pr-e-j-\-h,Prejg,,qegjpr,4838
+ Prejudices,pr-e-j-s,Prejs,,qejprs,4838
++Blanked,bl-a-nk-d,Blaqd,,qabdlq,4847
++Blanking,bl-a-nk-\-h,Blaqg,,qabglq,4847
++Blanks,bl-a-nk-s,Blaqs,,qablqs,4847
++Blanket,bl-a-nk-t,Blaqt,,qablqt,4847
++Blanketed,bl-a-nk-t-d,Blaqtd,,qabdlqt,4847
++Blanketing,bl-a-nk-t-\-h,Blaqtg,,qabglqt,4847
++Blankets,bl-a-nk-t-s,Blaqts,,qablqst,4847
+ Sermons,s2-e2-mn-s,Semms,,qems,4881
+ Sermonize,s2-e2-mn-i-s,Semnis,,qeimns,4881
+ Sermonized,s2-e2-mn-i-s-d,Semnisd,,qdeimns,4881
+@@ -4753,6 +4768,7 @@ Aggression,ya-/-s-sh,Asz,,qasz,70038
+ Aggressions,ya-/-s-sh-s,Aszs,,qasz,70038
+ Analyst,a-n-l-e-s,Anles,,qaelns,70064
+ Analysts,a-n-l-e-ss,Anless,,qaelns,70064
++Application blanks,a-pl-<-b-s,Aplbs,,qablps,70084
+ As low as,s-l-o-s2,Slosq,,qlos,70105
+ Unauthenticated,n-o-th-e-nt-d,Nohentd,,qdehnot,70155
+ Authenticate,o-th-e-nt,Ohent,,qehnot,70155
+@@ -4931,6 +4947,7 @@ Nationalist,n-a-sh-l-e-s,Nazles,,qaelnsz,71303
+ Nationalists,n-a-sh-l-e-s-s,Nazless,,qaelnsz,71303
+ Nationalistically,n-a-sh-l-/-s2-t-e,Nazlste,,qaelnstz,71303
+ Opinionatedly,o-p-n-a-td-e,Opnadde,,qadenop,71437
++Order blanks,o-d-/-b-s,Odbs,,qbdos,71442
+ Ought to know,o-tn-o,Otnoo,o,qnotz,71463
+ Quicker than,k-\-w-^-e-k-r-n,Qekrn,,qeknqr,71526
+ Questionnaires,k-sh-a2-s,Qzas,,qaqsz,71526

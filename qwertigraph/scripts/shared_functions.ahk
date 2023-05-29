@@ -24,6 +24,28 @@ PasteFromSlot(slot) {
     Send % fieldvalue
 }
 
+;;; Editing helper
+PreloadEditorWord() {
+	global editor
+    global engine
+    global coach
+	Gui MainGUI:Default
+    ; Gui, Tab, Editor
+
+    Gui, Show
+    GuiControl, ChooseString, MainTabSet, Editor
+
+    lastword := engine.record[engine.record.MaxIndex()]
+
+    ; ControlFocus, , Qwertigraph
+    GuiControl, Text, RegexWord, % lastword.word
+    ; GuiControl, Focus, RegexWord
+
+	editor.SearchMapEntries()
+
+}
+
+
 ;;; Password handling methods
 dailyKey := ""
 desiredKeyLength := 40

@@ -52,7 +52,8 @@ LV_ModifyCol(7, 60)
 LV_ModifyCol(8, 216) ; 3 pixels short to avoid the h_scrollbar
 
 ; Add edit fields and controls
-Gui, Add, Edit, x12  y540 w160 h20 vEditWord,
+Gui, Add, Edit, x12  y540 w140 h20 vEditWord,
+Gui, Add, Button, x152 y540 w20 h20 gEditorHone, H>
 Gui, Add, Edit, x172 y540 w70  h20 vEditForm,
 Gui, Add, Button, x242 y540 w20 h20 gEditorAutoQwerdForm, L>
 Gui, Add, Edit, x262 y540 w90  h20 vEditQwerd,
@@ -87,6 +88,10 @@ Gui, Add, Button, x838 y330 w90 h20 gEditorCreateRow_SDG, Add S+D+G
 EditorSearchMapEntries() {
 	global editor
 	editor.SearchMapEntries()
+}
+EditorHone() {
+	global editor
+	editor.hone()
 }
 EditorAutoQwerdForm() {
 	global editor
@@ -299,7 +304,7 @@ EditorCreateRow_SDG() {
 		editor.logEvent(1, "Listview edit event with no row selected")
         return
 	}
-    
+
     editor.logEvent(2, "Getting data from ListView from row " FocusedRowNumber)
 
     ; Get the data from the edited row
@@ -460,6 +465,23 @@ class EditorViewport
 		this.logEvent(1, "Found " foundCount " matches")
 	}
 
+	hone() {
+        local
+		global greggdict
+		Gui MainGUI:Default
+		GuiControlGet word, , EditWord
+
+		this.logEvent(3, "Honing " word)
+
+		; Lowercase the whole word
+		StringLower, loweredword, word
+        greggdict.LogEvent(1, "Seeking greggdicts match for " loweredword " as " greggdict.greggdicts.item(loweredword).link " at " greggdict.greggdicts.item(loweredword).x "," greggdict.greggdicts.item(loweredword).y)
+
+		;link := "https://google.com"
+		link := "file:///C:/Users/kevin/OneDrive/Documents/GitHub/qwertigraphy/qwertigraph/greggdict/pages/honepad.html?page=" greggdict.greggdicts.item(loweredword).page ".png`&x=" greggdict.greggdicts.item(loweredword).x "`&y=" greggdict.greggdicts.item(loweredword).y
+		Run, msedge.exe "%link%",, UseErrorLevel
+
+	}
 	autoQwerdForm() {
         local
 		Gui MainGUI:Default
@@ -626,7 +648,7 @@ class EditorViewport
 		GuiControl, Text, EditChord, %chord%%ChordAdd%
 		GuiControl, Text, EditKeyer,
 	}
-    
+
 	prepareEdit(RowNumber) {
         local
 		Gui MainGUI:Default
@@ -643,10 +665,10 @@ class EditorViewport
 		LV_GetText(EditUsage, RowNumber, 7)
 		LV_GetText(EditDict, RowNumber, 8)
 
-        ; I split this into a way to get data and a way to then fill the edit fields to enable multi-edits from one selection 
+        ; I split this into a way to get data and a way to then fill the edit fields to enable multi-edits from one selection
         this.prepareEditFromData(EditWord, EditForm, EditQwerd, EditKeyer, EditChord, EditChordable, EditUsage, EditDict)
 	}
-    
+
     prepareEditFromData(EditWord, EditForm, EditQwerd, EditKeyer, EditChord, EditChordable, EditUsage, EditDict) {
         local
 		Gui MainGUI:Default
@@ -678,7 +700,7 @@ class EditorViewport
 		}
 
 		GuiControl, , EditDict, %dictList%
-    
+
     }
 
 	commitEdit() {
@@ -739,7 +761,7 @@ class EditorViewport
 	}
 
 	updateEditsStatus(updated) {
-        ; Let's try showing a count of edits 
+        ; Let's try showing a count of edits
         if (updated = "Pending") {
             this.editsCount += 1
             updated := this.editsCount

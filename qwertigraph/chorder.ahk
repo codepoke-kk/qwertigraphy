@@ -31,7 +31,7 @@ FileInstall, templates\retrains.template, templates\retrains.template, true
 FileInstall, templates\personal_functions.template, templates\personal_functions.template, true
 FileInstall, coach.ico, coach.ico, true
 
-Gui, MainGUI: Add, Tab3,x6 y40 w928 h526, Coach|Historical|Editor|Logs||Settings|Strokes|Clipper|Player
+Gui, MainGUI: Add, Tab3,x6 y40 w928 h526 vMainTabSet, Coach|Historical|Editor|GreggDict|Logs||Settings|Strokes|Clipper|Player
 Gui, MainGUI: Show, x262 y118 w940 h570, % "Qwertigraph"
 
 #Include classes\Gdip_All.ahk
@@ -46,6 +46,8 @@ Gui, MainGUI: Show, x262 y118 w940 h570, % "Qwertigraph"
 #Include classes\SpeedingEvent.ahk
 #Include classes\SpeedViewport.ahk
 #Include classes\CoachingEvent.ahk
+#Include classes\GreggdictViewport.ahk
+#Include classes\GreggdictEntry.ahk
 #Include classes\CoachViewport.ahk
 #Include classes\EditorViewport.ahk
 ;#Include classes\PenEvent.ahk
@@ -76,6 +78,8 @@ speedViewer.addQueue(engine.speedQueue)
 coach := new CoachViewport(map, speedViewer)
 coach.addQueue(engine.coachQueue)
 
+greggdict := new GreggdictViewport(qenv)
+
 editor := new EditorViewport(map)
 qenv.editor := editor
 
@@ -102,6 +106,7 @@ logViewer.addQueue(engine.chordsender.logQueue)
 logViewer.addQueue(engine.expander.logQueue)
 logViewer.addQueue(engine.coacher.logQueue)
 logViewer.addQueue(coach.logQueue)
+logViewer.addQueue(greggdict.logQueue)
 logViewer.addQueue(editor.logQueue)
 ;logViewer.addQueue(greggpad.logQueue)
 logViewer.addQueue(dashboard.logQueue)
@@ -125,19 +130,19 @@ ExitFunc(ExitReason, ExitCode)
    fh.WriteLine("Shutdown initiating at " A_Now)
    Gdip_Shutdown(dashboard.pToken)
    fh.WriteLine("Gdip shut down at " A_Now)
-   Sleep, 300
+   Sleep, 30
    engine.Stop()
    fh.WriteLine("engine stopped at " A_Now)
-   Sleep, 300
+   Sleep, 30
    engine := ""
    fh.WriteLine("engine shut down at " A_Now)
-   Sleep, 300
+   Sleep, 30
    dashboard := ""
    fh.WriteLine("dashboard shut down at " A_Now)
-   Sleep, 300
+   Sleep, 30
    editor := ""
    fh.WriteLine("editor shut down at " A_Now)
-   Sleep, 1500
+   Sleep, 150
    ; Msgbox, % "Shut down GDIP"
 }
 

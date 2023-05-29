@@ -9,6 +9,7 @@ Outputserviceaccountpud(),b7,B7,,7b,1
 Outputserviceaccountnapud(),b8,B8,,8b,1
 Resetserviceaccountnapud(),b9,B9,,9b,1
 SendDate(),d1,D1,,1d,1
+Preloadeditorword(),h1,H1,,1h,1
 Pastefromslot(),p0,P0,,0p,1
 Pastefromslot(),p1,P1,,1p,1
 Pastefromslot(),p2,P2,,2p,1
