@@ -1,0 +1,17 @@
+<html><head>
+<title>Word not present</title>
+
+</head>
+<body onload="showPage()">
+
+<p id="message">The word you selected is not present in the Gregg Anniversary Dictionary</p>
+
+<script>
+function showPage() {
+    var urlParams = new URLSearchParams(window.location.search);
+    console.log(urlParams.get('word')); 
+    document.getElementById("message").innerText = "The word you selected, " + urlParams.get('word') + ", is not present in the Gregg Anniversary Dictionary";
+}
+</script>
+</body>
+</html>

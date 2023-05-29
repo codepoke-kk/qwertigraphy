@@ -1,0 +1,84 @@
+<html><head>
+<title>Page 1</title>
+
+<script>
+
+function nextPage() {
+  document.getElementById("page").src = "005.png";
+}
+
+</script>
+
+<style>
+  canvas {
+    border: 1px solid black;
+  }
+</style>
+</head>
+<body>
+<script>
+const pngwidth = 2868;
+const pngheight = 3998;
+
+function getWidth() {
+  return Math.max(
+    document.body.scrollWidth,
+    document.documentElement.scrollWidth,
+    document.body.offsetWidth,
+    document.documentElement.offsetWidth,
+    document.documentElement.clientWidth
+  );
+}
+
+function getHeight() {
+  return Math.max(
+    document.body.scrollHeight,
+    document.documentElement.scrollHeight,
+    document.body.offsetHeight,
+    document.documentElement.offsetHeight,
+    document.documentElement.clientHeight
+  );
+}
+const pagewidth = getWidth();
+const pageheight = getHeight();
+console.log('Width:  ' + pagewidth );
+console.log('Height: ' + pageheight );
+</script>
+<!--
+<p id="demo">Canvas starting</p>
+
+<button id="nextpage" type="button" onclick="nextPage()">Next Page</button><br />
+-->
+<canvas id="canvas" width="98%">
+This page requires a browser able to support Canvas elements
+</canvas>
+
+<script>
+    
+    var urlParams = new URLSearchParams(window.location.search);
+    console.log(urlParams.get('page')); 
+    console.log(urlParams.get('x')); 
+    console.log(urlParams.get('y')); 
+    
+    const canvas = document.getElementById("canvas");
+    const ctx = canvas.getContext("2d");
+    
+    canvas.width = pagewidth - 30;
+    const mx = canvas.width/pngwidth;
+    canvas.height = pngheight * mx;
+    
+    
+    const pageimage = new Image(); // Create new img element
+    pageimage.src = urlParams.get('page');
+    pageimage.addEventListener("load", (e) => {
+        ctx.drawImage(pageimage, 0, 0, pngwidth, pngheight, 0, 0, canvas.width, canvas.height);
+        ctx.fillStyle = "rgba(255, 255, 0, 0.5)";
+        ctx.fillRect(((urlParams.get('x') * mx) - (15 * mx)), ((urlParams.get('y') * mx) - (30 * mx)), mx * 500, mx * 80);
+    });
+    
+    //ctx.drawImage(pageimage, 0, 0, 1800, 2998, 0, 0, 341, 476);
+    
+    //document.getElementById("page").src = urlParams.get('page');
+</script>
+</body>
+</html>

@@ -5,6 +5,5 @@ opportunities.txt
 *.bak
 logs
 personal.ahk
-*.html
 /qwertigraph/dictionaries/*.v1backup
 /anniversary_hold
