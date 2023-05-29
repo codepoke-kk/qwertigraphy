@@ -477,8 +477,11 @@ class EditorViewport
 		StringLower, loweredword, word
         greggdict.LogEvent(1, "Seeking greggdicts match for " loweredword " as " greggdict.greggdicts.item(loweredword).link " at " greggdict.greggdicts.item(loweredword).x "," greggdict.greggdicts.item(loweredword).y)
 
-		;link := "https://google.com"
-		link := "file:///C:/Users/kevin/OneDrive/Documents/GitHub/qwertigraphy/qwertigraph/greggdict/pages/honepad.html?page=" greggdict.greggdicts.item(loweredword).page ".png`&x=" greggdict.greggdicts.item(loweredword).x "`&y=" greggdict.greggdicts.item(loweredword).y
+		if (greggdict.greggdicts.item(loweredword).x) {
+			link := "file:///C:/Users/kevin/OneDrive/Documents/GitHub/qwertigraphy/qwertigraph/greggdict/pages/honepad.html?page=" greggdict.greggdicts.item(loweredword).page ".png`&x=" greggdict.greggdicts.item(loweredword).x "`&y=" greggdict.greggdicts.item(loweredword).y
+		} else {
+			link := "file:///C:/Users/kevin/OneDrive/Documents/GitHub/qwertigraphy/qwertigraph/greggdict/pages/404.html?word=" loweredword
+	}
 		Run, msedge.exe "%link%",, UseErrorLevel
 
 	}

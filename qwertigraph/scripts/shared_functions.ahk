@@ -39,6 +39,7 @@ PreloadEditorWord() {
 
     ; ControlFocus, , Qwertigraph
     GuiControl, Text, RegexWord, % lastword.word
+    GuiControl, Text, EditWord, % lastword.word
     ; GuiControl, Focus, RegexWord
 
 	editor.SearchMapEntries()
