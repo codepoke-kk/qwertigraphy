@@ -74,6 +74,13 @@ This page requires a browser able to support Canvas elements
         ctx.drawImage(pageimage, 0, 0, pngwidth, pngheight, 0, 0, canvas.width, canvas.height);
         ctx.fillStyle = "rgba(255, 255, 0, 0.5)";
         ctx.fillRect(((urlParams.get('x') * mx) - (15 * mx)), ((urlParams.get('y') * mx) - (30 * mx)), mx * 500, mx * 80);
+        
+        if (urlParams.get('transformed') > 0) {
+            ctx.textAlign = "left";
+            ctx.fillStyle = "green";
+            ctx.font = "30px Arial";
+            ctx.fillText(urlParams.get('word').toUpperCase() + " was not found. Highlighting first match.", 30, 80);
+        }
     });
     
     //ctx.drawImage(pageimage, 0, 0, 1800, 2998, 0, 0, 341, 476);

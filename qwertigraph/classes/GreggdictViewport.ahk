@@ -43,6 +43,19 @@ class GreggDictViewport
 			this.logEvent(4, "Greggdict word " newgreggdictword.word " as " newgreggdictword.page "," newgreggdictword.link "," newgreggdictword.x "," newgreggdictword.y " from " A_LoopReadLine)
 
 			this.greggdicts.item(newgreggdictword.word) := newgreggdictword
+
+            ; Flood system with possible matches
+            wordbuffer := newgreggdictword.word
+            Loop
+            {
+                wordbuffer := SubStr(wordbuffer, 1, StrLen(wordbuffer) -1)
+                if (StrLen(wordbuffer) < 1) {
+                    break
+                }
+                if (! this.greggdicts.item(wordbuffer).x) {
+                    this.greggdicts.item(wordbuffer) := newgreggdictword
+                }
+            }
 		}
 		this.logEvent(1, "Loaded greggdicts map resulting in " LineCount " entries")
 		this.logEvent(1, "Thing entry link = " this.greggdicts.item("thing").link ".")

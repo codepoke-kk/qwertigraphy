@@ -477,10 +477,29 @@ class EditorViewport
 		StringLower, loweredword, word
         greggdict.LogEvent(1, "Seeking greggdicts match for " loweredword " as " greggdict.greggdicts.item(loweredword).link " at " greggdict.greggdicts.item(loweredword).x "," greggdict.greggdicts.item(loweredword).y)
 
-		if (greggdict.greggdicts.item(loweredword).x) {
-			link := "file:///" A_ScriptDir "/greggdict/pages/honepad.html?page=" greggdict.greggdicts.item(loweredword).page ".png`&x=" greggdict.greggdicts.item(loweredword).x "`&y=" greggdict.greggdicts.item(loweredword).y
+		wordbuffer := loweredword
+		transformed := false
+		Loop
+		{
+			greggdict.LogEvent(1, "Looping with " wordbuffer)
+			if (greggdict.greggdicts.item(wordbuffer).x) {
+				break
+			}
+			wordbuffer := SubStr(wordbuffer, 1, StrLen(wordbuffer) -1)
+			if (StrLen(wordbuffer) < 1) {
+				greggdict.LogEvent(1, "Fully failed to match " loweredword)
+				wordbuffer := loweredword
+				break
+			}
+			transformed := true
+		}
+
+        greggdict.LogEvent(1, "Search started with " loweredword " and ended using " wordbuffer " and transformation required was " transformed)
+
+		if (greggdict.greggdicts.item(wordbuffer).x) {
+			link := "file:///" A_ScriptDir "/greggdict/pages/honepad.html?page=" greggdict.greggdicts.item(wordbuffer).page ".png`&x=" greggdict.greggdicts.item(wordbuffer).x "`&y=" greggdict.greggdicts.item(wordbuffer).y "`&word=" loweredword "`&transformed=" transformed
 		} else {
-			link := "file:///" A_ScriptDir "/greggdict/pages/404.html?word=" loweredword
+			link := "file:///" A_ScriptDir "/greggdict/pages/404.html?word=" wordbuffer
 	}
 		Run, msedge.exe "%link%",, UseErrorLevel
 
