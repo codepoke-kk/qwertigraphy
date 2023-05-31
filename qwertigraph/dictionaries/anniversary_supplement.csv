@@ -3499,6 +3499,7 @@ Negatived,n-e-g-df-d,Negdfd,,qdefgn,6027
 Negatively,n-e-g-df-e,Negdfe,,qdefgn,6027
 Negativing,n-e-g-df-\-h,Negdfg,,qdefgn,6027
 Negatives,n-e-g-df-s,Negdfs,,qdefgns,6027
+Negativity,n-e-g-df-t-e,Negdfte,,qdefgnt,6027
 Pertain,p-e2-tn,Petn,,qenpt,6037
 Pertained,p-e2-tn-d,Petnd,,qdenpt,6037
 Pertaining,p-e2-tn-\-h,Petng,,qegnpt,6037
@@ -4373,6 +4374,7 @@ Participates,p-t-e-s-p-s,Ptesps,,qepst,14298
 Participation,p-t-e-s-p-sh,Ptespz,,qepstz,14298
 Participations,p-t-e-s-p-sh-s,Ptespzs,,qepstz,14298
 Exceptionally,s-e-p-sh-ye,Sepzy,,qepsyz,14332
+Perspectives,pr-s-p-/-v-s,Prspvs,,qprsv,14391
 Transitioned,t-/-sh-d,Tzd,,qdtz,14449
 Transitioning,t-/-sh-\-h,Tzg,,qgtz,14449
 Transitions,t-/-sh-s,Tzs,,qstz,14449
@@ -5194,6 +5196,11 @@ Extras,e-ss,Xso,o,qosx,48552
 Heartened,^-h-\-a2-tn-d,Hatnd,,qadhnt,49848
 Heartening,^-h-\-a2-tn-\-h,Hatng,,qaghnt,49848
 Heartens,^-h-\-a2-tn-s,Hatns,,qahnst,49848
+Incremented,n-k-r-e-m-d,Nkremd,,qdekmnr,49850
+Incrementing,n-k-r-e-m-\-h,Nkremg,,qegkmnr,49850
+Incremental,n-k-r-e-m-l,Nkreml,,qeklmnr,49850
+Incrementally,n-k-r-e-m-l-e,Nkremle,,qeklmnr,49850
+Increments,n-k-r-e-m-s,Nkrems,,qekmnrs,49850
 Dock,d-o-k,Dok,,qdko,51245
 Docked,d-o-k-d,Dokd,,qdko,51245
 Docking,d-o-k-\-h,Dokg,,qdgko,51245
@@ -6038,6 +6045,16 @@ Enhances,n-^-h-\-a-n-s-s,Nhanss,,qahns,92802
 Quicksand,k-\-w-^-e-k-s-a-nt,Qeksand,,qadeknqs,92847
 Recipient,r-s-e-p-e-nt,Rsepent,,qenprst,92879
 Recipients,r-s-e-p-e-nt-s,Rsepents,,qenprst,92879
+Predictable,pr-e-d-e-k-b,Predekb,,qbdekpr,92915
+Predictably,pr-e-d-e-k-b-e,Predekbe,,qbdekpr,92915
+Predictability,pr-e-d-e-k-\-b,Predekbo,o,qbdekopr,92915
+Predicted,pr-e-d-e-k-d,Predekd,,qdekpr,92915
+Predictive,pr-e-d-e-k-df,Predekdf,,qdefkpr,92915
+Predictively,pr-e-d-e-k-df-e,Predekdfe,,qdefkpr,92915
+Predicting,pr-e-d-e-k-\-h,Predekg,,qdegkpr,92915
+Predicts,pr-e-d-e-k-s,Predeks,,qdekprs,92915
+Prediction,pr-e-d-e-k-sh,Predekz,,qdekprz,92915
+Predictions,pr-e-d-e-k-sh-s,Predekzs,,qdekprsz,92915
 Strain,s-t-r-a-n,Stran,,qanrst,92917
 Straining,s-t-r-a-n-\-h,Strang,,qagnrst,92917
 Strains,s-t-r-a-n-s,Strans,,qanrst,92917
