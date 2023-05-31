@@ -3409,6 +3409,15 @@ Networks,n-e-t-r-k-s,Netrks,,qeknrst,5683
 Workmanlike,r-k-mn-l,Rkmml,,qklmr,5688
 Workman,r-k-mn,Rkmmu,u,qkmru,5688
 Heathen,h-e-h-e-n,Hehen,,qehn,5689
+Irreducible,e-r-e-d-u-s-b,Eredusb,,qbdersu,5701
+Irreducibly,e-r-e-d-u-s-b-e,Eredusbe,,qbdersu,5701
+Reducible,r-e-d-u-s-b,Redusb,,qbdersu,5701
+Reducibly,r-e-d-u-s-b-e,Redusbe,,qbdersu,5701
+Reduced,r-e-d-u-s-d,Redusd,,qdersu,5701
+Reducing,r-e-d-u-s-\-h,Redusg,,qdegrsu,5701
+Reducer,r-e-d-u-s-r,Redusr,,qdersu,5701
+Reducers,r-e-d-u-s-r-s,Redusrs,,qdersu,5701
+Reduces,r-e-d-u-s-s,Reduss,,qdersu,5701
 Murder,m-e2-d-e2,Mede,,qdem,5712
 Murdered,m-e2-d-e2-d,Meded,,qdem,5712
 Murdering,m-e2-d-e2-\-h,Medeg,,qdegm,5712
@@ -3733,6 +3742,12 @@ Keepers,k-p-/-r-s,Kprso,o,qkoprs,7711
 Varied,v-a-r-e-d,Vared,,qaderv,7794
 Varying,v-a-r-e-\-h,Vareg,,qaegrv,7794
 Varies,v-a-r-e-s,Vares,,qaersv,7794
+Resignation,r-s2-e-g,Rsego,o,qegors,7818
+Resignations,r-s2-e-g-s,Rsegs,,qegrs,7818
+Resigned,r-s2-i-n-d,Rsind,,qdinrs,7818
+Resignedly,r-s2-i-n-d-e,Rsinde,,qdeinrs,7818
+Resigning,r-s2-i-n-\-h,Rsing,,qginrs,7818
+Resigns,r-s2-i-n-s,Rsins,,qinrs,7818
 I have,a-v,Av0,0,0av,7824
 Deposition,d-p-o-sh,Dpoz,,qdopz,7854
 Depositioned,d-p-o-sh-d,Dpozd,,qdopz,7854
@@ -3759,6 +3774,7 @@ Needfully,n-e-d-f-e,Nedfe,,qdefn,7996
 Rejected,r-j-k-d,Rjkd,,qdjkr,8015
 Rejecting,r-j-k-\-h,Rjkg,,qgjkr,8015
 Rejects,r-j-k-s,Rjks,,qjkrs,8015
+Reductions,r-e-d-u-k-sh-s,Redukzs,,qdekrsuz,8131
 Clumsily,k-l-m-s-e-e,Klmsee,,qeklms,8134
 Clumsiness,k-l-m-s-e-n-e-s,Klmsenes,,qeklmns,8134
 Efficiencies,e-f-e-sh-s-e-s,Efezses,,qefsz,8164
@@ -3769,6 +3785,7 @@ Theologians,h-e-\-o-n-s,Heons,,qehnos,8166
 Theology,h-e-\-o,Heoo,o,qeho,8166
 Theologies,h-e-\-o-s,Heos,,qehos,8166
 Delete,d-l-e-t,Dlet,,qdelt,8274
+Deleted,d-l-e-t-d,Dletd,,qdelt,8274
 Deleting,d-l-e-t-\-h,Dletg,,qdeglt,8274
 Deleter,d-l-e-t-r,Dletr,,qdelrt,8274
 Deleters,d-l-e-t-r-s,Dletrs,,qdelrst,8274
@@ -5480,6 +5497,14 @@ Integration,nt-e-g-r-a-sh,Ntegraz,,qaegnrtz,70963
 Integrations,nt-e-g-r-a-sh-s,Ntegrazs,,qaegnrstz,70963
 Intone,nt-o-n,Nton,,qnotz,70979
 Introit,n-/-e-t,Nete,e,qentz,70986
+Irreclaimably,e-r-e-/-m-b-e,Erembe,,qbemr,70999
+Reclaim,r-e-/-m,Rem,,qemr,70999
+Reclaimable,r-e-/-m-b,Remb,,qbemr,70999
+Reclaimably,r-e-/-m-b-e,Rembe,,qbemr,70999
+Reclaimed,r-e-/-m-d,Remd,,qdemr,70999
+Reclaiming,r-e-/-m-\-h,Remg,,qegmr,70999
+Reclaims,r-e-/-m-s,Rems,,qemrs,70999
+Reclamations,r-e-/-m-sh-s,Remzs,,qemrsz,70999
 Joint resolutions,j-<-r-s2-o-sh-s,Jrsozs,,qjorsz,71028
 Knowably,n-o-b-e,Nobe,,qbeno,71047
 Unknowable,u-n-o-b,Unob,,qbnou,71047
@@ -5502,6 +5527,10 @@ Orientated,o-r-e-nt-a-d,Orentad,,qadenort,71444
 Orientating,o-r-e-nt-a-\-h,Orentag,,qaegnort,71444
 Orientates,o-r-e-nt-a-s,Orentas,,qaenorst,71444
 Ought to know,o-tn-o,Otnoo,o,qnotz,71463
+Overkill,o-/-k-e-l,Okel,,qeklo,71469
+Overkilled,o-/-k-e-l-d,Okeld,,qdeklo,71469
+Overkilling,o-/-k-e-l-\-h,Okelg,,qegklo,71469
+Overkills,o-/-k-e-l-s,Okels,,qeklos,71469
 Quicker than,k-\-w-^-e-k-r-n,Qekrn,,qeknqr,71526
 Questionnaires,k-sh-a2-s,Qzas,,qaqsz,71526
 Recommitted,r-e-k-e-d,Reked,,qdekr,71536
@@ -5677,6 +5706,17 @@ Overview,^-o-\v-u,Ovu,,qouv,90651
 Overviewed,^-o-\v-u-d,Ovud,,qdouv,90651
 Overviewing,^-o-\v-u-\-h,Ovug,,qgouv,90651
 Overviews,^-o-\v-u-s,Ovus,,qosuv,90651
+Compress,k-pr-e-s,Kpres,,qekprs,90658
+Compressible,k-pr-e-s-b,Kpresb,,qbekprs,90658
+Compressibly,k-pr-e-s-b-e,Kpresbe,,qbekprs,90658
+Compressibility,k-pr-e-s-\-b,Kpresbo,o,qbekoprs,90658
+Compressed,k-pr-e-s-d,Kpresd,,qdekprs,90658
+Compressing,k-pr-e-s-\-h,Kpresg,,qegkprs,90658
+Compressor,k-pr-e-s-r,Kpresr,,qekprs,90658
+Compressors,k-pr-e-s-r-s,Kpresrs,,qekprs,90658
+Compresss,k-pr-e-s-s,Kpress,,qekprs,90658
+Compression,k-pr-e-s-sh,Kpresz,,qekprsz,90658
+Compressions,k-pr-e-s-sh-s,Kpreszs,,qekprsz,90658
 Summary,s-m-r-e,Smre,,qemrs,90661
 Summaries,s-m-r-e-s,Smres,,qemrs,90661
 Summarize,s-m-r-i-s,Smris,,qimrs,90661
@@ -5839,6 +5879,13 @@ Wipe,u-i-p,Uip,,qipu,91852
 Wiped,u-i-p-d,Uipd,,qdipu,91852
 Wiping,u-i-p-\-h,Uipg,,qgipu,91852
 Wipes,u-i-p-s,Uips,,qipsu,91852
+Implicate,m-pl-e-k,Mplek,,qeklmp,91898
+Implicated,m-pl-e-k-d,Mplekd,,qdeklmp,91898
+Implicating,m-pl-e-k-\-h,Mplekg,,qegklmp,91898
+Implicates,m-pl-e-k-s,Mpleks,,qeklmps,91898
+Implication,m-pl-e-k-sh,Mplekz,,qeklmpz,91898
+Implications,m-pl-e-k-sh-s,Mplekzs,,qeklmpsz,91898
+Implicitly,m-pl-e-s-t-e,Mpleste,,qelmpst,91898
 Recipe,r-e-s-e-p-e,Resepe,,qeprs,91936
 Widget,u-e-j-e-t,Wejet,,qejtw,91983
 Widgets,u-e-j-e-t-s,Wejets,,qejstw,91983
