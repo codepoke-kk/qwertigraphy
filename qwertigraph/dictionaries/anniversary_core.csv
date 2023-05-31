@@ -451,7 +451,7 @@ Rose,r-o-s,Ros,,qors,534
 Beyond,b-o-n,Bon,,qbno,535
 Chapter,ch-a-p-t-e2,Capte,,qacept,538
 Everything,e-v-\-h,Evg,,qegv,539
-Pretty,pr-e,Pre,,qepr,540
+Pretty,pr-e,Prei,i,qeipr,540
 Act,a-k,Ak,,qakz,541
 Suppose,s-p-o,Spo,,qops,542
 Comes,k-m-s,Kms,,qkms,543
@@ -1057,7 +1057,7 @@ November,n-v,Nvoo,o,qnov,1392
 Waited,u-a-td,Uadd,,qadu,1394
 Coast,k-o-s2-t,Kost,,qkost,1396
 Hall,^-h-\-o-l,Holo,o,qhlo,1397
-Popular,p-o-p,Pop,,qopz,1399
+Popular,p-o-p,Popo,o,qop,1399
 Aware,a-r,Aru,u,qaru,1400
 Gathered,g-a-th-/-t,Gaht,,qaght,1404
 Slight,s-l-i,Sli,,qils,1405
@@ -4378,7 +4378,8 @@ Mitt,m-e-t,Metw,w,qemtw,14357
 Dodge,d-o-j,Doj,,qdjo,14361
 Impunity,m-p-e-u-/-nt,Mpunt,,qmnptu,14379
 Inveterate,n-v-e-t-r-a,Nvetra,,qaenrtv,14381
-Prospective,pr-s-p-/-v,Prspv,,qprsv,14391
+Perspective,pr-s-p-/-v,Prspv,,qprsv,14391
+Prospective,pr-s-p-/-v,Prspvo,o,qoprsv,14391
 Defendant,df-t,Dft,,qdft,14412
 Focus,f-k-u-s,Fkus,,qfksu,14413
 Condescension,k-d-s2-e-n-sh,Kdsenz,,qdeknsz,14419
@@ -8367,3 +8368,4 @@ Yours truly,u-t,Uta,a,qatu,71898
 Yours very cordially,u-v-k,Uvk,,qkuv,71899
 Yours very truly,u-v-t,Uvt,,qtuv,71900
 Implicit,m-pl-e-s-t,Mplest,,qelmpst,91898
+Predict,pr-e-d-e-k,Predek,,qdekpr,92915
