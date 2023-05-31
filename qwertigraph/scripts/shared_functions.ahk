@@ -37,9 +37,10 @@ PreloadEditorWord() {
 
     lastword := engine.record[engine.record.MaxIndex()]
 
+    StringLower, loweredword, % lastword.word
     ; ControlFocus, , Qwertigraph
-    GuiControl, Text, RegexWord, % lastword.word
-    GuiControl, Text, EditWord, % lastword.word
+    GuiControl, Text, RegexWord, % loweredword
+    GuiControl, Text, EditWord, % loweredword
     ; GuiControl, Focus, RegexWord
 
 	editor.SearchMapEntries()
