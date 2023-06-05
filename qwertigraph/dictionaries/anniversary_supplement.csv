@@ -105,6 +105,8 @@ Workflowing,r-k-f-l-o-\-h,Rkflog,,qfgklor,132
 Workflows,r-k-f-l-o-s,Rkflos,,qfklors,132
 Working,r-k-\-h,Rkg,,qgkr,132
 Workings,r-k-\-h-s,Rkgs,,qgkrs,132
+Workaround,r-k-r-nt,Rkrnt,,qknrt,132
+Workarounds,r-k-r-nt-s,Rkrnts,,qknrst,132
 Works,r-k-s,Rks,,qkrs,132
 Workings,r-k-\-s2,Rkz,,qgkrs,132
 Ways,u-a-s,Uas,,qasu,136
@@ -5603,6 +5605,7 @@ Reinforcing,r-n-f-s2-\-h,Rnfsg,,qfgnrs,71540
 Reinforcement,r-n-f-s2-m,Rnfsm,,qfmnrs,71540
 Reinforcements,r-n-f-s2-m-s,Rnfsms,,qfmnrs,71540
 Reinforces,r-n-f-s2-s,Rnfss,,qfnrs,71540
+Augustine,o-g-u-s,Ogus,,qgosu,71620
 Temperament,tm-pr-a-m,Tmpram,,qamprt,71657
 Temperaments,tm-pr-a-m-s,Tmprams,,qamprst,71657
 Temperamental,tm-pr-\-m,Tmprm,,qmprt,71657
@@ -5852,6 +5855,10 @@ Purging,pr-j-\-h,Prjg,,qgjpr,91179
 Purges,pr-j-s,Prjs,,qjprs,91179
 Downstream,d-n-s-t-r-e-m,Dnstrem,,qdemnrst,91188
 Downstreams,d-n-s-t-r-e-m-s,Dnstrems,,qdemnrst,91188
+Video,v-d-o,Vdo,,qdov,91196
+Videoed,v-d-o-d,Vdod,,qdov,91196
+Videoing,v-d-o-\-h,Vdog,,qdgov,91196
+Videos,v-d-o-s,Vdos,,qdosv,91196
 Refine,r-f-i-n,Rfin,,qfinr,91276
 Refined,r-f-i-n-d,Rfind,,qdfinr,91276
 Refiner,r-f-i-n-e2,Rfine,,qefinr,91276
