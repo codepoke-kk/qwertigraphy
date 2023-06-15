@@ -2349,6 +2349,7 @@ Reroute,r-e-r-u-t,Rerut,,qertu,2671
 Rerouted,r-e-r-u-t-d,Rerutd,,qdertu,2671
 Rerouting,r-e-r-u-t-\-h,Rerutg,,qegrtu,2671
 Reroutes,r-e-r-u-t-s,Reruts,,qerstu,2671
+Routed,r-u-t-d,Rutd,,qdrtu,2671
 Routing,r-u-t-\-h,Rutg,,qgrtu,2671
 Router,r-u-t-r,Rutr,,qrtur,2671
 Routers,r-u-t-r-s,Rutrs,,qrturs,2671
@@ -3180,6 +3181,7 @@ Conversions,k-v-e-r-sh-s,Kverzs,,qekrsvz,4741
 Convert,k-v-e2-t,Kvet,,qektv,4741
 Convertible,k-v-e2-t-b,Kvetb,,qbektv,4741
 Convertibles,k-v-e2-t-b-s,Kvetbs,,qbekstv,4741
+Converted,k-v-e2-t-d,Kvetd,,qdektv,4741
 Converting,k-v-e2-t-\-h,Kvetg,,qegktv,4741
 Converts,k-v-e2-t-s,Kvets,,qekstv,4741
 Continental,k-tn-nt-l,Ktnntl,,qklnt,4753
@@ -5826,6 +5828,8 @@ Tokenized,t-o-k-n-i-s-d,Toknisd,,qdiknost,90728
 Tokenizing,t-o-k-n-i-s-\-h,Toknisg,,qgiknost,90728
 Tokenizes,t-o-k-n-i-s-s,Tokniss,,qiknost,90728
 Tokens,t-o-k-n-s,Tokns,,qknost,90728
+Vanilla,v-a-n-e-l-a,Vanela,,qaelnv,90746
+Vanilla,v-n-e-l,Vnel,,qelnv,90746
 Packet,p-a-k-e-t,Paket,,qaekpt,90800
 Packeted,p-a-k-e-t-d,Paketd,,qadekpt,90800
 Packeting,p-a-k-e-t-\-h,Paketg,,qaegkpt,90800
@@ -5849,6 +5853,12 @@ Achievement,a-c-e-v-m,Acevm,,qacemv,90863
 Achievements,a-c-e-v-m-s,Acevms,,qacemsv,90863
 Achieves,a-c-e-v-s,Acevs,,qacesv,90863
 Appointed,o-e-d,Ydo,o,qdoy,90879
+Ephemeral,e-f-e-m-e-r-l,Efemerl,,qeflmr,90905
+Ephemerally,e-f-e-m-e-r-l-e,Efemerle,,qeflmr,90905
+Ephemerals,e-f-e-m-e-r-l-s,Efemerls,,qeflmrs,90905
+Ephemeral,e-f-e-m-l,Efeml,,qeflm,90905
+Ephemerally,e-f-e-m-l-e,Efemle,,qeflm,90905
+Ephemerals,e-f-e-m-l-s,Efemls,,qeflms,90905
 Complains,k-p-s,Kpso,o,qkops,90909
 Painless,p-a-n-l,Panl,,qalnp,90967
 Disdain,d-s-d-a-n,Dsdan,,qadns,90970
