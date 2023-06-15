@@ -222,6 +222,7 @@ Surnaming,s-e2-n-a-\-h,Senag,,qaegns,225
 Surnames,s-e2-n-a-s,Senas,,qaens,225
 Somethings,s2-m-\-h-s,Smgs,,qgms,229
 Somethings,s2-m-\-s2,Smz,,qgms,229
+Smallest,s2-m-o-s-t,Smost,,qmost,240
 Want,o-nt,Ont,,qnotz,242
 Homework,^-h-\-o-m-r-k,Homrk,,qhkmor,246
 Fathered,f-a-th-d,Fahd,,qadfh,250
@@ -361,7 +362,7 @@ Numbered,n-u-m-d,Numd,,qdmnu,360
 Numbering,n-u-m-\-h,Numg,,qgmnu,360
 Numbers,n-u-m-s,Nums,,qmnsu,360
 Girls,g-l-s,Gls,,qgls,364
-Lettered,l-e-d,Led,,qdel,369
+Lettered,l-e-d,Ledo,o,qdelo,369
 Lettering,l-e-\-h,Lega,a,qaegl,369
 Helping,^-h-\-e-l-p-\-h,Helpg,,qeghlp,370
 Helper,^-h-\-e-l-p-r,Helpr,,qehlpr,370
@@ -2226,6 +2227,16 @@ Philosophy,f-e-l-o-s,Feloso,o,qeflos,2488
 Philosopher,f-e-l-o-s-r,Felosr,,qeflors,2488
 Philosophers,f-e-l-o-s-r-s,Felosrs,,qeflors,2488
 Philosophies,f-e-l-o-s-s,Feloss,,qeflos,2488
+Pheromone,f-e2-m-o-n,Femon,,qefmno,2488
+Pheromonal,f-e2-m-o-n-l,Femonl,,qeflmno,2488
+Pheromonally,f-e2-m-o-n-l-e,Femonle,,qeflmno,2488
+Pheromones,f-e2-m-o-n-s,Femons,,qefmnos,2488
+Wrestled,r-e-s-l-d,Resld,,qdelrs,2488
+Wrestling,r-e-s-l-\-h,Reslg,,qeglrs,2488
+Wrestle,r-e-s-l,Reslo,o,qelors,2488
+Wrestler,r-e-s-l-r,Reslr,,qelrs,2488
+Wrestlers,r-e-s-l-r-s,Reslrs,,qelrs,2488
+Wrestles,r-e-s-l-s,Resls,,qelrs,2488
 Emotional,e-m-o-sh-l,Emozl,,qelmoz,2500
 Emotionally,e-m-o-sh-l-e,Emozle,,qelmoz,2500
 Emotions,e-m-o-sh-s,Emozs,,qemosz,2500
@@ -2483,6 +2494,9 @@ Executioners,e-s2-k-sh-r-s,Xkzrs,,qkrsxz,3011
 Executions,e-s2-k-sh-s,Xkzs,,qksxz,3011
 Swearing,s2-u-a-r-\-h,Suarg,,qagrsu,3012
 Swears,s2-u-a-r-s,Suars,,qarsu,3012
+Obeyed,o-b-a-d,Obad,,qabdo,3018
+Obeying,o-b-a-\-h,Obag,,qabgo,3018
+Obeys,o-b-a-s,Obas,,qabos,3018
 Standardize,s2-tn-a-d-i-s,Stnadis,,qadinst,3032
 Standardized,s2-tn-a-d-i-s-d,Stnadisd,,qadinst,3032
 Standardizing,s2-tn-a-d-i-s-\-h,Stnadisg,,qadginst,3032
@@ -2568,6 +2582,10 @@ Determinations,e2-mn-sh-s,Emmzs,,qemzs,3162
 Predetermine,pr-e-/-e2-mn,Pree2mn,,qemnpr,3162
 Predetermining,pr-e-/-e2-mn-\-h,Pree2mng,,qemnprg,3162
 Predetermines,pr-e-/-e2-mn-s,Pree2mns,,qemnprs,3162
+Inspire,n-s-p-i,Nspi,,qinps,3183
+Inspired,n-s-p-i-d,Nspid,,qdinps,3183
+Inspiring,n-s-p-i-\-h,Nspig,,qginps,3183
+Inspires,n-s-p-i-s,Nspis,,qinps,3183
 Historically,^-h-\-e-s2-t-r-/-k-e,Hestrke,,qehkrst,3194
 Seeded,s2-e-d-d,Sedd,,qdes,3202
 Seeding,s2-e-d-\-h,Sedg,,qdegs,3202
@@ -2913,6 +2931,9 @@ Internalizes,n-/-n-l-i-s-s,Nnliss,,qilns,3908
 Internals,n-/-n-l-s,Nnls,,qlns,3908
 Criticisms,k-r-e-t-ss-s,Kretsss,,qekrst,3923
 Criticizes,k-r-e-t-ss-s,Kretssso,o,qekorst,3923
+Cultured,k-l-t-r-d,Kltrd,,qdklrt,3937
+Culturing,k-l-t-r-\-h,Kltrg,,qgklrt,3937
+Cultures,k-l-t-r-s,Kltrs,,qklrst,3937
 Painted,p-a-nt-d,Pantd,,qadnpt,3973
 Painting,p-a-nt-\-h,Pantg,,qagnpt,3973
 Paints,p-a-nt-s,Pants,,qanpst,3973
@@ -3227,6 +3248,9 @@ Recommendations,r-k-mn-sh-s,Rkmnzs,,qkmnrsz,4899
 Appreciated,a-pr-e-sh-d,Aprezd,,qadeprz,4901
 Appreciating,a-pr-e-sh-\-h,Aprezg,,qaegprz,4901
 Appreciates,a-pr-e-sh-s,Aprezs,,qaeprsz,4901
+Inspirational,n-s-pr-a-sh-l,Nsprazl,,qalnprsz,4910
+Inspirationally,n-s-pr-a-sh-l-e,Nsprazle,,qaelnprsz,4910
+Inspirations,n-s-pr-a-sh-s,Nsprazs,,qanprsz,4910
 Backwards,b-a-k-d-s,Bakds,,qabdks,4935
 Adopted,a-d-p-d,Adpd,,qadp,4936
 Adoptive,a-d-p-\-f,Adpf,,qadfp,4936
@@ -3516,6 +3540,7 @@ Grandma,g-/-m-a,Gma,,qagm,5939
 Grandmas,g-/-m-a-s,Gmas,,qagms,5939
 Grandmothers,g-/-m-u-th-s,Gmuhs,,qghmsu,5939
 Workers,r-k-/-r-s,Rkrs,,qkrsz,5945
+Neighboring,n-a-br-\-h,Nabrg,,qabgnr,5958
 Missionaries,m-e-sh-r-e-s,Mezres,,qemrsz,5960
 Preferences,pr-e-f-n-s-s,Prefnss,,qefnprss,5976
 Consisting,k-ss-\-h,Kssg,,qkosg,6001
@@ -4514,6 +4539,9 @@ Ciphered,s2-i-f-d,Sifd,,qdfis,16597
 Ciphering,s2-i-f-\-h,Sifg,,qfgis,16597
 Ciphers,s2-i-f-s,Sifs,,qfis,16597
 Verify,v-e-r-f,Verf,,qefrv,16753
+Verifiable,v-e-r-f-b,Verfb,,qbefrv,16753
+Verifiably,v-e-r-f-b-e,Verfbe,,qbefrv,16753
+Verifiability,v-e-r-f-\-b,Verfbo,o,qbeforv,16753
 Verified,v-e-r-f-d,Verfd,,qdefrv,16753
 Verifying,v-e-r-f-\-h,Verfg,,qefgrv,16753
 Verification,v-e-r-\-f,Verfo,o,qeforv,16753
@@ -5511,7 +5539,7 @@ Bisexuality,b-s-e-s-\-l,Bsxlof,o,qbflosx,70776
 Bisexuals,b-s-e-s-l-s,Bsxls,,qblsx,70776
 Homosexual,^-h-\-o-m-s-e-s-l,Homsxl,,qhlmosx,70776
 Homosexually,^-h-\-o-m-s-e-s-l-e,Homsxle,,qehlmosx,70776
-Homosexualily,^-h-\-o-m-s-e-s-\-l,Homsxlo,o,qhlmosx,70776
+Homosexuality,^-h-\-o-m-s-e-s-\-l,Homsxlo,o,qhlmosx,70776
 Homosexuals,^-h-\-o-m-s-e-s-l-s,Homsxls,,qhlmosx,70776
 Qwertigraph,k-a-u,Qw,,qqw,70776
 Qwertigraphy,k-a-u-e,Qwe,,qeqw,70776
@@ -5537,6 +5565,9 @@ Good morning,g-m,Gmu,u,qgmu,70898
 In the usual manner,n-u-sh-mn-e2,Nuzmme,,qemnuz,70900
 Inappreciated,e-n-a-pr-e-sh-d,Enaprezd,,qadenprz,70910
 Indent,n-tn-t,Ntnto,o,qnotz,70924
+Inerrancy,e-n-e-r-a-n-s-e,Eneranse,,qaenrs,70938
+Inerrantly,e-n-e-r-a-nt-e,Enerante,,qaenrt,70938
+Inerrants,e-n-e-r-a-nt-s,Enerants,,qaenrst,70938
 Inflected,n-fl-d,Nfldo,o,qdflno,70941
 Inflecting,n-fl-\-h,Nflgo,o,qfglno,70941
 Inflects,n-fl-s,Nflso,o,qflnos,70941
