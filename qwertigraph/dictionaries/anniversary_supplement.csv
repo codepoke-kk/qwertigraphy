@@ -1200,6 +1200,10 @@ Completes,kp-s,Kps,,qkps,1081
 Incomplete,n-kp,Nkp,,qknp,1081
 Incompletely,n-kp-e,Nkpe,,qeknp,1081
 Ordinary,o-tn,Otn,,qnotz,1088
+Natived,n-a-df-d,Nadfd,,qadfn,1091
+Natively,n-a-df-e,Nadfe,,qadefn,1091
+Nativing,n-a-df-\-h,Nadfg,,qadfgn,1091
+Natives,n-a-df-s,Nadfs,,qadfns,1091
 Onboard,o-n-b-o-d,Onbod,,qbdno,1094
 Onboarded,o-n-b-o-d-d,Onbodd,,qbdno,1094
 Onboarding,o-n-b-o-d-\-h,Onbodg,,qbdgno,1094
@@ -1212,6 +1216,8 @@ Moving,m-u-\-h,Mug,,qgmu,1108
 Mover,m-u-r,Mur,,qmru,1108
 Movers,m-u-r-s,Murs,,qmrsu,1108
 Moves,m-u-s,Mus,,qmsu,1108
+Consider,k-s,Ksi,i,qiks,1115
+Considers,k-s-s,Kss,,qks,1115
 Examples,e-s2-a-m-p-s,Xamps,,qampsx,1119
 Chlorophyll,k-l-o-r-f-e-l,Klorfel,,qefklor,1122
 Stimulant,s-tm-l-a-nt,Stmlant,,qalmnst,1122
@@ -1644,6 +1650,7 @@ Intercepts,^-n-\-s-e-p-s,Nseps,,qenps,1575
 Interception,^-n-\-s-e-p-sh,Nsepz,,qenpsz,1575
 Interceptions,^-n-\-s-e-p-sh-s,Nsepzs,,qenpsz,1575
 Interesting,^-n-\-s-\-h,Nsg,,qgns,1575
+Interestingly,^-n-\-s-\-h-e,Nsge,,qegns,1575
 Arrival,a-r-i,Ario,o,qaior,1580
 Arrivals,a-r-i-s,Ariso,o,qaiors,1580
 Unneeded,u-n-e-td,Unedd,,qdenu,1581
@@ -1791,6 +1798,7 @@ Happenings,^-h-\-a-p-n-s\-s2,Hapnz,,qaghnps,1744
 Admiting,a-m-e-t-\-h,Ametg,,qaegmt,1745
 Admittance,a-m-e-tn-s,Ametns,,qaemt,1745
 Admits,a-m-e-t-s,Amets,,qaemst,1745
+Consideration,k-s,Ksa,a,qaks,1749
 Applicable,a-pl-e-k-b,Aplekb,,qabeklp,1758
 Applicably,a-pl-e-k-b-e,Aplekbe,,qabeklp,1758
 Applicability,a-pl-e-k-\-b,Aplekbo,o,qabeklop,1758
@@ -2414,6 +2422,13 @@ Critically,k-r-/-ya-e,Krye,,qekry,2776
 Criticality,k-r-/-ya,Kryo,o,qkory,2776
 Uncritical,n-k-r-/-ya,Nkry,,qknry,2776
 Uncritical,n-k-r-/-ya,Nkrya,,qaknry,2776
+Staffed,s2-t-a-f-d,Stafd,,qadfst,2787
+Staffing,s2-t-a-f-\-h,Stafg,,qafgst,2787
+Staffs,s2-t-a-f-s,Stafs,,qafst,2787
+Stave,s2-t-a-v,Stav,,qastv,2787
+Staved,s2-t-a-v-d,Stavd,,qadstv,2787
+Staving,s2-t-a-v-\-h,Stavg,,qagstv,2787
+Staves,s2-t-a-v-s,Stavs,,qastv,2787
 Territory,t-e-t,Tet,,qetz,2795
 Territoried,t-e-t-d,Tetd,,qdet,2795
 Territorial,t-e-t-l,Tetl,,qelt,2795
@@ -3364,6 +3379,13 @@ Organs,o-g-n-s,Ogns,,qgnos,5141
 Organism,o-g-n-s-m,Ognsm,,qgmnos,5141
 Organisms,o-g-n-s-m-s,Ognsms,,qgmnos,5141
 Operas,o-pr-a-s,Opras,,qaoprs,5156
+Consulted,k-s2-u-d,Ksud,,qdksu,5172
+Consulting,k-s2-u-\-h,Ksug,,qgksu,5172
+Consultant,k-s2-u-\-nt,Ksunt,,qknstu,5172
+Consultants,k-s2-u-\-nt-s,Ksunts,,qknstu,5172
+Consults,k-s2-u-s,Ksus,,qksu,5172
+Consultation,k-s2-u-sh,Ksuz,,qksuz,5172
+Consultations,k-s2-u-sh-s,Ksuzs,,qksuz,5172
 Confirmations,k-f-e-m-sh-s,Kfemzs,,qefkmsz,5175
 Insignificance,n-s2-e-g-n-e-f,Nsegnef,,qefgns,5200
 Partnered,p-t-n-e2-d,Ptned,,qdenpt,5207
@@ -3404,7 +3426,7 @@ Selecting,s-e-l-e-k-\-h,Selekg,,qegkls,5294
 Selects,s-e-l-e-k-s,Seleks,,qekls,5294
 Selective,s-e-l-e-k-v,Selekv,,qeklsv,5294
 Selectively,s-e-l-e-k-v-e,Selekve,,qeklsv,5294
-Insignificantly,n-s2-g-e,Nsge,,qegns,5302
+Insignificantly,n-s2-g-e,Nsgeo,o,qegnos,5302
 Insignificant,n-s2-g,Nsgo,o,qgnos,5302
 Significantly,s2-g-e,Sge,,qegs,5302
 Invited,n-v-i-d,Nvid,,qdinv,5305
@@ -3457,6 +3479,9 @@ Accorded,a-k-r-d,Akrd,,qadkr,5548
 According,a-k-r-\-h,Akrg,,qagkr,5548
 Accords,a-k-r-s,Akrso,o,qakors,5548
 Indigenous,nt-j-n-u-s,Ntjnus,,qjnstu,5554
+Alternated,o-t-e-n-a-t-d,Otenatd,,qadenot,5563
+Alternating,o-t-e-n-a-t-\-h,Otenatg,,qaegnot,5563
+Alternates,o-t-e-n-a-t-s,Otenats,,qaenost,5563
 Pathetic,p-th-/-a,Pha,,qahpz,5571
 Pathetically,p-th-/-a-e,Phae,,qaehp,5571
 Acquired,a-k-i-d,Aqid,,qadiq,5581
@@ -4642,6 +4667,8 @@ Duplicity,d-u-p-s,Dupso,o,qdopsu,17827
 Duplication,d-u-p-sh,Dupz,,qdpuz,17827
 Duplications,d-u-p-sh-s,Dupzs,,qdpsuz,17827
 Nicknames,n-e-k-n-a-s,Neknas,,qaekns,17878
+Intermittently,n-/-m-e-tn-e,Nmetne,,qemnt,17972
+Intermittents,n-/-m-e-tn-s,Nmetns,,qemnst,17972
 Accumulated,a-k-/-u-d,Akud,,qadku,17982
 Accumulating,a-k-/-u-\-h,Akug,,qagku,17982
 Accumulates,a-k-/-u-s,Akus,,qaksu,17982
@@ -5733,6 +5760,9 @@ Sequences,s-e-k-\-n-^-e-n-s-s,Seqenss,,qenqs,90144
 Sequential,s-e-k-sh,Seqz,,qeqsz,90144
 Sequentially,s-e-k-sh-e,Seqze,,qeqsz,90144
 Sequentials,s-e-k-sh-s,Seqzs,,qeqsz,90144
+Alternative,o-t-e-n-a-df,Otenadf,,qadefnot,90166
+Alternatively,o-t-e-n-a-df-e,Otenadfe,,qadefnot,90166
+Alternatives,o-t-e-n-a-df-s,Otenadfs,,qadefnost,90166
 Supersede,^-s-\-s-e-d,Ssed,,qdes,90169
 Superseded,^-s-\-s-e-d-d,Ssedd,,qdes,90169
 Superseding,^-s-\-s-e-d-\-h,Ssedg,,qdegs,90169
