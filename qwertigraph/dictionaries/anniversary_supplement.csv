@@ -778,6 +778,10 @@ Wronging,r-o-ng-\-h,Rogg,,qgor,725
 Wrongs,r-o-ng-s,Rogs,,qgors,725
 Outage,a-u-j,Wj,,qwj,730
 Outages,a-u-j-s,Wjs,,qwjs,730
+Imply,m-pl-i,Mpli,,qilmp,733
+Implied,m-pl-i-d,Mplid,,qdilmp,733
+Implying,m-pl-i-\-h,Mplig,,qgilmp,733
+Implies,m-pl-i-s,Mplis,,qilmps,733
 Simply,s2-e-m-p-e,Sempe,,qemps,733
 Simplify,s2-e-m-p-f,Sempf,,qefmps,733
 Simplified,s2-e-m-p-f-d,Sempfd,,qdefmps,733
@@ -823,7 +827,6 @@ Outreach,a-u-r-e-ch,Wrec,,qcerw,737
 Outreaches,a-u-r-e-ch-s,Wrecs,,qcersw,737
 Agreed,^-ya-d,Yad,,qady,746
 Agreeing,^-ya-\-h,Yag,,qagy,746
-Agrees,^-ya-s,Yas,,qasy,746
 Easiness,e-s-e-n-e-s,Esenes,o,qens,749
 Easiest,e-s-e-\-s-t,Esest,,qest,749
 Script,s-k-r-p,Skrp,,qkprs,749
@@ -1058,6 +1061,7 @@ Originally,o-r-e-j-e,Oreje,,qejor,885
 Originality,o-r-e-j-\-l,Orejl,,qejlor,885
 Origin,o-r-e-j-n,Orejn,,qejnor,885
 Originate,o-r-e-j-n-a-t,Orejnat,,qaejnort,885
+Originated,o-r-e-j-n-a-t-d,Orejnatd,,qadejnort,885
 Originator,o-r-e-j-n-a-t-e2,Orejnate,,qaejnort,885
 Originators,o-r-e-j-n-a-t-e2-s,Orejnates,,qaejnorst,885
 Originating,o-r-e-j-n-a-t-\-h,Orejnatg,,qaegjnort,885
@@ -1118,6 +1122,9 @@ Permissioned,pr-m-sh-d,Prmzd,,qdmprz,960
 Permissioning,pr-m-sh-\-h,Prmzg,,qgmprz,960
 Permissions,pr-m-sh-s,Prmzs,,qmprsz,960
 Religiously,r-e-l-e-j-u-s-e,Relejuse,,qejlrsu,965
+Trusted,t-r-s-d,Trsd,,qdrst,980
+Trusting,t-r-s-\-h,Trsg,,qgrst,980
+Trusts,t-r-s-s,Trss,,qrst,980
 Breaking,br-a-k-\-h,Brakg,,qabgkr,981
 Equate,e-k-a-t,Eqat,,qaeqt,982
 Equator,e-k-a-t-e2,Eqate,,qaeqt,982
@@ -1398,6 +1405,7 @@ Sectioning,s2-e-k-sh-\-h,Sekzg,,qegksz,1332
 Sectional,s2-e-k-sh-l,Sekzl,,qeklsz,1332
 Sectionals,s2-e-k-sh-l-s,Sekzls,,qeklsz,1332
 Sections,s2-e-k-sh-s,Sekzs,,qeksz,1332
+Famously,f-a-m-u-s-e,Famuse,,qaefmsu,1343
 Activate,a-k-v-a-t,Akvat,,qaktv,1349
 Activated,a-k-v-a-t-d,Akvatd,,qadktv,1349
 Activating,a-k-v-a-t-\-h,Akvatg,,qagktv,1349
@@ -1684,6 +1692,11 @@ Titling,t-i-t-\-h,Titg,,qitvg,1615
 Titles,t-i-t-s,Tits,,qitvs,1615
 Admittedly,a-m-e-td-e,Amedde,,qadem,1618
 Collections,k-o-l-sh-s,Kolzs,,qklosz,1620
+Companionable,k-p-a-n-u-n-b,Kpanunb,,qabknpu,1632
+Companionably,k-p-a-n-u-n-b-e,Kpanunbe,,qabeknpu,1632
+Companioned,k-p-a-n-u-n-d,Kpanund,,qadknpu,1632
+Companioning,k-p-a-n-u-n-\-h,Kpanung,,qagknpu,1632
+Companions,k-p-a-n-u-n-s,Kpanuns,,qaknpsu,1632
 Faithfully,f-a-th2-f-e,Fahfe,,qaefh,1633
 Faithfulness,f-a-th2-f-n-e-s,Fahfnes,,qaefhns,1633
 Unfaithful,n-f-a-th2-f,Nfahf,,qafhn,1633
@@ -1758,6 +1771,9 @@ Professs,pr-f-e-s-s,Prfess,,qefprs,1703
 Relations,r-e-l-a-sh-s,Relazs,,qaelrsz,1704
 Relationship,r-e-l-a-sh-\-sh,Relazz,,qaelrz,1704
 Relationships,r-e-l-a-sh-\-sh-s,Relazzs,,qaelrsz,1704
+Catched,k-a-ch-d,Kacd,,qacdk,1707
+Catching,k-a-ch-\-h,Kacg,,qacgk,1707
+Catchs,k-a-ch-s,Kacs,,qacks,1707
 Imaginations,e-m-a-j-s,Emajso,o,qaejmos,1722
 Practically,pr-k-e,Prke,,qekpr,1725
 Qualitative,k-u-df,Qudf,,qdfqu,1727
@@ -2288,6 +2304,7 @@ Maintainably,mn-tn-b-e,Mntnbe,,qbemnt,2559
 Maintained,mn-tn-d,Mntnd,,qdmnt,2559
 Maintaining,mn-tn-\-h,Mntng,,qgmnt,2559
 Maintains,mn-tn-s,Mntns,,qmnst,2559
+Weaknesses,e-k-n-e-s-s,Ekness,,qekns,2573
 Mainframe,m-a-n-fr-a-m,Manfram,,qafmnr,2577
 Mainframes,m-a-n-fr-a-m-s,Manframs,,qafmnrs,2577
 Performed,pr-f-m-d,Prfmd,,qdfmpr,2589
@@ -2934,6 +2951,8 @@ Criticisms,k-r-e-t-ss-s,Kretsss,,qekrst,3923
 Criticizes,k-r-e-t-ss-s,Kretssso,o,qekorst,3923
 Cultured,k-l-t-r-d,Kltrd,,qdklrt,3937
 Culturing,k-l-t-r-\-h,Kltrg,,qgklrt,3937
+Cultural,k-l-t-r-l,Kltrl,,qklrt,3937
+Culturally,k-l-t-r-l-e,Kltrle,,qeklrt,3937
 Cultures,k-l-t-r-s,Kltrs,,qklrst,3937
 Painted,p-a-nt-d,Pantd,,qadnpt,3973
 Painting,p-a-nt-\-h,Pantg,,qagnpt,3973
@@ -3501,6 +3520,7 @@ Developer,dfl-r,Dflr,,qdflr,5759
 Developers,dfl-r-s,Dflrs,,qdflrs,5759
 Develops,dfl-s,Dfls,,qdfls,5759
 Cakes,k-a-k-s,Kakso,o,qakso,5764
+Agriculturally,ya-/-k-l-e,Yakle,,qaekly,5797
 Contemporaries,k-tm-pr-r-e-s,Ktmprres,,qekmprst,5798
 Pattern,p-a-tn,Patn,,qanpt,5806
 Patterned,p-a-tn-d,Patnd,,qadnpt,5806
@@ -3616,6 +3636,7 @@ Ornamenting,o-n-a-m-\-h,Onamg,,qagmno,6391
 Ornamental,o-n-a-m-l,Onaml,,qalmno,6391
 Ornamentally,o-n-a-m-l-e,Onamle,,qaelmno,6391
 Ornaments,o-n-a-m-s,Onams,,qamnos,6391
+Agricultures,^-ya-s,Yas,,qasy,6397
 Boundaries,b-n-r-e-s,Bnres,,qbenrs,6400
 Uncomfortably,n-k-f-t-b-e,Nkftbe,,qbefknt,6437
 Showered,sh-a-u-r-d,Zwrd,,qdrwz,6495
@@ -4768,6 +4789,7 @@ Assignments,a-s2-i-mn-s,Asimms,,qaims,21884
 Unwritten,n-r-e-tn,Nretn,,qenrt,22085
 Evangel,e-v-a-n-j,Evanj,,qaejnv,22125
 Evangelicals,e-v-a-n-j-/-k-s,Evanjks,,qaejknsv,22125
+Evangelicalism,e-v-a-n-j-/-k-s-m,Evanjksm,,qaejkmnsv,22125
 Evangels,e-v-a-n-j-s,Evanjs,,qaejnsv,22125
 Deficits,df-e-s2-e-t-s,Dfesets,,qdefst,22217
 Irrefutable,e-r-f-e-u-t-b,Erfutb,,qbefrtu,22282
@@ -4840,6 +4862,9 @@ Invulnerability,n-v-u-l-n-e-r-\-b,Nvulnerbo,,qbelnoruv,24003
 Vulnerability,v-u-l-n-e-r-\-b,Vulnerbo,,qbelnoruv,24003
 Vulnerabilities,v-u-l-n-e-r-\-b-s,Vulnerbos,,qbelnorsuv,24003
 Balances,b-a-l-s,Bals,,qabls,24024
+Admixtures,a-m-e-s-t-r-s,Amxtrs,,qamrstx,24054
+Mixture,m-e-s-t-r,Mxtr,,qmrtx,24054
+Mixtures,m-e-s-t-r-s,Mxtrs,,qmrstx,24054
 Fissures,f-e-sh-u-s,Fezus,,qefuzs,24109
 Vanguard,v-a-n-g-a2-d,Vangad,,qadgnv,24126
 Vanguards,v-a-n-g-a2-d-s,Vangads,,qadgnsv,24126
@@ -5273,6 +5298,8 @@ Dock,d-o-k,Dok,,qdko,51245
 Docked,d-o-k-d,Dokd,,qdko,51245
 Docking,d-o-k-\-h,Dokg,,qdgko,51245
 Docks,d-o-k-s,Doks,,qdkos,51245
+Horticultural,^-h-\-o-t-e-k-l-t-r-l,Hotekltrl,,qehklort,51808
+Horticulturally,^-h-\-o-t-e-k-l-t-r-l-e,Hotekltrle,,qehklort,51808
 Inconsequential,n-k-s2-e-k-sh,Nkseqz,,qeknqsz,52316
 Inconsequentially,n-k-s2-e-k-sh-e,Nkseqze,,qeknqsz,52316
 Scan,s-k-a-n,Skan,,qakns,52987
@@ -5766,6 +5793,8 @@ Chasing,ch-a-s-\-h,Casg,,qacgs,90354
 Chaser,ch-a-s-r,Casr,,qacrs,90354
 Chases,ch-a-s-s,Cass,,qacs,90354
 Versus,v-s,Vsu,u,qsuv,90383
+Trustworthy,t-r-s-h-e,Trshe,,qehrst,90394
+Trustworthily,t-r-s-h-l-e,Trshle,,qehlrst,90394
 Format,f-m-a-t,Fmat,,qafmt,90400
 Formatted,f-m-a-t-d,Fmatd,,qadfmt,90400
 Formating,f-m-a-t-\-h,Fmatg,,qafgmt,90400
