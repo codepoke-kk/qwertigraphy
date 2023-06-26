@@ -172,6 +172,7 @@ Telling,t-e-\-h,Teg,,qegt,195
 Teller,t-e-r,Ter,,qert,195
 Tells,t-e-s,Tes,,qest,195
 Loving,l-v-\-h,Lvg,,qglv,197
+Lovingly,l-v-\-h-e,Lvge,,qeglv,197
 Loves,l-v-s,Lvs,,qlsv,197
 Bedpan,b-d-p,Bdp,,bdp,200
 Bedpanned,b-d-p-d,Bdpd,,bdpt,200
@@ -208,6 +209,8 @@ Nightly,n-i-e,Nie,,qeinz,217
 Night,n-i,Nio,o,qinop,217
 All-nighter,o-n-i-r,Onir,,qinor,217
 All-nighters,o-n-i-r-s,Onirs,,qinors,217
+Heartedly,^-h-\-a2-t-d-e,Hatde,,qadeht,222
+Heartedness,^-h-\-a2-t-d-n-e-s,Hatdnes,,qadehnst,222
 Hearted,^-h-\-a2-t-d,Hatdo,o,qadhot,222
 Heartfelt,^-h-\-a2-t-f-l-t,Hatflt,,qafhlt,222
 Hearts,^-h-\-a2-t-s,Hatso,o,qahost,222
@@ -917,6 +920,8 @@ Quiets,k-i-t-s,Qits,,qiqst,792
 Quietest,k-i-t-s-t,Qitst,,qiqst,792
 Besides,b-s-i-s,Bsis,,qbis,793
 Expressions,e-s-pr-e-sh-s,Xprezs,,qeprsxz,795
+Walker,u-o-k-r,Uokr,,qkoru,802
+Walkers,u-o-k-r-s,Uokrs,,qkorsu,802
 Walks,u-o-k-s,Uoks,,qkosu,802
 Wondered,u-u-n-d,Uund,,qdnu,803
 Wondering,u-u-n-\-h,Uung,,qgnu,803
@@ -1875,6 +1880,8 @@ Inside,n-s-i,Nsi,,qinsz,1818
 Insided,n-s-i-d,Nsid,,qdins,1818
 Insiding,n-s-i-\-h,Nsig,,qgins,1818
 Insides,n-s-i-s,Nsis,,qins,1818
+Counter,k-nt-r,Kntr,,qknrt,1822
+Counters,k-nt-r-s,Kntrs,,qknrst,1822
 Breakfasts,br-e-k-f-a-s-s,Brekfass,,qabefkrs,1823
 Exercised,e-s2-r-d,Xrd,,qdrx,1830
 Exercising,e-s2-r-\-h,Xrg,,qgrx,1830
@@ -2096,6 +2103,13 @@ Humilities,^-h-\-u-m-\-l-s,Humls,,qhlmsu,2127
 Europe,e-u-r-o-p,Urop,,qopru,2127
 European,e-u-r-o-p-n,Uropn,,qnopru,2127
 Europeans,e-u-r-o-p-n-s,Uropns,,qnoprsu,2127
+Drain,d-r-a-n,Dran,,qadnr,2137
+Drained,d-r-a-n-d,Drand,,qadnr,2137
+Draining,d-r-a-n-\-h,Drang,,qadgnr,2137
+Drainage,d-r-a-n-j,Dranj,,qadjnr,2137
+Drainages,d-r-a-n-j-s,Dranjs,,qadjnrs,2137
+Drains,d-r-a-n-s,Drans,,qadnrs,2137
+Generously,j-e-n-r-s-e,Jenrse,,qejnrs,2137
 Guided,g-i-d-d,Gidd,,qdgi,2141
 Guiding,g-i-d-\-h,Gidg,,qdgi,2141
 Guides,g-i-d-s,Gids,,qdgis,2141
@@ -2666,6 +2680,10 @@ Magics,m-a-j-k-s,Majks,,qajkms,3285
 Rolled,r-o-l-d,Rold,,qdlor,3296
 Rolling,r-o-l-\-h,Rolg,,qglor,3296
 Rolls,r-o-l-s,Rols,,qlors,3296
+Feeding,f-e-d-\-h,Fedg,,qdefg,3300
+Recognized,r-k-n-i-s-d,Rknisd,,qdiknrs,3305
+Recognizing,r-k-n-i-s-\-h,Rknisg,,qgiknrs,3305
+Recognizes,r-k-n-i-s-s,Rkniss,,qiknrs,3305
 Realized,r-e-l-i-s-d,Relisd,,qeilrsd,3306
 Realizing,r-e-l-i-s-\-h,Relisg,,qeilrsg,3306
 Realizes,r-e-l-i-s-s,Reliss,,qeilrss,3306
@@ -5157,6 +5175,8 @@ Obtuse,o-b-t-u-s,Obtus,,qbostu,33156
 Obtusely,o-b-t-u-s-e,Obtuse,,qbeostu,33156
 Bodyguard,b-o-g-a2-d,Bogad,,qabdgo,33273
 Bodyguards,b-o-g-a2-d-s,Bogads,,qabdgos,33273
+Cognitive,k-n-e-df,Knedf,,qdefkn,33698
+Cognitively,k-n-e-df-e,Knedfe,,qdefkn,33698
 Singe,s-e-n-j,Senj,,qejns,33893
 Singed,senj-d,Senjd,,qdejns,33893
 Singes,s-e-n-j-s,Senjs,,qejns,33893
@@ -5491,6 +5511,10 @@ Celebrating,s-e-l-e-b-\-h,Selebg,,qbegls,70264
 Celebrates,s-e-l-e-b-s,Selebs,,qbels,70264
 Celebration,s-e-l-e-b-sh,Selebz,,qbelsz,70264
 Celebrations,s-e-l-e-b-sh-s,Selebzs,,qbelsz,70264
+Citizen,s2-e-t-s,Setsi,i,qeist,70287
+Citizens,s2-e-t-s-s,Setss,,qest,70287
+Citizenship,s2-e-t-s-sh,Setsz,,qestz,70287
+Citizenships,s2-e-t-s-sh-s,Setszs,,qestz,70287
 Clearages,k-l-e-/-j-s,Klejs,,qejkls,70295
 Code,k-o-t,Kod,,qdko,70302
 Coded,k-o-td,Kodt,,qdkot,70302
@@ -5842,6 +5866,10 @@ Violating,v-i-l-a-\-h,Vilag,,qagilv,90554
 Violates,v-i-l-a-s,Vilas,,qailsv,90554
 Violation,v-i-l-a-sh,Vilaz,,qailvz,90554
 Violations,v-i-l-a-sh-s,Vilazs,,qailsvz,90554
+Dissonance,d-s-o-n-a-n-s,Dsonans,,qadnos,90560
+Dissonances,d-s-o-n-a-n-s-s,Dsonanss,,qadnos,90560
+Dissonant,d-s-o-n-a-nt,Dsonant,,qadnost,90560
+Dissonantly,d-s-o-n-a-nt-e,Dsonante,,qadenost,90560
 Coexist,k-o-e-ss,Koxs,,qkosx,90575
 Coexisted,k-o-e-ss-d,Koxsd,,qdkosx,90575
 Coexistence,k-o-e-ss-e-n-s,Koxsens,,qeknosx,90575
