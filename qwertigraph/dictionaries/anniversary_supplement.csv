@@ -1990,6 +1990,8 @@ Messengers,m-e-s-j-e2-s,Mesjes,,qejms,1914
 Messaging,m-e-s-j-\-h,Mesjg,,qegjms,1914
 Messager,m-e-s-j-r,Mesjr,,qejmrs,1914
 Messages,m-e-s-j-s,Mesjs,,qejms,1914
+Excite,e-s2-i-t,Xit,,qitx,1920
+Excites,e-s2-i-t-s,Xits,,qistx,1920
 Singer,s2-e-ng-e2,Segeo,o,qegos,1922
 Singers,s2-e-ng-e2-s,Seges,,qegs,1922
 Singing,s2-e-ng-\-h,Seggo,o,qegos,1922
@@ -2032,6 +2034,7 @@ Colored,k-u-l-d,Kuld,,qdklu,1967
 Coloring,k-u-l-\-h,Kulg,,qgklu,1967
 Colors,k-u-l-s,Kuls,,qklsu,1967
 Colorion,k-u-l-sh,Kulz,,qkluz,1967
+Excitements,e-s2-i-t-m-s,Xitms,,qimstx,1972
 Septuagint,s-e-p-j,Sepj,,qejps,1973
 Writers,r-i-r-s,Rirs,,qirs,1976
 Protections,pr-o-t-e-k-sh-s,Protekzs,,qekoprstz,1983
@@ -2227,6 +2230,7 @@ Shopped,sh-o-p-d,Zopd,,qdopz,2401
 Shopping,sh-o-p-\-h,Zopg,,qgopz,2401
 Shops,sh-o-p-s,Zops,,qopsz,2401
 Recently,r-s-e,Rseo,o,qeors,2402
+Catholics,k-a-th-s,Kahs,,qahks,2410
 Appealed,a-p-e-l-d,Apeld,,qadelp,2419
 Appealing,a-p-e-l-\-h,Apelg,,qaeglp,2419
 Appeals,a-p-e-l-s,Apels,,qaelps,2419
@@ -3002,6 +3006,8 @@ Salvages,s-a-l-v-j-s,Salvjs,,qajlsv,3986
 Translate,t-/-l-a,Tla,,qaltz,3986
 Translated,t-/-l-a-d,Tlad,,qadlt,3986
 Translating,t-/-l-a-\-h,Tlag,,qaglt,3986
+Translator,t-/-l-a-r,Tlar,,qalrt,3986
+Translators,t-/-l-a-r-s,Tlars,,qalrst,3986
 Translates,t-/-l-a-s,Tlas,,qalst,3986
 Translations,t-/-l-a-sh-s,Tlazs,,qalstz,3986
 Acknowledged,a-k-d,Akda,a,qadk,3995
@@ -3417,6 +3423,9 @@ Warnings,u-o-n-\-h-s,Uongs,,qgnosu,5216
 Warns,u-o-n-s,Uons,,qnosu,5216
 Warnings,u-o-n-\-s2,Uonz,,qgnosu,5216
 Selections,s-e-l-e-k-sh-s,Selekzs,,qeklsz,5218
+Divided,df-i-d-d,Dfidd,,qdfi,5220
+Dividing,df-i-d-\-h,Dfidg,,qdfgi,5220
+Divides,df-i-d-s,Dfids,,qdfis,5220
 Complained,k-p-d,Kpdo,o,qdkop,5225
 Attachments,a-t-ch-m-s,Atcms,,qacmst,5233
 Logged,l-o-g-d,Logd,,qdglo,5239
@@ -3569,6 +3578,9 @@ Pattern,p-a-tn,Patn,,qanpt,5806
 Patterned,p-a-tn-d,Patnd,,qadnpt,5806
 Patterning,p-a-tn-\-h,Patng,o,qagnpt,5806
 Patterns,p-a-tn-s,Patns,,qanpst,5806
+Conquered,k-k-r-d,Kqrd,,qdkqr,5847
+Conquering,k-k-r-\-h,Kqrg,,qgkqr,5847
+Conquers,k-k-r-s,Kqrs,,qkqrs,5847
 Approved,a-pr-v-d,Aprvd,,qadprv,5852
 Approving,a-pr-v-\-h,Aprvg,,qagprv,5852
 Approvingly,a-pr-v-\-h-e,Aprvge,,qaegprv,5852
@@ -3865,6 +3877,11 @@ Constance,k-s2-tn-s,Kstnso,o,qknost,7666
 Bindings,b-i-nt-\-h-s,Bintgs,,qbginst,7690
 Bindings,b-i-nt-\-s2,Bintz,,qbginst,7690
 Keepers,k-p-/-r-s,Kprso,o,qkoprs,7711
+Ascended,a-s2-e-n-d,Asend,,qadens,7727
+Ascending,a-s2-e-n-\-h,Aseng,,qaegns,7727
+Ascends,a-s2-e-n-s,Asens,,qaens,7727
+Ascension,a-s2-e-n-sh,Asenz,,qaensz,7727
+Ascensions,a-s2-e-n-sh-s,Asenzs,,qaensz,7727
 Varied,v-a-r-e-d,Vared,,qaderv,7794
 Varying,v-a-r-e-\-h,Vareg,,qaegrv,7794
 Varies,v-a-r-e-s,Vares,,qaersv,7794
@@ -3967,6 +3984,7 @@ Constipation,k-s-t-p-a-sh,Kstpaz,,qakpstz,8582
 Objectives,o-b-/-v-s,Obvs,,qbosv,8583
 Miraculously,m-e-r-a-k-e,Merake,,qaekmr,8588
 Import,m-p-o-t,Mpot,,qmopt,8595
+Imported,m-p-o-t-d,Mpotd,,qdmopt,8595
 Importing,m-p-o-t-\-h,Mpotg,,qgmopt,8595
 Importer,m-p-o-t-r,Mpotr,,qmoprt,8595
 Importers,m-p-o-t-r-s,Mpotrs,,qmoprst,8595
@@ -4073,6 +4091,7 @@ Conceit,k-s-e-t,Kseto,o,qekost,9446
 Discipled,d-s-i-p-d,Dsipd,,qdips,9451
 Discipling,d-s-i-p-\-h,Dsipg,,qdgips,9451
 Disciples,d-s-i-p-s,Dsips,,qdips,9451
+Discipleship,d-s-i-p-sh,Dsipz,,qdipsz,9451
 Toy,t-o-e,Ty,,qtyz,9454
 Toyed,t-o-e-d,Tyd,,qdty,9454
 Toying,t-o-e-\-h,Tyg,,qgty,9454
@@ -4106,6 +4125,9 @@ Formative,f-m-a-df,Fmadf,,qadfm,9642
 Formatively,f-m-a-df-e,Fmadfe,,qadefm,9642
 Informative,n-f-m-a-df,Nfmadf,,qadfmn,9642
 Informatively,n-f-m-a-df-e,Nfmadfe,,qadefmn,9642
+Tensioned,tn-sh-d,Tnzd,,qdntz,9723
+Tensioning,tn-sh-\-h,Tnzg,,qgntz,9723
+Tensions,tn-sh-s,Tnzso,o,qnostz,9723
 Exposition,e-s-p-o-z,Xpoz,,qopxz,9758
 Expositioned,e-s-p-o-z-d,Xpozd,,qdopxz,9758
 Expositioning,e-s-p-o-z-\-h,Xpozg,,qgopxz,9758
@@ -4428,6 +4450,11 @@ Compartmentalized,k-p-t-m-l-i-s-d,Kptmlisd,,qdiklmpst,13302
 Compartmentalizing,k-p-t-m-l-i-s-\-h,Kptmlisg,,qgiklmpst,13302
 Compartmentalizes,k-p-t-m-l-i-s-s,Kptmliss,,qiklmpst,13302
 Compartments,k-p-t-m-s,Kptms,,qkmpst,13302
+Postponed,p-/-p-o-n-d,Ppond,,qdnop,13325
+Postponing,p-/-p-o-n-\-h,Ppong,,qgnop,13325
+Postponement,p-/-p-o-mn,Pponm,,qmnop,13325
+Postponements,p-/-p-o-mn-s,Pponms,,qmnops,13325
+Postpones,p-/-p-o-n-s,Ppons,,qnops,13325
 Locomotives,l-o-k-m-o-df-s,Lokmodfs,,qdfklmos,13371
 Pearl,pr-l,Prl,,qlpr,13389
 Pearly,pr-l-e,Prle,,qelpr,13389
@@ -4971,6 +4998,7 @@ Locally,l-o-k-ya,Loky,,qkloy,25918
 Hostage,h-\-o-s-t-j,Hostj,,qhjost,25947
 Hostages,h-\-o-s-t-j-s,Hostjs,,qhjost,25947
 Internet,n-/-nt,Nnt,,qntz,25973
+Amendments,a-mn-s,Amms,,qams,26059
 Lackey,l-a-k-e,Lakeo,o,qaeklo,26100
 Lackeys,l-a-k-e-s,Lakeso,o,qaeklos,26100
 Athletic,a-th-l-/-a,Ahla,,qahl,26269
@@ -4995,6 +5023,7 @@ Unmonitored,u-mn-e-t-e2-d,Umneted,,qdemntu,26517
 Criticized,k-r-e-t-ss-d,Kretssd,,qdekrst,26526
 Criticizing,k-r-e-t-ss-\-h,Kretssg,,qegkrst,26526
 Callers,k-o-r-s,Korso,o,qkors,26711
+Ascendance,a-s2-e-n-tn-s,Asentns,,qaenst,26801
 Contemporaneously,k-tm-pr-a-n-u-s-e,Ktmpranuse,,qaekmnprstu,26848
 Specified,s-p-e-s-d,Spesd,,qdeps,26856
 Specifing,s-p-e-s-\-h,Spesg,,qegps,26856
@@ -5693,6 +5722,10 @@ Modules,m-o-d-\-l-s,Modls,,qdlmos,71236
 Nationalist,n-a-sh-l-e-s,Nazles,,qaelnsz,71303
 Nationalists,n-a-sh-l-e-s-s,Nazless,,qaelnsz,71303
 Nationalistically,n-a-sh-l-/-s2-t-e,Nazlste,,qaelnstz,71303
+Mosquitos,m-o-s-k-e-t-o-s,Mosqetos,,qemoqst,71339
+Mosquito,m-s-k-e-t-o,Msqeto,,qemoqst,71339
+Mosquitoes,m-s-k-e-t-o-s,Msqetos,,qemoqst,71339
+Noncatholics,n-o-n-k-a-th-s,Nonkahs,,qahknos,71339
 Opinionatedly,o-p-n-a-td-e,Opnadde,,qadenop,71437
 Order blanks,o-d-/-b-s,Odbs,,qbdos,71442
 Orientated,o-r-e-nt-a-d,Orentad,,qadenort,71444
@@ -5810,6 +5843,8 @@ Survivable,s-e2-v-i-b,Sevib,,qbeisv,90286
 Survivably,s-e2-v-i-b-e,Sevibe,,qbeisv,90286
 Survived,s-e2-v-i-d,Sevid,,qdeisv,90286
 Surviving,s-e2-v-i-\-h,Sevig,,qegisv,90286
+Survivor,s-e2-v-i-r,Sevir,,qeirsv,90286
+Survivors,s-e2-v-i-r-s,Sevirs,,qeirsv,90286
 Survives,s-e2-v-i-s,Sevis,,qeisv,90286
 Transcend,t-\-nt,Tnt,,qnt,90301
 Transcended,t-\-nt-d,Tntd,,qdnt,90301
@@ -6144,6 +6179,11 @@ Repay,r-p-a,Rpa,,qapr,92373
 Repayed,r-p-a-d,Rpad,,qadpr,92373
 Repaying,r-p-a-\-h,Rpag,,qagpr,92373
 Repaies,r-p-a-s,Rpas,,qaprs,92373
+Hierarchy,^-h-\-i-r-a-r-k-e,Hirarke,,qaehikr,92415
+Hierarchy,i-r-k-e,Irke,,qeikr,92415
+Hierarchical,i-r-k-e-\-k,Irkek,,qeikr,92415
+Hierarchicals,i-r-k-e-\-k-s,Irkeks,,qeikrs,92415
+Hierarchies,i-r-k-e-s,Irkes,,qeikrs,92415
 Hammer,^-h-\-a-m-e2,Hame,,qaehm,92449
 Hammered,^-h-\-a-m-e2-d,Hamed,,qadehm,92449
 Hammering,^-h-\-a-m-e2-\-h,Hameg,,qaeghm,92449
