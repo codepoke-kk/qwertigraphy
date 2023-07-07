@@ -833,6 +833,10 @@ Agreeing,^-ya-\-h,Yag,,qagy,746
 Easiness,e-s-e-n-e-s,Esenes,o,qens,749
 Easiest,e-s-e-\-s-t,Esest,,qest,749
 Script,s-k-r-p,Skrp,,qkprs,749
+Scriptable,s-k-r-p-b,Skrpb,,qbkprs,749
+Scriptably,s-k-r-p-b-e,Skrpbe,,qbekprs,749
+Scriptability,s-k-r-p-\-b,Skrpbo,o,qbkoprs,749
+Scriptables,s-k-r-p-b-s,Skrpbs,,qbkprs,749
 Scripted,s-k-r-p-d,Skrpd,,qdkprs,749
 Scripting,s-k-r-p-\-h,Skrpg,,qgkprs,749
 Scripter,s-k-r-p-r,Skrpr,,qkprs,749
@@ -2570,6 +2574,7 @@ Securities,s2-e-k-/-r-s,Sekrso,o,qekors,3065
 Builds,bld-/-s2,Blds,,qbdls,3083
 Buildings,bld-/-s2,Bldsg,g,qbdgls,3083
 Builds,bld-/-s2,Bldso,o,qbdlos,3083
+Centrally,s2-n-/-l-e,Snle,,qelns,3091
 Exchanged,e-s2-ch-d,Xcd,,qcdx,3094
 Exchanging,e-s2-ch-\-h,Xcg,,qcgx,3094
 Exchanges,e-s2-ch-s,Xcs,,qcsx,3094
@@ -3403,6 +3408,7 @@ Organs,o-g-n-s,Ogns,,qgnos,5141
 Organism,o-g-n-s-m,Ognsm,,qgmnos,5141
 Organisms,o-g-n-s-m-s,Ognsms,,qgmnos,5141
 Operas,o-pr-a-s,Opras,,qaoprs,5156
+Opposing,o-p-o-\-h,Opog,,qgop,5159
 Consulted,k-s2-u-d,Ksud,,qdksu,5172
 Consulting,k-s2-u-\-h,Ksug,,qgksu,5172
 Consultant,k-s2-u-\-nt,Ksunt,,qknstu,5172
@@ -3621,6 +3627,7 @@ Neighboring,n-a-br-\-h,Nabrg,,qabgnr,5958
 Missionaries,m-e-sh-r-e-s,Mezres,,qemrsz,5960
 Preferences,pr-e-f-n-s-s,Prefnss,,qefnprss,5976
 Consisting,k-ss-\-h,Kssg,,qkosg,6001
+Assertions,a-s2-e-sh-s,Asezs,,qaesz,6006
 Awaited,^-h-\-u-a-t-d,Huatd,,qadhtu,6017
 Awaits,^-h-\-u-a-t-s,Huats,,qahstu,6017
 Functioned,f-nk-d,Fqd,,qdfq,6026
@@ -4071,6 +4078,10 @@ Presentations,pr-sh-s,Przs,,qprsz,9294
 Corresponded,k-r-e-s-d,Kresd,,qdekrs,9316
 Corresponding,k-r-e-s-\-h,Kresg,,qegkrs,9316
 Correspondingly,k-r-e-s-\-h-e,Kresge,,qegkrs,9316
+Lifecycle,l-a-f-s-i-k,Lafsik,,qafikls,9326
+Lifecycled,l-a-f-s-i-k-d,Lafsikd,,qadfikls,9326
+Lifecycling,l-a-f-s-i-k-\-h,Lafsikg,,qafgikls,9326
+Lifecycles,l-a-f-s-i-k-s,Lafsiks,,qafikls,9326
 Definable,df-i-n-b,Dfinb,,qbdfin,9338
 Definably,df-i-n-b-e,Dfinbe,,qbdefin,9338
 Defining,df-i-n-\-h,Dfing,,qdfgin,9338
@@ -4237,6 +4248,7 @@ Partitioned,p-t-sh-d,Ptzd,,qdptz,10750
 Partitioning,p-t-sh-\-h,Ptzg,,qgptz,10750
 Partitions,p-t-sh-s,Ptzs,,qpstz,10750
 Sometimes,s2-tm-s,Stms,,qmst,10789
+Officially,o-sh-ye,Ozy,,qoyz,10815
 Lessening,l-e-s2-n-\-h,Lesngo,o,qeglnos,10851
 Tradition,t-r-a-d-sh,Tradz,,qadrtz,10851
 Traditional,t-r-a-d-sh-l,Tradzl,,qadlrtz,10851
@@ -4374,6 +4386,7 @@ Conclusively,k-k-v-e,Kkve,,qekv,12171
 Receivers,r-s-e-r-s,Rsers,,qers,12211
 Fasting,f-a-s2-t-g,Fastg,,qafgst,12221
 Explicitly,e-s-pl-e-s2-t-e,Xpleste,,qelpstx,12274
+Concentration,k-s2-n-/-t-sh,Ksntz,,qknstz,12301
 Impotent,m-p-tn-t,Mptnt,,qmnpt,12302
 Potency,p-tn-s-e,Ptnse,,qenpst,12302
 Potent,p-tn-t,Ptnt,,qnpt,12302
@@ -5279,6 +5292,10 @@ Browsing,br-a-u-s-\-h,Brwsg,,qbgrsw,39293
 Brows,br-a-u-s-o,Brwso,o,qborsw,39293
 Browser,br-a-u-s-r,Brwsr,,qbrsw,39293
 Browsers,br-a-u-s-r-s,Brwsrs,,qbrsw,39293
+Installable,n-s2-t-o-l-b,Nstolb,,qblnost,39681
+Installably,n-s2-t-o-l-b-e,Nstolbe,,qbelnost,39681
+Installability,n-s2-t-o-l-\-b,Nstolbo,o,qblnost,39681
+Installables,n-s2-t-o-l-b-s,Nstolbs,,qblnost,39681
 Installer,n-s2-t-o-l-r,Nstolr,,qlnorst,39681
 Installers,n-s2-t-o-l-r-s,Nstolrs,,qlnorst,39681
 Installs,n-s2-t-o-l-s,Nstols,,qlnost,39681
@@ -6121,6 +6138,13 @@ Implication,m-pl-e-k-sh,Mplekz,,qeklmpz,91898
 Implications,m-pl-e-k-sh-s,Mplekzs,,qeklmpsz,91898
 Implicitly,m-pl-e-s-t-e,Mpleste,,qelmpst,91898
 Recipe,r-e-s-e-p-e,Resepe,,qeprs,91936
+Centralizations,s2-n-\-l-e-s-sh-s,Snleszs,,qelnsz,91948
+Centralize,s2-n-\-l-i-s,Snlis,,qilns,91948
+Centralized,s2-n-\-l-i-s-d,Snlisd,,qdilns,91948
+Centralizing,s2-n-\-l-i-s-\-h,Snlisg,,qgilns,91948
+Centralizes,s2-n-\-l-i-s-s,Snliss,,qilns,91948
+Centralization,s2-n-\-l-i-s-sh,Snlisz,,qilnsz,91948
+Centralizations,s2-n-\-l-i-s-sh-s,Snliszs,,qilnsz,91948
 Widget,u-e-j-e-t,Wejet,,qejtw,91983
 Widgets,u-e-j-e-t-s,Wejets,,qejstw,91983
 Reposed,r-p-o-d,Rpodo,o,qdopr,92003
