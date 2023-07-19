@@ -64,6 +64,7 @@ Weirds,u-e-r-d-s,Uerds,,qdersu,62
 Willingly,l-\-h-e,Lgei,i,qegil,68
 Willing,l-\-h,Lgi,i,qgil,68
 You're,u-r,Ur,,qrux,78
+Whatcha,o-t-ch,Otc,,qcot,81
 Overtime,o-/-tm,Otm,o,qmot,93
 Timed,tm-d,Tmd,,qmtvd,93
 Timing,tm-\-h,Tmg,,qgmt,93
@@ -839,6 +840,7 @@ Outreach,a-u-r-e-ch,Wrec,,qcerw,737
 Outreaches,a-u-r-e-ch-s,Wrecs,,qcersw,737
 Agreed,^-ya-d,Yad,,qady,746
 Agreeing,^-ya-\-h,Yag,,qagy,746
+Agrees,^-ya-s,Yas,,qasy,746
 Easiness,e-s-e-n-e-s,Esenes,o,qens,749
 Easiest,e-s-e-\-s-t,Esest,,qest,749
 Script,s-k-r-p,Skrp,,qkprs,749
@@ -870,6 +872,9 @@ Afterthought,a-f-h-o-t,Afhot,,qafhot,759
 Afterthoughts,a-f-h-o-t-s,Afhots,,qafhost,759
 Impossibly,m-p-o-s-e,Mpose,,qemops,763
 Impossibles,m-p-o-s-s,Mposs,,qmops,763
+Occasioned,k-a-sh-d,Kazd,,qadkz,767
+Occasioning,k-a-sh-\-h,Kazg,,qagkz,767
+Occasions,k-a-sh-s,Kazs,,qaksz,767
 Pleased,pl-d,Pld,,qdlp,769
 Pleasing,pl-\-h,Plg,,qglp,769
 Pleases,pl-s,Pls,,qlps,769
@@ -2061,6 +2066,16 @@ Septuagint,s-e-p-j,Sepj,,qejps,1973
 Writers,r-i-r-s,Rirs,,qirs,1976
 Protections,pr-o-t-e-k-sh-s,Protekzs,,qekoprstz,1983
 Innocents,e-n-o-s-s,Enoss,,qenos,2006
+Articulate,a2-t-e-k-\-u,Ateku,,qaektu,2014
+Articulated,a2-t-e-k-\-u-d,Atekud,,qadektu,2014
+Articulately,a2-t-e-k-\-u-e,Atekue,,qaektu,2014
+Articulating,a2-t-e-k-\-u-\-h,Atekug,,qaegktu,2014
+Articulates,a2-t-e-k-\-u-s,Atekus,,qaekstu,2014
+Articulation,a2-t-e-k-\-u-sh,Atekuz,,qaektuz,2014
+Articulations,a2-t-e-k-\-u-sh-s,Atekuzs,,qaekstuz,2014
+Articles,a2-t-/-k-s,Atks,,qakst,2014
+Inarticulate,e-n-a2-t-e-k-\-u,Enateku,,qaekntu,2014
+Inarticulately,e-n-a2-t-e-k-\-u-e,Enatekue,,qaekntu,2014
 Circled,s2-e-k-l-d,Sekld,,qdekls,2018
 Circling,s2-e-k-l-\-h,Seklg,,qegkls,2018
 Circles,s2-e-k-l-s,Sekls,,qekls,2018
@@ -3104,6 +3119,7 @@ Products,pr-o-k-s,Proks,,qkoprs,4118
 Editors,e-td-e2-s,Eddes,,qdes,4123
 Editorship,e-td-e2-sh,Eddez,,qdez,4123
 Editorships,e-td-e2-sh-s,Eddezs,,qdesz,4123
+Unhealthy,u-n-^-h-\-e-l-th-e,Unhelhe,,qehlnu,4126
 Discharged,d-s-ch-j-d,Dscjd,,qcdjs,4154
 Discharging,d-s-ch-j-\-h,Dscjg,,qcdgjs,4154
 Discharges,d-s-ch-j-s,Dscjs,,qcdjs,4154
@@ -3388,6 +3404,8 @@ Deceptions,d-s-e-p-sh-s,Dsepzs,,qdepsz,4997
 Deceives,d-s-e-s,Dses,,qdes,4997
 Backout,b-a-k-a-u,Bakw,,qabkw,5000
 Backouts,b-a-k-a-u-s,Bakws,,qabksw,5000
+Today,td-a,Tda,,qadt,5005
+Todays,td-a-s,Tdas,,qadst,5005
 Reminder,r-e-m-i-n-r,Reminr,,qeimnr,5021
 Reminders,r-e-m-i-n-r-s,Reminrs,,qeimnrs,5021
 Reminds,r-e-m-i-n-s,Remins,,qeimnrs,5021
@@ -3733,7 +3751,7 @@ Ornamenting,o-n-a-m-\-h,Onamg,,qagmno,6391
 Ornamental,o-n-a-m-l,Onaml,,qalmno,6391
 Ornamentally,o-n-a-m-l-e,Onamle,,qaelmno,6391
 Ornaments,o-n-a-m-s,Onams,,qamnos,6391
-Agricultures,^-ya-s,Yas,,qasy,6397
+Agricultures,^-ya-s,Yaso,o,qaosy,6397
 Boundaries,b-n-r-e-s,Bnres,,qbenrs,6400
 Uncomfortably,n-k-f-t-b-e,Nkftbe,,qbefknt,6437
 Showered,sh-a-u-r-d,Zwrd,,qdrwz,6495
@@ -4047,6 +4065,9 @@ Delivered,d-l-d,Dld,,qdlz,8730
 Deliveries,d-l-s,Dlso,o,qdlos,8730
 Needlessly,n-e-d-l-e,Nedle,,qdeln,8765
 Needless,n-e-d-l,Nedlu,u,qdelno,8765
+Layered,l-a-r-d,Lard,,qadlr,8783
+Layering,l-a-r-\-h,Larg,,qaglr,8783
+Layers,l-a-r-s,Lars,,qalrs,8783
 Involved,n-v-o-d,Nvod,,qdnov,8785
 Involving,n-v-o-\-h,Nvog,,qgnov,8785
 Involvement,n-v-o-m,Nvom,,qmnov,8785
@@ -4133,6 +4154,7 @@ Buttonholed,b-u-tn-o-l-d-^-<-h,Butnold,,qbdlnotu,9381
 Buttonholing,b-u-tn-o-l-\-h-^-<-h,Butnolg,,qbglnotu,9381
 Buttonholes,b-u-tn-o-l-s-^-<-h,Butnols,,qblnostu,9381
 Buttons,b-u-tn-s,Butns,,qbnstu,9381
+Locations,l-o-k-sh-s,Lokzs,,qklosz,9411
 Authentic,o-th-e-nt,Ohento,o,qehnot,9433
 OAuth,o-o-th,Ooh,,qhoz,9433
 Conceit,k-s-e-t,Kseto,o,qekost,9446
