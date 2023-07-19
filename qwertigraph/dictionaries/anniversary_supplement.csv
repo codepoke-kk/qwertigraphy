@@ -335,6 +335,7 @@ Pour,p-o-r,Por,,qoprz,324
 Poured,p-o-r-d,Pord,,qdopr,324
 Pouring,p-o-r-\-h,Porg,,qgopr,324
 Pours,p-o-r-s,Pors,,qoprs,324
+Truer,t-r-u-r,Trur,,qrtu,324
 Outpouring,a-u-p-o-r-\-h,Wporg,,qgoprw,324
 Pointed,o-e-d,Yd,,qdy,325
 Pointedly,o-e-d-e,Yde,,qdey,325
@@ -375,6 +376,9 @@ Lettering,l-e-\-h,Lega,a,qaegl,369
 Helping,^-h-\-e-l-p-\-h,Helpg,,qeghlp,370
 Helper,^-h-\-e-l-p-r,Helpr,,qehlpr,370
 Helpers,^-h-\-e-l-p-r-s,Helprs,,qehlprs,370
+Freed,fr-e-d,Fred,,qdefr,371
+Freing,fr-e-\-h,Freg,,qefgr,371
+Frees,fr-e-s,Fres,,qefrs,371
 Secondly,s2-e-k-nt-e,Seknte,,qeknst,373
 Seconding,s2-e-k-nt-\-h,Sekntg,,qegknst,373
 Secondary,s2-e-k-nt-r-e,Sekntre,,qeknrst,373
@@ -1578,6 +1582,7 @@ Regulator,r-e-g-\-u-r,Regur,,qegru,1501
 Regulators,r-e-g-\-u-r-s,Regurs,,qegrsu,1501
 Regulates,r-e-g-\-u-s,Regus,,qegrsu,1501
 Regulation,r-e-g-\-u-sh,Reguz,,qegruz,1501
+Songs,s2-o-ng-s,Sogs,,qgos,1503
 Contained,k-tn-d,Ktnd,,qdknt,1508
 Containing,k-tn-\-h,Ktng,,qgknt,1508
 Container,k-tn-r,Ktnr,,qknrt,1508
@@ -1913,9 +1918,13 @@ Fails,f-a-l-s,Fals,,qafls,1836
 Failings,f-a-l-\-s2,Falsg,g,qafgl,1836
 Fails,f-a-l-s,Falso,o,qaflos,1836
 Failings,f-a-l-\-s2,Falz,,qafgls,1836
+Females,f-e-m-a2-s,Femas,,qaefms,1838
 Welcomed,l-k-m-d,Lkmd,,qdklm,1839
 Welcoming,l-k-m-\-h,Lkmg,,qgklm,1839
 Welcomes,l-k-m-s,Lkms,,qklms,1839
+Motioned,m-o-sh-d,Mozd,,qdmoz,1847
+Motioning,m-o-sh-\-h,Mozg,,qgmoz,1847
+Motions,m-o-sh-s,Mozs,,qmosz,1847
 Mileage,m-i2-\-j,Mij,,qijm,1853
 Miler,m-i2-r,Mir,,qimr,1853
 Milers,m-i2-r-s,Mirs,,qimrs,1853
@@ -2575,6 +2584,9 @@ Archangel,a-r-k-a-n-j-l,Arkanjl,,qajklnr,3034
 Archangels,a-r-k-a-n-j-l-s,Arkanjls,,qajklnrs,3034
 Empire,m-p-i,Mpi,,qimpv,3037
 Empires,m-p-i-s,Mpis,,qimpvs,3037
+Signaled,s2-g-n-d,Sgnd,,qdgns,3042
+Signaling,s2-g-n-\-h,Sgng,,qgns,3042
+Signals,s2-g-n-s,Sgns,,qgns,3042
 Operational,o-pr-a-sh-l,Oprazl,,qaloprz,3048
 Operationally,o-pr-a-sh-l-e,Oprazle,,qaeloprz,3048
 Operations,o-pr-a-sh-s,Oprazs,,qaoprsz,3048
@@ -3010,6 +3022,9 @@ Culturing,k-l-t-r-\-h,Kltrg,,qgklrt,3937
 Cultural,k-l-t-r-l,Kltrl,,qklrt,3937
 Culturally,k-l-t-r-l-e,Kltrle,,qeklrt,3937
 Cultures,k-l-t-r-s,Kltrs,,qklrst,3937
+Romanced,r-o-mn-s-d,Rommsd,,qdmors,3938
+Romancing,r-o-mn-s-\-h,Rommsg,,qgmors,3938
+Romances,r-o-mn-s-s,Rommss,,qmors,3938
 Painted,p-a-nt-d,Pantd,,qadnpt,3973
 Painting,p-a-nt-\-h,Pantg,,qagnpt,3973
 Paints,p-a-nt-s,Pants,,qanpst,3973
@@ -3053,6 +3068,7 @@ Mailers,m-a2-l-r-s,Malrs,,qalmrs,4020
 Mails,m-a2-l-s,Mals,,qalms,4020
 Remainders,r-e2-mn-e2-s,Remmes,,qemrs,4025
 Executives,e-s2-e-k-v-s,Xekvs,,qeksvx,4030
+Cardinals,k-a-tn-l-s,Katnls,,qaklnst,4052
 Refering,r-f-\-h,Rfgo,o,qfgor,4061
 Referrer,r-f-r,Rfr,,qfr,4061
 Referer,r-f-r,Rfri,i,qfir,4061
@@ -3321,6 +3337,10 @@ Probabilities,pr-\-b-s,Prbso,o,qboprs,4887
 Collected,k-o-l-d,Kold,,qdklo,4890
 Collecting,k-o-l-\-h,Kolg,,qgklo,4890
 Collects,k-o-l-s,Kols,,qklos,4890
+Smarted,s2-m-a2-t-d,Smatd,,qadmst,4893
+Smarting,s2-m-a2-t-\-h,Smatg,,qagmst,4893
+Smarter,s2-m-a2-t-r,Smatr,,qamrst,4893
+Smarts,s2-m-a2-t-s,Smats,,qamst,4893
 Recommended,r-k-mn-d,Rkmnd,,qdkmnr,4899
 Recommending,r-k-mn-\-h,Rkmng,,qgkmnr,4899
 Recommends,r-k-mn-s,Rkmns,,qkmnrs,4899
@@ -3853,8 +3873,8 @@ Fascinate,f-a-s2-n-a-t,Fasnat,,qafnst,7259
 Fascinated,f-a-s2-n-a-t-d,Fasnatd,,qadfnst,7259
 Fascinating,f-a-s2-n-a-t-\-h,Fasnatg,,qafgnst,7259
 Fascinates,f-a-s2-n-a-t-s,Fasnats,,qafnst,7259
-Fascination,f-a-s2-n-a-t-sh,Fasnatz,,qafnstz,7259
-Fascinations,f-a-s2-n-a-t-sh-s,Fasnatzs,,qafnstz,7259
+Fascination,f-a-s2-n-sh,Fasnz,,qafnsz,7259
+Fascinations,f-a-s2-n-sh-s,Fasnzs,,qafnsz,7259
 Exceeded,e-s2-e-d-d,Xedd,,qdex,7260
 Exceeding,e-s2-e-d-\-h,Xedg,,qdegx,7260
 Exceeds,e-s2-e-d-s,Xeds,,qdesx,7260
@@ -4333,6 +4353,8 @@ Tanked,t-a-nk-d,Taqd,,qadqt,11495
 Tanking,t-a-nk-\-h,Taqg,,qagqt,11495
 Tanks,t-a-nk-s,Taqs,,qaqst,11495
 Customers,k-u-s-r-s,Kusrs,,qkrsus,11568
+Misunderstandings,m-s-/-s2-t-\-h-s,Msstgs,,qgmst,11585
+Misunderstandings,m-s-/-s2-t-\-h-s,Msstz,,qmstz,11585
 Comparable,k-pr-b,Kprb,,qbkpr,11637
 Comparablely,k-pr-b-e,Kprbe,,qbekpr,11637
 Comparables,k-pr-b-s,Kprbs,,qbkprs,11637
