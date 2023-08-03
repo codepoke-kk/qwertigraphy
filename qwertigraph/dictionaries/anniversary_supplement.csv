@@ -2660,6 +2660,11 @@ Determinations,e2-mn-sh-s,Emmzs,,qemzs,3162
 Predetermine,pr-e-/-e2-mn,Pree2mn,,qemnpr,3162
 Predetermining,pr-e-/-e2-mn-\-h,Pree2mng,,qemnprg,3162
 Predetermines,pr-e-/-e2-mn-s,Pree2mns,,qemnprs,3162
+Examined,e-s2-a-mn-d,Xammd,,qadmx,3165
+Examining,e-s2-a-mn-\-h,Xammg,,qagmx,3165
+Examines,e-s2-a-mn-s,Xamms,,qamsx,3165
+Examination,e-s2-a-mn-sh,Xammz,,qamxz,3165
+Examinations,e-s2-a-mn-sh-s,Xammzs,,qamsxz,3165
 Inspire,n-s-p-i,Nspi,,qinps,3183
 Inspired,n-s-p-i-d,Nspid,,qdinps,3183
 Inspiring,n-s-p-i-\-h,Nspig,,qginps,3183
@@ -3884,6 +3889,11 @@ Kicking,k-e-k-\-h,Kekgo,o,qegko,7324
 Kicks,k-e-k-s,Kekszz,,qeks,7324
 Logic,l-o-j-k,Lojk,,qjklo,7324
 Logical,l-o-j-/-k,Lojko,o,qjklo,7324
+Condemned,k-tm-d,Ktmd,,qdkmt,7326
+Condemning,k-tm-\-h,Ktmg,,qgkmt,7326
+Condemnation,k-tm-n-sh,Ktmnz,,qkmntz,7326
+Condemnations,k-tm-n-sh-s,Ktmnzs,,qkmnstz,7326
+Condemns,k-tm-s,Ktms,,qkmst,7326
 Compounded,k-p-n-d,Kpnd,,qdknp,7353
 Compounding,k-p-n-\-h,Kpng,,qgknp,7353
 Compounds,k-p-n-s,Kpnso,o,qknops,7353
@@ -6251,6 +6261,10 @@ Repay,r-p-a,Rpa,,qapr,92373
 Repayed,r-p-a-d,Rpad,,qadpr,92373
 Repaying,r-p-a-\-h,Rpag,,qagpr,92373
 Repaies,r-p-a-s,Rpas,,qaprs,92373
+Critique,k-r-e-t-e-k,Kreteq,,qekrst,92388
+Critiqued,k-r-e-t-e-k-d,Kreteqd,,qdekqrt,92388
+Critiquing,k-r-e-t-e-k-\-h,Kreteqg,,qegkqrt,92388
+Critiques,k-r-e-t-e-k-s,Kreteqs,,qekqrst,92388
 Hierarchy,^-h-\-i-r-a-r-k-e,Hirarke,,qaehikr,92415
 Hierarchy,i-r-k-e,Irke,,qeikr,92415
 Hierarchical,i-r-k-e-\-k,Irkek,,qeikr,92415
