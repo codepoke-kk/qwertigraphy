@@ -151,7 +151,6 @@ Residence,r-e-s2-e-tn-s,Resedns,,,3006
 Completed,kp-/-t,Kpdu,u,,3023
 Uncompleted,n-kp-/-t,Nkp/d,,,3023
 Steadily,s2-td-ya,Sddy,,,3076
-Exhausted,e-s2-o-s-/-t,Xosd,,,3154
 Determined,e2-mn-/-t,Emmd,,,3162
 Predetermined,pr-e-/-e2-mn-/-t,Preemnd,,,3162
 Fitted,f-e-td,Fetd,,,3205
@@ -267,6 +266,8 @@ Expired,e-s-p-i-/-t,Xpid,,,10150
 Respond,r-s-jnt,Rspnd,,,10268
 Responded,r-s-jnt-d,Rspndd,,,10268
 Responding,r-s-jnt-\-h,Rspndg,,,10268
+Responder,r-s-jnt-r,Rspndr,,qdnprs,10268
+Responders,r-s-jnt-r-s,Rspndrs,,qdnprs,10268
 Responds,r-s-jnt-s,Rspnds,,,10268
 Primarily,pr-i-m-r-ye,Primry,,,10273
 Divined,df-i-nt,Dfindo,o,,10413

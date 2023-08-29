@@ -3,7 +3,6 @@ David,davd,Davd,,,90000
 Adding,adg,Adg,,,90001
 Owns,ons,Onso,o,,90002
 Scanning,skg,Skgo,,,90003
-Heights,hits,Hits,,,90005
 Weekly,eke,Eke,,,90006
 Assessment,asesm,Asesm,,,90007
 Talking,tokg,Tokg,,,90008
@@ -362,7 +361,6 @@ Brittle,bretl,Bretl,,,90530
 Invaluable,nvlb,Nvlb,,,90531
 Tied,tid,Tido,o,,90535
 Textual,tekscul,Tekscul,,,90537
-Thesis,hess,Hess,,,90539
 Loop,lup,Lup,,,90540
 Trivial,treveal,Trevel,,,90541
 Doug,dg,Dgu,u,,90545
@@ -648,7 +646,6 @@ Flexible,fleksb,Fleksb,,,90923
 Cops,kops,Kopsu,u,,90926
 Rumors,rmrs,Rmrso,o,,90927
 Vacuum,vakum,Vakum,,,90928
-Leadership,ledrzp,Ledrzp,,,90929
 Flexibility,flksblte,Flksblte,,,90930
 Weakest,ekst,Ekst,,,90931
 Swimmer,suemE,Sueme,,,90935
@@ -671,7 +668,6 @@ Frustrating,frstratg,Frstratg,,,90955
 Leaks,leks,Leksi,i,,90958
 Reliability,rliblte,Rliblte,o,,90960
 Brakes,braks,Brakso,o,,90961
-Billions,blns,Blns,,,90962
 Usefully,eufle,Ufle,,,90964
 Fade,fad,Fadu,u,,90965
 Swoop,suup,Suup,,,90966
@@ -858,7 +854,6 @@ Shining,zing,Zing,,,91221
 Accepted,aksd,Aksd,,,91222
 Zara,zar,Zar,,,91224
 Dug,dg,Dg,,,91225
-Typical,tepkl,Tepkl,,,91227
 Inherits,nherts,Nherts,,,91230
 Visits,vesets,Vesets,,,91231
 Explodes,esplods,Xplods,,,91232
@@ -871,7 +866,6 @@ Grabbed,grabd,Grabd,,,91238
 Phases,fass,Fasso,o,,91239
 Doomed,dumd,Dumd,,,91240
 Pro,pro,Pryy,yy,,91241
-Exhaustive,esostv,Xostv,,,91242
 Nightly,nie,Nieo,o,,91243
 Lin,len,Lenuu,uu,,91244
 Depleted,dpletd,Dpletd,,,91245
@@ -1132,7 +1126,6 @@ Nudging,njg,Njg,,,91588
 Unmarked,nmorkt,Nmorkt,,,91589
 Unified,unfid,Unfid,,,91590
 Threat,Hret,Hret,,,91591
-Visions,vezs,Vezs,,,91592
 Registering,rejestEg,Rejesteg,,,91593
 Brace,bras,Brasi,i,,91594
 Feast,fest,Fest,,,91596
@@ -1226,7 +1219,6 @@ Chained,cand,Cand,,,91714
 Pursued,prsud,Prsud,,,91716
 Acid,asd,Asd,,,91718
 Crashes,krazs,Krazs,,,91719
-Quest,qest,Qest,,,91720
 Intervals,nVls,Nvls,,,91722
 Fifth,fefh,Fefh,,,91724
 Spawn,spon,Spon,,,91725
@@ -1276,7 +1268,6 @@ Ure,ur,Ura,a,,91772
 Chad,cad,Cado,o,,91773
 Galaxy,galkse,Galkse,,,91774
 Gotta,gt,Gty,y,,91775
-Typically,tepkle,Tepkle,,,91776
 Bind,bind,Bindo,o,,91778
 Unlocked,nlokt,Nlokt,,,91780
 Locks,loks,Loks,,,91781
@@ -1306,7 +1297,6 @@ Holidays,holdas,Holdas,,,91811
 Tis,tes,Tese,e,,91812
 Float,flot,Flot,,,91813
 Blows,blos,Blos,,,91814
-Inappropriate,enpropret,Enprprt,,,91816
 Advising,advizg,Advizg,,,91817
 Untainted,ntntd,Ntntd,,,91818
 Barber,borbr,Borbro,o,,91819
@@ -1516,7 +1506,6 @@ Almighty,lmite,Lmite,,,92091
 Settling,setlg,Setlg,,,92092
 Risen,rsn,Rsno,o,,92093
 Limping,lempg,Lempg,,,92094
-Billion,bln,Bln,,,92096
 Lobby,lobe,Lobeo,o,,92098
 Pride,prid,Prid,,,92099
 Cuss,ks,Ksy,y,,92101
@@ -1655,7 +1644,6 @@ Weeds,ueds,Ueds,,,92270
 Blend,blnd,Blnd,,,92271
 Slid,sled,Sledo,o,,92272
 Revived,rvivd,Rvivd,,,92274
-Priests,prests,Prsts,,,92276
 Shepherd,zepEd,Zeped,,,92277
 Denial,dniel,Dniel,,,92278
 Wreath,rh,Rh,,,92279
@@ -1735,7 +1723,6 @@ Tinkering,tqrg,Tqrg,,,92369
 Yu,u,Uyy,yy,,92370
 Mock,mok,Mok,,,92371
 Tinker,tqr,Tqr,,,92372
-Heightened,hitnd,Hitnd,,,92374
 Ups,ps,Psu,u,,92375
 Alicia,alez,Alez,,,92376
 Cannon,kn,Knu,u,,92377
@@ -2051,6 +2038,9 @@ Frugality,frugalte,Frugalte,,,92790
 Frugally,frugle,Frugle,,,92791
 Minimize,mnemiz,Mnemiz,,,92792
 Embrace,mbras,Mbras,,,92794
+Embraced,mbras-d,Mbrasd,,qabdmrs,92794
+Embracing,mbras-\-h,Mbrasg,,qabgmrs,92794
+Embraces,mbras-s,Mbrass,,qabmrs,92794
 Safest,safst,Safst,,,92795
 Fearing,ferg,Ferg,,,92797
 Nerves,nevs,Nevs,,,92798
