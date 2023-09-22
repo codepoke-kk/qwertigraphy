@@ -117,7 +117,6 @@ Sayings,s-a-\-h-s,Sags,,qags,141
 Sayings,s-a-\-h-s,Saz,,qasz,141
 Sayings,s-s-\-h,Ssg,,qgsz,141
 Sayings,s-s-\-h,Ssgg,,qgsz,141
-Sayings,s-s-\-s2,Ssz,,qgsz,141
 Thinkable,th-\-b,Hb,,qbhz,144
 Thinkably,th-\-b-e,Hbe,,qbeh,144
 Thinker,th-\-h-r,Hhr,,qhrz,144
@@ -257,6 +256,10 @@ Coining,k-oe-n-\-h,Kyng,,qgkny,257
 Coinage,k-oe-n-j,Kynj,,qjkny,257
 Coinages,k-oe-n-j-s,Kynjs,,qjknsy,257
 Coins,k-oe-n-s,Kyns,,qknsy,257
+Python,p-i-th,Pih,,qhip,257
+Pythonic,p-i-th-k,Pihk,,qhikp,257
+Pythonically,p-i-th-k-e,Pihke,,qehikp,257
+Pythons,p-i-th-s,Pihs,,qhips,257
 Superuser,^-s-\-e-u-r,Sur,,qrsu,257
 Superusers,^-s-\-e-u-r-s,Surs,,qrsu,257
 Usable,e-u-b,Ub,,qblsu,257
@@ -1409,6 +1412,8 @@ Gracing,g-r-a-s-\-h,Grasg,,qagrs,1204
 Graces,g-r-a-s-s,Grass,,qagrs,1204
 Ones,u-n-s-e,Unse,,qensu,1211
 Path,p-a-th,Pah,,qahpz,1225
+Prerequisite,pr-e-r-k-e-s-t,Prerqest,,qepqrst,1230
+Prerequisites,pr-e-r-k-e-s-t-s,Prerqests,,qepqrst,1230
 Requesting,r-k-e-s-\-h,Rqesg,,qegqrs,1230
 Requestor,r-k-e-s-r,Rqesr,,qeqrs,1230
 Requestors,r-k-e-s-r-s,Rqesrs,,qeqrs,1230
@@ -1875,6 +1880,8 @@ Qualitative,k-u-df,Qudf,,qdfqu,1727
 Qualitatively,k-u-df-e,Qudfe,,qdefqu,1727
 Dozens,d-u-s2-n-s,Dusns,,qdnsu,1733
 Committed,k-m-e-td,Kmetd,,qdekmt,1734
+Workstation,r-k-s2-t-sh,Rkstz,,qkrstz,1735
+Workstations,r-k-s2-t-sh-s,Rkstzs,,qkrstz,1735
 Explaining,e-s-pl-\-h,Xplg,,qglpx,1739
 Explanatory,e-s-pl-\-r-e,Xplre,,qelprx,1739
 Explains,e-s-pl-s,Xpls,,qlpsx,1739
@@ -2064,6 +2071,7 @@ Compulsions,k-pl-sh-s,Kplzs,,qklpsz,1895
 Labored,l-a-br-d,Labrd,,qabdlr,1899
 Laboring,l-a-br-\-h,Labrg,,qabglr,1899
 Labors,l-a-br-s,Labrs,,qablrs,1899
+Descriptions,d-s2-k-r-sh-s,Dskrzs,,qdkrsz,1909
 Customize,k-u-s-i-s,Kusis,,qiksu,1913
 Customized,k-u-s-i-s-d,Kusisd,,qdiksu,1913
 Customizing,k-u-s-i-s-\-h,Kusisg,,qgiksu,1913
@@ -2327,6 +2335,9 @@ Triumphing,t-r-i-m-f-\-h,Trimfg,,qfgimrt,2362
 Triumphs,t-r-i-m-f-s,Trimfs,,qfimrst,2362
 Unreality,n-r-e-/-l,Nrel,,qelnr,2364
 Realities,r-e-/-l-s,Rels,,qelrs,2364
+Permanent,pr-mn,Prmm,,qmpr,2366
+Permanently,pr-mn-e,Prmme,,qempr,2366
+Permanents,pr-mn-s,Prmms,,qmprs,2366
 Permanente,pr-mn-a,Prmna,,qamnpr,2366
 Permanently,pr-mn-e,Prmne,,qemnpr,2366
 Permanence,pr-mn-s,Prmns,,qmnprs,2366
@@ -2641,6 +2652,10 @@ Suspect,ss-/-k,Ssk,,qksz,2915
 Suspected,ss-/-k-d,Sskd,,qdks,2915
 Suspecting,ss-/-k-\-h,Sskg,,qgks,2915
 Suspects,ss-/-k-s,Ssks,,qksz,2915
+Suspicion,ss-/-sh,Ssz,,qsz,2915
+Suspicions,ss-/-sh-s,Sszs,,qsz,2915
+Suspicious,ss-/-sh-u-s,Sszus,,qsuz,2915
+Suspiciously,ss-/-sh-u-s-e,Sszuse,,qesuz,2915
 Averaged,a-v-r-j-d,Avrjd,,qadjrv,2930
 Averaging,a-v-r-j-\-h,Avrjg,,qagjrv,2930
 Averages,a-v-r-j-s,Avrjs,,qajrsv,2930
@@ -3486,6 +3501,12 @@ Smarted,s2-m-a2-t-d,Smatd,,qadmst,4893
 Smarting,s2-m-a2-t-\-h,Smatg,,qagmst,4893
 Smarter,s2-m-a2-t-r,Smatr,,qamrst,4893
 Smarts,s2-m-a2-t-s,Smats,,qamst,4893
+Recommend,r-k-mn,Rkmm,,qkmr,4899
+Recommended,r-k-mn-d,Rkmmd,,qdkmr,4899
+Recommending,r-k-mn-\-h,Rkmmg,,qgkmr,4899
+Recommends,r-k-mn-s,Rkmms,,qkmrs,4899
+Recommendation,r-k-mn-sh,Rkmmz,,qkmrz,4899
+Recommendations,r-k-mn-sh-s,Rkmmzs,,qkmrsz,4899
 Recommended,r-k-mn-d,Rkmnd,,qdkmnr,4899
 Recommending,r-k-mn-\-h,Rkmng,,qgkmnr,4899
 Recommends,r-k-mn-s,Rkmns,,qkmnrs,4899
@@ -3856,6 +3877,7 @@ Dominions,d-o-mn-u-n-s,Domnuns,,qdmnosu,6094
 Preachers,pr-e2-ch-e2-s,Preces,,qceprs,6137
 Momentarily,m-o-m-r-ye,Momry,,qmory,6159
 Faster,f-a-s2-t-e2,Faste,,qaefst,6175
+Competently,k-p-tn-e,Kptne,,qeknpt,6196
 Archbishops,a2-ch-b-e-sh-s,Acbezs,,qabcesz,6205
 Spoil,s-p-o-e-l,Spyl,,qlpsy,6243
 Spoiling,s-p-o-e-l-\-h,Spylg,,qglpsy,6243
@@ -4272,10 +4294,18 @@ Presentations,pr-sh-s,Przs,,qprsz,9294
 Corresponded,k-r-e-s-d,Kresd,,qdekrs,9316
 Corresponding,k-r-e-s-\-h,Kresg,,qegkrs,9316
 Correspondingly,k-r-e-s-\-h-e,Kresge,,qegkrs,9316
+Bicycle,b-i-s-i-k-l,Bisikl,,qbikls,9326
+Bicycled,b-i-s-i-k-l-d,Bisikld,,qbdikls,9326
+Bicycling,b-i-s-i-k-l-\-h,Bisiklg,,qbgikls,9326
+Bicycles,b-i-s-i-k-l-s,Bisikls,,qbikls,9326
 Lifecycle,l-a-f-s-i-k,Lafsik,,qafikls,9326
 Lifecycled,l-a-f-s-i-k-d,Lafsikd,,qadfikls,9326
 Lifecycling,l-a-f-s-i-k-\-h,Lafsikg,,qafgikls,9326
 Lifecycles,l-a-f-s-i-k-s,Lafsiks,,qafikls,9326
+Cycle,s-i-k-l,Sikl,,qikls,9326
+Cycled,s-i-k-l-d,Sikld,,qdikls,9326
+Cycling,s-i-k-l-\-h,Siklg,,qgikls,9326
+Cycles,s-i-k-l-s,Sikls,,qikls,9326
 Definable,df-i-n-b,Dfinb,,qbdfin,9338
 Definably,df-i-n-b-e,Dfinbe,,qbdefin,9338
 Defining,df-i-n-\-h,Dfing,,qdfgin,9338
@@ -4594,6 +4624,8 @@ Greets,g-r-e-t-s,Gretso,o,qegorst,12162
 Conclusively,k-k-v-e,Kkve,,qekv,12171
 Receivers,r-s-e-r-s,Rsers,,qers,12211
 Fasting,f-a-s2-t-g,Fastg,,qafgst,12221
+Poise,p-oe-s,Pys,,qpsy,12226
+Poised,p-oe-s-d,Pysd,,qdpsy,12226
 Explicitly,e-s-pl-e-s2-t-e,Xpleste,,qelpstx,12274
 Concentration,k-s2-n-/-t-sh,Ksntz,,qknstz,12301
 Impotent,m-p-tn-t,Mptnt,,qmnpt,12302
@@ -4763,6 +4795,9 @@ Mobility,m-o-\-b,Mobo,o,qbmo,14474
 Suffrage,s-u-f-r-j,Sufrj,,qfjrs,14512
 Suffragette,s-u-f-r-j-e-t,Sufrjet,,qefjrstu,14512
 Suffragettes,s-u-f-r-j-e-t-s,Sufrjets,,qefjrstu,14512
+Digital,d-e-j-t-l,Dejtl,,qdejlt,14575
+Digitally,d-e-j-t-l-e,Dejtle,,qdejlt,14575
+Digits,d-e-j-t-s,Dejts,,qdejst,14575
 Shorten,sh-/-n,Zn,,qcnz,14581
 Shortening,sh-/-n-\-h,Zng,,qgnz,14581
 Shortens,sh-/-n-s,Zns,,qnsz,14581
@@ -4814,6 +4849,7 @@ Elevating,e2-l-v-a-t-\-h,Elvatg,,qaegltv,16130
 Elevates,e2-l-v-a-t-s,Elvats,,qaelstv,16130
 Elevation,e2-l-v-a-t-sh,Elvaz,,qaelvz,16130
 Elevations,e2-l-v-a-t-sh-s,Elvazs,,qaelsvz,16130
+Incompetently,n-k-p-tn-e,Nkptne,,qeknpt,16204
 Friendliness,fr-l-n-s,Frlns,,qflnrs,16206
 Unseemly,n-s2-e-m-e,Nseme,,qemns,16215
 Instructors,n-s-/-k-r-s,Nskrs,,qknrs,16231
@@ -5594,6 +5630,7 @@ Emissions,e-m-sh-s,Emzs,,qemsz,44063
 Bureaucrat,b-u-r-o-k,Burok,,qbkoru,44084
 Bureaucrats,b-u-r-o-k-s,Buroks,,qbkorsu,44084
 Bureaucracies,b-u-r-o-k-s-e-s,Burokses,,qbekorsu,44084
+Exemplars,e-s2-e-m-p-/-r-s,Xemprs,,qemprsx,44320
 Caption,k-a-p-sh,Kapz,,qakpz,44771
 Captioned,k-a-p-sh-d,Kapzd,,qadkpz,44771
 Captioning,k-a-p-sh-\-h,Kapzg,,qagkpz,44771
@@ -5723,6 +5760,19 @@ Devastating,df-a-s2-t-a-\-h,Dfastag,,qadfgst,64760
 Devastates,df-a-s2-t-a-s,Dfastas,,qadfst,64760
 Devastation,df-a-s2-t-a-sh,Dfastaz,,qadfstz,64760
 Devastations,df-a-s2-t-a-sh-s,Dfastazs,,qadfstz,64760
+Flex,fl-e-x,Flex,,qeflx,64855
+Flexible,fl-e-x-b,Flexb,,qbeflx,64855
+Flexibly,fl-e-x-b-e,Flexbe,,qbeflx,64855
+Flexibility,fl-e-x-\-b,Flexbo,o,qbeflox,64855
+Flexed,fl-e-x-d,Flexd,,qdeflx,64855
+Flexing,fl-e-x-\-h,Flexg,,qefglx,64855
+Flexes,fl-e-x-s,Flexs,,qeflsx,64855
+Competence,k-p-tn-s,Kptns,,qknpst,64855
+Competency,k-p-tn-s-e,Kptnse,,qeknpst,64855
+Competencies,k-p-tn-s-e-s,Kptnses,,qeknpst,64855
+Competences,k-p-tn-s-s,Kptnss,,qknpst,64855
+Inflexible,n-fl-e-x-b,Nflexb,,qbeflnx,64855
+Inflexibility,n-fl-e-x-\-b,Nflexbo,o,qbeflnox,64855
 Singles,s2-e-ng-s,Segs,,qegs,65996
 Rehabilitate,r-e-^-h-\-b-e-l-t-a,Rehbelta,,qabehlrt,66158
 Rehabilitation,r-e-^-h-\-b-e-l-t-sh,Rehbeltz,,qbehlrtz,66158
@@ -5880,6 +5930,11 @@ Disengaging,d-s2-n-g-a-\-h,Dsngag,,qadgns,70449
 Disengagements,d-s2-n-g-a-m-s,Dsngams,,qadgmns,70449
 Disengages,d-s2-n-g-a-s,Dsngas,,qadgns,70449
 Do you know,tn-o,Tnoo,o,qnotz,70471
+Enroll,n-r-o-l,Nrol,,qlnor,70525
+Enrolled,n-r-o-l-d,Nrold,,qdlnor,70525
+Enrolling,n-r-o-l-\-h,Nrolg,,qglnor,70525
+Enrollments,n-r-o-l-m-s,Nrolms,,qlmnors,70525
+Enrolls,n-r-o-l-s,Nrols,,qlnors,70525
 Erasably,e-r-a-s-b-e,Erasbe,,qabers,70541
 Erased,e-r-a-s-d,Erasd,,qaders,70541
 Erasing,e-r-a-s-\-h,Erasg,,qaegrs,70541
@@ -5935,6 +5990,10 @@ Horrifies,^-h-\-o-r-f-s,Horfs,,qfhors,70783
 Hypercritical,^-h-\-i-p-e-r-k-r-/-ya,Hiperkry,,qehikpry,70799
 Hypercritically,^-h-\-i-p-e-r-k-r-/-ya-e,Hiperkryae,,qaehikpry,70799
 Hypercritically,^-h-\-i-p-e-r-k-r-/-ya-e,Hiperkrye,,qehikpry,70799
+Underscore,u-\-s-k-o-r,Uskor,,qkorsu,70833
+Underscored,u-\-s-k-o-r-d,Uskord,,qdkorsu,70833
+Underscoring,u-\-s-k-o-r-\-h,Uskorg,,qgkorsu,70833
+Underscores,u-\-s-k-o-r-s,Uskors,,qkorsu,70833
 Immigrated,e-m-e-g-d,Emegd,,qegimd,70854
 Immigrating,e-m-e-g-\-h,Emegg,,qegimg,70854
 Immigrates,e-m-e-g-s,Emegs,,qegims,70854
