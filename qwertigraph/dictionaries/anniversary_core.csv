@@ -2416,7 +2416,7 @@ Dispute,d-s-p-u,Dspu,,qdpsu,3924
 Culture,k-l-t-r,Kltr,,qklrt,3937
 Romance,r-o-mn-s,Romms,,qmors,3938
 Artillery,a2-t-e-l,Atel,,qaelt,3942
-Persuade,pr-s-w-a-d,Prswad,,qadprsw,3945
+Persuade,pr-s-\-n-^-a-d,Prsad,,qadprs,3945
 Metal,m-e-t-l,Metl,,qelmt,3946
 Countess,k-nt-e-s,Kntes,,qeknst,3952
 Dramatic,d-r-a-m-/-a,Dramao,o,qadmor,3955
@@ -5650,7 +5650,6 @@ Gurgle,g-e-r-g-l,Gergl,,qeglr,34001
 Lyceum,l-i-s2-e-m,Lisem,,qeilms,34027
 Outermost,a-u-r-m-o,Wrmo,,qmorw,34109
 Esoteric,eso-t-r-k,Esotrk,,qekorst,34214
-Gneiss,n-i-s,Nise,e,qeins,34216
 Oddity,o-td-e,Oddeo,o,qdeo,34300
 Lice,l-i-s,Lisu,u,qilsu,34316
 Massacre,m-a-s2-k-r,Maskr,,qakmrs,34329
@@ -7067,7 +7066,6 @@ Eye ,i,Iw,w,qciw,70583
 Eyelet,i-l-e,Ileo,o,qeilo,70584
 Facet,f-a-s2-e-t,Faset,,qaefst,70585
 Facial ,f-a-sh,Fazo,o,qafoz,70586
-Facullty,f-a-k-/-l,Fakl,,qafkl,70587
 Facultative,f-a-k-l-/-v,Faklv,,qafklv,70588
 Faster than,f-a-s2-t-e-n,Fasteno,o,qaefnost,70589
 Father-in-law,f-a-th2-l-o,Fahloo,o,qafhlo,70590
