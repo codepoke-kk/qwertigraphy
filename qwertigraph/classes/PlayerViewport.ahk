@@ -45,23 +45,36 @@ class PlayerViewport
 		Loop, % StrLen(PlayerInputText) {
 			key := Substr(PlayerInputText, A_Index, 1)
 			; Tooltip, % key
+			; Sleep, 500
 			Switch key {
 				case "a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m":
+                    ; Tooltip, % "Group 1 sending and adding " key
+                    ; Sleep, 500
 					Send, % key
-					this.engine.AddToToken(key)
+					this.engine.accumulator.AddKeyToToken(key)
 				case "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z":
+                    ; Tooltip, % "Group 2 sending and adding " key
+                    ; Sleep, 500
 					Send, % key
-					this.engine.AddToToken(key)
+					this.engine.accumulator.AddKeyToToken(key)
 				case "1", "2", "3", "4", "5", "6", "7", "8", "9", "0":
+                    ; Tooltip, % "Group 3 sending and adding " key
+                    ; Sleep, 500
 					Send, % key
-					this.engine.AddToToken(key)
+					this.engine.accumulator.AddKeyToToken(key)
 				case " ", ".", ",", "'", "[", "]":
-					this.engine.SendToken(key)
+                    ; Tooltip, % "Punctuation sending and adding " key
+                    ; Sleep, 500
+					; this.engine.SendToken(key)
+					this.engine.accumulator.EndToken(key)
 				default:
-					this.SendToken("{" key "}")
+                    ; Tooltip, % "Default sending and adding " key
+                    ; Sleep, 500
+					this.engine.accumulator.EndToken(key)
+					; Send, % ("{" key "}")
 			}
 
-			Sleep, 100
+			Sleep, 10
 		}
 	}
 }
