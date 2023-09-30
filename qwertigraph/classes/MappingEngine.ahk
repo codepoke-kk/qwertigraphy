@@ -10,7 +10,7 @@ Control+letter must cancel its own token
 #InstallKeybdHook
 engine := {}
 
-#Include %A_AppData%\Qwertigraph\personal_functions.ahk
+#Include *i %A_AppData%\Qwertigraph\personal_functions.ahk
 #Include scripts\default.ahk
 
 #Include classes\EngineParts\Keyboard.ahk
