@@ -305,7 +305,7 @@ class DictionaryMap
 		; Create a new array with sortable, proper cased qwerds by prepending the usage number
 		sortableForms := {}
 		sortedCount := 0
-		for word, garbage in this.qwerds {
+		for word in this.qwerds {
 			qwerd := this.qwerds.item(word)
 			if (not qwerd.isProper) {
 				this.logEvent(4, "Skipping qwerd for not being propercase " qwerd.qwerd)
@@ -322,7 +322,7 @@ class DictionaryMap
 			this.logEvent(4, "Created sortable " sortableForms[sortableKey].qwerd)
 		}
 		; Keep words that were in a dictionary, but displaced by words in a higher priority dictionary
-		for word, garbage in this.displaceds {
+		for word in this.displaceds {
 			qwerd := this.displaceds.item(word)
 			if (not qwerd.isProper) {
 				this.logEvent(4, "Skipping qwerd for not being propercase " qwerd.qwerd)
@@ -396,7 +396,7 @@ class DictionaryMap
 		filehandles[exportdict].Write(header)
 		this.logEvent(2, "Writing to export dictionary " exportdict)
 
-		for word, garbage in this.qwerds {
+		for word in this.qwerds {
 			qwerd := this.qwerds.item(word)
 			if (not qwerd.isLower) {
 				this.logEvent(4, "Skipping qwerd for not being lowercase " qwerd.qwerd)

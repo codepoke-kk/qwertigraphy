@@ -391,7 +391,7 @@ class EditorViewport
 		requiredMatchCount += (RegexUsage) ? 1 : 0
 		requiredMatchCount += (RegexDict) ? 1 : 0
 		foundKeys := {}
-		for qwerdKey, garbage in this.map.qwerds {
+		for qwerdKey in this.map.qwerds {
 			StringLower, qwerdKey, qwerdKey
 			if (foundKeys[qwerdKey]) {
 				; Must be case insensitive in this searching
@@ -589,7 +589,7 @@ class EditorViewport
 		}
 
 		; Loop across all forms and keep every form that begins with this lazy key
-		for loopQwerdKey, garbage in this.map.qwerds {
+		for loopQwerdKey in this.map.qwerds {
 			loopQwerd := this.map.qwerds.item(loopQwerdKey)
 			if (RegExMatch(loopQwerd.qwerd,"^" qwerd ".?$")) {
 				this.logEvent(4, loopQwerd.qwerd " begins with " qwerd)

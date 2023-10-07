@@ -149,7 +149,7 @@ class StrokepathsViewport
 		requiredMatchCount += (RegexPath) ? 1 : 0
 		requiredMatchCount += (RegexPattern) ? 1 : 0
 		foundKeys := {}
-		for strokepathKey, garbage in this.qenv.strokepaths {
+		for strokepathKey in this.qenv.strokepaths {
 			StringLower, strokepathKey, strokepathKey
 			if (foundKeys[strokepathKey]) {
 				; Must be case insensitive in this searching, and can only add found count once per key

@@ -1141,7 +1141,6 @@ Originally,o-r-e-j-e,Oreje,,qejor,885
 Originality,o-r-e-j-\-l,Orejl,,qejlor,885
 Origin,o-r-e-j-n,Orejn,,qejnor,885
 Originate,o-r-e-j-n-a-t,Orejnat,,qaejnort,885
-Originated,o-r-e-j-n-a-t-d,Orejnatd,,qadejnort,885
 Originator,o-r-e-j-n-a-t-e2,Orejnate,,qaejnort,885
 Originators,o-r-e-j-n-a-t-e2-s,Orejnates,,qaejnorst,885
 Originating,o-r-e-j-n-a-t-\-h,Orejnatg,,qaegjnort,885
@@ -1328,7 +1327,6 @@ Centuries,s2-e-nt-r-e-s,Sentres,,qenrst,1123
 Upstart,p-s2-t-a2-t,Pstat,,qapst,1127
 Upstarts,p-s2-t-a2-t-s,Pstats,,qapst,1127
 Restart,r-s2-t-a2-t,Rstat,,qarst,1127
-Restarted,r-s2-t-a2-t-d,Rstatd,,qadrst,1127
 Restarting,r-s2-t-a2-t-\-h,Rstatg,,qagrst,1127
 Restarter,r-s2-t-a2-t-r,Rstatr,,qarst,1127
 Restarters,r-s2-t-a2-t-r-s,Rstatrs,,qarst,1127
@@ -2098,6 +2096,11 @@ Compulsions,k-pl-sh-s,Kplzs,,qklpsz,1895
 Labored,l-a-br-d,Labrd,,qabdlr,1899
 Laboring,l-a-br-\-h,Labrg,,qabglr,1899
 Labors,l-a-br-s,Labrs,,qablrs,1899
+Texted,t-x-d,Txd,,qdtx,1902
+Texting,t-x-\-h,Txg,,qgtx,1902
+Textual,t-x-l,Txl,,qltx,1902
+Textually,t-x-l-e,Txle,,qeltx,1902
+Texts,t-x-s,Txs,,qstx,1902
 Descriptions,d-s2-k-r-sh-s,Dskrzs,,qdkrsz,1909
 Customize,k-u-s-i-s,Kusis,,qiksu,1913
 Customized,k-u-s-i-s-d,Kusisd,,qdiksu,1913
@@ -2551,7 +2554,6 @@ Reroute,r-e-r-u-t,Rerut,,qertu,2671
 Rerouted,r-e-r-u-t-d,Rerutd,,qdertu,2671
 Rerouting,r-e-r-u-t-\-h,Rerutg,,qegrtu,2671
 Reroutes,r-e-r-u-t-s,Reruts,,qerstu,2671
-Routed,r-u-t-d,Rutd,,qdrtu,2671
 Routing,r-u-t-\-h,Rutg,,qgrtu,2671
 Router,r-u-t-r,Rutr,,qrtur,2671
 Routers,r-u-t-r-s,Rutrs,,qrturs,2671
@@ -3473,7 +3475,6 @@ Conversions,k-v-e-r-sh-s,Kverzs,,qekrsvz,4741
 Convert,k-v-e2-t,Kvet,,qektv,4741
 Convertible,k-v-e2-t-b,Kvetb,,qbektv,4741
 Convertibles,k-v-e2-t-b-s,Kvetbs,,qbekstv,4741
-Converted,k-v-e2-t-d,Kvetd,,qdektv,4741
 Converting,k-v-e2-t-\-h,Kvetg,,qegktv,4741
 Converts,k-v-e2-t-s,Kvets,,qekstv,4741
 Continental,k-tn-nt-l,Ktnntl,,qklnt,4753
@@ -4202,7 +4203,6 @@ Theologians,h-e-\-o-n-s,Heons,,qehnos,8166
 Theology,h-e-\-o,Heoo,o,qeho,8166
 Theologies,h-e-\-o-s,Heos,,qehos,8166
 Delete,d-l-e-t,Dlet,,qdelt,8274
-Deleted,d-l-e-t-d,Dletd,,qdelt,8274
 Deleting,d-l-e-t-\-h,Dletg,,qdeglt,8274
 Deleter,d-l-e-t-r,Dletr,,qdelrt,8274
 Deleters,d-l-e-t-r-s,Dletrs,,qdelrst,8274
@@ -4258,7 +4258,6 @@ Constipation,k-s-t-p-a-sh,Kstpaz,,qakpstz,8582
 Objectives,o-b-/-v-s,Obvs,,qbosv,8583
 Miraculously,m-e-r-a-k-e,Merake,,qaekmr,8588
 Import,m-p-o-t,Mpot,,qmopt,8595
-Imported,m-p-o-t-d,Mpotd,,qdmopt,8595
 Importing,m-p-o-t-\-h,Mpotg,,qgmopt,8595
 Importer,m-p-o-t-r,Mpotr,,qmoprt,8595
 Importers,m-p-o-t-r-s,Mpotrs,,qmoprst,8595
@@ -4338,7 +4337,6 @@ Interpretations,n-/-p-sh-s,Npzso,o,qnopsz,9125
 Invention,n-v-n-sh,Nvnsh,,qhnsv,9171
 Inventions,n-v-n-sh-s,Nvnshs,,qhnsv,9171
 Invent,n-v-nt,Nvnt,,qntv,9171
-Invented,n-v-nt-d,Nvntd,,qdntv,9171
 Inventing,n-v-nt-\-h,Nvntg,,qgntv,9171
 Inventor,n-v-nt-r,Nvntr,,qnrtv,9171
 Inventors,n-v-nt-r-s,Nvntrs,,qnrstv,9171

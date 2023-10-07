@@ -118,7 +118,7 @@ class QwertigraphyEnvironment
 		header := "path=pattern`n"
 		fileHandle.Write(header)
 		
-		for strokepathKey, garbage in this.strokepaths {
+		for strokepathKey in this.strokepaths {
 			strokepath := this.strokepaths.item(strokepathKey)
 			pathline := strokepath.path "=" strokepath.pattern "`n"
 			fileHandle.Write(pathline)

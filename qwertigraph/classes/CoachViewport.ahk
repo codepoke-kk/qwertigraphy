@@ -164,8 +164,8 @@ class CoachViewport
 			this.filterCoachEvents()
 	}
 
-	filterCoachEvents() {
-		local garbage
+	filterCoachEvents(){
+        local word
 		Gui MainGUI:Default
 		GuiControlGet RegexCoachSavings
 		GuiControlGet RegexCoachWord
@@ -202,7 +202,7 @@ class CoachViewport
 		Gui, ListView, CoachEventsLV
 		LV_Delete()
 
-		for wordKey, garbage in this.coachEvents {
+		for wordKey in this.coachEvents {
 			word := this.coachEvents.item(wordKey)
 			foundKey := 0
 			foundKey += this.testField("RegexCoachSavings", wordKey, word.savings, RegexCoachSavings)
@@ -233,7 +233,7 @@ class CoachViewport
 
 
 	filterHistoricalEvents() {
-		local garbage
+        local word
 		Gui MainGUI:Default
 		GuiControlGet RegexHistoricalSavings
 		GuiControlGet RegexHistoricalWord
@@ -270,7 +270,7 @@ class CoachViewport
 		Gui, ListView, HistoricalEventsLV
 		LV_Delete()
 
-		for wordKey, garbage in this.lifetimeEvents {
+		for wordKey in this.lifetimeEvents {
 			word := this.lifetimeEvents.item(wordKey)
 			foundKey := 0
 			foundKey += this.testField("RegexHistoricalSavings", wordKey, word.savings, RegexHistoricalSavings)
@@ -501,7 +501,7 @@ class CoachViewport
 	accrueLastSessionEventsToLifetime() {
 		local
 		global CoachingEvent
-		for qwerd, garbage in this.coachEvents {
+		for qwerd in this.coachEvents {
 			sessionEvent := this.coachEvents.item(qwerd)
 			if (! this.lifetimeEvents.item(qwerd).qwerd) {
 				coaching := new CoachingEvent()
@@ -542,7 +542,7 @@ class CoachViewport
 		header := "savings;word;qwerd;chord;form;power;saves;matches;chords;misses;other`n"
 		fileHandle.Write(header)
 
-		for qwerd, garbage in this.lifetimeEvents {
+		for qwerd in this.lifetimeEvents {
 			event := this.lifetimeEvents.item(qwerd)
 			odometerline := event.savings ";" event.word ";" event.qwerd ";" event.chord ";" event.form ";" event.power ";" event.saves ";" event.match ";" event.cmatch ";" event.miss ";" event.other "`n"
 			fileHandle.Write(odometerline)
@@ -557,7 +557,7 @@ class CoachViewport
 		header := "savings;word;qwerd;chord;form;power;saves;matches;chords;misses;other`n"
 		fileHandle.Write(header)
 
-		for qwerd, garbage in this.coachEvents {
+		for qwerd in this.coachEvents {
 			event := this.coachEvents.item(qwerd)
 			odometerline := event.savings ";" event.word ";" event.qwerd ";" event.chord ";" event.form ";" event.power ";" event.saves ";" event.match ";" event.cmatch ";" event.miss ";" event.other "`n"
 			fileHandle.Write(odometerline)
