@@ -1135,6 +1135,8 @@ Dating,td-\-h,Dtg,,qdgt,884
 Update,u-p-td,Updt,,qdptu,884
 Updated,u-p-td-t,Updtd,,qdptu,884
 Updating,u-p-td-\-h,Updtg,,qdgptu,884
+Updater,u-p-td-r,Updtr,,qdprtu,884
+Updaters,u-p-td-r-s,Updtrs,,qdprstu,884
 Updates,u-p-td-s,Updts,,qdpstu,884
 Updated,u-p-td-t,Updtt,,qdptu,884
 Originally,o-r-e-j-e,Oreje,,qejor,885
@@ -1167,6 +1169,7 @@ Terrify,t-e-r-f,Terf,,qefrt,909
 Terrified,t-e-r-f-d,Terfd,,qdefrt,909
 Terrifying,t-e-r-f-\-h,Terfg,,qefgrt,909
 Terrifies,t-e-r-f-s,Terfs,,qefrst,909
+Producing,pr-o-d-u-s-\-h,Produsg,,qdgoprsu,911
 Reproductive,r-pr-o-d-u-k-v,Rprodukv,,qdkopruv,911
 Reproductively,r-pr-o-d-u-k-v-e,Rprodukve,,qdekopruv,911
 Reproduction,r-pr-o-d-u-k-sh,Rprodukz,,qdkopruz,911
@@ -3794,6 +3797,9 @@ Directories,d-r-k-/-r-e-s,Drkres,,qdekrs,5660
 Directors,d-r-k-/-r-s,Drkrs,,qdkrs,5660
 Redirector,r-e-d-r-k-/-r,Redrkr,,qdekr,5660
 Redirectors,r-e-d-r-k-/-r-s,Redrkrs,,qdekrs,5660
+Bundled,b-n-l-d,Bnld,,qbdln,5665
+Bundling,b-n-l-\-h,Bnlg,,qbgln,5665
+Bundles,b-n-l-s,Bnls,,qblns,5665
 Resolve,r-s-o-l-v,Rsolv,,qlorsv,5667
 Resolving,r-s-o-l-v-\-h,Rsolvg,,qglorsv,5667
 Resolves,r-s-o-l-v-s,Rsolvs,,qlorsv,5667
@@ -4748,6 +4754,7 @@ Clutches,k-l-ch-s,Klcs,,qckls,12870
 Authoritatively,o-th-rdf-e,Ohrdfe,,qdefhor,12938
 Faithlessly,f-a-th2-l-e,Fahle,,qaefhl,12950
 Faithless,f-a-th2-l,Fahlo,o,qafhlo,12950
+Expirations,e-s-pr-a-sh-s,Xprazs,,qaprsxz,13052
 Needy,n-e-d-e,Nede,,qden,13093
 Neediness,n-e-d-e-n-s,Nedens,,qdens,13093
 Neediest,n-e-d-e-s-t,Nedest,,qdenst,13093
@@ -5239,6 +5246,8 @@ Retrieved,r-\-v-d,Rvd,,qdrv,22760
 Retrieving,r-\-v-\-h,Rvg,,qgrv,22760
 Retrieval,r-\-v-l,Rvl,,qlrv,22760
 Retrievals,r-\-v-l-s,Rvls,,qlrsv,22760
+Retriever,r-\-v-r,Rvr,,qrv,22760
+Retrievers,r-\-v-r-s,Rvrs,,qrsv,22760
 Retrieves,r-\-v-s,Rvs,,qrsv,22760
 Lax,l-a-k-s,Laksu,u,qaklsu,22844
 Laxity,l-a-k-s-t-e,Laxte,,qaeltx,22844
@@ -6521,6 +6530,10 @@ Scrolled,s-k-r-o-l-d,Skrold,,qdklors,91532
 Scrolling,s-k-r-o-l-\-h,Skrolg,,qgklors,91532
 Scrolls,s-k-r-o-l-s,Skrols,,qklors,91532
 Samaritan,s-a-mt-a-n,Samtan,,qamnst,91541
+Batch,b-a-ch,Bac,,qabc,91556
+Batched,b-a-ch-d,Bacd,,qabcd,91556
+Batching,b-a-ch-\-h,Bacg,,qabcg,91556
+Batches,b-a-ch-s,Bacs,,qabcs,91556
 Lifetime,l-a-f-tm,Laftm,,qaflmt,91587
 Lifetimes,l-a-f-tm-s,Laftms,,qaflmst,91587
 Betrayal,b-t-r-a-l,Btral,,qablrt,91613
