@@ -391,6 +391,7 @@ class EditorViewport
 		requiredMatchCount += (RegexUsage) ? 1 : 0
 		requiredMatchCount += (RegexDict) ? 1 : 0
 		foundKeys := {}
+        ; I'm getting a syntax error here on a line that does not exist 
 		for qwerdKey in this.map.qwerds {
 			StringLower, qwerdKey, qwerdKey
 			if (foundKeys[qwerdKey]) {
