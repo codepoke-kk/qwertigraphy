@@ -465,6 +465,14 @@ Rachet,r-a-ch-t,Ract,,qacrt,427
 Racheted,r-a-ch-t-d,Ractd,,qacdrt,427
 Racheting,r-a-ch-t-\-h,Ractg,,qacgrt,427
 Rachets,r-a-ch-t-s,Racts,,qacrst,427
+Tractor,t-r-a-k-r,Trakr,,qakrt,427
+Tractored,t-r-a-k-r-d,Trakrd,,qadkrt,427
+Tractoring,t-r-a-k-r-\-h,Trakrg,,qagkrt,427
+Tractors,t-r-a-k-r-s,Trakrs,,qakrst,427
+Traction,t-r-a-k-sh,Trakz,,qakrtz,427
+Tractioned,t-r-a-k-sh-d,Trakzd,,qadkrtz,427
+Tractioning,t-r-a-k-sh-\-h,Trakzg,,qagkrtz,427
+Tractions,t-r-a-k-sh-s,Trakzs,,qakrstz,427
 Unquestionable,n-k-n-b,Nqnb,,qbnq,430
 Unquestionably,n-k-n-b-e,Nqnbe,,qbenq,430
 Unquestioned,n-k-n-d,Nqnd,,qdnq,430
@@ -3882,6 +3890,9 @@ Testaments,t-e-s-t-a-m-s,Testams,,qaemst,5895
 Adequately,a-d-e-k-e,Adeqe,,qadeq,5897
 Inadequate,e-n-a-d-e-k,Enadeq,,qadenq,5897
 Inadequately,e-n-a-d-e-k-e,Enadeqe,,qadenq,5897
+Surveyed,s2-e-v-a-d,Sevad,,qadesv,5904
+Surveying,s2-e-v-a-\-h,Sevag,,qaegsv,5904
+Surveys,s2-e-v-a-s,Sevas,,qaesv,5904
 Vegetable,v-e-j-t,Vejt,,qejtv,5914
 Vegetarian,v-e-j-t-r-ea-n,Vejtren,,qejnrtv,5914
 Vegetarians,v-e-j-t-r-ea-n-s,Vejtrens,,qejnrstv,5914
@@ -3938,6 +3949,7 @@ Modifications,m-o-d-\-f-s,Modfs,,qdfmos,6086
 Modifies,m-o-df-s,Modfso,o,qdfmos,6086
 Dominions,d-o-mn-u-n-s,Domnuns,,qdmnosu,6094
 Preachers,pr-e2-ch-e2-s,Preces,,qceprs,6137
+Attractions,a-t-r-k-sh-s,Atrkzs,,qakrstz,6155
 Momentarily,m-o-m-r-ye,Momry,,qmory,6159
 Faster,f-a-s2-t-e2,Faste,,qaefst,6175
 Competently,k-p-tn-e,Kptne,,qeknpt,6196
@@ -4707,6 +4719,7 @@ Variability,v-a-r-\-b,Varbo,o,qaborv,12334
 Variables,v-a-r-b-s,Varbs,,qabrsv,12334
 Emerged,e-m-e-j-d,Emejd,,qdejm,12391
 Emerging,e-m-e-j-\-h,Emejg,,qegjm,12391
+Distractions,d-s-/-k-sh-s,Dskzs,,qdksz,12405
 Revisioned,r-v-e-sh-d,Rvezd,,qdervz,12437
 Revisioning,r-v-e-sh-\-h,Rvezg,,qegrvz,12437
 Revisions,r-v-e-sh-s,Rvezs,,qersvz,12437
@@ -4892,6 +4905,8 @@ Overturn,^-o-\-t-e-n,Oten,,qenot,15426
 Overturned,^-o-\-t-e-n-d,Otend,,qenotd,15426
 Overturning,^-o-\-t-e-n-\-h,Oteng,,qenotg,15426
 Overturns,^-o-\-t-e-n-s,Otens,,qenots,15426
+Registry,r-e2-j-e2-s2-t-r-e,Rejestre,,qejrst,15514
+Registries,r-e2-j-e2-s2-t-r-e-s,Rejestres,,qejrst,15514
 Radical,r-a-d-\-k,Radk,,qadkr,15720
 Radicalize,r-a-d-\-k-i-s,Radkis,,qadikrs,15720
 Radicalized,r-a-d-\-k-i-s-d,Radkisd,,qadikrs,15720
@@ -5484,6 +5499,7 @@ Decrypts,d-/-k-s,Dks,,qdks,29965
 Detracts,d-/-k-s,Dkso,o,qdkos,29965
 Decryption,d-/-k-sh,Dkz,,qdkz,29965
 Detraction,d-/-k-sh,Dkzo,o,qdkoz,29965
+Detractions,d-/-k-sh-s,Dkzs,,qdksz,29965
 Functionally,f-nk-/-l-e,Fqle,,qeflq,30062
 Functionality,f-nk-/-l,Fqlo,o,qflq,30062
 Functionalities,f-nk-/-l-s,Fqls,,qflqs,30062
@@ -5615,7 +5631,9 @@ Sergeants,s-e2-jnt-s,Sejnts,,qejnsts,37586
 Inclusions,e-/-sh-s,Ezs,,qesz,37756
 Migrated,m-i-g-r-a-d,Migrad,,qagimrd,37983
 Migrating,m-i-g-r-a-\-h,Migrag,,qagimrg,37983
+Migrator,m-i-g-r-a-r,Migrar,,qagimr,37983
 Migratory,m-i-g-r-a-\-r-e,Migrare,,qaegimr,37983
+Migrators,m-i-g-r-a-r-s,Migrars,,qagimrs,37983
 Teen,t-e-n,Tene,e,qentz,38051
 Tenet,tn-e-t,Tnet,,qentz,38123
 Installments,n-s2-t-o-l-m-s,Nstolms,,qlmnost,38139
@@ -5936,6 +5954,7 @@ Committing,k-m-e-t-\-h,Kmetg,,qegkmt,70321
 Commitment,k-m-e-t-m,Kmetm,,qekmt,70321
 Commitments,k-m-e-t-m-s,Kmetms,,qekmst,70321
 Commits,k-m-e-t-s,Kmets,,qekmst,70321
+Concur,k-k-r,Kkro,,qkor,70329
 Debug,d-b-u-g,Dbug,,qbdgu,70330
 Debugged,d-b-u-g-d,Dbugd,,qbdgud,70330
 Debugging,d-b-u-g-\-h,Dbugg,,qbdgug,70330
