@@ -391,59 +391,59 @@ class EditorViewport
 		requiredMatchCount += (RegexUsage) ? 1 : 0
 		requiredMatchCount += (RegexDict) ? 1 : 0
 		foundKeys := {}
-		for qwerdKey in this.map.qwerds {
-			StringLower, qwerdKey, qwerdKey
-			if (foundKeys[qwerdKey]) {
+		for loopQwerdKey in this.map.qwerds {
+			StringLower, loopQwerdKey, loopQwerdKey
+			if (foundKeys[loopQwerdKey]) {
 				; Must be case insensitive in this searching
 				continue
 			}
-			qwerd := this.map.qwerds.item(qwerdKey)
+			qwerd := this.map.qwerds.item(loopQwerdKey)
 			if (RegexDict) {
 				if (RegExMatch(qwerd.dictionary,RegexDict)) {
-					this.logEvent(4, "RegexDict matched " qwerdKey)
-					foundKeys[qwerdKey] := (foundKeys[qwerdKey]) ? foundKeys[qwerdKey] + 1 : 1
+					this.logEvent(4, "RegexDict matched " loopQwerdKey)
+					foundKeys[loopQwerdKey] := (foundKeys[loopQwerdKey]) ? foundKeys[loopQwerdKey] + 1 : 1
 				}
 			}
 			if (RegexWord) {
 				if (RegExMatch(qwerd.word,RegexWord)) {
-					this.logEvent(4, "RegexWord matched " qwerdKey)
-					foundKeys[qwerdKey] := (foundKeys[qwerdKey]) ? foundKeys[qwerdKey] + 1 : 1
+					this.logEvent(4, "RegexWord matched " loopQwerdKey)
+					foundKeys[loopQwerdKey] := (foundKeys[loopQwerdKey]) ? foundKeys[loopQwerdKey] + 1 : 1
 				}
 			}
 			if (RegexForm) {
 				if (RegExMatch(qwerd.form,RegexForm)) {
-					this.logEvent(4, "RegexForm matched " qwerdKey)
-					foundKeys[qwerdKey] := (foundKeys[qwerdKey]) ? foundKeys[qwerdKey] + 1 : 1
+					this.logEvent(4, "RegexForm matched " loopQwerdKey)
+					foundKeys[loopQwerdKey] := (foundKeys[loopQwerdKey]) ? foundKeys[loopQwerdKey] + 1 : 1
 				}
 			}
 			if (RegexQwerd) {
 				if (RegExMatch(qwerd.qwerd,RegexQwerd)) {
-					this.logEvent(4, "RegexQwerd matched " qwerdKey)
-					foundKeys[qwerdKey] := (foundKeys[qwerdKey]) ? foundKeys[qwerdKey] + 1 : 1
+					this.logEvent(4, "RegexQwerd matched " loopQwerdKey)
+					foundKeys[loopQwerdKey] := (foundKeys[loopQwerdKey]) ? foundKeys[loopQwerdKey] + 1 : 1
 				}
 			}
 			if (RegexKeyer) {
 				if (RegExMatch(qwerd.keyer,RegexKeyer)) {
-					this.logEvent(4, "RegexKeyer matched " qwerdKey)
-					foundKeys[qwerdKey] := (foundKeys[qwerdKey]) ? foundKeys[qwerdKey] + 1 : 1
+					this.logEvent(4, "RegexKeyer matched " loopQwerdKey)
+					foundKeys[loopQwerdKey] := (foundKeys[loopQwerdKey]) ? foundKeys[loopQwerdKey] + 1 : 1
 				}
 			}
 			if (RegexChord) {
 				if (RegExMatch(qwerd.chord,RegexChord)) {
-					this.logEvent(4, "RegexChord matched " qwerdKey)
-					foundKeys[qwerdKey] := (foundKeys[qwerdKey]) ? foundKeys[qwerdKey] + 1 : 1
+					this.logEvent(4, "RegexChord matched " loopQwerdKey)
+					foundKeys[loopQwerdKey] := (foundKeys[loopQwerdKey]) ? foundKeys[loopQwerdKey] + 1 : 1
 				}
 			}
 			if (RegexChordable) {
 				if (RegExMatch(qwerd.chordable,RegexChordable)) {
-					this.logEvent(4, "RegexChordable matched " qwerdKey)
-					foundKeys[qwerdKey] := (foundKeys[qwerdKey]) ? foundKeys[qwerdKey] + 1 : 1
+					this.logEvent(4, "RegexChordable matched " loopQwerdKey)
+					foundKeys[loopQwerdKey] := (foundKeys[loopQwerdKey]) ? foundKeys[loopQwerdKey] + 1 : 1
 				}
 			}
 			if (RegexUsage) {
 				if (RegExMatch(qwerd.usage,RegexUsage)) {
-					this.logEvent(4, "RegexUsage matched " qwerdKey)
-					foundKeys[qwerdKey] := (foundKeys[qwerdKey]) ? foundKeys[qwerdKey] + 1 : 1
+					this.logEvent(4, "RegexUsage matched " loopQwerdKey)
+					foundKeys[loopQwerdKey] := (foundKeys[loopQwerdKey]) ? foundKeys[loopQwerdKey] + 1 : 1
 				}
 			}
 		}
