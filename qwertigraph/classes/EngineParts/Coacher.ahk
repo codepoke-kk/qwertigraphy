@@ -1,4 +1,4 @@
-﻿
+
 Class Coacher {
 
 	__New(engine) {
@@ -46,7 +46,7 @@ Class Coacher {
 	CoachAhead(accumulated) {
 		this.logEvent(4, "Coaching ahead " accumulated)
 		if (StrLen(accumulated) < 1) {
-			this.logEvent(4, "Bailing due to short in string (" accumulated ")")
+			this.logEvent(4, "Bailing due to short in-string (" accumulated ")")
 			return
 		}
 		
@@ -61,12 +61,23 @@ Class Coacher {
 		; Is this token a word 
 		coachAheadQwerd := new TokenEvent(in_chars, "")
 		coachAheadQwerd.ink := "white"
-		if (this.engine.map.qwerds.item(in_chars).qwerd) {
-			this.logEvent(4, "Found coach ahead match for " this.engine.map.qwerds.item(in_chars).qwerd)
-            coachAheadQwerd.qwerd := this.engine.map.qwerds.item(in_chars).qwerd
-			coachAheadQwerd.word := this.engine.map.qwerds.item(in_chars).word
-			coachAheadQwerd.form := this.engine.map.qwerds.item(in_chars).form
-			coachAheadQwerd.chord := this.engine.map.qwerds.item(in_chars).chord
+        
+        if (RegExMatch(in_chars, "^\*+$")) {
+            this.logEvent(4, "Skipping for numeric in_chars ")
+            return
+        } else {
+            this.logEvent(4, "Allowing in_chars " in_chars)
+        }
+		if (this.engine.map.qwerds.exists(in_chars)) {
+            if (this.engine.map.qwerds.item(in_chars).qwerd) {
+                this.logEvent(4, "Found coach ahead match for " this.engine.map.qwerds.item(in_chars).qwerd)
+                coachAheadQwerd.qwerd := this.engine.map.qwerds.item(in_chars).qwerd
+                coachAheadQwerd.word := this.engine.map.qwerds.item(in_chars).word
+                coachAheadQwerd.form := this.engine.map.qwerds.item(in_chars).form
+                coachAheadQwerd.chord := this.engine.map.qwerds.item(in_chars).chord
+            } else {
+                this.logEvent(1, "Found qwerd key match for " in_chars " that does not have a qwerd")
+            }
 		} else if (this.engine.map.hints.item(in_chars).word) {
 			this.logEvent(4, "Found coach ahead hint for " this.engine.map.hints.item(in_chars).word)
             coachAheadQwerd.qwerd := this.engine.map.hints.item(in_chars).qwerd
@@ -86,49 +97,81 @@ Class Coacher {
 
 	presentTextualCoachingAhead(in_chars) {
 		; Is this token a word 
-		if (this.engine.map.qwerds.item(in_chars).word) {
-			coachAheadWord := this.engine.map.qwerds.item(in_chars).word
-		} else {
-			coachAheadWord := "--"
-		}
+        ; Test whether qwerd exists before testing whether it's a word 
+        if (this.engine.map.qwerds.exists(in_chars)) {
+            if (this.engine.map.qwerds.item(in_chars).word) {
+                coachAheadWord := this.engine.map.qwerds.item(in_chars).word
+            } else {
+                this.logEvent(1, "Defensively found a qwerd without a word at key, " in_chars)
+                coachAheadWord := "--"
+            }
+        } else {
+            coachAheadWord := "--"
+        }
 		this.logEvent(4, "Coachahead word is " coachAheadWord)
 		coachAheadNote := ""
 		For letter_index, letter in ["u", "i", "o", ""]
 		{
 			; Show the whole qwerd as the last coach ahead hint in this line. That requires some adjustment. 
 			printLetter := (StrLen(letter)) ? letter : in_chars 
-			printWord := Substr(this.engine.map.qwerds.item(in_chars . letter).word, 1, (11 - StrLen(printLetter)))
-			if (this.engine.map.qwerds.item(in_chars . letter).word) {
-				coachAheadPhrase := Format("{:2} {:1}= {:-10}", printLetter, this.engine.map.qwerds.item(in_chars . letter).reliability, printWord)
-				this.logEvent(4, "Adding phrase to coaching " coachAheadPhrase)
-			} else {
-				coachAheadPhrase := Format("{:2} {:1}= {:-10}", printLetter, " ", "")
-				this.logEvent(4, "Adding phrase to coaching " coachAheadPhrase)
-			}
+            ; I'm generating false hashes by calling to qwerds that don't exist 
+            if (this.engine.map.qwerds.exists(in_chars . letter)) {
+                printWord := Substr(this.engine.map.qwerds.item(in_chars . letter).word, 1, (11 - StrLen(printLetter)))
+            } else {
+                printWord := ""
+            }
+            ; Test whether qwerd exists before testing whether it's a word 
+            if (this.engine.map.qwerds.exists(in_chars . letter)) {
+                if (this.engine.map.qwerds.item(in_chars . letter).word) {
+                    coachAheadPhrase := Format("{:2} {:1}= {:-10}", printLetter, this.engine.map.qwerds.item(in_chars . letter).reliability, printWord)
+                    this.logEvent(4, "Adding phrase to coaching " coachAheadPhrase)
+                } else {
+                    this.logEvent(1, "Defensively found a qwerd that has no word at key, " in_chars . letter)
+                    coachAheadPhrase := Format("{:2} {:1}= {:-10}", printLetter, " ", "")
+                    this.logEvent(4, "Adding phrase to coaching " coachAheadPhrase)
+                }
+            } else {
+                coachAheadPhrase := Format("{:2} {:1}= {:-10}", printLetter, " ", "")
+                this.logEvent(4, "Adding phrase to coaching " coachAheadPhrase)
+            }
 			coachAheadNote .= coachAheadPhrase
 		}
 		coachAheadNote .= "`n"
 		For letter_index, letter in ["e", "a", "d", "t"]
 		{
-			if (this.engine.map.qwerds.item(in_chars . letter).word) {
-				coachAheadPhrase := Format("{:2} {:1}= {:-10}", letter, this.engine.map.qwerds.item(in_chars . letter).reliability, Substr(this.engine.map.qwerds.item(in_chars . letter).word, 1, 10))
-				this.logEvent(4, "Adding phrase to coaching " coachAheadPhrase)
-			} else {
-				coachAheadPhrase := Format("{:2} {:1}= {:-10}", letter, " ", "")
-				this.logEvent(4, "Adding phrase to coaching " coachAheadPhrase)
-			}
+            ; Test whether qwerd exists before testing whether it's a word 
+            if (this.engine.map.qwerds.exists(in_chars . letter)) {
+                if (this.engine.map.qwerds.item(in_chars . letter).word) {
+                    coachAheadPhrase := Format("{:2} {:1}= {:-10}", letter, this.engine.map.qwerds.item(in_chars . letter).reliability, Substr(this.engine.map.qwerds.item(in_chars . letter).word, 1, 10))
+                    this.logEvent(4, "Adding phrase to coaching " coachAheadPhrase)
+                } else {
+                    this.logEvent(1, "Defensively found a qwerd that has no word at key, " in_chars . letter)
+                    coachAheadPhrase := Format("{:2} {:1}= {:-10}", letter, " ", "")
+                    this.logEvent(4, "Adding phrase to coaching " coachAheadPhrase)
+                }
+            } else {
+                coachAheadPhrase := Format("{:2} {:1}= {:-10}", letter, " ", "")
+                this.logEvent(4, "Adding phrase to coaching " coachAheadPhrase)
+            }
 			coachAheadNote .= coachAheadPhrase
 		}
 		coachAheadNote .= "`n"
 		For letter_index, letter in ["s", "g", "n", "r"]
 		{
-			if (this.engine.map.qwerds.item(in_chars . letter).word) {
-				coachAheadPhrase := Format("{:2} {:1}= {:-10}", letter, this.engine.map.qwerds.item(in_chars . letter).reliability, Substr(this.engine.map.qwerds.item(in_chars . letter).word, 1, 10))
-				this.logEvent(4, "Adding phrase to coaching " coachAheadPhrase)
-			} else {
-				coachAheadPhrase := Format("{:2} {:1}= {:-10}", letter, " ", "")
-				this.logEvent(4, "Adding phrase to coaching " coachAheadPhrase)
-			}
+            ; Test whether qwerd exists before testing whether it's a word 
+            if (this.engine.map.qwerds.exists(in_chars . letter)) {
+                if (this.engine.map.qwerds.item(in_chars . letter).word) {
+                    coachAheadPhrase := Format("{:2} {:1}= {:-10}", letter, this.engine.map.qwerds.item(in_chars . letter).reliability, Substr(this.engine.map.qwerds.item(in_chars . letter).word, 1, 10))
+                    this.logEvent(4, "Adding phrase to coaching " coachAheadPhrase)
+                } else {
+                    this.logEvent(1, "Defensively found a qwerd that has no word at key, " in_chars . letter)
+                    coachAheadPhrase := Format("{:2} {:1}= {:-10}", letter, " ", "")
+                    this.logEvent(4, "Adding phrase to coaching " coachAheadPhrase)
+                }
+            } else {
+                coachAheadPhrase := Format("{:2} {:1}= {:-10}", letter, " ", "")
+                this.logEvent(4, "Adding phrase to coaching " coachAheadPhrase)
+            }
 			coachAheadNote .= coachAheadPhrase
 		}
 		this.logEvent(4, "Coachahead note " coachAheadNote)

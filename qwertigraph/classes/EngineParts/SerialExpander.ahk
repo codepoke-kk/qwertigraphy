@@ -1,4 +1,4 @@
-﻿
+
 Class SerialExpander {
 
 	__New(engine) {
@@ -14,7 +14,8 @@ Class SerialExpander {
 	}
 
 	Expand(token) {
-		this.logEvent(4, "Expanding after " token.ender " with " token.input)
+		this.logEvent(2, "Before expansion map.qwerds count = " this.engine.map.qwerds.count)
+		this.logEvent(2, "Expanding after " token.ender " with " token.input)
 
 		lastToken := 0
 		nextToLastToken := 0
@@ -104,17 +105,26 @@ Class SerialExpander {
             token.qwerdobject := this.nullQwerd
             token.output := this.nullQwerd.word
             token.match := 1
-        } else if (this.engine.map.qwerds.item(token.input).word) {
-			token.qwerdobject := this.engine.map.qwerds.item(token.input)
-			token.output := token.qwerdobject.word
-			token.match := 1
+        ; Testing for qwerds.item(key).word creates a blank object with that key, if one does not exist. 
+        ; In this case, that was creating blank qwerd keys of my passwords - not good. 
+        ; I need to find other cases, because the number of qwerd keys increases all day long - not good 
+        ; This fixes creation of my passwords as keys, so it's a keeper of a fix
+        } else if (this.engine.map.qwerds.exists(token.input)) {
+            if (this.engine.map.qwerds.item(token.input).word) {
+                token.qwerdobject := this.engine.map.qwerds.item(token.input)
+                token.output := token.qwerdobject.word
+                token.match := 1
+            } else {
+                this.logEvent(1, "Found a token that exists and has no word, " token.input)
+            }
 		} else {
 			this.nullQwerd.word := token.input
 			this.nullQwerd.qwerd := token.input
 			token.qwerdobject := this.nullQwerd
 			token.miss := 1
 		}
-		this.logEvent(4, token.input " -> " token.output)
+		this.logEvent(2, token.input " -> " token.output)
+		this.logEvent(2, "After expansion map.qwerds count = " this.engine.map.qwerds.count)
 		return token
 	}
 

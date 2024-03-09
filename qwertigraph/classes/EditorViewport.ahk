@@ -381,6 +381,8 @@ class EditorViewport
 
 		this.logEvent(2, "RegexWord " RegexWord ", RegexForm " RegexForm ", RegexQwerd " RegexQwerd ", RegexKeyer " RegexKeyer ", RegexChord " RegexChord ", RegexChordable " RegexChordable ", RegexUsage " RegexUsage ", RegexDict " RegexDict )
 
+        this.logEvent(2, "Starting this.map.qwerds count before looping search for matching words is " this.map.qwerds.count)
+        failureCount := 0
 		requiredMatchCount := 0
 		requiredMatchCount += (RegexWord) ? 1 : 0
 		requiredMatchCount += (RegexForm) ? 1 : 0
@@ -397,7 +399,15 @@ class EditorViewport
 				; Must be case insensitive in this searching
 				continue
 			}
-			qwerd := this.map.qwerds.item(loopQwerdKey)
+            try {
+                this.logEvent(4, "loopQwerdKey is " loopQwerdKey)
+                qwerd := this.map.qwerds.item(loopQwerdKey)
+                this.logEvent(4, "found qwerd " qwerd.qwerd)
+            } catch e {
+                this.logEvent(2, "loopQwerdKey " loopQwerdKey " failed")
+                failureCount += 1
+                continue 
+            }
 			if (RegexDict) {
 				if (RegExMatch(qwerd.dictionary,RegexDict)) {
 					this.logEvent(4, "RegexDict matched " loopQwerdKey)
@@ -447,6 +457,11 @@ class EditorViewport
 				}
 			}
 		}
+        this.logEvent(2, "Ending this.map.qwerds count after looping search for matching words is " this.map.qwerds.count)
+        
+        if (failureCount) {
+            Msgbox, % "Failed to load " failureCount " words. Check Editor logs"
+        }
 
 
 		Gui, ListView, EditorLV
@@ -609,14 +624,19 @@ class EditorViewport
 					this.logEvent(4, "Getting dict fullname from " matchingQwerd.dict)
 					matchedQwerdKey := this.map.dictionaryShortToFullNames[matchingQwerd.dict] "!!" matchingQwerd.word
 					this.logEvent(4, "Matched " keyedQwerd " as " matchedQwerdKey)
-					if (word = this.map.qwerds.item(qwerd).word) {
-						this.logEvent(4, "Matched keyer, qwerd, and word " this.map.qwerds.item(qwerd).word ". Returning this keyer: " keyer)
-						Return keyer
-					} else {
-						this.logEvent(4, "Keyer " this.map.qwerds.item(qwerd).word " taken. Owned by " matchingQwerd.word)
-						usedKeyFound := true
-						break
-					}
+                    ; Prechecking key exists before all lookups, since the hash is expanding somewhere 
+					if (this.map.qwerds.exists(qwerd)) {
+                        if (word = this.map.qwerds.item(qwerd).word) {
+                            this.logEvent(4, "Matched keyer, qwerd, and word " this.map.qwerds.item(qwerd).word ". Returning this keyer: " keyer)
+                            Return keyer
+                        } else {
+                            this.logEvent(4, "Keyer " this.map.qwerds.item(qwerd).word " taken. Owned by " matchingQwerd.word)
+                            usedKeyFound := true
+                            break
+                        }
+                    } else {
+                        this.logEvent(1, "Defensively found " qwerd " does not exist in keyer search. Maybe should not happen?")
+                    }
 				} else {
 					this.logEvent(4, "Not a match for " matchingQwerd.qwerd)
 				}
