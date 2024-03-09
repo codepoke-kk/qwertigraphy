@@ -572,8 +572,14 @@ Class DashboardViewport
         this.LogEvent(4, "Coming soon " this.engine.keyboard.Token)
         this.coachAheadNote := this.engine.keyboard.Token
         For letter_index, letter in this.comingSoonKeys {
-           if (this.engine.map.qwerds.item(this.engine.keyboard.Token . letter).word) {
-                coachAheadPhrase := Format("{:2} {:1}= {:-20}", letter, this.engine.map.qwerds.item(this.engine.keyboard.Token . letter).reliability, this.engine.map.qwerds.item(this.engine.keyboard.Token . letter).word)
+            ; Need to test whether this qwerd exists before testing whether it's a word 
+            if (this.engine.map.qwerds.exists(this.engine.keyboard.Token . letter)) {
+                if (this.engine.map.qwerds.item(this.engine.keyboard.Token . letter).word) {
+                    coachAheadPhrase := Format("{:2} {:1}= {:-20}", letter, this.engine.map.qwerds.item(this.engine.keyboard.Token . letter).reliability, this.engine.map.qwerds.item(this.engine.keyboard.Token . letter).word)
+                } else {
+                    this.logEvent(1, "Found a qwerd key without a word, " this.engine.keyboard.Token . letter)
+                    coachAheadPhrase := Format("{:2} {:1}= {:-20}", letter, " ", "")
+                }
             } else {
                 coachAheadPhrase := Format("{:2} {:1}= {:-20}", letter, " ", "")
             }
