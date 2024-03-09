@@ -1,4 +1,4 @@
-﻿
+
 Class Coacher {
 
 	__New(engine) {

@@ -1,4 +1,4 @@
-﻿
+
 Class SerialExpander {
 
 	__New(engine) {
