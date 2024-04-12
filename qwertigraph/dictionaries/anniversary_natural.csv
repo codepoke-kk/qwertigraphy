@@ -11,6 +11,7 @@ Received,r-s-e-/-t,Rsed,,,310
 Passed,p-a-s2-t,Pasdo,o,,319
 Replied,r-e-p-/-t,Repd,,,415
 Family,f-a-m-ya,Famy,,,431
+Families,f-a-m-ya-s,Famys,,qafmsy,431
 Returned,r-e-t-/-t,Retd,,,441
 Followed,f-o-/-t,Fod,,,462
 Carried,k-a-e-/-t,Kaed,,,477
@@ -209,6 +210,7 @@ Requested,r-k-e-s-/-t,Rqesd,,,4363
 Suited,s2-u-td,Sutd,,,4369
 Tempted,tm-td,Tmtd,,,4419
 Happily,^-h-\-a-p-ya,Hapy,,,4431
+Unhappily,in-^-h-\-a-p-ya,Nhapy,,qahnpy,4431
 Purchased,pr-ch-/-t,Prcd,,,4439
 Abundant,a-b-n-tn,Abndn,,,4532
 Hired,^-h-\-i-r-/-t,Hird,,,4812

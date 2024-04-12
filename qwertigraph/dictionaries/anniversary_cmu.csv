@@ -128,7 +128,6 @@ Hoping,hopg,Hopg,,,90210
 Nag,nag,Nagi,i,,90215
 Nang,nag,Nago,o,,90216
 Reading,rdg,Rdg,,,90219
-Struggling,strglg,Strglg,,,90220
 Showing,zog,Zog,,,90221
 Signer,sinE,Sineo,o,,90223
 Spelled,spld,Spld,,,90224
@@ -172,6 +171,9 @@ Stretch,strec,Strec,,,90275
 Comprehensive,kmprehensv,Kmprhensv,,,90280
 Forum,fm,Fmi,i,,90281
 Punch,pnc,Pnc,,,90282
+Punched,pnc-d,Pncd,,qcdnp,90282
+Punching,pnc-\-h,Pncg,,qcgnp,90282
+Punches,pnc-s,Pncs,,qcnps,90282
 Jeff,jef,Jef,,,90283
 Pulling,pulg,Pulg,,,90285
 Framed,framd,Framd,,,90287
@@ -248,7 +250,6 @@ Ending,ndg,Ndg,,,90401
 Endings,ndS,Ndsi,i,,90402
 Stile,stil,Stilo,o,,90404
 Threatened,Hretnd,Hretnd,,,90405
-Firing,firg,Firg,,,90406
 Dana,dn,Dny1,y1,,90407
 Crossing,krosg,Krosg,,,90408
 Meinen,minn,Minn,,,90411
@@ -278,7 +279,6 @@ Shaken,zakn,Zakn,,,90437
 Knows,nos,Nos,,,90438
 Lisa,les,Lesy,y,,90439
 Joshua,jozu,Jozu,,,90440
-Puzzles,pzlz,Pzlz,,,90441
 Woes,uos,Uosa,a,,90443
 Suspects,sspks,Sspks,,,90444
 Increased,nkrest,Nkrest,,,90445
@@ -469,7 +469,6 @@ Sarcasm,sorkasm,Sorkasm,,,90703
 Rubble,rAH1b,Rah1b,,,90704
 Buggy,bge,Bge,,,90705
 Barking,borkg,Borkg,,,90706
-Fired,fird,Fird,,,90708
 Uplift,plft,Plft,,,90709
 Reload,rlod,Rlod,,,90710
 Beats,bts,Btsi,i,,90712
@@ -636,7 +635,6 @@ Pedal,pedl,Pedl,,,90951
 Throttle,Hrotl,Hrotl,,,90952
 Stick,stek,Stek,,,90953
 Sticks,steks,Steks,,,90954
-Frustrating,frstratg,Frstratg,,,90955
 Leaks,leks,Leksi,i,,90958
 Reliability,rliblte,Rliblte,o,,90960
 Brakes,braks,Brakso,o,,90961
@@ -652,7 +650,6 @@ Choke,cok,Coko,o,,90977
 BOLT,bolt,Bolto,o,,90978
 Spitting,spetg,Spetg,,,90979
 Compared,kPAd,Kpad,,,90980
-Displaced,dsplast,Dsplast,,,90981
 Empirical,mperkl,Mprkl,,,90982
 Reasoning,rsng,Rsng,,,90983
 Brutal,brutl,Brutl,,,90984
@@ -729,7 +726,6 @@ Deferred,dfEd,Dfed,,,91085
 Intensity,ntnste,Ntnste,,,91089
 Gee,je,Jee,e,,91090
 Hack,hak,Hak,,,91091
-Flavors,flavrs,Flavrs,,,91092
 Smith,smeh,Smeh,,,91093
 Plastic,plastk,Plastk,,,91095
 Grapes,graps,Graps,,,91096
@@ -948,7 +944,6 @@ Ugh,g,Gii,ii,,91401
 Bridging,brejg,Brejg,,,91402
 Brig,breg,Breg,,,91403
 Revisited,rvestd,Rvestd,,,91404
-Overwhelmed,Ouelmd,Ouelmd,,,91405
 Sa,so,Soi,i,,91406
 Unclaimed,nklamd,Nklamd,,,91407
 Severely,svere,Svere,,,91408
@@ -1030,7 +1025,6 @@ Masking,maskg,Maskg,,,91510
 Sunk,sq,Sq,,,91511
 Assets,asts,Asts,,,91512
 Mt,mnt,Mnta,a,,91513
-Overwhelming,Ouelmg,Ouelmg,,,91514
 Precedence,presdns,Prsdns,,,91517
 Gill,gel,Gelo,o,,91518
 Colla,kol,Kole,e,,91519
@@ -1049,7 +1043,6 @@ Harvey,horve,Horve,,,91537
 SIE,se,Sew,w,,91539
 Alt,olt,Olt,,,91545
 Camper,kampr,Kampr,,,91546
-Revolves,rvolvs,Rvolvs,,,91547
 Pirate,pirt,Pirt,,,91548
 Arrow,aro,Aroo,o,,91549
 Pester,pestE,Pesteo,o,,91552
@@ -1103,7 +1096,6 @@ Drops,drops,Dropso,o,,91619
 Probed,probd,Prbd,,,91620
 Actors,aktrs,Aktrs,,,91621
 Todo,tudu,Tudu,,,91622
-Amusingly,amusG,Amusgo,o,,91623
 Needing,nedg,Nedg,,,91624
 Slack,slak,Slak,,,91625
 Prob,prb,Prbi,i,,91626
@@ -1126,7 +1118,6 @@ Denied,dnid,Dnid,,,91648
 Purr,pr,Pri1,i1,,91649
 Hyphen,hifn,Hifn,,,91651
 Imposing,mposg,Mposg,,,91652
-Frustrated,frstratd,Frstratd,,,91653
 Perpetuated,prpecuatd,Prpecuatd,,,91657
 Formulating,fmulatg,Fmulatg,,,91658
 Inserted,nsEtd,Nsetd,,,91659
@@ -1195,7 +1186,6 @@ Mick,mek,Meku,u,,91742
 Harris,hers,Hersi,i,,91743
 Amy,ame,Ameu,u,,91744
 Greeley,gree,Gree,,,91745
-Circumstantial,sekmstanzl,Sekmstanzl,,,91746
 Christina,krstn,Krstn,,,91747
 Leis,las,Lasy,y,,91749
 Mondays,muns,Munso,o,,91750
@@ -1512,7 +1502,6 @@ Unlucky,nlke,Nlke,,,92178
 Ensues,nsus,Nsus,,,92179
 Solving,solvg,Solvg,,,92181
 Icing,asg,Asg,,,92182
-Circumstances,sekmstnss,Sekmstnss,,,92183
 Restricted,rstrektd,Rstrektd,,,92184
 Promote,prmot,Prmot,,,92185
 Wildly,uilde,Uilde,,,92186
@@ -1596,7 +1585,6 @@ Edison,edsn,Edsn,,,92292
 Kenneth,kenh,Kenh,,,92293
 Teodoro,teodoo,Teodoo,,,92294
 Disturbed,dstebd,Dstebd,,,92295
-Delegated,delgatd,Delgatd,,,92296
 Messes,mess,Messu,u,,92298
 Undid,ndt,Ndto,o,,92299
 Ringing,regg,Regg,,,92300
@@ -1633,7 +1621,6 @@ Canada,kd,Kdo,o,,92338
 Hungary,hggre,Hggreo,o,,92339
 Sizable,sizb,Sizb,,,92340
 Gobbled,gAA1bd,Gaa1bd,,,92341
-Revolutions,rvluzs,Rvluzs,,,92342
 Tame,tm,Tmi,i,,92343
 Cop,kop,Kopi,i,,92344
 Prodding,prdg,Prdg,,,92345
@@ -1755,7 +1742,6 @@ Sandbags,sandbags,Sandbagso,o,,92508
 Tacks,taks,Taksu,u,,92510
 Bribing,bribg,Bribg,,,92511
 Biblical,beblkl,Beblkl,,,92512
-Displace,dsplas,Dsplaso,o,,92514
 Racing,rasg,Rasgo,o,,92516
 Swallow,suolo,Suolo,,,92517
 Stupidity,stupedte,Stupedte,,,92518
