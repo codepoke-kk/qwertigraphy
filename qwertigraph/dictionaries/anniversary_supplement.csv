@@ -134,6 +134,7 @@ Reworking,r-e-r-k-\-h,Rerkg,,qegkr,132
 Reworks,r-e-r-k-s,Rerks,,qekrs,132
 Workable,r-k-b,Rkb,,qbkr,132
 Workably,r-k-b-e,Rkbe,,qbekr,132
+Workday,r-k-d-a,Rkda,,qadkr,132
 Workflow,r-k-f-l-o,Rkflo,,qfklor,132
 Workflowed,r-k-f-l-o-d,Rkflod,,qdfklor,132
 Workflowing,r-k-f-l-o-\-h,Rkflog,,qfgklor,132
@@ -351,6 +352,8 @@ Empowers,m-p-a-u-s,Mpws,,qmpsw,289
 Powered,p-a-u-d,Pwd,,qdpw,289
 Powering,p-a-u-\-h,Pwg,,qgpw,289
 Powers,p-a-u-s,Pws,,qpsw,289
+Publicly,p-b-e,Pbe,,qbep,292
+Public,p-b,Pbo,o,qbop,292
 Annihilate,a-n-i-l-a,Anila,,qailn,299
 Annihilated,a-n-i-l-a-d,Anilad,,qadiln,299
 Annihilating,a-n-i-l-a-\-h,Anilag,,qagiln,299
@@ -1418,6 +1421,7 @@ Centuries,s2-e-nt-r-e-s,Sentres,,qenrst,1123
 Upstart,p-s2-t-a2-t,Pstat,,qapst,1127
 Upstarts,p-s2-t-a2-t-s,Pstats,,qapst,1127
 Restart,r-s2-t-a2-t,Rstat,,qarst,1127
+Restarted,r-s2-t-a2-t-d,Rstatd,,qadrst,1127
 Restarting,r-s2-t-a2-t-\-h,Rstatg,,qagrst,1127
 Restarter,r-s2-t-a2-t-r,Rstatr,,qarst,1127
 Restarters,r-s2-t-a2-t-r-s,Rstatrs,,qarst,1127
@@ -1905,6 +1909,14 @@ Boxing,b-o-x-\-h,Boxg,,qbgox,1595
 Boxer,b-o-x-r,Boxr,,qborx,1595
 Boxers,b-o-x-r-s,Boxrs,,qborsx,1595
 Boxes,b-o-x-s,Boxs,,qbosx,1595
+Thumbprint,th-m-pr,Hmpr,,qhmpr,1595
+Thumbprinted,th-m-pr-d,Hmprd,,qdhmpr,1595
+Thumbprinting,th-m-pr-\-h,Hmprg,,qghmpr,1595
+Thumbprints,th-m-pr-s,Hmprs,,qhmprs,1595
+Inbox,n-b-o-x,Nbox,,qbnox,1595
+Inboxed,n-b-o-x-d,Nboxd,,qbdnox,1595
+Inboxing,n-b-o-x-\-h,Nboxg,,qbgnox,1595
+Inboxs,n-b-o-x-s,Nboxs,,qbnosx,1595
 Sandbox,s-b-o-x,Sbox,,qbosx,1595
 Sandboxable,s-b-o-x-b,Sboxb,,qbosx,1595
 Sandboxably,s-b-o-x-b-e,Sboxbe,,qbeosx,1595
@@ -3068,6 +3080,8 @@ Ruach,r-u-k,Ruk,,qkru,3330
 Ruachian,r-u-k-n,Rukn,,qknru,3330
 Handled,^-h-\-nt-l-d,Hntld,,qdhlnt,3332
 Handling,^-h-\-nt-l-\-h,Hntlg,,qghlnt,3332
+Handler,^-h-\-nt-l-r,Hntlr,,qhlnrt,3332
+Handlers,^-h-\-nt-l-r-s,Hntlrs,,qhlnrst,3332
 Handles,^-h-\-nt-l-s,Hntls,,qhlnst,3332
 Enabled,e-n-b-d,Enbd,,qbden,3336
 Enabling,e-n-b-\-h,Enbg,,qbegn,3336
@@ -4471,6 +4485,7 @@ Supposition,s-p-o-sh,Spoz,,qopsz,7854
 Suppositions,s-p-o-sh-s,Spozs,,qopsz,7854
 Invalidity,n-v-a-l-e-td-e,Nvaledte,,qadelnv,7867
 Validity,v-a-l-e-td-e,Valedte,,qadeltv,7867
+Ticketed,t-e-k-e-t-d,Teketd,,qdekt,7883
 Ticketing,t-e-k-e-t-\-h,Teketg,,qegkt,7883
 Hopefully,^-h-\-o-p-f-e,Hopfe,,qefhop,7957
 Needful,n-e-d-f,Nedf,,qdefn,7996
@@ -4655,6 +4670,7 @@ Cycle,s-i-k-l,Sikl,,qikls,9326
 Cycled,s-i-k-l-d,Sikld,,qdikls,9326
 Cycling,s-i-k-l-\-h,Siklg,,qgikls,9326
 Cycles,s-i-k-l-s,Sikls,,qikls,9326
+Negotiations,n-e-g-o-sh-s,Negozso,o,qegnosz,9334
 Definable,df-i-n-b,Dfinb,,qbdfin,9338
 Definably,df-i-n-b-e,Dfinbe,,qbdefin,9338
 Defining,df-i-n-\-h,Dfing,,qdfgin,9338
@@ -4796,6 +4812,10 @@ Consumer,k-s2-m-r,Ksmr,,qkmrs,10388
 Consumers,k-s2-m-r-s,Ksmrs,,qkmrs,10388
 Consumes,k-s2-m-s,Ksms,,qkms,10388
 Consumption,k-s2-m-sh,Ksmz,,qkmsz,10388
+Unpackage,n-p-a-k-j,Npakj,,qajknp,10408
+Unpackaged,n-p-a-k-j-d,Npakjd,,qadjknp,10408
+Unpackaging,n-p-a-k-j-\-h,Npakjg,,qagjknp,10408
+Unpackages,n-p-a-k-j-s,Npakjs,,qajknps,10408
 Packaged,p-a-k-j-d,Pakjd,,qadjkp,10408
 Packaging,p-a-k-j-\-h,Pakjg,,qagjkp,10408
 Packages,p-a-k-j-s,Pakjs,,qajkps,10408
@@ -4821,6 +4841,12 @@ Initiate,e-n-e-sh-ea-t,Enezat,,qaentz,10564
 Initiated,e-n-e-sh-ea-t-d,Enezatd,,qadentz,10564
 Initiating,e-n-e-sh-ea-t-\-h,Enezatg,,qaegntz,10564
 Initiates,e-n-e-sh-ea-t-s,Enezats,,qaenstz,10564
+Initialed,e-n-e-sh-d,Enezd,,qdenz,10564
+Initialing,e-n-e-sh-\-h,Enezg,,qegnz,10564
+Initialize,e-n-e-sh-i-s,Enezis,,qeinsz,10564
+Initialized,e-n-e-sh-i-s-d,Enezisd,,qdeinsz,10564
+Initializing,e-n-e-sh-i-s-\-h,Enezisg,,qeginsz,10564
+Initializes,e-n-e-sh-i-s-s,Eneziss,,qeinsz,10564
 Initials,e-n-e-sh-s,Enezs,,qensz,10564
 Initiative,e-n-e-sh-t-v,Eneztv,,qentvz,10564
 Initiatives,e-n-e-sh-t-v-s,Eneztvs,,qenstvz,10564
@@ -5244,6 +5270,9 @@ Aliasing,a-l-ea-s-\-h,Alesg,,qaegls,15754
 Aliases,a-l-ea-ss,Aless,,qaels,15754
 Blamelessly,bl-a-m-l-e,Blamle,,qabelm,15862
 Galilee,g-a-l-l-e,Galle,,qaegl,16002
+Negotiated,n-e-g-o-sh-d,Negozd,,qdegnoz,16111
+Negotiating,n-e-g-o-sh-\-h,Negozg,,qegnoz,16111
+Negotiates,n-e-g-o-sh-s,Negozs,,qegnosz,16111
 Elevate,e2-l-v-a-t,Elvat,,qaeltv,16130
 Elevated,e2-l-v-a-t-d,Elvatd,,qadeltv,16130
 Elevators,e2-l-v-a-t-e2-s,Elvates,,qaelstv,16130
@@ -6557,6 +6586,8 @@ Modules,m-o-d-\-l-s,Modls,,qdlmos,71236
 Nationalist,n-a-sh-l-e-s,Nazles,,qaelnsz,71303
 Nationalists,n-a-sh-l-e-s-s,Nazless,,qaelnsz,71303
 Nationalistically,n-a-sh-l-/-s2-t-e,Nazlste,,qaelnstz,71303
+Negotiation,n-o-sh,Nozo,o,qnoz,71307
+Negotiations,n-o-sh-s,Nozs,,qnosz,71307
 Nihilisticly,n-i-l-/-s2-t-e,Nilste,,qeilnst,71331
 Mosquitos,m-o-s-k-e-t-o-s,Mosqetos,,qemoqst,71339
 Mosquito,m-s-k-e-t-o,Msqeto,,qemoqst,71339

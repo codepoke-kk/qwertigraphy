@@ -255,7 +255,6 @@ Stood,s2-t-u,Stu,,qstu,288
 Power,p-a-u,Pw,,qcpw,289
 Room,r-m,Rm,,qmrv,290
 Half,^-h-\-a-f,Haf,,qafh,291
-Public,p-b,Pb,,qbcp,292
 Themselves,th-m-ss,Hmss,,qhms,293
 Morning,mn-\-h,Mmg,,qgmx,294
 Sir,s2,Sw,w,qcsw,295
@@ -3185,7 +3184,6 @@ Exhibition,e-s-e-b-sh,Xebz,,qbexz,6333
 Lamb,l-a-m,Lam,,qalm,6342
 Diamond,d-i-mn,Dimm,,qdim,6346
 Critic,k-r-/-a,Kra,,qakr,6348
-Negotiations,n-e-g-o-sh-s,Negozs,,qegnosz,6349
 Expose,e-s-p-o,Xpoo,o,qopx,6354
 Comparative,k-pr-v,Kprv,,qkprv,6355
 Lane,l-a-n,Lano,o,qalno,6356
@@ -3351,7 +3349,7 @@ Nevada,n-e-v,Nevo,o,qenov,7104
 Authorized,o-th-r-i-s2-d,Ohrisd,,qdhiors,7122
 Museum,m-u-s2-e-m,Musem,,qemsu,7134
 Guidance,g-i-tn-s,Gitns,,qginst,7138
-Publish,p-b,Pbo,o,qbop,7142
+Publish,p-b,Pb,,qbp,7142
 P.m.,p-<-m,Pm,,qmnp,7147
 P.m.,p-<-m,Pmo,o,qmop,7147
 Cane,k-a-n,Kano,o,qakno,7157
@@ -3731,7 +3729,7 @@ Diminish,tm-e-n-sh,Tmenz,,qemntz,9318
 Thereto,th2-t-u,Htu,,qhtu,9323
 Lifeless,l-a-fl,Lafl,,qafl,9326
 Adverse,a-v-e-s,Aves,,qaesv,9332
-Negotiation,n-e-g-o-sh,Negoz,,qegnoz,9334
+Negotiation,n-e-g-o-sh,Negozo,o,qegnoz,9334
 Rug,r-u-g,Rugo,o,qgoru,9336
 Define,df-i-n,Dfin,,qdfin,9338
 Infer,n-f-e-r,Nfero,o,qefnor,9343
@@ -4521,7 +4519,7 @@ Incalculable,n-k-a-l-b,Nkalb,,qabkln,16049
 Bail,b-a-l,Balo,o,qablo,16054
 Inequality,n-e-k-u,Nequ,,qenqu,16059
 Truck,t-r-u-k,Truk,,qkrtu,16104
-Negotiate,n-e-g-o-sh,Negozo,o,qegnoz,16111
+Negotiate,n-e-g-o-sh,Negoz,,qegnoz,16111
 Divines,df-i-n-s,Dfinsi,i,qdfins,16123
 Amend,a-mn,Ammo,o,qamo,16127
 Elevator,e2-l-v-a-t-e2,Elvate,,qaeltv,16130
@@ -7765,7 +7763,6 @@ Nationalistic,n-a-sh-l-/-s2-t,Nazlst,,qalnstz,71303
 Nearer than,n-e2-n,Neno,o,qeno,71304
 Nearsighted,n-e-r-s2-i-td,Nersidd,,qdeinrs,71305
 Negate,n-e-g,Negu,u,qegnu,71306
-Negotiation ,n-o-sh,Nozo,o,qnoz,71307
 Nepenthe,n-e-p-n-th-e,Nepnhe,,qehnp,71308
 Nescient,n-e-sh-t,Nezt,,qentz,71309
 Neutrally,n-u-t-r-ya,Nutrya,,qanrtuy,71310
