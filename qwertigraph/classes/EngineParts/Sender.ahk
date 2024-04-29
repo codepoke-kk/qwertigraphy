@@ -17,8 +17,14 @@ Class Sender {
 		if ((this.engine.keyboard.AutoSpaceSent) and (not token.input)) {
 			; We sent a space after sending a chord and this is a bare end key. We need to delete that autospace
 			this.logEvent(4, "Deleting autospace and setting autopunctuation")
-			Send, {Backspace} 
-			this.engine.keyboard.AutoPunctuationSent := true
+            ; Actually, I need to keep the space when adding a quote character after it 
+            ; This is a quick hack, and needs to be thought further about, but it works for git commits for now 
+            if (token.ender == "'") {
+                this.logEvent(4, "Keep autospace for single quotes")
+            } else {
+                Send, {Backspace} 
+                this.engine.keyboard.AutoPunctuationSent := true
+            }
 		}
 		this.engine.keyboard.AutoSpaceSent := false
 		
