@@ -498,6 +498,10 @@ Childhoods,ch-i-ld-\-d-s,Cildds,,qcdils,412
 Humans,^-h-\-e-u-mn-s,Humms,,qhmsu,414
 Inhuman,^-h-\-n-e-u-mn,Nhumm,,qhmnu,414
 Inhumanly,^-h-\-n-e-u-mn-e,Nhumme,,qehmnu,414
+Shortcut,^-sh-\-k-t,Zkt,,qktz,422
+Shortcuted,^-sh-\-k-t-d,Zktd,,qdktz,422
+Shortcuting,^-sh-\-k-t-\-h,Zktg,,qgktz,422
+Shortcuts,^-sh-\-k-t-s,Zkts,,qkstz,422
 Shortsightedly,^-sh-\s-i-td-e,Zsitde,,qdeistz,422
 Shorts,^-sh-\-s,Zso,o,qosz,422
 Shortest,^-sh-\-s-t,Zst,,qstz,422
@@ -4246,6 +4250,8 @@ Executes,e-s2-k-s,Xkso,o,qkosx,6515
 Quoted,k-w-o-t-d,Qotd,,qdoqt,6544
 Quotidian,k-w-o-td-ea-n,Qotden,,qdenoqt,6544
 Quoting,k-w-o-t-\-h,Qotg,,qgoqt,6544
+Quoter,k-w-o-t-r,Qotr,,qoqrt,6544
+Quoters,k-w-o-t-r-s,Qotrs,,qoqrst,6544
 Quotes,k-w-o-t-s,Qots,,qoqst,6544
 Quotient,k-o-sh-t-\-\-\-<-<-n->->,Qozt,,qoqtz,6544
 Substituted,s-s2-td,Sstud,u,qdstu,6571
@@ -4958,6 +4964,11 @@ Boilerplate,b-o-e-l-r-p,Bylrp,,qblpry,11853
 Boilerplates,b-o-e-l-r-p-s,Bylrps,,qblprsy,11853
 Boilers,b-o-e-l-r-s,Bylrs,,qblrsy,11853
 Boils,b-o-e-l-s,Byls,,qblsy,11853
+Inhabit,e-n-^-h-\-a-b-t,Enhabt,,qabehnt,11872
+Inhabited,e-n-^-h-\-a-b-t-d,Enhabtd,,qabdehnt,11872
+Inhabiting,e-n-^-h-\-a-b-t-\-h,Enhabtg,,qabeghnt,11872
+Inhabitants,e-n-^-h-\-a-b-tn-s,Enhabtns,,qabehnst,11872
+Inhabits,e-n-^-h-\-a-b-t-s,Enhabts,,qabehnst,11872
 Invalid,n-v-a-l-e-d,Nvaled,,qadelnv,11895
 Invalidate,n-v-a-l-e-d-d,Nvaledd,,qadelnv,11895
 Invalidated,n-v-a-l-e-d-d-d,Nvaleddd,,qadelnvd,11895
@@ -6299,6 +6310,14 @@ Celebrating,s-e-l-e-b-\-h,Selebg,,qbegls,70264
 Celebrates,s-e-l-e-b-s,Selebs,,qbels,70264
 Celebration,s-e-l-e-b-sh,Selebz,,qbelsz,70264
 Celebrations,s-e-l-e-b-sh-s,Selebzs,,qbelsz,70264
+Rebel,r-b-e-l,Rbel,,qbelr,70269
+Rebelled,r-b-e-l-d,Rbeld,,qbdelr,70269
+Rebelling,r-b-e-l-\-h,Rbelg,,qbeglr,70269
+Rebellion,r-b-e-l-n,Rbeln,,qbelnr,70269
+Rebellions,r-b-e-l-n-s,Rbelns,,qbelnrs,70269
+Rebels,r-b-e-l-s,Rbels,,qbelrs,70269
+Rebellious,r-b-e-l-u-s,Rbelus,,qbelrsu,70269
+Rebelliously,r-b-e-l-u-s-e,Rbeluse,,qbelrsu,70269
 Citizen,s2-e-t-s,Setsi,i,qeist,70287
 Citizens,s2-e-t-s-s,Setss,,qest,70287
 Citizenship,s2-e-t-s-sh,Setsz,,qestz,70287
