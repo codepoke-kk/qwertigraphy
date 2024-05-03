@@ -4246,6 +4246,7 @@ Ornamentally,o-n-a-m-l-e,Onamle,,qaelmno,6391
 Ornaments,o-n-a-m-s,Onams,,qamnos,6391
 Agricultures,^-ya-s,Yaso,o,qaosy,6397
 Boundaries,b-n-r-e-s,Bnres,,qbenrs,6400
+Candidates,k-td-s,Kdds,,qdks,6407
 Uncomfortably,n-k-f-t-b-e,Nkftbe,,qbefknt,6437
 Showered,sh-a-u-r-d,Zwrd,,qdrwz,6495
 Showering,sh-a-u-r-\-h,Zwrg,,qgrwz,6495
@@ -4499,6 +4500,7 @@ Theologians,h-e-\-o-n-s,Heons,,qehnos,8166
 Theology,h-e-\-o,Heoo,o,qeho,8166
 Theologies,h-e-\-o-s,Heos,,qehos,8166
 Delete,d-l-e-t,Dlet,,qdelt,8274
+Deleted,d-l-e-t-d,Dletd,,qdelt,8274
 Deleting,d-l-e-t-\-h,Dletg,,qdeglt,8274
 Deleter,d-l-e-t-r,Dletr,,qdelrt,8274
 Deleters,d-l-e-t-r-s,Dletrs,,qdelrst,8274
@@ -4568,6 +4570,9 @@ Temporal,tm-pr-l,Tmprl,,qlmprt,8713
 Temporally,tm-pr-l-e,Tmprle,,qelmprt,8713
 Temporality,tm-pr-\-l,Tmprlo,o,qlmoprt,8713
 Temporalities,tm-pr-\-l-s,Tmprls,,qlmprst,8713
+Horizontally,^-h-\-o-r-e-s2-nt-e,Horesnte,,qehnorst,8715
+Horizon,^-h-\-o-r-i-s2-n,Horisn,,qhinors,8715
+Horizons,^-h-\-o-r-i-s2-n-s,Horisns,,qhinors,8715
 Nailed,n-a-l-d,Nald,,qadln,8725
 Nailing,n-a-l-\-h,Nalg,,qagln,8725
 Nailer,n-a-l-r,Nalr,,qalnr,8725
@@ -4697,6 +4702,9 @@ Toy,t-o-e,Ty,,qtyz,9454
 Toyed,t-o-e-d,Tyd,,qdty,9454
 Toying,t-o-e-\-h,Tyg,,qgty,9454
 Toys,t-o-e-s,Tys,,qsty,9454
+Orphaned,o-f-n-d,Ofnd,,qdfno,9509
+Orphaning,o-f-n-\-h,Ofng,,qfgno,9509
+Orphans,o-f-n-s,Ofns,,qfnos,9509
 Units,e-u-n-e-t-s,Unets,,qenstu,9514
 Fasten,f-a-s2-t-n,Fastn,,qafnst,9521
 Fastened,f-a-s2-t-n-d,Fastnd,,qadfnst,9521
@@ -5601,6 +5609,13 @@ Refutes,r-f-e-u-t-s,Rfuts,,qfrstu,22282
 Refutation,r-f-e-u-t-sh,Rfutz,,qfrtuz,22282
 Refutations,r-f-e-u-t-sh-s,Rfutzs,,qfrstuz,22282
 Reconcilable,r-k-s-i-l-b,Rksilb,,qbiklrs,22282
+Prune,pr-u-n,Prun,,qnpru,22332
+Prunable,pr-u-n-b,Prunb,,qbnpru,22332
+Prunably,pr-u-n-b-e,Prunbe,,qbenpru,22332
+Prunables,pr-u-n-b-s,Prunbs,,qbnprsu,22332
+Pruned,pr-u-n-d,Prund,,qdnpru,22332
+Pruning,pr-u-n-\-h,Prung,,qgnpru,22332
+Prunes,pr-u-n-s,Pruns,,qnprsu,22332
 Disconnect,d-s2-k-e-k,Dskek,,qdeks,22359
 Disconnected,d-s2-k-e-k-d,Dskekd,,qdeks,22359
 Disconnecting,d-s2-k-e-k-\-h,Dskekg,,qdegks,22359
