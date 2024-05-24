@@ -355,6 +355,8 @@ Powering,p-a-u-\-h,Pwg,,qgpw,289
 Powers,p-a-u-s,Pws,,qpsw,289
 Publicly,p-b-e,Pbe,,qbep,292
 Public,p-b,Pbo,o,qbop,292
+Mornings,mn-\-h-s,Mmgs,,qgms,294
+Mornings,mn-\-h-s,Mmz,,qmz,294
 Annihilate,a-n-i-l-a,Anila,,qailn,299
 Annihilated,a-n-i-l-a-d,Anilad,,qadiln,299
 Annihilating,a-n-i-l-a-\-h,Anilag,,qagiln,299
@@ -1266,6 +1268,7 @@ Cries,k-r-i-s,Kris,,qikrs,942
 Christ,k-r-i-s,Kriso,o,qikors,942
 Christs,k-r-i-ss,Krisso,o,qikors,942
 Unnamed,u-n-a-/-t,Unat,,qantu,946
+Afternoons,a-f-n-u-n-s,Afnuns,,qafnsu,948
 Passaged,p-a-s-j-d,Pasjd,,qadjps,951
 Passaging,p-a-s-j-\-h,Pasjg,,qagjps,951
 Passages,p-a-s-j-s,Pasjs,,qajps,951
@@ -2682,6 +2685,8 @@ Hits,^-h-\-e-t-s,Hetsu,u,qehstu,2648
 Desperately,d-s-pr-a-e,Dsprae,,qadeprs,2649
 Desperation,d-s-pr-a-sh,Dspraz,,qadprsz,2649
 Availability,a-v-a-l-\-b,Avalbo,,qablov,2653
+Availables,a-v-a-l-b-s,Avalbs,,qablsv,2653
+Availabilities,a-v-a-l-\-b-s,Avalbso,,qablosv,2653
 Unavailable,u-n-a-v-a-l-b,Unavalb,,qablnuv,2653
 Unavailability,u-n-a-v-a-l-\-b,Unavalbo,o,qablnouv,2653
 Convict,k-v-e-k,Kvek,,qekv,2658
@@ -3091,6 +3096,7 @@ Enables,e-n-b-s,Enbs,,qbens,3336
 Detailing,td-a2-\-h,Ddag,,qadg,3339
 Positively,p-o-s2-df-e,Posdfe,,qdefops,3340
 Positives,p-o-s2-df-s,Posdfs,,qdfops,3340
+Positivity,p-o-s2-df-t-e,Posdfte,,qdefopst,3340
 Dissatisfied,d-ss-a-t-d,Dssatd,,qadst,3358
 Dissatisfied,d-ss-a-t-sh,Dssatz,,qadstz,3358
 Unsatisfied,n-s2-a-t-d,Nsatd,,qadnst,3358
@@ -6091,6 +6097,7 @@ Advisability,v-i-s-/-b,Visbo,o,qbiosv,40845
 Requiem,r-e-k-\-n-^-<-e-m,Reqem,,qemqr,41094
 Requiems,r-e-k-\-n-^-<-e-m-s,Reqems,,qemqrs,41094
 Requite,r-e-k-\-n-^-<-i-t,Reqit,,qeiqrt,41094
+Metrics,m-e-/-k-s,Meks,,qekms,41300
 Argumentations,a-g-m-sh-s,Agmzs,,qagmsz,41580
 Beatitudes,b-ea-t-e-t-s,Betets,,qbest,42212
 Vocation,v-k-a-sh,Vkaz,,qakvz,43716
@@ -6934,6 +6941,9 @@ Vigilant,v-e-j-l-nt,Vejlnt,,qejlntv,90875
 Vigilantly,v-e-j-l-nt-e,Vejlnte,,qejlntv,90875
 Vigils,v-e-j-l-s,Vejls,,qejlsv,90875
 Appointed,o-e-d,Ydo,o,qdoy,90879
+Readable,r-d-b,Rdb,,,90882
+Readably,r-d-b-e,Rdbe,,qbder,90882
+Readability,r-d-\-b,Rdbo,o,qbdor,90882
 Ephemeral,e-f-e-m-e-r-l,Efemerl,,qeflmr,90905
 Ephemerally,e-f-e-m-e-r-l-e,Efemerle,,qeflmr,90905
 Ephemerals,e-f-e-m-e-r-l-s,Efemerls,,qeflmrs,90905
@@ -7056,6 +7066,13 @@ Visualizes,v-e-sh-u-l-i-s-s,Vezuliss,,qeilsuvz,91464
 Visualization,v-e-sh-u-l-i-s-sh,Vezulisz,,qeilsuvz,91464
 Visualizations,v-e-sh-u-l-i-s-sh-s,Vezuliszs,,qeilsuvz,91464
 Visuals,v-e-sh-u-l-s,Vezuls,,qelsuvz,91464
+Unreadable,n-r-e-d-b,Nredb,,qbdenr,91467
+Unreadably,n-r-e-d-b-e,Nredbe,,qbdenr,91467
+Unreadability,n-r-e-d-\-b,Nredbo,o,qbdenor,91467
+Subset,ss-e-t,Sset,,qest,91467
+Subsetted,ss-e-t-d,Ssetd,,qdest,91467
+Subsetting,ss-e-t-\-h,Ssetg,,qegst,91467
+Subsets,ss-e-t-s,Ssets,,qest,91467
 Spike,s-p-i-k,Spik,,qikps,91500
 Spiked,s-p-i-k-d,Spikd,,qdikps,91500
 Spiking,s-p-i-k-\-h,Spikg,,qgikps,91500

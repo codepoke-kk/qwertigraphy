@@ -93,7 +93,9 @@ InputStandardNapud() {
     global stdpud
     global engine
     engine.Stop()
-    InputBox, stdna, Standard Name, Name
+    ; Default to the decrypted username when replacing the existing password 
+    default_name := Decrypt(stdna)
+    InputBox, stdna, Standard Name, Name, , , , , , , , %default_name%
     InputBox, stdpud, Standard PUD, PUD, HIDE
     engine.Start()
     stdna := Encrypt(stdna)
@@ -112,7 +114,11 @@ OutputStandardNapud() {
     }
     Send % Decrypt(stdna)
     Send {Tab}
-    Send % Decrypt(stdpud)
+    ; Must escape !+{}# characters in the password, or AHK will act upon the characters rather than print them  
+    decrypted := Decrypt(stdpud)
+    decoded := RegExReplace(decrypted, "([!+{}#])", "{$1}")
+    Send % decoded 
+    ; Send % Decrypt(stdpud)
 }
 OutputStandardPud() {
     global stdna
@@ -120,7 +126,10 @@ OutputStandardPud() {
     if (stdna == "") {
         InputStandardNapud()
     }
-    Send % Decrypt(stdpud)
+    ; Must escape !+{}# characters in the password, or AHK will act upon the characters rather than print them  
+    decrypted := Decrypt(stdpud)
+    decoded := RegExReplace(decrypted, "([!+{}#])", "{$1}")
+    Send % decoded 
 }
 ;;; methods for an admin username
 InputAdminNapud() {
@@ -128,7 +137,9 @@ InputAdminNapud() {
     global admpud
     global engine
     engine.Stop()
-    InputBox, admna, Admin Name, Name
+    ; Default to the decrypted username when replacing the existing password 
+    default_name := Decrypt(admna)
+    InputBox, admna, Admin Name, Name, , , , , , , , %default_name%
     InputBox, admpud, Admin PUD, PUD, HIDE
     engine.Start()
     admna := Encrypt(admna)
@@ -147,7 +158,11 @@ OutputAdminNapud() {
     }
     Send % Decrypt(admna)
     Send {Tab}
-    Send % Decrypt(admpud)
+    ; Must escape !+{}# characters in the password, or AHK will act upon the characters rather than print them  
+    decrypted := Decrypt(admpud)
+    decoded := RegExReplace(decrypted, "([!+{}#])", "{$1}")
+    Send % decoded 
+    ; Send % Decrypt(admpud)
 }
 OutputAdminPud() {
     global admna
@@ -155,15 +170,22 @@ OutputAdminPud() {
     if (admna == "") {
         InputAdminNapud()
     }
-    Send % Decrypt(admpud)
+    ; Must escape !+{}# characters in the password, or AHK will act upon the characters rather than print them  
+    decrypted := Decrypt(admpud)
+    decoded := RegExReplace(decrypted, "([!+{}#])", "{$1}")
+    Send % decoded 
+    ; Send % Decrypt(admpud)
 }
 ;;; methods for a service account
 InputServiceAccountNapud() {
     global syana
     global syapud
     global engine
+    default := syana
     engine.Stop()
-    InputBox, syana, Service Account Name, Name
+    ; Default to the decrypted username when replacing the existing password 
+    default_name := Decrypt(syana)
+    InputBox, syana, Service Account Name, Name, , , , , , , , %default_name%
     InputBox, syapud, Service Account PUD, PUD, HIDE
     engine.Start()
     syana := Encrypt(syana)
@@ -182,7 +204,11 @@ OutputServiceAccountNapud() {
     }
     Send % Decrypt(syana)
     Send {Tab}
-    Send % Decrypt(syapud)
+    ; Must escape !+{}# characters in the password, or AHK will act upon the characters rather than print them  
+    decrypted := Decrypt(syapud)
+    decoded := RegExReplace(decrypted, "([!+{}#])", "{$1}")
+    Send % decoded 
+    ; Send % Decrypt(syapud)
 }
 OutputServiceAccountPud() {
     global syana
@@ -190,5 +216,9 @@ OutputServiceAccountPud() {
     if (syana == "") {
         InputServiceAccountNapud()
     }
-    Send % Decrypt(syapud)
+    ; Must escape !+{}# characters in the password, or AHK will act upon the characters rather than print them  
+    decrypted := Decrypt(syapud)
+    decoded := RegExReplace(decrypted, "([!+{}#])", "{$1}")
+    Send % decoded 
+    ; Send % Decrypt(syapud)
 }
