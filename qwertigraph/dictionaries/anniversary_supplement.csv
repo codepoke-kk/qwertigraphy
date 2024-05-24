@@ -232,6 +232,7 @@ Housing,^-h-\-u-s-\-h,Husg,,qghsu,200
 Houses,^-h-\-u-s-s,Huss,,qhsu,200
 God,g,Gu,u,qgux,202
 Gods,g-s,Gus,,qgsu,202
+Wholeness,^-h-\-o-l-n-e-s,Holnes,,qehlnos,206
 Setting,s2-e-t-\-h,Setg,,qestg,207
 Settings,s2-e-t-\-h-s,Setgs,,qegst,207
 Sets,s2-e-t-s,Sets,,qeosts,207
@@ -1421,7 +1422,6 @@ Centuries,s2-e-nt-r-e-s,Sentres,,qenrst,1123
 Upstart,p-s2-t-a2-t,Pstat,,qapst,1127
 Upstarts,p-s2-t-a2-t-s,Pstats,,qapst,1127
 Restart,r-s2-t-a2-t,Rstat,,qarst,1127
-Restarted,r-s2-t-a2-t-d,Rstatd,,qadrst,1127
 Restarting,r-s2-t-a2-t-\-h,Rstatg,,qagrst,1127
 Restarter,r-s2-t-a2-t-r,Rstatr,,qarst,1127
 Restarters,r-s2-t-a2-t-r-s,Rstatrs,,qarst,1127
@@ -4486,7 +4486,6 @@ Supposition,s-p-o-sh,Spoz,,qopsz,7854
 Suppositions,s-p-o-sh-s,Spozs,,qopsz,7854
 Invalidity,n-v-a-l-e-td-e,Nvaledte,,qadelnv,7867
 Validity,v-a-l-e-td-e,Valedte,,qadeltv,7867
-Ticketed,t-e-k-e-t-d,Teketd,,qdekt,7883
 Ticketing,t-e-k-e-t-\-h,Teketg,,qegkt,7883
 Hopefully,^-h-\-o-p-f-e,Hopfe,,qefhop,7957
 Needful,n-e-d-f,Nedf,,qdefn,7996
@@ -4506,7 +4505,6 @@ Theologians,h-e-\-o-n-s,Heons,,qehnos,8166
 Theology,h-e-\-o,Heoo,o,qeho,8166
 Theologies,h-e-\-o-s,Heos,,qehos,8166
 Delete,d-l-e-t,Dlet,,qdelt,8274
-Deleted,d-l-e-t-d,Dletd,,qdelt,8274
 Deleting,d-l-e-t-\-h,Dletg,,qdeglt,8274
 Deleter,d-l-e-t-r,Dletr,,qdelrt,8274
 Deleters,d-l-e-t-r-s,Dletrs,,qdelrst,8274
