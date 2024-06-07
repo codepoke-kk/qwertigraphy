@@ -1102,6 +1102,7 @@ Noticed,n-e-s-d,Nesd,,qdens,823
 Noticing,n-e-s-\-h,Nesg,,qegns,823
 Pieced,p-e-s-d,Pesdo,o,qdeops,824
 Piecing,p-e-s-\-h,Pesgo,o,qegops,824
+Piecemeal,p-e-s-m-e-l,Pesmel,,qelmps,824
 Pieces,p-e-ss,Pesso,o,qeops,824
 Political,p-o-l-/-ya,Poly,,qlopy,825
 Politically,p-o-l-/-ya-e,Polyae,,qaelopy,825
@@ -1442,6 +1443,8 @@ Methodism,m-e-th-d-e-s-m,Mehdesm,,qdehms,1140
 Methodists,m-e-th-d-e-s-s,Mehdess,,qdehms,1140
 Methodical,m-e-th-d-\-k,Mehdk,,qdehkm,1140
 Methodically,m-e-th-d-\-k-e,Mehdke,,qdehkm,1140
+Methodology,m-e-th-d-\-l,Mehdl,,qdehlm,1140
+Methodologies,m-e-th-d-\-l-s,Mehdls,,qdehlms,1140
 Methods,m-e-th-d-s,Mehds,,qdehms,1140
 Finale,f-i-n-l-a,Finla,,qafiln,1141
 Proved,pr-v-d,Prvd,,qdprv,1144
@@ -1587,6 +1590,8 @@ Checking,ch-e-k-\-h,Cekg,,qcegk,1307
 Checker,ch-e-k-r,Cekr,,qcekr,1307
 Checkers,ch-e-k-r-s,Cekrs,,qcekrs,1307
 Checks,ch-e-k-s,Ceks,,qceks,1307
+Checkout,ch-e-k-au,Cekw,,qcekw,1307
+Checkouts,ch-e-k-au-s,Cekws,,qceksw,1307
 Immediates,e-m-e-s,Emes,,qems,1308
 Filing,f-i-l-\-h,Filg,,qfgil,1312
 Filing,f-i-l-\-h,Filgo,o,qfgilo,1312
@@ -2268,6 +2273,8 @@ Computerized,k-p-u-/-r-i-s-d,Kpurisd,,qdikprsu,1944
 Computerizing,k-p-u-/-r-i-s-\-h,Kpurisg,,qgikprsu,1944
 Computerizes,k-p-u-/-r-i-s-s,Kpuriss,,qikprsu,1944
 Computers,k-p-u-/-r-s,Kpurs,,qkprsu,1944
+Devil,df-l,Dfli,i,qdfil,1951
+Devils,df-l-s,Dflsi,i,qdfils,1951
 Termite,t-e-m-i-t,Temit,,qeimt,1953
 Termites,t-e-m-i-t-s,Temits,,qeimst,1953
 Terminate,t-e-mn-a-t,Temmat,,qelmt,1953
@@ -3034,6 +3041,13 @@ Tracking,t-r-a-k-\-h,Trakg,,qagkrt,3267
 Tracks,t-r-a-k-s,Traks,,qakrst,3267
 Picking,p-e-k-\-h,Pekg,,qegkp,3272
 Picks,p-e-k-s,Peks,,qekps,3272
+Flagged,fl-a-g-d,Flagd,,qadfgl,3279
+Flagging,fl-a-g-\-h,Flagg,,qafgl,3279
+Flags,fl-a-g-s,Flags,,qafgls,3279
+Flagellate,fl-a-j-l-a,Flajla,,qafjl,3279
+Flagellated,fl-a-j-l-a-d,Flajlad,,qadfjl,3279
+Flagellating,fl-a-j-l-a-\-h,Flajlag,,qafgjl,3279
+Flagellates,fl-a-j-l-a-s,Flajlas,,qafjls,3279
 Assisted,ss2-t-d,Sstd,,qdst,3284
 Assisting,ss2-t-\-h,Sstg,,qgst,3284
 Assists,ss2-t-s,Ssts,,qst,3284
@@ -3724,7 +3738,10 @@ Conversions,k-v-e-r-sh-s,Kverzs,,qekrsvz,4741
 Convert,k-v-e2-t,Kvet,,qektv,4741
 Convertible,k-v-e2-t-b,Kvetb,,qbektv,4741
 Convertibles,k-v-e2-t-b-s,Kvetbs,,qbekstv,4741
+Converted,k-v-e2-t-d,Kvetd,,qdektv,4741
 Converting,k-v-e2-t-\-h,Kvetg,,qegktv,4741
+Converter,k-v-e2-t-r,Kvetr,,qekrtv,4741
+Converters,k-v-e2-t-r-s,Kvetrs,,qekrstv,4741
 Converts,k-v-e2-t-s,Kvets,,qekstv,4741
 Continental,k-tn-nt-l,Ktnntl,,qklnt,4753
 Continentally,k-tn-nt-l-e,Ktnntle,,qeklnt,4753
@@ -4110,6 +4127,7 @@ Amazing,a-m-a-s-\-h,Amasg,,qagms,5749
 Amazingly,a-m-a-s-\-h-e,Amasge,,qaegms,5749
 Amazes,a-m-a-s-s,Amass,,qams,5749
 Equanimity,e-k-a-m-\-<-<-n->->-nt,Eqamt,,qaemqt,5752
+Develop,dfl,Dfl,,qdfl,5759
 Developed,dfl-d,Dfld,,qdfl,5759
 Developing,dfl-\-h,Dflg,,qdfgl,5759
 Developer,dfl-r,Dflr,,qdflr,5759
@@ -5285,6 +5303,12 @@ Elevation,e2-l-v-a-t-sh,Elvaz,,qaelvz,16130
 Elevations,e2-l-v-a-t-sh-s,Elvazs,,qaelsvz,16130
 Incompetently,n-k-p-tn-e,Nkptne,,qeknpt,16204
 Friendliness,fr-l-n-s,Frlns,,qflnrs,16206
+Reusable,r-e-u-\-b,Reub,,qberu,16207
+Reusably,r-e-u-\-b-e,Reube,,qberu,16207
+Reuse,r-e-u-s,Reus,,qersu,16207
+Reused,r-e-u-s-d,Reusd,,qdersu,16207
+Reusing,r-e-u-s-\-h,Reusg,,qegrsu,16207
+Reuses,r-e-u-s-s,Reuss,,qersu,16207
 Unseemly,n-s2-e-m-e,Nseme,,qemns,16215
 Instructors,n-s-/-k-r-s,Nskrs,,qknrs,16231
 Homelessness,^-h-\-o-m-l-n-e-s,Homln,,qhlmno,16258
@@ -7224,6 +7248,8 @@ Quiesced,k-i-s-d,Qisd,,qdiqs,92449
 Quiescing,k-i-s-\-h,Qisg,,qgiqs,92449
 Quiescent,k-i-s-nt,Qisnt,,qinqst,92449
 Quiesces,k-i-s-s,Qiss,,qiqs,92449
+Entity,nt-e-t-e,Ntete,,qent,92464
+Entities,nt-e-t-e-s,Ntetes,,qenst,92464
 Bush,b-u-sh,Buz,,qbuz,92500
 Bushed,b-u-sh-d,Buzd,,qbduz,92500
 Bushing,b-u-sh-\-h,Buzg,,qbguz,92500
