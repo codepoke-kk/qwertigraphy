@@ -33,6 +33,8 @@ Dinner,tn-r,Dnr,,,794
 Stopped,ss2-t,Ssd,,,796
 Sudden,s2-u-tn,Sudn,,,815
 Danger,tn-j-e2,Dnje,,,818
+Dangers,tn-j-e2-s,Dnjes,,qdejns,818
+Dangers,tn-j-ye2,Dnjy,,qdjny,818
 Wished,u-sh-t,Uzd,,,821
 Started,s2-t-a2-td,Statd,,,829
 Considered,k-s-/-t,Ksd,,,830
@@ -147,6 +149,9 @@ Deny,tn-i,Dni,,,2631
 Insisted,n-ss-/-t,Nssd,,,2685
 Leaned,l-e-nt,Lendo,o,,2696
 Burden,b-e2-tn,Bedn,,,2744
+Burdened,b-e2-tn-d,Bednd,,qbden,2744
+Burdening,b-e2-tn-\-h,Bedng,,qbdegn,2744
+Burdens,b-e2-tn-s,Bedns,,qbdens,2744
 Rested,r-e-s-/-t,Resdo,o,,2755
 Incident,n-s2-e-tn,Nsedn,,,2842
 Incidental,n-s2-e-tn-l,Nsednl,,,2842
