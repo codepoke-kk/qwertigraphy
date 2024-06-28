@@ -5499,7 +5499,6 @@ Diploma,d-pl-o-m-a,Dploma,,qadlmop,31058
 Winnipeg,u-e-n-p-g,Uenpg,,qegnpu,31090
 Elementary,e-l-e-m-r-e,Elemre,,qelmr,31109
 Irruption,e-r-p-sh,Erpz,,qeprz,31114
-Asset,a-s2-e-t,Aset,,qaest,31134
 Constrain,k-s2-/-n,Ksno,o,qknos,31135
 Molecular,m-o-l-e-k,Molek,,qeklmo,31148
 Infest,n-f-e-s,Nfes,,qefns,31159
@@ -7455,8 +7454,7 @@ Ironware,i-r-n-w-a2,Irnwa,,qainrw,70998
 Irreclaimable,e-r-e-/-m-b,Eremb,,qbemr,70999
 Reclamation,r-e-/-m-sh,Remz,,qemrz,70999
 Irrefrangible,e-r-fr-a-n-j,Erfranj,,qaefjnr,71000
-Irresistability,e-r-ss-/-b,Erssb,,qbers,71001
-Irresistable,e-r-ss-/-b,Erssbo,o,qbeors,71002
+Irresistability,e-r-ss-/-b,Erssbo,o,qbeors,71001
 Is not,s2-n,Sna,a,qans,71003
 Is the,s2-th,Shi,i,qhis,71004
 #NAME?,/-st,Stipp,ipp,qipst,71005
