@@ -136,22 +136,32 @@ class DictionaryMap
                 
                 ; Intercept and retain Prefixes and Suffixes as appropriate, then let them flow through as normal qwerds
                 if (newEntry.isAffix) {
-                    ; Grab the trailing affix marker from the qwerd
+                    ; Grab the qwerd minus the affix marker at its end
                     unmarkedQwerd := SubStr(newEntry.qwerd, 1, -1)
                     ; The Qwerd/Word come in proper case, so create lowered versions 
-                    StringLower, lowerUnmarkedQwerd, % unmarkedQwerd
+                    StringLower, loweredUnmarkedQwerd, % unmarkedQwerd
                     StringLower, loweredAffixWord, % newEntry.word
+                    StringUpper, upperedUnmarkedQwerd, % unmarkedQwerd
+                    StringUpper, upperedAffixWord, % newEntry.word
                     this.logEvent(4, "Testing end marker " newEntry.endMarker " for Prefix/Suffix")
                     if (newEntry.isPrefix) {
-                        this.logEvent(1, "Loading Prefix " lowerUnmarkedQwerd " as " loweredAffixWord)
-                        this.prefixes.item(lowerUnmarkedQwerd) := loweredAffixWord
-                        this.logEvent(1, "Loading " unmarkedQwerd " as " newEntry.word)
-                        this.prefixes.item(unmarkedQwerd) := newEntry.word
+                        properedUnmarkedQwerd := SubStr(upperedUnmarkedQwerd, 1, 1) SubStr(loweredUnmarkedQwerd, 2)
+                        properedAffixWord := SubStr(upperedAffixWord, 1, 1) SubStr(loweredAffixWord, 2) 
+                        this.logEvent(1, "Loading Prefix " properedUnmarkedQwerd " as " properedAffixWord)
+                        this.prefixes.item(properedUnmarkedQwerd) := properedAffixWord
+                        this.prefixes.item(loweredUnmarkedQwerd) := loweredAffixWord
+                        if (StrLen(unmarkedQwerd) > 1) {
+                            this.prefixes.item(upperedUnmarkedQwerd) := upperedAffixWord
+                        }
                     } else if (newEntry.isSuffix) {
-                        this.logEvent(1, "Loading Suffix " lowerUnmarkedQwerd " as " loweredAffixWord)
-                        this.suffixes.item(lowerUnmarkedQwerd) := loweredAffixWord
-                        this.logEvent(1, "Loading " unmarkedQwerd " as " newEntry.word)
-                        this.suffixes.item(unmarkedQwerd) := newEntry.word
+                        properedUnmarkedQwerd := SubStr(upperedUnmarkedQwerd, 1, 1) SubStr(loweredUnmarkedQwerd, 2)
+                        properedAffixWord := "-" SubStr(upperedAffixWord, 2, 1) SubStr(loweredAffixWord, 3) 
+                        this.logEvent(1, "Loading Suffix " properedUnmarkedQwerd " as " properedAffixWord)
+                        this.suffixes.item(properedUnmarkedQwerd) := properedAffixWord
+                        this.suffixes.item(loweredUnmarkedQwerd) := loweredAffixWord
+                        if (StrLen(unmarkedQwerd) > 1) {
+                            this.suffixes.item(upperedUnmarkedQwerd) := upperedAffixWord
+                        }
                     }
 				}
 

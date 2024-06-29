@@ -55,6 +55,7 @@ Class SerialExpander {
             ; SO change the way it maps per the suffix list 
             this.logEvent(2, "Is a suffix: " lastToken.ender token.input)
             affixQwerd := this.engine.map.qwerds.item(token.input "<")
+            this.logEvent(2, "Affix Qwerd is: " affixQwerd.qwerd "=" affixQwerd.word)
             token.qwerdobject := affixQwerd
             token.output := affixQwerd.word
             token.match := 1
