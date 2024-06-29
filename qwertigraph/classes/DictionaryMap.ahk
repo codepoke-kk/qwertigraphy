@@ -54,34 +54,6 @@ class DictionaryMap
 			this.logEvent(4, "Loading negation " A_LoopReadLine)
 			this.negations.item(A_LoopReadLine) := 1
 		}
-;		; Read in the prefixes (expansions keyed by a trailing semicolon)
-;		this.logEvent(2, "Loading prefixes from " this.qenv.prefixesFile)
-;		Loop,Read, % this.qenv.prefixesFile   ;read prefixes
-;		{
-;			this.logEvent(4, "Loading prefix " A_LoopReadLine)
-;            ;prefix_line := StrReplace(A_LoopReadLine, """", "")
-;            prefix_fields := StrSplit(A_LoopReadLine, ",")
-;			this.logEvent(3, "Loading " prefix_fields[1] " as " prefix_fields[2])
-;			this.prefixes.item(prefix_fields[1]) := prefix_fields[2]
-;            StringUpper, titled_prefix_key, % prefix_fields[1], T
-;            StringUpper, titled_prefix_value, % prefix_fields[2], T
-;			this.logEvent(3, "Loading " titled_prefix_key " as " titled_prefix_value)
-;			this.prefixes.item(titled_prefix_key) := titled_prefix_value
-;		}
-;		; Read in the suffixes (expansions keyed by a leading semicolon)
-;		this.logEvent(2, "Loading suffixes from " this.qenv.suffixesFile)
-;		Loop,Read, % this.qenv.suffixesFile   ;read suffixes
-;		{
-;			this.logEvent(4, "Loading suffix " A_LoopReadLine)
-;            ;suffix_line := StrReplace(A_LoopReadLine, """", "")
-;            suffix_fields := StrSplit(A_LoopReadLine, ",")
-;			this.logEvent(3, "Loading " suffix_fields[1] " as " suffix_fields[2])
-;			this.suffixes.item(suffix_fields[1]) := suffix_fields[2]
-;            StringUpper, titled_suffix_key, % suffix_fields[1], T
-;            StringUpper, titled_suffix_value, % suffix_fields[2], T
-;			this.logEvent(3, "Loading " titled_suffix_key " as " titled_suffix_value)
-;			this.suffixes.item(titled_suffix_key) := titled_suffix_value
-;		}
 		; Read in the negations for chords (case insensitive chords to never load)
 		this.logEvent(2, "Loading negations for chords from " this.qenv.negationsChordsFile)
 		Loop,Read, % this.qenv.negationsChordsFile   ;read negations
