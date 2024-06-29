@@ -45,20 +45,18 @@ Class SerialExpander {
         ; this.logEvent(2, "Looking at prefix for '" token.input "' " this.engine.map.prefixes.item(token.input))
         if ((token.ender == ";") and (this.engine.map.prefixes.item(token.input))) {
             this.logEvent(2, "Is a prefix: input=" token.input ";")
-            this.nullQwerd.word := this.engine.map.prefixes.item(token.input)
-            this.nullQwerd.qwerd := token.input
-            token.qwerdobject := this.nullQwerd
-            token.output := this.nullQwerd.word
+            affixQwerd := this.engine.map.qwerds.item(token.input ">")
+            token.qwerdobject := affixQwerd
+            token.output := affixQwerd.word
             token.match := 1
         } else if ((token.input) and (this.engine.Accumulator.retrievedTokenHorizon <= this.engine.record.MaxIndex()) and (lastToken) and (lastToken.input) and (lastToken.ender == ";") and (this.engine.map.suffixes.item(token.input))) {
             ; This token should be glued to the previous, 
             ; AND this token is marked as a suffix,  
             ; SO change the way it maps per the suffix list 
             this.logEvent(2, "Is a suffix: " lastToken.ender token.input)
-            this.nullQwerd.word := this.engine.map.suffixes.item(token.input)
-            this.nullQwerd.qwerd := token.input
-            token.qwerdobject := this.nullQwerd
-            token.output := this.nullQwerd.word
+            affixQwerd := this.engine.map.qwerds.item(token.input "<")
+            token.qwerdobject := affixQwerd
+            token.output := affixQwerd.word
             token.match := 1
         } else if ((lastToken) and (lastToken.ender == "'") and (InStr("|s|d|m|re|r|v|l|ll|t|", token.input))) {
             ; hard coded contraction handling

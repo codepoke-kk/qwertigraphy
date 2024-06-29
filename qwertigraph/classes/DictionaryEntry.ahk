@@ -20,6 +20,11 @@ class DictionaryEntry
 		this.chordable := "Initializing"
 		this.saves := StrLen(this.word) - StrLen(this.qwerd)
 		this.power := StrLen(this.word) / StrLen(this.qwerd)
+        ; affix properties 
+        this.endMarker := SubStr(this.qwerd, 0)
+        this.isPrefix := this.endMarker == ">"
+        this.isSuffix := this.endMarker == "<"
+        this.isAffix := this.isPrefix or this.isSuffix
 		this.isPhrase := InStr(this.word, " ") > 0
 		StringLower, loweredQwerd, % this.qwerd
 		this.isLower := (loweredQwerd == this.qwerd)
@@ -31,7 +36,8 @@ class DictionaryEntry
 		this.isProper := (((not this.isUpper) and (not this.isLower))
 			or (this.isUpper and ((StrLen(this.word) == 1)))
 			or (this.isUpper and (RegexMatch(this.word, "[0-9()]")))
-			or (this.isCapped and (StrLen(this.qwerd) == 1)))
+			or (this.isCapped and (StrLen(this.qwerd) == 1))
+			or (this.isAffix))
 		; If 1 or more but not all characters after the first is capitalized
 		this.wordTail := SubStr(this.word,2,StrLen(this.word) - 1)
 		StringLower, loweredWordTail, % this.wordTail
