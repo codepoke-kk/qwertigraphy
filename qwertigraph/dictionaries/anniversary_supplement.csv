@@ -160,50 +160,50 @@ Thinkers,th-\-h-r-s,Hhrs,,qhrs,144
 Unthinkable,n-th-\-b,Nhb,,qbhn,144
 -able,<-a,A<,,q<a,146
 Anti-,a->,A>,,q>a,146
--able,<-a-b,Ab<,,q<ab,146
--ability,<-a-b-o,Abo<,,q<abo,146
+-able,<-a-b,ab<,,q<ab,146
+-ability,<-a-b-o,abo<,,q<abo,146
 -ble,<-b,b<,,q<b,146
 -hood,<-d,d<,,q<d,146
 De-,d->,D>,,q>d,146
-Di-,d-i->,Di>,,q>di,146
-Dis-,d-s->,Ds>,,q>ds,146
+di-,d-i->,di>,,q>di,146
+dis-,d-s->,ds>,,q>ds,146
 -ful,<-f,f<,,q<f,146
--fully,<-f-e,Fe<,,q<ef,146
--ify,<-f-i,Fi<,,q<fi,146
--ification,<-f-sh,Fz<,,q<fz,146
+-fully,<-f-e,fe<,,q<ef,146
+-ify,<-f-i,fi<,,q<fi,146
+-ification,<-f-sh,fz<,,q<fz,146
 -ing,<-g,g<,,q<g,146
--gram,<-g-m,Gm<,,q<gm,146
-Hypo-,h-o->,Ho>,,q>ho,146
-Hyper-,h-y->,Hy>,,q>hy,146
--ility,<-il,Il<,,q<il,146
+-gram,<-g-m,gm<,,q<gm,146
+hypo-,h-o->,ho>,,q>ho,146
+hyper-,h-y->,hy>,,q>hy,146
+-ility,<-il,il<,,q<il,146
 -age,<-j,j<,,q<j,146
 -like,<-l,l<,,q<l,146
--ology,<-l-e,Le<,,q<el,146
--life,<-l-a-f,Lf<,,q<fl,146
-Life-,l-a-f->,Lf>,,q>fl,146
--ological,<-l-j,Lj<,,q<jl,146
--ologically,<-l-j-e,Lje<,,q<ejl,146
--ality,<-l-o,Lo<,,q<lo,146
+-ology,<-l-e,le<,,q<el,146
+-life,<-l-a-f,lf<,,q<fl,146
+life-,l-a-f->,lf>,,q>fl,146
+-ological,<-l-j,lj<,,q<jl,146
+-ologically,<-l-j-e,lje<,,q<ejl,146
+-ality,<-l-o,lo<,,q<lo,146
 -ment,<-m,m<,,q<m,146
 Multi-,m->,M>,,q>m,146
--mental,<-m-l,Ml<,,q<lm,146
+-mental,<-m-l,ml<,,q<lm,146
 In-,n->,N>,,q>n,146
 Over-,o->,O>,,q>o,146
-Para-,p-a->,Pa>,,q>ap,146
-Post-,p-o->,Po>,,q>op,146
-Pre-,p-r->,Pr>,,q>pr,146
+para-,p-a->,pa>,,q>ap,146
+post-,p-o->,po>,,q>op,146
+pre-,p-r->,pr>,,q>pr,146
 Re-,r->,R>,,q>r,146
 -self,<-s,s<,,q<s,146
 Self-,s->,S>,,q>s,146
-Sub-,s-b->,Sb>,,q>bs,146
-Super-,s-p->,Sp>,,q>ps,146
--selves,<-ss,Ss<,,q<s,146
+sub-,s-b->,sb>,,q>bs,146
+super-,s-p->,sp>,,q>ps,146
+-selves,<-ss,ss<,,q<s,146
 Trans-,t->,T>,,q>t,146
 Un-,u->,U>,,q>u,146
-Under-,u-u->,Uu>,,q>u,146
+under-,u-u->,uu>,,q>u,146
 -ward,<-w,w<,,q<w,146
 Ex-,e-k-s->,X>,,q>x,146
-Extra-,e-k-s-t->,Xt>,,q>tx,146
+extra-,e-k-s-t->,xt>,,q>tx,146
 -ship,<-sh,z<,,q<z,146
 Went,e-nt,Ent,,qentz,147
 Backing,b-a-k-\-h,Bakg,,qabgk,148
@@ -1423,7 +1423,7 @@ Socialized,s2-o-sh-i-s-d,Sozisd,,qdiosz,1022
 Socializing,s2-o-sh-i-s-\-h,Sozisg,,qgiosz,1022
 Socializes,s2-o-sh-i-s-s,Soziss,,qiosz,1022
 Socialization,s2-o-sh-i-s-sh,Sozisz,,qiosz,1022
-Social media,s2-o-sh-<-m,Sozm,,qmosz,1022
+Social media,s2-o-sh-~-m,Sozm,,qmosz,1022
 Socials,s2-o-sh-s,Sozs,,qosz,1022
 Socialism,s2-o-sh-s-m,Sozsm,,qmosz,1022
 Socialist,s2-o-sh-s-t,Sozst,,qosz,1022
@@ -1765,8 +1765,8 @@ Popularize,p-o-p-i-s,Popis,,qiops,1399
 Popularized,p-o-p-i-s-d,Popisd,,qdiops,1399
 Popularizing,p-o-p-i-s-\-h,Popisg,,qgiops,1399
 Popularizes,p-o-p-i-s-s,Popiss,,qiops,1399
-Populace,p-o-p-l-<-s,Popls,,qlops,1399
-Populaces,p-o-p-l-<-s-s,Poplss,,qlops,1399
+Populace,p-o-p-l-~-s,Popls,,qlops,1399
+Populaces,p-o-p-l-~-s-s,Poplss,,qlops,1399
 Popularity,p-o-p-\-r,Popr,,qopz,1399
 Populate,p-o-p-\-u,Popu,,qopu,1399
 Populated,p-o-p-\-u-d,Popud,,qdopu,1399
@@ -2497,6 +2497,7 @@ Stocking,s2-t-o-\-h,Stog,,qgost,2090
 Stockings,s2-t-o-\-h-s,Stogs,,qgost,2090
 Stocks,s2-t-o-s,Stos,,qost,2090
 Stockings,s2-t-o-\-s2,Stoz,,qgost,2090
+Quantity,k-~-t,Qt,,qcqt,2092
 Confessed,k-f-e-s-d,Kfesd,,qdefks,2098
 Confessing,k-f-e-s-\-h,Kfesg,,qefgks,2098
 Confessor,k-f-e-s-r,Kfesr,,qefkrs,2098
@@ -3467,8 +3468,8 @@ Reservable,r-s2-e-v-b,Rsevb,,qbersv,3764
 Reservably,r-s2-e-v-b-e,Rsevbe,,qbersv,3764
 Reserved,r-s2-e-v-d,Rsevd,,qdersv,3764
 Reserving,r-s2-e-v-\-h,Rsevg,,qegrsv,3764
-Reservior,r-s2-e-v-o-r-\-<-n,Rsevor,,qeorsv,3764
-Reserviors,r-s2-e-v-o-r-\-<-n-s,Rsevors,,qeorsv,3764
+Reservior,r-s2-e-v-o-r-\-~-n,Rsevor,,qeorsv,3764
+Reserviors,r-s2-e-v-o-r-\-~-n-s,Rsevors,,qeorsv,3764
 Reserves,r-s2-e-v-s,Rsevs,,qersv,3764
 Renounce,r-e-nn-s,Renns,,qenrs,3766
 Renounced,r-e-nn-s-d,Rennsd,,qdenrs,3766
@@ -4273,7 +4274,7 @@ Amazed,a-m-a-s-d,Amasd,,qadms,5749
 Amazing,a-m-a-s-\-h,Amasg,,qagms,5749
 Amazingly,a-m-a-s-\-h-e,Amasge,,qaegms,5749
 Amazes,a-m-a-s-s,Amass,,qams,5749
-Equanimity,e-k-a-m-\-<-<-n->->-nt,Eqamt,,qaemqt,5752
+Equanimity,e-k-a-m-\-~-~-~-n-~-~-nt,Eqamt,,qaemqt,5752
 Develop,dfl,Dfl,,qdfl,5759
 Developed,dfl-d,Dfld,,qdfl,5759
 Developing,dfl-\-h,Dflg,,qdfgl,5759
@@ -4443,7 +4444,7 @@ Quoting,k-w-o-t-\-h,Qotg,,qgoqt,6544
 Quoter,k-w-o-t-r,Qotr,,qoqrt,6544
 Quoters,k-w-o-t-r-s,Qotrs,,qoqrst,6544
 Quotes,k-w-o-t-s,Qots,,qoqst,6544
-Quotient,k-o-sh-t-\-\-\-<-<-n->->,Qozt,,qoqtz,6544
+Quotient,k-o-sh-t-\-\-\-~-~-n-~-~,Qozt,,qoqtz,6544
 Substituted,s-s2-td,Sstud,u,qdstu,6571
 Substituting,s-s2-t-\-h,Sstug,u,qgstu,6571
 Substitutes,s-s2-t-s,Sstus,u,qstu,6571
@@ -4555,6 +4556,8 @@ Maligned,m-a-l-i-n-d,Malind,,qailmnd,7114
 Malignly,m-a-l-i-n-e,Maline,,qaeilmn,7114
 Maligning,m-a-l-i-n-\-h,Maling,,qailmng,7114
 Maligns,m-a-l-i-n-s,Malins,,qailmns,7114
+P.m.,p-~-m,Pm,,qmnp,7147
+P.m.,p-~-m,Pmo,o,qmop,7147
 Technological,t-e-k-n-/-k,Teknk,,qeknt,7169
 Technically,t-e-k-n-k-e,Teknke,,qeknt,7169
 Technical,t-e-k-n-k,Teknko,o,qeknt,7169
@@ -4628,6 +4631,7 @@ Denounce,dn-n-s,Dnns,,qdns,7553
 Denounced,dn-n-s-d,Dnnsd,,qdns,7553
 Denouncing,dn-n-s-\-h,Dnnsg,,qdgns,7553
 Denounces,dn-n-s-s,Dnnss,,qdns,7553
+A.m.,a-~-m,Amw,w,qamw,7554
 Confirmed,k-f-e-m-d,Kfemd,,qdefkm,7580
 Confirming,k-f-e-m-\-h,Kfemg,,qefgkm,7580
 Confirms,k-f-e-m-s,Kfems,,qefkms,7580
@@ -4881,10 +4885,10 @@ Inflicts,n-fl-s,Nfls,,qflns,9372
 Fruitlessly,fr-u-t-l-e,Frutle,,qeflrtu,9375
 Buttoned,b-u-tn-d,Butnd,,qbdntu,9381
 Buttoning,b-u-tn-\-h,Butng,,qbgntu,9381
-Buttonhole,b-u-tn-o-l-^-<-h,Butnol,,qblnotu,9381
-Buttonholed,b-u-tn-o-l-d-^-<-h,Butnold,,qbdlnotu,9381
-Buttonholing,b-u-tn-o-l-\-h-^-<-h,Butnolg,,qbglnotu,9381
-Buttonholes,b-u-tn-o-l-s-^-<-h,Butnols,,qblnostu,9381
+Buttonhole,b-u-tn-o-l-^-~-h,Butnol,,qblnotu,9381
+Buttonholed,b-u-tn-o-l-d-^-~-h,Butnold,,qbdlnotu,9381
+Buttonholing,b-u-tn-o-l-\-h-^-~-h,Butnolg,,qbglnotu,9381
+Buttonholes,b-u-tn-o-l-s-^-~-h,Butnols,,qblnostu,9381
 Buttons,b-u-tn-s,Butns,,qbnstu,9381
 Locations,l-o-k-sh-s,Lokzs,,qklosz,9411
 Authentic,o-th-e-nt,Ohento,o,qehnot,9433
@@ -5488,6 +5492,7 @@ Aliasing,a-l-ea-s-\-h,Alesg,,qaegls,15754
 Aliases,a-l-ea-ss,Aless,,qaels,15754
 Blamelessly,bl-a-m-l-e,Blamle,,qabelm,15862
 Galilee,g-a-l-l-e,Galle,,qaegl,16002
+Newfoundland,n-~-f,Nfu,u,qfnu,16046
 Negotiated,n-e-g-o-sh-d,Negozd,,qdegnoz,16111
 Negotiating,n-e-g-o-sh-\-h,Negozg,,qegnoz,16111
 Negotiates,n-e-g-o-sh-s,Negozs,,qegnosz,16111
@@ -6324,9 +6329,9 @@ Workroom,r-k-r-m,Rkrm,,qkmr,40538
 Workrooms,r-k-r-m-s,Rkrms,,qkmrs,40538
 Neglectfully,n-e-g-/-f-e,Negfe,,qefgn,40741
 Advisability,v-i-s-/-b,Visbo,o,qbiosv,40845
-Requiem,r-e-k-\-n-^-<-e-m,Reqem,,qemqr,41094
-Requiems,r-e-k-\-n-^-<-e-m-s,Reqems,,qemqrs,41094
-Requite,r-e-k-\-n-^-<-i-t,Reqit,,qeiqrt,41094
+Requiem,r-e-k-\-n-^-~-e-m,Reqem,,qemqr,41094
+Requiems,r-e-k-\-n-^-~-e-m-s,Reqems,,qemqrs,41094
+Requite,r-e-k-\-n-^-~-i-t,Reqit,,qeiqrt,41094
 Metrics,m-e-/-k-s,Meks,,qekms,41300
 Argumentations,a-g-m-sh-s,Agmzs,,qagmsz,41580
 Beatitudes,b-ea-t-e-t-s,Betets,,qbest,42212
@@ -6532,6 +6537,7 @@ Re,^-r,Rq,q,qqr,70009
 Re-,^-r,Rqq,qq,qqr,70009
 Accompany,a-k-p,Akpo,o,qakop,70010
 Acquisitively,a-k-e-s2-df-e,Aqesdfe,,qadefqs,70018
+Ad valorem,a-d-~-v,Advo,o,qadov,70021
 Affirmed,a-f-e-m-d,Afemd,,qadefm,70033
 Affirming,a-f-e-m-\-h,Afemg,,qaefgm,70033
 Affirms,a-f-e-m-s,Afems,,qaefms,70033
@@ -6561,8 +6567,11 @@ Allocation,a-l-o-k-sh,Alokz,,qakloz,70052
 Allocations,a-l-o-k-sh-s,Alokzs,,qaklosz,70052
 Analyst,a-n-l-e-s,Anles,,qaelns,70064
 Analysts,a-n-l-e-ss,Anless,,qaelns,70064
-Application blanks,a-pl-<-b-s,Aplbs,,qablps,70084
+Application blank,a-pl-~-b,Aplb,,qablp,70084
+Application blanks,a-pl-~-b-s,Aplbs,,qablps,70084
 As low as,s-l-o-s2,Slosq,,qlos,70105
+Assistant general manager,a-j-~-m,Ajm,,qajm,70123
+Assistant passenger traffic manager,a-p-t-~-m,Aptmo,o,qamopt,70126
 Unauthenticated,n-o-th-e-nt-d,Nohentd,,qdehnot,70155
 Authenticate,o-th-e-nt,Ohent,,qehnot,70155
 Authenticated,o-th-e-nt-d,Ohentd,,qdehnot,70155
@@ -6576,6 +6585,7 @@ Authentications,o-th-e-nt-sh-s,Ohentzs,,qehnostz,70155
 Believably,b-e-b-e,Bebe,,qbez,70188
 Unbelievable,n-b-e-b,Nbeb,,qben,70188
 Unbelievably,n-b-e-b-e,Nbebe,,qben,70188
+Board of directors,b-~-d-r-s,Bdrs,,qbdrs,70206
 Bureaucrats,b-u-/-a-t-s,Buats,,qabstu,70217
 Bureaucracy,b-u-/-s-e,Buse,,qbesu,70217
 Bureaucracies,b-u-/-s-e-s,Buseso,o,qbeosu,70217
@@ -6583,7 +6593,9 @@ Comprise,k-pr-i-s,Kpris,,qikprs,70217
 Comprised,k-pr-i-s-d,Kprisd,,qdikprs,70217
 Comprising,k-pr-i-s-\-h,Kprisg,,qgikprs,70217
 Comprises,k-pr-i-s-s,Kpriss,,qikprs,70217
+C.o.d.,k-~-o-d,Kodi,i,qdiko,70229
 Calculably,k-a-l-b-e,Kalbe,,qabekl,70231
+Caveat emptor,k-~-mt,Kmt,,qkmt,70262
 Celebrated,s-e-l-e-b-d,Selebd,,qbdels,70264
 Celebrating,s-e-l-e-b-\-h,Selebg,,qbegls,70264
 Celebrates,s-e-l-e-b-s,Selebs,,qbels,70264
@@ -6597,6 +6609,7 @@ Rebellions,r-b-e-l-n-s,Rbelns,,qbelnrs,70269
 Rebels,r-b-e-l-s,Rbels,,qbelrs,70269
 Rebellious,r-b-e-l-u-s,Rbelus,,qbelrsu,70269
 Rebelliously,r-b-e-l-u-s-e,Rbeluse,,qbelrsu,70269
+Chamber of commerce,ch-~-k,Ck,,qckz,70272
 Citizen,s2-e-t-s,Setsi,i,qeist,70287
 Citizens,s2-e-t-s-s,Setss,,qest,70287
 Citizenship,s2-e-t-s-sh,Setsz,,qestz,70287
@@ -6647,6 +6660,7 @@ Correlated,k-o-r-e-l-a-d,Korelad,,qadeklor,70352
 Correlates,k-o-r-e-l-a-s,Korelas,,qaeklors,70352
 Correlation,k-o-r-e-l-a-sh,Korelaz,,qaeklorz,70352
 Correlations,k-o-r-e-l-a-sh-s,Korelazs,,qaeklorsz,70352
+Costa rica,k-o-s-~-r,Kosr,,qkors,70359
 Credentialed,k-r-e-tn-sh-d,Kretnzd,,qdeknrtz,70365
 Credentialing,k-r-e-tn-sh-\-h,Kretnzg,,qegknrtz,70365
 Credentials,k-r-e-tn-sh-s,Kretnzs,,qeknrstz,70365
@@ -6659,6 +6673,7 @@ Symbolic,s2-e-m-bl-k,Semblk,,qbeklms,70376
 Symbolically,s2-e-m-bl-\-k-e,Semblke,,qbeklms,70376
 Symbolical,s2-e-m-bl-\-k,Semblko,o,qbeklmos,70376
 Symbols,s2-e-m-bl-s,Sembls,,qbelms,70376
+De jure,d-~-j,Dj,,qdjm,70388
 Deal,d-e-l,Dele,e,qdel,70392
 Dealing,d-e-l-\-h,Delg,,qdegl,70392
 Deals,d-e-l-s,Dels,,qdels,70392
@@ -6719,6 +6734,8 @@ Expositors,e-s-p-o-s-/-r-s,Xposrs,,qoprsx,70574
 Federalist,f-e-d-e-s,Fedes,,qdefs,70591
 Federalists,f-e-d-e-s-s,Fedess,,qdefs,70591
 Federals,f-e-d-s,Feds,,qdefs,70591
+Federal reserve board,fr-~-b,Frbo,o,qbfor,70595
+Federated malay states,f-m-~-s,Fmso,o,qfmos,70596
 For example,f-e-s2-a-m,Fxam,,qafmx,70627
 For the record,f-th-k,Fhk,,fhk,70630
 For the record,f-th-r-k,Fhrk,u,fhkr,70630
@@ -6729,7 +6746,13 @@ Frightened,fr-i-n-d,Frind,,qdfinr,70651
 Frightening,fr-i-n-\-h,Fring,,qfginr,70651
 Frightens,fr-i-n-s,Frins,,qfinrs,70651
 Frightened,fr-i-nt,Frint,,qfinrt,70651
+General manager,j-~-m,Jm,,qbjm,70673
+General manager eastern lines,j-~-m-e-s-l,Jmesl,,qejlms,70674
+General manager western lines,j-~-m-u-e-s-l,Jmuesl,,qejlmsu,70675
+Great britain,g-~-b,Gb,,qbgv,70710
+Great britain and ireland,g-~-b-i,Gbio,o,qbgio,70711
 Guarantors,g-a2-nt-r-s,Gantrs,,qagnrst,70716
+Habeas corpus,a-b-~-k,Abk,,qabk,70724
 High-handedly,^-h-\-i-^-h-\-nt-d-e,Hihntde,,qdehint,70770
 Highways,i2-n-s,Ins,,qinsz,70771
 Bisexual,b-s-e-s-l,Bsxl,,qblsx,70776
@@ -6821,7 +6844,9 @@ Reclaiming,r-e-/-m-\-h,Remg,,qegmr,70999
 Reclaims,r-e-/-m-s,Rems,,qemrs,70999
 Reclamations,r-e-/-m-sh-s,Remzs,,qemrsz,70999
 Irresistible,e-r-ss-/-b,Erssb,,qbers,71002
-Joint resolutions,j-<-r-s2-o-sh-s,Jrsozs,,qjorsz,71028
+Jesus christ,j-~-k,Jk,,qcjk,71024
+Joint resolution,j-~-r-s2-o-sh,Jrsoz,,qjorsz,71028
+Joint resolutions,j-~-r-s2-o-sh-s,Jrsozs,,qjorsz,71028
 Knowably,n-o-b-e,Nobe,,qbeno,71047
 Unknowable,u-n-o-b,Unob,,qbnou,71047
 Unknowably,u-n-o-b-e,Unobe,,qbenou,71047
@@ -6839,11 +6864,15 @@ Nationalists,n-a-sh-l-e-s-s,Nazless,,qaelnsz,71303
 Nationalistically,n-a-sh-l-/-s2-t-e,Nazlste,,qaelnstz,71303
 Negotiation,n-o-sh,Nozo,o,qnoz,71307
 Negotiations,n-o-sh-s,Nozs,,qnosz,71307
+New brunswick,n-~-b,Nbo,o,qbno,71316
+New jersey,n-~-j,Nji,i,qijn,71319
+New zealand,n-~-s,Nsk1,k1,q1kns,71326
 Nihilisticly,n-i-l-/-s2-t-e,Nilste,,qeilnst,71331
 Mosquitos,m-o-s-k-e-t-o-s,Mosqetos,,qemoqst,71339
 Mosquito,m-s-k-e-t-o,Msqeto,,qemoqst,71339
 Mosquitoes,m-s-k-e-t-o-s,Msqetos,,qemoqst,71339
 Noncatholics,n-o-n-k-a-th-s,Nonkahs,,qahknos,71339
+Nova scotia,n-~-s2-k,Nsko,o,qknos,71364
 Opinionatedly,o-p-n-a-td-e,Opnadde,,qadenop,71437
 Optic,o-p-t-e-k,Optek,,qekopt,71438
 Optics,o-p-t-e-k-s,Opteks,,qekopst,71438
@@ -6859,6 +6888,10 @@ Overkill,o-/-k-e-l,Okel,,qeklo,71469
 Overkilled,o-/-k-e-l-d,Okeld,,qdeklo,71469
 Overkilling,o-/-k-e-l-\-h,Okelg,,qegklo,71469
 Overkills,o-/-k-e-l-s,Okels,,qeklos,71469
+Parcel post,p-~-p,Ppo,o,qopz,71476
+Passenger traffic manager,p-t-~-m,Ptm,,qmpt,71482
+Per diem,pr-~-tm,Prtm,,qmprt,71489
+Puerto rico,p-~-r,Prk1,k1,q1kpr,71518
 Quicker than,k-\-w-^-e-k-r-n,Qekrn,,qeknqr,71526
 Questionnaires,k-sh-a2-s,Qzas,,qaqsz,71526
 Recommitted,r-e-k-e-d,Reked,,qdekr,71536
@@ -6872,7 +6905,9 @@ Reinforcing,r-n-f-s2-\-h,Rnfsg,,qfgnrs,71540
 Reinforcement,r-n-f-s2-m,Rnfsm,,qfmnrs,71540
 Reinforcements,r-n-f-s2-m-s,Rnfsms,,qfmnrs,71540
 Reinforces,r-n-f-s2-s,Rnfss,,qfnrs,71540
+Rhode island,r-~-a,Rao,o,qaor,71549
 Augustine,o-g-u-s,Ogus,,qgosu,71620
+Superintendent of motive power,s-~-m-~-p,Smp,,qmps,71636
 Temperament,tm-pr-a-m,Tmpram,,qamprt,71657
 Temperaments,tm-pr-a-m-s,Tmprams,,qamprst,71657
 Temperamental,tm-pr-\-m,Tmprm,,qmprt,71657
@@ -6882,6 +6917,7 @@ Templating,tm-pl-a-\-h,Tmplag,,qaglmpt,71659
 Templates,tm-pl-a-s,Tmplas,,qalmpst,71659
 To be,t-b,Tb,,qbct,71706
 Tontine,t-o-n-tn,Tontn,,qnotz,71750
+Traffic manager,t-~-m,Tmu,u,qmtu,71752
 Typewriting,t-pr-i-\-h,Tprig,,qgiprt,71757
 Typewrites,t-pr-i-s,Tpris,,qiprst,71757
 Typewrote,t-pr-o,Tpro,,qoprt,71757
