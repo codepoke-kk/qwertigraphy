@@ -6,6 +6,8 @@ Phones,f-o-n-s,Fons,,qfnos,7
 Centered,^-s2-n-d,Snd,,qdns,9
 Centering,^-s2-n-\-h,Sng,,qgns,9
 Centers,^-s2-n-s,Sns,,qns,9
+PowerPoint,p-a-u-y,Pwy,,qpwy,11
+Powerpoints,p-a-u-y-s,Pwys,,qpswy,11
 Teamed,t-e-m-d,Temd,,qdemt,13
 Teaming,t-e-m-\-h,Temg,,qegmt,13
 Teamwork,t-e-m-r-k,Temrk,,qekmrt,13
@@ -573,6 +575,8 @@ Shortcut,^-sh-\-k-t,Zkt,,qktz,422
 Shortcuted,^-sh-\-k-t-d,Zktd,,qdktz,422
 Shortcuting,^-sh-\-k-t-\-h,Zktg,,qgktz,422
 Shortcuts,^-sh-\-k-t-s,Zkts,,qkstz,422
+Shortname,^-sh-\-n-a,Zna,,qanz,422
+Shortnames,^-sh-\-n-a-s,Znas,,qansz,422
 Shortsightedly,^-sh-\s-i-td-e,Zsitde,,qdeistz,422
 Shorts,^-sh-\-s,Zso,o,qosz,422
 Shortest,^-sh-\-s-t,Zst,,qstz,422
@@ -836,6 +840,8 @@ Repurpose,r-pr-p,Rprp,,qpr,576
 Repurposed,r-pr-p-d,Rprpd,,qdpr,576
 Repurposing,r-pr-p-\-h,Rprpg,,qgpr,576
 Repurposes,r-pr-p-s,Rprps,,qprs,576
+Knowledgeable,n-o-l-b,Nolb,,qblno,577
+Knowledgeably,n-o-l-b-e,Nolbe,,qbelno,577
 Paying,p-a-\-h,Pag,,qagp,579
 Receiving,r-s2-e-\-h,Rseg,,qegrs,580
 Receives,r-s2-e-s,Rses,,qers,580
@@ -857,6 +863,9 @@ Running,r-n-\-h,Rng,,qgnr,586
 Runner,r-n-r,Rnr,,qcnr,586
 Runners,r-n-r-s,Rnrs,,qnrs,586
 Runs,r-n-s,Rns,,qnrs,586
+Rerun,r-r-n,Rrn,,qnr,586
+Rerunning,r-r-n-\-h,Rrng,,qgnr,586
+Reruns,r-r-n-s,Rrns,,qnrs,586
 Charged,ch-j-d,Cjd,,qcdj,595
 Charging,ch-j-\-h,Cjg,,qcgj,595
 Charger,ch-j-r,Cjr,,qcjr,595
@@ -2684,6 +2693,7 @@ Blamers,bl-a-m-r-s,Blamrs,,qablmrs,2440
 Blames,bl-a-m-s,Blams,,qablms,2440
 Preparatory,pr-e-p-\-r-e,Prepre,,qepr,2440
 Painfully,p-a-n-f-e,Panfe,,qaefnp,2453
+Destructions,d-s-/-k-sh-s,Dskzsu,u,qdksuz,2466
 Punishments,p-n-sh-m-s,Pnzms,,qmnpsz,2471
 Kitchened,k-e-ch-n-d,Kecnd,,qcdekn,2472
 Kitchening,k-e-ch-n-\-h,Kecng,,qcegkn,2472
@@ -2771,6 +2781,8 @@ Clothing,k-l-o-th-\-h,Klohg,,qghklo,2551
 Cloth,k-l-o-th,Kloho,o,qhklo,2551
 Clothes,k-l-o-th-s,Klohs,,qhklos,2551
 Cloths,k-l-o-th-s,Klohso,o,qhklos,2551
+Independently,nt-p-e,Ntpe,,qenpt,2554
+Independence,nt-p,Ntpo,o,qnopt,2554
 Issuing,e-sh-u-\-h,Ezug,,qeuzg,2555
 Issuance,e-sh-u-n-s,Ezuns,,qensuz,2555
 Issuer,e-sh-u-r,Ezur,,qeuzr,2555
@@ -2869,6 +2881,7 @@ Existed,e-s-e-s-d,Xesd,,qdesx,2688
 Existing,e-s-e-s-\-h,Xesg,,qegsx,2688
 Voting,v-t-\-h,Vtg,,qgtv,2703
 Votes,v-t-s,Vts,,qstv,2703
+Discussions,d-s2-k-sh-s,Dskzs,,qdksz,2715
 Characteristically,k-a-k-/-s2-t-e,Kakste,,qaekst,2724
 Characteristics,k-a-k-/-s2-t-s,Kaksts,,qakst,2724
 Confound,k-f-nt,Kfnt,,qfknt,2731
@@ -3772,6 +3785,7 @@ Retirements,r-e-t-i2-m-s,Retims,,qeimrst,4389
 Retires,r-e-t-i2-s,Retis,,qeirst,4389
 Limiting,l-e-m-e-t-\-h,Lemetg,,qeglmt,4396
 Limits,l-e-m-e-t-s,Lemets,,qelmst,4396
+Introducing,n-/-d-u-s-\-h,Ndusg,,qdgnsu,4404
 Introduces,n-/-d-u-s-s,Nduss,,qdnsu,4404
 Declarations,d-e-/-r-a-sh-s,Derazs,,qadersz,4421
 Addict,a-d-e-k,Adek,,qadek,4431
@@ -4761,7 +4775,9 @@ Constipates,k-s-t-p-a-t-s,Kstpats,,qakpst,8582
 Constipation,k-s-t-p-a-sh,Kstpaz,,qakpstz,8582
 Objectives,o-b-/-v-s,Obvs,,qbosv,8583
 Miraculously,m-e-r-a-k-e,Merake,,qaekmr,8588
+Kubernetes,k-b-e-s,Kbes,,qbeks,8595
 Import,m-p-o-t,Mpot,,qmopt,8595
+Imported,m-p-o-t-d,Mpotd,,qdmopt,8595
 Importing,m-p-o-t-\-h,Mpotg,,qgmopt,8595
 Importer,m-p-o-t-r,Mpotr,,qmoprt,8595
 Importers,m-p-o-t-r-s,Mpotrs,,qmoprst,8595
@@ -5261,7 +5277,7 @@ Variability,v-a-r-\-b,Varbo,o,qaborv,12334
 Variables,v-a-r-b-s,Varbs,,qabrsv,12334
 Emerged,e-m-e-j-d,Emejd,,qdejm,12391
 Emerging,e-m-e-j-\-h,Emejg,,qegjm,12391
-Distractions,d-s-/-k-sh-s,Dskzs,,qdksz,12405
+Distractions,d-s-/-k-sh-s,Dskzsa,a,qadksz,12405
 Revisioned,r-v-e-sh-d,Rvezd,,qdervz,12437
 Revisioning,r-v-e-sh-\-h,Rvezg,,qegrvz,12437
 Revisions,r-v-e-sh-s,Rvezs,,qersvz,12437
@@ -5473,6 +5489,9 @@ Overturn,^-o-\-t-e-n,Oten,,qenot,15426
 Overturned,^-o-\-t-e-n-d,Otend,,qenotd,15426
 Overturning,^-o-\-t-e-n-\-h,Oteng,,qenotg,15426
 Overturns,^-o-\-t-e-n-s,Otens,,qenots,15426
+Registered,r-e2-j-e2-s2-t-e2-d,Rejested,,qdejrst,15514
+Registering,r-e2-j-e2-s2-t-e2-\-h,Rejesteg,,qegjrst,15514
+Registers,r-e2-j-e2-s2-t-e2-s,Rejestes,,qejrst,15514
 Registry,r-e2-j-e2-s2-t-r-e,Rejestre,,qejrst,15514
 Registries,r-e2-j-e2-s2-t-r-e-s,Rejestres,,qejrst,15514
 Overwhelmed,o-/-u-e-l-m-d,Ouelmd,,qdelmou,15649
@@ -5631,6 +5650,11 @@ Exemptions,e-s2-e-m-sh-s,Xemzs,,qemsxz,17385
 Endangered,n-tn-j-e2-d,Ntnjed,,qdejnt,17391
 Endangering,n-tn-j-e2-\-h,Ntnjeg,,qegjnt,17391
 Endangers,n-tn-j-e2-s,Ntnjes,,qejnst,17391
+Invoked,n-v-k-d,Nvkd,,qdknv,17433
+Invoking,n-v-k-\-h,Nvkg,,qgknv,17433
+Invokes,n-v-k-s,Nvks,,qknsv,17433
+Invocation,n-v-k-sh,Nvkz,,qknvz,17433
+Invocations,n-v-k-sh-s,Nvkzs,,qknsvz,17433
 Optioned,o-p-sh-d,Opzd,,qdopz,17467
 Optioning,o-p-sh-\-h,Opzg,,qgopz,17467
 Optional,o-p-sh-l,Opzl,,qlopz,17467
@@ -6470,6 +6494,9 @@ Mystified,m-e-s2-df-d,Mesdfd,,qdefms,58414
 Mystifying,m-e-s2-df-\-h,Mesdfg,,qdefgms,58414
 Mystifies,m-e-s2-df-s,Mesdfs,,qdefms,58414
 Compliant,k-p-l-i-nt,Kplint,,qiklnpt,58475
+Compliantly,k-p-l-i-nt-e,Kplinte,,qeiklnpt,58475
+Noncompliant,n-k-p-l-i-nt,Nkplint,,qiklnpt,58475
+Noncompliantly,n-k-p-l-i-nt-e,Nkplinte,,qeiklnpt,58475
 Indicted,nt-i-t-d,Ntitdu,u,qdintu,58592
 Indicting,nt-i-t-\-h,Ntitgu,u,qgintu,58592
 Indictments,nt-i-t-m-s,Ntitmsu,u,qimnstu,58592
@@ -6874,6 +6901,17 @@ Modulating,m-o-d-\-l-a-t-\-h,Modlatg,,qadglmot,71236
 Modulates,m-o-d-\-l-a-t-s,Modlats,,qadlmost,71236
 Module,m-o-d-\-l,Modlo,o,qdlmo,71236
 Modules,m-o-d-\-l-s,Modls,,qdlmos,71236
+Naive,n-i-v,Niv,,qinv,71293
+Naively,n-i-v-e,Nive,,qeinv,71293
+Naivete,n-i-v-t-a,Nivta,,qaintv,71293
+Rotate,r-o-t-a,Rota,,qaort,71293
+Rotated,r-o-t-a-d,Rotad,,qadort,71293
+Rotating,r-o-t-a-\-h,Rotag,,qagort,71293
+Rotates,r-o-t-a-s,Rotas,,qaorst,71293
+Rotation,r-o-t-a-sh,Rotaz,,qaortz,71293
+Rotational,r-o-t-a-sh-l,Rotazl,,qalortz,71293
+Rotationally,r-o-t-a-sh-l-e,Rotazle,,qaelortz,71293
+Rotations,r-o-t-a-sh-s,Rotazs,,qaorstz,71293
 Nationalist,n-a-sh-l-e-s,Nazles,,qaelnsz,71303
 Nationalists,n-a-sh-l-e-s-s,Nazless,,qaelnsz,71303
 Nationalistically,n-a-sh-l-/-s2-t-e,Nazlste,,qaelnstz,71303
@@ -7429,6 +7467,11 @@ Lifetime,l-a-f-tm,Laftm,,qaflmt,91587
 Lifetimes,l-a-f-tm-s,Laftms,,qaflmst,91587
 Betrayal,b-t-r-a-l,Btral,,qablrt,91613
 Betrayals,b-t-r-a-l-s,Btrals,,qablrst,91613
+Drop,d-r-o-p,Drop,,qdopr,91619
+Dropped,d-r-o-p-d,Dropd,,qdopr,91619
+Dropping,d-r-o-p-\-h,Dropg,,qdgopr,91619
+Drops,d-r-o-p-s,Drops,,qdoprs,91619
+Renaissance,r-e-n-s-a-n-s,Rensans,,qaenrs,91619
 Inaccurate,n-a-k-r-a,Nakra,,qaknr,91642
 Inaccurately,n-a-k-r-a-e,Nakrae,,qaeknr,91642
 Frustrate,f-r-u-s-t-r-a,Frustra,,qafrstu,91653
