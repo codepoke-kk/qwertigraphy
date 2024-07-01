@@ -18,6 +18,8 @@ class DictionaryMap
 	chords := ComObjCreate("Scripting.Dictionary")
 	hints := ComObjCreate("Scripting.Dictionary")
 	displaceds := ComObjCreate("Scripting.Dictionary")
+	prefixes := ComObjCreate("Scripting.Dictionary")
+	suffixes := ComObjCreate("Scripting.Dictionary")
 
 	logQueue := new Queue("DictionaryMapQueue")
 	logVerbosity := 2
@@ -102,6 +104,37 @@ class DictionaryMap
 					; If this one is in the negations list, keep it as a displaced entry, but do not overwrite the existing entry
 					this.displaceds.item(newEntry.qwerd) := newEntry
 					continue
+				}
+                
+                ; Intercept and retain Prefixes and Suffixes as appropriate, then let them flow through as normal qwerds
+                if (newEntry.isAffix) {
+                    ; Grab the qwerd minus the affix marker at its end
+                    unmarkedQwerd := SubStr(newEntry.qwerd, 1, -1)
+                    ; The Qwerd/Word come in proper case, so create lowered versions 
+                    StringLower, loweredUnmarkedQwerd, % unmarkedQwerd
+                    StringLower, loweredAffixWord, % newEntry.word
+                    StringUpper, upperedUnmarkedQwerd, % unmarkedQwerd
+                    StringUpper, upperedAffixWord, % newEntry.word
+                    this.logEvent(4, "Testing end marker " newEntry.endMarker " for Prefix/Suffix")
+                    if (newEntry.isPrefix) {
+                        properedUnmarkedQwerd := SubStr(upperedUnmarkedQwerd, 1, 1) SubStr(loweredUnmarkedQwerd, 2)
+                        properedAffixWord := SubStr(upperedAffixWord, 1, 1) SubStr(loweredAffixWord, 2) 
+                        this.logEvent(1, "Loading Prefix " properedUnmarkedQwerd " as " properedAffixWord)
+                        this.prefixes.item(properedUnmarkedQwerd) := properedAffixWord
+                        this.prefixes.item(loweredUnmarkedQwerd) := loweredAffixWord
+                        if (StrLen(unmarkedQwerd) > 1) {
+                            this.prefixes.item(upperedUnmarkedQwerd) := upperedAffixWord
+                        }
+                    } else if (newEntry.isSuffix) {
+                        properedUnmarkedQwerd := SubStr(upperedUnmarkedQwerd, 1, 1) SubStr(loweredUnmarkedQwerd, 2)
+                        properedAffixWord := "-" SubStr(upperedAffixWord, 2, 1) SubStr(loweredAffixWord, 3) 
+                        this.logEvent(1, "Loading Suffix " properedUnmarkedQwerd " as " properedAffixWord)
+                        this.suffixes.item(properedUnmarkedQwerd) := properedAffixWord
+                        this.suffixes.item(loweredUnmarkedQwerd) := loweredAffixWord
+                        if (StrLen(unmarkedQwerd) > 1) {
+                            this.suffixes.item(upperedUnmarkedQwerd) := upperedAffixWord
+                        }
+                    }
 				}
 
 				if (StrLen(newEntry.qwerd) > this.longestQwerd) {

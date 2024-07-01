@@ -73,7 +73,6 @@ Mess,mes,Mesi,i,,90115
 Tak,tak,Taku,u,,90119
 Ports,pots,Potsu,u,,90120
 Missing,msg,Msg,,,90121
-Unique,unek,Uneq,,,90124
 Stinks,stqs,Stqs,,,90126
 Riding,ridg,Ridg,,,90127
 Crunch,krnc,Krnc,,,90128
@@ -216,7 +215,6 @@ Sucked,sekt,Sekti,i,,90352
 Cas,kas,Kasu,u,,90353
 Lied,lid,Lidu,u,,90355
 Thoughts,Hots,Hots,,,90359
-Isolation,islaz,Islaz,,,90360
 Flip,flep,Flepi,i,,90361
 Blair,blar,Blar,,,90362
 Spinning,speng,Speng,,,90364
@@ -303,7 +301,6 @@ Lagging,lagg,Lagg,,,90473
 Ebbing,ebg,Ebg,,,90474
 Flounder,flndE,Flnde,,,90476
 Hook,huk,Huk,,,90477
-Isolate,aslat,Aslat,,,90478
 Afar,afor,Afor,,,90479
 Dump,dmp,Dmpu,u,,90480
 Shrink,zrq,Zrq,,,90481
@@ -324,7 +321,6 @@ Reversed,rvest,Rvest,,,90501
 Shallow,zalo,Zalo,,,90503
 Scratch,skrac,Skrac,,,90504
 Apt,apt,Aptu,u,,90505
-Burning,bEng,Beng,,,90506
 Episode,epsod,Epsod,,,90508
 Outhouse,aothaus,Wthws,,,90509
 Annoying,anoeg,Anyg,,,90512
@@ -384,7 +380,6 @@ Posed,posd,Posdo,o,,90596
 Serum,serm,Serm,,,90597
 Accusing,akeusg,Akusg,,,90598
 Bosses,boss,Bosso,o,,90599
-Drowning,drng,Drng,,,90600
 Gary,gere,Gereo,o,,90601
 Chips,ceps,Ceps,,,90602
 Stead,std,Stdu,u,,90604
@@ -685,7 +680,6 @@ Copying,kpeg,Kpeg,,,91050
 Jerry,jere,Jere,,,91051
 Handing,handg,Handg,,,91052
 Millions,melns,Melns,,,91054
-Isolated,aslatd,Aslatd,,,91055
 Ap,ape,Apeo,o,,91056
 Mi,me,Mea,a,,91058
 Amazon,amzn,Amzn,,,91060
@@ -897,7 +891,6 @@ Rum,rm,Rmi,i,,91361
 Advocating,advkatg,Advkatg,,,91363
 Prodded,prdt,Prdt,,,91368
 Dumped,dmpt,Dmpt,,,91369
-Asserted,asEtd,Asetd,,,91370
 Tier,ter,Teru,u,,91371
 Disordered,dsodrd,Dsodrd,,,91372
 Vendors,vndrs,Vndrs,,,91375
@@ -936,7 +929,6 @@ Unlimited,nlemtd,Nlemtd,,,91419
 Warranty,uonte,Uonte,,,91420
 Overlooking,Olkg,Olkg,,,91422
 Emmet,emt,Emt,,,91424
-Ideas,AY0 des,Ay0 des,,,91425
 Ramifications,ramfkazs,Ramfkazs,,,91428
 Discus,dsks,Dsksi,i,,91429
 Cycles,sekls,Seklso,o,,91431
@@ -972,14 +964,12 @@ Libraries,librres,Librres,,,91465
 Overcoming,Okmg,Okmg,,,91469
 Forthright,fHri,Fhri,,,91470
 Tester,testE,Testei,i,,91472
-Descending,dseng,Dseng,,,91473
 Anonymously,anonmse,Anonmse,,,91474
 Tide,tid,Tidu,u,,91475
 Slam,slam,Slamo,o,,91477
 Unsafe,nsaf,Nsaf,,,91478
 Shady,zade,Zade,,,91479
 Relax,rlaks,Rlaks,,,91480
-Declining,dkling,Dkling,,,91482
 Accepting,aksg,Aksg,,,91483
 Secrets,sekrts,Sekrts,,,91486
 Tripping,trepg,Trepg,,,91490
@@ -1435,7 +1425,6 @@ Despise,dspiz,Dspiz,,,92135
 Flare,fler,Fler,,,92136
 Tolerant,tolrnt,Tolrnt,,,92137
 Ukraine,ukran,Ukran,,,92138
-Abandoning,abandng,Abandng,,,92139
 Sinking,sqg,Sqg,,,92140
 Tugging,tgg,Tgg,,,92141
 Smooths,smuhs,Smuhs,,,92142
@@ -1941,7 +1930,6 @@ Christy,kreste,Kresteu,u,,92829
 Drafting,drfg,Drfg,,,92830
 Tending,tndg,Tndg,,,92831
 Lang,lag,Lagi,i,,92833
-Asserting,asEtg,Asetg,,,92834
 Vent,vent,Vento,o,,92835
 Veto,veto,Vetoo,o,,92836
 Porter,potE,Pote,,,92837
