@@ -33,7 +33,7 @@ Class DashboardViewport
    speedKeyed := 0
    speedEnhanced := 0
    coachAheadQwerd := new DashboardEvent("g-r-e-t-/-s", "grets", "Greetings", "white")
-   comingSoonKeys := ["", "o", "i", "u", "e", "a", "d", "t", "s", "g", "n", "r"]
+   comingSoonKeys := ["", "o", "i", "u", "e", "a", "d", "t", "s", "g", "n", "r", ">"]
    coachAheadHints := ""
    coachAheadHeight := 0 ; 100
    
@@ -569,7 +569,9 @@ Class DashboardViewport
         if ((not this.engine.keyboard.Token) or (InStr("0123456789", SubStr(this.engine.keyboard.Token,1,1)))) {
            Return 
         }
-        this.LogEvent(4, "Coming soon " this.engine.keyboard.Token)
+        this.LogEvent(1, "Coming soon " this.engine.keyboard.Token)
+        lastToken := this.engine.record[this.engine.record.MaxIndex()]
+        this.logEvent(1, "Last token ender: " lastToken.ender this.engine.keyboard.Token.qwerd)
         this.coachAheadNote := this.engine.keyboard.Token
         For letter_index, letter in this.comingSoonKeys {
             ; Need to test whether this qwerd exists before testing whether it's a word 
