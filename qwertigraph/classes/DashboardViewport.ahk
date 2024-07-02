@@ -90,7 +90,7 @@ Class DashboardViewport
       this.AutohideSeconds := (this.qenv.properties.DashboardAutohideSeconds) ? this.qenv.properties.DashboardAutohideSeconds : 30
       this.engine := engine 
       this.dashboardQueue := engine.dashboardQueue
-      this.auxKeyboardState := ""
+      this.auxKeyboardState := "started"
       this.lastRefresh := A_TickCount
 		
       this.timer := ObjBindMethod(this, "DequeueEvents")
