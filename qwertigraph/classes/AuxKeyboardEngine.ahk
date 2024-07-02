@@ -75,6 +75,9 @@ class AuxKeyboardEngine
 			}
 		}
 		this.logEvent(2, "Loaded from " this.auxmap " " this.keymapCount " characters with " this.keymap["Numpad0"])
+        this.logEvent(1, "Initialized aux keyboard state as intialized:" this.winlocked . this.caplocked . this.layer)
+        this.dashboard.auxKeyboardState := "initialized:" this.winlocked . this.caplocked . this.layer
+        this.dashboard.visualizeQueue()
 		
 		; this.Start()
 	}
@@ -89,7 +92,7 @@ class AuxKeyboardEngine
 		this.logEvent(2, "Auxilliary Keyboard Engine stopped")
 		this.enabled := false 
         this.logEvent(1, "Sending aux keyboard state as aux:" this.winlocked . this.caplocked . this.layer)
-        this.dashboard.auxKeyboardState := "aux:" this.winlocked . this.caplocked . this.layer
+        this.dashboard.auxKeyboardState := "stopped:" this.winlocked . this.caplocked . this.layer
         this.dashboard.visualizeQueue()
 	}
 	Flush() {
