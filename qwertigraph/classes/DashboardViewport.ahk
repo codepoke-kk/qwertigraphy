@@ -33,10 +33,10 @@ Class DashboardViewport
    speedKeyed := 0
    speedEnhanced := 0
    coachAheadQwerd := new DashboardEvent("g-r-e-t-/-s", "grets", "Greetings", "white")
-   comingSoonKeys := ["", "o", "i", "u", "e", "a", "d", "t", "s", "g", "n", "r", "l", "m", "p", "c", "h", "y", ">", "<"]
+   comingSoonKeys := ["", "o", "i", "u", "e", "a", "y", "d", "t", "s", "p", "b", "n", "m", "k", "g", "r", "l", "z", "c", "j", "h", ">", "<"]
    coachAheadHints := ""
    indicatorsHeight := 100
-   coachAheadHeight := 425
+   coachAheadHeight := 502
    
    ; Properties for dashboard
    Show := (this.map.qenv.properties.DashboardShow) ? this.map.qenv.properties.DashboardShow : 1
