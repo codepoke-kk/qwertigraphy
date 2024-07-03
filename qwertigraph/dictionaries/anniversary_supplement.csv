@@ -3155,6 +3155,7 @@ Examination,e-s2-a-mn-sh,Xammz,,qamxz,3165
 Examinations,e-s2-a-mn-sh-s,Xammzs,,qamsxz,3165
 Relatives,r-e-l-s,Relso,o,qelors,3171
 Relativity,r-e-l-\-v-t-e,Relvte,,qelrtv,3171
+Conceptions,k-s-e-p-sh-s,Ksepzs,,qekpsz,3182
 Inspire,n-s-p-i,Nspi,,qinps,3183
 Inspired,n-s-p-i-d,Nspid,,qdinps,3183
 Inspiring,n-s-p-i-\-h,Nspig,,qginps,3183
@@ -3747,6 +3748,7 @@ Replacing,r-pl-a-s-\-h,Rplasg,,qaglprs,4225
 Replacement,r-pl-a-s-m,Rplasm,,qalmprs,4225
 Replacements,r-pl-a-s-m-s,Rplasms,,qalmprs,4225
 Replaces,r-pl-a-s-s,Rplass,,qalprs,4225
+Concepts,k-s-e-p-s,Kseps,,qekps,4234
 Picturesquely,p-k-t-r-e-s2-k-e,Pqtreske,,qekpqrst,4237
 Annoint,a-n-o-e-nt,Anynt,,qanty,4284
 Annointed,a-n-o-e-nt-d,Anyntd,,qadnty,4284
@@ -4537,6 +4539,7 @@ Borrowing,b-o-r-o-\-h,Borog,,qbgor,6960
 Borrower,b-o-r-o-r,Boror,,qbor,6960
 Borrowers,b-o-r-o-r-s,Borors,,qbors,6960
 Borrows,b-o-r-o-s,Boros,,qbors,6960
+Democracies,tm-k-s-e-s,Tmkses,,qekmst,6963
 Identities,a-tn-t-e-s,Atntes,,qaenst,6977
 Perilous,p-e-r-l-u-s,Perlus,,qelprsu,6982
 Perilously,p-e-r-l-u-s-e,Perluse,,qelprsu,6982
@@ -5987,6 +5990,15 @@ Equipping,e-k-p-\-h,Eqpg,,qegpq,25069
 Equips,e-k-p-s,Eqps,,qepqs,25069
 Befriended,b-fr-d,Bfrd,,qbdfr,25083
 Clearest,k-l-e-s-t,Klest,,qeklst,25344
+Delude,d-l-u-d,Dlud,,qdlu,25397
+Deluded,d-l-u-d-d,Dludd,,qdlu,25397
+Deluding,d-l-u-d-\-h,Dludg,,qdglu,25397
+Deludes,d-l-u-d-s,Dluds,,qdlsu,25397
+Delusion,d-l-u-sh,Dluz,,qdluz,25397
+Delusions,d-l-u-sh-s,Dluzs,,qdlsuz,25397
+Delusional,d-l-sh-l,Dlzl,,qdlz,25397
+Delusionally,d-l-sh-l-e,Dlzle,,qdelz,25397
+Delusions,d-l-sh-s,Dlzs,,qdlsz,25397
 Opponents,o-p-o-n-s,Opons,,qnops,25607
 Beatify,b-ea-df,Bedf,,qbdef,25858
 Beatified,b-ea-df-d,Bedfd,,qbdef,25858
@@ -6675,10 +6687,12 @@ Condition,k-d-sh,Kdz,,qdkz,70330
 Conditioned,k-d-sh-d,Kdzd,,qdkz,70330
 Conditioning,k-d-sh-\-h,Kdzg,,qdgkz,70330
 Conditional,k-d-sh-l,Kdzl,,qdklz,70330
+Conditionally,k-d-sh-l-e,Kdzle,,qdeklz,70330
 Conditionals,k-d-sh-l-s,Kdzls,,qdklzs,70330
 Conditions,k-d-sh-s,Kdzs,,qdksz,70330
 Conditionally,k-d-sh-ye,Kdzy,,qdkyz,70330
 Unconditional,n-k-d-sh-l,Nkdzl,,qdklnz,70330
+Unconditionally,n-k-d-sh-l-e,Nkdzle,,qdeklnz,70330
 Unconditionally,n-k-d-sh-y,Nkdzy,,qdknyz,70330
 Connecting,k-e-k-\-h,Kekg,,qegk,70334
 Connects,k-e-k-s,Keks,,qeks,70334
@@ -6873,6 +6887,7 @@ Reclaiming,r-e-/-m-\-h,Remg,,qegmr,70999
 Reclaims,r-e-/-m-s,Rems,,qemrs,70999
 Reclamations,r-e-/-m-sh-s,Remzs,,qemrsz,70999
 Irresistible,e-r-ss-/-b,Erssb,,qbers,71002
+Irresistibly,e-r-ss-/-b-e,Erssbe,,qbers,71002
 Jesus christ,j-~-k,Jk,,qcjk,71024
 Joint resolution,j-~-r-s2-o-sh,Jrsoz,,qjorsz,71028
 Joint resolutions,j-~-r-s2-o-sh-s,Jrsozs,,qjorsz,71028

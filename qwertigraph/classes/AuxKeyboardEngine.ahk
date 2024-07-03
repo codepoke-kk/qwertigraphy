@@ -75,16 +75,25 @@ class AuxKeyboardEngine
 			}
 		}
 		this.logEvent(2, "Loaded from " this.auxmap " " this.keymapCount " characters with " this.keymap["Numpad0"])
+        this.logEvent(1, "Initialized aux keyboard state as intialized:" this.winlocked . this.caplocked . this.layer)
+        this.dashboard.auxKeyboardState := "initialized:" this.winlocked . this.caplocked . this.layer
+        this.dashboard.visualizeQueue()
 		
 		; this.Start()
 	}
 	Start() {
 		this.logEvent(2, "Auxilliary Keyboard Engine started with " this.keymap.MaxIndex() " keys")
 		this.enabled := true
+        this.logEvent(1, "Sending aux keyboard state as aux:" this.winlocked . this.caplocked . this.layer)
+        this.dashboard.auxKeyboardState := "aux:" this.winlocked . this.caplocked . this.layer
+        this.dashboard.visualizeQueue()
 	}
 	Stop() {
 		this.logEvent(2, "Auxilliary Keyboard Engine stopped")
 		this.enabled := false 
+        this.logEvent(1, "Sending aux keyboard state as aux:" this.winlocked . this.caplocked . this.layer)
+        this.dashboard.auxKeyboardState := "stopped:" this.winlocked . this.caplocked . this.layer
+        this.dashboard.visualizeQueue()
 	}
 	Flush() {
         this.logEvent(2, "Auxilliary Keyboard Engine flushed")
@@ -166,6 +175,11 @@ class AuxKeyboardEngine
 			rekey := "{" . RegExReplace(key, "Numpad") . "}"
 			this.logEvent(2, "Forwarding disabled and unmatched " key " as " rekey)
 		}
+        
+        this.logEvent(1, "Sending aux keyboard state as aux:" this.winlocked . this.caplocked . this.layer)
+        this.dashboard.auxKeyboardState := "aux:" this.winlocked . this.caplocked . this.layer
+        this.dashboard.visualizeQueue()
+        
 		Return rekey
 	}
 	LeaveChord(key) {
@@ -425,7 +439,7 @@ class AuxKeyboardEngine
             this.lastkeycount := 0
 				
 		}
-        this.logEvent(4, "Sending aux keyboard state as aux:" this.winlocked . this.caplocked . this.layer)
+        this.logEvent(1, "Sending aux keyboard state as aux:" this.winlocked . this.caplocked . this.layer)
         this.dashboard.auxKeyboardState := "aux:" this.winlocked . this.caplocked . this.layer
 
 		; Clear the chord buffer for a fresh start 
@@ -447,6 +461,9 @@ class AuxKeyboardEngine
             this.layer := ""
             this.logEvent(4, "After cancel layer is " this.layer " and lock state is " this.layerlocked)
         }
+        this.logEvent(1, "Sending aux keyboard state as aux:" this.winlocked . this.caplocked . this.layer)
+        this.dashboard.auxKeyboardState := "aux:" this.winlocked . this.caplocked . this.layer
+        this.dashboard.visualizeQueue()
     }
 	
 	LogEvent(verbosity, message) 

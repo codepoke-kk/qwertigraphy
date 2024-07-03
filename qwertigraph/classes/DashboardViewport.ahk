@@ -33,9 +33,10 @@ Class DashboardViewport
    speedKeyed := 0
    speedEnhanced := 0
    coachAheadQwerd := new DashboardEvent("g-r-e-t-/-s", "grets", "Greetings", "white")
-   comingSoonKeys := ["", "o", "i", "u", "e", "a", "d", "t", "s", "g", "n", "r"]
+   comingSoonKeys := ["", "o", "i", "u", "e", "a", "y", "d", "t", "s", "p", "b", "n", "m", "k", "g", "r", "l", "z", "c", "j", "h", ">", "<"]
    coachAheadHints := ""
-   coachAheadHeight := 0 ; 100
+   indicatorsHeight := 100
+   coachAheadHeight := 502
    
    ; Properties for dashboard
    Show := (this.map.qenv.properties.DashboardShow) ? this.map.qenv.properties.DashboardShow : 1
@@ -90,7 +91,7 @@ Class DashboardViewport
       this.AutohideSeconds := (this.qenv.properties.DashboardAutohideSeconds) ? this.qenv.properties.DashboardAutohideSeconds : 30
       this.engine := engine 
       this.dashboardQueue := engine.dashboardQueue
-      this.auxKeyboardState := ""
+      this.auxKeyboardState := "started"
       this.lastRefresh := A_TickCount
 		
       this.timer := ObjBindMethod(this, "DequeueEvents")
@@ -176,8 +177,8 @@ Class DashboardViewport
          this.dashwindow.top := Mon1Top
          this.dashwindow.bottom := Mon1Bottom
          this.dashwindow.height := Mon1Bottom - Mon1Top
-         this.dashwindow.indicatorsTop := this.dashwindow.bottom - 100
-         this.dashwindow.coachAheadTop := this.dashwindow.indicatorsTop - 280
+         this.dashwindow.indicatorsTop := this.dashwindow.bottom - this.indicatorsHeight
+         this.dashwindow.coachAheadTop := this.dashwindow.indicatorsTop - this.coachAheadHeight
          this.dashwindow.transcriptBottom := this.dashwindow.coachAheadTop
          this.partnerwindow := {"left": Mon1Left, "right": (Mon1Right - (this.dashwindow.width + 1)), "top": Mon1Top, "bottom": Mon1Bottom}
          this.partnerwindow.width := this.partnerwindow.right - this.partnerwindow.left
@@ -221,7 +222,7 @@ Class DashboardViewport
       this.LogEvent(3, "Just erased " 0 " to " this.dashwindow.coachAheadTop)
 
       
-      ; Draw pending hints
+      ; Clear pending hints area to be filled in ComingSoon() called by Dequeue Events 
       Gdip_FillRectangle(this.G, this.CoachAheadBackgroundBrush, 0, this.dashwindow.coachAheadTop, this.dashwindow.width, this.dashwindow.indicatorsTop - this.dashwindow.coachAheadTop)
       this.LogEvent(3, "Just erased " this.dashwindow.coachAheadTop " to " (this.dashwindow.indicatorsTop - this.dashwindow.coachAheadTop))
       HintOptions := "x10 y" (this.dashwindow.coachAheadTop + this.cell.height) " Left " this.FormColors["white"] " r4 s16 "
@@ -261,16 +262,16 @@ Class DashboardViewport
          Return 
       }
       
-      
       ;if ((this.lastRefresh + 1000) < A_TickCount) {
          this.LogEvent(4, "Aborting refresh at " A_TickCount " since " this.lastRefresh)
          ;return
       ;}
       this.lastRefresh := A_TickCount
       
+      ; This draws the background colors, the pending hints, the WPM Meter, and the Aux status
       this.DrawBackground()
-      ; Set the nib start points
       
+      ; Now draw the queue of words starting from the bottom up. 
       if (this.orientation == "vertical") {
          this.cell.x := 0
          this.cell.y := this.dashwindow.transcriptBottom
@@ -279,10 +280,6 @@ Class DashboardViewport
          this.cell.y := 0
       }
       this.LogEvent(2, "Starting visualization at " this.cell.x "," this.cell.y)
-      ;this.BackstepCell()
-      
-      ;this.LogEvent(2, "Visualizing coachahead qwerd " this.coachAheadQwerd.qwerd " at " ;this.cell.x "," this.cell.y)
-      ;this.DrawQwerd(this.coachAheadQwerd)
       
       this.BackstepCell()
       this.LogEvent(3, "Visualizing " this.qwerds.MaxIndex() " events starting at " this.cell.x "," this.cell.y)
@@ -569,7 +566,10 @@ Class DashboardViewport
         if ((not this.engine.keyboard.Token) or (InStr("0123456789", SubStr(this.engine.keyboard.Token,1,1)))) {
            Return 
         }
-        this.LogEvent(4, "Coming soon " this.engine.keyboard.Token)
+        this.LogEvent(1, "Coming soon " this.engine.keyboard.Token)
+        lastToken := this.engine.record[this.engine.record.MaxIndex()]
+        this.logEvent(1, "Last token ender: " lastToken.ender this.engine.keyboard.Token.qwerd)
+        ; Create a multi-line string, coachAheadPhrase, with this loop, then present it below 
         this.coachAheadNote := this.engine.keyboard.Token
         For letter_index, letter in this.comingSoonKeys {
             ; Need to test whether this qwerd exists before testing whether it's a word 
@@ -602,7 +602,7 @@ Class DashboardViewport
         this.LogEvent(2, "Visualizing coachahead qwerd " this.coachAheadQwerd.qwerd " at " this.cell.x "," this.cell.y)
         this.DrawQwerd(this.coachAheadQwerd)
 
-        ; Draw pending hints
+        ; Draw pending hints as the coachAheadNote
         HintOptions := "x10 y" (this.dashwindow.coachAheadTop + this.cell.height) " Left " this.FormColors["white"] " r4 s16 "
         this.LogEvent(3, "Drawing coachahead as " HintOptions)
         Gdip_TextToGraphics(this.G, this.coachAheadNote, HintOptions, this.HintsFontName, this.dashwindow.width, this.dashwindow.height)
