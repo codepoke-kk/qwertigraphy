@@ -3,6 +3,7 @@ personal.csv
 duplicateLazyOutlines.txt
 opportunities.txt
 *.bak
+*.export
 logs
 personal.ahk
 /qwertigraph/dictionaries/*.v1backup
