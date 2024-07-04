@@ -43,7 +43,8 @@ class DictionaryEntry
             ; or the qwerd is 1 character long because a proper and an upper cannot be distinguished
         if (this.isAffix) {
             caseTestableWord := RegExReplace(this.word, "-")
-            this.isCapped := ((SubStr(upperedWord,1,1)) == (SubStr(caseTestableWord,1,1)))
+            StringUpper, upperedCaseTestableWord, caseTestableWord
+            this.isCapped := ((SubStr(upperedCaseTestableWord,1,1)) == (SubStr(caseTestableWord,1,1)))
             this.isProper := (((not this.isUpper) and (not this.isLower))
                 or (this.isUpper and ((StrLen(caseTestableWord) == 1)))
                 or (this.isCapped and (StrLen(this.qwerd) == 2))) 
