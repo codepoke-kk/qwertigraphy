@@ -72,6 +72,7 @@ Gui, Add, Button, x838 y500 w90 h30 gEditorSaveDictionaries vSaveDictionaries , 
 
 ; Add checkbox controls
 ;Gui, Add, CheckBox, x815 y49 w130 h20 vAutoGenChords gAutoGenChords Checked, AutoGenerate Chords
+; Add auto-edit buttons
 Gui, Add, Button, x838 y90 w90 h20 gEditorOpenPersonalizations, Personalizations
 Gui, Add, Button, x838 y130 w90 h20 gEditorEditRow, Edit
 Gui, Add, Button, x838 y150 w90 h20 gEditorDeleteRow, Delete
@@ -81,9 +82,14 @@ Gui, Add, Button, x838 y210 w90 h20 gEditorCreateRow_G, Add G
 Gui, Add, Button, x838 y230 w90 h20 gEditorCreateRow_T, Add T
 Gui, Add, Button, x838 y250 w90 h20 gEditorCreateRow_R, Add R
 Gui, Add, Button, x838 y270 w90 h20 gEditorCreateRow_LY, Add LY
-Gui, Add, Button, x838 y290 w90 h20 gEditorCreateRow_ION, Add ION
-Gui, Add, Button, x838 y310 w90 h20 gEditorCreateRow_ES, Add ES
-Gui, Add, Button, x838 y330 w90 h20 gEditorCreateRow_SDG, Add S+D+G
+Gui, Add, Button, x838 y290 w90 h20 gEditorCreateRow_ALLY, Add ALLY
+Gui, Add, Button, x838 y310 w90 h20 gEditorCreateRow_ION, Add ION
+Gui, Add, Button, x838 y330 w90 h20 gEditorCreateRow_ATION, Add ATION
+Gui, Add, Button, x838 y350 w90 h20 gEditorCreateRow_ABLE, Add ABLE
+Gui, Add, Button, x838 y370 w90 h20 gEditorCreateRow_ABILITY, Add ABILITY
+Gui, Add, Button, x838 y390 w90 h20 gEditorCreateRow_ES, Add ES
+Gui, Add, Button, x838 y410 w90 h20 gEditorCreateRow_SDG, Add S+D+G
+Gui, Add, Button, x838 y430 w90 h20 gEditorCreateRow_ESDG, Add ES+D+G
 
 EditorSearchMapEntries() {
 	global editor
@@ -279,6 +285,22 @@ EditorCreateRow_LY() {
 	editor.commitEdit()
 	editor.SearchMapEntries()
 }
+EditorCreateRow_ALLY() {
+	global editor
+	Gui MainGUI:Default
+	Gui, ListView, EditorLV
+    FocusedRowNumber := LV_GetNext(0, "F")  ; Find the focused row.
+    if not FocusedRowNumber { ; No row is focused.
+		editor.logEvent(1, "Listview edit event with no row selected")
+        return
+	}
+    editor.logEvent(3, "Listview context edit event adding LY on row " FocusedRowNumber)
+    editor.prepareEdit(FocusedRowNumber)
+    editor.addValueToEditFields("ally", "-e", "e", "e")
+    editor.autoChord()
+	editor.commitEdit()
+	editor.SearchMapEntries()
+}
 EditorCreateRow_ION() {
 	global editor
 	Gui MainGUI:Default
@@ -291,6 +313,54 @@ EditorCreateRow_ION() {
     editor.logEvent(3, "Listview context edit event adding ION on row " FocusedRowNumber)
     editor.prepareEdit(FocusedRowNumber)
     editor.addValueToEditFields("ion", "-sh", "z", "z")
+    editor.autoChord()
+	editor.commitEdit()
+	editor.SearchMapEntries()
+}
+EditorCreateRow_ATION() {
+	global editor
+	Gui MainGUI:Default
+	Gui, ListView, EditorLV
+    FocusedRowNumber := LV_GetNext(0, "F")  ; Find the focused row.
+    if not FocusedRowNumber { ; No row is focused.
+		editor.logEvent(1, "Listview edit event with no row selected")
+        return
+	}
+    editor.logEvent(3, "Listview context edit event adding ION on row " FocusedRowNumber)
+    editor.prepareEdit(FocusedRowNumber)
+    editor.addValueToEditFields("ation", "-sh", "z", "z")
+    editor.autoChord()
+	editor.commitEdit()
+	editor.SearchMapEntries()
+}
+EditorCreateRow_ABLE() {
+	global editor
+	Gui MainGUI:Default
+	Gui, ListView, EditorLV
+    FocusedRowNumber := LV_GetNext(0, "F")  ; Find the focused row.
+    if not FocusedRowNumber { ; No row is focused.
+		editor.logEvent(1, "Listview edit event with no row selected")
+        return
+	}
+    editor.logEvent(3, "Listview context edit event adding ION on row " FocusedRowNumber)
+    editor.prepareEdit(FocusedRowNumber)
+    editor.addValueToEditFields("able", "-b", "b", "b")
+    editor.autoChord()
+	editor.commitEdit()
+	editor.SearchMapEntries()
+}
+EditorCreateRow_ABILITY() {
+	global editor
+	Gui MainGUI:Default
+	Gui, ListView, EditorLV
+    FocusedRowNumber := LV_GetNext(0, "F")  ; Find the focused row.
+    if not FocusedRowNumber { ; No row is focused.
+		editor.logEvent(1, "Listview edit event with no row selected")
+        return
+	}
+    editor.logEvent(3, "Listview context edit event adding ION on row " FocusedRowNumber)
+    editor.prepareEdit(FocusedRowNumber)
+    editor.addValueToEditFields("ability", "-\-b", "bo", "bo")
     editor.autoChord()
 	editor.commitEdit()
 	editor.SearchMapEntries()
@@ -320,6 +390,43 @@ EditorCreateRow_SDG() {
     editor.logEvent(3, "Listview context edit event adding S+D+G on row " FocusedRowNumber)
     editor.prepareEditFromData(EditWord, EditForm, EditQwerd, EditKeyer, EditChord, EditChordable, EditUsage, EditDict)
     editor.addValueToEditFields("s", "-s", "s", "s")
+    editor.autoChord()
+	editor.commitEdit()
+    editor.prepareEditFromData(EditWord, EditForm, EditQwerd, EditKeyer, EditChord, EditChordable, EditUsage, EditDict)
+    editor.addValueToEditFields("ed", "-d", "d", "d")
+    editor.autoChord()
+	editor.commitEdit()
+    editor.prepareEditFromData(EditWord, EditForm, EditQwerd, EditKeyer, EditChord, EditChordable, EditUsage, EditDict)
+    editor.addValueToEditFields("ing", "-\-h", "g", "g")
+    editor.autoChord()
+	editor.commitEdit()
+	editor.SearchMapEntries()
+}
+EditorCreateRow_ESDG() {
+	global editor
+	Gui MainGUI:Default
+	Gui, ListView, EditorLV
+    FocusedRowNumber := LV_GetNext(0, "F")  ; Find the focused row.
+    if not FocusedRowNumber { ; No row is focused.
+		editor.logEvent(1, "Listview edit event with no row selected")
+        return
+	}
+
+    editor.logEvent(2, "Getting data from ListView from row " FocusedRowNumber)
+
+    ; Get the data from the edited row
+    LV_GetText(EditWord, FocusedRowNumber, 1)
+    LV_GetText(EditForm, FocusedRowNumber, 2)
+    LV_GetText(EditQwerd, FocusedRowNumber, 3)
+    LV_GetText(EditKeyer, FocusedRowNumber, 4)
+    LV_GetText(EditChord, FocusedRowNumber, 5)
+    LV_GetText(EditChordable, FocusedRowNumber, 6)
+    LV_GetText(EditUsage, FocusedRowNumber, 7)
+    LV_GetText(EditDict, FocusedRowNumber, 8)
+
+    editor.logEvent(3, "Listview context edit event adding ES+D+G on row " FocusedRowNumber)
+    editor.prepareEditFromData(EditWord, EditForm, EditQwerd, EditKeyer, EditChord, EditChordable, EditUsage, EditDict)
+    editor.addValueToEditFields("es", "-s", "s", "s")
     editor.autoChord()
 	editor.commitEdit()
     editor.prepareEditFromData(EditWord, EditForm, EditQwerd, EditKeyer, EditChord, EditChordable, EditUsage, EditDict)

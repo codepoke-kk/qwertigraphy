@@ -572,6 +572,10 @@ Childhoods,ch-i-ld-\-d-s,Cildds,,qcdils,412
 Humans,^-h-\-e-u-mn-s,Humms,,qhmsu,414
 Inhuman,^-h-\-n-e-u-mn,Nhumm,,qhmnu,414
 Inhumanly,^-h-\-n-e-u-mn-e,Nhumme,,qehmnu,414
+Differentiate,df-sh-ia-t,Dfzat,,qadftz,419
+Differentiated,df-sh-ia-t-d,Dfzatd,,qadftz,419
+Differentiating,df-sh-ia-t-\-h,Dfzatg,,qadfgtz,419
+Differentiates,df-sh-ia-t-s,Dfzats,,qadfstz,419
 Shortcut,^-sh-\-k-t,Zkt,,qktz,422
 Shortcuted,^-sh-\-k-t-d,Zktd,,qdktz,422
 Shortcuting,^-sh-\-k-t-\-h,Zktg,,qgktz,422
@@ -683,6 +687,7 @@ Overwritten,^-o-\-r-e-tn,Oretn,,qenort,469
 Overwrite,^-o-\-r-i,Ori,,qiorz,469
 Overwriting,^-o-\-r-i-\-h,Orig,,qgior,469
 Overwrites,^-o-\-r-i-s,Oris,,qiors,469
+Fears,f-e-r-s,Fers,,qefrs,472
 Enforce,e-n-f-s2,Enfs,,qefns,476
 Enforced,e-n-f-s2-d,Enfsd,,qdefns,476
 Enforcing,e-n-f-s2-\-h,Enfsg,,qefgns,476
@@ -1545,7 +1550,6 @@ Startlingly,s2-t-a2-t-l-\-h-e,Statlge,,qaeglst,1127
 Startles,s2-t-a2-t-l-s,Statls,,qalst,1127
 Starter,s2-t-a2-t-r,Statr,,qarst,1127
 Training,t-r-a-n-\-h,Trang,,qagnrt,1129
-Particular,p-a-t,Pato,o,qaopt,1138
 Particulars,p-a-t-s,Pats,,qapst,1138
 Particle,p-t-\-k,Ptk,,qkpt,1138
 Particles,p-t-\-k-s,Ptks,,qkpst,1138
@@ -1925,6 +1929,8 @@ Driving,d-r-i-v-\-h,Drivg,,qdgirv,1509
 Driver,d-r-i-v-r,Drivr,,qdirv,1509
 Drivers,d-r-i-v-r-s,Drivrs,,qdirsv,1509
 Drives,d-r-i-v-s,Drivs,,qdirsv,1509
+Virtues,v-e2-t-u-s,Vetus,,qestuv,1510
+Virtuous,v-e2-t-u-u-s,Vetuus,,qestuv,1510
 Sentenced,s2-e-n-tn-s-d,Sentnsd,,qdenst,1518
 Sentencing,s2-e-n-tn-s-\-h,Sentnsg,,qegnst,1518
 Sentences,s2-e-n-tn-s-s,Sentnss,,qenst,1518
@@ -2611,6 +2617,7 @@ Eternally,e-tn-l-e,Etnle,,qelnt,2186
 Eternals,e-tn-l-s,Etnls,,qelnst,2186
 Eternity,e-tn-t-e,Etnte,,qent,2186
 Eternities,e-tn-t-e-s,Etntes,,qenst,2186
+Fierce,f-e-r-s,Ferso,o,qefors,2192
 Temples,tm-pl-s,Tmpls,,qlmpst,2206
 Link,l-e-nk,Leq,,qelq,2210
 Linked,l-e-nk-d,Leqd,,qdelq,2210
@@ -2865,6 +2872,7 @@ Declared,d-e-/-r-d,Derd,,qder,2659
 Declaring,d-e-/-r-\-h,Derg,,qdegr,2659
 Declares,d-e-/-r-s,Ders,,qders,2659
 Declaration,d-e-/-r-sh,Derz,,qderz,2659
+Declarations,d-e-/-r-sh-s,Derzs,,qdersz,2659
 Ideally,a-d-e-l-e,Adele,,qadel,2665
 Idealist,a-d-e-l-e-s,Adeles,,qadels,2665
 Idealists,a-d-e-l-e-s-s,Adeless,,qadels,2665
@@ -2939,6 +2947,12 @@ Communicating,k-m-u-\-h,Kmug,,qgkmu,2754
 Communicate,k-m-u,Kmuo,o,qkmou,2754
 Communications,k-m-u-s,Kmus,,qkmsu,2754
 Communicative,k-m-u-\-v,Kmuv,,qkmuv,2754
+Counsel,k-s-e-l,Ksel,,qekls,2759
+Counselled,k-s-e-l-d,Kseld,,qdekls,2759
+Counselling,k-s-e-l-\-h,Kselg,,qegkls,2759
+Counsels,k-s-e-l-s,Ksels,,qekls,2759
+Councils,k-s-e-l-s,Kselso,o,qeklos,2759
+Consensus,k-s-e-n-ss,Ksenss,,qekns,2759
 Perceived,pr-s-e-d,Prsed,,qdeprs,2766
 Perceiving,pr-s-e-\-h,Prseg,,qegprs,2766
 Perceives,pr-s-e-s,Prses,,qeprs,2766
@@ -3125,6 +3139,7 @@ Described,d-s2-k-r-d,Dskrd,,qdkrs,3131
 Describing,d-s2-k-r-\-h,Dskrg,,qdgkrs,3131
 Describes,d-s2-k-r-s,Dskrs,,qdkrs,3131
 Activities,a-k-v-t-e-s,Akvtes,,qaekstv,3132
+Commissions,k-m-sh-s,Kmzs,,qkmsz,3140
 Hunger,^-h-\-u-ng-e,Huge,,qeghu,3155
 Hungered,^-h-\-u-ng-e-d,Huged,,qdeghu,3155
 Hungering,^-h-\-u-ng-e-\-h,Hugeg,,qeghu,3155
@@ -3360,7 +3375,8 @@ Passions,p-a-sh-s,Pazs,,qapsz,3467
 Jealousy,j-e-l-u-s-e,Jeluse,,qejlsu,3469
 Jealousies,j-e-l-u-s-e-s,Jeluses,,qejlsu,3469
 Jealously,j-e-l-u-s-e,Jelusy,,qejlsuy,3469
-Christianities,k-r-e-s-ch-/-n-t-s,Krescnts,,qceknrst,3474
+Christianity,k-r-e-s-ch-/-nt,Krescnt,,qceknrst,3474
+Christianities,k-r-e-s-ch-/-nt-s,Krescnts,,qceknrst,3474
 Irresponsible,e-r-s-p,Ersp,,qeprs,3487
 Irresponsibly,e-r-s-p-e,Erspe,,qeprs,3487
 Responsibly,r-s-p-e,Rspe,,qeprs,3487
@@ -4204,6 +4220,7 @@ Blockages,bl-o-k-j-s,Blokjs,,qbjklos,5423
 Blocks,bl-o-k-s,Bloks,,qbklos,5423
 Admissible,a-m-e-s-b,Amesb,,qabems,5430
 Admissibility,a-m-e-s-\-b,Amesbo,o,qabemos,5430
+Admissions,a-m-sh-s,Amzs,,qamsz,5430
 Forbade,f-b-a-d,Fbad,,qabdf,5446
 Forbidding,f-b-d-\-h,Fbdg,,qbdfg,5446
 Forbids,f-b-d-s,Fbds,,qbdfs,5446
@@ -5125,6 +5142,9 @@ Traditional,t-r-a-d-sh-l,Tradzl,,qadlrtz,10851
 Traditionally,t-r-a-d-sh-l-e,Tradzle,,qadelrtz,10851
 Traditions,t-r-a-d-sh-s,Tradzs,,qadrstz,10851
 Renewals,r-e-n-u-l-s,Renuls,,qelnrsu,10904
+Nonetheless,n-u-n-th-l,Nunhl,,qhlnu,10915
+Psychoses,s2-i-k-/-s-e-s,Sikses,,qeiks,10915
+Psychosis,s2-i-k-/-s-s,Sikss,,qiks,10915
 Accommodated,a-k-td-d,Akdtd,,qadkt,10926
 Accommodating,a-k-td-\-h,Akdtg,,qadgkt,10926
 Accommodates,a-k-td-s,Akdts,,qadkst,10926
@@ -5204,6 +5224,7 @@ Investing,n-v-e-s-\-h,Nvesgo,o,qegnosv,11695
 Investor,n-v-e-s-r,Nvesr,,qenrsv,11695
 Investors,n-v-e-s-r-s,Nvesrs,,qenrsv,11695
 Invests,n-v-e-s-s,Nvess,,qensv,11695
+Omissions,o-m-sh-s,Omzs,,qmosz,11697
 Exported,e-s-p-o-td,Xpotd,,,11727
 Exporting,e-s-p-o-t-\-h,Xpotg,,qgoptx,11727
 Exporter,e-s-p-o-t-r,Xpotr,,qoprtx,11727
@@ -5924,6 +5945,7 @@ Installations,n-s2-t-o-l-a-sh-s,Nstolazs,,qalnostz,22364
 Revise,r-v-i-s2,Rvis,,qirsv,22367
 Revising,r-v-i-s2-\-h,Rvisg,,qgirsv,22367
 Revises,r-v-i-s2-s,Rviss,,qirsv,22367
+Intermissions,n-/-m-sh-s,Nmzs,,qmnsz,22640
 Censored,s2-e-n-s2-o-r-d,Sensord,,qenorsd,22710
 Censoring,s2-e-n-s2-o-r-\-h,Sensorg,,qenorsg,22710
 Censors,s2-e-n-s2-o-r-s,Sensorso,o,qenorss,22710
@@ -6428,6 +6450,14 @@ Auditing,o-td-\-h,Oddg,,qdgo,44310
 Auditing,o-td-\-h,Oddgo,o,qdgo,44310
 Audits,o-td-s,Oddso,o,qdos,44310
 Exemplars,e-s2-e-m-p-/-r-s,Xemprs,,qemprsx,44320
+Manipulable,mn-e-p-/-u-b,Mmepub,,qbempu,44572
+Manipulably,mn-e-p-/-u-b-e,Mmepube,,qbempu,44572
+Manipulability,mn-e-p-/-u-\-b,Mmepubo,o,qbemopu,44572
+Manipulated,mn-e-p-/-u-d,Mmepud,,qdempu,44572
+Manipulating,mn-e-p-/-u-\-h,Mmepug,,qegmpu,44572
+Manipulates,mn-e-p-/-u-s,Mmepus,,qempsu,44572
+Manipulation,mn-e-p-/-u-sh,Mmepuz,,qempuz,44572
+Manipulations,mn-e-p-/-u-sh-s,Mmepuzs,,qempsuz,44572
 Caption,k-a-p-sh,Kapz,,qakpz,44771
 Captioned,k-a-p-sh-d,Kapzd,,qadkpz,44771
 Captioning,k-a-p-sh-\-h,Kapzg,,qagkpz,44771
@@ -6781,6 +6811,15 @@ Disengaged,d-s2-n-g-a-d,Dsngad,,qadgns,70449
 Disengaging,d-s2-n-g-a-\-h,Dsngag,,qadgns,70449
 Disengagements,d-s2-n-g-a-m-s,Dsngams,,qadgmns,70449
 Disengages,d-s2-n-g-a-s,Dsngas,,qadgns,70449
+Disinfectants,d-s2-n-f-e-k-nt-s,Dsnfeknts,,qdefknst,70455
+Infect,n-f-e-k,Nfek,,qefkn,70455
+Infected,n-f-e-k-d,Nfekd,,qdefkn,70455
+Infecting,n-f-e-k-\-h,Nfekg,,qefgkn,70455
+Infectant,n-f-e-k-nt,Nfeknt,,qefknt,70455
+Infectants,n-f-e-k-nt-s,Nfeknts,,qefknst,70455
+Infects,n-f-e-k-s,Nfeks,,qefkns,70455
+Infection,n-f-e-k-sh,Nfekz,,qefknz,70455
+Infectious,n-f-e-k-sh-us,Nfekzus,,qefknsuz,70455
 Do you know,tn-o,Tnoo,o,qnotz,70471
 Enroll,n-r-o-l,Nrol,,qlnor,70525
 Enrolled,n-r-o-l-d,Nrold,,qdlnor,70525
@@ -7239,6 +7278,9 @@ Overview,^-o-\v-u,Ovu,,qouv,90651
 Overviewed,^-o-\v-u-d,Ovud,,qdouv,90651
 Overviewing,^-o-\v-u-\-h,Ovug,,qgouv,90651
 Overviews,^-o-\v-u-s,Ovus,,qosuv,90651
+Virtual,v-e2-t-l,Vetl,,qeltv,90654
+Virtually,v-e2-t-l-e,Vetle,,qeltv,90654
+Virtuals,v-e2-t-l-s,Vetls,,qelstv,90654
 Compress,k-pr-e-s,Kpres,,qekprs,90658
 Compressible,k-pr-e-s-b,Kpresb,,qbekprs,90658
 Compressibly,k-pr-e-s-b-e,Kpresbe,,qbekprs,90658
@@ -7703,6 +7745,10 @@ Displacing,d-s-p-l-a-s-\-h,Dsplasg,,qadglps,92514
 Displacement,d-s-p-l-a-s-m,Dsplasm,,qadlmps,92514
 Displacements,d-s-p-l-a-s-m-s,Dsplasms,,qadlmps,92514
 Displaces,d-s-p-l-a-s-s,Dsplass,,qadlps,92514
+Swallow,s-o-l-o-~-~n-/,Suolo,,qlosu,92517
+Swallowed,s-o-l-o-~-~n-/-d,Suolod,,qdlosu,92517
+Swallowing,s-o-l-o-~-~n-/-\-h,Suolog,,qglosu,92517
+Swallows,s-o-l-o-~-~n-/-s,Suolos,,qlosu,92517
 Rehearse,r-e-^-h-\-r-s,Rehrs,,qehrs,92540
 Rehearsed,r-e-^-h-\-r-s-d,Rehrsd,,qdehrs,92540
 Rehearsing,r-e-^-h-\-r-s-\-h,Rehrsg,,qeghrs,92540
@@ -7718,6 +7764,16 @@ Shout,sh-a-u,Zw,,qwz,92665
 Shouted,sh-a-u-d,Zwd,,qdwz,92665
 Shouting,sh-a-u-\-h,Zwg,,qgwz,92665
 Shouts,sh-a-u-s,Zws,,qswz,92665
+Transmit,^-t-\-m-e-t,Tmet,,qemt,92669
+Transmitted,^-t-\-m-e-t-d,Tmetd,,qdemt,92669
+Transmitting,^-t-\-m-e-t-\-h,Tmetg,,qegmt,92669
+Transmits,^-t-\-m-e-t-s,Tmets,,qemst,92669
+Transmition,^-t-\-m-e-t-sh,Tmetz,,qemtz,92669
+Transmitions,^-t-\-m-e-t-sh-s,Tmetzs,,qemstz,92669
+Transmission,^-t-\-m-e-sh,Tmez,,qemtz,92669
+Transmissions,^-t-\-m-e-sh-s,Tmezs,,qemstz,92669
+Transmission,^-t-\-m-sh,Tmzo,o,qmotz,92669
+Transmissions,^-t-\-m-sh-s,Tmzs,,qmstz,92669
 Synonomous,s-e-n-o-n,Senon,,qenos,92686
 Synonomously,s-e-n-o-n-e,Senone,,qenos,92686
 Synonym,s-e-n-o-n-e-m,Senonem,,qemnos,92686
