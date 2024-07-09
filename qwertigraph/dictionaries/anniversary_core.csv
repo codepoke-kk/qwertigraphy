@@ -280,7 +280,7 @@ Thus,th-u-s,Husu,u,qhsu,318
 Passed,p-a-s2-t,Pasto,o,qaopst,319
 Matter,m-a-t,Mato,o,qamot,320
 Year,e-r,Eru,u,qeru,322
-TRUE,t-r-u,Tru,,qrtu,324
+True,t-r-u,Tru,,qrtu,324
 Point,o-e,Y,,qcmy,325
 Herself,e-r-s,Erso,o,qeors,326
 Friend,fr,Fr,,qcfr,327
@@ -534,7 +534,6 @@ Master,m-a-s,Maso,o,qamos,643
 Latter,l-a-t-e2,Lateu,u,qaeltu,644
 Gold,g-o-ld,Goldo,o,qdglo,648
 Paper,p-a-pr,Papr,,qapr,649
-Particular,p-a-t,Pat,,qapt,650
 Mark,m-a-r-k,Marko,o,qakmor,651
 Information,n-f-m-sh,Nfmz,,qfmnz,652
 Bear,b-a-r,Baro,o,qabor,653
@@ -878,6 +877,7 @@ Minute,mn-e-t,Mmet,,qemt,1131
 Lot,l-o-t,Loto,o,qlot,1132
 Enter,^-n,Nk1,k1,q1kn,1134
 Particularly,p-a-t-e,Pate,,qaept,1138
+Particular,p-a-t,Pato,o,qaopt,1138
 Greatly,g-r-e,Gre,,qegr,1139
 Method,m-e-th-d,Mehd,,qdehm,1140
 Finally,f-i-n-ye,Finye,,qefiny,1141
@@ -1012,7 +1012,7 @@ Bottom,b-o-tm,Botm,,qbmot,1321
 Grow,g-r-o,Gro,,qgor,1324
 Animal,a-n-e-m,Anem,,qaemn,1326
 Touched,t-ch-t,Tct,,qbct,1328
-FALSE,f-o-s,Fos,,qfos,1329
+False,f-o-s,Fos,,qfos,1329
 Expense,e-^-s2,Es,,qesz,1330
 Section,s2-e-k-sh,Sekz,,qeksz,1332
 Numerous,n-e-u-m,Numo,o,qmnou,1334
@@ -1565,7 +1565,6 @@ Safety,s2-a-f-t-e,Safte,,qaefst,2185
 Eternal,e-tn-l,Etnl,,qelnt,2186
 Skill,s2-k-l,Sklo,o,qklos,2187
 Bow,b-o,Bou,u,qbou,2190
-Fierce,f-e-r-s,Fers,,qefrs,2192
 Earnest,e2-n-s,Ens,,qens,2193
 Destroyed,d-s-/-o-e-d,Dsyd,,qdsy,2196
 Sail,s-a-l,Sal,,qals,2197
@@ -1857,7 +1856,7 @@ District,d-s-/-k,Dsk,,qdks,2746
 Ocean,o-sh,Ozo,o,qoxz,2753
 Communication,k-m-u,Kmu,,qkmu,2754
 Uniform,e-u-n-f-m,Unfm,,qfmnu,2757
-Council,k-s-e-l,Ksel,,qekls,2759
+Council,k-s-e-l,Kselo,o,qeklos,2759
 Humanity,^-h-\-e-u-m-/-nt,Humnt,,qhmntu,2762
 Mankind,m-a-n-k-i,Manki,,qaikmn,2763
 Perceive,pr-s-e,Prseo,o,qeoprs,2766
@@ -1894,7 +1893,6 @@ Daughters,d-o-t-ye2,Dotye,,qdeoty,2812
 Edition,e-d-sh,Edz,,qdez,2816
 Arrangement,a-r-a,Ara,,qarz,2817
 Settle,s2-e-t-l,Setl,,qelst,2821
-Counsel,k-s-e-l,Kselo,o,qeklos,2826
 Interview,n-/-v-e-u,Nvu,,qnuv,2827
 Community,k-/-nt,Knto,o,qknot,2828
 Organization,o-g,Ogo,o,qgox,2829
@@ -1924,7 +1922,6 @@ Writes,r-i-s,Risu,u,qirsu,2874
 Knife,n-i-f,Nif,,qfin,2875
 Mississippi,m-e-ss,Messo,o,qemos,2876
 Studied,s2-td-e-d,Sdded,,qdes,2877
-Fears,f-e-r-s,Ferso,o,qefors,2879
 Annual,a-n-l,Anl,,qaln,2883
 Failure,f-a-l-r,Falr,,qaflr,2886
 Commerce,k-m-ye2,Kmye,,qekmy,2887
@@ -2208,7 +2205,6 @@ Jealous,j-e-l-u-s,Jelus,,qejlsu,3469
 Novel,n-o-v,Novo,o,qnov,3471
 Conceal,k-s-e-l,Kselu,u,qeklsu,3472
 Silly,s-e-l-e,Sele,,qels,3473
-Christianity,k-r-e-s-ch-/-n-t,Krescnt,,qceknrst,3474
 Badly,b-d-e,Bde,,qbde,3479
 Estimated,e-s2-tm-a-td,Estmadd,,qademst,3480
 Responsible,r-s-p,Rsp,,qprs,3487
@@ -3685,7 +3681,6 @@ Eccentric,e-s2-n-/-k,Esnk,,qekns,9134
 Insufficient,n-s2-u-f,Nsuf,,qfnsu,9156
 Expanse,e-s-p-a-n-s,Xpans,,qanpsx,9168
 Bounty,b-n-t-e,Bnte,,qbent,9170
-Solo,s2-o-l-o,Soloo,o,qlos,9172
 Fable,f-a2-b,Fabo,o,qabfo,9177
 Pose,p-o-s,Posi,i,qiops,9181
 Anticipate,a-/-s-e-p,Asep,,qaeps,9182
@@ -6078,7 +6073,6 @@ Hyperbole,^-h-\-i-pr-bl-e,Hiprble,,qbehilpr,48060
 Emendation,e-mn-d-sh,Emmdz,,qdemz,48099
 Cornstarch,k-o-n-s2-t-a-ch,Konstac,,qacknost,48128
 Ameliorate,a-m-e-l-r-a,Amelra,,qaelmr,48161
-Demerit,tm-e2-t,Tmet,,qemt,48164
 Leakage,l-e-k-j,Lekj,,qejkl,48258
 Gobble,g-o-b,Gob,,qbgo,48301
 Mend,mn-d,Mmdo,o,qdmo,48345
