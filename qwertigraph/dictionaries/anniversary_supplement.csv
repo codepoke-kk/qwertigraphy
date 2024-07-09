@@ -1562,6 +1562,9 @@ Proved,pr-v-d,Prvd,,qdprv,1144
 Proving,pr-v-\-h,Prvg,,qgprv,1144
 Proves,pr-v-s,Prvs,,qprsv,1144
 Servants,s2-e-v-nt-s,Sevnts,,qenstv,1155
+Safer,s2-a-f-r,Safr,,qafrs,1157
+Safes,s2-a-f-s,Safs,,qafs,1157
+Safest,s2-a-f-s-t,Safst,,qafst,1157
 Narrowed,n-a-r-o-d,Narod,,qadnor,1163
 Narrowly,n-a-r-o-e,Naroe,,qaenor,1163
 Narrowing,n-a-r-o-\-h,Narog,,qagnor,1163
@@ -7284,6 +7287,10 @@ Apostle,a-p-o-s2-t-l,Apostl,,qalopst,90738
 Apostles,a-p-o-s2-t-l-s,Apostls,,qalopst,90738
 Vanilla,v-a-n-e-l-a,Vanela,,qaelnv,90746
 Vanilla,v-n-e-l,Vnel,,qelnv,90746
+Stream,s-t-r-e-m,Strem,,qemrst,90753
+Streamed,s-t-r-e-m-d,Stremd,,qdemrst,90753
+Streaming,s-t-r-e-m-\-h,Stremg,,qegmrst,90753
+Streams,s-t-r-e-m-s,Strems,,qemrst,90753
 Trigger,t-r-e-g-r,Tregr,,qegrt,90770
 Triggered,t-r-e-g-r-d,Tregrd,,qdegrt,90770
 Triggering,t-r-e-g-r-\-h,Tregrg,,qegrt,90770
@@ -7411,7 +7418,13 @@ Purged,pr-j-d,Prjd,,qdjpr,91179
 Purging,pr-j-\-h,Prjg,,qgjpr,91179
 Purges,pr-j-s,Prjs,,qjprs,91179
 Downstream,d-n-s-t-r-e-m,Dnstrem,,qdemnrst,91188
+Downstreamed,d-n-s-t-r-e-m-d,Dnstremd,,qdemnrst,91188
+Downstreaming,d-n-s-t-r-e-m-\-h,Dnstremg,,qdegmnrst,91188
 Downstreams,d-n-s-t-r-e-m-s,Dnstrems,,qdemnrst,91188
+Upstream,p-s-t-r-e-m,Pstrem,,qemprst,91189
+Upstreamed,p-s-t-r-e-m-d,Pstremd,,qdemprst,91189
+Upstreaming,p-s-t-r-e-m-\-h,Pstremg,,qegmprst,91189
+Upstreams,p-s-t-r-e-m-s,Pstrems,,qemprst,91189
 Video,v-d-o,Vdo,,qdov,91196
 Videoed,v-d-o-d,Vdod,,qdov,91196
 Videoing,v-d-o-\-h,Vdog,,qdgov,91196
