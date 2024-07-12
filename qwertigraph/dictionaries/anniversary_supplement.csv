@@ -523,7 +523,7 @@ Outnumbering,au-n-u-m-\-h,Wnumg,,qgmnuw,360
 Outnumbers,au-n-u-m-s,Wnums,,qmnsuw,360
 Girls,g-l-s,Gls,,qgls,364
 Lettered,l-e-d,Ledo,o,qdelo,369
-Lettering,l-e-\-h,Lega,a,qaegl,369
+Lettering,l-e-\-h,Lego,o,qeglo,369
 Helping,^-h-\-e-l-p-\-h,Helpg,,qeghlp,370
 Helper,^-h-\-e-l-p-r,Helpr,,qehlpr,370
 Helpers,^-h-\-e-l-p-r-s,Helprs,,qehlprs,370
@@ -631,6 +631,10 @@ Testifying,t-e-s-df-\-h,Tesdfg,,qdefgst,442
 Testifies,t-e-s-df-s,Tesdfs,,qdefst,442
 Foundational,f-nt-sh-l,Fntzl,,qflntz,444
 Foundations,f-nt-sh-s,Fntzs,,qfnstz,444
+Deadline,td-l-a-n,Ddlan,,qadeln,445
+Deadlined,td-l-a-n-d,Ddland,,qadln,445
+Deadlining,td-l-a-n-\-h,Ddlang,,qadgln,445
+Deadlines,td-l-a-n-s,Ddlans,,qadlns,445
 Lived,l-a-v-d,Lavd,,qadlv,445
 Living,l-a-v-\-h,Lavg,,qaglv,445
 Liver,l-a-v-r,Lavr,,qalrv,445
@@ -638,6 +642,12 @@ Livery,l-a-v-r-e,Lavre,,qaelrv,445
 Liveries,l-a-v-r-e-s,Lavres,,qaelrsv,445
 Livers,l-a-v-r-s,Lavrs,,qalrsv,445
 Lives,l-a-v-s,Lavs,,qalsv,445
+Pathway,p-a-th-a-\-~-~-n,Paha,,qahp,445
+Pathways,p-a-th-a-\-~-~-n-s,Pahas,,qahps,445
+Outlive,a-u-l-a-v,Wlav,,qalvw,445
+Outlived,a-u-l-a-v-d,Wlavd,,qadlvw,445
+Outliving,a-u-l-a-v-\-h,Wlavg,,qaglvw,445
+Outlives,a-u-l-a-v-s,Wlavs,,qalsvw,445
 Doubted,d-a-u-d,Dwd,,qdw,447
 Doubting,d-a-u-\-h,Dwg,,qdgw,447
 Doubts,d-a-u-s,Dws,,qdsw,447
@@ -824,7 +834,6 @@ Clearances,k-l-e-\-n-s-s,Klenss,,qeklns,559
 Clearance,k-l-e-\-n-s,Klensu,u,qeklnsu,559
 Clearer,k-l-e-r,Kler,,qeklr,559
 Clearings,k-l-e-\-s2,Klez,,qegkls,559
-Americans,a-m-n-s,Amns,,qamns,561
 Unsound,n-s2-nt,Nsnt,,qnst,567
 Sounding,s2-nt-\-h,Sntg,,qgnst,567
 Soundings,s2-nt-\-h-s,Sntgs,,qgnst,567
@@ -895,6 +904,8 @@ Serviceably,^-s2-b-e,Sbe,,qbes,601
 Serviced,^-s2-d,Sd,,qcds,601
 Servicing,^-s2-\-h,Sg,,qcgs,601
 Desiring,d-s-\-h,Dsg,,qdgs,609
+Office,o-f,Ofi,i,qfio,612
+Offices,o-f-s,Ofsi,i,qfios,612
 Letters,l-e-s,Les,,qelos,618
 Peaceable,p-e-s-b,Pesb,,qbeps,619
 Peaceably,p-e-s-b-e,Pesbe,,qbeps,619
@@ -924,7 +935,7 @@ Saving,s2-a-v-\-h,Savg,,qagsv,640
 Savings,s2-a-v-\-h-s,Savgs,,qagsv,640
 Saves,s2-a-v-s,Savs,,qasv,640
 Savings,s2-a-v-\-s2,Savz,,qagsv,640
-Lengthy,l-e-ng-e,Lege,,qegl,641
+Length,l-e-ng,Lege,e,qegl,641
 Lengths,l-e-ng-s,Legs,,qegls,641
 Papered,p-a-pr-d,Paprd,,qadpr,649
 Papering,p-a-pr-\-h,Paprg,,qagpr,649
@@ -1462,7 +1473,10 @@ Springs,s-pr-e-ng-s,Spregs,,qegprs,1033
 Sprung,s-pr-u-ng,Sprug,,qgprsu,1033
 Offering,o-f-\-h,Ofg,,qfgo,1034
 Offers,o-f-s,Ofs,,qfos,1034
+Offer,o-f,Ofu,u,qfou,1034
 Offerings,o-f-\-s,Ofz,,qfoz,1034
+Website,u-b-s-i,Ubsi,,qbisu,1034
+Websites,u-b-s-i-s,Ubsis,,qbisu,1034
 Pained,p-a-n-d,Pand,,qadnp,1035
 Paining,p-a-n-\-h,Pang,,qagnp,1035
 Suffice,s2-u-f-i-s,Sufis,,qfisu,1040
@@ -1479,6 +1493,7 @@ Conductive,k-d-u-k-v,Kdukv,,qdkuv,1046
 Conductively,k-d-u-k-v-e,Kdukve,,qdekuv,1046
 Conductives,k-d-u-k-v-s,Kdukvs,,qdksuv,1046
 Conduction,k-d-u-k-sh,Kdukz,,qdkuz,1046
+Legal,l-e-g,Lega,a,qaegl,1053
 Stopped,s2-t-p-d,Stpd,,qdpst,1059
 Stopping,s2-t-p-\-h,Stpg,,qgpst,1059
 Stoppage,s2-t-p-j,Stpj,,qjpst,1059
@@ -2174,6 +2189,7 @@ Relationships,r-e-l-a-sh-\-sh-s,Relazzs,,qaelrsz,1704
 Catched,k-a-ch-d,Kacd,,qacdk,1707
 Catching,k-a-ch-\-h,Kacg,,qacgk,1707
 Catchs,k-a-ch-s,Kacs,,qacks,1707
+Legs,l-e-g-s,Legsu,u,qeglsu,1716
 Imaginations,e-m-a-j-s,Emajso,o,qaejmos,1722
 Practically,pr-k-e,Prke,,qekpr,1725
 Qualitative,k-u-df,Qudf,,qdfqu,1727
@@ -2211,6 +2227,7 @@ Inapplicable,n-a-pl-e-k-b,Naplekb,,qabeklnp,1758
 Inapplicability,n-a-pl-e-k-\-b,Naplekbo,o,qabeklnop,1758
 Increased,n-k-r-e-s-d,Nkresd,,qdeknrs,1762
 Increasing,n-k-r-e-s-\-h,Nkresg,,qegknrs,1762
+Increasingly,n-k-r-e-s-\-h-e,Nkresge,,qegknrs,1762
 Increases,n-k-r-e-s-s,Nkress,,qeknrs,1762
 Trajectory,t-r-a-j-k-t-r-e,Trajktre,,qaejkrt,1762
 Trajectories,t-r-a-j-k-t-r-e-s,Trajktres,,qaejkrst,1762
@@ -2489,6 +2506,18 @@ Absolutes,a-b-s2-o-s,Absos,,qabos,2053
 Victories,v-e-k-t-r-e-s,Vektres,,qekrstv,2062
 Victorious,v-e-k-t-r-u-s,Vektrus,,qekrstuv,2062
 Victoriously,v-e-k-t-r-u-s-e,Vektruse,,qekrstuv,2062
+Locally,l-o-k-e,Loke,,qeklo,2063
+Localize,l-o-k-i-s,Lokis,,qiklos,2063
+Localized,l-o-k-i-s-d,Lokisd,,qdiklos,2063
+Localizing,l-o-k-i-s-\-h,Lokisg,,qgiklos,2063
+Localizes,l-o-k-i-s-s,Lokiss,,qiklos,2063
+Local,l-o-k,Lokl,l,qklo,2063
+Localize,l-o-k-i-s,Loklis,l,qiklos,2063
+Localized,l-o-k-i-s-d,Loklisd,,qdiklos,2063
+Localizing,l-o-k-i-s-\-h,Loklisg,,qgiklos,2063
+Localizes,l-o-k-i-s-s,Lokliss,,qiklos,2063
+Locality,l-o-k-\-l,Loklo,o,qklo,2063
+Locals,l-o-k-s,Lokls,l,qklos,2063
 Lovers,l-v-r-s,Lvrs,,qlrsv,2067
 Envision,n-v-e-sh,Nvez,,qenvz,2069
 Envisioned,n-v-e-sh-d,Nvezd,,qdenvz,2069
@@ -3076,7 +3105,18 @@ Generates,j-e-n-r-a-t-s,Jenrats,,qaejnrst,2984
 Generational,j-e-n-r-a-sh-l,Jenrazl,,qaejlnrz,2984
 Generationally,j-e-n-r-a-sh-l-e,Jenrazle,,qaejlnrz,2984
 Generations,j-e-n-r-a-sh-s,Jenrazs,,qaejnrsz,2984
+Regenerate,r-e2-j-e-n-r-a-t,Rejenrat,,qaejnrt,2984
+Regenerated,r-e2-j-e-n-r-a-t-d,Rejenratd,,qadejnrt,2984
+Regenerating,r-e2-j-e-n-r-a-t-\-h,Rejenratg,,qaegjnrt,2984
+Regenerates,r-e2-j-e-n-r-a-t-s,Rejenrats,,qaejnrst,2984
+Regeneration,r-e2-j-e-n-r-a-t-sh,Rejenratz,,qaejnrtz,2984
+Regenerations,r-e2-j-e-n-r-a-t-sh-s,Rejenratzs,,qaejnrstz,2984
+Regenerate,r-j-e-n-r-a-t,Rjenrat,,qaejnrt,2984
+Regenerated,r-j-e-n-r-a-t-d,Rjenratd,,qadejnrt,2984
+Regenerating,r-j-e-n-r-a-t-\-h,Rjenratg,,qaegjnrt,2984
+Regenerates,r-j-e-n-r-a-t-s,Rjenrats,,qaejnrst,2984
 Regeneration,r-j-e-n-r-a-sh,Rjenraz,,qaejnrz,2984
+Regenerations,r-j-e-n-r-a-sh-s,Rjenrazs,,qaejnrsz,2984
 Professions,pr-f-e-sh-s,Prfezs,,qefprsz,2987
 Execution,e-s2-k-sh,Xkz,,qkxz,3011
 Executioner,e-s2-k-sh-r,Xkzr,,qkrxz,3011
@@ -3888,6 +3928,14 @@ Politician,p-o-l-e-t-sh,Poletz,,qeloptz,4513
 Politicians,p-o-l-e-t-sh-s,Poletzs,,qelopstz,4513
 Politely,p-o-l-i-e,Polie,,qeilop,4513
 Alliances,a-l-i-n-s-s,Alinss,,qailns,4526
+Lock,l-o-k,Lok,,qklo,4533
+Locked,l-o-k-d,Lokd,,qdklo,4533
+Locking,l-o-k-\-h,Lokg,,qgklo,4533
+Locks,l-o-k-s,Loks,,qklos,4533
+Unlock,u-n-l-o-k,Unlok,,qklnou,4533
+Unlocked,u-n-l-o-k-d,Unlokd,,qdklnou,4533
+Unlocking,u-n-l-o-k-\-h,Unlokg,,qgklnou,4533
+Unlocks,u-n-l-o-k-s,Unloks,,qklnosu,4533
 Neighborhoods,n-a-br-/-d-s,Nabrds,,qabdnrs,4546
 Complaining,k-p-\-h,Kpgo,o,qgkop,4567
 Complain,k-p,Kpo,o,qkop,4567
@@ -4103,6 +4151,7 @@ Plagiarizing,pl-a-j-r-i-s-\-h,Plajrisg,,qagijlprs,5077
 Plagiarizes,pl-a-j-r-i-s-s,Plajriss,,qaijlprs,5077
 Plagiarism,pl-a-j-r-s-m,Plajrsm,,qajlmprs,5077
 Plagiarisms,pl-a-j-r-s-m-s,Plajrsms,,qajlmprs,5077
+Promotions,pr-m-o-sh-s,Prmozs,,qmoprsz,5077
 Punishable,p-n-sh-b,Pnzb,,qbnpz,5086
 Punishably,p-n-sh-b-e,Pnzbe,,qbenpz,5086
 Punished,p-n-sh-d,Pnzd,,qdnpz,5086
@@ -4679,6 +4728,7 @@ Composers,k-p-o-\-r-s,Kpors,,qkoprs,7468
 Composure,k-p-o-sh-u,Kpozu,,qkopuz,7468
 Demonstrations,tm-o-n-s-sh-s,Tmonszs,,qmnostz,7486
 Stockings,s2-t-o-/-s2,Stosg,g,qgost,7493
+Topics,t-p-k-s,Tpks,,qkpst,7513
 Agencies,a-j-s-e-s,Ajses,,qaejss,7542
 Announced,a-n-n-s-d,Annsd,,qadns,7553
 Announcing,a-n-n-s-\-h,Annsg,,qagns,7553
@@ -5083,6 +5133,14 @@ Unpackages,n-p-a-k-j-s,Npakjs,,qajknps,10408
 Packaged,p-a-k-j-d,Pakjd,,qadjkp,10408
 Packaging,p-a-k-j-\-h,Pakjg,,qagjkp,10408
 Packages,p-a-k-j-s,Pakjs,,qajkps,10408
+Admin,a-mn,Amm,,qamn,10479
+Admined,a-mn-d,Ammd,,qadm,10479
+Admining,a-mn-\-h,Ammg,,qagm,10479
+Admins,a-mn-s,Amms,,qams,10479
+Compatible,k-p-a-t-b,Kpatb,,qabkpt,10479
+Compatibly,k-p-a-t-b-e,Kpatbe,,qabekpt,10479
+Compatability,k-p-a-t-\-b,Kpatbo,,qabkopt,10479
+Compatabilities,k-p-a-t-\-b-s,Kpatbos,,qabkopst,10479
 Investigate,n-v-e-s2-g,Nvesg,,qegnsv,10481
 Investigated,n-v-e-s2-g-d,Nvesgd,,qdegnsv,10481
 Investigating,n-v-e-s2-g-\-h,Nvesgg,,qegnsv,10481
@@ -5620,6 +5678,9 @@ Subtly,s-u-t-e,Sute,,qestu,16524
 Subtle,s-u-t-l,Sutl,,qlstu,16524
 Subtly,s-u-t-l-e,Sutle,,qelstu,16524
 Subtlety,s-u-t-\-l,Sutlo,o,qlostu,16524
+Located,l-o-k-d,Lokda,a,qadklo,16525
+Locating,l-o-k-\-h,Lokga,a,qagklo,16525
+Locates,l-o-k-s,Loksa,a,qaklos,16525
 Faultlessly,f-o-t-l-e,Fotle,,qeflot,16573
 Encipher,n-s2-i-f,Nsif,,qfins,16597
 Encipherable,n-s2-i-f-b,Nsifb,,qbfins,16597
@@ -6071,7 +6132,6 @@ Locally,l-o-k-ya,Loky,,qkloy,25918
 Hostage,h-\-o-s-t-j,Hostj,,qhjost,25947
 Hostages,h-\-o-s-t-j-s,Hostjs,,qhjost,25947
 Internet,n-/-nt,Nnt,,qntz,25973
-Amendments,a-mn-s,Amms,,qams,26059
 Lackey,l-a-k-e,Lakeo,o,qaeklo,26100
 Lackeys,l-a-k-e-s,Lakeso,o,qaeklos,26100
 Atheist,a-th-e-s2,Ahes,,qaehs,26168
@@ -6093,8 +6153,8 @@ Cooperatively,k-o-o-p-v-e,Koopve,,qekopv,26301
 Cooperatives,k-o-o-p-v-s,Koopvs,,qkopsv,26301
 Fastest,f-a-s2-t-s-t,Fastst,,qafst,26364
 Caller,k-o-r,Kori,i,qikor,26404
-Canceled,k-a-n-s-d,Kansd,,qadkns,26475
-Canceling,k-a-n-s-\-h,Kansg,,qagkns,26475
+Cancelled,k-a-n-s-d,Kansd,,qadkns,26475
+Cancelling,k-a-n-s-\-h,Kansg,,qagkns,26475
 Cancels,k-a-n-s-s,Kanss,,qakns,26475
 Monitored,mn-e-t-e2-d,Mmeted,,qdemt,26517
 Monitoring,mn-e-t-e2-\-h,Mmeteg,,qegmt,26517
@@ -6230,6 +6290,7 @@ Dashboards,d-b-o-d-s,Dbods,,qbdos,30146
 Muscled,m-u-s-l-d,Musld,,qdlmsu,30148
 Muscling,m-u-s-l-\-h,Muslg,,qglmsu,30148
 Muscles,m-u-s-l-s,Musls,,qlmsu,30148
+Untenably,n-tn-b-e,Ntnbe,,qbent,30330
 Clone,k-l-o-n,Klon,,qklno,30374
 Cloned,k-l-o-n-d,Klond,,qdklno,30374
 Cloning,k-l-o-n-\-h,Klong,,qgklno,30374
@@ -6369,6 +6430,8 @@ Architectural,a-k-t-e-k-r-l,Aktekrl,,qaeklrt,38363
 Architecturally,a-k-t-e-k-r-l-e,Aktekrle,,qaeklrt,38363
 Architectures,a-k-t-e-k-r-s,Aktekrs,,qaekrst,38363
 Architects,a-k-t-e-k-s,Akteks,,qaekst,38363
+Tenably,tn-b-e,Tnbe,,qbent,38761
+Tenables,tn-b-s,Tnbs,,qbnst,38761
 Acknowledgments,a-k-m-s,Akms,,qakms,38827
 Converged,k-v-e-j-d,Kvejd,,qdejkv,38983
 Converging,k-v-e-j-\-h,Kvejg,,qegjkv,38983
@@ -7041,6 +7104,10 @@ Temperamentally,tm-pr-\-m-e,Tmprme,,qemprt,71657
 Templated,tm-pl-a-d,Tmplad,,qadlmpt,71659
 Templating,tm-pl-a-\-h,Tmplag,,qaglmpt,71659
 Templates,tm-pl-a-s,Tmplas,,qalmpst,71659
+Timestamp,tm-s-tm,Tmstm,,qmst,71696
+Timestamped,tm-s-tm-d,Tmstmd,,qdmst,71696
+Timestamping,tm-s-tm-\-h,Tmstmg,,qgmst,71696
+Timestamps,tm-s-tm-s,Tmstms,,qmst,71696
 To be,t-b,Tb,,qbct,71706
 Tontine,t-o-n-tn,Tontn,,qnotz,71750
 Traffic manager,t-~-m,Tmu,u,qmtu,71752
@@ -7263,6 +7330,14 @@ Unlikely,n-l-a-e,Nlae,,qaeln,90579
 Intentional,n-tn-sh-l,Ntnzl,,qlntz,90581
 Intentionally,n-tn-sh-l-e,Ntnzle,,qelntz,90581
 Intentionals,n-tn-sh-l-s,Ntnzls,,qlnstz,90581
+Revert,r-v-e2-t,Rvet,,qertv,90589
+Revertible,r-v-e2-t-b,Rvetb,,qbertv,90589
+Revertibly,r-v-e2-t-b-e,Rvetbe,,qbertv,90589
+Reverted,r-v-e2-t-d,Rvetd,,qdertv,90589
+Reverting,r-v-e2-t-\-h,Rvetg,,qegrtv,90589
+Reverts,r-v-e2-t-s,Rvets,,qerstv,90589
+Reversion,r-v-e2-sh,Rvezo,o,qeorvz,90589
+Reversions,r-v-e2-sh-s,Rvezso,o,qeorsvz,90589
 Infrastructure,n-f-r-a-s-t-r-k-t-r,Nfrastrktr,,qafknrst,90611
 Infrastructures,n-f-r-a-s-t-r-k-t-r-s,Nfrastrktrs,,qafknrst,90611
 Structure,s-t-r-k-t-r,Strktr,,qkrst,90611
@@ -7695,6 +7770,13 @@ Peripherally,pr-e-f-l-e,Prefle,,qeflpr,92180
 Peripherals,pr-e-f-l-s,Prefls,,qeflprs,92180
 Periphery,pr-e-f-r-e,Prefre,,qefpr,92180
 Peripheries,pr-e-f-r-e-s,Prefres,,qefprs,92180
+Promote,pr-m-o-t,Prmot,,qmoprt,92185
+Promotable,pr-m-o-t-b,Prmotb,,qbmoprt,92185
+Promotably,pr-m-o-t-b-e,Prmotbe,,qbemoprt,92185
+Promotability,pr-m-o-t-\-b,Prmotbo,,qbmoprt,92185
+Promoted,pr-m-o-t-d,Prmotd,,qdmoprt,92185
+Promoting,pr-m-o-t-\-h,Prmotg,,qgmoprt,92185
+Promotes,pr-m-o-t-s,Prmots,,qmoprst,92185
 Structural,s-t-r-k-t-r-l,Strktrl,,qklrst,92266
 Structurally,s-t-r-k-t-r-l-e,Strktrle,,qeklrst,92266
 Foresee,f-s-e,Fse,,qefs,92288

@@ -470,7 +470,6 @@ Position,p-o-sh,Poz,,qopz,556
 Else,l-s,Ls,,qcls,558
 Clear,k-l-e,Kle,,qekl,559
 Late,l-a-t,Lat,,qalt,560
-American,a-m-n,Amn,,qamn,561
 Bed,b-d,Bd,,qbcd,563
 Bad,b-d,Bdo,o,qbdo,566
 Sound,s2-nt,Snt,,qnst,567
@@ -509,7 +508,6 @@ Placed,pl-a-s2-t,Plast,,qalpst,606
 Especially,e-s-p-e,Espe,,qeps,607
 Desire,d-s,Ds,,qcds,609
 Send,s2-e-n,Seno,o,qenos,611
-Office,o-f,Ofu,u,qfou,612
 London,l-nt,Lnt,,qlnt,614
 Greater,g-r-r,Grr,,qgmr,615
 Big,b-g,Bgo,o,qbgo,617
@@ -805,7 +803,6 @@ Garden,g-a2-tn,Gatn,,qagnt,1025
 Corner,k-o-n-e2,Kone,,qekno,1027
 Island,i-l-a-nt,Ilant,,qailnt,1032
 Spring,s-pr-e-ng,Spreg,,qegprs,1033
-Offer,o-f,Ofi,i,qfio,1034
 Pain,p-a-n,Pan,,qanp,1035
 Wood,u-u-d,Uud,,qduz,1036
 Instance,n-s,Nso,o,qnos,1037
@@ -818,7 +815,6 @@ Ourselves,r-ss,Rss,,qmrs,1045
 Conduct,k-d-u-k,Kduk,,qdku,1046
 Lead,l-e-d,Ledu,u,qdelu,1048
 Grave,g-r-a-v,Grav,,qagrv,1051
-Legal,l-e-g,Lego,o,qeglo,1053
 Queen,k-w-e-n,Qen,,qenq,1054
 Lower,l-o-r,Lor,,qlor,1055
 Caused,k-s2-/-t,Ksto,o,qkost,1056
@@ -1269,7 +1265,6 @@ Delicate,d-e-l-e-k,Delek,,qdekl,1708
 Palace,p-a-l-a-s,Palas,,qalps,1709
 Won,u-n,Uno,o,qnou,1712
 Loose,l-u-s,Lusu,u,qlsu,1715
-Legs,l-e-g-s,Legso,o,qeglos,1716
 Empty,mt-e,Mte,,qemt,1720
 Imagination,e-m-a-j,Emajo,o,qaejmo,1722
 Practical,pr-k,Prk,,qkpr,1725
@@ -1484,7 +1479,6 @@ Salt,s2-o-l-t,Solt,,qlost,2057
 Reported,r-pr-/-t,Rprt,,qprt,2058
 Manners,mn-ye2,Mmye,,qemy,2059
 Victory,v-e-k-t-r-e,Vektre,,qekrtv,2062
-Local,l-o-k,Lok,,qklo,2063
 Lover,l-v-r,Lvr,,qlrv,2067
 Vision,v-e-sh,Vez,,qevz,2069
 Severe,s2-e-v-e-r,Sever,,qersv,2072
@@ -2619,7 +2613,6 @@ Offended,o-f-nt-d,Ofntd,,qdfnot,4523
 Immortal,e-m-o-t-l,Emotl,,qelmot,4529
 String,s2-t-r-e-ng,Streg,,qegrst,4530
 Abundant,a-b-n-tn,Abntn,,qabnt,4532
-Lock,l-o-k,Loko,o,qklo,4533
 Minor,m-i-n-e2,Mineo,o,qeimno,4534
 Anguish,a-ng-sh,Angz,,qagnz,4545
 Neighborhood,n-a-br-/-d,Nabrd,,qabdnr,4546
@@ -4069,7 +4062,7 @@ Utilize,e-u-t-l-i-s,Utlis,,qilstu,11788
 Flannel,fl-a-n-l,Flanl,,qafln,11811
 Lore,l-o-r,Loru,u,qloru,11816
 Northwest,nu,Nuu,u,qnuz,11825
-Amen,a-mn,Amm,,qamz,11831
+Amen,a-mn,Ammu,u,qamu,11831
 Ceremonial,s2-e2-mn-l,Semml,,qelms,11836
 Awed,o-d,Odi,i,qdio,11840
 Bolts,b-o-l-t-s,Boltso,o,qblost,11846
@@ -4546,6 +4539,7 @@ Mistrust,m-s2-t-r-s,Mstrs,,qmrst,16503
 Tenacious,tn-a-sh,Tnaz,,qantz,16513
 Deduction,td-u-k-sh,Ddukz,,qdkuz,16522
 Orient,o-r-e-nt,Orent,,qenort,16524
+Locate,l-o-k,Loka,a,qaklo,16525
 Locate,l-o-k,Loku,u,qklou,16525
 Bombardment,b-o-m-b-a2-d-m,Bombadm,,qabdmo,16557
 Vowel,vl,Vlo,o,qlov,16564
@@ -5120,7 +5114,6 @@ Algeria,a-l-j,Alj,,qajl,24204
 Infliction,n-fl-sh,Nflzo,o,qflnoz,24232
 Errant,e-r-a-nt,Eranto,o,qaenort,24261
 Auto,o-t,Ott,t,qotz,24268
-Locality,l-o-k-/-l,Lokl,,qklo,24272
 Cornice,k-o-n-e-s,Kones,,qeknos,24297
 Observatory,o-b-s-e-/-r-e,Obsere,,qbeors,24305
 Asceticism,a-s2-e-t-ss,Asetss,,qaest,24308
@@ -5154,7 +5147,6 @@ Epitome,e-p-tm-e,Eptme,,qempt,24924
 Inattention,e-n-a-tn-sh,Enatnz,,qaentz,24927
 Irreproachable,e-r-e-pr-ch-b,Ereprcb,,qbcepr,24928
 Aground,a-g-r-nt,Agrnt,,qagnrt,24939
-Almond,a-mn-d,Ammd,,qadm,24956
 Lengthen,l-e-ng-n,Lengn,,qegln,24973
 Pittsburgh,p-t-s-b,Ptsb,,qbpst,24975
 Lacy,l-a-s-e,Laseo,o,qaelos,24980
@@ -5222,7 +5214,6 @@ Locally,l-o-k-ya,Lokya,,qakloy,25918
 Honduras,^-h-\-o-nt-r-a-s,Hontras,,qahnorst,25955
 Facial,f-a-sh-l,Fazl,,qaflz,25991
 Houston,^-h-\-e-u-s2-tn,Hustn,,qhnstu,26003
-Amendment,a-mn,Ammu,u,qamu,26059
 Gnaw,n-o,Noa,a,qano,26061
 Controversial,k-/-v-e-sh,Kvezo,o,qekovz,26073
 Inalienable,e-n-a-l-e-n-b,Enalenb,,qabeln,26117
