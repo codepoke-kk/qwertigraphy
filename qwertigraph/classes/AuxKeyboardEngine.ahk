@@ -171,8 +171,14 @@ class AuxKeyboardEngine
 				this.logEvent(2, "Forwarding enabled but unmatched " key " as " rekey)
 			}
 		} else {
-			; If we are disabled then strip the "numpad" from it and send it back to be handled as a normal key 
-			rekey := "{" . RegExReplace(key, "Numpad") . "}"
+			; We are disabled, so send things back as normal keys 
+            if (StrLen(key) > 3) {
+                ; This is a special key, so send it back wrapped in braces
+                rekey := "{" . RegExReplace(key, "Numpad") . "}"
+            } else {
+                ; This is a number key, so send it back as a normal number 
+                rekey := RegExReplace(key, "Numpad")
+            }
 			this.logEvent(2, "Forwarding disabled and unmatched " key " as " rekey)
 		}
         

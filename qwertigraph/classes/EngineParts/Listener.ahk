@@ -6,7 +6,7 @@ Class Listener {
 		this.name := "listener"
 		this.engine := engine 
 		this.logQueue := engine.logQueue
-		this.logVerbosity := this.engine.LogVerbosity
+		this.logVerbosity := 4 ; this.engine.LogVerbosity
 		
 		this.ih := ""
 		
@@ -128,15 +128,15 @@ Class Listener {
 				this.IgnoreKey(key)
 			case "Numpad0", "Numpad1", "Numpad2", "Numpad3", "Numpad4", "Numpad5", "Numpad6", "Numpad7", "Numpad8", "Numpad9", "Numpad0":
 				mappedKey := this.engine.aux.RemapKey(key)
-				this.logEvent(4, "Aux keyboard: " key "->" mappedKey)
+				this.logEvent(4, "Aux keyboard adding to token: " key "->" mappedKey)
 				this.AddKeyToToken(mappedKey)
 			case "NumpadHome", "NumpadUp", "NumpadPgUp", "NumpadRight", "NumpadPgDn", "NumpadDown", "NumpadEnd", "NumpadLeft", "NumpadClear", "NumpadIns", "NumpadDel":
 				mappedKey := this.engine.aux.RemapKey(key)
-				this.logEvent(4, "Aux keyboard: " key "->" mappedKey)
-				this.AddKeyToToken(mappedKey)
+				this.logEvent(4, "Aux keyboard ending token: " key "->" mappedKey)
+				this.EndToken(mappedKey)
 			case "Numlock", "NumpadDot", "NumpadDiv", "NumpadMult", "NumpadSub", "NumpadAdd", "NumpadEnter":
 				mappedKey := this.engine.aux.RemapKey(key)
-				this.logEvent(4, "Aux keyboard: " key "->" mappedKey)
+				this.logEvent(4, "Aux keyboard adding to token: " key "->" mappedKey)
 				this.AddKeyToToken(mappedKey)
                 ;SendInput, % "{Blind} " mappedKey
 			default:
@@ -196,13 +196,16 @@ Class Listener {
 	}
 	EndToken(key) {
 		this.logEvent(4, "Ending token: " key)
-		if (GetKeyState("Control", "P")) {
+        ; If this end key is not wrapped in braces and the control key is down, then don't expand 
+		if ((Substr(key, 1, 1) != "{") and (GetKeyState("Control", "P"))) {
+            ; Ctrl-., Ctrl-,, etc. should go ahead and give me the punctuation but not expand the word 
 			this.CancelToken(key)
 			if (InStr("{Space},.'""", key)) {
 				this.logEvent(4, "Passing token through after cancelling, due to ctrl key: " key)
 				Send, % key
 			}
 		} else {
+            ; I need Ctrl-Home and Ctrl-End to actually work, so let those go through as typed
 			this.accumulator.EndToken(key)
 			this.logEvent(4, "Serial token kills chord")
 			this.engine.keyboard.ChordPressStartTicks := 0
