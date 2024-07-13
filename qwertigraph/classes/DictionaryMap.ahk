@@ -119,7 +119,7 @@ class DictionaryMap
                     if (newEntry.isPrefix) {
                         properedUnmarkedQwerd := SubStr(upperedUnmarkedQwerd, 1, 1) SubStr(loweredUnmarkedQwerd, 2)
                         properedAffixWord := SubStr(upperedAffixWord, 1, 1) SubStr(loweredAffixWord, 2) 
-                        this.logEvent(1, "Loading Prefix " properedUnmarkedQwerd " as " properedAffixWord)
+                        this.logEvent(3, "Loading Prefix " properedUnmarkedQwerd " as " properedAffixWord)
                         this.prefixes.item(properedUnmarkedQwerd) := properedAffixWord
                         this.prefixes.item(loweredUnmarkedQwerd) := loweredAffixWord
                         if (StrLen(unmarkedQwerd) > 1) {
@@ -128,7 +128,7 @@ class DictionaryMap
                     } else if (newEntry.isSuffix) {
                         properedUnmarkedQwerd := SubStr(upperedUnmarkedQwerd, 1, 1) SubStr(loweredUnmarkedQwerd, 2)
                         properedAffixWord := "-" SubStr(upperedAffixWord, 2, 1) SubStr(loweredAffixWord, 3) 
-                        this.logEvent(1, "Loading Suffix " properedUnmarkedQwerd " as " properedAffixWord)
+                        this.logEvent(3, "Loading Suffix " properedUnmarkedQwerd " as " properedAffixWord)
                         this.suffixes.item(properedUnmarkedQwerd) := properedAffixWord
                         this.suffixes.item(loweredUnmarkedQwerd) := loweredAffixWord
                         if (StrLen(unmarkedQwerd) > 1) {

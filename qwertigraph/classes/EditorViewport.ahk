@@ -784,6 +784,18 @@ class EditorViewport
 		Case "ion":
 			word := RegExReplace(word, "e$", "")
 		}
+        
+        Switch FormAdd
+        {
+        Case "-sh":
+            form := RegExReplace(form, "-t$", "")
+        }
+        
+        Switch QwerdAdd
+        {
+        Case "z":
+            qwerd := RegExReplace(qwerd, "t$", "")
+        }
 
 		; When a keyer exists, we have to remove it from the lazy form
 		if (StrLen(keyer)) {

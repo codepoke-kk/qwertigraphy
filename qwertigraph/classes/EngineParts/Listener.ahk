@@ -6,7 +6,7 @@ Class Listener {
 		this.name := "listener"
 		this.engine := engine 
 		this.logQueue := engine.logQueue
-		this.logVerbosity := 4 ; this.engine.LogVerbosity
+		this.logVerbosity := this.engine.LogVerbosity
 		
 		this.ih := ""
 		
@@ -195,12 +195,15 @@ Class Listener {
 		this.engine.keyboard.ChordPressStartTicks := 0
 	}
 	EndToken(key) {
-		this.logEvent(4, "Ending token: " key)
+		this.logEvent(4, "Ending token: '" key "' with control state " GetKeyState("Control", "P"))
         ; If this end key is not wrapped in braces and the control key is down, then don't expand 
-		if ((Substr(key, 1, 1) != "{") and (GetKeyState("Control", "P"))) {
+        ; Also, if this end key is Space, Tab, or Enter and control key is done, don't expand 
+		if ((GetKeyState("Control", "P")) and ((Substr(key, 1, 1) != "{") or (InStr("{Space}{Tab}{Enter}", key)))) {
             ; Ctrl-., Ctrl-,, etc. should go ahead and give me the punctuation but not expand the word 
+            this.logEvent(4, "Detected ctrl-punctuation. Cancelling token")
 			this.CancelToken(key)
-			if (InStr("{Space},.'""", key)) {
+			if (InStr("{Space}{Tab}{Enter},.'""", key)) {
+                ; I'm going to force-send these keys 
 				this.logEvent(4, "Passing token through after cancelling, due to ctrl key: " key)
 				Send, % key
 			}

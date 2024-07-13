@@ -76,7 +76,7 @@ class AuxKeyboardEngine
 		}
 		this.logEvent(2, "Loaded from " this.auxmap " " this.keymapCount " characters with " this.keymap["Numpad0"])
         this.logEvent(1, "Initialized aux keyboard state as intialized:" this.winlocked . this.caplocked . this.layer)
-        this.dashboard.auxKeyboardState := "initialized:" this.winlocked . this.caplocked . this.layer
+        this.dashboard.auxKeyboardState := "initialized:" this.numlocked . this.winlocked . this.caplocked . this.layer
         this.dashboard.visualizeQueue()
 		
 		; this.Start()
@@ -85,14 +85,14 @@ class AuxKeyboardEngine
 		this.logEvent(2, "Auxilliary Keyboard Engine started with " this.keymap.MaxIndex() " keys")
 		this.enabled := true
         this.logEvent(1, "Sending aux keyboard state as aux:" this.winlocked . this.caplocked . this.layer)
-        this.dashboard.auxKeyboardState := "aux:" this.winlocked . this.caplocked . this.layer
+        this.dashboard.auxKeyboardState := "aux:" this.numlocked . this.winlocked . this.caplocked . this.layer
         this.dashboard.visualizeQueue()
 	}
 	Stop() {
 		this.logEvent(2, "Auxilliary Keyboard Engine stopped")
 		this.enabled := false 
         this.logEvent(1, "Sending aux keyboard state as aux:" this.winlocked . this.caplocked . this.layer)
-        this.dashboard.auxKeyboardState := "stopped:" this.winlocked . this.caplocked . this.layer
+        this.dashboard.auxKeyboardState := "stopped:" this.numlocked . this.winlocked . this.caplocked . this.layer
         this.dashboard.visualizeQueue()
 	}
 	Flush() {
@@ -182,7 +182,7 @@ class AuxKeyboardEngine
 			this.logEvent(2, "Forwarding disabled and unmatched " key " as " rekey)
 		}
         
-        this.logEvent(1, "Sending aux keyboard state as aux:" this.winlocked . this.caplocked . this.layer)
+        this.logEvent(1, "Sending aux keyboard state as aux:" this.numlocked . this.winlocked . this.caplocked . this.layer)
         this.dashboard.auxKeyboardState := "aux:" this.winlocked . this.caplocked . this.layer
         this.dashboard.visualizeQueue()
         
@@ -403,7 +403,16 @@ class AuxKeyboardEngine
                     } else {
                         this.logEvent(4, "Shift key not sent due to repeat key of " this.lastkeycount)
                     }
-				} else if (this.keymap[key] = "{Reset}") {
+				} else if (key = "Numlock") {
+                    ; Catch a loop where numlock sends numlock which resends numlock
+                    ; This actively leaves a partial qwerd in the queue when struck, but okay
+                    if ((key = "NumLock") and (key = this.lastkey)) {
+                        this.logEvent(3, "We have a " key " - be smart about " this.lastkey) 
+                    }
+                    this.logEvent(3, "Sending nothing, but inverting numlock") 
+					this.numlocked := !this.numlocked
+					SetNumLockState , % this.numlocked
+                } else if (this.keymap[key] = "{Reset}") {
 					this.logEvent(3, "Chord is Reset. Cancelling token and sending " this.keymap[this.keymap[key]])
 					this.engine.listener.EndToken(this.keymap[key])
 					this.numlocked := !this.numlocked
@@ -445,8 +454,8 @@ class AuxKeyboardEngine
             this.lastkeycount := 0
 				
 		}
-        this.logEvent(1, "Sending aux keyboard state as aux:" this.winlocked . this.caplocked . this.layer)
-        this.dashboard.auxKeyboardState := "aux:" this.winlocked . this.caplocked . this.layer
+        this.logEvent(1, "Sending aux keyboard state as aux:" this.numlocked . this.winlocked . this.caplocked . this.layer)
+        this.dashboard.auxKeyboardState := "aux:" this.numlocked . this.winlocked . this.caplocked . this.layer
 
 		; Clear the chord buffer for a fresh start 
 		this.Flush()
