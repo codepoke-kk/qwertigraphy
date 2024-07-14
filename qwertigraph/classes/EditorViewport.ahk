@@ -777,11 +777,14 @@ class EditorViewport
 			word := RegExReplace(word, "e$", "")
 		Case "ed":
 			word := RegExReplace(word, "e$", "")
+			word := RegExReplace(word, "y$", "i")
 		Case "ing":
 			word := RegExReplace(word, "e$", "")
 		Case "ly":
 			word := RegExReplace(word, "le$", "")
 		Case "ion":
+			word := RegExReplace(word, "e$", "")
+		Case "ation":
 			word := RegExReplace(word, "e$", "")
 		}
         

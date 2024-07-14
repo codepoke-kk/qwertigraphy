@@ -113,7 +113,7 @@ class AuxKeyboardEngine
                 key := this.NumpadShiftedRemap[key]
                 this.logEvent(4, "Double remapped key to " key " to override shift-cancels-numlock issue")
             } else {
-                ; this.logEvent(4, "No double remap of " key " needed because state " GetKeyState("LShift") ", numlock " this.numlocked " and double remap of " this.NumpadShiftedRemap[key])
+                this.logEvent(4, "No double remap of " key " needed because state " GetKeyState("LShift") ", numlock " this.numlocked " and double remap of " this.NumpadShiftedRemap[key])
             }
             ; Don't count keys sent by "repeat key" by the OS when a key is held down
             if (key != this.lastkey) {
@@ -132,8 +132,7 @@ class AuxKeyboardEngine
 			; We will mark any and every mod key for its mod value 
 			; These, therefore, can never be used in a chord
 			if (this.keymap[key] = "{Reset}") { 
-				rekey := ""
-				this.logEvent(4, "Reset key down")
+                this.logEvent(1, "Numlock/Reset key down in RemapKey after removing the call to this function in Listener???")
 			} else if ((this.keymap[key] = "{LShift}") or (this.keymap[key] = "{RShift}")) {
 				this.shifted := "+" 
                 Send, {LShift down}
@@ -406,17 +405,9 @@ class AuxKeyboardEngine
 				} else if (key = "Numlock") {
                     ; Catch a loop where numlock sends numlock which resends numlock
                     ; This actively leaves a partial qwerd in the queue when struck, but okay
-                    if ((key = "NumLock") and (key = this.lastkey)) {
-                        this.logEvent(3, "We have a " key " - be smart about " this.lastkey) 
-                    }
-                    this.logEvent(3, "Sending nothing, but inverting numlock") 
-					this.numlocked := !this.numlocked
-					SetNumLockState , % this.numlocked
+                    this.logEvent(1, "Numlock sent after I killed the function call in Listener???")
                 } else if (this.keymap[key] = "{Reset}") {
-					this.logEvent(3, "Chord is Reset. Cancelling token and sending " this.keymap[this.keymap[key]])
-					this.engine.listener.EndToken(this.keymap[key])
-					this.numlocked := !this.numlocked
-					SetNumLockState , % this.numlocked
+                    this.logEvent(1, "Numlock sent after I killed the function call in Listener???")
 				} 
 			} 
             
@@ -456,6 +447,7 @@ class AuxKeyboardEngine
 		}
         this.logEvent(1, "Sending aux keyboard state as aux:" this.numlocked . this.winlocked . this.caplocked . this.layer)
         this.dashboard.auxKeyboardState := "aux:" this.numlocked . this.winlocked . this.caplocked . this.layer
+        this.dashboard.visualizeQueue()
 
 		; Clear the chord buffer for a fresh start 
 		this.Flush()

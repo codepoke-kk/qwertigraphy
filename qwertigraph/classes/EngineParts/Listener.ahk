@@ -7,6 +7,7 @@ Class Listener {
 		this.engine := engine 
 		this.logQueue := engine.logQueue
 		this.logVerbosity := this.engine.LogVerbosity
+        this.NumLockLastSetTime := A_TickCount
 		
 		this.ih := ""
 		
@@ -134,11 +135,30 @@ Class Listener {
 				mappedKey := this.engine.aux.RemapKey(key)
 				this.logEvent(4, "Aux keyboard ending token: " key "->" mappedKey)
 				this.EndToken(mappedKey)
-			case "Numlock", "NumpadDot", "NumpadDiv", "NumpadMult", "NumpadSub", "NumpadAdd", "NumpadEnter":
+			case "NumpadDot", "NumpadDiv", "NumpadMult", "NumpadSub", "NumpadAdd", "NumpadEnter":
 				mappedKey := this.engine.aux.RemapKey(key)
 				this.logEvent(4, "Aux keyboard adding to token: " key "->" mappedKey)
 				this.AddKeyToToken(mappedKey)
                 ;SendInput, % "{Blind} " mappedKey
+			case "Numlock":
+                ; I'm frankly baffled by this problem, and I have solved it by brute force 
+                ; When I SetNumLockState, an artificial NumLock keypress is sent
+                ; Which calls this function again, and it happens twice for some reason
+                ; I've coded up a .5 second delay to prevent the loops
+                NumLockRequestTime := A_TickCount
+				this.logEvent(4, "Request to Numlock at " NumLockRequestTime " with last time of " this.NumLockLastSetTime)
+				this.CancelToken("{Numlock}")
+                if (NumLockRequestTime - 500 > this.NumLockLastSetTime) {
+                    this.logEvent(4, "Allow toggle - last request is long enough ago")
+                    NumLockedNow := GetKeyState("NumLock", "T")
+                    this.engine.aux.numlocked := !NumLockedNow
+                    SetNumLockState , % this.engine.aux.numlocked
+                    this.engine.aux.dashboard.auxKeyboardState := "aux:" this.engine.aux.numlocked . this.engine.aux.winlocked . this.engine.aux.caplocked . this.engine.aux.layer
+                    this.engine.aux.dashboard.visualizeQueue()
+                } else {
+                    this.logEvent(4, "Request is too soon - probably a self-send so ignoring")
+                }
+                this.NumLockLastSetTime := A_TickCount
 			default:
 				this.logEvent(4, "Defaulting unrecognized input as: {" key "}")
 				SendInput, % "{" key "}"
@@ -164,10 +184,13 @@ Class Listener {
 				this.engine.chordexpander.LeaveChord(key)
 			case "Numpad0", "Numpad1", "Numpad2", "Numpad3", "Numpad4", "Numpad5", "Numpad6", "Numpad7", "Numpad8", "Numpad9", "Numpad0":
 				this.engine.aux.LeaveChord(key)
-			case "Numlock", "NumpadDot", "NumpadDiv", "NumpadMult", "NumpadSub", "NumpadAdd", "NumpadEnter":
+			case "NumpadDot", "NumpadDiv", "NumpadMult", "NumpadSub", "NumpadAdd", "NumpadEnter":
 				this.engine.aux.LeaveChord(key)
 			case "NumpadHome", "NumpadUp", "NumpadPgUp", "NumpadRight", "NumpadPgDn", "NumpadDown", "NumpadEnd", "NumpadLeft", "NumpadClear", "NumpadIns", "NumpadDel":
 				this.engine.aux.LeaveChord(key)
+			case "Numlock":
+				this.logEvent(4, "Keyup Numlock without leaving chord")
+				this.CancelToken("{Numlock}")
 		}
 		Critical Off
 	}
