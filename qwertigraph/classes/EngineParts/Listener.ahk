@@ -184,12 +184,25 @@ Class Listener {
 				this.logEvent(4, "Request to Numlock at " NumLockRequestTime " with last time of " this.NumLockLastSetTime)
 				this.CancelToken("{Numlock}")
                 if (NumLockRequestTime - 500 > this.NumLockLastSetTime) {
+					; On HP Victus, Numlock toggles with Send and Send creates a self-activating loop 
+					; On HP Elitebook, Numlock toggles with SetNumLockState
+					; Ugh 
+					; First try just sending the key, then force the change if that does not work 
                     this.logEvent(4, "Allow toggle - last request is long enough ago")
-                    ; NumLockedNow := GetKeyState("NumLock", "T")
-                    ; this.engine.aux.numlocked := !NumLockedNow
-                    ; SetNumLockState , % this.engine.aux.numlocked
+                    NumLockedBefore := GetKeyState("NumLock", "T")
+					; First try to set by sending
                     Send, {Numlock}
                     Sleep, 100
+                    NumLockedAfter := GetKeyState("NumLock", "T")
+                    this.logEvent(4, "Numlock changed from " NumLockedBefore " to " NumLockedAfter)
+					if (NumLockedBefore = NumLockedAfter) {
+                    	this.logEvent(4, "Numlock unchanged after Send with before " NumLockedBefore " and after " NumLockedAfter)
+                    	SetNumLockState , % !NumLockedBefore
+						NumLockedAfter2 := GetKeyState("NumLock", "T")
+						this.logEvent(4, "Numlock force changed from " NumLockedBefore " to " NumLockedAfter2)
+					} else {
+                    	this.logEvent(4, "Numlock changed with Send from " NumLockedBefore " to " NumLockedAfter)
+					}
                     this.engine.aux.numlocked := GetKeyState("NumLock", "T")
                     this.logEvent(4, "Numlock set to " this.engine.aux.numlocked)
                     this.engine.aux.dashboard.auxKeyboardState := "aux:" this.engine.aux.numlocked . this.engine.aux.winlocked . this.engine.aux.caplocked . this.engine.aux.layer
