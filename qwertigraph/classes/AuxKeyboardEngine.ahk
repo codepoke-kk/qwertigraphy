@@ -1,6 +1,8 @@
 ; At this point, ctrl-click works, which is nice. 
 ; Current bug: Ctrl-Click also send "Enter" upon release
 
+; You can set WinLock with the chord 753 and CapLock with 159
+
 class AuxKeyboardEngine
 {
     logQueue := new Queue("AuxEngineQueue")
@@ -75,8 +77,6 @@ class AuxKeyboardEngine
             }
         }
         this.logEvent(2, "Loaded from " this.auxmap " " this.keymapCount " characters with " this.keymap["Numpad0"])
-        this.logEvent(1, "Initialized aux keyboard state as intialized:" this.winlocked . this.caplocked . this.layer)
-        this.dashboard.auxKeyboardState := "initialized:" this.numlocked . this.winlocked . this.caplocked . this.layer
         this.dashboard.visualizeQueue()
         
         ; this.Start()
@@ -84,15 +84,11 @@ class AuxKeyboardEngine
     Start() {
         this.logEvent(2, "Auxilliary Keyboard Engine started with " this.keymap.MaxIndex() " keys")
         this.enabled := true
-        this.logEvent(1, "Sending aux keyboard state as aux:" this.winlocked . this.caplocked . this.layer)
-        this.dashboard.auxKeyboardState := "aux:" this.numlocked . this.winlocked . this.caplocked . this.layer
         this.dashboard.visualizeQueue()
     }
     Stop() {
         this.logEvent(2, "Auxilliary Keyboard Engine stopped")
         this.enabled := false 
-        this.logEvent(1, "Sending aux keyboard state as aux:" this.winlocked . this.caplocked . this.layer)
-        this.dashboard.auxKeyboardState := "stopped:" this.numlocked . this.winlocked . this.caplocked . this.layer
         this.dashboard.visualizeQueue()
     }
     Flush() {
@@ -181,8 +177,6 @@ class AuxKeyboardEngine
             this.logEvent(2, "Forwarding disabled and unmatched " key " as " rekey)
         }
         
-        this.logEvent(1, "Sending aux keyboard state as aux:" this.numlocked . this.winlocked . this.caplocked . this.layer)
-        this.dashboard.auxKeyboardState := "aux:" this.numlocked . this.winlocked . this.caplocked . this.layer
         this.dashboard.visualizeQueue()
         
         Return rekey
@@ -445,8 +439,6 @@ class AuxKeyboardEngine
             this.lastkeycount := 0
                 
         }
-        this.logEvent(1, "Sending aux keyboard state as aux:" this.numlocked . this.winlocked . this.caplocked . this.layer)
-        this.dashboard.auxKeyboardState := "aux:" this.numlocked . this.winlocked . this.caplocked . this.layer
         this.dashboard.visualizeQueue()
 
         ; Clear the chord buffer for a fresh start 
@@ -468,9 +460,24 @@ class AuxKeyboardEngine
             this.layer := ""
             this.logEvent(4, "After cancel layer is " this.layer " and lock state is " this.layerlocked)
         }
-        this.logEvent(1, "Sending aux keyboard state as aux:" this.winlocked . this.caplocked . this.layer)
-        this.dashboard.auxKeyboardState := "aux:" this.winlocked . this.caplocked . this.layer
         this.dashboard.visualizeQueue()
+    }
+    
+    GetAuxKeyboardState() {
+        auxSt := this.enabled ? "AUX" : "aux"
+        numSt := this.numlocked ? "NUM" : "num"
+        winSt := this.winlocked ? "WIN" : "win"
+        capSt := this.caplocked ? "CAP" : "cap"
+        Switch this.layer
+        {
+            case "Ln":
+                layerSt := "Nums"
+            case "Ls":
+                layerSt := "Syms"
+            default:
+                layerSt := "Keys"
+        }
+        return auxSt " " numSt " " winSt " " capSt " " layerSt
     }
     
     LogEvent(verbosity, message) 

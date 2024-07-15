@@ -91,7 +91,6 @@ Class DashboardViewport
       this.AutohideSeconds := (this.qenv.properties.DashboardAutohideSeconds) ? this.qenv.properties.DashboardAutohideSeconds : 30
       this.engine := engine 
       this.dashboardQueue := engine.dashboardQueue
-      this.auxKeyboardState := "started"
       this.lastRefresh := A_TickCount
 		
       this.timer := ObjBindMethod(this, "DequeueEvents")
@@ -241,8 +240,8 @@ Class DashboardViewport
       
       ; Draw Aux Keyboard status
       AuxKeyboardOptions := "x20 y" (this.dashwindow.indicatorsTop + 70)  " Left " this.SpeedColor " r4 s16 "
-      this.LogEvent(4, "Drawing aux keyboard state " this.auxKeyboardState " as " AuxKeyboardOptions)
-      Gdip_TextToGraphics(this.G, this.auxKeyboardState, AuxKeyboardOptions, this.FontName, this.dashwindow.width, this.dashwindow.height)
+      this.LogEvent(4, "Drawing aux keyboard state " this.engine.aux.GetAuxKeyboardState() " as " AuxKeyboardOptions)
+      Gdip_TextToGraphics(this.G, this.engine.aux.GetAuxKeyboardState(), AuxKeyboardOptions, this.FontName, this.dashwindow.width, this.dashwindow.height)
       
       UpdateLayeredWindow(this.hwnd1, this.hdc, this.dashwindow.left, this.dashwindow.top, this.dashwindow.width, this.dashwindow.height)
    }
