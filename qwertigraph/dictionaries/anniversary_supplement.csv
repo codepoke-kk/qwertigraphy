@@ -131,6 +131,7 @@ Projection,pr-j-k-sh,Prjkz,,qjkprz,122
 Projections,pr-j-k-sh-s,Prjkzs,,qjkprsz,122
 Products,pr-o-d-u-k-s,Produks,,qdkoprsu,122
 Making,m-a-k-\-h,Makg,,qagkm,125
+Almighty,o-m-a-t-e,Omate,,qaemot,128
 Rework,r-e-r-k,Rerk,,qekrw,132
 Reworked,r-e-r-k-d,Rerkd,,qdekr,132
 Reworking,r-e-r-k-\-h,Rerkg,,qegkr,132
@@ -956,6 +957,7 @@ Fellowships,f-e-l-o-sh-s,Felozs,,qeflosz,654
 Churched,ch-e2-ch-d,Cecd,,qcde,655
 Churching,ch-e2-ch-\-h,Cecg,,qceg,655
 Churches,ch-e2-ch-s,Cecs,,qces,655
+Attentions,tn-sh-s,Tnzs,,qnstz,656
 Company,k-p,Kpi,i,qikp,661
 Companies,k-p-s,Kpsi,i,qikps,661
 Objected,o-b-d,Obd,,qbdo,668
@@ -975,6 +977,7 @@ Revisit,r-v-e-s2-e-t,Rveset,,qerstv,676
 Revisited,r-v-e-s2-e-t-d,Rvesetd,,qderstv,676
 Revisiting,r-v-e-s2-e-t-\-h,Rvesetg,,qegrstv,676
 Revisits,r-v-e-s2-e-t-s,Rvesets,,qerstv,676
+Heaviness,^-h-\-e-v-e-n-e-s,Hevenes,,qehnsv,680
 Heaviest,^-h-\-e-v-e-s-t,Hevest,,qehstv,680
 Heavily,^-h-\-e-v-ye,Hevy,,qehvy,680
 Unthinking,n-th-^-h-\-\-h,Nhhh,,qhnz,683
@@ -1638,6 +1641,7 @@ Attacks,a-t-a-k-s,Ataks,,qakst,1192
 Movements,m-u-m-s,Mums,,qmsu,1193
 Millionth,m-e-l-n-th,Melnh,,qehlmn,1196
 Millionths,m-e-l-n-th-s,Melnhs,,qehlmns,1196
+Millions,m-e-l-n-s,Melns,,qelmns,1196
 Laughable,l-a-f-b,Lafb,,qabfl,1198
 Laughably,l-a-f-b-e,Lafbe,,qabefl,1198
 Laughability,l-a-f-\-b,Lafbo,o,qabflo,1198
@@ -1950,6 +1954,11 @@ Drivers,d-r-i-v-r-s,Drivrs,,qdirsv,1509
 Drives,d-r-i-v-s,Drivs,,qdirsv,1509
 Virtues,v-e2-t-u-s,Vetus,,qestuv,1510
 Virtuous,v-e2-t-u-u-s,Vetuus,,qestuv,1510
+Fashionable,f-a-sh-b,Fazb,,qabfz,1511
+Fashionably,f-a-sh-b-e,Fazbe,,qabefz,1511
+Fashioned,f-a-sh-d,Fazd,,qadfz,1511
+Fashioning,f-a-sh-\-h,Fazg,,qafgz,1511
+Fashions,f-a-sh-s,Fazs,,qafsz,1511
 Sentenced,s2-e-n-tn-s-d,Sentnsd,,qdenst,1518
 Sentencing,s2-e-n-tn-s-\-h,Sentnsg,,qegnst,1518
 Sentences,s2-e-n-tn-s-s,Sentnss,,qenst,1518
@@ -2881,6 +2890,7 @@ Paused,p-o-s-d,Posd,,qdops,2596
 Pausing,p-o-s-\-h,Posg,,qgops,2596
 Pauses,p-o-ss,Possu,u,qopsu,2596
 Key,k-e,Ke,,qcek,2598
+Merry,m-e-r-ye,Mery,,qemry,2601
 Assured,a-sh-u-d,Azud,,qaduz,2611
 Assuring,a-sh-u-\-h,Azug,,qaguz,2611
 Assures,a-sh-u-s,Azus,,qasuz,2611
@@ -4248,6 +4258,12 @@ Attachments,a-t-ch-m-s,Atcms,,qacmst,5233
 Logged,l-o-g-d,Logd,,qdglo,5239
 Logging,l-o-g-\-h,Logg,,qglo,5239
 Beforehand,b-f-n-t,Bfnt,,qbfnt,5240
+Comprehensive,k-pr-e-n-s-v,Kprensv,,qeknprsv,5256
+Comprehensively,k-pr-e-n-s-v-e,Kprensve,,qeknprsv,5256
+Comprehended,k-pr-e-nt-d,Kprentd,,qdeknprt,5256
+Comprehending,k-pr-e-nt-\-h,Kprentg,,qegknprt,5256
+Comprehends,k-pr-e-nt-s,Kprents,,qeknprst,5256
+Comprehension,k-pr-e-nt-sh,Kprenz,,qeknprz,5256
 Fundamentally,f-nt-/-m-e,Fntme,,qefmnt,5265
 Fundamentalist,f-nt-/-m-e-s,Fntmes,,qefmnst,5265
 Fundamentalists,f-nt-/-m-e-s-s,Fntmess,,qefmnst,5265
@@ -5096,7 +5112,9 @@ Formatively,f-m-a-df-e,Fmadfe,,qadefm,9642
 Informative,n-f-m-a-df,Nfmadf,,qadfmn,9642
 Informatively,n-f-m-a-df-e,Nfmadfe,,qadefmn,9642
 Tensioned,tn-sh-d,Tnzd,,qdntz,9723
+Tensioned,tn-sh-d,Tnzdo,o,qdnotz,9723
 Tensioning,tn-sh-\-h,Tnzg,,qgntz,9723
+Tensioning,tn-sh-\-h,Tnzgo,o,qgnotz,9723
 Tensions,tn-sh-s,Tnzso,o,qnostz,9723
 Exposition,e-s-p-o-z,Xpoz,,qopxz,9758
 Expositioned,e-s-p-o-z-d,Xpozd,,qdopxz,9758
@@ -5126,6 +5144,11 @@ Clutters,k-l-u-t-e2-s,Klutes,,qeklstu,9921
 Certificates,s2-e-df-s,Sedfs,,qdefs,9931
 Palestinian,p-a-l-e-s2-tn-n,Palestnn,,qaelnpst,9985
 Palestinians,p-a-l-e-s2-tn-n-s,Palestnns,,qaelnpst,9985
+Comprehensible,k-pr-e-n-s-b,Kprensb,,qbeknprs,9993
+Comprehensibly,k-pr-e-n-s-b-e,Kprensbe,,qbeknprs,9993
+Comprehensibility,k-pr-e-n-s-\-b,Kprensbo,o,qbeknoprs,9993
+Incomprehensibly,n-k-pr-e-n-s-b-e,Nkprensbe,,qbeknprs,9993
+Merriments,m-e2-m-s,Mems,,qems,10033
 Quotations,k-w-o-t-sh-s,Qotzs,,qoqstz,10035
 Geographic,j-/-o-e-k,Jyk,,qjky,10083
 Geographically,j-/-o-e-k-e,Jyke,,qejky,10083
@@ -5300,8 +5323,15 @@ Migration,m-i-g-r-a-z,Migraz,,qagimrz,11303
 Migrations,m-i-g-r-a-z-s,Migrazs,,qagimrzs,11303
 Inspect,n-s-p,Nsp,,qnps,11323
 Inspected,n-s-p-d,Nspd,,qdnps,11323
+Introspected,n-\-s-p-d,Nspdu,u,qdnpsu,11323
 Inspecting,n-s-p-\-h,Nspg,,qgnps,11323
+Introspecting,n-\-s-p-\-h,Nspgu,u,qgnpsu,11323
 Inspects,n-s-p-s,Nsps,,qnps,11323
+Introspects,n-\-s-p-s,Nspsu,u,qnpsu,11323
+Introspect,n-\-s-p,Nspu,u,qnpsu,11323
+Introspectively,n-\-s-p--\-v-e,Nspveu,u,qenpsuv,11323
+Introspective,n-\-s-p--\-v,Nspvu,u,qnpsuv,11323
+Introspection,n-\-s-p-sh,Nspzu,u,qnpsuz,11323
 Inquisitively,n-k-e-s2-df-e,Nqesdfe,,qdefnqs,11372
 Inquisitiveness,n-k-e-s2-df-n-e-s,Nqesdfnes,,qdefnqs,11372
 Assign,a-s2-i-n,Asin,,qains,11390
@@ -5462,6 +5492,7 @@ Organized,o-g-d,Ogd,,qdgo,12648
 Organizing,o-g-\-h,Ogg,,qcgo,12648
 Organizer,o-g-r,Ogr,,qgor,12648
 Organizers,o-g-r-s,Ogrs,,qgors,12648
+Intrusions,n-/-sh-s,Nzs,,qnsz,12688
 Pharisaic,f-a2-r-s-a-k,Farsak,,qafkrs,12765
 Pharisaical,f-a2-r-s-a-k-l,Farsakl,,qafklrs,12765
 Pharisaically,f-a2-r-s-a-k-l-e,Farsakle,,qaefklrs,12765
@@ -6309,6 +6340,7 @@ Circumnavigating,^-s-\-n-a-v-g-\-h,Snavgg,,qagnsv,28595
 Circumnavigates,^-s-\-n-a-v-g-s,Snavgs,,qagnsv,28595
 Circumnavigation,^-s-\-n-a-v-g-sh,Snavgz,,qagnsvz,28595
 Circumnavigations,^-s-\-n-a-v-g-sh-s,Snavgzs,,qagnsvz,28595
+Intrusively,n-/-s2-v-e,Nsve,,qensv,28602
 Doctrinally,d-o-k-t-/-l-e,Doktle,,qdeklot,28634
 Unproductive,npdkv,Npdkv,,qdknpv,28866
 Diagonally,d-i-g-e,Dige,,qdegi,28892
@@ -7577,6 +7609,8 @@ Penetrating,pnt-r-a-\-h,Pntrag,,qagnprt,91013
 Penetrates,pnt-r-a-s,Pntras,,qanprst,91013
 Penetration,pnt-r-a-sh,Pntraz,,qanprtz,91013
 Penetrations,pnt-r-a-sh-s,Pntrazs,,qanprstz,91013
+Dictionary,d-e-k-z-r-e,Dekzre,,qdekrz,91034
+Dictionaries,d-e-k-z-r-e-s,Dekzres,,qdekrsz,91034
 Caregave,k-a-g-a,Kaga,,qagk,91037
 Caregive,k-a-g-e,Kage,,qaegk,91037
 Caregave,k-a-g-e-d,Kaged,,qadegk,91037
@@ -7970,6 +8004,7 @@ Rehearsing,r-e-^-h-\-r-s-\-h,Rehrsg,,qeghrs,92540
 Rehearsal,r-e-^-h-\-r-s-l,Rehrsl,,qehlrs,92540
 Rehearsals,r-e-^-h-\-r-s-l-s,Rehrsls,,qehlrs,92540
 Rehearses,r-e-^-h-\-r-s-s,Rehrss,,qehrs,92540
+Mightily,m-a-t-ye,Maty,,qamty,92556
 Prefers,pr-e-f-s,Prefs,,qefprs,92587
 Mirror,m-e-r-r,Merr,,qemr,92618
 Mirrored,m-e-r-r-d,Merrd,,qdemr,92618
