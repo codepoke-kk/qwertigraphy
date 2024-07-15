@@ -3,32 +3,32 @@
 
 class AuxKeyboardEngine
 {
-	logQueue := new Queue("AuxEngineQueue")
-	logVerbosity := 2
-	enabled := true
+    logQueue := new Queue("AuxEngineQueue")
+    logVerbosity := 4
+    enabled := true
     dashboard := ""
 
-	__New() {
-		local
-		this.engine := ""
-		this.auxmap := "classes\AuxKeymapFull.csv"
-		
-		this.keymap := {}
-		this.keymapCount := 0
-		this.keysdown := 0
+    __New() {
+        local
+        this.engine := ""
+        this.auxmap := "classes\AuxKeymapFull.csv"
+        
+        this.keymap := {}
+        this.keymapCount := 0
+        this.keysdown := 0
         this.lastkey := ""
         this.lastkeycount := 0
-		this.enabled := true
-		this.layer := ""
+        this.enabled := true
+        this.layer := ""
         this.layerlocked := ""
-		this.caplocked := ""
+        this.caplocked := ""
         this.winlocked := ""
-		this.shifted := ""
-		this.controlled := ""
-		this.alted := ""
-		this.winned := "" 
-		this.numlocked := true 
-		SetNumLockState , % this.numlocked
+        this.shifted := ""
+        this.controlled := ""
+        this.alted := ""
+        this.winned := "" 
+        this.numlocked := true 
+        SetNumLockState , % this.numlocked
         
         this.NumpadShiftedRemap := {}
         this.NumpadShiftedRemap["NumpadHome"] := "Numpad7"
@@ -42,71 +42,71 @@ class AuxKeyboardEngine
         this.NumpadShiftedRemap["NumpadClear"] := "Numpad5"
         this.NumpadShiftedRemap["NumpadIns"] := "Numpad0"
         this.NumpadShiftedRemap["NumpadDel"] := "NumpadDot"
-	
-		Loop,Read, % this.auxmap  
-		{
-			NumLines:=A_Index-1
-			if (A_Index = 1) {
-				; We do nothing with the title row
-				Continue 
-			}
-			mapfields := StrSplit(A_LoopReadLine, ",")
-			if (mapfields[2] = "{Comma}") {
-				mapfields[2] := ","
-			} else if (mapfields[2] = "{Semicolon}") {
-				mapfields[2] := ";"
-			}
-			keyfields := StrSplit(mapfields[1], ";")
-			this.keymap[mapfields[1]] := mapfields[2]
-			this.logEvent(4, "Setting " mapfields[1] " to " mapfields[2])
-			this.keymapCount += 1
-			if (keyfields.MaxIndex() = 1) {
-				this.keymap[keyfields[1]] := mapfields[2]
-			} else if (keyfields.MaxIndex() = 2) {
-				this.keymap[keyfields[1] . keyfields[2]] := mapfields[2]
-				this.keymap[keyfields[2] . keyfields[1]] := mapfields[2]
-			} else if (keyfields.MaxIndex() = 3) {
-				this.keymap[keyfields[1] . keyfields[2] . keyfields[3]] := mapfields[2]
-				this.keymap[keyfields[1] . keyfields[3] . keyfields[2]] := mapfields[2]
-				this.keymap[keyfields[2] . keyfields[1] . keyfields[3]] := mapfields[2]
-				this.keymap[keyfields[2] . keyfields[3] . keyfields[1]] := mapfields[2]
-				this.keymap[keyfields[3] . keyfields[1] . keyfields[2]] := mapfields[2]
-				this.keymap[keyfields[3] . keyfields[2] . keyfields[1]] := mapfields[2]
-			}
-		}
-		this.logEvent(2, "Loaded from " this.auxmap " " this.keymapCount " characters with " this.keymap["Numpad0"])
+    
+        Loop,Read, % this.auxmap  
+        {
+            NumLines:=A_Index-1
+            if (A_Index = 1) {
+                ; We do nothing with the title row
+                Continue 
+            }
+            mapfields := StrSplit(A_LoopReadLine, ",")
+            if (mapfields[2] = "{Comma}") {
+                mapfields[2] := ","
+            } else if (mapfields[2] = "{Semicolon}") {
+                mapfields[2] := ";"
+            }
+            keyfields := StrSplit(mapfields[1], ";")
+            this.keymap[mapfields[1]] := mapfields[2]
+            this.logEvent(4, "Setting " mapfields[1] " to " mapfields[2])
+            this.keymapCount += 1
+            if (keyfields.MaxIndex() = 1) {
+                this.keymap[keyfields[1]] := mapfields[2]
+            } else if (keyfields.MaxIndex() = 2) {
+                this.keymap[keyfields[1] . keyfields[2]] := mapfields[2]
+                this.keymap[keyfields[2] . keyfields[1]] := mapfields[2]
+            } else if (keyfields.MaxIndex() = 3) {
+                this.keymap[keyfields[1] . keyfields[2] . keyfields[3]] := mapfields[2]
+                this.keymap[keyfields[1] . keyfields[3] . keyfields[2]] := mapfields[2]
+                this.keymap[keyfields[2] . keyfields[1] . keyfields[3]] := mapfields[2]
+                this.keymap[keyfields[2] . keyfields[3] . keyfields[1]] := mapfields[2]
+                this.keymap[keyfields[3] . keyfields[1] . keyfields[2]] := mapfields[2]
+                this.keymap[keyfields[3] . keyfields[2] . keyfields[1]] := mapfields[2]
+            }
+        }
+        this.logEvent(2, "Loaded from " this.auxmap " " this.keymapCount " characters with " this.keymap["Numpad0"])
         this.logEvent(1, "Initialized aux keyboard state as intialized:" this.winlocked . this.caplocked . this.layer)
         this.dashboard.auxKeyboardState := "initialized:" this.numlocked . this.winlocked . this.caplocked . this.layer
         this.dashboard.visualizeQueue()
-		
-		; this.Start()
-	}
-	Start() {
-		this.logEvent(2, "Auxilliary Keyboard Engine started with " this.keymap.MaxIndex() " keys")
-		this.enabled := true
+        
+        ; this.Start()
+    }
+    Start() {
+        this.logEvent(2, "Auxilliary Keyboard Engine started with " this.keymap.MaxIndex() " keys")
+        this.enabled := true
         this.logEvent(1, "Sending aux keyboard state as aux:" this.winlocked . this.caplocked . this.layer)
         this.dashboard.auxKeyboardState := "aux:" this.numlocked . this.winlocked . this.caplocked . this.layer
         this.dashboard.visualizeQueue()
-	}
-	Stop() {
-		this.logEvent(2, "Auxilliary Keyboard Engine stopped")
-		this.enabled := false 
+    }
+    Stop() {
+        this.logEvent(2, "Auxilliary Keyboard Engine stopped")
+        this.enabled := false 
         this.logEvent(1, "Sending aux keyboard state as aux:" this.winlocked . this.caplocked . this.layer)
         this.dashboard.auxKeyboardState := "stopped:" this.numlocked . this.winlocked . this.caplocked . this.layer
         this.dashboard.visualizeQueue()
-	}
-	Flush() {
+    }
+    Flush() {
         this.logEvent(2, "Auxilliary Keyboard Engine flushed")
-		this.chord := ""
-		this.shifted := ""
-		this.controlled := ""
-		this.alted := ""
-		this.winned := "" 
-		this.keysdown := 0
-	}
-	
-	RemapKey(key) {
-		if (this.enabled) {
+        this.chord := ""
+        this.shifted := ""
+        this.controlled := ""
+        this.alted := ""
+        this.winned := "" 
+        this.keysdown := 0
+    }
+    
+    RemapKey(key) {
+        if (this.enabled) {
             this.logEvent(4, "Remapping " key)
             ; I have to override the desire of Windows to cancel numlock when shift is down 
             if (this.numlocked and this.NumpadShiftedRemap[key] ) {
@@ -125,52 +125,52 @@ class AuxKeyboardEngine
                 this.lastkeycount += 1
                 this.logEvent(4, "Incremented lastkeycount to " this.lastkeycount)
             }
-			; Implement layers by prepending a layer marker to every one of the 9 digit keys (not the zero key)
-			if (RegExMatch(key, "^Numpad[1-9]$")) {
-				key := this.layer . key
-			}
-			; We will mark any and every mod key for its mod value 
-			; These, therefore, can never be used in a chord
-			if (this.keymap[key] = "{Reset}") { 
+            ; Implement layers by prepending a layer marker to every one of the 9 digit keys (not the zero key)
+            if (RegExMatch(key, "^Numpad[1-9]$")) {
+                key := this.layer . key
+            }
+            ; We will mark any and every mod key for its mod value 
+            ; These, therefore, can never be used in a chord
+            if (this.keymap[key] = "{Reset}") { 
                 this.logEvent(1, "Numlock/Reset key down in RemapKey after removing the call to this function in Listener???")
-			} else if ((this.keymap[key] = "{LShift}") or (this.keymap[key] = "{RShift}")) {
-				this.shifted := "+" 
+            } else if ((this.keymap[key] = "{LShift}") or (this.keymap[key] = "{RShift}")) {
+                this.shifted := "+" 
                 Send, {LShift down}
-				rekey := ""
-				this.logEvent(4, "Shift key down")
-			} else if (this.keymap[key] = "{Tab}") {
-				this.logEvent(4, "Matched valid keymap for " key " as " this.keymap[key])
-				rekey := ""
+                rekey := ""
+                this.logEvent(4, "Shift key down")
+            } else if (this.keymap[key] = "{Tab}") {
+                this.logEvent(4, "Matched valid keymap for " key " as " this.keymap[key])
+                rekey := ""
                 this.chord .= "" . key
-				this.logEvent(2, "Swallowing " key " into chord as " this.chord)
-			} else if (this.keymap[key] = "{Control}") {
-				this.controlled := "^" 
+                this.logEvent(2, "Swallowing " key " into chord as " this.chord)
+            } else if (this.keymap[key] = "{Control}") {
+                this.controlled := "^" 
                 Send, {LControl down}
-				rekey := ""
-				this.logEvent(4, "Control key down")
-			} else if (this.keymap[key] = "{Alt}") {
-				Send, {LAlt down}
-				this.alted := "!" 
-				rekey := ""
-				this.logEvent(4, "Alt key down")
-			} else if (this.keymap[key] = "{Win}") {
-				this.winned := "#" 
-				Send, {LWin down}
-				rekey := ""
-				this.logEvent(4, "Win key down")
-			} else if (this.keymap[key]) {
-				; Special keys are done. If we did not find anything, and this is a mapped key, then add it to the chord
-				this.logEvent(4, "Matched valid keymap for " key)
-				rekey := ""
+                rekey := ""
+                this.logEvent(4, "Control key down")
+            } else if (this.keymap[key] = "{Alt}") {
+                Send, {LAlt down}
+                this.alted := "!" 
+                rekey := ""
+                this.logEvent(4, "Alt key down")
+            } else if (this.keymap[key] = "{Win}") {
+                this.winned := "#" 
+                Send, {LWin down}
+                rekey := ""
+                this.logEvent(4, "Win key down")
+            } else if (this.keymap[key]) {
+                ; Special keys are done. If we did not find anything, and this is a mapped key, then add it to the chord
+                this.logEvent(4, "Matched valid keymap for " key)
+                rekey := ""
                 this.chord .= "" . key
-				this.logEvent(2, "Swallowing " key " into chord as " this.chord)
-			} else {
-				; If we don't care what this is, then strip the "numpad" from it and send it back to be handled as a normal key 
-				rekey := RegExReplace(key, "Numpad")
-				this.logEvent(2, "Forwarding enabled but unmatched " key " as " rekey)
-			}
-		} else {
-			; We are disabled, so send things back as normal keys 
+                this.logEvent(2, "Swallowing " key " into chord as " this.chord)
+            } else {
+                ; If we don't care what this is, then strip the "numpad" from it and send it back to be handled as a normal key 
+                rekey := RegExReplace(key, "Numpad")
+                this.logEvent(2, "Forwarding enabled but unmatched " key " as " rekey)
+            }
+        } else {
+            ; We are disabled, so send things back as normal keys 
             if (StrLen(key) > 3) {
                 ; This is a special key, so send it back wrapped in braces
                 rekey := "{" . RegExReplace(key, "Numpad") . "}"
@@ -178,121 +178,121 @@ class AuxKeyboardEngine
                 ; This is a number key, so send it back as a normal number 
                 rekey := RegExReplace(key, "Numpad")
             }
-			this.logEvent(2, "Forwarding disabled and unmatched " key " as " rekey)
-		}
+            this.logEvent(2, "Forwarding disabled and unmatched " key " as " rekey)
+        }
         
         this.logEvent(1, "Sending aux keyboard state as aux:" this.numlocked . this.winlocked . this.caplocked . this.layer)
-        this.dashboard.auxKeyboardState := "aux:" this.winlocked . this.caplocked . this.layer
+        this.dashboard.auxKeyboardState := "aux:" this.numlocked . this.winlocked . this.caplocked . this.layer
         this.dashboard.visualizeQueue()
         
-		Return rekey
-	}
-	LeaveChord(key) {
-		; By and large, we send things upon the release of the first key, then reset everything so we ignore subsequent key releases 
-		this.logEvent(4, "Testing leaving chord with " key " against " this.chord)
-		; If this is not critical, this method can be called simultaneously by multiple key releases from the same chord 
-		Critical 
-		chordLength := StrLen(this.chord)
-		if (this.enabled) {
+        Return rekey
+    }
+    LeaveChord(key) {
+        ; By and large, we send things upon the release of the first key, then reset everything so we ignore subsequent key releases 
+        this.logEvent(4, "Testing leaving chord with " key " against " this.chord)
+        ; If this is not critical, this method can be called simultaneously by multiple key releases from the same chord 
+        Critical 
+        chordLength := StrLen(this.chord)
+        if (this.enabled) {
             this.logEvent(4, "keysdown is " this.keysdown ", key is " key ", and lastkey is " this.lastkey)
             if (this.numlocked and this.NumpadShiftedRemap[key] ) {
                 key := this.NumpadShiftedRemap[key]
                 this.logEvent(4, "Remapped key to " key " to override shift-numlock issue")
             }
-			if (chordLength and this.keymap[this.chord]) {
-				; We have a real chord. Now, which type?
-				; Apply cap locking here
-				if (this.caplocked) {
-					this.shifted := "+"
-				}
-				if (this.winlocked) {
-					this.winned := "#"
+            if (chordLength and this.keymap[this.chord]) {
+                ; We have a real chord. Now, which type?
+                ; Apply cap locking here
+                if (this.caplocked) {
+                    this.shifted := "+"
+                }
+                if (this.winlocked) {
+                    this.winned := "#"
                     Send, {LWin down}
-				}
-				this.logEvent(3, "Matched chord " this.chord " as " this.keymap[this.chord])
-				if ((StrLen(this.keymap[this.chord]) = 1) and (not RegExMatch(this.keymap[this.chord], "[a-zA-Z0-9]"))) {
-					this.logEvent(3, "Chord is non-text, sending and ending")
-					this.engine.listener.EndToken(this.keymap[this.chord])
-					; Send, % this.shifted . this.keymap[this.chord]
-					this.ToggleLayerLock()
-				} else if (this.keymap[this.chord] = "{Backspace}") {
-					this.logEvent(3, "Chord is backspace. Shortening token by 1")
-					this.engine.listener.RemoveKeyFromToken()
-					; Send to screen 
-					Send, % this.shifted this.keymap[this.chord]
-					this.ToggleLayerLock()
-				} else if (this.keymap[this.chord] = "{CapLock}") {
-					this.logEvent(3, "Chord is CapLock. Setting.")
-					if (this.caplocked = "set") {
-						this.caplocked := ""
-					} else if (this.caplocked = "once") {
-						this.caplocked := "set"
-					} else if (this.caplocked = "") {
-						this.caplocked := "once"
-					}
-				} else if (this.keymap[this.chord] = "{WinLock}") {
-					this.logEvent(3, "Chord is WinLock. Setting.")
-					if (this.winlocked = "set") {
-						this.winlocked := ""
-					} else if (this.winlocked = "once") {
-						this.winlocked := "set"
-					} else if (this.winlocked = "") {
-						this.winlocked := "once"
-					}
-				} else if (this.keymap[this.chord] = "{Layer_Numbers}") {
-					this.logEvent(3, "Chord is Numbers Layer. Setting.")
-					if (this.layer = "Ln") {
+                }
+                this.logEvent(3, "Matched chord " this.chord " as " this.keymap[this.chord])
+                if ((StrLen(this.keymap[this.chord]) = 1) and (not RegExMatch(this.keymap[this.chord], "[a-zA-Z0-9]"))) {
+                    this.logEvent(3, "Chord is non-text, sending and ending")
+                    this.engine.listener.EndToken(this.keymap[this.chord])
+                    ; Send, % this.shifted . this.keymap[this.chord]
+                    this.ToggleLayerLock()
+                } else if (this.keymap[this.chord] = "{Backspace}") {
+                    this.logEvent(3, "Chord is backspace. Shortening token by 1")
+                    this.engine.listener.RemoveKeyFromToken()
+                    ; Send to screen 
+                    Send, % this.shifted this.keymap[this.chord]
+                    this.ToggleLayerLock()
+                } else if (this.keymap[this.chord] = "{CapLock}") {
+                    this.logEvent(3, "Chord is CapLock. Setting.")
+                    if (this.caplocked = "set") {
+                        this.caplocked := ""
+                    } else if (this.caplocked = "once") {
+                        this.caplocked := "set"
+                    } else if (this.caplocked = "") {
+                        this.caplocked := "once"
+                    }
+                } else if (this.keymap[this.chord] = "{WinLock}") {
+                    this.logEvent(3, "Chord is WinLock. Setting.")
+                    if (this.winlocked = "set") {
+                        this.winlocked := ""
+                    } else if (this.winlocked = "once") {
+                        this.winlocked := "set"
+                    } else if (this.winlocked = "") {
+                        this.winlocked := "once"
+                    }
+                } else if (this.keymap[this.chord] = "{Layer_Numbers}") {
+                    this.logEvent(3, "Chord is Numbers Layer. Setting.")
+                    if (this.layer = "Ln") {
                         if (this.layerlocked = "once") {
                             this.layerlocked := "set"
                         } else {
                             this.layer := ""
                             this.layerlocked := ""
                         }
-					} else {
-						this.layer := "Ln"
+                    } else {
+                        this.layer := "Ln"
                         this.layerlocked := "once"
-					}
+                    }
                     this.logEvent(4, "Layer is " this.layer " and lock state is " this.layerlocked)
-				} else if (this.keymap[this.chord] = "{Layer_Symbols}") {
-					this.logEvent(3, "Chord is Symbols Layer. Setting.")
-					if (this.layer = "Ls") {
+                } else if (this.keymap[this.chord] = "{Layer_Symbols}") {
+                    this.logEvent(3, "Chord is Symbols Layer. Setting.")
+                    if (this.layer = "Ls") {
                         if (this.layerlocked = "once") {
                             this.layerlocked := "set"
                         } else {
                             this.layer := ""
                             this.layerlocked := ""
                         }
-					} else {
-						this.layer := "Ls"
+                    } else {
+                        this.layer := "Ls"
                         this.layerlocked := "once"
-					}
+                    }
                     this.logEvent(4, "Layer is " this.layer " and lock state is " this.layerlocked)
-				} else if (not RegExMatch(this.keymap[this.chord],"\{")) { 
-					this.logEvent(3, "Chord is not an end character. Adding " this.keymap[this.chord] " to token")
-					if (not this.shifted) {
+                } else if (not RegExMatch(this.keymap[this.chord],"\{")) { 
+                    this.logEvent(3, "Chord is not an end character. Adding " this.keymap[this.chord] " to token")
+                    if (not this.shifted) {
                         this.engine.keyboard.Token .= this.keymap[this.chord]
-					} else {
-						StringUpper, upperKey, % this.keymap[this.chord]
-						this.engine.keyboard.Token .= upperKey
-					} 
-					; Send to screen 
+                    } else {
+                        StringUpper, upperKey, % this.keymap[this.chord]
+                        this.engine.keyboard.Token .= upperKey
+                    } 
+                    ; Send to screen 
                     this.logEvent(3, "Sending to screen " this.keymap[this.chord]) " with " this.shifted 
-					Send, % this.shifted . this.keymap[this.chord]
+                    Send, % this.shifted . this.keymap[this.chord]
                     ; We need to cancel the token if we sent it as a control character 
                     if (this.controlled or this.alted or this.winned) {
                         this.logEvent(3, "Chord is modded. Cancelling existing token")
                         this.engine.listener.CancelToken("{Modded}")
                     }
-					this.ToggleLayerLock()
-				} else {
-					this.logEvent(3, "Chord is an end character. Sending token " this.keymap[this.chord] " with " this.shifted . this.controlled . this.alted . this.winned)
-					this.engine.listener.EndToken(this.shifted . this.keymap[this.chord])
-					this.ToggleLayerLock()
-				}
-			} else if (this.keysdown) {
+                    this.ToggleLayerLock()
+                } else {
+                    this.logEvent(3, "Chord is an end character. Sending token " this.keymap[this.chord] " with " this.shifted . this.controlled . this.alted . this.winned)
+                    this.engine.listener.EndToken(this.shifted . this.keymap[this.chord])
+                    this.ToggleLayerLock()
+                }
+            } else if (this.keysdown) {
                 ; If no chord or no match, then this is one or more control characters
-				; We can only watch for this on the first key up. 
-				; If a modifier key is not the first key up, then this will send the modifier's value if we reset and keep watching
+                ; We can only watch for this on the first key up. 
+                ; If a modifier key is not the first key up, then this will send the modifier's value if we reset and keep watching
                 if (this.keysdown > 1) {
                     ; We have multiple control keys down, which means we are trying to modify one with the other 
                     this.logEvent(4, "Multiple bare control keys down and " key " coming up")
@@ -341,7 +341,7 @@ class AuxKeyboardEngine
                         this.logEvent(4, "No code for this entry")
                     }
                 ; this.keysdown <= 1
-				} else if ((this.keymap[key] = "{LShift}") or (this.keymap[key] = "{RShift}")) {
+                } else if ((this.keymap[key] = "{LShift}") or (this.keymap[key] = "{RShift}")) {
                     ; if only the control key is pressed, then we meant it as its bare character
                     ; but if the actual control key it represents is down, then we cannot cancel its control function 
                     if (not GetKeyState("LShift", "P")) {
@@ -358,7 +358,7 @@ class AuxKeyboardEngine
                     } else {
                         this.logEvent(4, "Shift key not sent due to repeat key of " this.lastkeycount)
                     }
-				} else if (this.keymap[key] = "{Control}") {
+                } else if (this.keymap[key] = "{Control}") {
                     this.logEvent(4, "Found control key coming up")
                     ; if only the control key is pressed, then we meant it as its bare character
                     ; but if the actual control key it represents is down, then we cannot cancel its control function 
@@ -375,7 +375,7 @@ class AuxKeyboardEngine
                     } else {
                         this.logEvent(4, "Shift key not sent due to repeat key of " this.lastkeycount)
                     }
-				} else if (this.keymap[key] = "{Alt}") {
+                } else if (this.keymap[key] = "{Alt}") {
                     ; if only the control key is pressed, then we meant it as its bare character
                     ; but if the actual control key it represents is down, then we cannot cancel its control function 
                     if (not GetKeyState("LAlt", "P")) {
@@ -389,7 +389,7 @@ class AuxKeyboardEngine
                     } else {
                         this.logEvent(4, "Shift key not sent due to repeat key of " this.lastkeycount)
                     }
-				} else if (this.keymap[key] = "{Win}") {
+                } else if (this.keymap[key] = "{Win}") {
                     ; if only the control key is pressed, then we meant it as its bare character
                     ; but if the actual control key it represents is down, then we cannot cancel its control function 
                     if (not GetKeyState("LWin", "P")) {
@@ -402,14 +402,14 @@ class AuxKeyboardEngine
                     } else {
                         this.logEvent(4, "Shift key not sent due to repeat key of " this.lastkeycount)
                     }
-				} else if (key = "Numlock") {
+                } else if (key = "Numlock") {
                     ; Catch a loop where numlock sends numlock which resends numlock
                     ; This actively leaves a partial qwerd in the queue when struck, but okay
                     this.logEvent(1, "Numlock sent after I killed the function call in Listener???")
                 } else if (this.keymap[key] = "{Reset}") {
                     this.logEvent(1, "Numlock sent after I killed the function call in Listener???")
-				} 
-			} 
+                } 
+            } 
             
             this.logEvent(4, "Key up after all keys up")
             ; We must cancel all control character keydowns 
@@ -443,16 +443,16 @@ class AuxKeyboardEngine
             
             this.lastkey := ""
             this.lastkeycount := 0
-				
-		}
+                
+        }
         this.logEvent(1, "Sending aux keyboard state as aux:" this.numlocked . this.winlocked . this.caplocked . this.layer)
         this.dashboard.auxKeyboardState := "aux:" this.numlocked . this.winlocked . this.caplocked . this.layer
         this.dashboard.visualizeQueue()
 
-		; Clear the chord buffer for a fresh start 
-		this.Flush()
-		Critical Off
-	}
+        ; Clear the chord buffer for a fresh start 
+        this.Flush()
+        Critical Off
+    }
     
     ToggleLayerLock() {
         if (this.caplocked = "once") {
@@ -472,13 +472,13 @@ class AuxKeyboardEngine
         this.dashboard.auxKeyboardState := "aux:" this.winlocked . this.caplocked . this.layer
         this.dashboard.visualizeQueue()
     }
-	
-	LogEvent(verbosity, message) 
-	{
-		if (verbosity <= this.logVerbosity) 
-		{
-			event := new LoggingEvent("aux",A_Now,message,verbosity)
-			this.logQueue.enqueue(event)
-		}
-	}
+    
+    LogEvent(verbosity, message) 
+    {
+        if (verbosity <= this.logVerbosity) 
+        {
+            event := new LoggingEvent("aux",A_Now,message,verbosity)
+            this.logQueue.enqueue(event)
+        }
+    }
 }

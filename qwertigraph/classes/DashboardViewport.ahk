@@ -29,7 +29,7 @@ Class DashboardViewport
    interval := 500
    qwerds := []
    logQueue := new Queue("DashboardQueue")
-   logVerbosity := 4
+   logVerbosity := 1
    speedKeyed := 0
    speedEnhanced := 0
    coachAheadQwerd := new DashboardEvent("g-r-e-t-/-s", "grets", "Greetings", "white")
@@ -566,9 +566,9 @@ Class DashboardViewport
         if ((not this.engine.keyboard.Token) or (InStr("0123456789", SubStr(this.engine.keyboard.Token,1,1)))) {
            Return 
         }
-        this.LogEvent(1, "Coming soon " this.engine.keyboard.Token)
+        this.LogEvent(2, "Coming soon " this.engine.keyboard.Token)
         lastToken := this.engine.record[this.engine.record.MaxIndex()]
-        this.logEvent(1, "Last token ender: " lastToken.ender this.engine.keyboard.Token.qwerd)
+        this.logEvent(3, "Last token ender: " lastToken.ender this.engine.keyboard.Token.qwerd)
         ; Create a multi-line string, coachAheadPhrase, with this loop, then present it below 
         this.coachAheadNote := this.engine.keyboard.Token
         For letter_index, letter in this.comingSoonKeys {
