@@ -196,6 +196,7 @@ Class Listener {
                     SetNumLockState , % !(GetKeyState("NumLock", "T"))
                 }
                 this.engine.aux.numlocked := GetKeyState("NumLock", "T")
+                this.engine.aux.dashboard.visualizeQueue()
                 this.logEvent(4, "Toggled NumLock")
                 
         }
