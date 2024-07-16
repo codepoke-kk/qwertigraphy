@@ -1,4 +1,10 @@
 word,form,qwerd,keyer,chord,usage
+Password,p-u-d,Pud,,qdpu,5
+Passworded,p-u-d-d,Pudd,,qdpu,5
+Passwording,p-u-d-\-h,Pudg,,qdgpu,5
+Passwordless,p-u-d-l,Pudl,,qdlpu,5
+Passwordlessly,p-u-d-l-e,Pudle,,qdelpu,5
+Passwords,p-u-d-s,Puds,,qdpsu,5
 Seeing,s-e-\-h,Seg,,qegs,6
 Sees,s-e-s,Seso,,qeos,6
 Phoning,f-o-n-\-h,Fong,,qfgno,7
@@ -6,6 +12,8 @@ Phones,f-o-n-s,Fons,,qfnos,7
 Centered,^-s2-n-d,Snd,,qdns,9
 Centering,^-s2-n-\-h,Sng,,qgns,9
 Centers,^-s2-n-s,Sns,,qns,9
+Password Vault,p-u-d-v,Pudv,,qdpuv,10
+PasswordVault,p-u-d-v,Pudvo,o,qdopuv,10
 PowerPoint,p-a-u-y,Pwy,,qpwy,11
 Powerpoints,p-a-u-y-s,Pwys,,qpswy,11
 Teamed,t-e-m-d,Temd,,qdemt,13
@@ -1000,6 +1008,11 @@ Writing,r-i-\-h,Rig,,qgir,699
 Writings,r-i-\-h-s,Rigs,,qgirs,699
 Writings,r-i-\-s2,Riz,,qgirs,699
 Won't,o-nt,Onti,i,qinot,704
+Secretive,s2-e-k-r-e-df,Sekredf,,qdefkrs,707
+Secretively,s2-e-k-r-e-df-e,Sekredfe,,qdefkrs,707
+Secreted,s2-e-k-r-e-t-d,Sekretd,,qdekrst,707
+Secreting,s2-e-k-r-e-t-\-h,Sekretg,,qegkrst,707
+Secrets,s2-e-k-r-e-t-s,Sekrets,,qekrst,707
 Appeared,a-pr-d,Aprd,,qadpr,710
 Appearing,a-pr-\-h,Aprg,,qagpr,710
 Appears,a-pr-s,Aprs,,qaprs,710
@@ -1766,6 +1779,9 @@ Sectional,s2-e-k-sh-l,Sekzl,,qeklsz,1332
 Sectionals,s2-e-k-sh-l-s,Sekzls,,qeklsz,1332
 Sections,s2-e-k-sh-s,Sekzs,,qeksz,1332
 Famously,f-a-m-u-s-e,Famuse,,qaefmsu,1343
+Crossed,k-r-o-s-d,Krosd,,qdkors,1348
+Crossing,k-r-o-s-\-h,Krosg,,qgkors,1348
+Crosss,k-r-o-s-s,Kross,,qkors,1348
 Activate,a-k-v-a-t,Akvat,,qaktv,1349
 Activated,a-k-v-a-t-d,Akvatd,,qadktv,1349
 Activating,a-k-v-a-t-\-h,Akvatg,,qagktv,1349
@@ -2782,6 +2798,7 @@ Kitchens,k-e-ch-n-s,Kecns,,qcekns,2472
 Fingered,f-e2-ng-e2-d,Feqed,,qdefq,2476
 Fingering,f-e2-ng-e2-\-h,Feqeg,,qefgq,2476
 Fingerlings,f-e2-ng-e2-l-s,Feqels,,qeflqs,2476
+Fingers,f-e2-ng-e2-s,Feqes,,qefqs,2476
 Frequented,fr-e-k-d,Freqd,,qdefqr,2479
 Frequently,fr-e-k-e,Freqe,,qefqr,2479
 Frequenting,fr-e-k-\-h,Freqg,,qefgqr,2479
@@ -4286,6 +4303,8 @@ Outliner,a-u-l-a-n-r,Wlanr,,qalnrw,5292
 Outliners,a-u-l-a-n-r-s,Wlanrs,,qalnrsw,5292
 Outlines,a-u-l-a-n-s,Wlans,,qalnsw,5292
 Selecting,s-e-l-e-k-\-h,Selekg,,qegkls,5294
+Selector,s-e-l-e-k-r,Selekr,,qeklrs,5294
+Selectors,s-e-l-e-k-r-s,Selekrs,,qeklrs,5294
 Selects,s-e-l-e-k-s,Seleks,,qekls,5294
 Selective,s-e-l-e-k-v,Selekv,,qeklsv,5294
 Selectively,s-e-l-e-k-v-e,Selekve,,qeklsv,5294
@@ -4638,6 +4657,9 @@ Inconsistent,n-k-ss-/-nt,Nkssnt,,qknst,6724
 Argued,a-g-e-u-d,Agud,,qadgu,6735
 Arguing,a-g-e-u-\-h,Agug,,qagu,6735
 Argues,a-g-e-u-s,Agus,,qagsu,6735
+Relied,r-e-l-i-d,Relid,,qdeilr,6737
+Relying,r-e-l-i-\-h,Relig,,qegilr,6737
+Relies,r-e-l-i-s,Relis,,qeilrs,6737
 Planet,pl-a-n-e-t,Planet,,qaelnpt,6760
 Greeted,g-r-e-td,Gretd,,,6766
 Greeting,g-r-e-t-\-h,Gretg,,qegrt,6766
@@ -7467,6 +7489,10 @@ Playbooking,pl-a-b-k-\-h,Plabkg,,qabgklp,90614
 Playbooks,pl-a-b-k-s,Plabks,,qabklps,90614
 Worthy,u-u-h-e,Uuhe,,qehu,90629
 Worthily,u-u-h-e-e,Uuhee,,qehu,90629
+Vault,v-o-l-t,Volt,,qlotv,90633
+Vaulted,v-o-l-t-d,Voltd,,qdlotv,90633
+Vaulting,v-o-l-t-\-h,Voltg,,qglotv,90633
+Vaults,v-o-l-t-s,Volts,,qlostv,90633
 Crisis,k-r-i-ss,Kriss,,qikrs,90649
 Crisises,k-r-i-ss-s,Krisss,,qikrs,90649
 Overview,^-o-\v-u,Ovu,,qouv,90651
