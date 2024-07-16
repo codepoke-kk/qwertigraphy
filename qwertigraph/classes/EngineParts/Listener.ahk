@@ -179,7 +179,8 @@ Class Listener {
                 
                 ; Capture now and compare it to the last time this was sent
                 NumLockRequestTime := A_TickCount
-                if (NumLockRequestTime - 50 > this.NumLockLastSetTime) {
+                if (NumLockRequestTime - this.NumLockLastSetTime < 50) {
+					this.logEvent(4, "No Op on receiving NumLock is required with this computer, so set that value on the Aux Keyboard") 
                     ; We are in a death-loop. 
                     ; This seems to be because the HP Victus does NumLocking at the hardware level
                     ; After seeing this, we have to do a NoOp with each and every NumLock click
