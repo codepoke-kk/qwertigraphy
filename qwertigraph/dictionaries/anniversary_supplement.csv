@@ -243,6 +243,8 @@ Peopling,p-e-p-\-h,Pepg,,qegp,153
 Peoples,p-e-p-s,Peps,,qeps,153
 Forethought,f-th-o-t,Fhot,,qfhot,154
 Forethoughts,f-th-o-t-s,Fhots,,qfhost,154
+Thoughts,th-o-t-s,Hots,,qhost,154
+Geting,g-e-t-\-h,Getg,,qegt,165
 Youngster,u-ng-s-t-e2,Ugste,,qegstu,166
 Discard,d-s-k-a2-d,Dskad,,qadks,170
 Discarded,d-s-k-a2-d-d,Dskadd,,qadks,170
@@ -319,6 +321,7 @@ Worldviews,u-u-v-u-s,Uuvus,,qsuv,210
 Things,th-\-s2,Hz,,qhz,212
 Pedestal,p-d-e-s-t-l,Pdestl,,qdelpst,212
 Pedestals,p-d-e-s-t-l-s,Pdestls,,qdelpst,212
+Letting,l-e-\-h,Leg,,qegl,215
 Looking,l-u-\-h,Lug,,qglu,216
 Lookup,l-u-k-p,Lukp,,qklpu,216
 Lookups,l-u-k-p-s,Lukps,,qklpsu,216
@@ -348,6 +351,9 @@ Somethings,s2-m-\-h-s,Smgs,,qgms,229
 Somethings,s2-m-\-s2,Smz,,qgms,229
 Smallest,s2-m-o-s-t,Smost,,qmost,240
 Want,o-nt,Ont,,qnotz,242
+Wanted,o-nt-d,Ontd,,qdnot,242
+Wanting,o-nt-\-h,Ontg,,qgnot,242
+Wants,o-nt-s,Onts,,qnost,242
 Homework,^-h-\-o-m-r-k,Homrk,,qhkmor,246
 Fathered,f-a-th-d,Fahd,,qadfh,250
 Fatherhood,f-a-th-\-d,Fahdo,o,qadfho,250
@@ -498,6 +504,9 @@ Factly,f-a-k-e,Fake,,qaefk,341
 Factual,f-a-k-l,Fakl,,qafkl,341
 Factually,f-a-k-l-e,Fakle,,qaefkl,341
 Facts,f-a-k-s,Faks,,qafks,341
+Hoping,^-h-\-o-p-\-h,Hopg,,qghop,348
+Hoper,^-h-\-o-p-r,Hopr,,qhopr,348
+Hopers,^-h-\-o-p-r-s,Hoprs,,qhoprs,348
 Hopes,^-h-\-o-p-s,Hops,,qhops,348
 Alongside,a-l-ng-s-i,Algsi,,qagils,349
 Leaving,l-e-v-\-h,Levg,,qeglv,350
@@ -570,6 +579,9 @@ Unite,e-u-n-i,Uni,,qinu,389
 Uniting,e-u-n-i-\-h,Unig,,qginu,389
 Unites,e-u-n-i-s,Unis,,qinsu,389
 Unity,e-u-\-nt,Unt,,qntu,389
+Reasoned,r-s2-n-d,Rsnd,,qdnrs,394
+Reasoning,r-s2-n-\-h,Rsng,,qgnrs,394
+Reasons,r-s2-n-s,Rsns,,qnrs,394
 Feeling,f-e-l-\-h,Felg,,qefgl,396
 Feelings,f-e-l-\-h-s,Felgs,,qefgls,396
 Feeler,f-e-l-r,Felr,,qeflr,396
@@ -716,6 +728,9 @@ Forceful,f-s2-f,Fsf,,qfs,476
 Forcefully,f-s2-f-e,Fsfe,,qefs,476
 Forcing,f-s2-\-h,Fsg,,qfgs,476
 Unforced,n-f-s2-d,Nfsd,,qdfns,476
+Talked,t-o-k-d,Tokd,,qdkot,480
+Talking,t-o-k-\-h,Tokg,,qgkot,480
+Talks,t-o-k-s,Toks,,qkost,480
 Accountable,a-k-t-b,Aktb,,qabkt,481
 Accountably,a-k-t-b-e,Aktbe,,qabekt,481
 Accountability,a-k-t-\-b,Aktbo,o,qabkot,481
@@ -724,6 +739,11 @@ Accounting,a-k-t-\-h,Aktg,,qagkt,481
 Accountings,a-k-t-\-h-s,Aktgs,,qagkst,481
 Accounts,a-k-t-s,Akts,,qakst,481
 Accountings,a-k-t-\-s2,Aktz,,qagkst,481
+Answerable,a-n-s-b,Ansb,,qabns,482
+Answerably,a-n-s-b-e,Ansbe,,qabens,482
+Answered,a-n-s-d,Ansd,,qadns,482
+Answering,a-n-s-\-h,Ansg,,qagns,482
+Answers,a-n-s-s,Anss,,qans,482
 Necessaries,n-e-ss-s,Nesss,,qens,486
 Earthed,e-r-th-d,Erhd,,qdehr,489
 Earthly,e-r-th-e,Erhe,,qehr,489
@@ -805,6 +825,10 @@ Presupposing,pr-s-p-o-\-h,Prspog,,qgoprs,542
 Presupposes,pr-s-p-o-s,Prspos,,qoprs,542
 Presupposition,pr-s-p-o-sh,Prspoz,,qoprsz,542
 Presuppositions,pr-s-p-o-sh-s,Prspozs,,qoprsz,542
+Supposed,s-p-o-d,Spod,,qdops,542
+Supposedly,s-p-o-d-e,Spode,,qdeops,542
+Supposing,s-p-o-\-h,Spog,,qgops,542
+Supposes,s-p-o-s,Spos,,qops,542
 Excepted,s-e-p-d,Sepd,,qdeps,544
 Excepting,s-e-p-\-h,Sepg,,qegps,544
 Tabled,t-a-b-d,Tabd,,qabdt,545
@@ -1358,6 +1382,8 @@ Conversation,k-v-e-sh,Kvez,,qekvz,888
 Conversational,k-v-e-sh-l,Kvezl,,qeklvz,888
 Conversationally,k-v-e-sh-l-e,Kvezle,,qeklvz,888
 Conversations,k-v-e-sh-s,Kvezs,,qeksvz,888
+Waiting,u-a-t-\-h,Uatg,,qagtu,889
+Waits,u-a-t-s,Uats,,qastu,889
 Paragraph,^-p-/-g,Pga,a,qagp,893
 Paragraphed,^-p-/-g-d,Pgd,,qdgp,893
 Paragraphing,^-p-/-g-\-h,Pgg,,qgp,893
@@ -1448,6 +1474,8 @@ Watcher,u-o-ch-r,Uocr,,qcoru,990
 Watchers,u-o-ch-r-s,Uocrs,,qcorsu,990
 Watches,u-o-ch-s,Uocs,,qcosu,990
 Watched,u-o-ch-t,Uoct,,qcotu,990
+Forgeting,f-g-e-t-\-h,Fgetg,,qefgt,992
+Forgets,f-g-e-t-s,Fgets,,qefgst,992
 Overstate,o-/-s2-t,Ost,,qost,1000
 Overstated,o-/-s2-td,Ostd,,,1000
 Overstating,o-/-s2-t-\-h,Ostg,,qostg,1000
@@ -1518,6 +1546,7 @@ Stoppages,s2-t-p-j-s,Stpjs,,qjpst,1059
 Stops,s2-t-p-s,Stps,,qpst,1059
 Nations,n-a-sh-s,Nazs,,qansz,1060
 Promising,pr-m-e-s-\-h,Prmesg,,qegmprs,1066
+Promises,pr-m-e-s-s,Prmess,,qemprs,1066
 Situational,s2-e-t-n-l,Setnl,,qelnst,1067
 Situationally,s2-e-t-n-l-e,Setnle,,qelnst,1067
 Situations,s2-e-t-n-s,Setns,,qenst,1067
@@ -1762,6 +1791,8 @@ Files,f-i-l-s,Fils,,qfils,1312
 Filings,f-i-l-\-s,Filsg,g,qfigls,1312
 Filings,f-i-l-\-s2,Filz,,qfgils,1312
 Replies,r-e-p-s,Reps,,qeprs,1315
+Growing,g-r-o-\-h,Grog,,qgor,1324
+Grows,g-r-o-s,Gros,,qgors,1324
 Animals,a-n-e-m-s,Anems,,qaemns,1326
 Falsify,f-o-s-f,Fosf,,qfos,1329
 Falsifiable,f-o-s-f-b,Fosfb,,qbfos,1329
@@ -3251,6 +3282,11 @@ Mismanagement,m-s-mn-j-m,Msmmjm,,qjms,3158
 Mismanages,m-s-mn-j-s,Msmmjs,,qjmss,3158
 Unmanageable,n-mn-j-b,Nmmjb,,qbjmn,3158
 Unmanageably,n-mn-j-b-e,Nmmjbe,,qbjmne,3158
+Decided,d-s2-i-d,Dsid,,qdis,3160
+Deciding,d-s2-i-\-h,Dsig,,qdgis,3160
+Decides,d-s2-i-s,Dsis,,qdis,3160
+Decisive,d-s2-i-s-v,Dsisv,,qdisv,3160
+Decisively,d-s2-i-s-v-e,Dsisve,,qdeisv,3160
 Coached,k-o-ch-d,Kocd,,qcdko,3161
 Coaching,k-o-ch-\-h,Kocg,,qcgko,3161
 Coachman,k-o-ch-m-a-n,Kocman,,qackmno,3161
@@ -6159,6 +6195,7 @@ Repudiated,r-p-eu-d-ea-t-d,Rpudatd,,qadprtu,23784
 Repudiating,r-p-eu-d-ea-t-\-h,Rpudatg,,qadgprtu,23784
 Repudiates,r-p-eu-d-ea-t-s,Rpudats,,qadprstu,23784
 Repudiation,r-p-eu-d-ea-sh,Rpudaz,,qadpruz,23784
+Unanswerably,n-a-n-s-b-e,Nansbe,,qabens,23877
 Glue,g-l-u,Glu,,qglu,23891
 Glued,g-l-u-d,Glud,,qdglu,23891
 Gluing,g-l-u-\-h,Glug,,qglu,23891
@@ -7253,6 +7290,7 @@ Weekends,e-k-nt-s,Ekntso,o,qeknost,71839
 Will be able,l-b-a,Lba,,qablz,71859
 You can,u-k,Uk,,qcku,71882
 Youngstown,ung-s2-t-n,Ugstn,,qgnstu,71893
+Taking,t-a-k-\-h,Takg,,qagkt,90036
 Versionable,v-e2-z-b,Vezb,,qbevz,90037
 Versionably,v-e2-z-b-e,Vezbe,,qbevz,90037
 Versionability,v-e2-z-\-b,Vezbo,o,qbeovz,90037
@@ -7260,6 +7298,10 @@ Versioned,v-e2-z-d,Vezdo,o,qdeovz,90037
 Versioning,v-e2-z-\-h,Vezgo,o,qegovz,90037
 Version,v-e2-z,Vezo,o,qeovz,90037
 Versions,v-e2-z-s,Vezso,o,qeosvz,90037
+Complex,k-p-l-e-s,Kplx,,qklpx,90040
+Complexes,k-p-l-e-s-s,Kplxs,,qklpsx,90040
+Complexity,k-p-l-e-s-t-e,Kplxte,,qeklptx,90040
+Complexities,k-p-l-e-s-t-e-s,Kplxtes,,qeklpstx,90040
 Challenge,c-a-l-e-n-j,Calenj,,qacejln,90042
 Challenged,c-a-l-e-n-j-d,Calenjd,,qacdejln,90042
 Challenger,c-a-l-e-n-j-e2,Calenje,,qacejln,90042
@@ -7589,6 +7631,9 @@ Vigilant,v-e-j-l-nt,Vejlnt,,qejlntv,90875
 Vigilantly,v-e-j-l-nt-e,Vejlnte,,qejlntv,90875
 Vigils,v-e-j-l-s,Vejls,,qejlsv,90875
 Appointed,o-e-d,Ydo,o,qdoy,90879
+Promiscuous,pr-m-e-s-k,Prmesk,,qekmprs,90880
+Promiscuously,pr-m-e-s-k-e,Prmeske,,qekmprs,90880
+Promiscuity,pr-m-e-s-k-eu-t-e,Prmeskute,,qekmprstu,90880
 Readable,r-d-b,Rdb,,,90882
 Readably,r-d-b-e,Rdbe,,qbder,90882
 Readability,r-d-\-b,Rdbo,o,qbdor,90882
@@ -7724,6 +7769,8 @@ Squirrel,s-q-e-r-e-l,Sqerel,,qelqrs,91276
 Squirreled,s-q-e-r-e-l-d,Sqereld,,qdelqrs,91276
 Squirreling,s-q-e-r-e-l-\-h,Sqerelg,,qeglqrs,91276
 Squirrels,s-q-e-r-e-l-s,Sqerels,,qelqrs,91276
+Haystack,^-h-\-a-s-t-a-k,Hastak,,qahkst,91292
+Haystacks,^-h-\-a-s-t-a-k-s,Hastaks,,qahkst,91292
 Vanish,v-a-n-z,Vanz,,qanvz,91316
 Vanished,v-a-n-z-d,Vanzd,,qadnvz,91316
 Vanishing,v-a-n-z-\-h,Vanzg,,qagnvz,91316
@@ -7859,6 +7906,10 @@ Implicates,m-pl-e-k-s,Mpleks,,qeklmps,91898
 Implication,m-pl-e-k-sh,Mplekz,,qeklmpz,91898
 Implications,m-pl-e-k-sh-s,Mplekzs,,qeklmpsz,91898
 Implicitly,m-pl-e-s-t-e,Mpleste,,qelmpst,91898
+Stack,s-t-a-k,Stak,,qakst,91899
+Stacked,s-t-a-k-d,Stakd,,qadkst,91899
+Stacking,s-t-a-k-\-h,Stakg,,qagkst,91899
+Stacks,s-t-a-k-s,Staks,,qakst,91899
 Recipe,r-e-s-e-p-e,Resepe,,qeprs,91936
 Centralizations,s2-n-\-l-e-s-sh-s,Snleszs,,qelnsz,91948
 Centralize,s2-n-\-l-i-s,Snlis,,qilns,91948
@@ -8086,6 +8137,12 @@ Furies,f-e-u-r-e-s,Fures,,qefrsu,92739
 Furious,f-e-u-r-u-s,Furus,,qfrsu,92739
 Furiously,f-e-u-r-u-s-e,Furuse,,qefrsu,92739
 Corrects,k-r-s,Krsu,u,qkrsu,92754
+Embrace,m-br-a-s,Mbras,,qabmrs,92794
+Embraceable,m-br-a-s-b,Mbrasb,,qabmrs,92794
+Embraceably,m-br-a-s-b-e,Mbrasbe,,qabemrs,92794
+Embraced,m-br-a-s-d,Mbrasd,,qabdmrs,92794
+Embracing,m-br-a-s-\-h,Mbrasg,,qabgmrs,92794
+Embraces,m-br-a-s-s,Mbrass,,qabmrs,92794
 Enhance,n-^-h-\-a-n-s,Nhans,,qahns,92802
 Enhanced,n-^-h-\-a-n-s-d,Nhansd,,qadhns,92802
 Enhancing,n-^-h-\-a-n-s-\-h,Nhansg,,qaghns,92802
