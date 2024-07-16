@@ -14,6 +14,10 @@ class AuxKeyboardEngine
         local
         this.engine := ""
         this.auxmap := "classes\AuxKeymapFull.csv"
+        ; The HP Victus does NumLocking at the hardware level, so we cannot react to it being set
+        ; Default to reacting to NumLock by toggling it, but the Listener will set this to 1
+        ; If and when it sees a death-loop start, so we don't send a software toggle 
+        this.NoOpRequired := 0
         
         this.keymap := {}
         this.keymapCount := 0
