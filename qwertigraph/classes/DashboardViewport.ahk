@@ -33,6 +33,8 @@ Class DashboardViewport
    speedKeyed := 0
    speedEnhanced := 0
    coachAheadQwerd := new DashboardEvent("g-r-e-t-/-s", "grets", "Greetings", "white")
+   ; These keys are in Gregg-ish order 
+   ; vowels, up and straight, down and curved inside then outside, flat, curved up then down, down and straight, then oddballs 
    comingSoonKeys := ["", "o", "i", "u", "e", "a", "w", "y", "d", "t", "s", "p", "b", "f", "v", "n", "m", "q", "k", "g", "r", "l", "z", "c", "j", "x", "h", ">", "<"]
    coachAheadHints := ""
    indicatorsHeight := 100
