@@ -3242,6 +3242,8 @@ Misapplications,m-s-a-pl-sh-s,Msaplzs,,qalmpsz,3097
 Match,m-a-ch,Mac,,qacm,3098
 Matched,m-a-ch-d,Macd,,qacmod,3098
 Matching,m-a-ch-\-h,Macg,,qacmog,3098
+Matchup,m-a-ch-p,Macp,,qacmp,3098
+Matchups,m-a-ch-p-s,Macps,,qacmps,3098
 Matcher,m-a-ch-r,Macr,,qacmr,3098
 Matches,m-a-ch-s,Macs,,qacmos,3098
 Mismatch,m-sm-a-ch,Msmac,,qacms,3098
@@ -4109,7 +4111,6 @@ Adapting,a-d-a-p-\-h,Adapg,,qadgp,4814
 Adapter,a-d-a-p-/-r,Adapr,,qadpr,4814
 Adapters,a-d-a-p-/-r-s,Adaprs,,qadprs,4814
 Adapts,a-d-a-p-s,Adaps,,qadps,4814
-Adapted,a-d-a-p-/-t,Adapt,,qadpt,4814
 Adaptive,a-d-a-p-/-v,Adapv,,qadpv,4814
 Adaptively,a-d-a-p-/-v-e,Adapve,,qadepv,4814
 Adaptation,a-d-a-p-sh,Adapz,,qadpz,4814
@@ -6765,6 +6766,11 @@ Concocting,k-k-k-\-h,Kkkg,,qgk,55455
 Concocts,k-k-k-s,Kkks,,qks,55455
 Concoction,k-k-k-sh,Kkkz,,qkz,55455
 Concoctions,k-k-k-sh-s,Kkkzs,,qksz,55455
+Assessed,a2-ss-d,Assd,,qads,55629
+Assessing,a2-ss-\-h,Assg,,qags,55629
+Assessment,a2-ss-m,Assm,,qams,55629
+Assessments,a2-ss-m-s,Assms,,qams,55629
+Assesss,a2-ss-s,Asss,,qas,55629
 Trace,t-r-a-s,Tras,,qarst,55808
 Traced,t-r-a-s-d,Trasd,,qadrst,55808
 Tracing,t-r-a-s-\-h,Trasg,,qagrst,55808
