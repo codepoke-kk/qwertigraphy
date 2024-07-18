@@ -171,12 +171,22 @@ class AuxKeyboardEngine
             }
         } else {
             ; We are disabled, so send things back as normal keys 
+            this.engine.listener.CancelToken("{NumpadAuxDisabled}")
+            ctrl_send := GetKeyState("Control", "P") ? "^" : ""
+            shift_send := GetKeyState("Shift", "P") ? "+" : ""
+            alt_send := GetKeyState("Alt", "P") ? "!" : ""
+            win_send := GetKeyState("Win", "P") ? "#" : ""
+            send_message := ctrl_send shift_send alt_send win_send "{" key "}"
+            this.logEvent(1, "Sending " send_message)
+            Send, % send_message 
             if (StrLen(key) > 3) {
                 ; This is a special key, so send it back wrapped in braces
-                rekey := "{" . RegExReplace(key, "Numpad") . "}"
+                ; rekey := "{" . RegExReplace(key, "Numpad") . "}"
+                rekey := ""
             } else {
                 ; This is a number key, so send it back as a normal number 
-                rekey := RegExReplace(key, "Numpad")
+                ; rekey := RegExReplace(key, "Numpad")
+                rekey := ""
             }
             this.logEvent(2, "Forwarding disabled and unmatched " key " as " rekey)
         }
