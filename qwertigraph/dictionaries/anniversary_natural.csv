@@ -9,7 +9,6 @@ Rounding,r-nt-\-h,Rndg,,qdgnr,309
 Rounds,r-nt-s,Rnds,,qdnrs,309
 Received,r-s-e-/-t,Rsed,,,310
 Passed,p-a-s2-t,Pasdo,o,,319
-Replied,r-e-p-/-t,Repd,,,415
 Family,f-a-m-ya,Famy,,,431
 Families,f-a-m-ya-s,Famys,,qafmsy,431
 Returned,r-e-t-/-t,Retd,,,441
@@ -97,6 +96,7 @@ Delimitation,d-l-e-m-e-t-sh,Dlemetz,,qdelmtz,1777
 Delimitations,d-l-e-m-e-t-sh-s,Dlemetzs,,qdelmstz,1777
 Limit,l-e-m-e-t,Lemet,,qelmt,1777
 Limited,l-e-m-e-td,Lemetd,,,1777
+Unlimited,n-l-e-m-e-td,Nlemetd,,qdelmnt,1777
 Introduced,n-/-d-u-s2-t,Ndusd,,,1867
 Devoted,df-td,Dftd,,,1882
 Directed,d-r-k-t,Drkd,,,1888
