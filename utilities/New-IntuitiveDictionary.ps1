@@ -33,7 +33,7 @@ foreach ($dictionary_line in $dictionary_lines) {
 Write-Host ("Dictionary contains $($dictionary.keys.count) entries")
 
 $keyer_sort = @('o', 'u', 'i', 'a', 'e', 'w', 'y')
-$uniform_keyers = @('u', 'i', 'w', 'q', 'z', 'x', 'c', 'v', 'b', 'n', 'm', 'j', 'k', 'l')
+$uniform_keyers = @('u', 'i', 'w', 'q', 'z', 'x', 'c', 'v', 'b', 'n', 'm', 'j', 'k', 'l', '1', '2', '3', '4', '5', '6', '7')
 
 function getNewRows() {
     param (
@@ -46,6 +46,7 @@ function getNewRows() {
     $new_rows = New-Object System.Collections.ArrayList
 
     $banner = "$($qwerd_pattern.toUpper()) to $($newqwerd_pattern.toUpper())"
+    # Write-Host $banner
 
     # Get rows that match the source pattern 
     $rows = $dictionary.values | Where-Object {$_.qwerd -match $qwerd_pattern -and $_.form -match $form_pattern -and $_.word -match $word_pattern}
@@ -97,6 +98,7 @@ $uniform_patterns = New-Object System.Collections.ArrayList
 $uniform_patterns.Add((New-Object PsCustomObject -Property @{'qwerd_pattern' = '^RE'; 'form_pattern' = '^R-E'; 'word_pattern' = 'RE'; 'newqwerd_pattern' = 'r'})) | Out-Null
 $uniform_patterns.Add((New-Object PsCustomObject -Property @{'qwerd_pattern' = 'MN'; 'form_pattern' = 'MN'; 'word_pattern' = '.'; 'newqwerd_pattern' = 'mm'})) | Out-Null
 $uniform_patterns.Add((New-Object PsCustomObject -Property @{'qwerd_pattern' = 'TD'; 'form_pattern' = 'TD'; 'word_pattern' = '.'; 'newqwerd_pattern' = 'dd'})) | Out-Null
+$uniform_patterns.Add((New-Object PsCustomObject -Property @{'qwerd_pattern' = 'DT$'; 'form_pattern' = 'TD$'; 'word_pattern' = '.'; 'newqwerd_pattern' = 'dd'})) | Out-Null
 
 # Set the whatif here, and honor it throughout 
 $iteration = 0
@@ -112,7 +114,7 @@ foreach ($up in $uniform_patterns.toArray()) {
 
 $uniform_entries = $dictionary.values | Where-Object {$_.dictionary_path -eq $uniform_dictionary_path}
 
-$whatif = $false
+$whatif = $true
 if ($whatif) {
     Write-Host ("$($uniform_entries.count) entries would be written into $uniform_dictionary_path")
     $uniform_entries | Sort-Object {$keyer_sort.IndexOf($_.keyer)} | Select-Object @('word', 'form', 'qwerd', 'keyer', 'chord', 'usage', 'conflict', 'banner', 'dictionary_name') | Out-GridView -title "$($uniform_entries.count) to define $(Split-Path -Leaf $uniform_dictionary_path).csv"

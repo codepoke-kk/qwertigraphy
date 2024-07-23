@@ -173,6 +173,7 @@ Unthinkable,n-th-\-b,Nhb,,qbhn,144
 Anti-,a->,A>,,q>a,146
 -Able,<-a-b,Ab<,,q<ab,146
 -Ability,<-a-b-o,Abo<,,q<abo,146
+Auto-,au->,Au>,,q>au,146
 -Ble,<-b,B<,,q<b,146
 -Hood,<-d,D<,,q<d,146
 De-,d->,D>,,q>d,146
@@ -3084,6 +3085,10 @@ Communicating,k-m-u-\-h,Kmug,,qgkmu,2754
 Communicate,k-m-u,Kmuo,o,qkmou,2754
 Communications,k-m-u-s,Kmus,,qkmsu,2754
 Communicative,k-m-u-\-v,Kmuv,,qkmuv,2754
+Uniformed,e-u-n-f-m-d,Unfmd,,qdfmnu,2757
+Uniformly,e-u-n-f-m-e,Unfme,,qefmnu,2757
+Uniforming,e-u-n-f-m-\-h,Unfmg,,qfgmnu,2757
+Uniforms,e-u-n-f-m-s,Unfms,,qfmnsu,2757
 Counsel,k-s-e-l,Ksel,,qekls,2759
 Counselled,k-s-e-l-d,Kseld,,qdekls,2759
 Counselling,k-s-e-l-\-h,Kselg,,qegkls,2759
@@ -3647,6 +3652,7 @@ Reestablishing,r-e-s2-t-b-\-h,Restbg,,qberstg,3682
 Reestablishes,r-e-s2-t-b-s,Restbs,,qbersts,3682
 Enjoyments,n-j-o-e-m-s,Njyms,,qjmnsy,3690
 Advisedly,v-i-s2-d-e,Visde,,qdeisv,3701
+Exclusions,e-s-/-sh-s,Xzs,,qsxz,3707
 Disciplined,d-s-pl-e-n-d,Dsplend,,qdelnps,3709
 Disciplining,d-s-pl-e-n-\-h,Dspleng,,qdeglnps,3709
 Disciplinary,d-s-pl-e-n-r-e,Dsplenre,,qdelnprs,3709
@@ -3759,6 +3765,7 @@ Platforms,pl-a-t-f-m-s,Platfms,,qaflmpst,3844
 Waked,u-a-k-d,Uakd,,qadku,3846
 Waking,u-a-k-\-h,Uakg,,qagku,3846
 Wakes,u-a-k-s,Uaks,,qaksu,3846
+Economics,e-k-e-k-s,Ekeks,,qeks,3849
 Exempted,e-s2-e-mt-d,Xemtd,,qdemtx,3856
 Exempting,e-s2-e-mt-\-h,Xemtg,,qegmtx,3856
 Exempts,e-s2-e-mt-s,Xemts,,qemstx,3856
@@ -4507,6 +4514,8 @@ Disasters,d-ss2-t-e2-s,Dsstes,,qdest,5674
 Networked,n-e-t-r-k-d,Netrkd,,qdeknrt,5683
 Networking,n-e-t-r-k-\-h,Netrkg,,qegknrt,5683
 Networks,n-e-t-r-k-s,Netrks,,qeknrst,5683
+Exclusively,e-s-/-s2-v-e,Xsve,,qesvx,5684
+Exclusives,e-s-/-s2-v-s,Xsvs,,qsvx,5684
 Prompted,pr-mt-d,Prmtd,,qdmprt,5685
 Promptly,pr-mt-e,Prmte,,qemprt,5685
 Prompting,pr-mt-\-h,Prmtg,,qgmprt,5685
@@ -5387,6 +5396,7 @@ Contentments,k-tn-t-m-s,Ktntms,,qkmnst,10570
 Aversion,a-v-e-r-s-sh,Aversz,,qaersvz,10588
 Aversions,a-v-e-r-s-sh-s,Averszs,,qaersvz,10588
 Commandments,k-m-a-n-m-s,Kmanms,,qakmns,10596
+Economically,e-k-/-k-e,Ekke,,qek,10686
 Temperance,tm-p,Tmpo,o,qmopt,10725
 Commune,k-m-u-n,Kmun,,qkmnu,10730
 Communed,k-m-u-n-d,Kmund,,qdkmnu,10730
@@ -7182,6 +7192,19 @@ Demobilizations,tm-o-bl-i-s-a-sh-s,Tmoblisazs,,qabilmostz,70418
 Demobilized,tm-o-bl-i-s-d,Tmoblisd,,qbdilmost,70418
 Demobilizing,tm-o-bl-i-s-\-h,Tmoblisg,,qbgilmost,70418
 Demobilizes,tm-o-bl-i-s-s,Tmobliss,,qbilmost,70418
+Antidepressant,^-a-\-d-pr-e-s-nt,Adpresnt,,qadenprst,70430
+Antidepressants,^-a-\-d-pr-e-s-nt-s,Adpresnts,,qadenprst,70430
+Depress,d-pr-e-s,Dpres,,qdeprs,70430
+Depressed,d-pr-e-s-d,Dpresd,,qdeprs,70430
+Depressing,d-pr-e-s-\-h,Dpresg,,qdegprs,70430
+Depressants,d-pr-e-s-nt-s,Dpresnts,,qdenprst,70430
+Depresss,d-pr-e-s-s,Dpress,,qdeprs,70430
+Depressive,d-pr-e-s-v,Dpresv,,qdeprsv,70430
+Depressives,d-pr-e-s-v-s,Dpresvs,,qdeprsv,70430
+Depression,d-pr-e-s-sh,Dpresz,,qdeprsz,70430
+Depressions,d-pr-e-s-sh-s,Dpreszs,,qdeprsz,70430
+Depression,d-pr-e-sh,Dprez,,qdeprz,70430
+Depressions,d-pr-e-sh-s,Dprezs,,qdeprsz,70430
 Diacritical,d-i-k-r-/-y-a,Dikry,,qdikry,70436
 Dictatorially,d-e-k-t-a-/-r-ye,Dektary,,qadekrty,70438
 Disengage,d-s2-n-g-a,Dsnga,,qadgns,70449
