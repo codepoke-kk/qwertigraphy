@@ -1945,6 +1945,9 @@ Comforting,k-f-t-\-h,Kftg,,qfgkt,1431
 Comforter,k-f-t-r,Kftr,,qfkrt,1431
 Comforters,k-f-t-r-s,Kftrs,,qfkrst,1431
 Comforts,k-f-t-s,Kfts,,qfkst,1431
+Listing,l-s-\-h,Lsg,,qgls,1432
+Listings,l-s-\-h-s,Lsgs,,qgls,1432
+Listings,l-s-\-h-s,Lsz,,qlsz,1432
 Unprepared,n-pr-e-p-d,Nprepd,,qdenpr,1440
 Prepared,pr-e-p-d,Prepd,,qdepr,1440
 Preparedness,pr-e-p-d-n-s,Prepdns,,qdenprs,1440
@@ -2024,6 +2027,9 @@ Driving,d-r-i-v-\-h,Drivg,,qdgirv,1509
 Driver,d-r-i-v-r,Drivr,,qdirv,1509
 Drivers,d-r-i-v-r-s,Drivrs,,qdirsv,1509
 Drives,d-r-i-v-s,Drivs,,qdirsv,1509
+Virtual,v-e2-t-l,Vetl,,qeltv,1510
+Virtually,v-e2-t-l-e,Vetle,,qeltv,1510
+Virtuals,v-e2-t-l-s,Vetls,,qelstv,1510
 Virtues,v-e2-t-u-s,Vetus,,qestuv,1510
 Virtuous,v-e2-t-u-u-s,Vetuus,,qestuv,1510
 Fashionable,f-a-sh-b,Fazb,,qabfz,1511
@@ -3584,6 +3590,8 @@ Database,d-a-t-b,Datb,,qabdt,3533
 Databased,d-a-t-b-d,Datbd,,qabdt,3533
 Databasing,d-a-t-b-\-h,Datbg,,qabdgt,3533
 Databases,d-a-t-b-s,Datbs,,qabdst,3533
+Datacenter,d-a-t-s-n,Datsn,,qadnst,3533
+Datacenters,d-a-t-s-n-s,Datsns,,qadnst,3533
 Metadata,m-e-td-a-t,Metdat,,qademt,3533
 Irresponsibility,e-r-p-\-b,Erpb,,qbepr,3534
 Responsibilities,r-p-\-b-s,Rpbs,,qbprs,3534
@@ -5301,6 +5309,7 @@ Expire,e-s-p-i,Xpi,,qipx,10150
 Expiry,e-s-p-i-e,Xpie,,qeipx,10150
 Expiring,e-s-p-i-\-h,Xpig,,qipxg,10150
 Expires,e-s-p-i-s,Xpis,,qipxs,10150
+Expireds,e-s-p-i-/-t-s,Xpits,,qipstx,10150
 Exaggerate,e-s-a-j,Xaj,,qajx,10166
 Exaggerated,e-s-a-j-d,Xajd,,qadjx,10166
 Exaggerating,e-s-a-j-\-h,Xajg,,qagjx,10166
@@ -5685,6 +5694,7 @@ Expirations,e-s-pr-a-sh-s,Xprazs,,qaprsxz,13052
 Needy,n-e-d-e,Nede,,qden,13093
 Neediness,n-e-d-e-n-s,Nedens,,qdens,13093
 Neediest,n-e-d-e-s-t,Nedest,,qdenst,13093
+Constraints,k-s2-/-nt-s,Ksnts,,qknst,13114
 Treasurers,t-r-e-sh-u-/-r-s,Trezurs,,qerstuz,13175
 Observance,o-b-s-e-/-n-s,Obsens,,qbenos,13192
 Observances,o-b-s-e-/-n-s-s,Obsenss,,qbenos,13192
@@ -5853,11 +5863,17 @@ Overturn,^-o-\-t-e-n,Oten,,qenot,15426
 Overturned,^-o-\-t-e-n-d,Otend,,qenotd,15426
 Overturning,^-o-\-t-e-n-\-h,Oteng,,qenotg,15426
 Overturns,^-o-\-t-e-n-s,Otens,,qenots,15426
+Register,r-e2-j,Rej,o,qejr,15514
+Registered,r-e2-j-d,Rejd,,qdejr,15514
 Registered,r-e2-j-e2-s2-t-e2-d,Rejested,,qdejrst,15514
 Registering,r-e2-j-e2-s2-t-e2-\-h,Rejesteg,,qegjrst,15514
 Registers,r-e2-j-e2-s2-t-e2-s,Rejestes,,qejrst,15514
 Registry,r-e2-j-e2-s2-t-r-e,Rejestre,,qejrst,15514
 Registries,r-e2-j-e2-s2-t-r-e-s,Rejestres,,qejrst,15514
+Registering,r-e2-j-\-h,Rejg,,qegjr,15514
+Registers,r-e2-j-s,Rejs,,qejrs,15514
+Registration,r-e2-j-sh,Rejz,,qejrz,15514
+Registrations,r-e2-j-sh-s,Rejzs,,qejrsz,15514
 Overwhelmed,o-/-u-e-l-m-d,Ouelmd,,qdelmou,15649
 Overwhelming,o-/-u-e-l-m-\-h,Ouelmg,,qeglmou,15649
 Overwhelms,o-/-u-e-l-m-s,Ouelms,,qelmosu,15649
@@ -6157,6 +6173,12 @@ Obstruction,o-b-s2-k-sh,Obskz,,qbkosz,19801
 Obstructions,o-b-s2-k-sh-s,Obskzs,,qbkosz,19801
 Optimist,o-p-tm-e-s2,Optmes,,qemopst,19804
 Optimists,o-p-tm-e-s2-s,Optmess,,qemopst,19804
+Optimize,o-p-tm-i-s,Optmis,,qimopst,19804
+Optimized,o-p-tm-i-s-d,Optmisd,,qdimopst,19804
+Optimizing,o-p-tm-i-s-\-h,Optmisg,,qgimopst,19804
+Optimizes,o-p-tm-i-s-s,Optmiss,,qimopst,19804
+Optimization,o-p-tm-i-s-sh,Optmisz,,qimopstz,19804
+Optimizations,o-p-tm-i-s-sh-s,Optmiszs,,qimopstz,19804
 Optimistic,o-p-tm-\-s2-t,Optmst,,qmopst,19804
 Requirements,r-k-i-m-s,Rqims,,qimqrs,19812
 Enjoyably,n-j-o-e-b-e,Njybe,,qbejny,19860
@@ -6602,6 +6624,9 @@ Revoking,r-v-k-\-h,Rvkg,,qgkrv,30778
 Revokes,r-v-k-s,Rvks,,qkrsv,30778
 Fasts,f-a-s2-t-s,Fastso,o,qafost,31053
 Elementaries,e-l-e-m-r-e-s,Elemres,,qelmrs,31109
+Constrained,k-s2-/-n-d,Ksnd,,qdkns,31135
+Constraining,k-s2-/-n-\-h,Ksng,,qgkns,31135
+Constrains,k-s2-/-n-s,Ksns,,qkns,31135
 Accommodations,a-k-d-sh-s,Akdzs,,qadksz,31424
 Counterbalanced,k-/-b-a-l-d,Kbald,,qabdkl,31490
 Highland,^-h-\-i-l-a-nt,Hilant,,qahilnt,31526
@@ -6755,6 +6780,7 @@ Browsing,br-a-u-s-\-h,Brwsg,,qbgrsw,39293
 Brows,br-a-u-s-o,Brwso,o,qborsw,39293
 Browser,br-a-u-s-r,Brwsr,,qbrsw,39293
 Browsers,br-a-u-s-r-s,Brwsrs,,qbrsw,39293
+Browses,br-a-u-s-s,Brwss,,qbrsw,39293
 Installable,n-s2-t-o-l-b,Nstolb,,qblnost,39681
 Installably,n-s2-t-o-l-b-e,Nstolbe,,qbelnost,39681
 Installability,n-s2-t-o-l-\-b,Nstolbo,o,qblnost,39681
@@ -7629,9 +7655,6 @@ Portal,p-o-t-l,Potl,,,90363
 Portaled,p-o-t-l-d,Potld,,qdlopt,90363
 Portaling,p-o-t-l-\-h,Potlg,,qglopt,90363
 Portals,p-o-t-l-s,Potls,,qlopst,90363
-Vertical,v-e2-t-\-l,Vetl,o,qeltv,90379
-Vertically,v-e2-t-\-l-e,Vetle,,qeltv,90379
-Verticals,v-e2-t-\-l-s,Vetls,,qelstv,90379
 Vertically,v-e2-t-\-ye,Vety,,qetvy,90379
 Versus,v-s,Vsu,u,qsuv,90383
 Trustworthy,t-r-s-h-e,Trshe,,qehrst,90394
