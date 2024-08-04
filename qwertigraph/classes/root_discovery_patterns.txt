@@ -1,0 +1,57 @@
+; word,form,replacement
+; When adding to this list, sequence is critical. 
+; Long, complex subs must precede short and sweet ones 
+
+; Prefixes
+; un/in prefix
+^[ue]n,^n-,
+; dis prefix
+^dis,^d-s-,
+; pro prefix
+^pro,^pr-o-,
+; pre prefix
+^pr,^pr-,
+; re prefix 
+^re,^r-e-,
+; re prefix 
+^re,^r-,
+
+; Suffixes 
+; ings ending
+ings$,-h-s$,
+; ing ending
+ing$,-h$,
+; s ending
+s$,-s$,
+; ed ending
+ed$,-[dt]$,
+; abilities ending
+abilities$,-\-b-s$,
+; ability ending
+ability$,-\-b$,
+; ables ending
+ables$,-b-s$,
+; able ending
+able$,-b$,
+; ility ending
+lity$,-\\-l$,
+; ly ending
+ly$,-e$,
+; al ending
+al$,-l$,
+; ively ending
+vely$,-l-e$,
+; ly ending
+ly$,-e$,
+; ives ending
+ives$,-v-s$,
+; ive ending
+ive$,-v$,
+; ations ending
+ations$,-a-sh-s$,
+; ation ending
+ation$,-a-sh$,
+; ions ending
+ions$,-sh-s$,
+; ion ending
+ion$,-sh$,

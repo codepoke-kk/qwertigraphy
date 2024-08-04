@@ -2075,15 +2075,15 @@ Resurrections,r-s-r-k-sh-s,Rsrkzs,,qkrsz,1549
 Constantly,k-s2-tn-e,Kstne,,qeknst,1552
 Constantine,k-s2-tn-e-n,Kstnen,,qeknst,1552
 Constants,k-s2-tn-s,Kstns,,qknst,1552
-Imaginable,e-m-a-j-/-b,Emajb,,qabejm,1554
-Imaginably,e-m-a-j-/-b-e,Emajbe,,qabejm,1554
+Imaginable,e-m-a-j-b,Emajb,,qabejm,1554
+Imaginably,e-m-a-j-b-e,Emajbe,,qabejm,1554
 Imagined,e-m-a-j-d,Emajd,,qadejm,1554
 Imagining,e-m-a-j-\-h,Emajg,,qaegjm,1554
 Imagines,e-m-a-j-s,Emajs,,qaejms,1554
 Imaginative,e-m-a-j-df,Emajtv,,qaejmtv,1554
 Imaginatively,e-m-a-j-df-e,Emajtve,,qaejmtv,1554
-Unimaginable,u-n-e-m-a-j-/-b,Nemajb,,qabejmn,1554
-Unimaginably,u-n-e-m-a-j-/-b-e,Nemajbe,,qabejmn,1554
+Unimaginable,u-n-e-m-a-j-b,Nemajb,,qabejmn,1554
+Unimaginably,u-n-e-m-a-j-b-e,Nemajbe,,qabejmn,1554
 Unimaginative,u-n-e-m-a-j-df,Nemajtv,,qaejmntv,1554
 Guessed,g-e-s-d,Gesd,,qdegs,1555
 Guessing,g-e-s-\-h,Gesg,,qegs,1555
@@ -2594,7 +2594,7 @@ Energizing,n-r-j-i-s-\-h,Nrjisg,,qgijnrs,2019
 Energizes,n-r-j-i-s-s,Nrjiss,,qijnrs,2019
 Energies,n-r-j-s,Nrjs,,qjnrs,2019
 Energetically,n-r-j-\-ya,Nrjy,,qjnry,2019
-Liabilities,l-i-/-b-s,Libs,,qbils,2027
+Liabilities,l-i-\-b-s,Libs,,qbils,2027
 Younger,u-ng-e2,Ugeo,o,qegou,2034
 Reproduction,r-pr-o-k-sh,Rprokz,,qkoprz,2035
 Reproductions,r-pr-o-k-sh-s,Rprokzs,,qkoprsz,2035
@@ -3243,7 +3243,7 @@ Standardized,s2-tn-a-d-i-s-d,Stnadisd,,qadinst,3032
 Standardizing,s2-tn-a-d-i-s-\-h,Stnadisg,,qadginst,3032
 Standardizes,s2-tn-a-d-i-s-s,Stnadiss,,qadinst,3032
 Standards,s2-tn-a-d-s,Stnads,,qadnst,3032
-Possibilities,p-o-s-/-b-s,Posbs,,qbops,3033
+Possibilities,p-o-s-\-b-s,Posbs,,qbops,3033
 Angel,a-n-j-l,Anjl,,qajln,3034
 Angelic,a-n-j-l-k,Anjlk,,qajkln,3034
 Angels,a-n-j-l-s,Anjls,,qajlns,3034
@@ -3284,8 +3284,9 @@ Mismatched,m-sm-a-ch-d,Msmacd,,qacmsd,3098
 Mismatching,m-sm-a-ch-\-h,Msmacg,,qacmsg,3098
 Mismatches,m-sm-a-ch-s,Msmacs,,qacmss,3098
 Unmatched,n-m-a-ch-d,Nmachd,,qacdhmn,3098
-Disability,d-s-a-/-b,Dsabo,o,qabdos,3126
-Disabilities,d-s-a-/-b-s,Dsabso,o,qabdos,3126
+Ability,a-\-b,Abo,o,qabo,3126
+Disability,d-s-a-\-b,Dsabo,o,qabdos,3126
+Disabilities,d-s-a-\-b-s,Dsabso,o,qabdos,3126
 Definitely,df-n-e,Dfne,,qdefn,3128
 Waved,u-a-v-d,Uavd,,qaduv,3130
 Waving,u-a-v-\-h,Uavg,,qaguv,3130
@@ -3584,8 +3585,8 @@ Databased,d-a-t-b-d,Datbd,,qabdt,3533
 Databasing,d-a-t-b-\-h,Datbg,,qabdgt,3533
 Databases,d-a-t-b-s,Datbs,,qabdst,3533
 Metadata,m-e-td-a-t,Metdat,,qademt,3533
-Irresponsibility,e-r-p-/-b,Erpb,,qbepr,3534
-Responsibilities,r-p-/-b-s,Rpbs,,qbprs,3534
+Irresponsibility,e-r-p-\-b,Erpb,,qbepr,3534
+Responsibilities,r-p-\-b-s,Rpbs,,qbprs,3534
 Resubmit,r-s2-m-e-t,Rsmet,,qemrst,3546
 Resubmitted,r-s2-m-e-t-d,Rsmetd,,qdemrst,3546
 Resubmitting,r-s2-m-e-t-\-h,Rsmetg,,qegmrst,3546
@@ -4165,7 +4166,7 @@ Relates,r-e-l-a-s,Relas,,qaelrs,4800
 Tennessee,tn,Tne,e,qentz,4807
 Adaptable,a-d-a-p-b,Adapb,,qabdp,4814
 Adaptably,a-d-a-p-b-e,Adapbe,,qabdep,4814
-Adaptability,a-d-a-p-/-b,Adapbo,o,qabdop,4814
+Adaptability,a-d-a-p-\-b,Adapbo,o,qabdop,4814
 Adapting,a-d-a-p-\-h,Adapg,,qadgp,4814
 Adapter,a-d-a-p-/-r,Adapr,,qadpr,4814
 Adapters,a-d-a-p-/-r-s,Adaprs,,qadprs,4814
@@ -4714,6 +4715,7 @@ Agricultures,^-ya-s,Yaso,o,qaosy,6397
 Boundaries,b-n-r-e-s,Bnres,,qbenrs,6400
 Candidates,k-td-s,Kdds,,qdks,6407
 Uncomfortably,n-k-f-t-b-e,Nkftbe,,qbefknt,6437
+Urgently,e-jnt-e,Ejnte,,qejnt,6438
 Showered,sh-a-u-r-d,Zwrd,,qdrwz,6495
 Showering,sh-a-u-r-\-h,Zwrg,,qgrwz,6495
 Showers,sh-a-u-r-s,Zwrs,,qrswz,6495
@@ -4862,6 +4864,7 @@ Technicians,t-e-k-n-sh-s,Teknzs,,qeknstz,7169
 Exertion,e-s2-e-s2h,Xez,,qexz,7224
 Exertions,e-s2-e-s2h-s,Xezs,,qesxz,7224
 Tries,t-r-i-s,Tris,,qirst,7232
+Hostility,^-h-\-o-s2-t-\-l,Hostlo,o,qhlost,7234
 Needle,n-e-d-l,Nedlo,,qdelno,7255
 Needles,n-e-d-l-s,Nedlos,,qdelnos,7255
 Fascinate,f-a-s2-n-a-t,Fasnat,,qafnst,7259
@@ -5397,6 +5400,7 @@ Contentments,k-tn-t-m-s,Ktntms,,qkmnst,10570
 Aversion,a-v-e-r-s-sh,Aversz,,qaersvz,10588
 Aversions,a-v-e-r-s-sh-s,Averszs,,qaersvz,10588
 Commandments,k-m-a-n-m-s,Kmanms,,qakmns,10596
+Civility,s2-v-\-l,Svl,,qlsv,10648
 Economically,e-k-/-k-e,Ekke,,qek,10686
 Temperance,tm-p,Tmpo,o,qmopt,10725
 Commune,k-m-u-n,Kmun,,qkmnu,10730
@@ -6458,6 +6462,7 @@ Indecipherable,n-d-s2-i-f-b,Ndsifb,,qbdfins,27085
 Indecipherably,n-d-s2-i-f-b-e,Ndsifbe,,qbdefins,27085
 Undecipherable,u-d-s2-i-f-b,Udsifb,,qbdfisu,27085
 Undecipherably,u-d-s2-i-f-b-e,Udsifbe,,qbdefisu,27085
+Gentility,jnt-\-l,Jntlo,o,qjlnot,27197
 Blink,bl-e-nk,Bleq,,qbelq,27400
 Blinked,bl-e-nk-d,Bleqd,,qbdelq,27400
 Blinking,bl-e-nk-\-h,Bleqg,,qbeglq,27400
@@ -6466,7 +6471,7 @@ Clink,k-l-e-nk,Kleq,,qeklq,27400
 Clinked,k-l-e-nk-d,Kleqd,,qdeklq,27400
 Clinking,k-l-e-nk-\-h,Kleqg,,qegklq,27400
 Clinks,k-l-e-nk-s,Kleqs,,qeklqs,27400
-Stability,s2-t-/-b,Stbo,o,qbost,27482
+Stability,s2-t-\-b,Stbo,o,qbost,27482
 Shortages,sh-/-j-s,Zjs,,qjsz,27735
 Shortcoming,sh-/-k-m-\-h,Zkmg,,qgkmz,27735
 Shortcomings,sh-/-k-m-\-h-s,Zkmgs,,qgkmsz,27735
@@ -6490,7 +6495,7 @@ Attaches,a-t-a-sh-a-s,Atazas,,qastz,28053
 Disproved,d-s-pr-v-d,Dsprvd,,qdprsv,28203
 Disproving,d-s-pr-v-\-h,Dsprvg,,qdgprsv,28203
 Disproves,d-s-pr-v-s,Dsprvs,,qdprsv,28203
-Impossibility,m-p-o-s-/-b,Mposb,,qbmops,28275
+Impossibility,m-p-o-s-\-b,Mposb,,qbmops,28275
 Snail,s-n-a-l,Snal,,qalns,28320
 Snails,s-n-a-l-s,Snals,,qalns,28320
 Dispassionately,d-s-p-a-sh-a-t-e,Dspazate,,qadepstz,28353
@@ -6786,7 +6791,7 @@ Complicitly,k-pl-e-s-e-t-e,Kplesete,,qeklpst,40467
 Workroom,r-k-r-m,Rkrm,,qkmr,40538
 Workrooms,r-k-r-m-s,Rkrms,,qkmrs,40538
 Neglectfully,n-e-g-/-f-e,Negfe,,qefgn,40741
-Advisability,v-i-s-/-b,Visbo,o,qbiosv,40845
+Advisability,v-i-s-\-b,Visbo,o,qbiosv,40845
 Unrequited,n-r-e-k-\-n-^-~-i-td,Nreqitd,,,41094
 Requiem,r-e-k-\-n-^-~-e-m,Reqem,,qemqr,41094
 Requiems,r-e-k-\-n-^-~-e-m-s,Reqems,,qemqrs,41094
@@ -6868,6 +6873,7 @@ Incrementing,n-k-r-e-m-\-h,Nkremg,,qegkmnr,49850
 Incremental,n-k-r-e-m-l,Nkreml,,qeklmnr,49850
 Incrementally,n-k-r-e-m-l-e,Nkremle,,qeklmnr,49850
 Increments,n-k-r-e-m-s,Nkrems,,qekmnrs,49850
+Incivility,n-s2-v-\-l,Nsvl,,qlnsv,50604
 Dock,d-o-k,Dok,,qdko,51245
 Docked,d-o-k-d,Dokd,,qdko,51245
 Docking,d-o-k-\-h,Dokg,,qdgko,51245
@@ -7237,6 +7243,7 @@ Erasers,e-r-a-s-r-s,Erasrs,,qaers,70541
 Erases,e-r-a-s-s,Erass,,qaers,70541
 Erasure,e-r-a-sh,Eraz,,qaerz,70541
 Erasures,e-r-a-sh-s,Erazs,,qaersz,70541
+Erectility,e-r-e-k-\-l,Erekl,,qeklr,70543
 Evaluated,e-v-l-e-u-t-d,Evlutd,,qdeltuv,70554
 Evaluating,e-v-l-e-u-t-\-h,Evlutg,,qegltuv,70554
 Evaluates,e-v-l-e-u-t-s,Evluts,,qelstuv,70554
@@ -7253,7 +7260,7 @@ For example,f-e-s2-a-m,Fxam,,qafmx,70627
 For the record,f-th-k,Fhk,,fhk,70630
 For the record,f-th-r-k,Fhrk,u,fhkr,70630
 Forgivably,f-g-e-/-b-e,Fgebe,,qbefg,70638
-Forgivability,f-g-e-/-b,Fgebo,o,qbefgo,70638
+Forgivability,f-g-e-\-b,Fgebo,o,qbefgo,70638
 Frighten,fr-i-n,Frin,,qfinr,70651
 Frightened,fr-i-n-d,Frind,,qdfinr,70651
 Frightening,fr-i-n-\-h,Fring,,qfginr,70651
@@ -7358,8 +7365,8 @@ Reclaimed,r-e-/-m-d,Remd,,qdemr,70999
 Reclaiming,r-e-/-m-\-h,Remg,,qegmr,70999
 Reclaims,r-e-/-m-s,Rems,,qemrs,70999
 Reclamations,r-e-/-m-sh-s,Remzs,,qemrsz,70999
-Irresistible,e-r-ss-/-b,Erssb,,qbers,71002
-Irresistibly,e-r-ss-/-b-e,Erssbe,,qbers,71002
+Irresistible,e-r-ss-b,Erssb,,qbers,71002
+Irresistibly,e-r-ss-b-e,Erssbe,,qbers,71002
 Jesus christ,j-~-k,Jk,,qcjk,71024
 Joint resolution,j-~-r-s2-o-sh,Jrsoz,,qjorsz,71028
 Joint resolutions,j-~-r-s2-o-sh-s,Jrsozs,,qjorsz,71028
@@ -7406,7 +7413,7 @@ Optics,o-p-t-e-k-s,Opteks,,qekopst,71438
 Optical,o-p-t-\-l,Optl,,qlopt,71438
 Optically,o-p-t-\-l-e,Optle,,qelopt,71438
 Opticians,o-p-t-sh-s,Optzs,,qopstz,71438
-Order blanks,o-d-/-b-s,Odbs,,qbdos,71442
+Order blanks,o-d-\-b-s,Odbs,,qbdos,71442
 Orientated,o-r-e-nt-a-d,Orentad,,qadenort,71444
 Orientating,o-r-e-nt-a-\-h,Orentag,,qaegnort,71444
 Orientates,o-r-e-nt-a-s,Orentas,,qaenorst,71444

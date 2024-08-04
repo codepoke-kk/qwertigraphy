@@ -763,7 +763,7 @@ Religious,r-e-l-e-j-u-s,Relejus,,qejlrsu,965
 West,u,Uw,w,qcuw,966
 Ill,e-l,El,,qelz,969
 Official,o-sh-l,Ozl,,qloz,971
-Distribute,d-s-/-b,Dsb,,qbds,973
+Distribute,d-s-\-b,Dsb,,qbds,973
 Spent,s-jnt,Sjnt,,qjnst,974
 Ladies,l-a-d-e-s,Lades,,qadels,976
 Leaves,l-e-v-s2,Levs,,qelsv,977
@@ -1463,7 +1463,7 @@ Energy,n-r-j,Nrj,,qjnr,2019
 Union,e-u-n,Unu,u,qnuz,2020
 February,f-e-b,Febo,o,qbefo,2023
 Included,e-/-td,Edd,,qdez,2024
-Liability,l-i-/-b,Libo,o,qbilo,2027
+Liability,l-i-\-b,Libo,o,qbilo,2027
 Favor,f-a,Fao,o,qafo,2033
 Production,pr-o-d-u-k-sh,Produkz,,qdkopruz,2035
 Kindness,k-i-n-e-s,Kines,,qeikns,2036
@@ -1979,7 +1979,7 @@ Aim,a-m,Ama,a,qamz,3025
 Supplied,s-pl-i-d,Splid,,qdilps,3027
 Politics,p-o-l-/-a-s,Polas,,qalops,3030
 Standard,s2-tn-a-d,Stnad,,qadnst,3032
-Possibility,p-o-s-/-b,Posb,,qbops,3033
+Possibility,p-o-s-\-b,Posb,,qbops,3033
 Pains,p-a-n-s,Panso,o,qanops,3034
 Alarm,a-l-a-m,Alam,,qalm,3035
 Masters,m-a-s-s,Masso,o,qamos,3038
@@ -2030,7 +2030,6 @@ Dwell,d-w-e-l,Dwel,,qdelw,3117
 Gather,g-a-th,Gah,,qagh,3119
 Distress,d-s-/-s,Dss,,qdsv,3120
 Mistaken,m-s2-t,Msto,o,qmost,3124
-Ability,a-/-b,Abo,o,qabo,3126
 Definite,df-n,Dfn,,qdfn,3128
 Poverty,p-o-v,Pov,,qopv,3129
 Wave,u-a-v,Uav,,qauv,3130
@@ -2218,7 +2217,7 @@ Hostile,^-h-\-o-s2-t-l,Hostl,,qhlost,3522
 Republic,r-p,Rpo,o,qopr,3525
 Doubtful,d-a-u-f,Dwf,,qdfw,3528
 Ministers,mn-e-s2-t-ye2,Mmestye,,qemsty,3529
-Responsibility,r-p-/-b,Rpb,,qbpr,3534
+Responsibility,r-p-\-b,Rpb,,qbpr,3534
 Reminded,r-e-m-i-n-/-t,Remint,,qeimnrt,3537
 Burnt,b-e2-n-t,Bentu,u,qbentu,3540
 Submit,s2-m-e-t,Smet,,qemst,3546
@@ -2693,7 +2692,7 @@ Everyone,e-v-u-n,Evun,,qenuv,4787
 Pennsylvania,p-a,Pao,o,qaop,4789
 Carries,k-a-e-s,Kaes,,qaeks,4791
 Relate,r-e-l-a,Rela,,qaelr,4800
-Probability,pr-/-b,Prbo,o,qbopr,4802
+Probability,pr-\-b,Prbo,o,qbopr,4802
 Sweetness,s2-u-e-t-n-e-s,Suetnes,,qenstu,4808
 Hired,^-h-\-i-r-/-t,Hirt,,qhirt,4812
 Adapt,a-d-a-p,Adap,,qadp,4814
@@ -3265,7 +3264,7 @@ Lighter,l-i-r,Lir,,qilr,6856
 Goodly,g-/-e,Geu,u,qegu,6859
 Courteous,k-e2-t-u-s,Ketus,,qekstu,6860
 Envelope,n-v-l,Nvlu,u,qlnuv,6865
-Contribute,k-/-b,Kb,,qbkm,6869
+Contribute,k-\-b,Kb,,qbkm,6869
 Detective,td-e-k-v,Ddekv,,qdekv,6870
 Fits,f-e-t-s,Fets,,qefst,6872
 Regulations,r-e-g-/-u-sh-s,Reguzs,,qegrsuz,6887
@@ -3311,7 +3310,7 @@ Maids,m-a-d-s,Mads,,qadms,7045
 Tomorrow,tm-o,Tmo,,qmot,7050
 Imprisonment,m-pr-e-s2-mn,Mpresmm,,qemprs,7061
 Inspection,n-s-p-sh,Nspz,,qnpsz,7065
-Superb,s-/-b,Sbo,o,qbos,7066
+Superb,s-\-b,Sbo,o,qbos,7066
 Illusion,e-l-sh,Elz,,qelz,7073
 Sack,s2-a-k,Sako,o,qakos,7075
 Oven,u-v-n,Uvn,,qnuv,7077
@@ -3339,7 +3338,6 @@ Empress,m-pr-e-s,Mpreso,o,qemoprs,7200
 Prevailing,pr-e-v-a-\-h,Prevag,,qaegprv,7205
 Shorter,sh-/-r,Zr,,qmrz,7209
 Historic,^-h-\-e-s2-t-r-k,Hestrko,o,qehkorst,7210
-Hostility,^-h-\-o-s2-t-/-l,Hostlo,o,qhlost,7234
 Attribute,a-t-r-e-b,Atreb,,qabert,7237
 Margin,m-a-j-n,Majn,,qajmn,7239
 Banquet,b-a-nk-w-e-t,Baqet,,qabeqt,7240
@@ -3906,7 +3904,6 @@ Favors,f-as,Fasu,u,qafsu,10621
 Handy,^-h-\-nt-e,Hnte,,qehnt,10632
 Memphis,mn-f-e-s,Mmfes,,qefms,10638
 Unfair,n-f-a-r,Nfar,,qafnr,10642
-Civility,s2-v-/-l,Svl,,qlsv,10648
 Fiend,f-e-nt,Fent,,qefnt,10660
 Modestly,m-o-d-e-s-e,Modeseo,o,qdemos,10672
 Receipts,r-e-s-e-s,Reses,,qers,10682
@@ -4163,7 +4160,7 @@ Specifically,s-p-e-s-/-k-e,Speske,,qekps,12715
 Fete,f-e-t,Fetu,u,qeftu,12738
 Impious,m-p-u-s,Mpus,,qmpsu,12749
 Hourly,r-e,Reu,u,qeru,12754
-Immovable,e-m-u-/-b,Emub,,qbemu,12778
+Immovable,e-m-u-b,Emub,,qbemu,12778
 Insert,n-s2-e2-t,Nset,,qenst,12824
 Atom,a-tm,Atm,,qamt,12831
 Lonesome,l-o-n-s2-m,Lonsm,,qlmnos,12838
@@ -4241,7 +4238,7 @@ Cot,k-o-t,Kote,e,qekot,13438
 Candy,k-d-e,Kde,,qdek,13443
 Enormously,e-n-o-m-e,Enome,,qemno,13450
 Equilibrium,e-k-w-e-l-e-b,Eqeleb,,qbelq,13474
-Creditable,k-r-e-/-b,Kreb,,qbekr,13501
+Creditable,k-r-e-b,Kreb,,qbekr,13501
 Publicity,p-b-/-s2,Pbs,,qbps,13506
 Excel,e-s2-l,Xlu,u,qlux,13532
 Northeast,n-e-s,Nesi,i,qeins,13537
@@ -4443,7 +4440,7 @@ Bygone,b-g-n,Bgno,o,qbgno,15560
 Anterior,a-/-o-r,Aor,,qaor,15595
 Tenacity,tn-/-s,Tnsi,i,qinst,15628
 Overwhelm,o-/-u-e-l-m,Ouelm,,qelmou,15649
-Movable,m-u-/-b,Mub,,qbmu,15651
+Movable,m-u-b,Mub,,qbmu,15651
 Rented,r-e-nt-d,Rentd,,qdenrt,15668
 Carcass,k-a-k-a-s,Kakas,,qaks,15682
 Hog,^-h-\-o-g,Hogo,o,qgho,15691
@@ -5005,7 +5002,7 @@ Gauntlet,g-o-nt-l-e,Gontle,,qeglnot,22810
 Handiwork,^-h-\-nt-e-r-k,Hnterk,,qehknrt,22819
 Lurk,l-r-k,Lrk,,qklr,22821
 Dispersion,d-s-pr-sh,Dsprz,,qdprsz,22830
-Insuperable,n-s-/-b,Nsb,,qbns,22853
+Insuperable,n-s-b,Nsb,,qbns,22853
 Fealty,f-e-/-l,Feli,i,qefil,22868
 Indebtedness,n-td-/-t-n-e-s,Nddtnes,,qdenst,22869
 Mathematician,m-a-th-t-sh,Mahtz,,qahmtz,22878
@@ -5264,7 +5261,6 @@ Depose,d-p-o,Dpoo,o,qdop,27108
 Carol,k-a-r-l,Karlo,o,qaklor,27151
 Inquires,n-k-i-s,Nqiso,o,qinoqs,27155
 Bequest,b-k-e-s,Bqes,,qbeqs,27160
-Gentility,jnt-/-l,Jntlo,o,qjlnot,27197
 Insurance,n-sh,Nzu,u,qnuz,27316
 Cynic,s2-e-n-e-k,Senek,,qekns,27324
 Convivial,k-v-e-v,Kvev,,qekv,27353
@@ -5274,7 +5270,7 @@ Benevolence,b-n-e-v,Bnevo,o,qbenov,27407
 Nomenclature,n-o-mn-k,Nommk,,qkmno,27411
 Lung,l-ng,Lgo,o,qglo,27431
 Monsoon,mn-s2-n,Mmsn,,qmns,27442
-Instability,n-s2-t-/-b,Nstbo,o,qbnost,27482
+Instability,n-s2-t-\-b,Nstbo,o,qbnost,27482
 Gunwale,g-n-l,Gnl,,qgln,27500
 Mammoth,mn-o-th2,Mmoh,,qhmo,27502
 Reek,r-e-k,Reku,u,qekru,27532
@@ -5433,7 +5429,7 @@ Joyless,j-o-e-l,Jyl,,qjly,30316
 Untenable,n-tn-b,Ntnb,,qbnt,30330
 Cyclone,s2-i-k-l-o-n,Siklon,,qiklnos,30374
 Multifarious,m-u-/-f-a-r,Mufar,,qafmru,30377
-Debility,d-/-b,Dbo,o,qbdo,30388
+Debility,d-\-b,Dbo,o,qbdo,30388
 Dimple,tm-pl,Tmplo,o,qlmopt,30389
 Lynx,l-e-nk-s,Leqso,o,qeloqs,30402
 Nondescript,n-o-nt-s2-k-r,Nontskr,,qknorst,30417
@@ -5785,7 +5781,7 @@ Casualty,k-a-sh-e-/-l,Kazel,,qaeklz,38846
 Yugoslavia,e-u-g-s-l-a-v,Ugslav,,qaglsuv,38873
 Horsehair,^-h-\-o-r-s-a-r,Horsar,,qahors,38877
 Cocktail,k-k-t-a-l,Kktal,,qaklt,38929
-Durability,d-r-/-b,Drbo,o,qbdor,38931
+Durability,d-r-\-b,Drbo,o,qbdor,38931
 Deleterious,d-l-e-t-e-r,Dleter,,qdelrt,38957
 Insect,n-s2-e-k,Nsek,,qekns,38962
 Cereal,s-e-r-ea-l,Serelo,o,qelors,38980
@@ -6113,7 +6109,6 @@ Excrescence,e-s2-k-r-e-s2-n-s,Xkresns,,qeknrsx,50438
 Brochure,br-o-sh-u,Brozu,,qboruz,50471
 Ye,ye,Yeu,u,qeuy,50507
 El,e-l,Elk1,k1,q1ekl,50587
-Incivility,n-s2-v-/-l,Nsvl,,qlnsv,50604
 Nuncio,n-u-n-sh-o,Nunzo,,qnouz,50614
 Bureaucratic,b-u-/-a,Bua,,qabu,50635
 Hummock,^-h-\-u-m-o-k,Humok,,qhkmou,50685
@@ -6430,7 +6425,7 @@ Lignite,l-e-g-n-i,Legni,,qegiln,67773
 Manikin,mn-e-k-e-n,Mmeken,,qekmn,67883
 Coordination,k-o-o-tn-sh,Kootnz,,qknotz,67958
 Evaluation,e-v-l-sh,Evlz,,qelvz,67975
-Imperturbability,m-p-e2-t-/-b,Mpetbo,o,qbemopt,67981
+Imperturbability,m-p-e2-t-\-b,Mpetbo,o,qbemopt,67981
 Alumni,a-l-m-n-i,Almni,,qailmn,68050
 Muriatic,m-u-r-/-a,Mura,,qamru,68084
 Ayes,i-s,Isu,u,qisu,68148
@@ -6958,12 +6953,11 @@ Epidermic,e-p-d-e-m-e-k,Epdemek,,qdekmp,70534
 Epithelium,e-p-th-e2-l-m,Ephelm,,qehlmp,70535
 Epitomize,e-p-tm-i-s,Eptmis,,qeimpst,70536
 Epochal,e-p-/-k,Epku,u,qekpu,70537
-Equability,e-k-/-b,Eqbo,o,qbeoq,70538
+Equability,e-k-\-b,Eqbo,o,qbeoq,70538
 Equiangular,e-k-w-ea-ng-u,Eqengu,,qegnqu,70539
 Equivocate,e-k-w-e-v-k,Eqevko,o,qekoqv,70540
 Erasable,e-r-a-s-b,Erasb,,qabers,70541
 Erectile,e-r-e-k-t-l,Erektl,,qeklrt,70542
-Erectility,e-r-e-k-/-l,Erekl,,qeklr,70543
 Erratum,e-r-a-tm,Eratm,,qaemrt,70544
 Erupt,e-r-p,Erp,,qepr,70545
 Escheat,e-s-ch-e-t,Escet,,qcest,70546
@@ -7053,7 +7047,7 @@ For you,f-u,Fuw,w,qfuw,70634
 For your convenience,f-u-k-v,Fukv,,qfkuv,70635
 Forebear,f-b-a-r,Fbaro,o,qabfor,70636
 Forename,f-n-a,Fna,,qafn,70637
-Forgivable,f-g-e-/-b,Fgeb,,qbefg,70638
+Forgivable,f-g-e-b,Fgeb,,qbefg,70638
 Formaldehyde,f-m-a-l,Fmal,,qaflm,70639
 Free of charge,fr-e-ch-j,Frecj,,qcefjr,70640
 Free on board,f-o-b,Fobo,o,qbfo,70641
@@ -7074,7 +7068,7 @@ Fugacious,f-e-u-g-a-sh,Fugaz,,qafguz,70656
 Fumigate,f-e-u-m-e-g,Fumeg,,qefgmu,70657
 Further than,f-th2-n,Fhn,,qfhn,70658
 Fuschia,f-e-u-sh-ea,Fuze,,qefuz,70659
-Fusibility,f-e-u-/-b,Fub,,qbfu,70660
+Fusibility,f-e-u-\-b,Fub,,qbfu,70660
 Futurist,f-t-/-s2-t,Ftst,,qfst,70661
 Gambit,g-a-m-b-t,Gambto,o,qabgmot,70662
 Ganglion,g-a-ng-l-e-n,Ganglen,,qaegln,70663
@@ -7172,7 +7166,7 @@ Heptangular,^-h-\-e-p-t-a-ng-u,Heptangu,,qaeghnptu,70760
 Herbivorous,^-h-\-e-r-b-e-v,Herbev,,qbehrv,70761
 Here and there,^-h-\-e-r-th2,Herh,,qehr,70762
 Hereby,^-h-\-e-r-b,Herbo,o,qbehor,70763
-Heritability,^-h-\-e2-t-/-b,Hetb,,qbeht,70764
+Heritability,^-h-\-e2-t-\-b,Hetb,,qbeht,70764
 Heritable,^-h-\-e2-t-b,Hetbo,o,qbehot,70765
 Hesitance,^-h-\-e-s2-tn-s,Hestns,,qehnst,70766
 Hexangular,^-h-\-e-s2-a-ng-u,Hesangu,,qaeghnsu,70767
@@ -7315,7 +7309,7 @@ In touch ,t-ch,Tco,o,qcot,70903
 In view of the fact that,n-v-f-th-a,Nvfha,,qafhnv,70904
 In which,n-ch,Nco,o,qcno,70905
 In your line of business,n-u-l-a-n-b-s,Nulanbs,,qablnsu,70906
-Inability,e-n-/-b,Enbo,o,qbeno,70907
+Inability,e-n-\-b,Enbo,o,qbeno,70907
 Inadvertent,e-n-a-v-tn,Enavtn,,qaentv,70908
 Inapposite,e-n-a-p-o-s,Enapos,,qaenops,70909
 Inappreciative,e-n-a-pr-e-sh-/-v,Enaprezv,,qaenprvz,70910
@@ -7363,7 +7357,7 @@ Insentient,n-s2-e-n-sh-t,Nsenzt,,qenstz,70954
 Inset,n-s2-e-t,Nseto,o,qenost,70955
 Instr-,n-s-/,Nsqq,qq,qnqs,70956
 Insulate,n-s-/-u,Nsuo,o,qnosu,70957
-Insuperability,n-s-/-b,Nsbo,o,qbnos,70958
+Insuperability,n-s-\-b,Nsbo,o,qbnos,70958
 Insuppressilbe,n-s-/-s2-b,Nssb,,qbns,70959
 Insupr-,n-s-/,Nsuqq,uqq,qnqsu,70960
 Insure,n-sh,Nzi,i,qinz,70961
@@ -7393,7 +7387,7 @@ Intrastate,n-a-/-s2-t,Nasto,o,qanost,70985
 Inunction,e-n-u-nk,Enuq,,qenqu,70987
 Inundate,n-n-td,Nndd,,qbdn,70988
 Invar,n-v-a-r,Nvar,,qanrv,70989
-Invisiblility,n-v-e-s-/-b,Nvesbo,o,qbenosv,70990
+Invisiblility,n-v-e-s-\-b,Nvesbo,o,qbenosv,70990
 Invoiced,n-v-s22-t,Nvst,,qnstv,70991
 Invoices,n-v-s2s,Nvss,,qnsv,70992
 Involute,n-v-o-l-u-t,Nvolut,,qlnotuv,70993
@@ -7405,7 +7399,7 @@ Ironware,i-r-n-w-a2,Irnwa,,qainrw,70998
 Irreclaimable,e-r-e-/-m-b,Eremb,,qbemr,70999
 Reclamation,r-e-/-m-sh,Remz,,qemrz,70999
 Irrefrangible,e-r-fr-a-n-j,Erfranj,,qaefjnr,71000
-Irresistability,e-r-ss-/-b,Erssbo,o,qbeors,71001
+Irresistability,e-r-ss-\-b,Erssbo,o,qbeors,71001
 Is not,s2-n,Sna,a,qans,71003
 Is the,s2-th,Shi,i,qhis,71004
 #NAME?,/-st,Stipp,ipp,qipst,71005
@@ -7548,7 +7542,7 @@ Maladministration,m-a-l-a-mn-e-s-sh,Malammesz,,qaelmsz,71144
 Malapert,m-a-l-p-e2-t,Malpet,,qaelmpt,71145
 Malapropos,m-a-l-a-pr-p-o,Malaprpo,,qalmopr,71146
 Maleficent,m-a-l-f-e-s2-nt,Malfesnt,,qaeflmnst,71147
-Malleability,m-a-l-/-b,Malbo,o,qablmo,71149
+Malleability,m-a-l-\-b,Malbo,o,qablmo,71149
 Malpractice,m-a-l-pr-k-t,Malprkt,,qaklmprt,71150
 Malversation,m-a-l-v-e-s-sh,Malvesz,,qaelmsvz,71151
 Man ,mn,Mmy,y,qmny,71152
@@ -7663,7 +7657,7 @@ Mother-in-law,m-u-th-l-o,Muhlo,,qhlmou,71261
 Motherliness,m-u-th-e-n-e-s,Muhenes,,qehmnsu,71262
 Mother-of-pearl,m-u-th-pr-l,Muhprl,,qhlmpru,71263
 Mottle,m-o-t-l,Motlu,u,qlmotu,71264
-Movability,m-u-/-b,Mubo,o,qbmou,71265
+Movability,m-u-\-b,Mubo,o,qbmou,71265
 Mr.,m-r,Mru,u,qmru,71266
 Mr. chairman,m-ch-mn,Mcmm,,qcmz,71267
 Mr. speaker,m-r-s-p,Mrsp,,qmprs,71268
@@ -7833,7 +7827,7 @@ Optician,o-p-t-sh,Optz,,qoptz,71438
 Optimum,o-p-tm-u-m,Optmum,,qmoptu,71439
 Optometry,o-p-tm-e-t-r-e,Optmetre,,qemoprt,71440
 Orchestrate,o-k-e-s2-t-r-a,Okestrao,o,qaekorst,71441
-Order blank,o-d-/-b,Odbo,o,qbdo,71442
+Order blank,o-d-\-b,Odbo,o,qbdo,71442
 Ordinal,o-tn-l,Otnl,,qlnot,71443
 Orientate,o-r-e-nt-a,Orenta,,qaenort,71444
 Ormolu,o-m-l-u,Omlu,,qlmou,71445
@@ -8138,7 +8132,7 @@ Uncorrected,n-k-r-/-t,Nkrt,,qknrt,71768
 Undamaged,n-tm-j-d,Ntmjd,,qdjmnt,71769
 Under separate cover,u-/-s2-k-v,Uskv,,qksuv,71770
 Under the circumstances,u-/-th-/-ss,Uhss,,qhsu,71771
-Unforgivable,n-f-g-e-/-b,Nfgeb,,qbefgn,71772
+Unforgivable,n-f-g-e-b,Nfgeb,,qbefgn,71772
 United kingdom,e-u-k,Uko,o,qkou,71773
 United states,e-u-s,Usk1,k1,q1ksu,71774
 United states of america,e-u-s-a,Usao,o,qaosu,71775

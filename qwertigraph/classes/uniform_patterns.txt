@@ -1,0 +1,82 @@
+; word,form,replacement
+; When adding to this list, sequence is critical. 
+; Long, complex subs must precede short and sweet ones 
+
+; Strip back-marked characters like -~-~-~-n or h. Just toss them 
+.,\W{4}\w$,
+
+; word iden as idn
+ident,a-?tn-?,idn
+; word lin as lin
+lin,l-?a-?n,lin
+
+; e-a to e
+.,e-?a,e
+; e2a to e
+.,e2a,e
+; ea2 to e
+.,ea2,e
+; a-u to w
+.,a-?u,w
+; e-u to u
+.,e-?u,u
+; o-e to y
+.,o-?e,y
+; ya and ye to y
+.,y[ae],y
+;;; gave up on a to i instead of a, because too many conflicts 
+;;; ^[^a]*i[^a]*$,^([^a]*)a([^a]+)$,$1i$2
+
+;Consonant sets
+.,nk,q
+.,th,h
+.,ch,c
+.,sh,z
+x,e-?s,x
+; ing to g
+ing$,-\\-h$,g
+; bility$ to bo
+bility$,-\\-b$,bo
+; abilities$ to bs
+bilities$,-\\-b-s$,bs
+; ings to z 
+ings$,\\-\\-h-s$,z
+; qu* to q
+qu,k,q
+; pond to pnd
+p[aeuio]+nd,jnt,pnd
+; spent to pnt
+p[aeuio]+nt,jnt,pnt
+; gend to jnd
+[jg][aeuio]+nd,jnt,jnd
+; mn to mm
+m[^m]+m,mn,mm
+; date to dt 
+d[aeuio]?t,td,dt
+; dan to dn 
+d[aeuio]+n,tn,dn
+; dum to dm
+d[aeuio]+m,tm,dm
+; ond to nd
+nd,nt,nd
+; tive to tv
+t[aeuio]+v,df,tv
+; tif to tf
+t[aeuio]+f,df,tf
+; div to dv
+d[aeuio]+v,df,dv
+; ed ending to d
+ed$,t$,d
+
+; Prefixes
+; re* to r
+^re,^r-e,r
+; pre, pro, and per to pr
+^pr,pr[eo],pr
+^per,per,pr
+
+; Purge non-characters 
+.,[-\\/\^~0-9],
+
+; < at end of suffix 
+.,^<(.+)$,$1<

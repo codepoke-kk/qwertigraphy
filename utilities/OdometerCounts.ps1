@@ -1,5 +1,8 @@
 ﻿#$odometer1 = 'C:\Users\kevin\AppData\Roaming\Qwertigraph\odometerLifetime_20220115.ssv'
 $odometer = 'C:\Users\s998010\AppData\Roaming\Qwertigraph\odometerLifetime.ssv'
+$qwertigraph_root = "$(Split-Path -Parent -Path $PsScriptRoot)\qwertigraph"
+$qwertigraph_appdata = "$($env:APPDATA)\Qwertigraph"
+$odometer = "$qwertigraph_appdata\odometerLifetime.ssv"
 
 $wordlines = Get-Content -Path $odometer
 #$wordlines += Get-Content -Path $odometer2
