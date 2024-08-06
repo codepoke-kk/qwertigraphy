@@ -23,7 +23,9 @@ lin,l-?a-?n,lin
 ; o-e to y
 .,o-?e,y
 ; ya and ye to y
-.,y[ae],y
+.,y-?[ae],y
+; agree to ya
+agree,y,ya
 ;;; gave up on a to i instead of a, because too many conflicts 
 ;;; ^[^a]*i[^a]*$,^([^a]*)a([^a]+)$,$1i$2
 
@@ -32,15 +34,24 @@ lin,l-?a-?n,lin
 .,th,h
 .,ch,c
 .,sh,z
+x,e-k-s,x
 x,e-?s,x
-; ing to g
-ing$,-\\-h$,g
+; Qua - Q
+qu[aoei],k-\\-n-\^?-?[aoei],q
 ; bility$ to bo
 bility$,-\\-b$,bo
 ; abilities$ to bs
 bilities$,-\\-b-s$,bs
+; internal anc to g
+[iuaoe]nc,-?ng,g
+; internal ing to g
+[iuaoe]ng,-?ng,g
+; ings as ss to z 
+ings$,-\\-s2?$,z
 ; ings to z 
-ings$,\\-\\-h-s$,z
+ings$,-\\-h-s$,z
+; ing to g
+ing$,-\\-h$,g
 ; qu* to q
 qu,k,q
 ; pond to pnd
@@ -67,9 +78,15 @@ t[aeuio]+f,df,tf
 d[aeuio]+v,df,dv
 ; ed ending to d
 ed$,t$,d
+; ode as ot to od
+cod,k-o-t,kod
 
 ; Prefixes
-; re* to r
+; unen to un
+^unen,^u-n,un
+; un to n
+^un,^u-n,n
+; re to r
 ^re,^r-e,r
 ; pre, pro, and per to pr
 ^pr,pr[eo],pr

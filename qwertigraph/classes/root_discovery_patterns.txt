@@ -3,8 +3,12 @@
 ; Long, complex subs must precede short and sweet ones 
 
 ; Prefixes
+; un/in full prefix
+^[ui]n,^u-n-,
 ; un/in prefix
-^[ue]n,^n-,
+^[ui]n,^n-,
+; un/in prefix
+^[ui]n,^u-,
 ; dis prefix
 ^dis,^d-s-,
 ; pro prefix
@@ -17,6 +21,10 @@
 ^re,^r-,
 
 ; Suffixes 
+; ings ending
+ings$,-\\-h-s$,
+; ing ending
+ing$,-\\-h$,
 ; ings ending
 ings$,-h-s$,
 ; ing ending
@@ -35,12 +43,8 @@ ables$,-b-s$,
 able$,-b$,
 ; ility ending
 lity$,-\\-l$,
-; ly ending
-ly$,-e$,
-; al ending
-al$,-l$,
 ; ively ending
-vely$,-l-e$,
+vely$,-v-e$,
 ; ly ending
 ly$,-e$,
 ; ives ending
@@ -52,6 +56,10 @@ ations$,-a-sh-s$,
 ; ation ending
 ation$,-a-sh$,
 ; ions ending
-ions$,-sh-s$,
+ions$,\W*-sh-s$,
 ; ion ending
-ion$,-sh$,
+ion$,\W*-sh$,
+; ly ending
+ly$,-e$,
+; al ending
+al$,-l$,

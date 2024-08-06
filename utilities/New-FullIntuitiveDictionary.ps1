@@ -1,4 +1,16 @@
-﻿$qwertigraph_root = "$(Split-Path -Parent -Path $PsScriptRoot)\qwertigraph"
+﻿<#
+As of 8/5/2024, this is a working creator of 2 new dictionaries. It builds from anniversary core and supplement. 
+It outputs two uniform dictionaries of the same name with uniform inserted. 
+
+The process is complex. It imports a list of uniform regexes by which it creates its qwerds
+It creates usage scores by odometer history, and stores them by the root word when the root form is long enough 
+It excludes a number of words by list 
+Then it loads the dictionaries in specific order to ensure the base qwerds get loaded first. 
+That happens with moderate success. 
+I output 3 GridViews so I can try to preview whether the process worked. 
+#>
+
+$qwertigraph_root = "$(Split-Path -Parent -Path $PsScriptRoot)\qwertigraph"
 $qwertigraph_appdata = "$($env:APPDATA)\Qwertigraph"
 $dictionary_list_file = "$qwertigraph_appdata\dictionary_load.list"
 # I need to not run this against every dictionary, but just against the two core dictionaries 
@@ -58,6 +70,10 @@ function Get-RootDiscoveryPattern {
             $form = $form -replace $root_discovery_pattern.form_pattern, $root_discovery_pattern.replacement_pattern
         }
     }
+    # We are emitting a ton of confusion, because single-character forms all get the same usage score
+    if ($form.length -lt 3) {
+        $form = $word
+    }
     # Write-Host "Returning root discovery pattern of $form"
     return $form 
 }
@@ -66,8 +82,9 @@ function Get-RootDiscoveryPattern {
 # This is a count of every time a word was used in the last year or so
 # It gives a usage number, and the usage number determines between any two words which is saddled with a disambiguator
 Write-Host "Loading odometer"
-$odometer_file = "$qwertigraph_appdata\odometerLifetime.ssv"
-$odometer_lines = Get-Content -Path $odometer_file
+$odometer_files = @("$qwertigraph_appdata\odometerLifetime.ssv","$qwertigraph_appdata\odometerLifetime_work.ssv")
+$odometer_lines = Get-Content -Path $odometer_files[0]
+$odometer_lines += Get-Content -Path $odometer_files[1]
 $odometer = @{}
 foreach ($odometer_line in $odometer_lines) {
     ($savings,$word,$qwerd,$chord,$form,$power,$saves,$matches,$chords,$misses,$other) = $odometer_line -split ';'
@@ -76,7 +93,10 @@ foreach ($odometer_line in $odometer_lines) {
         if (-not $odometer.ContainsKey($form)) {
             $odometer[$form] = 0
         }
-        $odometer[$form] += [convert]::ToInt32($savings) 
+        # Count the largest usage of this root
+        if ([convert]::ToInt32($matches) -gt $odometer[$form]) {
+            $odometer[$form] = [convert]::ToInt32($matches) 
+        }
     } catch {
         # Write-Host ("Failed with $savings for $odometer_line")
     }
@@ -133,6 +153,10 @@ foreach ($dictionary_line in $dictionary_lines) {
         if (-not $dictionary.ContainsKey($dictionary_item.qwerd)){
             $dictionary[$dictionary_item.qwerd] = $dictionary_item
         }
+        # I need to identify high matches in the supplement dictionary 
+        if (($dictionary_item.usage -gt 1000) -and ($dictionary_item.dictionary_name -notmatch 'core')) {
+            Write-Host ("'$($dictionary_item.word)' as '$odometer_form' may be a core word at $($dictionary_item.usage)")
+        }
     } 
 }
 Write-Host ("Dictionary contains $($dictionary.keys.count) entries")
@@ -155,7 +179,10 @@ $cmu_matches = New-Object System.Collections.ArrayList
 $trace_pattern = 'no trace word'
 # Sort descending by usage so more used words are created first
 # Make sure we only disambiguate the lesser used words 
-foreach ($dictionary_entry in ($dictionary.values | Select-Object @('word', 'form', 'qwerd', 'keyer', 'chord', 'usage', 'dictionary_name') | Sort-Object -Descending -Property @{Expression={$_.usage};Descending=$true}, @{Expression={$_.word.length};Descending=$false})) {
+# Sort by core dictionary before supplement dictionary, higher usage before lower, and shorter words before longer 
+foreach ($dictionary_entry in ($dictionary.values `
+        | Select-Object @('word', 'form', 'qwerd', 'keyer', 'chord', 'usage', 'dictionary_name') `
+        | Sort-Object -Descending -Property @{Expression={$_.dictionary_name};Descending=$false}, @{Expression={$_.usage};Descending=$true}, @{Expression={$_.word.length};Descending=$false})) {
     # The qwerd starts as the form, and it will be transformed by the uniform pattern rules into it's ideal form 
     # After the ideal from is reached, it will be reviewed for whether it needs to be disambiguated
     $qwerd = $dictionary_entry.form 
@@ -214,11 +241,14 @@ foreach ($dictionary_entry in ($dictionary.values | Select-Object @('word', 'for
 
     # Apply a disambiguator (keyer) if this qwerd is already in use 
     $newentry_keyer = ''
+    # do not disambiguate if the qwerd is in the block as qwerds list 
     if (($uniform_entries.ContainsKey("$($new_entry.qwerd)")) -or ($block_as_qwerds.ContainsKey($new_entry.qwerd))) {
         :CounterLoop foreach ($counter in $uniform_counters) {
             :KeyerLoop foreach ($keyer in $uniform_keyers) {
                 $newentry_keyer = "$keyer$counter"
-                if ((-not $uniform_entries.ContainsKey("$($new_entry.qwerd)$newentry_keyer")) -and (-not $block_as_qwerds.ContainsKey($new_entry.qwerd))) {Break CounterLoop}
+                if ((-not $uniform_entries.ContainsKey("$($new_entry.qwerd)$newentry_keyer")) -and (-not $block_as_qwerds.ContainsKey("$($new_entry.qwerd)$newentry_keyer"))) {
+                    Break CounterLoop
+                }
             }
         }
     }
@@ -237,23 +267,24 @@ foreach ($dictionary_entry in ($dictionary.values | Select-Object @('word', 'for
     # Do we have a conflict? or a change?
     # Track and output changes for review 
     if ($new_entry.conflict -or $new_entry.change) {
-        $delta = New-Object PsCustomObject -Property @{'word' = $new_entry.word; 'qwerd' = $new_entry.qwerd; 'old_qwerd' = $new_entry.old_qwerd; 'qwerd_length_delta' = $new_entry.qwerd_length_delta; 'conflict' = $new_entry.conflict; 'conflicted' = $new_entry.conflicted; 'change' = $new_entry.change; 'changed' = $new_entry.changed; 'usage' = $new_entry.usage; 'dictionary_name' = $new_entry.dictionary_name; 'comment' = $new_entry.comment}
+        $delta = New-Object PsCustomObject -Property @{'word' = $new_entry.word; 'form' = $new_entry.form; 'qwerd' = $new_entry.qwerd; 'old_qwerd' = $new_entry.old_qwerd; 'qwerd_length_delta' = $new_entry.qwerd_length_delta; 'conflict' = $new_entry.conflict; 'conflicted' = $new_entry.conflicted; 'change' = $new_entry.change; 'changed' = $new_entry.changed; 'usage' = $new_entry.usage; 'dictionary_name' = $new_entry.dictionary_name; 'comment' = $new_entry.comment}
         $deltas.Add($delta) | Out-Null
     }
 }
 
 
 Write-Host "Presenting data"
-$deltas | Sort-Object -Property 'word' | Select-Object @('word', 'qwerd', 'old_qwerd', 'qwerd_length_delta', 'conflict', 'change', 'conflicted', 'changed', 'usage', 'dictionary_name', 'comment') | Out-GridView -title "$($deltas.count) Deltas"
-$cmu_matches | Sort-Object -Property 'word' | Select-Object @('word', 'qwerd', 'old_qwerd', 'conflict', 'change', 'conflicted', 'changed', 'usage', 'dictionary_name', 'comment') | Out-GridView -title "$($cmu_matches.count) CMU Matches"
 $cmu_matches | Sort-Object -Property 'qwerd' | Select-Object @('qwerd') | Export-CSV -Force -NoTypeInformation -Path "$PsScriptRoot\block_words.csv"
 
 # Set the whatif here, and honor it throughout 
-$whatif = $true
-if ($whatif) {
-    Write-Host ("$($uniform_entries.count) entries would be written into $uniform_dictionary_path")
-    $uniform_entries.values | Sort-Object {$keyer_sort.IndexOf($_.keyer)} | Select-Object @('word', 'form', 'qwerd', 'keyer', 'chord', 'usage', 'dictionary_name') | Out-GridView -title "$($uniform_entries.count) to define $(Split-Path -Leaf $uniform_dictionary_path).csv"
-} else {
-    $uniform_entries.values | Sort-Object {$keyer_sort.IndexOf($_.keyer)} | Select-Object @('word', 'form', 'qwerd', 'keyer', 'chord', 'usage') | Export-CSV -Force -NoTypeInformation -Path $uniform_dictionary_path
-    Write-Host ("$($uniform_entries.count) entries written into $uniform_dictionary_path")
+Write-Host ("$($uniform_entries.count) entries would be written into $uniform_dictionary_path")
+$deltas | Sort-Object -Property 'word' | Select-Object @('word', 'form', 'qwerd', 'old_qwerd', 'qwerd_length_delta', 'conflict', 'change', 'conflicted', 'changed', 'usage', 'dictionary_name', 'comment') | Out-GridView -title "$($deltas.count) Deltas"
+$cmu_matches | Sort-Object -Property 'word' | Select-Object @('word', 'qwerd', 'old_qwerd', 'conflict', 'change', 'conflicted', 'changed', 'usage', 'dictionary_name', 'comment') | Out-GridView -title "$($cmu_matches.count) CMU Matches"
+$uniform_entries.values | Sort-Object {$keyer_sort.IndexOf($_.keyer)} | Select-Object @('word', 'form', 'qwerd', 'keyer', 'chord', 'usage', 'dictionary_name') | Out-GridView -title "$($uniform_entries.count) to define $(Split-Path -Leaf $uniform_dictionary_path).csv"
+foreach ($dictionary_line in $dictionary_lines) {
+    $candidate_dictionary_path = "$qwertigraph_root\$dictionary_line" -ireplace 'anniversary', 'anniversary_uniform' -ireplace '.csv', '_candidate.csv'
+    $dictionary_filter = $dictionary_line -replace 'dictionaries\\', ''
+    $candidate_dictionary_entries = $uniform_entries.values | Where-Object {$_.dictionary_name -eq $dictionary_filter}
+    $candidate_dictionary_entries | Sort-Object {$keyer_sort.IndexOf($_.keyer)} | Select-Object @('word', 'form', 'qwerd', 'keyer', 'chord', 'usage') | Export-CSV -Force -NoTypeInformation -Path $candidate_dictionary_path
+    Write-Host ("$($candidate_dictionary_entries.count) entries written into $candidate_dictionary_path")
 }
