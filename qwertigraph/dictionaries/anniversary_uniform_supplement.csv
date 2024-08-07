@@ -2965,7 +2965,7 @@ Transmitions,^-t-\-m-e-t-sh-s,Tmetzs,,qemstz,0
 Transmission,^-t-\-m-e-sh,Tmez,,qemtz,0
 Transmissions,^-t-\-m-e-sh-s,Tmezs,,qemstz,0
 Traffic manager,t-~-m,Tmi,i,qmt,0
-Temperance,tm-p,Tmp,,qmpt,0
+Temperance,tm-p,Tmpo,o,qmpt,0
 Temperament,tm-pr-a-m,Tmpram,,qamprt,0
 Temperaments,tm-pr-a-m-s,Tmprams,,qamprst,0
 Tempered,tm-pr-d,Tmprd,,qdmprt,0
@@ -8028,6 +8028,7 @@ Deletes,d-l-e-t-s,Dlets,,qdelst,636
 Serviceable,^-s2-b,Sbi,i,qbs,638
 Serviced,^-s2-d,Sdo,o,qds,638
 Servicing,^-s2-\-h,Sgo,o,qgs,638
+Excess,e-s-e-s,Xxa,,qx,638
 Placed,pl-a-s-d,Plasdo,o,qadlps,639
 Placing,pl-a-s-\-h,Plasg,,qaglps,639
 Place,pl-a-s,Plaso,o,qalps,639
@@ -8074,7 +8075,6 @@ Updates,u-p-td-s,Updts,,qdpstu,689
 Manly ,mn-e,Mneo1,o1,qemn,691
 Moved,m-u-d,Mudu,u,qdmu,696
 Moving,m-u-\-h,Mugi,i,qgmu,696
-Moves,m-u-s,Mus,,qmsu,696
 Removable,r-e-m-u-b,Rmub,,qbmru,696
 Removed,r-e-m-u-d,Rmud,,qdmru,696
 Removing,r-e-m-u-\-h,Rmug,,qgmru,696
@@ -8102,10 +8102,8 @@ Experiencing,e-s-p-\-h,Xpgo,o,qgpx,734
 Experiential,e-s-p-l,Xpli,i,qlpx,734
 Expects,e-s-p-s,Xps,,qpsx,734
 Experiences,e-s-p-s,Xpso,o,qpsx,734
-Kicking,k-e-k-\-h,Kekg,,qegk,741
 Connecting,k-e-k-\-h,Kekgo,o,qegk,741
 Connect,k-e-k,Keko,o,qek,741
-Kicks,k-e-k-s,Keks,,qeks,741
 Connects,k-e-k-s,Kekso,o,qeks,741
 Connective,k-e-k-v,Kekv,,qekv,741
 Interconnect,n-k-e-k,Nkek,,qekn,741
@@ -8378,8 +8376,6 @@ Renaming,r-e-n-a-\-h,Rnag,,qagnr,2992
 Renames,r-e-n-a-s,Rnas,,qanrs,2992
 Server,s2-e-v-r,Sevr,,qersv,2998
 Servers,s2-e-v-r-s,Sevrs,,qersv,2998
-Backed,b-a-k-t,Bakdo,o,qabdk,3030
-Backing,b-a-k-\-h,Bakgo,o,qabgk,3030
 Backs,b-a-k-s,Baks,,qabks,3030
 Somethings,s2-m-\-h-s,Smz,,qmsz,3114
 Unwanted,n-o-nt-t,Nontd,,qdnot,3135
@@ -8400,7 +8396,6 @@ Disabled,d-s-a-b-d,Dsabd,,qabds,4145
 Disabling,d-s-a-b-\-h,Dsabg,,qabdgs,4145
 Disables,d-s-a-b-s,Dsabs,,qabds,4145
 Righted,r-i-d,Ridi,i,qdir,4401
-Writing,r-i-\-h,Rigo,o,qgir,4401
 Writings,r-i-\-h-s,Riz,,qirz,4401
 Rewrite,r-r-i,Rri,,qir,4401
 Rewriting,r-r-i-\-h,Rrig,,qgir,4401
