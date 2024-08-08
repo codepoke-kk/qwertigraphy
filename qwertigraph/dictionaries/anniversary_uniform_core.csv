@@ -611,7 +611,6 @@ Czechoslovakia,ch-k-s-l-v,Ckslv,,qcklsv,0
 Changeless,ch-l,Cl,,qcl,0
 Chief engineer,ch-n-j-e,Cnje,,qcejn,0
 Which was,ch-o-s,Coso,o,qcos,0
-Which is,ch-s,Cs,,qcs,0
 Chihuahua,ch-u-a,Cua,,qacu,0
 Chairs,ch-ya2,Cy,,qcy,0
 Dampener,d-a-m-p-n-e2,Dampne,,qademnp,0
@@ -5799,7 +5798,6 @@ Overwhelm,o-/-u-e-l-m,Ouelm,,qelmou,8
 Passenger auditor,p-/-o,Poi,i,qop,8
 Presents,pr-s,Prsi,i,qprs,8
 Rained,r-a-nt,Rand,,qadnr,8
-Secretary,s2-e-k-/-r-e,Sekre,,qekrs,8
 Summer,s2-m-e2,Sme,,qems,8
 Supplement,s-pl-e-m,Splem,,qelmps,8
 Spread,s-pr-e-d,Spred,,qdeprs,8
@@ -6410,7 +6408,6 @@ Suggestion,s2-u-j,Sujo,o,qjsu,33
 Suggestive,s2-u-j-v,Sujv,,qjsuv,33
 Church,ch-e2-ch,Cec,,qce,34
 Painful,p-a-n-f,Panf,,qafnp,34
-Perch ,pr-ch,Prc,,qcpr,34
 Purchase,pr-ch,Prco,o,qcpr,34
 Worship,u-u-/-sh,Uuz,,quz,34
 Whichever,ch-e-v,Cev,,qcev,35
@@ -6728,7 +6725,6 @@ Off,o-f,Ofi,i,qfo,73
 Oaf,o-f,Ofo,o,qfo,73
 Awful,o-f,Ofu,u,qfo,73
 Attention,tn-sh,Tnz,,qntz,73
-Defect ,df-k,Dfk,,qdfk,74
 Difficulty,df-k,Dfki,i,qdfk,74
 Difficult,df-k,Dfko,o,qdfk,74
 Descriptive,d-s2-k-r-v,Dskrv,,qdkrsv,74
@@ -6891,7 +6887,6 @@ Final,f-i-n-l,Finl,,qfiln,100
 Fine,f-i-n,Fino,o,qfin,100
 Heaven,^-h-\-e-v-n,Hevn,,qehnv,100
 Heavens,^-h-\-e-v-n-s,Hevns,,qehnsv,100
-Nether,n-e-th,Neh,,qehn,100
 Neither,n-e-th,Neho,o,qehn,100
 Whose,^-h-\-u-s,Husi,i,qhsu,101
 House,^-h-\-u-s,Huso,o,qhsu,101
@@ -7066,7 +7061,6 @@ Concern,k-s2-e2-n,Ksen,,qekns,161
 Wrote,r-o-t,Roto,o,qort,162
 Understood,u-/-s2-t-u,Ustu,,qstu,162
 Clean,k-l-e-n,Klen,,qekln,165
-Cue,k-e-u,Ku,,qku,166
 Curable,k-e-u-b,Kub,,qbku,166
 Curiously,k-e-u-e,Kue,,qeku,166
 Curious,k-e-u,Kui,i,qku,166
@@ -7265,7 +7259,6 @@ To go,t-u-g,Tugo,o,qgtu,269
 Review,r-v-e-u,Rvu,,qruv,272
 View,v-e-u,Vu,,quv,272
 Luck,l-u-k,Luk,,qklu,273
-Pen,p-n,Pn,,qnp,273
 Pound,p-n,Pni,i,qnp,273
 Poundal,p-n-l,Pnl,,qlnp,273
 Upon,p-n,Pno,o,qnp,273
@@ -7333,7 +7326,6 @@ Example,e-s2-a-m-p,Xamp,,qampx,313
 Under,^-u,Uo1,o1,qu,315
 Object,o-b,Ob,,qbo,316
 Objection,o-b-sh,Obz,,qboz,316
-Notices,n-e-ss,Ness,,qens,318
 Necessarily,n-e-ss-e,Nesse,,qens,318
 Necessary,n-e-ss,Nesso,o,qens,318
 Tuesday,t-u-s,Tus,,qstu,321
@@ -7370,7 +7362,6 @@ Gay,g-a,Gao,o,qag,345
 Gave us,g-a-s,Gasi,i,qags,345
 Gas,g-a-s,Gaso,o,qags,345
 Georgia ,g-a,Gau,u,qag,345
-Odd,o-d,Od,,qdo,349
 Orderly,o-d-e,Odeo,o,qdeo,349
 Order,o-d,Odi,i,qdo,349
 Ode,o-d,Odo,o,qdo,349
@@ -7390,7 +7381,6 @@ I always,a-l-s,Als,,qals,361
 Allow,a-l,Alu,u,qal,361
 Allusion,a-l-sh,Alz,,qalz,361
 Disallow,d-s-a-l,Dsal,,qadls,361
-Gun,g-n,Gn,,qgn,365
 Gone,g-n,Gni,i,qgn,365
 Gown,g-n,Gno,o,qgn,365
 Invite,n-v-i,Nvio,o,qinv,365
@@ -7475,7 +7465,6 @@ Business,b-s,Bs,,qbs,464
 Window,u-e-nt-o,Uendo,,qdenou,464
 Figure,f-e-g-r,Fegr,,qefgr,465
 Ago,a-g,Ag,,qag,468
-Against ,a-g,Ago,o,qag,468
 Address,a-d-r,Adr,,qadr,470
 Month,mn-th,Mnh,,qhmn,473
 Monthly,mn-th-e,Mnhe,,qehmn,473
@@ -7487,7 +7476,6 @@ Longer,l-ng-e2,Lge,,qegl,478
 Environment,n-v-i-r-mn,Nvirmn,,qimnrv,480
 Real,r-e,Ru,u,qr,486
 Estate,e-s2-t,Esti,i,qest,488
-East,e-s2-t,Esto,o,qest,488
 Establish ,e-s2-t,Esto1,o1,qest,488
 Yesterday,e-s2-t,Estu,u,qest,488
 Assume,a-s2-m,Asm,,qams,493
@@ -7558,7 +7546,6 @@ Enough,n-u-f,Nuf,,qfnu,598
 Report,r-pr,Rpr,,qpr,600
 Multiple,m-u-/-pl,Mupl,,qlmpu,601
 Around,a-r-nt,Arnd,,qadnr,607
-Czech,ch-e-k,Cek,,qcek,608
 Checked,ch-e-k-t,Cekd,,qcdek,608
 Check,ch-e-k,Ceko,o,qcek,608
 Fail,f-a-l,Fal,,qafl,614
@@ -7589,11 +7576,9 @@ Lined,l-a-n-d,Lind,,qdiln,635
 Reline,r-e-l-a-n,Rlin,,qilnr,635
 Easy,e-s-e,Ese,,qes,638
 Uneasy,u-n-e-s-e,Nese,,qens,638
-Service,^-s2,Su,u,qs,638
 Replace,r-pl-a-s,Rplas,,qalprs,639
 Everyone,e-v-u-n,Evun,,qenuv,640
 Names,n-a2-s,Nas,,qans,640
-Numb,n-u-m,Num,,qmnu,640
 Number,n-u-m,Numo,o,qmnu,640
 Talk,t-o-k,Tok,,qkot,649
 Talked,t-o-k-t,Tokd,,qdkot,649
@@ -7611,7 +7596,6 @@ Partly,p-t-e,Pte,,qept,664
 Partition,p-t-sh,Ptz,,qptz,664
 Deed,d-e-d,Ded,,qde,665
 Ready,r-e-d-e,Rde,,qder,665
-Ford,f-d,Fd,,qdf,679
 Forward,f-d,Fdo,o,qdf,679
 Yeah,ye,Yu,u,qy,688
 Mummy,mn-e,Mme,,qem,691
@@ -7677,7 +7661,6 @@ Isle,i-l,Ili,i,qil,760
 Eyeless,i-l,Ili1,i1,qil,760
 While,i-l,Ilo1,o1,qil,760
 Aisle,i-l,Ilu,u,qil,760
-His,s2,Si,i,qs,762
 Avail,a-v-a-l,Aval,,qalv,763
 Available,a-v-a-l-b,Avalb,,qablv,763
 Happy,^-h-\-a-p-e,Hape,,qaehp,769
@@ -7707,7 +7690,6 @@ Sing,s2-e-ng,Seg,,qegs,874
 Different,df,Df,,qdf,876
 File,f-i-l,Fil,,qfil,890
 Command,k-m-a-n,Kman,,qakmn,896
-Hole,^-h-\-o-l,Hol,,qhlo,898
 Wholly,^-h-\-o-l-e,Holei,i,qehlo,898
 Holy,^-h-\-o-l-e,Holeo,o,qehlo,898
 Haul,^-h-\-o-l,Holi,i,qhlo,898
@@ -7744,7 +7726,6 @@ Days,d-a-s,Das,,qads,959
 Without,e-th-t,Eht,,qeht,961
 Someone,s2-m-u-n,Smun,,qmnsu,970
 Wrong,r-o-ng,Rog,,qgor,975
-Intrust,nt-r-s,Ntrs,,qnrst,994
 Entrust,nt-r-s,Ntrso,o,qnrst,994
 Literate,l-e-t,Leti,i,qelt,1011
 Literal,l-e-t-l,Letl,,qelt,1011
@@ -7863,7 +7844,6 @@ Group,g-r-u-p,Grup,,qgpru,1355
 Nothing,n-\-h,Ng,,qgn,1357
 Error,e-r-r,Err,,qer,1360
 Errors,e-r-r-s,Errs,,qers,1360
-Arable,a-r-b,Arb,,qabr,1374
 Aware,a-r,Ari,i,qar,1374
 Aerial,a-r-l,Arl,,qalr,1374
 Heir,a-r,Aro,o,qar,1374
@@ -7892,8 +7872,6 @@ Lieu,l-u,Luo,o,qlu,1525
 Looks,l-u-s,Lus,,qlsu,1525
 Says,s2s,Ss,,qs,1532
 System,s2s,Sso,o,qs,1532
-Threw,th-r-u,Hru,,qhru,1539
-Through,th-r-u,Hruo,o,qhru,1539
 First,f-e-s,Fes,,qefs,1557
 Infest,n-f-e-s,Nfes,,qefns,1557
 Other,u-th,Uho,o,qhu,1558
@@ -8095,8 +8073,6 @@ Ought,o-t,Oti,i,qot,6634
 Auto,o-t,Oto,o,qot,6634
 Of its,o-t-s,Ots,,qost,6634
 Of it,o-t,Otu,u,qot,6634
-Certify,s2-e-df,Setf,,qefst,7488
-Certificate,s2-e-df,Setfo,o,qefst,7488
 All,o2,Oo,o,qo,7623
 Any,n-e,Ne,,qen,8247
 Need,n-e-d,Ned,,qden,8247

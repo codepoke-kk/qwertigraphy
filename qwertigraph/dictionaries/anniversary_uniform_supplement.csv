@@ -336,6 +336,7 @@ Defecating,df-k-a-t-\-h,Dfkatg,,qadfgkt,0
 Defecates,df-k-a-t-s,Dfkats,,qadfkst,0
 Defecations,df-k-a-sh-s,Dfkazs,,qadfksz,0
 Difficulty,df-k-e,Dfke,,qdefk,0
+Difficulties,df-k-e-s,Dfkes,,qdefks,0
 Deflatedly,dfl-a-d-e,Dflade,,qadefl,0
 Deflations,dfl-a-sh-s,Dflazs,,qadflsz,0
 Diagrammatic,d-i-\-g-\-a,Diga,,qadgi,0
@@ -1652,7 +1653,6 @@ Informants,n-f-m-/-nt-s,Nfmnts,,qfmnst,0
 Informer,n-f-m-r,Nfmr,,qfmnr,0
 Informers,n-f-m-r-s,Nfmrs,,qfmnrs,0
 Informationally,n-f-m-sh-l-e,Nfmzle,,qeflmnz,0
-Newfoundland,n-~-f,Nfo,o,qfn,0
 Infrastructure,n-f-r-a-s-t-r-k-t-r,Nfrastrktr,,qafknrst,0
 Infrastructures,n-f-r-a-s-t-r-k-t-r-s,Nfrastrktrs,,qafknrst,0
 Unforeseeably,n-f-s-e-b-e,Nfsebe,,qbefns,0
@@ -2841,7 +2841,6 @@ Stimulates,s-tm-\-u-s,Stmus,,qmstu,0
 Stimulation,s-tm-\-u-sh,Stmuz,,qmstuz,0
 Stimulations,s-tm-\-u-sh-s,Stmuzs,,qmstuz,0
 Stunned,s2-t-n-\-t,Stnd,,qdnst,0
-Stunning,s2-t-n-\-h,Stng,,qgnst,0
 Stun,s2-t-n,Stno,o,qnst,0
 Stuns,s2-t-n-s,Stnso,o,qnst,0
 Stocking,s2-t-o-\-h,Stog,,qgost,0
@@ -7208,6 +7207,12 @@ Expire,e-s-p-i,Xpi,,qipx,132
 Expiring,e-s-p-i-\-h,Xpig,,qgipx,132
 Expires,e-s-p-i-s,Xpis,,qipsx,132
 Automatically,o-tm-/-a-e,Otmae,,qaemot,133
+Remedy,r-e-mt-e,Rmde,,qdemr,134
+Remedied,r-e-mt-e-d,Rmded,,qdemr,134
+Remedying,r-e-mt-e-\-h,Rmdeg,,qdegmr,134
+Remedies,r-e-mt-e-s,Rmdes,,qdemrs,134
+Remediation,r-e-mt-e-sh,Rmdez,,qdemrz,134
+Remediations,r-e-mt-e-sh-s,Rmdezs,,qdemrsz,134
 Becoming,b-k-\-h,Bkg,,qbgk,135
 Becomes,b-k-s,Bks,,qbks,135
 Doubted,d-a-u-d,Dwd,,qdw,135
@@ -7317,6 +7322,7 @@ Originals,o-r-e-j-s,Orejs,,qejors,156
 Saving,s2-a-v-\-h,Savg,,qagsv,156
 Saves,s2-a-v-s,Savs,,qasv,156
 Savings,s2-a-v-\-h-s,Savz,,qasvz,156
+Standing,s2-tn-\-h,Stng,,qgnst,156
 Touches,t-ch-s,Tcs,,qcst,158
 Capture,k-a-p-t-r,Kaptr,,qakprt,159
 Captured,k-a-p-t-r-d,Kaptrd,,qadkprt,159
@@ -7553,8 +7559,9 @@ Internet,n-/-nt,Nnt,,qnt,232
 Non-,n-o-n,Nono1,o1,qno,232
 Non,n-o-n,Nonu,u,qno,232
 Secured,s2-e-k-r-d,Sekrd,,qdekrs,232
+Securely,s2-e-k-r-e,Sekre,,qekrs,232
 Securing,s2-e-k-r-\-h,Sekrg,,qegkrs,232
-Secures,s2-e-k-r-s,Sekrso,o,qekrs,232
+Secures,s2-e-k-r-s,Sekrs,,qekrs,232
 Encryptable,n-\-k-b,Nkb,,qbkn,234
 Encrypted,n-\-k-d,Nkd,,qdkn,234
 Encrypting,n-\-k-\-h,Nkg,,qgkn,234
@@ -7734,9 +7741,6 @@ Unlock,u-n-l-o-k,Nloko,o,qklno,329
 Unlocks,u-n-l-o-k-s,Nloks,,qklnos,329
 Exporting,e-s-p-o-t-\-h,Xpotg,,qgoptx,329
 Exports,e-s-p-o-t-s,Xpots,,qopstx,329
-Agreed,^-ya-d,Yad,,qady,329
-Agreeing,^-ya-\-h,Yag,,qagy,329
-Agrees,^-ya-s,Yas,,qasy,329
 Agricultures,^-ya-s,Yso,o,qsy,329
 Priority,pr-i-\-r,Prir,,qipr,337
 Priorities,pr-i-\-r-s,Prirs,,qiprs,337
@@ -7933,7 +7937,6 @@ Searches,s2-e-ch-s,Secs,,qces,519
 Balancer,b-a-l-r,Balr,,qablr,522
 Balancers,b-a-l-r-s,Balrs,,qablrs,522
 Insecurities,n-s2-e-k-/-r-s,Nsekrs,,qeknrs,530
-Securities,s2-e-k-/-r-s,Sekrs,,qekrs,530
 Publicly,p-b-e,Pbe,,qbep,536
 Public,p-b,Pbo,o,qbp,536
 Existed,e-s-e-s-d,Xxd,,qdx,541
@@ -8050,7 +8053,6 @@ Undercurrent,u-k-r-e-nt,Ukrend,,qdeknru,654
 Undercurrents,u-k-r-e-nt-s,Ukrends,,qdeknrsu,654
 Played,pl-a-d,Plad,,qadlp,657
 Playing,pl-a-\-h,Plag,,qaglp,657
-Plays,pl-a-s,Plas,,qalps,657
 Valuable,v-l-b,Vlb,,qblv,657
 Valued,v-l-d,Vld,,qdlv,657
 Valuing,v-l-\-h,Vlg,,qglv,657
@@ -8064,8 +8066,6 @@ Repetitive,r-p-t-v,Rptvo,o,qprtv,664
 Repetition,r-p-t-sh,Rptz,,qprtz,664
 Changes,ch-s,Cso,o,qcs,665
 Deal,d-e-l,Deli1,i1,qdel,665
-PasswordVault,p-u-d-v,Pudv,,qdpuv,678
-Password Vault,p-u-d-v,Pudvo,o,qdpuv,678
 Update,u-p-td,Updt,,qdptu,689
 Updated,u-p-td-t,Updtd,,qdptu,689
 Updated,u-p-td-t,Updtdo,o,qdptu,689
@@ -8349,7 +8349,6 @@ Rebounds,r-b-n-s,Rbns,,qbnrs,2122
 Unbound,u-b-n,Ubn,,qbnu,2122
 Unbounded,u-b-n-d,Ubnd,,qbdnu,2122
 Down,d-n,Dno,o,qdn,2176
-Downs,d-n-s,Dnsi,i,qdns,2176
 Ways,u-a-s,Uas,,qasu,2235
 Passworded,p-u-d-d,Pudd,,qdpu,2238
 Passwording,p-u-d-\-h,Pudg,,qdgpu,2238
@@ -8421,10 +8420,8 @@ Recession,r-s-e-sh,Rsez,,qersz,5436
 Seeing,s-e-\-h,Sego,o,qegs,5436
 Sees,s-e-s,Seso,o,qes,5436
 Negotiation,n-o-sh,Nozo,o,qnoz,5452
-Interpret,n-/-p,Np,,qnp,5497
 Interpreted,n-/-p-d,Npdo,o,qdnp,5497
 Interpreting,n-/-p-\-h,Npg,,qgnp,5497
-Interprets,n-/-p-s,Nps,,qnps,5497
 Interpretation,n-/-p-sh,Npz,,qnpz,5497
 Entreat,n-/-t,Nta,a,qnt,6150
 Forming,f-m-\-h,Fmg,,qfgm,6294
