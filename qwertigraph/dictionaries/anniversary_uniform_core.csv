@@ -440,7 +440,6 @@ Before and after,b-f-a-f-t,Bfaft,,qabft,0
 Beneficiary,b-f-e-sh,Bfez,,qbefz,0
 Befall,b-f-o,Bfoo,o,qbfo,0
 Befriend,b-fr,Bfr,,qbfr,0
-Big,b-g,Bg,,qbg,0
 Baggage agent,b-g-a,Bga,,qabg,0
 Baggage check,b-g-ch-e-k,Bgcek,,qbcegk,0
 Begged,b-g-d,Bgd,,qbdg,0
@@ -6687,7 +6686,6 @@ Quiet,k-i-t,Qit,,qiqt,65
 Truth,t-r,Tr,,qrt,65
 To our,t-r,Tro,o,qrt,65
 Seemed,s2-e-mt,Semd,,qdems,66
-He must,e-m-s,Ems,,qems,67
 Himself,e-m-s,Emso,o,qems,67
 Fight,f-i-t,Fito,o,qfit,67
 General,j-e-n,Jen,,qejn,67
@@ -7218,7 +7216,6 @@ Remind,r-e-m-i-n,Rmin,,qimnr,238
 Takes,t-a-k-s,Taks,,qakst,239
 Appropriate,a-pr-a,Apra,,qapr,240
 Requested,r-k-e-s-/-t,Rqesd,,qdeqrs,240
-Calm,k-a-m,Kam,,qakm,241
 Came,k-a-m,Kamo,o,qakm,241
 Scheduled,s2-k-e-d-ld,Skedld,,qdekls,241
 Resources,r-s2-o-s2s2,Rsoss,,qors,242
@@ -7230,7 +7227,6 @@ Profit,pr-f-t,Prft,,qfprt,244
 Profitable,pr-f-t-b,Prftb,,qbfprt,244
 Relieve,r-e-l-e-v,Rlev,,qelrv,244
 Whom,^-h-\-u-m,Hum,,qhmu,247
-Receive,r-s2-e,Rseo,o,qers,247
 Seed,s2-e-d,Sedo,o,qdes,247
 Platform,pl-a-t-f-m,Platfm,,qaflmpt,249
 Buy,b-i,Bi,,qbi,251
@@ -7887,7 +7883,6 @@ Distrain,d-s-/-n,Dsn,,qdns,1415
 Intern,n-/-n,Nn,,qn,1415
 Internal,n-/-n-l,Nnl,,qln,1415
 Away,/-n,No1,o1,qn,1415
-Well,l,Li,i,ql,1426
 Also,o-s2-o,Osoo,o,qos,1428
 Team,t-e-m,Tem,,qemt,1488
 Term,t-e-m,Temo,o,qemt,1488
@@ -7990,7 +7985,6 @@ These,th-e-s,Hes,,qehs,2287
 Into,nt-u,Ntu,,qntu,2327
 Yes,y,Y,,qy,2354
 Create,k-r-ea-t,Kret,,qekrt,2369
-Stir,s2-t-e2,Ste,,qest,2521
 Steer,s2-t-e2,Stei,i,qest,2521
 Still,s2-t-e2,Steo,o,qest,2521
 Which,ch,C,,qc,2632
@@ -8068,7 +8062,6 @@ Incision,n-s-e-sh,Nsez,,qensz,5436
 Insertion,n-s-e-sh,Nsezo,o,qensz,5436
 Proceed,pr-s-e,Prse,,qeprs,5436
 Procession,pr-s-e-sh,Prsez,,qeprsz,5436
-Receipt,r-e-s-e,Rse,,qers,5436
 Receipts,r-e-s-e-s,Rses,,qers,5436
 Seal,s-e-l,Sel,,qels,5436
 See,s-e,Seo,o,qes,5436
@@ -8083,7 +8076,6 @@ Dawn,d-o-n,Dono,o,qdno,5510
 Now,n-a-u,Nw,,qnw,5805
 Thoroughly,th2-e,Hei,i,qeh,6054
 Their,th2,Ho1,o1,qh,6054
-There is,th2-s,Hso,o,qhs,6054
 They,th-e,Heo,o,qeh,6073
 Justly,j-u-s-e,Juse,,qejsu,6206
 Juice,j-u-s,Jusi,i,qjsu,6206

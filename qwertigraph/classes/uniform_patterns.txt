@@ -37,7 +37,9 @@ agree,y,ya
 x,e-k-s,x
 x,e-?s,x
 ; Qua - Q
-qu[aoei],k-\\-n-\^?-?[aoei],q
+qu[aoei],k-\\-[wn]-\^?-?[aoei],q
+; Qua - Q
+qu[aoei],k-w-?[aoei],q
 ; bility$ to bo
 bility$,-\\-b$,bo
 ; abilities$ to bs

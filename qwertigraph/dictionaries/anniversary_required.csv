@@ -8,6 +8,7 @@ Whines,u-i-n-s,Uins,,qinsu,0
 Yes,e-s,Ye,,qes,3
 Justice,j-u-s-s,Juss,,qjsu,7
 Justices,j-u-s-s-s,Jusss,,qjsu,7
+Respects,r-e-s-s,Rsse,e,qrs,7
 Too,t-u,Tu,,qtu,15
 Meant,mn-t,Mnt,,qmnt,25
 Course,k-r-s,Krs,,qkrs,26
@@ -16,8 +17,11 @@ Coarsely,k-r-s-e,Krse,,qekrs,26
 Coursing,k-r-s-\-h,Krsg,,qgkrs,26
 Coarse,k-r-s,Krso,o,qkrs,26
 Courses,k-r-s-s,Krss,,qkrs,26
+Respect,r-e-s,Rse,,qrs,30
 Narrow,n-a-r-o,Naro,,qanor,41
 Backed,b-a-k-t,Bakd,,qabdk,48
+Himself,e-m-s,Ems,,qems,67
+Light,l-i,Li,,qil,113
 Become,b-k,Bk,,qbk,135
 Booked,b-k-d,Bkdo,o,qbdko,135
 Booking,b-k-\-h,Bkgo,o,qbgko,135
@@ -28,7 +32,9 @@ Anywhere,n-a-r,Nar,,qanr,148
 Care,k-a,Ka,,qak,176
 Fact,f-a-k,Fak,,qafk,205
 Words,u-d-s,Uds,,qdsu,230
+Came,k-a-m,Kam,,qakm,241
 Together,t-u-g,Tug,,qgtu,269
+None,n-u-n,Nun,,qnu,283
 Turn,t-e-n,Tenu,u,qent,293
 Center,^-s2-n,Sn,,qns,301
 Quick,k-\-w-^-e-k,Qek,,qekq,312
@@ -36,6 +42,7 @@ Quickly,k-\-w-^-e-k-e,Qeke,,qekq,312
 Quicker,k-\-w-^-e-k-r,Qekr,,qekqr,312
 Under,^-u,Uu,,qu,315
 Myself,m-a-s2,Mas,,qams,318
+Chance,ch-a-n-s,Cans,,qacns,366
 Shared,sh-a2-d,Zadu,u,qadz,380
 Sharing,sh-a2-\-h,Zagu,u,qagz,380
 Mostly,m-o-e,Myo,o,qmoy,494
@@ -73,6 +80,9 @@ Also,o-s2-o,Oso,,qos,1428
 Before,b-f,Bf,,qbf,1458
 Behalf,b-f,Bfo,o,qbf,1458
 Looking,l-u-\-h,Lug,,qglu,1525
+Other,u-th,Uh,,qhu,1558
+Being,b-\-h,Bg,,qbg,1589
+Those,th-s,Hso,o,qhs,1699
 Code,k-o-t,Kod,,qdko,1735
 Every,e-v-e,Eve,,qev,1758
 Whether,u-e-th,Ueh,,qehu,1836
@@ -83,6 +93,7 @@ Else,l-s,Ls,,qls,2039
 Access,a-k-ss,Akss,,qaks,2103
 Change,ch,Cu,u,qcu,2189
 Had,a-d,Ad,,qad,2277
+Still,s2-t-e2,Ste,,qest,2521
 Doing,d-u-\-h,Dug,,qdgu,2757
 Sure,sh-u,Zu,,quz,2886
 Go,g,G,,qg,2937
@@ -99,6 +110,7 @@ Goods,g-s,Gds,,qdgs,3350
 Then,th-n,Hn,,qhn,3813
 Than,th-n,Hno,o,qhno,3813
 When,e-n,En,,qen,3852
+Did,td,Dd,,qd,3928
 Right,r-i,Ri,,qir,4401
 Righted,r-i-d,Rid,,qdir,4401
 Righting,r-i-\-h,Rig,,qgir,4401
@@ -108,6 +120,7 @@ Writes,r-i-s,Riso,o,qir,4401
 Them,th-m,Hm,,qhm,4409
 One,u-n,Un,,qnu,4518
 Like,l-a,La,,qal,4661
+Receipt,r-e-s-e,Rseo,o,qers,5436
 See,s-e,Se,,qes,5436
 Session,s-e-sh,Sez,,qesz,5436
 Cession,s-e-sh,Sezo,o,qesz,5436
@@ -118,3 +131,4 @@ Just,j-u-s,Jus,,qjsu,6206
 Was,o-s,Os,,qos,8482
 Thank you,th-u,Huo,o,qhu,11829
 But,b,Bu,u,qbu,13805
+Undid,ndt,Ndd,,,92299
