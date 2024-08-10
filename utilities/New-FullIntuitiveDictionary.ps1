@@ -12,19 +12,23 @@ I output 3 GridViews so I can try to preview whether the process worked.
 
 $qwertigraph_root = "$(Split-Path -Parent -Path $PsScriptRoot)\qwertigraph"
 $qwertigraph_appdata = "$($env:APPDATA)\Qwertigraph"
+
+# Original dictionaries with source data 
 $dictionary_list_file = "$qwertigraph_appdata\dictionary_load.list"
 # I need to not run this against every dictionary, but just against the two core dictionaries 
-# $dictionary_lines = @(Get-Content -Path $dictionary_list_file)
-$dictionary_lines = @('dictionaries\anniversary_supplement.csv','dictionaries\anniversary_core.csv')
+$dictionary_lines = @(Get-Content -Path $dictionary_list_file | Select-String 'uniform|required') 
+
+# Transformation patterns 
 $root_discovery_patterns_file = "$qwertigraph_root\classes\root_discovery_patterns.txt"
 $root_discovery_patterns_lines = @(Get-Content -Path $root_discovery_patterns_file)
 $uniform_patterns_file = "$qwertigraph_root\classes\uniform_patterns.txt"
 $uniform_patterns_lines = @(Get-Content -Path $uniform_patterns_file)
-$uniform_dictionary_path = "$qwertigraph_root\dictionaries\anniversary_uniform.csv"
+$uniform_core_dictionary_path = "$qwertigraph_root\dictionaries\anniversary_uniform_core.csv"
+
+# Exclusion lists 
 $cmu_list = "$(Split-Path -Parent -Path $PsScriptRoot)\cmuDict\cmudict-0.7b.txt"
 $exclude_list = "$(Split-Path -Parent -Path $PsScriptRoot)\cmuDict\exclude_words.txt"
 $block_as_qwerds_file = "$qwertigraph_root\..\Utilities\block_as_qwerds.csv"
-Write-Host "Uniform $uniform_dictionary_path"
 
 # These are the canonical patterns that will build the uniform qwerds from looking at the words and forms of each entry
 Write-Host "Loading uniform qwerd patterns"
@@ -128,6 +132,9 @@ Get-Content -Path $cmu_list `
 # I manually inspect a lot of this data after the fact and before a save to make sure I'm building things that make sense
 Write-Host "Loading dictionaries"
 $dictionary = @{}
+# Used only here to make sure we only add each word once. 
+# We have the same word under multiple qwerds which causes the keyed version to supplant the plain version sometimes, it seems 
+$dictionary_words = @{}
 foreach ($dictionary_line in $dictionary_lines) {
     $dictionary_path = "$qwertigraph_root\$dictionary_line" -ireplace '^.*AppData', "$($env:APPDATA)\qwertigraph"
     Write-Host ("$dictionary_path")
@@ -146,16 +153,22 @@ foreach ($dictionary_line in $dictionary_lines) {
             'old_qwerd' = $dictionary_row.qwerd
             'qwerd_length_delta' = 0
             'banner' = ''
+            'required' = ($dictionary_path -match 'required')
             'dictionary_path' = $dictionary_path
             'dictionary_name' = Split-Path -Leaf $dictionary_path
         }
         # Write-Host ("row $($dictionary_item)")
-        if (-not $dictionary.ContainsKey($dictionary_item.qwerd)){
-            $dictionary[$dictionary_item.qwerd] = $dictionary_item
+        if (-not $dictionary_words.ContainsKey($dictionary_item.word)){
+            $dictionary_words[$dictionary_item.word] = $dictionary_item
+            if (-not $dictionary.ContainsKey($dictionary_item.qwerd)){
+                $dictionary[$dictionary_item.qwerd] = $dictionary_item
+            }
+        } else {
+            # Write-Host "Not adding $($dictionary_item.qwerd) cause we already have $($dictionary_words[$dictionary_item.word].qwerd)"
         }
         # I need to identify high matches in the supplement dictionary 
         if (($dictionary_item.usage -gt 1000) -and ($dictionary_item.dictionary_name -notmatch 'core')) {
-            Write-Host ("'$($dictionary_item.word)' as '$odometer_form' may be a core word at $($dictionary_item.usage)")
+            # Write-Host ("'$($dictionary_item.word)' as '$odometer_form' may be a core word at $($dictionary_item.usage)")
         }
     } 
 }
@@ -176,26 +189,31 @@ $uniform_entries = @{}
 $deltas = New-Object System.Collections.ArrayList
 $cmu_matches = New-Object System.Collections.ArrayList
 # This is a debugging tool - If an entry's word matches this pattern, I will give debugging output on that word 
-$trace_pattern = 'no trace word'
+$trace_pattern = 'tracingnothing'
 # Sort descending by usage so more used words are created first
 # Make sure we only disambiguate the lesser used words 
-# Sort by core dictionary before supplement dictionary, higher usage before lower, and shorter words before longer 
+# Sort by required dictionaries before uniform, core dictionary before supplement dictionary, higher usage before lower, and shorter qwerds before longer 
 foreach ($dictionary_entry in ($dictionary.values `
-        | Select-Object @('word', 'form', 'qwerd', 'keyer', 'chord', 'usage', 'dictionary_name') `
-        | Sort-Object -Descending -Property @{Expression={$_.dictionary_name};Descending=$false}, @{Expression={$_.usage};Descending=$true}, @{Expression={$_.word.length};Descending=$false})) {
+        | Select-Object @('word', 'form', 'qwerd', 'keyer', 'chord', 'usage', 'dictionary_name', 'required') `
+        | Sort-Object -Descending -Property `
+            @{Expression={$_.required};Descending=$true}, `
+            @{Expression={$_.dictionary_name};Descending=$false}, `
+            @{Expression={$_.usage};Descending=$true}, `
+            @{Expression={$_.qwerd.length};Descending=$false})) {
     # The qwerd starts as the form, and it will be transformed by the uniform pattern rules into it's ideal form 
     # After the ideal from is reached, it will be reviewed for whether it needs to be disambiguated
-    $qwerd = $dictionary_entry.form 
+    
+    $candidate_qwerd = $dictionary_entry.form 
     # The comment is not retained, but it's visible in the output from this script so I can review the rules applied to the form in creating the qwerd
     $comment = ''
     foreach ($uniform_pattern in $uniform_patterns) {
         # Debug output if trace_pattern matches 
-        if ($dictionary_entry.word -match $trace_pattern) {Write-Host ("Evaluating $qwerd against $uniform_pattern")}
-        # A uniform rule applies if the word and form both matches their patterns 
-        if (($qwerd -match $uniform_pattern.form_pattern) -and ($dictionary_entry.word -match $uniform_pattern.word_pattern)) {
+        if ($dictionary_entry.word -match $trace_pattern) {Write-Host ("Evaluating $candidate_qwerd against $uniform_pattern")}
+        # A uniform rule applies if the word and form both match their patterns 
+        if (($candidate_qwerd -match $uniform_pattern.form_pattern) -and ($dictionary_entry.word -match $uniform_pattern.word_pattern)) {
             # Debug output if trace_pattern matches 
             if ($dictionary_entry.word -match $trace_pattern) {Write-Host ("Matched because $($uniform_pattern.comment)")}
-            $qwerd = $qwerd -replace $uniform_pattern.form_pattern, $uniform_pattern.replacement_pattern 
+            $candidate_qwerd = $candidate_qwerd -replace $uniform_pattern.form_pattern, $uniform_pattern.replacement_pattern 
             $comment = "$comment$($uniform_pattern.comment)"
         } else {
             if ($dictionary_entry.word -match $trace_pattern) {
@@ -204,6 +222,27 @@ foreach ($dictionary_entry in ($dictionary.values `
                 # Write-Host ("Word match of $($dictionary_entry.word) against $($uniform_pattern.word_pattern) is $($dictionary_entry.word -match $uniform_pattern.word_pattern)")
             }
         }
+    }
+
+    $drain_requireds = $false
+    if ($dictionary_entry.required) {
+        # We have to keep the original qwerd, no matter the candidate 
+        $qwerd = $dictionary_entry.qwerd
+        if ($qwerd -eq $candidate_qwerd) {
+            # Since the original is the candidate, we no longer need to require this definition 
+            if ($drain_requireds) {
+                # Write-Host ("We will un-require $qwerd for $($dictionary_entry.word)")
+                $dictionary_entry.dictionary_name = $(Split-Path -Leaf $uniform_core_dictionary_path)
+                # We MUST leave this entry required, or it will be disambiguated
+                $dictionary_entry.required = $true
+            } else {
+                # Write-Host ("We could un-require $qwerd for $($dictionary_entry.word)")
+            }
+        } else {
+            # Write-Host ("Must maintain $qwerd as required for $($dictionary_entry.word)")
+        }
+    } else {
+        $qwerd = $candidate_qwerd
     }
     # All qwerds are stored in ProperCase and transformed to lower and upper on the fly in dictionary load 
     $qwerd = (Get-Culture).TextInfo.ToTitleCase($qwerd)
@@ -220,48 +259,61 @@ foreach ($dictionary_entry in ($dictionary.values `
         'keyer' = ''
         'chord' = "q$((($qwerd.toLower() -split '') | Sort-Object -Unique) -join '')"
         'usage' = $dictionary_entry.usage
-        'dictionary_path' = $uniform_dictionary_path
+        'dictionary_path' = $uniform_core_dictionary_path
         'dictionary_name' = $dictionary_entry.dictionary_name 
         'conflicted' = 0
+        'required' = $dictionary_entry.required
         'conflict' = if (($dictionary.ContainsKey($qwerd) -and ($dictionary[$qwerd].word -ne $dictionary_entry.word))) {
             $dictionary[$qwerd].word
         } else {
             ''
         }
         'changed' = 0
-        'change' = if ($dictionary_entry.qwerd.toLower() -ne $qwerd) {
-            $dictionary_entry.qwerd.toLower()
-        } else {
-            ''
-        }
+        'change' = ''
         'comment' = $comment 
     }
-    $new_entry.conflicted = ($new_entry.conflict.length -gt 0)
-    $new_entry.changed = ($new_entry.change.length -gt 0)
 
     # Apply a disambiguator (keyer) if this qwerd is already in use 
-    $newentry_keyer = ''
-    # do not disambiguate if the qwerd is in the block as qwerds list 
-    if (($uniform_entries.ContainsKey("$($new_entry.qwerd)")) -or ($block_as_qwerds.ContainsKey($new_entry.qwerd))) {
-        :CounterLoop foreach ($counter in $uniform_counters) {
-            :KeyerLoop foreach ($keyer in $uniform_keyers) {
-                $newentry_keyer = "$keyer$counter"
-                if ((-not $uniform_entries.ContainsKey("$($new_entry.qwerd)$newentry_keyer")) -and (-not $block_as_qwerds.ContainsKey("$($new_entry.qwerd)$newentry_keyer"))) {
-                    Break CounterLoop
+    # Disambiguate if the qwerd is not required as is 
+    if (-not $new_entry.required) {
+        $newentry_keyer = ''
+        # Disambiguate if the qwerd already exists or is in the block as qwerds list
+        if (($uniform_entries.ContainsKey("$($new_entry.qwerd)")) -or ($block_as_qwerds.ContainsKey($new_entry.qwerd))) {
+            :CounterLoop foreach ($counter in $uniform_counters) {
+                :KeyerLoop foreach ($keyer in $uniform_keyers) {
+                    $newentry_keyer = "$keyer$counter"
+                    if ((-not $uniform_entries.ContainsKey("$($new_entry.qwerd)$newentry_keyer")) -and (-not $block_as_qwerds.ContainsKey("$($new_entry.qwerd)$newentry_keyer"))) {
+                        Break CounterLoop
+                    }
                 }
             }
         }
+        $qwerd = "$($new_entry.qwerd)$newentry_keyer"
+    } else {
+        $newentry_keyer = $dictionary_entry.keyer
     }
     $new_entry.keyer = $newentry_keyer
-    $qwerd = "$($new_entry.qwerd)$newentry_keyer"
     $new_entry.qwerd = $qwerd
+    $new_entry.chord = "q$((($qwerd.toLower() -split '') | Sort-Object -Unique) -join '')"
     $new_entry.qwerd_length_delta = $qwerd.length - $new_entry.old_qwerd.length 
+    
+    $new_entry.change = if ($new_entry.old_qwerd -ne $new_entry.qwerd) {
+#        Write-Host ("Tracking qwerd changed with $($dictionary_entry.qwerd.toLower()) and $($qwerd.toLower())")
+        $new_entry.old_qwerd
+    } else {
+        ''
+    }
+    $new_entry.conflicted = ($new_entry.conflict.length -gt 0)
+    $new_entry.changed = ($new_entry.change.length -gt 0)
 
     # check to see whether the qwerd is a word 
     # Tracking to see how often we use real words as qwerds for later review and addition to block as qwerds
     # I allow some real words to be hijacked by my process, but some are just too highly used 
     if($cmu_words.ContainsKey($qwerd)) {$cmu_matches.Add($new_entry) | Out-Null}
 
+    if ($new_entry.word -match $trace_pattern) {
+        Write-Host $new_entry
+    }
     # Finally add this new entry to the new dictionary 
     $uniform_entries[$qwerd] = $new_entry
     # Do we have a conflict? or a change?
@@ -276,13 +328,17 @@ foreach ($dictionary_entry in ($dictionary.values `
 Write-Host "Presenting data"
 $cmu_matches | Sort-Object -Property 'qwerd' | Select-Object @('qwerd') | Export-CSV -Force -NoTypeInformation -Path "$PsScriptRoot\block_words.csv"
 
-# Set the whatif here, and honor it throughout 
-Write-Host ("$($uniform_entries.count) entries would be written into $uniform_dictionary_path")
-$deltas | Sort-Object -Property 'word' | Select-Object @('word', 'form', 'qwerd', 'old_qwerd', 'qwerd_length_delta', 'conflict', 'change', 'conflicted', 'changed', 'usage', 'dictionary_name', 'comment') | Out-GridView -title "$($deltas.count) Deltas"
-$cmu_matches | Sort-Object -Property 'word' | Select-Object @('word', 'qwerd', 'old_qwerd', 'conflict', 'change', 'conflicted', 'changed', 'usage', 'dictionary_name', 'comment') | Out-GridView -title "$($cmu_matches.count) CMU Matches"
-$uniform_entries.values | Sort-Object {$keyer_sort.IndexOf($_.keyer)} | Select-Object @('word', 'form', 'qwerd', 'keyer', 'chord', 'usage', 'dictionary_name') | Out-GridView -title "$($uniform_entries.count) to define $(Split-Path -Leaf $uniform_dictionary_path).csv"
+Write-Host ("$($uniform_entries.count) entries will be written")
+$pop_up_grids = $false
+if ($pop_up_grids) {
+    $deltas | Sort-Object -Property 'word' | Select-Object @('word', 'form', 'qwerd', 'old_qwerd', 'qwerd_length_delta', 'conflict', 'change', 'conflicted', 'changed', 'usage', 'dictionary_name', 'comment') | Out-GridView -title "$($deltas.count) Deltas"
+    $cmu_matches | Sort-Object -Property 'word' | Select-Object @('word', 'qwerd', 'old_qwerd', 'conflict', 'change', 'conflicted', 'changed', 'usage', 'dictionary_name', 'comment') | Out-GridView -title "$($cmu_matches.count) CMU Matches"
+    $uniform_entries.values | Sort-Object {$keyer_sort.IndexOf($_.keyer)} | Select-Object @('word', 'form', 'qwerd', 'keyer', 'chord', 'usage', 'dictionary_name') | Out-GridView -title "$($uniform_entries.count) to define $(Split-Path -Leaf $uniform_core_dictionary_path)"
+}
 foreach ($dictionary_line in $dictionary_lines) {
-    $candidate_dictionary_path = "$qwertigraph_root\$dictionary_line" -ireplace 'anniversary', 'anniversary_uniform' -ireplace '.csv', '_candidate.csv'
+    Write-Host ("Creating $dictionary_line")
+    # $candidate_dictionary_path = "$qwertigraph_root\$dictionary_line" -ireplace 'anniversary', 'anniversary_uniform' -ireplace '.csv', '_candidate.csv'
+    $candidate_dictionary_path = "$qwertigraph_root\$dictionary_line" -ireplace '.csv', '_candidate.csv'
     $dictionary_filter = $dictionary_line -replace 'dictionaries\\', ''
     $candidate_dictionary_entries = $uniform_entries.values | Where-Object {$_.dictionary_name -eq $dictionary_filter}
     $candidate_dictionary_entries | Sort-Object {$keyer_sort.IndexOf($_.keyer)} | Select-Object @('word', 'form', 'qwerd', 'keyer', 'chord', 'usage') | Export-CSV -Force -NoTypeInformation -Path $candidate_dictionary_path

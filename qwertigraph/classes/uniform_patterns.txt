@@ -33,13 +33,18 @@ agree,y,ya
 .,nk,q
 .,th,h
 .,ch,c
+; ations to zs
+ations,-a-sh-s,zs
+; ation to z
+ation,-a-sh,z
 .,sh,z
+x,e2?-?s2?,x
 x,e-k-s,x
 x,e-?s,x
 ; Qua - Q
-qu[aoei],k-\\-[wn]-\^?-?[aoei],q
-; Qua - Q
-qu[aoei],k-w-?[aoei],q
+qu[aoei],k-\\-[wn],q
+; Qwua - Q
+qu[aoei],k-w,q
 ; bility$ to bo
 bility$,-\\-b$,bo
 ; abilities$ to bs
@@ -48,6 +53,10 @@ bilities$,-\\-b-s$,bs
 [iuaoe]nc,-?ng,g
 ; internal ing to g
 [iuaoe]ng,-?ng,g
+; ingful to gf 
+ingful,-\\-h-\\-f,gf
+; ingless to gl 
+ingless,-\\-h-\\-l,gl
 ; ings as ss to z 
 ings$,-\\-s2?$,z
 ; ings to z 
@@ -72,6 +81,8 @@ d[aeuio]+n,tn,dn
 d[aeuio]+m,tm,dm
 ; ond to nd
 nd,nt,nd
+; med to md
+m[aeuio]d,-mt,md
 ; tive to tv
 t[aeuio]+v,df,tv
 ; tif to tf
