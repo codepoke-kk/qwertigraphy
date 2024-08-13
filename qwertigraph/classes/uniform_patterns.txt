@@ -73,6 +73,8 @@ p[aeuio]+nt,jnt,pnt
 [jg][aeuio]+nd,jnt,jnd
 ; mn to mm
 m[^m]+m,mn,mm
+; added to dd 
+d[aeuio]?d,td,dd
 ; date to dt 
 d[aeuio]?t,td,dt
 ; dan to dn 

@@ -299,6 +299,7 @@ Cheaters,c-e-t-r-s,Cetrs,,qcerst,0
 -Hood,<-d,D<,,q<d,0
 De-,d->,D>,,q>d,0
 Doubleday,d-b-d-a,Dbda,,qabd,0
+Dedications,td-e-k-a-sh-s,Ddekzs,,qdeksz,0
 Degraded,d-e-g-r-a-d,Degrad,,qadegr,0
 Degrading,d-e-g-r-a-\-h,Degrag,,qadegr,0
 Degrades,d-e-g-r-a-s,Degras,,qadegrs,0
@@ -382,8 +383,8 @@ Denouncing,dn-n-s-\-h,Dnnsg,,qdgns,0
 Denounces,dn-n-s-s,Dnnss,,qdns,0
 Downpour,dn-p-o-r,Dnpor,,qdnopr,0
 Downstairs,d-n-s2-t-ya,Dnsty,,qdnsty,0
-Deterrent,d-/-nt,Dnti,i,qdint,0
-Wouldn't,d-n-t,Dntu,u,qdntu,0
+Wouldn't,d-n-t,Dnti,i,qdint,0
+Deterrent,d-/-nt,Dntu,u,qdntu,0
 Documentary,d-o-k-m-r-e,Dokmre,,qdekmor,0
 Doctrinally,d-o-k-t-/-l-e,Doktle,,qdeklot,0
 Dominate,d-o-mn-a-t,Domnat,,qadmnot,0
@@ -2849,7 +2850,6 @@ Tainted,t-a-nt-d,Tantd,,qadnt,0
 Tainting,t-a-nt-\-h,Tantg,,qagnt,0
 Taints,t-a-nt-s,Tants,,qanst,0
 Targeted,t-a-r-g-e-td,Targetd,,qadegrt,0
-Dedications,td-e-k-a-sh-s,Tdekzs,,qdekstz,0
 Deadline,td-l-a-n,Tdlin,,qdilnt,0
 Deadlined,td-l-a-n-d,Tdlind,,qdilnt,0
 Deadlining,td-l-a-n-\-h,Tdling,,qdgilnt,0
@@ -3306,6 +3306,7 @@ Dalliances,d-a-l-e-a-n-s-s,Dalenss,,qadelns,1
 Debated,d-b-a-t-d,Dbatd,,qabdt,1
 Debating,d-b-a-t-\-h,Dbatg,,qabdgt,1
 Debates,d-b-a-t-s,Dbats,,qabdst,1
+Dedication,td-e-k-a-sh,Ddekz,,qdekz,1
 Deepen,d-e-p-n,Depn,,qdenp,1
 Deepened,d-e-p-n-d,Depnd,,qdenp,1
 Deepening,d-e-p-n-\-h,Depng,,qdegnp,1
@@ -3625,9 +3626,9 @@ Nationalist,n-a-sh-l-e-s,Nzles,,qelnsz,1
 Nationalists,n-a-sh-l-e-s-s,Nzless,,qelnsz,1
 Nationalistically,n-a-sh-l-/-s2-t-e,Nzlste,,qelnstz,1
 Objectives,o-b-/-v-s,Obvs,,qbosv,1
+Oddity,o-td-e,Odde,,qdeo,1
+Oddities,o-td-e-s,Oddes,,qdeos,1
 Ordinary,o-tn,Odn,,qdno,1
-Oddity,o-td-e,Odteo,o,qdeot,1
-Oddities,o-td-e-s,Odteso,o,qdeost,1
 Offerings,o-f-\-s,Ofz,,qfoz,1
 Organizationally,o-g-l-e,Ogleo,o,qeglo,1
 Organs,o-g-n-s,Ogns,,qgnos,1
@@ -3875,7 +3876,6 @@ Stationing,s2-t-sh-\-h,Stzg,,qgstz,1
 Stations,s2-t-sh-s,Stzs,,qstz,1
 Sufferer,s2-u-f-\-r,Sufr,,qfrsu,1
 Subtle,s-u-t-l,Sutl,,qlstu,1
-Dedication,td-e-k-a-sh,Tdekz,,qdektz,1
 Technicality,t-e-k-n-/-l,Teknl,,qeklnt,1
 Technicalities,t-e-k-n-/-l-s,Teknls,,qeklnst,1
 Terminal,t-e-mn-l,Temnl,,qelmnt,1
@@ -3885,10 +3885,6 @@ Typical,t-e-p-\-k,Tepk,,qekpt,1
 Typically,t-e-p-\-k-e,Tepke,,qekpt,1
 Transformer,^-t-\-f-m-r,Tfmr,,qfmrt,1
 Transformers,^-t-\-f-m-r-s,Tfmrs,,qfmrst,1
-Tithe,t-i-th,Tih,,qhit,1
-Tithed,t-i-th-d,Tihd,,qdhit,1
-Tithing,t-i-th-\-h,Tihg,,qghit,1
-Tithes,t-i-th-s,Tihs,,qhist,1
 Translations,t-/-l-a-sh-s,Tlzs,,qlstz,1
 Transcendent,t-\-nt-nt,Tndnd,,qdnt,1
 Transcendental,t-\-nt-nt-l,Tndndl,,qdlnt,1
@@ -4105,8 +4101,8 @@ Measurably,m-e-sh-u-b-e,Mezube,,qbemuz,2
 Emphases,m-f-a-ss,Mfass,,qafms,2
 Emphasized,m-f-a-ss-d,Mfassd,,qadfms,2
 Emphasizing,m-f-a-ss-\-h,Mfassg,,qafgms,2
-Emphasize,m-f-a-ss,Mfassi,i,qafims,2
-Emphasis,m-f-a-ss,Mfasso,o,qafmos,2
+Emphasis,m-f-a-ss,Mfassi,i,qafims,2
+Emphasize,m-f-a-ss,Mfasso,o,qafmos,2
 Emphasizes,m-f-a-ss-s,Mfasss,,qafms,2
 Monotheist,mm-o-th-e-s2,Mmohes,,qehmos,2
 Monotheists,mm-o-th-e-s2-s,Mmohess,,qehmos,2
@@ -4494,6 +4490,10 @@ Spoiler,s-p-o-e-l-r,Spylr,,qlprsy,3
 Spoilers,s-p-o-e-l-r-s,Spylrs,,qlprsy,3
 Sufferings,s2-u-f-\-s2,Sufz,,qfsuz,3
 Supervisors,s-/-v-i-s-r-s,Svisrs,,qirsv,3
+Tithe,t-i-th,Tih,,qhit,3
+Tithed,t-i-th-d,Tihd,,qdhit,3
+Tithing,t-i-th-\-h,Tihg,,qghit,3
+Tithes,t-i-th-s,Tihs,,qhist,3
 Transcended,t-\-nt-d,Tndd,,qdnt,3
 Transcending,t-\-nt-\-h,Tndg,,qdgnt,3
 Transcend,t-\-nt,Tndo,o,qdnot,3
@@ -4765,7 +4765,7 @@ Goals,g-o-l-s,Gols,,qglos,5
 Hallucinations,^-h-\-a-l-u-s-n-a-sh-s,Halusnzs,,qahlnsuz,5
 Theological,h-e-\-o-k,Heok,,qehko,5
 Theologically,h-e-\-o-k-e,Heoke,,qehko,5
-Heated,^-h-\-e-t-d,Hetdi,i,qdehit,5
+Heated,^-h-\-e-t-d,Hetd,,qdeht,5
 Heating,^-h-\-e-t-\-h,Hetg,,qeght,5
 Hitting,^-h-\-e-t-\-h,Hetgo,o,qeghot,5
 Hits,^-h-\-e-t-s,Hets,,qehst,5
@@ -4986,10 +4986,6 @@ Sanctifies,s2-a-ng-df-s,Sagtfs,,qafgst,6
 Circled,s2-e-k-l-d,Sekld,,qdekls,6
 Circling,s2-e-k-l-\-h,Seklg,,qegkls,6
 Circles,s2-e-k-l-s,Sekls,,qekls,6
-Cycle,s-i-k-l,Sikl,,qikls,6
-Cycled,s-i-k-l-d,Sikld,,qdikls,6
-Cycling,s-i-k-l-\-h,Siklg,,qgikls,6
-Cycles,s-i-k-l-s,Sikls,,qikls,6
 Summary,s-m-r-e,Smre,,qemrs,6
 Summaries,s-m-r-e-s,Smres,,qemrs,6
 Songs,s2-o-ng-s,Sogs,,qgos,6
@@ -5069,7 +5065,7 @@ Impactfully,m-p-a-k-f-e,Mpakfe,,qaefkmp,7
 Implementor,m-pl-e-m-r,Mplemr,,qelmpr,7
 Implementors,m-pl-e-m-r-s,Mplemrs,,qelmprs,7
 Unchallenged,n-c-a-l-e-n-j-d,Ncalenjd,,qacdejln,7
-Unneeded,u-n-e-td,Netdo,o,qdenot,7
+Unneeded,u-n-e-td,Neddo,o,qdeno,7
 Injustices,n-j-u-s-s-s,Njusss,,qjnsu,7
 Encouragements,n-k-r-j-m-s,Nkrjms,,qjkmnrs,7
 Knocked,n-o-k-d,Nokd,,qdkno,7
@@ -5094,6 +5090,10 @@ Sequence,s-e-k-\-n-^-e-n-s,Seqens,,qenqs,7
 Sequenced,s-e-k-\-n-^-e-n-s-d,Seqensd,,qdenqs,7
 Sequencing,s-e-k-\-n-^-e-n-s-\-h,Seqensg,,qegnqs,7
 Sequences,s-e-k-\-n-^-e-n-s-s,Seqenss,,qenqs,7
+Cycle,s-i-k-l,Sikl,,qikls,7
+Cycled,s-i-k-l-d,Sikld,,qdikls,7
+Cycling,s-i-k-l-\-h,Siklg,,qgikls,7
+Cycles,s-i-k-l-s,Sikls,,qikls,7
 Stack,s-t-a-k,Stak,,qakst,7
 Stacked,s-t-a-k-d,Stakd,,qadkst,7
 Stacking,s-t-a-k-\-h,Stakg,,qagkst,7
@@ -5135,6 +5135,9 @@ Boil,b-o-e-l,Byl,,qbly,8
 Boiled,b-o-e-l-d,Byld,,qbdly,8
 Boiling,b-o-e-l-\-h,Bylg,,qbgly,8
 Boils,b-o-e-l-s,Byls,,qblsy,8
+Dedicated,td-e-k-a-t-d,Ddekatd,,qadekt,8
+Dedicating,td-e-k-a-t-\-h,Ddekatg,,qadegkt,8
+Dedicates,td-e-k-a-t-s,Ddekats,,qadekst,8
 Elevate,e2-l-v-a-t,Elvat,,qaeltv,8
 Elevated,e2-l-v-a-t-d,Elvatd,,qadeltv,8
 Elevating,e2-l-v-a-t-\-h,Elvatg,,qaegltv,8
@@ -5214,9 +5217,6 @@ Spiritlessly,s-pr-l-e,Sprle,,qelprs,8
 Spiritless,s-pr-l,Sprlo,o,qloprs,8
 Subscriber,s2-s2-k-r-\-r,Sskrr,,qkrs,8
 Subscribers,s2-s2-k-r-\-r-s,Sskrrs,,qkrs,8
-Dedicated,td-e-k-a-t-d,Tdekatd,,qadekt,8
-Dedicating,td-e-k-a-t-\-h,Tdekatg,,qadegkt,8
-Dedicates,td-e-k-a-t-s,Tdekats,,qadekst,8
 Technological,t-e-k-n-/-k,Teknko,o,qeknot,8
 Town,t-n,Tnu,u,qntu,8
 Tensioned,tn-sh-d,Tnzd,,qdntz,8
@@ -5238,7 +5238,6 @@ Bringing,br-\-h,Brg,,qbgr,9
 Datacenter,d-a-t-s-n,Datsn,,qadnst,9
 Datacenters,d-a-t-s-n-s,Datsns,,qadnst,9
 Distractions,d-s-/-k-sh-s,Dskzs,,qdksz,9
-Fears,f-e-r-s,Ferso,o,qefors,9
 Foundational,f-nt-sh-l,Fndzl,,qdflnz,9
 Foundations,f-nt-sh-s,Fndzs,,qdfnsz,9
 Clearer,k-l-e-r,Kler,,qeklr,9
@@ -5295,6 +5294,7 @@ Initiating,e-n-e-sh-ea-t-\-h,Enezetg,,qegntz,10
 Initiates,e-n-e-sh-ea-t-s,Enezets,,qenstz,10
 Philosophy,f-e-l-o-s,Felos,,qeflos,10
 Philosophies,f-e-l-o-s-s,Feloss,,qeflos,10
+Fears,f-e-r-s,Ferso,o,qefors,10
 Fulfilled,f-u-f-d,Fufd,,qdfu,10
 Fulfilling,f-u-f-\-h,Fufg,,qfgu,10
 Fulfills,f-u-f-s,Fufs,,qfsu,10
@@ -5412,15 +5412,12 @@ Terror,t-e-r-r,Terr,,qert,11
 Terrors,t-e-r-r-s,Terrs,,qerst,11
 Timings,tm-\-s2,Tmz,,qmtz,11
 Utility,e-u-t-\-l,Utl,,qltu,11
-Voting,v-t-\-h,Vtg,,qgtv,11
-Votes,v-t-s,Vts,,qstv,11
 Adaptive,a-d-a-p-/-v,Adapv,,qadpv,12
 Adaptively,a-d-a-p-/-v-e,Adapve,,qadepv,12
 Asserted,a-s2-e-t-d,Asetd,,qadest,12
 Asserting,a-s2-e-t-\-h,Asetg,,qaegst,12
 Assert,a-s2-e-t,Aseto,o,qaeost,12
 Asserts,a-s2-e-t-s,Asets,,qaest,12
-Brings,br-s,Brs,,qbrs,12
 Browse,br-a-u-s,Brws,,qbrsw,12
 Browsed,br-a-u-s-d,Brwsd,,qbdrsw,12
 Browsing,br-a-u-s-\-h,Brwsg,,qbgrsw,12
@@ -5497,13 +5494,16 @@ Temples,tm-pl-s,Tmpls,,qlmpst,12
 Validity,v-a-l-e-td-e,Valedte,,qadeltv,12
 Victims,v-e-k-tm-s,Vektms,,qekmstv,12
 Volumes,v-o-l-s,Vols,,qlosv,12
+Voting,v-t-\-h,Vtg,,qgtv,12
+Votes,v-t-s,Vts,,qstv,12
 Excitements,e-s2-i-t-m-s,Xitms,,qimstx,12
 Appetites,a-p-t-i-s,Aptis,,qaipst,13
 Arriving,a-r-i-\-h,Arig,,qagir,13
-Arrival,a-r-i,Arii,i,qair,13
-Arrive,a-r-i,Ario,o,qaior,13
+Arrive,a-r-i,Arii,i,qair,13
+Arrival,a-r-i,Ario,o,qaior,13
 Arrives,a-r-i-s,Aris,,qairs,13
 Arrivals,a-r-i-s,Ariso,o,qaiors,13
+Brings,br-s,Brs,,qbrs,13
 Chapters,ch-a-p-t-e2-s,Captes,,qacepst,13
 Chase,ch-a-s,Cas,,qacs,13
 Chased,ch-a-s-d,Casd,,qacds,13
@@ -5512,7 +5512,7 @@ Chases,ch-a-s-s,Cass,,qacs,13
 Generational,j-e-n-r-a-sh-l,Jenrzl,,qejlnrz,13
 Generations,j-e-n-r-a-sh-s,Jenrzs,,qejnrsz,13
 Confidential Special Handling,k-f-tn-sh-s-\-h,Kfdnzsg,,qdfgknsz,13
-Coded,k-o-td,Kodd,,qdko,13
+Coded,k-o-td,Koddo,o,qdko,13
 Mouths,m-a-u-th-s,Mwhs,,qhmsw,13
 Narratives,n-a-r-a-/-v-s,Naravs,,qanrsv,13
 Navigable,n-a-v-g-b,Navgb,,qabgnv,13
@@ -5788,8 +5788,6 @@ Damage,tm-j,Dmj,,qdjm,19
 Damaged,tm-j-d,Dmjd,,qdjm,19
 Damaging,tm-j-\-h,Dmjg,,qdgjm,19
 Damages,tm-j-s,Dmjs,,qdjms,19
-Theology,h-e-\-o,Heoo,o,qeho,19
-Theologies,h-e-\-o-s,Heos,,qehos,19
 Complied,k-pl-i-d,Kplid,,qdiklp,19
 Complying,k-pl-i-\-h,Kplig,,qgiklp,19
 Complies,k-pl-i-s,Kplis,,qiklps,19
@@ -5813,6 +5811,8 @@ Disability,d-s-a-\-b,Dsabo,,qabdos,20
 Disabilities,d-s-a-\-b-s,Dsabso,o,qabdos,20
 Eternity,e-tn-t-e,Etnte,,qent,20
 Eternities,e-tn-t-e-s,Etntes,,qenst,20
+Theology,h-e-\-o,Heoo,o,qeho,20
+Theologies,h-e-\-o-s,Heos,,qehos,20
 Merged,m-e-j-d,Mejd,,qdejm,20
 Merging,m-e-j-\-h,Mejg,,qegjm,20
 Merges,m-e-j-s,Mejs,,qejms,20
@@ -5839,7 +5839,6 @@ Achieving,a-c-e-v-\-h,Acevg,,qacegv,21
 Achieves,a-c-e-v-s,Acevs,,qacesv,21
 Decade,d-e-k-a-d,Dekad,,qadek,21
 Decades,d-e-k-a-d-s,Dekads,,qadeks,21
-Gods,g-s,Gso,o,qgos,21
 Hyper-,h-y->,Hy>,,q>hy,21
 Considers,k-s-s,Ksso,o,qkos,21
 Employable,m-pl-b,Mplb,,qblmp,21
@@ -6038,7 +6037,7 @@ Develop,dfl,Dvl,,qdlv,29
 Developed,dfl-d,Dvld,,qdlv,29
 Developing,dfl-\-h,Dvlg,,qdglv,29
 Develops,dfl-s,Dvls,,qdlsv,29
-Candidates,k-td-s,Kdts,,qdkst,29
+Candidates,k-td-s,Kdds,,qdks,29
 Callout,k-o-a-u,Kow,,qkow,29
 Callouts,k-o-a-u-s,Kows,,qkosw,29
 Programmable,pr-\-g-b,Prgb,,qbgpr,29
@@ -6293,9 +6292,6 @@ Pointers,o-e-r-s,Yrs,,qrsy,39
 Functionally,f-nk-/-l-e,Fqle,,qeflq,40
 Functionality,f-nk-/-l,Fqlo,o,qfloq,40
 Functionalities,f-nk-/-l-s,Fqls,,qflqs,40
-Fruited,fr-u-t-d,Frutd,,qdfrtu,40
-Fruiting,fr-u-t-\-h,Frutg,,qfgrtu,40
-Fruits,fr-u-t-s,Fruts,,qfrstu,40
 Quoted,k-w-o-t-d,Qotd,,qdoqt,40
 Quoting,k-w-o-t-\-h,Qotg,,qgoqt,40
 Quotes,k-w-o-t-s,Qots,,qoqst,40
@@ -6315,6 +6311,9 @@ Bundling,b-n-l-\-h,Bnlg,,qbgln,41
 Bundles,b-n-l-s,Bnls,,qblns,41
 Ecosystem,e-k-s2s,Ekss,,qeks,41
 Ecosystems,e-k-s2s-s,Eksss,,qeks,41
+Fruited,fr-u-t-d,Frutd,,qdfrtu,41
+Fruiting,fr-u-t-\-h,Frutg,,qfgrtu,41
+Fruits,fr-u-t-s,Fruts,,qfrstu,41
 Capably,k-a-p-e,Kape,,qaekp,41
 Caption,k-a-p-sh,Kapz,,qakpz,41
 Narrowed,n-a-r-o-d,Narod,,qadnor,41
@@ -6342,16 +6341,11 @@ Featuring,f-e-t-r-\-h,Fetrg,,qefgrt,42
 Features,f-e-t-r-s,Fetrs,,qefrst,42
 Conveniently,k-v-e-n-e,Kvene,,qeknv,42
 Natures,n-a-t-s,Nats,,qanst,42
-Pictured,p-k-t-r-d,Pktrd,,qdkprt,42
-Picturing,p-k-t-r-\-h,Pktrg,,qgkprt,42
-Pictorial,p-k-t-r-l,Pktrl,,qklprt,42
-Pictures,p-k-t-r-s,Pktrs,,qkprst,42
 Troubleshoot,t-r-b-sh,Trbz,,qbrtz,42
 Troubleshooting,t-r-b-sh-\-h,Trbzg,,qbgrtz,42
 Troubleshoots,t-r-b-sh-s,Trbzs,,qbrstz,42
 Activities,a-k-v-t-e-s,Akvtes,,qaekstv,43
 Disposition,d-s-p-o-sh,Dspoz,,qdopsz,43
-Israel,E-s-r-ea-l,Esrel,,qelrs,43
 Growing,g-r-o-\-h,Grog,,qgor,43
 Grows,g-r-o-s,Groso,o,qgors,43
 Configurations,k-f-e-g-r-sh-s,Kfegrzs,,qefgkrsz,43
@@ -6375,6 +6369,7 @@ Reposing,r-p-o-\-h,Rpog,,qgopr,43
 Repose,r-p-o,Rpoo,o,qopr,43
 Reposes,r-p-o-s,Rpos,,qoprs,43
 Teaching,t-e-ch-\-h,Tecg,,qcegt,43
+Israel,E-s-r-ea-l,Esrel,,qelrs,44
 Fascinate,f-a-s2-n-a-t,Fasnat,,qafnst,44
 Fascinated,f-a-s2-n-a-t-d,Fasnatd,,qadfnst,44
 Fascinating,f-a-s2-n-a-t-\-h,Fasnatg,,qafgnst,44
@@ -6407,6 +6402,10 @@ Gracing,g-r-a-s-\-h,Grasg,,qagrs,47
 Graces,g-r-a-s-s,Grasso,o,qagors,47
 Meaning,m-e-n-\-h,Meng,,qegmn,47
 Invention,n-v-n-sh,Nvnz,,qnvz,47
+Pictured,p-k-t-r-d,Pktrd,,qdkprt,47
+Picturing,p-k-t-r-\-h,Pktrg,,qgkprt,47
+Pictorial,p-k-t-r-l,Pktrl,,qklprt,47
+Pictures,p-k-t-r-s,Pktrs,,qkprst,47
 Re-,r->,R>,,q>r,47
 Excite,e-s2-i-t,Xit,,qitx,47
 Excites,e-s2-i-t-s,Xits,,qistx,47
@@ -6449,6 +6448,7 @@ Expressed,e-s-pr-d,Xprd,,qdprx,51
 Expressing,e-s-pr-\-h,Xprg,,qgprx,51
 Expresses,e-s-pr-s,Xprs,,qprsx,51
 Beautifully,b-t-e-f-e,Btefe,,qbeft,52
+Beautify,b-t-e-f,Btefo,o,qbefot,52
 Forgetting,f-g-e-t-\-h,Fgetg,,qefgt,52
 Forgets,f-g-e-t-s,Fgets,,qefgst,52
 Coached,k-o-ch-d,Kocd,,qcdko,52
@@ -6507,6 +6507,7 @@ Welcomes,l-k-m-s,Lkms,,qklms,59
 Exercised,e-s2-r-d,Xrd,,qdrx,59
 Exercising,e-s2-r-\-h,Xrg,,qgrx,59
 Exercises,e-s2-r-s,Xrs,,qrsx,59
+Absolutely,a-b-s2-o-e,Absoe,,qabeos,61
 Absolute,a-b-s2-o,Absoo,o,qabos,61
 Absolutes,a-b-s2-o-s,Absos,,qabos,61
 Absolutely,a-b-s2-o-e,Absy,,qabsy,61
@@ -7073,10 +7074,10 @@ Namespacing,n-a-s-p-\-h,Naspg,,qagnps,144
 Namespaces,n-a-s-p-s,Nasps,,qanps,144
 Token,t-o-k-n,Tokn,,qknot,144
 Tokens,t-o-k-n-s,Tokns,,qknost,144
-Livable,l-a-v-b,Lavb,,qablv,145
-Lived,l-a-v-d,Lavd,,qadlv,145
-Living,l-a-v-\-h,Lavg,,qaglv,145
-Lives,l-a-v-s,Lavs,,qalsv,145
+Livable,l-a-v-b,Lavb,,qablv,146
+Lived,l-a-v-d,Lavd,,qadlv,146
+Living,l-a-v-\-h,Lavg,,qaglv,146
+Lives,l-a-v-s,Lavs,,qalsv,146
 Situational,s2-e-t-n-l,Setnl,,qelnst,146
 Situations,s2-e-t-n-s,Setns,,qenst,146
 Completely,kp-e,Kpeo,o,qekop,147
@@ -7328,8 +7329,8 @@ Marched,m-a-ch-d,Macd,,qacdm,232
 Matched,m-a-ch-d,Macdo,o,qacdmo,232
 Matching,m-a-ch-\-h,Macg,,qacgm,232
 Marching,m-a-ch-\-h,Macgo,o,qacgmo,232
-March,m-a-ch,Maci,i,qacim,232
-Match,m-a-ch,Maco,o,qacmo,232
+Match,m-a-ch,Maci,i,qacim,232
+March,m-a-ch,Maco,o,qacmo,232
 Marches,m-a-ch-s,Macsi,i,qacims,232
 Matches,m-a-ch-s,Macso,o,qacmos,232
 Unmatched,n-m-a-ch-d,Nmacd,,qacdmn,232
@@ -7499,9 +7500,9 @@ Locked,l-o-k-d,Lokd,,qdklo,329
 Located,l-o-k-d,Lokdo,o,qdklo,329
 Locking,l-o-k-\-h,Lokg,,qgklo,329
 Locating,l-o-k-\-h,Lokgo,o,qgklo,329
-Local,l-o-k,Loki,i,qiklo,329
+Lock,l-o-k,Loki,i,qiklo,329
 Locality,l-o-k-\-l,Lokl,,qklo,329
-Lock,l-o-k,Loko,o,qklo,329
+Local,l-o-k,Loko,o,qklo,329
 Locks,l-o-k-s,Loks,,qklos,329
 Locals,l-o-k-s,Loksi,i,qiklos,329
 Locates,l-o-k-s,Lokso,o,qklos,329
@@ -7862,10 +7863,10 @@ Reconnected,r-k-e-k-d,Rkekd,,qdekr,741
 Reconnecting,r-k-e-k-\-h,Rkekg,,qegkr,741
 Reconnects,r-k-e-k-s,Rkeks,,qekrs,741
 Reconnection,r-k-e-k-sh,Rkekz,,qekrz,741
-Laughable,l-a-f-b,Lafb,,qabfl,743
-Laughed,l-a-f-d,Lafd,,qadfl,743
-Laughing,l-a-f-\-h,Lafg,,qafgl,743
-Laughs,l-a-f-s,Lafs,,qafls,743
+Laughable,l-a-f-b,Lafb,,qabfl,744
+Laughed,l-a-f-d,Lafd,,qadfl,744
+Laughing,l-a-f-\-h,Lafg,,qafgl,744
+Laughs,l-a-f-s,Lafs,,qafls,744
 Monitored,mn-e-t-e2-d,Mneted,,qdemnt,759
 Monitoring,mn-e-t-e2-\-h,Mneteg,,qegmnt,759
 Monitors,mn-e-t-e2-s,Mnetes,,qemnst,759
@@ -7888,8 +7889,8 @@ Evens,e-v-n-s,Evns,,qensv,818
 Complained,k-p-d,Kpdo,o,qdkop,818
 Complaining,k-p-\-h,Kpg,,qgkp,818
 Companies,k-p-s,Kps,,qkps,818
-Complains,k-p-s,Kpsi,i,qikps,818
-Complaints,k-p-s,Kpso,o,qkops,818
+Complaints,k-p-s,Kpsi,i,qikps,818
+Complains,k-p-s,Kpso,o,qkops,818
 Installable,n-s2-t-o-l-b,Nstolb,,qblnost,822
 Installs,n-s2-t-o-l-s,Nstols,,qlnost,822
 Resolution,r-s2-o-l-sh,Rsolz,,qlorsz,851
@@ -8052,7 +8053,7 @@ Precious,pr-e-sh-u-s,Prezus,,qeprsuz,1696
 Pressures,pr-e-sh-u-s,Prezuso,o,qeoprsuz,1696
 Coding,k-o-t-\-h,Kodg,,qdgko,1735
 Codes,k-o-t-s,Kods,,qdkos,1735
-Courted,k-o-t-d,Kotdi,i,qdikot,1735
+Courted,k-o-t-d,Kotdo,o,qdkot,1735
 Courting,k-o-t-\-h,Kotg,,qgkot,1735
 Courts,k-o-t-s,Kots,,qkost,1735
 Lettered,l-e-d,Ledu,u,qdelu,1922
