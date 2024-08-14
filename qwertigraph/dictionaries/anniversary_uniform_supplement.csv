@@ -6953,6 +6953,10 @@ Disapproved,d-s-a-pr-v-d,Dsaprvd,,qadprsv,120
 Disapproving,d-s-a-pr-v-\-h,Dsaprvg,,qadgprsv,120
 Disapproval,d-s-a-pr-v-l,Dsaprvl,,qadlprsv,120
 Disapproves,d-s-a-pr-v-s,Dsaprvs,,qadprsv,120
+Shoot,sh-u-t,Zut,,qtuz,120
+Shooted,sh-u-t-d,Zutd,,qdtuz,120
+Shooting,sh-u-t-\-h,Zutg,,qgtuz,120
+Shoots,sh-u-t-s,Zuts,,qstuz,120
 Operator,o-pr-a-\-r,Oprar,,qaopr,121
 Operators,o-pr-a-\-r-s,Oprars,,qaoprs,121
 Builder,bld-r,Bldr,,qbdlr,122
@@ -8126,6 +8130,7 @@ Prunable,pr-u-n-b,Prunb,,qbnpru,4518
 Pruned,pr-u-n-d,Prund,,qdnpru,4518
 Pruning,pr-u-n-\-h,Prung,,qgnpru,4518
 Prunes,pr-u-n-s,Pruns,,qnprsu,4518
+Outs,a-u-s,Ws,,qsw,4520
 Renewing,r-e-n-u-\-h,Rnug,,qgnru,4620
 Renews,r-e-n-u-s,Rnus,,qnrsu,4620
 Unlikely,n-l-a-e,Nlae,,qaeln,4661

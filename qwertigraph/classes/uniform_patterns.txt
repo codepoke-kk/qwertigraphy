@@ -57,6 +57,8 @@ bilities$,-\\-b-s$,bs
 ingful,-\\-h-\\-f,gf
 ; ingless to gl 
 ingless,-\\-h-\\-l,gl
+; tending as dng to tng 
+tending$,tn-\\-h?$,tng
 ; ings as ss to z 
 ings$,-\\-s2?$,z
 ; ings to z 
@@ -78,9 +80,9 @@ d[aeuio]?d,td,dd
 ; date to dt 
 d[aeuio]?t,td,dt
 ; dan to dn 
-d[aeuo]+n,tn,dn
+d[aeuio]+n,tn,dn
 ; dum to dm
-d[aeuo]+m,tm,dm
+d[aeuio]+m,tm,dm
 ; ond to nd
 nd,nt,nd
 ; med to md
