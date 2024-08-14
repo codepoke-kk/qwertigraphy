@@ -78,9 +78,9 @@ d[aeuio]?d,td,dd
 ; date to dt 
 d[aeuio]?t,td,dt
 ; dan to dn 
-d[aeuio]+n,tn,dn
+d[aeuo]+n,tn,dn
 ; dum to dm
-d[aeuio]+m,tm,dm
+d[aeuo]+m,tm,dm
 ; ond to nd
 nd,nt,nd
 ; med to md
