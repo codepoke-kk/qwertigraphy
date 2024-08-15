@@ -329,11 +329,11 @@ Write-Host "Presenting data"
 $cmu_matches | Sort-Object -Property 'qwerd' | Select-Object @('qwerd') | Export-CSV -Force -NoTypeInformation -Path "$PsScriptRoot\block_words.csv"
 
 Write-Host ("$($uniform_entries.count) entries will be written")
-$pop_up_grids = $false
+$pop_up_grids = $true
 if ($pop_up_grids) {
     $deltas | Sort-Object -Property 'word' | Select-Object @('word', 'form', 'qwerd', 'old_qwerd', 'qwerd_length_delta', 'conflict', 'change', 'conflicted', 'changed', 'usage', 'dictionary_name', 'comment') | Out-GridView -title "$($deltas.count) Deltas"
     $cmu_matches | Sort-Object -Property 'word' | Select-Object @('word', 'qwerd', 'old_qwerd', 'conflict', 'change', 'conflicted', 'changed', 'usage', 'dictionary_name', 'comment') | Out-GridView -title "$($cmu_matches.count) CMU Matches"
-    $uniform_entries.values | Sort-Object {$keyer_sort.IndexOf($_.keyer)} | Select-Object @('word', 'form', 'qwerd', 'keyer', 'chord', 'usage', 'dictionary_name') | Out-GridView -title "$($uniform_entries.count) to define $(Split-Path -Leaf $uniform_core_dictionary_path)"
+    $uniform_entries.values | Sort-Object {$keyer_sort.IndexOf($_.keyer)} | Select-Object @('word', 'form', 'qwerd', 'keyer', 'chord', 'usage', 'dictionary_name', 'comment') | Out-GridView -title "$($uniform_entries.count) to define $(Split-Path -Leaf $uniform_core_dictionary_path)"
 }
 foreach ($dictionary_line in $dictionary_lines) {
     Write-Host ("Creating $dictionary_line")

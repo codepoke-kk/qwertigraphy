@@ -57,8 +57,6 @@ bilities$,-\\-b-s$,bs
 ingful,-\\-h-\\-f,gf
 ; ingless to gl 
 ingless,-\\-h-\\-l,gl
-; tending as dng to tng 
-tending$,tn-\\-h?$,tng
 ; ings as ss to z 
 ings$,-\\-s2?$,z
 ; ings to z 
@@ -97,6 +95,12 @@ d[aeuio]+v,df,dv
 ed$,t$,d
 ; ode as ot to od
 cod,k-o-t,kod
+
+; Word fixes
+; tending as dng to tng 
+tending$,dng$,tng
+; Attend as adn to atn 
+^atten,^a-?dn,atn
 
 ; Prefixes
 ; unen to un
