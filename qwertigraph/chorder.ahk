@@ -80,7 +80,7 @@ coach.addQueue(engine.coachQueue)
 
 greggdict := new GreggdictViewport(qenv)
 
-editor := new EditorViewport(map)
+editor := new EditorViewport(map,engine)
 qenv.editor := editor
 
 ;greggpad := new PadViewport(qenv, engine.penQueue)
