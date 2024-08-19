@@ -262,8 +262,8 @@ Betrayal,b-t-r-a-l,Btral,,qablrt,0
 Betrayals,b-t-r-a-l-s,Btrals,,qablrst,0
 Betraies,b-t-r-a-s,Btras,,qabrst,0
 Bureaucrats,b-u-/-a-t-s,Buats,,qabstu,0
-Bureaucracy,b-u-/-s-e,Buseo,o,qbeosu,0
-Bureaucracies,b-u-/-s-e-s,Buseso,o,qbeosu,0
+Bureaucracy,b-u-/-s-e,Buse,,qbesu,0
+Bureaucracies,b-u-/-s-e-s,Buses,,qbesu,0
 Buttonhole,b-u-tn-o-l-^-~-h,Butnol,,qblnotu,0
 Buttonholed,b-u-tn-o-l-d-^-~-h,Butnold,,qbdlnotu,0
 Buttonholing,b-u-tn-o-l-\-h-^-~-h,Butnolh,,qbhlnotu,0
@@ -563,8 +563,8 @@ Imaginatively,e-m-a-j-df-e,Emajtve,,qaejmtv,0
 Immigrated,e-m-e-g-d,Emegd,,qdegm,0
 Immigrating,e-m-e-g-\-h,Emegg,,qegm,0
 Immigrates,e-m-e-g-s,Emegs,,qegms,0
-Emigration,e-m-g-r-a-z,Emgraz,,qaegmrz,0
-Immigration,e-m-g-r-a-z,Emgrazo,o,qaegmorz,0
+Immigration,e-m-g-r-a-z,Emgraz,,qaegmrz,0
+Emigration,e-m-g-r-a-z,Emgrazo,o,qaegmorz,0
 Determinate,e2-mn-a-t,Emnat,,qaemnt,0
 Determinates,e2-mn-a-t-s,Emnats,,qaemnst,0
 Determinedly,e2-mn-\-t-e,Emnte,,qemnt,0
@@ -4456,9 +4456,11 @@ Prescribes,pr-e-s2-k-r-s,Preskrs,,qekprs,3
 Prescription,pr-e-s2-k-r-sh,Preskrz,,qekprsz,3
 Profess,pr-f-e-s,Prfes,,qefprs,3
 Privately,pr-i-e,Prie,,qeipr,3
+Price,pr-i-s,Pris,,qiprs,3
 Priced,pr-i-s-d,Prisd,,qdiprs,3
 Pricing,pr-i-s-\-h,Prisg,,qgiprs,3
 Prices,pr-i-s-s,Priss,,qiprs,3
+Prize,pr-i-s,Prisu,u,qiprsu,3
 Productivity,pr-o-k-v-t-e,Prokvte,,qekoprtv,3
 Propositioned,pr-p-o-sh-d,Prpozd,,qdoprz,3
 Propositioning,pr-p-o-sh-\-h,Prpozg,,qgoprz,3
@@ -6262,6 +6264,7 @@ Docked,d-o-k-d,Dokd,,qdko,38
 Docking,d-o-k-\-h,Dokg,,qdgko,38
 Docks,d-o-k-s,Doks,,qdkos,38
 Qwertigraph,k-a-u,Kwo,o,qkow,38
+Million,m-e-l-n,Meln,,qelmn,38
 Millions,m-e-l-n-s,Melns,,qelmns,38
 Papered,p-a-pr-d,Paprd,,qadpr,38
 Papering,p-a-pr-\-h,Paprg,,qagpr,38
@@ -7053,7 +7056,9 @@ Issuer,e-sh-u-r,Ezur,,qeruz,140
 Issuers,e-sh-u-r-s,Ezurs,,qersuz,140
 Catched,k-a-ch-d,Kacd,,qacdk,141
 Catching,k-a-ch-\-h,Kacg,,qacgk,141
-Catchs,k-a-ch-s,Kacs,,qacks,141
+Catcher,k-a-ch-r,Kacr,,qackr,141
+Catchers,k-a-ch-r-s,Kacrs,,qackrs,141
+Catches,k-a-ch-s,Kacs,,qacks,141
 Keeping,k-e-p-g,Kepg,,qegkp,141
 P.m.,p-~-m,Pmo,o,qmop,141
 Doubled,d-b-d,Dbd,,qbd,142
@@ -7968,6 +7973,7 @@ Building,bld-\-h,Bldg,,qbdgl,1190
 Rebuild,r-bld,Rbld,,qbdlr,1190
 Rebuilding,r-bld-\-h,Rbldg,,qbdglr,1190
 Rebuilds,r-bld-s,Rblds,,qbdlrs,1190
+Given,g-e,Geo,o,qego,1195
 Callable,k-o-b,Kob,,qbko,1195
 Called,k-o-t,Kodi,i,qdiko,1195
 Calling,k-o-\-h,Kog,,qgko,1195
@@ -8132,6 +8138,7 @@ Renews,r-e-n-u-s,Rnus,,qnrsu,4620
 Unlikely,n-l-a-e,Nlae,,qaeln,4661
 Relatable,r-e-l-a-b,Rlab,,qablr,4661
 Relates,r-e-l-a-s,Rlas,,qalrs,4661
+More,m,M,,qm,5160
 Workable,r-k-b,Rkb,,qbkr,5288
 Working,r-k-\-h,Rkg,,qgkr,5288
 Works,r-k-s,Rks,,qkrs,5288

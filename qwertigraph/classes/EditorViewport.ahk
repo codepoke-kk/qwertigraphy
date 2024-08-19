@@ -104,6 +104,7 @@ EditorAutoQwerdForm() {
     editor.AutoQwerdForm()
     editor.AutoKey()
     editor.AutoChord()
+    GuiControl, Focus, EditDict
 }
 EditorAutoKey() {
     global editor
@@ -946,7 +947,7 @@ class EditorViewport
         GuiControlGet dictionary, , EditDict
         
         ; Protect displaced entries by changing their qwerds for later retrieval and correction
-        if (this.map.qwerds.exists(qwerd)) {
+        if ((this.map.qwerds.exists(qwerd)) and (this.map.qwerds.item(qwerd).word != word)) {
             displaced := this.map.qwerds.item(qwerd)
             displaced.qwerd := displaced.qwerd . "qk"
             this.map.propagateEntryToMaps(displaced)

@@ -40,6 +40,7 @@ ation,-a-sh,z
 .,sh,z
 x,e2?-?s2?,x
 x,e-k-s,x
+x,-k-s,x
 x,e-?s,x
 ; Qua - Q
 qu[aoei],k-\\-[wn],q

@@ -5184,7 +5184,6 @@ Patient,p-a-sh-t,Pazt,,qaptz,3
 Posh,p-o-sh,Pozi,i,qiopz,3
 Postpone,p-/-p-o-n,Ppon,,qnop,3
 Profession,pr-f-e-sh,Prfez,,qefprz,3
-Prize,pr-i-s,Pris,,qiprs,3
 Practical,pr-k,Prk,,qkpr,3
 Personality,pr-s-/-l,Prsl,,qlprs,3
 P.s.,p-/-s,Pso,o,qops,3
@@ -6272,8 +6271,7 @@ Ocean,o-sh,Ozo,o,qoz,37
 Dates,td-s,Dts,,qdst,38
 Cow,k-a-u,Kw,,qkw,38
 Cowed,k-a-u-d,Kwd,,qdkw,38
-Melon,m-e-l-n,Meln,,qelmn,38
-Million,m-e-l-n,Melno,o,qelmno,38
+Melon,m-e-l-n,Melnqk,,qelmn,38
 Paper,p-a-pr,Papr,,qapr,38
 Papers,p-a-pr-s,Paprs,,qaprs,38
 Prosperous,pr-s-pr-u-s,Prsprus,,qprsu,38
@@ -7751,7 +7749,6 @@ Relate,r-e-l-a,Rla,,qalr,4661
 Relating,r-e-l-a-\-h,Rlag,,qaglr,4661
 Your,u,Uo,o,qou,4847
 Should,sh-d,Zd,,qdz,4935
-More,m,M,,qm,5160
 Work,r-k,Rk,,qkr,5288
 Worked,r-k-t,Rkd,,qdkr,5288
 Incision,n-s-e-sh,Nsez,,qensz,5436
