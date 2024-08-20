@@ -5816,7 +5816,8 @@ Eternities,e-tn-t-e-s,Etntes,,qenst,20
 Merged,m-e-j-d,Mejd,,qdejm,20
 Merging,m-e-j-\-h,Mejg,,qegjm,20
 Merges,m-e-j-s,Mejs,,qejms,20
-Movements,m-u-m-s,Mumso,o,qmosu,20
+Movement,m-u-m,Mum,,qmu,20
+Movements,m-u-m-s,Mums,,qmsu,20
 Engagements,n-g-a-m-s,Ngams,,qagmns,20
 Authorizing,o-th-r-i-s-\-h,Ohrisg,,qghiors,20
 Authorizes,o-th-r-i-s-s,Ohriss,,qhiors,20
@@ -6620,10 +6621,12 @@ Balanced,b-a-l-d,Baldo,o,qabdlo,73
 Balancing,b-a-l-\-h,Balg,,qabgl,73
 Balances,b-a-l-s,Bals,,qabls,73
 Deletion,d-l-e-sh,Dlez,,qdelz,73
-Offing,o-f-\-h,Ofg,,qfgo,73
-Offering,o-f-\-h,Ofgo,o,qfgo,73
+Offering,o-f-\-h,Ofg,,qfgo,73
+Offing,o-f-\-h,Ofgo,o,qfgo,73
+Offering,o-f-\-h,Ofgu,u,qfgou,73
 Offers,o-f-s,Ofs,,qfos,73
 Offices,o-f-s,Ofso,o,qfos,73
+Offer,o-f,Ofu,u,qfou,73
 Defecation,df-k-a-sh,Dfkz,,qdfkz,74
 Describe,d-s2-k-r,Dskr,,qdkrs,74
 Described,d-s2-k-r-d,Dskrd,,qdkrs,74
@@ -7835,6 +7838,8 @@ Update,u-p-td,Updt,,qdptu,689
 Updated,u-p-td-t,Updtd,,qdptu,689
 Updating,u-p-td-\-h,Updtg,,qdgptu,689
 Updates,u-p-td-s,Updts,,qdpstu,689
+Moved,m-u-d,Mud,,qdmu,696
+Moving,m-u-\-h,Mug,,qgmu,696
 Removable,r-e-m-u-b,Rmub,,qbmru,696
 Removed,r-e-m-u-d,Rmud,,qdmru,696
 Removing,r-e-m-u-\-h,Rmug,,qgmru,696
@@ -8044,6 +8049,7 @@ Professed,pr-f-e-s-d,Prfesd,,qdefprs,1557
 Professing,pr-f-e-s-\-h,Prfesg,,qefgprs,1557
 Professs,pr-f-e-s-s,Prfess,,qefprs,1557
 Requesting,r-k-e-s-\-h,Rqesg,,qegqrs,1650
+Finding,f-i-\-h,Fig,,qfgi,1652
 Finds,f-i-s,Fis,,qfis,1652
 Runnable,r-n-b,Rnb,,qbnr,1680
 Running,r-n-\-h,Rng,,qgnr,1680
