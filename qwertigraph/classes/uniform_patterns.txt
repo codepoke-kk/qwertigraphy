@@ -92,6 +92,8 @@ t[aeuio]+v,df,tv
 t[aeuio]+f,df,tf
 ; div to dv
 d[aeuio]+v,df,dv
+; eds ending to ds
+eds$,-t-s$,ds
 ; ed ending to d
 ed$,t$,d
 ; ode as ot to od

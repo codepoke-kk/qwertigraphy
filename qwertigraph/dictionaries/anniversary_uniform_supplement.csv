@@ -2700,7 +2700,7 @@ Spoils,s-p-o-e-l-s,Spyls,,qlpsy,0
 Self-reliance,^-s-\-r-e-l-i-n-s,Srelins,,qeilnrs,0
 Self-reliant,^-s-\-r-e-l-i-nt,Srelint,,qeilnrst,0
 Self-reliantly,^-s-\-r-e-l-i-nt-e,Srelinte,,qeilnrst,0
-Sayings,s-s-\-h,Ssh,,qhs,0
+Sayings,s-s-\-h,Ssho,o,qhos,0
 Systemically,s2s-k-e,Sske,,qeks,0
 Systemic,s2s-k,Ssko,o,qkos,0
 Subscriptions,s2-s2-k-r-sh-s,Sskrzs,,qkrsz,0
@@ -3230,6 +3230,7 @@ Shudders,sh-u-d-e2-s,Zudes,,qdesuz,0
 Sureness,sh-u-n-e-s,Zunes,,qensuz,0
 Surest,sh-u-s-t,Zust,,qstuz,0
 Anti-,a->,A>,,q>a,1
+Ability,a-\-b,Abo,,qabo,1
 Abomination,a-b-o-mm-sh,Abommz,,qabmoz,1
 Ability,a-\-b,Aboo,o,qabo,1
 Addictions,a-d-e-k-sh-s,Adekzs,,qadeksz,1
@@ -4657,6 +4658,7 @@ Permitting,pr-m-e-t-\-h,Prmetg,,qegmprt,4
 Permits,pr-m-e-t-s,Prmets,,qemprst,4
 Rhythm,r-e-th-m,Rehm,,qehmr,4
 Rhythms,r-e-th-m-s,Rehms,,qehmrs,4
+Referred,r-f-/-t,Rfdo,o,qdfor,4
 Referer,r-f-r,Rfr,,qfr,4
 Referrer,r-f-r,Rfro,o,qfor,4
 Righteous,r-i-ch-u-s,Ricus,,qcirsu,4
@@ -5416,6 +5418,9 @@ Superusers,^-s-\-e-u-r-s,Surs,,qrsu,11
 Terror,t-e-r-r,Terr,,qert,11
 Terrors,t-e-r-r-s,Terrs,,qerst,11
 Timings,tm-\-s2,Tmz,,qmtz,11
+Treated,t-r-e-t-d,Tretd,,qdert,11
+Treating,t-r-e-t-\-h,Tretg,,qegrt,11
+Treats,t-r-e-t-s,Trets,,qerst,11
 Utility,e-u-t-\-l,Utl,,qltu,11
 Adaptive,a-d-a-p-/-v,Adapv,,qadpv,12
 Adaptively,a-d-a-p-/-v-e,Adapve,,qadepv,12
@@ -5998,7 +6003,7 @@ Patterned,p-a-tn-d,Patnd,,qadnpt,27
 Patterning,p-a-tn-\-h,Patng,,qagnpt,27
 Patterns,p-a-tn-s,Patns,,qanpst,27
 Redirections,r-e-d-r-k-sh-s,Rdrkzs,,qdkrsz,27
-Referenced,r-f-d,Rfdo,o,qdfor,27
+Referenced,r-f-d,Rfd,,qdfr,27
 Romantic,r-o-mm-t,Rommt,,qmort,27
 Romantically,r-o-mm-t-e,Rommte,,qemort,27
 Romantics,r-o-mm-t-s,Rommts,,qmorst,27
@@ -6993,6 +6998,9 @@ Patched,p-a-ch-d,Pacd,,qacdp,125
 Patching,p-a-ch-\-h,Pacg,,qacgp,125
 Patches,p-a-ch-s,Pacs,,qacps,125
 Patchings,p-a-ch-\-h-s,Pacz,,qacpz,125
+Counted,k-nt-d,Kntd,,qdknt,126
+Counting,k-nt-\-h,Kntg,,qgknt,126
+Counts,k-nt-s,Knts,,qknst,126
 Humans,^-h-\-e-u-mn-s,Humns,,qhmnsu,127
 Computers,k-p-u-/-r-s,Kpurs,,qkprsu,127
 Paperwork,p-a-pr-k,Paprk,,qakpr,127
@@ -7043,6 +7051,7 @@ Clusters,k-l-u-s-t-e2-s,Klustes,,qeklstu,135
 Invulnerable,n-v-u-l-n-e-r-b,Nvulnerb,,qbelnruv,135
 Redoubt,r-e-d-a-u,Rdw,,qdrw,135
 Redoubts,r-e-d-a-u-s,Rdws,,qdrsw,135
+Inside,n-s-i,Nsi,,qins,136
 Insided,n-s-i-d,Nsid,,qdins,136
 Insiding,n-s-i-\-h,Nsig,,qgins,136
 Inside,n-s-i,Nsio,o,qinos,136
@@ -7140,6 +7149,7 @@ Captures,k-a-p-t-r-s,Kaptrs,,qakprst,159
 Involved,n-v-o-d,Nvod,,qdnov,159
 Involving,n-v-o-\-h,Nvog,,qgnov,159
 Involves,n-v-o-s,Nvos,,qnosv,159
+Wrote,r-o-t,Rot,,qort,162
 Rotation,r-o-t-a-sh,Rotz,,qortz,162
 Cleanly,k-l-e-n-e,Klene,,qekln,165
 Cleaning,k-l-e-n-\-h,Kleng,,qegkln,165
@@ -7253,6 +7263,7 @@ Clouded,k-l-a-u-d,Klwd,,qdklw,197
 Clouding,k-l-a-u-\-h,Klwg,,qgklw,197
 Clouds,k-l-a-u-s,Klws,,qklsw,197
 Resource,r-s2-o-s2,Rsos,,qors,199
+Accept,a-k-s2,Aks,,qaks,200
 Accepts,a-k-s2-s,Akssi,i,qaiks,200
 Holy Spirit,h-\-s-pr,Hspr,,qhprs,200
 Managers,mn-j-e2-s,Mnjes,,qejmns,200
@@ -7263,7 +7274,7 @@ Motivation,m-o-df-a-sh,Motvz,,qmotvz,200
 Unnecessarily,u-n-e-ss-e,Nesseo,o,qenos,200
 Precise,pr-e-ss,Presso,o,qeoprs,200
 Extras,e-ss,Xso,o,qosx,200
-Exists,e-ss-s,Xss,,qsx,200
+Existences,e-ss-s,Xss,,qsx,200
 Receiving,r-s2-e-\-h,Rseg,,qegrs,201
 Picking,p-e-k-\-h,Pekg,,qegkp,202
 Picks,p-e-k-s,Peks,,qekps,202
@@ -7303,9 +7314,10 @@ Subjection,s-j-sh,Sjz,,qjsz,216
 Including,e-/-d-\-h,Edg,,qdeg,218
 Includes,e-/-d-s,Eds,,qdes,218
 Creation,k-r-ea-sh,Krez,,qekrz,219
-Criticality,k-r-/-ya,Kry,,qkry,219
+Critical,k-r-/-ya,Kry,,qkry,219
 Critically,k-r-/-ya-e,Krye,,qekry,219
-Critical,k-r-/-ya,Kryo,o,qkory,219
+Criticality,k-r-/-ya,Kryo,o,qkory,219
+Criticality,k-r-/-ya,Kryqk,,qkry,219
 Uncritical,n-k-r-/-ya,Nkry,,qknry,219
 Recreation,r-e-k-r-ea-sh,Rkrez,,qekrz,219
 Leveled,l-e-v-l-d,Levld,,qdelv,220
@@ -7338,12 +7350,15 @@ Optioned,o-p-sh-d,Opzd,,qdopz,231
 Optioning,o-p-sh-\-h,Opzg,,qgopz,231
 Optional,o-p-sh-l,Opzl,,qlopz,231
 Options,o-p-sh-s,Opzs,,qopsz,231
-Marched,m-a-ch-d,Macd,,qacdm,232
+Match,m-a-ch,Mac,,qacm,232
+Matched,m-a-ch-d,Macd,,qacdm,232
 Matched,m-a-ch-d,Macdo,o,qacdmo,232
+Marched,m-a-ch-d,Macdqk,,qacdm,232
 Matching,m-a-ch-\-h,Macg,,qacgm,232
 Marching,m-a-ch-\-h,Macgo,o,qacgmo,232
 Match,m-a-ch,Maci,i,qacim,232
 March,m-a-ch,Maco,o,qacmo,232
+Matchs,m-a-ch-s,Macs,,qacms,232
 Marches,m-a-ch-s,Macsi,i,qacims,232
 Matches,m-a-ch-s,Macso,o,qacmos,232
 Unmatched,n-m-a-ch-d,Nmacd,,qacdmn,232
@@ -7353,11 +7368,11 @@ Secured,s2-e-k-r-d,Sekrd,,qdekrs,232
 Securely,s2-e-k-r-e,Sekre,,qekrs,232
 Securing,s2-e-k-r-\-h,Sekrg,,qegkrs,232
 Secures,s2-e-k-r-s,Sekrs,,qekrs,232
+Encrypt,n-\-k,Nk,,qkn,234
 Encryptable,n-\-k-b,Nkb,,qbkn,234
 Encrypted,n-\-k-d,Nkd,,qdkn,234
 Encrypting,n-\-k-\-h,Nkg,,qgkn,234
 Encrypts,n-\-k-s,Nks,,qkns,234
-Encrypt,n-\-k,Nku,u,qknu,234
 Encryption,n-\-k-\-sh,Nkz,,qknz,234
 Excepted,s-e-p-d,Sepd,,qdeps,236
 Excepting,s-e-p-\-h,Sepg,,qegps,236
@@ -7392,6 +7407,7 @@ Database,d-a-t-b,Datb,,qabdt,255
 Databased,d-a-t-b-d,Datbd,,qabdt,255
 Databasing,d-a-t-b-\-h,Datbg,,qabdgt,255
 Databases,d-a-t-b-s,Datbs,,qabdst,255
+Afraid,fr-a,Fra,,qafr,255
 Config,k-f-e-g,Kfeg,,qefgk,257
 Configed,k-f-e-g-d,Kfegd,,qdefgk,257
 Configing,k-f-e-g-\-h,Kfegg,,qefgk,257
@@ -7437,6 +7453,7 @@ Ignore,e-g-n-o-r,Egnor,,qegnor,282
 Ignored,e-g-n-o-r-d,Egnord,,qdegnor,282
 Ignoring,e-g-n-o-r-\-h,Egnorg,,qegnor,282
 Ignores,e-g-n-o-r-s,Egnors,,qegnors,282
+None,n-u-n,Nun,,qnu,283
 Migration,m-i-g-r-a-z,Migraz,,qagimrz,284
 Migrations,m-i-g-r-a-z-s,Migrazs,,qagimrsz,284
 Inspected,n-s-p-d,Nspd,,qdnps,285
@@ -7464,6 +7481,7 @@ Policies,p-o-l-s,Pols,,qlops,293
 Turning,t-e-n-\-h,Teng,,qegnt,293
 Turns,t-e-n-s,Tens,,qenst,293
 Resulting,r-s2-u-\-h,Rsug,,qgrsu,295
+Expireds,e-s-p-i-/-t-s,Xpids,,qdipsx,296
 Afternoons,a-f-n-u-n-s,Afnuns,,qafnsu,297
 Functioned,f-nk-d,Fqd,,qdfq,297
 Functioning,f-nk-\-h,Fqg,,qfgq,297
@@ -7709,6 +7727,7 @@ Auction,o-k-sh,Okz,,qkoz,514
 Researched,r-s2-e-ch-d,Rsecd,,qcders,519
 Researching,r-s2-e-ch-\-h,Rsecg,,qcegrs,519
 Researches,r-s2-e-ch-s,Rsecs,,qcers,519
+Search,s2-e-ch,Sec,,qces,519
 Searchable,s2-e-ch-b,Secb,,qbces,519
 Searched,s2-e-ch-d,Secd,,qcdes,519
 Searching,s2-e-ch-\-h,Secg,,qcegs,519
@@ -7720,6 +7739,7 @@ Publicly,p-b-e,Pbe,,qbep,536
 Public,p-b,Pbo,o,qbop,536
 Existed,e-s-e-s-d,Xxd,,qdx,541
 Existing,e-s-e-s-\-h,Xxg,,qgx,541
+Exists,e-s-e-s-s,Xxs,,qsx,541
 Simply,s2-e-m-p-e,Sempe,,qemps,545
 Paused,p-o-s-d,Posd,,qdops,546
 Pausing,p-o-s-\-h,Posg,,qgops,546
@@ -7907,10 +7927,12 @@ Complains,k-p-s,Kpso,o,qkops,818
 Installable,n-s2-t-o-l-b,Nstolb,,qblnost,822
 Installs,n-s2-t-o-l-s,Nstols,,qlnost,822
 Resolution,r-s2-o-l-sh,Rsolz,,qlorsz,851
+Put,p,Pu,u,qpu,855
 Singled,s2-e-ng-d,Segd,,qdegs,874
 Singly,s2-e-ng-e,Sege,,qegs,874
 Singing,s2-e-ng-\-h,Segg,,qegs,874
 Singling,s2-e-ng-\-h,Seggo,o,qegos,874
+Single,s2-e-ng,Segi,i,qegis,874
 Single,s2-e-ng,Sego,o,qegos,874
 Sings,s2-e-ng-s,Segs,,qegs,874
 Singles,s2-e-ng-s,Segso,o,qegos,874
@@ -7958,6 +7980,10 @@ Recommitted,r-e-k-e-d,Rked,,qdekr,1127
 Recommitting,r-e-k-e-\-h,Rkeg,,qegkr,1127
 Recommits,r-e-k-e-s,Rkes,,qekrs,1127
 Getting,g-e-t-\-h,Getg,,qegt,1138
+Deprovision,d-pr-v-e-sh,Dprvez,,qdeprvz,1146
+Deprovisioned,d-pr-v-e-sh-d,Dprvezd,,qdeprvz,1146
+Deprovisioning,d-pr-v-e-sh-\-h,Dprvezg,,qdegprvz,1146
+Deprovisions,d-pr-v-e-sh-s,Dprvezs,,qdeprsvz,1146
 Reveal,r-v-e-l,Rvel,,qelrv,1146
 Deployable,d-pl-b,Dplb,,qbdlp,1151
 Deployed,d-pl-d,Dpld,,qdlp,1151
@@ -7979,6 +8005,7 @@ Rebuild,r-bld,Rbld,,qbdlr,1190
 Rebuilding,r-bld-\-h,Rbldg,,qbdglr,1190
 Rebuilds,r-bld-s,Rblds,,qbdlrs,1190
 Given,g-e,Geo,o,qego,1195
+Guess,g-e-s,Geso,o,qegos,1195
 Callable,k-o-b,Kob,,qbko,1195
 Called,k-o-t,Kodi,i,qdiko,1195
 Calling,k-o-\-h,Kog,,qgko,1195
@@ -8018,6 +8045,7 @@ Answerable,a-n-s-b,Ansb,,qabns,1331
 Answered,a-n-s-d,Ansd,,qadns,1331
 Answering,a-n-s-\-h,Ansg,,qagns,1331
 Answers,a-n-s-s,Anss,,qans,1331
+Might,m-a-t,Mat,,qamt,1354
 Mattered,m-a-t-d,Matd,,qadmt,1354
 Mattering,m-a-t-\-h,Matg,,qagmt,1354
 Grouped,g-r-u-p-d,Grupd,,qdgpru,1355
@@ -8166,3 +8194,5 @@ Rewrote,r-e-r-o-t,Rrot,,qort,6634
 Certifying,s2-e-df-\-h,Setfg,,qefgst,7488
 Certificates,s2-e-df-s,Setfs,,qefst,7488
 Certification,s2-e-df-sh,Setfz,,qefstz,7488
+Automation,o-tm-a-sh,Otmz,,qmotz,12226
+Automations,o-tm-a-sh-s,Otmzs,,qmostz,12226

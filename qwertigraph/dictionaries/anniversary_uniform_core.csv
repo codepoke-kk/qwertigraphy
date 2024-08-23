@@ -5168,7 +5168,7 @@ Naught,n-o-t,Noti,i,qinot,3
 Knot,n-o-t,Noto,o,qnot,3
 Notation,n-o-t-sh,Notz,,qnotz,3
 Inpatient,n-p-a-sh-t,Npazt,,qanptz,3
-Instr-,n-s-/,Nsi,i,qins,3
+Instr-,n-s-/,Nsiqk,i,qins,3
 Inscribe,n-s2-k-r,Nskro,o,qknors,3
 Gnostic,n-/-s2-t,Nst,,qnst,3
 Investment,n-v-e-s2-m,Nvesm,,qemnsv,3
@@ -5296,7 +5296,7 @@ Net,n-e-t,Neto,o,qenot,4
 Knit,n-e-t,Netu,u,qentu,4
 Uniform,e-u-n-f-m,Nfmo,o,qfmno,4
 Nudge,n-j,Nj,,qjn,4
-Intricate,n-/-k,Nk,,qkn,4
+Intricate,n-/-k,Nkqk,,qkn,4
 Increment,n-k-r-e-m,Nkrem,,qekmnr,4
 Encourage,n-k-r-j,Nkrj,,qjknr,4
 New mexico,n-/-m,Nmo,o,qmno,4
@@ -5315,7 +5315,6 @@ Purely,p-e-u-e,Pue,,qepu,4
 Pure,p-e-u,Puo,o,qopu,4
 Range,r-a-n-j,Ranj,,qajnr,4
 Hourly,r-e,Reo,o,qeor,4
-Referred,r-f-/-t,Rfd,,qdfr,4
 Remarkable,r-m-b,Rmb,,qbmr,4
 Rose,r-o-s,Ros,,qors,4
 Republic,r-p,Rpi,i,qipr,4
@@ -5511,7 +5510,6 @@ Slip,s-l-e-p,Slep,,qelps,6
 Sleep,s-l-e-p,Slepo,o,qelops,6
 Song,s2-o-ng,Sog,,qgos,6
 Transportation,t-/-p-o-t-sh,Tpotz,,qoptz,6
-Treated,t-r-e-td,Tretd,,qdert,6
 Worse,u-u-s,Uuso,o,qosu,6
 Via,v-ia,Viao,o,qaiov,6
 Advised,v-i-s2-d,Visd,,qdisv,6
@@ -6014,7 +6012,7 @@ Reduce,r-e-d-u-s,Rdus,,qdrsu,20
 Surface,s2-e-f-a-s,Sefas,,qaefs,20
 Surrender,s-e-r-e-nt,Serend,,qdenrs,20
 Signed,s2-i-nt,Sind,,qdins,20
-Abstr-,a-b-/,Abo,o,qabo,21
+Abstr-,a-b-/,Aboqk,o,qabo,21
 Blue,bl-u,Blu,,qblu,21
 Blew,bl-u,Bluo,o,qblou,21
 Destined,d-s2-tn-d,Dstnd,,qdnst,21
@@ -6066,8 +6064,8 @@ Smaller,s2-m-o-r,Smor,,qmors,23
 Spring,s-pr-e-ng,Spreg,,qegprs,23
 Staff,s2-t-a-f,Staf,,qafst,23
 Teacher,t-e2-ch-e2,Tece,,qcet,23
+Advice,v-i-s,Vis,,qisv,23
 Advisable,v-i-s-b,Visb,,qbisv,23
-Advice,v-i-s,Visi,i,qisv,23
 Vice,v-i-s,Viso,o,qiosv,23
 Advise,v-i-s,Visu,u,qisuv,23
 Afford,a-f-d,Afd,,qadf,24
@@ -6358,7 +6356,7 @@ Portion,p-o-r-sh,Porz,,qoprz,45
 Reached,r-e-ch-t,Rcd,,qcdr,45
 Dispute,d-s-p-u,Dspu,,qdpsu,46
 Folk,f-o-k,Fok,,qfko,46
-Poor,p-u,Pu,,qpu,46
+Poor,p-u,Puqk,,qpu,46
 Reputation,r-p-u-sh,Rpuz,,qpruz,46
 Wherever,a-r-e-v,Arev,,qaerv,47
 Grace,g-r-a-s,Gras,,qagrs,47
@@ -6749,7 +6747,6 @@ Contention,k-tn-sh,Ktnz,,qkntz,124
 Incomparable,n-k-pr-b,Nkprb,,qbknpr,124
 Dispatch,d-s-p-a-ch,Dspac,,qacdps,125
 Count,k-nt,Knt,,qknt,126
-Counted,k-nt-d,Kntd,,qdknt,126
 Far,f-a,Fa,,qaf,127
 Favorable,f-a-b,Fabo,o,qabfo,127
 Favor,f-a,Fao,o,qafo,127
@@ -7005,9 +7002,9 @@ Resident,r-s2-e-tn,Rsedn,,qdenrs,251
 Certain,s2-e-tn,Setn,,qenst,251
 Text,t-x,Tx,,qtx,252
 Texas,t-x,Txo,o,qotx,252
-Fray,fr-a,Fra,,qafr,255
 Afraid,fr-a,Frai,i,qafir,255
 Freight,fr-a,Frao,o,qafor,255
+Fray,fr-a,Fraqk,,qafr,255
 Unafraid,n-fr-a,Nfra,,qafnr,255
 Liked,l-a-/-t,Lado,o,qadlo,258
 Later-,l-a-/,Lai,i,qail,258
@@ -7426,7 +7423,6 @@ Soul,s2-o-l,Soli,i,qilos,851
 So well,s2-o-l,Solo,o,qlos,851
 Sole,s2-o-l,Solu,u,qlosu,851
 Solution,s2-o-l-sh,Solz,,qlosz,851
-Put,p,Po,o,qop,855
 Better,b-t-e2,Bte,,qbet,859
 Please,pl,Pl,,qlp,863
 Its,t-s,Ts,,qst,871
@@ -7456,7 +7452,7 @@ Act,a-k,Ak,,qak,955
 Acted,a-k-t,Akd,,qadk,955
 I can,a-k,Aki,i,qaik,955
 Acknowledge,a-k,Ako,o,qako,955
-Acts,a-k-s,Aks,,qaks,955
+Acts,a-k-s,Aksqk,,qaks,955
 Ache,a-k,Aku,u,qaku,955
 Active,a-k-v,Akv,,qakv,955
 Action,a-k-sh,Akz,,qakz,955
@@ -7469,7 +7465,7 @@ Someone,s2-m-u-n,Smun,,qmnsu,970
 Wrong,r-o-ng,Rog,,qgor,975
 Entrust,nt-r-s,Ntrs,,qnrst,994
 Literal,l-e-t-l,Letl,,qelt,1011
-Literate,l-e-t,Leto,o,qelot,1011
+Literate,l-e-t,Letoqk,o,qelot,1011
 Litigation,l-e-t-sh,Letz,,qeltz,1011
 Always,o-l-s,Ols,,qlos,1021
 Reappoint,r-o-e,Ry,,qry,1024
@@ -7533,7 +7529,7 @@ Give,g-e,Ge,,qeg,1195
 Given,g-e,Gei,i,qegi,1195
 Gives,g-e-s,Ges,,qegs,1195
 Guess,g-e-s,Gesi,i,qegis,1195
-Given us,g-e-s,Geso,o,qegos,1195
+Given us,g-e-s,Gesoqk,o,qegos,1195
 Give us,g-e-s,Gesu,u,qegsu,1195
 Call,k-o,Ko,,qko,1195
 Colorado,k-o,Koo,o,qko,1195
