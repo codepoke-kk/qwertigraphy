@@ -13,6 +13,7 @@ Wine,u-i-n,Uino,o,qinou,1
 Away,n-/-n,Nn,,qn,2
 Jesus,j-e-ss,Jess,,qejs,3
 Midst,m-e-d-s,Medso,o,qdems,3
+Misunderstanding,m-s-/-s2-tn-\-h,Msstng,,qdgmns,4
 Respects,r-e-s-s,Rsse,e,qers,7
 Hopeful,^-h-\-o-p-f,Hopf,,qfhop,15
 Quicker,k-\-w-^-e-k-r,Qekr,,qekqr,15
@@ -22,7 +23,6 @@ Gods,g-o-d-s,Gus,u,qgsu,23
 Agreement,^-ya-m,Yam,,qamy,24
 Agreements,^-ya-m-s,Yams,,qamsy,24
 Coarse,k-r-s,Krso,o,qkors,26
-Respect,r-e-s,Rse,,qers,30
 Exchanged,e-s2-ch-d,Xct,,qctx,30
 America,a-m,Amo,o,qamo,32
 Poor,p-u,Po,,qpu,46
@@ -125,6 +125,7 @@ Writes,r-i-s,Riso,o,qiors,4401
 Them,th-m,Hm,,qhm,4409
 One,u-n,Un,,qnu,4518
 Receipt,r-e-s-e,Rseo,o,qeors,5436
+Receipts,r-e-s-e-s,Rseso,o,qeors,5436
 Seeing,s-e-\-h,Seg,,qegs,5436
 Cession,s-e-sh,Sezo,o,qeosz,5436
 Know,n-o,Nou,u,qnou,5452
@@ -133,6 +134,10 @@ Their,th2,Ho,o,qho,6054
 Just,j-u-s,Jus,,qjsu,6206
 And,n-/-t,Nd,,qdn,6256
 And,n-/-t,Nt,,qdn,6256
+Certificate,s2-df,Sdf,,qdfs,7488
+Certificates,s2-df-s,Sdfs,,qdfs,7488
+Certification,s2-df-sh,Sdfz,,qdfsz,7488
+Certifications,s2-df-sh-s,Sdfzs,,qdfsz,7488
 Certificate,s2-e-df,Sedf,,qefst,7488
 Certificates,s2-e-df-s,Sedfs,,qdefs,7488
 Certification,s2-e-df-sh,Sedfz,,qdefsz,7488

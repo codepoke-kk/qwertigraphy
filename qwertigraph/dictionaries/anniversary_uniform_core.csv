@@ -4547,7 +4547,6 @@ Glob,g-l-o-b,Globo,o,qbglo,1
 Glorify,g-l-o-f,Glof,,qfglo,1
 Grateful,g-r-a-t-f,Gratf,,qafgrt,1
 Grief,g-r-e-f,Gref,,qefgr,1
-Grip,g-r-e-p,Grep,,qegpr,1
 Greet,g-r-e-t,Gret,,qegrt,1
 Groundwork,g-r-nt-r-k,Grndrk,,qdgknr,1
 Harmless,^-h-\-a2-m-l,Haml,,qahlm,1
@@ -4764,7 +4763,7 @@ Railroad,r-r,Rr,,qr,1
 Rural,r-r-l,Rrl,,qlr,1
 Resign,r-s2-i-n,Rsin,,qinrs,1
 Recital,r-s2-i-t-l,Rsitl,,qilrst,1
-Reverence,r-e-v,Rv,,qrv,1
+Reverence,r-e-v,Rvqk,,qrv,1
 Russia,r-sh-a,Rza,,qarz,1
 Sack,s2-a-k,Sak,,qaks,1
 Sake,s2-a-k,Sako,o,qakos,1
@@ -5497,7 +5496,6 @@ Rapid,r-a-p-d,Rapd,,qadpr,6
 Rapidly,r-a-p-d-e,Rapde,,qadepr,6
 Writer,r-i-r,Rir,,qir,6
 Resist,r-ss,Rsso,o,qors,6
-Are you,r-u,Ru,,qru,6
 Rue,r-u,Ruo,o,qoru,6
 Revised,r-v-i-s2-d,Rvisd,,qdirsv,6
 Circle,s2-e-k-l,Sekl,,qekls,6
@@ -6850,7 +6848,6 @@ Throw,th-r-o,Hro,,qhor,172
 Kill,k-e-l,Kel,,qekl,172
 Kiln,k-e-l,Kelo,o,qeklo,172
 Migrate,m-i-g-r-a,Migra,,qagimr,172
-Received,r-s-e-/-t,Rsed,,qders,174
 Difference,df,Dfo,o,qdfo,175
 Huge,^-h-\-e-u-j,Huj,,qhju,175
 Claim,k-l-a,Kla,,qakl,175
@@ -6926,9 +6923,9 @@ Fact,f-a-k,Fak,,qafk,205
 Foe,f-o,Fo,,qfo,205
 Following,f-o-\-h,Fogo,o,qfgo,205
 Fall,f-o,Foi,i,qfio,205
+Follow,f-o,Foo,o,qfo,205
 Falls,f-o-s,Fosi,i,qfios,205
 Follows,f-o-s,Foso,o,qfos,205
-Follow,f-o,Fou,u,qfou,205
 Info,n-f-o,Nfo,,qfno,205
 Interim,n-/-m,Nm,,qmn,205
 Intermission,n-/-m-sh,Nmz,,qmnz,205
@@ -7015,15 +7012,15 @@ Unable,n-b,Nb,,qbn,265
 Started,s2-t-a2-td,Statd,,qadst,266
 Goes,g-s,Gs,,qgs,267
 Whatever,o-t-e-v,Otev,,qeotv,267
-Sin,s2-e-n,Sen,,qens,268
+Seen,s2-e-n,Sen,,qens,268
 Scene,s2-e-n,Seni,i,qeins,268
-Seen,s2-e-n,Seno,o,qenos,268
+Sin,s2-e-n,Senqk,,qens,268
 Sins,s2-e-n-s,Sens,,qens,268
 Sends,s2-e-n-s,Sensi,i,qeins,268
 Scenes,s2-e-n-s,Senso,o,qenos,268
 Send,s2-e-n,Senu,u,qensu,268
+Together,t-u-g,Tug,,qgtu,269
 To go,t-u-g,Tugi,i,qgitu,269
-Together,t-u-g,Tugo,o,qgotu,269
 Review,r-v-e-u,Rvu,,qruv,272
 View,v-e-u,Vu,,quv,272
 Luck,l-u-k,Luk,,qklu,273
@@ -7078,8 +7075,8 @@ Foreign,f-n,Fno,o,qfno,301
 Center,^-s2-n,Snu,u,qnsu,301
 String,s2-t-r-e-ng,Streg,,qegrst,302
 Attempt,a-tm-t,Atmt,,qamt,306
+During,d-r,Dr,,qdr,309
 Durable,d-r-b,Drb,,qbdr,309
-During,d-r,Dri,i,qdir,309
 Doctor,d-r,Dro,o,qdor,309
 Director ,d-r,Dru,u,qdru,309
 Duration,d-r-a-sh,Drz,,qdrz,309
@@ -7373,9 +7370,9 @@ Come,k-m,Km,,qkm,718
 Comes,k-m-s,Kms,,qkms,718
 Commission,k-m-sh,Kmz,,qkmz,718
 Income,n-k-m,Nkm,,qkmn,718
-Full,f-u,Fu,,qfu,719
 Fully,f-u,Fui,i,qfiu,719
-For you,f-u,Fuo,o,qfou,719
+For you,f-u,Fuoqk,o,qfou,719
+Full,f-u,Fuqk,,qfu,719
 Fuss,f-u-s,Fus,,qfsu,719
 For us,f-u-s,Fuso,o,qfosu,719
 In full,n-f-u,Nfu,,qfnu,719
@@ -7471,6 +7468,7 @@ Reappoint,r-o-e,Ry,,qry,1024
 Point,o-e,Y,,qy,1024
 Appoint,o-e,Yo,o,qoy,1024
 Appointive,o-e-v,Yv,,qvy,1024
+Hour,r,Ro,o,qor,1040
 Ours,r-s2,Rs,,qrs,1040
 Hours,r-s2,Rso,o,qors,1040
 Until,nt-e,Nte,,qent,1046
@@ -7643,7 +7641,7 @@ Her,e-r,Ero,o,qeor,1977
 Errs,e-r-s,Ersi,i,qeirs,1977
 Ears,e-r-s,Erso,o,qeors,1977
 Again,a-g-n,Agn,,qagn,1978
-Our,r,Ro,o,qor,2030
+Our,r,Ru,u,qru,2030
 List,l-s,Lso,o,qlos,2039
 Lists,l-s-s,Lss,,qls,2039
 Access,a-k-ss,Akss,,qaks,2103
@@ -7747,7 +7745,6 @@ Incision,n-s-e-sh,Nsez,,qensz,5436
 Insertion,n-s-e-sh,Nsezo,o,qenosz,5436
 Proceed,pr-s-e,Prse,,qeprs,5436
 Procession,pr-s-e-sh,Prsez,,qeprsz,5436
-Receipts,r-e-s-e-s,Rses,,qers,5436
 See,s-e,Se,,qes,5436
 Seal,s-e-l,Sel,,qels,5436
 Session,s-e-sh,Sez,,qesz,5436
