@@ -2383,6 +2383,7 @@ Rotational,r-o-t-a-sh-l,Rotzl,,qlortz,0
 Rotationally,r-o-t-a-sh-l-e,Rotzle,,qelortz,0
 Rotations,r-o-t-a-sh-s,Rotzs,,qorstz,0
 Responsibilities,r-p-\-b-s,Rpbs,,qbprs,0
+Replying,r-e-p-\-h,Rpg,,qgpr,0
 Replying,r-e-p-\-h,Rpgo,o,qgopr,0
 Replica,r-e-pl-k-a,Rplka,,qaklpr,0
 Replicas,r-e-pl-k-a-s,Rplkas,,qaklprs,0
@@ -3768,7 +3769,7 @@ Renewably,r-e-n-u-\-b-e,Rnube,,qbenru,1
 Renewables,r-e-n-u-\-b-s,Rnubs,,qbnrsu,1
 Repeatably,r-p-e-b-e,Rpebe,,qbepr,1
 Repeatables,r-p-e-b-s,Rpebs,,qbeprs,1
-Representing,r-p-\-h,Rpg,,qgpr,1
+Representing,r-p-\-h,Rpgqk,,qgpr,1
 Reproductive,r-pr-o-d-u-k-v,Rprodukv,,qdkopruv,1
 Reproductively,r-pr-o-d-u-k-v-e,Rprodukve,,qdekopruv,1
 Reproduction,r-pr-o-d-u-k-sh,Rprodukz,,qdkopruz,1
@@ -6903,6 +6904,7 @@ Obtained,o-b-tn-d,Obtnd,,qbdnot,107
 Obtaining,o-b-tn-\-h,Obtng,,qbgnot,107
 Obtains,o-b-tn-s,Obtns,,qbnost,107
 Presented,pr-d,Prd,,qdpr,107
+Below,bl-o,Bloo,o,qblo,108
 Immediates,e-m-e-s,Emes,,qems,108
 Commit,k-m-e-t,Kmet,,qekmt,108
 Committing,k-m-e-t-\-h,Kmetg,,qegkmt,108
@@ -7278,6 +7280,8 @@ Modifies,m-o-df-s,Modfs,,qdfmos,200
 Motivation,m-o-df-a-sh,Motvz,,qmotvz,200
 Unnecessarily,u-n-e-ss-e,Nesseo,o,qenos,200
 Precise,pr-e-ss,Presso,o,qeoprs,200
+Scanner,s-k-a-n-r,Skanr,,qaknrs,200
+Scanners,s-k-a-n-r-s,Skanrs,,qaknrs,200
 Extras,e-ss,Xso,o,qosx,200
 Existences,e-ss-s,Xss,,qsx,200
 Picking,p-e-k-\-h,Pekg,,qegkp,202
@@ -7496,6 +7500,7 @@ Phones,f-o-n-s,Fons,,qfnos,299
 Centered,^-s2-n-d,Sndo,o,qdnos,301
 Centering,^-s2-n-\-h,Sng,,qgns,301
 Centers,^-s2-n-s,Sns,,qns,301
+Monday,m-u-n,Mun,,qmnu,311
 Verify,v-e-r-f,Verf,,qefrv,311
 Verifiable,v-e-r-f-b,Verfb,,qbefrv,311
 Verified,v-e-r-f-d,Verfd,,qdefrv,311
@@ -7700,6 +7705,8 @@ Reasons,r-s2-n-s,Rsns,,qnrs,462
 Controlled,^-k-/-l-d,Kld,,qdkl,463
 Controlling,^-k-/-l-\-h,Klg,,qgkl,463
 Controls,^-k-/-l-s,Kls,,qkls,463
+Quitting,k-w-e-t-\-h,Qetg,,qegqt,463
+Quits,k-w-e-t-s,Qets,,qeqst,463
 Windowed,u-e-nt-o-d,Uendod,,qdenou,464
 Windowing,u-e-nt-o-\-h,Uendog,,qdegnou,464
 Windows,u-e-nt-o-s,Uendos,,qdenosu,464
@@ -7964,6 +7971,7 @@ Acknowledged,a-k-d,Akdo,o,qadko,955
 Acting,a-k-\-h,Akg,,qagk,955
 Actively,a-k-v-e,Akve,,qaekv,955
 Inactive,n-a-k-v,Nakv,,qaknv,955
+Saying,s-a-\-h,Sag,,qags,955
 Wronged,r-o-ng-d,Rogd,,qdgor,975
 Wrongly,r-o-ng-e,Roge,,qegor,975
 Wronging,r-o-ng-\-h,Rogg,,qgor,975
@@ -7984,6 +7992,7 @@ Noticing,n-e-s-\-h,Nesg,,qegns,1079
 Restart,r-s2-t-a2-t,Rstat,,qarst,1093
 Restarting,r-s2-t-a2-t-\-h,Rstatg,,qagrst,1093
 Restarts,r-s2-t-a2-t-s,Rstats,,qarst,1093
+Start,s2-t-a2-t,Stat,,qast,1093
 Starting,s2-t-a2-t-\-h,Statg,,qagst,1093
 Understandable,u-/-s2-tn-b,Ustnb,,qbnstu,1098
 Understands,u-/-s2-tn-s,Ustns,,qnstu,1098
@@ -8181,6 +8190,7 @@ Pruned,pr-u-n-d,Prund,,qdnpru,4518
 Pruning,pr-u-n-\-h,Prung,,qgnpru,4518
 Prunes,pr-u-n-s,Pruns,,qnprsu,4518
 Outs,a-u-s,Ws,,qsw,4520
+News,n-u-s,Nus,,qnsu,4620
 Renewing,r-e-n-u-\-h,Rnug,,qgnru,4620
 Renews,r-e-n-u-s,Rnus,,qnrsu,4620
 Unlikely,n-l-a-e,Nlae,,qaeln,4661

@@ -3193,8 +3193,8 @@ Nonexistence,n-o-n-e-ss,Nonxs,,qnosx,0
 Norway,n-o-r-a,Nora,,qanor,0
 Norfolk,n-o-r-f-k,Norfk,,qfknor,0
 Nor,n-o-r,Nori,i,qinor,0
-Nose,n-o-s,Nos,,qnos,0
 Nos.,n-o-s,Noso,o,qnos,0
+Nose,n-o-s,Nosqk,,qnos,0
 Notarial,n-o-t-a-r-l,Notarl,,qalnort,0
 Naughty,n-o-t-e,Noteo,o,qenot,0
 Unalterable,n-o-t-e-r-b,Noterb,,qbenort,0
@@ -3301,7 +3301,7 @@ Northwesterly direction,nu-r-e-d,Nured,,qdenru,0
 Northwesterly side,nu-r-e-s,Nures,,qenrsu,0
 New year,n-u-r,Nuro,o,qnoru,0
 Neurosis,n-u-r-ss,Nurss,,qnrsu,0
-In the house,n-u-s,Nus,,qnsu,0
+In the house,n-u-s,Nusqk,,qnsu,0
 Northwest territories,nu-t-e2-t,Nutet,,qentu,0
 Nut,n-u-t,Nuto,o,qnotu,0
 Nutriment,n-u-t-r-e-m,Nutrem,,qemnrtu,0
@@ -6690,7 +6690,7 @@ Jump,j-m-p,Jmp,,qjmp,107
 Obtain,o-b-tn,Obtn,,qbnot,107
 Blow,bl-o,Blo,,qblo,108
 Below,bl-o,Bloi,i,qbilo,108
-By-law,bl-o,Bloo,o,qblo,108
+By-law,bl-o,Blooqk,o,qblo,108
 Immediate,e-m-e,Emeo,o,qemo,108
 Fresh,fr-e-sh,Frez,,qefrz,108
 Purpose,pr-p,Prp,,qpr,108
@@ -6903,8 +6903,8 @@ Cloud,k-l-a-u,Klw,,qklw,197
 Good afternoon,g-a-f,Gaf,,qafg,199
 Acceptance,a-k-s2,Aksi,i,qaiks,200
 Accept,a-k-s2,Akso,o,qakos,200
-Manger,mn-j-e2,Mnje,,qejmn,200
-Manager,mn-j-e2,Mnjeo,o,qejmno,200
+Manager,mn-j-e2,Mnje,,qejmn,200
+Manger,mn-j-e2,Mnjeqk,,qejmn,200
 Modify,m-o-df,Modf,,qdfmo,200
 Mortify,m-o-df,Motf,,qfmot,200
 Motive,m-o-df,Motv,,qmotv,200
