@@ -5775,6 +5775,9 @@ Mothering,m-u-th-\-h,Muhg,,qghmu,18
 Mothers,m-u-th-s,Muhs,,qhmsu,18
 Neighboring,n-a-br-\-h,Nabrg,,qabgnr,18
 Unrighteousness,n-r-i-ch-u-s-n-e-s,Nricusnes,,qceinrsu,18
+Authoritarian,o-th-r-a-n,Ohran,,qahnor,18
+Authoritarians,o-th-r-a-n-s,Ohrans,,qahnors,18
+Authoritarianism,o-th-r-a-n-s-m,Ohransm,,qahmnors,18
 Authoritatively,o-th-rdf-e,Ohrtve,,qehortv,18
 Planet,pl-a-n-e-t,Planeto,o,qaelnopt,18
 Prayed,pr-a-d,Prad,,qadpr,18
@@ -5993,6 +5996,7 @@ Recognizes,r-k-n-i-s-s,Rkniss,,qiknrs,26
 Recurse,r-e-k-r-s,Rkrsi,i,qikrs,26
 Recursive,r-e-k-r-s-v,Rkrsv,,qkrsv,26
 Recursively,r-e-k-r-s-v-e,Rkrsve,,qekrsv,26
+Realize,r-e-l-i-s,Rlis,,qilrs,26
 Realized,r-e-l-i-s-d,Rlisd,,qdilrs,26
 Realizing,r-e-l-i-s-\-h,Rlisg,,qgilrs,26
 Realizes,r-e-l-i-s-s,Rliss,,qilrs,26
@@ -6590,7 +6594,7 @@ Delivering,d-l-\-h,Dlg,,qdgl,69
 Delivers,d-l-s,Dls,,qdls,69
 Deliveries,d-l-s,Dlso,o,qdlos,69
 Paying,p-a-\-h,Pag,,qagp,69
-Passion,p-a-sh,Pazo,o,qaopz,69
+Passion,p-a-sh,Paz,,qapz,69
 Romanced,r-o-mn-s-d,Romnsd,,qdmnors,69
 Romancing,r-o-mn-s-\-h,Romnsg,,qgmnors,69
 Romances,r-o-mn-s-s,Romnss,,qmnors,69
@@ -6677,8 +6681,8 @@ Voice,v-o-e-s,Vyso,o,qosvy,76
 Voices,v-o-e-s-s,Vyss,,qsvy,76
 Behavioral,b-^-h-\-a-v-r-l,Bhavrl,,qabhlrv,78
 Behaviors,b-^-h-\-a-v-r-s,Bhavrs,,qabhrsv,78
-Cakes,k-a-k-s,Kaks,,qaks,78
-Characters,k-a-k-s,Kakso,o,qakos,78
+Characters,k-a-k-s,Kaks,,qaks,78
+Cakes,k-a-k-s,Kaksqk,,qaks,78
 Enjoyed,n-j-o-e-d,Njyd,,qdjny,79
 Enjoying,n-j-o-e-\-h,Njyg,,qgjny,79
 Enjoys,n-j-o-e-s,Njys,,qjnsy,79
@@ -6933,7 +6937,7 @@ Delays,d-l-a-s,Dlas,,qadls,112
 Lighting,l-i-\-h,Ligo,o,qgilo,113
 Relied,r-e-l-i-d,Rlid,,qdilr,113
 Relying,r-e-l-i-\-h,Rlig,,qgilr,113
-Relies,r-e-l-i-s,Rlis,,qilrs,113
+Relies,r-e-l-i-s,Rlisqk,,qilrs,113
 Sometimes,s2-tm-s,Stmso,o,qmost,114
 Blanked,bl-a-nk-d,Blaqd,,qabdlq,115
 Blanking,bl-a-nk-\-h,Blaqg,,qabglq,115
@@ -7373,6 +7377,7 @@ Matches,m-a-ch-s,Macso,o,qacmos,232
 Unmatched,n-m-a-ch-d,Nmacd,,qacdmn,232
 Internet,n-/-nt,Nnt,,qnt,232
 Non,n-o-n,Nonu,u,qnou,232
+Secure,s2-e-k-r,Sekr,,qekrs,232
 Secured,s2-e-k-r-d,Sekrd,,qdekrs,232
 Securely,s2-e-k-r-e,Sekre,,qekrs,232
 Securing,s2-e-k-r-\-h,Sekrg,,qegkrs,232
@@ -7753,6 +7758,7 @@ Searches,s2-e-ch-s,Secs,,qces,519
 Balancer,b-a-l-r,Balr,,qablr,522
 Balancers,b-a-l-r-s,Balrs,,qablrs,522
 Insecurities,n-s2-e-k-/-r-s,Nsekrs,,qeknrs,530
+Security,s2-e-k-/-r,Sekro,o,qekors,530
 Publicly,p-b-e,Pbe,,qbep,536
 Public,p-b,Pbo,o,qbop,536
 Existed,e-s-e-s-d,Xxd,,qdx,541
@@ -8055,6 +8061,7 @@ Unseemly,n-s2-e-m-e,Nseme,,qemns,1212
 Seeming,s2-e-m-\-h,Semg,,qegms,1212
 Seems,s2-e-m-s,Sems,,qems,1212
 Users,e-u-r-s,Urs,,qrsu,1237
+User,e-u-r,Uru,u,qru,1237
 Actuals,a-k-t-l-s,Aktls,,qaklst,1239
 Accountable,a-k-t-b,Aktb,,qabkt,1240
 Accounting,a-k-t-\-h,Aktg,,qagkt,1240
@@ -8220,3 +8227,4 @@ Certificates,s2-e-df-s,Setfs,,qefst,7488
 Certification,s2-e-df-sh,Setfz,,qefstz,7488
 Automation,o-tm-a-sh,Otmz,,qmotz,12226
 Automations,o-tm-a-sh-s,Otmzs,,qmostz,12226
+Allows,a-l-s,Als,,qals,90619

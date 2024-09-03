@@ -6158,8 +6158,8 @@ Judgement,j-j-m,Jjm,,qjm,30
 Measure,m-e-sh-u,Mezu,,qemuz,30
 Measures,m-e-sh-u-s,Mezus,,qemsuz,30
 Insect,n-s2-e-k,Nsek,,qekns,30
-Sick,s2-e-k,Sek,,qeks,30
-Seek,s2-e-k,Seko,o,qekos,30
+Seek,s2-e-k,Sek,,qeks,30
+Sick,s2-e-k,Sekqk,,qeks,30
 Section,s2-e-k-sh,Sekz,,qeksz,30
 Exchange,e-s2-ch,Xc,,qcx,30
 Acceptable,a-k-s-b,Aksb,,qabks,31
@@ -6327,8 +6327,8 @@ Contrary,k-/-r-e,Krei,i,qeikr,43
 Language,l-a-ng,Lag,,qagl,43
 Mortal,m-o-t-l,Motl,,qlmot,43
 Pose ,p-o,Poo,o,qop,43
-Potion,p-o-sh,Poz,,qopz,43
-Position,p-o-sh,Pozo,o,qopz,43
+Position,p-o-sh,Poz,,qopz,43
+Potion,p-o-sh,Pozo,o,qopz,43
 Propose,pr-p-o,Prpo,,qopr,43
 Proposal,pr-p-o-l,Prpol,,qlopr,43
 Remote,r-e-m-o-t,Rmot,,qmort,43
@@ -6552,8 +6552,8 @@ Useful,e-u-f,Uf,,qfu,76
 Alone,a-l-o-n,Alon,,qalno,78
 Behavior,b-^-h-\-a-v-r,Bhavr,,qabhrv,78
 Gotten,g-tn,Gtn,,qgnt,78
-Cake,k-a-k,Kak,,qak,78
-Character,k-a-k,Kako,o,qako,78
+Character,k-a-k,Kak,,qak,78
+Cake,k-a-k,Kakqk,,qak,78
 Enjoy,n-j-o-e,Njy,,qjny,79
 Enjoyable,n-j-o-e-b,Njyb,,qbjny,79
 Pulled,p-u-ld,Puld,,qdlpu,79
@@ -6786,7 +6786,7 @@ Drive,d-r-i-v,Driv,,qdirv,138
 And have,nt-v,Ndv,,qdnv,138
 Individual,nt-v,Ndvo,o,qdnov,138
 Gather,g-a-th,Gah,,qagh,139
-Bible,b-i-b,Bibo,o,qbio,140
+Bible,b-i-b,Bib,,qbi,140
 Catch,k-a-ch,Kac,,qack,141
 Double,d-b,Db,,qbd,142
 Figured,f-e-g-r-/-t,Fegrd,,qdefgr,142
@@ -6959,7 +6959,6 @@ Usually,u-sh-e,Uze,,qeuz,230
 Method,m-e-th-d,Mehd,,qdehm,231
 Known,n-o-n,Non,,qno,232
 Insecure,n-s2-e-k-r,Nsekro,o,qeknors,232
-Secure,s2-e-k-r,Sekro,o,qekors,232
 Within,e-th-e-n,Ehen,,qehn,234
 Reception,r-s-e-p-sh,Rsepz,,qeprsz,236
 Sip,s-e-p,Sepi,i,qeips,236
@@ -7130,11 +7129,11 @@ Expected,e-s-p-/-t,Xpd,,qdpx,351
 Train,t-r-a-n,Trano,o,qanort,355
 Trains,t-r-a-n-s,Transo,o,qanorst,355
 Contact,k-t-a-k,Ktak,,qakt,357
-Ail,a-l,Al,,qal,361
+Allow,a-l,Al,,qal,361
 Allowable,a-l-b,Alb,,qabl,361
 Ale,a-l,Alo,o,qalo,361
-I always,a-l-s,Als,,qals,361
-Allow,a-l,Alu,u,qalu,361
+Ail,a-l,Alqk,,qal,361
+I always,a-l-s,Alsqk,,qals,361
 Allusion,a-l-sh,Alz,,qalz,361
 Disallow,d-s-a-l,Dsal,,qadls,361
 Gone,g-n,Gn,,qgn,365
@@ -7175,7 +7174,7 @@ Message,m-e-s-j,Mesj,,qejms,399
 Feel,f-e-l,Fel,,qefl,400
 Fill,f-e-l,Feli,i,qefil,400
 Fell,f-e-l,Felo,o,qeflo,400
-Thinking,th-^-h-\-\-h,Hho,o,qho,411
+Thinking,th-^-h-\-\-h,Hhi,i,qhi,411
 Such,s-ch,Sc,,qcs,412
 Resolved,r-s2-o-l-v-d,Rsolvd,,qdlorsv,414
 Worldly,u-u-e,Uue,,qeu,429
@@ -7241,7 +7240,6 @@ O.k.,o-k,Oku,u,qkou,514
 Research,r-s2-e-ch,Rsec,,qcers,519
 Search,s2-e-ch,Seco,o,qceos,519
 Insecurity,n-s2-e-k-/-r,Nsekr,,qeknrs,530
-Security,s2-e-k-/-r,Sekr,,qekrs,530
 Best,b-e-s,Beso,o,qbeos,536
 Publish,p-b,Pb,,qbp,536
 Publishing,p-b-\-h,Pbg,,qbgp,536
