@@ -1459,7 +1459,6 @@ Momentarily,m-o-m-r-ye,Momry,,qmory,0
 Mosquitos,m-o-s-k-e-t-o-s,Mosqetos,,qemoqst,0
 Motivational,m-o-df-a-sh-l,Motvzl,,qlmotvz,0
 Motivationally,m-o-df-a-sh-l-e,Motvzle,,qelmotvz,0
-Motivations,m-o-df-a-sh-s,Motvzs,,qmostvz,0
 Motioned,m-o-sh-d,Mozd,,qdmoz,0
 Motioning,m-o-sh-\-h,Mozg,,qgmoz,0
 Motions,m-o-sh-s,Mozs,,qmosz,0
@@ -3733,7 +3732,7 @@ Rebellious,r-b-e-l-u-s,Rbelus,,qbelrsu,1
 Refering,r-f-\-h,Rfgo,o,qfgor,1
 Reflected,r-fl-d,Rfld,,qdflr,1
 Reflects,r-fl-s,Rfls,,qflrs,1
-Regarding,r-e-\-h,Rg,,qgr,1
+Regarding,r-e-\-h,Rgqk,,qgr,1
 Regulate,r-e-g-\-u,Rgu,,qgru,1
 Regulated,r-e-g-\-u-d,Rgud,,qdgru,1
 Regulating,r-e-g-\-u-\-h,Rgug,,qgru,1
@@ -4123,6 +4122,9 @@ Memorized,mn-r-i-s-d,Mmrisd,,qdimrs,2
 Memorizing,mn-r-i-s-\-h,Mmrisg,,qgimrs,2
 Memorizes,mn-r-i-s-s,Mmriss,,qimrs,2
 Memorization,mn-r-i-s-sh,Mmrisz,,qimrsz,2
+Motivated,m-o-df-a-t-d,Motvatd,,qadmotv,2
+Motivating,m-o-df-a-t-\-h,Motvatg,,qagmotv,2
+Motivates,m-o-df-a-t-s,Motvats,,qamostv,2
 Implicate,m-pl-e-k,Mplek,,qeklmp,2
 Implicated,m-pl-e-k-d,Mplekd,,qdeklmp,2
 Implicating,m-pl-e-k-\-h,Mplekg,,qegklmp,2
@@ -4739,6 +4741,7 @@ Examining,e-s2-a-mn-\-h,Xamng,,qagmnx,4
 Examines,e-s2-a-mn-s,Xamns,,qamnsx,4
 Examination,e-s2-a-mn-sh,Xamnz,,qamnxz,4
 Expectations,e-s-p-sh-s,Xpzs,,qpsxz,4
+Absence,a-b-s,Absu,u,qabsu,5
 Admittedly,a-m-e-td-e,Ametde,,qademt,5
 Assumptions,a-s2-m-sh-s,Asmzs,,qamsz,5
 Boxable,b-o-x-b,Boxb,,qbox,5
@@ -6534,6 +6537,7 @@ Welcomes,l-k-m-s,Lkms,,qklms,59
 Exercised,e-s2-r-d,Xrd,,qdrx,59
 Exercising,e-s2-r-\-h,Xrg,,qgrx,59
 Exercises,e-s2-r-s,Xrs,,qrsx,59
+Absolute,a-b-s2-o,Abso,,qabos,61
 Absolute,a-b-s2-o,Absoo,o,qabos,61
 Absolutes,a-b-s2-o-s,Absos,,qabos,61
 Absolutely,a-b-s2-o-e,Absy,,qabsy,61
@@ -7292,6 +7296,7 @@ Modified,m-o-df-d,Modfd,,qdfmo,200
 Modifying,m-o-df-\-h,Modfg,,qdfgmo,200
 Modifies,m-o-df-s,Modfs,,qdfmos,200
 Motivation,m-o-df-a-sh,Motvz,,qmotvz,200
+Motivations,m-o-df-a-sh-s,Motvzs,,qmostvz,200
 Unnecessarily,u-n-e-ss-e,Nesseo,o,qenos,200
 Precise,pr-e-ss,Presso,o,qeoprs,200
 Scanner,s-k-a-n-r,Skanr,,qaknrs,200
@@ -7375,15 +7380,12 @@ Optional,o-p-sh-l,Opzl,,qlopz,231
 Options,o-p-sh-s,Opzs,,qopsz,231
 Match,m-a-ch,Mac,,qacm,232
 Matched,m-a-ch-d,Macd,,qacdm,232
-Matched,m-a-ch-d,Macdo,o,qacdmo,232
-Marched,m-a-ch-d,Macdqk,,qacdm,232
+Marched,m-a-ch-d,Macdo,o,qacdmo,232
 Matching,m-a-ch-\-h,Macg,,qacgm,232
 Marching,m-a-ch-\-h,Macgo,o,qacgmo,232
-Match,m-a-ch,Maci,i,qacim,232
 March,m-a-ch,Maco,o,qacmo,232
 Matches,m-a-ch-s,Macs,,qacms,232
-Marches,m-a-ch-s,Macsi,i,qacims,232
-Matches,m-a-ch-s,Macso,o,qacmos,232
+Marches,m-a-ch-s,Macso,o,qacmos,232
 Unmatched,n-m-a-ch-d,Nmacd,,qacdmn,232
 Internet,n-/-nt,Nnt,,qnt,232
 Non,n-o-n,Nonu,u,qnou,232
@@ -7512,6 +7514,8 @@ Functioning,f-nk-\-h,Fqg,,qfgq,297
 Functions,f-nk-s,Fqs,,qfqs,297
 Phoning,f-o-n-\-h,Fong,,qfgno,299
 Phones,f-o-n-s,Fons,,qfnos,299
+Desktop,d-e-s-k-t,Deskt,,qdekst,301
+Desktops,d-e-s-k-t-s,Deskts,,qdekst,301
 Centered,^-s2-n-d,Sndo,o,qdnos,301
 Centering,^-s2-n-\-h,Sng,,qgns,301
 Centers,^-s2-n-s,Sns,,qns,301
@@ -7737,7 +7741,12 @@ Deployments,d-pl-m-s,Dplms,,qdlmps,479
 Redeployment,r-e-d-pl-m,Rdplm,,qdlmpr,479
 Redeployments,r-e-d-pl-m-s,Rdplms,,qdlmprs,479
 Environmental,n-v-i-r-mn-l,Nvirmnl,,qilmnrv,480
+Environmentally,n-v-i-r-mn-l-e,Nvirmnle,,qeilmnrv,480
 Environments,n-v-i-r-mn-s,Nvirmns,,qimnrsv,480
+Environment,n-v-i-r-mn,Nvirnm,,qimnrv,480
+Environmental,n-v-i-r-mn-l,Nvirnml,,qilmnrv,480
+Environmentally,n-v-i-r-mn-l-e,Nvirnmle,,qeilmnrv,480
+Environments,n-v-i-r-mn-s,Nvirnms,,qimnrsv,480
 Script,s-k-r-p,Skrp,,qkprs,487
 Scriptable,s-k-r-p-b,Skrpb,,qbkprs,487
 Scripted,s-k-r-p-d,Skrpd,,qdkprs,487
@@ -7786,7 +7795,10 @@ Defaulting,df-o-t-\-h,Dfotg,,qdfgot,554
 Defaults,df-o-t-s,Dfots,,qdfost,554
 Today,td-a,Tda,,qadt,559
 Todays,td-a-s,Tdaso,o,qadost,559
-Opinions,o-p-n-s,Opns,,qnops,560
+Opened,o-p-n-d,Opnd,,qdnop,560
+Opening,o-p-n-\-h,Opng,,qgnop,560
+Opens,o-p-n-s,Opns,,qnops,560
+Opinions,o-p-n-s,Opnsqk,,qnops,560
 Failures,f-a-l-r-s,Falrs,,qaflrs,563
 Having,v-\-h,Vg,,qgv,569
 Protested,pr-o-t-e-s-d,Protesd,,qdeoprst,575
@@ -8046,6 +8058,7 @@ Rebuilds,r-bld-s,Rblds,,qbdlrs,1190
 Given,g-e,Geo,o,qego,1195
 Guess,g-e-s,Geso,o,qegos,1195
 Callable,k-o-b,Kob,,qbko,1195
+Called,k-o-t,Kod,,qdko,1195
 Called,k-o-t,Kodi,i,qdiko,1195
 Calling,k-o-\-h,Kog,,qgko,1195
 Coal,k-o-l,Kolu,u,qklou,1195
@@ -8217,9 +8230,10 @@ More,m,M,,qm,5160
 Workable,r-k-b,Rkb,,qbkr,5288
 Working,r-k-\-h,Rkg,,qgkr,5288
 Works,r-k-s,Rks,,qkrs,5288
-Proxied,pr-s-e-d,Prsed,,qdeprs,5436
-Proxying,pr-s-e-\-h,Prseg,,qegprs,5436
-Proxies,pr-s-e-s,Prsx,,qprsx,5436
+Proxy,pr-s-e,Prx,,qprx,5436
+Proxied,pr-s-e-d,Prxd,,qdprx,5436
+Proxying,pr-s-e-\-h,Prxg,,qgprx,5436
+Proxies,pr-s-e-s,Prxs,,qprsx,5436
 Recession,r-s-e-sh,Rsez,,qersz,5436
 Sees,s-e-s,Seso,o,qeos,5436
 Negotiation,n-o-sh,Nozo,o,qnoz,5452

@@ -72,6 +72,8 @@ p[aeuio]+nd,jnt,pnd
 p[aeuio]+nt,jnt,pnt
 ; gend to jnd
 [jg][aeuio]+nd,jnt,jnd
+; nment to nm
+nment,mn,nm
 ; mn to mm
 m[^m]+m,mn,mm
 ; added to dd 
@@ -98,6 +100,8 @@ eds$,-t-s$,ds
 ed$,t$,d
 ; ode as ot to od
 cod,k-o-t,kod
+; xy as x
+x[iy],s-e,x
 
 ; Word fixes
 ; tending as dng to tng 

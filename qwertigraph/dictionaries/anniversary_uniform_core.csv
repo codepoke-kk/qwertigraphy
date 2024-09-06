@@ -4981,6 +4981,7 @@ Manufacturer,mn-fr,Mnfr,,qfmnr,2
 Manure,mn-r,Mnr,,qmnr,2
 In the market,mn-r,Mnro,o,qmnor,2
 Men's,mn-s,Mns,,qmns,2
+Motivate,m-o-df-a-t,Motvat,,qamotv,2
 Impose,m-p-o,Mpoo,o,qmop,2
 Michievous,m-s-ch-u-s,Mscus,,qcmsu,2
 Misunderstood,m-s-/-s2-t-u,Msstu,,qmstu,2
@@ -5027,6 +5028,7 @@ Partner,p-t-n-e2,Ptne,,qenpt,2
 Rail,r-a-l,Ral,,qalr,2
 Reaches,r-e-ch-s,Rcs,,qcrs,2
 Wreck,r-e-k,Rek,,qekr,2
+Regular,r-e-g,Rg,,qgr,2
 Remainder,r-e2-mn-e2,Rmne,,qemnr,2
 Receiver,r-s-e-r,Rser,,qers,2
 Ruined,r-u-nt,Rund,,qdnru,2
@@ -5344,7 +5346,6 @@ Expression,e-s-pr-e-sh,Xprez,,qeprxz,4
 Shake,sh-a-k,Zak,,qakz,4
 Absent,a-b-s,Abs,,qabs,5
 Absently,a-b-s-e,Abse,,qabes,5
-Absence,a-b-s,Abso,o,qabos,5
 Admitted,a-m-e-td,Ametd,,qademt,5
 Administer,a-mn-e-s,Amnes,,qaemns,5
 Administration,a-mn-e-s-sh,Amnesz,,qaemnsz,5
@@ -7071,7 +7072,7 @@ Fallen,f-o-n,Fono,o,qfno,299
 Unless,n-l,Nl,,qln,299
 Fun,f-n,Fn,,qfn,301
 Foreign,f-n,Fno,o,qfno,301
-Center,^-s2-n,Snu,u,qnsu,301
+Center,^-s2-n,Sn,,qns,301
 String,s2-t-r-e-ng,Streg,,qegrst,302
 Attempt,a-tm-t,Atmt,,qamt,306
 During,d-r,Dr,,qdr,309
@@ -7202,9 +7203,9 @@ Credential,k-r-e-tn-sh,Krednz,,qdeknrz,460
 History,^-h-\-e-s2-t-r-e,Hestre,,qehrst,462
 Reason,r-s2-n,Rsn,,qnrs,462
 Reasonable,r-s2-n-b,Rsnb,,qbnrs,462
-Sun,s2-n,Sn,,qns,462
 Is not,s2-n,Sni,i,qins,462
 Soon,s2-n,Sno,o,qnos,462
+Sun,s2-n,Snqk,,qns,462
 Against,a-g-n-s,Agns,,qagns,463
 Control,^-k-/-l,Kl,,qkl,463
 Installed,n-s2-t-o-ld,Nstold,,qdlnost,463
@@ -7612,7 +7613,7 @@ Tickets,t-e-k-e-t-s,Tekets,,qekst,1693
 Issue,e-sh-u,Ezu,,qeuz,1696
 Issued,e-sh-u-d,Ezud,,qdeuz,1696
 Pressure,pr-e-sh-u,Prezu,,qepruz,1696
-Code,k-o-t,Kod,,qdko,1735
+Code,k-o-t,Kodqk,,qdko,1735
 Cot,k-o-t,Kot,,qkot,1735
 Caught,k-o-t,Koti,i,qikot,1735
 Court,k-o-t,Koto,o,qkot,1735
@@ -7720,7 +7721,8 @@ How,a-u,Wo,o,qow,4520
 New,n-u,Nu,,qnu,4620
 Newly,n-u-e,Nue,,qenu,4620
 Knew,n-u,Nui,i,qinu,4620
-Gnu,n-u,Nuo,o,qnou,4620
+Knew,n-u,Nuo,o,qnou,4620
+Gnu,n-u,Nuoqk,o,qnou,4620
 Renew,r-e-n-u,Rnu,,qnru,4620
 Renewed,r-e-n-u-d,Rnud,,qdnru,4620
 Renewal,r-e-n-u-l,Rnul,,qlnru,4620
