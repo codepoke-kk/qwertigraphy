@@ -3950,6 +3950,9 @@ Expirations,e-s-pr-a-sh-s,Xprzs,,qprsxz,1
 Agreeably,^-yab-e,Yabe,,qabey,1
 Pointedly,o-e-d-e,Yde,,qdey,1
 Aggress,ya-/-s,Ysi,i,qisy,1
+Shadowed,sh-a-d-o-d,Zadod,,qadoz,1
+Shadowing,sh-a-d-o-\-h,Zadog,,qadgoz,1
+Shadows,sh-a-d-o-s,Zados,,qadosz,1
 Shortages,sh-/-j-s,Zjs,,qjsz,1
 Shortcut,^-sh-\-k-t,Zkt,,qktz,1
 Shortcuted,^-sh-\-k-t-d,Zktd,,qdktz,1
@@ -4409,6 +4412,7 @@ Comparisons,k-pr-s2-n-s,Kprsns,,qknprs,3
 Creative,k-r-ea-df,Kretv,,qekrtv,3
 Creatively,k-r-ea-df-e,Kretve,,qekrtv,3
 Creatives,k-r-ea-df-s,Kretvs,,qekrstv,3
+Creativity,k-r-ea-df-t-e,Kretvte,,qekrtv,3
 Curves,k-r-v-s,Krvs,,qkrsv,3
 Constantine,k-s2-tn-e-n,Kstnen,,qeknst,3
 Continental,k-tn-nt-l,Ktnntl,,qklnt,3
@@ -5731,6 +5735,8 @@ Concocted,k-k-k-d,Kkkd,,qdk,17
 Concocting,k-k-k-\-h,Kkkg,,qgk,17
 Concocts,k-k-k-s,Kkks,,qks,17
 Concoction,k-k-k-sh,Kkkz,,qkz,17
+Courageous,k-r-j-u-s,Krjus,,qjkrsu,17
+Courageously,k-r-j-u-s-e,Krjuse,,qejkrsu,17
 Customize,k-u-s-i-s,Kusis,,qiksu,17
 Customized,k-u-s-i-s-d,Kusisd,,qdiksu,17
 Customizing,k-u-s-i-s-\-h,Kusisg,,qgiksu,17
@@ -6436,7 +6442,7 @@ Facility,f-a-s-\-l,Fasl,,qafls,48
 Journeyed,j-e2-n-e-d,Jened,,qdejn,48
 Journeying,j-e2-n-e-\-h,Jeneg,,qegjn,48
 Journeys,j-e2-n-e-s,Jenes,,qejns,48
-Conversation,k-v-e-sh,Kvezo,o,qekovz,48
+Conversation,k-v-e-sh,Kvez,,qekvz,48
 Rewarded,r-e-/-d-d,Rdd,,qdr,48
 Rewarding,r-e-/-d-\-h,Rdg,,qdgr,48
 Rewards,r-e-/-d-s,Rds,,qdrs,48
@@ -7220,6 +7226,7 @@ Separately,s-e-pr-e,Sepre,,qeprs,175
 Separating,s-e-pr-\-h,Seprg,,qegprs,175
 Separates,s-e-pr-s,Seprs,,qeprs,175
 Separation,s-e-pr-sh,Seprz,,qeprsz,175
+Cared,k-a-d,Kad,,qadk,176
 Cared,k-a-d,Kado,o,qadko,176
 Caring,k-a-\-h,Kag,,qagk,176
 Cares,k-a-s,Kas,,qaks,176
@@ -7519,7 +7526,7 @@ Desktops,d-e-s-k-t-s,Deskts,,qdekst,301
 Centered,^-s2-n-d,Sndo,o,qdnos,301
 Centering,^-s2-n-\-h,Sng,,qgns,301
 Centers,^-s2-n-s,Sns,,qns,301
-Monday,m-u-n,Mun,,qmnu,311
+Sunday,s-n-e,Sne,,qens,311
 Verify,v-e-r-f,Verf,,qefrv,311
 Verifiable,v-e-r-f-b,Verfb,,qbefrv,311
 Verified,v-e-r-f-d,Verfd,,qdefrv,311
@@ -7615,7 +7622,9 @@ Interesting,^-n-\-s-\-h,Nsg,,qgns,366
 Unsuccessful,n-s2-u-k-f,Nsukf,,qfknsu,372
 Unsuccessfully,n-s2-u-k-f-e,Nsukfe,,qefknsu,372
 Successfully,s2-u-k-f-e,Sukfe,,qefksu,372
+Important,m-p,Mp,,qmp,375
 Importantly,m-p-e,Mpe,,qemp,375
+Employ ,m-p,Mpo,o,qmop,375
 Receive,r-s2-e,Rse,,qers,375
 Received,r-s2-e-d,Rsed,,qders,375
 Receiving,r-s2-e-\-h,Rseg,,qegrs,375
@@ -7900,6 +7909,9 @@ Partial,p-t-l,Ptl,,qlpt,664
 Repetitively,r-p-t-v-e,Rptve,,qeprtv,664
 Repetitive,r-p-t-v,Rptvo,o,qoprtv,664
 Repetition,r-p-t-sh,Rptz,,qprtz,664
+Readied,r-e-d-e-d,Rded,,qder,665
+Readying,r-e-d-e-\-h,Rdeg,,qdegr,665
+Readies,r-e-d-e-s,Rdes,,qders,665
 Update,u-p-td,Updt,,qdptu,689
 Updated,u-p-td-t,Updtd,,qdptu,689
 Updating,u-p-td-\-h,Updtg,,qdgptu,689
@@ -8014,6 +8026,7 @@ Founded,f-nt-d,Fndd,,qdfn,1074
 Founding,f-nt-\-h,Fndg,,qdfgn,1074
 Founds,f-nt-s,Fnds,,qdfns,1074
 Profoundly,pr-f-nt-e,Prfnde,,qdefnpr,1074
+Notice,n-e-s,Nes,,qens,1079
 Noticeable,n-e-s-b,Nesb,,qbens,1079
 Noticed,n-e-s-d,Nesd,,qdens,1079
 Noticing,n-e-s-\-h,Nesg,,qegns,1079
@@ -8249,6 +8262,7 @@ Rewrote,r-e-r-o-t,Rrot,,qort,6634
 Certifying,s2-e-df-\-h,Setfg,,qefgst,7488
 Certificates,s2-e-df-s,Setfs,,qefst,7488
 Certification,s2-e-df-sh,Setfz,,qefstz,7488
+Knees,n-e-s,Neso,o,qenos,8247
 Automation,o-tm-a-sh,Otmz,,qmotz,12226
 Automations,o-tm-a-sh-s,Otmzs,,qmostz,12226
 Allows,a-l-s,Als,,qals,90619

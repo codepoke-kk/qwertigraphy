@@ -1846,9 +1846,9 @@ Chaotic,k-a-/-a,Kaa,,qak,0
 Cabal,k-a-bl,Kabl,,qabkl,0
 Cabin,k-a-b-n,Kabn,,qabkn,0
 Cabinet,k-a-b,Kabo,o,qabko,0
-Cubic yard,k-a2-d,Kad,,qadk,0
 Cardinal,k-a-tn-l,Kadnl,,qadkln,0
 Cadence,k-a-tn-s,Kadns,,qadkns,0
+Cubic yard,k-a2-d,Kadqk,,qadk,0
 Cadet,k-a-td,Kadt,,qadkt,0
 Caduceus,k-a-d-u-ss,Kaduss,,qadksu,0
 Carry,k-a-e,Kae,,qaek,0
@@ -2255,7 +2255,7 @@ Convey,k-v-a,Kva,,qakv,0
 Conveyance,k-v-a-n-s,Kvans,,qaknsv,0
 Conveyer,k-v-a-r,Kvar,,qakrv,0
 Convivial,k-v-e-v,Kvev,,qekv,0
-Controversial,k-/-v-e-sh,Kvez,,qekvz,0
+Controversial,k-/-v-e-sh,Kvezqk,,qekvz,0
 Contrive,k-/-v,Kvi,i,qikv,0
 Convoke,k-v-k,Kvk,,qkv,0
 Coverlet,k-v-l-e,Kvle,,qeklv,0
@@ -3890,8 +3890,8 @@ Central america,s2-n-/-a-m,Snam,,qamns,0
 Snap,s2-n-a-p,Snapo,o,qanops,0
 Superintendent,s-/-n-tn,Sndn,,qdns,0
 Central division,s2-n-/-df,Sndv,,qdnsv,0
-Sooner,s2-n-e2,Sne,,qens,0
 Sooner than,s2-n-e2-n,Snen,,qens,0
+Sooner,s2-n-e2,Sneqk,,qens,0
 As near as possible,s2-n-e-s-p,Snesp,,qenps,0
 Centrifugal,s2-n-/-f,Snf,,qfns,0
 Civil engineer,s2-n-j-e2,Snje,,qejns,0
@@ -5104,7 +5104,7 @@ Dated,td-/-t,Dtd,,qdt,3
 Disappointment,d-o-e-m,Dym,,qdmy,3
 Withdraw,e-th-d-r-o,Ehdro,,qdehor,3
 Elephant,e-l-f-nt,Elfnt,,qeflnt,3
-Yellow,e-l-o,Eloo,o,qelo,3
+Yellow,e-l-o,Elo,,qelo,3
 Imaginary,e-m-a-j-/-r-e,Emajre,,qaejmr,3
 Ease,e-s,Es,,qes,3
 Yes ,e-s,Eso,o,qeos,3
@@ -5359,7 +5359,7 @@ Defy,df-i,Dfi,,qdfi,5
 Defied,df-i-d,Dfid,,qdfi,5
 Disillusion,d-s-e-l-sh,Dselz,,qdelsz,5
 Element,e-l-e-m,Elem,,qelm,5
-Ell,e-l,Elo,o,qelo,5
+Ell,e-l,Eloqk,o,qelo,5
 He always,e-l-s,Els,,qels,5
 Ill,e-l,Elu,u,qelu,5
 Illusion,e-l-sh,Elzi,i,qeilz,5
@@ -5516,7 +5516,6 @@ Outer,a-u-r,Wr,,qrw,6
 Explicit,e-s-pl-e-s2-t,Xplxt,,qlptx,6
 Shape,sh-a-p,Zapo,o,qaopz,6
 Agnostic,a-g-n-/-s2-t,Agnst,,qagnst,7
-I,a,AI,i,qai,7
 Adjustment,a-j-u-s2-m,Ajusm,,qajmsu,7
 Appearance,a-pr-n-s,Aprns,,qanprs,7
 Arrived,a-r-i-/-t,Arido,o,qadior,7
@@ -7080,7 +7079,7 @@ Durable,d-r-b,Drb,,qbdr,309
 Doctor,d-r,Dro,o,qdor,309
 Director ,d-r,Dru,u,qdru,309
 Duration,d-r-a-sh,Drz,,qdrz,309
-Monday,m-u-n,Muni,i,qimnu,311
+Monday,m-u-n,Mun,,qmnu,311
 Moon,m-u-n,Muno,o,qmnou,311
 Munition,m-u-n-sh,Munz,,qmnuz,311
 Example,e-s2-a-m-p,Xamp,,qampx,313
@@ -7144,9 +7143,8 @@ Provide,pr-v-i,Prvi,,qiprv,365
 Provides,pr-v-i-s,Prvis,,qiprsv,365
 Chance,ch-a-n-s,Canso,o,qacnos,366
 Successful,s2-u-k-f,Sukf,,qfksu,372
-Employ ,m-p,Mp,,qmp,375
 Importance,m-p,Mpi,i,qimp,375
-Important,m-p,Mpo,o,qmop,375
+Important,m-p,Mpoqk,o,qmop,375
 Reserve,r-s2-e-v,Rsev,,qersv,375
 Receive ,r-s2-e-v,Rsevo,o,qeorsv,375
 Serve,s2-e-v,Sev,,qesv,375
@@ -7482,7 +7480,7 @@ Fount,f-nt,Fnt,,qfnt,1074
 Profound,pr-f-nt,Prfnd,,qdfnpr,1074
 Refund,r-f-nt,Rfnd,,qdfnr,1074
 Niece,n-e-s,Nesi,i,qeins,1079
-Notice,n-e-s,Neso,o,qenos,1079
+Notice,n-e-s,Nesoqk,o,qenos,1079
 Northeast,n-e-s,Nesu,u,qensu,1079
 Next,n-e-s,Nx,,qnx,1079
 Though,th-o,Hoo,o,qho,1093
@@ -7779,7 +7777,6 @@ Any,n-e,Ne,,qen,8247
 Need,n-e-d,Ned,,qden,8247
 Anything,n-e-\-h,Neg,,qegn,8247
 Nebraska,n-e,Nei,i,qein,8247
-Knees,n-e-s,Nes,,qens,8247
 Knee,n-e,Neu,u,qenu,8247
 I'm,i-m,Im,,qim,8282
 With,e-th,Eh,,qeh,10778
