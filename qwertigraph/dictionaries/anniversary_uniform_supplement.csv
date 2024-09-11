@@ -5670,6 +5670,8 @@ Forwarders,f-d-r-s,Fdrs,,qdfrs,16
 Fruitful,fr-u-t-f,Frutf,,qfrtu,16
 Fruitfully,fr-u-t-f-e,Frutfe,,qefrtu,16
 Thankfully,th-/-f-e,Hfe,,qefh,16
+Thank,th-/-h,Hhu,u,qhu,16
+Thanks,th-/-s2,Hsu,u,qhsu,16
 Compel,k-pl,Kpl,,qklp,16
 Compelling,k-pl-\-h,Kplg,,qgklp,16
 Compels,k-pl-s,Kpls,,qklps,16
@@ -6878,6 +6880,7 @@ Avoids,v-o-e-s,Vys,,qsvy,98
 Deceived,d-s-e-d,Dsed,,qdes,100
 Deceiving,d-s-e-\-h,Dseg,,qdegs,100
 Deceives,d-s-e-s,Dseso,o,qdeos,100
+Further,f-th2,Fho,o,qfho,100
 Finality,f-i-n-\-l,Finlo,o,qfilno,100
 Heavenly,^-h-\-e-v-n-e,Hevne,,qehnv,100
 Refine,r-f-i-n,Rfin,,qfinr,100

@@ -5480,7 +5480,7 @@ Mankind,m-a-n-k-i,Manki,,qaikmn,6
 Meter,^-m-e,Mei,i,qeim,6
 Nail,n-a-l,Nal,,qaln,6
 Endanger,n-tn-j-e2,Ndnje,,qdejn,6
-Interrogate,n-/-o-g,Nog,,qgno,6
+Interrogate,n-/-o-g,Nogqk,,qgno,6
 Intend,n-tn,Ntn,,qnt,6
 Obstr-,o-b-/,Obo,o,qbo,6
 Objective,o-b-/-v,Obvo,o,qbov,6
@@ -6921,7 +6921,7 @@ Sit,s2-e-t,Seto,o,qeost,203
 Seat,s2-e-t,Setu,u,qestu,203
 Fact,f-a-k,Fak,,qafk,205
 Foe,f-o,Fo,,qfo,205
-Following,f-o-\-h,Fogo,o,qfgo,205
+Following,f-o-\-h,Fog,,qfgo,205
 Fall,f-o,Foi,i,qfio,205
 Follow,f-o,Foo,o,qfo,205
 Falls,f-o-s,Fosi,i,qfios,205
@@ -7596,7 +7596,7 @@ Infest,n-f-e-s,Nfes,,qefns,1557
 Others,u-th-s,Uhs,,qhsu,1558
 Being,b-\-h,Bg,,qbg,1589
 Forth,f-th,Fh,,qfh,1591
-For the,f-th,Fho,o,qfho,1591
+For the,f-th,Fhoqk,o,qfho,1591
 Inquest,n-k-e-s,Nqes,,qenqs,1650
 Inquisition,n-k-e-s-sh,Nqesz,,qenqsz,1650
 Request,r-k-e-s,Rqes,,qeqrs,1650
