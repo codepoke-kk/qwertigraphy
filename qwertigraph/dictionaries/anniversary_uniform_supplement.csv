@@ -3297,7 +3297,7 @@ Bushed,b-u-sh-d,Buzd,,qbduz,1
 Bushing,b-u-sh-\-h,Buzg,,qbguz,1
 Bushs,b-u-sh-s,Buzs,,qbsuz,1
 Boilers,b-o-e-l-r-s,Bylrs,,qblrsy,1
-Beings,b-\-h-s,Bzo,o,qboz,1
+Beings,b-\-h-s,Bz,,qbz,1
 Chuckle,c-u-k-l,Cukl,,qcklu,1
 Chuckled,c-u-k-l-d,Cukld,,qcdklu,1
 Chuckling,c-u-k-l-\-h,Cuklg,,qcgklu,1
@@ -5365,6 +5365,7 @@ Revokes,r-v-k-s,Rvks,,qkrsv,10
 Sentenced,s2-e-n-tn-s-d,Sentnsd,,qdenst,10
 Sentencing,s2-e-n-tn-s-\-h,Sentnsg,,qegnst,10
 Sentences,s2-e-n-tn-s-s,Sentnss,,qenst,10
+Suddenly,s2-u-tn-e,Sudne,,qdensu,10
 Suffix,s-u-f-e-s,Sufx,,qfsux,10
 Suffixed,s-u-f-e-s-d,Sufxd,,qdfsux,10
 Suffixing,s-u-f-e-s-\-h,Sufxg,,qfgsux,10
