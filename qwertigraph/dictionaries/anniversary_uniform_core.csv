@@ -6673,7 +6673,7 @@ Fine,f-i-n,Fino,o,qfino,100
 Heaven,^-h-\-e-v-n,Hevn,,qehnv,100
 Heavens,^-h-\-e-v-n-s,Hevns,,qehnsv,100
 Neither,n-e-th,Neh,,qehn,100
-House,^-h-\-u-s,Husi,i,qhisu,101
+House,^-h-\-u-s,Hus,,qhsu,101
 Whose,^-h-\-u-s,Huso,o,qhosu,101
 Children,ch-e-l,Cel,,qcel,102
 Easily,e-s-ye,Esy,,qesy,104
@@ -6685,7 +6685,7 @@ Frowned,fr-nt,Frnd,,qdfnr,106
 Front,fr-nt,Frnt,,qfnrt,106
 Game,g-a-m,Gam,,qagm,106
 Joy,j-o-e,Jy,,qjy,106
-Reality,r-e-/-l,Rlu,u,qlru,106
+Reality,r-e-/-l,Rlo,o,qlor,106
 Jump,j-m-p,Jmp,,qjmp,107
 Obtain,o-b-tn,Obtn,,qbnot,107
 Blow,bl-o,Blo,,qblo,108
@@ -6883,7 +6883,7 @@ Yours,us,Usi,i,qisu,183
 Confirm,k-f-e-m,Kfem,,qefkm,186
 Confirmation,k-f-e-m-sh,Kfemz,,qefkmz,186
 Rule,r-l,Rl,,qlr,186
-Railway,r-l,Rlo,o,qlor,186
+Railway,r-l,Rloqk,o,qlor,186
 Looked,l-u-/-t,Lud,,qdlu,187
 Somehow,s2-m-a-u,Smw,,qmsw,187
 Specific,s-p-e-s2-k,Spesk,,qekps,187
@@ -7782,7 +7782,7 @@ I'm,i-m,Im,,qim,8282
 With,e-th,Eh,,qeh,10778
 Are,r,R,,qr,11457
 Can,k,K,,qk,11618
-Thus,th-u-s,Hus,,qhsu,11829
+Thus,th-u-s,Husqk,,qhsu,11829
 Will,l,L,,ql,15310
 We,u-e,Ue,,qeu,15377
 Wed,u-e-d,Ued,,qdeu,15377
