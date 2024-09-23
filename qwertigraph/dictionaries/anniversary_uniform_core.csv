@@ -6644,7 +6644,7 @@ Themselves,th-m-ss,Hmss,,qhms,95
 Manage,mn-j,Mnj,,qjmn,95
 Expo,e-s-p-o,Xpoi,i,qiopx,95
 Expose,e-s-p-o,Xpoo,o,qopx,95
-Learned,l-e-n-/-t,Lendo,o,qdelno,96
+Learned,l-e-n-/-t,Lend,,qdeln,96
 Package,p-a-k-j,Pakj,,qajkp,96
 Brought,br-o-t,Brot,,qbort,97
 Earlier,e-r-e-r,Erer,,qer,97
@@ -7239,7 +7239,8 @@ O.k.,o-k,Oku,u,qkou,514
 Research,r-s2-e-ch,Rsec,,qcers,519
 Search,s2-e-ch,Seco,o,qceos,519
 Insecurity,n-s2-e-k-/-r,Nsekr,,qeknrs,530
-Best,b-e-s,Beso,o,qbeos,536
+Best,b-e-s,Bes,,qbes,536
+Best,b-e-s,Besoqk,o,qbeos,536
 Publish,p-b,Pb,,qbp,536
 Publishing,p-b-\-h,Pbg,,qbgp,536
 Publication,p-b-sh,Pbz,,qbpz,536
@@ -7574,7 +7575,7 @@ Heir,a-r,Aro,o,qaor,1374
 Whereas,a-r-s,Ars,,qars,1374
 Believable,b-e-b,Beb,,qbe,1395
 Belief,b-e,Bei,i,qbei,1395
-Believes,b-e-s,Bes,,qbes,1395
+Believes,b-e-s,Beso,o,qbeos,1395
 People,p-e-p,Pep,,qep,1398
 Maybe,m-a-b,Mab,,qabm,1407
 May be,m-a-b,Mabo,o,qabmo,1407

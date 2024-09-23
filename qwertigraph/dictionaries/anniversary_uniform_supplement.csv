@@ -1942,7 +1942,6 @@ Parabolic,^-p-\-b-o-l-k,Pbolk,,qbklop,0
 Parabolically,^-p-\-b-o-l-\-k-e,Pbolke,,qbeklop,0
 Parabolical,^-p-\-b-o-l-\-k,Pbolko,o,qbklop,0
 Parabolics,^-p-\-b-o-l-k-s,Pbolks,,qbklops,0
-Parables,^-p-\-b-s,Pbs,,qbps,0
 Publicity,p-b-\-s2,Pbso,o,qbops,0
 Pedestal,p-d-e-s-t-l,Pdestl,,qdelpst,0
 Pedestals,p-d-e-s-t-l-s,Pdestls,,qdelpst,0
@@ -6829,7 +6828,7 @@ Funnies,f-n-e-s,Fnes,,qefns,93
 Performed,pr-f-m-d,Prfmd,,qdfmpr,93
 Performing,pr-f-m-\-h,Prfmg,,qfgmpr,93
 Performs,pr-f-m-s,Prfms,,qfmprs,93
-Workers,r-k-/-r-s,Rkrso,o,qkors,93
+Workers,r-k-/-r-s,Rkrs,,qkrs,93
 Peaceable,p-e-s-b,Pesb,,qbeps,94
 Peaced,p-e-s-d,Pesd,,qdeps,94
 Pieced,p-e-s-d,Pesdo,o,qdeops,94
@@ -7413,6 +7412,7 @@ Encrypted,n-\-k-d,Nkd,,qdkn,234
 Encrypting,n-\-k-\-h,Nkg,,qgkn,234
 Encrypts,n-\-k-s,Nks,,qkns,234
 Encryption,n-\-k-\-sh,Nkz,,qknz,234
+Except,s-e-p,Sep,,qeps,236
 Excepted,s-e-p-d,Sepd,,qdeps,236
 Excepting,s-e-p-\-h,Sepg,,qegps,236
 Reminds,r-e-m-i-n-s,Rmins,,qimnrs,238
@@ -7573,9 +7573,9 @@ Locked,l-o-k-d,Lokd,,qdklo,329
 Located,l-o-k-d,Lokdo,o,qdklo,329
 Locking,l-o-k-\-h,Lokg,,qgklo,329
 Locating,l-o-k-\-h,Lokgo,o,qgklo,329
-Local,l-o-k,Loki,i,qiklo,329
 Locality,l-o-k-\-l,Lokl,,qklo,329
-Lock,l-o-k,Loko,o,qklo,329
+Local,l-o-k,Loko,o,qklo,329
+Lock,l-o-k,Lokoqk,o,qklo,329
 Locks,l-o-k-s,Loks,,qklos,329
 Locates,l-o-k-s,Loksi,i,qiklos,329
 Locals,l-o-k-s,Lokso,o,qklos,329
@@ -7795,6 +7795,7 @@ Insecurities,n-s2-e-k-/-r-s,Nsekrs,,qeknrs,530
 Security,s2-e-k-/-r,Sekro,o,qekors,530
 Publicly,p-b-e,Pbe,,qbep,536
 Public,p-b,Pbo,o,qbop,536
+Publishes,p-b-s,Pbs,,qbps,536
 Existed,e-s-e-s-d,Xxd,,qdx,541
 Existing,e-s-e-s-\-h,Xxg,,qgx,541
 Exists,e-s-e-s-s,Xxs,,qsx,541
@@ -7937,7 +7938,7 @@ Incorrectly,n-k-r-e,Nkre,,qeknr,705
 Recurred,r-e-k-r-d,Rkrd,,qdkr,705
 Recuring,r-e-k-r-\-h,Rkrg,,qgkr,705
 Recur,r-e-k-r,Rkro,o,qkor,705
-Recurs,r-e-k-r-s,Rkrs,,qkrs,705
+Recurs,r-e-k-r-s,Rkrsqk,,qkrs,705
 Telling,t-e-\-h,Teg,,qegt,711
 Tells,t-e-s,Tesi,i,qeist,711
 Coming,k-m-\-h,Kmg,,qgkm,718
