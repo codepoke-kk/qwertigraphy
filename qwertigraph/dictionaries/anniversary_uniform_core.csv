@@ -6603,9 +6603,11 @@ Three,th2-e,Heu,u,qehu,86
 Indefinite,n-df-n,Ndfn,,qdfn,86
 Promise,pr-m-e-s,Prmes,,qemprs,86
 Power,p-a-u,Pw,,qpw,86
-Tot,t-o-t,Tot,,qot,87
+Notable,n-o-t-b,Notb,,qbnot,87
+Taught,t-o-t,Tot,,qot,87
 Taut,t-o-t,Toti,i,qiot,87
 Total,t-o-t,Toto,o,qot,87
+Tot,t-o-t,Totqk,,qot,87
 Tort,t-o-t,Totu,u,qotu,87
 Deep,d-e-p,Dep,,qdep,88
 Deeply,d-e-p-e,Depe,,qdep,88
@@ -6783,8 +6785,8 @@ Derive,d-r-i,Drii,i,qdir,138
 Dry,d-r-i,Drio,o,qdior,138
 Deride,d-r-i,Driu,u,qdiru,138
 Drive,d-r-i-v,Driv,,qdirv,138
-And have,nt-v,Ndv,,qdnv,138
-Individual,nt-v,Ndvo,o,qdnov,138
+Individual,nt-v,Ndv,,qdnv,138
+And have,nt-v,Ndvqk,,qdnv,138
 Gather,g-a-th,Gah,,qagh,139
 Bible,b-i-b,Bib,,qbi,140
 Catch,k-a-ch,Kac,,qack,141
@@ -7749,6 +7751,7 @@ Session,s-e-sh,Sez,,qesz,5436
 Knowable,n-o-b,Nob,,qbno,5452
 No,n-o,Noo,o,qno,5452
 Notion,n-o-sh,Noz,,qnoz,5452
+Interpret,n-/-p,Npo,o,qnop,5497
 Up,/-p,P,,qp,5497
 Don't,d-o-n,Doni,i,qdino,5510
 Dawn,d-o-n,Dono,o,qdno,5510
