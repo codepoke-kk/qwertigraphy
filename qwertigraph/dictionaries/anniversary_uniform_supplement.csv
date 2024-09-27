@@ -4794,6 +4794,7 @@ Confronting,k-fr-nt-\-h,Kfrntg,,qfgknrt,5
 Confronts,k-fr-nt-s,Kfrnts,,qfknrst,5
 Confrontation,k-fr-nt-sh,Kfrntz,,qfknrtz,5
 Concur,k-k-r,Kkro,o,qkor,5
+Concurs,k-k-r-s,Kkrso,o,qkors,5
 Culturally,k-l-t-r-l-e,Kltrle,,qeklrt,5
 Compromised,k-pr-m-i-s-d,Kprmisd,,qdikmprs,5
 Compromising,k-pr-m-i-s-\-h,Kprmisg,,qgikmprs,5
@@ -6188,7 +6189,7 @@ Equaled,e-k-l-d,Eqld,,qdelq,33
 Equaling,e-k-l-\-h,Eqlg,,qeglq,33
 Equals,e-k-l-s,Eqls,,qelqs,33
 Contractor,k-/-k-r,Kkr,,qkr,33
-Contractors,k-/-k-r-s,Kkrso,o,qkors,33
+Contractors,k-/-k-r-s,Kkrs,,qkrs,33
 Covered,k-v-d,Kvd,,qdkv,33
 Covering,k-v-\-h,Kvg,,qgkv,33
 Covers,k-v-s,Kvs,,qksv,33
@@ -6248,13 +6249,13 @@ Suffered,s2-u-f-d,Sufd,,qdfsu,35
 Suffering,s2-u-f-\-h,Sufg,,qfgsu,35
 Suffer,s2-u-f,Sufo,o,qfosu,35
 Suffers,s2-u-f-s,Sufs,,qfsu,35
-Detract,d-/-k,Dk,,qdk,36
+Decrypt,d-/-k,Dk,,qdk,36
 Decryptable,d-/-k-b,Dkb,,qbdk,36
 Decrypted,d-/-k-d,Dkd,,qdk,36
 Detracted,d-/-k-d,Dkdo,o,qdko,36
-Detracting,d-/-k-\-h,Dkg,,qdgk,36
-Decrypting,d-/-k-\-h,Dkgo,o,qdgko,36
-Decrypt,d-/-k,Dko,o,qdko,36
+Decrypting,d-/-k-\-h,Dkg,,qdgk,36
+Detracting,d-/-k-\-h,Dkgqk,,qdgk,36
+Detract,d-/-k,Dkqk,,qdk,36
 Decrypts,d-/-k-s,Dks,,qdks,36
 Detracts,d-/-k-s,Dkso,o,qdkos,36
 Detraction,d-/-k-sh,Dkz,,qdkz,36
@@ -7219,7 +7220,7 @@ Containers,k-tn-r-s,Ktnrs,,qknrst,170
 Statements,s2-t-m-s,Stms,,qmst,170
 Format,f-m-a-t,Fmat,,qafmt,171
 Formatted,f-m-a-t-d,Fmatd,,qadfmt,171
-Formating,f-m-a-t-\-h,Fmatg,,qafgmt,171
+Formatting,f-m-a-t-\-h,Fmatg,,qafgmt,171
 Formats,f-m-a-t-s,Fmats,,qafmst,171
 Instructional,n-s-/-k-sh-l,Nskzl,,qklnsz,171
 Instructions,n-s-/-k-sh-s,Nskzs,,qknsz,171
@@ -7952,7 +7953,7 @@ Recuring,r-e-k-r-\-h,Rkrg,,qgkr,705
 Recur,r-e-k-r,Rkro,o,qkor,705
 Recurs,r-e-k-r-s,Rkrsqk,,qkrs,705
 Telling,t-e-\-h,Teg,,qegt,711
-Tells,t-e-s,Tesi,i,qeist,711
+Tells,t-e-s,Tes,,qest,711
 Coming,k-m-\-h,Kmg,,qgkm,718
 Full,f-u,Fuo,o,qfou,719
 Trusted,t-r-s-d,Trsd,,qdrst,728
@@ -8202,6 +8203,9 @@ Rebounds,r-b-n-s,Rbns,,qbnrs,2122
 Unbound,u-b-n,Ubn,,qbnu,2122
 Unbounded,u-b-n-d,Ubnd,,qbdnu,2122
 Down,d-n,Dno,o,qdno,2176
+Application Support,a-sh-s,Azs,,qasz,2181
+Application Support Team,a-sh-s-t,Azst,,qastz,2181
+Application Support Teams,a-sh-s-t-s,Azsts,,qastz,2181
 Ways,u-a-s,Uas,,qasu,2235
 Passworded,p-u-d-d,Pudd,,qdpu,2238
 Passwording,p-u-d-\-h,Pudg,,qdgpu,2238
@@ -8252,6 +8256,8 @@ Pruned,pr-u-n-d,Prund,,qdnpru,4518
 Pruning,pr-u-n-\-h,Prung,,qgnpru,4518
 Prunes,pr-u-n-s,Pruns,,qnprsu,4518
 Outs,a-u-s,Ws,,qsw,4520
+Newline,n-u-l,Nul,,qlnu,4620
+Newlines,n-u-l-s,Nuls,,qlnsu,4620
 News,n-u-s,Nus,,qnsu,4620
 Renewing,r-e-n-u-\-h,Rnug,,qgnru,4620
 Renews,r-e-n-u-s,Rnus,,qnrsu,4620
