@@ -357,7 +357,7 @@ Dynamics,d-i-n-a-m-e-k-s,Dinameks,,qadeikmns,0
 De jure,d-~-j,Dj,,qdj,0
 Degeneration,d-j-e-n-r-a-sh,Djenrz,,qdejnrz,0
 Decryptably,d-/-k-b-e,Dkbe,,qbdek,0
-Detractions,d-/-k-sh-s,Dkzs,,qdksz,0
+Detractions,d-/-k-sh-s,Dkzso,o,qdkosz,0
 Deliverability,d-l-\-b,Dlbo,,qbdlo,0
 Deleter,d-l-e-t-r,Dletr,,qdelrt,0
 Deleters,d-l-e-t-r-s,Dletrs,,qdelrst,0
@@ -1608,6 +1608,8 @@ Infrastructures,n-f-r-a-s-t-r-k-t-r-s,Nfrastrktrs,,qafknrst,0
 Unforeseeably,n-f-s-e-b-e,Nfsebe,,qbefns,0
 Unforeseeability,n-f-s-e-\-b,Nfsebo,,qbefnos,0
 Unforeseen,n-f-s-e-n,Nfsen,,qefns,0
+Infrastructure,n-f-s-t-r,Nfstr,,qfnrst,0
+Infrastructures,n-f-s-t-r-s,Nfstrs,,qfnrst,0
 Ingressed,n-g-r-e-s-d,Ngresd,,qdegnrs,0
 Ingressing,n-g-r-e-s-\-h,Ngresg,,qegnrs,0
 Ingresses,n-g-r-e-s-s,Ngress,,qegnrs,0
@@ -2258,7 +2260,7 @@ Quantity,k-~-t,Qt,,qqt,0
 Qualitative,k-u-df,Qutv,,qqtuv,0
 Qualitatively,k-u-df-e,Qutve,,qeqtuv,0
 Questionnaires,k-sh-a2-s,Qzas,,qaqsz,0
-Rhode island,r-~-a,Ra,,qar,0
+Array,r-a,Ra,,qar,0
 Rachet,r-a-ch-t,Ract,,qacrt,0
 Racheted,r-a-ch-t-d,Ractd,,qacdrt,0
 Racheting,r-a-ch-t-\-h,Ractg,,qacgrt,0
@@ -2284,6 +2286,8 @@ Randomizing,r-a-n-dm-i-s-\-h,Randmisg,,qadgimnrs,0
 Randomizes,r-a-n-dm-i-s-s,Randmiss,,qadimnrs,0
 Racquet,r-a-k-e-t,Raqet,,qaeqrt,0
 Racquets,r-a-k-e-t-s,Raqets,,qaeqrst,0
+Rhode island,r-~-a,Raqk,,qar,0
+Arrays,r-a-s,Raso,o,qaors,0
 Rebelliously,r-b-e-l-u-s-e,Rbeluse,,qbelrsu,0
 Rebounder,r-b-n-r,Rbnr,,qbnr,0
 Readable,r-d-b,Rdb,,qbdr,0
@@ -3733,7 +3737,6 @@ Rebellious,r-b-e-l-u-s,Rbelus,,qbelrsu,1
 Refering,r-f-\-h,Rfgo,o,qfgor,1
 Reflected,r-fl-d,Rfld,,qdflr,1
 Reflects,r-fl-s,Rfls,,qflrs,1
-Regarding,r-e-\-h,Rgqk,,qgr,1
 Regulate,r-e-g-\-u,Rgu,,qgru,1
 Regulated,r-e-g-\-u-d,Rgud,,qdgru,1
 Regulating,r-e-g-\-u-\-h,Rgug,,qgru,1
@@ -3772,7 +3775,6 @@ Renewably,r-e-n-u-\-b-e,Rnube,,qbenru,1
 Renewables,r-e-n-u-\-b-s,Rnubs,,qbnrsu,1
 Repeatably,r-p-e-b-e,Rpebe,,qbepr,1
 Repeatables,r-p-e-b-s,Rpebs,,qbeprs,1
-Representing,r-p-\-h,Rpgqk,,qgpr,1
 Reproductive,r-pr-o-d-u-k-v,Rprodukv,,qdkopruv,1
 Reproductively,r-pr-o-d-u-k-v-e,Rprodukve,,qdekopruv,1
 Reproduction,r-pr-o-d-u-k-sh,Rprodukz,,qdkopruz,1
@@ -6254,12 +6256,11 @@ Decryptable,d-/-k-b,Dkb,,qbdk,36
 Decrypted,d-/-k-d,Dkd,,qdk,36
 Detracted,d-/-k-d,Dkdo,o,qdko,36
 Decrypting,d-/-k-\-h,Dkg,,qdgk,36
-Detracting,d-/-k-\-h,Dkgqk,,qdgk,36
-Detract,d-/-k,Dkqk,,qdk,36
 Decrypts,d-/-k-s,Dks,,qdks,36
 Detracts,d-/-k-s,Dkso,o,qdkos,36
-Detraction,d-/-k-sh,Dkz,,qdkz,36
-Decryption,d-/-k-sh,Dkzo,o,qdkoz,36
+Decryption,d-/-k-sh,Dkz,,qdkz,36
+Detraction,d-/-k-sh,Dkzo,o,qdkoz,36
+Decryptions,d-/-k-sh-s,Dkzs,,qdksz,36
 Conflicted,k-fl-d,Kfld,,qdfkl,36
 Conflicting,k-fl-\-h,Kflg,,qfgkl,36
 Conflicts,k-fl-s,Kfls,,qfkls,36
@@ -6406,6 +6407,9 @@ Promotable,pr-m-o-t-b,Prmotb,,qbmoprt,43
 Promoted,pr-m-o-t-d,Prmotd,,qdmoprt,43
 Promoting,pr-m-o-t-\-h,Prmotg,,qgmoprt,43
 Promotes,pr-m-o-t-s,Prmots,,qmoprst,43
+Proposed,pr-p-o-d,Prpod,,qdopr,43
+Proposing,pr-p-o-\-h,Prpog,,qgopr,43
+Proposes,pr-p-o-s,Prpos,,qoprs,43
 Proposition,pr-p-o-sh,Prpoz,,qoprz,43
 Persist,pr-ss,Prssi,i,qiprs,43
 Persons,pr-ss,Prsso,o,qoprs,43
@@ -6463,7 +6467,7 @@ Rewards,r-e-/-d-s,Rds,,qdrs,48
 Recovery,r-e-k-v-e,Rkve,,qekrv,48
 Recoveries,r-e-k-v-e-s,Rkves,,qekrsv,48
 Loudly,l-a-u-e,Lwe,,qelw,49
-Pieces,p-e-ss,Pesso,o,qeops,49
+Pieces,p-e-ss,Pess,,qeps,49
 Roomed,r-m-d,Rmdo,o,qdmor,49
 Rooming,r-m-\-h,Rmgo,o,qgmor,49
 Rooms,r-m-s,Rmso,o,qmors,49
@@ -6710,7 +6714,6 @@ Voices,v-o-e-s-s,Vyss,,qsvy,76
 Behavioral,b-^-h-\-a-v-r-l,Bhavrl,,qabhlrv,78
 Behaviors,b-^-h-\-a-v-r-s,Bhavrs,,qabhrsv,78
 Characters,k-a-k-s,Kaks,,qaks,78
-Cakes,k-a-k-s,Kaksqk,,qaks,78
 Enjoyed,n-j-o-e-d,Njyd,,qdjny,79
 Enjoying,n-j-o-e-\-h,Njyg,,qgjny,79
 Enjoys,n-j-o-e-s,Njys,,qjnsy,79
@@ -6847,7 +6850,7 @@ Peaced,p-e-s-d,Pesd,,qdeps,94
 Pieced,p-e-s-d,Pesdo,o,qdeops,94
 Piecing,p-e-s-\-h,Pesg,,qegps,94
 Peacing,p-e-s-\-h,Pesgo,o,qegops,94
-Peaces,p-e-s-s,Pess,,qeps,94
+Peaces,p-e-s-s,Pesso,o,qeops,94
 Restore,r-s-t-o-r,Rstor,,qorst,94
 Restored,r-s-t-o-r-d,Rstord,,qdorst,94
 Restoring,r-s-t-o-r-\-h,Rstorg,,qgorst,94
@@ -6969,7 +6972,6 @@ Delays,d-l-a-s,Dlas,,qadls,112
 Lighting,l-i-\-h,Ligo,o,qgilo,113
 Relied,r-e-l-i-d,Rlid,,qdilr,113
 Relying,r-e-l-i-\-h,Rlig,,qgilr,113
-Relies,r-e-l-i-s,Rlisqk,,qilrs,113
 Sometimes,s2-tm-s,Stmso,o,qmost,114
 Blanked,bl-a-nk-d,Blaqd,,qabdlq,115
 Blanking,bl-a-nk-\-h,Blaqg,,qabglq,115
@@ -7282,7 +7284,6 @@ Confirming,k-f-e-m-\-h,Kfemg,,qefgkm,186
 Confirms,k-f-e-m-s,Kfems,,qefkms,186
 Ruled,r-l-d,Rld,,qdlr,186
 Ruling,r-l-\-h,Rlg,,qglr,186
-Rules,r-l-s,Rlsqk,,qlrs,186
 Specifics,s-p-e-s2-k-s,Spesks,,qekps,187
 Customers,k-u-s-r-s,Kusrs,,qkrsu,189
 Knowledgeable,n-o-l-b,Nolb,,qblno,189
@@ -7370,7 +7371,6 @@ Creation,k-r-ea-sh,Krez,,qekrz,219
 Critical,k-r-/-ya,Kry,,qkry,219
 Critically,k-r-/-ya-e,Krye,,qekry,219
 Criticality,k-r-/-ya,Kryo,o,qkory,219
-Criticality,k-r-/-ya,Kryqk,,qkry,219
 Uncritical,n-k-r-/-ya,Nkry,,qknry,219
 Recreation,r-e-k-r-ea-sh,Rkrez,,qekrz,219
 Leveled,l-e-v-l-d,Levld,,qdelv,220
@@ -7588,7 +7588,6 @@ Locking,l-o-k-\-h,Lokg,,qgklo,329
 Locating,l-o-k-\-h,Lokgo,o,qgklo,329
 Locality,l-o-k-\-l,Lokl,,qklo,329
 Local,l-o-k,Loko,o,qklo,329
-Lock,l-o-k,Lokoqk,o,qklo,329
 Locks,l-o-k-s,Loks,,qklos,329
 Locates,l-o-k-s,Loksi,i,qiklos,329
 Locals,l-o-k-s,Lokso,o,qklos,329
@@ -7827,7 +7826,6 @@ Todays,td-a-s,Tdaso,o,qadost,559
 Opened,o-p-n-d,Opnd,,qdnop,560
 Opening,o-p-n-\-h,Opng,,qgnop,560
 Opens,o-p-n-s,Opns,,qnops,560
-Opinions,o-p-n-s,Opnsqk,,qnops,560
 Failures,f-a-l-r-s,Falrs,,qaflrs,563
 Having,v-\-h,Vg,,qgv,569
 Protested,pr-o-t-e-s-d,Protesd,,qdeoprst,575
@@ -7951,7 +7949,6 @@ Incorrectly,n-k-r-e,Nkre,,qeknr,705
 Recurred,r-e-k-r-d,Rkrd,,qdkr,705
 Recuring,r-e-k-r-\-h,Rkrg,,qgkr,705
 Recur,r-e-k-r,Rkro,o,qkor,705
-Recurs,r-e-k-r-s,Rkrsqk,,qkrs,705
 Telling,t-e-\-h,Teg,,qegt,711
 Tells,t-e-s,Tes,,qest,711
 Coming,k-m-\-h,Kmg,,qgkm,718
@@ -8007,7 +8004,6 @@ Installable,n-s2-t-o-l-b,Nstolb,,qblnost,822
 Installs,n-s2-t-o-l-s,Nstols,,qlnost,822
 Resolution,r-s2-o-l-sh,Rsolz,,qlorsz,851
 Putting,p-\-h,Pg,,qgp,855
-Puting,p-\-h,Pgqk,,qgp,855
 Put,p,Pu,u,qpu,855
 Singled,s2-e-ng-d,Segd,,qdegs,874
 Singly,s2-e-ng-e,Sege,,qegs,874
@@ -8092,7 +8088,6 @@ Given,g-e,Geo,o,qego,1195
 Guess,g-e-s,Geso,o,qegos,1195
 Callable,k-o-b,Kob,,qbko,1195
 Called,k-o-t,Kodi,i,qdiko,1195
-Called,k-o-t,Kodqk,,qdko,1195
 Calling,k-o-\-h,Kog,,qgko,1195
 Coal,k-o-l,Kolu,u,qklou,1195
 Calls,k-o-s,Kos,,qkos,1195
@@ -8223,7 +8218,7 @@ Abled,a-bl-d,Abld,,qabdl,2694
 Unsure,u-n-sh-u,Nzuo,o,qnouz,2886
 Making,m-a-k-\-h,Makg,,qagkm,2910
 Namely,n-a-e,Nae,,qaen,2992
-Naming,n-a-\-h,Nago,o,qagno,2992
+Naming,n-a-\-h,Nag,,qagn,2992
 Rename,r-e-n-a,Rna,,qanr,2992
 Renamed,r-e-n-a-d,Rnad,,qadnr,2992
 Renaming,r-e-n-a-\-h,Rnag,,qagnr,2992
