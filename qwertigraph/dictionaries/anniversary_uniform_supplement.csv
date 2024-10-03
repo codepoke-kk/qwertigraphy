@@ -4782,6 +4782,11 @@ Guaranteeing,g-a2-nt-e-\-h,Ganteg,,qaegnt,5
 Guarantees,g-a2-nt-e-s,Gantes,,qaegnst,5
 Goals,g-o-l-s,Gols,,qglos,5
 Hallucinations,^-h-\-a-l-u-s-n-a-sh-s,Halusnzs,,qahlnsuz,5
+Headed,^-h-\-e-d-d,Hedd,,qdeh,5
+Heading,^-h-\-e-d-\-h,Hedg,,qdegh,5
+Headings,^-h-\-e-d-\-h-s,Hedgs,,qdeghs,5
+Heads,^-h-\-e-d-s,Heds,,qdehs,5
+Headings,^-h-\-e-d-\-h-s,Hedz,,qdehz,5
 Theological,h-e-\-o-k,Heok,,qehko,5
 Theologically,h-e-\-o-k-e,Heoke,,qehko,5
 Heated,^-h-\-e-t-d,Hetd,,qdeht,5
@@ -5583,6 +5588,7 @@ Deprecates,d-pr-e-k-s,Dpreks,,qdekprs,14
 Deprecation,d-pr-e-k-sh,Dprekz,,qdekprz,14
 Essentially,e-s2-n-sh-e,Esnze,,qensz,14
 Heavily,^-h-\-e-v-ye,Hevy,,qehvy,14
+Careful,k-a-f,Kaf,,qafk,14
 Carefully,k-a-f-e,Kafe,,qaefk,14
 Capability,k-a-p-\-b,Kapbo,,qabkop,14
 Capabilities,k-a-p-\-b-s,Kapbs,,qabkps,14
@@ -7358,6 +7364,11 @@ Applies,a-pl-i-s,Aplis,,qailps,210
 Troubled,t-r-b-d,Trbd,,qbdrt,211
 Troubling,t-r-b-\-h,Trbg,,qbgrt,211
 Troubles,t-r-b-s,Trbs,,qbrst,211
+Normalize,n-o-m-i-s,Nomis,,qimnos,216
+Normalized,n-o-m-i-s-d,Nomisd,,qdimnos,216
+Normalizing,n-o-m-i-s-\-h,Nomisg,,qgimnos,216
+Normalizes,n-o-m-i-s-s,Nomiss,,qimnos,216
+Normals,n-o-m-s,Noms,,qmnos,216
 Subject,s-j,Sj,,qjs,216
 Subjected,s-j-d,Sjd,,qdjs,216
 Subjecting,s-j-\-h,Sjg,,qgjs,216
@@ -7562,7 +7573,7 @@ Authentication,o-th-e-nt-sh,Ohentz,,qehnotz,314
 Unknowably,u-n-o-b-e,Nobe,,qbeno,316
 Objected,o-b-d,Obd,,qbdo,316
 Objecting,o-b-\-h,Obg,,qbgo,316
-Objects,o-b-s,Obso,o,qbos,316
+Objects,o-b-s,Obs,,qbos,316
 Necessaries,n-e-ss-s,Nesss,,qens,318
 Flexible,fl-e-x-b,Flexb,,qbeflx,321
 Flexibly,fl-e-x-b-e,Flexbe,,qbeflx,321

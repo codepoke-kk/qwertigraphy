@@ -3344,7 +3344,6 @@ Obligation,o-bl-sh,Oblz,,qbloz,0
 Albania,o-b-n-a,Obna,,qabno,0
 Albany,o-b-n-e,Obne,,qbeno,0
 Objector,o-b-\-r,Obr,,qbor,0
-Obesity,o-b-/-s,Obs,,qbos,0
 Obsidian,o-b-s2-e-tn,Obsedn,,qbdenos,0
 Observant,o-b-s-e-/-nt,Obsent,,qbenost,0
 Obsequious,o-b-s2-e-k,Obseq,,qbeoqs,0
@@ -3354,6 +3353,7 @@ Obstruct,o-b-s2-k,Obsk,,qbkos,0
 Obstacle,o-b-s-/-k,Obsko,o,qbkos,0
 Obscure,o-b-s2-k-r,Obskr,,qbkors,0
 Obscenity,o-b-s-/-nt,Obsnt,,qbnost,0
+Obesity,o-b-/-s,Obsqk,,qbos,0
 Obsess,o-b-ss,Obss,,qbos,0
 Obstinacy,o-b-s2-tn-s2-e,Obstnse,,qbenost,0
 Obstreperous,o-b-s2-t-r-e-p,Obstrep,,qbeoprst,0
@@ -5359,7 +5359,6 @@ Gall,g-o-l,Golo,o,qglo,5
 Hid,^-h-\-e-d,Hed,,qdeh,5
 He had,^-h-\-e-d,Hedi,i,qdehi,5
 Head,^-h-\-e-d,Hedo,o,qdeho,5
-Heads,^-h-\-e-d-s,Heds,,qdehs,5
 Hit,^-h-\-e-t,Heti,i,qehit,5
 Heat,^-h-\-e-t,Hetu,u,qehtu,5
 Heavier,^-h-\-e-v-e-r,Hever,,qehrv,5
@@ -5828,8 +5827,7 @@ Great pleasure,g-r-p,Grp,,qgpr,14
 Joke,j-o-k,Jok,,qjko,14
 Junk,j-nk,Jq,,qjq,14
 Junction,j-nk,Jqo,o,qjoq,14
-Calf,k-a-f,Kaf,,qafk,14
-Careful,k-a-f,Kafo,o,qafko,14
+Calf,k-a-f,Kafqk,,qafk,14
 Conclude,k-k,Kko,o,qko,14
 Conclusive,k-k-v,Kkv,,qkv,14
 Mystery,m-e-s2-t-r-e,Mestre,,qemrst,14
@@ -6285,7 +6283,6 @@ Excellent,e-s2-l,Xli,i,qilx,41
 Excellence,e-s2-l,Xlo,o,qlox,41
 Feature,f-e-t-r,Fetr,,qefrt,42
 Fruit,fr-u-t,Frut,,qfrtu,42
-Headed,^-h-\-e-td,Hedd,,qdeh,42
 Heeded,^-h-\-e-td,Heddo,o,qdeho,42
 Convene,k-v-e-n,Kven,,qeknv,42
 Convenience,k-v-e-n,Kveni,i,qeiknv,42
@@ -6912,9 +6909,9 @@ Applied,a-pl-i-d,Aplid,,qadilp,210
 Trouble,t-r-b,Trb,,qbrt,211
 Required,r-k-i-/-t,Rqid,,qdiqr,214
 Half,^-h-\-a-f,Haf,,qafh,216
-Norm,n-o-m,Nom,,qmno,216
+Normal,n-o-m,Nom,,qmno,216
 Gnome,n-o-m,Nomi,i,qimno,216
-Normal,n-o-m,Nomo,o,qmno,216
+Norm,n-o-m,Nomqk,,qmno,216
 Disable,d-s-a-b,Dsab,,qabds,217
 Include,e-/-d,Edo,o,qdeo,218
 Bring,br,Br,,qbr,220
