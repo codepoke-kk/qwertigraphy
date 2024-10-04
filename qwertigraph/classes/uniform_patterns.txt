@@ -18,6 +18,8 @@ lin,l-?a-?n,lin
 .,ea2,e
 ; a-u to w
 .,a-?u,w
+; e-u-n- to un (for universal and unit, etc)
+.,e-u-n-,un
 ; e-u to u
 .,e-?u,u
 ; o-e to y

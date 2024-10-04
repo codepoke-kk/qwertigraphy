@@ -1575,7 +1575,6 @@ Unimaginative,u-n-e-m-a-j-df,Nemajtv,,qaejmntv,0
 Noticeably,n-e-s-b-e,Nesbe,,qbens,0
 Noticeability,n-e-s-\-b,Nesbo,,qbenos,0
 Unnoticed,u-n-e-s2-t,Nesdo,o,qdenos,0
-Unison,e-u-n-e-s-n,Nesn,,qens,0
 Nested,n-e-s-t-d,Nestd,,qdenst,0
 Nesting,n-e-s-t-\-h,Nestg,,qegnst,0
 Nest,n-e-s-t,Nesti,i,qeinst,0
@@ -1583,7 +1582,6 @@ Nests,n-e-s-t-s,Nestso,o,qenost,0
 Nettle,n-e-t-l,Netl,,qelnt,0
 Nettled,n-e-t-l-d,Netld,,qdelnt,0
 Nettles,n-e-t-l-s,Netls,,qelnst,0
-Units,e-u-n-e-t-s,Netsi,i,qeinst,0
 Neitzsche,n-e-t-sh-e,Netze,,qentz,0
 Nervousness,n-e-v-u-s-n-e-s,Nevusnes,,qensuv,0
 Influenced,n-f-d,Nfd,,qdfn,0
@@ -3018,6 +3016,8 @@ Wiping,u-i-p-\-h,Uipg,,qgipu,0
 Wipes,u-i-p-s,Uips,,qipsu,0
 Unmentionables,u-mn-sh-b-s,Umnzbs,,qbmnsuz,0
 Underneath,u-/-n-e-h,Uneh,,qehnu,0
+Unison,e-u-n-e-s-n,Unesn,,qensu,0
+Units,e-u-n-e-t-s,Unets,,qenstu,0
 Unencryptions,u-n-\-k-sh-s,Unkzs,,qknsuz,0
 Watchful,u-o-ch-f,Uocf,,qcfou,0
 Watchfully,u-o-ch-f-e,Uocfe,,qcefou,0
@@ -3603,8 +3603,6 @@ Nervously,n-e-v-u-s-e,Nevuse,,qensuv,1
 Inflicted,n-fl-d,Nfld,,qdfln,1
 Informally,n-f-m-l-e,Nfmle,,qeflmn,1
 Ingress,n-g-r-e-s,Ngres,,qegnrs,1
-Uniting,e-u-n-i-\-h,Nig,,qgin,1
-Unites,e-u-n-i-s,Nisu,u,qinsu,1
 Uncontrolable,^-n-k-/-l-b,Nklb,,qbkln,1
 Uncontrolled,^-n-k-/-l-d,Nkld,,qdkln,1
 Encryptions,n-\-k-\-sh-s,Nkzs,,qknsz,1
@@ -3630,7 +3628,6 @@ Investigating,n-v-e-s2-g-\-h,Nvesgg,,qegnsv,1
 Investigate,n-v-e-s2-g,Nvesgo,o,qegnosv,1
 Investigates,n-v-e-s2-g-s,Nvesgs,,qegnsv,1
 Investigation,n-v-e-s2-g-sh,Nvesgz,,qegnsvz,1
-Universities,e-u-n-v-e-s2-t-e-s,Nvestes,,qenstv,1
 Envisioned,n-v-e-sh-d,Nvezd,,qdenvz,1
 Envisioning,n-v-e-sh-\-h,Nvezg,,qegnvz,1
 Envisions,n-v-e-sh-s,Nvezs,,qensvz,1
@@ -3919,6 +3916,9 @@ Wordings,u-d-\-s,Udz,,qduz,1
 Younger,u-ng-e2,Ugeo,o,qegou,1
 Youngest,u-ng-e-s,Uges,,qegsu,1
 Wider,u-i-d-r,Uidr,,qdiru,1
+Uniting,e-u-n-i-\-h,Unig,,qginu,1
+Unites,e-u-n-i-s,Unis,,qinsu,1
+Universities,e-u-n-v-e-s2-t-e-s,Unvestes,,qenstuv,1
 Walker,u-o-k-r,Uokr,,qkoru,1
 Walkers,u-o-k-r-s,Uokrs,,qkorsu,1
 Wore,u-o-r,Uor,,qoru,1
@@ -4646,10 +4646,6 @@ Needless,n-e-d-l,Nedlo,o,qdelno,4
 Needles,n-e-d-l-s,Nedls,,qdelns,4
 Netting,n-e-t-\-h,Netg,,qegnt,4
 Nets,n-e-t-s,Netso,o,qenost,4
-Uniformed,e-u-n-f-m-d,Nfmdo,o,qdfmno,4
-Uniformly,e-u-n-f-m-e,Nfme,,qefmn,4
-Uniforming,e-u-n-f-m-\-h,Nfmgo,o,qfgmno,4
-Uniforms,e-u-n-f-m-s,Nfmso,o,qfmnos,4
 Uncomfortably,n-k-f-t-b-e,Nkftbe,,qbefknt,4
 Incremented,n-k-r-e-m-d,Nkremd,,qdekmnr,4
 Incrementing,n-k-r-e-m-\-h,Nkremg,,qegkmnr,4
@@ -4730,6 +4726,11 @@ Transcribing,^-t-\-s2-k-r-\-h,Tskrg,,qgkrst,4
 Transcribe,^-t-\-s2-k-r,Tskro,o,qkorst,4
 Transcribes,^-t-\-s2-k-r-s,Tskrs,,qkrst,4
 You can,u-k,Uki,i,qiku,4
+Uniform,e-u-n-f-m,Unfm,,qfmnu,4
+Uniformed,e-u-n-f-m-d,Unfmd,,qdfmnu,4
+Uniformly,e-u-n-f-m-e,Unfme,,qefmnu,4
+Uniforming,e-u-n-f-m-\-h,Unfmg,,qfgmnu,4
+Uniforms,e-u-n-f-m-s,Unfms,,qfmnsu,4
 Walled,u-o-l-d,Uold,,qdlou,4
 Walling,u-o-l-\-h,Uolg,,qglou,4
 Walls,u-o-l-s,Uols,,qlosu,4
@@ -4874,6 +4875,7 @@ Un-,u->,U>,,q>u,5
 Waked,u-a-k-d,Uakd,,qadku,5
 Waking,u-a-k-\-h,Uakg,,qagku,5
 Wakes,u-a-k-s,Uaks,,qaksu,5
+United,e-u-n-i-/-t,Unid,,qdinu,5
 Unity,e-u-\-nt,Unto,o,qnotu,5
 Upright,u-p-r-i,Upri,,qipru,5
 Excluded,e-s-/-d-d,Xdd,,qdx,5
@@ -6490,11 +6492,17 @@ Wisdoms,u-e-s2-tm-s,Uesdms,,qdemsu,50
 Grounded,g-r-nt-d,Grndd,,qdgnr,51
 Grounding,g-r-nt-\-h,Grndg,,qdgnr,51
 Grounds,g-r-nt-s,Grnds,,qdgnrs,51
-Universally,e-u-n-v-e,Nveo,o,qenov,51
-Universality,e-u-n-v-\-l,Nvlu,u,qlnuv,51
 Returning,r-e-t-\-h,Rtg,,qgrt,51
 Usage,e-u-\-j,Uj,,qju,51
 Usages,e-u-\-j-s,Ujs,,qjsu,51
+Universe,e-u-n-v,Unv,,qnuv,51
+Universally,e-u-n-v-e,Unve,,qenuv,51
+Universal,e-u-n-v-l,Unvl,,qlnuv,51
+Universally,e-u-n-v-l-e,Unvle,,qelnuv,51
+Universality,e-u-n-v-\-l,Unvlo,o,qlnouv,51
+Universals,e-u-n-v-l-s,Unvls,,qlnsuv,51
+Universalities,e-u-n-v-\-l-s,Unvlso,o,qlnosuv,51
+Universes,e-u-n-v-s,Unvs,,qnsuv,51
 Outcomes,a-u-k-m-s,Wkms,,qkmsw,51
 Expressed,e-s-pr-d,Xprd,,qdprx,51
 Expressing,e-s-pr-\-h,Xprg,,qgprx,51
@@ -6960,8 +6968,8 @@ Repurpose,r-pr-p,Rprp,,qpr,108
 Repurposed,r-pr-p-d,Rprpd,,qdpr,108
 Repurposing,r-pr-p-\-h,Rprpg,,qgpr,108
 Repurposes,r-pr-p-s,Rprps,,qprs,108
-Unique,e-u-n-e-k,Neq,,qenq,109
-Uniquely,e-u-n-e-k-e,Neqe,,qenq,109
+Unique,e-u-n-e-k,Uneq,,qenqu,109
+Uniquely,e-u-n-e-k-e,Uneqe,,qenqu,109
 Wondered,u-u-n-d,Uund,,qdnu,109
 Wondering,u-u-n-\-h,Uung,,qgnu,109
 Wonders,u-u-n-s,Uuns,,qnsu,109
