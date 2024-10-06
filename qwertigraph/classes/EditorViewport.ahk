@@ -730,12 +730,13 @@ class EditorViewport
             candidate := {"qwerd":"","word":"Next options","keyer":"nn"}
             candidates.Push(candidate)
             prompt := "Key in your selected keyer from this list or you can key in any keyer you choose. Your choice will displace any existing word.`n"
+            prompt := prompt qwerd " = " this.map.qwerds.item(qwerd).word "`n"
             for candidate_index, candidate in candidates {
                 prompt := prompt "(" candidate.keyer ") " candidate.qwerd " = " candidate.word "`n"
             }
             ; We have to stop the engine to make text input without expansion possible
             this.engine.Stop()
-            InputBox, selection, % "Choose Keyer", % prompt 
+            InputBox, selection, % "Choose Keyer", % prompt,,300,300,
             this.engine.Start()
             if ErrorLevel {
                 this.logEvent(1, "User cancelled keyer selection")
