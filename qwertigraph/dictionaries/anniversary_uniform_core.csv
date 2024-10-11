@@ -2324,7 +2324,6 @@ Lubricate,l-br-e-k,Lbrek,,qbeklr,0
 Liberate,l-e-b-e-r-a,Lebera,,qabelr,0
 Libretto,l-e-br-e-t-o,Lebreto,,qbelort,0
 V. l-e-nt-e-k,l-e-d-e-k,Ledek,,qdekl,0
-Leeward,l-e-/-d,Ledi,i,qdeil,0
 Leaden,l-e-tn,Ledn,,qdeln,0
 Lift,l-e-f-t,Lefto,o,qeflot,0
 Legatee,l-e-g-a-t-e,Legate,,qaeglt,0
@@ -3352,7 +3351,6 @@ Obstruct,o-b-s2-k,Obsk,,qbkos,0
 Obstacle,o-b-s-/-k,Obsko,o,qbkos,0
 Obscure,o-b-s2-k-r,Obskr,,qbkors,0
 Obscenity,o-b-s-/-nt,Obsnt,,qbnost,0
-Obesity,o-b-/-s,Obsqk,,qbos,0
 Obsess,o-b-ss,Obss,,qbos,0
 Obstinacy,o-b-s2-tn-s2-e,Obstnse,,qbenost,0
 Obstreperous,o-b-s2-t-r-e-p,Obstrep,,qbeoprst,0
@@ -3669,6 +3667,7 @@ Ran,r-a-n,Rani,i,qainr,0
 Rain,r-a-n,Rano,o,qanor,0
 Rains,r-a-n-s,Rans,,qanrs,0
 Rank,r-a-nk,Raq,,qaqr,0
+Rhode island,r-~-a,Rau,u,qaru,0
 Reader,r-e2-d-e2,Rdeo,o,qdeor,0
 Red,r-e-d,Rdo,o,qdor,0
 Readdressed,r-ea-d-r-/-t,Rdrd,,qdr,0
@@ -4948,7 +4947,6 @@ K-tm-d,k-tn-td,Ktntd,,qdknt,2
 Contented,k-tn-td,Ktntdo,o,qdknot,2
 Largest,l-a-j-e-s,Lajes,,qaejls,2
 Layer,l-a-r,Lar,,qalr,2
-Leg,l-e-g,Legi,i,qegil,2
 League,l-e-g,Lego,o,qeglo,2
 Linkage,l-e-nk-j,Leqj,,qejlq,2
 Liter,l-e2-t-e2,Lete,,qelt,2
@@ -5825,7 +5823,6 @@ Great pleasure,g-r-p,Grp,,qgpr,14
 Joke,j-o-k,Jok,,qjko,14
 Junk,j-nk,Jq,,qjq,14
 Junction,j-nk,Jqo,o,qjoq,14
-Calf,k-a-f,Kafqk,,qafk,14
 Conclude,k-k,Kko,o,qko,14
 Conclusive,k-k-v,Kkv,,qkv,14
 Mystery,m-e-s2-t-r-e,Mestre,,qemrst,14
@@ -6838,7 +6835,6 @@ Roll,r-o-l,Rolo,o,qlor,177
 Imagine,e-m-a-j,Emaj,,qaejm,178
 Imagination,e-m-a-j,Emajo,o,qaejmo,178
 Fright,fr-i,Frii,i,qfir,178
-Fry,fr-i,Friqk,,qfir,178
 Space,s-p-a-s,Spas,,qaps,178
 Development,dfl-m,Dvlm,,qdlmv,179
 Instances,n-s-s,Nss,,qns,180
@@ -6907,7 +6903,6 @@ Required,r-k-i-/-t,Rqid,,qdiqr,214
 Half,^-h-\-a-f,Haf,,qafh,216
 Normal,n-o-m,Nom,,qmno,216
 Gnome,n-o-m,Nomi,i,qimno,216
-Norm,n-o-m,Nomqk,,qmno,216
 Disable,d-s-a-b,Dsab,,qabds,217
 Include,e-/-d,Edo,o,qdeo,218
 Bring,br,Br,,qbr,220
@@ -7576,7 +7571,7 @@ My,m-a,Mai,i,qaim,1896
 Mass,m-a-s,Masi,i,qaims,1896
 Massachusetts,m-a-s,Maso,o,qamos,1896
 Let,l-e,Le,,qel,1922
-Letter,l-e,Leo,o,qelo,1922
+Letter,l-e,Lei,i,qeil,1922
 Let us,l-e-s,Les,,qels,1922
 Inlet,n-l-e,Nle,,qeln,1922
 Same,s2-a-m,Sam,,qams,1932

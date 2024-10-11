@@ -354,6 +354,9 @@ Diameters,d-i-m-e-t-e2-s,Dimetes,,qdeimst,0
 Dynamic,d-i-n-a-m-e-k,Dinamek,,qadeikmn,0
 Dynamically,d-i-n-a-m-e-k-e,Dinameke,,qadeikmn,0
 Dynamics,d-i-n-a-m-e-k-s,Dinameks,,qadeikmns,0
+Dynamic,d-i-n-m-k,Dinmk,,qdikmn,0
+Dynamically,d-i-n-m-k-e,Dinmke,,qdeikmn,0
+Dynamics,d-i-n-m-k-s,Dinmks,,qdikmns,0
 De jure,d-~-j,Dj,,qdj,0
 Degeneration,d-j-e-n-r-a-sh,Djenrz,,qdejnrz,0
 Decryptably,d-/-k-b-e,Dkbe,,qbdek,0
@@ -2284,7 +2287,6 @@ Randomizing,r-a-n-dm-i-s-\-h,Randmisg,,qadgimnrs,0
 Randomizes,r-a-n-dm-i-s-s,Randmiss,,qadimnrs,0
 Racquet,r-a-k-e-t,Raqet,,qaeqrt,0
 Racquets,r-a-k-e-t-s,Raqets,,qaeqrst,0
-Rhode island,r-~-a,Raqk,,qar,0
 Arrays,r-a-s,Raso,o,qaors,0
 Rebelliously,r-b-e-l-u-s-e,Rbeluse,,qbelrsu,0
 Rebounder,r-b-n-r,Rbnr,,qbnr,0
@@ -2921,6 +2923,8 @@ Transmuting,t-\-m-u-t-\-h,Tmutg,,qgmtu,0
 Transmutes,t-\-m-u-t-s,Tmuts,,qmstu,0
 Transmutation,t-\-m-u-t-sh,Tmutz,,qmtuz,0
 Transmutations,t-\-m-u-t-sh-s,Tmutzs,,qmstuz,0
+Timesheet,tm-sh-e-t,Tmzet,,qemtz,0
+Timesheets,tm-sh-e-t-s,Tmzets,,qemstz,0
 Tenably,tn-b-e,Tnbe,,qbent,0
 Tenables,tn-b-s,Tnbs,,qbnst,0
 Transcendentally,t-\-nt-nt-l-e,Tndndle,,qdelnt,0
@@ -7381,6 +7385,7 @@ Normalize,n-o-m-i-s,Nomis,,qimnos,216
 Normalized,n-o-m-i-s-d,Nomisd,,qdimnos,216
 Normalizing,n-o-m-i-s-\-h,Nomisg,,qgimnos,216
 Normalizes,n-o-m-i-s-s,Nomiss,,qimnos,216
+Norm,n-o-m,Nomo,o,qmno,216
 Normals,n-o-m-s,Noms,,qmnos,216
 Subject,s-j,Sj,,qjs,216
 Subjected,s-j-d,Sjd,,qdjs,216
@@ -8203,7 +8208,8 @@ Codes,k-o-t-s,Kods,,qdkos,1735
 Courted,k-o-t-d,Kotdo,o,qdkot,1735
 Courting,k-o-t-\-h,Kotg,,qgkot,1735
 Courts,k-o-t-s,Kots,,qkost,1735
-Lettered,l-e-d,Ledu,u,qdelu,1922
+Lettered,l-e-d,Ledi,i,qdeil,1922
+Lettering,l-e-\-h,Legi,i,qegil,1922
 Letting,l-e-\-h,Legu,u,qeglu,1922
 Letters,l-e-s,Lesi,i,qeils,1922
 Prettier,pr-e-r,Prer,,qepr,1977
