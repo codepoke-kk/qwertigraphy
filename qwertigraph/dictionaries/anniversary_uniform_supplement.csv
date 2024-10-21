@@ -4567,6 +4567,7 @@ Blankets,bl-a-nk-t-s,Blaqts,,qablqst,4
 Boundaries,b-n-r-e-s,Bnres,,qbenrs,4
 Childhood,ch-i-ld-\-d,Cildd,,qcdil,4
 Childhoods,ch-i-ld-\-d-s,Cildds,,qcdils,4
+Dangers,tn-j-e2-s,Dnjes,,qdejns,4
 Downtime,d-n-tm,Dntm,,qdmnt,4
 Downtimes,d-n-tm-s,Dntms,,qdmnst,4
 Drain,d-r-a-n,Dran,,qadnr,4
@@ -5655,6 +5656,8 @@ Combines,k-b-i-s,Kbis,,qbiks,15
 Constantly,k-s2-tn-e,Kstne,,qeknst,15
 Constants,k-s2-tn-s,Kstns,,qknst,15
 Mornings,mn-\-h-s,Mnzi,i,qimnz,15
+Noisy,n-o-e-s-e,Nyse,,qensy,15
+Noisily,n-o-e-s-e,Nysy,y,qensy,15
 Observable,o-b-s-e-b,Obseb,,qbeos,15
 Observed,o-b-s-e-d,Obsed,,qbdeos,15
 Observing,o-b-s-e-\-h,Obseg,,qbegos,15
@@ -6687,12 +6690,17 @@ Balanced,b-a-l-d,Baldo,o,qabdlo,73
 Balancing,b-a-l-\-h,Balg,,qabgl,73
 Balances,b-a-l-s,Bals,,qabls,73
 Deletion,d-l-e-sh,Dlez,,qdelz,73
+Near,n-e2,Neo,o,qeno,73
 Offering,o-f-\-h,Ofg,,qfgo,73
 Offing,o-f-\-h,Ofgo,o,qfgo,73
 Offering,o-f-\-h,Ofgu,u,qfgou,73
 Offers,o-f-s,Ofs,,qfos,73
 Offices,o-f-s,Ofso,o,qfos,73
 Offer,o-f,Ofu,u,qfou,73
+Refuge,r-f-e-u-j,Rfuj,,qfjru,73
+Refuged,r-f-e-u-j-d,Rfujd,,qdfjru,73
+Refuging,r-f-e-u-j-\-h,Rfujg,,qfgjru,73
+Refuges,r-f-e-u-j-s,Rfujs,,qfjrsu,73
 Defecation,df-k-a-sh,Dfkz,,qdfkz,74
 Describe,d-s2-k-r,Dskr,,qdkrs,74
 Described,d-s2-k-r-d,Dskrd,,qdkrs,74
@@ -8318,3 +8326,11 @@ Knees,n-e-s,Neso,o,qenos,8247
 Automation,o-tm-a-sh,Otmz,,qmotz,12226
 Automations,o-tm-a-sh-s,Otmzs,,qmostz,12226
 Allows,a-l-s,Als,,qals,90619
+Redeem,r-tm,Rdm,,qdmr,92527
+Redeemed,r-tm-d,Rdmd,,qdmr,92527
+Redeeming,r-tm-\-h,Rdmg,,qdgmr,92527
+Redeemer,r-tm-r,Rdmr,,qdmr,92527
+Redeemers,r-tm-r-s,Rdmrs,,qdmrs,92527
+Redeems,r-tm-s,Rdms,,qdmrs,92527
+Redemption,r-tm-sh,Rdmz,,qdmrz,92527
+Redemptions,r-tm-sh-s,Rdmzs,,qdmrsz,92527
