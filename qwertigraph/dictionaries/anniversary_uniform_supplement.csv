@@ -209,7 +209,7 @@ Beatifies,b-ea-df-s,Betfs,,qbefst,0
 Beatifyion,b-ea-df-sh,Betfz,,qbeftz,0
 Beforehand,b-f-n-t,Bfnt,,qbfnt,0
 Befriended,b-fr-d,Bfrd,,qbdfr,0
-Began,b-g-e-n-d,Bgend,,qbdegn,0
+Began,b-g-a-n,Bgan,,qabgn,0
 Beginnings,b-g-e-n-\-s2,Bgenz,,qbegnz,0
 Behaviorally,b-^-h-\-a-v-r-l-e,Bhavrle,,qabehlrv,0
 Bindings,b-i-nt-\-s2,Bindz,,qbdinz,0
@@ -6089,8 +6089,12 @@ Builtin,bl-n,Bln,,qbln,29
 Builtins,bl-n-s,Blns,,qblns,29
 Besides,b-s-i-s,Bsis,,qbis,29
 Deflation,dfl-a-sh,Dflz,,qdflz,29
-Deplore,d-pl-r,Dplr,,qdlpr,29
-Deployer,d-pl-r,Dplro,o,qdlopr,29
+Deployer,d-pl-r,Dplr,,qdlpr,29
+Deplored,d-pl-r-d,Dplrd,,qdlpr,29
+Deploring,d-pl-r-\-h,Dplrg,,qdglpr,29
+Deplore,d-pl-r,Dplro,o,qdlopr,29
+Deployers,d-pl-r-s,Dplrs,,qdlprs,29
+Deplores,d-pl-r-s,Dplrso,o,qdloprs,29
 Develop,dfl,Dvl,,qdlv,29
 Developed,dfl-d,Dvld,,qdlv,29
 Developing,dfl-\-h,Dvlg,,qdglv,29
