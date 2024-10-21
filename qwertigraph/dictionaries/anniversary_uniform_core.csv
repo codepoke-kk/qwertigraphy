@@ -5287,6 +5287,7 @@ Increment,n-k-r-e-m,Nkrem,,qekmnr,4
 Encourage,n-k-r-j,Nkrj,,qjknr,4
 New mexico,n-/-m,Nmo,o,qmno,4
 Newspaper,n-s-p,Nsp,,qnps,4
+Interest,^-n-\-s,Nsu,u,qnsu,4
 Intuitive,nt-e-u-df,Ntutv,,qntuv,4
 Numerous,n-e-u-m,Numo,o,qmnou,4
 Inexcusable,n-e-s2-k-e-u-b,Nxkub,,qbknux,4
@@ -7018,7 +7019,7 @@ Pole,p-o-l,Pol,,qlop,293
 Policy,p-o-l,Polo,o,qlop,293
 Tin,t-e-n,Teno,o,qenot,293
 Institution,n-s2-t-sh,Nstz,,qnstz,295
-Insult,n-s2-u,Nsu,,qnsu,295
+Insult,n-s2-u,Nsuqk,,qnsu,295
 Progress,pr-g,Prg,,qgpr,295
 Result,r-s2-u,Rsu,,qrsu,295
 State,s2-t,Sti,i,qist,295
