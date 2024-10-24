@@ -492,6 +492,10 @@ Disengaged,d-s2-n-g-a-d,Dsngad,,qadgns,0
 Disengaging,d-s2-n-g-a-\-h,Dsngag,,qadgns,0
 Disengagements,d-s2-n-g-a-m-s,Dsngams,,qadgmns,0
 Disengages,d-s2-n-g-a-s,Dsngas,,qadgns,0
+Dissolve,d-s-o-l,Dsol,,qdlos,0
+Dissolved,d-s-o-l-d,Dsold,,qdlos,0
+Dissolving,d-s-o-l-\-h,Dsolg,,qdglos,0
+Dissolves,d-s-o-l-s,Dsols,,qdlos,0
 Dissolve,d-s-o-l-v,Dsolv,,qdlosv,0
 Dissolved,d-s-o-l-v-d,Dsolvd,,qdlosv,0
 Dissolving,d-s-o-l-v-\-h,Dsolvg,,qdglosv,0
@@ -3885,8 +3889,10 @@ Subsumed,ss-u-m-d,Ssumd,,qdmsu,1
 Subsuming,ss-u-m-\-h,Ssumg,,qgmsu,1
 Subsumes,ss-u-m-s,Ssums,,qmsu,1
 Subsumption,ss-u-m-sh,Ssumz,,qmsuz,1
+Stepped,s-t-e-p-d,Stepd,,qdepst,1
 Stepdaughter,s-t-e-p-d-o-t-e2,Stepdote,,qdeopst,1
 Stepdaughters,s-t-e-p-d-o-t-e2-s,Stepdotes,,qdeopst,1
+Stepping,s-t-e-p-\-h,Stepg,,qegpst,1
 Stationed,s2-t-sh-d,Stzd,,qdstz,1
 Stationing,s2-t-sh-\-h,Stzg,,qgstz,1
 Stations,s2-t-sh-s,Stzs,,qstz,1
@@ -5541,6 +5547,9 @@ Validity,v-a-l-e-td-e,Valedte,,qadeltv,12
 Victims,v-e-k-tm-s,Vektms,,qekmstv,12
 Volumes,v-o-l-s,Vols,,qlosv,12
 Excitements,e-s2-i-t-m-s,Xitms,,qimstx,12
+Appended,a-jnt-d,Apndd,,qadnp,13
+Appending,a-jnt-\-h,Apndg,,qadgnp,13
+Appends,a-jnt-s,Apnds,,qadnps,13
 Appetites,a-p-t-i-s,Aptis,,qaipst,13
 Arriving,a-r-i-\-h,Arig,,qagir,13
 Arrive,a-r-i,Arii,i,qair,13
@@ -7237,6 +7246,10 @@ Capturing,k-a-p-t-r-\-h,Kaptrg,,qagkprt,159
 Captures,k-a-p-t-r-s,Kaptrs,,qakprst,159
 Involved,n-v-o-d,Nvod,,qdnov,159
 Involving,n-v-o-\-h,Nvog,,qgnov,159
+Involve,n-v-o-l,Nvol,,qlnov,159
+Involved,n-v-o-l-d,Nvold,,qdlnov,159
+Involving,n-v-o-l-\-h,Nvolg,,qglnov,159
+Involves,n-v-o-l-s,Nvols,,qlnosv,159
 Involves,n-v-o-s,Nvos,,qnosv,159
 Wrote,r-o-t,Rot,,qort,162
 Rotation,r-o-t-a-sh,Rotz,,qortz,162
@@ -7346,6 +7359,10 @@ Spreadsheeted,s-p-sh-e-t-d,Spzetd,,qdepstz,195
 Spreadsheeting,s-p-sh-e-t-\-h,Spzetg,,qegpstz,195
 Spreadsheets,s-p-sh-e-t-s,Spzets,,qepstz,195
 Follow up,f-o-p,Fop,,qfop,196
+Resolve,r-s-o-l,Rsol,,qlors,196
+Resolved,r-s-o-l-d,Rsold,,qdlors,196
+Resolving,r-s-o-l-\-h,Rsolg,,qglors,196
+Resolves,r-s-o-l-s,Rsols,,qlors,196
 Resolve,r-s-o-l-v,Rsolv,,qlorsv,196
 Resolving,r-s-o-l-v-\-h,Rsolvg,,qglorsv,196
 Resolves,r-s-o-l-v-s,Rsolvs,,qlorsv,196
@@ -7655,6 +7672,8 @@ Backup,b-a-k-p,Bakp,,qabkp,350
 Backups,b-a-k-p-s,Bakps,,qabkps,350
 OAuth,o-o-th,Ooho,o,qho,355
 Training,t-r-a-n-\-h,Trang,,qagnrt,355
+Trainings,t-r-a-n-\-h-s,Trangs,,qagnrst,355
+Trainings,t-r-a-n-\-h-s,Tranz,,qanrtz,355
 Configure,k-f-e-g-r,Kfegr,,qefgkr,358
 Configured,k-f-e-g-r-d,Kfegrd,,qdefgkr,358
 Configuring,k-f-e-g-r-\-h,Kfegrg,,qefgkr,358
@@ -8334,6 +8353,8 @@ Knees,n-e-s,Neso,o,qenos,8247
 Automation,o-tm-a-sh,Otmz,,qmotz,12226
 Automations,o-tm-a-sh-s,Otmzs,,qmostz,12226
 Allows,a-l-s,Als,,qals,90619
+Stepson,s-s-o-n,Sson,,qnos,92247
+Stepsons,s-s-o-n-s,Ssons,,qnos,92247
 Redeem,r-tm,Rdm,,qdmr,92527
 Redeemed,r-tm-d,Rdmd,,qdmr,92527
 Redeeming,r-tm-\-h,Rdmg,,qdgmr,92527
@@ -8342,5 +8363,3 @@ Redeemers,r-tm-r-s,Rdmrs,,qdmrs,92527
 Redeems,r-tm-s,Rdms,,qdmrs,92527
 Redemption,r-tm-sh,Rdmz,,qdmrz,92527
 Redemptions,r-tm-sh-s,Rdmzs,,qdmrsz,92527
-Stepson,s-s-o-n,Sson,,qnos,92247
-Stepsons,s-s-o-n-s,Ssons,,qnos,92247
