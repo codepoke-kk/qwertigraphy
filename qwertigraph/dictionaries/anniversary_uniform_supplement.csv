@@ -3849,6 +3849,8 @@ Signaling,s2-g-n-\-h,Sgng,,qgns,1
 Signals,s2-g-n-s,Sgns,,qgns,1
 Simultaneous,s-i-m-u-l,Simul,,qilmsu,1
 Simultaneously,s-i-m-u-l-e,Simule,,qeilmsu,1
+Signer,s2-i-n-r,Sinr,,qinrs,1
+Signers,s2-i-n-r-s,Sinrs,,qinrs,1
 Scan,s-k-a-n,Skan,,qakns,1
 Scanned,s-k-a-n-d,Skand,,qadkns,1
 Scanning,s-k-a-n-\-h,Skang,,qagkns,1
@@ -5132,6 +5134,10 @@ Persistently,pr-ss-\-nt-e,Prssnte,,qenprst,7
 Persistents,pr-ss-\-nt-s,Prssnts,,qnprst,7
 Poorer,p-u-r,Pur,,qpru,7
 Replication,r-e-pl-k-a-sh,Rplkz,,qklprz,7
+Recycle,r-e-s-i-k-l,Rsikl,,qiklrs,7
+Recycled,r-e-s-i-k-l-d,Rsikld,,qdiklrs,7
+Recycling,r-e-s-i-k-l-\-h,Rsiklg,,qgiklrs,7
+Recycles,r-e-s-i-k-l-s,Rsikls,,qiklrs,7
 Centuries,s2-e-nt-r-e-s,Sentres,,qenrst,7
 Sequence,s-e-k-\-n-^-e-n-s,Seqens,,qenqs,7
 Sequenced,s-e-k-\-n-^-e-n-s-d,Seqensd,,qdenqs,7
@@ -5848,6 +5854,7 @@ Extends,e-s2-tn-s,Xtns,,qnstx,18
 Associated,a-s2-o-sh-t-d,Asoztd,,qadostz,19
 Associating,a-s2-o-sh-t-\-h,Asoztg,,qagostz,19
 Associates,a-s2-o-sh-t-s,Asozts,,qaostz,19
+Associative,a-s2-o-sh-t-v,Asoztv,,qaostvz,19
 Brilliance,br-e-l,Brelo,o,qbelor,19
 Damage,tm-j,Dmj,,qdjm,19
 Damaged,tm-j-d,Dmjd,,qdjm,19
@@ -7771,10 +7778,10 @@ Complexes,k-p-l-e-s-s,Kplxs,,qklpsx,404
 Nicely,n-i-s-e,Nise,,qeins,405
 Nice,n-i-s,Nisi,i,qins,405
 Unthinking,n-th-^-h-\-\-h,Nhh,,qhn,411
+Version,v-e2-z,Vez,,qevz,427
 Versionable,v-e2-z-b,Vezb,,qbevz,427
 Versioned,v-e2-z-d,Vezd,,qdevz,427
 Versioning,v-e2-z-\-h,Vezg,,qegvz,427
-Version,v-e2-z,Vezo,o,qeovz,427
 Versions,v-e2-z-s,Vezs,,qesvz,427
 Few,f-e-u,Fu,,qfu,441
 Refused,r-f-e-u-d,Rfud,,qdfru,441
@@ -8129,6 +8136,7 @@ Deprovisioned,d-pr-v-e-sh-d,Dprvezd,,qdeprvz,1146
 Deprovisioning,d-pr-v-e-sh-\-h,Dprvezg,,qdegprvz,1146
 Deprovisions,d-pr-v-e-sh-s,Dprvezs,,qdeprsvz,1146
 Reveal,r-v-e-l,Rvel,,qelrv,1146
+Vision,v-e-sh,Vezo,o,qeovz,1146
 Deployable,d-pl-b,Dplb,,qbdlp,1151
 Deployed,d-pl-d,Dpld,,qdlp,1151
 Deploying,d-pl-\-h,Dplg,,qdglp,1151
