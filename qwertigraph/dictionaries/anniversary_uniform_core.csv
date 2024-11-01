@@ -5791,7 +5791,6 @@ Appetite,a-p-t-i,Apti,,qaipt,13
 Arizona ,a-s,Aso,o,qaos,13
 Chapter,ch-a-p-t-e2,Capte,,qacept,13
 Deserve,d-s2-e-v,Dsev,,qdesv,13
-Deserved,d-s2-e-v-d,Dsevd,,qdesv,13
 Glance,g-l-a-n-s,Glans,,qaglns,13
 Coated,k-o-td,Kotd,,qdkot,13
 Mouth,m-a-u-th,Mwh,,qhmw,13
@@ -7015,8 +7014,8 @@ Event,e-v-nt,Evnt,,qentv,289
 Prevent,pr-e-v-nt,Prevnt,,qenprtv,289
 Prevented,pr-e-v-nt-d,Prevntd,,qdenprtv,289
 Easier,e-s-e-r,Eser,,qers,292
-Pole,p-o-l,Pol,,qlop,293
-Policy,p-o-l,Polo,o,qlop,293
+Policy,p-o-l,Pol,,qlop,293
+Pole,p-o-l,Polqk,,qlop,293
 Tin,t-e-n,Teno,o,qenot,293
 Institution,n-s2-t-sh,Nstz,,qnstz,295
 Insult,n-s2-u,Nsuqk,,qnsu,295
@@ -7558,9 +7557,9 @@ Issue,e-sh-u,Ezu,,qeuz,1696
 Issued,e-sh-u-d,Ezud,,qdeuz,1696
 Pressure,pr-e-sh-u,Prezu,,qepruz,1696
 Code,k-o-t,Kod,,qdko,1735
-Cot,k-o-t,Kot,,qkot,1735
-Caught,k-o-t,Koti,i,qikot,1735
+Caught,k-o-t,Kot,,qkot,1735
 Court,k-o-t,Koto,o,qkot,1735
+Cot,k-o-t,Kotqk,,qkot,1735
 Coat,k-o-t,Kotu,u,qkotu,1735
 Thing,th-\-h,Hg,,qgh,1739
 Probably,pr-b-e,Prbe,,qbepr,1739
