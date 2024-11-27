@@ -5981,6 +5981,9 @@ Staffs,s2-t-a-f-s,Stafs,,qafst,23
 Teachers,t-e2-ch-e2-s,Teces,,qcest,23
 Advising,v-i-s-\-h,Visg,,qgisv,23
 Advises,v-i-s-s,Viss,,qisv,23
+Afforded,a-f-d-d,Afdd,,qadf,24
+Affording,a-f-d-\-h,Afdg,,qadfg,24
+Affords,a-f-d-s,Afds,,qadfs,24
 Evangelicals,e-v-a-n-j-/-k-s,Evanjks,,qaejknsv,24
 Faulted,f-o-t-d,Fotd,,qdfot,24
 Faulting,f-o-t-\-h,Fotg,,qfgot,24
@@ -6232,6 +6235,11 @@ Insurrecting,n-s-e-r-e-k-\-h,Nserekg,,qegknrs,32
 Insurrects,n-s-e-r-e-k-s,Nsereks,,qeknrs,32
 Insurrection,n-s-e-r-e-k-sh,Nserekz,,qeknrsz,32
 Replied,r-e-p-d,Rpd,,qdpr,32
+Smoothed,s2-m-u-th-d,Smuhd,,qdhmsu,32
+Smoothly,s2-m-u-th-e,Smuhe,,qehmsu,32
+Smoothing,s2-m-u-th-\-h,Smuhg,,qghmsu,32
+Smoother,s2-m-u-th-r,Smuhr,,qhmrsu,32
+Smooths,s2-m-u-th-s,Smuhs,,qhmsu,32
 Unencrypt,u-n-\-k,Unk,,qknu,32
 Unencrypted,u-n-\-k-d,Unkd,,qdknu,32
 Unencrypting,u-n-\-k-\-h,Unkg,,qgknu,32
@@ -6763,7 +6771,7 @@ Fathers,f-a-th-s,Fahso,o,qafhos,75
 Wired,i-r-d,Ird,,qdir,75
 Wiring,i-r-\-h,Irg,,qgir,75
 Wires,i-r-s,Irsi,i,qirs,75
-Prior,pr-i-r,Priro,o,qiopr,75
+Prior,pr-i-r,Prir,,qipr,75
 Sacrificed,s2-a-k-r-e-f-d,Sakrefd,,qadefkrs,75
 Sacrificing,s2-a-k-r-e-f-\-h,Sakrefg,,qaefgkrs,75
 Sacrifices,s2-a-k-r-e-f-s,Sakrefs,,qaefkrs,75
@@ -7683,7 +7691,8 @@ Unlocks,u-n-l-o-k-s,Nloks,,qklnos,329
 Exporting,e-s-p-o-t-\-h,Xpotg,,qgoptx,329
 Exports,e-s-p-o-t-s,Xpots,,qopstx,329
 Agricultures,^-ya-s,Yso,o,qosy,329
-Priority,pr-i-\-r,Prir,,qipr,337
+Priority,pr-i-\-r,Priro,o,qiopr,337
+Priority,pr-i-\-r,Prirqk,,qipr,337
 Priorities,pr-i-\-r-s,Prirs,,qiprs,337
 Import,m-p-o-t,Mpot,,qmopt,343
 Importing,m-p-o-t-\-h,Mpotg,,qgmopt,343
@@ -7793,6 +7802,7 @@ Complex,k-p-l-e-s,Kplx,,qklpx,404
 Complexes,k-p-l-e-s-s,Kplxs,,qklpsx,404
 Nicely,n-i-s-e,Nise,,qeins,405
 Nice,n-i-s,Nisi,i,qins,405
+Thinking,th-^-h-\-\-h,Hhg,g,qgh,411
 Unthinking,n-th-^-h-\-\-h,Nhh,,qhn,411
 Version,v-e2-z,Vez,,qevz,427
 Versionable,v-e2-z-b,Vezb,,qbevz,427
@@ -8113,6 +8123,8 @@ Equation,e-k-a-sh,Eqz,,qeqz,919
 Acknowledged,a-k-d,Akdo,o,qadko,955
 Acting,a-k-\-h,Akg,,qagk,955
 Actively,a-k-v-e,Akve,,qaekv,955
+Actionable,a-k-sh-b,Akzb,,qabkz,955
+Actionably,a-k-sh-b-e,Akzbe,,qabekz,955
 Inactive,n-a-k-v,Nakv,,qaknv,955
 Saying,s-a-\-h,Sag,,qags,955
 Wronged,r-o-ng-d,Rogd,,qdgor,975
@@ -8379,6 +8391,10 @@ Automations,o-tm-a-sh-s,Otmzs,,qmostz,12226
 Allows,a-l-s,Als,,qals,90619
 Stepson,s-s-o-n,Sson,,qnos,92247
 Stepsons,s-s-o-n-s,Ssons,,qnos,92247
+Tower,t-a-u-r,Twr,,qrtw,92256
+Towered,t-a-u-r-d,Twrd,,qdrtw,92256
+Towering,t-a-u-r-\-h,Twrg,,qgrtw,92256
+Towers,t-a-u-r-s,Twrs,,qrstw,92256
 Redeem,r-tm,Rdm,,qdmr,92527
 Redeemed,r-tm-d,Rdmd,,qdmr,92527
 Redeeming,r-tm-\-h,Rdmg,,qdgmr,92527
