@@ -4254,8 +4254,6 @@ Reinstallation,r-e-n-s2-t-o-l-sh,Rnstolz,,qlnorstz,2
 Reproduce,r-pr-o-d-u-s,Rprodus,,qdoprsu,2
 Reproduced,r-pr-o-d-u-s-d,Rprodusd,,qdoprsu,2
 Reproducing,r-pr-o-d-u-s-\-h,Rprodusg,,qdgoprsu,2
-Researcher,r-s2-e-ch-r,Rsecr,,qcers,2
-Researchers,r-s2-e-ch-r-s,Rsecrs,,qcers,2
 Receivers,r-s-e-r-s,Rsers,,qers,2
 Respecting,r-e-s-\-h,Rsg,,qgrs,2
 Returnably,r-e-t-b-e,Rtbe,,qbert,2
@@ -6062,6 +6060,7 @@ Indication,nt-e-k-sh,Ndekz,,qdeknz,26
 Engaged,n-g-a-d,Ngad,,qadgn,26
 Engaging,n-g-a-\-h,Ngag,,qagn,26
 Engages,n-g-a-s,Ngas,,qagns,26
+Instructed,n-s-/-k-t,Nskd,,qdkns,26
 Instructing,n-s-/-k-\-h,Nskg,,qgkns,26
 Instructs,n-s-/-k-s,Nsks,,qkns,26
 Instructive,n-s-/-k-v,Nskv,,qknsv,26
@@ -7526,6 +7525,7 @@ Encryption,n-\-k-\-sh,Nkz,,qknz,234
 Except,s-e-p,Sep,,qeps,236
 Excepted,s-e-p-d,Sepd,,qdeps,236
 Excepting,s-e-p-\-h,Sepg,,qegps,236
+Tonight,tn-i,Tnio,o,qinot,237
 Reminds,r-e-m-i-n-s,Rmins,,qimnrs,238
 Taking,t-a-k-\-h,Takg,,qagkt,239
 Appropriated,a-pr-a-d,Aprad,,qadpr,240
@@ -7895,9 +7895,12 @@ Templated,tm-pl-a-d,Tmplad,,qadlmpt,511
 Templating,tm-pl-a-\-h,Tmplag,,qaglmpt,511
 Templates,tm-pl-a-s,Tmplas,,qalmpst,511
 Auction,o-k-sh,Okz,,qkoz,514
-Researched,r-s2-e-ch-d,Rsecd,,qcders,519
-Researching,r-s2-e-ch-\-h,Rsecg,,qcegrs,519
-Researches,r-s2-e-ch-s,Rsecs,,qcers,519
+Research,r-s-e-ch,Rsec,,qcers,519
+Researched,r-s-e-ch-d,Rsecd,,qcders,519
+Researching,r-s-e-ch-\-h,Rsecg,,qcegrs,519
+Researcher,r-s-e-ch-r,Rsecr,,qcers,519
+Researchers,r-s-e-ch-r-s,Rsecrs,,qcers,519
+Researches,r-s-e-ch-s,Rsecs,,qcers,519
 Search,s2-e-ch,Sec,,qces,519
 Searchable,s2-e-ch-b,Secb,,qbces,519
 Searched,s2-e-ch-d,Secd,,qcdes,519
@@ -8078,6 +8081,7 @@ Laughable,l-a-f-b,Lafb,,qabfl,744
 Laughed,l-a-f-d,Lafd,,qadfl,744
 Laughing,l-a-f-\-h,Lafg,,qafgl,744
 Laughs,l-a-f-s,Lafs,,qafls,744
+Unasked,n-s2-k-t,Nskdo,o,qdknos,756
 Monitored,mn-e-t-e2-d,Mneted,,qdemnt,759
 Monitoring,mn-e-t-e2-\-h,Mneteg,,qegmnt,759
 Monitors,mn-e-t-e2-s,Mnetes,,qemnst,759
