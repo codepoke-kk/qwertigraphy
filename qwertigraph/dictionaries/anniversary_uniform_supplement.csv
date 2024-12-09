@@ -4007,6 +4007,9 @@ Bouncing,b-n-s-\-h,Bnsg,,qbgns,2
 Bounce,b-n-s,Bnso,o,qbnos,2
 Bounces,b-n-s-s,Bnss,,qbns,2
 Breaking,br-a-k-\-h,Brakg,,qabgkr,2
+Briefed,br-e-f-d,Brefd,,qbdefr,2
+Briefing,br-e-f-\-h,Brefg,,qbefgr,2
+Briefs,br-e-f-s,Brefs,,qbefrs,2
 Biographied,b-/-o-e-d,Byd,,qbdy,2
 Biographying,b-/-o-e-\-h,Byg,,qbgy,2
 Biographies,b-/-o-e-s,Bys,,qbsy,2
@@ -5219,6 +5222,7 @@ Frequencies,fr-e-k-s,Freqso,o,qefoqrs,8
 Glowed,g-l-o-d,Glod,,qdglo,8
 Glowing,g-l-o-\-h,Glog,,qglo,8
 They'll,th-e-l,Helo,o,qehlo,8
+They'll,th-e-l,Heol,,qehlo,8
 Hopelessly,^-h-\-o-pl-e,Hople,,qehlop,8
 Constructed,k-s2-/-k-d,Kskd,,qdks,8
 Constructing,k-s2-/-k-\-h,Kskg,,qgks,8
@@ -6724,6 +6728,7 @@ Types,t-i-p-s,Tipso,o,qiopst,70
 Toyed,t-o-e-d,Tyd,,qdty,70
 Toying,t-o-e-\-h,Tyg,,qgty,70
 Toys,t-o-e-s,Tys,,qsty,70
+They've,th-e-v,Heov,,qehov,71
 They've,th-e-v,Hev,,qehv,71
 Keeps,k-e-p-s,Keps,,qekps,71
 Architecture,a-k-t-e-k-r,Aktekr,,qaekrt,72
