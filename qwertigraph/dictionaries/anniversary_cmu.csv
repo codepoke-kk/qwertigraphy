@@ -96,7 +96,6 @@ Judging,jjg,Jjg,,,90195
 Kills,kels,Kelso,o,,90196
 Prototype,prototip,Prtotip,,,90200
 Sweat,suet,Suetu,u,,90201
-Trail,tral,Tral,,,90202
 Unused,neusd,Nusd,,,90203
 Untie,nti,Ntio,o,,90204
 Solve,solv,Solv,,,90207
@@ -266,6 +265,9 @@ Hacked,hakt,Hakt,,,90500
 Reversed,rvest,Rvest,,,90501
 Shallow,zalo,Zalo,,,90503
 Scratch,skrac,Skrac,,,90504
+Scratched,skrac-d,Skracd,,qacdkrs,90504
+Scratching,skrac-\-h,Skracg,,qacgkrs,90504
+Scratches,skrac-s,Skracs,,qackrs,90504
 Apt,apt,Aptu,u,,90505
 Episode,epsod,Epsod,,,90508
 Outhouse,aothaus,Wthws,,,90509
@@ -580,7 +582,6 @@ Dummy,dme,Dmeu,u,,91061
 Clem,klem,Klem,,,91062
 Mesh,mez,Mezi,i,,91064
 Cautious,kozs,Kozs,,,91066
-Trailing,tralg,Tralg,,,91068
 Hacking,hakg,Hakg,,,91070
 Dots,dots,Dotso,o,,91071
 Tricky,treke,Treke,,,91072
@@ -749,7 +750,6 @@ Ac,ase,Aseu,u,,91345
 Angela,anjl,Anjlu,u,,91348
 Handbook,handbk,Handbk,,,91349
 Spanned,spand,Spand,,,91351
-Trails,trals,Trals,,,91352
 Floss,flos,Flosu,u,,91354
 Annoyed,anoed,Anyd,,,91355
 Stress,stres,Stres,,,91356

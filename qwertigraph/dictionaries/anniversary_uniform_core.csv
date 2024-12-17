@@ -2198,12 +2198,11 @@ Common stock,k-s2-t-o-k,Kstok,,qkost,0
 Constituency,k-s2-t-u-n-s-e,Kstunse,,qeknstu,0
 Constituent,k-s2-t-u-nt,Kstunt,,qknstu,0
 Consulate,k-s2-u-l-a,Ksula,,qaklsu,0
-Cantor,k-t-e2,Kte,,qekt,0
-Contiguous,k-t-e-g,Kteg,,qegkt,0
 County,k-t-e,Ktei,i,qeikt,0
 Cantilever,k-t-e-l-e-v,Ktelev,,qekltv,0
 Canteen,k-t-e-n,Kten,,qeknt,0
 Community ,k-t-e,Kteo,o,qekot,0
+Cantor,k-t-e2,Kteqk,,qekt,0
 Contestant,k-t-e-s-/-nt,Ktesnt,,qeknst,0
 Cantaloupe,k-t-l-u-p,Ktlup,,qklptu,0
 Contumacious,k-tm-a-sh,Ktmaz,,qakmtz,0
@@ -4598,7 +4597,6 @@ Consisted,k-ss-/-t,Kssd,,qdks,1
 Constitute,k-s2-t,Kst,,qkst,1
 Constable,k-s2-t-b,Kstb,,qbkst,1
 Constitution,k-s2-t-sh,Kstz,,qkstz,1
-Contest,k-t-e-s,Ktes,,qekst,1
 Contestation,k-t-e-s-sh,Ktesz,,qekstz,1
 Curse,k-u-r-s,Kurs,,qkrsu,1
 Cousin,k-u-s2-n,Kusn,,qknsu,1
@@ -5660,8 +5658,7 @@ Board ,b-o-r,Bor,,qbor,10
 Divagate,d-i-v-g,Divg,,qdgiv,10
 Doe,d-o,Doi,i,qdio,10
 Do,d-o,Dou,u,qdou,10
-Doughy,d-o-e,Dy,,qdy,10
-Disappoint,d-o-e,Dyo,o,qdoy,10
+Doughy,d-o-e,Dyqk,,qdy,10
 Egypt,e-j-e-p,Ejep,,qejp,10
 Economy,e-k-e,Ekeo,o,qeko,10
 Fear,f-e-r,Fer,,qefr,10
