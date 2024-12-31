@@ -1763,8 +1763,11 @@ Intimidates,n-tm-e-td-s,Ntmedts,,qdemnst,0
 Intimidation,n-tm-e-td-sh,Ntmedtz,,qdemntz,0
 Intimidations,n-tm-e-td-sh-s,Ntmedtzs,,qdemnstz,0
 Untenably,n-tn-b-e,Ntnbe,,qbent,0
-Intending,n-tn-\-h,Ntng,,qgnt,0
+Entertained,n-/-tn-d,Ntndo,o,qdnot,0
+Entertaining,n-/-tn-\-h,Ntngo,o,qgnot,0
+Entertainment,n-/-tn-m,Ntnmo,o,qmnot,0
 Entertain,n-/-tn,Ntno,o,qnot,0
+Entertains,n-/-tn-s,Ntnso,o,qnost,0
 Intentionally,n-tn-sh-l-e,Ntnzle,,qelntz,0
 Intentionals,n-tn-sh-l-s,Ntnzls,,qlnstz,0
 Intone,nt-o-n,Nton,,qnot,0
@@ -5077,6 +5080,9 @@ Interrogated,n-/-o-g-d,Nogd,,qdgno,6
 Interrogating,n-/-o-g-\-h,Nogg,,qgno,6
 Interrogates,n-/-o-g-s,Nogs,,qgnos,6
 Interrogation,n-/-o-g-sh,Nogz,,qgnoz,6
+Intended,n-tn-d,Ntnd,,qdnt,6
+Intending,n-tn-\-h,Ntng,,qgnt,6
+Intends,n-tn-s,Ntns,,qnst,6
 Palpitations,p-a-l-p-t-a-sh-s,Palptzs,,qalpstz,6
 Passionately,p-a-sh-a-t-e,Pazate,,qaeptz,6
 Peaceful,p-e-s-f,Pesf,,qefps,6
@@ -7929,6 +7935,8 @@ Paging,p-a-j-\-h,Pajg,,qagjp,450
 Pages,p-a-j-s,Pajs,,qajps,450
 Documented,d-o-k-m-d,Dokmd,,qdkmo,455
 Documenting,d-o-k-m-\-h,Dokmg,,qdgkmo,455
+Documenter,d-o-k-m-r,Dokmr,,qdkmor,455
+Documenters,d-o-k-m-r-s,Dokmrs,,qdkmors,455
 Documents,d-o-k-m-s,Dokms,,qdkmos,455
 Documentation,d-o-k-m-sh,Dokmz,,qdkmoz,455
 Resubmit,r-s2-m-e-t,Rsmet,,qemrst,459
