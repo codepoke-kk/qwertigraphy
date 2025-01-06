@@ -458,6 +458,10 @@ Dissipations,d-s-e-p-a-sh-s,Dsepzso,o,qdeopsz,0
 Disfigurement,d-s-f-e-g-r-m,Dsfegrm,,qdefgmrs,0
 Disfigurements,d-s-f-e-g-r-m-s,Dsfegrms,,qdefgmrs,0
 Dysfunctionally,d-s-f-nk-l-e,Dsfqle,,qdeflqs,0
+Disguise,d-s-g-i-s,Dsgis,,qdgis,0
+Disguised,d-s-g-i-s-d,Dsgisd,,qdgis,0
+Disguising,d-s-g-i-s-\-h,Dsgisg,,qdgis,0
+Disguises,d-s-g-i-s-s,Dsgiss,,qdgis,0
 Decipherable,d-s2-i-f-b,Dsifb,,qbdfis,0
 Decipherably,d-s2-i-f-b-e,Dsifbe,,qbdefis,0
 Deciphered,d-s2-i-f-d,Dsifd,,qdfis,0
@@ -3249,6 +3253,11 @@ Expounds,e-s-p-n-s,Xpns,,qnpsx,0
 Expositors,e-s-p-o-s-/-r-s,Xposrs,,qoprsx,0
 Exported,e-s-p-o-td,Xpotd,,qdoptx,0
 Experimentations,e-s-pr-e-m-sh-s,Xpremzs,,qemprsxz,0
+Exacerbate,e-s2s-r-b-a-t,Xsrbat,,qabrstx,0
+Exacerbated,e-s2s-r-b-a-t-d,Xsrbatd,,qabdrstx,0
+Exacerbating,e-s2s-r-b-a-t-\-h,Xsrbatg,,qabgrstx,0
+Exacerbates,e-s2s-r-b-a-t-s,Xsrbats,,qabrstx,0
+Exacerbations,e-s2s-r-b-a-sh-s,Xsrbzs,,qbrsxz,0
 Exclusively,e-s-/-s2-v-e,Xsve,,qesvx,0
 Exclusives,e-s-/-s2-v-s,Xsvs,,qsvx,0
 Extra-,e-k-s-t->,Xt>,,q>tx,0
@@ -5417,8 +5426,10 @@ Outlines,a-u-l-a-n-s,Wlins,,qilnsw,9
 Pointless,o-e-l,Yl,,qly,9
 Pointlessly,o-e-l-e,Yle,,qely,9
 Announcements,a-n-n-s2-m-s,Annsms,,qamns,10
+Assure,a-sh-u,Azu,,qauz,10
 Assured,a-sh-u-d,Azud,,qaduz,10
 Assuring,a-sh-u-\-h,Azug,,qaguz,10
+Azure,a-sh-u,Azuo,o,qaouz,10
 Assures,a-sh-u-s,Azus,,qasuz,10
 Bored,b-o-r-d,Bord,,qbdor,10
 Boring,b-o-r-\-h,Borgo,o,qbgor,10
@@ -6055,6 +6066,7 @@ Lowers,l-o-r-s,Lors,,qlors,23
 Migrator,m-i-g-r-a-r,Migrar,,qagimr,23
 Migrators,m-i-g-r-a-r-s,Migrars,,qagimrs,23
 Installations,n-s2-t-o-l-a-sh-s,Nstolzs,,qlnostz,23
+Overcame,o-/-k-a-m,Okam,,qakmo,23
 Payments,p-a-m-s,Pams,,qamps,23
 Repayment,r-p-a-m,Rpam,,qampr,23
 Repayments,r-p-a-m-s,Rpams,,qamprs,23
@@ -7259,6 +7271,11 @@ Expire,e-s-p-i,Xpi,,qipx,132
 Expiring,e-s-p-i-\-h,Xpig,,qgipx,132
 Expires,e-s-p-i-s,Xpis,,qipsx,132
 Automatically,o-tm-/-a-e,Otmae,,qaemot,133
+Emptied,mt-e-d,Mted,,qdemt,134
+Emptying,mt-e-\-h,Mteg,,qegmt,134
+Emptiness,mt-e-n-e-s,Mtenes,,qemnst,134
+Emptinesses,mt-e-n-e-s-s,Mteness,,qemnst,134
+Empties,mt-e-s,Mtes,,qemst,134
 Remediate,r-e-mt-a-t,Rmdat,,qadmrt,134
 Remediated,r-e-mt-a-t-d,Rmdatd,,qadmrt,134
 Remediating,r-e-mt-a-t-\-h,Rmdatg,,qadgmrt,134
@@ -8526,9 +8543,15 @@ Inflammatorily,n-f-l-a-m-t-r-ye,Nflamtry,,qaflmnrty,90504
 Inflammation,n-f-l-a-m-sh,Nflamz,,qaflmnz,90504
 Inflammations,n-f-l-a-m-sh-s,Nflamzs,,qaflmnsz,90504
 Allows,a-l-s,Als,,qals,90619
+Withheld,e-h-^-h-\-e-ld,Ehheld,,qdehl,90678
+Withhold,e-h-^-h-\-o-ld,Ehhold,,qdehlo,90678
 Forego,f-g,Fg,,qfg,91271
 Foregoing,f-g-\-h,Fgg,,qfg,91271
 Foregoes,f-g-s,Fgs,,qfgs,91271
+Relax,r-l-a-k-s,Rlax,,qalrx,91480
+Relaxed,r-l-a-k-s-d,Rlaxd,,qadlrx,91480
+Relaxing,r-l-a-k-s-\-h,Rlaxg,,qaglrx,91480
+Relaxes,r-l-a-k-s-s,Rlaxs,,qalrsx,91480
 Stepson,s-s-o-n,Sson,,qnos,92247
 Stepsons,s-s-o-n-s,Ssons,,qnos,92247
 Tower,t-a-u-r,Twr,,qrtw,92256
@@ -8543,3 +8566,7 @@ Redeemers,r-tm-r-s,Rdmrs,,qdmrs,92527
 Redeems,r-tm-s,Rdms,,qdmrs,92527
 Redemption,r-tm-sh,Rdmz,,qdmrz,92527
 Redemptions,r-tm-sh-s,Rdmzs,,qdmrsz,92527
+Jog,j-o-g,Jog,,qgjo,92893
+Jogged,j-o-g-d,Jogd,,qdgjo,92893
+Jogging,j-o-g-\-h,Jogg,,qgjo,92893
+Jogs,j-o-g-s,Jogs,,qgjos,92893
