@@ -4641,6 +4641,10 @@ Childhoods,ch-i-ld-\-d-s,Cildds,,qcdils,4
 Dangers,tn-j-e2-s,Dnjes,,qdejns,4
 Downtime,d-n-tm,Dntm,,qdmnt,4
 Downtimes,d-n-tm-s,Dntms,,qdmnst,4
+Dodge,d-o-j,Doj,,qdjo,4
+Dodged,d-o-j-d,Dojd,,qdjo,4
+Dodging,d-o-j-\-h,Dojg,,qdgjo,4
+Dodges,d-o-j-s,Dojs,,qdjos,4
 Drain,d-r-a-n,Dran,,qadnr,4
 Drained,d-r-a-n-d,Drand,,qadnr,4
 Draining,d-r-a-n-\-h,Drang,,qadgnr,4
@@ -6053,6 +6057,10 @@ Overwrites,^-o-\-r-i-s,Oris,,qiors,22
 Piped,p-i-p-d,Pipd,,qdip,22
 Piping,p-i-p-\-h,Pipg,,qgip,22
 Pipes,p-i-p-s,Pipso,o,qiops,22
+Rough,r-u-f,Ruf,,qfru,22
+Roughed,r-u-f-d,Rufd,,qdfru,22
+Roughing,r-u-f-\-h,Rufg,,qfgru,22
+Roughs,r-u-f-s,Rufs,,qfrsu,22
 Suffixes,s-u-f-e-ss,Sufxs,,qfsux,22
 Expand,e-s-p-a-nd,Xpand,,qadnpx,22
 Expanded,e-s-p-a-nd-d,Xpandd,,qadnpx,22
@@ -8575,6 +8583,8 @@ Inflammatorily,n-f-l-a-m-t-r-ye,Nflamtry,,qaflmnrty,90504
 Inflammation,n-f-l-a-m-sh,Nflamz,,qaflmnz,90504
 Inflammations,n-f-l-a-m-sh-s,Nflamzs,,qaflmnsz,90504
 Allows,a-l-s,Als,,qals,90619
+Withheld,e-h-^-h-\-e-ld,Ehheld,,qdehl,90678
+Withhold,e-h-^-h-\-o-ld,Ehhold,,qdehlo,90678
 Lever,l-e-v-r,Levr,,qelrv,90822
 Levered,l-e-v-r-d,Levrd,,qdelrv,90822
 Levering,l-e-v-r-\-h,Levrg,,qeglrv,90822
@@ -8583,8 +8593,6 @@ Leveraged,l-e-v-r-j-d,Levrjd,,qdejlrv,90822
 Leveraging,l-e-v-r-j-\-h,Levrjg,,qegjlrv,90822
 Leverages,l-e-v-r-j-s,Levrjs,,qejlrsv,90822
 Levers,l-e-v-r-s,Levrs,,qelrsv,90822
-Withheld,e-h-^-h-\-e-ld,Ehheld,,qdehl,90678
-Withhold,e-h-^-h-\-o-ld,Ehhold,,qdehlo,90678
 Forego,f-g,Fg,,qfg,91271
 Foregoing,f-g-\-h,Fgg,,qfg,91271
 Foregoes,f-g-s,Fgs,,qfgs,91271
@@ -8606,6 +8614,12 @@ Redeemers,r-tm-r-s,Rdmrs,,qdmrs,92527
 Redeems,r-tm-s,Rdms,,qdmrs,92527
 Redemption,r-tm-sh,Rdmz,,qdmrz,92527
 Redemptions,r-tm-sh-s,Rdmzs,,qdmrsz,92527
+Neural,n-u-r-l,Nurl,,qlnru,92869
+Neurally,n-u-r-l-e,Nurle,,qelnru,92869
+Neuron,n-u-r-n,Nurn,,qnru,92869
+Neurons,n-u-r-n-s,Nurns,,qnrsu,92869
+Neurotransmitter,n-u-r-tm-e-t-r,Nurtmetr,,qemnrtu,92869
+Neurotransmitters,n-u-r-tm-e-t-r-s,Nurtmetrs,,qemnrstu,92869
 Jog,j-o-g,Jog,,qgjo,92893
 Jogged,j-o-g-d,Jogd,,qdgjo,92893
 Jogging,j-o-g-\-h,Jogg,,qgjo,92893
