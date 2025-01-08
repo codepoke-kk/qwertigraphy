@@ -779,6 +779,7 @@ Finalist,f-i-n-l-e-s,Finles,,qefilns,0
 Finalists,f-i-n-l-e-s-s,Finless,,qefilns,0
 Finaling,f-i-n-l-\-h,Finlg,,qfgiln,0
 Finals,f-i-n-l-s,Finls,,qfilns,0
+Forthcoming,f-k-m-\-h,Fkmg,,qfgkm,0
 Flagellate,fl-a-j-l-a,Flajla,,qafjl,0
 Flagellated,fl-a-j-l-a-d,Flajlad,,qadfjl,0
 Flagellating,fl-a-j-l-a-\-h,Flajlag,,qafgjl,0
@@ -4440,9 +4441,11 @@ Dispositions,d-s-p-o-sh-s,Dspozs,,qdopsz,3
 Desperately,d-s-pr-a-e,Dsprae,,qadeprs,3
 Dating,td-\-h,Dtg,,qdgt,3
 Disappointments,d-o-e-m-s,Dyms,,qdmsy,3
+Emulate,e-m-\-u,Emu,,qemu,3
 Emulated,e-m-\-u-d,Emud,,qdemu,3
 Emulating,e-m-\-u-\-h,Emug,,qegmu,3
-Emulate,e-m-\-u,Emuo,o,qemou,3
+Emulator,e-m-\-u-r,Emur,,qemru,3
+Emulators,e-m-\-u-r-s,Emurs,,qemrsu,3
 Emulates,e-m-\-u-s,Emus,,qemsu,3
 Emulation,e-m-\-u-sh,Emuz,,qemuz,3
 Enablement,e-n-b-m,Enbm,,qbemn,3
@@ -4612,6 +4615,9 @@ Aggregating,ya-/-g-\-h,Ygg,,qgy,3
 Aggregate,ya-/-g,Ygo,o,qgoy,3
 Aggregates,ya-/-g-s,Ygs,,qgsy,3
 Aggregation,ya-/-g-sh,Ygz,,qgyz,3
+Chicane,sh-k-a-n,Zkan,,qaknz,3
+Chicanery,sh-k-a-n-r-e,Zkanre,,qaeknrz,3
+Chicanes,sh-k-a-n-s,Zkans,,qaknsz,3
 Shopped,sh-o-p-d,Zopd,,qdopz,3
 Shopping,sh-o-p-\-h,Zopg,,qgopz,3
 Shops,sh-o-p-s,Zops,,qopsz,3
@@ -6949,8 +6955,8 @@ Collected,k-o-l-d,Kold,,qdklo,80
 Collecting,k-o-l-\-h,Kolg,,qgklo,80
 Collects,k-o-l-s,Kols,,qklos,80
 Listened,l-e-s2-n-d,Lesnd,,qdelns,80
-Lessening,l-e-s2-n-\-h,Lesng,,qeglns,80
-Listening,l-e-s2-n-\-h,Lesngo,o,qeglnos,80
+Listening,l-e-s2-n-\-h,Lesng,,qeglns,80
+Lessening,l-e-s2-n-\-h,Lesngo,o,qeglnos,80
 Listens,l-e-s2-n-s,Lesns,,qelns,80
 Awkwardly,o-k-d-e,Okde,,qdeko,80
 Recollect,r-e-k-o-l,Rkol,,qklor,80
@@ -7626,6 +7632,7 @@ Leveled,l-e-v-l-d,Levld,,qdelv,220
 Leveling,l-e-v-l-\-h,Levlg,,qeglv,220
 Levels,l-e-v-l-s,Levls,,qelsv,220
 Product,pr-o-k,Prok,,qkopr,220
+Products,pr-o-k-s,Proks,,qkoprs,220
 Indictment,nt-i-t-m,Nditm,,qdimnt,221
 Indictments,nt-i-t-m-s,Nditms,,qdimnst,221
 Entitlement,nt-i-t-m,Ntitm,,qimnt,221
@@ -8600,6 +8607,7 @@ Relax,r-l-a-k-s,Rlax,,qalrx,91480
 Relaxed,r-l-a-k-s-d,Rlaxd,,qadlrx,91480
 Relaxing,r-l-a-k-s-\-h,Rlaxg,,qaglrx,91480
 Relaxes,r-l-a-k-s-s,Rlaxs,,qalrsx,91480
+Jerome,j-r-o-m,Jrom,,qjmor,91808
 Stepson,s-s-o-n,Sson,,qnos,92247
 Stepsons,s-s-o-n-s,Ssons,,qnos,92247
 Tower,t-a-u-r,Twr,,qrtw,92256
