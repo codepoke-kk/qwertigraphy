@@ -1410,7 +1410,6 @@ Gasoline,g-a-s-l-e-n,Gaslen,,qaeglns,0
 Ghastly,g-a-s2-t-e,Gaste,,qaegst,0
 Gastronomic,g-a-s2-t-r-o-n-k,Gastronk,,qagknorst,0
 Gaze,g-a-s,Gasu,u,qagsu,0
-Gaiety,g-a-t-e,Gate,,qaegt,0
 Guatamala,g-a-tm,Gatm,,qagmt,0
 Grand haven,g-/-a-v-n,Gavn,,qagnv,0
 Good-bye,g-b-i,Gbi,,qbgi,0
@@ -2882,10 +2881,8 @@ Impudent,m-p-e-u-tn,Mpudn,,qdmnpu,0
 Impunity,m-p-e-u-/-nt,Mpunt,,qmnptu,0
 Impute,m-p-u,Mpuo,o,qmopu,0
 Impious,m-p-u-s,Mpus,,qmpsu,0
-Mr.,m-r,Mri,i,qimr,0
 Market,m-r,Mro,o,qmor,0
 Markets,m-r-s,Mrsi,i,qimrs,0
-Mrs.,m-r-s,Mrso,o,qmors,0
 Mr. speaker,m-r-s-p,Mrsp,,qmprs,0
 Must be,m-s-b,Msb,,qbms,0
 Mischief,m-s-ch,Msc,,qcms,0
@@ -3853,7 +3850,7 @@ Sculpture,s2-k-l-p-t-r,Sklptr,,qklprst,0
 Scholarship,s2-k-l-r-/-sh,Sklrz,,qklrsz,0
 Scotland,s2-k-o-t,Skot,,qkost,0
 Scrap,s2-k-r-a-p,Skrap,,qakprs,0
-Supreme court,s-/-k-t,Skt,,qkst,0
+Supreme court,s-/-k-t,Sktqk,,qkst,0
 Subcutaneous,s2-k-e-u-tn-u-s,Skutnus,,qknstu,0
 Scout,s2-k-a-u-t,Skwt,,qkstw,0
 Circulate,s2-/-l-a,Sla,,qals,0
@@ -3931,7 +3928,7 @@ Superstition,s-/-s2-t-sh,Sstz,,qstz,0
 Cessation,ss-a-sh,Ssz,,qsz,0
 Star,s2-t-a2,Stai,i,qaist,0
 Stamp,s2-t-a-m-p,Stampo,o,qamopst,0
-Stair,s2-t-a2,Stao,o,qaost,0
+Stair,s2-t-a2,Staoqk,o,qaost,0
 Statistic,s2-t-a-t,Stati,i,qaist,0
 Status,s2-t-a-t-u-s,Statuso,o,qaostu,0
 Status quo,s2-t-a-t-u-s2-k-o,Statusqo,,qaoqstu,0
@@ -3966,7 +3963,6 @@ Strenuous,s2-t-r-e-n-u-u-s,Strenuus,,qenrstu,0
 Strum,s2-t-r-m,Strm,,qmrst,0
 Stateroom,s2-t-r-m,Strmo,o,qmorst,0
 Straw,s2-t-r-o,Stroo,o,qorst,0
-Statistics,s2-t-/-s2-t-s,Ststs,,qst,0
 Standstill,st-tn-s2-t-e2,Sttnste,,qenst,0
 Student,s2-t-u-tn,Studn,,qdnstu,0
 Stars,s2-t-ya2,Sty,,qsty,0

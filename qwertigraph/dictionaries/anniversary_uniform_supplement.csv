@@ -858,6 +858,7 @@ Gaped,g-a-p-d,Gapd,,qadgp,0
 Gaping,g-a-p-\-h,Gapg,,qagp,0
 Gape,g-a-p,Gapo,o,qagop,0
 Gapes,g-a-p-s,Gapso,o,qagops,0
+Gaiety,g-a-t-e,Gateo,o,qaegot,0
 Great britain,g-~-b,Gb,,qbg,0
 Great britain and ireland,g-~-b-i,Gbio,o,qbgio,0
 Grandchild,^-g-\-ch-i-l-d,Gcild,,qcdgil,0
@@ -975,6 +976,9 @@ Hostages,h-\-o-s-t-j-s,Hostjs,,qhjost,0
 Hostility,^-h-\-o-s2-t-\-l,Hostli,i,qhilost,0
 Horticultural,^-h-\-o-t-e-k-l-t-r-l,Hotekltrl,,qehklort,0
 Horticulturally,^-h-\-o-t-e-k-l-t-r-l-e,Hotekltrle,,qehklort,0
+Homeostatic,^-h-\-s2-t-/-a,Hsta,,qahst,0
+Homeostatics,^-h-\-s2-t-/-a-s,Hstas,,qahst,0
+Homeostasis,^-h-\-s-t-a-ss,Hstass,,qahst,0
 Hungry,^-h-\-u-ng-r-e,Hugre,,qeghru,0
 Humiliate,^-h-\-u-m-e-l-ea-t,Humelet,,qehlmtu,0
 Humiliated,^-h-\-u-m-e-l-ea-t-d,Humeletd,,qdehlmtu,0
@@ -2669,6 +2673,12 @@ Scriptably,s-k-r-p-b-e,Skrpbe,,qbekprs,0
 Scriptability,s-k-r-p-\-b,Skrpbo,,qbkoprs,0
 Scriptables,s-k-r-p-b-s,Skrpbs,,qbkprs,0
 Scripturally,s-k-r-p-t-r-l-e,Skrptrle,,qeklprst,0
+Circuit,^-s-\-k-t,Skt,,qkst,0
+Circuited,^-s-\-k-t-d,Sktd,,qdkst,0
+Circuiting,^-s-\-k-t-\-h,Sktg,,qgkst,0
+Circuits,^-s-\-k-t-s,Skts,,qkst,0
+Circuituous,^-s-\-k-t-u-s,Sktus,,qkstu,0
+Circuituously,^-s-\-k-t-u-s-e,Sktuse,,qekstu,0
 Slate,s-l-a-t,Slat,,qalst,0
 Slated,s-l-a-t-d,Slatd,,qadlst,0
 Slating,s-l-a-t-\-h,Slatg,,qaglst,0
@@ -2779,6 +2789,9 @@ Stagger,s-t-a-g-r,Stagr,,qagrst,0
 Staggered,s-t-a-g-r-d,Stagrd,,qadgrst,0
 Staggering,s-t-a-g-r-\-h,Stagrg,,qagrst,0
 Staggers,s-t-a-g-r-s,Stagrs,,qagrst,0
+Static,s2-t-/-a,Stao,o,qaost,0
+Statics,s2-t-/-a-s,Stas,,qast,0
+Stasis,s-t-a-ss,Stass,,qast,0
 Startle,s2-t-a2-t-l,Statl,,qalst,0
 Startled,s2-t-a2-t-l-d,Statld,,qadlst,0
 Startling,s2-t-a2-t-l-\-h,Statlg,,qaglst,0
@@ -2839,6 +2852,11 @@ Streamed,s-t-r-e-m-d,Stremd,,qdemrst,0
 Streaming,s-t-r-e-m-\-h,Stremg,,qegmrst,0
 Streams,s-t-r-e-m-s,Strems,,qemrst,0
 Structurally,s-t-r-k-t-r-l-e,Strktrle,,qeklrst,0
+Statistic,^s-t-\-s-t,Stst,,qst,0
+Statistical,^s-t-\-s-t-l,Ststl,,qlst,0
+Statistically,^s-t-\-s-t-l-e,Ststle,,qelst,0
+Statistics,^s-t-\-s-t-s,Ststs,,qst,0
+Statistically,^s-t-\-s-t-ya,Ststy,,qsty,0
 Stubborn,s-t-u-b-e2-n,Stuben,,qbenstu,0
 Stubbornly,s-t-u-b-e2-n-e,Stubene,,qbenstu,0
 Stubbornness,s-t-u-b-e2-n-n-e-s,Stubennes,,qbenstu,0
@@ -4433,6 +4451,8 @@ Decodes,d-e-k-o-t-s,Dekods,,qdekos,3
 Deficiency,df-e-sh-s-e,Dfezse,,qdefsz,3
 Deficiencies,df-e-sh-s-e-s,Dfezses,,qdefsz,3
 Doctrines,d-o-k-t-s,Dokts,,qdkost,3
+Doctrination,d-o-k-t-sh,Doktz,,qdkotz,3
+Doctrinations,d-o-k-t-sh-s,Doktzs,,qdkostz,3
 Disorder,d-s2-o-d,Dsod,,qdos,3
 Disordered,d-s2-o-d-d,Dsodd,,qdos,3
 Disordering,d-s2-o-d-\-h,Dsodg,,qdgos,3
@@ -4501,6 +4521,10 @@ Employments,m-pl-m-s,Mplms,,qlmps,3
 Interactional,^-n-\-a-k-sh-l,Nakzl,,qaklnz,3
 Interactions,^-n-\-a-k-sh-s,Nakzs,,qaknsz,3
 Unattractive,n-a-t-r-k-v,Natrkv,,qaknrtv,3
+Indoctrination,n-d-o-k-t-sh,Ndoktz,,qdknotz,3
+Indoctrinational,n-d-o-k-t-sh-l,Ndoktzl,,qdklnotz,3
+Indoctrinationally,n-d-o-k-t-sh-l-e,Ndoktzle,,qdeklnotz,3
+Indoctrinations,n-d-o-k-t-sh-s,Ndoktzs,,qdknostz,3
 Unfamiliarity,n-f-a-m-e-l-\-r,Nfamelr,,qaeflmnr,3
 Noting,n-o-t-\-h,Notg,,qgnot,3
 Notes,n-o-t-s,Notso,o,qnost,3
@@ -5123,6 +5147,8 @@ Repentance,r-e-jnt-n-s,Rpntns,,qnprst,6
 Repentances,r-e-jnt-n-s-s,Rpntnss,,qnprst,6
 Replies,r-e-p-s,Rps,,qprs,6
 Represents,r-p-s,Rpso,o,qoprs,6
+Resistor,r-ss-r,Rssr,,qrs,6
+Resistors,r-ss-r-s,Rssrs,,qrs,6
 Realist,r-e-\-s-t,Rst,,qrst,6
 Realistically,r-e-\-s-t-e,Rste,,qerst,6
 Realistic,r-e-\-s-t,Rsto,o,qorst,6
@@ -5150,6 +5176,8 @@ Transport,t-/-p-o-t,Tpot,,qopt,6
 Transported,t-/-p-o-t-d,Tpotd,,qdopt,6
 Transporting,t-/-p-o-t-\-h,Tpotg,,qgopt,6
 Transports,t-/-p-o-t-s,Tpots,,qopst,6
+Transistor,^-t-\-ss-r,Tssr,,qrst,6
+Transistors,^-t-\-ss-r-s,Tssrs,,qrst,6
 Viable,v-ia-b,Viab,,qabiv,6
 Explicitly,e-s-pl-e-s2-t-e,Xplxte,,qelptx,6
 Explanations,e-s-pl-sh-s,Xplzs,,qlpsxz,6
@@ -7517,7 +7545,7 @@ Spaces,s-p-a-s-s,Spass,,qaps,178
 Developments,dfl-m-s,Dvlms,,qdlmsv,179
 Deleted,d-l-e-td,Dletd,,qdelt,181
 Staying,s2-t-a-\-h,Stag,,qagst,182
-Stays,s2-t-a-s,Stas,,qast,182
+Stays,s2-t-a-s,Stasqk,,qast,182
 Freed,fr-e-d,Fred,,qdefr,183
 Freing,fr-e-\-h,Freg,,qefgr,183
 Frees,fr-e-s,Freso,o,qefors,183
@@ -7808,7 +7836,11 @@ Verifiable,v-e-r-f-b,Verfb,,qbefrv,311
 Verified,v-e-r-f-d,Verfd,,qdefrv,311
 Verifying,v-e-r-f-\-h,Verfg,,qefgrv,311
 Verifies,v-e-r-f-s,Verfs,,qefrsv,311
+Exam,e-s2-a-m,Xam,,qamx,313
+Exampled,e-s2-a-m-p-d,Xampd,,qadmpx,313
+Exampling,e-s2-a-m-p-\-h,Xampg,,qagmpx,313
 Examples,e-s2-a-m-p-s,Xamps,,qampsx,313
+Exams,e-s2-a-m-s,Xams,,qamsx,313
 Unauthenticated,n-o-th-e-nt-d,Nohentd,,qdehnot,314
 Authentic,o-th-e-nt,Ohent,,qehnot,314
 Authenticated,o-th-e-nt-d,Ohentd,,qdehnot,314
