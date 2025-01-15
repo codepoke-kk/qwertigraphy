@@ -3289,6 +3289,12 @@ Aggressor,ya-/-s-r,Ysr,,qrsy,0
 Aggressors,ya-/-s-r-s,Ysrs,,qrsy,0
 Aggressions,ya-/-s-sh-s,Yszs,,qsyz,0
 -Ship,<-sh,Z<,,q<z,0
+Shift,sh-e-f-t,Zeft,,qeftz,0
+Shifted,sh-e-f-t-d,Zeftd,,qdeftz,0
+Shifting,sh-e-f-t-\-h,Zeftg,,qefgtz,0
+Shiftless,sh-e-f-t-l,Zeftl,,qefltz,0
+Shiftlessly,sh-e-f-t-l-e,Zeftle,,qefltz,0
+Shifts,sh-e-f-t-s,Zefts,,qefstz,0
 Shortcoming,sh-/-k-m-\-h,Zkmg,,qgkmz,0
 Shortcomings,sh-/-k-m-\-h-s,Zkmz,,qkmz,0
 Shortname,^-sh-\-n-a,Zna,,qanz,0
@@ -8556,6 +8562,13 @@ Renames,r-e-n-a-s,Rnas,,qanrs,2992
 Server,s2-e-v-r,Sevr,,qersv,2998
 Servers,s2-e-v-r-s,Sevrs,,qersv,2998
 Backs,b-a-k-s,Baks,,qabks,3030
+Resume,r-s2-m,Rsm,,qmrs,3114
+Resumable,r-s2-m-b,Rsmb,,qbmrs,3114
+Resumed,r-s2-m-d,Rsmd,,qdmrs,3114
+Resuming,r-s2-m-\-h,Rsmg,,qgmrs,3114
+Resumes,r-s2-m-s,Rsms,,qmrs,3114
+Resumption,r-s2-m-sh,Rsmz,,qmrsz,3114
+Resumptions,r-s2-m-sh-s,Rsmzs,,qmrsz,3114
 Unwanted,n-o-nt-t,Nontd,,qdnot,3135
 Wanted,o-nt-d,Ontd,,qdnot,3135
 Wanting,o-nt-\-h,Ontg,,qgnot,3135
