@@ -4686,7 +4686,7 @@ Envelope,n-v-l,Nvl,,qlnv,1
 Nevertheless,n-v-l,Nvlo,o,qlnov,1
 Nevermore,n-v-m,Nvm,,qmnv,1
 Invoiced,n-v-s22-t,Nvsd,,qdnsv,1
-Envious,n-v-u-s,Nvus,,qnsuv,1
+Envious,n-v-u-s,Nvusqk,,qnsuv,1
 Insure,n-sh,Nzi,i,qinz,1
 Nationalistic,n-a-sh-l-/-s2-t,Nzlst,,qlnstz,1
 Obviate,o-b-v-ea-t,Obvet,,qbeotv,1
@@ -5578,7 +5578,6 @@ Muscle,m-u-s-l,Musl,,qlmsu,8
 Nearer,n-e2-/-r,Ner,,qenr,8
 Infrequent,n-fr-e-k,Nfreq,,qefnqr,8
 Instructor,n-s-/-k-r,Nskr,,qknrs,8
-Interview,n-/-v-e-u,Nvuo,o,qnouv,8
 On our,o-n-r,Onr,,qnor,8
 Opposed,o-p-o-/-t,Opod,,qdop,8
 Overwhelm,o-/-u-e-l-m,Ouelm,,qelmou,8
@@ -5961,7 +5960,6 @@ British columbia,b-s-e,Bseo,o,qbeos,20
 Formed,f-m-/-t,Fmd,,qdfm,20
 Frame,fr-a-m,Fram,,qafmr,20
 Frames,fr-a-m-s,Frams,,qafmrs,20
-They are,th-r,Hr,,qhr,20
 Merge,m-e-j,Mej,,qejm,20
 Induce,n-d-u-s,Nduso,o,qdnosu,20
 Engagement,n-g-a-m,Ngam,,qagmn,20
@@ -6821,7 +6819,7 @@ Imagination,e-m-a-j,Emajo,o,qaejmo,178
 Fright,fr-i,Frii,i,qfir,178
 Space,s-p-a-s,Spas,,qaps,178
 Development,dfl-m,Dvlm,,qdlmv,179
-Instances,n-s-s,Nss,,qns,180
+Instances,n-s-s,Nssqk,,qns,180
 Yourself,us,Usu,u,qsu,180
 Stay,s2-t-a,Sta,,qast,182
 Stayed,s2-t-a-d,Stad,,qadst,182
@@ -7728,3 +7726,4 @@ That is,th-a-s,Haso,o,qahos,27413
 You,u,U,,qu,28250
 It,t,T,,qt,34400
 The,th,H,,qh,81174
+Scenario,s-a-n-a-r-e-o,Sanareo,,qaenors,90759
