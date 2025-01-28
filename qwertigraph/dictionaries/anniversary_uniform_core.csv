@@ -6723,7 +6723,7 @@ Doubt,d-a-u,Dw,,qdw,135
 Finally,f-i-n-ye,Finy,,qfiny,135
 Vulnerable,v-u-l-n-e-r-b,Vulnerb,,qbelnruv,135
 Whenever,e-n-e-v,Enev,,qenv,136
-Reason why,r-s-i,Rsi,,qirs,136
+Reason why,r-s-i,Rsiqk,,qirs,136
 Select,s-e-l-e-k,Selek,,qekls,136
 Selected,s-e-l-e-k-t,Selekd,,qdekls,136
 Selection,s-e-l-e-k-sh,Selekz,,qeklsz,136
@@ -7342,8 +7342,8 @@ Happen,^-h-\-a-p-n,Hapn,,qahnp,799
 Happens,^-h-\-a-p-n-s,Hapns,,qahnps,799
 Even,e-v-n,Evn,,qenv,818
 Evening,e-v-n-\-h,Evng,,qegnv,818
-Keep,k-p,Kp,,qkp,818
 Complaint,k-p,Kpo,o,qkop,818
+Keep,k-p,Kpqk,,qkp,818
 Install,n-s2-t-o-l,Nstol,,qlnost,822
 Installation,n-s2-t-o-l-a-sh,Nstolz,,qlnostz,822
 Soul,s2-o-l,Soli,i,qilos,851
@@ -7398,7 +7398,6 @@ Point,o-e,Y,,qy,1024
 Appoint,o-e,Yo,o,qoy,1024
 Appointive,o-e-v,Yv,,qvy,1024
 Hour,r,Ro,o,qor,1040
-Ours,r-s2,Rs,,qrs,1040
 Hours,r-s2,Rso,o,qors,1040
 Until,nt-e,Nte,,qent,1046
 Exit,e-s2-e-t,Xet,,qetx,1052
