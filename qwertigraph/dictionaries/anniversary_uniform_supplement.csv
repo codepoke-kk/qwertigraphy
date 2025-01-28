@@ -3817,6 +3817,11 @@ Critiquing,k-r-e-t-e-k-\-h,Qreteqg,,qegqrt,1
 Critiques,k-r-e-t-e-k-s,Qreteqs,,qeqrst,1
 Consequences,k-s2-e-k-s,Qseqs,,qeqs,1
 Rebellious,r-b-e-l-u-s,Rbelus,,qbelrsu,1
+Ridiculous,r-d-e-k,Rdek,,qdekr,1
+Ridiculously,r-d-e-k-e,Rdeke,,qdekr,1
+Ridiculousness,r-d-e-k-n-e-s,Rdeknes,,qdeknrs,1
+Ridiculously,r-e-d-e-k-e,Redeke,,qdekr,1
+Ridiculousness,r-e-d-e-k-n-e-s,Redeknes,,qdeknrs,1
 Refering,r-f-\-h,Rfgo,o,qfgor,1
 Reflected,r-fl-d,Rfld,,qdflr,1
 Reflects,r-fl-s,Rfls,,qflrs,1
@@ -4514,7 +4519,9 @@ Cloths,k-l-o-th-s,Klohs,,qhklos,3
 Clothes,k-l-o-th-s,Klohso,o,qhklos,3
 Caller,k-o-r,Kori,i,qikor,3
 Callers,k-o-r-s,Kors,,qkors,3
+Company,k-p,Kp,,qkp,3
 Comparisons,k-pr-s2-n-s,Kprsns,,qknprs,3
+Companies,k-p-s,Kps,,qkps,3
 Creative,k-r-ea-df,Kretv,,qekrtv,3
 Creatively,k-r-ea-df-e,Kretve,,qekrtv,3
 Creatives,k-r-ea-df-s,Kretvs,,qekrstv,3
@@ -4739,6 +4746,7 @@ Communing,k-m-u-n-\-h,Kmung,,qgkmnu,4
 Communal,k-m-u-n-l,Kmunl,,qklmnu,4
 Communes,k-m-u-n-s,Kmuns,,qkmnsu,4
 Complexity,k-p-l-e-s-t-e,Kplxte,,qeklptx,4
+Complexities,k-p-l-e-s-t-e-s,Kplxts,,qklpstx,4
 Complexities,k-p-l-e-s-t-e-s,Kplxtx,,qklptx,4
 Composing,k-p-o-\-h,Kpog,,qgkop,4
 Cruelly,k-r-u-l-e,Krule,,qeklru,4
@@ -5286,6 +5294,7 @@ Persistently,pr-ss-\-nt-e,Prssnte,,qenprst,7
 Persistents,pr-ss-\-nt-s,Prssnts,,qnprst,7
 Poorer,p-u-r,Pur,,qpru,7
 Replication,r-e-pl-k-a-sh,Rplkz,,qklprz,7
+Respect,r-e-s,Rs,,qrs,7
 Recycle,r-e-s-i-k-l,Rsikl,,qiklrs,7
 Recycled,r-e-s-i-k-l-d,Rsikld,,qdiklrs,7
 Recycling,r-e-s-i-k-l-\-h,Rsiklg,,qgiklrs,7
@@ -5775,6 +5784,8 @@ Europe,e-u-r-o-p,Urop,,qopru,13
 Worldview,u-u-v-u,Uuvu,,quv,13
 Worldviews,u-u-v-u-s,Uuvus,,qsuv,13
 Voting,v-t-\-h,Vtg,,qgtv,13
+Voter,v-t-r,Vtr,,qrtv,13
+Voters,v-t-r-s,Vtrs,,qrstv,13
 Votes,v-t-s,Vts,,qstv,13
 Dearly,d-e2-e,Dee,,qde,14
 Definitions,df-n-sh-s,Dfnzs,,qdfnsz,14
@@ -6789,6 +6800,8 @@ Outcomes,a-u-k-m-s,Wkms,,qkmsw,51
 Expressed,e-s-pr-d,Xprd,,qdprx,51
 Expressing,e-s-pr-\-h,Xprg,,qgprx,51
 Expresses,e-s-pr-s,Xprs,,qprsx,51
+Amendment,a-mn,Amm,,qam,52
+Amendments,a-mn-s,Amms,,qams,52
 Admined,a-mn-d,Amnd,,qadmn,52
 Admining,a-mn-\-h,Amng,,qagmn,52
 Admin,a-mn,Amni,i,qaimn,52
@@ -7776,6 +7789,7 @@ Inappropriately,n-a-pr-a-e,Naprae,,qaenpr,240
 Worded,u-d-d,Udd,,qdu,240
 Wording,u-d-\-h,Udg,,qdgu,240
 Leaving,l-e-v-\-h,Levg,,qeglv,244
+Profitability,pr-f-t-\-b,Prftbo,,qbfoprt,244
 Profited,pr-f-t-d,Prftd,,qdfprt,244
 Profiting,pr-f-t-\-h,Prftg,,qfgprt,244
 Profits,pr-f-t-s,Prfts,,qfprst,244
@@ -8182,6 +8196,7 @@ Todays,td-a-s,Tdaso,o,qadost,559
 Opened,o-p-n-d,Opnd,,qdnop,560
 Opening,o-p-n-\-h,Opng,,qgnop,560
 Opens,o-p-n-s,Opns,,qnops,560
+Opinions,o-p-n-s,Opnso,o,qnops,560
 Failures,f-a-l-r-s,Falrs,,qaflrs,563
 Having,v-\-h,Vg,,qgv,569
 Protested,pr-o-t-e-s-d,Protesd,,qdeoprst,575
@@ -8352,9 +8367,9 @@ Succession,s2-u-k-sh,Sukz,,qksuz,795
 Happened,^-h-\-a-p-n-d,Hapnd,,qadhnp,799
 Happening,^-h-\-a-p-n-\-h,Hapng,,qaghnp,799
 Evens,e-v-n-s,Evns,,qensv,818
+Keep,k-e-p,Kep,,qekp,818
 Complained,k-p-d,Kpdo,o,qdkop,818
 Complaining,k-p-\-h,Kpg,,qgkp,818
-Companies,k-p-s,Kps,,qkps,818
 Complaints,k-p-s,Kpsi,i,qikps,818
 Complains,k-p-s,Kpso,o,qkops,818
 Installable,n-s2-t-o-l-b,Nstolb,,qblnost,822
@@ -8379,6 +8394,8 @@ Profiles,pr-f-i-l-s,Prfils,,qfilprs,890
 Commanded,k-m-a-n-d,Kmand,,qadkmn,896
 Commanding,k-m-a-n-\-h,Kmang,,qagkmn,896
 Commands,k-m-a-n-s,Kmans,,qakmns,896
+Greatness,g-r-n-e-s,Grnes,,qegnrs,899
+Greatnesses,g-r-n-e-s-s,Grness,,qegnrs,899
 Equation,e-k-a-sh,Eqz,,qeqz,919
 Acknowledged,a-k-d,Akdo,o,qadko,955
 Acting,a-k-\-h,Akg,,qagk,955
@@ -8625,6 +8642,11 @@ Prunable,pr-u-n-b,Prunb,,qbnpru,4518
 Pruned,pr-u-n-d,Prund,,qdnpru,4518
 Pruning,pr-u-n-\-h,Prung,,qgnpru,4518
 Prunes,pr-u-n-s,Pruns,,qnprsu,4518
+Publicize,p-b-s-i-s,Pbsis,,qbips,4520
+Publicized,p-b-s-i-s-d,Pbsisd,,qbdips,4520
+Publicizing,p-b-s-i-s-\-h,Pbsisg,,qbgips,4520
+Publicizes,p-b-s-i-s-s,Pbsiss,,qbips,4520
+Proudly,pr-a-u-e,Prwe,,qeprw,4520
 Outs,a-u-s,Ws,,qsw,4520
 Newline,n-u-l,Nul,,qlnu,4620
 Newlines,n-u-l-s,Nuls,,qlnsu,4620
