@@ -2050,6 +2050,10 @@ Parameter,^-p-\-m-e-t-e2,Pmete,,qempt,0
 Parametered,^-p-\-m-e-t-e2-d,Pmeted,,qdempt,0
 Parametering,^-p-\-m-e-t-e2-\-h,Pmeteg,,qegmpt,0
 Parameters,^-p-\-m-e-t-e2-s,Pmetes,,qempst,0
+Parameterize,^-p-\-m-e-t-i-s,Pmetis,,qeimpst,0
+Parameterized,^-p-\-m-e-t-i-s-d,Pmetisd,,qdeimpst,0
+Parameterizing,^-p-\-m-e-t-i-s-\-h,Pmetisg,,qegimpst,0
+Parameterizes,^-p-\-m-e-t-i-s-s,Pmetiss,,qeimpst,0
 Penetrate,pnt-r-a,Pntra,,qanprt,0
 Penetrated,pnt-r-a-d,Pntrad,,qadnprt,0
 Penetrating,pnt-r-a-\-h,Pntrag,,qagnprt,0
@@ -3204,8 +3208,6 @@ Visualizes,v-e-sh-u-l-i-s-s,Vezuliss,,qeilsuvz,0
 Visualization,v-e-sh-u-l-i-s-sh,Vezulisz,,qeilsuvz,0
 Visualizations,v-e-sh-u-l-i-s-sh-s,Vezuliszs,,qeilsuvz,0
 Visuals,v-e-sh-u-l-s,Vezuls,,qelsuvz,0
-Viably,v-ia-b-e,Viabe,,qabeiv,0
-Viability,v-ia-\-b,Viabo,,qabiov,0
 Violations,v-i-l-a-sh-s,Vilzs,,qilsvz,0
 Advisability,v-i-s-\-b,Visbo,,qbiosv,0
 Advisedly,v-i-s2-d-e,Visde,,qdeisv,0
@@ -5172,6 +5174,14 @@ Passionately,p-a-sh-a-t-e,Pazate,,qaeptz,6
 Peaceful,p-e-s-f,Pesf,,qefps,6
 Peacefully,p-e-s-f-e,Pesfe,,qefps,6
 Pleases,pl-s,Pls,,qlps,6
+Parameter,^-p-\-m-e,Pme,,qemp,6
+Parametered,^-p-\-m-e-d,Pmed,,qdemp,6
+Parametering,^-p-\-m-e-\-h,Pmeg,,qegmp,6
+Parameters,^-p-\-m-e-s,Pmes,,qemps,6
+Parameterize,^-p-\-m-i-s,Pmis,,qimps,6
+Parameterized,^-p-\-m-i-s-d,Pmisd,,qdimps,6
+Parameterizing,^-p-\-m-i-s-\-h,Pmisg,,qgimps,6
+Parameterizes,^-p-\-m-i-s-s,Pmiss,,qimps,6
 Processor,pr-ss-r,Prssr,,qprs,6
 Processors,pr-ss-r-s,Prssrs,,qprs,6
 Random,r-a-n-dm,Randm,,qadmnr,6
@@ -5216,6 +5226,13 @@ Transports,t-/-p-o-t-s,Tpots,,qopst,6
 Transistor,^-t-\-ss-r,Tssr,,qrst,6
 Transistors,^-t-\-ss-r-s,Tssrs,,qrst,6
 Viable,v-ia-b,Viab,,qabiv,6
+Viableability,v-ia-b-\-b,Viabbo,,qabiov,6
+Viably,v-ia-b-e,Viabe,,qabeiv,6
+Viability,v-ia-\-b,Viabo,,qabiov,6
+Viable,v-ia-b,Vib,,qbiv,6
+Viableability,v-ia-b-\-b,Vibbo,,qbiov,6
+Viably,v-ia-b-e,Vibe,,qbeiv,6
+Viability,v-ia-\-b,Vibo,,qbiov,6
 Explicitly,e-s-pl-e-s2-t-e,Xplxte,,qelptx,6
 Explanations,e-s-pl-sh-s,Xplzs,,qlpsxz,6
 Shaped,sh-a-p-d,Zapd,,qadpz,6
@@ -7040,6 +7057,7 @@ Owning,o-n-\-h,Ong,,qgno,76
 Recollections,r-e-k-o-l-sh-s,Rkolzs,,qklorsz,76
 Significantly,s2-g-e,Sge,,qegs,76
 Usefully,e-u-f-e,Ufe,,qefu,76
+Unknown,u-n-o-n,Unon,,qnou,76
 Voiced,v-o-e-s-d,Vysd,,qdsvy,76
 Voicing,v-o-e-s-\-h,Vysg,,qgsvy,76
 Voice,v-o-e-s,Vyso,o,qosvy,76
@@ -7781,6 +7799,7 @@ Matches,m-a-ch-s,Macs,,qacms,232
 Marches,m-a-ch-s,Macso,o,qacmos,232
 Unmatched,n-m-a-ch-d,Nmacd,,qacdmn,232
 Internet,n-/-nt,Nnt,,qnt,232
+Known,n-o-n,Nono,o,qno,232
 Non,n-o-n,Nonu,u,qnou,232
 Secure,s2-e-k-r,Sekr,,qekrs,232
 Secured,s2-e-k-r-d,Sekrd,,qdekrs,232
@@ -8421,6 +8440,9 @@ Acting,a-k-\-h,Akg,,qagk,955
 Actively,a-k-v-e,Akve,,qaekv,955
 Actionable,a-k-sh-b,Akzb,,qabkz,955
 Actionably,a-k-sh-b-e,Akzbe,,qabekz,955
+GitHub Action,g-a-k,Gak,,qagk,955
+GitHub Actions,g-a-k-s,Gaks,,qagks,955
+GitHub,g-^-h-\,Gh,,qgh,955
 Inactive,n-a-k-v,Nakv,,qaknv,955
 Saying,s-a-\-h,Sag,,qags,955
 Wronged,r-o-ng-d,Rogd,,qdgor,975
