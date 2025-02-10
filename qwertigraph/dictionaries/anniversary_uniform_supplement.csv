@@ -594,6 +594,10 @@ Determinations,e2-mn-sh-s,Emnzs,,qemnsz,0
 Immobile,e-m-o-bl,Emobl,,qbelmo,0
 Immobility,e-m-o-\-b,Emobo,,qbemo,0
 Emulations,e-m-\-u-sh-s,Emuzs,,qemsuz,0
+Enact,e-n-a-k,Enak,,qaekn,0
+Enacted,e-n-a-k-d,Enakd,,qadekn,0
+Enacting,e-n-a-k-\-h,Enakg,,qaegkn,0
+Enacts,e-n-a-k-s,Enaks,,qaekns,0
 Inappreciated,e-n-a-pr-e-sh-d,Enaprezd,,qadenprz,0
 Inarticulate,e-n-a2-t-e-k-\-u,Enateku,,qaekntu,0
 Inarticulately,e-n-a2-t-e-k-\-u-e,Enatekue,,qaekntu,0
@@ -1381,6 +1385,8 @@ Multi-,m->,M>,,q>m,0
 Matchup,m-a-ch-p,Macp,,qacmp,0
 Matchups,m-a-ch-p-s,Macps,,qacmps,0
 Matcher,m-a-ch-r,Macr,,qacmr,0
+Magistrate,m-a-j-s-t-r-a,Majstra,,qajmrst,0
+Magistrates,m-a-j-s-t-r-a-s,Majstras,,qajmrst,0
 Mail,m-a2-l-b,Malbi,i,qabilm,0
 Malign,m-a-l-i-n,Malin,,qailmn,0
 Maligned,m-a-l-i-n-d,Malind,,qadilmn,0
@@ -3306,6 +3312,7 @@ Aggressor,ya-/-s-r,Ysr,,qrsy,0
 Aggressors,ya-/-s-r-s,Ysrs,,qrsy,0
 Aggressions,ya-/-s-sh-s,Yszs,,qsyz,0
 -Ship,<-sh,Z<,,q<z,0
+Schadenfreude,sh-a-d-f,Zadf,,qadfz,0
 Shift,sh-e-f-t,Zeft,,qeftz,0
 Shifted,sh-e-f-t-d,Zeftd,,qdeftz,0
 Shifting,sh-e-f-t-\-h,Zeftg,,qefgtz,0
