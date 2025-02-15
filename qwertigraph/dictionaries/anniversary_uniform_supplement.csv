@@ -163,6 +163,8 @@ Articulating,a2-t-e-k-\-u-\-h,Atekug,,qaegktu,0
 Articulates,a2-t-e-k-\-u-s,Atekus,,qaekstu,0
 Articulation,a2-t-e-k-\-u-sh,Atekuz,,qaektuz,0
 Articulations,a2-t-e-k-\-u-sh-s,Atekuzs,,qaekstuz,0
+Artifact,a2-t-f-a-k,Atfak,,qafkt,0
+Artifacts,a2-t-f-a-k-s,Atfaks,,qafkst,0
 Artificially,a2-t-f-e-sh-e,Atfeze,,qaeftz,0
 Atomic,a-tm-e-k,Atmek,,qaekmt,0
 Atomics,a-tm-e-k-s,Atmeks,,qaekmst,0
@@ -4340,6 +4342,7 @@ Reliability,r-e-l-i-\-b,Rlibo,,qbilor,2
 Realm,r-e-l-m,Rlm,,qlmr,2
 Realms,r-e-l-m-s,Rlms,,qlmrs,2
 Relatives,r-e-l-s,Rlsi,i,qilrs,2
+Relative,r-e-l,Rlu,u,qlru,2
 Relationly,r-e-l-a-sh-e,Rlze,,qelrz,2
 Relational,r-e-l-a-sh-l,Rlzl,,qlrz,2
 Relations,r-e-l-a-sh-s,Rlzs,,qlrsz,2
@@ -6272,6 +6275,8 @@ Visioned,v-e-sh-d,Vezdo,o,qdeovz,25
 Visioning,v-e-sh-\-h,Vezgo,o,qegovz,25
 Visions,v-e-sh-s,Vezso,o,qeosvz,25
 Assignments,a-s2-i-mn-s,Asimns,,qaimns,26
+Assignment,a-s2-i-mn,Asinm,,qaimns,26
+Assignments,a-s2-i-mn-s,Asinms,,qaimns,26
 Educated,e-d-u-d,Edud,,qdeu,26
 Educating,e-d-u-\-h,Edug,,qdegu,26
 Educates,e-d-u-s,Edus,,qdesu,26
@@ -6296,6 +6301,8 @@ Prioritize,pr-i-r-t-i-s,Prirtis,,qiprst,26
 Prioritized,pr-i-r-t-i-s-d,Prirtisd,,qdiprst,26
 Prioritizing,pr-i-r-t-i-s-\-h,Prirtisg,,qgiprst,26
 Prioritizes,pr-i-r-t-i-s-s,Prirtiss,,qiprst,26
+Reassignment,r-a-s2-i-mn,Rasinm,,qaimnrs,26
+Reassignments,r-a-s2-i-mn-s,Rasinms,,qaimnrs,26
 Recognized,r-k-n-i-s-d,Rknisd,,qdiknrs,26
 Recognizing,r-k-n-i-s-\-h,Rknisg,,qgiknrs,26
 Recognizes,r-k-n-i-s-s,Rkniss,,qiknrs,26
@@ -7682,6 +7689,10 @@ Accords,a-k-r-s,Akrso,o,qakors,195
 Assign,a-s2-i-n,Asin,,qains,195
 Assigning,a-s2-i-n-\-h,Asing,,qagins,195
 Assigns,a-s2-i-n-s,Asins,,qains,195
+Reassign,r-a-s2-i-n,Rasin,,qainrs,195
+Reassigned,r-a-s2-i-n-d,Rasind,,qadinrs,195
+Reassigning,r-a-s2-i-n-\-h,Rasing,,qaginrs,195
+Reassigns,r-a-s2-i-n-s,Rasins,,qainrs,195
 Spreadsheet,s-p-sh-e-t,Spzet,,qepstz,195
 Spreadsheeted,s-p-sh-e-t-d,Spzetd,,qdepstz,195
 Spreadsheeting,s-p-sh-e-t-\-h,Spzetg,,qegpstz,195
@@ -8248,6 +8259,9 @@ Protested,pr-o-t-e-s-d,Protesd,,qdeoprst,575
 Protesting,pr-o-t-e-s-\-h,Protesg,,qegoprst,575
 Protests,pr-o-t-e-s-s,Protess,,qeoprst,575
 Protestation,pr-o-t-e-s-a-sh,Protesz,,qeoprstz,575
+Testable,t-e-s-b,Tesb,,qbest,575
+Testably,t-e-s-b-e,Tesbe,,qbest,575
+Testability,t-e-s-\-b,Tesbo,,qbeost,575
 Tested,t-e-s-d,Tesd,,qdest,575
 Testing,t-e-s-\-h,Tesg,,qegst,575
 Tests,t-e-s-s,Tess,,qest,575
@@ -8314,6 +8328,8 @@ Serviced,^-s2-d,Sdo,o,qdos,638
 Servicing,^-s2-\-h,Sgo,o,qgos,638
 Placed,pl-a-s-d,Plasd,,qadlps,639
 Placing,pl-a-s-\-h,Plasg,,qaglps,639
+Placeholder,pl-a-s-o-ld-r,Plasoldr,,qadloprs,639
+Placeholders,pl-a-s-o-ld-r-s,Plasoldrs,,qadloprs,639
 Places,pl-a-s-s,Plass,,qalps,639
 Replaced,r-pl-a-s-d,Rplasd,,qadlprs,639
 Replacing,r-pl-a-s-\-h,Rplasg,,qaglprs,639
@@ -8413,10 +8429,15 @@ Happened,^-h-\-a-p-n-d,Hapnd,,qadhnp,799
 Happening,^-h-\-a-p-n-\-h,Hapng,,qaghnp,799
 Evens,e-v-n-s,Evns,,qensv,818
 Keep,k-e-p,Kep,,qekp,818
+Complain,k-p,Kpa,a,qakp,818
 Complained,k-p-d,Kpdo,o,qdkop,818
 Complaining,k-p-\-h,Kpg,,qgkp,818
 Complaints,k-p-s,Kpsi,i,qikps,818
 Complains,k-p-s,Kpso,o,qkops,818
+Keyword,k-e-u-d,Kud,,qdku,818
+Keyworded,k-e-u-d-d,Kudd,,qdku,818
+Keywording,k-e-u-d-\-h,Kudg,,qdgku,818
+Keywords,k-e-u-d-s,Kuds,,qdksu,818
 Installable,n-s2-t-o-l-b,Nstolb,,qblnost,822
 Installs,n-s2-t-o-l-s,Nstols,,qlnost,822
 Resolution,r-s2-o-l-sh,Rsolz,,qlorsz,851
