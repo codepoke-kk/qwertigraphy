@@ -231,6 +231,13 @@ Blink,bl-e-nk,Bleq,,qbelq,0
 Blinked,bl-e-nk-d,Bleqd,,qbdelq,0
 Blinking,bl-e-nk-\-h,Bleqg,,qbeglq,0
 Blinks,bl-e-nk-s,Bleqs,,qbelqs,0
+Blind,bl-i,Bli,,qbil,0
+Blinded,bl-i-d,Blid,,qbdil,0
+Blinding,bl-i-\-h,Blig,,qbgil,0
+Blinded,bl-i-nt-d,Blindd,,qbdiln,0
+Blinding,bl-i-nt-\-h,Blindg,,qbdgiln,0
+Blinds,bl-i-nt-s,Blinds,,qbdilns,0
+Blinds,bl-i-s,Blis,,qbils,0
 Blockade,bl-o-k-a-d,Blokad,,qabdklo,0
 Blockaded,bl-o-k-a-d-d,Blokadd,,qabdklo,0
 Blockading,bl-o-k-a-d-\-h,Blokadg,,qabdgklo,0
@@ -625,6 +632,10 @@ Encapsulation,e-n-k-a-p-s-l-a-t-sh,Enkapslatz,,qaeklnpstz,0
 Encapsulations,e-n-k-a-p-s-l-a-t-sh-s,Enkapslatzs,,qaeklnpstz,0
 Inanity,e-n-/-nt,Ennt,,qent,0
 Inoffensively,e-n-o-f-e-n-s-v-e,Enofensve,,qefnosv,0
+Explained,e-pl-d,Epld,,qdelp,0
+Explaining,e-pl-\-h,Eplg,,qeglp,0
+Explains,e-pl-s,Epls,,qelps,0
+Explanation,e-pl-sh,Eplz,,qelpz,0
 Equanimity,e-k-a-n-\-mt,Eqanmt,,qaemnqt,0
 Equate,e-k-a-t,Eqat,,qaeqt,0
 Equator,e-k-a-t-e2,Eqate,,qaeqt,0
@@ -1164,6 +1175,7 @@ Cooperating,k-o-o-p-\-h,Koopg,,qgkop,0
 Cooperates,k-o-o-p-s,Koops,,qkops,0
 Cooperative,k-o-o-p-v,Koopv,,qkopv,0
 Cooperatively,k-o-o-p-v-e,Koopve,,qekopv,0
+Cooperativeness,k-o-o-p-v-n-e-s,Koopvnes,,qeknopsv,0
 Cooperatives,k-o-o-p-v-s,Koopvs,,qkopsv,0
 Correlated,k-o-r-e-l-a-d,Korelad,,qadeklor,0
 Correlates,k-o-r-e-l-a-s,Korelas,,qaeklors,0
@@ -1459,6 +1471,12 @@ Milestone,m-i-s-t-o-n,Miston,,qimnost,0
 Milestones,m-i-s-t-o-n-s,Mistons,,qimnost,0
 Impenetrably,m-jnt-r-b-e,Mjntrbe,,qbejmnrt,0
 -Mental,<-m-l,Ml<,,q<lm,0
+Mimicked,mn-e-k-d,Mmekd,,qdekm,0
+Mimickry,mn-e-k-e,Mmeke,,qekm,0
+Mimickries,mn-e-k-e-s,Mmekes,,qekms,0
+Mimicking,mn-e-k-\-h,Mmekg,,qegkm,0
+Mimickry,mn-e-k-r-e,Mmekre,,qekmr,0
+Mimics,mn-e-k-s,Mmeks,,qekms,0
 Minimize,mn-e-m-i-s,Mmemis,,qeims,0
 Minimized,mn-e-m-i-s-d,Mmemisd,,qdeims,0
 Minimizing,mn-e-m-i-s-\-h,Mmemisg,,qegims,0
@@ -4400,6 +4418,7 @@ Testament,t-e-s-t-a-m,Testam,,qaemst,2
 Testaments,t-e-s-t-a-m-s,Testams,,qaemst,2
 Troubleshot,t-r-b-sh-d,Trbzd,,qbdrtz,2
 Trustworthy,t-r-s-h-e,Trshe,,qehrst,2
+Trustworthiness,t-r-s-h-e-n-e-s,Trshenes,,qehnrst,2
 Unfalsifiable,u-f-o-s-f-b,Ufosfb,,qbfosu,2
 Updater,u-p-td-r,Updtr,,qdprtu,2
 Updaters,u-p-td-r-s,Updtrs,,qdprstu,2
@@ -4492,6 +4511,10 @@ Decoding,d-e-k-o-t-\-h,Dekodg,,qdegko,3
 Decodes,d-e-k-o-t-s,Dekods,,qdekos,3
 Deficiency,df-e-sh-s-e,Dfezse,,qdefsz,3
 Deficiencies,df-e-sh-s-e-s,Dfezses,,qdefsz,3
+Definitive,df-n-e-df,Dfnetv,,qdefntv,3
+Definitively,df-n-e-df-e,Dfnetve,,qdefntv,3
+Definitive,df-n-df,Dfntv,,qdfntv,3
+Definitively,df-n-df-e,Dfntve,,qdefntv,3
 Doctrines,d-o-k-t-s,Dokts,,qdkost,3
 Doctrination,d-o-k-t-sh,Doktz,,qdkotz,3
 Doctrinations,d-o-k-t-sh-s,Doktzs,,qdkostz,3
@@ -4767,6 +4790,7 @@ Communing,k-m-u-n-\-h,Kmung,,qgkmnu,4
 Communal,k-m-u-n-l,Kmunl,,qklmnu,4
 Communes,k-m-u-n-s,Kmuns,,qkmnsu,4
 Complexity,k-p-l-e-s-t-e,Kplxte,,qeklptx,4
+Complexities,k-p-l-e-s-t-e-s,Kplxtes,,qeklpstx,4
 Complexities,k-p-l-e-s-t-e-s,Kplxts,,qklpstx,4
 Complexities,k-p-l-e-s-t-e-s,Kplxtx,,qklptx,4
 Composing,k-p-o-\-h,Kpog,,qgkop,4
@@ -6111,6 +6135,12 @@ Relinquish,r-e-l-e-ng,Rleng,,qeglnr,19
 Relinquished,r-e-l-e-ng-d,Rlengd,,qdeglnr,19
 Relinquishes,r-e-l-e-ng-s,Rlengs,,qeglnrs,19
 Renewals,r-e-n-u-l-s,Rnuls,,qlnrsu,19
+Silenced,s2-i-l-d,Sild,,qdils,19
+Silently,s2-i-l-e,Sile,,qeils,19
+Silencing,s2-i-l-\-h,Silg,,qgils,19
+Silent,s2-i-l,Sili,,qils,19
+Silently,s2-i-l-e,Silie,,qeils,19
+Silences,s2-i-l-s,Sils,,qils,19
 Waved,u-a-v-d,Uavd,,qaduv,19
 Waving,u-a-v-\-h,Uavg,,qaguv,19
 Waves,u-a-v-s,Uavs,,qasuv,19
@@ -6158,6 +6188,7 @@ Experts,e2-s-p-e2-t-s,Xpets,,qepstx,21
 Defenses,df-e-n-s-s,Dfenss,,qdefns,22
 Defensive,df-e-n-s-v,Dfensv,,qdefnsv,22
 Defensively,df-e-n-s-v-e,Dfensve,,qdefnsv,22
+Defensiveness,df-e-n-s-v-n-e-s,Dfensvnes,,qdefnsv,22
 Discipled,d-s-i-p-d,Dsipd,,qdips,22
 Discipling,d-s-i-p-\-h,Dsipg,,qdgips,22
 Disciples,d-s-i-p-s,Dsips,,qdips,22
@@ -6913,6 +6944,7 @@ Articles,a2-t-/-k-s,Atks,,qakst,59
 Welcomed,l-k-m-d,Lkmd,,qdklm,59
 Welcoming,l-k-m-\-h,Lkmg,,qgklm,59
 Welcomes,l-k-m-s,Lkms,,qklms,59
+Vaguely,v-a-g-e,Vage,,qaegv,59
 Exercised,e-s2-r-d,Xrd,,qdrx,59
 Exercising,e-s2-r-\-h,Xrg,,qgrx,59
 Exercises,e-s2-r-s,Xrs,,qrsx,59
@@ -6961,6 +6993,7 @@ Quiets,k-i-t-s,Qits,,qiqst,65
 Sessioned,s-e-sh-d,Sezd,,qdesz,65
 Sessioning,s-e-sh-\-h,Sezg,,qegsz,65
 Sessions,s-e-sh-s,Sezs,,qesz,65
+Truths,t-r-s,Trso,o,qorst,65
 Actioned,a-k-sh-d,Akzd,,qadkz,66
 Actioning,a-k-sh-\-h,Akzg,,qagkz,66
 Actions,a-k-sh-s,Akzs,,qaksz,66
@@ -7068,6 +7101,7 @@ Collections,k-o-l-sh-s,Kolzs,,qklosz,76
 Insignificantly,n-s2-g-e,Nsgeqk,,qegns,76
 Insignificant,n-s2-g,Nsgo,o,qgnos,76
 Owning,o-n-\-h,Ong,,qgno,76
+Only,o-n-l,Onl,,qlno,76
 Recollections,r-e-k-o-l-sh-s,Rkolzs,,qklorsz,76
 Significantly,s2-g-e,Sge,,qegs,76
 Usefully,e-u-f-e,Ufe,,qefu,76
@@ -7833,6 +7867,11 @@ Encryption,n-\-k-\-sh,Nkz,,qknz,234
 Except,s-e-p,Sep,,qeps,236
 Excepted,s-e-p-d,Sepd,,qdeps,236
 Excepting,s-e-p-\-h,Sepg,,qegps,236
+Denied,tn-i-d,Dnid,,qdin,237
+Denying,tn-i-\-h,Dnig,,qdgin,237
+Denial,tn-i-l,Dnil,,qdiln,237
+Denials,tn-i-l-s,Dnils,,qdilns,237
+Denies,tn-i-s,Dnis,,qdins,237
 Tonight,tn-i,Tnio,o,qinot,237
 Reminds,r-e-m-i-n-s,Rmins,,qimnrs,238
 Taking,t-a-k-\-h,Takg,,qagkt,239
@@ -7939,7 +7978,14 @@ Impacts,m-p-a-k-s,Mpaks,,qakmps,293
 Policies,p-o-l-s,Pols,,qlops,293
 Turning,t-e-n-\-h,Teng,,qegnt,293
 Turns,t-e-n-s,Tens,,qenst,293
+Office,o-s,Osi,i,qios,295
+Offices,o-ss,Ossi,i,qios,295
 Resulting,r-s2-u-\-h,Rsug,,qgrsu,295
+Stated,s2-t-d,Stdi,i,qdist,295
+Stating,s2-t-\-h,Stgi,i,qgist,295
+States,s2-t-s,Stsi,i,qist,295
+Vengeful,v-n-j-f,Vnjf,,qfjnv,295
+Vengeance,v-n-j-n-s,Vnjns,,qjnsv,295
 Expireds,e-s-p-i-/-t-s,Xpids,,qdipsx,296
 Afternoons,a-f-n-u-n-s,Afnuns,,qafnsu,297
 Functioned,f-nk-d,Fqd,,qdfq,297
@@ -8818,6 +8864,7 @@ Tower,t-a-u-r,Twr,,qrtw,92256
 Towered,t-a-u-r-d,Twrd,,qdrtw,92256
 Towering,t-a-u-r-\-h,Twrg,,qgrtw,92256
 Towers,t-a-u-r-s,Twrs,,qrstw,92256
+Unexplained,n-e-pl-d,Nepld,,qdelnp,92365
 Redeem,r-tm,Rdm,,qdmr,92527
 Redeemed,r-tm-d,Rdmd,,qdmr,92527
 Redeeming,r-tm-\-h,Rdmg,,qdgmr,92527
@@ -8826,6 +8873,12 @@ Redeemers,r-tm-r-s,Rdmrs,,qdmrs,92527
 Redeems,r-tm-s,Rdms,,qdmrs,92527
 Redemption,r-tm-sh,Rdmz,,qdmrz,92527
 Redemptions,r-tm-sh-s,Rdmzs,,qdmrsz,92527
+Fragile,f-r-a-j,Fraj,,qafjr,92644
+Fragile,f-r-a-j-l,Frajl,,qafjlr,92644
+Fragility,f-r-a-j-\-l,Frajlo,o,qafjlor,92644
+Fragiles,f-r-a-j-l-s,Frajls,,qafjlrs,92644
+Fragility,f-r-a-j-\-l,Frajo,o,qafjor,92644
+Fragiles,f-r-a-j-s,Frajs,,qafjrs,92644
 Pursue,p-r-s-u,Prsu,,qprsu,92842
 Pursued,p-r-s-u-d,Prsud,,qdprsu,92842
 Pursuing,p-r-s-u-\-h,Prsug,,qgprsu,92842
