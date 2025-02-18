@@ -6746,7 +6746,7 @@ Commons,k-mn-s,Kmns,,qkmns,143
 Worth,u-u-th,Uuh,,qhu,143
 Entire,nt-i,Nti,,qint,144
 Situation,s2-e-t-n,Setno,o,qenost,146
-Dispair,d-s-p-a-r,Dspar,,qadprs,147
+Dispair,d-s-p-a-r,Dsparqk,,qadprs,147
 Pair,p-a-r,Paro,o,qaopr,147
 Pairs,p-a-r-s,Pars,,qaprs,147
 Repair,r-p-a-r,Rpar,,qapr,147
@@ -6898,8 +6898,7 @@ Wish,u-sh,Uz,,quz,230
 Wished,u-sh-t,Uzd,,qduz,230
 Usually,u-sh-e,Uze,,qeuz,230
 Method,m-e-th-d,Mehd,,qdehm,231
-Known,n-o-n,Non,,qno,232
-Insecure,n-s2-e-k-r,Nsekro,o,qeknors,232
+Known,n-o-n,Nono,o,qno,232
 Within,e-th-e-n,Ehen,,qehn,234
 Reception,r-s-e-p-sh,Rsepz,,qeprsz,236
 Sip,s-e-p,Sepi,i,qeips,236
@@ -7171,7 +7170,6 @@ Auk,o-k,Oki,i,qiko,514
 Oklahoma,o-k,Oko,o,qko,514
 O.k.,o-k,Oku,u,qkou,514
 Search,s2-e-ch,Seco,o,qceos,519
-Insecurity,n-s2-e-k-/-r,Nsekr,,qeknrs,530
 Best,b-e-s,Bes,,qbes,536
 Publish,p-b,Pb,,qbp,536
 Publishing,p-b-\-h,Pbg,,qbgp,536

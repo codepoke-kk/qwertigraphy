@@ -286,6 +286,7 @@ Bowel,b-a-u-l,Bwl,,qblw,0
 Bowels,b-a-u-l-s,Bwls,,qblsw,0
 Boilerplate,b-o-e-l-r-p,Bylrp,,qblpry,0
 Boilerplates,b-o-e-l-r-p-s,Bylrps,,qblprsy,0
+Retribution,b-sh,Bzu,u,qbuz,0
 Challenger,c-a-l-e-n-j-e2,Calenje,,qacejln,0
 Challengers,c-a-l-e-n-j-e2-s,Calenjes,,qacejlns,0
 Chaser,ch-a-s-r,Casr,,qacrs,0
@@ -385,6 +386,13 @@ Deludes,d-l-u-d-s,Dluds,,qdlsu,0
 Delusions,d-l-u-sh-s,Dluzs,,qdlsuz,0
 Delusionally,d-l-sh-l-e,Dlzle,,qdelz,0
 Dimensionally,tm-e-n-sh-l-e,Dmenzle,,qdelmnz,0
+Dimension,tm-n-sh,Dmnz,,qdmnz,0
+Dimensioned,tm-n-sh-d,Dmnzd,,qdmnz,0
+Dimensioning,tm-n-sh-\-h,Dmnzg,,qdgmnz,0
+Dimensional,tm-n-sh-l,Dmnzl,,qdlmnz,0
+Dimensionally,tm-n-sh-l-e,Dmnzle,,qdelmnz,0
+Dimensionality,tm-n-sh-\-l,Dmnzlo,o,qdlmnoz,0
+Dimensions,tm-n-sh-s,Dmnzs,,qdmnsz,0
 Demobilized,tm-o-bl-i-s-d,Dmoblisd,,qbdilmos,0
 Demobilizing,tm-o-bl-i-s-\-h,Dmoblisg,,qbdgilmos,0
 Demobilizes,tm-o-bl-i-s-s,Dmobliss,,qbdilmos,0
@@ -1194,6 +1202,12 @@ Courtship,k-o-t-sh,Kotz,,qkotz,0
 Courtshipped,k-o-t-sh-d,Kotzd,,qdkotz,0
 Courtshipping,k-o-t-sh-\-h,Kotzg,,qgkotz,0
 Courtships,k-o-t-sh-s,Kotzs,,qkostz,0
+Campaign,k-p-a-n,Kpan,,qaknp,0
+Campaigned,k-p-a-n-d,Kpand,,qadknp,0
+Campaigning,k-p-a-n-\-h,Kpang,,qagknp,0
+Campaigner,k-p-a-n-r,Kpanr,,qaknpr,0
+Campaigners,k-p-a-n-r-s,Kpanrs,,qaknprs,0
+Campaigns,k-p-a-n-s,Kpans,,qaknps,0
 Companionably,k-p-a-n-u-n-b-e,Kpanunbe,,qabeknpu,0
 Compassed,k-p-a-s-d,Kpasd,,qadkps,0
 Compassing,k-p-a-s-\-h,Kpasg,,qagkps,0
@@ -3460,6 +3474,7 @@ Delusion,d-l-u-sh,Dluz,,qdluz,1
 Delusional,d-l-sh-l,Dlzl,,qdlz,1
 Dimensioned,tm-e-n-sh-d,Dmenzd,,qdemnz,1
 Dimensional,tm-e-n-sh-l,Dmenzl,,qdelmnz,1
+Dimensionality,tm-e-n-sh-\-l,Dmenzlo,o,qdelmnoz,1
 Dimensions,tm-e-n-sh-s,Dmenzs,,qdemnsz,1
 Dent,tn-t,Dnto,o,qdnot,1
 Deposition,d-p-o-sh,Dpoz,,qdopz,1
@@ -6375,6 +6390,12 @@ Conditioned,k-d-sh-d,Kdzd,,qdkz,28
 Conditioning,k-d-sh-\-h,Kdzg,,qdgkz,28
 Conditional,k-d-sh-l,Kdzl,,qdklz,28
 Conditions,k-d-sh-s,Kdzs,,qdksz,28
+Kingdom,k-e-ng-tm,Kedgm,,qdegkm,28
+Kingdomed,k-e-ng-tm-d,Kedgmd,,qdegkm,28
+Kingdoming,k-e-ng-tm-\-h,Kedgmg,,qdegkm,28
+Kingdoms,k-e-ng-tm-s,Kedgms,,qdegkms,28
+Kingdomed,k-e-ng-tm-d,Kegdmd,,qdegkm,28
+Kingdoming,k-e-ng-tm-\-h,Kegdmg,,qdegkm,28
 Kingdoms,k-e-ng-tm-s,Kegdms,,qdegkms,28
 Unconditional,n-k-d-sh-l,Nkdzl,,qdklnz,28
 Intermediates,n-/-m-e-d-s,Nmeds,,qdemns,28
@@ -7152,6 +7173,8 @@ Released,r-e-l-e-s-d,Rlesd,,qdelrs,81
 Releasing,r-e-l-e-s-\-h,Rlesg,,qeglrs,81
 Releases,r-e-l-e-s-s,Rless,,qelrs,81
 Realization,r-e-l-e-s-a-sh,Rlesz,,qelrsz,81
+Realization,r-e-l-i-s-a-sh,Rlisz,,qilrsz,81
+Realizations,r-e-l-i-s-a-sh-s,Rliszs,,qilrsz,81
 Supported,s-/-td,Std,,qdst,81
 Charged,ch-j-d,Cjd,,qcdj,83
 Charging,ch-j-\-h,Cjg,,qcgj,83
@@ -7865,6 +7888,10 @@ Optioned,o-p-sh-d,Opzd,,qdopz,231
 Optioning,o-p-sh-\-h,Opzg,,qgopz,231
 Optional,o-p-sh-l,Opzl,,qlopz,231
 Options,o-p-sh-s,Opzs,,qopsz,231
+Despair,d-s-p-a-r,Dspar,,qadprs,232
+Despaired,d-s-p-a-r-d,Dspard,,qadprs,232
+Despairing,d-s-p-a-r-\-h,Dsparg,,qadgprs,232
+Despairs,d-s-p-a-r-s,Dspars,,qadprs,232
 Match,m-a-ch,Mac,,qacm,232
 Matched,m-a-ch-d,Macd,,qacdm,232
 Marched,m-a-ch-d,Macdo,o,qacdmo,232
@@ -7875,8 +7902,8 @@ Matches,m-a-ch-s,Macs,,qacms,232
 Marches,m-a-ch-s,Macso,o,qacmos,232
 Unmatched,n-m-a-ch-d,Nmacd,,qacdmn,232
 Internet,n-/-nt,Nnt,,qnt,232
-Known,n-o-n,Nono,o,qno,232
 Non,n-o-n,Nonu,u,qnou,232
+Insecure,n-s2-e-k-r,Nsekr,,qeknrs,232
 Secure,s2-e-k-r,Sekr,,qekrs,232
 Secured,s2-e-k-r-d,Sekrd,,qdekrs,232
 Securely,s2-e-k-r-e,Sekre,,qekrs,232
@@ -8299,6 +8326,7 @@ Searching,s2-e-ch-\-h,Secg,,qcegs,519
 Searches,s2-e-ch-s,Secs,,qces,519
 Balancer,b-a-l-r,Balr,,qablr,522
 Balancers,b-a-l-r-s,Balrs,,qablrs,522
+Insecurity,n-s2-e-k-/-r,Nsekro,o,qeknors,530
 Insecurities,n-s2-e-k-/-r-s,Nsekrs,,qeknrs,530
 Security,s2-e-k-/-r,Sekro,o,qekors,530
 Publicly,p-b-e,Pbe,,qbep,536
