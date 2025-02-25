@@ -7,7 +7,7 @@ class AuxKeyboardEngine
 {
     logQueue := new Queue("AuxEngineQueue")
     logVerbosity := 4
-    enabled := true
+    enabled := false
     dashboard := ""
 
     __New() {
@@ -24,7 +24,7 @@ class AuxKeyboardEngine
         this.keysdown := 0
         this.lastkey := ""
         this.lastkeycount := 0
-        this.enabled := true
+        this.enabled := false
         this.layer := ""
         this.layerlocked := ""
         this.caplocked := ""
