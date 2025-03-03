@@ -4219,7 +4219,7 @@ Your inquiry,u-n-k-i,Unqi,,qinqu,0
 One of our,u-n-r,Unr,,qnru,0
 Once in a while,u-n-s-i,Unsi,,qinsu,0
 Oneself,u-n-ss,Unss,,qnsu,0
-You want,u-nt,Unt,,qntu,0
+You want,u-nt,Untqk,,qntu,0
 Huntington,u-nt-/-tn,Unttn,,qntu,0
 One or two,u-n-t-u,Untu,,qntu,0
 One another,u-n-u-th,Unuh,,qhnu,0
@@ -5695,8 +5695,8 @@ Animal,a-n-e-m,Anem,,qaemn,11
 Brush,br-sh,Brz,,qbrz,11
 Dell,d-e-l,Delo,o,qdelo,11
 Dill,d-e-l,Delu,u,qdelu,11
-Dilution,d-e-l-sh,Delz,,qdelz,11
 Delegation,d-e-l-sh,Delzo,o,qdeloz,11
+Dilution,d-e-l-sh,Delzqk,,qdelz,11
 Drove,d-r-o-v,Drov,,qdorv,11
 Thread,th-r-e-d,Hred,,qdehr,11
 Gentlemen,jnt,Jnt,,qjnt,11
@@ -6986,7 +6986,6 @@ True,t-r-u,Tru,,qrtu,288
 Truly,t-r-u-e,Trueo,o,qeortu,288
 Event,e-v-nt,Evnt,,qentv,289
 Prevent,pr-e-v-nt,Prevnt,,qenprtv,289
-Prevented,pr-e-v-nt-d,Prevntd,,qdenprtv,289
 Easier,e-s-e-r,Eser,,qers,292
 Policy,p-o-l,Pol,,qlop,293
 Pole,p-o-l,Polqk,,qlop,293
