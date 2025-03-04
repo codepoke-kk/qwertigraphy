@@ -187,3 +187,4 @@ ExitFunc(ExitReason, ExitCode)
 f10::
     WinMove,A,,3,3,1690,1000
     Return 
+Insert::Backspace
