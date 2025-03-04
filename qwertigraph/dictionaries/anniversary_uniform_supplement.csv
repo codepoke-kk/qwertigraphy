@@ -319,7 +319,7 @@ Dedications,td-e-k-a-sh-s,Ddekzs,,qdeksz,0
 Degraded,d-e-g-r-a-d,Degrad,,qadegr,0
 Degrading,d-e-g-r-a-\-h,Degrag,,qadegr,0
 Degrades,d-e-g-r-a-s,Degras,,qadegrs,0
-Dealings,d-e2-/-h-s,Dehs,,qdehs,0
+Dealings,d-e2-/-h-s,Dehsqk,,qdehs,0
 Digitally,d-e-j-t-l-e,Dejtle,,qdejlt,0
 Decoct,d-e-k-k,Dekk,,qdek,0
 Decocted,d-e-k-k-d,Dekkd,,qdek,0
@@ -337,6 +337,7 @@ Dictated,d-e-k-t-a-d,Dektad,,qadekt,0
 Dictating,d-e-k-t-a-\-h,Dektag,,qadegkt,0
 Dictatorially,d-e-k-t-a-/-r-ye,Dektary,,qadekrty,0
 Dictates,d-e-k-t-a-s,Dektas,,qadekst,0
+Dealings,d-e2-/-h-s,Delz,,qdelz,0
 Declarations,d-e-/-r-a-sh-s,Derzs,,qdersz,0
 Deficits,df-e-s2-e-t-s,Dfesets,,qdefst,0
 Definably,df-i-n-b-e,Dfinbe,,qbdefin,0
@@ -579,6 +580,9 @@ Dividing,df-i-d-\-h,Dvidg,,qdgiv,0
 Divides,df-i-d-s,Dvids,,qdisv,0
 Devil,df-l,Dvlo,o,qdlov,0
 Devils,df-l-s,Dvlso,o,qdlosv,0
+Devolved,df-o-l-d,Dvold,,qdlov,0
+Devolving,df-o-l-\-h,Dvolg,,qdglov,0
+Devolves,df-o-l-s,Dvols,,qdlosv,0
 Disagreeablely,dya-b-e,Dyabe,,qabdey,0
 Idiosyncrasies,e-d-o-s2-e-nk-s,Edoseqs,,qdeoqs,0
 Editors,e-td-e2-s,Edtes,,qdest,0
@@ -1295,6 +1299,8 @@ Computerizes,k-p-u-/-r-i-s-s,Kpuriss,,qikprsu,0
 Computational,k-p-u-sh-l,Kpuzl,,qklpuz,0
 Computationally,k-p-u-sh-l-e,Kpuzle,,qeklpuz,0
 Computations,k-p-u-sh-s,Kpuzs,,qkpsuz,0
+Conquest,k-k-e-s,Kqes,,qekqs,0
+Conquests,k-k-e-s-s,Kqess,,qekqs,0
 Critics,k-r-/-a-s,Kras,,qakrs,0
 Cryptic,k-r-e-p-t-k,Kreptk,,qekprt,0
 Christianize,k-r-e-s-ch-i-s,Krescis,,qceikrs,0
@@ -1861,6 +1867,13 @@ Nonetheless,n-u-n-th-l,Nunhl,,qhlnu,0
 Neurological,n-u-r-/-k,Nurk,,qknru,0
 Neurologically,n-u-r-/-k-e,Nurke,,qeknru,0
 In the usual manner,n-u-sh-mn-e2,Nuzmne,,qemnuz,0
+Invade,n-v-a-d,Nvad,,qadnv,0
+Invaded,n-v-a-d-d,Nvadd,,qadnv,0
+Invading,n-v-a-d-\-h,Nvadg,,qadgnv,0
+Invades,n-v-a-d-s,Nvads,,qadnsv,0
+Invadion,n-v-a-d-sh,Nvadz,,qadnvz,0
+Invasion,n-v-a-sh,Nvaz,,qanvz,0
+Invasions,n-v-a-sh-s,Nvazs,,qansvz,0
 Intervene,^-n-\-v-e-n,Nven,,qenv,0
 Intervened,^-n-\-v-e-n-d,Nvend,,qdenv,0
 Intervening,^-n-\-v-e-n-\-h,Nveng,,qegnv,0
@@ -2382,6 +2395,7 @@ Quarantines,k-\-n-^-o-r-a-nt-s,Qorants,,qanoqrst,0
 Quotidian,k-w-o-td-ea-n,Qotden,,qdenoqt,0
 Quotations,k-w-o-t-sh-s,Qotzs,,qoqstz,0
 Quotient,k-o-sh-t-\-\-\-~-~-n-~-~,Qoztn,,qnoqtz,0
+Conquests,k-k-e-s-s,Qqess,,qeqs,0
 Consequentially,k-s2-e-k-sh-e,Qseqze,,qeqsz,0
 Quantity,k-~-t,Qt,,qqt,0
 Qualitative,k-u-df,Qutv,,qqtuv,0
@@ -3739,6 +3753,7 @@ Misunderstandings,m-s-/-s2-tn-\-h-s,Msstnz,,qmnstz,1
 Misunderstandings,m-s-/-s2-t-\-h-s,Msstz,,qmstz,1
 Mover,m-u-r,Mur,,qmru,1
 Movers,m-u-r-s,Murs,,qmrsu,1
+Narrate,n-a-r-a,Nara,,qanr,1
 Narrated,n-a-r-a-d,Narado,o,qadnor,1
 Narrating,n-a-r-a-\-h,Narag,,qagnr,1
 Narrates,n-a-r-a-s,Naras,,qanrs,1
@@ -4690,6 +4705,8 @@ Propositions,pr-p-o-sh-s,Prpozs,,qoprsz,3
 Poisoned,p-o-e-s2-n-d,Pysnd,,qdnpsy,3
 Poisoning,p-o-e-s2-n-\-h,Pysng,,qgnpsy,3
 Poisons,p-o-e-s2-n-s,Pysns,,qnpsy,3
+Poisonous,p-o-e-s2-n-u-s,Pysnus,,qnpsuy,3
+Poisonously,p-o-e-s2-n-u-s-e,Pysnuse,,qenpsuy,3
 Qualifying,k-o-f-\-h,Qofg,,qfgoq,3
 Rout,r-a-o-t,Raot,,qaort,3
 Routs,r-a-o-t-s,Raots,,qaorst,3
@@ -5130,8 +5147,10 @@ Waked,u-a-k-d,Uakd,,qadku,5
 Waking,u-a-k-\-h,Uakg,,qagku,5
 Wakes,u-a-k-s,Uaks,,qaksu,5
 United,e-u-n-i-/-t,Unid,,qdinu,5
-Unity,e-u-\-nt,Unto,o,qnotu,5
+Unity,e-u-\-nt,Unt,,qntu,5
 Upright,u-p-r-i,Upri,,qipru,5
+Outcry,au-k-r-i,Wkri,,qikrw,5
+Outcries,au-k-r-i-s,Wkris,,qikrsw,5
 Excluded,e-s-/-d-d,Xdd,,qdx,5
 Excluding,e-s-/-d-\-h,Xdg,,qdgx,5
 Excludes,e-s-/-d-s,Xds,,qdsx,5
@@ -5405,6 +5424,10 @@ Sequence,s-e-k-\-n-^-e-n-s,Seqens,,qenqs,7
 Sequenced,s-e-k-\-n-^-e-n-s-d,Seqensd,,qdenqs,7
 Sequencing,s-e-k-\-n-^-e-n-s-\-h,Seqensg,,qegnqs,7
 Sequences,s-e-k-\-n-^-e-n-s-s,Seqenss,,qenqs,7
+Sequence,s-e-k-\-n-^-e-n-s,Seqns,,qenqs,7
+Sequenced,s-e-k-\-n-^-e-n-s-d,Seqnsd,,qdenqs,7
+Sequencing,s-e-k-\-n-^-e-n-s-\-h,Seqnsg,,qegnqs,7
+Sequences,s-e-k-\-n-^-e-n-s-s,Seqnss,,qenqs,7
 Cycle,s-i-k-l,Sikl,,qikls,7
 Cycled,s-i-k-l-d,Sikld,,qdikls,7
 Cycling,s-i-k-l-\-h,Siklg,,qgikls,7
@@ -6853,6 +6876,7 @@ Formidables,f-m-e-d-b-s,Fmedbs,,qbdefms,44
 Guided,g-i-d-d,Gidd,,qdgi,44
 Guiding,g-i-d-\-h,Gidg,,qdgi,44
 Guides,g-i-d-s,Gids,,qdgis,44
+Throughout,th-r-a-u,Hrw,,qhrw,44
 Memorable,m-m-r-b,Mmrb,,qbmr,44
 Memorably,m-m-r-b-e,Mmrbe,,qbemr,44
 Nuisances,n-u-s2-n-s-s,Nusnss,,qnsu,44
@@ -6865,6 +6889,7 @@ Spended,s-jnt-d,Spndd,,qdnps,44
 Spending,s-jnt-\-h,Spndg,,qdgnps,44
 Spends,s-jnt-s,Spnds,,qdnps,44
 Spent,s-jnt-t,Spndt,,qdnpst,44
+Tuberculosis,t-u-b-r-k-ss,Tubrkss,,qbkrstu,44
 Batch,b-a-ch,Bac,,qabc,45
 Batched,b-a-ch-d,Bacd,,qabcd,45
 Batching,b-a-ch-\-h,Bacg,,qabcg,45
@@ -7272,6 +7297,7 @@ Attackable,a-t-a-k-b,Atakb,,qabkt,89
 Attacked,a-t-a-k-d,Atakd,,qadkt,89
 Attacking,a-t-a-k-\-h,Atakg,,qagkt,89
 Attacks,a-t-a-k-s,Ataks,,qakst,89
+Deaths,d-e-th-s,Dehs,,qdehs,89
 Handled,^-h-\-nt-l-d,Hndld,,qdhln,89
 Handling,^-h-\-nt-l-\-h,Hndlg,,qdghln,89
 Handles,^-h-\-nt-l-s,Hndls,,qdhlns,89
@@ -7670,6 +7696,11 @@ Originals,o-r-e-j-s,Orejs,,qejors,156
 Saving,s2-a-v-\-h,Savg,,qagsv,156
 Saves,s2-a-v-s,Savs,,qasv,156
 Standing,s2-tn-\-h,Sdng,,qdgns,156
+Untouch,n-t-ch,Ntc,,qcnt,158
+Untouchable,n-t-ch-b,Ntcb,,qbcnt,158
+Untouchably,n-t-ch-b-e,Ntcbe,,qbcent,158
+Untouchability,n-t-ch-\-b,Ntcbo,,qbcnot,158
+Untouched,n-t-ch-d,Ntcd,,qcdnt,158
 Touches,t-ch-s,Tcs,,qcst,158
 Capture,k-a-p-t-r,Kaptr,,qakprt,159
 Captured,k-a-p-t-r-d,Kaptrd,,qadkprt,159
@@ -8064,6 +8095,11 @@ Speaks,s-p-s,Sps,,qps,285
 Safes,s2-a-f-s,Safs,,qafs,287
 Eventual,e-v-nt-l,Evntl,,qelntv,289
 Eventuality,e-v-nt-\-l,Evntlo,o,qelnotv,289
+Prevented,pr-e-v-nt-d,Prevntd,,qdenprtv,289
+Preventing,pr-e-v-nt-\-h,Prevntg,,qegnprtv,289
+Prevents,pr-e-v-nt-s,Prevnts,,qenprstv,289
+Prevention,pr-e-v-nt-sh,Prevnz,,qenprvz,289
+Preventions,pr-e-v-nt-sh-s,Prevnzs,,qenprsvz,289
 Impact,m-p-a-k,Mpak,,qakmp,293
 Impacted,m-p-a-k-d,Mpakd,,qadkmp,293
 Impacting,m-p-a-k-\-h,Mpakg,,qagkmp,293
@@ -8946,6 +8982,11 @@ Inclining,n-k-l-i-n-\-h,Nkling,,qgikln,91109
 Inclines,n-k-l-i-n-s,Nklins,,qiklns,91109
 Inclination,n-k-l-i-n-sh,Nklinz,,qiklnz,91109
 Inclinations,n-k-l-i-n-sh-s,Nklinzs,,qiklnsz,91109
+Region,r-j-n,Rjn,,qjnr,91191
+Regional,r-j-n-l,Rjnl,,qjlnr,91191
+Regionally,r-j-n-l-e,Rjnle,,qejlnr,91191
+Regionals,r-j-n-l-s,Rjnls,,qjlnrs,91191
+Regions,r-j-n-s,Rjns,,qjnrs,91191
 Forego,f-g,Fg,,qfg,91271
 Foregoing,f-g-\-h,Fgg,,qfg,91271
 Foregoes,f-g-s,Fgs,,qfgs,91271
