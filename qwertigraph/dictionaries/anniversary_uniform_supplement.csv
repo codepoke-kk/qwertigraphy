@@ -3754,6 +3754,7 @@ Individualize,nt-v-i-s,Ndvis,,qdinsv,1
 Individualized,nt-v-i-s-d,Ndvisd,,qdinsv,1
 Individualizing,nt-v-i-s-\-h,Ndvisg,,qdginsv,1
 Individualizes,nt-v-i-s-s,Ndviss,,qdinsv,1
+Undoubtedly,n-d-a-u-/-t-e,Ndwde,,qdenw,1
 Needful,n-e-d-f,Nedf,,qdefn,1
 Needfully,n-e-d-f-e,Nedfe,,qdefn,1
 Neglected,n-e-g-d,Negd,,qdegn,1
@@ -7948,6 +7949,11 @@ Encrypted,n-\-k-d,Nkd,,qdkn,234
 Encrypting,n-\-k-\-h,Nkg,,qgkn,234
 Encrypts,n-\-k-s,Nks,,qkns,234
 Encryption,n-\-k-\-sh,Nkz,,qknz,234
+Reencrypt,r-n-\-k,Rnk,,qknr,234
+Reencrypted,r-n-\-k-d,Rnkd,,qdknr,234
+Reencrypting,r-n-\-k-\-h,Rnkg,,qgknr,234
+Reencrypts,r-n-\-k-s,Rnks,,qknrs,234
+Reencryption,r-n-\-k-sh,Rnkz,,qknrz,234
 Except,s-e-p,Sep,,qeps,236
 Excepted,s-e-p-d,Sepd,,qdeps,236
 Excepting,s-e-p-\-h,Sepg,,qegps,236
