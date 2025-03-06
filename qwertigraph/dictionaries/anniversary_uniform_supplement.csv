@@ -1660,6 +1660,8 @@ Indian,nt-ea-n,Nden,,qden,0
 Indicted,nt-i-t-d,Nditd,,qdint,0
 Indicting,nt-i-t-\-h,Nditg,,qdgint,0
 Indicts,nt-i-t-s,Ndits,,qdinst,0
+Indentation,n-tn-sh,Ndnz,,qdnz,0
+Indentations,n-tn-sh-s,Ndnzs,,qdnsz,0
 Undesirables,n-d-s-b-s,Ndsbs,,qbdns,0
 Indecisions,nt-s-e-sh-s,Ndsezs,,qdensz,0
 Indecipherable,n-d-s2-i-f-b,Ndsifb,,qbdfins,0
@@ -3764,6 +3766,9 @@ Indications,nt-e-k-sh-s,Ndekzs,,qdeknsz,1
 Indexer,nt-e-x-r,Ndexr,,qdenrx,1
 Indexers,nt-e-x-r-s,Ndexrs,,qdenrsx,1
 Indent,n-tn-t,Ndnt,,qdnt,1
+Indented,n-tn-t-d,Ndntd,,qdnt,1
+Indenting,n-tn-t-\-h,Ndntg,,qdgnt,1
+Indents,n-tn-t-s,Ndnts,,qdnst,1
 Introductions,n-/-d-u-k-s,Nduks,,qdknsu,1
 Individualize,nt-v-i-s,Ndvis,,qdinsv,1
 Individualized,nt-v-i-s-d,Ndvisd,,qdinsv,1
@@ -4713,6 +4718,12 @@ Routs,r-a-o-t-s,Raots,,qaorst,3
 Rated,r-a-t-d,Ratd,,qadrt,3
 Rating,r-a-t-\-h,Ratg,,qagrt,3
 Religiously,r-e-l-e-j-u-s-e,Rlejuse,,qejlrsu,3
+Remap,r-m-a-p,Rmap,,qampr,3
+Remapped,r-m-a-p-d,Rmapd,,qadmpr,3
+Remapping,r-m-a-p-\-h,Rmapg,,qagmpr,3
+Remappings,r-m-a-p-\-h-s,Rmapgs,,qagmprs,3
+Remaps,r-m-a-p-s,Rmaps,,qamprs,3
+Remappings,r-m-a-p-\-h-s,Rmapz,,qamprz,3
 Reminder,r-e-m-i-n-r,Rminr,,qimnr,3
 Reminders,r-e-m-i-n-r-s,Rminrs,,qimnrs,3
 Remains,r-e-mn-s,Rmns,,qmnrs,3
@@ -5447,6 +5458,7 @@ Trillion,t-r-e-l-n,Treln,,qelnrt,7
 Trillionaire,t-r-e-l-n-a2,Trelna,,qaelnrt,7
 Trillionaires,t-r-e-l-n-a2-s,Trelnas,,qaelnrst,7
 Trillions,t-r-e-l-n-s,Trelns,,qelnrst,7
+Unneeded,u-n-e-td,Unedd,,qdeno,7
 Washing,u-o-sh-\-h,Uozg,,qgouz,7
 Washes,u-o-sh-s,Uozs,,qosuz,7
 Utilities,e-u-t-\-l-s,Utls,,qlstu,7
@@ -7021,6 +7033,10 @@ Aligns,a-l-i-n-s,Alins,,qailns,58
 Directors,d-r-k-/-r-s,Drkrs,,qdkrs,58
 Redirector,r-e-d-r-k-/-r,Rdrkr,,qdkr,58
 Redirectors,r-e-d-r-k-/-r-s,Rdrkrs,,qdkrs,58
+Strengthen,s2-t-r-n,Strn,,qnrst,58
+Strengthened,s2-t-r-n-d,Strnd,,qdnrst,58
+Strengthening,s2-t-r-n-\-h,Strng,,qgnrst,58
+Strengthens,s2-t-r-n-s,Strns,,qnrst,58
 Articles,a2-t-/-k-s,Atks,,qakst,59
 Welcomed,l-k-m-d,Lkmd,,qdklm,59
 Welcoming,l-k-m-\-h,Lkmg,,qgklm,59
