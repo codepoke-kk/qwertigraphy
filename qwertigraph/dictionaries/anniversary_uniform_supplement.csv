@@ -6636,6 +6636,9 @@ Contractor,k-/-k-r,Kkr,,qkr,33
 Contractors,k-/-k-r-s,Kkrs,,qkrs,33
 Covered,k-v-d,Kvd,,qdkv,33
 Covering,k-v-\-h,Kvg,,qgkv,33
+Conventional,k-v-n-sh-l,Kvnzl,,qklnvz,33
+Conventionally,k-v-n-sh-l-e,Kvnzle,,qeklnvz,33
+Conventions,k-v-n-sh-s,Kvnzs,,qknsvz,33
 Covers,k-v-s,Kvs,,qksv,33
 Proving,pr-v-\-h,Prvg,,qgprv,33
 Reaching,r-e-ch-\-h,Rcg,,qcgr,33
@@ -6643,6 +6646,10 @@ Recoverable,r-e-k-v-b,Rkvb,,qbkrv,33
 Recovered,r-e-k-v-d,Rkvd,,qdkrv,33
 Recovering,r-e-k-v-\-h,Rkvg,,qgkrv,33
 Recovers,r-e-k-v-s,Rkvs,,qkrsv,33
+Reprieve,r-p-r-e-v,Rprev,,qeprv,33
+Reprieved,r-p-r-e-v-d,Rprevd,,qdeprv,33
+Reprieving,r-p-r-e-v-\-h,Rprevg,,qegprv,33
+Reprieves,r-p-r-e-v-s,Rprevs,,qeprsv,33
 Staged,s2-t-a-j-d,Stajd,,qadjst,33
 Staging,s2-t-a-j-\-h,Stajg,,qagjst,33
 Stages,s2-t-a-j-s,Stajs,,qajst,33
@@ -8523,6 +8530,8 @@ Serviced,^-s2-d,Sdo,o,qdos,638
 Servicing,^-s2-\-h,Sgo,o,qgos,638
 Placed,pl-a-s-d,Plasd,,qadlps,639
 Placing,pl-a-s-\-h,Plasg,,qaglps,639
+Placement,pl-a-s-m,Plasm,,qalmps,639
+Placements,pl-a-s-m-s,Plasms,,qalmps,639
 Placeholder,pl-a-s-o-ld-r,Plasoldr,,qadloprs,639
 Placeholders,pl-a-s-o-ld-r-s,Plasoldrs,,qadloprs,639
 Places,pl-a-s-s,Plass,,qalps,639
