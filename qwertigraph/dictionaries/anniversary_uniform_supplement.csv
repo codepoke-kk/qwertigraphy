@@ -350,6 +350,8 @@ Difficulties,df-k-e-s,Dfkes,,qdefks,0
 Defecations,df-k-a-sh-s,Dfkzs,,qdfksz,0
 Deflatedly,dfl-a-d-e,Dflade,,qadefl,0
 Deflations,dfl-a-sh-s,Dflzs,,qdflsz,0
+Defendant,df-nt-t,Dfndt,,qdfnt,0
+Defendants,df-nt-t-s,Dfndts,,qdfnst,0
 Diagrammatic,d-i-\-g-\-a,Diga,,qadgi,0
 Diagnoses,d-i-g-n-o-s-e-s,Dignoses,,qdeginos,0
 Diagnostician,d-i-g-n-o-s-t-sh,Dignostz,,qdginostz,0
@@ -2537,7 +2539,7 @@ Rotationally,r-o-t-a-sh-l-e,Rotzle,,qelortz,0
 Rotations,r-o-t-a-sh-s,Rotzs,,qorstz,0
 Responsibilities,r-p-\-b-s,Rpbs,,qbprs,0
 Replying,r-e-p-\-h,Rpg,,qgpr,0
-Replying,r-e-p-\-h,Rpgo,o,qgopr,0
+Replying,r-e-p-\-h,Rpgoqk,o,qgopr,0
 Replica,r-e-pl-k-a,Rplka,,qaklpr,0
 Replicas,r-e-pl-k-a-s,Rplkas,,qaklprs,0
 Replications,r-e-pl-k-a-sh-s,Rplkzs,,qklprsz,0
@@ -4129,6 +4131,7 @@ Utilizable,e-u-t-l-i-s-b,Utlisb,,qbilstu,1
 Utilized,e-u-t-l-i-s-d,Utlisd,,qdilstu,1
 Utilizing,e-u-t-l-i-s-\-h,Utlisg,,qgilstu,1
 Utilizes,e-u-t-l-i-s-s,Utliss,,qilstu,1
+Worthlessly,u-u-th-l-e,Uuhle,,qehlu,1
 Vigilance,v-e-j-l-a-n-s,Vejlans,,qaejlnsv,1
 Outgrew,a-u-g-r-u,Wgru,,qgruw,1
 Outnumber,au-n-u-m,Wnum,,qmnuw,1
@@ -5350,6 +5353,11 @@ Challenge,c-a-l-e-n-j,Calenj,,qacejln,7
 Challenged,c-a-l-e-n-j-d,Calenjd,,qacdejln,7
 Challenging,c-a-l-e-n-j-\-h,Calenjg,,qacegjln,7
 Challenges,c-a-l-e-n-j-s,Calenjs,,qacejlns,7
+Defended,df-nt-d,Dfndd,,qdfn,7
+Defending,df-nt-\-h,Dfndg,,qdfgn,7
+Defender,df-nt-r,Dfndr,,qdfnr,7
+Defenders,df-nt-r-s,Dfndrs,,qdfnrs,7
+Defends,df-nt-s,Dfnds,,qdfns,7
 Disappearance,d-s-a-pr-n-s,Dsaprns,,qadnprs,7
 Disappearances,d-s-a-pr-n-s-s,Dsaprnss,,qadnprs,7
 Dysfunction,d-s-f-nk,Dsfq,,qdfqs,7
@@ -6472,6 +6480,7 @@ Presenting,pr-\-h,Prgi,i,qgipr,28
 Reconditioned,r-k-d-sh-d,Rkdzd,,qdkrz,28
 Reconditioning,r-k-d-sh-\-h,Rkdzg,,qdgkrz,28
 Reconditions,r-k-d-sh-s,Rkdzs,,qdkrsz,28
+Representing,r-p-g,Rpgo,o,qgopr,28
 Secreted,s2-e-k-r-e-t-d,Sekretd,,qdekrst,28
 Secreting,s2-e-k-r-e-t-\-h,Sekretg,,qegkrst,28
 Secrets,s2-e-k-r-e-t-s,Sekrets,,qekrst,28
@@ -7885,6 +7894,9 @@ Scanner,s-k-a-n-r,Skanr,,qaknrs,200
 Scanners,s-k-a-n-r-s,Skanrs,,qaknrs,200
 Extras,e-ss,Xso,o,qosx,200
 Existences,e-ss-s,Xss,,qsx,200
+Bottomed,b-o-tm-d,Botmd,,qbdmot,202
+Bottoming,b-o-tm-\-h,Botmg,,qbgmot,202
+Bottoms,b-o-tm-s,Botms,,qbmost,202
 Picking,p-e-k-\-h,Pekg,,qegkp,202
 Picks,p-e-k-s,Peks,,qekps,202
 Christianity,k-r-e-s-ch-/-nt,Krescnt,,qceknrst,203
@@ -8076,7 +8088,10 @@ Directory,d-r-k-/-r-e,Drkre,,qdekr,268
 Directories,d-r-k-/-r-e-s,Drkres,,qdekrs,268
 Routing,r-u-t-\-h,Rutg,,qgrtu,268
 Routes,r-u-t-s,Rutso,o,qorstu,268
+Caterpillar,k-a-t-pl-r,Katplr,,qaklprt,272
+Caterpillars,k-a-t-pl-r-s,Katplrs,,qaklprst,272
 Click,k-l-e-k,Klek,,qekl,272
+Clicked,k-l-e-k-d,Klekd,,qdekl,272
 Clicking,k-l-e-k-\-h,Klekg,,qegkl,272
 Clicks,k-l-e-k-s,Kleks,,qekls,272
 Reviewed,r-v-e-u-d,Rvud,,qdruv,272
@@ -8884,6 +8899,10 @@ Renames,r-e-n-a-s,Rnas,,qanrs,2992
 Server,s2-e-v-r,Sevr,,qersv,2998
 Servers,s2-e-v-r-s,Sevrs,,qersv,2998
 Backs,b-a-k-s,Baks,,qabks,3030
+Backspace,b-a-k-s-p,Baksp,,qabkps,3030
+Backspaced,b-a-k-s-p-d,Bakspd,,qabdkps,3030
+Backspacing,b-a-k-s-p-\-h,Bakspg,,qabgkps,3030
+Backspaces,b-a-k-s-p-s,Baksps,,qabkps,3030
 Resume,r-s2-m,Rsm,,qmrs,3114
 Resumable,r-s2-m-b,Rsmb,,qbmrs,3114
 Resumed,r-s2-m-d,Rsmd,,qdmrs,3114
@@ -9050,6 +9069,10 @@ Fragility,f-r-a-j-\-l,Frajlo,o,qafjlor,92644
 Fragiles,f-r-a-j-l-s,Frajls,,qafjlrs,92644
 Fragility,f-r-a-j-\-l,Frajo,o,qafjor,92644
 Fragiles,f-r-a-j-s,Frajs,,qafjrs,92644
+Hatch,^-h-\-a-ch,Hac,,qach,92650
+Hatched,^-h-\-a-ch-d,Hacd,,qacdh,92650
+Hatching,^-h-\-a-ch-\-h,Hacg,,qacgh,92650
+Hatches,^-h-\-a-ch-s,Hacs,,qachs,92650
 Pursue,p-r-s-u,Prsu,,qprsu,92842
 Pursued,p-r-s-u-d,Prsud,,qdprsu,92842
 Pursuing,p-r-s-u-\-h,Prsug,,qgprsu,92842
