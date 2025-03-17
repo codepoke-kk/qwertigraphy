@@ -601,6 +601,8 @@ Eliminating,e-l-e-mn-a-t-\-h,Elemnatg,,qaeglmnt,0
 Eliminates,e-l-e-mn-a-t-s,Elemnats,,qaelmnst,0
 Eliminations,e-l-e-mn-sh-s,Elemnzs,,qelmnsz,0
 Elementaries,e-l-e-m-r-e-s,Elemres,,qelmrs,0
+Electronic,e-l-/-n-k,Elnk,,qekln,0
+Electronics,e-l-/-n-k-s,Elnks,,qeklns,0
 Illogic,e-l-o-j-k,Elojk,,qejklo,0
 Illogical,e-l-o-j-/-k,Elojko,o,qejklo,0
 Elevations,e2-l-v-a-t-sh-s,Elvatzs,,qaelstvz,0
@@ -1093,6 +1095,11 @@ Castle,k-a-s-l,Kasl,,qakls,0
 Castled,k-a-s-l-d,Kasld,,qadkls,0
 Castling,k-a-s-l-\-h,Kaslg,,qagkls,0
 Castles,k-a-s-l-s,Kasls,,qakls,0
+Categorize,k-a-t-e-g-i-s,Kategis,,qaegikst,0
+Categorized,k-a-t-e-g-i-s-d,Kategisd,,qadegikst,0
+Categorizing,k-a-t-e-g-i-s-\-h,Kategisg,,qaegikst,0
+Categorizes,k-a-t-e-g-i-s-s,Kategiss,,qaegikst,0
+Categories,k-a-t-e-g-s,Kategs,,qaegkst,0
 Counterbalanced,k-/-b-a-l-d,Kbald,,qabdkl,0
 Combinations,k-b-n-sh-s,Kbnzs,,qbknsz,0
 Condemned,k-tm-d,Kdmd,,qdkm,0
@@ -2771,7 +2778,9 @@ Scantily,s-k-a-n-t-ye,Skanty,,qaknsty,0
 Scheduler,s2-k-e-d-l-r,Skedlr,,qdeklrs,0
 Schedulers,s2-k-e-d-l-r-s,Skedlrs,,qdeklrs,0
 Schooler,s2-k-l-r,Sklr,,qklrs,0
+Schooler,s2-k-l-r,Sklro,o,qklors,0
 Schoolers,s2-k-l-r-s,Sklrs,,qklrs,0
+Schoolers,s2-k-l-r-s,Sklrso,o,qklors,0
 Scroll,s-k-r-o-l,Skrol,,qklors,0
 Scrollable,s-k-r-o-l-b,Skrolb,,qbklors,0
 Scrolled,s-k-r-o-l-d,Skrold,,qdklors,0
@@ -5812,6 +5821,10 @@ Cheat,c-e-t,Cet,,qcet,12
 Cheated,c-e-t-d,Cetd,,qcdet,12
 Cheating,c-e-t-\-h,Cetg,,qcegt,12
 Cheats,c-e-t-s,Cets,,qcest,12
+Cheatsheet,c-e-t-sh,Cetz,,qcetz,12
+Cheatsheeted,c-e-t-sh-d,Cetzd,,qcdetz,12
+Cheatsheeting,c-e-t-sh-\-h,Cetzg,,qcegtz,12
+Cheatsheets,c-e-t-sh-s,Cetzs,,qcestz,12
 Diagonally,d-i-g-e,Dige,,qdegi,12
 Disagree,dya,Dya,,qady,12
 Disagreeable,dya-b,Dyab,,qabdy,12
@@ -5867,6 +5880,8 @@ Revolve,r-v-o-l,Rvol,,qlorv,12
 Revolved,r-v-o-l-d,Rvold,,qdlorv,12
 Revolving,r-v-o-l-\-h,Rvolg,,qglorv,12
 Revolves,r-v-o-l-s,Rvols,,qlorsv,12
+Secretary,s-e-k-\-r-e,Sekreo,o,qekors,12
+Secretaries,s-e-k-\-r-e-s,Sekreso,o,qekors,12
 Celebrated,s-e-l-e-b-d,Selebd,,qbdels,12
 Celebrating,s-e-l-e-b-\-h,Selebg,,qbegls,12
 Celebrates,s-e-l-e-b-s,Selebs,,qbels,12
@@ -7146,9 +7161,12 @@ Execution,e-s2-k-sh,Xkz,,qkxz,69
 Designed,d-s2-i-n-d,Dsind,,qdins,70
 Designing,d-s2-i-n-\-h,Dsing,,qdgins,70
 Designs,d-s2-i-n-s,Dsins,,qdins,70
-Schooled,s2-k-l-d,Skld,,qdkls,70
-Schooling,s2-k-l-\-h,Sklg,,qgkls,70
-Schools,s2-k-l-s,Skls,,qkls,70
+Skilled,s2-k-l-d,Skld,,qdkls,70
+Schooled,s2-k-l-d,Skldo,o,qdklos,70
+Skilling,s2-k-l-\-h,Sklg,,qgkls,70
+Schooling,s2-k-l-\-h,Sklgo,o,qgklos,70
+Skills,s2-k-l-s,Skls,,qkls,70
+Schools,s2-k-l-s,Sklso,o,qklos,70
 Typed,t-i-p-d,Tipd,,qdipt,70
 Typing,t-i-p-\-h,Tipg,,qgipt,70
 Types,t-i-p-s,Tipso,o,qiopst,70
@@ -8219,6 +8237,8 @@ Local,l-o-k,Loko,o,qklo,329
 Locks,l-o-k-s,Loks,,qklos,329
 Locates,l-o-k-s,Loksi,i,qiklos,329
 Locals,l-o-k-s,Lokso,o,qklos,329
+Lockout,l-o-k-a-u,Lokw,,qklow,329
+Lockouts,l-o-k-a-u-s,Lokws,,qklosw,329
 Unlocked,u-n-l-o-k-d,Nlokd,,qdklno,329
 Unlocking,u-n-l-o-k-\-h,Nlokg,,qgklno,329
 Unlock,u-n-l-o-k,Nloko,o,qklno,329
@@ -9043,6 +9063,7 @@ Relaxed,r-l-a-k-s-d,Rlaxd,,qadlrx,91480
 Relaxing,r-l-a-k-s-\-h,Rlaxg,,qaglrx,91480
 Relaxes,r-l-a-k-s-s,Rlaxs,,qalrsx,91480
 Jerome,j-r-o-m,Jrom,,qjmor,91808
+Unskilled,n-s-k-l-d,Nskld,,qdklns,92085
 Considering,k-s-g,Ksgi,,qgiks,92170
 Stepson,s-s-o-n,Sson,,qnos,92247
 Stepsons,s-s-o-n-s,Ssons,,qnos,92247
