@@ -5063,7 +5063,7 @@ Attractive,a-t-r-k-v,Atrkv,,qakrtv,3
 Attraction,a-t-r-k-sh,Atrkz,,qakrtz,3
 Bottle,b-o-t-l,Botl,,qblot,3
 Breakfast,br-e-k-f-a-s,Brekfas,,qabefkrs,3
-Bright,br-i,Bri,,qbir,3
+Bright,br-i,Briqk,,qbir,3
 Diligence,d-e-l-e-j,Delej,,qdejl,3
 Differ,df,Dfu,u,qdfu,3
 Doctrine,d-o-k-t,Dokt,,qdkot,3
@@ -5337,9 +5337,9 @@ Everybody,e-v-b-o,Evbo,,qbeov,5
 Fruitless,fr-u-t-l,Frutl,,qflrtu,5
 Guarantee,g-a2-nt-e,Gante,,qaegnt,5
 Gall,g-o-l,Golo,o,qglo,5
-Hid,^-h-\-e-d,Hed,,qdeh,5
 He had,^-h-\-e-d,Hedi,i,qdehi,5
 Head,^-h-\-e-d,Hedo,o,qdeho,5
+Hid,^-h-\-e-d,Hedqk,,qdeh,5
 Hit,^-h-\-e-t,Heti,i,qehit,5
 Heat,^-h-\-e-t,Hetu,u,qehtu,5
 Heavier,^-h-\-e-v-e-r,Hever,,qehrv,5
@@ -5954,7 +5954,6 @@ Bankruptcy ,b-s-e,Bse,,qbes,20
 British columbia,b-s-e,Bseo,o,qbeos,20
 Formed,f-m-/-t,Fmd,,qdfm,20
 Frame,fr-a-m,Fram,,qafmr,20
-Frames,fr-a-m-s,Frams,,qafmrs,20
 Merge,m-e-j,Mej,,qejm,20
 Induce,n-d-u-s,Nduso,o,qdnosu,20
 Engagement,n-g-a-m,Ngam,,qagmn,20
