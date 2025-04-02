@@ -194,6 +194,10 @@ Bathroom,b-a-th-r-m,Bahrm,,qabhmr,0
 Bathroomed,b-a-th-r-m-d,Bahrmd,,qabdhmr,0
 Bathrooming,b-a-th-r-m-\-h,Bahrmg,,qabghmr,0
 Bathrooms,b-a-th-r-m-s,Bahrms,,qabhmrs,0
+Badge,b-a-j,Baj,,qabj,0
+Badged,b-a-j-d,Bajd,,qabdj,0
+Badging,b-a-j-\-h,Bajg,,qabgj,0
+Badges,b-a-j-s,Bajs,,qabjs,0
 Backended,b-a-k-nt-t,Bakndd,,qabdkn,0
 Backed up,b-a-k-p-d,Bakpd,,qabdkp,0
 Backing up,b-a-k-p-\-h,Bakph,,qabhkp,0
@@ -308,6 +312,10 @@ Checkbox,ch-b-o-k-s,Cboks,,qbckos,0
 Checkboxed,ch-b-o-k-s-d,Cboksd,,qbcdkos,0
 Checkboxing,ch-b-o-k-s-\-h,Cboksg,,qbcgkos,0
 Checkboxes,ch-b-o-k-s-s,Cbokss,,qbckos,0
+Checkbox,ch-b-o-k-s,Cbox,,qbcox,0
+Checkboxed,ch-b-o-k-s-d,Cboxd,,qbcdox,0
+Checkboxing,ch-b-o-k-s-\-h,Cboxg,,qbcgox,0
+Checkboxes,ch-b-o-k-s-s,Cboxs,,qbcosx,0
 Checker,ch-e-k-r,Cekr,,qcekr,0
 Checkers,ch-e-k-r-s,Cekrs,,qcekrs,0
 Checkout,ch-e-k-au,Cekw,,qcekw,0
@@ -7948,6 +7956,8 @@ Follow up,f-o-p,Fop,,qfop,196
 Resolve,r-s-o-l,Rsol,,qlors,196
 Resolved,r-s-o-l-d,Rsold,,qdlors,196
 Resolving,r-s-o-l-\-h,Rsolg,,qglors,196
+Resolver,r-s-o-l-r,Rsolr,,qlors,196
+Resolvers,r-s-o-l-r-s,Rsolrs,,qlors,196
 Resolves,r-s-o-l-s,Rsols,,qlors,196
 Resolve,r-s-o-l-v,Rsolv,,qlorsv,196
 Resolving,r-s-o-l-v-\-h,Rsolvg,,qglorsv,196
