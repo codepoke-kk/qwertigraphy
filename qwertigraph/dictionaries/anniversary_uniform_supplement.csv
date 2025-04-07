@@ -194,10 +194,6 @@ Bathroom,b-a-th-r-m,Bahrm,,qabhmr,0
 Bathroomed,b-a-th-r-m-d,Bahrmd,,qabdhmr,0
 Bathrooming,b-a-th-r-m-\-h,Bahrmg,,qabghmr,0
 Bathrooms,b-a-th-r-m-s,Bahrms,,qabhmrs,0
-Badge,b-a-j,Baj,,qabj,0
-Badged,b-a-j-d,Bajd,,qabdj,0
-Badging,b-a-j-\-h,Bajg,,qabgj,0
-Badges,b-a-j-s,Bajs,,qabjs,0
 Backended,b-a-k-nt-t,Bakndd,,qabdkn,0
 Backed up,b-a-k-p-d,Bakpd,,qabdkp,0
 Backing up,b-a-k-p-\-h,Bakph,,qabhkp,0
@@ -312,10 +308,6 @@ Checkbox,ch-b-o-k-s,Cboks,,qbckos,0
 Checkboxed,ch-b-o-k-s-d,Cboksd,,qbcdkos,0
 Checkboxing,ch-b-o-k-s-\-h,Cboksg,,qbcgkos,0
 Checkboxes,ch-b-o-k-s-s,Cbokss,,qbckos,0
-Checkbox,ch-b-o-k-s,Cbox,,qbcox,0
-Checkboxed,ch-b-o-k-s-d,Cboxd,,qbcdox,0
-Checkboxing,ch-b-o-k-s-\-h,Cboxg,,qbcgox,0
-Checkboxes,ch-b-o-k-s-s,Cboxs,,qbcosx,0
 Checker,ch-e-k-r,Cekr,,qcekr,0
 Checkers,ch-e-k-r-s,Cekrs,,qcekrs,0
 Checkout,ch-e-k-au,Cekw,,qcekw,0
@@ -401,6 +393,8 @@ Deludes,d-l-u-d-s,Dluds,,qdlsu,0
 Delusions,d-l-u-sh-s,Dluzs,,qdlsuz,0
 Delusionally,d-l-sh-l-e,Dlzle,,qdelz,0
 Dimensionally,tm-e-n-sh-l-e,Dmenzle,,qdelmnz,0
+Democratically,tm-k-e,Dmke,,qdekm,0
+Democrats,tm-k-s,Dmks,,qdkms,0
 Dimension,tm-n-sh,Dmnz,,qdmnz,0
 Dimensioned,tm-n-sh-d,Dmnzd,,qdmnz,0
 Dimensioning,tm-n-sh-\-h,Dmnzg,,qdgmnz,0
@@ -949,6 +943,7 @@ Graders,g-r-a-r-s,Grars,,qagrs,0
 Grasshoppers,g-r-a-s2-o-pr-s,Grasoprs,,qagoprs,0
 Greeted,g-r-e-td,Gretd,,qdegrt,0
 Greetings,g-r-e-t-/-s,Gretso,o,qegorst,0
+Governmentally,g-v-/-m-e,Gvme,,qegmv,0
 Hardy,^-h-\-a2-d-e,Hade,,qadeh,0
 Hardly,^-h-\-a2-d-e,Hadeo,o,qadeho,0
 Hardiest,^-h-\-a2-d-e-s-t,Hadest,,qadehst,0
@@ -4413,6 +4408,12 @@ Intercepted,^-n-\-s-e-p-d,Nsepd,,qdenps,2
 Intercepting,^-n-\-s-e-p-\-h,Nsepg,,qegnps,2
 Intercepts,^-n-\-s-e-p-s,Nseps,,qenps,2
 Interception,^-n-\-s-e-p-sh,Nsepz,,qenpsz,2
+Enslave,n-s-l-a-v,Nslav,,qalnsv,2
+Enslaved,n-s-l-a-v-d,Nslavd,,qadlnsv,2
+Enslaving,n-s-l-a-v-\-h,Nslavg,,qaglnsv,2
+Enslavement,n-s-l-a-v-m,Nslavm,,qalmnsv,2
+Enslavements,n-s-l-a-v-m-s,Nslavms,,qalmnsv,2
+Enslaves,n-s-l-a-v-s,Nslavs,,qalnsv,2
 Unsuitable,n-s2-u-t-b,Nsutb,,qbnstu,2
 Unusual,n-u-sh,Nuz,,qnuz,2
 Nationals,n-a-sh-l-s,Nzls,,qlnsz,2
@@ -4507,6 +4508,9 @@ Selling,s-e-l-\-h,Selg,,qegls,2
 Sensitivity,s2-e-n-s-df-t-e,Senstvte,,qenstv,2
 Sensitivities,s2-e-n-s-df-t-e-s,Senstvtes,,qenstv,2
 Septuagint,s-e-p-j,Sepj,,qejps,2
+Slave,s-l-a-v,Slav,,qalsv,2
+Slaved,s-l-a-v-d,Slavd,,qadlsv,2
+Slaving,s-l-a-v-\-h,Slavg,,qaglsv,2
 Spray,s-p-r-a,Spra,,qaprs,2
 Sprayed,s-p-r-a-d,Sprad,,qadprs,2
 Sprays,s-p-r-a-s,Spras,,qaprs,2
@@ -4781,6 +4785,7 @@ Remappings,r-m-a-p-\-h-s,Rmapz,,qamprz,3
 Reminder,r-e-m-i-n-r,Rminr,,qimnr,3
 Reminders,r-e-m-i-n-r-s,Rminrs,,qimnrs,3
 Remains,r-e-mn-s,Rmns,,qmnrs,3
+Republicans,r-p-b-n-s,Rpbns,,qbnprs,3
 Repository,r-p-o-\-r-e,Rpore,,qeopr,3
 Repositories,r-p-o-\-r-e-s,Rpores,,qeoprs,3
 Respected,r-e-s-d,Rsd,,qdrs,3
@@ -4842,6 +4847,9 @@ Accountability,a-k-t-\-b,Aktbo,,qabkot,4
 Architected,a-k-t-e-k-d,Aktekd,,qadekt,4
 Architecting,a-k-t-e-k-\-h,Aktekg,,qaegkt,4
 Architects,a-k-t-e-k-s,Akteks,,qaekst,4
+Amounted,a-mn-t-d,Amntd,,qadmnt,4
+Amounting,a-mn-t-\-h,Amntg,,qagmnt,4
+Amounts,a-mn-t-s,Amnts,,qamnst,4
 Appealed,a-p-e-l-d,Apeld,,qadelp,4
 Appealing,a-p-e-l-\-h,Apelg,,qaeglp,4
 Appeals,a-p-e-l-s,Apels,,qaelps,4
@@ -4985,6 +4993,7 @@ Righteous,r-i-ch-u-s,Ricus,,qcirsu,4
 Reconciler,r-k-s-i-l-r,Rksilr,,qiklrs,4
 Reconcilers,r-k-s-i-l-r-s,Rksilrs,,qiklrs,4
 Workstations,r-k-s2-t-sh-s,Rkstzs,,qkrstz,4
+Republics,r-p-s,Rps,,qprs,4
 Representation,r-p-sh,Rpz,,qprz,4
 Reworked,r-e-r-k-d,Rrkd,,qdkr,4
 Reroute,r-e-r-u-t,Rrut,,qrtu,4
@@ -5352,8 +5361,8 @@ Writers,r-i-r-s,Rirs,,qirs,6
 Repeatedly,r-p-e-d-e,Rpede,,qdepr,6
 Repentance,r-e-jnt-n-s,Rpntns,,qnprst,6
 Repentances,r-e-jnt-n-s-s,Rpntnss,,qnprst,6
-Replies,r-e-p-s,Rps,,qprs,6
 Represents,r-p-s,Rpso,o,qoprs,6
+Replies,r-e-p-s,Rpsqk,,qprs,6
 Resistor,r-ss-r,Rssr,,qrs,6
 Resistors,r-ss-r-s,Rssrs,,qrs,6
 Realist,r-e-\-s-t,Rst,,qrst,6
@@ -5534,6 +5543,15 @@ Addictive,a-d-e-k-v,Adekv,,qadekv,8
 Addictively,a-d-e-k-v-e,Adekve,,qadekv,8
 Addiction,a-d-e-k-sh,Adekz,,qadekz,8
 Adequately,a-d-e-k-e,Adeqe,,qadeq,8
+Addict,a-d-k,Adk,,qadk,8
+Addicted,a-d-k-d,Adkd,,qadk,8
+Addicting,a-d-k-\-h,Adkg,,qadgk,8
+Addicts,a-d-k-s,Adks,,qadks,8
+Addictive,a-d-k-v,Adkv,,qadkv,8
+Addictively,a-d-k-v-e,Adkve,,qadekv,8
+Addictives,a-d-k-v-s,Adkvs,,qadksv,8
+Addiction,a-d-k-sh,Adkz,,qadkz,8
+Addictions,a-d-k-sh-s,Adkzs,,qadksz,8
 Alongside,a-l-ng-s-i,Algsi,,qagils,8
 Bedpan,b-d-p,Bdp,,qbdp,8
 Bedpanned,b-d-p-d,Bdpd,,qbdp,8
@@ -5550,6 +5568,12 @@ Boils,b-o-e-l-s,Byls,,qblsy,8
 Dedicated,td-e-k-a-t-d,Ddekatd,,qadekt,8
 Dedicating,td-e-k-a-t-\-h,Ddekatg,,qadegkt,8
 Dedicates,td-e-k-a-t-s,Ddekats,,qadekst,8
+Elected,e-l-e-k-d,Elekd,,qdekl,8
+Electing,e-l-e-k-\-h,Elekg,,qegkl,8
+Electorate,e-l-e-k-r-a,Elekra,,qaeklr,8
+Electorates,e-l-e-k-r-a-s,Elekras,,qaeklrs,8
+Elects,e-l-e-k-s,Eleks,,qekls,8
+Elections,e-l-e-k-sh-s,Elekzs,,qeklsz,8
 Elevate,e2-l-v-a-t,Elvat,,qaeltv,8
 Elevated,e2-l-v-a-t-d,Elvatd,,qadeltv,8
 Elevating,e2-l-v-a-t-\-h,Elvatg,,qaegltv,8
@@ -5870,6 +5894,9 @@ Disagreeable,dya-b,Dyab,,qabdy,12
 Disagreed,dya-d,Dyado,o,qadoy,12
 Disagreeing,dya-\-h,Dyag,,qadgy,12
 Disagrees,dya-s,Dyas,,qadsy,12
+Forged,f-j-d,Fjd,,qdfj,12
+Forging,f-j-\-h,Fjg,,qfgj,12
+Forges,f-j-s,Fjs,,qfjs,12
 Foresee,f-s-e,Fse,,qefs,12
 Foreseeable,f-s-e-b,Fseb,,qbefs,12
 Foreseeing,f-s-e-\-h,Fseg,,qefgs,12
@@ -6168,6 +6195,7 @@ Drop,d-r-o-p,Dropo,o,qdopr,17
 Drops,d-r-o-p-s,Dropso,o,qdoprs,17
 Innocents,e-n-o-s-s,Enoss,,qenos,17
 Faithfully,f-a-th2-f-e,Fahfe,,qaefh,17
+Governments,g-v-s,Gvs,,qgsv,17
 Thrive,th-r-i,Hri,,qhir,17
 Thrived,th-r-i-d,Hrid,,qdhir,17
 Thriving,th-r-i-\-h,Hrig,,qghir,17
@@ -7390,6 +7418,8 @@ Promising,pr-m-e-s-\-h,Prmesg,,qegmprs,86
 Promises,pr-m-e-s-s,Prmess,,qemprs,86
 Powered,p-a-u-d,Pwd,,qdpw,86
 Powering,p-a-u-\-h,Pwg,,qgpw,86
+Powerhouse,p-a-u-h-u-s,Pwhus,,qhpsuw,86
+Powerhouses,p-a-u-h-u-s-s,Pwhuss,,qhpsuw,86
 Powers,p-a-u-s,Pws,,qpsw,86
 Timing,tm-\-h,Tmg,,qgmt,86
 Notably,n-o-t-b-e,Notbe,,qbenot,87
@@ -7956,8 +7986,6 @@ Follow up,f-o-p,Fop,,qfop,196
 Resolve,r-s-o-l,Rsol,,qlors,196
 Resolved,r-s-o-l-d,Rsold,,qdlors,196
 Resolving,r-s-o-l-\-h,Rsolg,,qglors,196
-Resolver,r-s-o-l-r,Rsolr,,qlors,196
-Resolvers,r-s-o-l-r-s,Rsolrs,,qlors,196
 Resolves,r-s-o-l-s,Rsols,,qlors,196
 Resolve,r-s-o-l-v,Rsolv,,qlorsv,196
 Resolving,r-s-o-l-v-\-h,Rsolvg,,qglorsv,196
@@ -9126,6 +9154,8 @@ Inclining,n-k-l-i-n-\-h,Nkling,,qgikln,91109
 Inclines,n-k-l-i-n-s,Nklins,,qiklns,91109
 Inclination,n-k-l-i-n-sh,Nklinz,,qiklnz,91109
 Inclinations,n-k-l-i-n-sh-s,Nklinzs,,qiklnsz,91109
+Forgery,f-j-r-e,Fjre,,,91163
+Forgeries,f-j-r-e-s,Fjres,,qefjrs,91163
 Region,r-j-n,Rjn,,qjnr,91191
 Regional,r-j-n-l,Rjnl,,qjlnr,91191
 Regionally,r-j-n-l-e,Rjnle,,qejlnr,91191
