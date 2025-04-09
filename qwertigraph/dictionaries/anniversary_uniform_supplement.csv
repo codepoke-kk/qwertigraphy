@@ -3137,7 +3137,6 @@ Transcendence,t-\-nt-n-s,Tndns,,qdnst,0
 Tenet,tn-e-t,Tnet,,qent,0
 Do you know,tn-o,Tnoi,i,qinot,0
 Downsizings,tn-s-i-s-\-h-s,Tnsisz,,qinstz,0
-Tokenizations,t-o-k-n-i-s-a-sh-s,Tokniszs,,qiknostz,0
 Torment,t-o-mn-t,Tomnt,,qmnot,0
 Tormented,t-o-mn-t-d,Tomntd,,qdmnot,0
 Tormenting,t-o-mn-t-\-h,Tomntg,,qgmnot,0
@@ -3577,6 +3576,10 @@ Disdains,d-s-d-a-n-s,Dsdans,,qadns,1
 Deceptive,d-s-e-p-df,Dseptv,,qdepstv,1
 Deceptively,d-s-e-p-df-e,Dseptve,,qdepstv,1
 Descriptions,d-s2-k-r-sh-s,Dskrzs,,qdkrsz,1
+Detectable,td-e-k-b,Dtekb,,qbdekt,1
+Detectably,td-e-k-b-e,Dtekbe,,qbdekt,1
+Detectability,td-e-k-\-b,Dtekbo,,qbdekot,1
+Detectabilities,td-e-k-\-b-s,Dtekbos,,qbdekost,1
 Detected,td-e-k-d,Dtekd,,qdekt,1
 Detecting,td-e-k-\-h,Dtekg,,qdegkt,1
 Detects,td-e-k-s,Dteks,,qdekst,1
@@ -3706,6 +3709,10 @@ Clarifying,k-l-a-r-f-\-h,Klarfg,,qafgklr,1
 Clarify,k-l-a-r-f,Klarfo,o,qafklor,1
 Clearest,k-l-e-s-t,Klest,,qeklst,1
 Closest,k-l-o-s-e-s,Kloses,,qeklos,1
+Kludge,k-l-u-j,Kluj,,qjklu,1
+Kludged,k-l-u-j-d,Klujd,,qdjklu,1
+Kludging,k-l-u-j-\-h,Klujg,,qgjklu,1
+Kludges,k-l-u-j-s,Klujs,,qjklsu,1
 Commander,k-m-a-n-\-r,Kmanr,,qakmnr,1
 Commanders,k-m-a-n-\-r-s,Kmanrs,,qakmnrs,1
 Commercially,k-m-e-sh-e,Kmeze,,qekmz,1
@@ -4647,6 +4654,10 @@ Definitive,df-n-e-df,Dfnetv,,qdefntv,3
 Definitively,df-n-e-df-e,Dfnetve,,qdefntv,3
 Definitive,df-n-df,Dfntv,,qdfntv,3
 Definitively,df-n-df-e,Dfntve,,qdefntv,3
+Decode,d-k-o-t,Dkod,,qdko,3
+Decoded,d-k-o-t-d,Dkodd,,qdko,3
+Decoding,d-k-o-t-\-h,Dkodg,,qdgko,3
+Decodes,d-k-o-t-s,Dkods,,qdkos,3
 Doctrines,d-o-k-t-s,Dokts,,qdkost,3
 Doctrination,d-o-k-t-sh,Doktz,,qdkotz,3
 Doctrinations,d-o-k-t-sh-s,Doktzs,,qdkostz,3
@@ -5372,6 +5383,10 @@ Randoms,r-a-n-dm-s,Randms,,qadmnrs,6
 Recharger,r-ch-j-r,Rcjr,,qcjr,6
 Rechargers,r-ch-j-r-s,Rcjrs,,qcjrs,6
 Writers,r-i-r-s,Rirs,,qirs,6
+Reencode,r-n-k-o-t,Rnkod,,qdknor,6
+Reencoded,r-n-k-o-t-d,Rnkodd,,qdknor,6
+Reencoding,r-n-k-o-t-\-h,Rnkodg,,qdgknor,6
+Reencodes,r-n-k-o-t-s,Rnkods,,qdknors,6
 Repeatedly,r-p-e-d-e,Rpede,,qdepr,6
 Repentance,r-e-jnt-n-s,Rpntns,,qnprst,6
 Repentances,r-e-jnt-n-s-s,Rpntnss,,qnprst,6
@@ -6118,6 +6133,7 @@ Observes,o-b-s-e-s,Obses,,qbeos,15
 Partitioned,p-t-sh-d,Ptzd,,qdptz,15
 Partitioning,p-t-sh-\-h,Ptzg,,qgptz,15
 Partitions,p-t-sh-s,Ptzs,,qpstz,15
+Qualities,k-u-s,Qus,,qqsu,15
 Raged,r-a-j-d,Rajd,,qadjr,15
 Raging,r-a-j-\-h,Rajg,,qagjr,15
 Rage,r-a-j,Rajo,o,qajor,15
@@ -6936,8 +6952,8 @@ Tokenize,t-o-k-n-i-s,Toknis,,qiknost,40
 Tokenized,t-o-k-n-i-s-d,Toknisd,,qdiknost,40
 Tokenizing,t-o-k-n-i-s-\-h,Toknisg,,qgiknost,40
 Tokenizes,t-o-k-n-i-s-s,Tokniss,,qiknost,40
-Tokenizion,t-o-k-n-i-s-sh,Toknisz,,qiknostz,40
-Tokenization,t-o-k-n-i-s-a-sh,Tokniszo,o,qiknostz,40
+Tokenization,t-o-k-n-i-s-sh,Toknisz,,qiknostz,40
+Tokenizations,t-o-k-n-i-s-sh-s,Tokniszs,,qiknostz,40
 Approached,a-pr-ch-d,Aprcd,,qacdpr,41
 Approaching,a-pr-ch-\-h,Aprcg,,qacgpr,41
 Approaches,a-pr-ch-s,Aprcs,,qacprs,41
@@ -7546,6 +7562,7 @@ Appreciating,a-pr-e-sh-\-h,Aprezg,,qaegprz,98
 Appreciates,a-pr-e-sh-s,Aprezs,,qaeprsz,98
 Attached,a-t-ch-d,Atcd,,qacdt,98
 Attaching,a-t-ch-\-h,Atcg,,qacgt,98
+Attaches,a-t-ch-s,Atcs,,qacst,98
 Commenting,k-mn-t-\-h,Kmntg,,qgkmnt,98
 Comments,k-mn-t-s,Kmnts,,qkmnst,98
 Unattached,u-n-a-t-ch-d,Natcd,,qacdnt,98
@@ -7882,9 +7899,9 @@ Cleans,k-l-e-n-s,Klens,,qeklns,165
 Unclean,n-k-l-e-n,Nklen,,qekln,165
 Uncleanly,n-k-l-e-n-e,Nklene,,qekln,165
 Queued,k-e-u-d,Qud,,qdqu,166
-Queuing,k-e-u-\-h,Qug,,qgqu,166
-Queue,k-e-u,Quo,o,qoqu,166
-Queues,k-e-u-s,Quso,o,qoqsu,166
+Queueing,k-e-u-\-h,Qug,,qgqu,166
+Queues,k-e-u-s,Qusu,u,qqsu,166
+Queue,k-e-u,Quu,u,qqu,166
 Authorities,o-th2-/-r-s,Ohrs,,qhors,167
 Backend,b-a-k-n-t,Baknt,,qabknt,168
 Backends,b-a-k-n-t-s,Baknts,,qabknst,168
@@ -8439,6 +8456,7 @@ Redirecting,r-e-d-r-k-\-h,Rdrkg,,qdgkr,378
 Redirects,r-e-d-r-k-s,Rdrks,,qdkrs,378
 Redirection,r-e-d-r-k-sh,Rdrkz,,qdkrz,378
 Shares,sh-a2-s,Zas,,qasz,380
+SharePoint,sh-a2-y,Zay,,qayz,380
 Persistence,pr-ss-n-s,Prssns,,qnprs,383
 Problems,pr-bl-s,Prbls,,qblprs,385
 Tooled,t-u-l-d,Tuld,,qdltu,385
@@ -8974,6 +8992,9 @@ Professed,pr-f-e-s-d,Prfesd,,qdefprs,1557
 Professing,pr-f-e-s-\-h,Prfesg,,qefgprs,1557
 Professs,pr-f-e-s-s,Prfess,,qefprs,1557
 Requesting,r-k-e-s-\-h,Rqesg,,qegqrs,1650
+Findable,f-i-b,Fib,,qbfi,1652
+Findably,f-i-b-e,Fibe,,qbefi,1652
+Findability,f-i-\-b,Fibo,,qbfio,1652
 Finding,f-i-\-h,Fig,,qfgi,1652
 Finds,f-i-s,Fis,,qfis,1652
 Runnable,r-n-b,Rnb,,qbnr,1680
@@ -9064,6 +9085,8 @@ Wants,o-nt-s,Onts,,qnost,3135
 Unquestionable,n-k-n-b,Nqnb,,qbnq,3184
 Unquestioned,n-k-n-d,Nqnd,,qdnq,3184
 Unquestioning,n-k-n-\-h,Nqng,,qgnq,3184
+Questionnaire,k-n-a,Qna,,qanq,3184
+Questionnaires,k-n-a-s,Qnas,,qanqs,3184
 Questionable,k-n-b,Qnb,,qbnq,3184
 Questioned,k-n-d,Qnd,,qdnq,3184
 Questioning,k-n-\-h,Qng,,qgnq,3184
