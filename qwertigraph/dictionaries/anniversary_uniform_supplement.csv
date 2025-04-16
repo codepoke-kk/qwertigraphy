@@ -354,6 +354,8 @@ Deflatedly,dfl-a-d-e,Dflade,,qadefl,0
 Deflations,dfl-a-sh-s,Dflzs,,qdflsz,0
 Defendant,df-nt-t,Dfndt,,qdfnt,0
 Defendants,df-nt-t-s,Dfndts,,qdfnst,0
+Deference,dfr-e-n-s,Dfrens,,qdefnrs,0
+Deferentially,dfr-e-n-sh-e,Dfrenze,,qdefnrz,0
 Diagrammatic,d-i-\-g-\-a,Diga,,qadgi,0
 Diagnoses,d-i-g-n-o-s-e-s,Dignoses,,qdeginos,0
 Diagnostician,d-i-g-n-o-s-t-sh,Dignostz,,qdginostz,0
@@ -3101,6 +3103,12 @@ Transmitions,^-t-\-m-e-t-sh-s,Tmetzs,,qemstz,0
 Transmission,^-t-\-m-e-sh,Tmez,,qemtz,0
 Transmissions,^-t-\-m-e-sh-s,Tmezs,,qemstz,0
 Traffic manager,t-~-m,Tmi,i,qimt,0
+Terminate,t-mn-a-t,Tmnat,,qamnt,0
+Terminated,t-mn-a-t-d,Tmnatd,,qadmnt,0
+Terminating,t-mn-a-t-\-h,Tmnatg,,qagmnt,0
+Terminates,t-mn-a-t-s,Tmnats,,qamnst,0
+Termination,t-mn-a-sh,Tmnaz,,qamntz,0
+Terminations,t-mn-a-sh-s,Tmnazs,,qamnstz,0
 Temperance,tm-p,Tmpo,o,qmopt,0
 Temperament,tm-pr-a-m,Tmpram,,qamprt,0
 Temperaments,tm-pr-a-m-s,Tmprams,,qamprst,0
@@ -4182,6 +4190,9 @@ Typically,t-e-p-\-k-e,Tepke,,qekpt,1
 Transformer,^-t-\-f-m-r,Tfmr,,qfmrt,1
 Transformers,^-t-\-f-m-r-s,Tfmrs,,qfmrst,1
 Translations,t-/-l-a-sh-s,Tlzs,,qlstz,1
+Terminal,t-mn-l,Tmnl,,qlmnt,1
+Terminally,t-mn-l-e,Tmnle,,qelmnt,1
+Terminals,t-mn-l-s,Tmnls,,qlmnst,1
 Transcendent,t-\-nt-nt,Tndnd,,qdnt,1
 Transcendental,t-\-nt-nt-l,Tndndl,,qdlnt,1
 Transcendents,t-\-nt-nt-s,Tndnds,,qdnst,1
@@ -5226,6 +5237,10 @@ Inbox,n-b-o-x,Nbox,,qbnox,5
 Inboxed,n-b-o-x-d,Nboxd,,qbdnox,5
 Inboxing,n-b-o-x-\-h,Nboxg,,qbgnox,5
 Inboxs,n-b-o-x-s,Nboxs,,qbnosx,5
+Inbox,n-b-x,Nbx,,qbnx,5
+Inboxed,n-b-x-d,Nbxd,,qbdnx,5
+Inboxing,n-b-x-\-h,Nbxg,,qbgnx,5
+Inboxes,n-b-x-s,Nbxs,,qbnsx,5
 Inflation,n-fl-a-sh,Nflzi,i,qfilnz,5
 Installer,n-s2-t-o-l-r,Nstolr,,qlnorst,5
 Installers,n-s2-t-o-l-r-s,Nstolrs,,qlnorst,5
@@ -5496,6 +5511,10 @@ Defending,df-nt-\-h,Dfndg,,qdfgn,7
 Defender,df-nt-r,Dfndr,,qdfnr,7
 Defenders,df-nt-r-s,Dfndrs,,qdfnrs,7
 Defends,df-nt-s,Dfnds,,qdfns,7
+Defer,df-r,Dfr,,qdfr,7
+Deferred,df-r-d,Dfrd,,qdfr,7
+Deferring,df-r-\-h,Dfrg,,qdfgr,7
+Defers,df-r-s,Dfrs,,qdfrs,7
 Disappearance,d-s-a-pr-n-s,Dsaprns,,qadnprs,7
 Disappearances,d-s-a-pr-n-s-s,Dsaprnss,,qadnprs,7
 Dysfunction,d-s-f-nk,Dsfq,,qdfqs,7
@@ -9308,9 +9327,9 @@ Towers,t-a-u-r-s,Twrs,,qrstw,92256
 Falsehood,f-o-s-\-d,Fosd,,qdfos,92330
 Falsehoods,f-o-s-\-d-s,Fosds,,qdfos,92330
 Unexplained,n-e-pl-d,Nepld,,qdelnp,92365
-Redeem,r-tm,Rdm,,qdmr,92527
 Redeemed,r-tm-d,Rdmd,,qdmr,92527
 Redeeming,r-tm-\-h,Rdmg,,qdgmr,92527
+Redeem,r-tm,Rdmo,o,qdmor,92527
 Redeemer,r-tm-r,Rdmr,,qdmr,92527
 Redeemers,r-tm-r-s,Rdmrs,,qdmrs,92527
 Redeems,r-tm-s,Rdms,,qdmrs,92527
