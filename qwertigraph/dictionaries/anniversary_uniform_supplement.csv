@@ -4351,6 +4351,12 @@ Isolating,i-s-o-l-a-\-h,Isolag,,qagilos,2
 Isolates,i-s-o-l-a-s,Isolas,,qailos,2
 Jealousy,j-e-l-u-s-e,Jeluse,,qejlsu,2
 Jealousies,j-e-l-u-s-e-s,Jeluses,,qejlsu,2
+Genocide,j-e-n-s-i,Jensi,,qeijns,2
+Genocided,j-e-n-s-i-d,Jensid,,qdeijns,2
+Genociding,j-e-n-s-i-\-h,Jensig,,qegijns,2
+Genocidal,j-e-n-s-i-l,Jensil,,qeijlns,2
+Genocidally,j-e-n-s-i-l-e,Jensile,,qeijlns,2
+Genocides,j-e-n-s-i-s,Jensis,,qeijns,2
 Justification,j-u-s2-\-f,Jusfo,o,qfjosu,2
 Justifications,j-u-s2-\-f-s,Jusfso,o,qfjosu,2
 Occasioned,k-a-sh-d,Kazd,,qadkz,2
@@ -4590,6 +4596,8 @@ Troubleshot,t-r-b-sh-d,Trbzd,,qbdrtz,2
 Trustworthy,t-r-s-h-e,Trshe,,qehrst,2
 Trustworthiness,t-r-s-h-e-n-e-s,Trshenes,,qehnrst,2
 Unfalsifiable,u-f-o-s-f-b,Ufosfb,,qbfosu,2
+Unnatural,u-n-a-t-l,Unatl,,qalntu,2
+Unnaturally,u-n-a-t-l-e,Unatle,,qaelntu,2
 Updater,u-p-td-r,Updtr,,qdprtu,2
 Updaters,u-p-td-r-s,Updtrs,,qdprstu,2
 Vanish,v-a-n-z,Vanz,,qanvz,2
@@ -5748,6 +5756,10 @@ Shorten,sh-/-n,Zn,,qnz,8
 Shortening,sh-/-n-\-h,Zng,,qgnz,8
 Shortens,sh-/-n-s,Zns,,qnsz,8
 Affixes,a-f-e-ss,Afxs,,qafsx,9
+Ambulance,a-m-bl-a-n-s,Amblans,,qablmns,9
+Ambulanced,a-m-bl-a-n-s-d,Amblansd,,qabdlmns,9
+Ambulancing,a-m-bl-a-n-s-\-h,Amblansg,,qabglmns,9
+Ambulances,a-m-bl-a-n-s-s,Amblanss,,qablmns,9
 Ameri-Jesus,a-m-i-j,Amij,,qaijm,9
 Bringing,br-\-h,Brg,,qbgr,9
 Datacenter,d-a-t-s-n,Datsn,,qadnst,9
@@ -5764,7 +5776,7 @@ Leaders,l-e2-d-e2-s,Ledes,,qdels,9
 Murder,m-e2-d-e2,Mede,,qdem,9
 Murdered,m-e2-d-e2-d,Meded,,qdem,9
 Murdering,m-e2-d-e2-\-h,Medeg,,qdegm,9
-Murders,m-e2-d-e2-s,Medesi,i,qdeims,9
+Murders,m-e2-d-e2-s,Medes,,qdems,9
 Indexed,nt-e-x-d,Ndexd,,qdenx,9
 Indexing,nt-e-x-\-h,Ndexg,,qdegnx,9
 Indexs,nt-e-x-s,Ndexs,,qdensx,9
@@ -8738,8 +8750,6 @@ Requiring,r-k-i-\-h,Rqig,,qgiqr,617
 Requires,r-k-i-s,Rqis,,qiqrs,617
 Cleared,k-l-e-d,Kled,,qdekl,618
 Clearing,k-l-e-\-h,Kleg,,qegkl,618
-Unclear,n-k-l-e,Nkle,,qekln,618
-Unclearly,n-k-l-e-e,Nklee,,qekln,618
 Lasted,l-a-s-d,Lasd,,qadls,623
 Lasting,l-a-s-\-h,Lasg,,qagls,623
 Lasts,l-a-s-s,Lasso,o,qalos,623
@@ -9298,15 +9308,9 @@ Towers,t-a-u-r-s,Twrs,,qrstw,92256
 Falsehood,f-o-s-\-d,Fosd,,qdfos,92330
 Falsehoods,f-o-s-\-d-s,Fosds,,qdfos,92330
 Unexplained,n-e-pl-d,Nepld,,qdelnp,92365
-Redeem,r-d-e-m,Rdem,,qdemr,92527
-Redeemed,r-d-e-m-d,Rdemd,,qdemr,92527
-Redeeming,r-d-e-m-\-h,Rdemg,,qdegmr,92527
-Redeemer,r-d-e-m-r,Rdemr,,qdemr,92527
-Redeemers,r-d-e-m-r-s,Rdemrs,,qdemrs,92527
-Redeems,r-d-e-m-s,Rdems,,qdemrs,92527
+Redeem,r-tm,Rdm,,qdmr,92527
 Redeemed,r-tm-d,Rdmd,,qdmr,92527
 Redeeming,r-tm-\-h,Rdmg,,qdgmr,92527
-Redeem,r-tm,Rdmo,o,qdmor,92527
 Redeemer,r-tm-r,Rdmr,,qdmr,92527
 Redeemers,r-tm-r-s,Rdmrs,,qdmrs,92527
 Redeems,r-tm-s,Rdms,,qdmrs,92527
