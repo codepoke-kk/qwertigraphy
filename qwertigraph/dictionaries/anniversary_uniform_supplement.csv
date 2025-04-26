@@ -735,6 +735,8 @@ Evangelistic,e-v-a-n-j-/-s2-t-k,Evanjstk,,qaejknstv,0
 Evangelists,e-v-a-n-j-/-s2-t-s,Evanjsts,,qaejnstv,0
 Evaluations,e-v-l-sh-s,Evlzs,,qelsvz,0
 Eventualities,e-v-nt-\-l-s,Evntls,,qelnstv,0
+Evolutionist,e-v-o-l-sh-e-s,Evolzes,,qelosvz,0
+Evolutionists,e-v-o-l-sh-e-s-s,Evolzess,,qelosvz,0
 Evolutionism,e-v-o-l-sh-s-m,Evolzsm,,qelmosvz,0
 Inclusions,e-/-sh-s,Ezs,,qesz,0
 -Ful,<-f,F<,,q<f,0
@@ -3306,6 +3308,10 @@ Vigil,v-e-j-l,Vejl,,qejlv,0
 Vigilant,v-e-j-l-nt,Vejlnt,,qejlntv,0
 Vigilantly,v-e-j-l-nt-e,Vejlnte,,qejlntv,0
 Vigils,v-e-j-l-s,Vejls,,qejlsv,0
+Virgin,v-e2-j-n,Vejn,,qejnv,0
+Virginal,v-e2-j-n-l,Vejnl,,qejlnv,0
+Virgins,v-e2-j-n-s,Vejns,,qejnsv,0
+Virginity,v-e2-j-\-nt,Vejnt,,qejntv,0
 Vegetable,v-e-j-t,Vejt,,qejtv,0
 Vegetate,v-e-j-t-a,Vejta,,qaejtv,0
 Vegetated,v-e-j-t-a-d,Vejtad,,qadejtv,0
@@ -3678,6 +3684,8 @@ Frighten,fr-i-n,Frin,,qfinr,1
 Frightening,fr-i-n-\-h,Fring,,qfginr,1
 Frightens,fr-i-n-s,Frins,,qfinrs,1
 Forsook,f-s-u-k,Fsuk,,qfksu,1
+Efficiency,f-sh-s-e,Fzse,,qefsz,1
+Efficiencies,f-sh-s-e-s,Fzses,,qefsz,1
 -Ing,<-g,G<,,q<g,1
 Giver,g-e-r,Ger,,qegr,1
 Givers,g-e-r-s,Gers,,qegrs,1
@@ -3879,6 +3887,8 @@ Negation,n-e-g-a-sh,Negz,,qegnz,1
 Nervously,n-e-v-u-s-e,Nevuse,,qensuv,1
 Inflicted,n-fl-d,Nfld,,qdfln,1
 Informally,n-f-m-l-e,Nfmle,,qeflmn,1
+Inefficiency,n-f-sh-s-e,Nfzse,,qefnsz,1
+Inefficiencies,n-f-sh-s-e-s,Nfzses,,qefnsz,1
 Ingress,n-g-r-e-s,Ngres,,qegnrs,1
 Uncontrolable,^-n-k-/-l-b,Nklb,,qbkln,1
 Uncontrolled,^-n-k-/-l-d,Nkld,,qdkln,1
@@ -4023,7 +4033,7 @@ Ridiculously,r-d-e-k-e,Rdeke,,qdekr,1
 Ridiculousness,r-d-e-k-n-e-s,Rdeknes,,qdeknrs,1
 Ridiculously,r-e-d-e-k-e,Redeke,,qdekr,1
 Ridiculousness,r-e-d-e-k-n-e-s,Redeknes,,qdeknrs,1
-Refering,r-f-\-h,Rfgo,o,qfgor,1
+Referring,r-f-\-h,Rfgo,o,qfgor,1
 Reflected,r-fl-d,Rfld,,qdflr,1
 Reflects,r-fl-s,Rfls,,qflrs,1
 Regulate,r-e-g-\-u,Rgu,,qgru,1
@@ -4346,6 +4356,8 @@ Falsify,f-o-s-f,Fosf,,qfos,2
 Falsifiable,f-o-s-f-b,Fosfb,,qbfos,2
 Falsified,f-o-s-f-d,Fosfd,,qdfos,2
 Falsifying,f-o-s-f-\-h,Fosfg,,qfgos,2
+Efficient,f-sh-t,Fzt,,qftz,2
+Efficiently,f-sh-t-e,Fzte,,qeftz,2
 Grandmothers,g-/-m-u-th-s,Gmuhs,,qghmsu,2
 Helper,^-h-\-e-l-p-r,Helpr,,qehlpr,2
 Helpers,^-h-\-e-l-p-r-s,Helprs,,qehlprs,2
@@ -4467,6 +4479,8 @@ Infecting,n-f-e-k-\-h,Nfekg,,qefgkn,2
 Infects,n-f-e-k-s,Nfeks,,qefkns,2
 Infection,n-f-e-k-sh,Nfekz,,qefknz,2
 Inflexibility,n-fl-e-x-\-b,Nflexbo,,qbeflnox,2
+Inefficient,n-f-sh-t,Nfzt,,qfntz,2
+Inefficiently,n-f-sh-t-e,Nfzte,,qefntz,2
 Nihilism,n-i-l-s-m,Nilsm,,qilmns,2
 Injections,n-j-k-sh-s,Njkzs,,qjknsz,2
 Enclosed,n-k-t,Nkdo,o,qdkno,2
@@ -5156,6 +5170,8 @@ Warning,u-o-n-\-h,Uong,,qgnou,4
 Warns,u-o-n-s,Uons,,qnosu,4
 Auto-,au->,W>,,q>w,4
 Outputting,a-u-\-p-\-h,Wpg,,qgpw,4
+Outstanding,a-u-s2-tn-\-h,Wstng,,qgnstw,4
+Outstandingly,a-u-s2-tn-\-h-e,Wstnge,,qegnstw,4
 Exaggerate,e-s-a-j,Xaj,,qajx,4
 Exaggerated,e-s-a-j-d,Xajd,,qadjx,4
 Exaggerating,e-s-a-j-\-h,Xajg,,qagjx,4
@@ -8215,6 +8231,8 @@ Subjection,s-j-sh,Sjz,,qjsz,216
 Including,e-/-d-\-h,Edg,,qdeg,218
 Includes,e-/-d-s,Eds,,qdes,218
 Creation,k-r-ea-sh,Krez,,qekrz,219
+Creationist,k-r-ea-sh-e-s,Krezes,,qekrsz,219
+Creationists,k-r-ea-sh-e-s-s,Krezess,,qekrsz,219
 Creationism,k-r-ea-sh-sm,Krezsm,,qekmrsz,219
 Critical,k-r-/-ya,Kry,,qkry,219
 Critically,k-r-/-ya-e,Krye,,qekry,219
@@ -8875,6 +8893,7 @@ Clients,k-l-i-s,Klis,,qikls,700
 Things,th-\-s2,Hz,,qhz,705
 Corrected,k-r-d,Krd,,qdkr,705
 Correcting,k-r-\-h,Krg,,qgkr,705
+Correctness,k-r-n-e-s,Krnes,,qeknrs,705
 Corrects,k-r-s,Krsi,i,qikrs,705
 Incorrectly,n-k-r-e,Nkre,,qeknr,705
 Recurred,r-e-k-r-d,Rkrd,,qdkr,705
