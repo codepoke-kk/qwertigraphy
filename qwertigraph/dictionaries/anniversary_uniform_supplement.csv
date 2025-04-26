@@ -1159,6 +1159,12 @@ Concluding,k-k-\-h-o,Kkho,,qhko,0
 Concoctions,k-k-k-sh-s,Kkkzs,,qksz,0
 Contractually,k-/-k-l-e,Kkle,,qekl,0
 Concludes,k-k-s-o,Kkso,,qkos,0
+Classify,k-l-a-s-f,Klasf,,qafkls,0
+Classified,k-l-a-s-f-d,Klasfd,,qadfkls,0
+Classifying,k-l-a-s-f-\-h,Klasfg,,qafgkls,0
+Classification,k-l-a-s-/-f,Klasfo,o,qafklos,0
+Classifications,k-l-a-s-/-f-s,Klasfs,,qafkls,0
+Classifies,k-l-a-s-f-s,Klasfsqk,,qafkls,0
 Clubbed,k-l-b-d,Klbd,,qbdkl,0
 Clubbing,k-l-b-\-h,Klbg,,qbgkl,0
 Clubs,k-l-b-s,Klbs,,qbkls,0
@@ -1884,10 +1890,13 @@ Installables,n-s2-t-o-l-b-s,Nstolbs,,qblnost,0
 Installments,n-s2-t-o-l-m-s,Nstolms,,qlmnost,0
 Intrusively,n-/-s2-v-e,Nsve,,qensv,0
 Incivility,n-s2-v-\-l,Nsvl,,qlnsv,0
+Intake,nt-a,Nta,,qant,0
+Intakes,nt-a-k-s,Ntaks,,qaknst,0
 Untaint,n-t-a-nt,Ntant,,qant,0
 Untainted,n-t-a-nt-d,Ntantd,,qadnt,0
 Untainting,n-t-a-nt-\-h,Ntantg,,qagnt,0
 Untaints,n-t-a-nt-s,Ntants,,qanst,0
+Intakes,nt-a-s,Ntas,,qanst,0
 Integrally,nt-e-g-r-l-e,Ntegrle,,qeglnrt,0
 Untransferable,nt-/-f-e-r-b,Ntferb,,qbefnrt,0
 Untransferably,nt-/-f-e-r-b-e,Ntferbe,,qbefnrt,0
@@ -3604,7 +3613,7 @@ Disdains,d-s-d-a-n-s,Dsdans,,qadns,1
 Deceptive,d-s-e-p-df,Dseptv,,qdepstv,1
 Deceptively,d-s-e-p-df-e,Dseptve,,qdepstv,1
 Descriptions,d-s2-k-r-sh-s,Dskrzs,,qdkrsz,1
-Destructively,d-s-/-k-v-e,Dskve,,qdeksv,1
+Destructively,d-s-/-k-v-e,Dskveo,o,qdekosv,1
 Destructive,d-s-/-k-v,Dskvo,o,qdkosv,1
 Detectable,td-e-k-b,Dtekb,,qbdekt,1
 Detectably,td-e-k-b-e,Dtekbe,,qbdekt,1
@@ -5077,6 +5086,7 @@ Obtuse,o-b-t-u-s,Obtus,,qbostu,4
 Obtusely,o-b-t-u-s-e,Obtuseo,o,qbeostu,4
 Auditors,o-td-e2-s,Odtes,,qdeost,4
 Opaque,o-p-a-k,Opaq,,qaopq,4
+Officially,o-sh-l-e,Ozle,,qeloz,4
 Officially,o-sh-ye,Ozy,,qoyz,4
 Passions,p-a-sh-s,Pazs,,qapsz,4
 Preserved,pr-e-s2-e-v-d,Presevd,,qdeprsv,4
@@ -5836,6 +5846,12 @@ Unattainability,n-a-tn-\-b,Natnbo,o,qabnot,9
 Indexed,nt-e-x-d,Ndexd,,qdenx,9
 Indexing,nt-e-x-\-h,Ndexg,,qdegnx,9
 Indexs,nt-e-x-s,Ndexs,,qdensx,9
+Index,nt-x,Ndx,,qdnx,9
+Indexed,nt-x-d,Ndxd,,qdnx,9
+Indexing,nt-x-\-h,Ndxg,,qdgnx,9
+Indexer,nt-x-r,Ndxr,,qdnrx,9
+Indexers,nt-x-r-s,Ndxrs,,qdnrsx,9
+Indexes,nt-x-s,Ndxs,,qdnsx,9
 Enroll,n-r-o-l,Nrol,,qlnor,9
 Enrolled,n-r-o-l-d,Nrold,,qdlnor,9
 Enrolling,n-r-o-l-\-h,Nrolg,,qglnor,9
@@ -6612,7 +6628,7 @@ Arguments,a-g-m-s,Agms,,qagms,25
 Analyze,a-n-a-l-i-s,Analis,,qailns,25
 Analyzed,a-n-a-l-i-s-d,Analisd,,qadilns,25
 Analyzing,a-n-a-l-i-s-\-h,Analisg,,qagilns,25
-Discovery,d-s2-k-v-e,Dskveqk,,qdeksv,25
+Discovery,d-s2-k-v-e,Dskve,,qdeksv,25
 Discoveries,d-s2-k-v-e-s,Dskves,,qdeksv,25
 Judged,j-j-d,Jjd,,qdj,25
 Judges,j-j-s,Jjs,,qjs,25
@@ -9143,6 +9159,10 @@ Rerun,r-r-n,Rrn,,qnr,1680
 Rerunning,r-r-n-\-h,Rrng,,qgnr,1680
 Reruns,r-r-n-s,Rrns,,qnrs,1680
 Ticketing,t-e-k-e-t-\-h,Teketg,,qegkt,1693
+Ticket,t-k-e-t,Tket,,qekt,1693
+Ticketed,t-k-e-t-d,Tketd,,qdekt,1693
+Ticketing,t-k-e-t-\-h,Tketg,,qegkt,1693
+Tickets,t-k-e-t-s,Tkets,,qekst,1693
 Issuing,e-sh-u-\-h,Ezug,,qeguz,1696
 Issues,e-sh-u-s,Ezus,,qesuz,1696
 Pressured,pr-e-sh-u-d,Prezud,,qdepruz,1696
