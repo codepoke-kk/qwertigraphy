@@ -527,8 +527,8 @@ Discoverably,d-s2-k-v-\-b-e,Dskvbe,,qbdeksv,0
 Discoverables,d-s2-k-v-\-b-s,Dskvbs,,qbdksv,0
 Discoverer,d-s2-k-v-r,Dskvr,,qdkrsv,0
 Discoverers,d-s2-k-v-r-s,Dskvrs,,qdkrsv,0
+Discussions,d-s2-k-sh-s,Dskzs,,qdksz,0
 Destructions,d-s-/-k-sh-s,Dskzsi,i,qdiksz,0
-Discussions,d-s2-k-sh-s,Dskzso,o,qdkosz,0
 Disinfectants,d-s2-n-f-e-k-nt-s,Dsnfeknts,,qdefknst,0
 Disengage,d-s2-n-g-a,Dsnga,,qadgns,0
 Disengaged,d-s2-n-g-a-d,Dsngad,,qadgns,0
@@ -5116,6 +5116,10 @@ Reconcilers,r-k-s-i-l-r-s,Rksilrs,,qiklrs,4
 Workstations,r-k-s2-t-sh-s,Rkstzs,,qkrstz,4
 Republics,r-p-s,Rps,,qprs,4
 Representation,r-p-sh,Rpz,,qprz,4
+Representationally,r-p-sh-e,Rpze,,qeprz,4
+Representational,r-p-sh-l,Rpzl,,qlprz,4
+Representationally,r-p-sh-l-e,Rpzle,,qelprz,4
+Representations,r-p-sh-s,Rpzs,,qprsz,4
 Reworked,r-e-r-k-d,Rrkd,,qdkr,4
 Reroute,r-e-r-u-t,Rrut,,qrtu,4
 Rerouted,r-e-r-u-t-d,Rrutd,,qdrtu,4
@@ -5830,7 +5834,7 @@ Attains,a-tn-s,Atns,,qanst,9
 Bringing,br-\-h,Brg,,qbgr,9
 Datacenter,d-a-t-s-n,Datsn,,qadnst,9
 Datacenters,d-a-t-s-n-s,Datsns,,qadnst,9
-Distractions,d-s-/-k-sh-s,Dskzs,,qdksz,9
+Distractions,d-s-/-k-sh-s,Dskzso,o,qdkosz,9
 Foundational,f-nt-sh-l,Fndzl,,qdflnz,9
 Foundations,f-nt-sh-s,Fndzs,,qdfnsz,9
 Themself,th-m-s,Hms,,qhms,9
@@ -7342,6 +7346,10 @@ Articles,a2-t-/-k-s,Atks,,qakst,59
 Welcomed,l-k-m-d,Lkmd,,qdklm,59
 Welcoming,l-k-m-\-h,Lkmg,,qgklm,59
 Welcomes,l-k-m-s,Lkms,,qklms,59
+Unwelcome,n-l-k-m,Nlkm,,qklmn,59
+Unwelcomed,n-l-k-m-d,Nlkmd,,qdklmn,59
+Unwelcoming,n-l-k-m-\-h,Nlkmg,,qgklmn,59
+Unwelcomes,n-l-k-m-s,Nlkms,,qklmns,59
 Vaguely,v-a-g-e,Vage,,qaegv,59
 Exercised,e-s2-r-d,Xrd,,qdrx,59
 Exercising,e-s2-r-\-h,Xrg,,qgrx,59
