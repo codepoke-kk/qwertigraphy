@@ -2430,6 +2430,7 @@ Poorest,p-u-s-t,Pust,,qpstu,0
 Poorhouse,p-u-u-s2-^-^-^-h,Puus,,qpsu,0
 PowerPoint,p-a-u-y,Pwy,,qpwy,0
 Powerpoints,p-a-u-y-s,Pwys,,qpswy,0
+Poetry,p-o-e-t-r,Pytr,,qprty,0
 Quintessence,k-e-\-n-^--nt-e-s2-n-s,Qenntesns,,qenqst,0
 Quintessential,k-e-\-n-^--nt-e-s2-n-sh,Qenntesnz,,qenqstz,0
 Quintessentially,k-e-\-n-^--nt-e-s2-n-sh-e,Qenntesnze,,qenqstz,0
@@ -4705,6 +4706,8 @@ Accelerates,a-k-s-e-l-r-a-s,Akselras,,qaeklrs,3
 Activate,a-k-v-a-t,Akvat,,qaktv,3
 Activated,a-k-v-a-t-d,Akvatd,,qadktv,3
 Activating,a-k-v-a-t-\-h,Akvatg,,qagktv,3
+Activator,a-k-v-a-t-r,Akvatr,,qakrtv,3
+Activators,a-k-v-a-t-r-s,Akvatrs,,qakrstv,3
 Activates,a-k-v-a-t-s,Akvats,,qakstv,3
 Aliased,a-l-ea-s-d,Alesd,,qadels,3
 Aliasing,a-l-ea-s-\-h,Alesg,,qaegls,3
@@ -4727,6 +4730,14 @@ Beneath,b-n-e-th,Bneh,,qbehn,3
 Breakfasts,br-e-k-f-a-s-s,Brekfass,,qabefkrs,3
 Bisexual,b-s-e-s-l,Bsxl,,qblsx,3
 Bisexuality,b-s-e-s-\-l,Bsxlo,o,qblosx,3
+Deactivate,d-a-k-v-a-t,Dakvat,,qadktv,3
+Deactivated,d-a-k-v-a-t-d,Dakvatd,,qadktv,3
+Deactivating,d-a-k-v-a-t-\-h,Dakvatg,,qadgktv,3
+Deactivator,d-a-k-v-a-t-r,Dakvatr,,qadkrtv,3
+Deactivators,d-a-k-v-a-t-r-s,Dakvatrs,,qadkrstv,3
+Deactivates,d-a-k-v-a-t-s,Dakvats,,qadkstv,3
+Deactivation,d-a-k-v-a-sh,Dakvaz,,qadkvz,3
+Deactivations,d-a-k-v-a-sh-s,Dakvazs,,qadksvz,3
 Dashboard,d-b-o-d,Dbod,,qbdo,3
 Dashboarded,d-b-o-d-d,Dbodd,,qbdo,3
 Dashboarding,d-b-o-d-\-h,Dbodg,,qbdgo,3
@@ -6744,10 +6755,8 @@ Standardizes,s2-tn-a-d-i-s-s,Stnadiss,,qadinst,27
 Horribly,^-h-\-o-r-b-e,Horbe,,qbehor,28
 Identically,a-tn-/-k-e,Idnke,,qdeikn,28
 Identicals,a-tn-/-k-s,Idnks,,qdikns,28
-Conditioned,k-d-sh-d,Kdzdqk,,qdkz,28
-Conditioning,k-d-sh-\-h,Kdzgqk,,qdgkz,28
 Conditional,k-d-sh-l,Kdzl,,qdklz,28
-Conditions,k-d-sh-s,Kdzsqk,,qdksz,28
+Conditionally,k-d-sh-l-e,Kdzle,,qdeklz,28
 Kingdom,k-e-ng-tm,Kedgm,,qdegkm,28
 Kingdomed,k-e-ng-tm-d,Kedgmd,,qdegkm,28
 Kingdoming,k-e-ng-tm-\-h,Kedgmg,,qdegkm,28
@@ -8172,6 +8181,7 @@ Invalids,n-v-a-l-d-s,Nvalds,,qadlnsv,193
 Invalid,n-v-a-l-e-d,Nvaled,,qadelnv,193
 Invalids,n-v-a-l-e-d-s,Nvaleds,,qadelnsv,193
 Invalidation,n-v-a-l-e-d-sh,Nvaledz,,qadelnvz,193
+Invalidations,n-v-a-l-e-d-sh-s,Nvaledzs,,qadelnsvz,193
 Retired,r-e-t-i2-d,Rtid,,qdirt,193
 Retiring,r-e-t-i2-\-h,Rtig,,qgirt,193
 Retires,r-e-t-i2-s,Rtis,,qirst,193
@@ -8865,6 +8875,9 @@ Sounding,s2-nt-\-h,Sndg,,qdgns,593
 Sounds,s2-nt-s,Snds,,qdns,593
 Hoping,^-h-\-o-p-\-h,Hopg,,qghop,596
 Hopes,^-h-\-o-p-s,Hopso,o,qhops,596
+Reportable,r-pr-b,Rprb,,qbpr,600
+Reportably,r-pr-b-e,Rprbe,,qbepr,600
+Reportability,r-pr-\-b,Rprbo,,qbopr,600
 Krishna,k-r-e-sh-n,Krezn,,qeknrz,603
 Checked,ch-e-k-d,Cekd,,qcdek,608
 Checking,ch-e-k-\-h,Cekg,,qcegk,608
@@ -9259,11 +9272,10 @@ Ways,u-a-s,Uas,,qasu,2235
 Passworded,p-u-d-d,Pudd,,qdpu,2238
 Passwording,p-u-d-\-h,Pudg,,qdgpu,2238
 Passwords,p-u-d-s,Puds,,qdpsu,2238
-Precondition,pr-e-k-d-sh,Kdz,,qdkz,2241
-Preconditioned,pr-e-k-d-sh-d,Kdzd,,qdkz,2241
-Preconditioning,pr-e-k-d-sh-\-h,Kdzg,,qdgkz,2241
-Condition,k-d-sh,Kdzqk,,qdkz,2241
-Preconditions,pr-e-k-d-sh-s,Kdzs,,qdksz,2241
+Condition,k-d-sh,Kdz,,qdkz,2241
+Conditioned,k-d-sh-d,Kdzd,,qdkz,2241
+Conditioning,k-d-sh-\-h,Kdzg,,qdgkz,2241
+Conditions,k-d-sh-s,Kdzs,,qdksz,2241
 Precondition,p-k-d-sh,Pkdz,,qdkpz,2241
 Preconditioned,p-k-d-sh-d,Pkdzd,,qdkpz,2241
 Preconditioning,p-k-d-sh-\-h,Pkdzg,,qdgkpz,2241
