@@ -3659,7 +3659,6 @@ Wretched,r-e-ch-d,Recd,,qcder,0
 Richmond,r-e-ch-mn,Recmn,,qcemnr,0
 Rich,r-e-ch,Reco,o,qceor,0
 Rio de janeiro,r-e-d-j,Redj,,qdejr,0
-Rid,r-e-d,Redo,o,qdeor,0
 Risk,r-e-s2-k,Resk,,qekrs,0
 Referral,r-fl,Rflo,o,qflor,0
 Reflection,r-fl-sh,Rflz,,qflrz,0
@@ -4450,7 +4449,7 @@ Defeat,df-e-t,Dfet,,qdeft,1
 Deform,df-m,Dfm,,qdfm,1
 Dilution ,d-l-sh,Dlz,,qdlz,1
 Diminish,tm-e-n-sh,Dmenz,,qdemnz,1
-Density,tn-/-s,Dnso,o,qdnos,1
+Density,tn-/-s,Dnsoqk,o,qdnos,1
 Dint ,tn-t,Dnt,,qdnt,1
 Daughters,d-o-t-ye2,Doty,,qdoty,1
 Depot,d-p-o,Dpo,,qdop,1
@@ -4852,7 +4851,7 @@ Democracy,tm-k-s-e,Dmkse,,qdekms,2
 Demonstrate,tm-o-n-s,Dmons,,qdmnos,2
 Demonstration,tm-o-n-s-sh,Dmonsz,,qdmnosz,2
 Domestic,tm-/-s2-t,Dmst,,qdmst,2
-Dense,tn-s,Dns,,qdns,2
+Dense,tn-s,Dnso,o,qdnos,2
 Disadvantage,d-s2-a-v,Dsav,,qadsv,2
 Discrepancy,d-s2-k-r-e-p,Dskrep,,qdekprs,2
 Distant,d-s2-tn-t,Dstnt,,qdnst,2
