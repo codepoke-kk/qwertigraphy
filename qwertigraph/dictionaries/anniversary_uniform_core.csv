@@ -1465,7 +1465,6 @@ Gondola,g-o-nt-l-a,Gondla,,qadglno,0
 Gauntlet,g-o-nt-l-e,Gontle,,qeglnot,0
 Gorilla,g-o-r-e-l-a,Gorela,,qaeglor,0
 Gossip,g-o-s-e-p,Gosep,,qegops,0
-Ghostly,g-o-s2-t-e,Goste,,qegost,0
 Gradually,g-r-a-d-l-e,Gradle,,qadeglr,0
 Gradient,g-r-a-tn-t,Gradnt,,qadgnrt,0
 Graduate,g-r-a-d-e-u-t,Gradut,,qadgrtu,0
@@ -1599,7 +1598,7 @@ Hysterics,^-h-\-e-s2-t-r-k-s,Hestrks,,qehkrst,0
 Thoroughly understood,th2-e-/-s2-t-u,Hestu,,qehstu,0
 Heritability,^-h-\-e2-t-\-b,Hetbo,,qbehot,0
 Theater,th-e-t-e2,Hete,,qeht,0
-Heretofore,^-h-\-e2-t-f,Hetf,,qefht,0
+Heretofore,^-h-\-e2-t-f,Hetfqk,,qefht,0
 Heritage,^-h-\-e2-t-j,Hetj,,qehjt,0
 They do not,th-e-tn,Hetn,,qehnt,0
 They do not know,th-e-tn-o,Hetno,,qehnot,0
@@ -2293,8 +2292,8 @@ Lancaster,l-a-nk-a-s,Laqas,,qalqs,0
 Larboard,l-a-r-b-o-d,Larbod,,qabdlor,0
 Laryngitis,l-a-r-e-n-j-i,Larenji,,qaeijlnr,0
 Larkspur,l-a-r-k-s-p-u-r,Larkspur,,qaklprsu,0
-Lazy,l-a-s-e,Lase,,qaels,0
 Lacy,l-a-s-e,Laseo,o,qaelos,0
+Lazy,l-a-s-e,Laseqk,,qaels,0
 Laity,l-a-t-e,Latei,i,qaeilt,0
 Lattermost,l-a-t-e-m-o,Latemo,,qaelmot,0
 Latest,l-a-t-e-s,Lates,,qaelst,0
@@ -3035,7 +3034,7 @@ Neckerchief,n-e-k-r-ch,Nekrc,,qceknr,0
 Necropolis,n-e-k-r-p,Nekrp,,qeknpr,0
 Nickotine,n-e-k-tn,Nektn,,qeknt,0
 In a week or two,n-e-k-t-u,Nektu,,qekntu,0
-Any more,n-e-m,Nem,,qemn,0
+Anymore,n-e-m,Nem,,qemn,0
 Mnemonic,n-e-mn-e-k,Nemmek,,qekmn,0
 Indeterminate,n-e2-mn-a-t,Nemnat,,qaemnt,0
 Nearer than,n-e2-n,Nen,,qen,0
@@ -3128,7 +3127,7 @@ Income tax,n-k-t-a-x,Nktax,,qakntx,0
 Incunabula,n-k-e-u-n-a-b,Nkunab,,qabknu,0
 Inconvenienced,n-k-v-e-n-/-t,Nkvend,,qdeknv,0
 Enlighten,n-l-i-n,Nlin,,qiln,0
-Unlined,n-l-a-nt,Nlind,,qdiln,0
+Unlined,n-l-a-nt,Nlindqk,,qdiln,0
 New london,n-l-nt,Nlnd,,qdln,0
 Nullity,n-/-l,Nlo,o,qlno,0
 Interlocutor,n-/-l-o-k-t-e2,Nlokte,,qeklnot,0
@@ -5462,8 +5461,8 @@ Zinc,s2-e-nk,Seq,,qeqs,6
 Sink,s2-e-nk,Seqo,o,qeoqs,6
 City,s2-e-t-e,Sete,,qest,6
 Score,s2-k-o-r,Skor,,qkors,6
-Slip,s-l-e-p,Slep,,qelps,6
 Sleep,s-l-e-p,Slepo,o,qelops,6
+Slip,s-l-e-p,Slepqk,,qelps,6
 Song,s2-o-ng,Sog,,qgos,6
 Transportation,t-/-p-o-t-sh,Tpotz,,qoptz,6
 Worse,u-u-s,Uuso,o,qosu,6
@@ -6774,7 +6773,6 @@ Authority,o-th2-/-r,Ohr,,qhor,167
 Engineer,n-j-n-e2,Njne,,qejn,168
 Short,^-sh,Z,,qz,168
 Reach,r-e-ch,Rc,,qcr,170
-Statement,s2-t-m,Stm,,qmst,170
 Throw,th-r-o,Hro,,qhor,172
 Kill,k-e-l,Kel,,qekl,172
 Kiln,k-e-l,Kelo,o,qeklo,172
@@ -7208,7 +7206,6 @@ Inquiries,n-k-i-s,Nqiso,o,qinoqs,617
 Require,r-k-i,Rqi,,qiqr,617
 Clear,k-l-e,Kle,,qekl,618
 Clears,k-l-e-s,Kles,,qekls,618
-Last,l-a-s,Lasi,i,qails,623
 Lace,l-a-s,Lasu,u,qalsu,623
 Love,l-v,Lv,,qlv,625
 Loved,l-v-d,Lvd,,qdlv,625
@@ -7629,8 +7626,8 @@ Dislike,d-s-l-a,Dsla,,qadls,4661
 Like,l-a,La,,qal,4661
 Likely,l-a-e,Lae,,qael,4661
 Louisiana,l-a,Lao,o,qalo,4661
-Lass,l-a-s,Las,,qals,4661
 Likes,l-a-s,Laso,o,qalos,4661
+Lass,l-a-s,Lasqk,,qals,4661
 Live,l-a-v,Lav,,qalv,4661
 Lively,l-a-v-e,Laveo,o,qaelov,4661
 Unlike,n-l-a,Nla,,qaln,4661
