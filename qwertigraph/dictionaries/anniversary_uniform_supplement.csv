@@ -641,6 +641,7 @@ Enacts,e-n-a-k-s,Enaks,,qaekns,0
 Inappreciated,e-n-a-pr-e-sh-d,Enaprezd,,qadenprz,0
 Inarticulate,e-n-a2-t-e-k-\-u,Enateku,,qaekntu,0
 Inarticulately,e-n-a2-t-e-k-\-u-e,Enatekue,,qaekntu,0
+Inabilities,e-n-\-b-s,Enbos,,qbenos,0
 Inerrancy,e-n-e-r-a-n-s-e,Eneranse,,qaenrs,0
 Inerrantly,e-n-e-r-a-nt-e,Enerante,,qaenrt,0
 Inerrants,e-n-e-r-a-nt-s,Enerants,,qaenrst,0
@@ -1708,6 +1709,8 @@ Musters,m-u-s-t-e2-s,Mustes,,qemstu,0
 Mixture,m-e-s-t-r,Mxtr,,qmrtx,0
 Mixtures,m-e-s-t-r-s,Mxtrs,,qmrstx,0
 In-,n->,N>,,q>n,0
+Inability,n-a-\-b,Nabo,,qabno,0
+Inabilities,n-a-\-b-s,Nabos,,qabnos,0
 Unnamed,u-n-a-/-t,Nado,o,qadno,0
 Unaccountably,n-a-k-t-b-e,Naktbe,,qabeknt,0
 Interactionally,^-n-\-a-k-sh-l-e,Nakzle,,qaeklnz,0
@@ -3831,6 +3834,10 @@ Capitalist,k-p-t-\-s-t,Kptst,,qkpst,1
 Capitalists,k-p-t-\-s-t-s,Kptsts,,qkpst,1
 Crypt,k-r-e-p-t,Krept,,qekprt,1
 Crypts,k-r-e-p-t-s,Krepts,,qekprst,1
+Critique,k-r-e-t-e-k,Kreteq,,qekqrt,1
+Critiqued,k-r-e-t-e-k-d,Kreteqd,,qdekqrt,1
+Critiquing,k-r-e-t-e-k-\-h,Kreteqg,,qegkqrt,1
+Critiques,k-r-e-t-e-k-s,Kreteqs,,qekqrst,1
 Criticized,k-r-e-t-ss-d,Kretssd,,qdekrst,1
 Criticizing,k-r-e-t-ss-\-h,Kretssg,,qegkrst,1
 Criticizes,k-r-e-t-ss-s,Kretsss,,qekrst,1
@@ -6036,6 +6043,7 @@ Raises,r-a-s-s,Rass,,qars,10
 Remembering,r-e-mn-\-h,Rmmg,,qgmr,10
 Revoke,r-v-k,Rvk,,qkrv,10
 Revocable,r-v-k-b,Rvkb,,qbkrv,10
+Revoked,r-v-k-d,Rvkd,,qdkrv,10
 Revoking,r-v-k-\-h,Rvkg,,qgkrv,10
 Revokes,r-v-k-s,Rvks,,qkrsv,10
 Sentenced,s2-e-n-tn-s-d,Sentnsd,,qdenst,10
@@ -7199,8 +7207,10 @@ Functionalities,f-nk-/-l-s,Fqls,,qflqs,40
 Quoted,k-w-o-t-d,Qotd,,qdoqt,40
 Quoting,k-w-o-t-\-h,Qotg,,qgoqt,40
 Quotes,k-w-o-t-s,Qots,,qoqst,40
+Straightforward,s-t-r-a-t-f,Stratf,,qafrst,40
 Straightforward,s-t-r-a-t-f-d,Stratfd,,qadfrst,40
 Straightforwardly,s-t-r-a-t-f-d-e,Stratfde,,qadefrst,40
+Straightforwardly,s-t-r-a-t-f-e,Stratfe,,qaefrst,40
 Tokenize,t-o-k-n-i-s,Toknis,,qiknost,40
 Tokenized,t-o-k-n-i-s-d,Toknisd,,qdiknost,40
 Tokenizing,t-o-k-n-i-s-\-h,Toknisg,,qgiknost,40
