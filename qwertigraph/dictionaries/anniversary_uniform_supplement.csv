@@ -1247,6 +1247,9 @@ Collaborative,k-o-l-a-br-a-df,Kolabratv,,qabklortv,0
 Collaboratively,k-o-l-a-br-a-df-e,Kolabratve,,qabeklortv,0
 Collaboration,k-o-l-a-br-a-sh,Kolabrz,,qabklorz,0
 Collaborations,k-o-l-a-br-a-sh-s,Kolabrzs,,qabklorsz,0
+Collisioned,k-o-l-e-sh-d,Kolezd,,qdekloz,0
+Collisioning,k-o-l-e-sh-\-h,Kolezg,,qegkloz,0
+Collisions,k-o-l-e-sh-s,Kolezs,,qeklosz,0
 Collectors,k-o-l-r-s,Kolrs,,qklors,0
 Coincidental,k-o-n-s-e-tn-l,Konsednl,,qdeklnos,0
 Coincidentally,k-o-n-s-e-tn-l-e,Konsednle,,qdeklnos,0
@@ -5211,7 +5214,7 @@ Righteous,r-i-ch-u-s,Ricus,,qcirsu,4
 Reconciler,r-k-s-i-l-r,Rksilr,,qiklrs,4
 Reconcilers,r-k-s-i-l-r-s,Rksilrs,,qiklrs,4
 Workstations,r-k-s2-t-sh-s,Rkstzs,,qkrstz,4
-Republics,r-p-s,Rps,,qprs,4
+Republics,r-p-s,Rpsqk,,qprs,4
 Representation,r-p-sh,Rpz,,qprz,4
 Reworked,r-e-r-k-d,Rrkd,,qdkr,4
 Reroute,r-e-r-u-t,Rrut,,qrtu,4
@@ -5594,8 +5597,8 @@ Reencodes,r-n-k-o-t-s,Rnkods,,qdknors,6
 Repeatedly,r-p-e-d-e,Rpede,,qdepr,6
 Repentance,r-e-jnt-n-s,Rpntns,,qnprst,6
 Repentances,r-e-jnt-n-s-s,Rpntnss,,qnprst,6
+Replies,r-e-p-s,Rps,,qprs,6
 Represents,r-p-s,Rpso,o,qoprs,6
-Replies,r-e-p-s,Rpsqk,,qprs,6
 Resistor,r-ss-r,Rssr,,qrs,6
 Resistors,r-ss-r-s,Rssrs,,qrs,6
 Realist,r-e-\-s-t,Rst,,qrst,6
@@ -6591,6 +6594,7 @@ Restarter,r-s2-t-a2-t-r,Rstatr,,qarst,18
 Restarters,r-s2-t-a2-t-r-s,Rstatrs,,qarst,18
 Self-,s->,S>,,q>s,18
 Starter,s2-t-a2-t-r,Statr,,qarst,18
+Starters,s2-t-a2-t-r-s,Statrs,,qarst,18
 Extended,e-s2-tn-d,Xtnd,,qdntx,18
 Extending,e-s2-tn-\-h,Xtng,,qgntx,18
 Extends,e-s2-tn-s,Xtns,,qnstx,18
@@ -8751,6 +8755,9 @@ Training,t-r-a-n-\-h,Trang,,qagnrt,355
 Trainings,t-r-a-n-\-h-s,Trangs,,qagnrst,355
 Trainings,t-r-a-n-\-h-s,Tranz,,qanrtz,355
 Configure,k-f-e-g-r,Kfegr,,qefgkr,358
+Configurable,k-f-e-g-r-b,Kfegrb,,qbefgkr,358
+Configurably,k-f-e-g-r-b-e,Kfegrbe,,qbefgkr,358
+Configurability,k-f-e-g-r-\-b,Kfegrbo,,qbefgkor,358
 Configured,k-f-e-g-r-d,Kfegrd,,qdefgkr,358
 Configuring,k-f-e-g-r-\-h,Kfegrg,,qefgkr,358
 Configures,k-f-e-g-r-s,Kfegrs,,qefgkrs,358
@@ -8888,6 +8895,9 @@ Documenter,d-o-k-m-r,Dokmr,,qdkmor,455
 Documenters,d-o-k-m-r-s,Dokmrs,,qdkmors,455
 Documents,d-o-k-m-s,Dokms,,qdkmos,455
 Documentation,d-o-k-m-sh,Dokmz,,qdkmoz,455
+Pulled,p-u-l-d,Puld,,qdlpu,455
+Pulling,p-u-l-\-h,Pulg,,qglpu,455
+Pulls,p-u-l-s,Puls,,qlpsu,455
 Resubmit,r-s2-m-e-t,Rsmet,,qemrst,459
 Resubmitted,r-s2-m-e-t-d,Rsmetd,,qdemrst,459
 Resubmitting,r-s2-m-e-t-\-h,Rsmetg,,qegmrst,459
@@ -9550,6 +9560,12 @@ Certification,s2-e-df-sh,Setfz,,qefstz,7488
 Knees,n-e-s,Neso,o,qenos,8247
 Automation,o-tm-a-sh,Otmz,,qmotz,12226
 Automations,o-tm-a-sh-s,Otmzs,,qmostz,12226
+Web,w-b,Wb,,qbw,90162
+Webbed,w-b-d,Wbd,,qbdw,90162
+Webbing,w-b-\-h,Wbg,,qbgw,90162
+Webs,w-b-s,Wbs,,qbsw,90162
+Website,w-b-s-i,Wbsi,,qbisw,90162
+Websites,w-b-s-i-s,Wbsis,,qbisw,90162
 Trail,t-r-a-l,Tral,,qalrt,90202
 Trailed,t-r-a-l-d,Trald,,qadlrt,90202
 Trailing,t-r-a-l-\-h,Tralg,,qaglrt,90202
