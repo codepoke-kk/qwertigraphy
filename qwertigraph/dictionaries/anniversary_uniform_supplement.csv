@@ -388,7 +388,12 @@ Dynamic,d-i-n-m-k,Dinmk,,qdikmn,0
 Dynamically,d-i-n-m-k-e,Dinmke,,qdeikmn,0
 Dynamics,d-i-n-m-k-s,Dinmks,,qdikmns,0
 De jure,d-~-j,Dj,,qdj,0
-Degeneration,d-j-e-n-r-a-sh,Djenrz,,qdejnrz,0
+Degenerate,d-j-e-n-r-t,Djenrt,,qdejnrt,0
+Degenerated,d-j-e-n-r-t-d,Djenrtd,,qdejnrt,0
+Degenerating,d-j-e-n-r-t-\-h,Djenrtg,,qdegjnrt,0
+Degenerates,d-j-e-n-r-t-s,Djenrts,,qdejnrst,0
+Degeneration,d-j-e-n-r-sh,Djenrz,,qdejnrz,0
+Degenerations,d-j-e-n-r-sh-s,Djenrzs,,qdejnrsz,0
 Decryptably,d-/-k-b-e,Dkbe,,qbdek,0
 Detractions,d-/-k-sh-s,Dkzso,o,qdkosz,0
 Deliverability,d-l-\-b,Dlbo,,qbdlo,0
@@ -1908,6 +1913,7 @@ Encircling,n-s2-e-k-l-\-h,Nseklg,,qegklns,0
 Encircles,n-s2-e-k-l-s,Nsekls,,qeklns,0
 Interceptions,^-n-\-s-e-p-sh-s,Nsepzs,,qenpsz,0
 Insurrections,n-s-e-r-e-k-sh-s,Nserekzs,,qeknrsz,0
+Insert,n-s2-e2-t,Nset,,qenst,0
 Inserted,n-s2-e2-t-d,Nsetd,,qdenst,0
 Inserting,n-s2-e2-t-\-h,Nsetg,,qegnst,0
 Inserts,n-s2-e2-t-s,Nsets,,qenst,0
@@ -5895,6 +5901,13 @@ They'll,th-e-l,Helo,o,qehlo,8
 They'd,th-e-d,Heod,,qdeho,8
 They'll,th-e-l,Heol,,qehlo,8
 Hopelessly,^-h-\-o-pl-e,Hople,,qehlop,8
+Coordinated,k-o-o-tn-a-t-d,Koodnatd,,qadknot,8
+Coordinating,k-o-o-tn-a-t-\-h,Koodnatg,,qadgknot,8
+Coordinates,k-o-o-tn-a-t-s,Koodnats,,qadknost,8
+Coordinate,k-o-o-tn-t,Koodnt,,qdknot,8
+Coordinated,k-o-o-tn-t-d,Koodntd,,qdknot,8
+Coordinating,k-o-o-tn-t-\-h,Koodntg,,qdgknot,8
+Coordinates,k-o-o-tn-t-s,Koodnts,,qdknost,8
 Constructed,k-s2-/-k-d,Kskd,,qdks,8
 Constructing,k-s2-/-k-\-h,Kskg,,qgks,8
 Constructs,k-s2-/-k-s,Ksks,,qks,8
@@ -8365,10 +8378,15 @@ Throws,th-r-o-s,Hros,,qhors,172
 Migrated,m-i-g-r-a-d,Migrad,,qadgimr,172
 Migrating,m-i-g-r-a-\-h,Migrag,,qagimr,172
 Changing,ch-\-h,Cg,,qcg,173
+Reboot,r-b-u-t,Rbut,,qbrtu,173
+Rebooted,r-b-u-t-d,Rbutd,,qbdrtu,173
+Rebooting,r-b-u-t-\-h,Rbutg,,qbgrtu,173
+Reboots,r-b-u-t-s,Rbuts,,qbrstu,173
 Weird,u-e-r-d,Uerd,,qderu,173
 Weirded,u-e-r-d-d,Uerdd,,qderu,173
 Weirdly,u-e-r-d-e,Uerde,,qderu,173
 Weirding,u-e-r-d-\-h,Uerdg,,qdegru,173
+Weirder,u-e-r-d-r,Uerdr,,qderu,173
 Weirds,u-e-r-d-s,Uerds,,qdersu,173
 Dictionary,d-e-k-z-r-e,Dekzre,,qdekrz,175
 Dictionaries,d-e-k-z-r-e-s,Dekzres,,qdekrsz,175
@@ -8500,6 +8518,12 @@ Generate,j-e-n-r-a-t,Jenrat,,qaejnrt,204
 Generated,j-e-n-r-a-t-d,Jenratd,,qadejnrt,204
 Generating,j-e-n-r-a-t-\-h,Jenratg,,qaegjnrt,204
 Generates,j-e-n-r-a-t-s,Jenrats,,qaejnrst,204
+Generate,j-e-n-r-t,Jenrt,,qejnrt,204
+Generated,j-e-n-r-t-d,Jenrtd,,qdejnrt,204
+Generating,j-e-n-r-t-\-h,Jenrtg,,qegjnrt,204
+Generator,j-e-n-r-t-r,Jenrtr,,qejnrt,204
+Generators,j-e-n-r-t-r-s,Jenrtrs,,qejnrst,204
+Generates,j-e-n-r-t-s,Jenrts,,qejnrst,204
 Factly,f-a-k-e,Fakeo,o,qaefko,205
 Factual,f-a-k-l,Fakl,,qafkl,205
 Fake,f-a-k,Fako,o,qafko,205
@@ -9636,6 +9660,7 @@ More,m,M,,qm,5160
 Workable,r-k-b,Rkb,,qbkr,5288
 Working,r-k-\-h,Rkg,,qgkr,5288
 Works,r-k-s,Rks,,qkrs,5288
+Insertion,n-s-e-sh,Nsez,,qensz,5436
 Proxy,pr-s-e,Prx,,qprx,5436
 Proxied,pr-s-e-d,Prxd,,qdprx,5436
 Proxying,pr-s-e-\-h,Prxg,,qgprx,5436
