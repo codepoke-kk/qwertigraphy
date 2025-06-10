@@ -1982,6 +1982,12 @@ Intentionals,n-tn-sh-l-s,Ntnzls,,qlnstz,0
 Intone,nt-o-n,Nton,,qnot,0
 Nuclear,n-u-k-l-ea-r,Nukler,,qeklnru,0
 Nonetheless,n-u-n-th-l,Nunhl,,qhlnu,0
+Interrupt,n-/-u-p,Nup,,qnpu,0
+Interrupted,n-/-u-p-d,Nupd,,qdnpu,0
+Interrupting,n-/-u-p-\-h,Nupg,,qgnpu,0
+Interrupts,n-/-u-p-s,Nups,,qnpsu,0
+Interruption,n-/-u-p-sh,Nupz,,qnpuz,0
+Interruptions,n-/-u-p-sh-s,Nupzs,,qnpsuz,0
 Neurological,n-u-r-/-k,Nurk,,qknru,0
 Neurologically,n-u-r-/-k-e,Nurke,,qeknru,0
 In the usual manner,n-u-sh-mn-e2,Nuzmne,,qemnuz,0
@@ -3166,6 +3172,8 @@ Tabulate,t-a-b-\-u,Tabu,,qabtu,0
 Tabulated,t-a-b-\-u-d,Tabud,,qabdtu,0
 Tabulating,t-a-b-\-u-\-h,Tabug,,qabgtu,0
 Tabulates,t-a-b-\-u-s,Tabus,,qabstu,0
+Takeoff,t-a-k-o-f,Takof,,qafkot,0
+Takeoffs,t-a-k-o-f-s,Takofs,,qafkost,0
 Transactioned,t-/-a-k-sh-d,Takzd,,qadktz,0
 Transactioning,t-/-a-k-sh-\-h,Takzg,,qagktz,0
 Transactional,t-/-a-k-sh-l,Takzl,,qakltz,0
@@ -5916,16 +5924,13 @@ They'll,th-e-l,Heol,,qehlo,8
 Hopelessly,^-h-\-o-pl-e,Hople,,qehlop,8
 Coordinated,k-o-o-tn-a-t-d,Koodnatd,,qadknot,8
 Coordinating,k-o-o-tn-a-t-\-h,Koodnatg,,qadgknot,8
+Coordinator,k-o-o-tn-a-t-r,Koodnatr,,qadknort,8
+Coordinators,k-o-o-tn-a-t-r-s,Koodnatrs,,qadknorst,8
 Coordinates,k-o-o-tn-a-t-s,Koodnats,,qadknost,8
 Coordinate,k-o-o-tn-t,Koodnt,,qdknot,8
 Coordinated,k-o-o-tn-t-d,Koodntd,,qdknot,8
 Coordinating,k-o-o-tn-t-\-h,Koodntg,,qdgknot,8
 Coordinates,k-o-o-tn-t-s,Koodnts,,qdknost,8
-Coordinated,k-o-o-tn-a-t-d,Koodnatd,,qadknot,8
-Coordinating,k-o-o-tn-a-t-\-h,Koodnatg,,qadgknot,8
-Coordinator,k-o-o-tn-a-t-r,Koodnatr,,qadknort,8
-Coordinators,k-o-o-tn-a-t-r-s,Koodnatrs,,qadknorst,8
-Coordinates,k-o-o-tn-a-t-s,Koodnats,,qadknost,8
 Constructed,k-s2-/-k-d,Kskd,,qdks,8
 Constructing,k-s2-/-k-\-h,Kskg,,qgks,8
 Constructs,k-s2-/-k-s,Ksks,,qks,8
