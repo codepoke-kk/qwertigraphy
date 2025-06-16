@@ -117,7 +117,7 @@ Annihilates,a-n-i-l-a-s,Anilas,,qailns,0
 Annihilations,a-n-i-l-a-sh-s,Anilzs,,qailnsz,0
 Angelic,a-n-j-l-k,Anjlk,,qajkln,0
 Analyst,a-n-l-e-s,Anleso,o,qaelnos,0
-Analysts,a-n-l-e-ss,Anless,,qaelns,0
+Analysts,a-n-l-e-s-s,Anless,,qaelns,0
 Answerably,a-n-s-b-e,Ansbe,,qabens,0
 Annoint,a-n-o-e-nt,Anynt,,qanty,0
 Annointed,a-n-o-e-nt-d,Anyntd,,qadnty,0
@@ -3699,6 +3699,11 @@ Declaratives,d-e-/-r-a-df-s,Deratvs,,qaderstv,1
 Declarative,d-e-/-r-df,Dertv,,qdertv,1
 Declaratively,d-e-/-r-df-e,Dertve,,qdertv,1
 Declaratives,d-e-/-r-df-s,Dertvs,,qderstv,1
+Defected,df-e-k-d,Dfekd,,qdefk,1
+Defecting,df-e-k-\-h,Dfekg,,qdefgk,1
+Defects,df-e-k-s,Dfeks,,qdefks,1
+Defection,df-e-k-sh,Dfekz,,qdefkz,1
+Defections,df-e-k-sh-s,Dfekzs,,qdefksz,1
 Differentiate,df-sh-ia-t,Dfziat,,qadfitz,1
 Differentiated,df-sh-ia-t-d,Dfziatd,,qadfitz,1
 Differentiating,df-sh-ia-t-\-h,Dfziatg,,qadfgitz,1
@@ -3754,6 +3759,8 @@ Initialize,e-n-e-sh-i-s,Enezis,,qeinsz,1
 Initialized,e-n-e-sh-i-s-d,Enezisd,,qdeinsz,1
 Initializing,e-n-e-sh-i-s-\-h,Enezisg,,qeginsz,1
 Initializes,e-n-e-sh-i-s-s,Eneziss,,qeinsz,1
+Initialization,e-n-e-sh-i-s-sh,Enezisz,,qeinsz,1
+Initializations,e-n-e-sh-i-s-sh-s,Eneziszs,,qeinsz,1
 Initiatives,e-n-e-sh-t-v-s,Eneztvs,,qenstvz,1
 Inhabitants,e-n-^-h-\-a-b-tn-s,Enhabtns,,qabehnst,1
 Equated,e-k-a-td,Eqatd,,qadeqt,1
@@ -3951,10 +3958,12 @@ Embarrassed,m-b-a-r-a-s-d,Mbarasd,,qabdmrs,1
 Embarrassing,m-b-a-r-a-s-\-h,Mbarasg,,qabgmrs,1
 Embarrasss,m-b-a-r-a-s-s,Mbarass,,qabmrs,1
 Muchnesses,m-ch-n-e-s-s,Mcness,,qcemns,1
+Metadata,m-d-a-t,Mdat,,qadmt,1
 Murderous,m-e2-d-e2-r-u-s,Mederus,,qdemrsu,1
 Metadata,m-e-td-a-t,Medtato,o,qademot,1
 Messenger,m-e-s-j-e2,Mesje,,qejms,1
 Messengers,m-e-s-j-e2-s,Mesjes,,qejms,1
+Metadata,m-e-td-a-t,Metdat,,qademt,1
 Missionaries,m-e-sh-r-e-s,Mezres,,qemrsz,1
 Mileage,m-i2-\-j,Mij,,qijm,1
 Mechanic,m-k-a-n,Mkan,,qakmn,1
@@ -4355,6 +4364,8 @@ Triggers,t-r-e-g-r-s,Tregrs,,qegrst,1
 Triumphed,t-r-i-m-f-d,Trimfd,,qdfimrt,1
 Triumphing,t-r-i-m-f-\-h,Trimfg,,qfgimrt,1
 Triumphs,t-r-i-m-f-s,Trimfs,,qfimrst,1
+Defectively,df-e-k-v-e,Tvekve,,qektv,1
+Defectives,df-e-k-v-s,Tvekvs,,qekstv,1
 Wordings,u-d-\-s,Udz,,qduz,1
 Younger,u-ng-e2,Ugeo,o,qegou,1
 Youngest,u-ng-e-s,Uges,,qegsu,1
@@ -4733,6 +4744,15 @@ Sympathizes,s2-e-m-th-i-s-s,Semhiss,,qehims,2
 Sensitivity,s2-e-n-s-df-t-e,Senstvte,,qenstv,2
 Sensitivities,s2-e-n-s-df-t-e-s,Senstvtes,,qenstv,2
 Septuagint,s-e-p-j,Sepj,,qejps,2
+Schema,s2-k-e-m-a,Skema,,qaekms,2
+Schematic,s2-k-e-m-\-a,Skemao,o,qaekmos,2
+Schemas,s2-k-e-m-a-s,Skemas,,qaekms,2
+Schematics,s2-k-e-m-\-a-s,Skemaso,o,qaekmos,2
+Schemed,s2-k-e-m-d,Skemd,,qdekms,2
+Scheming,s2-k-e-m-\-h,Skemg,,qegkms,2
+Schemer,s2-k-e-m-r,Skemr,,qekmrs,2
+Schemers,s2-k-e-m-r-s,Skemrs,,qekmrs,2
+Schemes,s2-k-e-m-s,Skems,,qekms,2
 Slave,s-l-a-v,Slav,,qalsv,2
 Slaved,s-l-a-v-d,Slavd,,qadlsv,2
 Slaving,s-l-a-v-\-h,Slavg,,qaglsv,2
@@ -5385,6 +5405,8 @@ Head,^-h-\-e-d,Hed,,qdeh,5
 Headed,^-h-\-e-d-d,Hedd,,qdeh,5
 Heading,^-h-\-e-d-\-h,Hedg,,qdegh,5
 Headings,^-h-\-e-d-\-h-s,Hedgs,,qdeghs,5
+Header,^-h-\-e-d-r,Hedr,,qdehr,5
+Headers,^-h-\-e-d-r-s,Hedrs,,qdehrs,5
 Heads,^-h-\-e-d-s,Heds,,qdehs,5
 Headings,^-h-\-e-d-\-h-s,Hedz,,qdehz,5
 Theological,h-e-\-o-k,Heok,,qehko,5
@@ -6094,6 +6116,8 @@ Rotate,r-o-t-a,Rota,,qaort,9
 Rotated,r-o-t-a-d,Rotad,,qadort,9
 Rotating,r-o-t-a-\-h,Rotag,,qagort,9
 Rotates,r-o-t-a-s,Rotas,,qaorst,9
+Routinely,r-u-t-e-n-e,Rutene,,qenrtu,9
+Routines,r-u-t-e-n-s,Rutens,,qenrstu,9
 Timed,tm-d,Tmd,,qdmt,9
 Venafi,v-n-f-i,Vnfi,,qfinv,9
 Outlining,a-u-l-a-n-\-h,Wling,,qgilnw,9
@@ -7553,6 +7577,8 @@ Sexual,s-e-s-l,Sxl,,qlsx,49
 Sexuality,s-e-s-\-l,Sxlo,o,qlosx,49
 Sexes,s-e-s-s,Sxs,,qsx,49
 Verification,v-e-r-\-f,Verfo,o,qeforv,49
+Verification,v-e-r-\-f-sh,Verfz,,qefrvz,49
+Verifications,v-e-r-\-f-sh-s,Verfzs,,qefrsvz,49
 Horizon,^-h-\-o-r-i-s2-n,Horisn,,qhinors,50
 Horizons,^-h-\-o-r-i-s2-n-s,Horisns,,qhinors,50
 Wisdoms,u-e-s2-tm-s,Uesdms,,qdemsu,50
@@ -7655,6 +7681,7 @@ Strengthened,s2-t-r-n-d,Strnd,,qdnrst,58
 Strengthening,s2-t-r-n-\-h,Strng,,qgnrst,58
 Strengthens,s2-t-r-n-s,Strns,,qnrst,58
 Strengths,s2-t-r-s,Strs,,qrst,58
+Analyses,a-n-a-l-s-e-s,Analses,,qaelns,59
 Articles,a2-t-/-k-s,Atks,,qakst,59
 Welcomed,l-k-m-d,Lkmd,,qdklm,59
 Welcoming,l-k-m-\-h,Lkmg,,qgklm,59
@@ -7671,7 +7698,7 @@ Slowed,s-l-o-d,Slod,,qdlos,61
 Slowing,s-l-o-\-h,Slogo,o,qglos,61
 Slows,s-l-o-s,Slos,,qlos,61
 Components,k-p-o-n-s,Kpons,,qknops,62
-Python,p-i-th,Pih,,qhip,62
+Python,p-i-th,Pih,,hip,62
 Pythons,p-i-th-s,Pihs,,qhips,62
 Proved,pr-v-d,Prvd,,qdprv,62
 Confusing,k-f-e-u-\-h,Kfug,,qfgku,63
@@ -9461,6 +9488,12 @@ Exit,e-s2-e-t,Xt,,qtx,1052
 Exited,e-s2-e-t-d,Xtd,,qdtx,1052
 Exiting,e-s2-e-t-\-h,Xtg,,qgtx,1052
 Exits,e-s2-e-t-s,Xts,,qstx,1052
+Externalize,e-s-/-n-l-i-s,Xnlis,,qilnsx,1069
+Externalized,e-s-/-n-l-i-s-d,Xnlisd,,qdilnsx,1069
+Externalizing,e-s-/-n-l-i-s-\-h,Xnlisg,,qgilnsx,1069
+Externalizes,e-s-/-n-l-i-s-s,Xnliss,,qilnsx,1069
+Externalization,e-s-/-n-l-i-s-sh,Xnlisz,,qilnsxz,1069
+Externalizations,e-s-/-n-l-i-s-sh-s,Xnliszs,,qilnsxz,1069
 Founded,f-nt-d,Fndd,,qdfn,1074
 Founding,f-nt-\-h,Fndg,,qdfgn,1074
 Founds,f-nt-s,Fnds,,qdfns,1074
