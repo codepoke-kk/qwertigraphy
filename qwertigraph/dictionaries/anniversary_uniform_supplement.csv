@@ -2730,7 +2730,7 @@ Receptacles,r-s-e-p-\-k-s,Rsepks,,qekprs,0
 Resurrections,r-e-s-e-r-e-k-sh-s,Rserekzs,,qekrsz,0
 Reservably,r-s2-e-v-b-e,Rsevbe,,qbersv,0
 Reservior,r-s2-e-v-o-r-\-~-n,Rsevor,,qeorsv,0
-Reserviors,r-s2-e-v-o-r-\-~-n-s,Rsevorns,,qenorsv,0
+Reserviors,r-s2-e-v-o-r-\-~-n-s,Rsevors,,qeorsv,0
 Restful,r-e-s-f,Rsf,,qfrs,0
 Restfully,r-e-s-f-e,Rsfe,,qefrs,0
 Resignedly,r-s2-i-n-d-e,Rsinde,,qdeinrs,0
@@ -3474,6 +3474,9 @@ Visualizes,v-e-sh-u-l-i-s-s,Vezuliss,,qeilsuvz,0
 Visualization,v-e-sh-u-l-i-s-sh,Vezulisz,,qeilsuvz,0
 Visualizations,v-e-sh-u-l-i-s-sh-s,Vezuliszs,,qeilsuvz,0
 Visuals,v-e-sh-u-l-s,Vezuls,,qelsuvz,0
+Violently,v-i-l-e-nt-e,Vilente,,qeilntv,0
+Violent,v-i-l-nt,Vilnt,,qilntv,0
+Violently,v-i-l-nt-e,Vilnte,,qeilntv,0
 Violations,v-i-l-a-sh-s,Vilzs,,qilsvz,0
 Advisability,v-i-s-\-b,Visbo,,qbiosv,0
 Advisedly,v-i-s2-d-e,Visde,,qdeisv,0
@@ -5363,6 +5366,9 @@ Examining,e-s2-a-mn-\-h,Xamng,,qagmnx,4
 Examines,e-s2-a-mn-s,Xamns,,qamnsx,4
 Examination,e-s2-a-mn-sh,Xamnz,,qamnxz,4
 Expectations,e-s-p-sh-s,Xpzs,,qpsxz,4
+Shaking,sh-a-k-\-h,Zakg,,qagkz,4
+Shaken,sh-a-k-n,Zakn,,qaknz,4
+Shakes,sh-a-k-s,Zaks,,qaksz,4
 Absence,a-b-s,Absu,u,qabsu,5
 Admittedly,a-m-e-td-e,Ametde,,qademt,5
 Anorexia,a-n-o-x,Anox,,qanox,5
@@ -5416,6 +5422,7 @@ Hitting,^-h-\-e-t-\-h,Hetgo,o,qeghot,5
 Heating,^-h-\-e-t-\-h,Hetgqk,,qeght,5
 Heats,^-h-\-e-t-s,Hetso,o,qehost,5
 Hits,^-h-\-e-t-s,Hetsqk,,qehst,5
+Generosity,j-e-n-r-s-t-e,Jenrste,,qejnrst,5
 Kubernetes,k-b-e-s,Kbes,,qbeks,5
 Confession,k-f-e-sh,Kfez,,qefkz,5
 Confronted,k-fr-nt-d,Kfrntd,,qdfknrt,5
@@ -5492,6 +5499,10 @@ Perceived,pr-s-e-d,Prsedo,o,qdeoprs,5
 Perceiving,pr-s-e-\-h,Prsego,o,qegoprs,5
 Perceives,pr-s-e-s,Prses,,qeprs,5
 Presentations,pr-sh-s,Przs,,qprsz,5
+Parachute,p-\-sh-u-t,Pzut,,qptuz,5
+Parachuted,p-\-sh-u-t-d,Pzutd,,qdptuz,5
+Parachuting,p-\-sh-u-t-\-h,Pzutg,,qgptuz,5
+Parachutes,p-\-sh-u-t-s,Pzuts,,qpstuz,5
 Questioner,k-n-r,Qnr,,qnqr,5
 Conquered,k-k-r-d,Qqrd,,qdqr,5
 Conquering,k-k-r-\-h,Qqrg,,qgqr,5
@@ -5564,6 +5575,11 @@ Biologically,b-o-\-k-e,Boke,,qbeko,6
 Biological,b-o-\-k,Boko,o,qbko,6
 Biologicals,b-o-\-k-s,Boks,,qbkos,6
 Breaths,br-e-th-s,Brehs,,qbehrs,6
+Battled,b-t-l-d,Btld,,qbdlt,6
+Battling,b-t-l-\-h,Btlg,,qbglt,6
+Battleground,b-t-l-g-r,Btlgr,,qbglrt,6
+Battlegrounds,b-t-l-g-r-s,Btlgrs,,qbglrst,6
+Battles,b-t-l-s,Btls,,qblst,6
 Charger,ch-j-r,Cjr,,qcjr,6
 Chargers,ch-j-r-s,Cjrs,,qcjrs,6
 Chamber of commerce,ch-~-k,Ck,,qck,6
@@ -5679,6 +5695,8 @@ Parameterizes,^-p-\-m-i-s-s,Pmiss,,qimps,6
 Processor,pr-ss-r,Prssr,,qprs,6
 Processors,pr-ss-r-s,Prssrs,,qprs,6
 Random,r-a-n-dm,Randm,,qadmnr,6
+Randomly,r-a-n-dm-e,Randme,,qademnr,6
+Randomness,r-a-n-dm-n-e-s,Randmnes,,qademnrs,6
 Randoms,r-a-n-dm-s,Randms,,qadmnrs,6
 Recharger,r-ch-j-r,Rcjr,,qcjr,6
 Rechargers,r-ch-j-r-s,Rcjrs,,qcjrs,6
@@ -5881,6 +5899,7 @@ Washing,u-o-sh-\-h,Uozg,,qgouz,7
 Washes,u-o-sh-s,Uozs,,qosuz,7
 Utilities,e-u-t-\-l-s,Utls,,qlstu,7
 Worthy,u-u-h-e,Uuhe,,qehu,7
+Violence,v-i-l-n-s,Vilns,,qilnsv,7
 Shocked,sh-o-k-d,Zokd,,qdkoz,7
 Shocking,sh-o-k-\-h,Zokg,,qgkoz,7
 Shocks,sh-o-k-s,Zoks,,qkosz,7
@@ -7067,6 +7086,14 @@ Closers,k-l-o-s-r-s,Klosrs,,qklors,30
 Measurable,m-e-sh-u-b,Mezub,,qbemuz,30
 Measured,m-e-sh-u-d,Mezud,,qdemuz,30
 Measuring,m-e-sh-u-\-h,Mezug,,qegmuz,30
+Overreact,o-\-r-ea-k,Orak,,qakor,30
+Overreacted,o-\-r-ea-k-d,Orakd,,qadkor,30
+Overreacting,o-\-r-ea-k-\-h,Orakg,,qagkor,30
+Overreacts,o-\-r-ea-k-s,Oraks,,qakors,30
+Overreactive,o-\-r-ea-k-v,Orakv,,qakor,30
+Overreactively,o-\-r-ea-k-v-e,Orakve,,qaekorv,30
+Overreaction,o-\-r-ea-k-sh,Orakz,,qakorz,30
+Overreactions,o-\-r-ea-k-sh-s,Orakzs,,qakorsz,30
 React,r-ea-k,Rak,,qakr,30
 Reacted,r-ea-k-d,Rakd,,qadkr,30
 Reacting,r-ea-k-\-h,Rakg,,qagkr,30
@@ -9811,6 +9838,12 @@ Ouchy,a-u-c-e,Wce,,qcew,90495
 Ouchies,a-u-c-e-s,Wces,,qcesw,90495
 Ouching,a-u-c-\-h,Wcg,,qcgw,90495
 Ouches,a-u-c-s,Wcs,,qcsw,90495
+Flamethrow,f-l-a-m-h-r-o,Flamhro,,qafhlmor,90504
+Flamethrowing,f-l-a-m-h-r-o-\-h,Flamhrog,,qafghlmor,90504
+Flamethrown,f-l-a-m-h-r-o-n,Flamhron,,qafhlmnor,90504
+Flamethrower,f-l-a-m-h-r-o-r,Flamhror,,qafhlmor,90504
+Flamethrowers,f-l-a-m-h-r-o-r-s,Flamhrors,,qafhlmors,90504
+Flamethrows,f-l-a-m-h-r-o-s,Flamhros,,qafhlmors,90504
 Inflame,n-f-l-a-m,Nflam,,qaflmn,90504
 Inflammable,n-f-l-a-m-b,Nflamb,,qabflmn,90504
 Inflammables,n-f-l-a-m-b-s,Nflambs,,qabflmns,90504
@@ -9863,6 +9896,9 @@ Regional,r-j-n-l,Rjnl,,qjlnr,91191
 Regionally,r-j-n-l-e,Rjnle,,qejlnr,91191
 Regionals,r-j-n-l-s,Rjnls,,qjlnrs,91191
 Regions,r-j-n-s,Rjns,,qjnrs,91191
+Handshake,h-\-nd-sh-a-k,Hndzak,,qadhknz,91204
+Handshaking,h-\-nd-sh-a-k-\-h,Hndzakg,,qadghknz,91204
+Handshakes,h-\-nd-sh-a-k-s,Hndzaks,,qadhknsz,91204
 Forego,f-g,Fg,,qfg,91271
 Foregoing,f-g-\-h,Fgg,,qfg,91271
 Foregoes,f-g-s,Fgs,,qfgs,91271
@@ -9899,6 +9935,12 @@ Tagged,t-a-g-d,Tagd,,qadgt,91766
 Tagging,t-a-g-\-h,Tagg,,qagt,91766
 Tags,t-a-g-s,Tags,,qagst,91766
 Jerome,j-r-o-m,Jrom,,qjmor,91808
+Plug,p-l-u-g,Plug,,qglpu,91857
+Plugable,p-l-u-g-b,Plugb,,qbglpu,91857
+Plugably,p-l-u-g-b-e,Plugbe,,qbeglpu,91857
+Plugability,p-l-u-g-\-b,Plugbo,,qbglopu,91857
+Plugged,p-l-u-g-d,Plugd,,qdglpu,91857
+Plugging,p-l-u-g-\-h,Plugg,,qglpu,91857
 Disease,d-s-e-s,Dsesi,i,qdeis,92072
 Diseases,d-s-e-ss,Dsess,,qdes,92072
 Unskilled,n-s-k-l-d,Nskld,,qdklns,92085
