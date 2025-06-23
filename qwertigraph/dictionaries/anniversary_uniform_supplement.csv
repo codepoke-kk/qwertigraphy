@@ -3574,6 +3574,8 @@ Expounds,e-s-p-n-s,Xpns,,qnpsx,0
 Expositors,e-s-p-o-s-/-r-s,Xposrs,,qoprsx,0
 Exported,e-s-p-o-td,Xpotd,,qdoptx,0
 Experimentations,e-s-pr-e-m-sh-s,Xpremzs,,qemprsxz,0
+Existential,e-ss-/-n-sh,Xsnz,,qnsxz,0
+Existentially,e-ss-/-n-sh-e,Xsnze,,qensxz,0
 Exacerbate,e-s2s-r-b-a-t,Xsrbat,,qabrstx,0
 Exacerbated,e-s2s-r-b-a-t-d,Xsrbatd,,qabdrstx,0
 Exacerbating,e-s2s-r-b-a-t-\-h,Xsrbatg,,qabgrstx,0
@@ -3582,6 +3584,9 @@ Exacerbations,e-s2s-r-b-a-sh-s,Xsrbzs,,qbrsxz,0
 Exclusively,e-s-/-s2-v-e,Xsve,,qesvx,0
 Exclusives,e-s-/-s2-v-s,Xsvs,,qsvx,0
 Extra-,e-k-s-t->,Xt>,,q>tx,0
+Existent,e-ss-/-nt,Xxnt,,qntx,0
+Existential,e-ss-/-n-sh,Xxnz,,qnxz,0
+Existentially,e-ss-/-n-sh-e,Xxnze,,qenxz,0
 Exclusions,e-s-/-sh-s,Xzs,,qsxz,0
 Aggregations,ya-/-g-sh-s,Ygzs,,qgsyz,0
 Agriculturally,ya-/-k-l-e,Ykle,,qekly,0
@@ -3979,6 +3984,8 @@ Mechanics,m-k-a-n-s,Mkans,,qakmns,1
 Monotheism,mm-o-th-e-s2-m,Mmohesm,,qehmos,1
 Manually,mn-l-e,Mnle,,qelmn,1
 Manuals,mn-l-s,Mnls,,qlmns,1
+Meantime,mn-tm,Mntm,,qmnt,1
+In the meantime,mn-tm,Mntmo,o,qmnot,1
 Mobility,m-o-\-b,Mobo,,qbmo,1
 Imply,m-pl-i,Mpli,,qilmp,1
 Implied,m-pl-i-d,Mplid,,qdilmp,1
@@ -5300,8 +5307,6 @@ Responsively,r-s-p-\-v-e,Rspve,,qeprsv,4
 Revelations,r-v-e-l-a-sh-s,Rvelzs,,qelrsvz,4
 Revocation,r-v-k-a-z,Rvkaz,,qakrvz,4
 Revocations,r-v-k-a-z-s,Rvkazs,,qakrsvz,4
-Revocation,r-v-k-z,Rvkz,,qkrvz,4
-Revocations,r-v-k-z-s,Rvkzs,,qkrsvz,4
 Symbol,s2-e-m-bl,Sembl,,qbelms,4
 Symbols,s2-e-m-bl-s,Sembls,,qbelms,4
 Simplify,s2-e-m-p-f,Sempf,,qefmps,4
@@ -6207,9 +6212,6 @@ Invoked,n-v-k-d,Nvkd,,qdknv,10
 Invoking,n-v-k-\-h,Nvkg,,qgknv,10
 Invokes,n-v-k-s,Nvks,,qknsv,10
 Invocation,n-v-k-sh,Nvkz,,qknvz,10
-Owner,o-n-r,Onr,,qnor,10
-Owners,o-n-r-s,Onrs,,qnors,10
-Ownership,o-n-r-sh,Onrz,,qnorz,10
 Operated,o-pr-a-d,Oprad,,qadopr,10
 Operating,o-pr-a-\-h,Oprag,,qagopr,10
 Operates,o-pr-a-s,Opras,,qaoprs,10
@@ -6901,7 +6903,9 @@ Faulting,f-o-t-\-h,Fotg,,qfgot,24
 Fault,f-o-t,Foto,o,qfot,24
 Faults,f-o-t-s,Fots,,qfost,24
 Therapy,th-e-r-p-e,Herpe,,qehpr,24
+Therapist,th-e-r-p-e-s,Herpes,,qehprs,24
 Therapies,th-e-r-p-e-s,Herpeso,o,qehoprs,24
+Therapists,th-e-r-p-e-s-s,Herpess,,qehprs,24
 Caregiver,k-a-g-e-r,Kager,,qaegkr,24
 Caregivers,k-a-g-e-r-s,Kagers,,qaegkrs,24
 Computed,k-p-u-d,Kpud,,qdkpu,24
@@ -7250,6 +7254,10 @@ Conventional,k-v-n-sh-l,Kvnzl,,qklnvz,33
 Conventionally,k-v-n-sh-l-e,Kvnzle,,qeklnvz,33
 Conventions,k-v-n-sh-s,Kvnzs,,qknsvz,33
 Covers,k-v-s,Kvs,,qksv,33
+Uncover,n-k-v,Nkv,,qknv,33
+Uncovered,n-k-v-d,Nkvd,,qdknv,33
+Uncovering,n-k-v-\-h,Nkvg,,qgknv,33
+Uncovers,n-k-v-s,Nkvs,,qknsv,33
 Proving,pr-v-\-h,Prvg,,qgprv,33
 Reaching,r-e-ch-\-h,Rcg,,qcgr,33
 Recoverable,r-e-k-v-b,Rkvb,,qbkrv,33
@@ -7269,6 +7277,8 @@ Suggestions,s2-u-j-s,Sujso,o,qjosu,33
 Suggestively,s2-u-j-v-e,Sujve,,qejsuv,33
 Suggestion,s2-u-j-sh,Sujz,,qjsuz,33
 Suggestions,s2-u-j-sh-s,Sujzs,,qjsuz,33
+Undercover,u-k-v,Ukv,,qkuv,33
+Undercovers,u-k-v-s,Ukvs,,qksuv,33
 Billion,b-e-l-n,Beln,,qbeln,34
 Billionaire,b-e-l-n-a2,Belna,,qabeln,34
 Billionaires,b-e-l-n-a2-s,Belnas,,qabelns,34
@@ -7949,13 +7959,7 @@ Amazed,a-m-a-s-d,Amasd,,qadms,84
 Amazing,a-m-a-s-\-h,Amasg,,qagms,84
 Amazingly,a-m-a-s-\-h-e,Amasge,,qaegms,84
 Amazes,a-m-a-s-s,Amasso,o,qamos,84
-Detailed,td-a2-d,Dtad,,qadt,84
 Detailing,td-a2-\-h,Dtag,,qadgt,84
-Detail,td-a2-l,Dtal,,qadlt,84
-Detailed,td-a2-l-d,Dtald,,qadlt,84
-Detailing,td-a2-l-\-h,Dtalg,,qadglt,84
-Details,td-a2-l-s,Dtals,,qadlst,84
-Details,td-a2-s,Dtas,,qadst,84
 Familiarly,f-a-m-e-l-e,Famele,,qaeflm,84
 Familiars,f-a-m-e-l-s,Famels,,qaeflms,84
 Unfamiliar,n-f-a-m-e-l,Nfamel,,qaeflmn,84
@@ -9836,6 +9840,13 @@ Trailered,t-r-a-l-r-d,Tralrd,,qadlrt,90202
 Trailering,t-r-a-l-r-\-h,Tralrg,,qaglrt,90202
 Trailers,t-r-a-l-r-s,Tralrs,,qalrst,90202
 Trails,t-r-a-l-s,Trals,,qalrst,90202
+Solve,s-o-l-v,Solv,,qlosv,90207
+Solveable,s-o-l-v-b,Solvb,,qblosv,90207
+Solveably,s-o-l-v-b-e,Solvbe,,qbelosv,90207
+Solveability,s-o-l-v-\-b,Solvbo,,qblosv,90207
+Solved,s-o-l-v-d,Solvd,,qdlosv,90207
+Solving,s-o-l-v-\-h,Solvg,,qglosv,90207
+Solves,s-o-l-v-s,Solvs,,qlosv,90207
 Logically,l-o-j-k-e,Lojke,,qejklo,90371
 Logical,l-o-j-k-l,Lojkl,,qjklo,90371
 Logically,l-o-j-k-l-e,Lojkle,,qejklo,90371
