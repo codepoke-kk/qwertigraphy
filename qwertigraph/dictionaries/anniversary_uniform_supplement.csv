@@ -6221,6 +6221,10 @@ Invoked,n-v-k-d,Nvkd,,qdknv,10
 Invoking,n-v-k-\-h,Nvkg,,qgknv,10
 Invokes,n-v-k-s,Nvks,,qknsv,10
 Invocation,n-v-k-sh,Nvkz,,qknvz,10
+Owner,o-n-r,Onr,,qnor,10
+Owners,o-n-r-s,Onrs,,qnors,10
+Ownership,o-n-r-sh,Onrz,,qnorz,10
+Ownerships,o-n-r-sh-s,Onrzs,,qnorsz,10
 Operated,o-pr-a-d,Oprad,,qadopr,10
 Operating,o-pr-a-\-h,Oprag,,qagopr,10
 Operates,o-pr-a-s,Opras,,qaoprs,10
@@ -6832,6 +6836,8 @@ Theologies,h-e-\-o-s,Heos,,qehos,21
 Hyper-,h-y->,Hy>,,q>hy,21
 Consider,k-s,Ksi,i,qiks,21
 Considers,k-s-s,Kssi,i,qiks,21
+Consideration,k-s-sh,Kszi,i,qiksz,21
+Considerations,k-s-sh-s,Kszs,,qksz,21
 Employable,m-pl-b,Mplb,,qblmp,21
 Employed,m-pl-d,Mpld,,qdlmp,21
 Employing,m-pl-\-h,Mplg,,qglmp,21
