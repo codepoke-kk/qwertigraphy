@@ -2662,7 +2662,7 @@ Reliant,r-e-l-i-nt,Rlint,,qilnrt,0
 Relativity,r-e-l-\-v-t-e,Rlvte,,qelrtv,0
 Relationally,r-e-l-a-sh-l-e,Rlzle,,qelrz,0
 Rumbled,r-m-b-d,Rmbd,,qbdmr,0
-Reclaimably,r-e-/-m-b-e,Rmbe,,qbemr,0
+Reclaimably,r-e-/-m-b-e,Rmbeqk,,qbemr,0
 Rumbling,r-m-b-\-h,Rmbg,,qbgmr,0
 Rumble,r-m-b,Rmbi,i,qbimr,0
 Rumbles,r-m-b-s,Rmbs,,qbmrs,0
@@ -5291,6 +5291,7 @@ Righteous,r-i-ch-u-s,Ricus,,qcirsu,4
 Reconciler,r-k-s-i-l-r,Rksilr,,qiklrs,4
 Reconcilers,r-k-s-i-l-r-s,Rksilrs,,qiklrs,4
 Workstations,r-k-s2-t-sh-s,Rkstzs,,qkrstz,4
+Remarkably,r-m-b-e,Rmbe,,qbemr,4
 Republics,r-p-s,Rpsqk,,qprs,4
 Representation,r-p-sh,Rpz,,qprz,4
 Reworked,r-e-r-k-d,Rrkd,,qdkr,4
@@ -9845,9 +9846,9 @@ Trailering,t-r-a-l-r-\-h,Tralrg,,qaglrt,90202
 Trailers,t-r-a-l-r-s,Tralrs,,qalrst,90202
 Trails,t-r-a-l-s,Trals,,qalrst,90202
 Solve,s-o-l-v,Solv,,qlosv,90207
-Solveable,s-o-l-v-b,Solvb,,qblosv,90207
-Solveably,s-o-l-v-b-e,Solvbe,,qbelosv,90207
-Solveability,s-o-l-v-\-b,Solvbo,,qblosv,90207
+Solvable,s-o-l-v-b,Solvb,,qblosv,90207
+Solvably,s-o-l-v-b-e,Solvbe,,qbelosv,90207
+Solvability,s-o-l-v-\-b,Solvbo,,qblosv,90207
 Solved,s-o-l-v-d,Solvd,,qdlosv,90207
 Solving,s-o-l-v-\-h,Solvg,,qglosv,90207
 Solves,s-o-l-v-s,Solvs,,qlosv,90207
