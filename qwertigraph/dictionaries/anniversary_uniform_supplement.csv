@@ -4288,6 +4288,8 @@ Seasonal,s-e-s2-n-l,Sesnl,,qelns,1
 Seasons,s-e-s2-n-s,Sesns,,qens,1
 Citizen,s2-e-t-s,Setsi,i,qeist,1
 Citizens,s2-e-t-s-s,Setss,,qest,1
+Superfluously,s-/-f-e,Sfe,,qefs,1
+Superfluous,s-/-f,Sfu,u,qfsu,1
 Signaled,s2-g-n-d,Sgnd,,qdgns,1
 Signaling,s2-g-n-\-h,Sgng,,qgns,1
 Signals,s2-g-n-s,Sgns,,qgns,1
@@ -5308,6 +5310,8 @@ Responsively,r-s-p-\-v-e,Rspve,,qeprsv,4
 Revelations,r-v-e-l-a-sh-s,Rvelzs,,qelrsvz,4
 Revocation,r-v-k-a-z,Rvkaz,,qakrvz,4
 Revocations,r-v-k-a-z-s,Rvkazs,,qakrsvz,4
+Revocation,r-v-k-z,Rvkz,,qkrvz,4
+Revocations,r-v-k-z-s,Rvkzs,,qkrsvz,4
 Symbol,s2-e-m-bl,Sembl,,qbelms,4
 Symbols,s2-e-m-bl-s,Sembls,,qbelms,4
 Simplify,s2-e-m-p-f,Sempf,,qefmps,4
@@ -6234,6 +6238,8 @@ Revoke,r-v-k,Rvk,,qkrv,10
 Revocable,r-v-k-b,Rvkb,,qbkrv,10
 Revoked,r-v-k-d,Rvkd,,qdkrv,10
 Revoking,r-v-k-\-h,Rvkg,,qgkrv,10
+Revoker,r-v-k-r,Rvkr,,qkrv,10
+Revokers,r-v-k-r-s,Rvkrs,,qkrsv,10
 Revokes,r-v-k-s,Rvks,,qkrsv,10
 Sentenced,s2-e-n-tn-s-d,Sentnsd,,qdenst,10
 Sentencing,s2-e-n-tn-s-\-h,Sentnsg,,qegnst,10
@@ -7050,6 +7056,12 @@ Representing,r-p-g,Rpgo,o,qgopr,28
 Secreted,s2-e-k-r-e-t-d,Sekretd,,qdekrst,28
 Secreting,s2-e-k-r-e-t-\-h,Sekretg,,qegkrst,28
 Secrets,s2-e-k-r-e-t-s,Sekrets,,qekrst,28
+Secret,s2-k-r-t,Skrt,,qkrst,28
+Secreted,s2-k-r-t-d,Skrtd,,qdkrst,28
+Secreting,s2-k-r-t-\-h,Skrtg,,qgkrst,28
+Secrets,s2-k-r-t-s,Skrts,,qkrst,28
+Secretive,s2-k-r-t-v,Skrtv,,qkrstv,28
+Secretively,s2-k-r-t-v-e,Skrtve,,qekrstv,28
 Username/password,e-u-r-n-a-p,Urnap,,qanpru,28
 Username and password,e-u-r-n-a-p,Urnapo,o,qanopru,28
 Archive,a-r-k-i-v,Arkiv,,qaikrv,29
@@ -7734,6 +7746,8 @@ Welcomes,l-k-m-s,Lkms,,qklms,59
 Vaguely,v-a-g-e,Vage,,qaegv,59
 Exercised,e-s2-r-d,Xrd,,qdrx,59
 Exercising,e-s2-r-\-h,Xrg,,qgrx,59
+Exerciser,e-s2-r-r,Xrr,,qrx,59
+Exercisers,e-s2-r-r-s,Xrrs,,qrsx,59
 Exercises,e-s2-r-s,Xrs,,qrsx,59
 Absolute,a-b-s2-o,Abso,,qabos,61
 Absolute,a-b-s2-o,Absoo,o,qabos,61
@@ -9041,6 +9055,10 @@ Queriable,q-e-\-n-^-r-e-b,Qenreb,,qbenqr,364
 Queried,q-e-\-n-^-r-e-d,Qenred,,qdenqr,364
 Querying,q-e-\-n-^-r-e-\-h,Qenreg,,qegnqr,364
 Queries,q-e-\-n-^-r-e-s,Qenres,,qenqrs,364
+Query,q-r-e,Qre,,qeqr,364
+Queried,q-r-e-d,Qred,,qdeqr,364
+Querying,q-r-e-\-h,Qreg,,qegqr,364
+Queries,q-r-e-s,Qres,,qeqrs,364
 Invited,n-v-i-d,Nvid,,qdinv,365
 Inviting,n-v-i-\-h,Nvig,,qginv,365
 Invites,n-v-i-s,Nvis,,qinsv,365
@@ -9732,6 +9750,10 @@ Precondition,p-k-d-sh,Pkdz,,qdkpz,2241
 Preconditioned,p-k-d-sh-d,Pkdzd,,qdkpz,2241
 Preconditioning,p-k-d-sh-\-h,Pkdzg,,qdgkpz,2241
 Preconditions,p-k-d-sh-s,Pkdzs,,qdkpsz,2241
+Subprocess,s-\-pr-ss,Sprss,,qprs,2266
+Subprocessed,s-\-pr-ss-d,Sprssd,,qdprs,2266
+Subprocessing,s-\-pr-ss-\-h,Sprssg,,qgprs,2266
+Subprocesses,s-\-pr-ss-s,Sprsss,,qprs,2266
 Production,pr-o-k-sh,Prokz,,qkoprz,2318
 Created,k-r-ea-t-d,Kretd,,qdekrt,2369
 Creating,k-r-ea-t-\-h,Kretg,,qegkrt,2369
@@ -9831,6 +9853,10 @@ Certification,s2-e-df-sh,Setfz,,qefstz,7488
 Knees,n-e-s,Neso,o,qenos,8247
 Automation,o-tm-a-sh,Otmz,,qmotz,12226
 Automations,o-tm-a-sh-s,Otmzs,,qmostz,12226
+Insight,n-s-i-t,Nsit,,qinst,90086
+Insightful,n-s-i-t-f,Nsitf,,qfinst,90086
+Insightfully,n-s-i-t-f-e,Nsitfe,,qefinst,90086
+Insights,n-s-i-t-s,Nsits,,qinst,90086
 Web,w-b,Wb,,qbw,90162
 Webbed,w-b-d,Wbd,,qbdw,90162
 Webbing,w-b-\-h,Wbg,,qbgw,90162
@@ -9892,6 +9918,15 @@ Sanitizing,^-s-\-nt-i-s-\-h,Sntisg,,qginst,90693
 Sanitizes,^-s-\-nt-i-s-s,Sntiss,,qinst,90693
 Sanitary,^-s-\-nt-r-e,Sntre,,qenrst,90693
 Sanitation,^-s-\-nt-sh,Sntz,,qnstz,90693
+Override,o-\-r-i-d,Orid,,qdior,90768
+Overrided,o-\-r-i-d-d,Oridd,,qdior,90768
+Overriding,o-\-r-i-d-\-h,Oridg,,qdgior,90768
+Overridden,o-\-r-i-d-n,Oridn,,qdinor,90768
+Overrides,o-\-r-i-d-s,Orids,,qdiors,90768
+Volunteer,v-o-l-n,Voln,,qlnov,90768
+Volunteered,v-o-l-n-d,Volnd,,qdlnov,90768
+Volunteering,v-o-l-n-\-h,Volng,,qglnov,90768
+Volunteers,v-o-l-n-s,Volns,,qlnosv,90768
 Lever,l-e-v-r,Levr,,qelrv,90822
 Levered,l-e-v-r-d,Levrd,,qdelrv,90822
 Levering,l-e-v-r-\-h,Levrg,,qeglrv,90822
@@ -10011,6 +10046,7 @@ Hatch,^-h-\-a-ch,Hac,,qach,92650
 Hatched,^-h-\-a-ch-d,Hacd,,qacdh,92650
 Hatching,^-h-\-a-ch-\-h,Hacg,,qacgh,92650
 Hatches,^-h-\-a-ch-s,Hacs,,qachs,92650
+Self,s-f,Sf,,qfs,92827
 Pursue,p-r-s-u,Prsu,,qprsu,92842
 Pursued,p-r-s-u-d,Prsud,,qdprsu,92842
 Pursuing,p-r-s-u-\-h,Prsug,,qgprsu,92842
