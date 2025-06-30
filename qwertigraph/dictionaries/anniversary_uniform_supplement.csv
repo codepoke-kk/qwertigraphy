@@ -1496,6 +1496,7 @@ Lifting,l-e-f-t-\-h,Leftg,,qefglt,0
 Lengthened,l-e-ng-n-d,Legnd,,qdegln,0
 Lengthening,l-e-ng-n-\-h,Legng,,qegln,0
 Lengthens,l-e-ng-n-s,Legns,,qeglns,0
+Length,l-e-ng,Lego,o,qeglo,0
 Lectured,l-e-k-t-r-d,Lektrd,,qdeklrt,0
 Lecturing,l-e-k-t-r-\-h,Lektrg,,qegklrt,0
 Lectures,l-e-k-t-r-s,Lektrs,,qeklrst,0
@@ -1923,6 +1924,7 @@ Incidentally,n-s2-e-tn-ye,Nsedny,,qdensy,0
 Encircled,n-s2-e-k-l-d,Nsekld,,qdeklns,0
 Encircling,n-s2-e-k-l-\-h,Nseklg,,qegklns,0
 Encircles,n-s2-e-k-l-s,Nsekls,,qeklns,0
+Insecticides,n-s2-e-k-s-i-s,Nseksis,,qeikns,0
 Interceptions,^-n-\-s-e-p-sh-s,Nsepzs,,qenpsz,0
 Insurrections,n-s-e-r-e-k-sh-s,Nserekzs,,qeknrsz,0
 Insert,n-s2-e2-t,Nset,,qenst,0
@@ -2173,6 +2175,10 @@ Panic,p-a-n-e-k,Panek,,qaeknp,0
 Panicked,p-a-n-e-k-d,Panekd,,qadeknp,0
 Panicking,p-a-n-e-k-\-h,Panekg,,qaegknp,0
 Panics,p-a-n-e-k-s,Paneks,,qaeknps,0
+Panic,p-a-n-k,Pank,,qaknp,0
+Panicked,p-a-n-k-d,Pankd,,qadknp,0
+Panicking,p-a-n-k-\-h,Pankg,,qagknp,0
+Panics,p-a-n-k-s,Panks,,qaknps,0
 Painless,p-a-n-l,Panl,,qalnp,0
 Painstaking,p-a-n-s-t-a-k,Panstak,,qaknpst,0
 Painstakingly,p-a-n-s-t-a-k-e,Panstake,,qaeknpst,0
@@ -3714,6 +3720,9 @@ Defecting,df-e-k-\-h,Dfekg,,qdefgk,1
 Defects,df-e-k-s,Dfeks,,qdefks,1
 Defection,df-e-k-sh,Dfekz,,qdefkz,1
 Defections,df-e-k-sh-s,Dfekzs,,qdefksz,1
+Defeated,df-e-t-d,Dfetd,,qdeft,1
+Defeating,df-e-t-\-h,Dfetg,,qdefgt,1
+Defeats,df-e-t-s,Dfets,,qdefst,1
 Differentiate,df-sh-ia-t,Dfziat,,qadfitz,1
 Differentiated,df-sh-ia-t-d,Dfziatd,,qadfitz,1
 Differentiating,df-sh-ia-t-\-h,Dfziatg,,qadfgitz,1
@@ -5322,6 +5331,7 @@ Simplifying,s2-e-m-p-f-\-h,Sempfg,,qefgmps,4
 Simplifies,s2-e-m-p-f-s,Sempfs,,qefmps,4
 Surround,s-e-r-nt,Sernd,,qdenrs,4
 Surrounds,s-e-r-nt-s,Sernds,,qdenrs,4
+Ceaselessly,s-e-s-l-e,Sesle,,qels,4
 Cipher,s2-i-f,Sif,,qfis,4
 Ciphered,s2-i-f-d,Sifd,,qdfis,4
 Ciphering,s2-i-f-\-h,Sifg,,qfgis,4
@@ -6907,6 +6917,7 @@ Staffs,s2-t-a-f-s,Stafs,,qafst,23
 Teachers,t-e2-ch-e2-s,Teces,,qcest,23
 Advising,v-i-s-\-h,Visg,,qgisv,23
 Advises,v-i-s-s,Viss,,qisv,23
+Afterward,a-f-d,Afda,a,qadf,24
 Affordable,a-f-d-b,Afdb,,qabdf,24
 Affordably,a-f-d-b-e,Afdbe,,qabdef,24
 Affordability,a-f-d-\-b,Afdbo,,qabdfo,24
@@ -6914,6 +6925,7 @@ Affordables,a-f-d-b-s,Afdbs,,qabdfs,24
 Afforded,a-f-d-d,Afdd,,qadf,24
 Affording,a-f-d-\-h,Afdg,,qadfg,24
 Affords,a-f-d-s,Afds,,qadfs,24
+Afterwards,a-f-d-s,Afdsa,a,qadfs,24
 Evangelicals,e-v-a-n-j-/-k-s,Evanjks,,qaejknsv,24
 Faulted,f-o-t-d,Fotd,,qdfot,24
 Faulting,f-o-t-\-h,Fotg,,qfgot,24
@@ -6941,6 +6953,12 @@ Sensitives,s2-e-n-s-df-s,Senstvs,,qenstv,24
 Scripture,s-k-r-p-t-r,Skrptr,,qkprst,24
 Scriptural,s-k-r-p-t-r-l,Skrptrl,,qklprst,24
 Scriptures,s-k-r-p-t-r-s,Skrptrs,,qkprst,24
+Stabilize,s-t-a-bl-i-s,Stablis,,qabilst,24
+Stabilized,s-t-a-bl-i-s-d,Stablisd,,qabdilst,24
+Stabilizing,s-t-a-bl-i-s-\-h,Stablisg,,qabgilst,24
+Stabilizes,s-t-a-bl-i-s-s,Stabliss,,qabilst,24
+Stabilization,s-t-a-bl-i-s-sh,Stablisz,,qabilstz,24
+Stabilizations,s-t-a-bl-i-s-sh-s,Stabliszs,,qabilstz,24
 -Able,<-a,A<,,q<a,25
 Arguments,a-g-m-s,Agms,,qagms,25
 Analyze,a-n-a-l-i-s,Analis,,qailns,25
@@ -7118,6 +7136,7 @@ Closers,k-l-o-s-r-s,Klosrs,,qklors,30
 Measurable,m-e-sh-u-b,Mezub,,qbemuz,30
 Measured,m-e-sh-u-d,Mezud,,qdemuz,30
 Measuring,m-e-sh-u-\-h,Mezug,,qegmuz,30
+Insects,n-s2-e-k-s,Nseks,,qekns,30
 Overreact,o-\-r-ea-k,Orak,,qakor,30
 Overreacted,o-\-r-ea-k-d,Orakd,,qadkor,30
 Overreacting,o-\-r-ea-k-\-h,Orakg,,qagkor,30
@@ -7635,6 +7654,10 @@ Pieces,p-e-ss,Pess,,qeps,49
 Roomed,r-m-d,Rmdo,o,qdmor,49
 Rooming,r-m-\-h,Rmgo,o,qgmor,49
 Rooms,r-m-s,Rmso,o,qmors,49
+Ceased,s-e-s-d,Sesd,,qdes,49
+Ceasing,s-e-s-\-h,Sesg,,qegs,49
+Cease,s-e-s,Seso,o,qeos,49
+Ceases,s-e-s-s,Sess,,qes,49
 Sex,s-e-s,Sx,,qsx,49
 Sexed,s-e-s-d,Sxd,,qdsx,49
 Sexing,s-e-s-\-h,Sxg,,qgsx,49
@@ -8480,6 +8503,9 @@ Untouchable,n-t-ch-b,Ntcb,,qbcnt,158
 Untouchably,n-t-ch-b-e,Ntcbe,,qbcent,158
 Untouchability,n-t-ch-\-b,Ntcbo,,qbcnot,158
 Untouched,n-t-ch-d,Ntcd,,qcdnt,158
+Touchable,t-ch-b,Tcb,,qbct,158
+Touchably,t-ch-b-e,Tcbe,,qbcet,158
+Touchability,t-ch-\-b,Tcbo,,qbcot,158
 Touches,t-ch-s,Tcs,,qcst,158
 Capture,k-a-p-t-r,Kaptr,,qakprt,159
 Captured,k-a-p-t-r-d,Kaptrd,,qadkprt,159
@@ -8656,6 +8682,8 @@ Extras,e-ss,Xso,o,qosx,200
 Existences,e-ss-s,Xss,,qsx,200
 Bottomed,b-o-tm-d,Botmd,,qbdmot,202
 Bottoming,b-o-tm-\-h,Botmg,,qbgmot,202
+Bottomless,b-o-tm-l,Botml,,qblmot,202
+Bottomlessly,b-o-tm-l-e,Botmle,,qbelmot,202
 Bottoms,b-o-tm-s,Botms,,qbmost,202
 Picked,p-e-k-d,Pekd,,qdekp,202
 Picking,p-e-k-\-h,Pekg,,qegkp,202
@@ -9358,6 +9386,12 @@ Loveability,l-v-\-b,Lvbo,,qblov,625
 Lovely,l-v-e,Lve,,qelv,625
 Loving,l-v-\-h,Lvg,,qglv,625
 Loves,l-v-s,Lvs,,qlsv,625
+Unloveable,u-l-v-b,Ulvb,,qbluv,625
+Unloveably,u-l-v-b-e,Ulvbe,,qbeluv,625
+Unloveability,u-l-v--\-b,Ulvbo,,qblouv,625
+Unloved,u-l-v-d,Ulvd,,qdluv,625
+Unloving,u-l-v-\-h,Ulvg,,qgluv,625
+Unlovingly,u-l-v-\-h-e,Ulvge,,qegluv,625
 Coupled,k-u-pl-d,Kupld,,qdklpu,633
 Coupling,k-u-pl-\-h,Kuplg,,qgklpu,633
 Couples,k-u-pl-s,Kupls,,qklpsu,633
@@ -9843,7 +9877,8 @@ Proxied,pr-s-e-d,Prxd,,qdprx,5436
 Proxying,pr-s-e-\-h,Prxg,,qgprx,5436
 Proxies,pr-s-e-s,Prxs,,qprsx,5436
 Recession,r-s-e-sh,Rsez,,qersz,5436
-Sees,s-e-s,Seso,o,qeos,5436
+Sees,s-e-s,Ses,,qes,5436
+Sees,s-e-s,Sesoqk,o,qeos,5436
 Negotiation,n-o-sh,Nozo,o,qnoz,5452
 Nineveh,n-e-n-v-e,Nenve,,qenv,5497
 Interpreted,n-/-p-d,Npdo,o,qdnop,5497
