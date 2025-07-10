@@ -8893,6 +8893,11 @@ Platforming,pl-a-t-f-m-\-h,Platfmg,,qafglmpt,249
 Platforms,pl-a-t-f-m-s,Platfms,,qaflmpst,249
 Connections,k-e-k-sh-s,Kekzs,,qeksz,250
 Reconnections,r-k-e-k-sh-s,Rkekzs,,qekrsz,250
+Incident,n-s2-tn,Nsdn,,qdns,251
+Incidental,n-s2-tn-l,Nsdnl,,qdlns,251
+Incidentally,n-s2-tn-l-e,Nsdnle,,qdelns,251
+Incidentals,n-s2-tn-l-s,Nsdnls,,qdlns,251
+Incidents,n-s2-tn-s,Nsdns,,qdns,251
 Incidental,n-s2-e-tn-l,Nsednl,,qdelns,251
 Incidents,n-s2-e-tn-s,Nsedns,,qdens,251
 Certainly,s2-e-tn-e,Setne,,qenst,251
@@ -10032,6 +10037,12 @@ Leveraged,l-e-v-r-j-d,Levrjd,,qdejlrv,90822
 Leveraging,l-e-v-r-j-\-h,Levrjg,,qegjlrv,90822
 Leverages,l-e-v-r-j-s,Levrjs,,qejlrsv,90822
 Levers,l-e-v-r-s,Levrs,,qelrsv,90822
+Criteria,k-r-i-t-e-r-ea,Kritere,,qeikrt,90839
+Criterion,k-r-i-t-e-r-n,Kritern,,qeiknrt,90839
+Criteria,k-r-i-t-r,Kritr,,qikrt,90839
+Criterion,k-r-i-t-r-n,Kritrn,,qiknrt,90839
+Verbose,v-b-o-s,Vbos,,qbosv,90839
+Verbosity,v-b-o-s-t-e,Vboste,,qbeostv,90839
 Snatch,s-n-a-ch,Snac,,qacns,91043
 Snatched,s-n-a-ch-d,Snacd,,qacdns,91043
 Snatching,s-n-a-ch-\-h,Snacg,,qacgns,91043
