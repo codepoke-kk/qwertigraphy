@@ -559,11 +559,11 @@ Dissonance,d-s-o-n-a-n-s,Dsonans,,qadnos,0
 Dissonances,d-s-o-n-a-n-s-s,Dsonanss,,qadnos,0
 Dissonant,d-s-o-n-a-nt,Dsonant,,qadnost,0
 Dissonantly,d-s-o-n-a-nt-e,Dsonante,,qadenost,0
-Displace,d-s-p-l-a-s,Dsplas,,qadlps,0
 Displaced,d-s-p-l-a-s-d,Dsplasd,,qadlps,0
 Displacing,d-s-p-l-a-s-\-h,Dsplasg,,qadglps,0
 Displacement,d-s-p-l-a-s-m,Dsplasm,,qadlmps,0
 Displacements,d-s-p-l-a-s-m-s,Dsplasms,,qadlmps,0
+Displace,d-s-p-l-a-s,Dsplaso,o,qadlops,0
 Displaces,d-s-p-l-a-s-s,Dsplass,,qadlps,0
 Disciplined,d-s-pl-e-n-d,Dsplend,,qdelnps,0
 Disciplining,d-s-pl-e-n-\-h,Dspleng,,qdeglnps,0
@@ -8196,6 +8196,10 @@ Unpackages,n-p-a-k-j-s,Npakjs,,qajknps,96
 Packaged,p-a-k-j-d,Pakjd,,qadjkp,96
 Packaging,p-a-k-j-\-h,Pakjg,,qagjkp,96
 Packages,p-a-k-j-s,Pakjs,,qajkps,96
+Repackage,r-p-a-k-j,Rpakj,,qajkpr,96
+Repackaged,r-p-a-k-j-d,Rpakjd,,qadjkpr,96
+Repackaging,r-p-a-k-j-\-h,Rpakjg,,qagjkpr,96
+Repackages,r-p-a-k-j-s,Rpakjs,,qajkprs,96
 Convert,k-v-e2-t,Kvet,,qektv,97
 Converting,k-v-e2-t-\-h,Kvetg,,qegktv,97
 Converts,k-v-e2-t-s,Kvets,,qekstv,97
@@ -9481,6 +9485,9 @@ Recurrent,r-k-r-e-nt,Rkrent,,qeknrt,654
 Recurrently,r-e-k-r-e-nt-e,Rkrente,,qeknrt,654
 Undercurrent,u-k-r-e-nt,Ukrend,,qdeknru,654
 Undercurrents,u-k-r-e-nt-s,Ukrends,,qdeknrsu,654
+Displayed,d-s-pl-a-d,Dsplad,,qadlps,657
+Displaying,d-s-pl-a-\-h,Dsplag,,qadglps,657
+Displays,d-s-pl-a-s,Dsplas,,qadlps,657
 Overvalue,o-\-v-l,Ovl,,qlov,657
 Overvalued,o-\-v-l-d,Ovld,,qdlov,657
 Overvaluing,o-\-v-l-\-h,Ovlg,,qglov,657
@@ -9703,6 +9710,9 @@ Tries,t-r-i-s,Tris,,qirst,1161
 Privileged,pr-e-v-d,Prevd,,qdeprv,1177
 Privileging,pr-e-v-\-h,Prevg,,qegprv,1177
 Previous,pr-e-v-s,Prevs,,qeprsv,1177
+Unusable,n-e-u-b,Nub,,qbnu,1182
+Unusably,n-e-u-b-e,Nube,,qbenu,1182
+Unusability,n-e-u-\-b,Nubo,,qbnou,1182
 Usable,e-u-b,Ub,,qbu,1182
 Using,e-u-\-h,Ugo,o,qgou,1182
 Building,bld-\-h,Bldg,,qbdgl,1190
