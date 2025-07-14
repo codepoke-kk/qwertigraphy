@@ -191,6 +191,7 @@ Advertising,a-v-t-\-h,Avtg,,qagtv,0
 Advertisements,a-v-t-m-s,Avtms,,qamstv,0
 Advertises,a-v-t-s,Avts,,qastv,0
 Babylonians,b-a-b-n-e-a-n-s,Babnens,,qabens,0
+Baggage,b-a-g-j,Bagj,,qabgj,0
 Bathroom,b-a-th-r-m,Bahrm,,qabhmr,0
 Bathroomed,b-a-th-r-m-d,Bahrmd,,qabdhmr,0
 Bathrooming,b-a-th-r-m-\-h,Bahrmg,,qabghmr,0
@@ -362,6 +363,8 @@ Defuse,df-u-s,Dfus,,qdfsu,0
 Defused,df-u-s-d,Dfusd,,qdfsu,0
 Defusing,df-u-s-\-h,Dfusg,,qdfgsu,0
 Defuses,df-u-s-s,Dfuss,,qdfsu,0
+Degree,d-g-r-e,Dgre,,qdegr,0
+Degrees,d-g-r-e-s,Dgres,,qdegrs,0
 Diagrammatic,d-i-\-g-\-a,Diga,,qadgi,0
 Diagnoses,d-i-g-n-o-s-e-s,Dignoses,,qdeginos,0
 Diagnostician,d-i-g-n-o-s-t-sh,Dignostz,,qdginostz,0
@@ -575,6 +578,12 @@ Desperation,d-s-pr-a-sh,Dsprzo,o,qdoprsz,0
 Disrespectful,d-s-r-e-s-f,Dsresf,,qdefrs,0
 Dissatisfied,d-ss-a-t-d,Dssatd,,qadst,0
 Distemper,d-s-tm-pr,Dstmpr,,qdmprst,0
+Distrust,d-s2-t-r-s,Dstrs,,qdrst,0
+Distrusted,d-s2-t-r-s-d,Dstrsd,,qdrst,0
+Distrustful,d-s2-t-r-s-f,Dstrsf,,qdfrst,0
+Distrustfully,d-s2-t-r-s-f-e,Dstrsfe,,qdefrst,0
+Distrusting,d-s2-t-r-s-\-h,Dstrsg,,qdgrst,0
+Distrusts,d-s2-t-r-s-s,Dstrss,,qdrst,0
 Detectived,td-e-k-v-d,Dtekvd,,qdektv,0
 Detectiving,td-e-k-v-\-h,Dtekvg,,qdegktv,0
 Detectives,td-e-k-v-s,Dtekvs,,qdekstv,0
@@ -3298,6 +3307,10 @@ Tontine,t-o-n-tn,Tontn,,qnot,0
 Transparency,t-\-p-a-r-e-n-s-e,Tparense,,qaenprst,0
 Transparent,t-\-p-a-r-e-nt,Tparent,,qaenprt,0
 Transparently,t-\-p-a-r-e-nt-e,Tparente,,qaenprt,0
+Transparent,t-\-p-a-r-n-s-e,Tparnse,,qaenprst,0
+Transparent,t-\-p-a-r-nt,Tparnt,,qanprt,0
+Transparently,t-\-p-a-r-nt-e,Tparnte,,qaenprt,0
+Transparent,t-\-p-a-r-nt-s-e,Tparntse,,qaenprst,0
 Transporter,t-/-p-o-t-r,Tpotr,,qoprt,0
 Transportational,t-/-p-o-t-sh-l,Tpotzl,,qloptz,0
 Typewriting,t-pr-i-\-h,Tprig,,qgiprt,0
@@ -3327,6 +3340,10 @@ Truncating,t-r-ng-a-t-\-h,Trgatg,,qagrt,0
 Truncates,t-r-ng-a-t-s,Trgats,,qagrst,0
 Truncation,t-r-ng-a-sh,Trgz,,qgrtz,0
 Truncations,t-r-ng-a-sh-s,Trgzs,,qgrstz,0
+Trauma,t-r-o-m,Trom,,qmort,0
+Traumatic,t-r-o-m-\-a,Troma,,qamort,0
+Traumatically,t-r-o-m-\-a-e,Tromae,,qaemort,0
+Traumas,t-r-o-m-s,Troms,,qmorst,0
 Trustworthily,t-r-s-h-l-e,Trshle,,qehlrst,0
 Transsexual,^-t-\-s-e-s-l,Tsxl,,qlstx,0
 Transsexually,^-t-\-s-e-s-l-e,Tsxle,,qelstx,0
@@ -4683,6 +4700,10 @@ Enslaving,n-s-l-a-v-\-h,Nslavg,,qaglnsv,2
 Enslavement,n-s-l-a-v-m,Nslavm,,qalmnsv,2
 Enslavements,n-s-l-a-v-m-s,Nslavms,,qalmnsv,2
 Enslaves,n-s-l-a-v-s,Nslavs,,qalnsv,2
+Unsustainable,n-ss2-tn-b,Nsstnb,,qbnst,2
+Unsustainability,n-ss2-tn-b-\-b,Nsstnbbo,,qbnost,2
+Unsustainably,n-ss2-tn-b-e,Nsstnbe,,qbenst,2
+Unsustainables,n-ss2-tn-b-s,Nsstnbs,,qbnst,2
 Unsuitable,n-s2-u-t-b,Nsutb,,qbnstu,2
 Unusual,n-u-sh,Nuz,,qnuz,2
 Nationals,n-a-sh-l-s,Nzls,,qlnsz,2
@@ -4736,6 +4757,13 @@ Pusher,p-sh-r,Pzr,,qprz,2
 Pushers,p-sh-r-s,Pzrs,,qprsz,2
 Refinement,r-f-i-nm,Rfinm,,qfimnr,2
 Refinements,r-f-i-nm-s,Rfinms,,qfimnrs,2
+Reflex,r-f-l-e-x,Rflex,,qeflrx,2
+Reflexed,r-f-l-e-x-d,Rflexd,,qdeflrx,2
+Reflexing,r-f-l-e-x-\-h,Rflexg,,qefglrx,2
+Reflexes,r-f-l-e-x-s,Rflexs,,qeflrsx,2
+Reflexive,r-f-l-e-x-v,Rflexv,,qeflrvx,2
+Reflexively,r-f-l-e-x-v-e,Rflexve,,qeflrvx,2
+Reflexives,r-f-l-e-x-v-s,Rflexvs,,qeflrsvx,2
 Regulars,r-e-g-s,Rgs,,qgrs,2
 Rejections,r-j-k-sh-s,Rjkzs,,qjkrsz,2
 Workstation,r-k-s2-t-sh,Rkstz,,qkrstz,2
@@ -6234,6 +6262,7 @@ Glue,g-l-u,Glu,,qglu,10
 Glued,g-l-u-d,Glud,,qdglu,10
 Gluing,g-l-u-\-h,Glug,,qglu,10
 Glues,g-l-u-s,Glus,,qglsu,10
+Thorough,h-e,Heu,u,qehu,10
 Counter,k-nt-r,Kntr,,qknrt,10
 Counters,k-nt-r-s,Kntrs,,qknrst,10
 Compiler,k-p-i-l-r,Kpilr,,qiklpr,10
@@ -6291,6 +6320,9 @@ Revokes,r-v-k-s,Rvks,,qkrsv,10
 Sentenced,s2-e-n-tn-s-d,Sentnsd,,qdenst,10
 Sentencing,s2-e-n-tn-s-\-h,Sentnsg,,qegnst,10
 Sentences,s2-e-n-tn-s-s,Sentnss,,qenst,10
+Straightened,s2-t-r-a-tn-d,Stratnd,,qadnrst,10
+Straightening,s2-t-r-a-tn-\-h,Stratng,,qagnrst,10
+Straightens,s2-t-r-a-tn-s,Stratns,,qanrst,10
 Suddenly,s2-u-tn-e,Sudne,,qdensu,10
 Suffix,s-u-f-e-s,Sufx,,qfsux,10
 Suffixed,s-u-f-e-s-d,Sufxd,,qdfsux,10
@@ -6824,6 +6856,7 @@ Enhance,n-^-h-\-a-n-s,Nhans,,qahns,19
 Enhanced,n-^-h-\-a-n-s-d,Nhansd,,qadhns,19
 Enhancing,n-^-h-\-a-n-s-\-h,Nhansg,,qaghns,19
 Enhances,n-^-h-\-a-n-s-s,Nhanss,,qahns,19
+Unhappiness,^n-h-\-a-p-e2-n-e-s,Nhapenes,,qaehnps,19
 Relinquishing,r-e-l-e-ng-\-h,Rlegg,,qeglr,19
 Relinquish,r-e-l-e-ng,Rleng,,qeglnr,19
 Relinquished,r-e-l-e-ng-d,Rlengd,,qdeglnr,19
@@ -9042,7 +9075,9 @@ Exampled,e-s2-a-m-p-d,Xampd,,qadmpx,313
 Exampling,e-s2-a-m-p-\-h,Xampg,,qagmpx,313
 Examples,e-s2-a-m-p-s,Xamps,,qampsx,313
 Exams,e-s2-a-m-s,Xams,,qamsx,313
+Unauthentic,n-o-th-e-nt,Nohent,,qehnot,314
 Unauthenticated,n-o-th-e-nt-d,Nohentd,,qdehnot,314
+Unauthentically,n-o-th-e-nt-e,Nohente,,qehnot,314
 Authentic,o-th-e-nt,Ohent,,qehnot,314
 Authenticated,o-th-e-nt-d,Ohentd,,qdehnot,314
 Authentically,o-th-e-nt-e,Ohente,,qehnot,314
@@ -9936,6 +9971,7 @@ Nineveh,n-e-n-v-e,Nenve,,qenv,5497
 Interpreted,n-/-p-d,Npdo,o,qdnop,5497
 Interpreting,n-/-p-\-h,Npg,,qgnp,5497
 Interpretation,n-/-p-sh,Npz,,qnpz,5497
+They,th-e,Heo,,qeho,6073
 Forming,f-m-\-h,Fmg,,qfgm,6294
 Informed,n-f-m-d,Nfmd,,qdfmn,6294
 Informing,n-f-m-\-h,Nfmg,,qfgmn,6294
