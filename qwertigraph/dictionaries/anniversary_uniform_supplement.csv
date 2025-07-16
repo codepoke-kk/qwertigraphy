@@ -6160,7 +6160,7 @@ Ameri-Jesus,a-m-i-j,Amij,,qaijm,9
 Attainable,a-tn-b,Atnb,,qabnt,9
 Attainably,a-tn-b-e,Atnbe,,qabent,9
 Attainability,a-tn-\-b,Atnbo,,qabnot,9
-Attained,a-tn-d,Atnd,,qadnt,9
+Attained,a-tn-d,Atndqk,,qadnt,9
 Attaining,a-tn-\-h,Atng,,qagnt,9
 Attainment,a-tn-m,Atnm,,qamnt,9
 Attainments,a-tn-m-s,Atnms,,qamnst,9
@@ -6320,6 +6320,14 @@ Revokes,r-v-k-s,Rvks,,qkrsv,10
 Sentenced,s2-e-n-tn-s-d,Sentnsd,,qdenst,10
 Sentencing,s2-e-n-tn-s-\-h,Sentnsg,,qegnst,10
 Sentences,s2-e-n-tn-s-s,Sentnss,,qenst,10
+Serial,s-e-r-ea-l,Serel,,qelrs,10
+Serially,s-e-r-ea-l-e,Serele,,qelrs,10
+Serialize,s-e-r-ea-l-i-s,Serelis,,qeilrs,10
+Serialized,s-e-r-ea-l-i-s-d,Serelisd,,qdeilrs,10
+Serializing,s-e-r-ea-l-i-s-\-h,Serelisg,,qegilrs,10
+Serializes,s-e-r-ea-l-i-s-s,Sereliss,,qeilrs,10
+Serialization,s-e-r-ea-l-i-s-sh,Serelisz,,qeilrsz,10
+Serializations,s-e-r-ea-l-i-s-sh-s,Sereliszs,,qeilrsz,10
 Straightened,s2-t-r-a-tn-d,Stratnd,,qadnrst,10
 Straightening,s2-t-r-a-tn-\-h,Stratng,,qagnrst,10
 Straightens,s2-t-r-a-tn-s,Stratns,,qanrst,10
@@ -7304,6 +7312,8 @@ Maintainable,mn-tn-b,Mntnb,,qbmnt,32
 Maintained,mn-tn-d,Mntnd,,qdmnt,32
 Maintaining,mn-tn-\-h,Mntng,,qgmnt,32
 Maintains,mn-tn-s,Mntns,,qmnst,32
+Miscommunication,m-s-k-m-u,Mskmu,,qkmsu,32
+Miscommunications,m-s-k-m-u-s,Mskmus,,qkmsu,32
 Insurrect,n-s-e-r-e-k,Nserek,,qeknrs,32
 Insurrected,n-s-e-r-e-k-d,Nserekd,,qdeknrs,32
 Insurrecting,n-s-e-r-e-k-\-h,Nserekg,,qegknrs,32
@@ -8505,6 +8515,7 @@ Doubles,d-b-s,Dbs,,qbds,142
 Internally,n-/-n-l-e,Nnle,,qeln,142
 Internals,n-/-n-l-s,Nnls,,qlns,142
 Readably,r-d-b-e,Rdbe,,qbder,142
+Attend,a-tn-d,Atnd,,qadnt,143
 Attended,a-tn-d-d,Atndd,,qadnt,143
 Attending,a-tn-d-\-h,Atndg,,qadgnt,143
 Attends,a-tn-d-s,Atnds,,qadnst,143
