@@ -224,6 +224,8 @@ Beforehand,b-f-n-t,Bfnt,,qbfnt,0
 Befriended,b-fr-d,Bfrd,,qbdfr,0
 Began,b-g-a-n,Bgan,,qabgn,0
 Beginnings,b-g-e-n-\-s2,Bgenz,,qbegnz,0
+Begging,b-g-\-h,Bgg,,qbg,0
+Begs,b-g-s,Bgs,,qbgs,0
 Behaviorally,b-^-h-\-a-v-r-l-e,Bhavrle,,qabehlrv,0
 Bindings,b-i-nt-\-s2,Bindz,,qbdinz,0
 Bicycle,b-i-s-i-k-l,Bisikl,,qbikls,0
@@ -321,6 +323,10 @@ Cheaters,c-e-t-r-s,Cetrs,,qcerst,0
 De-,d->,D>,,q>d,0
 Doubleday,d-b-d-a,Dbda,,qabd,0
 Dedications,td-e-k-a-sh-s,Ddekzs,,qdeksz,0
+Deadline,td-l-a-n,Ddlin,,qdiln,0
+Deadlined,td-l-a-n-d,Ddlind,,qdiln,0
+Deadlining,td-l-a-n-\-h,Ddling,,qdgiln,0
+Deadlines,td-l-a-n-s,Ddlins,,qdilns,0
 Degraded,d-e-g-r-a-d,Degrad,,qadegr,0
 Degrading,d-e-g-r-a-\-h,Degrag,,qadegr,0
 Degrades,d-e-g-r-a-s,Degras,,qadegrs,0
@@ -1705,6 +1711,8 @@ Improper,m-pr-pr,Mprpr,,qmpr,0
 Improperly,m-pr-pr-e,Mprpre,,qempr,0
 Emperor,m-pr-r,Mprr,,qmpr,0
 Emperors,m-pr-r-s,Mprrs,,qmprs,0
+Perceptive,m-pr-s-e-p-df,Mprseptv,,qemprstv,0
+Perceptively,m-pr-s-e-p-df-e,Mprseptve,,qemprstv,0
 Improvisation,m-pr-v-e-s-a-sh,Mprvesz,,qemprsvz,0
 Improvise,m-pr-v-i-s,Mprvis,,qimprsv,0
 Improvised,m-pr-v-i-s-d,Mprvisd,,qdimprsv,0
@@ -1963,6 +1971,12 @@ Introspect,n-\-s-p,Nspu,u,qnpsu,0
 Introspectively,n-\-s-p--\-v-e,Nspve,,qenpsv,0
 Introspection,n-\-s-p-sh,Nspzo,o,qnopsz,0
 Inspections,n-s-p-sh-s,Nspzs,,qnpsz,0
+Insisted,n-ss-d,Nssd,,qdns,0
+Insisting,n-ss-\-h,Nssg,,qgns,0
+Insistence,n-ss-n-s,Nssns,,qns,0
+Insistently,n-ss-\-nt-e,Nssnte,,qenst,0
+Insistent,n-ss-\-nt,Nssnto,o,qnost,0
+Insists,n-ss-s,Nsss,,qns,0
 Installably,n-s2-t-o-l-b-e,Nstolbe,,qbelnost,0
 Installability,n-s2-t-o-l-\-b,Nstolbo,,qblnost,0
 Installables,n-s2-t-o-l-b-s,Nstolbs,,qblnost,0
@@ -2006,6 +2020,16 @@ Interruption,n-/-u-p-sh,Nupz,,qnpuz,0
 Interruptions,n-/-u-p-sh-s,Nupzs,,qnpsuz,0
 Neurological,n-u-r-/-k,Nurk,,qknru,0
 Neurologically,n-u-r-/-k-e,Nurke,,qeknru,0
+Neutral,n-u-t-r-l,Nutrl,,qlnrtu,0
+Neutrally,n-u-t-r-l-e,Nutrle,,qelnrtu,0
+Neutralize,n-u-t-r-l-i-s,Nutrlis,,qilnrstu,0
+Neutralized,n-u-t-r-l-i-s-d,Nutrlisd,,qdilnrstu,0
+Neutralizing,n-u-t-r-l-i-s-\-h,Nutrlisg,,qgilnrstu,0
+Neutralizes,n-u-t-r-l-i-s-s,Nutrliss,,qilnrstu,0
+Neutralization,n-u-t-r-l-i-s-sh,Nutrlisz,,qilnrstuz,0
+Neutralizations,n-u-t-r-l-i-s-sh-s,Nutrliszs,,qilnrstuz,0
+Neutrality,n-u-t-r-\-l,Nutrlo,o,qlnortu,0
+Neutrals,n-u-t-r-l-s,Nutrls,,qlnrstu,0
 In the usual manner,n-u-sh-mn-e2,Nuzmne,,qemnuz,0
 Invade,n-v-a-d,Nvad,,qadnv,0
 Invaded,n-v-a-d-d,Nvadd,,qadnv,0
@@ -2993,6 +3017,7 @@ Circumnavigating,^-s-\-n-a-v-g-\-h,Snavgg,,qagnsv,0
 Circumnavigates,^-s-\-n-a-v-g-s,Snavgs,,qagnsv,0
 Circumnavigation,^-s-\-n-a-v-g-sh,Snavgz,,qagnsvz,0
 Circumnavigations,^-s-\-n-a-v-g-sh-s,Snavgzs,,qagnsvz,0
+Cinderella,s-nt-r-l-a,Sndrla,,qadlnrs,0
 Soundings,s2-nt-\-s2,Sndz,,qdnsz,0
 Centric,s2-n-/-k,Snk,,qkns,0
 Centrically,s2-n-/-k-e,Snke,,qekns,0
@@ -3969,7 +3994,7 @@ Criticizes,k-r-e-t-ss-s,Kretsss,,qekrst,1
 Criticisms,k-r-e-t-ss-s,Kretssso,o,qekorst,1
 Cried,k-r-i-d,Krid,,qdikr,1
 Crying,k-r-i-\-h,Krig,,qgikr,1
-Cries,k-r-i-s,Kriso,o,qikors,1
+Cries,k-r-i-s,Kris,,qikrs,1
 Crossed,k-r-o-s-d,Krosd,,qdkors,1
 Crossing,k-r-o-s-\-h,Krosg,,qgkors,1
 Crosss,k-r-o-s-s,Kross,,qkors,1
@@ -4373,6 +4398,10 @@ Sociopaths,s-o-sh-\-p-a-h-s,Sozpahs,,qahopsz,1
 Socialism,s2-o-sh-s-m,Sozsm,,qmosz,1
 Specification,s-p-e-s2-\-f,Spesf,,qefps,1
 Specifications,s-p-e-s2-\-f-s,Spesfs,,qefps,1
+Spiral,s-p-i-r-l,Spirl,,qilprs,1
+Spiraled,s-p-i-r-l-d,Spirld,,qdilprs,1
+Spiraling,s-p-i-r-l-\-h,Spirlg,,qgilprs,1
+Spirals,s-p-i-r-l-s,Spirls,,qilprs,1
 Subsequently,s-s2-e-k-e,Sseqe,,qeqs,1
 Subsequents,s-s2-e-k-s,Sseqs,,qeqs,1
 Subset,ss-e-t,Sset,,qest,1
@@ -5141,6 +5170,7 @@ Ruthlessly,r-u-h-l-e,Ruhle,,qehlru,3
 Sacrificial,s2-a-k-r-e-f-e-sh,Sakrefez,,qaefkrsz,3
 Sacrificially,s2-a-k-r-e-f-e-sh-e,Sakrefeze,,qaefkrsz,3
 Samaritan,s-a-mt-a-n,Samtan,,qamnst,3
+Samaritans,s-a-mt-a-n-s,Samtans,,qamnst,3
 Simpler,s2-e-m-p-r,Sempr,,qemprs,3
 Surprisingly,s-e-pr-i-s-\-h-e,Seprishe,,qehiprs,3
 Exceptions,s-e-p-sh-s,Sepzs,,qepsz,3
@@ -5328,6 +5358,8 @@ Encourages,n-k-r-j-s,Nkrjs,,qjknrs,4
 Unconscious,n-k-sh-u-s,Nkzus,,qknsuz,4
 Unconsciously,n-k-sh-u-s-e,Nkzuse,,qeknsuz,4
 Unrighteous,n-r-i-ch-u-s,Nricus,,qcinrsu,4
+Unremarkable,n-r-m-b,Nrmb,,qbmnr,4
+Unremarkably,n-r-m-b-e,Nrmbe,,qbemnr,4
 Interested,^-n-\-s-d,Nsd,,qdns,4
 Interesting,^-n-\-s-\-h,Nsg,,qgns,4
 Interestingly,^-n-\-s-\-h-e,Nsge,,qegns,4
@@ -6028,6 +6060,12 @@ Boils,b-o-e-l-s,Byls,,qblsy,8
 Dedicated,td-e-k-a-t-d,Ddekatd,,qadekt,8
 Dedicating,td-e-k-a-t-\-h,Ddekatg,,qadegkt,8
 Dedicates,td-e-k-a-t-s,Ddekats,,qadekst,8
+Dedicate,td-k-a-t,Ddkat,,qadkt,8
+Dedicated,td-k-a-t-d,Ddkatd,,qadkt,8
+Dedicating,td-k-a-t-\-h,Ddkatg,,qadgkt,8
+Dedicates,td-k-a-t-s,Ddkats,,qadkst,8
+Dedication,td-k-a-sh,Ddkaz,,qadkz,8
+Dedications,td-k-a-sh-s,Ddkazs,,qadksz,8
 Dominance,d-o-mn-a-n-s,Domnans,,qadmnos,8
 Dominant,d-o-mn-a-nt,Domnant,,qadmnot,8
 Elected,e-l-e-k-d,Elekd,,qdekl,8
@@ -6157,8 +6195,7 @@ Technological,t-e-k-n-/-k,Teknko,o,qeknot,8
 Town,t-n,Tnu,u,qntu,8
 Tensioned,tn-sh-d,Tnzd,,qdntz,8
 Tensioning,tn-sh-\-h,Tnzg,,qgntz,8
-Tensions,tn-sh-s,Tnzs,,qnstz,8
-Attentions,tn-sh-s,Tnzso,o,qnostz,8
+Tensions,tn-sh-s,Tnzso,o,qnostz,8
 Topics,t-p-k-s,Tpks,,qkpst,8
 Ultimate,u-tm-a-t,Utmat,,qamtu,8
 Ultimately,u-tm-a-t-e,Utmate,,qaemtu,8
@@ -6756,6 +6793,7 @@ Dependent,d-jnt-nt,Dpndnd,,qdnp,17
 Dependence,d-jnt-n-s,Dpndns,,qdnps,17
 Dependency,d-jnt-n-s-e,Dpndnse,,qdenps,17
 Dependencies,d-jnt-n-s-e-s,Dpndnses,,qdenps,17
+Dependent,d-jnt-nt,Dpndnt,,qdnp,17
 Depends,d-jnt-s,Dpnds,,qdnps,17
 Dropped,d-r-o-p-d,Dropd,,qdopr,17
 Dropping,d-r-o-p-\-h,Dropg,,qdgopr,17
@@ -6806,6 +6844,7 @@ Audits,o-td-s,Odts,,qdost,17
 Praying,pr-a-\-h,Prag,,qagpr,17
 Progressives,pr-g-v-s,Prgvs,,qgprsv,17
 Processed,pr-ss-d,Prssd,,qdprs,17
+Retention,r-tn-sh,Rtnz,,qnrtz,17
 Shareholder,sh-a-\-o-l-d-r,Zaoldr,,qadlorz,17
 Shareholders,sh-a-\-o-l-d-r-s,Zaoldrs,,qadlorsz,17
 Approvals,a-pr-v-l-s,Aprvls,,qalprsv,18
@@ -6865,6 +6904,7 @@ Starters,s2-t-a2-t-r-s,Statrs,,qarst,18
 Extended,e-s2-tn-d,Xtnd,,qdntx,18
 Extending,e-s2-tn-\-h,Xtng,,qgntx,18
 Extends,e-s2-tn-s,Xtns,,qnstx,18
+Extensions,e-s2-tn-sh-s,Xtnzs,,qnstxz,18
 Associated,a-s2-o-sh-t-d,Asoztd,,qadostz,19
 Associating,a-s2-o-sh-t-\-h,Asoztg,,qagostz,19
 Associates,a-s2-o-sh-t-s,Asozts,,qaostz,19
@@ -7274,7 +7314,7 @@ Admits,a-m-e-t-s,Amets,,qaemst,31
 Awaited,^-h-\-u-a-t-d,Huatd,,qadhtu,31
 Awaits,^-h-\-u-a-t-s,Huats,,qahstu,31
 Thousands,th-a-u-s,Hws,,qhsw,31
-Christ,k-r-i-s,Kris,,qikrs,31
+Christ,k-r-i-s,Kriso,o,qikors,31
 Overload,o-/-l-o-d,Olod,,qdlo,31
 Overloaded,o-/-l-o-d-d,Olodd,,qdlo,31
 Overloading,o-/-l-o-d-\-h,Olodg,,qdglo,31
@@ -7296,6 +7336,13 @@ Squirrel,s-q-e-r-e-l,Sqerel,,qelqrs,31
 Squirreled,s-q-e-r-e-l-d,Sqereld,,qdelqrs,31
 Squirreling,s-q-e-r-e-l-\-h,Sqerelg,,qeglqrs,31
 Squirrels,s-q-e-r-e-l-s,Sqerels,,qelqrs,31
+Suicide,s-u-s-i,Susi,,qisu,31
+Suicided,s-u-s-i-d,Susid,,qdisu,31
+Suiciding,s-u-s-i-\-h,Susig,,qgisu,31
+Suicidal,s-u-s-i-l,Susil,,qilsu,31
+Suicidally,s-u-s-i-l-e,Susile,,qeilsu,31
+Suicidality,s-u-s-i-\-l,Susilo,o,qilosu,31
+Suicides,s-u-s-i-s,Susis,,qisu,31
 Watered,u-o-t-e2-d,Uoted,,qdeotu,31
 Watering,u-o-t-e2-\-h,Uoteg,,qegotu,31
 Waters,u-o-t-e2-s,Uotes,,qeostu,31
@@ -7454,7 +7501,19 @@ Declaring,d-e-/-r-\-h,Derg,,qdegr,35
 Declares,d-e-/-r-s,Ders,,qders,35
 Declaration,d-e-/-r-sh,Derz,,qderz,35
 Eaten,e-tn,Etn,,qent,35
+Threshold,th-r-sh-o-ld,Hrzold,,qdhlorz,35
+Thresholds,th-r-sh-o-ld-s,Hrzolds,,qdhlorsz,35
 Logic,l-o-j-k,Lojk,,qjklo,35
+Pretended,pr-e-tn-d,Pretnd,,qdenprt,35
+Pretending,pr-e-tn-\-h,Pretng,,qegnprt,35
+Pretender,pr-e-tn-r,Pretnr,,qenprt,35
+Pretenders,pr-e-tn-r-s,Pretnrs,,qenprst,35
+Pretends,pr-e-tn-s,Pretns,,qenprst,35
+Pretension,pr-e-tn-sh,Pretnz,,qenprtz,35
+Pretendion,pr-e-tn-sh,Pretnzqk,,qenprtz,35
+Pretensions,pr-e-tn-sh-s,Pretnzs,,qenprstz,35
+Pretentious,pr-e-tn-sh-u-s,Pretnzus,,qenprstuz,35
+Pretentiously,pr-e-tn-sh-u-s-e,Pretnzuse,,qenprstuz,35
 Rebuilt,r-bl,Rbl,,qblr,35
 Synthetic,s-e-n-th-\-a,Senha,,qaehns,35
 Synthetically,s-e-n-th-\-a-e,Senhae,,qaehns,35
@@ -7654,7 +7713,8 @@ Troubleshoots,t-r-b-sh-s,Trbzs,,qbrstz,42
 Activities,a-k-v-t-e-s,Akvtes,,qaekstv,43
 Disposition,d-s-p-o-sh,Dspoz,,qdopsz,43
 Growing,g-r-o-\-h,Grog,,qgor,43
-Grows,g-r-o-s,Groso,o,qgors,43
+Grows,g-r-o-s,Gros,,qgors,43
+Gross,g-r-o-s,Groso,o,qgors,43
 Configurations,k-f-e-g-r-sh-s,Kfegrzs,,qefgkrsz,43
 Languages,l-a-ng-s,Lags,,qagls,43
 Maintenance,mn-tn-a-n-s,Mntnans,,qamnst,43
@@ -7999,6 +8059,7 @@ Refuge,r-f-e-u-j,Rfuj,,qfjru,73
 Refuged,r-f-e-u-j-d,Rfujd,,qdfjru,73
 Refuging,r-f-e-u-j-\-h,Rfujg,,qfgjru,73
 Refuges,r-f-e-u-j-s,Rfujs,,qfjrsu,73
+Attentions,tn-sh-s,Tnzs,,qnstz,73
 Defecation,df-k-a-sh,Dfkz,,qdfkz,74
 Describe,d-s2-k-r,Dskr,,qdkrs,74
 Described,d-s2-k-r-d,Dskrd,,qdkrs,74
@@ -8073,6 +8134,8 @@ Suspect,ss-/-k,Ssk,,qks,80
 Suspected,ss-/-k-d,Sskd,,qdks,80
 Suspecting,ss-/-k-\-h,Sskg,,qgks,80
 Suspects,ss-/-k-s,Ssks,,qks,80
+Stranger,s2-t-j-r,Stjr,,qjrst,80
+Strangers,s2-t-j-r-s,Stjrs,,qjrst,80
 Consistently,k-ss-/-nt-e,Kssnte,,qeknst,81
 Lookup,l-u-k-p,Lukp,,qklpu,81
 Lookups,l-u-k-p-s,Lukps,,qklpsu,81
@@ -8130,6 +8193,8 @@ Powered,p-a-u-d,Pwd,,qdpw,86
 Powering,p-a-u-\-h,Pwg,,qgpw,86
 Powerhouse,p-a-u-h-u-s,Pwhus,,qhpsuw,86
 Powerhouses,p-a-u-h-u-s-s,Pwhuss,,qhpsuw,86
+Powerless,p-a-u-l,Pwl,,qlpw,86
+Powerlessly,p-a-u-l-e,Pwle,,qelpw,86
 Powers,p-a-u-s,Pws,,qpsw,86
 Timing,tm-\-h,Tmg,,qgmt,86
 Notably,n-o-t-b-e,Notbe,,qbenot,87
@@ -8608,6 +8673,10 @@ Touchable,t-ch-b,Tcb,,qbct,158
 Touchably,t-ch-b-e,Tcbe,,qbcet,158
 Touchability,t-ch-\-b,Tcbo,,qbcot,158
 Touches,t-ch-s,Tcs,,qcst,158
+Touchpoint,t-ch-y,Tcy,,qcty,158
+Touchpointed,t-ch-y-d,Tcyd,,qcdty,158
+Touchpointing,t-ch-y-\-h,Tcyg,,qcgty,158
+Touchpoints,t-ch-y-s,Tcys,,qcsty,158
 Capture,k-a-p-t-r,Kaptr,,qakprt,159
 Captured,k-a-p-t-r-d,Kaptrd,,qadkprt,159
 Capturing,k-a-p-t-r-\-h,Kaptrg,,qagkprt,159
@@ -9441,6 +9510,7 @@ Today,td-a,Tda,,qadt,559
 Todays,td-a-s,Tdaso,o,qadost,559
 Opened,o-p-n-d,Opnd,,qdnop,560
 Opening,o-p-n-\-h,Opng,,qgnop,560
+Openness,o-p-n-n-e-s,Opnnes,,qenops,560
 Opens,o-p-n-s,Opns,,qnops,560
 Opinions,o-p-n-s,Opnso,o,qnops,560
 Failures,f-a-l-r-s,Falrs,,qaflrs,563
@@ -9609,6 +9679,14 @@ Telling,t-e-\-h,Teg,,qegt,711
 Tells,t-e-s,Tes,,qest,711
 Coming,k-m-\-h,Kmg,,qgkm,718
 Full,f-u,Fuo,o,qfou,719
+Fulltime,f-u-tm,Futm,,qfmtu,719
+Fulltimed,f-u-tm-d,Futmd,,qdfmtu,719
+Fulltiming,f-u-tm-\-h,Futmg,,qfgmtu,719
+Fulltimes,f-u-tm-s,Futms,,qfmstu,719
+Tactic,t-a-k-k,Takk,,qakt,719
+Tactical,t-a-k-k-l,Takkl,,qaklt,719
+Tactically,t-a-k-k-l-e,Takkle,,qaeklt,719
+Tactics,t-a-k-k-s,Takks,,qakst,719
 Trusted,t-r-s-d,Trsd,,qdrst,728
 Trusting,t-r-s-\-h,Trsg,,qgrst,728
 Trusts,t-r-s-s,Trss,,qrst,728
@@ -9916,6 +9994,12 @@ Down,d-n,Dno,o,qdno,2176
 Application Support,a-sh-s,Azs,,qasz,2181
 Application Support Team,a-sh-s-t,Azst,,qastz,2181
 Application Support Teams,a-sh-s-t-s,Azsts,,qastz,2181
+Caused,k-s2-d,Ksd,,qdks,2222
+Caused,k-s2-d,Ksdo,o,qdkos,2222
+Causing,k-s2-\-h,Ksg,,qgks,2222
+Causing,k-s2-\-h,Ksgo,o,qgkos,2222
+Cause,k-s2,Kso,o,qkos,2222
+Causes,k-s2s,Ksso,o,qkos,2222
 Ways,u-a-s,Uas,,qasu,2235
 Passworded,p-u-d-d,Pudd,,qdpu,2238
 Passwording,p-u-d-\-h,Pudg,,qdgpu,2238
@@ -10058,6 +10142,13 @@ Solvability,s-o-l-v-\-b,Solvbo,,qblosv,90207
 Solved,s-o-l-v-d,Solvd,,qdlosv,90207
 Solving,s-o-l-v-\-h,Solvg,,qglosv,90207
 Solves,s-o-l-v-s,Solvs,,qlosv,90207
+Stretch,s-t-r-e-ch,Strec,,qcerst,90275
+Stretchable,s-t-r-e-ch-b,Strecb,,qbcerst,90275
+Stretchably,s-t-r-e-ch-b-e,Strecbe,,qbcerst,90275
+Stretchability,s-t-r-e-ch-\-b,Strecbo,,qbceorst,90275
+Stretched,s-t-r-e-ch-d,Strecd,,qcderst,90275
+Stretching,s-t-r-e-ch-\-h,Strecg,,qcegrst,90275
+Stretches,s-t-r-e-ch-s,Strecs,,qcerst,90275
 Logically,l-o-j-k-e,Lojke,,qejklo,90371
 Logical,l-o-j-k-l,Lojkl,,qjklo,90371
 Logically,l-o-j-k-l-e,Lojkle,,qejklo,90371
@@ -10165,6 +10256,8 @@ Regions,r-j-n-s,Rjns,,qjnrs,91191
 Handshake,h-\-nd-sh-a-k,Hndzak,,qadhknz,91204
 Handshaking,h-\-nd-sh-a-k-\-h,Hndzakg,,qadghknz,91204
 Handshakes,h-\-nd-sh-a-k-s,Hndzaks,,qadhknsz,91204
+Perception,pr-s-e-p-sh,Prsepz,,qeprsz,91250
+Perceptions,pr-s-e-p-sh-s,Prsepzs,,qeprsz,91250
 Forego,f-g,Fg,,qfg,91271
 Foregoing,f-g-\-h,Fgg,,qfg,91271
 Foregoes,f-g-s,Fgs,,qfgs,91271
@@ -10207,6 +10300,14 @@ Plugably,p-l-u-g-b-e,Plugbe,,qbeglpu,91857
 Plugability,p-l-u-g-\-b,Plugbo,,qbglopu,91857
 Plugged,p-l-u-g-d,Plugd,,qdglpu,91857
 Plugging,p-l-u-g-\-h,Plugg,,qglpu,91857
+Provoke,pr-v-k,Prvk,,qkprv,92004
+Provoked,pr-v-k-d,Prvkd,,qdkprv,92004
+Provoking,pr-v-k-\-h,Prvkg,,qgkprv,92004
+Provokes,pr-v-k-s,Prvks,,qkprsv,92004
+Provocative,pr-v-k-df,Prvktv,,qkprtv,92004
+Provocatively,pr-v-k-df-e,Prvktve,,qekprtv,92004
+Provocation,pr-v-k-sh,Prvkz,,qkprvz,92004
+Provocations,pr-v-k-sh-s,Prvkzs,,qkprsvz,92004
 Disease,d-s-e-s,Dsesi,i,qdeis,92072
 Diseases,d-s-e-ss,Dsess,,qdes,92072
 Unskilled,n-s-k-l-d,Nskld,,qdklns,92085

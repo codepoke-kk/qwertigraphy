@@ -3587,7 +3587,6 @@ Perennial,pr-e-n-l,Prenl,,qelnpr,0
 Prince,pr-e-n-s,Prens,,qenprs,0
 Presbyterian,pr-e-s-b,Presb,,qbeprs,0
 President of the united states,pr-e-s2-tn-e-u-s,Presdnus,,qdenprsu,0
-Pretended,pr-e-tn-/-t,Pretnd,,qdenprt,0
 Prevail,pr-e-v-a,Preva,,qaeprv,0
 Prevailing,pr-e-v-a-\-h,Prevag,,qaegprv,0
 Professor,pr-f-e-s-r,Prfesr,,qefprs,0
@@ -4665,7 +4664,6 @@ Noted,n-o-td,Notd,,qdnot,1
 Knotted,n-o-td,Notdo,o,qdnot,1
 Interpellate,n-/-pl-a,Npla,,qalnp,1
 Unreasonable,n-r-s,Nrs,,qnrs,1
-Insisted,n-ss-/-t,Nssd,,qdns,1
 Entomology,n-tm-/-o2,Ntmo,,qmnot,1
 Unworthy,n-u-u-th-e,Nuuhe,,qehnu,1
 In advance,n-v-a-n-s,Nvans,,qansv,1
@@ -5954,7 +5952,7 @@ Cretin,k-r-e-tn,Kretn,,qeknrt,21
 Cretonne,k-r-e-tn,Kretno,o,qeknort,21
 Cretins,k-r-e-tn-s,Kretns,,qeknrst,21
 Considerable,k-s-b,Ksb,,qbks,21
-Contrast,k-/-s,Kso,o,qkos,21
+Contrast,k-/-s,Ksoqk,o,qkos,21
 Impel,m-pl,Mpl,,qlmp,21
 Employ,m-pl,Mplo,o,qlmop,21
 Insurance,n-sh,Nzo,o,qnoz,21
@@ -6249,7 +6247,6 @@ Tennis,tn-e-s,Tnes,,qenst,42
 Activity,a-k-v-t-e,Akvte,,qaektv,43
 Dispose,d-s-p-o,Dspo,,qdops,43
 Grow,g-r-o,Gro,,qgor,43
-Gross,g-r-o-s,Gros,,qgors,43
 Contrary,k-/-r-e,Krei,i,qeikr,43
 Language,l-a-ng,Lag,,qagl,43
 Mortal,m-o-t-l,Motl,,qlmot,43
@@ -6503,8 +6500,7 @@ Literally,l-e-t-l-e,Letle,,qelt,82
 Charge,ch-j,Cj,,qcj,83
 Discharge,d-s-ch-j,Dscj,,qcdjs,83
 Helpful,^-h-\-e-l-p-f,Helpf,,qefhlp,83
-Caused,k-s2-/-t,Ksd,,qdks,83
-Construed,k-s2-/-d,Ksdo,o,qdkos,83
+Construed,k-s2-/-d,Ksdoqk,o,qdkos,83
 Walk,u-o-k,Uok,,qkou,83
 Walked,u-o-k-t,Uokd,,qdkou,83
 Woke,u-o-k,Uoko,o,qkou,83
