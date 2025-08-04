@@ -6025,6 +6025,7 @@ Characteristics,k-a-k-/-s2-t-s,Kaksts,,qakst,7
 Kitchened,k-e-ch-n-d,Kecnd,,qcdekn,7
 Kitchening,k-e-ch-n-\-h,Kecng,,qcegkn,7
 Kitchens,k-e-ch-n-s,Kecns,,qcekns,7
+Claimeds,k-l-a-mt-s,Klamds,,qadklms,7
 Climbed,k-l-i-m-d,Klimd,,qdiklm,7
 Climbing,k-l-i-m-\-h,Klimg,,qgiklm,7
 Climbs,k-l-i-m-s,Klims,,qiklms,7
@@ -6047,6 +6048,8 @@ Unchallenged,n-c-a-l-e-n-j-d,Ncalenjd,,qacdejln,7
 Unchallenged,n-c-a-l-n-j-d,Ncalnjd,,qacdjln,7
 Unneeded,u-n-e-td,Neddo,o,qdeno,7
 Injustices,n-j-u-s-s-s,Njusss,,qjnsu,7
+Unclaimed,n-k-l-a-mt,Nklamd,,qadklmn,7
+Unclaimeds,n-k-l-a-mt-s,Nklamds,,qadklmns,7
 Encouragements,n-k-r-j-m-s,Nkrjms,,qjkmnrs,7
 Knocked,n-o-k-d,Nokd,,qdkno,7
 Knocking,n-o-k-\-h,Nokg,,qgkno,7
@@ -6275,6 +6278,18 @@ Spiritlessly,s-pr-l-e,Sprle,,qelprs,8
 Spiritless,s-pr-l,Sprlo,o,qloprs,8
 Subscriber,s2-s2-k-r-\-r,Sskrr,,qkrs,8
 Subscribers,s2-s2-k-r-\-r-s,Sskrrs,,qkrs,8
+Supple,s-u-pl,Supl,,qlpsu,8
+Supplement,s-u-pl-m,Suplm,,qlmpsu,8
+Supplemented,s-u-pl-m-d,Suplmd,,qdlmpsu,8
+Supplementally,s-u-pl-m-e,Suplme,,qelmpsu,8
+Supplementing,s-u-pl-m-\-h,Suplmg,,qglmpsu,8
+Supplemental,s-u-pl-m-l,Suplml,,qlmpsu,8
+Supplementally,s-u-pl-m-l-e,Suplmle,,qelmpsu,8
+Supplementary,s-u-pl-m-r-e,Suplmre,,qelmprsu,8
+Supplementaries,s-u-pl-m-r-e-s,Suplmres,,qelmprsu,8
+Supplements,s-u-pl-m-s,Suplms,,qlmpsu,8
+Supplementation,s-u-pl-m-sh,Suplmz,,qlmpsuz,8
+Supplementations,s-u-pl-m-sh-s,Suplmzs,,qlmpsuz,8
 Technological,t-e-k-n-/-k,Teknko,o,qeknot,8
 Town,t-n,Tnu,u,qntu,8
 Tensioned,tn-sh-d,Tnzd,,qdntz,8
@@ -8725,6 +8740,8 @@ Inside,n-s-i,Nsi,,qins,136
 Insided,n-s-i-d,Nsid,,qdins,136
 Insiding,n-s-i-\-h,Nsig,,qgins,136
 Inside,n-s-i,Nsio,o,qinos,136
+Insider,n-s-i-r,Nsir,,qinrs,136
+Insiders,n-s-i-r-s,Nsirs,,qinrs,136
 Insides,n-s-i-s,Nsis,,qins,136
 Selecting,s-e-l-e-k-\-h,Selekg,,qegkls,136
 Selects,s-e-l-e-k-s,Seleks,,qekls,136
@@ -9051,6 +9068,7 @@ Refactoring,r-f-a-k-r-\-h,Rfakrg,,qafgkr,205
 Refactors,r-f-a-k-r-s,Rfakrs,,qafkrs,205
 Reclaimable,r-e-/-m-b,Rmbo,o,qbmor,205
 Reclaimed,r-e-/-m-d,Rmd,,qdmr,205
+Reclaimeds,r-e-/-m-d-s,Rmds,,qdmrs,205
 Reclaiming,r-e-/-m-\-h,Rmg,,qgmr,205
 Reclaims,r-e-/-m-s,Rms,,qmrs,205
 Identified,a-tn-df-d,Idntfd,,qdfint,208
@@ -10315,6 +10333,8 @@ Insights,n-s-i-t-s,Nsits,,qinst,90086
 Refresh,r-fr-e-sh,Rfrez,,qefrz,90091
 Refreshed,r-fr-e-sh-d,Rfrezd,,qdefrz,90091
 Refreshing,r-fr-e-sh-\-h,Rfrezg,,qefgrz,90091
+Refresher,r-fr-e-sh-r,Rfrezr,,qefrz,90091
+Refreshers,r-fr-e-sh-r-s,Rfrezrs,,qefrsz,90091
 Refreshes,r-fr-e-sh-s,Rfrezs,,qefrsz,90091
 Web,w-b,Wb,,qbw,90162
 Webbed,w-b-d,Wbd,,qbdw,90162
