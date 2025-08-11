@@ -4908,7 +4908,6 @@ Compete,kp-e,Kpe,,qekp,2
 Credible,k-r-e-d-b,Kredb,,qbdekr,2
 Creek,k-r-e-k,Krek,,qekr,2
 Compensatory,k-s2-a-r-e,Ksare,,qaekrs,2
-Consent,k-s2-e-nt,Ksent,,qeknst,2
 Concentrate,k-s2-n-/-t,Ksnt,,qknst,2
 K-tm-d,k-tn-td,Ktntd,,qdknt,2
 Contented,k-tn-td,Ktntdo,o,qdknot,2
@@ -5701,7 +5700,7 @@ Treat,t-r-e-t,Tret,,qert,11
 Utah,e-u-t,Ut,,qtu,11
 Abide,a-b-i,Abi,,qabi,12
 Adapted,a-d-a-p-/-t,Adapd,,qadp,12
-As yet,a-s2-e-t,Aset,,qaest,12
+As yet,a-s2-e-t,Asetqk,,qaest,12
 Bell,b-e-l,Bel,,qbel,12
 Diagonal,d-i-g,Digo,o,qdgio,12
 Dimple,tm-pl,Dmpl,,qdlmp,12
@@ -7155,7 +7154,6 @@ Showed,sh-o-d,Zod,,qdoz,571
 Protest,pr-o-t-e-s,Protes,,qeoprst,575
 Said,s2-e-d,Sed,,qdes,576
 Knight,n-i,Nii,i,qin,581
-Knights,n-i-s,Niso,o,qinos,581
 New york ,n-i,Niu,u,qinu,581
 Network,n-e-t-r-k,Netrk,,qeknrt,583
 Load,l-o-d,Lod,,qdlo,588
