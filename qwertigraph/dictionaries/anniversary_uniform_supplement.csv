@@ -6244,6 +6244,8 @@ Coordinates,k-o-o-tn-a-t-s,Koodnats,,qadknost,8
 Coordinate,k-o-o-tn-t,Koodnt,,qdknot,8
 Coordinated,k-o-o-tn-t-d,Koodntd,,qdknot,8
 Coordinating,k-o-o-tn-t-\-h,Koodntg,,qdgknot,8
+Coordinator,k-o-o-tn-t-r,Koodntr,,qdknort,8
+Coordinators,k-o-o-tn-t-r-s,Koodntrs,,qdknorst,8
 Coordinates,k-o-o-tn-t-s,Koodnts,,qdknost,8
 Constructed,k-s2-/-k-d,Kskd,,qdks,8
 Constructing,k-s2-/-k-\-h,Kskg,,qgks,8
@@ -7943,6 +7945,9 @@ Reposed,r-p-o-d,Rpod,,qdopr,43
 Reposing,r-p-o-\-h,Rpog,,qgopr,43
 Repose,r-p-o,Rpoo,o,qopr,43
 Reposes,r-p-o-s,Rpos,,qoprs,43
+Teachable,t-e-ch-b,Tecb,,qbcet,43
+Teachably,t-e-ch-b-e,Tecbe,,qbcet,43
+Teachability,t-e-ch-\-b,Tecbo,,qbceot,43
 Teaching,t-e-ch-\-h,Tecg,,qcegt,43
 Israel,E-s-r-ea-l,Esrel,,qelrs,44
 Fascinate,f-a-s2-n-a-t,Fasnat,,qafnst,44
@@ -8121,6 +8126,12 @@ Aligned,a-l-i-n-d,Alind,,qadiln,58
 Aligning,a-l-i-n-\-h,Aling,,qagiln,58
 Aligns,a-l-i-n-s,Alins,,qailns,58
 Directors,d-r-k-/-r-s,Drkrs,,qdkrs,58
+Misalign,m-s-a-l-i-n,Msalin,,qailmns,58
+Misaligned,m-s-a-l-i-n-d,Msalind,,qadilmns,58
+Misaligning,m-s-a-l-i-n-\-h,Msaling,,qagilmns,58
+Misalignment,m-s-a-l-i-n-m,Msalinm,,qailmns,58
+Misalignments,m-s-a-l-i-n-m-s,Msalinms,,qailmns,58
+Misaligns,m-s-a-l-i-n-s,Msalins,,qailmns,58
 Redirector,r-e-d-r-k-/-r,Rdrkr,,qdkr,58
 Redirectors,r-e-d-r-k-/-r-s,Rdrkrs,,qdkrs,58
 Strengthen,s2-t-r-n,Strn,,qnrst,58
@@ -8675,6 +8686,8 @@ Developer,dfl-r,Dvlr,,qdlrv,118
 Developers,dfl-r-s,Dvlrs,,qdlrsv,118
 Larger,l-a-j-r,Lajr,,qajlr,118
 Engines,n-j-n-s,Njns,,qjns,118
+Bugged,b-u-g-d,Bugd,,qbdgu,119
+Bugging,b-u-g-\-h,Bugg,,qbgu,119
 Disorganize,d-s-o-g,Dsog,,qdgos,119
 Disorganized,d-s-o-g-d,Dsogd,,qdgos,119
 Disorganizing,d-s-o-g-\-h,Dsogg,,qdgos,119
@@ -8686,6 +8699,10 @@ Organized,o-g-d,Ogd,,qdgo,119
 Organizing,o-g-\-h,Ogg,,qgo,119
 Organizational,o-g-l,Ogl,,qglo,119
 Organizations,o-g-s,Ogs,,qgos,119
+Organization,o-g-sh,Ogz,,qgoz,119
+Organizational,o-g-sh-l,Ogzl,,qgloz,119
+Organizationally,o-g-sh-l-e,Ogzle,,qegloz,119
+Organizations,o-g-sh-s,Ogzs,,qgosz,119
 Reorganization,r-o-g-sh,Rogz,,qgorz,119
 Explaining,e-s-pl-\-h,Xplg,,qglpx,119
 Explains,e-s-pl-s,Xpls,,qlpsx,119
@@ -10512,6 +10529,7 @@ Sanitizing,^-s-\-nt-i-s-\-h,Sntisg,,qginst,90693
 Sanitizes,^-s-\-nt-i-s-s,Sntiss,,qinst,90693
 Sanitary,^-s-\-nt-r-e,Sntre,,qenrst,90693
 Sanitation,^-s-\-nt-sh,Sntz,,qnstz,90693
+Buggy,b-u-g-e,Buge,,qbegu,90705
 Override,o-\-r-i-d,Orid,,qdior,90768
 Overrided,o-\-r-i-d-d,Oridd,,qdior,90768
 Overriding,o-\-r-i-d-\-h,Oridg,,qdgior,90768
