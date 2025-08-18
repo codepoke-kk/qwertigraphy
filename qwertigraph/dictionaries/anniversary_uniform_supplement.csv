@@ -293,6 +293,10 @@ Betrayal,b-t-r-a-l,Btral,,qablrt,0
 Betrayals,b-t-r-a-l-s,Btrals,,qablrst,0
 Betraies,b-t-r-a-s,Btras,,qabrst,0
 Bureaucrats,b-u-/-a-t-s,Buats,,qabstu,0
+Bucket,b-u-k-t,Bukt,,qbktu,0
+Bucketed,b-u-k-t-d,Buktd,,qbdktu,0
+Bucketing,b-u-k-t-\-h,Buktg,,qbgktu,0
+Buckets,b-u-k-t-s,Bukts,,qbkstu,0
 Bureaucracy,b-u-/-s-e,Buse,,qbesu,0
 Bureaucracies,b-u-/-s-e-s,Buses,,qbesu,0
 Buttonhole,b-u-tn-o-l-^-~-h,Butnol,,qblnotu,0
@@ -599,6 +603,12 @@ Disciplines,d-s-pl-e-n-s,Dsplens,,qdelnps,0
 Disproportionately,d-s-pr-e,Dspre,,qdeprs,0
 Desperation,d-s-pr-a-sh,Dsprzo,o,qdoprsz,0
 Disrespectful,d-s-r-e-s-f,Dsresf,,qdefrs,0
+Disrespect,d-s-r-s,Dsrs,,qdrs,0
+Disrespected,d-s-r-s-d,Dsrsd,,qdrs,0
+Disrespectful,d-s-r-s-f,Dsrsf,,qdfrs,0
+Disrespectfully,d-s-r-s-f-e,Dsrsfe,,qdefrs,0
+Disrespecting,d-s-r-s-\-h,Dsrsg,,qdgrs,0
+Disrespects,d-s-r-s-s,Dsrss,,qdrs,0
 Dissatisfied,d-ss-a-t-d,Dssatd,,qadst,0
 Distemper,d-s-tm-pr,Dstmpr,,qdmprst,0
 Distrust,d-s2-t-r-s,Dstrs,,qdrst,0
@@ -3915,6 +3925,7 @@ Egress,e-g-r-e-s,Egres,,qegrs,1
 Egressed,e-g-r-e-s-d,Egresd,,qdegrs,1
 Egressing,e-g-r-e-s-\-h,Egresg,,qegrs,1
 Egresses,e-g-r-e-s-s,Egresso,o,qegors,1
+Withstood,e-h-s2-t-u,Ehstu,,qehstu,1
 Urgently,e-jnt-e,Ejnte,,qejnt,1
 Elementals,e-l-/-m-s,Elms,,qelms,1
 Elevators,e2-l-v-a-t-e2-s,Elvates,,qaelstv,1
@@ -4663,6 +4674,10 @@ Demonstrated,tm-o-n-s-d,Dmonsd,,qdmnos,2
 Demonstrating,tm-o-n-s-\-h,Dmonsg,,qdgmnos,2
 Demonstrates,tm-o-n-s-s,Dmonss,,qdmnos,2
 Discrepancies,d-s2-k-r-e-p-s,Dskreps,,qdekprs,2
+Disobey,d-s-o-b-a,Dsoba,,qabdos,2
+Disobeyed,d-s-o-b-a-d,Dsobad,,qabdos,2
+Disobeying,d-s-o-b-a-\-h,Dsobag,,qabdgos,2
+Disobeys,d-s-o-b-a-s,Dsobas,,qabdos,2
 Disregard,d-s-r-e,Dsre,,qders,2
 Disregarded,d-s-r-e-d,Dsred,,qders,2
 Disregarding,d-s-r-e-\-h,Dsreg,,qdegrs,2
@@ -7044,6 +7059,7 @@ Creators,k-r-ea-t-e2-s,Kretes,,qekrst,18
 Listener,l-e-s2-n-r,Lesnr,,qelnrs,18
 Listeners,l-e-s2-n-r-s,Lesnrs,,qelnrs,18
 Mothered,m-u-th-d,Muhd,,qdhmu,18
+Motherly,m-u-th-e,Muhe,,qehmu,18
 Mothering,m-u-th-\-h,Muhg,,qghmu,18
 Mothers,m-u-th-s,Muhs,,qhmsu,18
 Neighboring,n-a-br-\-h,Nabrg,,qabgnr,18
@@ -8130,6 +8146,7 @@ Strengthens,s2-t-r-n-s,Strns,,qnrst,58
 Strengths,s2-t-r-s,Strs,,qrst,58
 Analyses,a-n-a-l-s-e-s,Analses,,qaelns,59
 Articles,a2-t-/-k-s,Atks,,qakst,59
+Contexts,k-t-x-s,Ktxs,,qkstx,59
 Welcomed,l-k-m-d,Lkmd,,qdklm,59
 Welcoming,l-k-m-\-h,Lkmg,,qgklm,59
 Welcomes,l-k-m-s,Lkms,,qklms,59
@@ -8384,7 +8401,9 @@ Amazed,a-m-a-s-d,Amasd,,qadms,84
 Amazing,a-m-a-s-\-h,Amasg,,qagms,84
 Amazingly,a-m-a-s-\-h-e,Amasge,,qaegms,84
 Amazes,a-m-a-s-s,Amasso,o,qamos,84
+Detailed,td-a2-d,Dtad,,qadt,84
 Detailing,td-a2-\-h,Dtag,,qadgt,84
+Details,td-a2-s,Dtas,,qadst,84
 Familiarly,f-a-m-e-l-e,Famele,,qaeflm,84
 Familiars,f-a-m-e-l-s,Famels,,qaeflms,84
 Unfamiliar,n-f-a-m-e-l,Nfamel,,qaeflmn,84
@@ -8431,6 +8450,8 @@ Availability,a-v-a-l-\-b,Avalbo,,qablov,88
 Availabilities,a-v-a-l-\-b-s,Avalbs,,qablsv,88
 Easiest,e-s-e-\-s,Eses,,qes,88
 Easiest,e-s-e-\-s-t,Esest,,qest,88
+Forevermore,f-/-e-v-m,Fevm,,qefmv,88
+Forevers,f-/-e-v-s,Fevs,,qefsv,88
 Unavailability,u-n-a-v-a-l-\-b,Navalbo,,qablnov,88
 Augmented,o-g-m-d,Ogmd,,qdgmo,88
 Augmenting,o-g-m-\-h,Ogmg,,qgmo,88
@@ -8899,6 +8920,9 @@ Magically,m-a-j-k-e,Majke,,qaejkm,154
 Magicking,m-a-j-k-\-h,Majkg,,qagjkm,154
 Magical,m-a-j-k-l,Majkl,,qajklm,154
 Magics,m-a-j-k-s,Majks,,qajkms,154
+Withstand,e-h-s2-tn,Ehstn,,qehnst,156
+Withstanding,e-h-s2-tn-\-h,Ehstng,,qeghnst,156
+Withstands,e-h-s2-tn-s,Ehstns,,qehnst,156
 Originally,o-r-e-j-e,Oreje,,qejor,156
 Originality,o-r-e-j-\-l,Orejl,,qejlor,156
 Originals,o-r-e-j-s,Orejs,,qejors,156
@@ -9243,6 +9267,9 @@ Reencrypted,r-n-\-k-d,Rnkd,,qdknr,234
 Reencrypting,r-n-\-k-\-h,Rnkg,,qgknr,234
 Reencrypts,r-n-\-k-s,Rnks,,qknrs,234
 Reencryption,r-n-\-k-sh,Rnkz,,qknrz,234
+Receptive,r-s-e-p-df,Rseptv,,qeprstv,236
+Receptively,r-s-e-p-df-e,Rseptve,,qeprstv,236
+Receptions,r-s-e-p-sh-s,Rsepzs,,qeprsz,236
 Except,s-e-p,Sep,,qeps,236
 Excepted,s-e-p-d,Sepd,,qdeps,236
 Excepting,s-e-p-\-h,Sepg,,qegps,236
@@ -10642,6 +10669,10 @@ Plugably,p-l-u-g-b-e,Plugbe,,qbeglpu,91857
 Plugability,p-l-u-g-\-b,Plugbo,,qbglopu,91857
 Plugged,p-l-u-g-d,Plugd,,qdglpu,91857
 Plugging,p-l-u-g-\-h,Plugg,,qglpu,91857
+Depart,d-p-t,Dpt,,qdpt,91986
+Departed,d-p-t-d,Dptd,,qdpt,91986
+Departing,d-p-t-\-h,Dptg,,qdgpt,91986
+Departs,d-p-t-s,Dpts,,qdpst,91986
 Provoke,pr-v-k,Prvk,,qkprv,92004
 Provoked,pr-v-k-d,Prvkd,,qdkprv,92004
 Provoking,pr-v-k-\-h,Prvkg,,qgkprv,92004
