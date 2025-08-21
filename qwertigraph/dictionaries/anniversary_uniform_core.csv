@@ -1551,7 +1551,7 @@ Hegemony,^-h-\-e-j-mn-e,Hejmne,,qehjmn,0
 Hedgehog,^-h-\-e-j-o-g,Hejog,,qeghjo,0
 Hecatomb,^-h-\-e-k-a-tm,Hekatm,,qaehkmt,0
 Hekto-,^-h-\-e-k,Heko,o,qehko,0
-Held,^-h-\-e-ld,Held,,qdehl,0
+Held,^-h-\-e-ld,Heldqk,,qdehl,0
 Helium,^-h-\-e-l-e-m,Helem,,qehlm,0
 Hem,^-h-\-e-m,Hem,,qehm,0
 Hematite,^-h-\-e-m-a-t-i,Hemati,,qaehimt,0
@@ -3358,7 +3358,6 @@ Offal,o-fl,Ofl,,qflo,0
 Offend,o-f-nt,Ofnd,,qdfno,0
 Offended,o-f-nt-d,Ofnddqk,,qdfno,0
 Oftener,o-f-n-e2,Ofne,,qefno,0
-Offset,o-f-s22-e-t,Ofset,,qefost,0
 Augury,o-g-r-e,Ogreo,o,qegor,0
 Of these,o-th-e-s,Ohes,,qehos,0
 Orthodox,o-th-o-d-o-x,Ohodox,,qdhox,0
@@ -4852,7 +4851,7 @@ Edition,e-d-sh,Edz,,qdez,2
 Efficient,e-f-e-sh-t,Efezt,,qeftz,2
 If the,e-f-th,Efh,,qefh,2
 England,e-ng,Egu,u,qegu,2
-Yield,e-l-d,Eld,,qdel,2
+Yield,e-l-d,Eldqk,,qdel,2
 When the,e-n-th,Enh,,qehn,2
 Escape,e-s2-k-p,Eskp,,qekps,2
 He says,e2-ss,Ess,,qes,2
@@ -5307,7 +5306,7 @@ Defy,df-i,Dfi,,qdfi,5
 Defied,df-i-d,Dfid,,qdfi,5
 Disillusion,d-s-e-l-sh,Dselz,,qdelsz,5
 Element,e-l-e-m,Elem,,qelm,5
-He always,e-l-s,Els,,qels,5
+He always,e-l-s,Elsqk,,qels,5
 Ill,e-l,Elu,u,qelu,5
 Illusion,e-l-sh,Elzi,i,qeilz,5
 Elusion,e-l-sh,Elzo,o,qeloz,5
@@ -5833,8 +5832,8 @@ Fought,f-ot,Fot,,qfot,16
 Growth,g-r-o-th,Groh,,qghor,16
 Grown,g-r-o-n,Gron,,qgnor,16
 Hair,^-h-\-a-r,Har,,qahr,16
-Hill,^-h-\-e-l,Hel,,qehl,16
-Hills,^-h-\-e-l-s,Hels,,qehls,16
+Hill,^-h-\-e-l,Helqk,,qehl,16
+Hills,^-h-\-e-l-s,Helsqk,,qehls,16
 The fact,th-/-f,Hfi,i,qfhi,16
 Thankful,th-/-f,Hfo,o,qfho,16
 Clock,k-l-o-k,Klok,,qklo,16
