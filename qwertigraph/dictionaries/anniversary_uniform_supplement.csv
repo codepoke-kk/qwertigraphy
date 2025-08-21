@@ -519,6 +519,10 @@ Desirability,d-s-\-b,Dsboo,o,qbdos,0
 Desirables,d-s-b-s,Dsbs,,qbds,0
 Disdainful,d-s-d-a-n-f,Dsdanf,,qadfns,0
 Disdainfully,d-s-d-a-n-f-e,Dsdanfe,,qadefns,0
+Descended,d-s2-e-n-d,Dsend,,qdens,0
+Descendants,d-s2-e-n-tn-s,Dsendns,,qdens,0
+Descending,d-s2-e-n-\-h,Dseng,,qdegns,0
+Descends,d-s2-e-n-s,Dsens,,qdens,0
 Dissipated,d-s-e-p-a-d,Dsepad,,qadeps,0
 Dissipating,d-s-e-p-a-\-h,Dsepag,,qadegps,0
 Dissipates,d-s-e-p-a-s,Dsepas,,qadeps,0
@@ -1757,6 +1761,12 @@ Impulsive,m-pl-s-v,Mplsv,,qlmpsv,0
 Impulsively,m-pl-s-v-e,Mplsve,,qelmpsv,0
 Impenetrable,m-pnt-r-b,Mpntrb,,qbmnprt,0
 Impossibility,m-p-o-s-\-b,Mposbo,,qbmops,0
+Imposed,m-p-o-s-d,Mposd,,qdmops,0
+Imposed,m-p-o-s-d,Mposdo,o,qdmops,0
+Imposing,m-p-o-s-\-h,Mposg,,qgmops,0
+Imposing,m-p-o-s-\-h,Mposgo,o,qgmops,0
+Impose,m-p-o-s,Mposo,o,qmops,0
+Imposes,m-p-o-s-s,Mposso,o,qmops,0
 Importer,m-p-o-t-r,Mpotr,,qmoprt,0
 Importers,m-p-o-t-r-s,Mpotrs,,qmoprst,0
 Impositions,m-p-o-sh-s,Mpozs,,qmopsz,0
@@ -4828,6 +4838,8 @@ Implicated,m-pl-e-k-d,Mplekd,,qdeklmp,2
 Implicating,m-pl-e-k-\-h,Mplekg,,qegklmp,2
 Implicates,m-pl-e-k-s,Mpleks,,qeklmps,2
 Implication,m-pl-e-k-sh,Mplekz,,qeklmpz,2
+Imposition,m-p-o-s-sh,Mposz,,qmopsz,2
+Impositions,m-p-o-s-sh-s,Mposzs,,qmopsz,2
 Imposition,m-p-o-sh,Mpoz,,qmopz,2
 Not Applicable,n-a-pl-e-k,Naplek,,qaeklnp,2
 Unnatural,u-n-a-t-l,Natlo,o,qalnot,2
@@ -5378,6 +5390,11 @@ Dodge,d-o-j,Doj,,qdjo,4
 Dodged,d-o-j-d,Dojd,,qdjo,4
 Dodging,d-o-j-\-h,Dojg,,qdgjo,4
 Dodges,d-o-j-s,Dojs,,qdjos,4
+Department,d-p-t-m,Dptm,,qdmpt,4
+Departmentally,d-p-t-m-e,Dptme,,qdempt,4
+Departmental,d-p-t-m-l,Dptml,,qdlmpt,4
+Departmentally,d-p-t-m-l-e,Dptmle,,qdelmpt,4
+Departments,d-p-t-m-s,Dptms,,qdmpst,4
 Drain,d-r-a-n,Dran,,qadnr,4
 Drained,d-r-a-n-d,Drand,,qadnr,4
 Draining,d-r-a-n-\-h,Drang,,qadgnr,4
@@ -8888,6 +8905,9 @@ Discussions,d-s2-k-sh-s,Dskzs,,qdksz,143
 Initialed,e-n-e-sh-d,Enezd,,qdenz,143
 Initialing,e-n-e-sh-\-h,Enezg,,qegnz,143
 Initials,e-n-e-sh-s,Enezs,,qensz,143
+Commonly,k-mn-e,Kmne,,qekmn,143
+Commonality,k-mn-l,Kmnl,,qklmn,143
+Commonalities,k-mn-l-s,Kmnls,,qklmns,143
 Recommended,r-k-mn-d,Rkmnd,,qdkmnr,143
 Recommending,r-k-mn-\-h,Rkmng,,qgkmnr,143
 Recommends,r-k-mn-s,Rkmns,,qkmnrs,143
@@ -9033,6 +9053,8 @@ Cared,k-a-d,Kad,,qadk,176
 Cared,k-a-d,Kado,o,qadko,176
 Caring,k-a-\-h,Kag,,qagk,176
 Cares,k-a-s,Kas,,qaks,176
+Keystore,k-s2-t-o-r,Kstor,,qkorst,176
+Keystores,k-s2-t-o-r-s,Kstors,,qkorst,176
 Stored,s2-t-o-r-d,Stord,,qdorst,176
 Storing,s2-t-o-r-\-h,Storg,,qgorst,176
 Stores,s2-t-o-r-s,Stors,,qorst,176
@@ -9098,6 +9120,10 @@ Accords,a-k-r-s,Akrso,o,qakors,195
 Assign,a-s2-i-n,Asin,,qains,195
 Assigning,a-s2-i-n-\-h,Asing,,qagins,195
 Assigns,a-s2-i-n-s,Asins,,qains,195
+Unassign,n-a-s2-i-n,Nasin,,qains,195
+Unassigned,n-a-s2-i-n-d,Nasind,,qadins,195
+Unassigning,n-a-s2-i-n-\-h,Nasing,,qagins,195
+Unassigns,n-a-s2-i-n-s,Nasins,,qains,195
 Reassign,r-a-s2-i-n,Rasin,,qainrs,195
 Reassigned,r-a-s2-i-n-d,Rasind,,qadinrs,195
 Reassigning,r-a-s2-i-n-\-h,Rasing,,qaginrs,195
@@ -10150,6 +10176,9 @@ Understands,u-/-s2-tn-s,Ustns,,qnstu,1098
 Bothered,b-o-th-d,Bohd,,qbdho,1101
 Bothering,b-o-th-\-h,Bohg,,qbgho,1101
 Bothers,b-o-th-s,Bohs,,qbhos,1101
+Keyed,k-e-d,Ked,,qdek,1127
+Keying,k-e-\-h,Keg,,qegk,1127
+Keies,k-e-s,Kes,,qeks,1127
 Recommitted,r-e-k-e-d,Rked,,qdekr,1127
 Recommitting,r-e-k-e-\-h,Rkeg,,qegkr,1127
 Recommits,r-e-k-e-s,Rkes,,qekrs,1127

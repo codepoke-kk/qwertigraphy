@@ -4896,7 +4896,6 @@ Calendar,k-a-l-e-nt,Kalend,,qadekln,2
 Occasional,k-a-sh-l,Kazl,,qaklz,2
 Cash,k-a-sh,Kazo,o,qakoz,2
 Combination,k-b-n-sh,Kbnz,,qbknz,2
-Kid,k-e-d,Ked,,qdek,2
 Confidential,k-f-tn-sh,Kfdnz,,qdfknz,2
 Kindness,k-i-n-e-s,Kines,,qeikns,2
 Clever,k-l-e-v,Klev,,qeklv,2
@@ -5885,7 +5884,7 @@ Cheer,ch-e2,Ce,,qce,18
 Divorce,df-o-s,Dvos,,qdosv,18
 Economic,e-k-e-k,Ekek,,qek,18
 Eastern,e-s2-tn,Estn,,qenst,18
-King,k-e-ng,Keg,,qegk,18
+King,k-e-ng,Kegqk,,qegk,18
 Mother,m-u-th,Muh,,qhmu,18
 Neighbor,n-a-br,Nabr,,qabnr,18
 Neighbors,n-a-br-s,Nabrs,,qabnrs,18
@@ -7373,7 +7372,7 @@ Bother,b-o-th,Boho,o,qbho,1101
 Key,k-e,Ke,,qek,1127
 Kentucky,k-e,Kei,i,qeik,1127
 Commit ,k-e,Keo,o,qeko,1127
-Keys,k-e-s,Kes,,qeks,1127
+Keys,k-e-s,Kesqk,,qeks,1127
 Recommit,r-e-k-e,Rke,,qekr,1127
 Who,^-h-\-u,Hu,,qhu,1136
 Take,t-a,Ta,,qat,1136
