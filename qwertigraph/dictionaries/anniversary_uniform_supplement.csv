@@ -435,6 +435,10 @@ Deluding,d-l-u-d-\-h,Dludg,,qdglu,0
 Deludes,d-l-u-d-s,Dluds,,qdlsu,0
 Delusions,d-l-u-sh-s,Dluzs,,qdlsuz,0
 Delusionally,d-l-sh-l-e,Dlzle,,qdelz,0
+Demean,tm-e-n,Dmen,,qdemn,0
+Demeaned,tm-e-n-d,Dmend,,qdemn,0
+Demeaning,tm-e-n-\-h,Dmeng,,qdegmn,0
+Demeans,tm-e-n-s,Dmens,,qdemns,0
 Dimensionally,tm-e-n-sh-l-e,Dmenzle,,qdelmnz,0
 Democratically,tm-k-e,Dmke,,qdekm,0
 Democrats,tm-k-s,Dmks,,qdkms,0
@@ -2208,6 +2212,9 @@ Occupants,o-kp-nt-s,Okpnts,,qknopst,0
 Occupier,o-kp-r,Okpr,,qkopr,0
 Occupiers,o-kp-r-s,Okprs,,qkoprs,0
 Occupations,o-kp-s,Okps,,qkops,0
+Occupation,o-kp-sh,Okpz,,qkopz,0
+Occupational,o-kp-sh-l,Okpzl,,qklopz,0
+Occupations,o-kp-sh-s,Okpzs,,qkopsz,0
 Auctioned,o-k-sh-d,Okzd,,qdkoz,0
 Auctioneers,o-k-sh-e2-s,Okzes,,qekosz,0
 Auctioning,o-k-sh-\-h,Okzg,,qgkoz,0
@@ -3147,6 +3154,9 @@ Socialist,s2-o-sh-s-t,Sozst,,qostz,0
 Socialistic,s2-o-sh-\-s-t,Sozsto,o,qostz,0
 Socialists,s2-o-sh-s-t-s,Sozsts,,qostz,0
 Super-,s-p->,Sp>,,q>ps,0
+Specialized,s-p-i-s-d,Spisd,,qdips,0
+Specializing,s-p-i-s-\-h,Spisg,,qgips,0
+Specializes,s-p-i-s-s,Spiss,,qips,0
 Spokesman,s-p-k-s-m,Spksm,,qkmps,0
 Spokesmen,s-p-k-s-m,Spksmo,o,qkmops,0
 Supplementally,s-pl-e-m-l-e,Splemle,,qelmps,0
@@ -3310,6 +3320,8 @@ Sextillion,s-e-s-t-e-l-n,Sxteln,,qelnstx,0
 Sextillionth,s-e-s-t-e-l-n-th,Sxtelnh,,qehlnstx,0
 Sextillionths,s-e-s-t-e-l-n-th-s,Sxtelnhs,,qehlnstx,0
 Sextillions,s-e-s-t-e-l-n-s,Sxtelns,,qelnstx,0
+Selfishly,s2-/-sh-e,Sze,,qesz,0
+Selfishness,s2-/-sh-n-e-s,Sznes,,qensz,0
 Trans-,t->,T>,,q>t,0
 Tabular,t-a-bl-r,Tablr,,qablrt,0
 Tabularize,t-a-bl-r-i-s,Tablris,,qabilrst,0
@@ -3506,6 +3518,13 @@ Undecipherably,u-d-s2-i-f-b-e,Udsifbe,,qbdefisu,0
 Widget,u-e-j-e-t,Uejet,,qejtu,0
 Widgets,u-e-j-e-t-s,Uejets,,qejstu,0
 Windowless,u-e-nt-o-l-s,Uendols,,qdelnosu,0
+Weapon,u-e-p-n,Uepn,,qenpu,0
+Weaponize,u-e-p-n-i-s,Uepnis,,qeinpsu,0
+Weaponized,u-e-p-n-i-s-d,Uepnisd,,qdeinpsu,0
+Weaponizing,u-e-p-n-i-s-\-h,Uepnisg,,qeginpsu,0
+Weaponizes,u-e-p-n-i-s-s,Uepniss,,qeinpsu,0
+Weaponry,u-e-p-n-r-e,Uepnre,,qenpru,0
+Weapons,u-e-p-n-s,Uepns,,qenpsu,0
 Weirdness,u-e-r-d-n-e-s,Uerdnes,,qdenrsu,0
 Weirdnesses,u-e-r-d-n-e-s-s,Uerdness,,qdenrsu,0
 Unfalsifiably,u-f-o-s-f-b-e,Ufosfbe,,qbefosu,0
@@ -3540,7 +3559,6 @@ Uplift,u-p-l-e-f-t,Upleft,,qeflptu,0
 Uplifted,u-p-l-e-f-t-d,Upleftd,,qdeflptu,0
 Uplifting,u-p-l-e-f-t-\-h,Upleftg,,qefglptu,0
 Uplifts,u-p-l-e-f-t-s,Uplefts,,qeflpstu,0
-Understandings,u-/-s2-tn-s-\-h,Usdnsh,,qdhnsu,0
 Underside,u-/-s-i,Usio,o,qiosu,0
 Undersides,u-/-s-i-s,Usis,,qisu,0
 Understandably,u-/-s2-tn-b-e,Ustnbe,,qbenstu,0
@@ -6299,6 +6317,8 @@ Elevation,e2-l-v-a-t-sh,Elvatz,,qaeltvz,8
 Elevation,e2-l-v-a-sh,Elvz,,qelvz,8
 Elevations,e2-l-v-a-sh-s,Elvzs,,qelsvz,8
 Feeding,f-e-d-\-h,Fedg,,qdefg,8
+Feedings,f-e-d-\-h-s,Fedgs,,qdefgs,8
+Feedings,f-e-d-\-h-s,Fedgz,,qdefgs,8
 Physically,f-e-s-/-k-e,Feske,,qefks,8
 Physicals,f-e-s-/-k-s,Fesks,,qefks,8
 Frequented,fr-e-k-d,Freqd,,qdefqr,8
@@ -6597,6 +6617,7 @@ Paragraphs,^-p-/-g-s,Pgs,,qgps,10
 Paragraph,^-p-/-g,Pgu,u,qgpu,10
 Preferences,pr-e-f-n-s-s,Prefnss,,qefnprs,10
 Productive,pr-o-k-v,Prokv,,qkoprv,10
+Productively,pr-o-k-v-e,Prokve,,qekoprv,10
 Raised,r-a-s-d,Rasd,,qadrs,10
 Raising,r-a-s-\-h,Rasg,,qagrs,10
 Raises,r-a-s-s,Rass,,qars,10
@@ -7177,6 +7198,10 @@ Complied,k-pl-i-d,Kplid,,qdiklp,19
 Complying,k-pl-i-\-h,Kplig,,qgiklp,19
 Complies,k-pl-i-s,Kplis,,qiklps,19
 Lengths,l-e-ng-s,Legso,o,qeglos,19
+Leak,l-e-k,Lek,,qekl,19
+Leaked,l-e-k-d,Lekd,,qdekl,19
+Leaking,l-e-k-\-h,Lekg,,qegkl,19
+Leaks,l-e-k-s,Leks,,qekls,19
 Miracles,m-e-r-/-k-s,Merks,,qekmrs,19
 Enhance,n-^-h-\-a-n-s,Nhans,,qahns,19
 Enhanced,n-^-h-\-a-n-s-d,Nhansd,,qadhns,19
@@ -7404,6 +7429,8 @@ Assignments,a-s2-i-mn-s,Asinms,,qaimns,26
 Educated,e-d-u-d,Edud,,qdeu,26
 Educating,e-d-u-\-h,Edug,,qdegu,26
 Educates,e-d-u-s,Edus,,qdesu,26
+Education,e-d-u-sh,Eduz,,qdeuz,26
+Educations,e-d-u-sh-s,Eduzs,,qdesuz,26
 Identities,a-tn-t-e-s,Idntes,,qdeinst,26
 Connector,k-e-k-r,Kekr,,qekr,26
 Connectors,k-e-k-r-s,Kekrs,,qekrs,26
@@ -9214,6 +9241,7 @@ Managers,mn-j-e2-s,Mnjes,,qejmns,200
 Modified,m-o-df-d,Modfd,,qdfmo,200
 Modifying,m-o-df-\-h,Modfg,,qdfgmo,200
 Modifies,m-o-df-s,Modfs,,qdfmos,200
+Motives,m-o-df-s,Motvs,,qmostv,200
 Motivation,m-o-df-a-sh,Motvz,,qmotvz,200
 Motivations,m-o-df-a-sh-s,Motvzs,,qmostvz,200
 Unnecessarily,u-n-e-ss-e,Nesseo,o,qenos,200
@@ -9506,8 +9534,17 @@ Responsibly,r-s-p-e,Rspe,,qeprs,285
 Responses,r-s-p-s,Rsps,,qprs,285
 Scheduling,s2-k-e-d-l-\-h,Skedlg,,qdegkls,285
 Schedules,s2-k-e-d-l-s,Skedls,,qdekls,285
+Speech,s-p-ch,Spc,,qcps,285
+Speeched,s-p-ch-d,Spcd,,qcdps,285
+Speechify,s-p-ch-f-i,Spcfi,,qcfips,285
+Speechified,s-p-ch-f-i-d,Spcfid,,qcdfips,285
+Speechifying,s-p-ch-f-i-\-h,Spcfig,,qcfgips,285
+Speechifies,s-p-ch-f-i-s,Spcfis,,qcfips,285
+Speeching,s-p-ch-\-h,Spcg,,qcgps,285
+Speeches,s-p-ch-s,Spcs,,qcps,285
 Speaking,s-p-\-h,Spg,,qgps,285
-Speaks,s-p-s,Sps,,qps,285
+Speeches,s-p-s,Sps,,qps,285
+Speaks,s-p-s,Spsqk,,qps,285
 Specialty,s-p-t-e,Spte,,qepst,285
 Specialties,s-p-t-e-s,Sptes,,qepst,285
 Safes,s2-a-f-s,Safs,,qafs,287
@@ -9817,6 +9854,8 @@ Windows,u-e-nt-o-s,Uendos,,qdenosu,464
 Disfigure,d-s-f-e-g-r,Dsfegr,,qdefgrs,465
 Disfigured,d-s-f-e-g-r-d,Dsfegrd,,qdefgrs,465
 Disfiguring,d-s-f-e-g-r-\-h,Dsfegrg,,qdefgrs,465
+Figurehead,f-e-g-r-e-d,Fegred,,qdefgr,465
+Figureheads,f-e-g-r-e-d-s,Fegreds,,qdefgrs,465
 Figuring,f-e-g-r-\-h,Fegrg,,qefgr,465
 Figures,f-e-g-r-s,Fegrs,,qefgrs,465
 Addressing,a-d-r-\-h,Adrg,,qadgr,470
@@ -10163,6 +10202,7 @@ Commanding,k-m-a-n-\-h,Kmang,,qagkmn,896
 Commands,k-m-a-n-s,Kmans,,qakmns,896
 Greatness,g-r-n-e-s,Grnes,,qegnrs,899
 Greatnesses,g-r-n-e-s-s,Grness,,qegnrs,899
+Weaker,e-k-r,Ekr,,qekr,919
 Equation,e-k-a-sh,Eqz,,qeqz,919
 Masquerade,m-a-s-k-r-a-d,Masqrad,,qadmqrs,919
 Masqueraded,m-a-s-k-r-a-d-d,Masqradd,,qadmqrs,919
@@ -10236,6 +10276,7 @@ Starting,s2-t-a2-t-\-h,Statg,,qagst,1093
 Starts,s2-t-a2-t-s,Stats,,qast,1093
 Understandable,u-/-s2-tn-b,Ustnb,,qbnstu,1098
 Understands,u-/-s2-tn-s,Ustns,,qnstu,1098
+Understandings,u-/-s2-tn-\-sh,Ustnz,,qdnsuz,1098
 Bothered,b-o-th-d,Bohd,,qbdho,1101
 Bothering,b-o-th-\-h,Bohg,,qbgho,1101
 Bothers,b-o-th-s,Bohs,,qbhos,1101
@@ -10644,6 +10685,8 @@ Invaluably,n-v-l-b-e,Nvlbe,,qbelnv,90531
 Allows,a-l-s,Als,,qals,90619
 Withheld,e-h-^-h-\-e-ld,Ehheld,,qdehl,90678
 Withhold,e-h-^-h-\-o-ld,Ehhold,,qdehlo,90678
+Withhold,e-h-\-o-ld,Ehold,,qdehlo,90678
+Gravity,g-r-a-v-t-e,Gravte,,qaegrtv,90678
 Insanitary,^-n-s-\-nt-r-e,Nsntre,,qenrst,90693
 Sanity,^-s-\-nt,Snt,,qnst,90693
 Sanitize,^-s-\-nt-i-s,Sntis,,qinst,90693
@@ -10696,6 +10739,17 @@ Deviating,d-v-ea-t-\-h,Dvatg,,qadgtv,90862
 Deviates,d-v-ea-t-s,Dvats,,qadstv,90862
 Deviation,d-v-ea-sh,Dvaz,,qadvz,90862
 Deviations,d-v-ea-sh-s,Dvazs,,qadsvz,90862
+Weakest,e-k-e-s,Ekes,,qeks,90931
+Disown,d-s-o-n,Dson,,qdnos,90958
+Disowned,d-s-o-n-d,Dsond,,qdnos,90958
+Disowning,d-s-o-n-\-h,Dsong,,qdgnos,90958
+Disowns,d-s-o-n-s,Dsons,,qdnos,90958
+Cannibal,k-a-n-b,Kanb,,qabkn,90958
+Cannibalize,k-a-n-b-i-s,Kanbis,,qabikns,90958
+Cannibalized,k-a-n-b-i-s-d,Kanbisd,,qabdikns,90958
+Cannibalizing,k-a-n-b-i-s-\-h,Kanbisg,,qabgikns,90958
+Cannibalizes,k-a-n-b-i-s-s,Kanbiss,,qabikns,90958
+Cannibals,k-a-n-b-s,Kanbs,,qabkns,90958
 Math,m-a-th,Mah,,qahm,91030
 Mathed,m-a-th-d,Mahd,,qadhm,91030
 Mathing,m-a-th-\-h,Mahg,,qaghm,91030
