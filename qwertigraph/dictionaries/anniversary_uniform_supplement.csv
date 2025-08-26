@@ -8398,6 +8398,8 @@ Near,n-e2,Neo,o,qeno,73
 Offering,o-f-\-h,Ofg,,qfgo,73
 Offing,o-f-\-h,Ofgo,o,qfgo,73
 Offering,o-f-\-h,Ofgu,u,qfgou,73
+Awful,o-f-l,Ofl,,qflo,73
+Awfully,o-f-l-e,Ofle,,qeflo,73
 Offhanded,o-f-nt-d,Ofndd,,qdfno,73
 Offhandedly,o-f-nt-d-e,Ofndde,,qdefno,73
 Offhanding,o-f-nt-\-h,Ofndg,,qdfgno,73
@@ -8541,6 +8543,8 @@ Evolved,e-v-o-l-d,Evold,,qdelov,86
 Evolving,e-v-o-l-\-h,Evolg,,qeglov,86
 Evolves,e-v-o-l-s,Evols,,qelosv,86
 Evolution,e-v-o-l-sh,Evolz,,qelovz,86
+Three,th2-r-e,Hre,,qehr,86
+Threes,th2-r-e-s,Hres,,qehrs,86
 Module,m-o-d-\-l,Modlo,o,qdlmo,86
 Modules,m-o-d-\-l-s,Modlsqk,,qdlmos,86
 Promising,pr-m-e-s-\-h,Prmesg,,qegmprs,86
@@ -10828,6 +10832,12 @@ Relax,r-l-a-k-s,Rlax,,qalrx,91480
 Relaxed,r-l-a-k-s-d,Rlaxd,,qadlrx,91480
 Relaxing,r-l-a-k-s-\-h,Rlaxg,,qaglrx,91480
 Relaxes,r-l-a-k-s-s,Rlaxs,,qalrsx,91480
+Threat,h-r-e-t,Hret,,qehrt,91591
+Threaten,h-r-e-tn,Hretn,,qehnrt,91591
+Threatened,h-r-e-tn-d,Hretnd,,qdehnrt,91591
+Threatening,h-r-e-tn-\-h,Hretng,,qeghnrt,91591
+Threatens,h-r-e-tn-s,Hretns,,qehnrst,91591
+Threats,h-r-e-t-s,Hrets,,qehrst,91591
 Baffle,b-a-f-l,Bafl,,qabfl,91736
 Baffled,b-a-f-l-d,Bafld,,qabdfl,91736
 Baffling,b-a-f-l-\-h,Baflg,,qabfgl,91736
