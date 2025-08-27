@@ -1907,6 +1907,17 @@ Nervousness,n-e-v-u-s-n-e-s,Nevusnes,,qensuv,0
 Unfathomable,n-f-a-h-m-b,Nfahmb,,qabfhmn,0
 Unfathomably,n-f-a-h-m-b-e,Nfahmbe,,qabefhmn,0
 Unfathomability,n-f-a-h-m-\-b,Nfahmbo,,qabfhmno,0
+Infancy,n-f-a-n-s-e,Nfanse,,qaefns,0
+Infancies,n-f-a-n-s-e-s,Nfanses,,qaefns,0
+Infant,n-f-a-nt,Nfant,,qafnt,0
+Infantile,n-f-a-nt-l,Nfantl,,qaflnt,0
+Infantilize,n-f-a-nt-l-i-s,Nfantlis,,qafilnst,0
+Infantilized,n-f-a-nt-l-i-s-d,Nfantlisd,,qadfilnst,0
+Infantilizing,n-f-a-nt-l-i-s-\-h,Nfantlisg,,qafgilnst,0
+Infantilizes,n-f-a-nt-l-i-s-s,Nfantliss,,qafilnst,0
+Infants,n-f-a-nt-s,Nfants,,qafnst,0
+Infanticide,n-f-a-nt-s-i,Nfantsi,,qafinst,0
+Infanticides,n-f-a-nt-s-i-s,Nfantsis,,qafinst,0
 Influenced,n-f-d,Nfd,,qdfn,0
 Infectant,n-f-e-k-nt,Nfeknt,,qefknt,0
 Infectants,n-f-e-k-nt-s,Nfeknts,,qefknst,0
@@ -4325,6 +4336,8 @@ Overturn,^-o-\-t-e-n,Oten,,qenot,1
 Overturned,^-o-\-t-e-n-d,Otend,,qdenot,1
 Overturning,^-o-\-t-e-n-\-h,Oteng,,qegnot,1
 Overturns,^-o-\-t-e-n-s,Otens,,qenost,1
+Autonomy,o-tn-m-e,Otnme,,qemnot,1
+Autonomic,o-tn-o-m-k,Otnomk,,qkmnot,1
 Payback,p-a-b-a-k,Pabak,,qabkp,1
 Pathway,p-a-th-a-\-~-~-n,Paha,,qahp,1
 Pathways,p-a-th-a-\-~-~-n-s,Pahans,,qahnps,1
@@ -5731,6 +5744,7 @@ Headings,^-h-\-e-d-\-h-s,Hedgs,,qdeghs,5
 Header,^-h-\-e-d-r,Hedr,,qdehr,5
 Headers,^-h-\-e-d-r-s,Hedrs,,qdehrs,5
 Heads,^-h-\-e-d-s,Heds,,qdehs,5
+Headway,^-h-\-e-d-u-a,Hedua,,qadehu,5
 Headings,^-h-\-e-d-\-h-s,Hedz,,qdehz,5
 Theological,h-e-\-o-k,Heok,,qehko,5
 Theologically,h-e-\-o-k-e,Heoke,,qehko,5
@@ -8423,6 +8437,8 @@ Near,n-e2,Neo,o,qeno,73
 Offering,o-f-\-h,Ofg,,qfgo,73
 Offing,o-f-\-h,Ofgo,o,qfgo,73
 Offering,o-f-\-h,Ofgu,u,qfgou,73
+Awful,o-f-l,Ofl,,qflo,73
+Awfully,o-f-l-e,Ofle,,qeflo,73
 Offhanded,o-f-nt-d,Ofndd,,qdfno,73
 Offhandedly,o-f-nt-d-e,Ofndde,,qdefno,73
 Offhanding,o-f-nt-\-h,Ofndg,,qdfgno,73
@@ -8566,6 +8582,8 @@ Evolved,e-v-o-l-d,Evold,,qdelov,86
 Evolving,e-v-o-l-\-h,Evolg,,qeglov,86
 Evolves,e-v-o-l-s,Evols,,qelosv,86
 Evolution,e-v-o-l-sh,Evolz,,qelovz,86
+Three,th2-r-e,Hre,,qehr,86
+Threes,th2-r-e-s,Hres,,qehrs,86
 Module,m-o-d-\-l,Modlo,o,qdlmo,86
 Modules,m-o-d-\-l-s,Modlsqk,,qdlmos,86
 Promising,pr-m-e-s-\-h,Prmesg,,qegmprs,86
@@ -10511,6 +10529,7 @@ Ways,u-a-s,Uas,,qasu,2235
 Passworded,p-u-d-d,Pudd,,qdpu,2238
 Passwording,p-u-d-\-h,Pudg,,qdgpu,2238
 Passwords,p-u-d-s,Puds,,qdpsu,2238
+Couldn't,k-d-nt,Kdnt,,qdknt,2241
 Condition,k-d-sh,Kdz,,qdkz,2241
 Conditioned,k-d-sh-d,Kdzd,,qdkz,2241
 Conditioning,k-d-sh-\-h,Kdzg,,qdgkz,2241
@@ -10867,6 +10886,12 @@ Relax,r-l-a-k-s,Rlax,,qalrx,91480
 Relaxed,r-l-a-k-s-d,Rlaxd,,qadlrx,91480
 Relaxing,r-l-a-k-s-\-h,Rlaxg,,qaglrx,91480
 Relaxes,r-l-a-k-s-s,Rlaxs,,qalrsx,91480
+Threat,h-r-e-t,Hret,,qehrt,91591
+Threaten,h-r-e-tn,Hretn,,qehnrt,91591
+Threatened,h-r-e-tn-d,Hretnd,,qdehnrt,91591
+Threatening,h-r-e-tn-\-h,Hretng,,qeghnrt,91591
+Threatens,h-r-e-tn-s,Hretns,,qehnrst,91591
+Threats,h-r-e-t-s,Hrets,,qehrst,91591
 Baffle,b-a-f-l,Bafl,,qabfl,91736
 Baffled,b-a-f-l-d,Bafld,,qabdfl,91736
 Baffling,b-a-f-l-\-h,Baflg,,qabfgl,91736
