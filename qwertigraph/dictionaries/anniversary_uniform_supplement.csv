@@ -473,7 +473,6 @@ Dominating,d-o-mn-a-t-\-h,Domnatg,,qadgmnot,0
 Dominates,d-o-mn-a-t-s,Domnats,,qadmnost,0
 Dominions,d-o-mn-u-n-s,Domnuns,,qdmnosu,0
 Deployability,d-pl-\-b,Dplbo,,qbdlop,0
-Deployables,d-pl-b-s,Dplbs,,qbdlps,0
 Deplete,d-pl-e-t,Dplet,,qdelpt,0
 Depleted,d-pl-e-t-d,Dpletd,,qdelpt,0
 Depleting,d-pl-e-t-\-h,Dpletg,,qdeglpt,0
@@ -5399,6 +5398,14 @@ Accountability,a-k-t-\-b,Aktbo,,qabkot,4
 Architected,a-k-t-e-k-d,Aktekd,,qadekt,4
 Architecting,a-k-t-e-k-\-h,Aktekg,,qaegkt,4
 Architects,a-k-t-e-k-s,Akteks,,qaekst,4
+Architect,a-k-t-k,Aktk,,qakt,4
+Architected,a-k-t-k-d,Aktkd,,qadkt,4
+Architecting,a-k-t-k-\-h,Aktkg,,qagkt,4
+Architecture,a-k-t-k-r,Aktkr,,qakrt,4
+Architectural,a-k-t-k-r-l,Aktkrl,,qaklrt,4
+Architecturally,a-k-t-k-r-l-e,Aktkrle,,qaeklrt,4
+Architectures,a-k-t-k-r-s,Aktkrs,,qakrst,4
+Architects,a-k-t-k-s,Aktks,,qakst,4
 Amounted,a-mn-t-d,Amntd,,qadmnt,4
 Amounting,a-mn-t-\-h,Amntg,,qagmnt,4
 Amounts,a-mn-t-s,Amnts,,qamnst,4
@@ -5416,6 +5423,10 @@ Blanketed,bl-a-nk-t-d,Blaqtd,,qabdlqt,4
 Blanketing,bl-a-nk-t-\-h,Blaqtg,,qabglqt,4
 Blankets,bl-a-nk-t-s,Blaqts,,qablqst,4
 Boundaries,b-n-r-e-s,Bnres,,qbenrs,4
+Bypass,b-p-a-s,Bpas,,qabps,4
+Bypassed,b-p-a-s-d,Bpasd,,qabdps,4
+Bypassing,b-p-a-s-\-h,Bpasg,,qabgps,4
+Bypasses,b-p-a-s-s,Bpass,,qabps,4
 Childhood,ch-i-ld-\-d,Cildd,,qcdil,4
 Childhoods,ch-i-ld-\-d-s,Cildds,,qcdils,4
 Dangers,tn-j-e2-s,Dnjes,,qdejns,4
@@ -6669,7 +6680,13 @@ Tech,t-e-k,Tek,,qekt,10
 Tech,t-e-k-n,Tekn,,qeknt,10
 Techs,t-e-k-s,Teks,,qekst,10
 Transformations,^-t-\-f-m-sh-s,Tfmzs,,qfmstz,10
+Tightly,t-i-t-e,Tite,,qeit,10
 Titling,t-i-t-\-h,Titg,,qgit,10
+Tighten,t-i-tn,Titn,,qint,10
+Tightened,t-i-tn-d,Titnd,,qdint,10
+Tightening,t-i-tn-\-h,Titng,,qgint,10
+Tightens,t-i-tn-s,Titns,,qinst,10
+Tighter,t-i-t-r,Titr,,qirt,10
 Titles,t-i-t-s,Tits,,qist,10
 Treatments,t-r-e-m-s,Trems,,qemrst,10
 Truer,t-r-u-r,Trur,,qrtu,10
@@ -8625,6 +8642,9 @@ Heartbroken,^-h-\-a2-t-br-o-k-n,Hatbrokn,,qabhknort,92
 Hearted,^-h-\-a2-t-d,Hatdo,o,qadhot,92
 Hearts,^-h-\-a2-t-s,Hatso,o,qahost,92
 Invalidate,n-v-a-l-d-d,Nvaldd,,qadlnv,92
+Invalidated,n-v-a-l-d-d-d,Nvalddd,,qadlnv,92
+Invalidating,n-v-a-l-d-d-\-h,Nvalddg,,qadglnv,92
+Invalidates,n-v-a-l-d-d-s,Nvaldds,,qadlnsv,92
 Invalidate,n-v-a-l-e-d-d,Nvaledd,,qadelnv,92
 Invalidated,n-v-a-l-e-d-d-d,Nvaleddd,,qadelnv,92
 Invalidating,n-v-a-l-e-d-d-\-h,Nvaleddg,,qadeglnv,92
@@ -9206,6 +9226,8 @@ Mismanagement,m-s-mn-j-m,Msmnjm,,qjms,190
 Appointments,o-e-m-s,Yms,,qmsy,191
 Invalid,n-v-a-l-d,Nvald,,qadlnv,193
 Invalids,n-v-a-l-d-s,Nvalds,,qadlnsv,193
+Invalidation,n-v-a-l-d-sh,Nvaldz,,qadlnvz,193
+Invalidations,n-v-a-l-d-sh-s,Nvaldzs,,qadlnsvz,193
 Invalid,n-v-a-l-e-d,Nvaled,,qadelnv,193
 Invalids,n-v-a-l-e-d-s,Nvaleds,,qadelnsv,193
 Invalidation,n-v-a-l-e-d-sh,Nvaledz,,qadelnvz,193
@@ -10313,6 +10335,7 @@ Deprovisions,d-pr-v-e-sh-s,Dprvezs,,qdeprsvz,1146
 Reveal,r-v-e-l,Rvel,,qelrv,1146
 Vision,v-e-sh,Vezo,o,qeovz,1146
 Deployable,d-pl-b,Dplb,,qbdlp,1151
+Deployables,d-pl-b-s,Dplbs,,qbdlps,1151
 Deployed,d-pl-d,Dpld,,qdlp,1151
 Deploying,d-pl-\-h,Dplg,,qdglp,1151
 Deploys,d-pl-s,Dpls,,qdlps,1151
@@ -10456,6 +10479,7 @@ Lettering,l-e-\-h,Legi,i,qegil,1922
 Letting,l-e-\-h,Legu,u,qeglu,1922
 Letters,l-e-s,Lesi,i,qeils,1922
 Prettier,pr-e-r,Prer,,qepr,1977
+Ours,r-s,Rsuu,uu,qrsu,2030
 Listing,l-s-\-h,Lsg,,qgls,2039
 Accessible,a-k-ss-b,Akssb,,qabks,2103
 Accessibly,a-k-ss-b-e,Akssbe,,qabeks,2103
