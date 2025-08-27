@@ -1908,6 +1908,17 @@ Nervousness,n-e-v-u-s-n-e-s,Nevusnes,,qensuv,0
 Unfathomable,n-f-a-h-m-b,Nfahmb,,qabfhmn,0
 Unfathomably,n-f-a-h-m-b-e,Nfahmbe,,qabefhmn,0
 Unfathomability,n-f-a-h-m-\-b,Nfahmbo,,qabfhmno,0
+Infancy,n-f-a-n-s-e,Nfanse,,qaefns,0
+Infancies,n-f-a-n-s-e-s,Nfanses,,qaefns,0
+Infant,n-f-a-nt,Nfant,,qafnt,0
+Infantile,n-f-a-nt-l,Nfantl,,qaflnt,0
+Infantilize,n-f-a-nt-l-i-s,Nfantlis,,qafilnst,0
+Infantilized,n-f-a-nt-l-i-s-d,Nfantlisd,,qadfilnst,0
+Infantilizing,n-f-a-nt-l-i-s-\-h,Nfantlisg,,qafgilnst,0
+Infantilizes,n-f-a-nt-l-i-s-s,Nfantliss,,qafilnst,0
+Infants,n-f-a-nt-s,Nfants,,qafnst,0
+Infanticide,n-f-a-nt-s-i,Nfantsi,,qafinst,0
+Infanticides,n-f-a-nt-s-i-s,Nfantsis,,qafinst,0
 Influenced,n-f-d,Nfd,,qdfn,0
 Infectant,n-f-e-k-nt,Nfeknt,,qefknt,0
 Infectants,n-f-e-k-nt-s,Nfeknts,,qefknst,0
@@ -4326,6 +4337,8 @@ Overturn,^-o-\-t-e-n,Oten,,qenot,1
 Overturned,^-o-\-t-e-n-d,Otend,,qdenot,1
 Overturning,^-o-\-t-e-n-\-h,Oteng,,qegnot,1
 Overturns,^-o-\-t-e-n-s,Otens,,qenost,1
+Autonomy,o-tn-m-e,Otnme,,qemnot,1
+Autonomic,o-tn-o-m-k,Otnomk,,qkmnot,1
 Payback,p-a-b-a-k,Pabak,,qabkp,1
 Pathway,p-a-th-a-\-~-~-n,Paha,,qahp,1
 Pathways,p-a-th-a-\-~-~-n-s,Pahans,,qahnps,1
@@ -5720,6 +5733,7 @@ Headings,^-h-\-e-d-\-h-s,Hedgs,,qdeghs,5
 Header,^-h-\-e-d-r,Hedr,,qdehr,5
 Headers,^-h-\-e-d-r-s,Hedrs,,qdehrs,5
 Heads,^-h-\-e-d-s,Heds,,qdehs,5
+Headway,^-h-\-e-d-u-a,Hedua,,qadehu,5
 Headings,^-h-\-e-d-\-h-s,Hedz,,qdehz,5
 Theological,h-e-\-o-k,Heok,,qehko,5
 Theologically,h-e-\-o-k-e,Heoke,,qehko,5
@@ -10491,6 +10505,7 @@ Ways,u-a-s,Uas,,qasu,2235
 Passworded,p-u-d-d,Pudd,,qdpu,2238
 Passwording,p-u-d-\-h,Pudg,,qdgpu,2238
 Passwords,p-u-d-s,Puds,,qdpsu,2238
+Couldn't,k-d-nt,Kdnt,,qdknt,2241
 Condition,k-d-sh,Kdz,,qdkz,2241
 Conditioned,k-d-sh-d,Kdzd,,qdkz,2241
 Conditioning,k-d-sh-\-h,Kdzg,,qdgkz,2241
