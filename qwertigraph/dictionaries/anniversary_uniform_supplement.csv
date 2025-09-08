@@ -1561,6 +1561,8 @@ Lackey,l-a-k-e,Lakeo,o,qaeklo,0
 Lackeys,l-a-k-e-s,Lakeso,o,qaeklos,0
 Lax,l-a-k-s,Lakso,o,qaklos,0
 Laxity,l-a-k-s-t-e,Lakste,,qaeklst,0
+Later,l-a-t-r,Latr,,qalrt,0
+Laters,l-a-t-r-s,Latrs,,qalrst,0
 Livably,l-a-v-b-e,Lavbe,,qabelv,0
 Livability,l-a-v-\-b,Lavbo,,qablov,0
 Livelihood,l-a-v-e-\-d,Laved,,qadelv,0
@@ -6641,6 +6643,8 @@ Gluing,g-l-u-\-h,Glug,,qglu,10
 Glues,g-l-u-s,Glus,,qglsu,10
 Thorough,h-e,Heu,u,qehu,10
 Counter,k-nt-r,Kntr,,qknrt,10
+Countered,k-nt-r-d,Kntrd,,qdknrt,10
+Countering,k-nt-r-\-h,Kntrg,,qgknrt,10
 Counters,k-nt-r-s,Kntrs,,qknrst,10
 Compiler,k-p-i-l-r,Kpilr,,qiklpr,10
 Compilers,k-p-i-l-r-s,Kpilrs,,qiklprs,10
@@ -9607,6 +9611,8 @@ Supposes,s-p-o-s,Spos,,qops,260
 Supposition,s-p-o-sh,Spoz,,qopsz,260
 Logged,l-o-g-d,Logd,,qdglo,262
 Logging,l-o-g-\-h,Logg,,qglo,262
+Logger,l-o-g-r,Logr,,qglor,262
+Loggers,l-o-g-r-s,Logrs,,qglors,262
 Weekends,e-k-nt-s,Eknds,,qdekns,265
 Restarted,r-s2-t-a2-td,Rstatd,,qadrst,266
 Directory,d-r-k-/-r-e,Drkre,,qdekr,268
@@ -9869,6 +9875,9 @@ Redirected,r-e-d-r-k-d,Rdrkd,,qdkr,378
 Redirecting,r-e-d-r-k-\-h,Rdrkg,,qdgkr,378
 Redirects,r-e-d-r-k-s,Rdrks,,qdkrs,378
 Redirection,r-e-d-r-k-sh,Rdrkz,,qdkrz,378
+Shareable,sh-a2-b,Zab,,qabz,380
+Shareably,sh-a2-b-e,Zabe,,qabez,380
+Shareability,sh-a2-\-b,Zabo,,qaboz,380
 Shares,sh-a2-s,Zas,,qasz,380
 SharePoint,sh-a2-y,Zay,,qayz,380
 Persistence,pr-ss-n-s,Prssns,,qnprs,383
