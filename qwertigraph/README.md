@@ -1,0 +1,1 @@
+This is currently just a working experiment with using Python to monitor a keyboard and do AHK-like text expansions. 
