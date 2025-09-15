@@ -60,7 +60,11 @@ class Expansion_Engine:
                 if not key in expansions:
                     expansions[key] = value['word']
                     expansions[key.lower()] = value['word'].lower()
-                    expansions[key.upper()] = value['word'].upper()
+                    if len(key) > 1:
+                        expansions[key.upper()] = value['word'].upper()
+                    else:
+                        # Single character keys should be proper cased
+                        expansions[key.upper()] = value['word']
         return expansions 
 
     def expand_queue(self, queue, end_key):
@@ -71,13 +75,19 @@ class Expansion_Engine:
             qwerd += key.char
         self._log.debug(f"Qwerd: {qwerd}")
         if qwerd in self.expansions:
+            self._log.debug(f"Sending to keyout {qwerd}")
             self.key_output.replace_qwerd(qwerd, self.expansions[qwerd], end_key)
+        else:
+            self._log.debug(f"Qwerd {qwerd} not in expansions")
 
     def engine_loop(self):
         self._log.debug(f"Not looping")
         while True:
             try: 
                 time.sleep(20)
+                notes = self.key_output.scribe.readback_notes()
+                for note in notes:
+                    print(f"{note.key:<6}{note.word:<30}{note.end_key_str:>6}")
             except KeyboardInterrupt:
                 print("\nStopped.")
                 break

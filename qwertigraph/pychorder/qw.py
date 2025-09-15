@@ -10,12 +10,14 @@ from key_queue import Key_Queue
 from key_input import Key_Input
 from engine import Expansion_Engine
 from key_output import Key_Output
+from scribe import Scribe
 
 
 if __name__ == "__main__":
     _log = get_logger("QW")
     _log.info("Here we are")
-    key_output = Key_Output()
+    scribe = Scribe()
+    key_output = Key_Output(scribe)
     engine = Expansion_Engine(key_output)
     key_queue = Key_Queue(engine)
     key_input = Key_Input(key_queue)

@@ -5,9 +5,10 @@ from log_factory import get_logger
 
 class Key_Output:
     _log = get_logger('KEYOUT') 
-    def __init__(self):
+    def __init__(self, scribe):
         self.controller = Controller()
-        self._log.info('Initiated Key Input')
+        self.scribe = scribe
+        self._log.info('Initiated Key Output')
 
     def replace_qwerd(self, qwerd, expansion, end_key):
         self._log.debug(f"Replacing {qwerd} with {expansion} ending with {end_key}")
@@ -27,3 +28,5 @@ class Key_Output:
             self.controller.press(end_key)
             self.controller.release(end_key)
 
+        self._log.debug(f"Recording note {qwerd}")
+        self.scribe.record_note(qwerd, expansion, end_key)
