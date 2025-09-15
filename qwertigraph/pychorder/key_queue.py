@@ -4,16 +4,24 @@ from pynput import keyboard
 
 class Key_Queue:
     _log = get_logger('KEYQ') 
-    # Keep separate lists of end special end keys and normal ones 
-    end_keys_special = {'Key.space': 1, 'Key.tab': 1, 'Key.enter': 1}
+    # Keep separate lists of special, normal, and pause keys
+    # But merge them into "end_keys" 
+    stop_keys_special = {'Key.space': 1, 'Key.tab': 1, 'Key.enter': 1}
     # But also keep a combined list for lookups 
-    end_keys = end_keys_special 
+    end_keys = stop_keys_special 
 
-    end_keys_normal_str = '\'".,?!;:-_{}()[]/\+=|()@#$%^*<>' # Not: &
-    end_keys_normal_array = list(end_keys_normal_str)
-    end_keys_normal = {}
-    for end_key in end_keys_normal_array:
-        end_keys_normal[end_key] = 1
+    stop_keys_normal_str = '\'".,?!;:_{}()[]/\+=|()@#$%^*<>' # Not: &
+    stop_keys_normal_array = list(stop_keys_normal_str)
+    stop_keys_normal = {}
+    for end_key in stop_keys_normal_array:
+        stop_keys_normal[end_key] = 1
+        end_keys[end_key] = 1
+
+    pause_keys_normal_str = '\'-' 
+    pause_keys_normal_array = list(pause_keys_normal_str)
+    pause_keys_normal = {}
+    for end_key in pause_keys_normal_array:
+        pause_keys_normal[end_key] = 1
         end_keys[end_key] = 1
 
     def __init__(self, engine):
@@ -45,6 +53,7 @@ class Key_Queue:
 
         self._log.debug(f"Queue is now {self.keystroke_queue}")
 
+'''
     def pop_keystroke(self):
         self._log.debug(f"Popping")
         if not len(self.keystroke_queue):
@@ -63,3 +72,4 @@ class Key_Queue:
         result = self.keystroke_queue[-n:]
         del self.keystroke_queue[-n:]
         return ''.join(result)
+'''

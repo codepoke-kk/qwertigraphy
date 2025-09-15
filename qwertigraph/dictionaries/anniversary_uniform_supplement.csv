@@ -166,6 +166,13 @@ Assertive,a-s2-e-df,Asetv,,qaestv,0
 Assertively,a-s2-e-df-e,Asetve,,qaestv,0
 Associations,a-s2-o-sh-s,Asozs,,qaosz,0
 Associatedly,a-s2-o-sh-t-d-e,Asoztde,,qadeostz,0
+Assassinate,a2-ss2-n-a-t,Assnat,,qanst,0
+Assassinated,a2-ss2-n-a-t-d,Assnatd,,qadnst,0
+Assassinating,a2-ss2-n-a-t-\-h,Assnatg,,qagnst,0
+Assassinates,a2-ss2-n-a-t-s,Assnats,,qanst,0
+Assassins,a2-ss2-n-s,Assns,,qans,0
+Assassination,a2-ss2-n-sh,Assnz,,qansz,0
+Assassinations,a2-ss2-n-sh-s,Assnzs,,qansz,0
 Astounded,a-s2-t-nt-d,Astndd,,qadnst,0
 Astounding,a-s2-t-nt-\-h,Astndg,,qadgnst,0
 Astounds,a-s2-t-nt-s,Astnds,,qadnst,0
@@ -1169,6 +1176,8 @@ Hierarchical,i-r-k-e-\-k,Irkek,,qeikr,0
 Hierarchicals,i-r-k-e-\-k-s,Irkeks,,qeikrs,0
 Ironies,i-r-n-e-s,Irnes,,qeinrs,0
 Isolation,i-s-o-l-a-sh,Isolaz,,qailosz,0
+Isolationist,i-s-o-l-a-sh-e-s,Isolazes,,qaeilosz,0
+Isolationists,i-s-o-l-a-sh-e-s-s,Isolazess,,qaeilosz,0
 Isolations,i-s-o-l-a-sh-s,Isolazs,,qailosz,0
 Isolation,i-s-o-l-a-sh,Isolz,,qilosz,0
 Isolations,i-s-o-l-a-sh-s,Isolzs,,qilosz,0
@@ -1832,6 +1841,10 @@ Misinformed,m-s-n-m-f-d,Msnmfd,,qdfmns,0
 Misinforming,m-s-n-m-f-\-h,Msnmfg,,qfgmns,0
 Misinforms,m-s-n-m-f-s,Msnmfs,,qfmns,0
 Misinterpretations,m-s2-n-/-p-sh-s,Msnpzs,,qmnpsz,0
+Misplace,m-s-p-l-a-s,Msplas,,qalmps,0
+Misplaced,m-s-p-l-a-s-d,Msplasd,,qadlmps,0
+Misplacing,m-s-p-l-a-s-\-h,Msplasg,,qaglmps,0
+Misplaces,m-s-p-l-a-s-s,Msplass,,qalmps,0
 Mispronounce,m-s-pr-n-n-s,Msprnns,,qmnprs,0
 Mispronounced,m-s-pr-n-n-s-d,Msprnnsd,,qdmnprs,0
 Mispronouncing,m-s-pr-n-n-s-\-h,Msprnnsg,,qgmnprs,0
@@ -5715,10 +5728,13 @@ Transmitting,^-t-\-m-e-t-\-h,Tmetg,,qegmt,4
 Transmit,^-t-\-m-e-t,Tmeto,o,qemot,4
 Transmits,^-t-\-m-e-t-s,Tmets,,qemst,4
 Transmition,^-t-\-m-e-t-sh,Tmetz,,qemtz,4
-Transcript,^-t-\-s2-k-r,Tskr,,qkrst,4
+Transcribe,^-t-\-s2-k-r,Tskr,,qkrst,4
 Transcribed,^-t-\-s2-k-r-d,Tskrd,,qdkrst,4
 Transcribing,^-t-\-s2-k-r-\-h,Tskrg,,qgkrst,4
-Transcribe,^-t-\-s2-k-r,Tskro,o,qkorst,4
+Transcript,^-t-\-s2-k-r-p,Tskrp,,qkprst,4
+Transcripts,^-t-\-s2-k-r-p-s,Tskrps,,qkprst,4
+Transcription,^-t-\-s2-k-r-p-sh,Tskrpz,,qkprstz,4
+Transcriptions,^-t-\-s2-k-r-p-sh-s,Tskrpzs,,qkprstz,4
 Transcribes,^-t-\-s2-k-r-s,Tskrs,,qkrst,4
 You can,u-k,Uki,i,qiku,4
 Uniform,e-u-n-f-m,Unfm,,qfmnu,4
@@ -6757,6 +6773,9 @@ Tech,t-e-k,Tek,,qekt,10
 Tech,t-e-k-n,Tekn,,qeknt,10
 Techs,t-e-k-s,Teks,,qekst,10
 Transformations,^-t-\-f-m-sh-s,Tfmzs,,qfmstz,10
+Tongued,t-ng-d,Tgd,,qdgt,10
+Tonguing,t-ng-\-h,Tgg,,qgt,10
+Tongues,t-ng-s,Tgs,,qgst,10
 Tightly,t-i-t-e,Tite,,qeit,10
 Titling,t-i-t-\-h,Titg,,qgit,10
 Tighten,t-i-tn,Titn,,qint,10
@@ -7132,6 +7151,7 @@ Synchronizing,s-e-nk-r-o-n-i-s-\-h,Seqronisg,,qeginoqrs,16
 Synchronizes,s-e-nk-r-o-n-i-s-s,Seqroniss,,qeinoqrs,16
 Synchronization,s-e-nk-r-o-n-i-s-sh,Seqronisz,,qeinoqrsz,16
 Smarted,s2-m-a2-t-d,Smatd,,qadmst,16
+Smartest,s2-m-a2-t-e-s,Smates,,qaemst,16
 Smarting,s2-m-a2-t-\-h,Smatg,,qagmst,16
 Smarts,s2-m-a2-t-s,Smats,,qamst,16
 Soothe,s-u-th,Suh,,qhsu,16
@@ -7419,6 +7439,8 @@ Suffixes,s-u-f-e-ss,Sufxs,,qfsux,22
 Expand,e-s-p-a-nd,Xpand,,qadnpx,22
 Expanded,e-s-p-a-nd-d,Xpandd,,qadnpx,22
 Expanding,e-s-p-a-nd-\-h,Xpandg,,qadgnpx,22
+Expander,e-s-p-a-nd-r,Xpandr,,qadnprx,22
+Expanders,e-s-p-a-nd-r-s,Xpandrs,,qadnprsx,22
 Expands,e-s-p-a-nd-s,Xpands,,qadnpsx,22
 Attachments,a-t-ch-m-s,Atcms,,qacmst,23
 Background,b-a-k-g-r,Bakgr,,qabgkr,23
@@ -8919,6 +8941,8 @@ Uniquely,e-u-n-e-k-e,Uneqe,,qenqu,109
 Wondered,u-u-n-d,Uundo,o,qdnou,109
 Wondering,u-u-n-\-h,Uung,,qgnu,109
 Wonders,u-u-n-s,Uuns,,qnsu,109
+Wonderous,u-u-n-u-s,Uunus,,qnsu,109
+Wonderously,u-u-n-u-s-e,Uunuse,,qensu,109
 Christianed,k-r-e-s-ch-d,Krescd,,qcdekrs,110
 Christianing,k-r-e-s-ch-\-h,Krescg,,qcegkrs,110
 Christians,k-r-e-s-ch-s,Krescs,,qcekrs,110
@@ -10147,6 +10171,8 @@ Coloration,k-u-l-a-sh,Kulzo,o,qklouz,591
 Unsound,n-s2-nt,Nsnd,,qdns,593
 Sounding,s2-nt-\-h,Sndg,,qdgns,593
 Sounds,s2-nt-s,Snds,,qdns,593
+Ultrasound,u-s2-nt,Usnd,,qdnsu,593
+Ultrasounds,u-s2-nt-s,Usnds,,qdnsu,593
 Hoping,^-h-\-o-p-\-h,Hopg,,qghop,596
 Reportable,r-pr-b,Rprb,,qbpr,600
 Reportably,r-pr-b-e,Rprbe,,qbepr,600
@@ -10457,7 +10483,7 @@ Bothering,b-o-th-\-h,Bohg,,qbgho,1101
 Bothers,b-o-th-s,Bohs,,qbhos,1101
 Keyed,k-e-d,Ked,,qdek,1127
 Keying,k-e-\-h,Keg,,qegk,1127
-Keies,k-e-s,Kes,,qeks,1127
+Keys,k-e-s,Kes,,qeks,1127
 Recommitted,r-e-k-e-d,Rked,,qdekr,1127
 Recommitting,r-e-k-e-\-h,Rkeg,,qegkr,1127
 Recommits,r-e-k-e-s,Rkes,,qekrs,1127
