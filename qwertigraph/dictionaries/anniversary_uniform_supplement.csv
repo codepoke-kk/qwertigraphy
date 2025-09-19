@@ -1374,6 +1374,14 @@ Correlated,k-o-r-e-l-a-d,Korelad,,qadeklor,0
 Correlates,k-o-r-e-l-a-s,Korelas,,qaeklors,0
 Correlation,k-o-r-e-l-a-sh,Korelz,,qeklorz,0
 Correlations,k-o-r-e-l-a-sh-s,Korelzs,,qeklorsz,0
+Correlate,k-o-r-l-a,Korla,,qaklor,0
+Correlated,k-o-r-l-a-d,Korlad,,qadklor,0
+Correlating,k-o-r-l-a-\-h,Korlag,,qagklor,0
+Correlates,k-o-r-l-a-s,Korlas,,qaklors,0
+Correlation,k-o-r-l-a-sh,Korlaz,,qaklorz,0
+Correlations,k-o-r-l-a-sh-s,Korlazs,,qaklorsz,0
+Correlation,k-o-r-l-sh,Korlz,,qklorz,0
+Correlations,k-o-r-l-sh-s,Korlzs,,qklorsz,0
 Corrupted,k-o-r-p-d,Korpd,,qdkopr,0
 Corrupting,k-o-r-p-\-h,Korpg,,qgkopr,0
 Corrupts,k-o-r-p-s,Korps,,qkoprs,0
@@ -6022,8 +6030,8 @@ Devaluizations,d-e-v-l-i-s-sh-s,Devliszs,,qdeilsvz,6
 Devalues,d-e-v-l-s,Devls,,qdelsv,6
 Devaluation,d-e-v-l-sh,Devlz,,qdelvz,6
 Devaluations,d-e-v-l-sh-s,Devlzs,,qdelsvz,6
-Detractor,d-/-k-r,Dkr,,qdkr,6
-Detractors,d-/-k-r-s,Dkrs,,qdkrs,6
+Detractor,d-/-k-r,Dkro,o,qdkor,6
+Detractors,d-/-k-r-s,Dkrso,o,qdkors,6
 Delighted,d-l-i-d,Dlid,,qdil,6
 Delightfully,d-l-i-f-e,Dlife,,qdefil,6
 Delighting,d-l-i-\-h,Dlig,,qdgil,6
@@ -7990,6 +7998,8 @@ Decryptable,d-/-k-b,Dkb,,qbdk,36
 Decrypted,d-/-k-d,Dkd,,qdk,36
 Detracted,d-/-k-d,Dkdo,o,qdko,36
 Decrypting,d-/-k-\-h,Dkg,,qdgk,36
+Decryptor,d-/-k-r,Dkr,,qdkr,36
+Decryptors,d-/-k-r-s,Dkrs,,qdkrs,36
 Decrypts,d-/-k-s,Dks,,qdks,36
 Detracts,d-/-k-s,Dkso,o,qdkos,36
 Decryption,d-/-k-sh,Dkz,,qdkz,36
@@ -8425,6 +8435,8 @@ Absolute,a-b-s2-o,Absoo,o,qabos,61
 Absolutes,a-b-s2-o-s,Absos,,qabos,61
 Absolutely,a-b-s2-o-e,Absy,,qabsy,61
 Slowed,s-l-o-d,Slod,,qdlos,61
+Slowdown,s-l-o-dn,Slodn,,qdlnos,61
+Slowdowns,s-l-o-dn-s,Slodns,,qdlnos,61
 Slowing,s-l-o-\-h,Slogo,o,qglos,61
 Slows,s-l-o-s,Slos,,qlos,61
 Components,k-p-o-n-s,Kpons,,qknops,62
