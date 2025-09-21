@@ -16,6 +16,9 @@ class Key_Input:
         self.failsafe = 0
 
     def on_press(self, key):
+        self.failsafe += 1
+        if self.failsafe > 100:
+            exit(1)
         # If we are *injecting* a key, skip everything – this prevents recursion
         self._log.debug(f"Injecting {key}")
         self._log.debug(f"Flag is {self._injecting}")
@@ -24,6 +27,9 @@ class Key_Input:
             return True
 
         self._log.debug(f"Pressed {key}")
+
+        if key in self.key_queue.end_keys:
+            self._log.debug(f"Found key in end_keys")
 
         self.key_queue.push_keystroke(key)
         self._forward_normal_key(key)
@@ -34,15 +40,15 @@ class Key_Input:
         """Send the key to the foreground window without triggering recursion."""
         # Mark that we are about to inject a synthetic event
         self._injecting = True
-        # self._log.debug(f"Set flag to true")
+        self._log.debug(f"Set flag to true")
         try:
             self.controller.press(key)
             self.controller.release(key)
         finally:
             # Reset the flag so the next real key is processed normally
-            # self._log.debug(f"Unset flag")
+            self._log.debug(f"Unset flag")
             self._injecting = False
-        # self._log.debug(f"Flag is {self._injecting}")
+        self._log.debug(f"Flag is {self._injecting}")
 
     def start_listener(self):
         listener = keyboard.Listener(

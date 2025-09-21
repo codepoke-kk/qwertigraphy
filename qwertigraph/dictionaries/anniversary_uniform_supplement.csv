@@ -9175,8 +9175,10 @@ Completely,kp-e,Kpeo,o,qekop,147
 Repaired,r-p-a-r-d,Rpard,,qadpr,147
 Repairing,r-p-a-r-\-h,Rparg,,qagpr,147
 Repairs,r-p-a-r-s,Rpars,,qaprs,147
-Controller,^-k-/-l-r,Klro,o,qklor,148
+Controller,^-k-/-l-r,Klr,,qklr,148
+Comptroller,^-k-/-l-r,Klro,o,qklor,148
 Controllers,^-k-/-l-r-s,Klrs,,qklrs,148
+Comptrollers,^-k-/-l-r-s,Klrso,o,qklors,148
 Narration,n-a-r-a-sh,Narz,,qanrz,148
 Unwritten,n-r-e-tn,Nretn,,qenrt,148
 Playbook,pl-a-b-k,Plabk,,qabklp,148
