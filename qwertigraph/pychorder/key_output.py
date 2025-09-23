@@ -13,7 +13,7 @@ class Key_Output:
     def replace_qwerd(self, qwerd, expansion, end_key):
         self._log.debug(f"Replacing {qwerd} with {expansion} ending with {end_key}")
         # Erase the qwerd characters from the active application 
-        for _ in range(len(qwerd) + 1):
+        for _ in range(len(qwerd)):
             self.controller.press(Key.backspace)
             self.controller.release(Key.backspace)
 

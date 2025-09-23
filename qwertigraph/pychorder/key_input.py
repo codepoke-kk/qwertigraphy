@@ -1,6 +1,7 @@
-import threading
 from pynput import keyboard
 from log_factory import get_logger
+from collections import deque
+
 
 
 class Key_Input:
@@ -9,46 +10,44 @@ class Key_Input:
     def __init__(self, key_queue):
         self.key_queue = key_queue
         self.controller = keyboard.Controller()
-        # Guard that tells us whether we are currently injecting a key ourselves
-        self._injecting = False
-        self._log.debug(f"Flag starting as {self._injecting}")
+        self.through_keys = deque()
+        self.next_through_key = ''
         self._log.info('Initiated Key Input')
         self.failsafe = 0
 
     def on_press(self, key):
         self.failsafe += 1
-        if self.failsafe > 100:
-            exit(1)
+        if self.failsafe > 30:
+           exit(1)
         # If we are *injecting* a key, skip everything – this prevents recursion
-        self._log.debug(f"Injecting {key}")
-        self._log.debug(f"Flag is {self._injecting}")
-        if self._injecting:
-            self._log.debug(f"Ignoring synthetic key {key}")
-            return True
+        if not self.next_through_key and self.through_keys:
+            self.next_through_key = self.through_keys.popleft()
+            self._log.debug(f"Loaded up next through key with {self.next_through_key}")
+        else:
+            self._log.debug(f"No through keys queued")
 
-        self._log.debug(f"Pressed {key}")
-
-        if key in self.key_queue.end_keys:
+        self._log.debug(f"Injecting {key} if it is not '{self.next_through_key}'")
+        if not self.next_through_key or key != self.next_through_key:
+            self._log.debug(f"Pressed {key}")
+            self.key_queue.push_keystroke(key)
+            self._forward_normal_key(key)
+        elif key in self.key_queue.end_keys:
             self._log.debug(f"Found key in end_keys")
-
-        self.key_queue.push_keystroke(key)
-        self._forward_normal_key(key)
+            self.key_queue.push_keystroke(key)
+        else:
+            self._log.debug(f"{self.next_through_key} ignored as synthetic")
+            self.next_through_key = ''
 
         return True
 
     def _forward_normal_key(self, key):
         """Send the key to the foreground window without triggering recursion."""
         # Mark that we are about to inject a synthetic event
-        self._injecting = True
-        self._log.debug(f"Set flag to true")
-        try:
-            self.controller.press(key)
-            self.controller.release(key)
-        finally:
-            # Reset the flag so the next real key is processed normally
-            self._log.debug(f"Unset flag")
-            self._injecting = False
-        self._log.debug(f"Flag is {self._injecting}")
+        self._log.debug(f"Forwarding {key}")
+        self.through_keys.append(key)
+        self._log.debug(f"Through keys are now {self.through_keys}")
+        self.controller.press(key)
+        self.controller.release(key)
 
     def start_listener(self):
         listener = keyboard.Listener(
