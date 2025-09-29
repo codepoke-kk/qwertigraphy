@@ -17,6 +17,8 @@ class Expansion_Engine:
         self._log.info(f"Loaded {len(self.expansions)} expansions")
         self.MAX_TRIGGER_LEN = max(len(k) for k in self.expansions)   # longest trigger we care about
         self.poll_interval = 0.05
+
+        self.enabled = False 
         self._log.info('Initiated Key Input')
 
     def get_dictionaries(self, dictionary_paths):
@@ -68,6 +70,8 @@ class Expansion_Engine:
         return expansions 
 
     def expand_queue(self, queue, end_key):
+        if not self.enabled:
+            return 
         self._log.debug(f"Checking and expanding queue {queue} upon {end_key}")
         qwerd = ''
         for key in queue:
