@@ -2567,7 +2567,6 @@ Emboss,m-b-o-s,Mbos,,qbmos,0
 Embodies,m-b-o-s,Mboso,o,qbmos,0
 Embroidery,m-br-o-e2-d-e2-e2,Mbrydee,,qbdemry,0
 Mr. chairman,m-ch-mn,Mcmm,,qcm,0
-Maryland,m-d,Md,,qdm,0
 Merchandise,m-e-ch-d-i-s,Mecdis,,qcdeims,0
 Merchant,m-e-ch-t,Mect,,qcemt,0
 Midday,m-e-d-a,Meda,,qadem,0
@@ -7016,7 +7015,6 @@ Reorder,r-o-d,Rodo,o,qdor,349
 Added,a-td,Addo,o,qado,350
 Unexpected,n-e-s-p-/-t,Nxpd,,qdnpx,351
 Somewhere,s2-m-a2,Sma,,qams,351
-Expected,e-s-p-/-t,Xpd,,qdpx,351
 Train,t-r-a-n,Trano,o,qanort,355
 Trains,t-r-a-n-s,Transo,o,qanorst,355
 Contact,k-t-a-k,Ktak,,qakt,357
@@ -7255,8 +7253,8 @@ Morning,mn-\-h,Mng,,qgmn,723
 Trust,t-r-s,Trs,,qrst,728
 Especial,e-s-p,Esp,,qeps,734
 Especially,e-s-p-e,Espe,,qeps,734
-Expect,e-s-p,Xp,,qpx,734
-Experience,e-s-p,Xpo,o,qopx,734
+Experience,e-s-p,Xpoqk,o,qopx,734
+Expect,e-s-p,Xpqk,,qpx,734
 Expectation,e-s-p-sh,Xpz,,qpxz,734
 Ether,e-th2,Ehi,i,qehi,741
 Ethereal,e-th2-l,Ehl,,qehl,741

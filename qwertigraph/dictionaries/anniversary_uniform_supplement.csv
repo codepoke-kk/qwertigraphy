@@ -1664,6 +1664,7 @@ Maximizes,m-a-x-m-i-s-s,Maxmiss,,qaimsx,0
 Embarrassment,m-b-a-r-a-s-m,Mbarasm,,qabmrs,0
 Embarrassments,m-b-a-r-a-s-m-s,Mbarasms,,qabmrs,0
 Embraceably,m-br-a-s-b-e,Mbrasbe,,qabemrs,0
+Maryland,m-d,Mdo,o,qdmo,0
 Merchants,m-e-ch-t-s,Mects,,qcemst,0
 Medication,m-e-d-e-k-sh,Medekz,,qdekmz,0
 Medications,m-e-d-e-k-sh-s,Medekzs,,qdekmsz,0
@@ -7521,6 +7522,8 @@ Concepts,k-s-e-p-s,Kseps,,qekps,24
 Improbable,m-pr-b,Mprb,,qbmpr,24
 Improved,m-pr-d,Mprd,,qdmpr,24
 Improving,m-pr-\-h,Mprg,,qgmpr,24
+Improvement,m-pr-m,Mprm,,qmpr,24
+Improvements,m-pr-m-s,Mprms,,qmprs,24
 Improves,m-pr-s,Mprs,,qmprs,24
 Improvements,m-pr-s,Mprso,o,qmoprs,24
 Unimproved,n-m-pr-d,Nmprd,,qdmnpr,24
@@ -9444,6 +9447,9 @@ Accept,a-k-s2,Aks,,qaks,200
 Accepts,a-k-s2-s,Akssi,i,qaiks,200
 Holy Spirit,h-\-s-pr,Hspr,,qhprs,200
 Managers,mn-j-e2-s,Mnjes,,qejmns,200
+Modifiable,m-o-df-b,Modfb,,qbdfmo,200
+Modifiably,m-o-df-b-e,Modfbe,,qbdefmo,200
+Modifiability,m-o-df-\-b,Modfbo,,qbdfmo,200
 Modified,m-o-df-d,Modfd,,qdfmo,200
 Modifying,m-o-df-\-h,Modfg,,qdfgmo,200
 Modifies,m-o-df-s,Modfs,,qdfmos,200
@@ -10365,12 +10371,18 @@ Trusted,t-r-s-d,Trsd,,qdrst,728
 Trusting,t-r-s-\-h,Trsg,,qgrst,728
 Trusts,t-r-s-s,Trss,,qrst,728
 Untrusted,u-t-r-s-d,Utrsd,,qdrstu,728
-Experienced,e-s-p-d,Xpdo,o,qdopx,734
-Expecting,e-s-p-\-h,Xpg,,qgpx,734
-Experiencing,e-s-p-\-h,Xpgo,o,qgopx,734
+Experience,e-s-p,Xp,,qpx,734
+Experienced,e-s-p-d,Xpd,,qdpx,734
+Expected,e-s-p-d,Xpdo,o,qdopx,734
+Experienced,e-s-p-d,Xpdoqk,o,qdopx,734
+Experiencing,e-s-p-\-h,Xpg,,qgpx,734
+Expecting,e-s-p-\-h,Xpgo,o,qgopx,734
+Experiencing,e-s-p-\-h,Xpgoqk,o,qgopx,734
 Experiential,e-s-p-l,Xplo,o,qlopx,734
-Expects,e-s-p-s,Xps,,qpsx,734
+Expect,e-s-p,Xpo,o,qopx,734
+Experiences,e-s-p-s,Xps,,qpsx,734
 Experiences,e-s-p-s,Xpso,o,qopsx,734
+Expects,e-s-p-s,Xpsqk,,qpsx,734
 Connecticut,k-e-k-k,Kekk,,qek,741
 Connective,k-e-k-v,Kekv,,qekv,741
 Interconnect,n-k-e-k,Nkek,,qekn,741
