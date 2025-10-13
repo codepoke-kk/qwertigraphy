@@ -145,6 +145,9 @@ Application blanks,a-pl-~-b-s,Aplbs,,qablps,0
 Applicably,a-pl-e-k-b-e,Aplekbe,,qabeklp,0
 Applicability,a-pl-e-k-\-b,Aplekbo,,qabeklop,0
 Applicants,a-pl-e-k-nt-s,Apleknts,,qaeklnpst,0
+Apologized,a-p-/-o2-i-s-d,Apoisd,,qadiops,0
+Apologizing,a-p-/-o2-i-s-\-h,Apoisg,,qagiops,0
+Apologizes,a-p-/-o2-i-s-s,Apoiss,,qaiops,0
 Apostle,a-p-o-s2-t-l,Apostl,,qalopst,0
 Apostolically,a-p-o-s2-t-l-k-e,Apostlke,,qaeklopst,0
 Apostles,a-p-o-s2-t-l-s,Apostls,,qalopst,0
@@ -642,6 +645,11 @@ Disrespecting,d-s-r-s-\-h,Dsrsg,,qdgrs,0
 Disrespects,d-s-r-s-s,Dsrss,,qdrs,0
 Dissatisfied,d-ss-a-t-d,Dssatd,,qadst,0
 Distemper,d-s-tm-pr,Dstmpr,,qdmprst,0
+Distorted,d-s2-t-o-t-d,Dstotd,,qdost,0
+Distorting,d-s2-t-o-t-\-h,Dstotg,,qdgost,0
+Distorts,d-s2-t-o-t-s,Dstots,,qdost,0
+Distortion,d-s2-t-o-sh,Dstoz,,qdostz,0
+Distortions,d-s2-t-o-sh-s,Dstozs,,qdostz,0
 Distrust,d-s2-t-r-s,Dstrs,,qdrst,0
 Distrusted,d-s2-t-r-s-d,Dstrsd,,qdrst,0
 Distrustful,d-s2-t-r-s-f,Dstrsf,,qdfrst,0
@@ -2471,6 +2479,13 @@ Penetration,pnt-r-a-sh,Pntrz,,qnprtz,0
 Penetrations,pnt-r-a-sh-s,Pntrzs,,qnprstz,0
 Punishably,p-n-sh-b-e,Pnzbe,,qbenpz,0
 Post-,P-o->,Po>,,q>op,0
+Pocketed,p-o-k-e-t-d,Poketd,,qdekopt,0
+Pocketing,p-o-k-e-t-\-h,Poketg,,qegkopt,0
+Pockets,p-o-k-e-t-s,Pokets,,qekopst,0
+Pocket,p-o-k-t,Pokt,,qkopt,0
+Pocketed,p-o-k-t-d,Poktd,,qdkopt,0
+Pocketing,p-o-k-t-\-h,Poktg,,qgkopt,0
+Pockets,p-o-k-t-s,Pokts,,qkopst,0
 Pollute,p-o-l-u-t,Polut,,qloptu,0
 Polluted,p-o-l-u-t-d,Polutd,,qdloptu,0
 Polluting,p-o-l-u-t-\-h,Polutg,,qgloptu,0
@@ -3920,6 +3935,7 @@ Analyzers,a-n-a-l-i-s-r-s,Analisrs,,qailnrs,1
 Analyzes,a-n-a-l-i-ss,Analiss,,qailns,1
 Annihilation,a-n-i-l-a-sh,Anilz,,qailnz,1
 Apocalyptic,a-p-k-l-e-p-k,Apklepk,,qaeklp,1
+Apologies,a-p-/-o2-s,Apos,,qaops,1
 Assembled,a-s2-e-m-d,Asemd,,qadems,1
 Assembling,a-s2-e-m-\-h,Asemg,,qaegms,1
 Assemblies,a-s2-e-m-s,Asems,,qaems,1
@@ -4090,6 +4106,8 @@ Fragment,f-r-a-g-m,Fragm,,qafgmr,1
 Fragmented,f-r-a-g-m-d,Fragmd,,qadfgmr,1
 Fragmenting,f-r-a-g-m-\-h,Fragmg,,qafgmr,1
 Fragments,f-r-a-g-m-s,Fragms,,qafgmrs,1
+Fragmentation,f-r-a-g-m-sh,Fragmz,,qafgmrz,1
+Fragmentations,f-r-a-g-m-sh-s,Fragmzs,,qafgmrsz,1
 Phrased,fr-a-s-d,Frasd,,qadfrs,1
 Phrasing,fr-a-s-\-h,Frasg,,qafgrs,1
 Phrases,fr-a-s-s,Frass,,qafrs,1
@@ -4133,6 +4151,10 @@ Characterize,k-a-k-i-s,Kakis,,qaiks,1
 Characterized,k-a-k-i-s-d,Kakisd,,qadiks,1
 Characterizing,k-a-k-i-s-\-h,Kakisg,,qagiks,1
 Characterizes,k-a-k-i-s-s,Kakiss,,qaiks,1
+Characterization,k-a-k-i-s-sh,Kakisz,,qaiksz,1
+Characterizations,k-a-k-i-s-sh-s,Kakiszs,,qaiksz,1
+Characterization,k-a-k-sh,Kakz,,qakz,1
+Characterizations,k-a-k-sh-s,Kakzs,,qaksz,1
 Calculated,k-a-l-d,Kald,,qadkl,1
 Calculating,k-a-l-\-h,Kalg,,qagkl,1
 Calculates,k-a-l-s,Kals,,qakls,1
@@ -5022,6 +5044,9 @@ Paste,p-a-s-t,Pasto,o,qaopst,2
 Pastes,p-a-s-t-s,Pastso,o,qaopst,2
 Pathetic,p-th-/-a,Pha,,qahp,2
 Pathetically,p-th-/-a-e,Phae,,qaehp,2
+Pathological,p-th-/-k,Phk,,qhkp,2
+Pathologically,p-th-/-k-e,Phke,,qehkp,2
+Pathology,p-th-/-o,Pho,,qhop,2
 Punishable,p-n-sh-b,Pnzb,,qbnpz,2
 Punished,p-n-sh-d,Pnzd,,qdnpz,2
 Punishing,p-n-sh-\-h,Pnzg,,qgnpz,2
@@ -10400,8 +10425,8 @@ Experiencing,e-s-p-\-h,Xpgoqk,o,qgopx,734
 Experiential,e-s-p-l,Xplo,o,qlopx,734
 Expect,e-s-p,Xpo,o,qopx,734
 Experiences,e-s-p-s,Xps,,qpsx,734
-Experiences,e-s-p-s,Xpso,o,qopsx,734
-Expects,e-s-p-s,Xpsqk,,qpsx,734
+Expects,e-s-p-s,Xpso,o,qopsx,734
+Experiences,e-s-p-s,Xpsoqk,o,qopsx,734
 Connecticut,k-e-k-k,Kekk,,qek,741
 Connective,k-e-k-v,Kekv,,qekv,741
 Interconnect,n-k-e-k,Nkek,,qekn,741
@@ -10867,6 +10892,8 @@ Proxy,pr-s-e,Prx,,qprx,5436
 Proxied,pr-s-e-d,Prxd,,qdprx,5436
 Proxying,pr-s-e-\-h,Prxg,,qgprx,5436
 Proxies,pr-s-e-s,Prxs,,qprsx,5436
+Receipt,r-e-s-e-t,Rset,,qerst,5436
+Receipts,r-e-s-e-t-s,Rsets,,qerst,5436
 Recession,r-s-e-sh,Rsez,,qersz,5436
 Sees,s-e-s,Ses,,qes,5436
 Sees,s-e-s,Sesoqk,o,qeos,5436
