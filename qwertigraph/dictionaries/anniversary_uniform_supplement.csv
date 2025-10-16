@@ -6288,6 +6288,10 @@ Disconnected,d-s2-k-e-k-d,Dskekd,,qdeks,7
 Disconnecting,d-s2-k-e-k-\-h,Dskekg,,qdegks,7
 Disconnects,d-s2-k-e-k-s,Dskeks,,qdeks,7
 Disconnection,d-s2-k-e-k-sh,Dskekz,,qdeksz,7
+Editable,e-td-b,Edtb,,qbdet,7
+Editably,e-td-b-e,Edtbe,,qbdet,7
+Editability,e-td-\-b,Edtbo,,qbdeot,7
+Editables,e-td-b-s,Edtbs,,qbdest,7
 Edited,e-td-d,Edtd,,qdet,7
 Editing,e-td-\-h,Edtg,,qdegt,7
 Edits,e-td-s,Edts,,qdest,7
@@ -9027,7 +9031,8 @@ Agents,a-j-s,Ajso,o,qajos,112
 Delayed,d-l-a-d,Dlad,,qadl,112
 Delaying,d-l-a-\-h,Dlag,,qadgl,112
 Delays,d-l-a-s,Dlas,,qadls,112
-Lighting,l-i-\-h,Ligo,o,qgilo,113
+Lighting,l-i-\-h,Lig,,qgil,113
+Lighting,l-i-\-h,Ligoqk,o,qgilo,113
 Relied,r-e-l-i-d,Rlid,,qdilr,113
 Relying,r-e-l-i-\-h,Rlig,,qgilr,113
 Sometimes,s2-tm-s,Stmso,o,qmost,114
@@ -10667,9 +10672,11 @@ Seeming,s2-e-m-\-h,Semg,,qegms,1212
 Seems,s2-e-m-s,Sems,,qems,1212
 Users,e-u-r-s,Urs,,qrsu,1237
 User,e-u-r,Uru,u,qru,1237
-Actuals,a-k-t-l-s,Aktls,,qaklst,1239
 Accountable,a-k-t-b,Aktb,,qabkt,1240
 Accounting,a-k-t-\-h,Aktg,,qagkt,1240
+Actuality,a-k-t-\-l,Aktlo,o,qaklot,1240
+Actuals,a-k-t-l-s,Aktls,,qaklst,1240
+Actualities,a-k-t-\-l-s,Aktlso,o,qaklost,1240
 Accounts,a-k-t-s,Akts,,qakst,1240
 Needed,n-e-d-d,Nedd,,qden,1246
 Meeting,m-e-t-\-h,Metg,,qegmt,1258
@@ -10734,6 +10741,10 @@ Ticket,t-k-e-t,Tket,,qekt,1693
 Ticketed,t-k-e-t-d,Tketd,,qdekt,1693
 Ticketing,t-k-e-t-\-h,Tketg,,qegkt,1693
 Tickets,t-k-e-t-s,Tkets,,qekst,1693
+Ticket,t-k-t,Tkt,,qkt,1693
+Ticketed,t-k-t-d,Tktd,,qdkt,1693
+Ticketing,t-k-t-\-h,Tktg,,qgkt,1693
+Tickets,t-k-t-s,Tkts,,qkst,1693
 Issuing,e-sh-u-\-h,Ezug,,qeguz,1696
 Issues,e-sh-u-s,Ezus,,qesuz,1696
 Pressured,pr-e-sh-u-d,Prezud,,qdepruz,1696
