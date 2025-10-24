@@ -1618,7 +1618,6 @@ Hydrocarbon,^-h-\-i-d-r-o-k-r-b-n,Hidrokrbn,,qbdhiknor,0
 Hydraulic,^-h-\-i-d-r-o-l,Hidrol,,qdhilor,0
 Hydroxide,^-h-\-i-d-r-o-s2-i-d,Hidrosid,,qdhiors,0
 Hydrostatics,^-h-\-i-d-r-o-s2-t-/-a-s,Hidrostas,,qadhiorst,0
-Hyphened,^-h-\-i-f-nt,Hifnd,,qdfhin,0
 High-handed,^-h-\-i-^-h-\-nt-d,Hihndd,,qdhin,0
 Awhile,h-/-\-i-l,Hil,,qhil,0
 Hilarious,^-h-\-i-l-a-r,Hilar,,qahilr,0
@@ -4957,8 +4956,7 @@ Obey,o-b-a,Oba,,qabo,2
 Audible,o-d-b,Odb,,qbdo,2
 Of them,o-th-m,Ohmo,o,qhmo,2
 Of this,o-ths,Ohs,,qhos,2
-Ocher,o-k-r,Okr,,qkor,2
-Occur,o-k-r,Okro,o,qkor,2
+Ocher,o-k-r,Okro,o,qkor,2
 On the,o-n-th,Onh,,qhno,2
 Overwrought,o-/-r-o-t,Orot,,qort,2
 Overture,o-/-t-r,Otr,,qort,2
@@ -5243,7 +5241,7 @@ Nudge,n-j,Nj,,qjn,4
 Increment,n-k-r-e-m,Nkrem,,qekmnr,4
 Encourage,n-k-r-j,Nkrj,,qjknr,4
 New mexico,n-/-m,Nmo,o,qmno,4
-Newspaper,n-s-p,Nsp,,qnps,4
+Newspaper,n-s-p,Nspqk,,qnps,4
 Interest,^-n-\-s,Nsu,u,qnsu,4
 Intuitive,nt-e-u-df,Ntutv,,qntuv,4
 Numerous,n-e-u-m,Numo,o,qmnou,4
