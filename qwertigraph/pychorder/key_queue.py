@@ -1,6 +1,6 @@
 
 from log_factory import get_logger
-from pynput import keyboard 
+import keyboard 
 
 class Key_Queue:
     _log = get_logger('KEYQ') 
@@ -24,6 +24,10 @@ class Key_Queue:
         pause_keys_normal[end_key] = 1
         end_keys[end_key] = 1
 
+    end_keys['tab'] = 1
+    end_keys['space'] = 1
+    end_keys['enter'] = 1
+
     def __init__(self, engine):
         self.engine = engine 
         self.keystroke_queue = []
@@ -31,45 +35,14 @@ class Key_Queue:
 
     def push_keystroke(self, key):
         self._log.debug(f"Pushing {key}")
-        self._log.debug(f"Queue starting as {self.keystroke_queue}")
-        if isinstance(key, keyboard.KeyCode):
-            # Regular character key
-            if key.char in self.end_keys:
-                self._log.debug(f"Draining queue on plain key {key}")
-                self.engine.expand_queue(self.keystroke_queue, key)
-                self.keystroke_queue = []
-            else:
-                self._log.debug(f"Queuing {key}")
-                self.keystroke_queue.append(key)
+        if key in self.end_keys:
+            self._log.debug(f"Key {key} is an end key")
+            self.engine.expand_queue(self.keystroke_queue, key)
+            self.keystroke_queue = []
         else:
-            # Special key (Key.xxx) and don't end on all special characters 
-            if str(key) == 'Key.backspace':
-                self._log.debug(f"{key} sent - backing up queue")
-                self.keystroke_queue = self.keystroke_queue[0:-1]
-            elif str(key) in self.end_keys:
-                self._log.debug(f"Draining queue on special key {key}")
-                self.engine.expand_queue(self.keystroke_queue, key)
-                self.keystroke_queue = []
-
+            if len(key) == 1:
+                self._log.debug(f"Key {key} is a normal key")
+                self.keystroke_queue.append(key)
+            else:
+                self._log.debug(f"Key {key} is a control key - ignoring")
         self._log.debug(f"Queue is now {self.keystroke_queue}")
-
-'''
-    def pop_keystroke(self):
-        self._log.debug(f"Popping")
-        if not len(self.keystroke_queue):
-            return None
-        # slice the tail, then truncate the list
-        result = self.keystroke_queue[-1]
-        del self.keystroke_queue[-1]
-        self._log.debug(f"Returning {result} and keeping {self.keystroke_queue}")
-        return result 
-          
-    def pop_keystrokes(self, n):
-        """Return the last n keystrokes and remove them from the queue."""
-        if n > len(self.keystroke_queue):
-            return None
-        # slice the tail, then truncate the list
-        result = self.keystroke_queue[-n:]
-        del self.keystroke_queue[-n:]
-        return ''.join(result)
-'''

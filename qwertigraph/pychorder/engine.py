@@ -18,7 +18,7 @@ class Expansion_Engine:
         self.MAX_TRIGGER_LEN = max(len(k) for k in self.expansions)   # longest trigger we care about
         self.poll_interval = 0.05
 
-        self.enabled = False 
+        self.enabled = True 
         self._log.info('Initiated Key Input')
 
     def get_dictionaries(self, dictionary_paths):
@@ -76,34 +76,10 @@ class Expansion_Engine:
         qwerd = ''
         for key in queue:
             self._log.debug(f"Qwerding {key}")
-            qwerd += key.char
+            qwerd += key
         self._log.debug(f"Qwerd: {qwerd}")
         if qwerd in self.expansions:
             self._log.debug(f"Sending to keyout {qwerd}")
             self.key_output.replace_qwerd(qwerd, self.expansions[qwerd], end_key)
         else:
             self._log.debug(f"Qwerd {qwerd} not in expansions")
-
-    def engine_loop(self):
-        self._log.debug(f"Not looping")
-        while True:
-            try: 
-                time.sleep(20)
-                notes = self.key_output.scribe.readback_notes()
-                for note in notes:
-                    print(f"{note.key:<6}{note.word:<30}{note.end_key_str:>6}")
-            except KeyboardInterrupt:
-                print("\nStopped.")
-                break
-        
-        '''
-        while True:
-            # Look at the most recent characters (up to the longest trigger)
-            tail = ''.join(self.key_queue.keystroke_queue[-self.MAX_TRIGGER_LEN:])
-            for trigger, expansion in self.expansions.items():
-                if tail.endswith(trigger):
-                    # We have a match – hand it off to the output component
-                    self.key_output.replace_trigger(trigger, expansion)
-                    break
-            time.sleep(self.poll_interval)
-        '''
