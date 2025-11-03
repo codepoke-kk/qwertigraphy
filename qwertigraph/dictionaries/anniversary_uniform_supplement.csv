@@ -1,6 +1,14 @@
 word,form,qwerd,keyer,chord,usage
 Habeas corpus,a-b-~-k,Abk,,qabk,0
 -Ability,<-a-b-o,Abo<,,q<abo,0
+Abolitionist,a-b-o-l-e-sh-e-s,Abolezes,,qabelosz,0
+Abolitionists,a-b-o-l-e-sh-e-s-s,Abolezess,,qabelosz,0
+Abolished,a-b-o-l-sh-d,Abolzd,,qabdloz,0
+Abolishing,a-b-o-l-sh-\-h,Abolzg,,qabgloz,0
+Abolishes,a-b-o-l-sh-s,Abolzs,,qablosz,0
+Abolition,a-b-o-l-sh-sh,Abolzz,,qabloz,0
+Abolitionist,a-b-o-l-sh-sh-e-s,Abolzzes,,qabelosz,0
+Abolitionists,a-b-o-l-sh-sh-e-s-s,Abolzzess,,qabelosz,0
 Abominations,a-b-o-mm-sh-s,Abommzs,,qabmosz,0
 Aborigine,a-b-o-r-e-j-n-e,Aborejne,,qabejnor,0
 Aborigines,a-b-o-r-e-j-n-e-s,Aborejnes,,qabejnors,0
@@ -182,6 +190,9 @@ Astounds,a-s2-t-nt-s,Astnds,,qadnst,0
 Attackably,a-t-a-k-b-e,Atakbe,,qabekt,0
 Attache,a-t-a-sh-a,Ataza,,qatz,0
 Attaches,a-t-a-sh-a-s,Atazas,,qastz,0
+Artichokes,a2-t-ch-k-s,Atcks,,qackst,0
+Artichoke,a2-t-ch-o-k,Atcok,,qackot,0
+Artichokes,a2-t-ch-o-k-s,Atcoks,,qackost,0
 Articulate,a2-t-e-k-\-u,Ateku,,qaektu,0
 Articulated,a2-t-e-k-\-u-d,Atekud,,qadektu,0
 Articulately,a2-t-e-k-\-u-e,Atekue,,qaektu,0
@@ -284,6 +295,12 @@ Bouncer,b-n-s-r,Bnsr,,qbnrs,0
 Bouncers,b-n-s-r-s,Bnsrs,,qbnrs,0
 Bodyguard,b-o-g-a2-d,Bogad,,qabdgo,0
 Bodyguards,b-o-g-a2-d-s,Bogads,,qabdgos,0
+Bowl,b-o-l,Bol,,qblo,0
+Bowled,b-o-l-d,Bold,,qbdlo,0
+Bowling,b-o-l-\-h,Bolg,,qbglo,0
+Bowler,b-o-l-r,Bolr,,qblor,0
+Bowlers,b-o-l-r-s,Bolrs,,qblors,0
+Bowls,b-o-l-s,Bols,,qblos,0
 Boringly,b-o-r-\-h-e,Borhe,,qbehor,0
 Biographer,b-/-o-r,Bori,i,qbior,0
 Borrowed,b-o-r-o-d,Borod,,qbdor,0
@@ -680,9 +697,13 @@ Divested,df-e-s-d,Dvesd,,qdesv,0
 Divesting,df-e-s-\-h,Dvesg,,qdegsv,0
 Divests,df-e-s-s,Dvess,,qdesv,0
 Divisions,df-e-sh-s,Dvezs,,qdesvz,0
+Divide,df-i,Dvi,,qdiv,0
+Divided,df-i-d,Dvid,,qdiv,0
 Divided,df-i-d-d,Dvidd,,qdiv,0
 Dividing,df-i-d-\-h,Dvidg,,qdgiv,0
 Divides,df-i-d-s,Dvids,,qdisv,0
+Dividing,df-i-\-h,Dvig,,qdgiv,0
+Divides,df-i-s,Dvis,,qdisv,0
 Devil,df-l,Dvlo,o,qdlov,0
 Devils,df-l-s,Dvlso,o,qdlosv,0
 Devolved,df-o-l-d,Dvold,,qdlov,0
@@ -967,6 +988,9 @@ Flavor,f-l-a-v-r,Flavr,,qaflrv,0
 Flavored,f-l-a-v-r-d,Flavrd,,qadflrv,0
 Flavoring,f-l-a-v-r-\-h,Flavrg,,qafglrv,0
 Flavors,f-l-a-v-r-s,Flavrs,,qaflrsv,0
+Flourished,fl-r-sh-d,Flrzd,,qdflrz,0
+Flourishing,fl-r-sh-\-h,Flrzg,,qfglrz,0
+Flourishes,fl-r-sh-s,Flrzs,,qflrsz,0
 Formal,f-m-\-l,Fml,,qflm,0
 Formality,f-m-l-t-e,Fmlte,,qeflmt,0
 Federated malay states,f-m-~-s,Fmso,o,qfmos,0
@@ -1204,6 +1228,7 @@ Isolations,i-s-o-l-a-sh-s,Isolzs,,qilosz,0
 -Age,<-j,J<,,q<j,0
 Jasmine,j-a-s-mn,Jasmn,,qajmns,0
 Jealously,j-e-l-u-s-e,Jeluseo,o,qejlosu,0
+Jeremiah,j-e2-m-i,Jemi,,qeijm,0
 Generalities,j-e-n-/-l-s,Jenls,,qejlns,0
 Generously,j-e-n-r-s-e,Jenrse,,qejnrs,0
 Generationally,j-e-n-r-a-sh-l-e,Jenrzle,,qejlnrz,0
@@ -1697,6 +1722,10 @@ Methodically,m-e-th-d-\-k-e,Mehdke,,qdehkm,0
 Methodology,m-e-th-d-\-l,Mehdl,,qdehlm,0
 Methodologies,m-e-th-d-\-l-s,Mehdls,,qdehlms,0
 Millennial,m-e-l-e-n-l,Melenl,,qelmn,0
+Millennialist,m-e-l-e-n-l-e-s,Melenles,,qelmns,0
+Millennialists,m-e-l-e-n-l-e-s-s,Melenless,,qelmns,0
+Millennials,m-e-l-e-n-l-s,Melenls,,qelmns,0
+Millennialism,m-e-l-e-n-l-s-m,Melenlsm,,qelmns,0
 Millennary,m-e-l-e-n-r-e,Melenre,,qelmnr,0
 Millionth,m-e-l-n-th,Melnh,,qehlmn,0
 Millionths,m-e-l-n-th-s,Melnhs,,qehlmns,0
@@ -5153,6 +5182,10 @@ Schemes,s2-k-e-m-s,Skems,,qekms,2
 Slave,s-l-a-v,Slav,,qalsv,2
 Slaved,s-l-a-v-d,Slavd,,qadlsv,2
 Slaving,s-l-a-v-\-h,Slavg,,qaglsv,2
+Slaver,s-l-a-v-r,Slavr,,qalrsv,2
+Slavery,s-l-a-v-r-e,Slavre,,qaelrsv,2
+Slaveries,s-l-a-v-r-e-s,Slavres,,qaelrsv,2
+Slavers,s-l-a-v-r-s,Slavrs,,qalrsv,2
 Spray,s-p-r-a,Spra,,qaprs,2
 Sprayed,s-p-r-a-d,Sprad,,qadprs,2
 Sprays,s-p-r-a-s,Spras,,qaprs,2
@@ -11122,6 +11155,12 @@ Cannibalized,k-a-n-b-i-s-d,Kanbisd,,qabdikns,90958
 Cannibalizing,k-a-n-b-i-s-\-h,Kanbisg,,qabgikns,90958
 Cannibalizes,k-a-n-b-i-s-s,Kanbiss,,qabikns,90958
 Cannibals,k-a-n-b-s,Kanbs,,qabkns,90958
+Choke,ch-o-k,Cok,,qcko,90977
+Choked,ch-o-k-d,Cokd,,qcdko,90977
+Choking,ch-o-k-\-h,Cokg,,qcgko,90977
+Choker,ch-o-k-r,Cokr,,qckor,90977
+Chokers,ch-o-k-r-s,Cokrs,,qckors,90977
+Chokes,ch-o-k-s,Coks,,qckos,90977
 Math,m-a-th,Mah,,qahm,91030
 Mathed,m-a-th-d,Mahd,,qadhm,91030
 Mathing,m-a-th-\-h,Mahg,,qaghm,91030
