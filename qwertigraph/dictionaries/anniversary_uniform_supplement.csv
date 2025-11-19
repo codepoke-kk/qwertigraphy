@@ -1204,6 +1204,9 @@ Hostages,h-\-o-s-t-j-s,Hostjs,,qhjost,0
 Hostility,^-h-\-o-s2-t-\-l,Hostli,i,qhilost,0
 Horticultural,^-h-\-o-t-e-k-l-t-r-l,Hotekltrl,,qehklort,0
 Horticulturally,^-h-\-o-t-e-k-l-t-r-l-e,Hotekltrle,,qehklort,0
+Throated,th-r-o-t-d,Hrotd,,qdhort,0
+Throating,th-r-o-t-\-h,Hrotg,,qghort,0
+Throats,th-r-o-t-s,Hrots,,qhorst,0
 Homeostatic,^-h-\-s2-t-/-a,Hsta,,qahst,0
 Homeostatics,^-h-\-s2-t-/-a-s,Hstas,,qahst,0
 Homeostasis,^-h-\-s-t-a-ss,Hstass,,qahst,0
@@ -4046,6 +4049,8 @@ Diagnosis,d-i-g-n-o-ss,Dignoss,,qdginos,1
 Diagnosises,d-i-g-n-o-ss-s,Dignosss,,qdginos,1
 Diagrams,d-i-\-g-s,Digso,o,qdgios,1
 Delusion,d-l-u-sh,Dluz,,qdluz,1
+Delusional,d-l-u-sh-l,Dluzl,,qdluz,1
+Delusionally,d-l-u-sh-l-e,Dluzle,,qdeluz,1
 Delusional,d-l-sh-l,Dlzl,,qdlz,1
 Dimensioned,tm-e-n-sh-d,Dmenzd,,qdemnz,1
 Dimensional,tm-e-n-sh-l,Dmenzl,,qdelmnz,1
@@ -6586,6 +6591,10 @@ Encounter,n-k-ao,Nkao,,qakno,8
 Encountered,n-k-ao-d,Nkaod,,qadkno,8
 Encountering,n-k-ao-\-h,Nkaog,,qagkno,8
 Encounters,n-k-ao-s,Nkaos,,qaknos,8
+Encounter,n-k-ao,Nkw,,qknw,8
+Encountered,n-k-ao-d,Nkwd,,qdknw,8
+Encountering,n-k-ao-\-h,Nkwg,,qgknw,8
+Encounters,n-k-ao-s,Nkws,,qknsw,8
 Instructors,n-s-/-k-r-s,Nskrs,,qknrs,8
 Intentioned,n-tn-sh-d,Ntnzd,,qdntz,8
 Intentioning,n-tn-sh-\-h,Ntnzg,,qgntz,8
@@ -8996,6 +9005,7 @@ Avoidably,v-o-e-b-e,Vybe,,qbevy,98
 Avoidability,v-o-e-\-b,Vybo,,qbovy,98
 Avoided,v-o-e-d,Vyd,,qdvy,98
 Avoiding,v-o-e-\-h,Vyg,,qgvy,98
+Avoidance,v-o-e-n-s,Vyns,,qnsvy,98
 Avoids,v-o-e-s,Vys,,qsvy,98
 Deceived,d-s-e-d,Dsed,,qdes,100
 Deceiving,d-s-e-\-h,Dseg,,qdegs,100
@@ -10262,6 +10272,7 @@ Calming,k-o-m-\-h,Komg,,qgkmo,550
 Calmer,k-o-m-r,Komr,,qkmor,550
 Calmers,k-o-m-r-s,Komrs,,qkmors,550
 Calms,k-o-m-s,Koms,,qkmos,550
+Rethought,r-th-o-t,Rhot,,qhort,550
 Aliases,a-l-ea-ss,Aless,,qaels,554
 Defaulted,df-o-t-d,Dfotd,,qdfot,554
 Defaulting,df-o-t-\-h,Dfotg,,qdfgot,554
@@ -10819,6 +10830,7 @@ Letters,l-e-s,Lesi,i,qeils,1922
 Prettier,pr-e-r,Prer,,qepr,1977
 Ours,r-s,Rsuu,uu,qrsu,2030
 Listing,l-s-\-h,Lsg,,qgls,2039
+Elsewise,l-s-i,Lsi,,qils,2039
 Accessible,a-k-ss-b,Akssb,,qabks,2103
 Accessibly,a-k-ss-b-e,Akssbe,,qabeks,2103
 Accessed,a-k-ss-d,Akssd,,qadks,2103
@@ -10907,6 +10919,9 @@ Questionable,k-n-b,Qnb,,qbnq,3184
 Questioned,k-n-d,Qnd,,qdnq,3184
 Questioning,k-n-\-h,Qng,,qgnq,3184
 Questions,k-n-s,Qns,,qnqs,3184
+Rethink,r-th-\-h,Rhh,,qhr,3391
+Rethinking,r-th-\-h-\-h,Rhhg,,qghr,3391
+Rethinks,r-th-\-h-s,Rhhs,,qhrs,3391
 Enabler,e-n-b-r,Enbr,,qbenr,3852
 Enablers,e-n-b-r-s,Enbrs,,qbenrs,3852
 Innovate,e-n-o-v-a-t,Enovat,,qaenotv,3852
@@ -11373,6 +11388,10 @@ Hatched,^-h-\-a-ch-d,Hacd,,qacdh,92650
 Hatching,^-h-\-a-ch-\-h,Hacg,,qacgh,92650
 Hatches,^-h-\-a-ch-s,Hacs,,qachs,92650
 Shook,sh-u-k,Zuk,,qkuz,92711
+Trapped,t-r-a-p-t,Trapd,,qadprt,92742
+Trapping,t-r-a-p-\-h,Trapg,,qagprt,92742
+Trapper,t-r-a-p-r,Trapr,,qaprt,92742
+Trappers,t-r-a-p-r-s,Traprs,,qaprst,92742
 Self,s-f,Sf,,qfs,92827
 Pursue,p-r-s-u,Prsu,,qprsu,92842
 Pursued,p-r-s-u-d,Prsud,,qdprsu,92842
