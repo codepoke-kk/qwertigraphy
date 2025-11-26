@@ -593,7 +593,6 @@ Chihuahua,ch-u-a,Cua,,qacu,0
 Chairs,ch-ya2,Cy,,qcy,0
 Dampener,d-a-m-p-n-e2,Dampne,,qademnp,0
 Damp,d-a-m-p,Dampo,o,qadmop,0
-Dances,d-a-n-ss,Danss,,qadns,0
 Dainty,d-a-nt-e,Danteo,o,qadenot,0
 Dairy,d-a-r-e,Dareo,o,qadeor,0
 Darkness,d-a-r-k-n-e-s,Darknes,,qadeknrs,0
@@ -816,7 +815,7 @@ Decent,d-s2-e-nt,Dsent,,qdenst,0
 Descent,d-s2-e-nt,Dsenti,i,qdeinst,0
 Dissent,d-s2-e-nt,Dsento,o,qdenost,0
 Dissipate,d-s-e-p-a,Dsepa,,qadeps,0
-Decease,d-s-e-s,Dses,,qdes,0
+Decease,d-s-e-s,Dsesqk,,qdes,0
 Desert,d-s2-e2-t,Dset,,qdest,0
 Dissertation,d-s2-e2-t-n,Dsetn,,qdenst,0
 Dessert,d-s2-e2-t,Dseto,o,qdeost,0
@@ -1896,11 +1895,11 @@ Cashier,k-a-sh-e2,Kaze,,qaekz,0
 Casualty,k-a-sh-e-/-l,Kazel,,qaeklz,0
 Casuist,k-a-sh-us2-t,Kazust,,qakstuz,0
 Occasionally,k-a-sh-ye,Kazy,,qakyz,0
-Can be,k-b,Kb,,qbk,0
+Contribute,k-\-b,Kb,,qbk,0
 Counterbalance,k-/-b-a-l,Kbal,,qabkl,0
 Combatant,k-b-a-tn,Kbatn,,qabknt,0
 Can be done,k-b-tn,Kbdn,,qbdkn,0
-Contribute,k-\-b,Kbo,o,qbko,0
+Can be,k-b,Kbqk,,qbk,0
 Combustion,k-b-u-s-sh,Kbusz,,qbksuz,0
 Could be done,k-d-b-tn,Kdbdn,,qbdkn,0
 Candidacy,k-td-s-e,Kddse,,qdeks,0
@@ -5805,7 +5804,7 @@ Constant,k-s2-tn,Kstn,,qknst,15
 Consternation,k-s2-tn-sh,Kstnz,,qknstz,15
 Cordially yours,k-u,Kui,i,qiku,15
 Cushion,k-u-sh,Kuz,,qkuz,15
-Introduced,n-/-d-u-s2-t,Ndusd,,qdnsu,15
+Introduced,n-/-d-u-s2-t,Ndusdqk,,qdnsu,15
 Unforgivable,n-f-g-e-b,Nfgeb,,qbefgn,15
 Nowhere,n-o-a-r,Noar,,qanor,15
 Interests,n-/-s-s,Nsso,o,qnos,15
@@ -7317,7 +7316,7 @@ Act,a-k,Ak,,qak,955
 Acted,a-k-t,Akd,,qadk,955
 I can,a-k,Aki,i,qaik,955
 Acknowledge,a-k,Ako,o,qako,955
-Ache,a-k,Aku,u,qaku,955
+Ache,a-k,Akuqk,u,qaku,955
 Active,a-k-v,Akv,,qakv,955
 Action,a-k-sh,Akz,,qakz,955
 Say,s-a,Sa,,qas,955
