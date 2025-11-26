@@ -773,6 +773,11 @@ Inhabited,e-n-^-h-\-a-b-t-d,Enhabtd,,qabdehnt,0
 Inhabiting,e-n-^-h-\-a-b-t-\-h,Enhabtg,,qabeghnt,0
 Inhabits,e-n-^-h-\-a-b-t-s,Enhabts,,qabehnst,0
 Inherently,e-n-^-h-\-e2-nt-e,Enhente,,qehnt,0
+Inherited,e-n-^-h-\-e2-t-d,Enhetd,,qdehnt,0
+Inheriting,e-n-^-h-\-e2-t-\-h,Enhetg,,qeghnt,0
+Inheritance,e-n-^-h-\-e2-t-n-s,Enhetns,,qehnst,0
+Inheritances,e-n-^-h-\-e2-t-n-s-s,Enhetnss,,qehnst,0
+Inherits,e-n-^-h-\-e2-t-s,Enhets,,qehnst,0
 Encapsulate,e-n-k-a-p-s-l-a-t,Enkapslat,,qaeklnpst,0
 Encapsulated,e-n-k-a-p-s-l-a-t-d,Enkapslatd,,qadeklnpst,0
 Encapsulating,e-n-k-a-p-s-l-a-t-\-h,Enkapslatg,,qaegklnpst,0
@@ -1328,6 +1333,17 @@ Concluding,k-k-\-h-o,Kkho,,qhko,0
 Concoctions,k-k-k-sh-s,Kkkzs,,qksz,0
 Contractually,k-/-k-l-e,Kkle,,qekl,0
 Concludes,k-k-s-o,Kkso,,qkos,0
+Collaborate,k-l-a-br-a,Klabra,,qabklr,0
+Collaborated,k-l-a-br-a-d,Klabrad,,qabdklr,0
+Collaborating,k-l-a-br-a-\-h,Klabrag,,qabgklr,0
+Collaborates,k-l-a-br-a-s,Klabras,,qabklrs,0
+Collaborative,k-l-a-br-a-v,Klabrav,,qabklrv,0
+Collaboratively,k-l-a-br-a-v-e,Klabrave,,qabeklrv,0
+Collaboratives,k-l-a-br-a-v-s,Klabravs,,qabklrsv,0
+Collaboration,k-l-a-br-a-sh,Klabraz,,qabklrz,0
+Collaborations,k-l-a-br-a-sh-s,Klabrazs,,qabklrsz,0
+Collaboration,k-l-a-br-sh,Klabrz,,qabklrz,0
+Collaborations,k-l-a-br-sh-s,Klabrzs,,qabklrsz,0
 Classify,k-l-a-s-f,Klasf,,qafkls,0
 Classified,k-l-a-s-f-d,Klasfd,,qadfkls,0
 Classifying,k-l-a-s-f-\-h,Klasfg,,qafgkls,0
@@ -1394,6 +1410,7 @@ Collaborating,k-o-l-a-br-a-\-h,Kolabrag,,qabgklor,0
 Collaborates,k-o-l-a-br-a-s,Kolabras,,qabklors,0
 Collaborative,k-o-l-a-br-a-df,Kolabratv,,qabklortv,0
 Collaboratively,k-o-l-a-br-a-df-e,Kolabratve,,qabeklortv,0
+Collaboratives,k-o-l-a-br-a-df-s,Kolabratvs,,qabklorstv,0
 Collaboration,k-o-l-a-br-a-sh,Kolabrz,,qabklorz,0
 Collaborations,k-o-l-a-br-a-sh-s,Kolabrzs,,qabklorsz,0
 Collegial,k-o-l-e-j-l,Kolejl,,qejklo,0
@@ -3591,6 +3608,7 @@ Tractioned,t-r-a-k-sh-d,Trakzd,,qadkrtz,0
 Tractioning,t-r-a-k-sh-\-h,Trakzg,,qagkrtz,0
 Tractions,t-r-a-k-sh-s,Trakzs,,qakrstz,0
 Troubleshooter,t-r-b-sh-r,Trbzr,,qbrtz,0
+Troubleshooters,t-r-b-sh-r-s,Trbzrs,,qbrstz,0
 Trillionth,t-r-e-l-n-th,Trelnh,,qehlnrt,0
 Trillionths,t-r-e-l-n-th-s,Trelnhs,,qehlnrst,0
 Treasurers,t-r-e-sh-u-/-r-s,Trezurs,,qerstuz,0
@@ -4473,6 +4491,10 @@ Packetizes,p-a-k-e-t-i-s-s,Paketiss,,qaeikpst,1
 Painted,p-a-nt-d,Pantd,,qadnpt,1
 Painting,p-a-nt-\-h,Pantg,,qagnpt,1
 Paints,p-a-nt-s,Pantso,o,qanopst,1
+Passphrase,p-fr-a-s,Pfras,,qafprs,1
+Passphrased,p-fr-a-s-d,Pfrasd,,qadfprs,1
+Passphrasing,p-fr-a-s-\-h,Pfrasg,,qafgprs,1
+Passphrases,p-fr-a-s-s,Pfrass,,qafprs,1
 Playground,pl-a-g-r-nt,Plagrnd,,qadglnpr,1
 Playgrounds,pl-a-g-r-nt-s,Plagrnds,,qadglnprs,1
 Placate,p-l-a-k,Plak,,qaklp,1
@@ -4638,6 +4660,7 @@ Sergeant,s-e2-jnt,Sejnt,,qejnst,1
 Sergeants,s-e2-jnt-s,Sejnts,,qejnst,1
 Selections,s-e-l-e-k-sh-s,Selekzs,,qeklsz,1
 Sympathies,s2-e-m-th-e-s,Semhes,,qehms,1
+Simplest,s2-e-m-p-e-s,Sempes,,qemps,1
 Simplest,s2-e-m-p-\-s-t,Sempst,,qempst,1
 Simulate,s-e-m-\-u,Semu,,qemsu,1
 Simulated,s-e-m-\-u-d,Semud,,qdemsu,1
@@ -4778,6 +4801,7 @@ Underscored,u-\-s-k-o-r-d,Uskord,,qdkorsu,1
 Underscoring,u-\-s-k-o-r-\-h,Uskorg,,qgkorsu,1
 Underscores,u-\-s-k-o-r-s,Uskors,,qkorsu,1
 Undertaking,u-/-t-a-k-\-h,Utakg,,qagktu,1
+Undertakings,u-/-t-a-k-\-h-s,Utakgs,,qagkstu,1
 Undertakes,u-/-t-a-k-s,Utaks,,qakstu,1
 Utilizable,e-u-t-l-i-s-b,Utlisb,,qbilstu,1
 Utilized,e-u-t-l-i-s-d,Utlisd,,qdilstu,1
@@ -4876,6 +4900,9 @@ Disregards,d-s-r-e-s,Dsres,,qders,2
 Disagreements,dya-m-s,Dyams,,qadmsy,2
 Ephemeral,e-f-e-m-e-r-l,Efemerl,,qeflmr,2
 Efficiently,e-f-e-sh-t-e,Efezte,,qeftz,2
+Ephemeral,e-f-m-r-l,Efmrl,,qeflmr,2
+Ephemerally,e-f-m-r-l-e,Efmrle,,qeflmr,2
+Ephemerals,e-f-m-r-l-s,Efmrls,,qeflmrs,2
 Weaknesses,e-k-n-e-s-s,Ekness,,qekns,2
 Emotionally,e-m-o-sh-l-e,Emozle,,qelmoz,2
 Eschatological,e-s-k-a-t-\-o2-k,Eskatok,,qaekost,2
@@ -5006,9 +5033,16 @@ Emphasized,m-f-a-ss-d,Mfassd,,qadfms,2
 Emphasizing,m-f-a-ss-\-h,Mfassg,,qafgms,2
 Emphasis,m-f-a-ss,Mfassi,i,qafims,2
 Emphases,m-f-a-ss,Mfasso,o,qafmos,2
-Emphases,m-f-a-ss,Mfassqk,,qafms,2
 Emphasizes,m-f-a-ss-s,Mfasss,,qafms,2
 Magnification,m-/-f,Mfi,i,qfim,2
+Emphases,m-f-s-e-s,Mfses,,qefms,2
+Emphasize,m-f-s-i-s,Mfsis,,qfims,2
+Emphasized,m-f-s-i-s-d,Mfsisd,,qdfims,2
+Emphasizing,m-f-s-i-s-\-h,Mfsisg,,qfgims,2
+Emphasizes,m-f-s-i-s-s,Mfsiss,,qfims,2
+Emphasis,m-f-ss,Mfss,,qfms,2
+Emphases,m-f-ss,Mfsso,o,qfmos,2
+Emphases,m-f-ss,Mfsss,s,qfms,2
 Monotheist,mm-o-th-e-s2,Mmohes,,qehmos,2
 Monotheists,mm-o-th-e-s2-s,Mmohess,,qehmos,2
 Memorize,mn-r-i-s,Mmris,,qimrs,2
@@ -5802,6 +5836,8 @@ Cipher,s2-i-f,Sif,,qfis,4
 Ciphered,s2-i-f-d,Sifd,,qdfis,4
 Ciphering,s2-i-f-\-h,Sifg,,qfgis,4
 Ciphers,s2-i-f-s,Sifs,,qfis,4
+Ciphertext,s2-i-f-t-e-s,Siftx,,qfistx,4
+Ciphertexts,s2-i-f-t-e-s-s,Siftxs,,qfistx,4
 Subconscious,s-k-sh-u-s,Skzus,,qksuz,4
 Subconsciously,s-k-sh-u-s-e,Skzuse,,qeksuz,4
 Subconsciouses,s-k-sh-u-s-s,Skzuss,,qksuz,4
@@ -6376,6 +6412,7 @@ Climbing,k-l-i-m-\-h,Klimg,,qgiklm,7
 Climbs,k-l-i-m-s,Klims,,qiklms,7
 Clueless,k-l-u-l,Klul,,qklu,7
 Cluelessly,k-l-u-l-e,Klule,,qeklu,7
+Cluelessness,k-l-u-l-n-e-s,Klulnes,,qeklnsu,7
 Commandments,k-m-a-n-m-s,Kmanms,,qakmns,7
 Containerize,k-tn-r-i-s,Ktnris,,qiknrst,7
 Containerized,k-tn-r-i-s-d,Ktnrisd,,qdiknrst,7
@@ -7790,6 +7827,8 @@ Subserving,s-s-e-v-\-h,Ssevg,,qegsv,28
 Subservience,s-s-e-v-n-s,Ssevns,,qensv,28
 Subservient,s-s-e-v-nt,Ssevnt,,qenstv,28
 Subserves,s-s-e-v-s,Ssevs,,qesv,28
+Younger,u-ng-r,Ugr,,qgru,28
+Youngers,u-ng-r-s,Ugrs,,qgrsu,28
 Username/password,e-u-r-n-a-p,Urnap,,qanpru,28
 Username and password,e-u-r-n-a-p,Urnapo,o,qanopru,28
 Archive,a-r-k-i-v,Arkiv,,qaikrv,29
@@ -8147,6 +8186,8 @@ Extractionists,e-s-/-k-sh-e-s-s,Xkzxs,,qksxz,36
 Decisioned,d-s-e-sh-d,Dsezd,,qdesz,37
 Decisioning,d-s-e-sh-\-h,Dsezg,,qdegsz,37
 Decisions,d-s-e-sh-s,Dsezs,,qdesz,37
+Determined,e2-mn-d,Emnd,,qdemn,37
+Determinedly,e2-mn-d-e,Emnde,,qdemn,37
 Determining,e2-mn-\-h,Emng,,qegmn,37
 Determines,e2-mn-s,Emns,,qemns,37
 Determines,e2-mn-s,Emnsu,u,qemnsu,37
@@ -8628,6 +8669,8 @@ Impossibles,m-p-o-s-s,Mposs,,qmops,68
 Ruach,r-u-k,Ruk,,qkru,68
 Deliverable,d-l-b,Dlb,,qbdl,69
 Delivered,d-l-d,Dld,,qdl,69
+Delivery,d-l-e,Dle,,qdel,69
+Deliveries,d-l-e-s,Dles,,qdels,69
 Delivering,d-l-\-h,Dlg,,qdgl,69
 Delivers,d-l-s,Dls,,qdls,69
 Deliveries,d-l-s,Dlso,o,qdlos,69
@@ -8647,6 +8690,10 @@ Execution,e-s2-k-sh,Xkz,,qkxz,69
 Designed,d-s2-i-n-d,Dsind,,qdins,70
 Designing,d-s2-i-n-\-h,Dsing,,qdgins,70
 Designs,d-s2-i-n-s,Dsins,,qdins,70
+Redesign,r-d-s2-i-n,Rdsin,,qdinrs,70
+Redesigned,r-d-s2-i-n-d,Rdsind,,qdinrs,70
+Redesigning,r-d-s2-i-n-\-h,Rdsing,,qdginrs,70
+Redesigns,r-d-s2-i-n-s,Rdsins,,qdinrs,70
 Skilled,s2-k-l-d,Skld,,qdkls,70
 Schooled,s2-k-l-d,Skldo,o,qdklos,70
 Skilling,s2-k-l-\-h,Sklg,,qgkls,70
@@ -9404,6 +9451,7 @@ Backends,b-a-k-n-t-s,Baknts,,qabknst,168
 Engineered,n-j-n-e2-d,Njned,,qdejn,168
 Engineering,n-j-n-e2-\-h,Njneg,,qegjn,168
 Engineers,n-j-n-e2-s,Njnes,,qejns,168
+Shortest,^-sh-\-e-s,Zes,,qesz,168
 Container,k-tn-r,Ktnr,,qknrt,170
 Containers,k-tn-r-s,Ktnrs,,qknrst,170
 Overstatement,^-o-\-s2-t-m,Ostm,,qmost,170
@@ -10471,6 +10519,8 @@ Removed,r-e-m-u-d,Rmud,,qdmru,696
 Removing,r-e-m-u-\-h,Rmug,,qgmru,696
 Removes,r-e-m-u-s,Rmus,,qmrsu,696
 Clients,k-l-i-s,Klis,,qikls,700
+Client SSL Profile,k-l-i-s-p,Klisp,,qiklps,700
+Client SSL Profiles,k-l-i-s-p-s,Klisps,,qiklps,700
 Things,th-\-s2,Hz,,qhz,705
 Corrected,k-r-d,Krd,,qdkr,705
 Correcting,k-r-\-h,Krg,,qgkr,705
