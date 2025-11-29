@@ -1,0 +1,2 @@
+Set-Location C:/Users/kevin/OneDrive/Documents/GitHub/qwertigraphy/qwertigraph
+& C:/Users/kevin/OneDrive/Documents/GitHub/qwertigraphy/qwertigraph/.venv/Scripts/python.exe C:/Users/kevin/OneDrive/Documents/GitHub/qwertigraphy/qwertigraph/pychorder/qw.py

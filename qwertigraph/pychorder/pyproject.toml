@@ -1,5 +1,5 @@
 [project]
-name = "qwertigraph"
+name = "pychorder"
 version = "0.1.0"
 description = "Python text expansion using Gregg-inspired briefs"
 authors = [
@@ -7,11 +7,12 @@ authors = [
 ]
 package-mode = false
 readme = "README.md"
-requires-python = ">=3.9"
+requires-python = ">=3.14"
 dependencies = [
     "pynput (>=1.8.1,<2.0.0)",
     "python-dotenv (>=1.1.1,<2.0.0)",
-    "keyboard (>=0.13.5,<0.14.0)"
+    "keyboard (>=0.13.5,<0.14.0)",
+    "pyqt6 (>=6.10.0,<7.0.0)"
 ]
 
 

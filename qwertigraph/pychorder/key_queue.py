@@ -43,6 +43,7 @@ class Key_Queue:
             if len(key) == 1:
                 self._log.debug(f"Key {key} is a normal key")
                 self.keystroke_queue.append(key)
+                self.engine.display_hints(self.keystroke_queue)
             else:
                 self._log.debug(f"Key {key} is a control key - ignoring")
         self._log.debug(f"Queue is now {self.keystroke_queue}")

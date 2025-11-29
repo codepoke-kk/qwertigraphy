@@ -6,21 +6,19 @@ from pathlib import Path
 
 class Expansion_Engine:
     _log = get_logger('ENGINE') 
-    _last_end_key = ''
     def __init__(self, key_output):
         self.key_output = key_output
         self.dictionary_paths = os.getenv('DICTIONARY_PATHS').split(',')
         self.dictionaries = self.get_dictionaries(self.dictionary_paths)
         self._log.info(f"Loaded {len(self.dictionaries)} dictionaries")
         self.expansions = self.get_expansions(self.dictionaries)
-        self.hints = self.build_hints(self.expansions)
         # for key, expansion in self.expansions.items():
         #     self._log.debug(f"{key} = {expansion}")
         self._log.info(f"Loaded {len(self.expansions)} expansions")
-        # self.MAX_TRIGGER_LEN = max(len(k) for k in self.expansions)   # longest trigger we care about
-        # self.poll_interval = 0.05
+        self.MAX_TRIGGER_LEN = max(len(k) for k in self.expansions)   # longest trigger we care about
+        self.poll_interval = 0.05
 
-        self.enabled = True 
+        self.enabled = False 
         self._log.info('Initiated Key Input')
 
     def get_dictionaries(self, dictionary_paths):
@@ -69,49 +67,8 @@ class Expansion_Engine:
                     else:
                         # Single character keys should be proper cased
                         expansions[key.upper()] = value['word']
-        
-        ### Insert forced expansions
-        expansions["'s"] = "'s"
-        expansions["'d"] = "'d"
-        expansions["'m"] = "'m"
-        expansions["'r"] = "'re"
-        expansions["'re"] = "'re"
-        expansions["'v"] = "'ve"
-        expansions["'ve"] = "'ve"
-        expansions["'l"] = "'ll"
-        expansions["'ll"] = "'ll"
-        expansions["'t"] = "'t"
         return expansions 
 
-    def build_hints(self, expansions):
-        hints = {}
-        self._log.debug(f"Building hints from expansions")
-        for key, expansion in self.expansions.items():
-            # self._log.debug(f"{key} = {expansion}")
-            hint_key1, hint_char1 = key[:-1], key[-1]
-            if hint_key1 not in hints:
-                hints[hint_key1] = []
-            hints[hint_key1].append(hint_char1)
-            if len(hint_key1) < 2:
-                continue
-            hint_key2, hint_char2 = hint_key1[:-1], hint_key1[-1]
-            if hint_key2 not in hints:
-                hints[hint_key2] = []
-            hints[hint_key2].append(hint_char2 + hint_char1)
-
-            if len(hints) > 2000000000:
-                break
-
-        # Sort the hints for each key by length (shortest first) and alphabetically
-        for key, words in hints.items():
-            words.sort(key=lambda s: (len(s), s))
-
-        self._log.debug(f"Built hints from expansions with {len(hints)} keys")
-        # sample_keys = list(hints.keys())[:10] 
-        # for key in sample_keys:
-            # self._log.debug(f"Hint for {key}: {hints[key]}")
-        return hints
-    
     def expand_queue(self, queue, end_key):
         if not self.enabled:
             return 
@@ -119,32 +76,34 @@ class Expansion_Engine:
         qwerd = ''
         for key in queue:
             self._log.debug(f"Qwerding {key}")
-            qwerd += key
+            qwerd += key.char
         self._log.debug(f"Qwerd: {qwerd}")
         if qwerd in self.expansions:
             self._log.debug(f"Sending to keyout {qwerd}")
-            # Handle contractions
-            if self._last_end_key == "'":
-                self._log.debug(f"Prepending apostrophe to {qwerd} as contraction")
-                qwerd = f"'{qwerd}"
             self.key_output.replace_qwerd(qwerd, self.expansions[qwerd], end_key)
         else:
-            self.key_output.log_no_action(qwerd, end_key)
             self._log.debug(f"Qwerd {qwerd} not in expansions")
-        self._last_end_key = end_key
 
-    def display_hints(self, current_queue):
-        qwerd = ''.join(current_queue)
-        word = self.expansions.get(''.join(current_queue), '<none>')
-        current_hint = f"{qwerd} = {word}"
-        self._log.info(f"Displaying hints for {qwerd} as {word} to {current_hint}")
-
-        self.key_output.scribe.set_lower_text(current_hint)
-
-        if ''.join(current_queue) in self.hints:
-            hints_list = self.hints[''.join(current_queue)]
-            for hint in hints_list:
-                self._log.debug(f"Hint: {hint}")
-                self.key_output.scribe.append_to_lower(f"{hint} = {self.expansions[qwerd + hint]}")
-        else:
-            self.key_output.scribe.append_to_lower(" = ")
+    def engine_loop(self):
+        self._log.debug(f"Not looping")
+        while True:
+            try: 
+                time.sleep(20)
+                notes = self.key_output.scribe.readback_notes()
+                for note in notes:
+                    print(f"{note.key:<6}{note.word:<30}{note.end_key_str:>6}")
+            except KeyboardInterrupt:
+                print("\nStopped.")
+                break
+        
+        '''
+        while True:
+            # Look at the most recent characters (up to the longest trigger)
+            tail = ''.join(self.key_queue.keystroke_queue[-self.MAX_TRIGGER_LEN:])
+            for trigger, expansion in self.expansions.items():
+                if tail.endswith(trigger):
+                    # We have a match – hand it off to the output component
+                    self.key_output.replace_trigger(trigger, expansion)
+                    break
+            time.sleep(self.poll_interval)
+        '''
