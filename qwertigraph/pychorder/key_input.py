@@ -23,7 +23,7 @@ class Key_Input:
             keyboard.unhook(self.hook) # Remove the hook when the script is done
 
     def on_key(self, e):
-        global buffer
+        # global buffer
 
         if e.event_type == 'down':
             self._log.debug(f"Received key event: {e.name}")
