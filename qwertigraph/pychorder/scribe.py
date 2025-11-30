@@ -90,7 +90,7 @@ class Scribe:
         self._coach.append_to_upper(line)
 
     def append_to_lower(self, line: str):
-        print(f"Appending to lower via Scribe: {line}")
+        # print(f"Appending to lower via Scribe: {line}")
         self._coach.append_to_lower(line)
 
 

@@ -90,8 +90,8 @@ class Expansion_Engine:
             try: 
                 time.sleep(20)
                 notes = self.key_output.scribe.readback_notes()
-                for note in notes:
-                    print(f"{note.key:<6}{note.word:<30}{note.end_key_str:>6}")
+                # for note in notes:
+                    # print(f"{note.key:<6}{note.word:<30}{note.end_key_str:>6}")
             except KeyboardInterrupt:
                 print("\nStopped.")
                 break

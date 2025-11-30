@@ -7,12 +7,13 @@ authors = [
 ]
 package-mode = false
 readme = "README.md"
-requires-python = ">=3.14"
+requires-python = ">=3.12"
 dependencies = [
     "pynput (>=1.8.1,<2.0.0)",
     "python-dotenv (>=1.1.1,<2.0.0)",
     "keyboard (>=0.13.5,<0.14.0)",
-    "pyqt6 (>=6.10.0,<7.0.0)"
+    "pyqt6 (>=6.10.0,<7.0.0)",
+    "mouse (>=0.7.1,<0.8.0)"
 ]
 
 

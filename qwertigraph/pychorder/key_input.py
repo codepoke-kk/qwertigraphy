@@ -1,4 +1,5 @@
 import keyboard
+import mouse
 import threading
 from log_factory import get_logger
 from collections import deque
@@ -16,6 +17,8 @@ class Key_Input:
         self.failsafe = 0
 
         self.hook = keyboard.hook(self.on_key, suppress=True)
+        mouse.on_click(lambda: self.key_queue.clear_queue("Mouse left clicked"))
+        mouse.on_right_click(lambda: self.key_queue.clear_queue("Mouse right clicked"))
                 
         try:
             keyboard.wait('esc') # Wait for the 'esc' key to exit the script
@@ -26,6 +29,12 @@ class Key_Input:
         # global buffer
 
         if e.event_type == 'down':
+            any_mod = keyboard.is_pressed('ctrl') or keyboard.is_pressed('alt') or keyboard.is_pressed('windows') or keyboard.is_pressed('cmd')
+            self._log.debug(f"any_mod = {any_mod}")
+            if any_mod:
+                self._log.debug(f"Modifier key detected ({e.modifiers}), clearing queue")
+                self.key_queue.clear_queue(f"modifier key with {e.name}")
+                return True
             self._log.debug(f"Received key event: {e.name}")
             self.key_queue.push_keystroke(e.name)
             self._log.debug(f"Returning from on_key")

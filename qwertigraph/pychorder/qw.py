@@ -28,6 +28,6 @@ if __name__ == "__main__":
     # Pass queue to input, that gathers what's requested to happen 
     key_input = Key_Input(key_queue)
     # Start the listener, that collects the requests 
-    key_input.start_listener()
+    # key_input.start_listener()
     # Start the loop with the Scribe to tell me what's happened 
-    engine.engine_loop()
+    # engine.engine_loop()

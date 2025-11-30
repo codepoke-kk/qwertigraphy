@@ -14,6 +14,7 @@ class Expansion_Engine:
         self._log.info(f"Loaded {len(self.dictionaries)} dictionaries")
         self.expansions = self.get_expansions(self.dictionaries)
         self.hints = self.build_hints(self.expansions)
+        self.reverse_hints = self.build_reverse_hints(self.expansions)
         # for key, expansion in self.expansions.items():
         #     self._log.debug(f"{key} = {expansion}")
         self._log.info(f"Loaded {len(self.expansions)} expansions")
@@ -112,6 +113,22 @@ class Expansion_Engine:
             # self._log.debug(f"Hint for {key}: {hints[key]}")
         return hints
     
+    def build_reverse_hints(self, expansions):
+        reverse_hints = {}
+        self._log.debug(f"Building reverse hints from expansions")
+        for key, expansion in expansions.items():
+            # self._log.debug(f"{key} = {expansion}")
+            if expansion not in reverse_hints:
+                reverse_hints[expansion] = key
+            else:
+                # Keep the shortest key for the expansion
+                if len(key) < len(reverse_hints[expansion]):
+                    reverse_hints[expansion] = key
+
+        self._log.debug(f"Built reverse hints from expansions with {len(reverse_hints)} keys")
+        
+        return reverse_hints
+    
     def expand_queue(self, queue, end_key):
         if not self.enabled:
             return 
@@ -135,16 +152,19 @@ class Expansion_Engine:
 
     def display_hints(self, current_queue):
         qwerd = ''.join(current_queue)
-        word = self.expansions.get(''.join(current_queue), '<none>')
+        if not qwerd:
+            self.key_output.scribe.set_lower_text(" = ")
+            return
+        word = self.expansions.get(qwerd, f"<{self.reverse_hints.get(qwerd, '∅')}>")
         current_hint = f"{qwerd} = {word}"
-        self._log.info(f"Displaying hints for {qwerd} as {word} to {current_hint}")
+        # self._log.info(f"Displaying hints for {qwerd} as {word} to {current_hint}")
 
         self.key_output.scribe.set_lower_text(current_hint)
 
         if ''.join(current_queue) in self.hints:
             hints_list = self.hints[''.join(current_queue)]
             for hint in hints_list:
-                self._log.debug(f"Hint: {hint}")
+                # self._log.debug(f"Hint: {hint}")
                 self.key_output.scribe.append_to_lower(f"{hint} = {self.expansions[qwerd + hint]}")
         else:
             self.key_output.scribe.append_to_lower(" = ")

@@ -28,6 +28,17 @@ files = [
 pyobjc = {version = "*", markers = "sys_platform == \"darwin\""}
 
 [[package]]
+name = "mouse"
+version = "0.7.1"
+description = "Hook and simulate mouse events on Windows and Linux"
+optional = false
+python-versions = "*"
+groups = ["main"]
+files = [
+    {file = "mouse-0.7.1-py2.py3-none-any.whl", hash = "sha256:d34bb9548890089fcb11988400e26f55c624e6c7b741fff75fedfdfbd37c0016"},
+]
+
+[[package]]
 name = "pynput"
 version = "1.8.1"
 description = "Monitor and control user input devices"
@@ -3718,5 +3729,5 @@ files = [
 
 [metadata]
 lock-version = "2.1"
-python-versions = ">=3.14"
-content-hash = "6d5dcf86ad23859202bc5befb2ea935c44615efe0805df6e4d3ded501456c91b"
+python-versions = ">=3.12"
+content-hash = "f0075b9fac8d98b4c0f82a2245422ad3625538ae92b2fb87b672abacf5c0d5ab"
