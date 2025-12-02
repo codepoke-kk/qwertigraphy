@@ -8,7 +8,7 @@ from multiprocessing.managers import BaseManager
 # Qt imports
 # ----------------------------------------------------------------------
 from PyQt6.QtWidgets import QApplication, QWidget, QVBoxLayout, QTextEdit
-from PyQt6.QtCore import Qt, QTimer
+from PyQt6.QtCore import Qt, QTimer, QRect
 
 # ----------------------------------------------------------------------
 # The real UI widget (runs in the main thread)
@@ -17,7 +17,8 @@ class Coach_Viewport(QWidget):
     def __init__(self):
         super().__init__()
         self.setWindowTitle("Coach")
-        self.resize(180, 600)               # width=100, height=600 (pixels)
+        self.desired_width = 180
+        self.resize(self.desired_width, 600)  
         layout = QVBoxLayout(self)
         layout.setContentsMargins(0, 0, 0, 0)   # no extra margins
         layout.setSpacing(0)                   # panes touch each other
@@ -28,6 +29,38 @@ class Coach_Viewport(QWidget):
         self.lower = QTextEdit(self)
         self._configure_text_edit(self.lower)
         layout.addWidget(self.lower)
+
+        # Position the window in the upper‑right corner
+        self.position_in_upper_right()
+
+    def position_in_upper_right(self):
+        """
+        Moves the widget to the top‑right corner of the primary screen,
+        stretching it vertically to fill the available screen height
+        (excluding task‑bars, docks, etc.).
+        """
+        # Grab the primary screen (the one where the mouse cursor currently lives)
+        screen = QApplication.primaryScreen()
+        if not screen:
+            # Fallback – just keep the default geometry if we can’t get a screen
+            return
+
+        # This rectangle excludes system UI such as the task bar / dock
+        avail_geom: QRect = screen.availableGeometry()
+
+        # Compute the geometry we want:
+        #   x = right edge of available area - desired width
+        #   y = top edge of available area (usually 0)
+        #   w = desired width
+        #   h = full height of the available area
+        x = avail_geom.right() - self.desired_width + 1   # +1 because right() is inclusive
+        y = avail_geom.top()
+        w = self.desired_width
+        h = avail_geom.height()
+
+        # Apply the geometry
+        self.setGeometry(x, y, w, h)
+
 
     @staticmethod
     def _configure_text_edit(edit: QTextEdit):

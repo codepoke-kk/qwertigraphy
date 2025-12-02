@@ -36,23 +36,43 @@ class Expansion_Engine:
 
         result: dict[str, dict] = {}
 
-        # Open the file – `newline=''` lets csv handle newlines correctly
-        with open(dictionary_path, newline='', encoding="utf-8") as f:
-            reader = csv.DictReader(f, fieldnames=[
-                "word", "form", "qwerd", "keyer", "chord", "usage"
-            ])
+        if dictionary_path.endswith('csv'):
+            # Open the file – `newline=''` lets csv handle newlines correctly
+            with open(dictionary_path, newline='', encoding="utf-8") as f:
+                reader = csv.DictReader(f, fieldnames=[
+                    "word", "form", "qwerd", "keyer", "chord", "usage"
+                ])
 
-            for row in reader:
-                # Skip completely empty rows (e.g., trailing newline)
-                if not any(row.values()):
-                    continue
+                for row in reader:
+                    # Skip completely empty rows (e.g., trailing newline)
+                    if not any(row.values()):
+                        continue
 
-                # The key we want to index by
-                key = row["qwerd"]
+                    # The key we want to index by
+                    key = row["qwerd"]
 
-                # Store a shallow copy so later modifications don’t affect the
-                # original row reference held by the CSV reader.
-                result[key] = dict(row)
+                    # Store a shallow copy so later modifications don’t affect the
+                    # original row reference held by the CSV reader.
+                    result[key] = dict(row)
+        else:
+            with open(dictionary_path, 'r', encoding="utf-8") as f:
+                for line in f:
+                    line = line.strip()
+                    if not line.startswith('CoachBrief'):
+                        continue
+                    parts = line.split('"')
+                    if len(parts) != 7:
+                        self._log.warning(f"Skipping malformed line in {dictionary_path}: {line}")
+                        continue
+                    this_key = parts[1].strip().capitalize()
+                    word = parts[3].strip().capitalize()
+                    shortest_key = parts[5].strip().capitalize()
+                    if this_key not in result:
+                        row = {"word": word, "form": "", "qwerd": this_key, "keyer": "", "chord": "", "usage": ""}
+                        result[this_key] = row
+                    if shortest_key not in result:
+                        row = {"word": word, "form": "", "qwerd": shortest_key, "keyer": "", "chord": "", "usage": ""}
+                        result[shortest_key] = row
 
         return result
 
