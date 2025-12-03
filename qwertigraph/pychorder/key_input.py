@@ -33,15 +33,8 @@ class Key_Input:
             hk = keyboard.add_hotkey(combo, cb, suppress=True)
             self.registered_chords.append(hk)
             self._log.debug(f"Registered hotkey: '{combo}' → {token}")
-                
-        try:
-            keyboard.wait('esc') # Wait for the 'esc' key to exit the script
-            print("Esc key pressed, exiting key input listener.")
-        except KeyboardInterrupt:
-            print("KeyboardInterrupt received, exiting key input listener.")
-        finally:
-            keyboard.unhook(self.hook) # Remove the hook when the script is done
-            print("Key input listener stopped.")
+
+        self.start_listening
 
     def chord_handler(self, token: str):
         self._log.info(f"Chord detected → {token}")
@@ -68,3 +61,10 @@ class Key_Input:
             self._log.debug(f"Returning from on_key")
         return True
 
+    def start_listening(self):
+        self.hook = keyboard.hook(self.on_key, suppress=True)
+        self._log.info("Started keyboard listener")
+
+    def stop_listening(self):
+        keyboard.unhook(self.hook)
+        self._log.info("Unhooked keyboard listener")    

@@ -60,7 +60,7 @@ def get_logger(class_abbr: str) -> logging.LoggerAdapter:
     # Expected env var: LOG_LEVEL_<ABBR>, e.g. LOG_LEVEL_DB=DEBUG
     env_key = f"LOG_LEVEL_{class_abbr.upper()}"
     level_name = os.getenv(env_key, "INFO").upper()
-    print(f"Setting log level for {class_abbr} to {env_key} as {level_name}")
+    # print(f"Setting log level for {class_abbr} to {env_key} as {level_name}")
     level = getattr(logging, level_name, logging.INFO)
 
     # Create a child logger so we can set a per‑class level without affecting others.

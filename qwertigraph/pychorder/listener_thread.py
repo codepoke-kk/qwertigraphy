@@ -1,17 +1,21 @@
 import logging
-from PyQt6.QtCore import QThread, pyqtSignal, QObject
+from PyQt6.QtCore import QThread, pyqtSignal, QObject, pyqtSlot, QEventLoop
+import uuid
+from log_factory import get_logger   # keep your existing logger factory
 
 # -----------------------------------------------------------------
 # 1️⃣  A tiny QObject that emits signals from the listener
 # -----------------------------------------------------------------
 class ListenerSignals(QObject):
-    """
-    Signals that the background listener can emit.
-    Extend with more signals as you need (e.g. speed updates, error reports).
-    """
+    # Emitted by the UI to request actions from the listener.
+    start_requested = pyqtSignal() 
+    stop_requested = pyqtSignal() 
+    # Emitted by the listener to notify the UI of various events.
     speed_changed = pyqtSignal(int)          # example: emit new speed value
     engine_started = pyqtSignal()
     engine_stopped = pyqtSignal()
+    needCredentials = pyqtSignal(str)          # request ID
+    gotCredentials = pyqtSignal(dict)          # {"id": ..., "data": {...}}
     # You can also add a generic `debug(str)` signal if you want to forward
     # log messages to the UI.
 
@@ -25,18 +29,25 @@ class ListenerThread(QThread):
     The thread lives as long as `run()` does; when `quit()` is called,
     we ask the listener to shut down gracefully.
     """
+    
+    _log: logging.Logger = get_logger("THREAD")
+
     def __init__(self, key_queue, parent=None):
         super().__init__(parent)
         self.signals = ListenerSignals()
         self._key_queue = key_queue
         self._stop_requested = False
 
+        # Connect the UI‑to‑listener request to a slot that runs in this thread
+        self.signals.start_requested.connect(self._handle_start_request)
+        self.signals.stop_requested.connect(self._handle_stop_request)
+
         # Keep a reference to the objects we need to build the listener.
         # They will be created **inside** the thread (in run()).
         self._key_input = None
 
         # Logger – we reuse the same global logger you already have.
-        self._log = logging.getLogger("QW.ListenerThread")
+        self._log.info("Initialized ListenerThread")
 
     # -----------------------------------------------------------------
     # The heavy lifting – this runs in the *worker* thread.
@@ -46,12 +57,9 @@ class ListenerThread(QThread):
         Build the whole listener chain and block on `keyboard.wait('esc')`.
         When the user hits ESC (or we set `_stop_requested`), we clean up.
         """
-        self._log.info("Listener thread started")
+        self._log.info("Listener thread to run")
 
-        # -----------------------------------------------------------------
-        # Build the same pipeline you had in the UI code, but **inside** the thread.
-        # -----------------------------------------------------------------
-        from key_input import Key_Input          # <-- your existing class
+        from key_input import Key_Input        
         from key_output import Key_Output
         from engine import Expansion_Engine
         from scribe import Scribe
@@ -86,6 +94,7 @@ class ListenerThread(QThread):
         engine.notify_start = lambda: self.signals.engine_started.emit()
         engine.notify_stop  = lambda: self.signals.engine_stopped.emit()
 
+        self._log.info("Listener thread setup complete")
         # -----------------------------------------------------------------
         # Finally start the Key_Input listener (this blocks until ESC or stop)
         # -----------------------------------------------------------------
@@ -97,6 +106,52 @@ class ListenerThread(QThread):
         # No explicit `unhook` needed – `Key_Input.__del__` already does it,
         # but you can call it manually if you added a custom shutdown method.
 
+    @pyqtSlot()
+    def _handle_start_request(self):
+        self._log.info("Listener received start request from Main Window – starting engine")
+        self._key_input.start_listening()
+        # ---- INSERT YOUR ENGINE‑STOP LOGIC HERE ----
+        # Example: self.engine_controller.stop()
+        # -------------------------------------------
+
+        # If you later want to inform the UI that the engine *has* stopped,
+        # you can emit `self.engine_stopped.emit()` here.
+        # For now we leave it silent as you requested.
+
+    @pyqtSlot()
+    def _handle_stop_request(self):
+        self._log.info("Listener received stop request from Main Window – shutting down engine")
+        self._key_input.stop_listening()
+        # ---- INSERT YOUR ENGINE‑STOP LOGIC HERE ----
+        # Example: self.engine_controller.stop()
+        # -------------------------------------------
+
+        # If you later want to inform the UI that the engine *has* stopped,
+        # you can emit `self.engine_stopped.emit()` here.
+        # For now we leave it silent as you requested.
+
+
+
+    # ------------------------------------------------------------------
+    # Helper that asks the GUI for the current values and blocks until they arrive
+    # ------------------------------------------------------------------
+    def _fetch_credentials(self) -> dict:
+        request_id = str(uuid.uuid4())
+        # Connect a temporary slot that will capture the response for this ID
+        loop = QEventLoop()                     # local event loop to block
+
+        @pyqtSlot(dict)
+        def _on_reply(payload: dict):
+            if payload.get("id") == request_id:
+                self._latest_creds = payload["data"]
+                loop.quit()                     # stop waiting
+
+        self.gotCredentials.connect(_on_reply)
+        self.needCredentials.emit(request_id)   # ask the GUI
+        loop.exec()                             # wait until reply arrives
+        self.gotCredentials.disconnect(_on_reply)
+        return self._latest_creds
+    
     # -----------------------------------------------------------------
     # Public method to request a graceful shutdown from the UI thread.
     # -----------------------------------------------------------------

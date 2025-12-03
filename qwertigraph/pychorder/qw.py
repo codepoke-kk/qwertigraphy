@@ -1,15 +1,10 @@
 # GUI imports
 import sys
 from PyQt6.QtWidgets import (
-    QApplication,
-    QMainWindow,
-    QWidget,
-    QVBoxLayout,
-    QHBoxLayout,
-    QLabel,
-    QPushButton,
+    QApplication, QMainWindow, QWidget, QVBoxLayout, QHBoxLayout, 
+    QLabel, QPushButton, QLineEdit, QGridLayout
 )
-from PyQt6.QtCore import Qt, pyqtSlot
+from PyQt6.QtCore import Qt, pyqtSlot, pyqtSignal, QObject
 
 # Engine imports
 import os
@@ -26,6 +21,10 @@ _QW_LOG = get_logger("QW")
 
 class MainWindow(QMainWindow):
     """Main application window."""
+    # Signal emitted by the listener when it needs the credentials.
+    # The listener sends a request; the GUI replies with the data.
+    requestCredentials = pyqtSignal(str)          # argument = request ID
+    provideCredentials = pyqtSignal(dict)         # dict contains the values
 
     def __init__(self) -> None:
         super().__init__()
@@ -68,6 +67,40 @@ class MainWindow(QMainWindow):
         self.btn_stop.clicked.connect(self.stop_engine)
         h_btns.addWidget(self.btn_stop)
 
+
+        # ---------------------------------------------------------
+        # 3️⃣  Grid layout for credentials (placed *under* the buttons)
+        # ---------------------------------------------------------
+        cred_grid = QGridLayout()
+        cred_grid.setHorizontalSpacing(10)
+        cred_grid.setVerticalSpacing(5)
+
+        # Row 0 – Credential A
+        cred_grid.addWidget(QLabel("Credential A:", self), 0, 0)
+        self.le_user_a = QLineEdit(self)          # username field
+        cred_grid.addWidget(self.le_user_a, 0, 1)
+        self.le_pass_a = QLineEdit(self)          # password field
+        self.le_pass_a.setEchoMode(QLineEdit.EchoMode.Password)
+        cred_grid.addWidget(self.le_pass_a, 0, 2)
+
+        # Row 1 – Credential B
+        cred_grid.addWidget(QLabel("Credential B:", self), 1, 0)
+        self.le_user_b = QLineEdit(self)
+        cred_grid.addWidget(self.le_user_b, 1, 1)
+        self.le_pass_b = QLineEdit(self)
+        self.le_pass_b.setEchoMode(QLineEdit.EchoMode.Password)
+        cred_grid.addWidget(self.le_pass_b, 1, 2)
+
+        # Row 2 – Credential C
+        cred_grid.addWidget(QLabel("Credential C:", self), 2, 0)
+        self.le_user_c = QLineEdit(self)
+        cred_grid.addWidget(self.le_user_c, 2, 1)
+        self.le_pass_c = QLineEdit(self)
+        self.le_pass_c.setEchoMode(QLineEdit.EchoMode.Password)
+        cred_grid.addWidget(self.le_pass_c, 2, 2)
+
+        # Add the grid to the main vertical layout
+        v_layout.addLayout(cred_grid)
         # ---------------------------------------------------------
         # Optional: make the Start button disabled initially (engine on)
         # ---------------------------------------------------------
@@ -99,14 +132,16 @@ class MainWindow(QMainWindow):
         _QW_LOG.info("Starting Engine")
         self.btn_start.setEnabled(False)
         self.btn_stop.setEnabled(True)
-        # TODO: insert the code that actually starts your engine here
+
+        self.listener_thread.signals.start_requested.emit()
 
     def stop_engine(self) -> None:
         """Called when the user clicks “Stop Engine”. """
         _QW_LOG.info("Stopping Engine")
         self.btn_start.setEnabled(True)
         self.btn_stop.setEnabled(False)
-        # TODO: insert the code that actually stops your engine here
+        
+        self.listener_thread.signals.stop_requested.emit()
 
     # -----------------------------------------------------------------
     # Slots that react to signals emitted from the listener thread
@@ -125,6 +160,22 @@ class MainWindow(QMainWindow):
     def on_engine_stopped(self) -> None:
         """Optional: react to a signal that the engine has stopped."""
         _QW_LOG.info("Engine reported STOPPED (via signal)")
+        
+    # ------------------------------------------------------------------
+    # Slot that runs in the GUI thread and gathers the current field values
+    # ------------------------------------------------------------------
+    def _handle_credential_request(self, req_id: str):
+        creds = {
+            "a_user":  self.le_user_a.text(),
+            "a_pass":  self.le_pass_a.text(),
+            "b_user":  self.le_user_b.text(),
+            "b_pass":  self.le_pass_b.text(),
+            "c_user":  self.le_user_c.text(),
+            "c_pass":  self.le_pass_c.text(),
+        }
+        # Emit the data back to the listener, tagging it with the same ID
+        self.provideCredentials.emit({"id": req_id, "data": creds})
+
     # -----------------------------------------------------------------
     # Clean shutdown – called automatically when the window closes
     # -----------------------------------------------------------------
