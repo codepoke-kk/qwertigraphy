@@ -3,11 +3,13 @@ from log_factory import get_logger
 import os
 import csv
 from pathlib import Path
+from engine_signal_proxy import EngineSignalProxy
 
 class Expansion_Engine:
     _log = get_logger('ENGINE') 
     _last_end_key = ''
-    def __init__(self, key_output):
+    def __init__(self, key_output, engine_signals: 'EngineSignalProxy'):
+        self.engine_signals = engine_signals
         self.key_output = key_output
         self.dictionary_paths = os.getenv('DICTIONARY_PATHS').split(',')
         self.dictionaries = self.get_dictionaries(self.dictionary_paths)
@@ -21,8 +23,12 @@ class Expansion_Engine:
         # self.MAX_TRIGGER_LEN = max(len(k) for k in self.expansions)   # longest trigger we care about
         # self.poll_interval = 0.05
 
-        self.enabled = True 
-        self._log.info('Initiated Key Input')
+        self.expansion_count = 0
+        self.characters_input = 0
+        self.characters_output = 0
+        self.seconds_typing = 0.0
+
+        self._log.info('Initiated Engine')
 
     def get_dictionaries(self, dictionary_paths):
         self._log.info(f"Loading entries from {len(dictionary_paths)} dictionaries")
@@ -149,15 +155,17 @@ class Expansion_Engine:
         
         return reverse_hints
     
-    def expand_queue(self, queue, end_key):
-        if not self.enabled:
-            return 
+    def expand_queue(self, queue, end_key, elapsed_time: float = 0.0):
         self._log.debug(f"Checking and expanding queue {queue} upon {end_key}")
+
+        # Build the qwerd from the queue
         qwerd = ''
         for key in queue:
             self._log.debug(f"Qwerding {key}")
             qwerd += key
         self._log.debug(f"Qwerd: {qwerd}")
+
+
         if qwerd in self.expansions:
             self._log.debug(f"Sending to keyout {qwerd}")
             # Handle contractions
@@ -165,12 +173,32 @@ class Expansion_Engine:
                 self._log.debug(f"Prepending apostrophe to {qwerd} as contraction")
                 qwerd = f"'{qwerd}"
             self.key_output.replace_qwerd(qwerd, self.expansions[qwerd], end_key)
+            this_characters_input = len(qwerd) + 1
+            this_characters_output = len(self.expansions[qwerd]) + 1 
+            self.expansion_count += 1
         else:
-            self.key_output.log_no_action(qwerd, end_key)
-            self._log.debug(f"Qwerd {qwerd} not in expansions")
+            if qwerd in self.reverse_hints:
+                word = qwerd 
+                self._log.debug(f"Qwerd {qwerd} not found, but reverse hint exists: {self.reverse_hints[qwerd]}")
+                self.key_output.log_no_action(f"<{self.reverse_hints[qwerd]}>", word, end_key)
+                this_characters_output = this_characters_input = len(word) + 1
+            else:
+                self._log.debug(f"Qwerd {qwerd} not in expansions")
+                self.key_output.log_no_action(qwerd, qwerd, end_key)
+                this_characters_output = this_characters_input = len(qwerd) + 1
+            
+        # Update performance metrics
+        self.characters_input += this_characters_input
+        self.characters_output += this_characters_output
+        self.seconds_typing += elapsed_time
+        wpm_input = (self.characters_input / 5) / (self.seconds_typing / 60) if self.seconds_typing > 0 else 0.0
+        wpm_output = (self.characters_output / 5) / (self.seconds_typing / 60) if self.seconds_typing > 0 else 0.0
+        self.engine_signals.emit_performance_updated(f"{self.characters_input}/{self.characters_output} chars at {wpm_input :.1f}/{wpm_output:.1f} WPM for {self.expansion_count} expansions in {self.seconds_typing :.1f} seconds")
+
         self._last_end_key = end_key
 
     def display_hints(self, current_queue):
+        # This is where the text of the hints gets built and sent to the scribe.
         qwerd = ''.join(current_queue)
         if not qwerd:
             self.key_output.scribe.set_lower_text(" = ")

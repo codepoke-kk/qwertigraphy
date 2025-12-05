@@ -30,7 +30,7 @@ def launch_coach():
     return proc
 
 class Scribe:
-    _log = get_logger('SCR')
+    _log = get_logger('SCRIBE')
     _tape_log = get_logger('TAPE')
     _coach_proxy = None
     _coach_process = None

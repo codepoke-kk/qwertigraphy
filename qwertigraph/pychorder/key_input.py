@@ -4,28 +4,35 @@ import threading
 from log_factory import get_logger
 from collections import deque
 from chorder import Chorder
+from engine_signal_proxy import EngineSignalProxy
 
 class Key_Input:
     _log = get_logger('KEYIN')
-    _chorder = Chorder()
 
-    def __init__(self, key_queue):
+    def __init__(self, key_queue, engine_signals: 'EngineSignalProxy'):
+        self.engine_signals = engine_signals
         self.key_queue = key_queue
         self.emitable_end_keys = deque()
         self.next_end_key = ''
         self.blockable_normal_keys = deque()
         self.next_normal_key = ''
-        self._log.info('Initiated Key Input')
         self.failsafe = 0
 
-        self.hook = keyboard.hook(self.on_key, suppress=True)
+        self.hook = None
         mouse.on_click(lambda: self.key_queue.clear_queue("Mouse left clicked"))
         mouse.on_right_click(lambda: self.key_queue.clear_queue("Mouse right clicked"))
                 
+        self._chorder = Chorder(self.engine_signals)
         self.CHORD_MAP = {
-            "b+1": {"keys": 2, "backspaces": 1, "function": "output_base_password"},
-            "b+2": {"keys": 2, "backspaces": 1, "function": "output_base_username_password"},
-            "b+3": {"keys": 2, "backspaces": 1, "function": "new_base_password"}
+            "b+1": {"keys": 2, "backspaces": 1, "function": "output_password_a"},
+            "b+2": {"keys": 2, "backspaces": 1, "function": "output_username_password_a"},
+            "b+3": {"keys": 2, "backspaces": 1, "function": "output_username_a"},
+            "b+4": {"keys": 2, "backspaces": 1, "function": "output_password_b"},
+            "b+5": {"keys": 2, "backspaces": 1, "function": "output_username_password_b"},
+            "b+6": {"keys": 2, "backspaces": 1, "function": "output_username_b"},
+            "b+7": {"keys": 2, "backspaces": 1, "function": "output_password_c"},
+            "b+8": {"keys": 2, "backspaces": 1, "function": "output_username_password_c"},
+            "b+9": {"keys": 2, "backspaces": 1, "function": "output_username_c"}
         }
         self.registered_chords = []
         for combo, token in self.CHORD_MAP.items():
@@ -34,17 +41,17 @@ class Key_Input:
             self.registered_chords.append(hk)
             self._log.debug(f"Registered hotkey: '{combo}' → {token}")
 
-        self.start_listening
+        self._log.info('Initiated Key Input')
 
     def chord_handler(self, token: str):
         self._log.info(f"Chord detected → {token}")
         for _ in range(token['backspaces']):
             keyboard.send("backspace") # Remove all keypresses from the focused application 
-        keyboard.unhook(self.hook) # Temporarily unhook to avoid recursion
-        print("Temporarily unhooked keyboard to handle chord")
         self.key_queue.clear_queue("Chord detected")
+        keyboard.unhook(self.hook) # Temporarily unhook to avoid recursion
         self._chorder.handle_token(token)
-        # self.hook = keyboard.hook(self.on_key, suppress=True)
+        self.hook = keyboard.hook(self.on_key, suppress=True)
+        self._log.debug("Chord handled")
 
     def on_key(self, e):
         # global buffer
@@ -61,10 +68,23 @@ class Key_Input:
             self._log.debug(f"Returning from on_key")
         return True
 
-    def start_listening(self):
+    def start_listening(self) -> None:
         self.hook = keyboard.hook(self.on_key, suppress=True)
         self._log.info("Started keyboard listener")
+        # Notify the owner (the ListenerThread) the hook is active
+        self.engine_signals.emit_started()
 
-    def stop_listening(self):
-        keyboard.unhook(self.hook)
-        self._log.info("Unhooked keyboard listener")    
+    def stop_listening(self) -> None:
+        """Remove the keyboard hook and announce the stop."""
+        if self.hook is not None:
+            keyboard.unhook(self.hook)
+            self.hook = None
+            self._log.info("Unhooked keyboard listener")
+        else:
+            self._log.warning("stop_listening called but no hook was active")
+        # Notify the owner (the ListenerThread) the unhook succeeded
+        self.engine_signals.emit_stopped()
+        
+    def credentials_updated(self, new_credentials: dict):
+        self._log.info(f"Received updated credentials: {new_credentials}")
+        self._chorder._vaulter.update_credentials(new_credentials)

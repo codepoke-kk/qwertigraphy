@@ -20,6 +20,6 @@ class Key_Output:
         self._log.debug(f"Recording note {qwerd}")
         self.scribe.record_note(qwerd, expansion, end_key)
 
-    def log_no_action(self, qwerd, end_key):
-        self._log.debug(f"No expansion for {qwerd}, ending with {end_key}")
-        self.scribe.record_note(qwerd, qwerd, end_key) 
+    def log_no_action(self, qwerd, word, end_key):
+        self._log.debug(f"No expansion for {qwerd} to {word}, ending with {end_key}")
+        self.scribe.record_note(qwerd, word, end_key) 

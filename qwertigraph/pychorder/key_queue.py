@@ -1,6 +1,6 @@
 
 from log_factory import get_logger
-import keyboard 
+import time 
 
 class Key_Queue:
     _log = get_logger('KEYQ') 
@@ -31,13 +31,24 @@ class Key_Queue:
     def __init__(self, engine):
         self.engine = engine 
         self.keystroke_queue = []
-        self._log.info('Initiated Key Input')
+        self.start_stamp = time.monotonic()
+        self._log.info('Initiated Key Queue')
 
     def push_keystroke(self, key):
         self._log.debug(f"Pushing {key}")
+        # Reset the timer if the queue was empty AND it's been more than 5 seconds since the last send
+        if not self.keystroke_queue:
+            new_start_time = time.monotonic()
+            if new_start_time - self.start_stamp > 5.0:
+                self.start_stamp = time.monotonic()
+            self._log.debug(f"Queue was empty, set start_stamp to {self.start_stamp}")
+
         if key in self.end_keys:
             self._log.debug(f"Key {key} is an end key")
-            self.engine.expand_queue(self.keystroke_queue, key)
+            end_stamp = time.monotonic()
+            self.engine.expand_queue(self.keystroke_queue, key, (end_stamp - self.start_stamp))
+            # Reset the queue and timer
+            self.start_stamp = end_stamp
             self.keystroke_queue = []
         else:
             if len(key) == 1:

@@ -3,6 +3,8 @@ import sys
 import threading
 import queue   # standard library, works inside a single process
 from multiprocessing.managers import BaseManager
+from pathlib import Path
+from PyQt6.QtGui import QIcon
 
 # ----------------------------------------------------------------------
 # Qt imports
@@ -17,6 +19,11 @@ class Coach_Viewport(QWidget):
     def __init__(self):
         super().__init__()
         self.setWindowTitle("Coach")
+        icon_path = Path(__file__).with_name("coach.ico")   # same folder as script
+        if icon_path.is_file():
+            self.setWindowIcon(QIcon(str(icon_path)))
+        else:
+            print(f"⚠️  Icon not found: {icon_path}")
         self.desired_width = 180
         self.resize(self.desired_width, 600)  
         layout = QVBoxLayout(self)
