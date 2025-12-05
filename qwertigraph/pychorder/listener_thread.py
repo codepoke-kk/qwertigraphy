@@ -90,7 +90,12 @@ class ListenerThread(QThread):
     # Messages from the UI to start/stop the engine
     @pyqtSlot()
     def _handle_start_request(self):
-        self._log.info("Listener received start request from Main Window – starting engine")
+        self._log.info("Listener received start request from Main Window - rebuilding dictionaries and hints")
+        self._engine.dictionaries = self._engine.get_dictionaries(self._engine.dictionary_paths)
+        self._engine.expansions = self._engine.get_expansions(self._engine.dictionaries)
+        self._engine.hints = self._engine.build_hints(self._engine.expansions)
+        self._engine.reverse_hints = self._engine.build_reverse_hints(self._engine.expansions)
+        self._log.info("Listener rebuilt dictionaries - starting engine")
         self._key_input.start_listening()
 
     @pyqtSlot()

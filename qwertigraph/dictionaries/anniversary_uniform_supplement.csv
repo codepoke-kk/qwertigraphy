@@ -801,6 +801,7 @@ Explained,e-pl-d,Epld,,qdelp,0
 Explaining,e-pl-\-h,Eplg,,qeglp,0
 Explains,e-pl-s,Epls,,qelps,0
 Explanation,e-pl-sh,Eplz,,qelpz,0
+Epaulettes,e-p-o-l-e-t-s,Epolets,,qelopst,0
 Equanimity,e-k-a-n-\-mt,Eqanmt,,qaemnqt,0
 Equate,e-k-a-t,Eqat,,qaeqt,0
 Equator,e-k-a-t-e2,Eqate,,qaeqt,0
@@ -2520,6 +2521,7 @@ Plagiarizes,pl-a-j-r-i-s-s,Plajriss,,qaijlprs,0
 Plagiarism,pl-a-j-r-s-m,Plajrsm,,qajlmprs,0
 Plagiarisms,pl-a-j-r-s-m-s,Plajrsms,,qajlmprs,0
 Placably,p-l-a-k-b-e,Plakbe,,qabeklp,0
+Pauline,pl-e-n,Plen,,qelnp,0
 Plenipotentiary,pl-e-n-e-p,Plenep,,qelnp,0
 Pliable,pl-i-b,Plib,,qbilp,0
 Pliably,pl-i-b-e,Plibe,,qbeilp,0
@@ -7204,6 +7206,7 @@ Deprecating,d-pr-e-k-\-h,Dprekg,,qdegkpr,14
 Deprecates,d-pr-e-k-s,Dpreks,,qdekprs,14
 Deprecation,d-pr-e-k-sh,Dprekz,,qdekprz,14
 Essentially,e-s2-n-sh-e,Esnze,,qensz,14
+Great pleasures,g-r-p-s,Grps,,qgprs,14
 Heavily,^-h-\-e-v-ye,Hevy,,qehvy,14
 Joked,j-o-k-d,Jokd,,qdjko,14
 Joking,j-o-k-\-h,Jokg,,qgjko,14
@@ -8258,6 +8261,10 @@ Million,m-e-l-n,Meln,,qelmn,38
 Millionaire,m-e-l-n-a2,Melna,,qaelmn,38
 Millionaires,m-e-l-n-a2-s,Melnas,,qaelmns,38
 Millions,m-e-l-n-s,Melns,,qelmns,38
+Paperweight,p-a-pr-a-t,Paprat,,qaprt,38
+Paperweighted,p-a-pr-a-t-d,Papratd,,qadprt,38
+Paperweighting,p-a-pr-a-t-\-h,Papratg,,qagprt,38
+Paperweights,p-a-pr-a-t-s,Paprats,,qaprst,38
 Papered,p-a-pr-d,Paprd,,qadpr,38
 Papering,p-a-pr-\-h,Paprg,,qagpr,38
 Qwertigraph,k-a-u,Qw,,qqw,38
@@ -10690,6 +10697,13 @@ Singles,s2-e-ng-l-s,Segls,,qegls,874
 Single,s2-e-ng,Sego,o,qegos,874
 Sings,s2-e-ng-s,Segs,,qegs,874
 Singles,s2-e-ng-s,Segso,o,qegos,874
+Prestidigitate,p-r-e-s-d-j-t-a,Presdjta,,qadejprst,876
+Prestidigitated,p-r-e-s-d-j-t-a-d,Presdjtad,,qadejprst,876
+Prestidigitating,p-r-e-s-d-j-t-a-\-h,Presdjtag,,qadegjprst,876
+Prestidigitator,p-r-e-s-d-j-t-a-r,Presdjtar,,qadejprst,876
+Prestidigitators,p-r-e-s-d-j-t-a-r-s,Presdjtars,,qadejprst,876
+Prestidigitates,p-r-e-s-d-j-t-a-s,Presdjtas,,qadejprst,876
+Prestidigitation,p-r-e-s-d-j-t-a-sh,Presdjtaz,,qadejprstz,876
 Filing,f-i-l-\-h,Filg,,qfgil,890
 Files,f-i-l-s,Fils,,qfils,890
 Profile,pr-f-i-l,Prfil,,qfilpr,890
