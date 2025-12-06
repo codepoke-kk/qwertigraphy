@@ -10,7 +10,7 @@ class Key_Queue:
     # But also keep a combined list for lookups 
     end_keys = stop_keys_special 
 
-    stop_keys_normal_str = '\'".,?!;:_{}()[]/\+=|()@#$%^*<>' # Not: &
+    stop_keys_normal_str = '\'".,?!;:_{}()[]/\\+=|()@#$%^*<>' # Not: &
     stop_keys_normal_array = list(stop_keys_normal_str)
     stop_keys_normal = {}
     for end_key in stop_keys_normal_array:

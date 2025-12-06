@@ -37,11 +37,34 @@ The Qwertigraph will support your preferred theory, after a dictionary of qwerds
 
 For the remainder of this documentation, I will be giving examples using Gregg Theory. 
 
-### The Dashboard: 
-The Dashboard is always available to tell you how you're doing and what you're about to do. 
+### The Coach: 
+The Coach is always available to tell you what you could type, what you have typed, and what you could type better. 
 
-As of this writing, the dashboard always sits to the far right of the primary screen. If you need that modified, you'll have to write the change yourself or write me and request it. The code stubs are there, but I'm happy with it the way it is. 
+As of this writing, the Coach always sits to the far right of the primary screen. If you need that modified, you'll have to write the change yourself or write me and request it. The code stubs are there, but I'm happy with it the way it is. 
 
+### The Dashboard
+The Dashboard lets you stop/start (and reload dictionaries) for the Qwertigraph. It also lets you store up to 3 username/password combinations. You access those by chording b1-9. I'm still tinkering with those, so I won't document it yet. Play with it to figure out which is which. 
+
+#### But didn't I mention taking faster notes with a pen?
+
+You will quickly learn the qwerd for the word, "and". In Qwertigraphy, that's typed "nt". It only saves one keystroke, but it does so 50 times a day for the rest of your life. Once you have "and" committed to automatic response memory, you can begin using it in your pen writing just as easily. In longhand, the word "and" requires 7 joined pen-strokes (if you're not too fancy.) Writing just "nt" instead takes your pen-load down to only 5 strokes. It's a gain. 
+
+Gregg Shorthand reduces the "nt" of "and" to a single pen-stroke. That's 86% of your life back.
+
+Once you've learned the Qwertigraphy representation of any word, you can take a quick look at the Dashboard learn to its Gregg shorthand representation. A hard-working longhand writer will usually take their notes at something like 25 words per minute. With Gregg, 100 WPM will be well within your reach, and the best shorthand users exceed 200 WPM. Learn Gregg, and writing will become so much fun you'll be tempted to start writing more valuable notes, notes filled with a ton more detail. 
+
+*Qwertigraphy cannot be held responsible for such self-abuse, but it's a risk you'll have to take.*
+
+Next: [How to Qwertigraph](https://github.com/codepoke-kk/qwertigraphy/blob/master/HowQwertigraph.md)
+
+# The rest of this is old....
+
+### I've replaced the AutoHotKey Qwertigraph with the PyChorder Qwertigraph. 
+
+The new tool is written in Python, so it's theoretically no longer stuck to Windows. I've not tried it on any other platform, so you might want to avoid trying it unless you're up for some building/fixing.
+
+
+### Ignore from here 
 You can do 2 things to the dashboard:
 - Display: Press Win-Alt-D to toggle its visibility. If you don't like it, WAD will hide it. If you want it back, hit WAD again. 
 - Find: Press Win-Alt-F to find the Dashboard. The Dashboard is not set to "always visible", so various windows can and will hide it. Any window set to full screen will always hide the Dashboard. I find this the best setting. If all the windows you have on the primary screen are in window mode, hitting WAF will rearrange them off to the left such that the Dashboard is visible. It can be a little annoying to have to do this, but every other method I tried to make it work was much more annoying. I'm open to ideas. 
@@ -105,15 +128,3 @@ If you choose to edit a qwerd found in the core dictionary, the Editor will defa
 Any time you modify a dictionary in the Qwertigraph's own dictionaries folder, though, you stand to lose your changes unless you understand what you are doing. Any refresh from the master copy in GitHub will always overwrite those values unless you know your way around GitHub. If you believe you're making good and necessary changes to conform to Gregg Anniversary, you are my here. Let me know, and we will get your changes into the main copy. Elsewise, I recommend putting your changes into the personal.csv dictionary in your local settings folder, or some other dictionary you add to your load list. 
 
 There are a couple other goodies. You can modify the shapes of the Gregg Pen drawings in the Dashboard with the Strokes tab. You can enter raw qwerds and convert them to English in the Player tab. You can see what the engine is doing and has done in the Log tab. And you can modify log settings and other settings on the settings tab. I'm afraid I don't have the time and energy to write any of that up until someone feels enough need to ask me a question about them. 
-
-#### But didn't I mention taking faster notes with a pen?
-
-You will quickly learn the qwerd for the word, "and". In Qwertigraphy, that's typed "nt". It only saves one keystroke, but it does so 50 times a day for the rest of your life. Once you have "and" committed to automatic response memory, you can begin using it in your pen writing just as easily. In longhand, the word "and" requires 7 joined pen-strokes (if you're not too fancy.) Writing just "nt" instead takes your pen-load down to only 5 strokes. It's a gain. 
-
-Gregg Shorthand reduces the "nt" of "and" to a single pen-stroke. That's 86% of your life back.
-
-Once you've learned the Qwertigraphy representation of any word, you can take a quick look at the Dashboard learn to its Gregg shorthand representation. A hard-working longhand writer will usually take their notes at something like 25 words per minute. With Gregg, 100 WPM will be well within your reach, and the best shorthand users exceed 200 WPM. Learn Gregg, and writing will become so much fun you'll be tempted to start writing more valuable notes, notes filled with a ton more detail. 
-
-*Qwertigraphy cannot be held responsible for such self-abuse, but it's a risk you'll have to take.*
-
-Next: [How to Qwertigraph](https://github.com/codepoke-kk/qwertigraphy/blob/master/HowQwertigraph.md)
