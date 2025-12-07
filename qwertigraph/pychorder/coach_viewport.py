@@ -1,4 +1,5 @@
 
+import re
 import sys
 import threading
 import queue   # standard library, works inside a single process
@@ -39,6 +40,8 @@ class Coach_Viewport(QWidget):
 
         # Position the window in the upper‑right corner
         self.position_in_upper_right()
+
+        self._scrubbing_regex = re.compile(r'\d')
 
     def position_in_upper_right(self):
         """
@@ -93,25 +96,42 @@ class Coach_Viewport(QWidget):
     # ------------------------------------------------------------------
     # These are *internal* helpers that the dispatcher will call.
     # ------------------------------------------------------------------
-    def _set_upper_text(self, txt: str):
-        self.upper.setPlainText(txt)
+    def _set_upper_text(self, text: str):
+        scrubbed_text = self._scrub_text(text)
+        self.upper.setPlainText(scrubbed_text)
         self.upper.verticalScrollBar().setValue(self.upper.verticalScrollBar().maximum())
 
-    def _set_lower_text(self, txt: str):
-        # print(f"Setting lower text to: {txt}")
-        self.lower.setPlainText(txt)
+    def _set_lower_text(self, text: str):
+        # print(f"Setting lower text to: {text}")
+        scrubbed_text = self._scrub_text(text)
+        self.lower.setPlainText(scrubbed_text)
         self.lower.verticalScrollBar().setValue(self.lower.verticalScrollBar().minimum())
 
     def _append_to_upper(self, line: str):
-        self.upper.append(line)
+        scrubbed_line = self._scrub_line(line)
+        self.upper.append(scrubbed_line)
         self.upper.verticalScrollBar().setValue(self.upper.verticalScrollBar().maximum())
 
     def _append_to_lower(self, line: str):
-        # print(f"Appending to lower: {line}")
-        self.lower.append(line)
+        print(f"Appending to lower: {line}")
+        scrubbed_line = self._scrub_line(line)
+        self.lower.append(scrubbed_line)
         self.lower.verticalScrollBar().setValue(self.lower.verticalScrollBar().minimum())
 
+    def _scrub_line(self, line: str):
+        print(f"Scrubbing: {line}")
+        if re.search(self._scrubbing_regex, line):
+            print(f"matched: {line}")
+            return '****'
+        else:
+            print(f"ignored: {line}")
+            return line
 
+    def _scrub_text(self, text: str):
+        if re.search(self._scrubbing_regex, text):
+            return '****'
+        else:
+            return text
 # ----------------------------------------------------------------------
 # Dispatcher – lives in the same process, but its *public* methods are
 # called from the manager thread.  They only put a command on a queue.
