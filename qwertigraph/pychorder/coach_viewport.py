@@ -113,18 +113,18 @@ class Coach_Viewport(QWidget):
         self.upper.verticalScrollBar().setValue(self.upper.verticalScrollBar().maximum())
 
     def _append_to_lower(self, line: str):
-        print(f"Appending to lower: {line}")
+        # print(f"Appending to lower: {line}")
         scrubbed_line = self._scrub_line(line)
         self.lower.append(scrubbed_line)
         self.lower.verticalScrollBar().setValue(self.lower.verticalScrollBar().minimum())
 
     def _scrub_line(self, line: str):
-        print(f"Scrubbing: {line}")
+        # print(f"Scrubbing: {line}")
         if re.search(self._scrubbing_regex, line):
-            print(f"matched: {line}")
+            # print(f"matched: {line}")
             return '****'
         else:
-            print(f"ignored: {line}")
+            # print(f"ignored: {line}")
             return line
 
     def _scrub_text(self, text: str):
