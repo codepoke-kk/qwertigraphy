@@ -378,6 +378,7 @@ Deadline,td-l-a-n,Ddlin,,qdiln,0
 Deadlined,td-l-a-n-d,Ddlind,,qdiln,0
 Deadlining,td-l-a-n-\-h,Ddling,,qdgiln,0
 Deadlines,td-l-a-n-s,Ddlins,,qdilns,0
+Didn't,td-n,Ddn,,qdn,0
 Degraded,d-e-g-r-a-d,Degrad,,qadegr,0
 Degrading,d-e-g-r-a-\-h,Degrag,,qadegr,0
 Degrades,d-e-g-r-a-s,Degras,,qadegrs,0
@@ -7248,6 +7249,10 @@ Slower,s-l-o-r,Slor,,qlors,14
 Sistered,ss2-t-e2-d,Ssted,,qdest,14
 Sistering,ss2-t-e2-\-h,Ssteg,,qegst,14
 Transact,t-/-a-k,Tak,,qakt,14
+Outlaw,a-u-l-o,Wlo,,qlow,14
+Outlawed,a-u-l-o-d,Wlod,,qdlow,14
+Outlawing,a-u-l-o-\-h,Wlog,,qglow,14
+Outlaws,a-u-l-o-s,Wlos,,qlosw,14
 Aggressive,ya-/-s-v,Ysv,,qsvy,14
 Aggressively,ya-/-s-v-e,Ysve,,qesvy,14
 Aggression,ya-/-s-sh,Ysz,,qsyz,14

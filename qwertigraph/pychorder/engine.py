@@ -42,6 +42,10 @@ class Expansion_Engine:
 
         result: dict[str, dict] = {}
 
+        if 'APPDATA' in os.environ and dictionary_path.startswith('%APPDATA%'):
+            appdata_path = os.environ['APPDATA']
+            dictionary_path = dictionary_path.replace('%APPDATA%', appdata_path)
+            
         if dictionary_path.endswith('csv'):
             # Open the file – `newline=''` lets csv handle newlines correctly
             with open(dictionary_path, newline='', encoding="utf-8") as f:

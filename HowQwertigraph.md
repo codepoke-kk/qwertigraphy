@@ -22,6 +22,44 @@ The Qwertigraph is a tool, a framework. You, or anyone else can create your own 
 
 Lastly, If you'd like to see how the code works, change a couple things, or steal the code and make something better:
 
+I followed exactly these steps to get the system up and running on my second laptop and they worked. You'll get no closer to a guarantee from me. 
+
+#### Step: Install Python 
+You'll need version 3.12, 3.13, or 3.14. 
+
+#### Step: Install Poetry
+Just pip install poetry. Nothing fancy. Take all the upgrades you like.
+
+#### Step: Download Qwertigraphy
+If you are familiar with the ideas and uses of GitHub, you can go to the repository and clone, pull, or download at will. If all that was Greek to you, then download a zip file of the repository here. Unzip it anywhere you'd like on your computer. I keep mine in a qwertigraphy folder in "My Documents."
+https://github.com/codepoke-kk/qwertigraphy/archive/master.zip
+
+A low-quality (and very dated at this point) video walk-through can be found here. Replace all references to "trainer" with "chorder" as you watch and listen: [Qwertigraphy Quick Start](https://www.youtube.com/watch?v=aPxECydje50)
+
+#### Step: Get the Qwertigraph running 
+You'll need to install a virtual environment in which the Qwertigraph can run. 
+
+> poetry install --no-root
+Installing with no root is what I'm doing now. If I ever decide to package this due to overwhelming demand for the Qwertigraph, I'll pick my jaw up off the floor and do so. For now, I do this the hard way.
+
+> .venv/Scripts/Activate
+This will put your command prompt into the virtual environment and set you up to run the Qwertigraph.
+
+> python .\qw.py
+This will launch the Qwertigraph in fully active mode. You can pre-load some credentials into the visible fields or just start typing into any application. You should immediately see the characters you're typing show up in the coach to the right side of your screen. 
+
+
+
+
+# The rest of this is old....
+
+### I've replaced the AutoHotKey Qwertigraph with the PyChorder Qwertigraph. 
+
+The new tool is written in Python, so it's theoretically no longer stuck to Windows. I've not tried it on any other platform, so you might want to avoid trying it unless you're up for some building/fixing.
+
+
+### Ignore from here
+
 #### Step: Download AutoHotkey 
 https://www.autohotkey.com/download/
 

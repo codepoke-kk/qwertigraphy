@@ -11,8 +11,8 @@ I work two jobs. This is a labor of amusement for me, so I'll get to things when
 #### My Gregg-fu is weak
 I learned Gregg in 1993 or so, and figured I knew enough to be dangerous when I got to lesson 12 of 36 in my book. Oops. I did Gregg poorly until 2019. I've got nothing but half-baked knowledge and deeply ingrained bad habits to show for all my experience. I'm slowly coming up to speed, but my weaknesses impact the final product badly. I'm sorry and trying to do better.
 
-#### My AutoHotkey-fu is weak, too
-I'd never touched AutoHotkey before starting this project. I've taken advice where I could get it and jogged The Google as much as I could, but there are certainly places someone with skills could improve on what we have here. My thanks to @Nou for setting me on some good paths early.
+#### My Python-fu is weak, too
+I'd never touched Python before June of 2025 and I'm finishing this in December 2025. I've taken advice where I could get it and jogged AI as much as I could, but there are certainly places someone with skills could improve on what we have here. 
 
 #### What am I even doing, trying this?
 If someone else has already done this better, let me know. I'd gladly shut this down and buy theirs.
@@ -20,7 +20,23 @@ If someone else has already done this better, let me know. I'd gladly shut this 
 #### The Dictionary is a moving target
 I consider my hardcopy Gregg Shorthand Dictionary of 1930, Anniversary Edition, to be the gold standard for the "anniversary_core.ahk" dictionary. I manually add/fix some words into anniversary_supplement.ahk every week, but I'll be a long while getting to "right". 
 
+
+
+
+
+
+
+# The rest of this is old....
+
+### I've replaced the AutoHotKey Qwertigraph with the PyChorder Qwertigraph. 
+
+The new tool is written in Python, so it's theoretically no longer stuck to Windows. I've not tried it on any other platform, so you might want to avoid trying it unless you're up for some building/fixing.
+
+
+### Ignore from here
+
 #### AutoHotkey is not perfect
+
 ##### Under some conditions, Qwertigraphy is irritating. 
 I cannot reproduce this bug at will, so I cannot begin to swat it, but AutoHotkey will forget to unset the shift key and or the Windows key at times. The computer will enter a strange zone in which every keystroke is performed as if Shift or Windows were held down during the keypress/release cycle. Stopping Qwertigraphy will not fix that issue, but hitting both shift keys and/or both Windows keys seems to fix it. 
 
