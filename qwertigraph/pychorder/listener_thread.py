@@ -66,7 +66,9 @@ class ListenerThread(QThread):
 
         # Construct the objects exactly as you did before.
         engine_signals = EngineSignalProxy()
+        self._log.info("Listener thread starting Scribe")
         scribe = Scribe()
+        self._log.info("Listener thread starting Key Output")
         key_output = Key_Output(scribe)
         engine = Expansion_Engine(key_output, engine_signals)
         self._engine = engine

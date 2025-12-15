@@ -22,11 +22,14 @@ def launch_coach():
     Starts the coach process using the 'spawn' start method (required on Windows).
     Returns the Process object so we can terminate it later.
     """
+    print("Launching coach process")
     ctx = multiprocessing.get_context('spawn')
     proc = ctx.Process(target=_run_coach_process,
                        daemon=True,
                        name='CoachProcess')
+    print("Starting proc")
     proc.start()
+    print("Started proc")
     return proc
 
 class Scribe:
@@ -47,15 +50,19 @@ class Scribe:
 
     def __init__(self) -> None:
         self._tape: List[Note] = []
-        self._log.info('Initiated Scribe')
+        self._log.info('Scribe starting Coach')
         self._start_coach()
+        self._log.info('Started Coach')
         # Small pause to let the manager finish its handshake
         time.sleep(0.5)
+        self._log.info('Initiated Scribe')
 
 
     def _start_coach(self):
         """Spawn the UI process and obtain a proxy to the Coach dispatcher."""
+        self._log.info('Launching Coach')
         self._coach_process = launch_coach()
+        self._log.info('Launched Coach')
 
         # --------------------------------------------------------------
         # Connect to the same address/authkey we used in coach_ui.start_coach_process
@@ -65,11 +72,15 @@ class Scribe:
         class CoachClient(BaseManager):
             pass
 
+        self._log.info('Registering coach client')
         CoachClient.register('Coach')
         self._coach_proxy = CoachClient(address=('localhost', 6000),
                                         authkey=b'coach-secret')
+        self._log.info('Connecting to proxy')
         self._coach_proxy.connect()
+        self._log.info('Connected to proxy')
         self._coach = self._coach_proxy.Coach()   # <-- proxy to the dispatcher
+        self._log.info('Added proxy to self')
 
         # --------------------------------------------------------------
         # Initial UI configuration (calls travel across processes)
