@@ -38,7 +38,7 @@ class Vaulter:
             self._log.error(f"No username/password found for tag: {tag}")
             return 
         keyboard.write(self._credentials[user_key])
-        keyboard.write('\t')  # Tab to password field   
+        keyboard.send('\t')  # Tab to password field   
         keyboard.write(self._credentials[pass_key])
 
     def update_credentials(self, new_credentials: dict) -> None:
