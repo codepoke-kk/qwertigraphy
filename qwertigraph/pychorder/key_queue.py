@@ -1,9 +1,11 @@
 
 from log_factory import get_logger
 import time 
+from collections import deque
 
 class Key_Queue:
     _log = get_logger('KEYQ') 
+
     # Keep separate lists of special, normal, and pause keys
     # But merge them into "end_keys" 
     stop_keys_special = {'Key.space': 1, 'Key.tab': 1, 'Key.enter': 1}
@@ -30,7 +32,8 @@ class Key_Queue:
 
     def __init__(self, engine):
         self.engine = engine 
-        self.keystroke_queue = []
+        self.keystroke_queue = deque()
+        self.replay_queue = deque()
         self.start_stamp = time.monotonic()
         self._log.info('Initiated Key Queue')
 
@@ -46,10 +49,12 @@ class Key_Queue:
         if key in self.end_keys:
             self._log.debug(f"Key {key} is an end key")
             end_stamp = time.monotonic()
-            self.engine.expand_queue(self.keystroke_queue, key, (end_stamp - self.start_stamp))
+            replay_output = self.engine.expand_queue(self.keystroke_queue, key, (end_stamp - self.start_stamp))
+            self.replay_queue.append(replay_output)
+            self._log.debug(f"Replay queue is {self.replay_queue}")
             # Reset the queue and timer
             self.start_stamp = end_stamp
-            self.keystroke_queue = []
+            self.keystroke_queue = deque()
         else:
             if len(key) == 1:
                 self._log.debug(f"Key {key} is a normal key")
@@ -57,14 +62,16 @@ class Key_Queue:
                 self.engine.display_hints(self.keystroke_queue)
             elif key == 'backspace':
                 self._log.debug(f"Key {key} is backspace - removing last key if any")
+                # When backspace is sent, keep track of what letters we have queued up 
                 if self.keystroke_queue:
                     removed_key = self.keystroke_queue.pop()
                     self._log.debug(f"Removed key {removed_key} from queue")
                     self.engine.display_hints(self.keystroke_queue)
                 else:
-                    # In AHK, I tracked back through history to bring back previous qwerds
-                    # I'm not going to do that here yet
-                    self._log.debug(f"Queue is empty - nothing to remove")
+                    # If the queue is already empty, reload it from the replay queue so user can backspace through prior expansions
+                    if self.replay_queue:
+                        self.keystroke_queue.extend(self.replay_queue.pop()) 
+                    self._log.debug(f"Queue is empty - reloaded from replay queue to {self.keystroke_queue}")
             elif key in ['ctrl', 'right ctrl', 'left ctrl', 'alt', 'right alt', 'left alt',
                          'windows', 'right windows', 'left windows']:
                     # In AHK, I sent ctrl-. as '.'. I'm going to try not doing that here
@@ -79,5 +86,7 @@ class Key_Queue:
 
     def clear_queue(self, message='Unaccredited'):
         self._log.debug(f"Clearing key queue: {message}")
-        self.keystroke_queue = []
+        self.keystroke_queue = deque()
+        self.replay_queue = deque()
+        self.start_stamp = time.monotonic()
         self.engine.display_hints(self.keystroke_queue)

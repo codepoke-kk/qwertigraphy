@@ -5,21 +5,125 @@ import csv
 from pathlib import Path
 from engine_signal_proxy import EngineSignalProxy
 
+# Imports for the watchdog that monitors dictionary file changes
+import threading
+from pathlib import Path
+from watchdog.observers import Observer
+from watchdog.events import FileSystemEventHandler
+import hashlib
+
+class _DictChangeHandler(FileSystemEventHandler):
+    """
+    Reload the dictionaries every time one changes, but when one changes several 
+    change. I only want to run the reload once per change event so wait 1 second 
+    before launching that change to allow time for more changes to roll in. 
+    Any modification to a dictionary file restarts a
+    1-second timer.  When the timer finally fires, the engine reloads the
+    whole bundle exactly once.
+    """
+
+    DEBOUNCE_SECONDS = 1.0          # <-- change this if you want a different delay
+
+    def __init__(self, engine: "Expansion_Engine"):
+        self.engine = engine
+        # Cache of the last known hash per file – prevents reloads on
+        # timestamp‑only touches (optional but cheap).
+        self._hash_cache: dict[Path, str] = {}
+        # The timer that will actually trigger the reload.
+        self._timer: threading.Timer | None = None
+        # Protect the timer from race conditions (handler may be called
+        # from multiple threads on some platforms).
+        self._lock = threading.Lock()
+        super().__init__()
+
+    # ------------------------------------------------------------------
+    #  Helper: compute a short SHA‑256 digest of a file to detect content changes
+    # ------------------------------------------------------------------
+    @staticmethod
+    def _file_hash(path: Path) -> str | None:
+        try:
+            h = hashlib.sha256()
+            with path.open("rb") as f:
+                for chunk in iter(lambda: f.read(8192), b""):
+                    h.update(chunk)
+            return h.hexdigest()
+        except (OSError, PermissionError):
+            return None
+
+    # ------------------------------------------------------------------
+    #  Core event – we only care about modifications (writes)
+    # ------------------------------------------------------------------
+    def on_modified(self, event):
+        if event.is_directory:
+            return
+
+        path = Path(event.src_path).resolve()
+        new_hash = self._file_hash(path)
+
+        # If we cannot read the file (e.g. still being written), just ignore.
+        if new_hash is None:
+            self.engine._log.debug(f"Skipped unreadable modify: {path}")
+            return
+
+        # Optional: ignore pure‑timestamp updates where the content didn't change.
+        old_hash = self._hash_cache.get(path)
+        if old_hash == new_hash:
+            self.engine._log.debug(f"Ignored unchanged modify: {path}")
+            return
+
+        # Content really changed → remember the new hash and (re)start timer.
+        self._hash_cache[path] = new_hash
+        self.engine._log.info(f"Dictionary file changed: {path}")
+
+        # ---------- debounce ----------
+        with self._lock:
+            # Cancel any pending timer.
+            if self._timer is not None:
+                self._timer.cancel()
+
+            # Start a fresh timer that will fire after DEBOUNCE_SECONDS.
+            self._timer = threading.Timer(
+                self.DEBOUNCE_SECONDS,
+                self._trigger_reload   # <-- executed in a separate thread
+            )
+            self._timer.daemon = True   # don't block interpreter shutdown
+            self._timer.start()
+
+    # ------------------------------------------------------------------
+    #  What the timer actually does
+    # ------------------------------------------------------------------
+    def _trigger_reload(self):
+        """
+        Called once the debounce interval has elapsed with no further
+        modifications.  We acquire the lock again just in case a new
+        event arrived right at the same moment.
+        """
+        with self._lock:
+            # Clear the timer reference – it has fired.
+            self._timer = None
+
+        self.engine._log.info("Debounce period ended - reloading dictionary bundle")
+        self.engine.reload_bundle()
+
+
 class Expansion_Engine:
     _log = get_logger('ENGINE') 
     _last_end_key = ''
     def __init__(self, key_output, engine_signals: 'EngineSignalProxy'):
         self.engine_signals = engine_signals
         self.key_output = key_output
-        self.dictionary_paths = os.getenv('DICTIONARY_PATHS').split(',')
-        self.dictionaries = self.get_dictionaries(self.dictionary_paths)
-        self._log.info(f"Loaded {len(self.dictionaries)} dictionaries")
-        self.expansions = self.get_expansions(self.dictionaries)
-        self.hints = self.build_hints(self.expansions)
-        self.reverse_hints = self.build_reverse_hints(self.expansions)
-        # for key, expansion in self.expansions.items():
-        #     self._log.debug(f"{key} = {expansion}")
-        self._log.info(f"Loaded {len(self.expansions)} expansions")
+        raw_paths = os.getenv('DICTIONARY_PATHS', '').split(',')
+
+        # Expand any Windows‑style %VAR% placeholders (and also ~)
+        #    os.path.expandvars handles %APPDATA%, %HOME%, etc.
+        #    Path(...).expanduser() handles ~ on all platforms.
+        self.dictionary_paths = [
+            Path(os.path.expandvars(p)).expanduser().resolve()
+            for p in raw_paths if p               # skip empty entries
+        ]
+        # self.load_dictionary_bundle([str(p) for p in self.dictionary_paths])
+        self.load_dictionary_bundle(self.dictionary_paths)
+        # self._watched_directories: set[Path] = set()
         # self.MAX_TRIGGER_LEN = max(len(k) for k in self.expansions)   # longest trigger we care about
         # self.poll_interval = 0.05
 
@@ -29,6 +133,71 @@ class Expansion_Engine:
         self.seconds_typing = 0.0
 
         self._log.info('Initiated Engine')
+        self._start_watcher()       # Start monitoring dictionary files for changes
+
+
+    # ----------------------------------------------------------------------
+    #  Dictionary bundle re‑loading
+    # ----------------------------------------------------------------------
+    def reload_bundle(self):
+        """
+        Reload all dictionaries and rebuild the derived structures.
+        This method is safe to call from the watcher thread because it
+        acquires a lock before mutating shared state.
+        """
+        with self._reload_lock:
+            self._log.info("Reloading dictionary bundle …")
+            self.load_dictionary_bundle(self.dictionary_paths)
+            self._log.info("Dictionary bundle reloaded.")
+
+    # ----------------------------------------------------------------------
+    #  Watchdog integration
+    # ----------------------------------------------------------------------
+    def _start_watcher(self):
+        """
+        Start a background thread that watches every directory that contains a
+        dictionary file.  Because `self.dictionary_paths` now holds resolved
+        Path objects, we can safely use `.parent` without any extra string
+        manipulation.
+        """
+        self._reload_lock = threading.Lock()
+        self._observer = Observer()
+        handler = _DictChangeHandler(self)
+
+        for dict_path in self.dictionary_paths:          # dict_path is a Path
+            watch_dir = dict_path.parent                  # the folder to monitor
+            '''
+            if watch_dir in self._watched_directories:
+                # Already watching this folder – skip duplicate schedule
+                self._log.debug(f"Already watching {watch_dir}, skipping.")
+                continue
+            self._watched_directories.add(watch_dir)
+            '''
+            self._log.debug(f"Watching directory: {watch_dir}")
+            self._observer.schedule(handler, str(watch_dir), recursive=False)
+
+        # Run the observer in a daemon thread so it exits automatically
+        self._observer_thread = threading.Thread(
+            target=self._observer.start,
+            name="DictionaryWatcher",
+            daemon=True,
+        )
+        self._observer_thread.start()
+        self._log.info("Started dictionary‑file watcher thread.")
+
+    def stop_watcher(self):
+        """Call this when the engine is shutting down (e.g., on program exit)."""
+        self._observer.stop()
+        self._observer.join()
+        self._log.info("Dictionary watcher stopped.")
+
+    def load_dictionary_bundle(self, dictionary_paths):
+        self._log.info(f"Loading dictionary bundle from {dictionary_paths}")
+        self.dictionaries = self.get_dictionaries(dictionary_paths)
+        self.expansions = self.get_expansions(self.dictionaries)
+        self.hints = self.build_hints(self.expansions)
+        self.reverse_hints = self.build_reverse_hints(self.expansions)
+        self._log.info(f"Loaded {len(self.expansions)} expansions from bundle")
 
     def get_dictionaries(self, dictionary_paths):
         self._log.info(f"Loading entries from {len(dictionary_paths)} dictionaries")
@@ -37,16 +206,12 @@ class Expansion_Engine:
             dictionaries[dictionary_path] = self.get_dictionary(dictionary_path)
         return dictionaries 
 
-    def get_dictionary(self, dictionary_path):
+    def get_dictionary(self, dictionary_path: Path):
         self._log.info(f"Loading entries from {dictionary_path}")
 
         result: dict[str, dict] = {}
-
-        if 'APPDATA' in os.environ and dictionary_path.startswith('%APPDATA%'):
-            appdata_path = os.environ['APPDATA']
-            dictionary_path = dictionary_path.replace('%APPDATA%', appdata_path)
             
-        if dictionary_path.endswith('csv'):
+        if dictionary_path.suffix.lower() == '.csv':
             # Open the file – `newline=''` lets csv handle newlines correctly
             with open(dictionary_path, newline='', encoding="utf-8") as f:
                 reader = csv.DictReader(f, fieldnames=[
@@ -92,6 +257,8 @@ class Expansion_Engine:
             for key, value in dictionary.items():
                 # if value['word'] == 'Pretty':
                 #     self._log.debug(f"{key} = {value['word']} from {dictionary_path}")
+                if not key:
+                    self._log.warning(f"key is nothing in {value} from {dictionary_path}")
                 if not key in expansions:
                     expansions[key] = value['word']
                     expansions[key.lower()] = value['word'].lower()
@@ -160,6 +327,7 @@ class Expansion_Engine:
         return reverse_hints
     
     def expand_queue(self, queue, end_key, elapsed_time: float = 0.0):
+        # Expand the given queue of keystrokes upon receiving the end_key.
         self._log.debug(f"Checking and expanding queue {queue} upon {end_key}")
 
         # Build the qwerd from the queue
@@ -170,26 +338,31 @@ class Expansion_Engine:
         self._log.debug(f"Qwerd: {qwerd}")
 
 
+        replay_output = ''
         if qwerd in self.expansions:
+            # We will expand this and return the expansion to the caller
             self._log.debug(f"Sending to keyout {qwerd}")
             # Handle contractions
-            if self._last_end_key == "'":
+            if self._last_end_key == "'" and f"'{qwerd}" in self.expansions:
+                # In single quoted strings, a thing that *could* be a contraction will be treated as one 
                 self._log.debug(f"Prepending apostrophe to {qwerd} as contraction")
                 qwerd = f"'{qwerd}"
             self.key_output.replace_qwerd(qwerd, self.expansions[qwerd], end_key)
             this_characters_input = len(qwerd) + 1
             this_characters_output = len(self.expansions[qwerd]) + 1 
             self.expansion_count += 1
+            replay_output = self.expansions[qwerd]
         else:
             if qwerd in self.reverse_hints:
-                word = qwerd 
                 self._log.debug(f"Qwerd {qwerd} not found, but reverse hint exists: {self.reverse_hints[qwerd]}")
-                self.key_output.log_no_action(f"<{self.reverse_hints[qwerd]}>", word, end_key)
-                this_characters_output = this_characters_input = len(word) + 1
+                self.key_output.log_no_action(f"<{self.reverse_hints[qwerd]}>", qwerd, end_key)
+                this_characters_output = this_characters_input = len(qwerd) + 1
             else:
                 self._log.debug(f"Qwerd {qwerd} not in expansions")
                 self.key_output.log_no_action(qwerd, qwerd, end_key)
                 this_characters_output = this_characters_input = len(qwerd) + 1
+            
+            replay_output = qwerd 
             
         # Update performance metrics
         self.characters_input += this_characters_input
@@ -200,6 +373,8 @@ class Expansion_Engine:
         self.engine_signals.emit_performance_updated(f"{self.characters_input}/{self.characters_output} chars at {wpm_input :.1f}/{wpm_output:.1f} WPM for {self.expansion_count} expansions in {self.seconds_typing :.1f} seconds")
 
         self._last_end_key = end_key
+
+        return replay_output
 
     def display_hints(self, current_queue):
         # This is where the text of the hints gets built and sent to the scribe.
