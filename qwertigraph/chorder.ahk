@@ -185,7 +185,7 @@ ExitFunc(ExitReason, ExitCode)
     qenv.saveProperties()
     Return
 f10::
-    WinMove,A,,3,3,1690,1000
+    WinMove,A,,3,3,1650,1000
     Return 
 Insert::Backspace
 NumpadIns::Backspace
