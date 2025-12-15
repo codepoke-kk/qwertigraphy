@@ -62,6 +62,17 @@ class Key_Input:
             if any_mod:
                 self._log.debug(f"Modifier key detected ({e.modifiers}), clearing queue")
                 self.key_queue.clear_queue(f"modifier key with {e.name}")
+                if keyboard.is_pressed('ctrl') and e.name in ['space', ',', '.', 'enter']:
+                    self._log.debug(f"Ctrl-d {e.name} detected, sending through")
+                    keyboard.release('ctrl')
+                    keyboard.send(e.name)
+                    if keyboard.is_pressed('ctrl'):
+                        # If I do this wrong, ctrl stays stuck down
+                        keyboard.press('ctrl')
+                    if not keyboard.is_pressed('ctrl'):
+                        # If the user released the ctrl key, make sure it's up
+                        keyboard.release('ctrl')
+                # If I don't return true here, ctrl-v leaves "v" in the queue and later expands 
                 return True
             self._log.debug(f"Received key event: {e.name}")
             self.key_queue.push_keystroke(e.name)
