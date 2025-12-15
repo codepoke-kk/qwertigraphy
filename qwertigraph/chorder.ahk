@@ -117,7 +117,7 @@ logViewer.addQueue(clipper.logQueue)
 
 #Include classes\SettingsViewport.ahk
 
-engine.Start()
+; engine.Start()
 
 #Include *i personal.ahk
 

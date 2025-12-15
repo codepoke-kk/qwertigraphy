@@ -24,6 +24,8 @@ class Key_Input:
                 
         self._chorder = Chorder(self.engine_signals)
         self.CHORD_MAP = {
+            "t+1": {"keys": 2, "backspaces": 1, "function": "output_time"},
+            "d+1": {"keys": 2, "backspaces": 1, "function": "output_date"},
             "b+1": {"keys": 2, "backspaces": 1, "function": "output_password_a"},
             "b+2": {"keys": 2, "backspaces": 1, "function": "output_username_password_a"},
             "b+3": {"keys": 2, "backspaces": 1, "function": "output_username_a"},

@@ -51,7 +51,7 @@ class Key_Queue:
             end_stamp = time.monotonic()
             replay_output = self.engine.expand_queue(self.keystroke_queue, key, (end_stamp - self.start_stamp))
             self.replay_queue.append(replay_output)
-            self._log.debug(f"Replay queue is {self.replay_queue}")
+            # self._log.debug(f"Replay queue is {self.replay_queue}")
             # Reset the queue and timer
             self.start_stamp = end_stamp
             self.keystroke_queue = deque()

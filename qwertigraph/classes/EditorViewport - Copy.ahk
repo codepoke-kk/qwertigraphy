@@ -1003,7 +1003,7 @@ class EditorViewport
 	saveDictionaries() {
 		this.logEvent(3, "Saving dictionaries")
 		this.map.saveDictionaries()
-        Msgbox, % "Save complete"
+        ; Msgbox, % "Save complete"
 	}
 
 	openPersonalizations() {

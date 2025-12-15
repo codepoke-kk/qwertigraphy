@@ -2500,6 +2500,9 @@ Pertained,p-e2-tn-d,Petnd,,qdenpt,0
 Pertaining,p-e2-tn-\-h,Petng,,qegnpt,0
 Pertinent,p-e2-tn-nt,Petnnt,,qenpt,0
 Pertains,p-e2-tn-s,Petns,,qenpst,0
+Petitioned,p-e-t-sh-d,Petzd,,qdeptz,0
+Petitioning,p-e-t-sh-\-h,Petzg,,qegptz,0
+Petitions,p-e-t-sh-s,Petzs,,qepstz,0
 Punctuate,p-ng-eu-t,Pgut,,qgptu,0
 Punctuated,p-ng-eu-t-d,Pgutd,,qdgptu,0
 Punctuating,p-ng-eu-t-\-h,Pgutg,,qgptu,0
@@ -4207,6 +4210,8 @@ Glorifies,g-l-o-f-s,Glofs,,qfglos,1
 Glorification,g-l-o-f-sh,Glofz,,qfgloz,1
 Graceful,g-r-a-s-f,Grasf,,qafgrs,1
 Gracefully,g-r-a-s-f-e,Grasfe,,qaefgrs,1
+Gratefully,g-r-a-t-f-e,Gratfe,,qaefgrt,1
+Gratefulness,g-r-a-t-f-n-e-s,Gratfnes,,qaefgnrst,1
 Greeting,g-r-e-t-\-h,Gretg,,qegrt,1
 Greets,g-r-e-t-s,Grets,,qegrst,1
 Hammer,^-h-\-a-m-e2,Hame,,qaehm,1
@@ -5599,6 +5604,9 @@ Transcend,t-\-nt,Tndo,o,qdnot,3
 Transcends,t-\-nt-s,Tnds,,qdnst,3
 Traded,t-r-a-d,Trad,,qadrt,3
 Trading,t-r-a-\-h,Trag,,qagrt,3
+Toothed,t-u-th-d,Tuhd,,qdhtu,3
+Toothing,t-u-th-\-h,Tuhg,,qghtu,3
+Toothes,t-u-th-s,Tuhs,,qhstu,3
 Definitively,df-n-e-df-e,Tvnetve,,qentv,3
 Transitioned,t-/-sh-d,Tzd,,qdtz,3
 Transitioning,t-/-sh-\-h,Tzg,,qgtz,3
@@ -6939,6 +6947,10 @@ Serializes,s-e-r-l-i-s-s,Serliss,,qeilrs,10
 Serialization,s-e-r-l-i-s-sh,Serlisz,,qeilrsz,10
 Serializations,s-e-r-l-i-s-sh-s,Serliszs,,qeilrsz,10
 Serials,s-e-r-l-s,Serls,,qelrs,10
+Subtitle,^-s-\-t-i-t,Stit,,qist,10
+Subtitled,^-s-\-t-i-t-d,Stitd,,qdist,10
+Subtitling,^-s-\-t-i-t-\-h,Stitg,,qgist,10
+Subtitles,^-s-\-t-i-t-s,Stits,,qist,10
 Straightened,s2-t-r-a-tn-d,Stratnd,,qadnrst,10
 Straightening,s2-t-r-a-tn-\-h,Stratng,,qagnrst,10
 Straightens,s2-t-r-a-tn-s,Stratns,,qanrst,10
@@ -7401,6 +7413,10 @@ Thrive,th-r-i,Hri,,qhir,17
 Thrived,th-r-i-d,Hrid,,qdhir,17
 Thriving,th-r-i-\-h,Hrig,,qghir,17
 Thrives,th-r-i-s,Hris,,qhirs,17
+Thrive,th-r-i-v,Hriv,,qhirv,17
+Thrived,th-r-i-v-d,Hrivd,,qdhirv,17
+Thriving,th-r-i-v-\-h,Hrivg,,qghirv,17
+Thrives,th-r-i-v-s,Hrivs,,qhirsv,17
 Wireless,i-r-l,Irl,,qilr,17
 Conformable,k-f-m-b,Kfmb,,qbfkm,17
 Conformed,k-f-m-d,Kfmd,,qdfkm,17
@@ -7591,6 +7607,10 @@ Theology,h-e-\-o,Heoo,o,qeho,21
 Theologies,h-e-\-o-s,Heos,,qehos,21
 Hyper-,h-y->,Hy>,,q>hy,21
 Consider,k-s,Ksi,i,qiks,21
+Consider,k-s-r,Ksr,,qkrs,21
+Considered,k-s-r-d,Ksrd,,qdkrs,21
+Considering,k-s-r-\-h,Ksrg,,qgkrs,21
+Considers,k-s-r-s,Ksrs,,qkrs,21
 Considers,k-s-s,Kssi,i,qiks,21
 Consideration,k-s-sh,Kszi,i,qiksz,21
 Considerations,k-s-sh-s,Kszs,,qksz,21
@@ -10981,6 +11001,9 @@ Codes,k-o-t-s,Kods,,qdkos,1735
 Courted,k-o-t-d,Kotdo,o,qdkot,1735
 Courting,k-o-t-\-h,Kotg,,qgkot,1735
 Courts,k-o-t-s,Kots,,qkost,1735
+Thingy,th-\-h-e,Hge,,qeh,1739
+Thingies,th-\-h-e-s,Hges,,qeghs,1739
+Thinging,th-\-h-\-h,Hgg,,qgh,1739
 Lettered,l-e-d,Ledi,i,qdeil,1922
 Lettering,l-e-\-h,Legi,i,qegil,1922
 Letting,l-e-\-h,Legu,u,qeglu,1922
@@ -11281,6 +11304,13 @@ Sanitizes,^-s-\-nt-i-s-s,Sntiss,,qinst,90693
 Sanitary,^-s-\-nt-r-e,Sntre,,qenrst,90693
 Sanitation,^-s-\-nt-sh,Sntz,,qnstz,90693
 Buggy,b-u-g-e,Buge,,qbegu,90705
+Reload,r-l-o-d,Rlod,,qdlor,90710
+Reloadable,r-l-o-d-b,Rlodb,,qbdlor,90710
+Reloadably,r-l-o-d-b-e,Rlodbe,,qbdelor,90710
+Reloadability,r-l-o-d-\-b,Rlodbo,,qbdlor,90710
+Reloaded,r-l-o-d-d,Rlodd,,qdlor,90710
+Reloading,r-l-o-d-\-h,Rlodg,,qdglor,90710
+Reloads,r-l-o-d-s,Rlods,,qdlors,90710
 Override,o-\-r-i-d,Orid,,qdior,90768
 Overrided,o-\-r-i-d-d,Oridd,,qdior,90768
 Overriding,o-\-r-i-d-\-h,Oridg,,qdgior,90768
