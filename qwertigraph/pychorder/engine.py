@@ -372,6 +372,7 @@ class Expansion_Engine:
         wpm_output = (self.characters_output / 5) / (self.seconds_typing / 60) if self.seconds_typing > 0 else 0.0
         self.engine_signals.emit_performance_updated(f"{self.characters_input}/{self.characters_output} chars at {wpm_input :.1f}/{wpm_output:.1f} WPM for {self.expansion_count} expansions in {self.seconds_typing :.1f} seconds")
 
+        self._log.debug(f"Setting last end key to {end_key}")
         self._last_end_key = end_key
 
         return replay_output
