@@ -1,16 +1,16 @@
 import keyboard
 import mouse
-# import threading
+import threading
 from log_factory import get_logger
 from collections import deque
-from chorder import Chorder
-from comms_proxy import Comms_Proxy
+from chorder_split_application import Chorder
+from engine_signal_proxy import EngineSignalProxy
 
 class Key_Input:
     _log = get_logger('KEYIN')
 
-    def __init__(self, key_queue, comms_proxy):
-        self.comms_proxy = comms_proxy
+    def __init__(self, key_queue, engine_signals: 'EngineSignalProxy'):
+        self.engine_signals = engine_signals
         self.key_queue = key_queue
         self.emitable_end_keys = deque()
         self.next_end_key = ''
@@ -22,7 +22,7 @@ class Key_Input:
         mouse.on_click(lambda: self.key_queue.clear_queue("Mouse left clicked"))
         mouse.on_right_click(lambda: self.key_queue.clear_queue("Mouse right clicked"))
                 
-        self._chorder = Chorder(self.comms_proxy)
+        self._chorder = Chorder(self.engine_signals)
         self.CHORD_MAP = {
             "t+1": {"keys": 2, "backspaces": 1, "function": "output_time"},
             "d+1": {"keys": 2, "backspaces": 1, "function": "output_date"},
@@ -85,7 +85,7 @@ class Key_Input:
         self.hook = keyboard.hook(self.on_key, suppress=True)
         self._log.info("Started keyboard listener")
         # Notify the owner (the ListenerThread) the hook is active
-        self.comms_proxy.signal_ui_engine_started()
+        self.engine_signals.emit_started()
 
     def stop_listening(self) -> None:
         """Remove the keyboard hook and announce the stop."""
@@ -96,8 +96,8 @@ class Key_Input:
         else:
             self._log.warning("stop_listening called but no hook was active")
         # Notify the owner (the ListenerThread) the unhook succeeded
-        self.comms_proxy.signal_ui_engine_stopped()
+        self.engine_signals.emit_stopped()
         
     def credentials_updated(self, new_credentials: dict):
         # self._log.info(f"Received updated credentials: {new_credentials}")
-        self._chorder.vaulter.update_credentials(new_credentials)
+        self._chorder._vaulter.update_credentials(new_credentials)

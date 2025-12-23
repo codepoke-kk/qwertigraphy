@@ -3,7 +3,7 @@ from log_factory import get_logger
 import os
 import csv
 from pathlib import Path
-from comms_proxy import Comms_Proxy
+from engine_signal_proxy import EngineSignalProxy
 
 # Imports for the watchdog that monitors dictionary file changes
 import threading
@@ -109,8 +109,8 @@ class _DictChangeHandler(FileSystemEventHandler):
 class Expansion_Engine:
     _log = get_logger('ENGINE') 
     _last_end_key = ''
-    def __init__(self, key_output, comms_proxy):
-        self.comms_proxy = comms_proxy
+    def __init__(self, key_output, engine_signals: 'EngineSignalProxy'):
+        self.engine_signals = engine_signals
         self.key_output = key_output
         raw_paths = os.getenv('DICTIONARY_PATHS', '').split(',')
 
@@ -370,7 +370,7 @@ class Expansion_Engine:
         self.seconds_typing += elapsed_time
         wpm_input = (self.characters_input / 5) / (self.seconds_typing / 60) if self.seconds_typing > 0 else 0.0
         wpm_output = (self.characters_output / 5) / (self.seconds_typing / 60) if self.seconds_typing > 0 else 0.0
-        self.comms_proxy.signal_performance_updated(f"{self.characters_output - self.characters_input}@{wpm_input :.1f}/{wpm_output:.1f} in {self.seconds_typing :.1f}")
+        self.engine_signals.emit_performance_updated(f"{self.characters_input}/{self.characters_output} chars at {wpm_input :.1f}/{wpm_output:.1f} WPM for {self.expansion_count} expansions in {self.seconds_typing :.1f} seconds")
 
         self._log.debug(f"Setting last end key to {end_key}")
         self._last_end_key = end_key

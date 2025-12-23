@@ -58,10 +58,10 @@ class ListenerThread(QThread):
         self._log.info("Listener thread to run")
 
         from engine_signal_proxy import EngineSignalProxy
-        from key_input import Key_Input        
+        from key_input_split_application import Key_Input        
         from key_output import Key_Output
-        from engine import Expansion_Engine
-        from scribe import Scribe
+        from engine_split_application import Expansion_Engine
+        from scribe_split_application import Scribe
         from key_queue import Key_Queue
 
         # Construct the objects exactly as you did before.

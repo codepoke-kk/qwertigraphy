@@ -1,13 +1,13 @@
 import logging
 from log_factory import get_logger   # keep your existing logger factory
-from comms_proxy import Comms_Proxy
+from engine_signal_proxy import EngineSignalProxy
 import keyboard
 
 class Vaulter:
     _log: logging.Logger = get_logger("VAULT")
 
-    def __init__(self, comms_proxy) -> None:
-        self.comms_proxy = comms_proxy  # Unused??
+    def __init__(self, engine_signals: 'EngineSignalProxy') -> None:
+        self.engine_signals = engine_signals
         self._credentials = {'a_user': '', 'a_pass': '', 'b_user': '', 'b_pass': '', 'c_user': '', 'c_pass': ''}
         self._log.info("Initiated Vaulter")
 

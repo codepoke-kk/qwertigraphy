@@ -2241,6 +2241,7 @@ Intimidating,n-tm-e-td-\-h,Ntmedtg,,qdegmnt,0
 Intimidates,n-tm-e-td-s,Ntmedts,,qdemnst,0
 Intimidation,n-tm-e-td-sh,Ntmedtz,,qdemntz,0
 Intimidations,n-tm-e-td-sh-s,Ntmedtzs,,qdemnstz,0
+Intimacies,n-tm-s-e-s,Ntmses,,qemnst,0
 Untenably,n-tn-b-e,Ntnbe,,qbent,0
 Entertained,n-/-tn-d,Ntndo,o,qdnot,0
 Entertaining,n-/-tn-\-h,Ntngo,o,qgnot,0
@@ -3230,9 +3231,6 @@ Stepfather,s-f-a-th,Sfah,,qafhs,0
 Stepfathers,s-f-a-th-s,Sfahs,,qafhs,0
 Psychoses,s2-i-k-/-s-e-s,Sikses,,qeiks,0
 Psychosis,s2-i-k-/-s-s,Sikss,,qiks,0
-Sized,s-i-s-d,Sisd,,qdis,0
-Sizing,s-i-s-\-h,Sisg,,qgis,0
-Sizes,s-i-s-s,Siss,,qis,0
 Subjections,s-j-sh-s,Sjzs,,qjsz,0
 Scandal,s-k-a-nd-l,Skandl,,qadklns,0
 Scandalize,s-k-a-nd-l-i-s,Skandlis,,qadiklns,0
@@ -3602,6 +3600,11 @@ Timesheet,tm-sh-e-t,Tmzet,,qemtz,0
 Timesheets,tm-sh-e-t-s,Tmzets,,qemstz,0
 Tenably,tn-b-e,Tnbe,,qbent,0
 Tenables,tn-b-s,Tnbs,,qbnst,0
+Tendered,tn-d-e2-d,Tnded,,qdent,0
+Tendering,tn-d-e2-\-h,Tndeg,,qdegnt,0
+Tenderness,tn-d-e2-n-e-s,Tndenes,,qdenst,0
+Tendernesses,tn-d-e2-n-e-s-s,Tndeness,,qdenst,0
+Tenders,tn-d-e2-s,Tndes,,qdenst,0
 Transcendentally,t-\-nt-nt-l-e,Tndndle,,qdelnt,0
 Transcendentalist,t-\-nt-nt-l-e-s,Tndndles,,qdelnst,0
 Transcendentalists,t-\-nt-nt-l-e-s-s,Tndndless,,qdelnst,0
@@ -4663,6 +4666,11 @@ Reworking,r-e-r-k-\-h,Rrkg,,qgkr,1
 Resigned,r-s2-i-n-d,Rsind,,qdinrs,1
 Resigning,r-s2-i-n-\-h,Rsing,,qginrs,1
 Resigns,r-s2-i-n-s,Rsins,,qinrs,1
+Recite,r-s2-i-t,Rsit,,qirst,1
+Recited,r-s2-i-t-d,Rsitd,,qdirst,1
+Reciting,r-s2-i-t-\-h,Rsitg,,qgirst,1
+Recitals,r-s2-i-t-l-s,Rsitls,,qilrst,1
+Recites,r-s2-i-t-s,Rsits,,qirst,1
 Restrict,^-r-s-\-k,Rsk,,qkrs,1
 Restricted,^-r-s-\-k-d,Rskd,,qdkrs,1
 Restricting,^-r-s-\-k-\-h,Rskg,,qgkrs,1
@@ -4722,7 +4730,6 @@ Seasonal,s-e-s2-n-l,Sesnl,,qelns,1
 Seasons,s-e-s2-n-s,Sesns,,qens,1
 Settled,s2-e-t-l-d,Setld,,qdelst,1
 Settling,s2-e-t-l-\-h,Setlg,,qeglst,1
-Settlements,s2-e-t-l-m-s,Setlms,,qelmst,1
 Settles,s2-e-t-l-s,Setls,,qelst,1
 Citizen,s2-e-t-s,Setsi,i,qeist,1
 Citizens,s2-e-t-s-s,Setss,,qest,1
@@ -5446,6 +5453,7 @@ Withdraws,e-th-d-r-a-s,Ehdras,,qadehrs,3
 Withdrawing,e-th-d-r-o-\-h,Ehdrog,,qdeghor,3
 Withdrawn,e-th-d-r-o-n,Ehdron,,qdehnor,3
 Withdraws,e-th-d-r-o-s,Ehdros,,qdehors,3
+Withdrew,e-th-d-r-u,Ehdru,,qdehru,3
 Emulate,e-m-\-u,Emu,,qemu,3
 Emulated,e-m-\-u-d,Emud,,qdemu,3
 Emulating,e-m-\-u-\-h,Emug,,qegmu,3
@@ -6187,8 +6195,6 @@ Angels,a-n-j-l-s,Anjls,,qajlns,6
 Biologically,b-o-\-k-e,Boke,,qbeko,6
 Biological,b-o-\-k,Boko,o,qbko,6
 Biologicals,b-o-\-k-s,Boks,,qbkos,6
-Breather,br-e-th-r,Brehr,,qbehr,6
-Breathers,br-e-th-r-s,Brehrs,,qbehrs,6
 Breaths,br-e-th-s,Brehs,,qbehrs,6
 Battled,b-t-l-d,Btld,,qbdlt,6
 Battling,b-t-l-\-h,Btlg,,qbglt,6
@@ -6265,10 +6271,6 @@ Laughably,l-a-f-b-e,Lafbe,,qabefl,6
 Lifecycle,l-a-f-s-i-k,Lafsik,,qafikls,6
 Lifecycled,l-a-f-s-i-k-d,Lafsikd,,qadfikls,6
 Lifecycling,l-a-f-s-i-k-\-h,Lafsikg,,qafgikls,6
-Lifecycle,l-a-f-s-i-k-l,Lafsikl,,qafikls,6
-Lifecycled,l-a-f-s-i-k-l-d,Lafsikld,,qadfikls,6
-Lifecycling,l-a-f-s-i-k-l-\-h,Lafsiklg,,qafgikls,6
-Lifecycles,l-a-f-s-i-k-l-s,Lafsikls,,qafikls,6
 Lifecycles,l-a-f-s-i-k-s,Lafsiks,,qafikls,6
 Willingly,l-\-h-e,Lhe,,qehl,6
 Locally,l-o-k-ya,Loky,,qkloy,6
@@ -7533,8 +7535,6 @@ Reconcilable,r-k-s-i-l-b,Rksilb,,qbiklrs,18
 Reconciled,r-k-s-i-l-d,Rksild,,qdiklrs,18
 Reconciling,r-k-s-i-l-\-h,Rksilg,,qgiklrs,18
 Reconciles,r-k-s-i-l-s,Rksils,,qiklrs,18
-Reconciliation,r-k-s-i-l-sh,Rksilz,,qiklrsz,18
-Reconciliations,r-k-s-i-l-sh-s,Rksilzs,,qiklrsz,18
 Restarter,r-s2-t-a2-t-r,Rstatr,,qarst,18
 Restarters,r-s2-t-a2-t-r-s,Rstatrs,,qarst,18
 Self-,s->,S>,,q>s,18
@@ -7947,6 +7947,12 @@ Programs,pr-\-g-s,Prgs,,qgprs,29
 Assisted,ss2-t-d,Sstd,,qdst,29
 Assisting,ss2-t-\-h,Sstg,,qgst,29
 Assists,ss2-t-s,Ssts,,qst,29
+Tricked,t-r-e-k-d,Trekd,,qdekrt,29
+Tricky,t-r-e-k-e,Treke,,qekrt,29
+Tricking,t-r-e-k-\-h,Trekg,,qegkrt,29
+Tricks,t-r-e-k-s,Treks,,qekrst,29
+Trickster,t-r-e-k-s-t-r,Trekstr,,qekrst,29
+Tricksters,t-r-e-k-s-t-r-s,Trekstrs,,qekrst,29
 Blamed,bl-a-m-d,Blamd,,qabdlm,30
 Blaming,bl-a-m-\-h,Blamg,,qabglm,30
 Blames,bl-a-m-s,Blams,,qablms,30
@@ -8675,10 +8681,6 @@ Redefined,r-e-df-i-n-d,Rdfind,,qdfinr,57
 Redefining,r-e-df-i-n-\-h,Rdfing,,qdfginr,57
 Redefines,r-e-df-i-n-s,Rdfins,,qdfinrs,57
 Redefinition,r-e-df-i-n-sh,Rdfinz,,qdfinrz,57
-Undefine,u-df-i-n,Udfin,,qdfinu,57
-Undefined,u-df-i-n-d,Udfind,,qdfinu,57
-Undefining,u-df-i-n-\-h,Udfing,,qdfginu,57
-Undefines,u-df-i-n-s,Udfins,,qdfinsu,57
 Align,a-l-i-n,Alin,,qailn,58
 Aligned,a-l-i-n-d,Alind,,qadiln,58
 Aligning,a-l-i-n-\-h,Aling,,qagiln,58
@@ -8995,6 +8997,17 @@ Three,th2-r-e,Hre,,qehr,86
 Threes,th2-r-e-s,Hres,,qehrs,86
 Module,m-o-d-\-l,Modlo,o,qdlmo,86
 Modules,m-o-d-\-l-s,Modlsqk,,qdlmos,86
+Empath,m-p-a-h,Mpah,,qahmp,86
+Empathy,m-p-a-h-e,Mpahe,,qaehmp,86
+Empathetic,m-p-a-h-e-t-k,Mpahetk,,qaehkmpt,86
+Empathetically,m-p-a-h-e-t-k-e,Mpahetke,,qaehkmpt,86
+Empathic,m-p-a-h-k,Mpahk,,qahkmp,86
+Empathetically,m-p-a-h-e-t-k-e,Mpahke,,qaehkmp,86
+Empaths,m-p-a-h-s,Mpahs,,qahmps,86
+Overpower,^-o-\-p-a-u,Opw,,qopw,86
+Overpowered,^-o-\-p-a-u-d,Opwd,,qdopw,86
+Overpowering,^-o-\-p-a-u-\-h,Opwg,,qgopw,86
+Overpowers,^-o-\-p-a-u-s,Opws,,qopsw,86
 Promising,pr-m-e-s-\-h,Prmesg,,qegmprs,86
 Promises,pr-m-e-s-s,Prmess,,qemprs,86
 Powered,p-a-u-d,Pwd,,qdpw,86
@@ -9004,6 +9017,7 @@ Powerhouses,p-a-u-h-u-s-s,Pwhuss,,qhpsuw,86
 Powerless,p-a-u-l,Pwl,,qlpw,86
 Powerlessly,p-a-u-l-e,Pwle,,qelpw,86
 Powers,p-a-u-s,Pws,,qpsw,86
+Ruth,r-u-h,Ruh,,qhru,86
 Timing,tm-\-h,Tmg,,qgmt,86
 Notably,n-o-t-b-e,Notbe,,qbenot,87
 Notability,n-o-t-\-b,Notbo,,qbnot,87
@@ -9471,8 +9485,6 @@ Readably,r-d-b-e,Rdbe,,qbder,142
 Annotate,a-n-o-t-a,Anota,,qanot,143
 Annotated,a-n-o-t-a-d,Anotad,,qadnot,143
 Annotating,a-n-o-t-a-\-h,Anotag,,qagnot,143
-Annotator,a-n-o-t-a-r,Anotar,,qanort,143
-Annotators,a-n-o-t-a-r-s,Anotars,,qanorst,143
 Annotates,a-n-o-t-a-s,Anotas,,qanost,143
 Annotative,a-n-o-t-a-df,Anotatv,,qanotv,143
 Annotatively,a-n-o-t-a-df-e,Anotatve,,qaenotv,143
@@ -9505,10 +9517,6 @@ Namespace,n-a-s-p,Nasp,,qanps,144
 Namespaced,n-a-s-p-d,Naspd,,qadnps,144
 Namespacing,n-a-s-p-\-h,Naspg,,qagnps,144
 Namespaces,n-a-s-p-s,Nasps,,qanps,144
-Workspace,r-k-s-p,Rksp,,qkprs,144
-Workspaced,r-k-s-p-d,Rkspd,,qdkprs,144
-Workspacing,r-k-s-p-\-h,Rkspg,,qgkprs,144
-Workspaces,r-k-s-p-s,Rksps,,qkprs,144
 Token,t-o-k-n,Tokn,,qknot,144
 Tokens,t-o-k-n-s,Tokns,,qknost,144
 Situational,s2-e-t-n-l,Setnl,,qelnst,146
@@ -9672,6 +9680,8 @@ Imagined,e-m-a-j-d,Emajd,,qadejm,178
 Imagining,e-m-a-j-\-h,Emajg,,qaegjm,178
 Imagines,e-m-a-j-s,Emajs,,qaejms,178
 Imaginations,e-m-a-j-s,Emajso,o,qaejmos,178
+Imagination,e-m-a-j-sh,Emajz,,qaejmz,178
+Imaginations,e-m-a-j-sh-s,Emajzs,,qaejmsz,178
 Friday,fr-i,Fri,,qfir,178
 Unimaginable,u-n-e-m-a-j-b,Nemajb,,qabejmn,178
 Spaced,s-p-a-s-d,Spasd,,qadps,178
@@ -9778,6 +9788,7 @@ Picks,p-e-k-s,Peks,,qekps,202
 Christianity,k-r-e-s-ch-/-nt,Krescnt,,qceknrst,203
 Christianities,k-r-e-s-ch-/-nt-s,Krescnts,,qceknrst,203
 Setting,s2-e-t-\-h,Setg,,qegst,203
+Sets,s2-e-t-s,Setso,o,qeost,203
 Externally,e-s-/-n-l-e,Xnle,,qelnx,203
 Externals,e-s-/-n-l-s,Xnls,,qlnsx,203
 Generate,j-e-n-r-a-t,Jenrat,,qaejnrt,204
@@ -11211,10 +11222,6 @@ Recession,r-s-e-sh,Rsez,,qersz,5436
 Sees,s-e-s,Ses,,qes,5436
 Sees,s-e-s,Sesoqk,o,qeos,5436
 Negotiation,n-o-sh,Nozo,o,qnoz,5452
-Tutor,t-u-t-r,Tutr,,qrtu,5452
-Tutored,t-u-t-r-d,Tutrd,,qdrtu,5452
-Tutoring,t-u-t-r-\-h,Tutrg,,qgrtu,5452
-Tutors,t-u-t-r-s,Tutrs,,qrstu,5452
 Nineveh,n-e-n-v-e,Nenve,,qenv,5497
 Interpreted,n-/-p-d,Npd,,qdnp,5497
 Interpreted,n-/-p-d,Npdo,o,qdnop,5497

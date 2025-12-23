@@ -18,13 +18,14 @@ def _build_root_logger() -> logging.Logger:
     console_handler.setLevel(logging.DEBUG)      # let per‑class filter decide
 
     # 2️⃣ Rotating file (10 MiB per file, keep 5 backups)
-    log_dir = Path(os.getenv("LOG_DIR", "logs"))
+    # log_dir = Path(os.getenv("LOG_DIR", "logs"))
+    log_dir = Path("c:\\Windows\\temp\\qwertigraph")
     log_dir.mkdir(parents=True, exist_ok=True)
     file_path = log_dir / os.getenv("LOG_FILE", "app.log")
     file_handler = logging.handlers.RotatingFileHandler(
         file_path,
-        maxBytes=10 * 1024 * 1024,
-        backupCount=5,
+        maxBytes=50 * 1024 * 1024,
+        backupCount=0,
         encoding="utf-8",
     )
     file_handler.setLevel(logging.DEBUG)
