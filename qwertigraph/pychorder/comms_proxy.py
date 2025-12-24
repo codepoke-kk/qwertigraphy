@@ -4,6 +4,8 @@ from PyQt6.QtCore import QObject, pyqtSignal
 
 
 class Comms_Proxy(QObject):
+    engineStarted = pyqtSignal()
+    engineStopped = pyqtSignal()
     coachUpperChanged = pyqtSignal(str)
     coachLowerChanged = pyqtSignal(str)
     coachUpperAppended = pyqtSignal(str)
@@ -17,12 +19,15 @@ class Comms_Proxy(QObject):
         self.engine = None
         self.key_input = None
 
+        self.engineStarted.connect(self.ui.on_engine_started)
+        self.engineStopped.connect(self.ui.on_engine_stopped)
         self.coachUpperChanged.connect(self.ui.set_coach_upper)
         self.coachLowerChanged.connect(self.ui.set_coach_lower)
         self.coachUpperAppended.connect(self.ui.append_coach_upper)
         self.coachLowerAppended.connect(self.ui.append_coach_lower)
         self.performanceUpdated.connect(self.ui.update_performance)
 
+    # Set necessary objects 
     def set_engine(self, engine):
         self._log.debug("Setting engine to {engine}")
         self.engine(engine)
@@ -31,38 +36,7 @@ class Comms_Proxy(QObject):
         self._log.debug("Setting key_input to {key_input}")
         self.key_input = key_input
 
-    # expose only the subset each part is allowed to fire
-    def signal_ui_engine_started(self):
-        self._log.debug("Call to signal_ui_engine_started")
-        '''
-        if callable(self.notify_engine_started):
-            self._log.info("Calling listener engine started notification")
-            self.notify_engine_started()
-        else:
-            self._log.warning("No notify_engine_started callback set")
-        '''
-
-    def signal_ui_engine_stopped(self):
-        self._log.debug("Call to signal_ui_engine_stopped")
-        '''
-        if callable(self.notify_engine_stopped):
-            self._log.info("Calling listener engine stopped notification")
-            self.notify_engine_stopped()
-        else:
-            self._log.warning("No notify_engine_stopped callback set")
-        '''
-
-
-    def signal_ui_get_credential_dict(self) -> dict:
-        self._log.debug("Call to signal_ui_get_credential_dict")
-        '''
-        if callable(self.get_credential_dict):
-            self._log.debug("Calling listener get credential dictionary")
-            return self.get_credential_dict()
-        else:
-            self._log.warning("No get_credential_dict callback set")
-        '''
-
+    # Signals to UI from Engine 
     def signal_performance_updated(self, line: str):
         self._log.debug("Call to signal_performance_updated")
         self.performanceUpdated.emit(line)
@@ -82,6 +56,23 @@ class Comms_Proxy(QObject):
     def signal_coach_append_lower(self, line: str):
         self._log.debug(f"Signaling Coach with append to lower with {line}")
         self.coachLowerAppended.emit(line)
+
+    def signal_ui_engine_started(self):
+        self._log.debug(f"Signaling UI the engine has started")
+        self.engineStarted.emit()
+
+    def signal_ui_engine_stopped(self):
+        self._log.debug(f"Signaling UI the engine has stopped")
+        self.engineStopped.emit()
+
+    # Signals to Engine from the UI 
+    def signal_engine_start(self):
+        self._log.debug(f"Signaling Engine to start")
+        self.key_input.start_listening()
+
+    def signal_engine_stop(self):
+        self._log.debug(f"Signaling Engine to stop")
+        self.key_input.stop_listening()
 
     def signal_vaulter_new_credentials(self, credentials):
         self._log.debug(f"Signaling Vaulter with new credentials")

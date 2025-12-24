@@ -393,14 +393,29 @@ class MainWindow(QMainWindow):
 
 
     def update_performance(self, line: str):
-        print(f"Performance is: {line}")
+        # print(f"Performance is: {line}")
         self.status_label.setText(line)
 
     def start_engine(self):
+        _QW_LOG.info("Starting engine")  
+        self._comms_proxy.signal_engine_start()         
         pass
 
     def stop_engine(self):
+        _QW_LOG.info("Stopping engine") 
+        self._comms_proxy.signal_engine_stop()       
         pass 
+
+    def on_engine_started(self):
+        _QW_LOG.info("Notified engine started")
+        self.btn_start.setEnabled(False)
+        self.btn_stop.setEnabled(True)
+
+
+    def on_engine_stopped(self):
+        _QW_LOG.info("Notified engine stopped")
+        self.btn_start.setEnabled(True)
+        self.btn_stop.setEnabled(False)
 
     def updated_credentials(self):
         _QW_LOG.info("Sending updated credentials to Listener")

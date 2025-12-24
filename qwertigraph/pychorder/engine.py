@@ -391,8 +391,10 @@ class Expansion_Engine:
 
         if ''.join(current_queue) in self.hints:
             hints_list = self.hints[''.join(current_queue)]
-            for hint in hints_list:
+            for hint in hints_list[:30]:
                 # self._log.debug(f"Hint: {hint}")
                 self.key_output.scribe.append_to_lower(f"{hint} = {self.expansions[qwerd + hint]}")
+            if len(hints_list) > 30:
+                self._log.debug(f"Limited {len(hints_list)} hints to 30")
         else:
             self.key_output.scribe.append_to_lower(" = ")

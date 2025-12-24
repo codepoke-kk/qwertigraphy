@@ -88,7 +88,6 @@ class Key_Input:
         self.comms_proxy.signal_ui_engine_started()
 
     def stop_listening(self) -> None:
-        """Remove the keyboard hook and announce the stop."""
         if self.hook is not None:
             keyboard.unhook(self.hook)
             self.hook = None
