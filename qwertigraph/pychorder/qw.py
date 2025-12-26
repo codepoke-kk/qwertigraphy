@@ -6,8 +6,8 @@ from pathlib import Path, PurePath
 from typing import Dict, List, Any
 import json 
 
-from PyQt6.QtCore import Qt, QSize
-from PyQt6.QtGui import QIcon
+from PyQt6.QtCore import Qt, QSize, QSortFilterProxyModel, QModelIndex
+from PyQt6.QtGui import QIcon, QStandardItemModel, QStandardItem
 from PyQt6.QtWidgets import (
     QApplication,
     QMainWindow,
@@ -21,7 +21,8 @@ from PyQt6.QtWidgets import (
     QStackedWidget,
     QTableWidget,
     QTableWidgetItem,
-    QTextEdit, QPushButton, QListWidget, QInputDialog
+    QTextEdit, QPushButton, QListWidget, QInputDialog, QMessageBox, QSizePolicy,
+    QTableView, QHeaderView
 )
 import re
 
@@ -143,7 +144,7 @@ class MainWindow(QMainWindow):
         avail = screen.availableGeometry()
         self.base_height = avail.height() - 30
         self.base_width = 800
-        self.coach_width = 180
+        self.coach_width = 800
 
         self.resize(self.base_width, self.base_height)
         self._pin_to_upper_right() 
@@ -159,9 +160,6 @@ class MainWindow(QMainWindow):
         
         _QW_LOG.info("Started Engine in startup")
 
-    # ------------------------------------------------------------------
-    # Page builders (identical to the tab version, just renamed)
-    # ------------------------------------------------------------------
     def _build_settings_page(self) -> QWidget:
         widget = QWidget()
         self.setting_fields: Dict[str, QLineEdit] = {}
@@ -214,7 +212,6 @@ class MainWindow(QMainWindow):
         settings_grid.addWidget(self.btn_credentials, 8, 1)
 
         # ------------------- NEW: Dictionary Sources ------------------
-        # ------------------- NEW: Dictionary Sources ------------------
         # Label
         settings_grid.addWidget(QLabel("Dictionary Sources:", self), 9, 0)
 
@@ -252,8 +249,8 @@ class MainWindow(QMainWindow):
         btn_holder.setLayout(btn_vbox)
 
         # Place the button column *below* the list (still column 1)
-        settings_grid.addWidget(btn_holder, 10, 1)   # row 10, same column as the list
-        
+        settings_grid.addWidget(btn_holder, 9, 2)   # row 10, same column as the list
+
         cfg = load_config()
         for key, edit in self.setting_fields.items():
             if key in cfg:
@@ -272,9 +269,6 @@ class MainWindow(QMainWindow):
 
         return widget
 
-    # ------------------------------------------------------------------
-    # Helper slots for the new list field
-    # ------------------------------------------------------------------
     def _add_dict_source(self) -> None:
         """Prompt the user for a new source and append it to the list."""
         text, ok = QInputDialog.getText(
@@ -378,18 +372,111 @@ class MainWindow(QMainWindow):
 
     def _build_editor_page(self) -> QWidget:
         _QW_LOG.info("Building Editor")
+        self.COLUMN_COUNT = 7
+        self.HEADER_LABELS = [
+            "word",
+            "form",
+            "qwerd",
+            "keyer",
+            "chord",
+            "usage",
+            "Source",   # 7th column – identifies the source dictionary
+        ]
         self.load_composite_dictionary()
 
         widget = QWidget()
-        layout = QVBoxLayout(widget)
+        
+        main_layout = QVBoxLayout(widget)
 
-        table = QTableWidget(8, 20)
-        table.setHorizontalHeaderLabels([str(i) for i in range(1, 21)])
-        table.setVerticalHeaderLabels([str(i) for i in range(1, 9)])
-        layout.addWidget(table)
+        # ---------- 1️⃣ Filter bar ----------
+        self.filter_edits: List[QLineEdit] = []
+        filter_bar = QHBoxLayout()
+        for col in range(self.COLUMN_COUNT):
+            le = QLineEdit(self)
+            le.setPlaceholderText(f"filter {col + 1}")
+            le.textChanged.connect(self._apply_filters)
+            self.filter_edits.append(le)
+            filter_bar.addWidget(le)
+        main_layout.addLayout(filter_bar)
 
-        self.editor_table = table
+        # ---------- 2️⃣ Central area (table + edit fields) ----------
+        central_hbox = QHBoxLayout()
+        main_layout.addLayout(central_hbox)
+
+        # ----- Left pane : table + edit fields -----
+        left_vbox = QVBoxLayout()
+        central_hbox.addLayout(left_vbox, stretch=1)
+
+        # ----- Table view (filtered) -----
+        self.table_view = QTableView(self)
+        self.table_view.setSelectionBehavior(QTableView.SelectionBehavior.SelectRows)
+        self.table_view.doubleClicked.connect(self._load_row_into_editors)
+        left_vbox.addWidget(self.table_view)
+
+        # ----- Edit bar (7 fields) -----
+        edit_bar = QHBoxLayout()
+        self.editor_edits: List[QLineEdit] = []
+        for col in range(self.COLUMN_COUNT - 1):          # first 6 are plain QLineEdit
+            le = QLineEdit(self)
+            le.setPlaceholderText(f"col {col + 1}")
+            self.editor_edits.append(le)
+            edit_bar.addWidget(le)
+
+        # 7th field is a combo‑box that selects the source dictionary
+        self.source_combo = QComboBox(self)
+        edit_bar.addWidget(self.source_combo)
+
+        # Add / Update button
+        self.btn_add_update = QPushButton("Add / Update", self)
+        self.btn_add_update.clicked.connect(self._add_or_update_entry)
+        edit_bar.addWidget(self.btn_add_update)
+
+        left_vbox.addLayout(edit_bar)
+
+        # ----- Right pane : rapid‑creation buttons -----
+        right_vbox = QVBoxLayout()
+        central_hbox.addLayout(right_vbox)
+
+        # Placeholder button names (feel free to extend)
+        button_names = ["S", "D", "G", "LY", "ALLY", "X", "Y", "Z", "A", "B", "C", "D2"]
+        for name in button_names:
+            btn = QPushButton(name, self)
+            btn.clicked.connect(lambda _, n=name: self._rapid_button_clicked(n))
+            right_vbox.addWidget(btn)
+
+        right_vbox.addStretch()   # push buttons to the top
+
+        # ---------- 3️⃣ Bottom bar (Save) ----------
+        bottom_bar = QHBoxLayout()
+        self.btn_save_all = QPushButton("Save All Dictionaries", self)
+        self.btn_save_all.clicked.connect(self._save_all_sources)
+        bottom_bar.addStretch()
+        bottom_bar.addWidget(self.btn_save_all)
+        main_layout.addLayout(bottom_bar)
+
+        # ----- Model / Proxy setup (empty for now) -----
+        self.base_model = QStandardItemModel(0, self.COLUMN_COUNT, self)
+        self.base_model.setHorizontalHeaderLabels(self.HEADER_LABELS)
+
+        self.proxy = QSortFilterProxyModel(self)
+        self.proxy.setSourceModel(self.base_model)
+        self.proxy.setFilterKeyColumn(-1)   # we will filter manually per column
+        self.table_view.setModel(self.proxy)
+
+        # Make columns stretch to fill the view
+        header = self.table_view.horizontalHeader()
+        header.setSectionResizeMode(QHeaderView.ResizeMode.Stretch)
+
         return widget
+
+    def _apply_filters(self):
+        pass
+    def _load_row_into_editors(self):
+        pass
+    def _add_or_update_entry(self):
+        pass
+    def _save_all_sources(self):
+        pass
 
     def load_composite_dictionary(self):
         from dictionary import Entry, Source_Dictionary, Composite_Dictionary
@@ -424,18 +511,28 @@ class MainWindow(QMainWindow):
         layout.setSpacing(0)                   # panes touch each other
 
         self.upper = QTextEdit(self)
-        self._configure_text_edit(self.upper)
-        layout.addWidget(self.upper)
+        self.upper_hints = QTextEdit(self)
+        upper_container = self._configure_text_edit(self.upper, self.upper_hints)
+        layout.addWidget(upper_container)
         self.lower = QTextEdit(self)
-        self._configure_text_edit(self.lower)
-        layout.addWidget(self.lower)
+        self.lower_hints = QTextEdit(self)
+        lower_container = self._configure_text_edit(self.lower, self.lower_hints)
+        layout.addWidget(lower_container)
 
         return widget
     
     @staticmethod
-    def _configure_text_edit(edit: QTextEdit):
+    def _configure_text_edit(edit: QTextEdit, edit_hints: QTextEdit):
         # print(f"Configuring new pane {edit}")
         edit.setReadOnly(False)                     # allow programmatic writes
+        edit.setFixedWidth(180)                     # exactly 180 px
+        edit_hints.setReadOnly(False)
+        edit_hints.setFixedWidth(620)     
+        # (optional) keep the height flexible but prevent horizontal stretching
+        edit.setSizePolicy(QSizePolicy.Policy.Fixed,
+                           QSizePolicy.Policy.Expanding)
+        edit_hints.setSizePolicy(QSizePolicy.Policy.Fixed,
+                           QSizePolicy.Policy.Expanding)
         # In Qt6 the wrap mode enum lives under LineWrapMode
         edit.setLineWrapMode(QTextEdit.LineWrapMode.NoWrap)
         # Scroll‑bar policies are now under Qt.ScrollBarPolicy
@@ -451,17 +548,37 @@ class MainWindow(QMainWindow):
             }
             """
         )
+        edit_hints.setStyleSheet(
+            """
+            QTextEdit {
+                background-color: #fafafa;
+                font-family: Consolas, monospace;
+                font-size: 10pt;
+                padding: 2px;
+            }
+            """
+        )
         # print(f"Configured pane {edit}")
+
+        hbox = QHBoxLayout()
+        hbox.setContentsMargins(0, 0, 0, 0)         # no extra margins inside
+        hbox.addWidget(edit_hints)                          # left‑hand stretch
+        hbox.addWidget(edit)                       # edit pushed to the right
+        # The horizontal layout itself is added to the main vertical layout
+        container = QWidget()
+        container.setLayout(hbox)
+        return container
+
+
 
     # ------------------------------------------------------------------
     # Navigation handling
     # ------------------------------------------------------------------
     def _on_nav_changed(self, idx: int) -> None:
         """
-        Called when the combo box selection changes.
-        * Switches the stacked widget page.
-        * Resizes the window (800 px ↔ 180 px) depending on the page.
-        * Updates the dashboard label.
+        I used to resize the window when switching to the Coach. 
+        It failed, because the other tabs had minimum sizes, even when invisible. 
+        They were too big. I still want to stay pinned to the top right 
         """
         self.stack.setCurrentIndex(idx)
 
