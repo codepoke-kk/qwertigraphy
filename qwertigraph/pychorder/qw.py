@@ -2,8 +2,9 @@
 
 import os
 import sys
-from pathlib import Path
-from typing import Dict
+from pathlib import Path, PurePath
+from typing import Dict, List, Any
+import json 
 
 from PyQt6.QtCore import Qt, QSize
 from PyQt6.QtGui import QIcon
@@ -20,7 +21,7 @@ from PyQt6.QtWidgets import (
     QStackedWidget,
     QTableWidget,
     QTableWidgetItem,
-    QTextEdit, QPushButton
+    QTextEdit, QPushButton, QListWidget, QInputDialog
 )
 import re
 
@@ -37,34 +38,44 @@ load_dotenv(BASE_DIR / ".env")          # <-- adjust path if needed
 from log_factory import get_logger
 _QW_LOG = get_logger("QW") 
 
+from dictionary import Entry, Source_Dictionary, Composite_Dictionary
+
 def ensure_config_dir() -> None:
     CONFIG_DIR.mkdir(parents=True, exist_ok=True)
 
-
-def load_config() -> Dict[str, str]:
+def load_config() -> Dict[str, Any]:
+    """
+    Load the JSON configuration file and return a dict.
+    If the file does not exist or cannot be parsed, an empty dict is returned.
+    """
     ensure_config_dir()
-    cfg: Dict[str, str] = {}
+    _QW_LOG.debug("Loading config")
+
     if not CONFIG_FILE.is_file():
-        return cfg
+        _QW_LOG.debug("Config file missing – returning empty dict")
+        return {}
+
     try:
-        for line in CONFIG_FILE.read_text(encoding="utf-8").splitlines():
-            line = line.strip()
-            if not line or line.startswith("#"):
-                continue
-            if "=" in line:
-                k, v = line.split("=", 1)
-                cfg[k.strip()] = v.strip()
-    except Exception as exc:
+        data = json.loads(CONFIG_FILE.read_text(encoding="utf-8"))
+        if not isinstance(data, dict):
+            _QW_LOG.warning("Config file did not contain a JSON object – resetting")
+            return {}
+        _QW_LOG.debug(f"Config loaded: keys={list(data.keys())}")
+        return data
+    except Exception as exc:            # pragma: no cover – defensive logging
         print(f"⚠️  Could not read config: {exc}")
-    return cfg
+        return {}
 
-
-def save_config(values: Dict[str, str]) -> None:
+def save_config(values: Dict[str, Any]) -> None:
     ensure_config_dir()
-    lines = [f"{k} = {v}" for k, v in values.items()]
+    tmp_path = CONFIG_FILE.with_suffix(".tmp")
+
     try:
-        CONFIG_FILE.write_text("\n".join(lines), encoding="utf-8")
-    except Exception as exc:
+        # `indent=2` makes the file nicely readable for humans.
+        tmp_path.write_text(json.dumps(values, indent=2, sort_keys=True), encoding="utf-8")
+        tmp_path.replace(CONFIG_FILE)   # atomic replace on most OSes
+        _QW_LOG.debug(f"Configuration saved to {CONFIG_FILE}")
+    except Exception as exc:            # pragma: no cover – defensive logging
         print(f"⚠️  Could not write config: {exc}")
 
 
@@ -202,27 +213,173 @@ class MainWindow(QMainWindow):
         self.btn_credentials.clicked.connect(self.updated_credentials)
         settings_grid.addWidget(self.btn_credentials, 8, 1)
 
+        # ------------------- NEW: Dictionary Sources ------------------
+        # ------------------- NEW: Dictionary Sources ------------------
+        # Label
+        settings_grid.addWidget(QLabel("Dictionary Sources:", self), 9, 0)
+
+        # List widget (holds the array of strings)
+        self.dict_source_list = QListWidget(self)
+        self.dict_source_list.setSelectionMode(
+            QListWidget.SelectionMode.MultiSelection
+        )
+        settings_grid.addWidget(self.dict_source_list, 9, 1)
+
+        # --------------------------------------------------------------
+        # Create a *single* vertical layout that holds all three buttons
+        # --------------------------------------------------------------
+        btn_vbox = QVBoxLayout()
+        btn_vbox.setSpacing(4)
+
+        btn_add_src = QPushButton("Add Source", self)
+        btn_add_src.clicked.connect(self._add_dict_source)
+        btn_vbox.addWidget(btn_add_src)
+
+        btn_remove_src = QPushButton("Remove Selected", self)
+        btn_remove_src.clicked.connect(self._remove_selected_sources)
+        btn_vbox.addWidget(btn_remove_src)
+
+        btn_move_up = QPushButton("▲ Move Up", self)
+        btn_move_up.clicked.connect(self._move_up_selected)
+        btn_vbox.addWidget(btn_move_up)
+
+        btn_move_down = QPushButton("▼ Move Down", self)
+        btn_move_down.clicked.connect(self._move_down_selected)
+        btn_vbox.addWidget(btn_move_down)
+
+        # Wrap the layout in a dummy widget so we can add it to the grid
+        btn_holder = QWidget(self)
+        btn_holder.setLayout(btn_vbox)
+
+        # Place the button column *below* the list (still column 1)
+        settings_grid.addWidget(btn_holder, 10, 1)   # row 10, same column as the list
+        
         cfg = load_config()
         for key, edit in self.setting_fields.items():
             if key in cfg:
                 edit.setText(cfg[key])
 
+        # Populate the dictionary‑source list
+        if "dict_sources" in cfg and isinstance(cfg["dict_sources"], list):
+            for src in cfg["dict_sources"]:
+                self.dict_source_list.addItem(str(src))
+
         for edit in self.setting_fields.values():
             edit.editingFinished.connect(self._save_settings)
+
+        # Also save when the list widget changes (add/remove)
+        self.dict_source_list.itemChanged.connect(self._save_settings)
+
         return widget
 
-    def _save_settings(self) -> None:
-        # Keep only keys that do NOT start with the forbidden prefix
-        values = {
-            k: w.text()
-            for k, w in self.setting_fields.items()
-            if not k.startswith("pass_")
-        }
+    # ------------------------------------------------------------------
+    # Helper slots for the new list field
+    # ------------------------------------------------------------------
+    def _add_dict_source(self) -> None:
+        """Prompt the user for a new source and append it to the list."""
+        text, ok = QInputDialog.getText(
+            self,
+            "Add Dictionary Source",
+            "Enter the source URL or identifier:",
+        )
+        if ok and text.strip():
+            # Avoid duplicate entries (optional)
+            existing = [
+                self.dict_source_list.item(i).text()
+                for i in range(self.dict_source_list.count())
+            ]
+            if text in existing:
+                QMessageBox.information(
+                    self,
+                    "Duplicate",
+                    "That source is already in the list.",
+                )
+                return
+            self.dict_source_list.addItem(text.strip())
+            self._save_settings()
 
-        save_config(values)                     # writes the filtered dict
-        self.status_label.setText("Dashboard: settings saved")
+    def _remove_selected_sources(self) -> None:
+        """Delete every selected item from the list."""
+        for item in self.dict_source_list.selectedItems():
+            self.dict_source_list.takeItem(self.dict_source_list.row(item))
+        self._save_settings()
+
+    def _move_up_selected(self) -> None:
+        """
+        Move the currently selected row(s) one position upward.
+        If multiple rows are selected, they retain their relative order.
+        """
+        selected_items = self.dict_source_list.selectedItems()
+        if not selected_items:
+            return
+
+        # Process items in the order they appear in the list (top-to-bottom)
+        for item in selected_items:
+            row = self.dict_source_list.row(item)
+            if row == 0:                 # already at top – nothing to do
+                continue
+
+            # Take the item out, then insert it one row higher
+            taken_item = self.dict_source_list.takeItem(row)
+            self.dict_source_list.insertItem(row - 1, taken_item)
+            taken_item.setSelected(True)   # keep it selected
+
+        self._save_settings()              # persist the new order
+
+
+    def _move_down_selected(self) -> None:
+        """
+        Move the currently selected row(s) one position downward.
+        If multiple rows are selected, they retain their relative order.
+        """
+        selected_items = self.dict_source_list.selectedItems()
+        if not selected_items:
+            return
+
+        # Important: when moving down we must iterate **bottom-to-top**
+        # so that earlier inserts don’t shift the indices of items we
+        # haven’t processed yet.
+        for item in reversed(selected_items):
+            row = self.dict_source_list.row(item)
+            if row == self.dict_source_list.count() - 1:   # already last
+                continue
+
+            taken_item = self.dict_source_list.takeItem(row)
+            self.dict_source_list.insertItem(row + 1, taken_item)
+            taken_item.setSelected(True)
+
+        self._save_settings()
+
+    def _save_settings(self) -> None:
+        """
+        Collect all UI values and write them back to the config file.
+        This method is called whenever a line‑edit loses focus or the
+        source list is modified.
+        """
+        cfg: Dict[str, object] = {}
+
+        # --- credentials (simple strings) ---
+        for key, edit in self.setting_fields.items():
+            cfg[key] = edit.text()
+
+        # --- dictionary sources (array) ---
+        sources: List[str] = [
+            self.dict_source_list.item(i).text()
+            for i in range(self.dict_source_list.count())
+        ]
+        cfg["dict_sources"] = sources
+
+        # Write the file – replace this with your actual persistence logic
+        save_config(cfg)   # <-- you already have a `save_config` helper somewhere
+
+        # Reload the dictionaries based on the new config 
+        self.load_composite_dictionary()
+
 
     def _build_editor_page(self) -> QWidget:
+        _QW_LOG.info("Building Editor")
+        self.load_composite_dictionary()
+
         widget = QWidget()
         layout = QVBoxLayout(widget)
 
@@ -233,6 +390,21 @@ class MainWindow(QMainWindow):
 
         self.editor_table = table
         return widget
+
+    def load_composite_dictionary(self):
+        from dictionary import Entry, Source_Dictionary, Composite_Dictionary
+        # src1 = Source_Dictionary(name="anniversary_uniform_core.csv", csv_path="dictionaries/anniversary_uniform_core.csv")
+        # src2 = Source_Dictionary(name="anniversary_uniform_supplement.csv", csv_path="dictionaries/anniversary_uniform_supplement.csv")
+
+        # --- dictionary sources (array) ---
+        sources = []
+        for i in range(self.dict_source_list.count()):
+            csv_path = self.dict_source_list.item(i).text()
+            name = os.path.basename(PurePath(csv_path).as_posix())
+            source = Source_Dictionary(name=name, csv_path=csv_path)
+            sources.append(source)
+        dictionary = Composite_Dictionary(sources)
+        _QW_LOG.info(f"Dictionary loaded of {len(dictionary.all_entries())} entries")
 
     def _build_log_page(self) -> QWidget:
         widget = QWidget()
