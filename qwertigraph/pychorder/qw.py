@@ -87,6 +87,8 @@ class MainWindow(QMainWindow):
     def __init__(self) -> None:
         super().__init__()
         self.setWindowTitle("Qwertigraph – Engine Control")
+        self.base_width = 1200
+        self.coach_hints_width = 180
 
         # Optional icon (same folder as script)
         icon_path = Path(__file__).with_name("coach.ico")
@@ -143,8 +145,6 @@ class MainWindow(QMainWindow):
         screen = QApplication.primaryScreen()
         avail = screen.availableGeometry()
         self.base_height = avail.height() - 30
-        self.base_width = 800
-        self.coach_width = 800
 
         self.resize(self.base_width, self.base_height)
         self._pin_to_upper_right() 
@@ -372,16 +372,22 @@ class MainWindow(QMainWindow):
 
     def _build_editor_page(self) -> QWidget:
         _QW_LOG.info("Building Editor")
-        self.COLUMN_COUNT = 7
-        self.HEADER_LABELS = [
-            "word",
-            "form",
-            "qwerd",
-            "keyer",
-            "chord",
-            "usage",
+        self.EDITOR_COLUMN_COUNT = 7
+        self.EDITOR_HEADER_LABELS = [
+            "Word",
+            "Form",
+            "Qwerd",
+            "Keyer",
+            "Chord",
+            "Usage",
             "Source",   # 7th column – identifies the source dictionary
         ]
+        self.editor_base_model = QStandardItemModel(0, self.EDITOR_COLUMN_COUNT, self)
+        self.editor_base_model.setHorizontalHeaderLabels(self.EDITOR_HEADER_LABELS)
+        self.editor_proxy = QSortFilterProxyModel(self)
+        self.editor_proxy.setSourceModel(self.editor_base_model)
+        self.editor_proxy.setFilterKeyColumn(-1)   # we filter manually per column
+
         self.load_composite_dictionary()
 
         widget = QWidget()
@@ -391,7 +397,7 @@ class MainWindow(QMainWindow):
         # ---------- 1️⃣ Filter bar ----------
         self.filter_edits: List[QLineEdit] = []
         filter_bar = QHBoxLayout()
-        for col in range(self.COLUMN_COUNT):
+        for col in range(self.EDITOR_COLUMN_COUNT):
             le = QLineEdit(self)
             le.setPlaceholderText(f"filter {col + 1}")
             le.textChanged.connect(self._apply_filters)
@@ -410,13 +416,14 @@ class MainWindow(QMainWindow):
         # ----- Table view (filtered) -----
         self.table_view = QTableView(self)
         self.table_view.setSelectionBehavior(QTableView.SelectionBehavior.SelectRows)
+        self.table_view.setModel(self.editor_proxy) 
         self.table_view.doubleClicked.connect(self._load_row_into_editors)
         left_vbox.addWidget(self.table_view)
 
         # ----- Edit bar (7 fields) -----
         edit_bar = QHBoxLayout()
         self.editor_edits: List[QLineEdit] = []
-        for col in range(self.COLUMN_COUNT - 1):          # first 6 are plain QLineEdit
+        for col in range(self.EDITOR_COLUMN_COUNT - 1):          # first 6 are plain QLineEdit
             le = QLineEdit(self)
             le.setPlaceholderText(f"col {col + 1}")
             self.editor_edits.append(le)
@@ -454,30 +461,108 @@ class MainWindow(QMainWindow):
         bottom_bar.addWidget(self.btn_save_all)
         main_layout.addLayout(bottom_bar)
 
-        # ----- Model / Proxy setup (empty for now) -----
-        self.base_model = QStandardItemModel(0, self.COLUMN_COUNT, self)
-        self.base_model.setHorizontalHeaderLabels(self.HEADER_LABELS)
-
-        self.proxy = QSortFilterProxyModel(self)
-        self.proxy.setSourceModel(self.base_model)
-        self.proxy.setFilterKeyColumn(-1)   # we will filter manually per column
-        self.table_view.setModel(self.proxy)
-
         # Make columns stretch to fill the view
         header = self.table_view.horizontalHeader()
         header.setSectionResizeMode(QHeaderView.ResizeMode.Stretch)
 
+        self._populate_ui_from_composite()
+
         return widget
 
-    def _apply_filters(self):
-        pass
-    def _load_row_into_editors(self):
-        pass
-    def _add_or_update_entry(self):
-        pass
-    def _save_all_sources(self):
-        pass
+    def _populate_ui_from_composite(self) -> None:
+        """Load all entries and source names into the UI."""
+        # Fill the source combo box
+        self.source_combo.clear()
+        for src_name in self.composite.get_source_names():
+            self.source_combo.addItem(src_name)
 
+        # Load every entry into the base model
+        self.editor_base_model.removeRows(0, self.editor_base_model.rowCount())
+        for entry in self.composite.all_entries():          # entry is List[str] length 7
+            items = [QStandardItem(str(cell)) for cell in entry]
+            self.editor_base_model.appendRow(items)
+
+
+    def _apply_filters(self):
+        patterns = [
+            (col, edit.text().strip().lower())
+            for col, edit in enumerate(self.filter_edits)
+            if edit.text().strip()
+        ]
+
+        for row in range(self.editor_base_model.rowCount()):
+            match = True
+            for col, pat in patterns:
+                cell_text = self.editor_base_model.item(row, col).text().lower()
+                if pat not in cell_text:
+                    match = False
+                    break
+            self.table_view.setRowHidden(row, not match)
+
+    def _load_row_into_editors(self, proxy_index: QModelIndex) -> None:
+        src_index = self.editor_proxy.mapToSource(proxy_index)
+        row = src_index.row()
+
+        # Populate the six plain editors
+        for col in range(self.EDITOR_COLUMN_COUNT - 1):
+            txt = self.editor_base_model.item(row, col).text()
+            self.editor_edits[col].setText(txt)
+
+        # Populate the source combo
+        src_name = self.editor_base_model.item(row, self.EDITOR_COLUMN_COUNT - 1).text()
+        idx = self.source_combo.findText(src_name)
+        if idx != -1:
+            self.source_combo.setCurrentIndex(idx)
+
+        # Store the *original* row data so we can perform an update later
+        self._currently_loaded_row = [self.editor_base_model.item(row, c).text()
+                                      for c in range(self.EDITOR_COLUMN_COUNT)]
+        
+    def _add_or_update_entry(self) -> None:
+        """
+        If a row was previously loaded via double‑click, we treat the
+        operation as an **update**; otherwise it is an **add**.
+        """
+        # Gather the 7 values from the UI
+        new_values = [le.text() for le in self.editor_edits]
+        src_name = self.source_combo.currentText()
+        if not src_name:
+            QMessageBox.warning(self, "Missing source",
+                                "Select a source dictionary in the last field.")
+            return
+        new_values.append(src_name)          # column 7 = source name
+        qwerd_to_match = new_values[2]                               # index 2 = 3rd column
+
+        row_to_update = -1                                            # sentinel
+        for r in range(self.editor_base_model.rowCount()):
+            # Grab the qwerd of the current row (column 2)
+            existing_qwerd = self.editor_base_model.item(r, 2).text()
+            if existing_qwerd == qwerd_to_match:
+                row_to_update = r
+                break                                                # stop at first match (qwerd is unique)
+
+        if row_to_update != -1:
+            # ----- UPDATE -----
+            for c, val in enumerate(new_values):
+                # ``item`` is guaranteed to exist because the model already has this row
+                self.editor_base_model.item(row_to_update, c).setText(val)
+        else:
+            # ----- ADD -----
+            items = [QStandardItem(v) for v in new_values]
+            self.editor_base_model.appendRow(items)
+
+
+        # Re‑apply filters so a newly added row appears/disappears correctly
+        self._apply_filters()
+        
+        entry = Entry(new_values[0], new_values[1], new_values[2], new_values[3], new_values[4], new_values[5], new_values[6])
+        self.composite.put(entry)
+
+    def _save_all_sources(self) -> None:
+        self.composite.save_all()
+        # QMessageBox.information(self, "Saved",
+        #                         "All dictionaries have been saved successfully.")
+        
     def load_composite_dictionary(self):
         from dictionary import Entry, Source_Dictionary, Composite_Dictionary
         # src1 = Source_Dictionary(name="anniversary_uniform_core.csv", csv_path="dictionaries/anniversary_uniform_core.csv")
@@ -485,13 +570,16 @@ class MainWindow(QMainWindow):
 
         # --- dictionary sources (array) ---
         sources = []
+        csv_paths = []
         for i in range(self.dict_source_list.count()):
             csv_path = self.dict_source_list.item(i).text()
+            csv_paths.append(csv_path)
             name = os.path.basename(PurePath(csv_path).as_posix())
             source = Source_Dictionary(name=name, csv_path=csv_path)
             sources.append(source)
-        dictionary = Composite_Dictionary(sources)
-        _QW_LOG.info(f"Dictionary loaded of {len(dictionary.all_entries())} entries")
+        self.composite = Composite_Dictionary(sources)
+        os.environ['DICTIONARY_PATHS'] = ','.join(csv_paths)
+        _QW_LOG.info(f"Dictionary loaded of {len(self.composite.all_entries())} entries")
 
     def _build_log_page(self) -> QWidget:
         widget = QWidget()
@@ -521,13 +609,13 @@ class MainWindow(QMainWindow):
 
         return widget
     
-    @staticmethod
-    def _configure_text_edit(edit: QTextEdit, edit_hints: QTextEdit):
+    # @staticmethod
+    def _configure_text_edit(self, edit: QTextEdit, edit_hints: QTextEdit):
         # print(f"Configuring new pane {edit}")
         edit.setReadOnly(False)                     # allow programmatic writes
-        edit.setFixedWidth(180)                     # exactly 180 px
+        edit.setFixedWidth(self.coach_hints_width)  
         edit_hints.setReadOnly(False)
-        edit_hints.setFixedWidth(620)     
+        edit_hints.setFixedWidth(self.base_width - self.coach_hints_width)     
         # (optional) keep the height flexible but prevent horizontal stretching
         edit.setSizePolicy(QSizePolicy.Policy.Fixed,
                            QSizePolicy.Policy.Expanding)
@@ -583,7 +671,7 @@ class MainWindow(QMainWindow):
         self.stack.setCurrentIndex(idx)
 
         if idx == 3:                     # Coach page
-            self.resize(self.coach_width, self.base_height)
+            self.resize(self.base_width, self.base_height)
             self.status_label.setText("Dashboard: Coach mode")
         else:
             self.resize(self.base_width, self.base_height)

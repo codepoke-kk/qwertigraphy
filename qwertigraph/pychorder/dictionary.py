@@ -54,7 +54,23 @@ class Entry:
 
     def __repr__(self) -> str:
         return f"<Entry {self.word!r} ({self.source})>"
-    
+
+    def __iter__(self):
+        # The order must match HEADER_LABELS / the UI column order
+        yield self.word
+        yield self.form
+        yield self.qwerd
+        yield self.keyer
+        yield self.chord
+        yield self.usage
+        yield self.source
+
+    # (Optional) make it behave like a sequence for indexing
+    def __len__(self):
+        return len(self.__slots__)
+
+    def __getitem__(self, idx):
+        return getattr(self, self.__slots__[idx])
 
 class Source_Dictionary:
     """
@@ -121,6 +137,11 @@ class Source_Dictionary:
     # ------------------------------------------------------------------ #
     # Public CRUD API
     # ------------------------------------------------------------------ #
+    def put (self, entry: Entry) -> None:
+        """Add or replace a new entry"""
+        key = self._key_of(entry)
+        self.entries[key] = entry
+
     def create(self, entry: Entry) -> None:
         """Add a new entry; raises if the key already exists."""
         key = self._key_of(entry)
@@ -186,6 +207,23 @@ class Composite_Dictionary:
     # ------------------------------------------------------------------ #
     # Composite CRUD – public API
     # ------------------------------------------------------------------ #
+    def put(self, entry: Entry) -> None:
+        """
+        Add or replace an entry:
+          * It must specify a valid `source` that matches one of the contained
+            Source_Dictionary names.
+          * The entry is inserted into that source (persisted later via `save_all`)
+          * The composite index is refreshed.
+        """
+        target_src = self._find_source(entry.source)
+        if not target_src:
+            raise ValueError(f"Unknown source '{entry.source}'. Available: "
+                             f"{[s.name for s in self.sources]}")
+
+        key = self._key_of(entry)
+        target_src.put(entry) 
+        self._index[key] = entry 
+
     def create(self, entry: Entry) -> None:
         """
         Add a new entry:
@@ -262,6 +300,12 @@ class Composite_Dictionary:
         """Composite view – list of unique entries (≈40 k)."""
         return list(self._index.values())
 
+    def get_source_names(self):
+        sources = []
+        for source in self.sources:
+            sources.append(source.name)
+        return sources 
+    
     # ------------------------------------------------------------------ #
     # Persistence
     # ------------------------------------------------------------------ #

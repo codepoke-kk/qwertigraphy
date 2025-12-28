@@ -1,15 +1,98 @@
-import csv
+# --------------------------------------------------------------
+# CompositeDictionary – the façade you already wrote.
+# --------------------------------------------------------------
+# The real class lives somewhere else in your code base.
+# The stub below only shows the public interface that the editor
+# expects.  Swap it out for your actual implementation.
+# --------------------------------------------------------------
+import csv 
+
+class CompositeDictionary:
+    """
+    Manages many CSV‑based dictionaries behind a simple CRUD API.
+
+    Public methods used by the editor:
+        - get_sources() → List[str]                     # names of the CSV files
+        - all_entries() → List[List[str]]               # each row = 7 strings
+        - add_entry(entry: List[str]) → None            # entry[6] is the source name
+        - update_entry(old_entry: List[str],
+                      new_entry: List[str]) → None
+        - save_all() → None
+    """
+
+    def __init__(self, folder: Path):
+        self.folder = folder
+        self._entries: List[List[str]] = []   # in‑memory cache
+        self._load_all()
+
+    # ------------------------------------------------------------------
+    # Internal helpers (real implementation will read/write CSVs)
+    # ------------------------------------------------------------------
+    def _load_all(self) -> None:
+        """Populate self._entries from every CSV in self.folder."""
+        for csv_path in sorted(self.folder.glob("*.csv")):
+            with csv_path.open(newline="", encoding="utf-8") as f:
+                for row in csv.reader(f):
+                    # Ensure the row has exactly 7 columns; pad if necessary
+                    row = list(row)[:7] + [""] * (7 - len(row))
+                    # Append the source name (file name) as the 7th column
+                    row[6] = csv_path.name
+                    self._entries.append(row)
+
+    # ------------------------------------------------------------------
+    # Public API used by the UI
+    # ------------------------------------------------------------------
+    def get_sources(self) -> List[str]:
+        """Return a list of unique source‑file names."""
+        return sorted({row[6] for row in self._entries})
+
+    def all_entries(self) -> List[List[str]]:
+        """Return a shallow copy of every entry (7‑column list)."""
+        return [list(r) for r in self._entries]
+
+    def add_entry(self, entry: List[str]) -> None:
+        """Append a new entry.  Caller must ensure entry has 7 items."""
+        if len(entry) != 7:
+            raise ValueError("Entry must contain exactly 7 columns")
+        self._entries.append(list(entry))
+
+    def update_entry(self, old_entry: List[str], new_entry: List[str]) -> None:
+        """
+        Replace *old_entry* with *new_entry*.
+        Matching is performed on the full 7‑column list (including source).
+        """
+        try:
+            idx = self._entries.index(old_entry)
+        except ValueError:
+            raise ValueError("Old entry not found in dictionary")
+        self._entries[idx] = list(new_entry)
+
+    def save_all(self) -> None:
+        """Write each source back to its CSV file."""
+        # Group rows by source name
+        rows_by_source: Dict[str, List[List[str]]] = {}
+        for row in self._entries:
+            src = row[6]
+            rows_by_source.setdefault(src, []).append(row[:6])   # drop source column
+
+        for src_name, rows in rows_by_source.items():
+            csv_path = self.folder / src_name
+            with csv_path.open("w", newline="", encoding="utf-8") as f:
+                writer = csv.writer(f)
+                writer.writerows(rows)
+
 import sys
 from pathlib import Path
-from typing import List, Dict
+from typing import List
 
 from PyQt6.QtCore import Qt, QSortFilterProxyModel, QModelIndex
 from PyQt6.QtGui import QStandardItemModel, QStandardItem
 from PyQt6.QtWidgets import (
     QApplication,
-    QWidget, QTabWidget,
-    QHBoxLayout,
+    QWidget,
+    QTabWidget,
     QVBoxLayout,
+    QHBoxLayout,
     QLineEdit,
     QLabel,
     QTableView,
@@ -19,32 +102,20 @@ from PyQt6.QtWidgets import (
     QMessageBox,
 )
 
-
 # ----------------------------------------------------------------------
-# Helper: simple CSV ↔ list‑of‑lists conversion (replace with your own)
+# Import your real CompositeDictionary implementation here.
+# For this example we use the stub defined above.
 # ----------------------------------------------------------------------
-def load_csv(path: Path) -> List[List[str]]:
-    """Read a CSV file (comma‑separated, no quoting) into a list of rows."""
-    if not path.is_file():
-        return []
-    with path.open(newline="", encoding="utf-8") as f:
-        return list(csv.reader(f))
-
-
-def save_csv(path: Path, rows: List[List[str]]) -> None:
-    """Write a list of rows to a CSV file."""
-    with path.open("w", newline="", encoding="utf-8") as f:
-        writer = csv.writer(f)
-        writer.writerows(rows)
-
-
+# from your_module import CompositeDictionary
+# (the stub is defined earlier in this file for a self‑contained demo)
 # ----------------------------------------------------------------------
-# Main widget – the dictionary editor tab
-# ----------------------------------------------------------------------
+
+
 class DictionaryEditorTab(QWidget):
     """
-    One tab that lets the user filter, view, edit and add entries
-    to a collection of source dictionaries (CSV files).
+    UI that works **against** a CompositeDictionary instance.
+    The editor does not know anything about CSV files – it only talks
+    to the composite via its CRUD API.
     """
 
     COLUMN_COUNT = 7
@@ -61,18 +132,22 @@ class DictionaryEditorTab(QWidget):
     # ------------------------------------------------------------------
     # Construction
     # ------------------------------------------------------------------
-    def __init__(self, source_folder: Path, parent=None):
+    def __init__(self, composite: CompositeDictionary, parent=None):
         super().__init__(parent)
 
-        self.source_folder = source_folder
-        self.source_files: List[Path] = []          # e.g. ["dict1.csv", "dict2.csv"]
-        self.models_by_source: Dict[Path, QStandardItemModel] = {}
+        self.composite = composite                     # <-- the façade
+        self.base_model = QStandardItemModel(0, self.COLUMN_COUNT, self)
+        self.base_model.setHorizontalHeaderLabels(self.HEADER_LABELS)
+
+        self.proxy = QSortFilterProxyModel(self)
+        self.proxy.setSourceModel(self.base_model)
+        self.proxy.setFilterKeyColumn(-1)   # we filter manually per column
 
         self._setup_ui()
-        self._load_all_sources()
+        self._populate_ui_from_composite()
 
     # ------------------------------------------------------------------
-    # UI building
+    # UI building (unchanged apart from data source)
     # ------------------------------------------------------------------
     def _setup_ui(self) -> None:
         main_layout = QVBoxLayout(self)
@@ -111,7 +186,7 @@ class DictionaryEditorTab(QWidget):
             self.editor_edits.append(le)
             edit_bar.addWidget(le)
 
-        # 7th field is a combo‑box that selects the source dictionary
+        # 7th field – source selector (populated from composite)
         self.source_combo = QComboBox(self)
         edit_bar.addWidget(self.source_combo)
 
@@ -126,96 +201,54 @@ class DictionaryEditorTab(QWidget):
         right_vbox = QVBoxLayout()
         central_hbox.addLayout(right_vbox)
 
-        # Placeholder button names (feel free to extend)
         button_names = ["S", "D", "G", "LY", "ALLY", "X", "Y", "Z", "A", "B", "C", "D2"]
         for name in button_names:
             btn = QPushButton(name, self)
             btn.clicked.connect(lambda _, n=name: self._rapid_button_clicked(n))
             right_vbox.addWidget(btn)
 
-        right_vbox.addStretch()   # push buttons to the top
+        right_vbox.addStretch()
 
         # ---------- 3️⃣ Bottom bar (Save) ----------
         bottom_bar = QHBoxLayout()
         self.btn_save_all = QPushButton("Save All Dictionaries", self)
-        self.btn_save_all.clicked.connect(self._save_all_sources)
+        self.btn_save_all.clicked.connect(self._save_all)
         bottom_bar.addStretch()
         bottom_bar.addWidget(self.btn_save_all)
         main_layout.addLayout(bottom_bar)
 
-        # ----- Model / Proxy setup (empty for now) -----
-        self.base_model = QStandardItemModel(0, self.COLUMN_COUNT, self)
-        self.base_model.setHorizontalHeaderLabels(self.HEADER_LABELS)
-
-        self.proxy = QSortFilterProxyModel(self)
-        self.proxy.setSourceModel(self.base_model)
-        self.proxy.setFilterKeyColumn(-1)   # we will filter manually per column
+        # ----- Model / View wiring -----
         self.table_view.setModel(self.proxy)
 
-        # Make columns stretch to fill the view
         header = self.table_view.horizontalHeader()
         header.setSectionResizeMode(QHeaderView.ResizeMode.Stretch)
 
     # ------------------------------------------------------------------
-    # Loading all CSV files from the folder
+    # Populate UI from the CompositeDictionary
     # ------------------------------------------------------------------
-    def _load_all_sources(self) -> None:
-        """
-        Scan ``self.source_folder`` for *.csv files, load each into its own
-        QStandardItemModel, and merge them into the *display* model.
-        """
-        if not self.source_folder.is_dir():
-            QMessageBox.warning(self, "Folder missing",
-                                f"The folder {self.source_folder} does not exist.")
-            return
-
-        self.source_files = sorted(self.source_folder.glob("*.csv"))
-        if not self.source_files:
-            QMessageBox.information(self, "No dictionaries",
-                                    f"No CSV files found in {self.source_folder}.")
-            return
-
-        # Clear any previous data
-        self.base_model.removeRows(0, self.base_model.rowCount())
-        self.models_by_source.clear()
+    def _populate_ui_from_composite(self) -> None:
+        """Load all entries and source names into the UI."""
+        # 1️⃣ Fill the source combo box
         self.source_combo.clear()
+        for src_name in self.composite.get_sources():
+            self.source_combo.addItem(src_name)
 
-        for csv_path in self.source_files:
-            rows = load_csv(csv_path)
-            model = QStandardItemModel(len(rows), self.COLUMN_COUNT, self)
-            model.setHorizontalHeaderLabels(self.HEADER_LABELS)
-
-            for r, row in enumerate(rows):
-                for c in range(self.COLUMN_COUNT):
-                    # Guard against short rows
-                    txt = row[c] if c < len(row) else ""
-                    model.setItem(r, c, QStandardItem(txt))
-
-            self.models_by_source[csv_path] = model
-
-            # Append the rows of this source to the *global* display model
-            for r in range(model.rowCount()):
-                items = [model.item(r, c).clone() for c in range(self.COLUMN_COUNT)]
-                self.base_model.appendRow(items)
-
-            # Populate the source‑selector combo box
-            self.source_combo.addItem(csv_path.name, csv_path)
+        # 2️⃣ Load every entry into the base model
+        self.base_model.removeRows(0, self.base_model.rowCount())
+        for entry in self.composite.all_entries():          # entry is List[str] length 7
+            items = [QStandardItem(str(cell)) for cell in entry]
+            self.base_model.appendRow(items)
 
     # ------------------------------------------------------------------
-    # Filtering logic – called whenever any filter edit changes
+    # Filtering logic – same as before, just operates on the base model
     # ------------------------------------------------------------------
     def _apply_filters(self) -> None:
-        """
-        Re‑evaluate all rows against the 7 filter strings.
-        The proxy model is used only for sorting; we implement the
-        per‑column text filter manually.
-        """
-        # Build a list of (column, pattern) pairs, ignoring empty patterns
-        patterns = [(col, edit.text().strip().lower())
-                    for col, edit in enumerate(self.filter_edits)
-                    if edit.text().strip()]
+        patterns = [
+            (col, edit.text().strip().lower())
+            for col, edit in enumerate(self.filter_edits)
+            if edit.text().strip()
+        ]
 
-        # Hide/show rows based on the patterns
         for row in range(self.base_model.rowCount()):
             match = True
             for col, pat in patterns:
@@ -228,107 +261,118 @@ class DictionaryEditorTab(QWidget):
     # ------------------------------------------------------------------
     # Load a double‑clicked row into the editing fields
     # ------------------------------------------------------------------
-    def _load_row_into_editors(self, index: QModelIndex) -> None:
-        """
-        ``index`` is a proxy‑model index; translate it to the source model.
-        """
-        src_index = self.proxy.mapToSource(index)
+    def _load_row_into_editors(self, proxy_index: QModelIndex) -> None:
+        src_index = self.proxy.mapToSource(proxy_index)
         row = src_index.row()
 
-        for col in range(self.COLUMN_COUNT - 1):   # first six plain edits
+        # Populate the six plain editors
+        for col in range(self.COLUMN_COUNT - 1):
             txt = self.base_model.item(row, col).text()
             self.editor_edits[col].setText(txt)
 
-        # 7th column – source selector
+        # Populate the source combo
         src_name = self.base_model.item(row, self.COLUMN_COUNT - 1).text()
         idx = self.source_combo.findText(src_name)
         if idx != -1:
             self.source_combo.setCurrentIndex(idx)
 
+        # Store the *original* row data so we can perform an update later
+        self._currently_loaded_row = [self.base_model.item(row, c).text()
+                                      for c in range(self.COLUMN_COUNT)]
+
     # ------------------------------------------------------------------
-    # Add a new entry (or replace the currently selected one)
+    # Add a new entry or update the one that is currently loaded
     # ------------------------------------------------------------------
     def _add_or_update_entry(self) -> None:
         """
-        Gather the 7 values from the editor widgets and append a new row
-        to the *selected* source dictionary. The global view model is also
-        updated so the new row appears instantly.
+        If a row was previously loaded via double‑click, we treat the
+        operation as an **update**; otherwise it is an **add**.
         """
-        # 1️⃣ Gather values
-        values = [le.text() for le in self.editor_edits]
-        source_path: Path = self.source_combo.currentData()
-        if not source_path:
-            QMessageBox.warning(self, "No source selected",
-                                "Please select a source dictionary in the last field.")
+        # Gather the 7 values from the UI
+        new_values = [le.text() for le in self.editor_edits]
+        src_name = self.source_combo.currentText()
+        if not src_name:
+            QMessageBox.warning(self, "Missing source",
+                                "Select a source dictionary in the last field.")
             return
-        values.append(source_path.name)   # column 7 = file name
+        new_values.append(src_name)          # column 7 = source name
 
-        # 2️⃣ Append to the *source‑specific* model
-        src_model = self.models_by_source[source_path]
-        items = [QStandardItem(v) for v in values]
-        src_model.appendRow(items)
+        # Decide whether we are updating or adding
+        if hasattr(self, "_currently_loaded_row"):
+            # ----- UPDATE -----
+            try:
+                self.composite.update_entry(self._currently_loaded_row,
+                                            new_values)
+            except ValueError as exc:
+                QMessageBox.critical(self, "Update failed", str(exc))
+                return
+            # Reflect the change in the view model
+            # Find the row that matches the old entry (unique because we kept it)
+            for r in range(self.base_model.rowCount()):
+                row_data = [self.base_model.item(r, c).text()
+                            for c in range(self.COLUMN_COUNT)]
+                if row_data == self._currently_loaded_row:
+                    for c, val in enumerate(new_values):
+                        self.base_model.item(r, c).setText(val)
+                    break
+            del self._currently_loaded_row   # clear the “editing” flag
+        else:
+            # ----- ADD -----
+            self.composite.add_entry(new_values)
+            items = [QStandardItem(v) for v in new_values]
+            self.base_model.appendRow(items)
 
-        # 3️⃣ Also append to the *global* display model
-        self.base_model.appendRow([itm.clone() for itm in items])
-
-        # 4️⃣ Clear editor fields (optional)
+        # Clear the editor fields for the next operation
         for le in self.editor_edits:
             le.clear()
         self.source_combo.setCurrentIndex(-1)
 
-        # 5️⃣ Refresh filter view (new row might be hidden)
+        # Re‑apply filters so a newly added row appears/disappears correctly
         self._apply_filters()
 
     # ------------------------------------------------------------------
     # Placeholder for rapid‑creation buttons
     # ------------------------------------------------------------------
     def _rapid_button_clicked(self, name: str) -> None:
-        """
-        At the moment we just show a message – later you can pre‑fill
-        the editor fields with a template for the given entry type.
-        """
-        QMessageBox.information(self, "Rapid button",
-                                f"You clicked the rapid‑creation button “{name}”.\n"
-                                "Implement the template logic here.")
+        QMessageBox.information(
+            self,
+            "Rapid button",
+            f"You clicked the rapid‑creation button “{name}”.\n"
+            "Implement the template logic here."
+        )
 
     # ------------------------------------------------------------------
-    # Save all source dictionaries back to CSV
+    # Save everything via the composite
     # ------------------------------------------------------------------
-    def _save_all_sources(self) -> None:
-        """
-        Iterate over each source model and write its rows to the original CSV.
-        """
-        for path, model in self.models_by_source.items():
-            rows = []
-            for r in range(model.rowCount()):
-                row = [model.item(r, c).text() for c in range(self.COLUMN_COUNT)]
-                rows.append(row)
-            try:
-                save_csv(path, rows)
-            except Exception as exc:
-                QMessageBox.critical(self, "Save failed",
-                                     f"Could not write {path}:\n{exc}")
-                return
-
+    def _save_all(self) -> None:
+        try:
+            self.composite.save_all()
+        except Exception as exc:          # pragma: no cover – defensive
+            QMessageBox.critical(self, "Save failed", f"{exc}")
+            return
         QMessageBox.information(self, "Saved",
                                 "All dictionaries have been saved successfully.")
 
+
 # ----------------------------------------------------------------------
-# Demo harness – put the tab into a QTabWidget for quick testing
+# Demo harness – shows the tab inside a QTabWidget.
 # ----------------------------------------------------------------------
 if __name__ == "__main__":
     app = QApplication(sys.argv)
 
     # Folder that contains your CSV dictionaries (create it if needed)
-    demo_folder = Path.cwd() / "demo_dicts"
+    demo_folder = Path("dictionaries")
     demo_folder.mkdir(exist_ok=True)
 
-    # Create a simple main window with a QTabWidget
+    # Instantiate the composite façade
+    composite = CompositeDictionary(demo_folder)
+
+    # Build the UI
     main_win = QWidget()
     main_layout = QVBoxLayout(main_win)
 
     tabs = QTabWidget()
-    editor_tab = DictionaryEditorTab(demo_folder)
+    editor_tab = DictionaryEditorTab(composite)
     tabs.addTab(editor_tab, "Dictionary Editor")
     main_layout.addWidget(tabs)
 
