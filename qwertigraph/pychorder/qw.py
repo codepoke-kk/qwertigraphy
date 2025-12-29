@@ -61,6 +61,18 @@ def load_config() -> Dict[str, Any]:
         if not isinstance(data, dict):
             _QW_LOG.warning("Config file did not contain a JSON object – resetting")
             return {}
+        
+        # Make sure we have some dictionaries. 
+        if "dict_sources" not in data or not isinstance(data["dict_sources"], list):
+            data["dict_sources"] = [
+                "%AppData%/Qwertigraph/personal.csv",
+                "dictionaries/anniversary_required.csv",
+                "dictionaries/anniversary_uniform_supplement.csv",
+                "dictionaries/anniversary_uniform_core.csv",
+                "dictionaries/anniversary_modern.csv",
+                "dictionaries/anniversary_cmu.csv"
+            ]
+        
         _QW_LOG.debug(f"Config loaded: keys={list(data.keys())}")
         return data
     except Exception as exc:            # pragma: no cover – defensive logging
@@ -681,18 +693,12 @@ class MainWindow(QMainWindow):
         # Keep the window glued to the upper‑right corner after a resize
         self._pin_to_upper_right()
 
-    # ------------------------------------------------------------------
-    # Optional helper – keep window in the upper‑right corner
-    # ------------------------------------------------------------------
     def _pin_to_upper_right(self) -> None:
         geom = QApplication.primaryScreen().availableGeometry()
         x = geom.x() + geom.width() - self.width()
         y = geom.y()
         self.move(x, y)
 
-    # ------------------------------------------------------------------
-    # Public method to append log entries (used by demo timer)
-    # ------------------------------------------------------------------
     def append_log(self, msg: str) -> None:
         self.log_area.append(msg)
 
@@ -700,9 +706,6 @@ class MainWindow(QMainWindow):
         super().resizeEvent(event)
         self._pin_to_upper_right()
 
-    # ------------------------------------------------------------------
-    # Qwertigraph Engine Methods 
-    # ------------------------------------------------------------------
     def new_engine(self) -> None:
         _QW_LOG.info("Building new Engine")
         
