@@ -63,7 +63,7 @@ def load_config() -> Dict[str, Any]:
             return {}
         
         # Make sure we have some dictionaries. 
-        if "dict_sources" not in data or not isinstance(data["dict_sources"], list):
+        if "dict_sources" not in data or not isinstance(data["dict_sources"], list) or not (len(data["dict_sources"])):
             data["dict_sources"] = [
                 "%AppData%/Qwertigraph/personal.csv",
                 "dictionaries/anniversary_required.csv",
