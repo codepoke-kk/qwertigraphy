@@ -136,9 +136,6 @@ class Expansion_Engine:
         self._start_watcher()       # Start monitoring dictionary files for changes
 
 
-    # ----------------------------------------------------------------------
-    #  Dictionary bundle re‑loading
-    # ----------------------------------------------------------------------
     def reload_bundle(self):
         """
         Reload all dictionaries and rebuild the derived structures.
@@ -150,9 +147,6 @@ class Expansion_Engine:
             self.load_dictionary_bundle(self.dictionary_paths)
             self._log.info("Dictionary bundle reloaded.")
 
-    # ----------------------------------------------------------------------
-    #  Watchdog integration
-    # ----------------------------------------------------------------------
     def _start_watcher(self):
         """
         Start a background thread that watches every directory that contains a
@@ -194,10 +188,7 @@ class Expansion_Engine:
     def load_dictionary_bundle(self, dictionary_paths):
         self._log.info(f"Loading dictionary bundle from {dictionary_paths}")
         self.dictionaries = self.get_dictionaries(dictionary_paths)
-        self.expansions = self.get_expansions(self.dictionaries)
-        self.hints = self.build_hints(self.expansions)
-        self.reverse_hints = self.build_reverse_hints(self.expansions)
-        self._log.info(f"Loaded {len(self.expansions)} expansions from bundle")
+        self.load_expansions()
 
     def get_dictionaries(self, dictionary_paths):
         self._log.info(f"Loading entries from {len(dictionary_paths)} dictionaries")
@@ -251,6 +242,13 @@ class Expansion_Engine:
 
         return result
 
+    def load_expansions(self):
+        self._log.info(f"Loading expansions from dictionaries")
+        self.expansions = self.get_expansions(self.dictionaries)
+        self.hints = self.build_hints(self.expansions)
+        self.reverse_hints = self.build_reverse_hints(self.expansions)
+        self._log.info(f"Loaded {len(self.expansions)} expansions")
+
     def get_expansions(self, dictionaries):
         expansions = {}
         for dictionary_path, dictionary in dictionaries.items():
@@ -280,6 +278,30 @@ class Expansion_Engine:
         expansions["'ll"] = "'ll"
         expansions["'t"] = "'t"
         return expansions 
+
+    def put_expansions(self, propercased_key: str, propercased_expansion: str):
+        self._log.info(f"Putting expansion {propercased_key} = {propercased_expansion}")
+        self.expansions[propercased_key] = propercased_expansion
+        self.expansions[propercased_key.lower()] = propercased_expansion.lower()
+        if len(propercased_key) > 1:
+            self.expansions[propercased_key.upper()] = propercased_expansion.upper()
+        else:
+            # Single character keys should be proper cased
+            self.expansions[propercased_key.upper()] = propercased_expansion
+        self.hints = self.build_hints(self.expansions)
+        self.reverse_hints = self.build_reverse_hints(self.expansions)
+
+    def delete_expansions(self, propercased_key: str):
+        self._log.info(f"Deleting expansions for {propercased_key}")
+        for key in [propercased_key, propercased_key.lower(), propercased_key.upper()]:
+            if key in self.expansions:
+                self._log.info(f"Deleting found expansion from {len(self.expansions)} entries")
+                del self.expansions[key]
+                self._log.info(f"Deleted found expansion to {len(self.expansions)} entries")
+            else:
+                self._log.warning(f"Cannot delete expansion for {key} as it does not exist")
+        self.hints = self.build_hints(self.expansions)
+        self.reverse_hints = self.build_reverse_hints(self.expansions)
 
     def build_hints(self, expansions):
         hints = {}

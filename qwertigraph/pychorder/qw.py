@@ -40,6 +40,7 @@ from log_factory import get_logger
 _QW_LOG = get_logger("QW") 
 
 from dictionary import Entry, Source_Dictionary, Composite_Dictionary
+from inflector import Inflector
 
 def ensure_config_dir() -> None:
     CONFIG_DIR.mkdir(parents=True, exist_ok=True)
@@ -98,6 +99,9 @@ def save_config(values: Dict[str, Any]) -> None:
 class MainWindow(QMainWindow):
     def __init__(self) -> None:
         super().__init__()
+
+        self.inflector = Inflector()
+
         self.setWindowTitle("Qwertigraph – Engine Control")
         self.base_width = 1200
         self.coach_hints_width = 180
@@ -456,8 +460,12 @@ class MainWindow(QMainWindow):
         right_vbox = QVBoxLayout()
         central_hbox.addLayout(right_vbox)
 
+        btn = QPushButton('DELETE', self)
+        btn.clicked.connect(lambda _, n='DELETE': self._delete_button_clicked(n))
+        right_vbox.addWidget(btn)
+
         # Placeholder button names (feel free to extend)
-        button_names = ["S", "D", "G", "LY", "ALLY", "X", "Y", "Z", "A", "B", "C", "D2"]
+        button_names = ["S", "D", "G", "R", "LY", "ALLY", "ION", "ATION", "ABLE", "ABILITY"]
         for name in button_names:
             btn = QPushButton(name, self)
             btn.clicked.connect(lambda _, n=name: self._rapid_button_clicked(n))
@@ -529,6 +537,24 @@ class MainWindow(QMainWindow):
         # Store the *original* row data so we can perform an update later
         self._currently_loaded_row = [self.editor_base_model.item(row, c).text()
                                       for c in range(self.EDITOR_COLUMN_COUNT)]
+
+    def _load_entry_into_editors(self, entry: Entry) -> None:
+
+        self.editor_edits[0].setText(entry.word)
+        self.editor_edits[1].setText(entry.form)
+        self.editor_edits[2].setText(entry.qwerd)
+        self.editor_edits[3].setText(entry.keyer)
+        self.editor_edits[4].setText(entry.chord)
+        self.editor_edits[5].setText(entry.usage)
+
+        # Populate the source combo
+        src_name = entry.source 
+        idx = self.source_combo.findText(src_name)
+        if idx != -1:
+            self.source_combo.setCurrentIndex(idx)
+
+        # Reset the *original* row data so we can perform an update later
+        self._currently_loaded_row = None 
         
     def _add_or_update_entry(self) -> None:
         """
@@ -563,13 +589,95 @@ class MainWindow(QMainWindow):
             items = [QStandardItem(v) for v in new_values]
             self.editor_base_model.appendRow(items)
 
+        entry = Entry(*new_values)
+        self.composite.put(entry)
+        _QW_LOG.debug(f"Put entry {entry} to composite dictionary")
+        self._engine.put_expansions(entry.qwerd, entry.word)
+        _QW_LOG.debug(f"Put entry {entry} to engine expansions")
+
+        # Re‑apply filters so a newly added row appears/disappears correctly
+        self._apply_filters()
+
+    def _delete_button_clicked(self, button_name) -> None:
+        _QW_LOG.debug(f"{button_name} clicked")
+        sel_model = self.table_view.selectionModel()
+        # Sort in reverse order so deleting rows doesn’t mess up indices
+        rows_via_selectedIndexes = sorted({idx.row() for idx in sel_model.selectedIndexes()}, reverse=True)
+        _QW_LOG.debug(f"sorted selectedIndexes(): {rows_via_selectedIndexes}")
+
+        # Populate the six plain editors
+        if len(rows_via_selectedIndexes) == 0:
+            QMessageBox.warning(self, "No selection",
+                                "Select a row to delete.")
+            return
+
+        for row in rows_via_selectedIndexes:
+            base_values = []
+            for col in range(self.EDITOR_COLUMN_COUNT):
+                txt = self.editor_base_model.item(row, col).text()
+                base_values.append(txt)
+            _QW_LOG.debug("Base values are: " + str(base_values))
+
+            entry = Entry(*base_values)
+
+            # Need to modify 1) Base Model, 2) Composite Dictionary, 3) Engine Expansions
+            self.editor_base_model.removeRow(row)
+            _QW_LOG.debug(f"Deleted row {row}")
+            self.composite.delete(entry.qwerd)
+            _QW_LOG.debug(f"Deleted entry {entry} from composite dictionary")
+            self._engine.delete_expansions(entry.qwerd)
+            _QW_LOG.debug(f"Deleted entry {entry} from engine expansions")
+
+
+        # Re‑apply filters so a newly added row appears/disappears correctly
+        self._apply_filters()
+        # Reload the expansions into the Engine 
+        # self._engine.load_expansions()
+        
+    def _rapid_button_clicked(self, button_name) -> None:
+        """
+        Do a full create of a new entry with sent values
+        """
+        # Gather the 7 values from the UI
+        _QW_LOG.debug(f"Adding rapid entry for button {button_name}")
+        sel_model = self.table_view.selectionModel()
+        rows_via_selectedIndexes = sorted({idx.row() for idx in sel_model.selectedIndexes()})
+        _QW_LOG.debug(f"sorted selectedIndexes(): {rows_via_selectedIndexes}")
+        
+        # Populate the six plain editors
+        _QW_LOG.debug("Only working the first selected row for base values")
+        if len(rows_via_selectedIndexes) == 0:
+            QMessageBox.warning(self, "No selection",
+                                "Select a row to copy base values from.")
+            return
+        
+        for row in rows_via_selectedIndexes:
+            base_values = []
+            for col in range(self.EDITOR_COLUMN_COUNT):
+                txt = self.editor_base_model.item(row, col).text()
+                base_values.append(txt)
+            _QW_LOG.debug("Base values are: " + str(base_values))
+
+            source_entry = Entry(*base_values)
+            _QW_LOG.debug("Entry is: " + str(source_entry))
+
+            entry = self.inflector.inflect(source_entry, button_name)
+            _QW_LOG.debug("Inflected entry is: " + str(entry))
+            self._load_entry_into_editors(entry)
+            
+            # Need to modify 1) Base Model, 2) Composite Dictionary, 3) Engine Expansions
+            items = [QStandardItem(v) for v in entry.get_items_list()]
+            self.editor_base_model.appendRow(items)
+            _QW_LOG.debug(f"Appended row {row}")
+            self.composite.put(entry)
+            _QW_LOG.debug(f"Put entry {entry} to composite dictionary")
+            self._engine.put_expansions(entry.qwerd, entry.word)
+            _QW_LOG.debug(f"Put entry {entry} to engine expansions")
+
 
         # Re‑apply filters so a newly added row appears/disappears correctly
         self._apply_filters()
         
-        entry = Entry(new_values[0], new_values[1], new_values[2], new_values[3], new_values[4], new_values[5], new_values[6])
-        self.composite.put(entry)
-
     def _save_all_sources(self) -> None:
         self.composite.save_all()
         # QMessageBox.information(self, "Saved",

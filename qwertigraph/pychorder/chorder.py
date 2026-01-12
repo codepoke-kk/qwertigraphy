@@ -5,7 +5,7 @@ from log_factory import get_logger
 from functools import partial
 
 from helper import Helper
-from vaulter_split_application import Vaulter
+from vaulter import Vaulter
 from comms_proxy import Comms_Proxy
 
 class Chorder:
