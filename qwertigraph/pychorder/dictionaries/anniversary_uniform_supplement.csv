@@ -939,11 +939,14 @@ Bisexual,b-s-e-s-l,Bsxl,,qblsx,3
 Bisexually,b-s-e-s-l-e,Bsxle,,qbelsx,0
 Bisexuality,b-s-e-s-\-l,Bsxlo,o,qblosx,3
 Bisexuals,b-s-e-s-l-s,Bsxls,,qblsx,0
+Bettered,b-t-e2-d,Bted,,qbdet,859
 Beautified,b-t-e-f-d,Btefd,,qbdeft,53
 Beautifully,b-t-e-f-e,Btefe,,qbeft,53
 Beautifying,b-t-e-f-\-h,Btefg,,qbefgt,53
 Beautify,b-t-e-f,Btefo,o,qbefot,53
 Beautifies,b-t-e-f-s,Btefs,,qbefst,53
+Bettering,b-t-e2-\-h,Bteg,,qbegt,859
+Betters,b-t-e2-s,Btes,,qbest,859
 Battled,b-t-l-d,Btld,,qbdlt,6
 Battling,b-t-l-\-h,Btlg,,qbglt,6
 Battleground,b-t-l-g-r,Btlgr,,qbglrt,6
@@ -2804,6 +2807,7 @@ Freak,f-r-e-k,Frek,,qefkr,396
 Freaked,f-r-e-k-d,Frekd,,qdefkr,396
 Freaking,f-r-e-k-\-h,Frekg,,qefgkr,396
 Freaks,f-r-e-k-s,Freks,,qefkrs,396
+Friendly,fr-e,Freo,o,qefor,15
 Frequented,fr-e-k-d,Freqd,,qdefqr,8
 Frequently,fr-e-k-e,Freqe,,qefqr,8
 Frequenting,fr-e-k-\-h,Freqg,,qefgqr,8
@@ -3909,8 +3913,10 @@ Commonality,k-mn-l,Kmnl,,qklmn,143
 Commonalities,k-mn-l-s,Kmnls,,qklmns,143
 Commented,k-mn-td,Kmntd,,qdkmnt,14
 Commenting,k-mn-t-\-h,Kmntg,,qgkmnt,98
+Commenter,k-mn-t-r,Kmntr,,qkmnrt,98
 Commentary,k-mn-t-r-e,Kmntre,,qekmnrt,1
 Commentaries,k-mn-t-r-e-s,Kmntres,,qekmnrst,1
+Commenters,k-mn-t-r-s,Kmntrs,,qkmnrst,98
 Comments,k-mn-t-s,Kmnts,,qkmnst,98
 Commotion,k-m-o-sh,Kmoz,,qkmoz,0
 Commotions,k-m-o-sh-s,Kmozs,,qkmosz,0
@@ -5485,6 +5491,9 @@ Inboxing,n-b-x-\-h,Nbxg,,qbgnx,5
 Inboxes,n-b-x-s,Nbxs,,qbnsx,5
 Unchallenged,n-c-a-l-e-n-j-d,Ncalenjd,,qacdejln,7
 Unchallenged,n-c-a-l-n-j-d,Ncalnjd,,qacdjln,7
+Unchecked,n-ch-e-k-d,Ncekd,,qcdekn,608
+Unchecking,n-ch-e-k-\-h,Ncekg,,qcegkn,608
+Unchecks,n-ch-e-k-s,Nceks,,qcekns,608
 Unchanging,n-ch-/-h,Nch,,qchn,507
 Interchange,n-/-ch,Nci,i,qcin,1
 Indicating,nt-e-k-\-h,Ndekg,,qdegkn,26
@@ -6792,8 +6801,11 @@ Automatons,o-tm-a-tn-s,Otmatns,,qamnost,3
 Automation,o-tm-a-sh,Otmz,,qmotz,12226
 Automations,o-tm-a-sh-s,Otmzs,,qmostz,12226
 Autonomy,o-tn-m-e,Otnme,,qemnot,1
+Autonomous,o-tn-m-u-s,Otnmus,,qmnoust,1
+Autonomously,o-tn-m-u-s-e,Otnmuse,,qemnostu,1
 Ought to know,o-tn-o,Otno,,qnot,0
 Autonomic,o-tn-o-m-k,Otnomk,,qkmnot,1
+Autonomically,o-tn-o-m-k-e,Otnomke,,qekmnot,1
 Alternate,o-t-n-t,Otnt,,qnot,3
 Alternated,o-t-n-t-d,Otntd,,qdnot,3
 Alternating,o-t-n-t-\-h,Otntg,,qgnot,3

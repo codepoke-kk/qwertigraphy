@@ -2,6 +2,7 @@ import csv
 from pathlib import Path
 from typing import List, Dict, Optional
 import os
+from log_factory import get_logger
 
 
 class Entry:
@@ -53,7 +54,7 @@ class Entry:
         }
 
     def __repr__(self) -> str:
-        return f"<Entry {self.word!r} ({self.source})>"
+        return f"<Entry {self.word!r} ({self.form}/{self.qwerd}/{self.keyer}/{self.chord}/{self.usage}/{self.source})>"
 
     def __iter__(self):
         # The order must match HEADER_LABELS / the UI column order
@@ -71,6 +72,38 @@ class Entry:
 
     def __getitem__(self, idx):
         return getattr(self, self.__slots__[idx])
+
+    def clone(self) -> "Entry":
+        """
+        Return a shallow copy of this Entry.
+
+        The new object has the same values for all slots, but it is a distinct
+        instance, so mutating one will not affect the other.
+        """
+        # Using the constructor keeps the logic in one place.
+        return Entry(
+            self.word,
+            self.form,
+            self.qwerd,
+            self.keyer,
+            self.chord,
+            self.usage,
+            self.source,
+        )
+    
+    def get_items_list(self) -> List[str]:
+        """
+        Return a list of all fields in order.
+        """
+        return [
+            self.word,
+            self.form,
+            self.qwerd,
+            self.keyer,
+            self.chord,
+            self.usage,
+            self.source,
+        ]
 
 class Source_Dictionary:
     """
@@ -121,6 +154,7 @@ class Source_Dictionary:
             key=lambda e: e.qwerd.lower()   # use .lower() for a case‑insensitive order
         )
 
+        print(f"Saving {len(sorted_entries)} entries to {self.path}")
         with self.path.open('w', newline='', encoding='utf-8') as f:
             writer = csv.writer(f)
             for entry in sorted_entries:
@@ -162,7 +196,9 @@ class Source_Dictionary:
 
     def delete(self, key: str) -> None:
         """Remove an entry; silently ignores missing keys."""
+        print(f"Count of entries before delete: {len(list(self.entries.keys()))}")
         self.entries.pop(key, None)
+        print(f"Count of entries after delete: {len(list(self.entries.keys()))}")
 
     # ------------------------------------------------------------------ #
     # Convenience
@@ -172,11 +208,7 @@ class Source_Dictionary:
         return list(self.entries.values())
     
 class Composite_Dictionary:
-    """
-    Combines 2-8 Source_Dictionary objects.
-    Handles duplicate suppression (first-loaded wins) and routes CRUD
-    operations to the appropriate source.
-    """
+    _log = get_logger('DICT') 
     def __init__(self, sources: List[Source_Dictionary]):
         # if not (2 <= len(sources) <= 8):
         #     raise ValueError("Composite_Dictionary requires 2‑8 source dictionaries.")
@@ -185,6 +217,7 @@ class Composite_Dictionary:
         # Unified index: key → Entry (the first one encountered)
         self._index: Dict[str, Entry] = {}
         self._build_index()
+        self._log.info("Composite Dictionary initialized")
 
     # ------------------------------------------------------------------ #
     # Index construction
@@ -280,10 +313,13 @@ class Composite_Dictionary:
 
     def delete(self, key: str) -> None:
         """Delete an entry from *all* sources and from the composite view."""
+        self._log.debug(f"Deleting {key}")
         entry = self._index.pop(key, None)
         if entry:
+            self._log.debug(f"Found entry to delete: {entry}")
             src = self._find_source(entry.source)
             if src:
+                self._log.debug(f"Deleting: {entry} from source {src.name}")
                 src.delete(key)
 
     # ------------------------------------------------------------------ #
