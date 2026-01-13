@@ -53,6 +53,8 @@ class Inflector:
         return entry
     
     def _inflect_past(self, entry: Entry) -> str:
+        entry.form = entry.form + '-d'
+        entry.qwerd = entry.qwerd + 'd'
         if entry.word.endswith('e'):
             entry.word = entry.word + 'd'
         elif entry.word.endswith('y') and len(entry.word) > 1 and entry.word[-2] not in 'aeiou':
@@ -62,6 +64,8 @@ class Inflector:
         return entry
     
     def _inflect_gerund(self, entry: Entry) -> str:
+        entry.form = entry.form + '-\-h'
+        entry.qwerd = entry.qwerd + 'g'
         if entry.word.endswith('ie'):
             entry.word = entry.word[:-2] + 'ying'
         elif entry.word.endswith('e') and not entry.word.endswith(('ee', 'oe', 'ye')):
@@ -75,7 +79,10 @@ class Inflector:
         entry.qwerd = entry.qwerd + 'e'      
         entry.chord = f"q{''.join(sorted(set(entry.qwerd.lower())))}"
 
-        entry.word = entry.word + 'ly'     
+        if entry.word.endswith('le'):
+            entry.word = entry.word[:-2] + 'ly'
+        else:
+            entry.word = entry.word + 'ly'
         return entry
         
     def _inflect_adverb2(self, entry: Entry) -> Entry:
@@ -83,7 +90,10 @@ class Inflector:
         entry.qwerd = entry.qwerd + 'e'      
         entry.chord = f"q{''.join(sorted(set(entry.qwerd.lower())))}"
 
-        entry.word = entry.word + 'ally'     
+        if entry.word.endswith('le'):
+            entry.word = entry.word[:-2] + 'ally'
+        else:
+            entry.word = entry.word + 'ally'
         return entry
 
     def _inflect_noun(self, entry: Entry) -> Entry:
@@ -91,7 +101,10 @@ class Inflector:
         entry.qwerd = entry.qwerd + 'z'
         entry.chord = f"q{''.join(sorted(set(entry.qwerd.lower())))}"
 
-        entry.word = entry.word + 'ion'      
+        if entry.word.endswith('e'):
+            entry.word = entry.word[:-1] + 'ion'
+        else:
+            entry.word = entry.word + 'ion'
         return entry
 
     def _inflect_noun2(self, entry: Entry) -> Entry:
@@ -99,7 +112,10 @@ class Inflector:
         entry.qwerd = entry.qwerd + 'z'
         entry.chord = f"q{''.join(sorted(set(entry.qwerd.lower())))}"
 
-        entry.word = entry.word + 'ation'    
+        if entry.word.endswith('e'):
+            entry.word = entry.word[:-1] + 'ation'
+        else:
+            entry.word = entry.word + 'ation'
         return entry
 
     def _inflect_adj(self, entry: Entry) -> Entry:
