@@ -5369,6 +5369,10 @@ Muster,m-u-s-t-e2,Muste,,qemstu,0
 Mustered,m-u-s-t-e2-d,Musted,,qdemstu,0
 Mustering,m-u-s-t-e2-\-h,Musteg,,qegmstu,0
 Musters,m-u-s-t-e2-s,Mustes,,qemstu,0
+Mouthed,m-a-u-th-d,Mwhd,,qhmw,13
+Mouthful,m-a-u-th-f,Mwhf,,qfhmw,13
+Mouthfuls,m-a-u-th-f-s,Mwhfs,,qfhmsw,13
+Mouthing,m-a-u-th-\-h,Mwhg,,qhmw,13
 Mouths,m-a-u-th-s,Mwhs,,qhmsw,13
 Mixture,m-e-s-t-r,Mxtr,,qmrtx,0
 Mixtures,m-e-s-t-r-s,Mxtrs,,qmrstx,0
@@ -5774,6 +5778,10 @@ Inherent,n-^-h-\-e2-nt,Nhent,,qehnt,0
 Inherently,n-^-h-\-e2-nt-e,Nhente,,qehnt,0
 Unthinking,n-th-^-h-\-\-h,Nhh,,qhn,411
 Nothingness,n-\-h-^-n-e-s,Nhnes,,qehns,0
+Enthused,n-th-u-s-d,Nhusd,,qdhnsu,0
+Enthusing,n-th-u-s-\-h,Nhusg,,qghnsu,0
+Enthusiasms,n-th-u-s-s,Nhuss,,qhnsu,0
+Enthusiastically,n-th-u-s-/-s2-t-e,Nhusste,,qehnstu,0
 Nightly,n-i-e,Nie,,qein,581
 Nihilist,n-i-l-e-s,Niles,,qeilns,0
 Nihilists,n-i-l-e-s-s,Niless,,qeilns,0
@@ -6155,6 +6163,13 @@ Enslaving,n-s-l-a-v-\-h,Nslavg,,qaglnsv,2
 Enslavement,n-s-l-a-v-m,Nslavm,,qalmnsv,2
 Enslavements,n-s-l-a-v-m-s,Nslavms,,qalmnsv,2
 Enslaves,n-s-l-a-v-s,Nslavs,,qalnsv,2
+Instrumented,n-s-/-m-d,Nsmd,,qmns,0
+Instrumenting,n-s-/-m-\-h,Nsmg,,qmns,0
+Instrumental,n-s-/-m-l,Nsml,,qlmns,0
+Instrumentally,n-s-/-m-l-e,Nsmle,,qelmns,0
+Instruments,n-s-/-m-s,Nsms,,qmns,0
+Instrumentation,n-s-/-m-sh,Nsmz,,qmnsz,0
+Instrumentations,n-s-/-m-sh-s,Nsmzs,,qmnsz,0
 Unsound,n-s2-nt,Nsnd,,qdns,593
 Insanitary,^-n-s-\-nt-r-e,Nsntre,,qenrst,90693
 Inspect,n-s-p,Nsp,,qnps,285
@@ -11063,6 +11078,10 @@ Valiant,v-a-l-ea-nt,Valento,o,qaelnotv,0
 Vanilla,v-a-n-e-l-a,Vanela,,qaelnv,0
 Vanguard,v-a-n-g-a2-d,Vangad,,qadgnv,0
 Vanguards,v-a-n-g-a2-d-s,Vangads,,qadgnsv,0
+Advanced,v-a-n-s-d,Vansd,,qadnsv,1
+Advancing,v-a-n-s-\-h,Vansg,,qagnsv,1
+Advancements,v-a-n-s-m-s,Vansms,,qamnsv,1
+Advances,v-a-n-s-s,Vanss,,qansv,1
 Vanish,v-a-n-z,Vanz,,qanvz,2
 Vanished,v-a-n-z-d,Vanzd,,qadnvz,2
 Vanishing,v-a-n-z-\-h,Vanzg,,qagnvz,2
