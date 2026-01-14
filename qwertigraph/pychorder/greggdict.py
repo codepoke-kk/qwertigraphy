@@ -89,7 +89,7 @@ class GreggDict:
     def open_via_shell(self, url: str) -> None:
         if sys.platform.startswith("win"):
             print(f"Opening via shell on Windows: {url}")
-            subprocess.run(["C:\Program Files (x86)\Microsoft\Edge\Application\msedge.exe", url], check=False)   # Windows
+            subprocess.run([r"C:\Program Files (x86)\Microsoft\Edge\Application\msedge.exe", url], check=False)   # Windows
         elif sys.platform.startswith("darwin"):
             subprocess.run(["open", url], check=False)       # macOS
         else:

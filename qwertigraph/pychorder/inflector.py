@@ -68,7 +68,7 @@ class Inflector:
         return entry
     
     def _inflect_gerund(self, entry: Entry) -> str:
-        entry.form = entry.form + '-\-h'
+        entry.form = entry.form + r'-\-h'
         entry.qwerd = entry.qwerd + 'g'
         if entry.word.endswith('ie'):
             entry.word = entry.word[:-2] + 'ying'
@@ -131,7 +131,7 @@ class Inflector:
         return entry
 
     def _inflect_adj2(self, entry: Entry) -> Entry:
-        entry.form = entry.form + '-\-b'
+        entry.form = entry.form + r'-\-b'
         entry.qwerd = entry.qwerd + 'bo'
         entry.keyer = 'o'
         entry.chord = f"q{''.join(sorted(set(entry.qwerd.lower())))}"
