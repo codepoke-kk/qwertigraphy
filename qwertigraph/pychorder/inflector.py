@@ -35,6 +35,10 @@ class Inflector:
             entry = self._inflect_adj(entry)
         elif inflection == 'ABILITY':  
             entry = self._inflect_adj2(entry)
+        elif inflection == 'FUL':  
+            entry = self._inflect_adj3(entry)
+        elif inflection == 'NESS':  
+            entry = self._inflect_adj4(entry)
         else:
             self._log.warning(f"Unknown inflection type: {inflection}")
         return entry 
@@ -133,6 +137,22 @@ class Inflector:
         entry.chord = f"q{''.join(sorted(set(entry.qwerd.lower())))}"
 
         entry.word = entry.word + 'ability'  
+        return entry
+
+    def _inflect_adj3(self, entry: Entry) -> Entry:
+        entry.form = entry.form + '-f'
+        entry.qwerd = entry.qwerd + 'f'
+        entry.chord = f"q{''.join(sorted(set(entry.qwerd.lower())))}"
+
+        entry.word = entry.word + 'ful'  
+        return entry
+
+    def _inflect_adj4(self, entry: Entry) -> Entry:
+        entry.form = entry.form + '-n'
+        entry.qwerd = entry.qwerd + 'n'
+        entry.chord = f"q{''.join(sorted(set(entry.qwerd.lower())))}"
+
+        entry.word = entry.word + 'ness'  
         return entry
 # ----------------------------------------------------------------------
 # 5️⃣ Command‑line demo
