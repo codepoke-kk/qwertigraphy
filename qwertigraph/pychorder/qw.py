@@ -41,6 +41,7 @@ _QW_LOG = get_logger("QW")
 
 from dictionary import Entry, Source_Dictionary, Composite_Dictionary
 from inflector import Inflector
+from greggdict import GreggDict
 
 def ensure_config_dir() -> None:
     CONFIG_DIR.mkdir(parents=True, exist_ok=True)
@@ -101,6 +102,7 @@ class MainWindow(QMainWindow):
         super().__init__()
 
         self.inflector = Inflector()
+        self.greggdict = GreggDict()
 
         self.setWindowTitle("Qwertigraph – Engine Control")
         self.base_width = 1200
@@ -475,6 +477,9 @@ class MainWindow(QMainWindow):
 
         # ---------- 3️⃣ Bottom bar (Save) ----------
         bottom_bar = QHBoxLayout()
+        self.btn_greggdict_lookup = QPushButton("Find Gregg Form", self)
+        self.btn_greggdict_lookup.clicked.connect(self._greggdict_lookup)
+        bottom_bar.addWidget(self.btn_greggdict_lookup)
         self.btn_save_all = QPushButton("Save All Dictionaries", self)
         self.btn_save_all.clicked.connect(self._save_all_sources)
         bottom_bar.addStretch()
@@ -678,6 +683,26 @@ class MainWindow(QMainWindow):
         # Re‑apply filters so a newly added row appears/disappears correctly
         self._apply_filters()
         
+    def _greggdict_lookup(self) -> None:
+        word = self.editor_edits[0].text().strip()   # first field = word
+        if not word:
+            QMessageBox.warning(self, "No word",
+                                "Enter a word to look up in GreggDict.")
+            return
+        _QW_LOG.debug(f"Performing lookup by GreggDict for word: {word}")
+        result = self.greggdict.find_best_match(word)
+        if result:
+            page, word, x, y = result
+            _QW_LOG.debug(f'Query "{word}" → page {page}, word "{word}", coordinates ({x}, {y})')
+            url = self.greggdict.build_local_url_query(page, x, y, word, transformed=True)
+            _QW_LOG.debug(f'Opening → {url}')          # optional: lets you see what is opened
+            self.greggdict.open_via_shell(url) 
+        else:
+            QMessageBox.warning(self, "No match",
+                                f"No match for '{word}' in the Gregg Dictionary.")
+            return
+
+         
     def _save_all_sources(self) -> None:
         self.composite.save_all()
         # QMessageBox.information(self, "Saved",
