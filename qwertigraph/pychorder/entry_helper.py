@@ -94,11 +94,15 @@ class Entry_Helper:
             word_pattern = re.compile(rule["word_pattern"])
             form_pattern = re.compile(rule["form_pattern"])
 
-            if not word_pattern.search(word) and not form_pattern.search(form):
+            if not word_pattern.search(word) or not form_pattern.search(form):
+                self._log.debug(f"Skipping rule for {rule['comment']}")
                 continue
 
-            # Second substitution (abbreviation pattern)
+            self._log.info("Substituting form pattern "
+                            f"{rule['form_pattern']} with {rule['replace']} "
+                            f"for word pattern {rule['word_pattern']}")
             form = form_pattern.sub(rule["replace"], form)
+            self._log.debug(f"Transformed form is now: {form}")
 
         return form
 

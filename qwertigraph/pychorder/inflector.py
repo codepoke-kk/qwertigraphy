@@ -39,6 +39,8 @@ class Inflector:
             entry = self._inflect_adj3(entry)
         elif inflection == 'NESS':  
             entry = self._inflect_adj4(entry)
+        elif inflection == 'MENT':  
+            entry = self._inflect_noun3(entry)
         else:
             self._log.warning(f"Unknown inflection type: {inflection}")
         return entry 
@@ -120,6 +122,14 @@ class Inflector:
             entry.word = entry.word[:-1] + 'ation'
         else:
             entry.word = entry.word + 'ation'
+        return entry
+
+    def _inflect_noun3(self, entry: Entry) -> Entry:
+        entry.form = entry.form + '-m'
+        entry.qwerd = entry.qwerd + 'm'
+        entry.chord = f"q{''.join(sorted(set(entry.qwerd.lower())))}"
+
+        entry.word = entry.word + 'ment'
         return entry
 
     def _inflect_adj(self, entry: Entry) -> Entry:

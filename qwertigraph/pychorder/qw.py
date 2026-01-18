@@ -455,7 +455,7 @@ class MainWindow(QMainWindow):
 
         # Add / Update button
         self.btn_add_update = QPushButton("Add / Update", self)
-        self.btn_add_update.clicked.connect(self._add_or_update_entry)
+        self.btn_add_update.clicked.connect(self._add_or_update_from_edit_fields)
         edit_bar.addWidget(self.btn_add_update)
 
         left_vbox.addLayout(edit_bar)
@@ -469,7 +469,7 @@ class MainWindow(QMainWindow):
         right_vbox.addWidget(btn)
 
         # Placeholder button names (feel free to extend)
-        button_names = ["S", "D", "G", "R", "LY", "ALLY", "ION", "ATION", "ABLE", "ABILITY", "FUL", "NESS"]
+        button_names = ["S", "D", "G", "R", "LY", "ALLY", "ION", "ATION", "ABLE", "ABILITY", "FUL", "NESS", "MENT"]
         for name in button_names:
             btn = QPushButton(name, self)
             btn.clicked.connect(lambda _, n=name: self._rapid_button_clicked(n))
@@ -568,11 +568,7 @@ class MainWindow(QMainWindow):
         # Reset the *original* row data so we can perform an update later
         self._currently_loaded_row = None 
         
-    def _add_or_update_entry(self) -> None:
-        """
-        If a row was previously loaded via double‑click, we treat the
-        operation as an **update**; otherwise it is an **add**.
-        """
+    def _add_or_update_from_edit_fields(self) -> None:
         # Gather the 7 values from the UI
         new_values = [le.text() for le in self.editor_edits]
         src_name = self.source_combo.currentText()
@@ -581,7 +577,23 @@ class MainWindow(QMainWindow):
                                 "Select a source dictionary in the last field.")
             return
         new_values.append(src_name)          # column 7 = source name
-        qwerd_to_match = new_values[2]                               # index 2 = 3rd column
+        self._add_or_update_to_base_model(new_values)
+
+    def _add_or_update_from_entry(self, entry: Entry) -> None:
+        new_values = [
+            entry.word,
+            entry.form,
+            entry.qwerd,
+            entry.keyer,
+            entry.chord,
+            entry.usage,
+            entry.source
+        ]
+        self._add_or_update_to_base_model(new_values)
+
+    def _add_or_update_to_base_model(self, new_values) -> None:
+        
+        qwerd_to_match = new_values[2]  
 
         row_to_update = -1                                            # sentinel
         for r in range(self.editor_base_model.rowCount()):
@@ -656,30 +668,46 @@ class MainWindow(QMainWindow):
         rows_via_selectedIndexes = sorted({idx.row() for idx in sel_model.selectedIndexes()})
         _QW_LOG.debug(f"sorted selectedIndexes(): {rows_via_selectedIndexes}")
         
-        # Populate the six plain editors
-        _QW_LOG.debug("Only working the first selected row for base values")
+        # Fail if no selection 
         if len(rows_via_selectedIndexes) == 0:
             QMessageBox.warning(self, "No selection",
                                 "Select a row to copy base values from.")
             return
         
         for row in rows_via_selectedIndexes:
+            # Get values from the selected row 
             base_values = []
             for col in range(self.EDITOR_COLUMN_COUNT):
                 txt = self.editor_base_model.item(row, col).text()
                 base_values.append(txt)
             _QW_LOG.debug("Base values are: " + str(base_values))
 
+            # Build them into an entry 
             source_entry = Entry(*base_values)
             _QW_LOG.debug("Entry is: " + str(source_entry))
 
+            # Inflect the entry based on the button name
             entry = self.inflector.inflect(source_entry, button_name)
             _QW_LOG.debug("Inflected entry is: " + str(entry))
-            self._load_entry_into_editors(entry)
+
+            # Look for a collision 
+            collision_entry = self.composite.read(entry.qwerd)
+            if collision_entry:
+                self._load_entry_into_editors(collision_entry)
+            else:
+                # Erase editors         
+                self.editor_edits[0].setText('')
+                self.editor_edits[1].setText('')
+                self.editor_edits[2].setText('')
+                self.editor_edits[3].setText('')
+                self.editor_edits[4].setText('')
+                self.editor_edits[5].setText('')
+                self.source_combo.setCurrentIndex(0)
             
             # Need to modify 1) Base Model, 2) Composite Dictionary, 3) Engine Expansions
-            items = [QStandardItem(v) for v in entry.get_items_list()]
-            self.editor_base_model.appendRow(items)
+            # items = [QStandardItem(v) for v in entry.get_items_list()]
+            # self.editor_base_model.appendRow(items)
+            self._add_or_update_from_entry(entry)
             _QW_LOG.debug(f"Appended row {row}")
             self.composite.put(entry)
             _QW_LOG.debug(f"Put entry {entry} to composite dictionary")
