@@ -23,6 +23,10 @@ class Inflector:
             entry = self._inflect_past(entry)
         elif inflection == 'G':  
             entry = self._inflect_gerund(entry)
+        elif inflection == 'ER':  
+            entry = self._inflect_noun4(entry)
+        elif inflection == 'OR':  
+            entry = self._inflect_noun5(entry)
         elif inflection == 'LY':    
             entry = self._inflect_adverb(entry)
         elif inflection == 'ALLY':    
@@ -130,6 +134,28 @@ class Inflector:
         entry.chord = f"q{''.join(sorted(set(entry.qwerd.lower())))}"
 
         entry.word = entry.word + 'ment'
+        return entry
+
+    def _inflect_noun4(self, entry: Entry) -> Entry:
+        entry.form = entry.form + '-r'
+        entry.qwerd = entry.qwerd + 'r'
+        entry.chord = f"q{''.join(sorted(set(entry.qwerd.lower())))}"
+
+        if entry.word.endswith('e'):
+            entry.word = entry.word + 'r'
+        else:
+            entry.word = entry.word + 'er'
+        return entry
+
+    def _inflect_noun5(self, entry: Entry) -> Entry:
+        entry.form = entry.form + '-r'
+        entry.qwerd = entry.qwerd + 'r'
+        entry.chord = f"q{''.join(sorted(set(entry.qwerd.lower())))}"
+
+        if entry.word.endswith('e'):
+            entry.word = entry.word[:-1] + 'or'
+        else:
+            entry.word = entry.word + 'or'
         return entry
 
     def _inflect_adj(self, entry: Entry) -> Entry:

@@ -469,7 +469,7 @@ class MainWindow(QMainWindow):
         right_vbox.addWidget(btn)
 
         # Placeholder button names (feel free to extend)
-        button_names = ["S", "D", "G", "R", "LY", "ALLY", "ION", "ATION", "ABLE", "ABILITY", "FUL", "NESS", "MENT"]
+        button_names = ["S", "D", "G", "ER", "OR", "LY", "ALLY", "ION", "ATION", "ABLE", "ABILITY", "FUL", "NESS", "MENT"]
         for name in button_names:
             btn = QPushButton(name, self)
             btn.clicked.connect(lambda _, n=name: self._rapid_button_clicked(n))
