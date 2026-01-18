@@ -1951,6 +1951,9 @@ Deviating,d-v-ea-t-\-h,Dvatg,,qadgtv,90862
 Deviates,d-v-ea-t-s,Dvats,,qadstv,90862
 Deviation,d-v-ea-sh,Dvaz,,qadvz,90862
 Deviations,d-v-ea-sh-s,Dvazs,,qadsvz,90862
+Diverged,df-e-j-d,Dvejd,,qdejv,0
+Diverging,df-e-j-\-h,Dvejg,,qdejv,0
+Diverges,df-e-j-s,Dvejs,,qdejsv,0
 Divested,df-e-s-d,Dvesd,,qdesv,0
 Divesting,df-e-s-\-h,Dvesg,,qdegsv,0
 Divests,df-e-s-s,Dvess,,qdesv,0
@@ -6407,6 +6410,8 @@ Invocation,n-v-k-sh,Nvkz,,qknvz,10
 Invocations,n-v-k-sh-s,Nvkzs,,qknsvz,0
 Invaluable,n-v-l-b,Nvlb,,qblnv,90531
 Invaluably,n-v-l-b-e,Nvlbe,,qbelnv,90531
+Invulnerable,n-v-u-l-n-e-r-b,Nvlnb,,qblnv,135
+Invulnerability,n-v-u-l-n-e-r-\-b,Nvlnbo,o,qblnov,135
 Invent,n-v-nt,Nvnt,,qntv,22
 Invented,n-v-nt-t,Nvntd,,qdntv,22
 Inventing,n-v-nt-\-h,Nvntg,,qgntv,22
@@ -10957,6 +10962,8 @@ Uplifts,u-p-l-e-f-t-s,Uplefts,,qeflpstu,0
 Upright,u-p-r-i,Upri,,qipru,5
 Upside,u-p-s-i,Upsi,,qipsu,5
 Upsides,u-p-s-i-s,Upsis,,qipsu,5
+Uptight,u-p-t-i-t,Uptit,,qiptu,10
+Uptightly,u-p-t-i-t-e,Uptite,,qeiptu,10
 Underwritten,u-\-r-e-tn,Uretn,,qenrtu,92527
 Underwrite,u-\-r-i,Uri,,qiru,92527
 Underwriting,u-\-r-i-\-h,Urig,,qgiru,92527
@@ -11239,6 +11246,10 @@ Valuably,v-l-b-e,Vlbe,,qbelv,0
 Valuables,v-l-b-s,Vlbs,,qblsv,0
 Valued,v-l-d,Vld,,qdlv,657
 Valuing,v-l-\-h,Vlg,,qglv,657
+Vulnerable,v-u-l-n-e-r-b,Vlnb,,qblnv,135
+Vulnerability,v-u-l-n-e-r-\-b,Vlnbo,o,qblnov,135
+Vulnerables,v-u-l-n-e-r-b-s,Vlnbs,,qblnsv,135
+Vulnerabilities,v-u-l-n-e-r-\-b-s,Vlnbso,o,qblnosv,135
 Values,v-l-s,Vls,,qlsv,657
 Vindicate,v-nt-e-k,Vndek,,qdeknv,16
 Vindicated,v-nt-e-k-d,Vndekd,,qdeknv,16

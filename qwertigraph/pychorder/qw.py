@@ -41,7 +41,8 @@ _QW_LOG = get_logger("QW")
 
 from dictionary import Entry, Source_Dictionary, Composite_Dictionary
 from inflector import Inflector
-from greggdict import GreggDict
+from gregg_dict import Gregg_Dict
+from entry_helper import Entry_Helper
 
 def ensure_config_dir() -> None:
     CONFIG_DIR.mkdir(parents=True, exist_ok=True)
@@ -102,7 +103,7 @@ class MainWindow(QMainWindow):
         super().__init__()
 
         self.inflector = Inflector()
-        self.greggdict = GreggDict()
+        self.gregg_dict = Gregg_Dict()
 
         self.setWindowTitle("Qwertigraph – Engine Control")
         self.base_width = 1200
@@ -175,6 +176,7 @@ class MainWindow(QMainWindow):
         _QW_LOG.info("UI initialized")
         ### Qwertigraph Engine Methods
         self.new_engine()
+        self.entry_helper = Entry_Helper(self, self.composite)
         
         _QW_LOG.info("Started Engine in startup")
 
@@ -477,12 +479,15 @@ class MainWindow(QMainWindow):
 
         # ---------- 3️⃣ Bottom bar (Save) ----------
         bottom_bar = QHBoxLayout()
-        self.btn_greggdict_lookup = QPushButton("Find Gregg Form", self)
-        self.btn_greggdict_lookup.clicked.connect(self._greggdict_lookup)
-        bottom_bar.addWidget(self.btn_greggdict_lookup)
+        self.btn_gregg_dict_lookup = QPushButton("Display Gregg Form", self)
+        self.btn_gregg_dict_lookup.clicked.connect(self._gregg_dict_lookup)
+        bottom_bar.addWidget(self.btn_gregg_dict_lookup)
+        self.btn_entry_helper = QPushButton("Define Entry from Form", self)
+        self.btn_entry_helper.clicked.connect(self._entry_helper_autofill)
+        bottom_bar.addWidget(self.btn_entry_helper)
+        bottom_bar.addStretch()
         self.btn_save_all = QPushButton("Save All Dictionaries", self)
         self.btn_save_all.clicked.connect(self._save_all_sources)
-        bottom_bar.addStretch()
         bottom_bar.addWidget(self.btn_save_all)
         main_layout.addLayout(bottom_bar)
 
@@ -535,6 +540,8 @@ class MainWindow(QMainWindow):
 
         # Populate the source combo
         src_name = self.editor_base_model.item(row, self.EDITOR_COLUMN_COUNT - 1).text()
+        if src_name == 'anniversary_uniform_core.csv':
+            src_name = 'anniversary_uniform_supplement.csv'
         idx = self.source_combo.findText(src_name)
         if idx != -1:
             self.source_combo.setCurrentIndex(idx)
@@ -683,25 +690,41 @@ class MainWindow(QMainWindow):
         # Re‑apply filters so a newly added row appears/disappears correctly
         self._apply_filters()
         
-    def _greggdict_lookup(self) -> None:
+    def _gregg_dict_lookup(self) -> None:
         word = self.editor_edits[0].text().strip()   # first field = word
         if not word:
             QMessageBox.warning(self, "No word",
-                                "Enter a word to look up in GreggDict.")
+                                "Enter a word to look up in Gregg_Dict.")
             return
-        _QW_LOG.debug(f"Performing lookup by GreggDict for word: {word}")
-        result = self.greggdict.find_best_match(word)
+        _QW_LOG.debug(f"Performing lookup by Gregg_Dict for word: {word}")
+        result = self.gregg_dict.find_best_match(word)
         if result:
             page, word, x, y = result
             _QW_LOG.debug(f'Query "{word}" → page {page}, word "{word}", coordinates ({x}, {y})')
-            url = self.greggdict.build_local_url_query(page, x, y, word, transformed=True)
+            url = self.gregg_dict.build_local_url_query(page, x, y, word, transformed=True)
             _QW_LOG.debug(f'Opening → {url}')          # optional: lets you see what is opened
-            self.greggdict.open_via_shell(url) 
+            self.gregg_dict.open_via_shell(url) 
         else:
             QMessageBox.warning(self, "No match",
-                                f"No match for '{word}' in the Gregg Dictionary.")
+                                f"No match for '{word}' in the Gregg Dictionary")
             return
-
+        
+    def _entry_helper_autofill(self) -> None:
+        word = self.editor_edits[0].text().strip()
+        form = self.editor_edits[1].text().strip()   # second field = form
+        if not word or not form:
+            QMessageBox.warning(self, "No word or form",
+                                "Enter a shorthand word and form to autofill remaining fields")
+            return
+        _QW_LOG.debug(f"Performing entry helper autofill for word/form: {word}/{form}")
+        qwerd, keyer = self.entry_helper.qwerd_and_keyer_from_word_and_form(word, form)
+        if not qwerd:
+            _QW_LOG.debug(f"Autofill was cancelled or failed")
+            return 
+        self.editor_edits[2].setText(qwerd)
+        self.editor_edits[3].setText(keyer)
+        self.editor_edits[4].setText(f"q{''.join(sorted(set(qwerd.lower())))}")
+        _QW_LOG.debug(f"Autofilled Qwerd: {qwerd} and {keyer}")
          
     def _save_all_sources(self) -> None:
         self.composite.save_all()

@@ -1,0 +1,368 @@
+[
+  {
+    "comment": "Strip back-marked characters like -~-~-~-n or h. Just toss them",
+    "word_pattern": ".",
+    "form_pattern": "\\W{4}\\w$",
+    "replace": ""
+  },
+  {
+    "comment": "word iden as idn",
+    "word_pattern": "ident",
+    "form_pattern": "a-?tn-?",
+    "replace": "idn"
+  },
+  {
+    "comment": "word lin as lin",
+    "word_pattern": "lin",
+    "form_pattern": "l-?a-?n",
+    "replace": "lin"
+  },
+  {
+    "comment": "e-a to e",
+    "word_pattern": ".",
+    "form_pattern": "e-?a",
+    "replace": "e"
+  },
+  {
+    "comment": "e2a to e",
+    "word_pattern": ".",
+    "form_pattern": "e2a",
+    "replace": "e"
+  },
+  {
+    "comment": "ea2 to e",
+    "word_pattern": ".",
+    "form_pattern": "ea2",
+    "replace": "e"
+  },
+  {
+    "comment": "a-u to w",
+    "word_pattern": ".",
+    "form_pattern": "a-?u",
+    "replace": "w"
+  },
+  {
+    "comment": "e-u-n- to un (for universal and unit, etc)",
+    "word_pattern": ".",
+    "form_pattern": "e-u-n-",
+    "replace": "un"
+  },
+  {
+    "comment": "e-u to u",
+    "word_pattern": ".",
+    "form_pattern": "e-?u",
+    "replace": "u"
+  },
+  {
+    "comment": "o-e to y",
+    "word_pattern": ".",
+    "form_pattern": "o-?e",
+    "replace": "y"
+  },
+  {
+    "comment": "ya and ye to y",
+    "word_pattern": ".",
+    "form_pattern": "y-?[ae]",
+    "replace": "y"
+  },
+  {
+    "comment": "agree to ya",
+    "word_pattern": "agree",
+    "form_pattern": "y",
+    "replace": "ya"
+  },
+  {
+    "comment": "Consonant sets",
+    "word_pattern": ".",
+    "form_pattern": "nk",
+    "replace": "q"
+  },
+  {
+    "comment": "",
+    "word_pattern": ".",
+    "form_pattern": "th",
+    "replace": "h"
+  },
+  {
+    "comment": "",
+    "word_pattern": ".",
+    "form_pattern": "ch",
+    "replace": "c"
+  },
+  {
+    "comment": "ations to zs",
+    "word_pattern": "ations",
+    "form_pattern": "-a-sh-s",
+    "replace": "zs"
+  },
+  {
+    "comment": "ation to z",
+    "word_pattern": "ation",
+    "form_pattern": "-a-sh",
+    "replace": "z"
+  },
+  {
+    "comment": "",
+    "word_pattern": ".",
+    "form_pattern": "sh",
+    "replace": "z"
+  },
+  {
+    "comment": "",
+    "word_pattern": "x",
+    "form_pattern": "e2?-?s2?",
+    "replace": "x"
+  },
+  {
+    "comment": "",
+    "word_pattern": "x",
+    "form_pattern": "e-k-s",
+    "replace": "x"
+  },
+  {
+    "comment": "",
+    "word_pattern": "x",
+    "form_pattern": "-k-s",
+    "replace": "x"
+  },
+  {
+    "comment": "",
+    "word_pattern": "x",
+    "form_pattern": "e-?s",
+    "replace": "x"
+  },
+  {
+    "comment": "Qua - Q",
+    "word_pattern": "qu[aoei]",
+    "form_pattern": "k-\\\\-[wn]",
+    "replace": "q"
+  },
+  {
+    "comment": "Qwua - Q",
+    "word_pattern": "qu[aoei]",
+    "form_pattern": "k-w",
+    "replace": "q"
+  },
+  {
+    "comment": "bility$ to bo",
+    "word_pattern": "bility$",
+    "form_pattern": "-\\\\-b$",
+    "replace": "bo"
+  },
+  {
+    "comment": "abilities$ to bs",
+    "word_pattern": "bilities$",
+    "form_pattern": "-\\\\-b-s$",
+    "replace": "bs"
+  },
+  {
+    "comment": "internal anc to g",
+    "word_pattern": "[iuaoe]nc",
+    "form_pattern": "-?ng",
+    "replace": "g"
+  },
+  {
+    "comment": "internal ing to g",
+    "word_pattern": "[iuaoe]ng",
+    "form_pattern": "-?ng",
+    "replace": "g"
+  },
+  {
+    "comment": "ingful to gf",
+    "word_pattern": "ingful",
+    "form_pattern": "-\\\\-h-\\\\-f",
+    "replace": "gf"
+  },
+  {
+    "comment": "ingless to gl",
+    "word_pattern": "ingless",
+    "form_pattern": "-\\\\-h-\\\\-l",
+    "replace": "gl"
+  },
+  {
+    "comment": "ings as ss to z",
+    "word_pattern": "ings$",
+    "form_pattern": "-\\\\-s2?$",
+    "replace": "z"
+  },
+  {
+    "comment": "ings to z",
+    "word_pattern": "ings$",
+    "form_pattern": "-\\\\-h-s$",
+    "replace": "z"
+  },
+  {
+    "comment": "ing to g",
+    "word_pattern": "ing$",
+    "form_pattern": "-\\\\-h$",
+    "replace": "g"
+  },
+  {
+    "comment": "qu* to q",
+    "word_pattern": "qu",
+    "form_pattern": "k",
+    "replace": "q"
+  },
+  {
+    "comment": "pond to pnd",
+    "word_pattern": "p[aeuio]+nd",
+    "form_pattern": "jnt",
+    "replace": "pnd"
+  },
+  {
+    "comment": "spent to pnt",
+    "word_pattern": "p[aeuio]+nt",
+    "form_pattern": "jnt",
+    "replace": "pnt"
+  },
+  {
+    "comment": "gend to jnd",
+    "word_pattern": "[jg][aeuio]+nd",
+    "form_pattern": "jnt",
+    "replace": "jnd"
+  },
+  {
+    "comment": "nment to nm",
+    "word_pattern": "nment",
+    "form_pattern": "mn",
+    "replace": "nm"
+  },
+  {
+    "comment": "mn to mm",
+    "word_pattern": "m[^m]+m",
+    "form_pattern": "mn",
+    "replace": "mm"
+  },
+  {
+    "comment": "added to dd",
+    "word_pattern": "d[aeuio]?d",
+    "form_pattern": "td",
+    "replace": "dd"
+  },
+  {
+    "comment": "date to dt",
+    "word_pattern": "d[aeuio]?t",
+    "form_pattern": "td",
+    "replace": "dt"
+  },
+  {
+    "comment": "dan to dn",
+    "word_pattern": "d[aeuio]+n",
+    "form_pattern": "tn",
+    "replace": "dn"
+  },
+  {
+    "comment": "dum to dm",
+    "word_pattern": "d[aeuio]+m",
+    "form_pattern": "tm",
+    "replace": "dm"
+  },
+  {
+    "comment": "ond to nd",
+    "word_pattern": "nd",
+    "form_pattern": "nt",
+    "replace": "nd"
+  },
+  {
+    "comment": "med to md",
+    "word_pattern": "m[aeuio]d",
+    "form_pattern": "-mt",
+    "replace": "md"
+  },
+  {
+    "comment": "tive to tv",
+    "word_pattern": "t[aeuio]+v",
+    "form_pattern": "df",
+    "replace": "tv"
+  },
+  {
+    "comment": "tif to tf",
+    "word_pattern": "t[aeuio]+f",
+    "form_pattern": "df",
+    "replace": "tf"
+  },
+  {
+    "comment": "div to dv",
+    "word_pattern": "d[aeuio]+v",
+    "form_pattern": "df",
+    "replace": "dv"
+  },
+  {
+    "comment": "eds ending to ds",
+    "word_pattern": "eds$",
+    "form_pattern": "-t-s$",
+    "replace": "ds"
+  },
+  {
+    "comment": "ed ending to d",
+    "word_pattern": "ed$",
+    "form_pattern": "t$",
+    "replace": "d"
+  },
+  {
+    "comment": "ode as ot to od",
+    "word_pattern": "cod",
+    "form_pattern": "k-o-t",
+    "replace": "kod"
+  },
+  {
+    "comment": "xy as x",
+    "word_pattern": "x[iy]",
+    "form_pattern": "s-e",
+    "replace": "x"
+  },
+  {
+    "comment": "tending as dng to tng",
+    "word_pattern": "tending$",
+    "form_pattern": "dng$",
+    "replace": "tng"
+  },
+  {
+    "comment": "Attend as adn to atn",
+    "word_pattern": "^atten",
+    "form_pattern": "^a-?dn",
+    "replace": "atn"
+  },
+  {
+    "comment": "unen to un",
+    "word_pattern": "^unen",
+    "form_pattern": "^u-n",
+    "replace": "un"
+  },
+  {
+    "comment": "un to n",
+    "word_pattern": "^un",
+    "form_pattern": "^u-n",
+    "replace": "n"
+  },
+  {
+    "comment": "re to r",
+    "word_pattern": "^re",
+    "form_pattern": "^r-e",
+    "replace": "r"
+  },
+  {
+    "comment": "pre, pro, and per to pr",
+    "word_pattern": "^pr",
+    "form_pattern": "pr[eo]",
+    "replace": "pr"
+  },
+  {
+    "comment": "",
+    "word_pattern": "^per",
+    "form_pattern": "per",
+    "replace": "pr"
+  },
+  {
+    "comment": "Purge non-characters",
+    "word_pattern": ".",
+    "form_pattern": "[-\\\\/\\^~0-9]",
+    "replace": ""
+  },
+  {
+    "comment": "< at end of suffix",
+    "word_pattern": ".",
+    "form_pattern": "^<(.+)$",
+    "replace": "$1<"
+  }
+]
