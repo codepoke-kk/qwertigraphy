@@ -717,6 +717,43 @@ class MainWindow(QMainWindow):
 
         # Re‑apply filters so a newly added row appears/disappears correctly
         self._apply_filters()
+
+    def get_last_unbracketed_word(self) -> str | None:
+        """
+        Returns the last word that matches the pattern ``(^\w+)`` when scanning
+        the text of ``self.upper`` from the bottom upwards.
+
+        * If the field is empty → ``None``.
+        * If no word matches the pattern → ``None``.
+        * Otherwise the matched word (e.g. ``'nuissance'`` in the example).
+        """
+        raw_text: str = self.upper.toPlainText()
+        raw_text = raw_text.replace("\r\n", "\n")
+
+        # Apply the pattern.  ``^`` anchors to the start of the line,
+        #    ``\w+`` captures the word, and we require a space or end‑of‑line
+        #    after it (the look‑ahead ``(?= |\Z)``).
+        pattern = re.compile(r"^(?P<word>\w+)(?= |\Z)")
+        lines = raw_text.split("\n")
+        for line in reversed(lines):
+            line = line.rstrip()
+            match = pattern.search(line)
+            if match:
+                # Found the first (i.e. *last* in the whole document) word.
+                return match.group("word")
+
+        return None
+    
+    def gregg_dict_lookup_word(self) -> None: 
+        _QW_LOG.debug("Testing Gregg_Dict lookup")
+        self.raise_()          # moves the window to the top of the stacking order
+        self.activateWindow() # gives it keyboard focus
+        word = self.get_last_unbracketed_word()
+        if not word:
+            word = 'No words found'
+        self.switch_to_tab("Editor")
+        self.editor_edits[0].setText(word.capitalize())
+        self._gregg_dict_lookup()
         
     def _gregg_dict_lookup(self) -> None:
         word = self.editor_edits[0].text().strip()   # first field = word
@@ -756,6 +793,7 @@ class MainWindow(QMainWindow):
          
     def _save_all_sources(self) -> None:
         self.composite.save_all()
+        self.switch_to_tab("Coach")
         # QMessageBox.information(self, "Saved",
         #                         "All dictionaries have been saved successfully.")
         
@@ -858,6 +896,16 @@ class MainWindow(QMainWindow):
     # ------------------------------------------------------------------
     # Navigation handling
     # ------------------------------------------------------------------
+    def switch_to_tab(self, tab_name: str) -> None:
+        """
+        Programmatically switch to the given tab by name.
+        """
+        idx = self.nav_combo.findText(tab_name)
+        if idx != -1:
+            self.nav_combo.setCurrentIndex(idx)
+        else:
+            _QW_LOG.warning(f"Tab '{tab_name}' not found in navigation combo.")
+
     def _on_nav_changed(self, idx: int) -> None:
         """
         I used to resize the window when switching to the Coach. 
@@ -994,6 +1042,7 @@ class MainWindow(QMainWindow):
         }
 
         self._comms_proxy.signal_vaulter_new_credentials(new_credentials)
+        self.switch_to_tab("Coach")
 
 
 

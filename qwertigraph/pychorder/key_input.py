@@ -26,6 +26,7 @@ class Key_Input:
         self.CHORD_MAP = {
             "t+1": {"keys": 2, "backspaces": 1, "function": "output_time"},
             "d+1": {"keys": 2, "backspaces": 1, "function": "output_date"},
+            "h+1": {"keys": 2, "backspaces": 1, "function": "gregg_dict_lookup_word"},
             "b+1": {"keys": 2, "backspaces": 1, "function": "output_password_a"},
             "b+2": {"keys": 2, "backspaces": 1, "function": "output_username_password_a"},
             "b+3": {"keys": 2, "backspaces": 1, "function": "output_username_a"},
