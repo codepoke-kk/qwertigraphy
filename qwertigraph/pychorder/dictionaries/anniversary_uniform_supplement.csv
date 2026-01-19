@@ -8156,6 +8156,12 @@ Rhythmic,r-e-th-m-k,Rehmk,,qehkmr,0
 Rhythmically,r-e-th-m-\-k-e,Rehmke,,qehkmr,0
 Rhythmical,r-e-th-m-\-k,Rehmko,o,qehkmor,0
 Rhythms,r-e-th-m-s,Rehms,,qehmrs,4
+Reenable,r-e-n-b,Renb,,qbenr,3852
+Reenabled,r-e-n-b-d,Renbd,,qbenr,3852
+Reenabling,r-e-n-b-\-h,Renbg,,qbenr,3852
+Reenablement,r-e-n-b-m,Renbm,,qbemnr,3852
+Reenablements,r-e-n-b-m-s,Renbms,,qbemnrs,3852
+Reenables,r-e-n-b-s,Renbs,,qbenrs,3852
 Wrestle,r-e-s-l,Resl,,qelrs,0
 Wrestled,r-e-s-l-d,Resld,,qdelrs,0
 Wrestling,r-e-s-l-\-h,Reslg,,qeglrs,0
@@ -8800,6 +8806,13 @@ Resigned,r-s2-i-n-d,Rsind,,qdinrs,1
 Resignedly,r-s2-i-n-d-e,Rsinde,,qdeinrs,0
 Resigning,r-s2-i-n-\-h,Rsing,,qginrs,1
 Resigns,r-s2-i-n-s,Rsins,,qinrs,1
+Resize,r-s-i-s,Rsis,,qirs,0
+Resizeable,r-s-i-s-b,Rsisb,,qbirs,0
+Resizeably,r-s-i-s-b-e,Rsisbe,,qbeirs,0
+Resizeability,r-s-i-s-\-b,Rsisbo,o,qbiors,0
+Resized,r-s-i-s-d,Rsisd,,qirs,0
+Resizing,r-s-i-s-\-h,Rsisg,,qirs,0
+Resizes,r-s-i-s-s,Rsiss,,qirs,0
 Recite,r-s2-i-t,Rsit,,qirst,1
 Recited,r-s2-i-t-d,Rsitd,,qdirst,1
 Reciting,r-s2-i-t-\-h,Rsitg,,qgirst,1
@@ -9463,6 +9476,8 @@ Simultaneous,s-i-m-u-l,Simul,,qilmsu,1
 Simultaneously,s-i-m-u-l-e,Simule,,qeilmsu,1
 Signer,s2-i-n-r,Sinr,,qinrs,1
 Signers,s2-i-n-r-s,Sinrs,,qinrs,1
+Sizing,s-i-s-\-h,Sisg,,qis,0
+Sizes,s-i-s-s,Siss,,qis,0
 Subject,s-j,Sj,,qjs,216
 Subjected,s-j-d,Sjd,,qdjs,216
 Subjecting,s-j-\-h,Sjg,,qgjs,216

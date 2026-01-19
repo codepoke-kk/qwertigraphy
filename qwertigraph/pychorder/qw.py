@@ -719,14 +719,6 @@ class MainWindow(QMainWindow):
         self._apply_filters()
 
     def get_last_unbracketed_word(self) -> str | None:
-        """
-        Returns the last word that matches the pattern ``(^\w+)`` when scanning
-        the text of ``self.upper`` from the bottom upwards.
-
-        * If the field is empty → ``None``.
-        * If no word matches the pattern → ``None``.
-        * Otherwise the matched word (e.g. ``'nuissance'`` in the example).
-        """
         raw_text: str = self.upper.toPlainText()
         raw_text = raw_text.replace("\r\n", "\n")
 
