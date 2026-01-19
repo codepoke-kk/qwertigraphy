@@ -28,6 +28,7 @@ class Chorder:
 
             # -- UI Helpers ─────────────────────────
             "gregg_dict_lookup_word": self.comms_proxy.signal_gregg_dict_lookup_word,
+            "focus_coach": self.comms_proxy.signal_focus_coach,
 
             # ── password helpers ───────────────────────
             "output_password_a": partial(self.vaulter.output_password, "a"),

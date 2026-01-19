@@ -744,6 +744,10 @@ class MainWindow(QMainWindow):
 
         return None
     
+    def focus_coach(self) -> None: 
+        _QW_LOG.debug("Focusing the Coach")
+        self.switch_to_tab("Coach")
+    
     def gregg_dict_lookup_word(self) -> None: 
         _QW_LOG.debug("Testing Gregg_Dict lookup")
         self.raise_()          # moves the window to the top of the stacking order

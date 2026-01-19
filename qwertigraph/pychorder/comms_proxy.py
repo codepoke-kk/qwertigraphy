@@ -12,6 +12,7 @@ class Comms_Proxy(QObject):
     coachLowerAppended = pyqtSignal(str)
     performanceUpdated = pyqtSignal(str)
     greggDictLookupWord = pyqtSignal()
+    focusCoach = pyqtSignal()
 
     def __init__(self, ui: QObject, parent: QObject | None = None) -> None:
         super().__init__(parent)
@@ -24,6 +25,7 @@ class Comms_Proxy(QObject):
         self.engineStopped.connect(self.ui.on_engine_stopped)
         self.performanceUpdated.connect(self.ui.update_performance)
         self.greggDictLookupWord.connect(self.ui.gregg_dict_lookup_word)
+        self.focusCoach.connect(self.ui.focus_coach)
         self.coachUpperChanged.connect(self.ui.set_coach_upper)
         self.coachLowerChanged.connect(self.ui.set_coach_lower)
         self.coachUpperAppended.connect(self.ui.append_coach_upper)
@@ -46,6 +48,10 @@ class Comms_Proxy(QObject):
     def signal_gregg_dict_lookup_word(self):
         self._log.debug("Call to signal_gregg_dict_lookup_word")
         self.greggDictLookupWord.emit()
+        
+    def signal_focus_coach(self):
+        self._log.debug("Call to signal_focus_coach")
+        self.focusCoach.emit()
         
     def signal_coach_set_upper(self, text: str):
         self._log.debug(f"Signaling Coach upper with new text {text}")
