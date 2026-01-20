@@ -41,7 +41,8 @@ _QW_LOG = get_logger("QW")
 
 from dictionary import Entry, Source_Dictionary, Composite_Dictionary
 from inflector import Inflector
-from greggdict import GreggDict
+from gregg_dict import Gregg_Dict
+from entry_helper import Entry_Helper
 
 def ensure_config_dir() -> None:
     CONFIG_DIR.mkdir(parents=True, exist_ok=True)
@@ -102,7 +103,7 @@ class MainWindow(QMainWindow):
         super().__init__()
 
         self.inflector = Inflector()
-        self.greggdict = GreggDict()
+        self.gregg_dict = Gregg_Dict()
 
         self.setWindowTitle("Qwertigraph – Engine Control")
         self.base_width = 1200
@@ -175,6 +176,7 @@ class MainWindow(QMainWindow):
         _QW_LOG.info("UI initialized")
         ### Qwertigraph Engine Methods
         self.new_engine()
+        self.entry_helper = Entry_Helper(self, self.composite)
         
         _QW_LOG.info("Started Engine in startup")
 
@@ -453,7 +455,7 @@ class MainWindow(QMainWindow):
 
         # Add / Update button
         self.btn_add_update = QPushButton("Add / Update", self)
-        self.btn_add_update.clicked.connect(self._add_or_update_entry)
+        self.btn_add_update.clicked.connect(self._add_or_update_from_edit_fields)
         edit_bar.addWidget(self.btn_add_update)
 
         left_vbox.addLayout(edit_bar)
@@ -467,7 +469,7 @@ class MainWindow(QMainWindow):
         right_vbox.addWidget(btn)
 
         # Placeholder button names (feel free to extend)
-        button_names = ["S", "D", "G", "R", "LY", "ALLY", "ION", "ATION", "ABLE", "ABILITY", "FUL", "NESS"]
+        button_names = ["S", "D", "G", "ER", "OR", "LY", "ALLY", "ION", "ATION", "ABLE", "ABILITY", "FUL", "NESS", "MENT"]
         for name in button_names:
             btn = QPushButton(name, self)
             btn.clicked.connect(lambda _, n=name: self._rapid_button_clicked(n))
@@ -477,12 +479,15 @@ class MainWindow(QMainWindow):
 
         # ---------- 3️⃣ Bottom bar (Save) ----------
         bottom_bar = QHBoxLayout()
-        self.btn_greggdict_lookup = QPushButton("Find Gregg Form", self)
-        self.btn_greggdict_lookup.clicked.connect(self._greggdict_lookup)
-        bottom_bar.addWidget(self.btn_greggdict_lookup)
+        self.btn_gregg_dict_lookup = QPushButton("Display Gregg Form", self)
+        self.btn_gregg_dict_lookup.clicked.connect(self._gregg_dict_lookup)
+        bottom_bar.addWidget(self.btn_gregg_dict_lookup)
+        self.btn_entry_helper = QPushButton("Define Entry from Form", self)
+        self.btn_entry_helper.clicked.connect(self._entry_helper_autofill)
+        bottom_bar.addWidget(self.btn_entry_helper)
+        bottom_bar.addStretch()
         self.btn_save_all = QPushButton("Save All Dictionaries", self)
         self.btn_save_all.clicked.connect(self._save_all_sources)
-        bottom_bar.addStretch()
         bottom_bar.addWidget(self.btn_save_all)
         main_layout.addLayout(bottom_bar)
 
@@ -535,6 +540,8 @@ class MainWindow(QMainWindow):
 
         # Populate the source combo
         src_name = self.editor_base_model.item(row, self.EDITOR_COLUMN_COUNT - 1).text()
+        if src_name == 'anniversary_uniform_core.csv':
+            src_name = 'anniversary_uniform_supplement.csv'
         idx = self.source_combo.findText(src_name)
         if idx != -1:
             self.source_combo.setCurrentIndex(idx)
@@ -561,11 +568,7 @@ class MainWindow(QMainWindow):
         # Reset the *original* row data so we can perform an update later
         self._currently_loaded_row = None 
         
-    def _add_or_update_entry(self) -> None:
-        """
-        If a row was previously loaded via double‑click, we treat the
-        operation as an **update**; otherwise it is an **add**.
-        """
+    def _add_or_update_from_edit_fields(self) -> None:
         # Gather the 7 values from the UI
         new_values = [le.text() for le in self.editor_edits]
         src_name = self.source_combo.currentText()
@@ -574,7 +577,23 @@ class MainWindow(QMainWindow):
                                 "Select a source dictionary in the last field.")
             return
         new_values.append(src_name)          # column 7 = source name
-        qwerd_to_match = new_values[2]                               # index 2 = 3rd column
+        self._add_or_update_to_base_model(new_values)
+
+    def _add_or_update_from_entry(self, entry: Entry) -> None:
+        new_values = [
+            entry.word,
+            entry.form,
+            entry.qwerd,
+            entry.keyer,
+            entry.chord,
+            entry.usage,
+            entry.source
+        ]
+        self._add_or_update_to_base_model(new_values)
+
+    def _add_or_update_to_base_model(self, new_values) -> None:
+        
+        qwerd_to_match = new_values[2]  
 
         row_to_update = -1                                            # sentinel
         for r in range(self.editor_base_model.rowCount()):
@@ -649,30 +668,46 @@ class MainWindow(QMainWindow):
         rows_via_selectedIndexes = sorted({idx.row() for idx in sel_model.selectedIndexes()})
         _QW_LOG.debug(f"sorted selectedIndexes(): {rows_via_selectedIndexes}")
         
-        # Populate the six plain editors
-        _QW_LOG.debug("Only working the first selected row for base values")
+        # Fail if no selection 
         if len(rows_via_selectedIndexes) == 0:
             QMessageBox.warning(self, "No selection",
                                 "Select a row to copy base values from.")
             return
         
         for row in rows_via_selectedIndexes:
+            # Get values from the selected row 
             base_values = []
             for col in range(self.EDITOR_COLUMN_COUNT):
                 txt = self.editor_base_model.item(row, col).text()
                 base_values.append(txt)
             _QW_LOG.debug("Base values are: " + str(base_values))
 
+            # Build them into an entry 
             source_entry = Entry(*base_values)
             _QW_LOG.debug("Entry is: " + str(source_entry))
 
+            # Inflect the entry based on the button name
             entry = self.inflector.inflect(source_entry, button_name)
             _QW_LOG.debug("Inflected entry is: " + str(entry))
-            self._load_entry_into_editors(entry)
+
+            # Look for a collision 
+            collision_entry = self.composite.read(entry.qwerd)
+            if collision_entry:
+                self._load_entry_into_editors(collision_entry)
+            else:
+                # Erase editors         
+                self.editor_edits[0].setText('')
+                self.editor_edits[1].setText('')
+                self.editor_edits[2].setText('')
+                self.editor_edits[3].setText('')
+                self.editor_edits[4].setText('')
+                self.editor_edits[5].setText('')
+                self.source_combo.setCurrentIndex(0)
             
             # Need to modify 1) Base Model, 2) Composite Dictionary, 3) Engine Expansions
-            items = [QStandardItem(v) for v in entry.get_items_list()]
-            self.editor_base_model.appendRow(items)
+            # items = [QStandardItem(v) for v in entry.get_items_list()]
+            # self.editor_base_model.appendRow(items)
+            self._add_or_update_from_entry(entry)
             _QW_LOG.debug(f"Appended row {row}")
             self.composite.put(entry)
             _QW_LOG.debug(f"Put entry {entry} to composite dictionary")
@@ -682,29 +717,79 @@ class MainWindow(QMainWindow):
 
         # Re‑apply filters so a newly added row appears/disappears correctly
         self._apply_filters()
+
+    def get_last_unbracketed_word(self) -> str | None:
+        raw_text: str = self.upper.toPlainText()
+        raw_text = raw_text.replace("\r\n", "\n")
+
+        # Apply the pattern.  ``^`` anchors to the start of the line,
+        #    ``\w+`` captures the word, and we require a space or end‑of‑line
+        #    after it (the look‑ahead ``(?= |\Z)``).
+        pattern = re.compile(r"^(?P<word>\w+)(?= |\Z)")
+        lines = raw_text.split("\n")
+        for line in reversed(lines):
+            line = line.rstrip()
+            match = pattern.search(line)
+            if match:
+                # Found the first (i.e. *last* in the whole document) word.
+                return match.group("word")
+
+        return None
+    
+    def focus_coach(self) -> None: 
+        _QW_LOG.debug("Focusing the Coach")
+        self.switch_to_tab("Coach")
+    
+    def gregg_dict_lookup_word(self) -> None: 
+        _QW_LOG.debug("Testing Gregg_Dict lookup")
+        self.raise_()          # moves the window to the top of the stacking order
+        self.activateWindow() # gives it keyboard focus
+        word = self.get_last_unbracketed_word()
+        if not word:
+            word = 'No words found'
+        self.switch_to_tab("Editor")
+        self.editor_edits[0].setText(word.capitalize())
+        self._gregg_dict_lookup()
         
-    def _greggdict_lookup(self) -> None:
+    def _gregg_dict_lookup(self) -> None:
         word = self.editor_edits[0].text().strip()   # first field = word
         if not word:
             QMessageBox.warning(self, "No word",
-                                "Enter a word to look up in GreggDict.")
+                                "Enter a word to look up in Gregg_Dict.")
             return
-        _QW_LOG.debug(f"Performing lookup by GreggDict for word: {word}")
-        result = self.greggdict.find_best_match(word)
+        _QW_LOG.debug(f"Performing lookup by Gregg_Dict for word: {word}")
+        result = self.gregg_dict.find_best_match(word)
         if result:
             page, word, x, y = result
             _QW_LOG.debug(f'Query "{word}" → page {page}, word "{word}", coordinates ({x}, {y})')
-            url = self.greggdict.build_local_url_query(page, x, y, word, transformed=True)
+            url = self.gregg_dict.build_local_url_query(page, x, y, word, transformed=True)
             _QW_LOG.debug(f'Opening → {url}')          # optional: lets you see what is opened
-            self.greggdict.open_via_shell(url) 
+            self.gregg_dict.open_via_shell(url) 
         else:
             QMessageBox.warning(self, "No match",
-                                f"No match for '{word}' in the Gregg Dictionary.")
+                                f"No match for '{word}' in the Gregg Dictionary")
             return
-
+        
+    def _entry_helper_autofill(self) -> None:
+        word = self.editor_edits[0].text().strip()
+        form = self.editor_edits[1].text().strip()   # second field = form
+        if not word or not form:
+            QMessageBox.warning(self, "No word or form",
+                                "Enter a shorthand word and form to autofill remaining fields")
+            return
+        _QW_LOG.debug(f"Performing entry helper autofill for word/form: {word}/{form}")
+        qwerd, keyer = self.entry_helper.qwerd_and_keyer_from_word_and_form(word, form)
+        if not qwerd:
+            _QW_LOG.debug(f"Autofill was cancelled or failed")
+            return 
+        self.editor_edits[2].setText(qwerd)
+        self.editor_edits[3].setText(keyer)
+        self.editor_edits[4].setText(f"q{''.join(sorted(set(qwerd.lower())))}")
+        _QW_LOG.debug(f"Autofilled Qwerd: {qwerd} and {keyer}")
          
     def _save_all_sources(self) -> None:
         self.composite.save_all()
+        self.switch_to_tab("Coach")
         # QMessageBox.information(self, "Saved",
         #                         "All dictionaries have been saved successfully.")
         
@@ -807,6 +892,16 @@ class MainWindow(QMainWindow):
     # ------------------------------------------------------------------
     # Navigation handling
     # ------------------------------------------------------------------
+    def switch_to_tab(self, tab_name: str) -> None:
+        """
+        Programmatically switch to the given tab by name.
+        """
+        idx = self.nav_combo.findText(tab_name)
+        if idx != -1:
+            self.nav_combo.setCurrentIndex(idx)
+        else:
+            _QW_LOG.warning(f"Tab '{tab_name}' not found in navigation combo.")
+
     def _on_nav_changed(self, idx: int) -> None:
         """
         I used to resize the window when switching to the Coach. 
@@ -943,6 +1038,7 @@ class MainWindow(QMainWindow):
         }
 
         self._comms_proxy.signal_vaulter_new_credentials(new_credentials)
+        self.switch_to_tab("Coach")
 
 
 

@@ -3,8 +3,8 @@ from log_factory import get_logger   # keep your existing logger factory
 import keyboard
 import datetime
 
-class Helper:
-    _log: logging.Logger = get_logger("HELPR")
+class Macros:
+    _log: logging.Logger = get_logger("MACRO")
 
     def __init__(self) -> None:
         self._log.info("Initiated Helper")
@@ -14,11 +14,10 @@ class Helper:
     # -----------------------------------------------------------------
     def output_date(self) -> None:
         today = datetime.datetime.now().strftime("%m/%d/%Y")
-        # Assuming you use the same `keyboard` library you used before:
-        import keyboard
+        self._log.debug(f"Writing today as {today}")
         keyboard.write(today)        
         
     def output_time(self) -> None:
         now = datetime.datetime.now().strftime("%H:%M:%S")
-        import keyboard
-        keyboard.write(now)
+        self._log.debug(f"Writing now as {now}")
+        keyboard.write(now)    

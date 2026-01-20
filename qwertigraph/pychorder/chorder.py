@@ -1,10 +1,16 @@
-
+'''
+Central logic for processing chords.
+key_input.py defines the chord listeners 
+comms_proxy.py handles communication between UI and engine
+macros.py defines functions called by chords
+vaulter.py handles secure storage and retrieval of credentials
+'''
 
 
 from log_factory import get_logger
 from functools import partial
 
-from helper import Helper
+from macros import Macros
 from vaulter import Vaulter
 from comms_proxy import Comms_Proxy
 
@@ -14,11 +20,15 @@ class Chorder:
     def __init__(self, comms_proxy) -> None:
         self.comms_proxy = comms_proxy # Unused??
         self.vaulter = Vaulter(self.comms_proxy)
-        self._helper = Helper()
+        self._macros = Macros()
         self._func_map = {
             # ── time and date helpers ───────────────────
-            "output_time": self._helper.output_time,    
-            "output_date": self._helper.output_date,    
+            "output_time": self._macros.output_time,    
+            "output_date": self._macros.output_date,    
+
+            # -- UI Helpers ─────────────────────────
+            "gregg_dict_lookup_word": self.comms_proxy.signal_gregg_dict_lookup_word,
+            "focus_coach": self.comms_proxy.signal_focus_coach,
 
             # ── password helpers ───────────────────────
             "output_password_a": partial(self.vaulter.output_password, "a"),

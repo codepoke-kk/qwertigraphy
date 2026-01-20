@@ -7,9 +7,9 @@ import subprocess, sys
 
 from log_factory import get_logger
 
-class GreggDict:
+class Gregg_Dict:
     _log = get_logger('GREGG') 
-    json_file = Path("greggdict/reference.json")    
+    json_file = Path("gregg_dict/reference.json")    
 
     def __init__(self):
         self.dataset = self.load_data(self.json_file)
@@ -62,7 +62,7 @@ class GreggDict:
 
     def build_local_url_query(self, page: str, x: int, y: int,
                         word: str, transformed: bool = True) -> str:
-        base = Path(__file__).parent / "greggdict" / "greggpad.html"
+        base = Path(__file__).parent / "gregg_dict" / "greggpad.html"
         # Build the query string manually – urllib.parse.urlencode takes care of escaping.
         query_dict = {
             "page": f"{page}.png",
@@ -76,7 +76,7 @@ class GreggDict:
 
     def build_local_url_frag(self, page: str, x: int, y: int,
                         word: str, transformed: bool = True) -> str:
-        base = Path(__file__).parent / "greggdict" / "greggpad.html"
+        base = Path(__file__).parent / "gregg_dict" / "greggpad.html"
         frag = urllib.parse.urlencode({
             "page": f"{page}.png",
             "x": str(x),
@@ -97,7 +97,7 @@ class GreggDict:
 
 if __name__ == "__main__":
     # Replace this path with wherever you stored the JSON snippet.
-    greggdict = GreggDict()
+    gregg_dict = Gregg_dict()
     # Load the data once – it can be reused for many queries.
 
     # ------------------------------------------------------------------
@@ -107,13 +107,13 @@ if __name__ == "__main__":
     queries = ["wreath"]
 
     for q in queries:
-        result = greggdict.find_best_match(q)
+        result = gregg_dict.find_best_match(q)
         if result:
             page, word, x, y = result
             print(f'Query "{q}" → page {page}, word "{word}", coordinates ({x}, {y})')
-            url = greggdict.build_local_url_query(page, x, y, word, transformed=True)
+            url = gregg_dict.build_local_url_query(page, x, y, word, transformed=True)
             print(f'Opening → {url}')          # optional: lets you see what is opened
             # webbrowser.open(url)               # <-- this actually opens the file
-            greggdict.open_via_shell(url) 
+            gregg_dict.open_via_shell(url) 
         else:
             print(f'Query "{q}" → no sufficiently close match found.')
