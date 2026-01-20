@@ -1,17 +1,17 @@
-
 f10::
-    {
-        ; Desired size
-        NewWidth  := A_ScreenWidth  - 220   ; screen width minus 180 px
-        NewHeight := A_ScreenHeight        ; full screen height (change if you want less)
+{
+    ; Get the work area for the monitor that contains the active window
+    SysGet, WA, MonitorWorkArea, %A_Screen%
+    ; WALeft, WATop, WARight, WABottom are created
 
-        ; Optional offset from the screen edges
-        OffsetX := 3
-        OffsetY := 3
+    NewWidth  := (WARight - WALeft) - 270
+    NewHeight := (WABottom - WATop)
 
-        ; Move & resize the active window (A = the window that currently has focus)
-        WinMove, A, , OffsetX, OffsetY, NewWidth, NewHeight
-    }
+    OffsetX := WALeft + 3
+    OffsetY := WATop  + 3
+
+    WinMove, A, , OffsetX, OffsetY, NewWidth, NewHeight
     return
+}
 ; Insert::Backspace
 ; NumpadIns::Backspace
