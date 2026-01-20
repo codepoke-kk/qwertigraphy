@@ -6,6 +6,8 @@ Awarenesses,a-a-r-n-e-s-s,Aarness,,qaenrs,1374
 Habeas corpus,a-b-~-k,Abk,,qabk,0
 Abled,a-bl-d,Abld,,qabdl,2694
 Abounded,a-b-n-d,Abnd,,qabdn,2
+Abundantly,a-b-n-tn-e,Abndne,,qabden,0
+Abundance,a-b-n-tn-s,Abndns,,qabdns,0
 Abounding,a-b-n-\-h,Abng,,qabgn,2
 Abounds,a-b-n-s,Abns,,qabns,2
 Ability,a-\-b,Abo,,qabo,1
@@ -631,6 +633,12 @@ Attaining,a-tn-\-h,Atng,,qagnt,9
 Attainment,a-tn-m,Atnm,,qamnt,9
 Attainments,a-tn-m-s,Atnms,,qamnst,9
 Attains,a-tn-s,Atns,,qanst,9
+Atone,a-t-o-n,Aton,,qanot,1
+Atoned,a-t-o-n-d,Atond,,qanot,1
+Atoning,a-t-o-n-\-h,Atong,,qanot,1
+Atonement,a-t-o-n-m,Atonm,,qamnot,1
+Atonements,a-t-o-n-m-s,Atonms,,qamnost,1
+Atones,a-t-o-n-s,Atons,,qanost,1
 Attracted,a-t-r-k-d,Atrkd,,qadkrt,3
 Attracting,a-t-r-k-\-h,Atrkg,,qagkrt,3
 Attracts,a-t-r-k-s,Atrks,,qakrst,3
@@ -2363,6 +2371,7 @@ Eccentrically,e-s2-n-/-k-e,Esnke,,qekns,0
 Essence,e-s2-n-s,Esns,,qens,1
 Essences,e-s2-n-s-s,Esnss,,qens,1
 Essentially,e-s2-n-sh-e,Esnze,,qensz,14
+Essentials,e-s2-n-sh-s,Esnzs,,qensz,14
 Israel,E-s-r-ea-l,Esrel,,qelrs,44
 Israeli,E-s-r-ea-l-e,Esrele,,qelrs,2
 Israelis,E-s-r-ea-l-e-s,Esreles,,qelrs,2
@@ -6460,6 +6469,7 @@ Nationals,n-a-sh-l-s,Nzls,,qlnsz,2
 Nationalistically,n-a-sh-l-/-s2-t-e,Nzlste,,qelnstz,1
 Nations,n-a-sh-s,Nzs,,qnsz,14
 Intrusions,n-/-sh-s,Nzso,o,qnosz,0
+Nationwide,n-sh-u-i-d,Nzuid,,qdinuz,0
 Unsure,u-n-sh-u,Nzuo,o,qnouz,2886
 Over-,o->,O>,,q>o,2
 Obeyed,o-b-a-d,Obad,,qabdo,2
@@ -9933,13 +9943,14 @@ Stepson,s-s-o-n,Sson,,qnos,92247
 Stepsons,s-s-o-n-s,Ssons,,qnos,92247
 Systems,s2s-s,Sss,,qs,1532
 Societies,ss2-s,Sssqk,,qs,5
-Assisted,ss2-t-d,Sstd,,qdst,29
+Substitute,s-s2-t,Sst,,qst,1
+Substituted,s-s2-t-d,Sstd,,qst,1
 Substituted,s-s2-td,Sstdo,o,qdost,0
 Sistered,ss2-t-e2-d,Ssted,,qdest,14
 Sisterhood,ss2-t-e2-\-d,Sstedo,o,qdeost,0
 Sisterhoods,ss2-t-e2-\-d-s,Ssteds,,qdest,0
 Sistering,ss2-t-e2-\-h,Ssteg,,qegst,14
-Assisting,ss2-t-\-h,Sstg,,qgst,29
+Substituting,s-s2-t-\-h,Sstg,,qst,1
 Substituting,s-s2-t-\-h,Sstgo,o,qgost,1
 Systematize,s2s-t-i-s,Sstis,,qist,0
 Systematized,s2s-t-i-s-d,Sstisd,,qdist,0
@@ -9958,8 +9969,11 @@ Circumstances,^-s2-\-s-tn-ss,Sstnss,,qnst,0
 Assistance,ss2-tn-s,Sstnsu,u,qnstu,2
 Circumstantial,^-s2-\-s-tn-sh,Sstnzo,o,qnostz,0
 Circumstantially,^-s2-/-s2-tn-sh-ye,Sstnzy,,qnstyz,0
-Assists,ss2-t-s,Ssts,,qst,29
+Substitutes,s-s2-t-s,Ssts,,qst,1
 Substitutes,s-s2-t-s,Sstso,o,qost,1
+Substitution,s-s2-t-sh,Sstz,,qstz,1
+Substitutionary,s-s2-t-sh-r-e,Sstzre,,qerstz,1
+Substitutions,s-s2-t-sh-s,Sstzs,,qstz,1
 Subsume,ss-u-m,Ssum,,qmsu,1
 Subsumed,ss-u-m-d,Ssumd,,qdmsu,1
 Subsuming,ss-u-m-\-h,Ssumg,,qgmsu,1
