@@ -232,6 +232,8 @@ Acceleration,a-k-s-e-l-r-a-sh,Akselrz,,qaeklrsz,0
 Accelerations,a-k-s-e-l-r-a-sh-s,Akselrzs,,qaeklrsz,0
 Accession,a-k-s-e-sh,Aksez,,qaeksz,0
 Accessions,a-k-s-e-sh-s,Aksezs,,qaeksz,0
+Acceptance,a-k-s-n-s,Aksns,,qakns,200
+Acceptances,a-k-s-n-s-s,Aksnss,,qakns,200
 Accessible,a-k-ss-b,Akssb,,qabks,2103
 Accessibly,a-k-ss-b-e,Akssbe,,qabeks,2103
 Accessibility,a-k-ss-\-b,Akssbo,,qabkos,11
@@ -1551,11 +1553,18 @@ Dependency,d-jnt-n-s-e,Dpndnse,,qdenps,17
 Dependencies,d-jnt-n-s-e-s,Dpndnses,,qdenps,17
 Dependent,d-jnt-nt,Dpndnt,,qdnp,17
 Depends,d-jnt-s,Dpnds,,qdnps,17
+Deposes,d-p-o-s-d,Dpodo,o,qdop,1
+Deposing,d-p-o-s-\-h,Dpogo,o,qdgop,1
 Depopulate,d-p-o-p-\-u,Dpopu,,qdopu,0
 Depopulated,d-p-o-p-\-u-d,Dpopud,,qdopu,0
 Depopulating,d-p-o-p-\-u-\-h,Dpopug,,qdgopu,0
 Depopulates,d-p-o-p-\-u-s,Dpopus,,qdopsu,0
 Depopulation,d-p-o-p-\-u-sh,Dpopuz,,qdopuz,0
+Deposit,d-p-o-s,Dpos,,qdops,0
+Deposited,d-p-o-s-d,Dposd,,qdops,0
+Depositing,d-p-o-s-\-h,Dposg,,qdops,0
+Deposes,d-p-o-s,Dposo,o,qdops,1
+Deposits,d-p-o-s-s,Dposs,,qdops,0
 Deposition,d-p-o-sh,Dpoz,,qdopz,1
 Depositioned,d-p-o-sh-d,Dpozd,,qdopz,0
 Depositioning,d-p-o-sh-\-h,Dpozg,,qdgopz,0
@@ -3796,6 +3805,9 @@ Cleared,k-l-e-d,Kled,,qdekl,618
 Clearing,k-l-e-\-h,Kleg,,qegkl,618
 Clearages,k-l-e-/-j-s,Klejs,,qejkls,0
 Click,k-l-e-k,Klek,,qekl,272
+Clickable,k-l-e-k-b,Klekb,,qbekl,272
+Clickability,k-l-e-k-\-b,Klekbo,o,qbeklo,272
+Clickables,k-l-e-k-b-s,Klekbs,,qbekls,272
 Clicked,k-l-e-k-d,Klekd,,qdekl,272
 Clicking,k-l-e-k-\-h,Klekg,,qegkl,272
 Clicks,k-l-e-k-s,Kleks,,qekls,272
