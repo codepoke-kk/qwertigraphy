@@ -736,18 +736,23 @@ class MainWindow(QMainWindow):
 
         return None
     
+    def focus_tab(self, tab) -> None: 
+        _QW_LOG.debug(f"Focusing the {tab} tab")
+        self.switch_to_tab(tab)
+    
     def focus_coach(self) -> None: 
         _QW_LOG.debug("Focusing the Coach")
         self.switch_to_tab("Coach")
     
     def gregg_dict_lookup_word(self) -> None: 
         _QW_LOG.debug("Testing Gregg_Dict lookup")
-        self.raise_()          # moves the window to the top of the stacking order
+        self.raise_()          # moves the window to the top of the sticking order
         self.activateWindow() # gives it keyboard focus
         word = self.get_last_unbracketed_word()
         if not word:
             word = 'No words found'
         self.switch_to_tab("Editor")
+        self.filter_edits[0].setText(word.capitalize())
         self.editor_edits[0].setText(word.capitalize())
         self._gregg_dict_lookup()
         

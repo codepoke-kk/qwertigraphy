@@ -1,3 +1,4 @@
+#SingleInstance force
 f10::
 {
     ; Get the work area for the monitor that contains the active window
