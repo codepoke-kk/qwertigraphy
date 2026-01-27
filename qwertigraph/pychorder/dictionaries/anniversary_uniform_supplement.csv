@@ -306,6 +306,9 @@ Actionably,a-k-sh-b-e,Akzbe,,qabekz,955
 Actioned,a-k-sh-d,Akzd,,qadkz,66
 Actioning,a-k-sh-\-h,Akzg,,qagkz,66
 Actions,a-k-sh-s,Akzs,,qaksz,66
+Alarmed,a-l-a-m-d,Alamd,,qalm,0
+Alarming,a-l-a-m-\-h,Alamg,,qalm,0
+Alarms,a-l-a-m-s,Alams,,qalms,0
 Alias,a-l-ea-s,Ales,,qaels,1382
 Aliased,a-l-ea-s-d,Alesd,,qadels,3
 Aliasing,a-l-ea-s-\-h,Alesg,,qaegls,3
@@ -748,6 +751,8 @@ Burdened,b-e2-tn-d,Bednd,,qbden,27
 Burdening,b-e2-tn-\-h,Bedng,,qbdegn,27
 Burdens,b-e2-tn-s,Bedns,,qbdens,27
 Believed,b-e-d,Bedo,o,qbdeo,1395
+Belief,b-e-f,Bef,,qbef,1395
+Beliefs,b-e-f-s,Befs,,qbefs,1395
 Believing,b-e-\-h,Bego,o,qbego,1395
 Birth,b-e2-th,Beh,,qbeh,7
 Birthed,b-e2-th-d,Behd,,qbdeh,7
@@ -2097,6 +2102,8 @@ Edging,e-j-\-h,Ejg,,qegj,115
 Urgently,e-jnt-e,Ejnte,,qejnt,1
 Edges,e-j-s,Ejs,,qejs,115
 Economics,e-k-e-k-s,Ekeks,,qeks,18
+Economist,e-k-e-m-e-s,Ekemes,,qekms,10
+Economists,e-k-e-m-e-s-s,Ekemess,,qekms,10
 Weakest,e-k-e-s,Ekes,,qeks,90931
 Economically,e-k-/-k-e,Ekke,,qek,0
 Ecclesiastes,e-k-l-e-s-e-s,Ekleses,,qekls,4
@@ -2107,6 +2114,7 @@ Ecosystem,e-k-s2s,Ekss,,qeks,41
 Ecosystems,e-k-s2s-s,Eksss,,qeks,41
 Heal,e-l,El,,qel,92400
 Healed,e-l-d,Eld,,qdel,92400
+Illegitimately,e-l-e-j-tm-a-t-e,Elejtmate,,qaejlmt,0
 Elected,e-l-e-k-d,Elekd,,qdekl,8
 Electing,e-l-e-k-\-h,Elekg,,qegkl,8
 Electorate,e-l-e-k-r-a,Elekra,,qaeklr,8
@@ -2120,6 +2128,8 @@ Eliminations,e-l-e-mn-sh-s,Elemnzs,,qelmnsz,0
 Elementaries,e-l-e-m-r-e-s,Elemres,,qelmrs,0
 Elements,e-l-e-m-s,Elems,,qelms,5
 Healing,e-l-\-h,Elg,,qegl,92400
+Illegitimate,e-l-j-tm,Eljtm,,qejlmt,1
+Illegitimately,e-l-j-tm-e,Eljtme,,qejlmt,1
 Elementals,e-l-/-m-s,Elms,,qelms,1
 Electronic,e-l-/-n-k,Elnk,,qekln,0
 Electronics,e-l-/-n-k-s,Elnks,,qeklns,0
@@ -3387,6 +3397,9 @@ Hustle,^-h-\-u-s-l,Husl,,qhlsu,92554
 Hustled,^-h-\-u-s-l-d,Husld,,qdhlsu,92554
 Hustling,^-h-\-u-s-l-\-h,Huslg,,qghlsu,92554
 Hustles,^-h-\-u-s-l-s,Husls,,qhlsu,92554
+Householder,^-h-\-u-s-/-o-ld-r,Husoldr,,qdhlorsu,0
+Householders,^-h-\-u-s-/-o-ld-r-s,Husoldrs,,qdhlorsu,0
+Households,^-h-\-u-s-/-o-ld-s,Husolds,,qdhlosu,0
 Houses,^-h-\-u-s-s,Huss,,qhsu,101
 Thousands,th-a-u-s,Hws,,qhsw,31
 Hyper-,h-y->,Hy>,,q>hy,21
@@ -3442,6 +3455,9 @@ Journeyed,j-e2-n-e-d,Jened,,qdejn,48
 Journeying,j-e2-n-e-\-h,Jeneg,,qegjn,48
 Journeys,j-e2-n-e-s,Jenes,,qejns,48
 Generalize,j-e-n-i-s,Jenis,,qeijns,67
+Generalizable,j-e-n-i-s-b,Jenisb,,qbeijns,67
+Generalizably,j-e-n-i-s-b-e,Jenisbe,,qbeijns,67
+Generalizability,j-e-n-i-s-\-b,Jenisbo,o,qbeijnos,67
 Generalized,j-e-n-i-s-d,Jenisd,,qdeijns,67
 Generalizing,j-e-n-i-s-\-h,Jenisg,,qegijns,67
 Generalizes,j-e-n-i-s-s,Jeniss,,qeijns,67
@@ -4005,6 +4021,14 @@ Coder,k-o-t-r,Kodr,,qdkor,1735
 Coders,k-o-t-r-s,Kodrs,,qdkors,1735
 Codes,k-o-t-s,Kods,,qdkos,1735
 Calling,k-o-\-h,Kog,,qgko,1195
+Cohere,k-o-^-h-\-e-r,Koher,,qehkor,
+Cohered,k-o-^-h-\-e-r-d,Koherd,,qehkor,
+Cohering,k-o-^-h-\-e-r-\-h,Koherg,,qehkor,
+Coherent,k-o-^-h-\-e-r-nt,Kohernt,,qehknort,
+Coherently,k-o-^-h-\-e-r-nt-e,Kohernte,,qehknort,
+Coheres,k-o-^-h-\-e-r-s,Kohers,,qehkors,
+Cohesive,k-o-^-h-\-e-v,Kohev,,qehkov,
+Cohesively,k-o-^-h-\-e-v-e,Koheve,,qehkov,
 Collect,k-o-l,Kol,,qklo,80
 Collaborated,k-o-l-a-br-a-d,Kolabrad,,qabdklor,0
 Collaborating,k-o-l-a-br-a-\-h,Kolabrag,,qabgklor,0
@@ -4728,6 +4752,9 @@ Licensing,l-i-s2-n-s-\-h,Lisnsg,,qgilns,177
 Licenses,l-i-s2-n-s-s,Lisnss,,qilns,177
 -Ological,<-l-j,Lj<,,q<jl,4
 -Ologically,<-l-j-e,Lje<,,q<ejl,4
+Legitimate,l-j-tm,Ljtm,,qjlmt,1
+Legitimately,l-j-tm-a-t-e,Ljtmate,,qaejlmt,1
+Legitimately,l-j-tm-e,Ljtme,,qejlmt,1
 Welcomed,l-k-m-d,Lkmd,,qdklm,59
 Welcoming,l-k-m-\-h,Lkmg,,qgklm,59
 Welcomes,l-k-m-s,Lkms,,qklms,59
@@ -5067,6 +5094,8 @@ Mechanics,m-k-a-n-s,Mkans,,qakmns,1
 Mechanician,m-k-a-n-sh,Mkanz,,qakmnz,0
 Mechanicians,m-k-a-n-sh-s,Mkanzs,,qakmnsz,0
 -Mental,<-m-l,Ml<,,q<lm,0
+Millennia,m-l-n-ea,Mlne,,qelmn,2
+Millennium,m-l-n-m,Mlnm,,qlmn,0
 Memberships,mn-br-/-sh-s,Mmbrzs,,qbmrsz,36
 Mimicked,mn-e-k-d,Mmekd,,qdekm,0
 Mimickry,mn-e-k-e,Mmeke,,qekm,0
@@ -6269,6 +6298,10 @@ Unsupportively,n-s-/-t-v-e,Nstve,,qenstv,1211
 Insufficiently,n-s2-u-f-e,Nsufe,,qefnsu,35
 Unsuccessful,n-s2-u-k-f,Nsukf,,qfknsu,372
 Unsuccessfully,n-s2-u-k-f-e,Nsukfe,,qefknsu,372
+Insult,n-s-u-l,Nsul,,qlnsu,
+Insulted,n-s-u-l-d,Nsuld,,qlnsu,
+Insulting,n-s-u-l-\-h,Nsulg,,qlnsu,
+Insults,n-s-u-l-s,Nsuls,,qlnsu,
 Unsuitable,n-s2-u-t-b,Nsutb,,qbnstu,2
 Intrusively,n-/-s2-v-e,Nsve,,qensv,0
 Incivility,n-s2-v-\-l,Nsvl,,qlnsv,0
@@ -8590,6 +8623,8 @@ Renaming,r-e-n-a-\-h,Rnag,,qagnr,2992
 Renames,r-e-n-a-s,Rnas,,qanrs,2992
 Runnable,r-n-b,Rnb,,qbnr,1680
 Runnably,r-n-b-e,Rnbe,,qbenr,0
+Roundabout,r-nt-a-b,Rndab,,qabdnr,63
+Roundabouts,r-nt-a-b-s,Rndabs,,qabdnrs,63
 Rounded,r-nt-d,Rndd,,qdnr,63
 Rounding,r-nt-\-h,Rndg,,qdgnr,63
 Rounds,r-nt-s,Rnds,,qdnrs,63
@@ -9634,6 +9669,9 @@ Sleep,s-l-e-p,Slep,,qelps,6
 Sleeped,s-l-e-p-d,Slepd,,qdelps,6
 Sleepily,s-l-e-p-e,Slepe,,qelps,6
 Sleeping,s-l-e-p-\-h,Slepg,,qeglps,6
+Sleepless,s-l-e-p-l,Slepl,,qelps,6
+Sleeplessly,s-l-e-p-l-e,Sleple,,qelps,6
+Sleeplessness,s-l-e-p-l-n,Slepln,,qelnps,6
 Sleeps,s-l-e-p-s,Sleps,,qelps,6
 Slighted,s-l-i-d,Slidi,i,qdils,1
 Slighting,s-l-i-\-h,Slig,,qgils,1
@@ -10370,6 +10408,13 @@ Targeted,t-a-r-g-e-td,Targetd,,qadegrt,0
 Targeting,t-a-r-g-e-t-\-h,Targetg,,qaegrt,400
 Target,t-a-r-g-e-t,Targeto,o,qaegort,400
 Targets,t-a-r-g-e-t-s,Targetso,o,qaegorst,400
+Tasted,t-a-s2-t-d,Tastd,,qast,2
+Tasteful,t-a-s2-t-f,Tastf,,qafst,2
+Tastefully,t-a-s2-t-f-e,Tastfe,,qaefst,2
+Tasting,t-a-s2-t-\-h,Tastg,,qast,2
+Taster,t-a-s2-t-r,Tastr,,qarst,2
+Tasters,t-a-s2-t-r-s,Tastrs,,qarst,2
+Tastes,t-a-s2-t-s,Tasts,,qast,2
 To be,t-b,Tb,,qbt,2
 Touchable,t-ch-b,Tcb,,qbct,158
 Touchably,t-ch-b-e,Tcbe,,qbcet,158
@@ -10742,6 +10787,8 @@ Treasured,t-r-e-sh-u-d,Trezud,,qdertuz,16
 Treasuring,t-r-e-sh-u-\-h,Trezug,,qegrtuz,16
 Treasurers,t-r-e-sh-u-/-r-s,Trezurs,,qerstuz,0
 Treasures,t-r-e-sh-u-s,Trezus,,qerstuz,16
+Truthful,t-r-f,Trf,,qfrt,65
+Truthfully,t-r-f-e,Trfe,,qefrt,65
 Truncate,t-r-ng-a-t,Trgat,,qagrt,0
 Truncated,t-r-ng-a-t-d,Trgatd,,qadgrt,0
 Truncating,t-r-ng-a-t-\-h,Trgatg,,qagrt,0
@@ -10758,6 +10805,7 @@ Triumphed,t-r-i-m-f-d,Trimfd,,qdfimrt,1
 Triumphing,t-r-i-m-f-\-h,Trimfg,,qfgimrt,1
 Triumphs,t-r-i-m-f-s,Trimfs,,qfimrst,1
 Tries,t-r-i-s,Tris,,qirst,1161
+Truthiness,t-r-n-e-s,Trnes,,qenrst,65
 Trauma,t-r-o-m,Trom,,qmort,0
 Traumatic,t-r-o-m-\-a,Troma,,qamort,0
 Traumatically,t-r-o-m-\-a-e,Tromae,,qaemort,0
@@ -11612,6 +11660,8 @@ Exploratories,e-s-pl-r-t-r-e-s,Xplrtrx,,qlprtx,0
 Exploration,e-s-pl-r-sh,Xplrz,,qlprxz,5
 Explorations,e-s-pl-r-sh-s,Xplrzs,,qlprsxz,0
 Explains,e-s-pl-s,Xpls,,qlpsx,119
+Explicit,e-s-pl-e-s2-t,Xplst,,qlpstx,6
+Explicitly,e-s-pl-e-s2-t-e,Xplste,,qelpstx,6
 Explicitly,e-s-pl-e-s2-t-e,Xplxte,,qelptx,6
 Explanations,e-s-pl-sh-s,Xplzs,,qlpsxz,6
 Expounding,e-s-p-n-\-h,Xpng,,qgnpx,0

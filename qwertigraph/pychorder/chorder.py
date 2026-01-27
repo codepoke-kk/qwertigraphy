@@ -28,7 +28,7 @@ class Chorder:
 
             # -- UI Helpers ─────────────────────────
             "gregg_dict_lookup_word": self.comms_proxy.signal_gregg_dict_lookup_word,
-            "focus_coach": self.comms_proxy.signal_focus_coach,
+            "focus_tab": self.comms_proxy.signal_focus_tab,
 
             # ── password helpers ───────────────────────
             "output_password_a": partial(self.vaulter.output_password, "a"),
@@ -56,7 +56,10 @@ class Chorder:
             return
 
         # Call the bound callable – no need to pass the argument again.
-        func()
+        if 'params' in token:
+            func(token['params'])
+        else:
+            func()
         
         self._log.debug(f"Handled token: {token}")
 

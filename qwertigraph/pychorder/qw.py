@@ -719,6 +719,7 @@ class MainWindow(QMainWindow):
         self._apply_filters()
 
     def get_last_unbracketed_word(self) -> str | None:
+        # Find the word to lookup from the hints 
         raw_text: str = self.upper.toPlainText()
         raw_text = raw_text.replace("\r\n", "\n")
 
@@ -736,18 +737,23 @@ class MainWindow(QMainWindow):
 
         return None
     
+    def focus_tab(self, tab) -> None: 
+        _QW_LOG.debug(f"Focusing the {tab} tab")
+        self.switch_to_tab(tab)
+    
     def focus_coach(self) -> None: 
         _QW_LOG.debug("Focusing the Coach")
         self.switch_to_tab("Coach")
     
     def gregg_dict_lookup_word(self) -> None: 
         _QW_LOG.debug("Testing Gregg_Dict lookup")
-        self.raise_()          # moves the window to the top of the stacking order
+        self.raise_()          # moves the window to the top of the sticking order
         self.activateWindow() # gives it keyboard focus
         word = self.get_last_unbracketed_word()
         if not word:
             word = 'No words found'
         self.switch_to_tab("Editor")
+        self.filter_edits[0].setText(word.capitalize())
         self.editor_edits[0].setText(word.capitalize())
         self._gregg_dict_lookup()
         
@@ -759,6 +765,18 @@ class MainWindow(QMainWindow):
             return
         _QW_LOG.debug(f"Performing lookup by Gregg_Dict for word: {word}")
         result = self.gregg_dict.find_best_match(word)
+
+        while word:    # Loop while there is still at least one char
+            _QW_LOG.debug(f"Performing lookup by Gregg_Dict for word: '{word}'")
+            result = self.gregg_dict.find_best_match(word)
+
+            # If the result is truthy (e.g., a non‑empty list/dict/string), we’re done
+            if result:
+                break
+
+            # No match – drop the last character and try again
+            word = word[:-1]
+
         if result:
             page, word, x, y = result
             _QW_LOG.debug(f'Query "{word}" → page {page}, word "{word}", coordinates ({x}, {y})')
