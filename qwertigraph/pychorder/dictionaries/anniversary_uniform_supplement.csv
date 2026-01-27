@@ -592,6 +592,9 @@ Attackers,a-t-a-k-r-s,Atakrs,,qakrst,3
 Attacks,a-t-a-k-s,Ataks,,qakst,89
 Attache,a-t-a-sh-a,Ataza,,qatz,0
 Attaches,a-t-a-sh-a-s,Atazas,,qastz,0
+Attachable,a-t-ch-b,Atcb,,qabct,98
+Attachably,a-t-ch-b-e,Atcbe,,qabcet,98
+Attachability,a-t-ch-\-b,Atcbo,o,qabcot,98
 Attached,a-t-ch-d,Atcd,,qacdt,98
 Attaching,a-t-ch-\-h,Atcg,,qacgt,98
 Artichokes,a2-t-ch-k-s,Atcks,,qackst,0
@@ -1931,6 +1934,13 @@ Destroys,d-s-/-o-e-s,Dsys,,qdsy,3
 Detailed,td-a2-d,Dtad,,qadt,84
 Detailing,td-a2-\-h,Dtag,,qadgt,84
 Details,td-a2-s,Dtas,,qadst,84
+Detach,d-t-ch,Dtc,,qcdt,98
+Detachable,d-t-ch-b,Dtcb,,qbcdt,98
+Detachably,d-t-ch-b-e,Dtcbe,,qbcdet,98
+Detachability,d-t-ch-\-b,Dtcbo,o,qbcdot,98
+Detached,d-t-ch-d,Dtcd,,qcdt,98
+Detaching,d-t-ch-\-h,Dtcg,,qcdt,98
+Detaches,d-t-ch-s,Dtcs,,qcdst,98
 Detectable,td-e-k-b,Dtekb,,qbdekt,1
 Detectably,td-e-k-b-e,Dtekbe,,qbdekt,1
 Detectability,td-e-k-\-b,Dtekbo,,qbdekot,1
@@ -3968,6 +3978,8 @@ Conniption,k-n-e-p-sh,Knepz,,qeknpz,0
 Conniptions,k-n-e-p-sh-s,Knepzs,,qeknpsz,0
 Cognitive,k-n-e-df,Knetv,,qekntv,0
 Cognitively,k-n-e-df-e,Knetve,,qekntv,0
+Canonical,k-n-k,Knk,,qkn,92892
+Canonically,k-n-k-e,Knke,,qekn,92892
 Counted,k-nt-d,Kntd,,qdknt,126
 Counting,k-nt-\-h,Kntg,,qgknt,126
 Counter,k-nt-r,Kntr,,qknrt,10
@@ -5886,6 +5898,10 @@ Encumber,n-k-m-b-r,Nkmbr,,qbkmnr,0
 Encumbered,n-k-m-b-r-d,Nkmbrd,,qbdkmnr,0
 Encumbering,n-k-m-b-r-\-h,Nkmbrg,,qbgkmnr,0
 Encumbers,n-k-m-b-r-s,Nkmbrs,,qbkmnrs,0
+Uncomment,n-k-mn-t,Nkmnt,,qkmnt,98
+Uncommented,n-k-mn-t-d,Nkmntd,,qkmnt,98
+Uncommenting,n-k-mn-t-\-h,Nkmntg,,qkmnt,98
+Uncomments,n-k-mn-t-s,Nkmnts,,qkmnst,98
 Encode,n-k-o-t,Nkod,,qdkno,6
 Encoded,n-k-o-t-d,Nkodd,,qdkno,6
 Encoding,n-k-o-t-\-h,Nkodg,,qdgkno,6
@@ -7015,6 +7031,10 @@ Publicized,p-b-s-i-s-d,Pbsisd,,qbdips,4520
 Publicizing,p-b-s-i-s-\-h,Pbsisg,,qbgips,4520
 Publicizes,p-b-s-i-s-s,Pbsiss,,qbips,4520
 Publicity,p-b-\-s2,Pbso,o,qbops,0
+Pitch,p-ch,Pc,,qcp,90748
+Pitched,p-ch-d,Pcd,,qcp,90748
+Pitching,p-ch-\-h,Pcg,,qcp,90748
+Pitches,p-ch-s,Pcs,,qcps,90748
 Pedestal,p-d-e-s-t-l,Pdestl,,qdelpst,0
 Pedestals,p-d-e-s-t-l-s,Pdestls,,qdelpst,0
 Paradoxical,p-/-d-o-x-\-k,Pdoxk,,qdkopx,0
@@ -8190,6 +8210,12 @@ Wrestling,r-e-s-l-\-h,Reslg,,qeglrs,0
 Wrestler,r-e-s-l-r,Reslr,,qelrs,0
 Wrestlers,r-e-s-l-r-s,Reslrs,,qelrs,0
 Wrestles,r-e-s-l-s,Resls,,qelrs,0
+Reissue,r-e-sh-u,Rezu,,qeruz,1696
+Reissued,r-e-sh-u-d,Rezud,,qeruz,1696
+Reissuing,r-e-sh-u-\-h,Rezug,,qeruz,1696
+Reissuer,r-e-sh-u-r,Rezur,,qeruz,1696
+Reissuers,r-e-sh-u-r-s,Rezurs,,qersuz,1696
+Reissues,r-e-sh-u-s,Rezus,,qersuz,1696
 Refactor,r-f-a-k-r,Rfakr,,qafkr,205
 Refactored,r-f-a-k-r-d,Rfakrd,,qadfkr,205
 Refactoring,r-f-a-k-r-\-h,Rfakrg,,qafgkr,205
@@ -9720,6 +9746,10 @@ Softest,s2-o-f-t-e-s,Softes,,qefost,0
 Softer,s2-o-f-t-r,Softr,,qforst,0
 Software,s2-o-f-w-a,Sofwa,,qafosw,0
 Songs,s2-o-ng-s,Sogs,,qgos,6
+Socket,s-o-k-t,Sokt,,qkost,
+Socketed,s-o-k-t-d,Soktd,,qkost,
+Socketing,s-o-k-t-\-h,Soktg,,qkost,
+Sockets,s-o-k-t-s,Sokts,,qkost,
 Soldier,s-o-l-j-e2,Solje,,qejlos,1
 Soldiered,s-o-l-j-e2-d,Soljed,,qdejlos,1
 Soldiery,s-o-l-j-e2-e,Soljee,,qejlos,0
@@ -10034,6 +10064,8 @@ Startled,s2-t-a2-t-l-d,Statld,,qadlst,0
 Startling,s2-t-a2-t-l-\-h,Statlg,,qaglst,0
 Startlingly,s2-t-a2-t-l-\-h-e,Statlhe,,qaehlst,0
 Startles,s2-t-a2-t-l-s,Statls,,qalst,0
+Startup,s2-t-a2-t-p,Statp,,qapst,1093
+Startups,s2-t-a2-t-p-s,Statps,,qapst,1093
 Starter,s2-t-a2-t-r,Statr,,qarst,18
 Starters,s2-t-a2-t-r-s,Statrs,,qarst,18
 Starts,s2-t-a2-t-s,Stats,,qast,1093
@@ -10565,6 +10597,7 @@ Transcend,t-\-nt,Tndo,o,qdnot,3
 Transcends,t-\-nt-s,Tnds,,qdnst,3
 Tenet,tn-e-t,Tnet,,qent,0
 Tonight,tn-i,Tnio,o,qinot,237
+Tenants,tn-nt-s,Tnnts,,qnst,0
 Do you know,tn-o,Tnoi,i,qinot,0
 Downsize,tn-s-i-s,Tnsis,,qinst,16
 Downsized,tn-s-i-s-d,Tnsisd,,qdinst,16
@@ -10766,6 +10799,10 @@ Tools,t-u-l-s,Tuls,,qlstu,385
 Toolset,t-u-l-s2-e-t,Tulset,,qelstu,0
 Toolsets,t-u-l-s2-e-t-s,Tulsets,,qelstu,0
 Two,t-u,Tuo,o,qotu,15
+Tutor,t-u-t-e2,Tute,,qetu,
+Tutored,t-u-t-e2-d,Tuted,,qetu,
+Tutoring,t-u-t-e2-\-h,Tuteg,,qetu,
+Tutors,t-u-t-e2-s,Tutes,,qestu,
 Defectively,df-e-k-v-e,Tvekve,,qektv,1
 Defectives,df-e-k-v-s,Tvekvs,,qekstv,1
 Definitively,df-n-e-df-e,Tvnetve,,qentv,3
