@@ -5,6 +5,7 @@ import sys
 from pathlib import Path, PurePath
 from typing import Dict, List, Any
 import json 
+from datetime import datetime
 
 from PyQt6.QtCore import Qt, QSize, QSortFilterProxyModel, QModelIndex
 from PyQt6.QtGui import QIcon, QStandardItemModel, QStandardItem
@@ -388,6 +389,7 @@ class MainWindow(QMainWindow):
 
         # Reload the dictionaries based on the new config 
         self.load_composite_dictionary()
+        self.append_log(f"Updated settings saved")
 
 
     def _build_editor_page(self) -> QWidget:
@@ -621,6 +623,7 @@ class MainWindow(QMainWindow):
 
         # Re‑apply filters so a newly added row appears/disappears correctly
         self._apply_filters()
+        self.append_log(f"Put entry {entry} to composite dictionary and engine expansions")
 
     def _delete_button_clicked(self, button_name) -> None:
         _QW_LOG.debug(f"{button_name} clicked")
@@ -657,6 +660,7 @@ class MainWindow(QMainWindow):
         self._apply_filters()
         # Reload the expansions into the Engine 
         # self._engine.load_expansions()
+        self.append_log(f"Removed entry {entry} from composite dictionary and engine expansions")
         
     def _rapid_button_clicked(self, button_name) -> None:
         """
@@ -717,6 +721,7 @@ class MainWindow(QMainWindow):
 
         # Re‑apply filters so a newly added row appears/disappears correctly
         self._apply_filters()
+        self.append_log(f"Put entry {entry} to composite dictionary and engine expansions")
 
     def get_last_unbracketed_word(self) -> str | None:
         # Find the word to lookup from the hints 
@@ -737,16 +742,20 @@ class MainWindow(QMainWindow):
 
         return None
     
-    def focus_tab(self, tab) -> None: 
+    def focus_tab(self, tab, focus: str = '') -> None: 
         _QW_LOG.debug(f"Focusing the {tab} tab")
+        self.append_log(f"Focusing the {tab} tab")
         self.switch_to_tab(tab)
+        if focus == 'foreground':
+            self.raise_()
+            self.activateWindow()
     
     def focus_coach(self) -> None: 
         _QW_LOG.debug("Focusing the Coach")
         self.switch_to_tab("Coach")
     
     def gregg_dict_lookup_word(self) -> None: 
-        _QW_LOG.debug("Testing Gregg_Dict lookup")
+        _QW_LOG.debug("Gregg_Dict lookup")
         self.raise_()          # moves the window to the top of the sticking order
         self.activateWindow() # gives it keyboard focus
         word = self.get_last_unbracketed_word()
@@ -764,6 +773,7 @@ class MainWindow(QMainWindow):
                                 "Enter a word to look up in Gregg_Dict.")
             return
         _QW_LOG.debug(f"Performing lookup by Gregg_Dict for word: {word}")
+        self.append_log(f"Performing lookup by Gregg_Dict for word: {word}")
         result = self.gregg_dict.find_best_match(word)
 
         while word:    # Loop while there is still at least one char
@@ -796,6 +806,7 @@ class MainWindow(QMainWindow):
                                 "Enter a shorthand word and form to autofill remaining fields")
             return
         _QW_LOG.debug(f"Performing entry helper autofill for word/form: {word}/{form}")
+        self.append_log(f"Performing entry helper autofill for word/form: {word}/{form}")
         qwerd, keyer = self.entry_helper.qwerd_and_keyer_from_word_and_form(word, form)
         if not qwerd:
             _QW_LOG.debug(f"Autofill was cancelled or failed")
@@ -828,6 +839,7 @@ class MainWindow(QMainWindow):
         self.composite = Composite_Dictionary(sources)
         os.environ['DICTIONARY_PATHS'] = ','.join(csv_paths)
         _QW_LOG.info(f"Dictionary loaded of {len(self.composite.all_entries())} entries")
+        # self.append_log(f"Dictionary loaded of {len(self.composite.all_entries())} entries")
 
     def _build_log_page(self) -> QWidget:
         widget = QWidget()
@@ -946,7 +958,8 @@ class MainWindow(QMainWindow):
         self.move(x, y)
 
     def append_log(self, msg: str) -> None:
-        self.log_area.append(msg)
+        timestamp = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
+        self.log_area.append(f"{timestamp} - {msg}")
 
     def resizeEvent(self, event) -> None:
         super().resizeEvent(event)
@@ -972,6 +985,7 @@ class MainWindow(QMainWindow):
         self._comms_proxy.set_key_input(self._key_input)
         self._key_input.start_listening()
         _QW_LOG.info("Built new Engine")
+        self.append_log(f"Built new Engine")
  
     def set_coach_upper(self, text: str):
         # print(f"Setting upper text to: {text}")
@@ -1036,12 +1050,14 @@ class MainWindow(QMainWindow):
         _QW_LOG.info("Notified engine started")
         self.btn_start.setEnabled(False)
         self.btn_stop.setEnabled(True)
+        self.append_log(f"Notified engine started")
 
 
     def on_engine_stopped(self):
         _QW_LOG.info("Notified engine stopped")
         self.btn_start.setEnabled(True)
         self.btn_stop.setEnabled(False)
+        self.append_log(f"Notified engine stopped")
 
     def updated_credentials(self):
         _QW_LOG.info("Sending updated credentials to Listener")
@@ -1057,6 +1073,7 @@ class MainWindow(QMainWindow):
 
         self._comms_proxy.signal_vaulter_new_credentials(new_credentials)
         self.switch_to_tab("Coach")
+        self.append_log(f"Updated credentials")
 
 
 
@@ -1087,17 +1104,6 @@ def main() -> None:
 
     # Demo: periodic log messages (remove in production)
     from PyQt6.QtCore import QTimer
-
-    counter = 0
-
-    def demo_log():
-        nonlocal counter
-        counter += 1
-        win.append_log(f"Demo log entry #{counter}")
-
-    timer = QTimer()
-    timer.timeout.connect(demo_log)
-    timer.start(3000)  # every 3 seconds
 
     sys.exit(app.exec())
 
