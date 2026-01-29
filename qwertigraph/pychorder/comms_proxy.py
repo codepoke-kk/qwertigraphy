@@ -13,7 +13,7 @@ class Comms_Proxy(QObject):
     performanceUpdated = pyqtSignal(str)
     greggDictLookupWord = pyqtSignal()
     focusCoach = pyqtSignal()
-    focusTab = pyqtSignal(str)
+    focusTab = pyqtSignal(str, str)
 
     def __init__(self, ui: QObject, parent: QObject | None = None) -> None:
         super().__init__(parent)
@@ -51,9 +51,9 @@ class Comms_Proxy(QObject):
         self._log.debug("Call to signal_gregg_dict_lookup_word")
         self.greggDictLookupWord.emit()
         
-    def signal_focus_tab(self, tab: str):
-        self._log.debug(f"Call to signal_focus_tab with {tab}")
-        self.focusTab.emit(tab)
+    def signal_focus_tab(self, tab_focus: list):
+        self._log.debug(f"Call to signal_focus_tab with {tab_focus}")
+        self.focusTab.emit(tab_focus[0], tab_focus[1])
         
     def signal_focus_coach(self):
         self._log.debug("Call to signal_focus_coach")
