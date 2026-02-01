@@ -29,27 +29,8 @@ class Scribe:
         self._log.info('Initiated Scribe')
 
 
-    # ------------------------------------------------------------------
-    # Convenience wrappers that forward to the UI (same signatures as before)
-    # ------------------------------------------------------------------
-    def set_upper_text(self, text: str):
-        self._log.debug(f"Setting upper text via Scribe: {text}")
-        self.comms_proxy.signal_coach_set_upper(text)
-
-    def set_lower_text(self, text: str):
-        self._log.debug(f"Setting lower text via Scribe: {text}")
-        self.comms_proxy.signal_coach_set_lower(text)
-
-    def append_to_upper(self, line: str):
-        self._log.debug(f"Appending to upper text via Scribe: {line}")
-        self.comms_proxy.signal_coach_append_upper(line)
-
-    def append_to_lower(self, line: str):
-        self._log.debug(f"Appending to lower text via Scribe: {line}")
-        self.comms_proxy.signal_coach_append_lower(line)
-
-
     def record_note(self, key, word, end_key):
+        # Convert the end_key to a string representation
         if hasattr(end_key, 'value'):
             self._log.debug(f"Getting string value of special end key {end_key}")
             end_key_str = f"{end_key.value}"
@@ -60,9 +41,11 @@ class Scribe:
             # Regular character key
             self._log.debug(f"Getting string value of normal end key {end_key}")
             end_key_str = self._END_KEY_SYMBOLS.get(end_key, f"{end_key}")
+
+        # Log the note both to tape log and internal tape
         self._log.debug(f"Recording input {key} to {word} ending with {end_key_str}")
         self._tape_log.info(f"{key:<6}{word:<30}{end_key_str:>6}")
-        self.append_to_upper(f"{key:<7} {word}{end_key_str}")
+        self.comms_proxy.signal_coach_append_hintlog(f"{key:<7} {word}{end_key_str}")
         ts = time.perf_counter()
         self._tape.append(Note(key, word, ts, end_key, end_key_str))
 
