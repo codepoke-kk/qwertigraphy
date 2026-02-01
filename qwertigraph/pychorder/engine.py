@@ -109,9 +109,10 @@ class _DictChangeHandler(FileSystemEventHandler):
 class Expansion_Engine:
     _log = get_logger('ENGINE') 
     _last_end_key = ''
-    def __init__(self, key_output, comms_proxy):
-        self.comms_proxy = comms_proxy
+    def __init__(self, key_output, comms_proxy, gregg_dict) -> None:
         self.key_output = key_output
+        self.comms_proxy = comms_proxy
+        self.gregg_dict = gregg_dict
         raw_paths = os.getenv('DICTIONARY_PATHS', '').split(',')
 
         # Expand any Windows‑style %VAR% placeholders (and also ~)
@@ -392,9 +393,16 @@ class Expansion_Engine:
                 self._log.debug(f"Qwerd {qwerd} not found, but reverse hint exists: {self.reverse_hints[qwerd]}")
                 self.key_output.log_no_action(f"<{self.reverse_hints[qwerd]}>", qwerd, end_key)
                 this_characters_output = this_characters_input = len(qwerd) + 1
-                self.comms_proxy.signal_coach_append_misses(f"{self.reverse_hints[qwerd]} = {qwerd} (as {qwerd})")
+                if len(self.reverse_hints[qwerd]) < len(qwerd):
+                    self.comms_proxy.signal_coach_append_misses(f"{self.reverse_hints[qwerd]} = {qwerd} (as {qwerd})")
             else:
                 self._log.debug(f"Qwerd {qwerd} not in expansions")
+                # Look for an opportunity in this if the qwerd is 4+ characters 
+                if len(qwerd) >= 4:
+                    opportunity = self.gregg_dict.find_best_match(qwerd)
+                    if opportunity:
+                        self._log.debug(f"Found opportunity for {qwerd} as {opportunity}")
+                        self.comms_proxy.signal_coach_append_opportunities(f"{qwerd} appears in Gregg Dictionary, but not in expansions")
                 self.key_output.log_no_action(qwerd, qwerd, end_key)
                 this_characters_output = this_characters_input = len(qwerd) + 1
             

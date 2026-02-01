@@ -765,14 +765,9 @@ class MainWindow(QMainWindow):
         self.switch_to_tab("Editor")
         self.filter_edits[0].setText(word.capitalize())
         self.editor_edits[0].setText(word.capitalize())
-        self._gregg_dict_lookup()
+        self._gregg_dict_lookup(word.capitalize())
         
-    def _gregg_dict_lookup(self) -> None:
-        word = self.editor_edits[0].text().strip()   # first field = word
-        if not word:
-            QMessageBox.warning(self, "No word",
-                                "Enter a word to look up in Gregg_Dict.")
-            return
+    def _gregg_dict_lookup(self, word: str) -> None:
         _QW_LOG.debug(f"Performing lookup by Gregg_Dict for word: {word}")
         self.append_log(f"Performing lookup by Gregg_Dict for word: {word}")
         result = self.gregg_dict.find_best_match(word)
@@ -985,7 +980,7 @@ class MainWindow(QMainWindow):
         self._comms_proxy = Comms_Proxy(ui=self)
         self._scribe = Scribe(self._comms_proxy)
         self._key_output = Key_Output(self._scribe)
-        self._engine = Expansion_Engine(self._key_output, self._comms_proxy)
+        self._engine = Expansion_Engine(self._key_output, self._comms_proxy, self.gregg_dict)
         self._key_queue = Key_Queue(self._engine)  
         self._key_input = Key_Input(self._key_queue, self._comms_proxy)
         self._comms_proxy.set_key_input(self._key_input)
@@ -1006,7 +1001,7 @@ class MainWindow(QMainWindow):
         self.upper.verticalScrollBar().setValue(self.upper.verticalScrollBar().maximum())
 
     def set_coach_predictions(self, text: str):
-        print(f"Setting predictions text to: {text} for self {self}")
+        # print(f"Setting predictions text to: {text} for self {self}")
         # print(f"lower is {self.lower}")
         scrubbed_text = self._scrub_text(text)
         # print(f"Setting lower text to scrubbed: {scrubbed_text}")
