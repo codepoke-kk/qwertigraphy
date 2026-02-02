@@ -18,7 +18,7 @@ class Comms_Proxy(QObject):
     coachOpportunitiesAppended = pyqtSignal(str)
 
     performanceUpdated = pyqtSignal(str)
-    greggDictLookupWord = pyqtSignal()
+    greggDictLookupWord = pyqtSignal(str)
     focusCoach = pyqtSignal()
     focusTab = pyqtSignal(str, str)
 
@@ -59,9 +59,9 @@ class Comms_Proxy(QObject):
         self._log.debug("Call to signal_performance_updated")
         self.performanceUpdated.emit(line)
         
-    def signal_gregg_dict_lookup_word(self):
+    def signal_gregg_dict_lookup_word(self, mode: str = 'Active'):
         self._log.debug("Call to signal_gregg_dict_lookup_word")
-        self.greggDictLookupWord.emit()
+        self.greggDictLookupWord.emit(mode[0])
         
     def signal_focus_tab(self, tab_focus: list):
         self._log.debug(f"Call to signal_focus_tab with {tab_focus}")

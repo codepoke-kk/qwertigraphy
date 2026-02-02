@@ -483,7 +483,7 @@ class MainWindow(QMainWindow):
         # ---------- 3️⃣ Bottom bar (Save) ----------
         bottom_bar = QHBoxLayout()
         self.btn_gregg_dict_lookup = QPushButton("Display Gregg Form", self)
-        self.btn_gregg_dict_lookup.clicked.connect(self._gregg_dict_lookup)
+        self.btn_gregg_dict_lookup.clicked.connect(self._gregg_dict_lookup_action)
         bottom_bar.addWidget(self.btn_gregg_dict_lookup)
         self.btn_entry_helper = QPushButton("Define Entry from Form", self)
         self.btn_entry_helper.clicked.connect(self._entry_helper_autofill)
@@ -755,7 +755,7 @@ class MainWindow(QMainWindow):
         _QW_LOG.debug("Focusing the Coach")
         self.switch_to_tab("Coach")
     
-    def gregg_dict_lookup_word(self) -> None: 
+    def gregg_dict_lookup_word(self, mode: str = 'Active') -> None: 
         _QW_LOG.debug("Gregg_Dict lookup")
         self.raise_()          # moves the window to the top of the sticking order
         self.activateWindow() # gives it keyboard focus
@@ -765,8 +765,17 @@ class MainWindow(QMainWindow):
         self.switch_to_tab("Editor")
         self.filter_edits[0].setText(word.capitalize())
         self.editor_edits[0].setText(word.capitalize())
-        self._gregg_dict_lookup(word.capitalize())
+        if mode == 'Active':
+            self._gregg_dict_lookup(word.capitalize())
         
+    def _gregg_dict_lookup_action(self) -> None:
+        word = self.editor_edits[0].text().strip()
+        if not word:
+            QMessageBox.warning(self, "No word",
+                                "Enter a shorthand word to look up in the Gregg Dictionary")
+            return  
+        self._gregg_dict_lookup(word)
+
     def _gregg_dict_lookup(self, word: str) -> None:
         _QW_LOG.debug(f"Performing lookup by Gregg_Dict for word: {word}")
         self.append_log(f"Performing lookup by Gregg_Dict for word: {word}")
