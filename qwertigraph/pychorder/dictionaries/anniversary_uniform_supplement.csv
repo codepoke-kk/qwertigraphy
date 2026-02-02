@@ -1879,8 +1879,13 @@ Dissociated,d-s2-o-sh-t-d,Dsoztd,,qdostz,0
 Dissociating,d-s2-o-sh-t-\-h,Dsoztg,,qdgostz,0
 Dissociates,d-s2-o-sh-t-s,Dsozts,,qdostz,0
 Dissociation,d-s2-o-sh-sh,Dsozz,,qdosz,0
+Dispatchable,d-s-p-a-ch-b,Dspacb,,qabcdps,125
+Dispatchably,d-s-p-a-ch-b-e,Dspacbe,,qabcdeps,125
+Dispatchability,d-s-p-a-ch-\-b,Dspacbo,o,qabcdops,125
 Dispatched,d-s-p-a-ch-d,Dspacd,,qacdps,125
 Dispatching,d-s-p-a-ch-\-h,Dspacg,,qacdgps,125
+Dispatcher,d-s-p-a-ch-r,Dspacr,,qacdprs,125
+Dispatchers,d-s-p-a-ch-r-s,Dspacrs,,qacdprs,125
 Dispatchs,d-s-p-a-ch-s,Dspacs,,qacdps,125
 Despair,d-s-p-a-r,Dspar,,qadprs,232
 Despaired,d-s-p-a-r-d,Dspard,,qadprs,232
@@ -3863,6 +3868,7 @@ Clicking,k-l-e-k-\-h,Klekg,,qegkl,272
 Clicks,k-l-e-k-s,Kleks,,qekls,272
 Cleanly,k-l-e-n-e,Klene,,qekln,165
 Cleaner,k-l-e-n-e,Kleneo,o,qeklno,11
+Cleanest,k-l-e-n-e-s,Klenes,,qeklns,0
 Cleanest,k-l-e-n-e-s-t,Klenest,,qeklnst,0
 Cleaning,k-l-e-n-\-h,Kleng,,qegkln,165
 Cleanness,k-l-e-n-n-e-s,Klennes,,qeklns,0
@@ -4002,6 +4008,13 @@ Conniption,k-n-e-p-sh,Knepz,,qeknpz,0
 Conniptions,k-n-e-p-sh-s,Knepzs,,qeknpsz,0
 Cognitive,k-n-e-df,Knetv,,qekntv,0
 Cognitively,k-n-e-df-e,Knetve,,qekntv,0
+Canon,k-n,Kni,i,qikn,92892
+Canonize,k-n-i-s,Knis,,qikns,92892
+Canonized,k-n-i-s-d,Knisd,,qikns,92892
+Canonizing,k-n-i-s-\-h,Knisg,,qikns,92892
+Canonizes,k-n-i-s-s,Kniss,,qikns,92892
+Canonization,k-n-i-s-sh,Knisz,,qiknsz,92892
+Canonizations,k-n-i-s-sh-s,Kniszs,,qiknsz,92892
 Canonical,k-n-k,Knk,,qkn,92892
 Canonically,k-n-k-e,Knke,,qekn,92892
 Counted,k-nt-d,Kntd,,qdknt,126
@@ -8655,6 +8668,8 @@ Renounce,r-e-nn-s,Rnns,,qnrs,1
 Renounced,r-e-nn-s-d,Rnnsd,,qdnrs,1
 Renouncing,r-e-nn-s-\-h,Rnnsg,,qgnrs,1
 Renounces,r-e-nn-s-s,Rnnss,,qnrs,1
+Runplan,r-n-p,Rnp,,qnpr,0
+Runplans,r-n-p-s,Rnps,,qnprs,0
 Runner,r-n-r,Rnr,,qnr,30
 Runners,r-n-r-s,Rnrs,,qnrs,30
 Runs,r-n-s,Rns,,qnrs,1680
