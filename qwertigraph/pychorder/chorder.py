@@ -27,7 +27,7 @@ class Chorder:
             "output_date": self._macros.output_date,    
 
             # -- UI Helpers ─────────────────────────
-            "gregg_dict_lookup_word": self.comms_proxy.signal_gregg_dict_lookup_word,
+            "gregg_dict_lookup_word": self.comms_proxy.signal_gregg_dict_lookup_word, 
             "focus_tab": self.comms_proxy.signal_focus_tab,
 
             # ── password helpers ───────────────────────

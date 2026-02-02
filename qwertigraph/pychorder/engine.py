@@ -109,9 +109,10 @@ class _DictChangeHandler(FileSystemEventHandler):
 class Expansion_Engine:
     _log = get_logger('ENGINE') 
     _last_end_key = ''
-    def __init__(self, key_output, comms_proxy):
-        self.comms_proxy = comms_proxy
+    def __init__(self, key_output, comms_proxy, gregg_dict) -> None:
         self.key_output = key_output
+        self.comms_proxy = comms_proxy
+        self.gregg_dict = gregg_dict
         raw_paths = os.getenv('DICTIONARY_PATHS', '').split(',')
 
         # Expand any Windows‑style %VAR% placeholders (and also ~)
@@ -369,7 +370,20 @@ class Expansion_Engine:
                 # In single quoted strings, a thing that *could* be a contraction will be treated as one 
                 self._log.debug(f"Prepending apostrophe to {qwerd} as contraction")
                 qwerd = f"'{qwerd}"
-            self.key_output.replace_qwerd(qwerd, self.expansions[qwerd], end_key)
+
+            # Replacing the qwerd triggers the scribe, 
+            # so to give hints about shorter qwerds, we need to pass the shortest one
+            
+            if self.expansions[qwerd] in self.reverse_hints:
+                if len(self.reverse_hints[self.expansions[qwerd]]) < len(qwerd):
+                    hint_qwerd = f"<{self.reverse_hints[self.expansions[qwerd]]}>"
+                    self.comms_proxy.signal_coach_append_misses(f"{self.reverse_hints[self.expansions[qwerd]]} = {self.expansions[qwerd]} (as {qwerd})")
+                else:
+                    hint_qwerd = qwerd
+            else:
+                hint_qwerd = qwerd
+
+            self.key_output.replace_qwerd(qwerd, self.expansions[qwerd], end_key, hint_qwerd)
             this_characters_input = len(qwerd) + 1
             this_characters_output = len(self.expansions[qwerd]) + 1 
             self.expansion_count += 1
@@ -379,8 +393,16 @@ class Expansion_Engine:
                 self._log.debug(f"Qwerd {qwerd} not found, but reverse hint exists: {self.reverse_hints[qwerd]}")
                 self.key_output.log_no_action(f"<{self.reverse_hints[qwerd]}>", qwerd, end_key)
                 this_characters_output = this_characters_input = len(qwerd) + 1
+                if len(self.reverse_hints[qwerd]) < len(qwerd):
+                    self.comms_proxy.signal_coach_append_misses(f"{self.reverse_hints[qwerd]} = {qwerd} (as {qwerd})")
             else:
                 self._log.debug(f"Qwerd {qwerd} not in expansions")
+                # Look for an opportunity in this if the qwerd is 4+ characters 
+                if len(qwerd) >= 4:
+                    opportunity = self.gregg_dict.find_best_match(qwerd)
+                    if opportunity:
+                        self._log.debug(f"Found opportunity for {qwerd} as {opportunity}")
+                        self.comms_proxy.signal_coach_append_opportunities(f"{qwerd} appears in Gregg Dictionary, but not in expansions")
                 self.key_output.log_no_action(qwerd, qwerd, end_key)
                 this_characters_output = this_characters_input = len(qwerd) + 1
             
@@ -389,10 +411,18 @@ class Expansion_Engine:
         # Update performance metrics
         self.characters_input += this_characters_input
         self.characters_output += this_characters_output
+        # Here are the 3 pieces of data that make up the whole performance picture 
         self.seconds_typing += elapsed_time
         wpm_input = (self.characters_input / 5) / (self.seconds_typing / 60) if self.seconds_typing > 0 else 0.0
         wpm_output = (self.characters_output / 5) / (self.seconds_typing / 60) if self.seconds_typing > 0 else 0.0
-        self.comms_proxy.signal_performance_updated(f"{self.characters_output - self.characters_input}@{wpm_input :.1f}/{wpm_output:.1f} in {self.seconds_typing :.1f}")
+        # First, the WPM portion of the display
+        wpm_phrase = f"wpm: {wpm_output:.1f}({wpm_input :.1f})"
+        # Second, how many seconds I spent actually typing followed by how many seconds I would have typed without the system 
+        time_phrase = f" in s:{self.seconds_typing :.0f}({(self.seconds_typing * (wpm_output - wpm_input)) / wpm_input :.0f})"
+        # Third, how many expansions I made
+        expansion_phrase = f" over x:{self.expansion_count}"
+        # Send the updated performance to the UI
+        self.comms_proxy.signal_performance_updated(f"{wpm_phrase}{time_phrase}{expansion_phrase}")
 
         self._log.debug(f"Setting last end key to {end_key}")
         self._last_end_key = end_key
@@ -403,20 +433,24 @@ class Expansion_Engine:
         # This is where the text of the hints gets built and sent to the scribe.
         qwerd = ''.join(current_queue)
         if not qwerd:
-            self.key_output.scribe.set_lower_text(" = ")
+            # self.key_output.scribe.set_lower_text(" = ")
+            self.comms_proxy.signal_coach_set_predictions(" = ")
             return
         word = self.expansions.get(qwerd, f"<{self.reverse_hints.get(qwerd, '∅')}>")
         current_hint = f"{qwerd} = {word}"
         # self._log.info(f"Displaying hints for {qwerd} as {word} to {current_hint}")
 
-        self.key_output.scribe.set_lower_text(current_hint)
+        # self.key_output.scribe.set_lower_text(current_hint)
+        self.comms_proxy.signal_coach_set_predictions(current_hint)
 
         if ''.join(current_queue) in self.hints:
             hints_list = self.hints[''.join(current_queue)]
             for hint in hints_list[:30]:
                 # self._log.debug(f"Hint: {hint}")
-                self.key_output.scribe.append_to_lower(f"{hint} = {self.expansions[qwerd + hint]}")
+                # self.key_output.scribe.append_to_lower(f"{hint} = {self.expansions[qwerd + hint]}")
+                self.comms_proxy.signal_coach_append_predictions(f"{hint} = {self.expansions[qwerd + hint]}")
             if len(hints_list) > 30:
                 self._log.debug(f"Limited {len(hints_list)} hints to 30")
         else:
-            self.key_output.scribe.append_to_lower(" = ")
+            # self.key_output.scribe.append_to_lower(" = ")
+            self.comms_proxy.signal_coach_append_predictions(" = ")

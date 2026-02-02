@@ -155,6 +155,7 @@ class MainWindow(QMainWindow):
         banner_layout = QHBoxLayout(banner)
         banner_layout.setContentsMargins(5, 5, 5, 5)
 
+        banner_layout.addStretch()
         self.status_label = QLabel("Dashboard: ready")
         banner_layout.addWidget(self.status_label, alignment=Qt.AlignmentFlag.AlignLeft)
 
@@ -482,7 +483,7 @@ class MainWindow(QMainWindow):
         # ---------- 3️⃣ Bottom bar (Save) ----------
         bottom_bar = QHBoxLayout()
         self.btn_gregg_dict_lookup = QPushButton("Display Gregg Form", self)
-        self.btn_gregg_dict_lookup.clicked.connect(self._gregg_dict_lookup)
+        self.btn_gregg_dict_lookup.clicked.connect(self._gregg_dict_lookup_action)
         bottom_bar.addWidget(self.btn_gregg_dict_lookup)
         self.btn_entry_helper = QPushButton("Define Entry from Form", self)
         self.btn_entry_helper.clicked.connect(self._entry_helper_autofill)
@@ -754,7 +755,7 @@ class MainWindow(QMainWindow):
         _QW_LOG.debug("Focusing the Coach")
         self.switch_to_tab("Coach")
     
-    def gregg_dict_lookup_word(self) -> None: 
+    def gregg_dict_lookup_word(self, mode: str = 'Active') -> None: 
         _QW_LOG.debug("Gregg_Dict lookup")
         self.raise_()          # moves the window to the top of the sticking order
         self.activateWindow() # gives it keyboard focus
@@ -764,14 +765,18 @@ class MainWindow(QMainWindow):
         self.switch_to_tab("Editor")
         self.filter_edits[0].setText(word.capitalize())
         self.editor_edits[0].setText(word.capitalize())
-        self._gregg_dict_lookup()
+        if mode == 'Active':
+            self._gregg_dict_lookup(word.capitalize())
         
-    def _gregg_dict_lookup(self) -> None:
-        word = self.editor_edits[0].text().strip()   # first field = word
+    def _gregg_dict_lookup_action(self) -> None:
+        word = self.editor_edits[0].text().strip()
         if not word:
             QMessageBox.warning(self, "No word",
-                                "Enter a word to look up in Gregg_Dict.")
-            return
+                                "Enter a shorthand word to look up in the Gregg Dictionary")
+            return  
+        self._gregg_dict_lookup(word)
+
+    def _gregg_dict_lookup(self, word: str) -> None:
         _QW_LOG.debug(f"Performing lookup by Gregg_Dict for word: {word}")
         self.append_log(f"Performing lookup by Gregg_Dict for word: {word}")
         result = self.gregg_dict.find_best_match(word)
@@ -858,12 +863,18 @@ class MainWindow(QMainWindow):
         layout.setContentsMargins(0, 0, 0, 0)   # no extra margins
         layout.setSpacing(0)                   # panes touch each other
 
+        # Upper pane: hints + missed words
         self.upper = QTextEdit(self)
+        self.upper.setText("Hint log")
         self.upper_hints = QTextEdit(self)
+        self.upper_hints.setText("Missed words")
         upper_container = self._configure_text_edit(self.upper, self.upper_hints)
         layout.addWidget(upper_container)
+        # Lower pane: predictive words + opportunity words
         self.lower = QTextEdit(self)
+        self.lower.setText("Predictive words")
         self.lower_hints = QTextEdit(self)
+        self.lower_hints.setText("Opportunity words")
         lower_container = self._configure_text_edit(self.lower, self.lower_hints)
         layout.addWidget(lower_container)
 
@@ -968,7 +979,6 @@ class MainWindow(QMainWindow):
     def new_engine(self) -> None:
         _QW_LOG.info("Building new Engine")
         
-        
         from comms_proxy import Comms_Proxy
         from key_input import Key_Input        
         from key_output import Key_Output
@@ -979,7 +989,7 @@ class MainWindow(QMainWindow):
         self._comms_proxy = Comms_Proxy(ui=self)
         self._scribe = Scribe(self._comms_proxy)
         self._key_output = Key_Output(self._scribe)
-        self._engine = Expansion_Engine(self._key_output, self._comms_proxy)
+        self._engine = Expansion_Engine(self._key_output, self._comms_proxy, self.gregg_dict)
         self._key_queue = Key_Queue(self._engine)  
         self._key_input = Key_Input(self._key_queue, self._comms_proxy)
         self._comms_proxy.set_key_input(self._key_input)
@@ -987,14 +997,20 @@ class MainWindow(QMainWindow):
         _QW_LOG.info("Built new Engine")
         self.append_log(f"Built new Engine")
  
-    def set_coach_upper(self, text: str):
-        # print(f"Setting upper text to: {text}")
+    def set_coach_hintlog(self, text: str):
+        # print(f"Setting hintlog text to: {text}")
         scrubbed_text = self._scrub_text(text)
         self.upper.setPlainText(scrubbed_text)
         self.upper.verticalScrollBar().setValue(self.upper.verticalScrollBar().maximum())
 
-    def set_coach_lower(self, text: str):
-        # print(f"Setting lower text to: {text} for self {self}")
+    def append_coach_hintlog(self, line: str):
+        # print(f"Appending to hintlog text: {line}")
+        scrubbed_line = self._scrub_line(line)
+        self.upper.append(scrubbed_line)
+        self.upper.verticalScrollBar().setValue(self.upper.verticalScrollBar().maximum())
+
+    def set_coach_predictions(self, text: str):
+        # print(f"Setting predictions text to: {text} for self {self}")
         # print(f"lower is {self.lower}")
         scrubbed_text = self._scrub_text(text)
         # print(f"Setting lower text to scrubbed: {scrubbed_text}")
@@ -1002,17 +1018,38 @@ class MainWindow(QMainWindow):
         # print(f"Setting scrollbar") 
         self.lower.verticalScrollBar().setValue(self.lower.verticalScrollBar().minimum())
 
-    def append_coach_upper(self, line: str):
-        # print(f"Appending to upper text: {line}")
-        scrubbed_line = self._scrub_line(line)
-        self.upper.append(scrubbed_line)
-        self.upper.verticalScrollBar().setValue(self.upper.verticalScrollBar().maximum())
-
-    def append_coach_lower(self, line: str):
-        # print(f"Appending to lower text: {line}")
+    def append_coach_predictions(self, line: str):
+        # print(f"Appending to predictions text: {line}")
         scrubbed_line = self._scrub_line(line)
         self.lower.append(scrubbed_line)
         self.lower.verticalScrollBar().setValue(self.lower.verticalScrollBar().minimum())
+
+    def set_coach_misses(self, text: str):
+        # print(f"Setting misses text to: {text}")
+        scrubbed_text = self._scrub_text(text)
+        self.upper_hints.setPlainText(scrubbed_text)
+        self.upper_hints.verticalScrollBar().setValue(self.upper_hints.verticalScrollBar().maximum())
+
+    def append_coach_misses(self, line: str):
+        # print(f"Appending to misses text: {line}")
+        scrubbed_line = self._scrub_line(line)
+        self.upper_hints.append(scrubbed_line)
+        self.upper_hints.verticalScrollBar().setValue(self.upper_hints.verticalScrollBar().maximum())
+
+    def set_coach_opportunities(self, text: str):
+        # print(f"Setting opportunities text to: {text} for self {self}")
+        # print(f"lower is {self.lower}")
+        scrubbed_text = self._scrub_text(text)
+        # print(f"Setting lower text to scrubbed: {scrubbed_text}")
+        self.lower_hints.setPlainText(scrubbed_text)
+        # print(f"Setting scrollbar") 
+        self.lower_hints.verticalScrollBar().setValue(self.lower_hints.verticalScrollBar().minimum())
+
+    def append_coach_opportunities(self, line: str):
+        # print(f"Appending to opportunities text: {line}")
+        scrubbed_line = self._scrub_line(line)
+        self.lower_hints.append(scrubbed_line)
+        self.lower_hints.verticalScrollBar().setValue(self.lower_hints.verticalScrollBar().minimum())
 
     def _scrub_line(self, line: str):
         # print(f"Scrubbing: {line}")

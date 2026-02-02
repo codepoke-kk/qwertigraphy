@@ -6,12 +6,19 @@ from PyQt6.QtCore import QObject, pyqtSignal
 class Comms_Proxy(QObject):
     engineStarted = pyqtSignal()
     engineStopped = pyqtSignal()
-    coachUpperChanged = pyqtSignal(str)
-    coachLowerChanged = pyqtSignal(str)
-    coachUpperAppended = pyqtSignal(str)
-    coachLowerAppended = pyqtSignal(str)
+    
+
+    coachHintlogChanged = pyqtSignal(str)
+    coachHintlogAppended = pyqtSignal(str)
+    coachPredictionsChanged = pyqtSignal(str)
+    coachPredictionsAppended = pyqtSignal(str)
+    coachMissesChanged = pyqtSignal(str)
+    coachMissesAppended = pyqtSignal(str)
+    coachOpportunitiesChanged = pyqtSignal(str)
+    coachOpportunitiesAppended = pyqtSignal(str)
+
     performanceUpdated = pyqtSignal(str)
-    greggDictLookupWord = pyqtSignal()
+    greggDictLookupWord = pyqtSignal(str)
     focusCoach = pyqtSignal()
     focusTab = pyqtSignal(str, str)
 
@@ -28,10 +35,15 @@ class Comms_Proxy(QObject):
         self.greggDictLookupWord.connect(self.ui.gregg_dict_lookup_word)
         self.focusTab.connect(self.ui.focus_tab)
         self.focusCoach.connect(self.ui.focus_coach)
-        self.coachUpperChanged.connect(self.ui.set_coach_upper)
-        self.coachLowerChanged.connect(self.ui.set_coach_lower)
-        self.coachUpperAppended.connect(self.ui.append_coach_upper)
-        self.coachLowerAppended.connect(self.ui.append_coach_lower)
+
+        self.coachHintlogChanged.connect(self.ui.set_coach_hintlog)
+        self.coachHintlogAppended.connect(self.ui.append_coach_hintlog)
+        self.coachPredictionsChanged.connect(self.ui.set_coach_predictions)
+        self.coachPredictionsAppended.connect(self.ui.append_coach_predictions)
+        self.coachMissesChanged.connect(self.ui.set_coach_misses)
+        self.coachMissesAppended.connect(self.ui.append_coach_misses)
+        self.coachOpportunitiesChanged.connect(self.ui.set_coach_opportunities)
+        self.coachOpportunitiesAppended.connect(self.ui.append_coach_opportunities)
 
     # Set necessary objects 
     def set_engine(self, engine):
@@ -47,9 +59,9 @@ class Comms_Proxy(QObject):
         self._log.debug("Call to signal_performance_updated")
         self.performanceUpdated.emit(line)
         
-    def signal_gregg_dict_lookup_word(self):
+    def signal_gregg_dict_lookup_word(self, mode: str = 'Active'):
         self._log.debug("Call to signal_gregg_dict_lookup_word")
-        self.greggDictLookupWord.emit()
+        self.greggDictLookupWord.emit(mode[0])
         
     def signal_focus_tab(self, tab_focus: list):
         self._log.debug(f"Call to signal_focus_tab with {tab_focus}")
@@ -58,22 +70,38 @@ class Comms_Proxy(QObject):
     def signal_focus_coach(self):
         self._log.debug("Call to signal_focus_coach")
         self.focusCoach.emit()
-        
-    def signal_coach_set_upper(self, text: str):
-        self._log.debug(f"Signaling Coach upper with new text {text}")
-        self.coachUpperChanged.emit(text)
 
-    def signal_coach_set_lower(self, text: str):
-        self._log.debug(f"Signaling Coach lower with new text {text}")
-        self.coachLowerChanged.emit(text)
+    def signal_coach_set_hintlog(self, text: str):
+        self._log.debug(f"Signaling Coach hintlog with new text {text}")
+        self.coachHintlogChanged.emit(text)
 
-    def signal_coach_append_upper(self, line: str):
-        self._log.debug(f"Signaling Coach with append to upper with {line}")
-        self.coachUpperAppended.emit(line)
+    def signal_coach_append_hintlog(self, line: str):
+        self._log.debug(f"Signaling Coach with append to hintlog with {line}")
+        self.coachHintlogAppended.emit(line)
 
-    def signal_coach_append_lower(self, line: str):
-        self._log.debug(f"Signaling Coach with append to lower with {line}")
-        self.coachLowerAppended.emit(line)
+    def signal_coach_set_predictions(self, text: str):
+        self._log.debug(f"Signaling Coach predictions with new text {text}")
+        self.coachPredictionsChanged.emit(text)
+
+    def signal_coach_append_predictions(self, line: str):
+        self._log.debug(f"Signaling Coach with append to predictions with {line}")
+        self.coachPredictionsAppended.emit(line)
+   
+    def signal_coach_set_misses(self, text: str):
+        self._log.debug(f"Signaling Coach misses with new text {text}")
+        self.coachMissesChanged.emit(text)
+
+    def signal_coach_append_misses(self, line: str):
+        self._log.debug(f"Signaling Coach with append to misses with {line}")
+        self.coachMissesAppended.emit(line)
+
+    def signal_coach_set_opportunities(self, text: str):
+        self._log.debug(f"Signaling Coach opportunities with new text {text}")
+        self.coachOpportunitiesChanged.emit(text)
+
+    def signal_coach_append_opportunities(self, line: str):
+        self._log.debug(f"Signaling Coach with append to opportunities with {line}")
+        self.coachOpportunitiesAppended.emit(line)
 
     def signal_ui_engine_started(self):
         self._log.debug(f"Signaling UI the engine has started")

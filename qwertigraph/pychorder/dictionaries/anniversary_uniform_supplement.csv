@@ -157,6 +157,7 @@ Arguments,a-g-m-s,Agms,,qagms,25
 Argumentations,a-g-m-sh-s,Agmzs,,qagmsz,0
 Anger,a-ng-r,Agr,,qagr,237
 Angered,a-ng-r-d,Agrd,,qadgr,237
+Angrier,a-ng-r-e-r,Agrer,,qaegr,0
 Aggrieve,a-g-r-e-v,Agrev,,qaegrv,0
 Aggrieved,a-g-r-e-v-d,Agrevd,,qadegrv,0
 Aggrieving,a-g-r-e-v-\-h,Agrevg,,qaegrv,0
@@ -865,6 +866,11 @@ Blockage,bl-o-k-j,Blokj,,qbjklo,0
 Blockages,bl-o-k-j-s,Blokjs,,qbjklos,0
 Blocks,bl-o-k-s,Bloks,,qbklos,72
 Below,bl-o,Bloo,o,qblo,108
+Blood pressure,bl-p-u,Blpu,,qblpu,0
+Blood pressures,bl-p-u-s,Blpus,,qblpsu,0
+Bloody,bl-u-d-e,Blude,,qbdelu,0
+Bloodied,bl-u-d-e-d,Bluded,,qbdelu,0
+Bloods,bl-u-d-s,Bluds,,qbdlsu,0
 Bounded,b-n-d,Bnd,,qbdn,2122
 Beneath,b-n-e-th,Bneh,,qbehn,3
 Bounding,b-n-\-h,Bng,,qbgn,2122
@@ -920,11 +926,19 @@ Bypass,b-p-a-s,Bpas,,qabps,4
 Bypassed,b-p-a-s-d,Bpasd,,qabdps,4
 Bypassing,b-p-a-s-\-h,Bpasg,,qabgps,4
 Bypasses,b-p-a-s-s,Bpass,,qabps,4
+Blood pressure,b-p-u,Bpu,,qbpu,0
+Blood pressures,b-p-u-s,Bpus,,qbpsu,0
 Breaking,br-a-k-\-h,Brakg,,qabgkr,2
 Brainwash,br-a-n-u-o-sh,Branuoz,,qabnoruz,2
 Brainwashed,br-a-n-u-o-sh-d,Branuozd,,qabdnoruz,2
 Brainwashing,br-a-n-u-o-sh-\-h,Branuozg,,qabgnoruz,2
 Brainwashes,br-a-n-u-o-sh-s,Branuozs,,qabnorsuz,2
+Bread,br-d,Brd,,qbdr,0
+Breaded,br-d-d,Brdd,,qbdr,0
+Breading,br-d-\-h,Brdg,,qbdr,0
+Breadth,br-d-th,Brdh,,qbdhr,0
+Breadths,br-d-th-s,Brdhs,,qbdhrs,0
+Breads,br-d-s,Brds,,qbdrs,0
 Briefed,br-e-f-d,Brefd,,qbdefr,2
 Briefing,br-e-f-\-h,Brefg,,qbefgr,2
 Briefs,br-e-f-s,Brefs,,qbefrs,2
@@ -974,6 +988,8 @@ Beautifies,b-t-e-f-s,Btefs,,qbefst,53
 Bettering,b-t-e2-\-h,Bteg,,qbegt,859
 Betters,b-t-e2-s,Btes,,qbest,859
 Battled,b-t-l-d,Btld,,qbdlt,6
+Battlefield,b-t-l-f,Btlf,,qbflt,6
+Battlefields,b-t-l-f-s,Btlfs,,qbflst,6
 Battling,b-t-l-\-h,Btlg,,qbglt,6
 Battleground,b-t-l-g-r,Btlgr,,qbglrt,6
 Battlegrounds,b-t-l-g-r-s,Btlgrs,,qbglrst,6
@@ -1608,6 +1624,10 @@ Depressive,d-pr-e-s-v,Dpresv,,qdeprsv,0
 Depressives,d-pr-e-s-v-s,Dpresvs,,qdeprsv,0
 Depression,d-pr-e-s-sh,Dpresz,,qdeprsz,0
 Depressions,d-pr-e-s-sh-s,Dpreszs,,qdeprsz,0
+Deprogram,d-pr-\-g,Dprg,,qdgpr,29
+Deprogrammed,d-pr-\-g-d,Dprgd,,qdgpr,29
+Deprogramming,d-pr-\-g-\-h,Dprgg,,qdgpr,29
+Deprograms,d-pr-\-g-s,Dprgs,,qdgprs,29
 Deprived,d-pr-i-d,Dprid,,qdipr,0
 Depriving,d-pr-i-\-h,Dprig,,qdgipr,0
 Deprives,d-pr-i-s,Dpris,,qdiprs,0
@@ -1931,6 +1951,8 @@ Dissatisfied,d-ss-a-t-d,Dssatd,,qadst,0
 Disasters,d-ss2-t-e2-s,Dsstes,,qdest,6
 Distemper,d-s-tm-pr,Dstmpr,,qdmprst,0
 Destinations,d-s2-tn-sh-s,Dstnzs,,qdnstz,21
+Dystopia,d-s-t-o-p-ea,Dstope,,qdeopst,0
+Dystopias,d-s-t-o-p-ea-s,Dstopes,,qdeopst,0
 Distorted,d-s2-t-o-t-d,Dstotd,,qdost,0
 Distorting,d-s2-t-o-t-\-h,Dstotg,,qdgost,0
 Distorts,d-s2-t-o-t-s,Dstots,,qdost,0
@@ -2236,6 +2258,7 @@ Inabilities,e-n-\-b-s,Enbos,,qbenos,0
 Enabler,e-n-b-r,Enbr,,qbenr,3852
 Enablers,e-n-b-r-s,Enbrs,,qbenrs,3852
 Enables,e-n-b-s,Enbs,,qbens,92
+inner,e-n-e2,Ene,,qen,1
 Inerrancy,e-n-e-r-a-n-s-e,Eneranse,,qaenrs,0
 Inerrantly,e-n-e-r-a-nt-e,Enerante,,qaenrt,0
 Inerrants,e-n-e-r-a-nt-s,Enerants,,qaenrst,0
@@ -2444,6 +2467,7 @@ Evangels,e-v-a-n-j-s,Evanjs,,qaejnsv,0
 Evangelism,e-v-a-n-j-sm,Evanjsm,,qaejmnsv,0
 Evangelistic,e-v-a-n-j-/-s2-t-k,Evanjstk,,qaejknstv,0
 Evangelists,e-v-a-n-j-/-s2-t-s,Evanjsts,,qaejnstv,0
+Evidenced,e-v-tn-d,Evdnd,,qdenv,91
 Evidently,e-v-tn-e,Evdne,,qdenv,91
 Evidence,e-v-tn-s,Evdns,,qdensv,91
 Evidenced,e-v-tn-s-d,Evdnsd,,qdensv,91
@@ -2608,6 +2632,9 @@ Figureheads,f-e-g-r-e-d-s,Fegreds,,qdefgrs,465
 Figuring,f-e-g-r-\-h,Fegrg,,qefgr,465
 Figures,f-e-g-r-s,Fegrs,,qefgrs,465
 Fingers,f-e-ng-ye2,Fegy,,qefgy,1
+Fictional,f-e-k-sh-l,Fekzl,,qefklz,2
+Fictionally,f-e-k-sh-l-e,Fekzle,,qefklz,2
+Fictions,f-e-k-sh-s,Fekzs,,qefksz,2
 Feeling,f-e-l-\-h,Felg,,qefgl,400
 Philosophy,f-e-l-o-s,Felos,,qeflos,10
 Philosophize,f-e-l-o-s-i-s,Felosis,,qefilos,0
@@ -2803,6 +2830,7 @@ Phoning,f-o-n-\-h,Fong,,qfgno,299
 Phones,f-o-n-s,Fons,,qfnos,299
 Follow up,f-o-p,Fop,,qfop,196
 Follower,f-o-r,Foro,o,qfor,7
+Followers,f-o-r-s,Fors,,qfors,7
 Followers,f-o-r-s,Forso,o,qfors,7
 Falsehood,f-o-s-\-d,Fosd,,qdfos,92330
 Falsehoods,f-o-s-\-d-s,Fosds,,qdfos,92330
@@ -3067,6 +3095,9 @@ Grieve,g-r-e-v,Grev,,qegrv,91424
 Grieved,g-r-e-v-d,Grevd,,qdegrv,91424
 Grieving,g-r-e-v-\-h,Grevg,,qegrv,91424
 Grieves,g-r-e-v-s,Grevs,,qegrsv,91424
+Grudged,g-r-j-d,Grjd,,qgjr,0
+Grudging,g-r-j-\-h,Grjg,,qgjr,0
+Grudges,g-r-j-s,Grjs,,qgjrs,0
 Grounded,g-r-nt-d,Grndd,,qdgnr,51
 Grounding,g-r-nt-\-h,Grndg,,qdgnr,51
 Grounds,g-r-nt-s,Grnds,,qdgnrs,51
@@ -3400,6 +3431,7 @@ Humiliations,^-h-\-u-m-e-l-ea-sh-s,Humelezs,,qehlmsuz,0
 Humility,^-h-\-u-m-\-l,Huml,,qhlmu,247
 Humilities,^-h-\-u-m-\-l-s,Humls,,qhlmsu,0
 Humans,^-h-\-e-u-mn-s,Humns,,qhmnsu,127
+Humanism,^-h-\-e-u-mn-s-m,Humnsm,,qhmsu,127
 Housed,^-h-\-u-s-d,Husd,,qdhsu,101
 Housing,^-h-\-u-s-\-h,Husg,,qghsu,101
 Hustle,^-h-\-u-s-l,Husl,,qhlsu,92554
@@ -4025,6 +4057,7 @@ Countering,k-nt-r-\-h,Kntrg,,qgknrt,10
 Counters,k-nt-r-s,Kntrs,,qknrst,10
 Counts,k-nt-s,Knts,,qknst,126
 Communities,k-/-nt-s,Kntso,o,qknost,120
+Conundrums,k-n-u-n-s,Knuns,,qknsu,1
 Callable,k-o-b,Kob,,qbko,1195
 Callback,k-o-b-a,Koba,,qabko,0
 Callbacks,k-o-b-a-s,Kobas,,qabkos,0
@@ -4880,7 +4913,7 @@ Magics,m-a-j-k-s,Majks,,qajkms,154
 Magistrate,m-a-j-s-t-r-a,Majstra,,qajmrst,0
 Magistrates,m-a-j-s-t-r-a-s,Majstras,,qajmrst,0
 Making,m-a-k-\-h,Makg,,qagkm,2910
-Mail,m-a2-l-b,Malbi,i,qabilm,0
+Mailable,m-a2-l-b,Malbi,i,qabilm,0
 Mailed,m-a2-l-d,Mald,,qadlm,5
 Mailing,m-a2-l-\-h,Malg,,qaglm,5
 Malign,m-a-l-i-n,Malin,,qailmn,0
@@ -4891,6 +4924,7 @@ Maligns,m-a-l-i-n-s,Malins,,qailmns,0
 Mailer,m-a2-l-r,Malr,,qalmr,0
 Mailers,m-a2-l-r-s,Malrs,,qalmrs,0
 Mails,m-a2-l-s,Mals,,qalms,5
+Mailings,m-a2-l-\-h-s,Malz,,qalmz,5
 Mammon,m-a-mn,Mamm,,qam,0
 Mainframe,m-a-n-fr-a-m,Manfram,,qafmnr,14
 Mainframes,m-a-n-fr-a-m-s,Manframs,,qafmnrs,14
@@ -5232,6 +5266,8 @@ Module,m-o-d-\-l,Modlo,o,qdlmo,86
 Models,m-o-d-l-s,Modls,,qdlmos,1
 Modules,m-o-d-\-l-s,Modlsqk,,qdlmos,86
 Momentarily,m-o-m-r-ye,Momry,,qmory,0
+Morality,m-o-r-/-l,Morlo,o,qlmor,0
+Moralities,m-o-r-/-l-s,Morlos,o,qlmors,0
 Mosquitos,m-o-s-k-e-t-o-s,Mosqetos,,qemoqst,0
 Motivated,m-o-df-a-t-d,Motvatd,,qadmotv,2
 Motivating,m-o-df-a-t-\-h,Motvatg,,qagmotv,2
@@ -5792,6 +5828,7 @@ Inflates,n-fl-a-s,Nflas,,qaflns,10
 Inflicted,n-fl-d,Nfld,,qdfln,1
 Inflected,n-fl-d,Nfldo,o,qdflno,0
 Inflexible,n-fl-e-x-b,Nflexb,,qbeflnx,321
+Inflexibly,n-fl-e-x-b-e,Nflexbe,,qbeflnx,321
 Inflexibility,n-fl-e-x-\-b,Nflexbo,,qbeflnox,2
 Inflecting,n-fl-\-h,Nflg,,qfgln,0
 Inflicting,n-fl-\-h,Nflgo,o,qfglno,0
@@ -5847,6 +5884,12 @@ Ingress,n-g-r-e-s,Ngres,,qegnrs,1
 Ingressed,n-g-r-e-s-d,Ngresd,,qdegnrs,0
 Ingressing,n-g-r-e-s-\-h,Ngresg,,qegnrs,0
 Ingresses,n-g-r-e-s-s,Ngress,,qegnrs,0
+Inhabit,n-^-h-\-a-b-t,Nhabt,,qabhnt,0
+Inhabited,n-^-h-\-a-b-t-d,Nhabtd,,qabhnt,0
+Inhabiting,n-^-h-\-a-b-t-\-h,Nhabtg,,qabhnt,0
+Inhabitant,n-^-h-\-a-b-tn,Nhabtn,,qabhnt,1
+Inhabitants,n-^-h-\-a-b-tn-s,Nhabtns,,qabhnst,1
+Inhabits,n-^-h-\-a-b-t-s,Nhabts,,qabhnst,0
 Enhance,n-^-h-\-a-n-s,Nhans,,qahns,19
 Enhanced,n-^-h-\-a-n-s-d,Nhansd,,qadhns,19
 Enhancing,n-^-h-\-a-n-s-\-h,Nhansg,,qaghns,19
@@ -6628,7 +6671,9 @@ Offering,o-f-\-h,Ofg,,qfgo,73
 Offing,o-f-\-h,Ofgo,o,qfgo,73
 Offering,o-f-\-h,Ofgu,u,qfgou,73
 Awful,o-f-l,Ofl,,qflo,73
+Offline,o-f-l-a-n,Oflan,,qaflno,73
 Awfully,o-f-l-e,Ofle,,qeflo,73
+Offline,o-f-l-i-n,Oflin,,qfilno,73
 Overflow,^-o-\-f-l-o,Oflo,,qflo,0
 Overflowed,^-o-\-f-l-o-d,Oflod,,qdflo,0
 Overflowing,^-o-\-f-l-o-\-h,Oflog,,qfglo,0
@@ -9566,10 +9611,15 @@ Ciphering,s2-i-f-\-h,Sifg,,qfgis,4
 Ciphers,s2-i-f-s,Sifs,,qfis,4
 Ciphertext,s2-i-f-t-e-s,Siftx,,qfistx,4
 Ciphertexts,s2-i-f-t-e-s-s,Siftxs,,qfistx,4
+Psychic,s-i-k-k,Sikk,,qiks,91800
+Psychically,s-i-k-k-e,Sikke,,qeiks,91800
+Psychics,s-i-k-k-s,Sikks,,qiks,91800
 Cycle,s-i-k-l,Sikl,,qikls,7
 Cycled,s-i-k-l-d,Sikld,,qdikls,7
 Cycling,s-i-k-l-\-h,Siklg,,qgikls,7
 Cycles,s-i-k-l-s,Sikls,,qikls,7
+Psychologist,s2-i-k-/-o2-s-t,Sikost,,qikost,0
+Psychologists,s2-i-k-/-o2-s-t-s,Sikosts,,qikost,0
 Psychoses,s2-i-k-/-s-e-s,Sikses,,qeiks,0
 Psychosis,s2-i-k-/-s-s,Sikss,,qiks,0
 Silenced,s2-i-l-d,Sild,,qdils,19
@@ -9712,6 +9762,7 @@ Slaughter,s-l-o-t-e2,Slote,,qelost,92527
 Slaughtered,s-l-o-t-e2-d,Sloted,,qdelost,92527
 Slaughtering,s-l-o-t-e2-\-h,Sloteg,,qeglost,92527
 Slaughters,s-l-o-t-e2-s,Slotes,,qelost,92527
+Slept,s-l-p-t,Slpt,,qlpst,0
 Somewhere,s2-m-a-r,Smar,,qamrs,351
 Smarted,s2-m-a2-t-d,Smatd,,qadmst,16
 Smartest,s2-m-a2-t-e-s,Smates,,qaemst,16
@@ -9742,6 +9793,8 @@ Summarization,s-m-r-i-s-a-sh,Smrisz,,qimrsz,4
 Summarizations,s-m-r-i-s-a-sh-s,Smriszs,,qimrsz,0
 Summarily,s-m-r-ye,Smry,,qmrsy,0
 Supremacy,s-/-m-s-e,Smse,,qems,1
+Sometime,s-m-tm,Smtm,,qmst,114
+Sometimes,s-m-tm-s,Smtms,,qmst,114
 Smoothed,s2-m-u-th-d,Smuhd,,qdhmsu,32
 Smoothly,s2-m-u-th-e,Smuhe,,qehmsu,32
 Smoothing,s2-m-u-th-\-h,Smuhg,,qghmsu,32
@@ -9985,6 +10038,12 @@ Squirrel,s-q-e-r-l,Sqerl,,qelqrs,31
 Squirreled,s-q-e-r-l-d,Sqerld,,qdelqrs,31
 Squirreling,s-q-e-r-l-\-h,Sqerlg,,qeglqrs,31
 Squirrels,s-q-e-r-l-s,Sqerls,,qelqrs,31
+Squeeze,s-k-e-s,Sqes,,qeqs,514
+Squeezed,s-k-e-s-d,Sqesd,,qeqs,514
+Squeezing,s-k-e-s-\-h,Sqesg,,qeqs,514
+Squeezer,s-k-e-s-r,Sqesr,,qeqrs,514
+Squeezers,s-k-e-s-r-s,Sqesrs,,qeqrs,514
+Squeezes,s-k-e-s-s,Sqess,,qeqs,514
 Sorry,s2-r-e,Sre,,qers,1
 Self-reliance,^-s-\-r-e-l-i-n-s,Srelins,,qeilnrs,0
 Self-reliant,^-s-\-r-e-l-i-nt,Srelint,,qeilnrst,0
@@ -10486,6 +10545,8 @@ Termites,t-e-m-i-t-s,Temits,,qeimst,0
 Terminate,t-e-mn-a-t,Temnat,,qaemnt,0
 Terminated,t-e-mn-a-t-d,Temnatd,,qademnt,0
 Terminating,t-e-mn-a-t-\-h,Temnatg,,qaegmnt,0
+Terminator,t-e-mn-a-t-r,Temnatr,,qaemnrt,0
+Terminators,t-e-mn-a-t-r-s,Temnatrs,,qaemnrst,0
 Terminates,t-e-mn-a-t-s,Temnats,,qaemnst,0
 Terminal,t-e-mn-l,Temnl,,qelmnt,1
 Terminally,t-e-mn-l-e,Temnle,,qelmnt,0
@@ -10603,6 +10664,8 @@ Traffic manager,t-~-m,Tmi,i,qimt,0
 Terminate,t-mn-a-t,Tmnat,,qamnt,0
 Terminated,t-mn-a-t-d,Tmnatd,,qadmnt,0
 Terminating,t-mn-a-t-\-h,Tmnatg,,qagmnt,0
+Terminator,t-mn-a-t-r,Tmnatr,,qamnrt,0
+Terminators,t-mn-a-t-r-s,Tmnatrs,,qamnrst,0
 Terminates,t-mn-a-t-s,Tmnats,,qamnst,0
 Termination,t-mn-a-sh,Tmnaz,,qamntz,0
 Terminations,t-mn-a-sh-s,Tmnazs,,qamnstz,0
@@ -10956,6 +11019,7 @@ Windowed,u-e-nt-o-d,Uendod,,qdenou,464
 Windowing,u-e-nt-o-\-h,Uendog,,qdegnou,464
 Windowless,u-e-nt-o-l-s,Uendols,,qdelnosu,0
 Windows,u-e-nt-o-s,Uendos,,qdenosu,464
+Winner,u-e-n-e2,Uene,,qenu,91800
 Weapon,u-e-p-n,Uepn,,qenpu,0
 Weaponize,u-e-p-n-i-s,Uepnis,,qeinpsu,0
 Weaponized,u-e-p-n-i-s-d,Uepnisd,,qdeinpsu,0
@@ -11167,6 +11231,8 @@ Utilization,e-u-t-l-i-sh,Utliz,,qiltuz,0
 Utilities,e-u-t-\-l-s,Utls,,qlstu,7
 Ultimate,u-tm-a-t,Utmat,,qamtu,8
 Ultimately,u-tm-a-t-e,Utmate,,qaemtu,8
+Utopia,e-u-t-o-p-ea,Utope,,qeoptu,0
+Utopias,e-u-t-o-p-ea-s,Utopes,,qeopstu,0
 Untrusted,u-t-r-s-d,Utrsd,,qdrstu,728
 Undertook,u-/-t-u-k,Utuk,,qktu,0
 Under-,u-u->,Uu>,,q>u,3
