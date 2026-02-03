@@ -309,7 +309,11 @@ class Expansion_Engine:
         self._log.debug(f"Building hints from expansions")
         for key, expansion in self.expansions.items():
             # self._log.debug(f"{key} = {expansion}")
-            hint_key1, hint_char1 = key[:-1], key[-1]
+            try: 
+                hint_key1, hint_char1 = key[:-1], key[-1]
+            except IndexError:
+                self._log.warning(f"IndexError building hints for key {key}")
+                continue
             if hint_key1 not in hints:
                 hints[hint_key1] = []
             hints[hint_key1].append(hint_char1)

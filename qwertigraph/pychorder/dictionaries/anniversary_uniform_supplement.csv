@@ -2364,6 +2364,7 @@ Equipping,e-k-p-\-h,Eqpg,,qegpq,4
 Equipment,e-k-p-m,Eqpm,,qempq,4
 Equipments,e-k-p-m-s,Eqpms,,qempqs,4
 Equips,e-k-p-s,Eqps,,qepqs,4
+Equity,e-k-t-e,Eqte,,qeqt,
 Equation,e-k-a-sh,Eqz,,qeqz,919
 Equations,e-k-a-sh-s,Eqzs,,qeqsz,0
 Erasably,e-r-a-s-b-e,Erasbe,,qabers,0
@@ -3736,6 +3737,11 @@ Connective,k-e-k-v,Kekv,,qekv,741
 Connectives,k-e-k-v-s,Kekvs,,qeksv,0
 Connectivity,k-e-k-v-t-e,Kekvte,,qektv,6
 Connections,k-e-k-sh-s,Kekzs,,qeksz,250
+Chemist,k-e-m-e-s,Kemes,,qekms,0
+Chemists,k-e-m-e-s-s,Kemess,,qekms,0
+Chemical,k-e-m-\-k,Kemk,,qekm,
+Chemically,k-e-m-\-k-e,Kemke,,qekm,
+Chemicals,k-e-m-\-k-s,Kemks,,qekms,
 Keep,k-e-p,Kep,,qekp,818
 Keeping,k-e-p-g,Kepg,,qegkp,141
 Keeper,k-e-p-r,Kepr,,qekpr,4
@@ -5744,6 +5750,8 @@ Unequaled,n-e-k-l-d,Neqld,,qdelnq,919
 Unequally,n-e-k-l-e,Neqle,,qelnq,919
 Unequaling,n-e-k-l-\-h,Neqlg,,qeglnq,919
 Unequals,n-e-k-l-s,Neqls,,qelnqs,919
+Inequity,n-e-k-t-e,Neqte,,qenqt,
+Inequities,n-e-k-t-e-s,Neqtes,,qenqst,
 Notice,n-e-s,Nes,,qens,1079
 Noticeable,n-e-s-b,Nesb,,qbens,1079
 Noticeably,n-e-s-b-e,Nesbe,,qbens,0
