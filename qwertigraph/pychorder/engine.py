@@ -422,7 +422,7 @@ class Expansion_Engine:
         # First, the WPM portion of the display
         wpm_phrase = f"wpm: {wpm_output:.1f}({wpm_input :.1f})"
         # Second, how many seconds I spent actually typing followed by how many seconds I would have typed without the system 
-        time_phrase = f" in s:{self.seconds_typing :.0f}({(self.seconds_typing * (wpm_output - wpm_input)) / wpm_input :.0f})"
+        time_phrase = f" in m:{self.seconds_typing / 60 :.0f}({(self.seconds_typing * (wpm_output - wpm_input)) / (60 * wpm_input) :.0f})"
         # Third, how many expansions I made
         expansion_phrase = f" over x:{self.expansion_count}"
         # Send the updated performance to the UI
