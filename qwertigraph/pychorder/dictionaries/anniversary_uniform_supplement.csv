@@ -4691,6 +4691,8 @@ Lifecycle,l-a-f-s-i-k,Lafsik,,qafikls,6
 Lifecycled,l-a-f-s-i-k-d,Lafsikd,,qadfikls,6
 Lifecycling,l-a-f-s-i-k-\-h,Lafsikg,,qafgikls,6
 Lifecycles,l-a-f-s-i-k-s,Lafsiks,,qafikls,6
+Lifespan,l-a-f-s-p,Lafsp,,qaflps,166
+Lifespans,l-a-f-s-p-s,Lafsps,,qaflps,166
 Laughter,l-a-f-t-e2,Lafte,,qaeflt,0
 Laughters,l-a-f-t-e2-s,Laftes,,qaeflst,0
 Lifetime,l-a-f-tm,Laftm,,qaflmt,4
@@ -8109,6 +8111,7 @@ Queues,k-e-u-s,Qusu,u,qqsu,166
 Qualitative,k-u-df,Qutv,,qqtuv,0
 Qualitatively,k-u-df-e,Qutve,,qeqtuv,0
 Queue,k-e-u,Quu,u,qqu,166
+Queues,k-e-u-s,Quus,u,qqsu,166
 Qwertigraph,k-a-u,Qw,,qqw,38
 Qwertigraphed,k-a-u-d,Qwd,,qdqw,38
 Qwertigraphy,k-a-u-e,Qwe,,qeqw,38
@@ -8298,8 +8301,14 @@ Reducers,r-e-d-u-s-r-s,Rdusrs,,qdrsu,0
 Reduces,r-e-d-u-s-s,Rduss,,qdrsu,20
 Redoubt,r-e-d-a-u,Rdw,,qdrw,135
 Redoubts,r-e-d-a-u-s,Rdws,,qdrsw,135
+Readable,r-e-d-b,Redb,,qbder,0
+Readably,r-e-d-b-e,Redbe,,qbder,0
+Readability,r-e-d-\-b,Redbo,,qbdeor,0
 Ridiculously,r-e-d-e-k-e,Redeke,,qdekr,1
 Ridiculousness,r-e-d-e-k-n-e-s,Redeknes,,qdeknrs,1
+Reading,r-e-d-\-h,Redg,,qdegr,0
+Readings,r-e-d-\-h-s,Redgs,,qdegrs,0
+Readings,r-e-d-\-h-s,Redz,,qderz,0
 Rhythm,r-e-th-m,Rehm,,qehmr,4
 Rhythmic,r-e-th-m-k,Rehmk,,qehkmr,0
 Rhythmically,r-e-th-m-\-k-e,Rehmke,,qehkmr,0
@@ -11063,6 +11072,10 @@ Widened,u-i-d-n-d,Uidnd,,qdinu,0
 Widening,u-i-d-n-\-h,Uidng,,qdginu,0
 Widens,u-i-d-n-s,Uidns,,qdinsu,0
 Wider,u-i-d-r,Uidr,,qdiru,1
+Wildcard,u-i-ld-k-d,Uildkd,,qdiklu,0
+Wildcarded,u-i-ld-k-d-d,Uildkdd,,qdiklu,0
+Wildcarding,u-i-ld-k-d-\-h,Uildkdg,,qdiklu,0
+Wildcards,u-i-ld-k-d-s,Uildkds,,qdiklsu,0
 Wipe,u-i-p,Uip,,qipu,0
 Wiped,u-i-p-d,Uipd,,qdipu,0
 Wiping,u-i-p-\-h,Uipg,,qgipu,0
