@@ -30,7 +30,7 @@ class Key_Input:
             "h+2": {"keys": 2, "backspaces": 1, "function": "gregg_dict_lookup_word", "params": ["Passive"]},
             "h+3": {"keys": 2, "backspaces": 1, "function": "focus_tab", "params":  ['Log', 'foreground']},
             "h+4": {"keys": 2, "backspaces": 1, "function": "focus_tab", "params": ['Editor', 'foreground']},
-            "h+5": {"keys": 2, "backspaces": 1, "function": "focus_tab", "params":  ['Coach', 'foreground']},
+            "h+5": {"keys": 2, "backspaces": 1, "function": "focus_tab", "params":  ['Coach', '']},
             "h+6": {"keys": 2, "backspaces": 1, "function": "focus_tab", "params": ['Settings', 'foreground']},
             "b+1": {"keys": 2, "backspaces": 1, "function": "output_password_a"},
             "b+2": {"keys": 2, "backspaces": 1, "function": "output_username_password_a"},

@@ -757,7 +757,7 @@ Bounden,b-n-n,Bnn,,qbn,0
 Bound,b-n,Bno,o,qbno,2122
 Binocular,b-n-o-k,Bnok,,qbkno,0
 Binary,b-n-r-e,Bnre,,qbenr,4
-Boundary,b-n-r-e,Bnreo,o,qbenor,4
+Binary,b-n-r-e,Bnreo,o,qbenor,4
 Benzene,b-n-s2-e-n,Bnsen,,qbens,0
 Bounty,b-n-t-e,Bnte,,qbent,0
 Bunting,b-n-t-\-h,Bntg,,qbgnt,0
@@ -2551,7 +2551,6 @@ Hedgehog,^-h-\-e-j-o-g,Hejog,,qeghjo,0
 Thick,th-e-k,Hek,,qehk,3
 Hecatomb,^-h-\-e-k-a-tm,Hekatm,,qaehkmt,0
 Hekto-,^-h-\-e-k,Heko,o,qehko,0
-Held,^-h-\-e-ld,Heldqk,,qdehl,0
 Helium,^-h-\-e-l-e-m,Helem,,qehlm,0
 Health,^-h-\-e-l-th,Helh,,qehl,48
 Healthy,^-h-\-e-l-th-e,Helhe,,qehl,55
