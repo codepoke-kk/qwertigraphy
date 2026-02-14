@@ -3,8 +3,15 @@ Anti-,a->,A>,,q>a,1
 Aware,a-a-r,Aar,,qar,1374
 Awareness,a-a-r-n-e-s,Aarnes,,qaenrs,1374
 Awarenesses,a-a-r-n-e-s-s,Aarness,,qaenrs,1374
+Abandoned,a-b-a-nt-d,Abandd,,qabdn,0
+Abandoning,a-b-a-nt-\-h,Abandg,,qabdn,0
+Abandonment,a-b-a-nt-m,Abandm,,qabdmn,0
+Abandonments,a-b-a-nt-m-s,Abandms,,qabdmns,0
+Abandons,a-b-a-nt-s,Abands,,qabdns,0
 Habeas corpus,a-b-~-k,Abk,,qabk,0
 Abled,a-bl-d,Abld,,qabdl,2694
+Ableist,a-bl-e-s,Ables,,qabels,2694
+Ableists,a-bl-e-s-s,Abless,,qabels,2694
 Abounded,a-b-n-d,Abnd,,qabdn,2
 Abundantly,a-b-n-tn-e,Abndne,,qabden,0
 Abundance,a-b-n-tn-s,Abndns,,qabdns,0
@@ -579,12 +586,17 @@ Assuming,a-s2-m-\-h,Asmg,,qagms,493
 Assumes,a-s2-m-s,Asms,,qams,493
 Assumption,a-s2-m-sh,Asmz,,qamsz,493
 Assumptions,a-s2-m-sh-s,Asmzs,,qamsz,5
-Associations,a-s2-o-sh-s,Asozs,,qaosz,0
+Associate,a-s2-o-sh,Asoz,,qaosz,19
+Associated,a-s2-o-sh-d,Asozd,,qaosz,19
+Associating,a-s2-o-sh-\-h,Asozg,,qaosz,19
+Associates,a-s2-o-sh-s,Asozs,,qaosz,19
 Associated,a-s2-o-sh-t-d,Asoztd,,qadostz,19
 Associatedly,a-s2-o-sh-t-d-e,Asoztde,,qadeostz,0
 Associating,a-s2-o-sh-t-\-h,Asoztg,,qagostz,19
 Associates,a-s2-o-sh-t-s,Asozts,,qaostz,19
 Associative,a-s2-o-sh-t-v,Asoztv,,qaostvz,19
+Association,a-s2-o-sh-sh,Asozz,,qaosz,8
+Associations,a-s2-o-sh-sh-s,Asozzs,,qaosz,8
 Assessed,a2-ss-d,Assd,,qads,4
 Assessing,a2-ss-\-h,Assg,,qags,4
 Assessment,a2-ss-m,Assm,,qams,2
@@ -1461,6 +1473,8 @@ Delighted,d-l-i-d,Dlid,,qdil,6
 Delightfully,d-l-i-f-e,Dlife,,qdefil,6
 Delighting,d-l-i-\-h,Dlig,,qdgil,6
 Delights,d-l-i-s,Dlis,,qdils,6
+Dilema,d-l-m-a,Dlma,,qadlm,
+Dilemas,d-l-m-a-s,Dlmas,,qadlms,
 Delivers,d-l-s,Dls,,qdls,69
 Deliveries,d-l-s,Dlso,o,qdlos,69
 Delude,d-l-u-d,Dlud,,qdlu,0
@@ -1586,6 +1600,11 @@ Domaining,d-o-mn-\-h,Domng,,qdgmno,322
 Domains,d-o-mn-s,Domns,,qdmnos,322
 Dominions,d-o-mn-u-n-s,Domnuns,,qdmnosu,0
 Dominations,d-o-mn-sh-s,Domnzs,,qdmnosz,322
+Depicted,d-p-k-d,Dpkd,,qdkp,0
+Depicting,d-p-k-\-h,Dpkg,,qdkp,0
+Depicts,d-p-k-s,Dpks,,qdkps,0
+Depiction,d-p-k-sh,Dpkz,,qdkpz,0
+Depictions,d-p-k-sh-s,Dpkzs,,qdkpsz,0
 Display,d-pl-a,Dpla,,qadlp,657
 Displayed,d-pl-a-d,Dplad,,qadlp,657
 Displaying,d-pl-a-\-h,Dplag,,qadglp,657
@@ -1838,6 +1857,7 @@ Disconnects,d-s2-k-e-k-s,Dskeks,,qdeks,7
 Disconnection,d-s2-k-e-k-sh,Dskekz,,qdeksz,7
 Disconnections,d-s2-k-e-k-sh-s,Dskekzs,,qdeksz,0
 Discussing,d-s2-k-\-h,Dskg,,qdgks,143
+Distracted,d-s-/-k-\-h,Dskgi,i,qdgiks,4
 Describe,d-s2-k-r,Dskr,,qdkrs,74
 Described,d-s2-k-r-d,Dskrd,,qdkrs,74
 Discrepancies,d-s2-k-r-e-p-s,Dskreps,,qdekprs,2
@@ -1853,6 +1873,7 @@ Descriptors,d-s2-k-r-r-s,Dskrrs,,qdkrs,74
 Describes,d-s2-k-r-s,Dskrs,,qdkrs,74
 Descriptions,d-s2-k-r-sh-s,Dskrzs,,qdkrsz,1
 Discusses,d-s2-k-s,Dsks,,qdks,143
+Distract,d-s-/-k-s,Dsksi,i,qdiks,4
 Discoverable,d-s2-k-v-\-b,Dskvb,,qbdksv,0
 Discoverably,d-s2-k-v-\-b-e,Dskvbe,,qbdeksv,0
 Discoverables,d-s2-k-v-\-b-s,Dskvbs,,qbdksv,0
@@ -1865,8 +1886,9 @@ Destructive,d-s-/-k-v,Dskvo,o,qdkosv,1
 Discoverer,d-s2-k-v-r,Dskvr,,qdkrsv,0
 Discoverers,d-s2-k-v-r-s,Dskvrs,,qdkrsv,0
 Discovers,d-s2-k-v-s,Dskvs,,qdksv,15
+Distraction,d-s-/-k-sh,Dskzi,i,qdiksz,4
 Discussions,d-s2-k-sh-s,Dskzs,,qdksz,143
-Destructions,d-s-/-k-sh-s,Dskzsi,i,qdiksz,0
+Distractions,d-s-/-k-sh-s,Dskzsi,i,qdiksz,4
 Distractions,d-s-/-k-sh-s,Dskzso,o,qdkosz,9
 Discussions,d-s2-k-sh-s,Dskzsoqk,o,qdkosz,0
 Disliked,d-s-l-a-d,Dslad,,qadls,4661
@@ -1924,10 +1946,12 @@ Dissonantly,d-s-o-n-a-nt-e,Dsonante,,qadenost,0
 Disowned,d-s-o-n-d,Dsond,,qdnos,90958
 Disowning,d-s-o-n-\-h,Dsong,,qdgnos,90958
 Disowns,d-s-o-n-s,Dsons,,qdnos,90958
+Dissociate,d-s2-o-sh,Dsoz,,qdosz,0
 Dissociated,d-s2-o-sh-t-d,Dsoztd,,qdostz,0
 Dissociating,d-s2-o-sh-t-\-h,Dsoztg,,qdgostz,0
 Dissociates,d-s2-o-sh-t-s,Dsozts,,qdostz,0
 Dissociation,d-s2-o-sh-sh,Dsozz,,qdosz,0
+Dissociations,d-s2-o-sh-sh-s,Dsozzs,,qdosz,0
 Dispatchable,d-s-p-a-ch-b,Dspacb,,qabcdps,125
 Dispatchably,d-s-p-a-ch-b-e,Dspacbe,,qabcdeps,125
 Dispatchability,d-s-p-a-ch-\-b,Dspacbo,o,qabcdops,125
@@ -2608,6 +2632,8 @@ Pharisaical,f-a2-r-s-a-k-l,Farsakl,,qafklrs,2
 Pharisaically,f-a2-r-s-a-k-l-e,Farsakle,,qaefklrs,0
 Pharisee,f-a2-r-s-e,Farse,,qaefrs,3
 Pharisees,f-a2-r-s-e-s,Farses,,qaefrs,3
+Faced,f-a-s-d,Fasd,,qafs,48
+Facing,f-a-s-\-h,Fasg,,qafs,48
 Facility,f-a-s-\-l,Fasl,,qafls,48
 Facilitate,f-a-s-l-e-t-a,Fasleta,,qaeflst,0
 Facilitated,f-a-s-l-e-t-a-d,Fasletad,,qadeflst,0
@@ -2628,6 +2654,7 @@ Fascinating,f-a-s2-n-a-t-\-h,Fasnatg,,qafgnst,44
 Fascinates,f-a-s2-n-a-t-s,Fasnats,,qafnst,44
 Fascination,f-a-s2-n-sh,Fasnz,,qafnsz,0
 Fascinations,f-a-s2-n-sh-s,Fasnzs,,qafnsz,0
+Faces,f-a-ss,Fass,,qafs,48
 Fasted,f-a-s2-t-d,Fastd,,qadfst,0
 Faster,f-a-s2-t-e2,Faste,,qaefst,0
 Fasting,f-a-s2-t-g,Fastg,,qafgst,0
@@ -3497,6 +3524,9 @@ Humility,^-h-\-u-m-\-l,Huml,,qhlmu,247
 Humilities,^-h-\-u-m-\-l-s,Humls,,qhlmsu,0
 Humans,^-h-\-e-u-mn-s,Humns,,qhmnsu,127
 Humanism,^-h-\-e-u-mn-s-m,Humnsm,,qhmsu,127
+Husband,^-h-\-u-s2-b,Husb,,qbhsu,0
+Husbandry,^-h-\-u-s2-b-r-e,Husbre,,qbehrsu,0
+Husbands,^-h-\-u-s2-b-s,Husbs,,qbhsu,0
 Housed,^-h-\-u-s-d,Husd,,qdhsu,101
 Housing,^-h-\-u-s-\-h,Husg,,qghsu,101
 Hustle,^-h-\-u-s-l,Husl,,qhlsu,92554
@@ -4596,9 +4626,13 @@ Consortium,k-s2-o-t-m,Ksotm,,qkmost,0
 Consortiums,k-s2-o-t-m-s,Ksotms,,qkmost,0
 Consorts,k-s2-o-t-s,Ksots,,qkost,0
 Consider,k-s-r,Ksr,,qkrs,21
+Considerable,k-s-r-b,Ksrb,,qbkrs,21
+Considerably,k-s-r-b-e,Ksrbe,,qbekrs,21
 Considered,k-s-r-d,Ksrd,,qdkrs,21
 Considering,k-s-r-\-h,Ksrg,,qgkrs,21
 Considers,k-s-r-s,Ksrs,,qkrs,21
+Consideration,k-s-r-sh,Ksrz,,qkrsz,21
+Considerations,k-s-r-sh-s,Ksrzs,,qkrsz,21
 Consisting,k-ss-\-h,Kssg,,qgks,6
 Considers,k-s-s,Kssi,i,qiks,21
 Consistence,k-ss-n-s,Kssns,,qkns,0
@@ -4887,6 +4921,7 @@ Longing,l-ng-\-h,Lgg,,qgl,3
 Longingly,l-ng-\-h-e,Lgge,,qegl,3
 Longings,l-ng-\-h-s,Lggs,,qgls,3
 Willing,l-\-h,Lgi,i,qgil,0
+Willingness,l-^-h-\-n-e-s,Lgnes,,qeglns,0
 Willingly,l-\-h-e,Lhe,,qehl,6
 Wealthy,l-th-e,Lheo,o,qehlo,0
 Wealthiest,l-th-e-s,Lhes,,qehls,0
@@ -6112,6 +6147,7 @@ Encumber,n-k-m-b-r,Nkmbr,,qbkmnr,0
 Encumbered,n-k-m-b-r-d,Nkmbrd,,qbdkmnr,0
 Encumbering,n-k-m-b-r-\-h,Nkmbrg,,qbgkmnr,0
 Encumbers,n-k-m-b-r-s,Nkmbrs,,qbkmnrs,0
+Uncommitted,n-k-m-e-td,Nkmetd,,qdekmnt,22
 Uncomment,n-k-mn-t,Nkmnt,,qkmnt,98
 Uncommented,n-k-mn-t-d,Nkmntd,,qkmnt,98
 Uncommenting,n-k-mn-t-\-h,Nkmntg,,qkmnt,98
@@ -6235,13 +6271,14 @@ Knockout,n-o-k-a-u,Nokw,,qknow,0
 Knockouts,n-o-k-a-u-s,Nokws,,qknosw,0
 Knowledgeable,n-o-l-b,Nolb,,qblno,189
 Knowledgeably,n-o-l-b-e,Nolbe,,qbelno,0
+Norm,n-o-m,Nomi,i,qimno,216
 Normalize,n-o-m-i-s,Nomis,,qimnos,216
 Normalized,n-o-m-i-s-d,Nomisd,,qdimnos,216
 Normalizing,n-o-m-i-s-\-h,Nomisg,,qgimnos,216
 Normalizer,n-o-m-i-s-r,Nomisr,,qimnors,216
 Normalizers,n-o-m-i-s-r-s,Nomisrs,,qimnors,216
 Normalizes,n-o-m-i-s-s,Nomiss,,qimnos,216
-Norm,n-o-m,Nomo,o,qmno,216
+Normal,n-o-m,Nomo,o,qmno,216
 Normals,n-o-m-s,Noms,,qmnos,216
 Normalcy,n-o-m-s-e,Nomse,,qemnos,216
 Normalcies,n-o-m-s-e-s,Nomses,,qemnos,216
@@ -6900,6 +6937,10 @@ Overkill,o-/-k-e-l,Okel,,qeklo,1
 Overkilled,o-/-k-e-l-d,Okeld,,qdeklo,1
 Overkilling,o-/-k-e-l-\-h,Okelg,,qegklo,1
 Overkills,o-/-k-e-l-s,Okels,,qeklos,1
+Overcoming,o-/-k-m-\-h,Okmg,,qkmo,23
+Overcomer,o-/-k-m-r,Okmr,,qkmor,23
+Overcomers,o-/-k-m-r-s,Okmrs,,qkmors,23
+Overcomes,o-/-k-m-s,Okms,,qkmos,23
 Occupied,o-kp-d,Okpd,,qdkop,0
 Occupying,o-kp-\-h,Okpg,,qgkop,0
 Occupancy,o-kp-n-s-e,Okpnse,,qeknops,0
@@ -8669,6 +8710,12 @@ Workflowing,r-k-f-l-o-\-h,Rkflog,,qfgklor,326
 Workflows,r-k-f-l-o-s,Rkflos,,qfklors,326
 Working,r-k-\-h,Rkg,,qgkr,5288
 Reacting,r-ea-k-\-h,Rkgo,o,qgkor,30
+Recommit,r-k-m-e-t,Rkmet,,qekmrt,108
+Recommited,r-k-m-e-t-d,Rkmetd,,qekmrt,108
+Recommiting,r-k-m-e-t-\-h,Rkmetg,,qekmrt,108
+Recommitment,r-k-m-e-t-m,Rkmetm,,qekmrt,108
+Recommitments,r-k-m-e-t-m-s,Rkmetms,,qekmrst,108
+Recommits,r-k-m-e-t-s,Rkmets,,qekmrst,108
 Recommended,r-k-mn-d,Rkmnd,,qdkmnr,143
 Recommending,r-k-mn-\-h,Rkmng,,qgkmnr,143
 Workmanlike,r-k-mn-l,Rkmnl,,qklmnr,0
@@ -10433,6 +10480,7 @@ Stereotype,s-t-e-r-o-t-i-p,Sterotip,,qeioprst,0
 Stereotyped,s-t-e-r-o-t-i-p-d,Sterotipd,,qdeioprst,0
 Stereotyping,s-t-e-r-o-t-i-p-\-h,Sterotipg,,qegioprst,0
 Stereotypes,s-t-e-r-o-t-i-p-s,Sterotips,,qeioprst,0
+Steven,s-t-e-v-n,Stevn,,qenstv,90024
 Stuff,s2-t-f,Stf,,qfst,939
 Stuffed,s2-t-f-d,Stfd,,qdfst,939
 Stuffing,s2-t-f-\-h,Stfg,,qfgst,939
@@ -11120,6 +11168,7 @@ Traumatized,t-r-o-m-t-i-s-d,Tromtisd,,qdimorst,0
 Traumatizing,t-r-o-m-t-i-s-\-h,Tromtisg,,qgimorst,0
 Traumatizes,t-r-o-m-t-i-s-s,Tromtiss,,qimorst,0
 Trusted,t-r-s-d,Trsd,,qdrst,728
+Trusty,t-r-s-e,Trse,,qerst,728
 Trusting,t-r-s-\-h,Trsg,,qgrst,728
 Trustworthy,t-r-s-h-e,Trshe,,qehrst,2
 Trustworthiness,t-r-s-h-e-n-e-s,Trshenes,,qehnrst,2
@@ -11226,6 +11275,8 @@ Website,u-b-s-i,Ubsi,,qbisu,15
 Websites,u-b-s-i-s,Ubsis,,qbisu,15
 Worded,u-d-d,Udd,,qdu,240
 Wording,u-d-\-h,Udg,,qdgu,240
+Wordless,u-d-l,Udl,,qdlu,240
+Wordlessly,u-d-l-e,Udle,,qdelu,240
 Undecipherable,u-d-s2-i-f-b,Udsifb,,qbdfisu,0
 Undecipherably,u-d-s2-i-f-b-e,Udsifbe,,qbdefisu,0
 Wordings,u-d-\-s,Udz,,qduz,1
@@ -11540,6 +11591,7 @@ Advances,v-a-n-s-s,Vanss,,qansv,1
 Vanish,v-a-n-z,Vanz,,qanvz,2
 Vanished,v-a-n-z-d,Vanzd,,qadnvz,2
 Vanishing,v-a-n-z-\-h,Vanzg,,qagnvz,2
+Vanishingly,v-a-n-z-\-h-e,Vanzge,,qaegnvz,2
 Vanishes,v-a-n-z-s,Vanzs,,qansvz,2
 Variable,v-a-r-b,Varb,,qabrv,323
 Variably,v-a-r-b-e,Varbe,,qaberv,490
@@ -12022,6 +12074,9 @@ Experiences,e-s-p-s,Xps,,qpsx,734
 Expects,e-s-p-s,Xpso,o,qopsx,734
 Experiences,e-s-p-s,Xpsoqk,o,qopsx,734
 Expectations,e-s-p-sh-s,Xpzs,,qpsxz,4
+Exquisite,e-s2-k-e-s2-t,Xqset,,qestx,0
+Exquisitely,e-s2-k-e-s2-t-e,Xqsete,,qeqstx,0
+Exquisitely,e-s2-k-e-s2-t-e,Xqxte,,qeqtx,0
 Exercised,e-s2-r-d,Xrd,,qdrx,59
 Exercising,e-s2-r-\-h,Xrg,,qgrx,59
 Exerciser,e-s2-r-r,Xrr,,qrx,59

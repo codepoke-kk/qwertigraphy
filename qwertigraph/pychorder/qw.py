@@ -10,18 +10,8 @@ from datetime import datetime
 from PyQt6.QtCore import Qt, QSize, QSortFilterProxyModel, QModelIndex
 from PyQt6.QtGui import QIcon, QStandardItemModel, QStandardItem
 from PyQt6.QtWidgets import (
-    QApplication,
-    QMainWindow,
-    QWidget,
-    QVBoxLayout,
-    QHBoxLayout,
-    QLabel,
-    QLineEdit,
-    QGridLayout,
-    QComboBox,
-    QStackedWidget,
-    QTableWidget,
-    QTableWidgetItem,
+    QApplication, QMainWindow, QWidget, QVBoxLayout, QHBoxLayout, QLabel, QLineEdit,
+    QGridLayout, QComboBox, QStackedWidget, QTableWidget, QTableWidgetItem,
     QTextEdit, QPushButton, QListWidget, QInputDialog, QMessageBox, QSizePolicy,
     QTableView, QHeaderView
 )
@@ -726,7 +716,7 @@ class MainWindow(QMainWindow):
 
     def get_last_unbracketed_word(self) -> str | None:
         # Find the word to lookup from the hints 
-        raw_text: str = self.upper.toPlainText()
+        raw_text: str = self.upper_tape.toPlainText()
         raw_text = raw_text.replace("\r\n", "\n")
 
         # Apply the pattern.  ``^`` anchors to the start of the line,
@@ -859,27 +849,46 @@ class MainWindow(QMainWindow):
 
     def _build_coach_page(self) -> QWidget:
         widget = QWidget()
-        layout = QVBoxLayout(widget)
-        layout.setContentsMargins(0, 0, 0, 0)   # no extra margins
-        layout.setSpacing(0)                   # panes touch each other
+        v_layout = QVBoxLayout(widget)
+        v_layout.setContentsMargins(0, 0, 0, 0)
+        v_layout.setSpacing(0)
 
-        # Upper pane: hints + missed words
-        self.upper = QTextEdit(self)
-        self.upper.setText("Hint log")
+        # ---------------- Upper pane ----------------
+        self.upper_tape = QTextEdit(self)
+        self.upper_tape.setText("Hint log")
         self.upper_hints = QTextEdit(self)
         self.upper_hints.setText("Missed words")
-        upper_container = self._configure_text_edit(self.upper, self.upper_hints)
-        layout.addWidget(upper_container)
-        # Lower pane: predictive words + opportunity words
-        self.lower = QTextEdit(self)
-        self.lower.setText("Predictive words")
+
+        upper_pane = self._make_three_column_pane(
+            tape_edit=self.upper_tape,
+            hint_edit=self.upper_hints,
+            top_btn_text="Analyze",
+            top_btn_slot=self.analyze_hints,
+            bottom_btn_text="Lookup",
+            bottom_btn_slot=self.lookup_from_hints,
+            hint_fixed_width=220,          # adjust to whatever width you like
+        )
+        v_layout.addWidget(upper_pane)
+
+        # ---------------- Lower pane ----------------
+        self.lower_tape = QTextEdit(self)
+        self.lower_tape.setText("Predictive words")
         self.lower_hints = QTextEdit(self)
         self.lower_hints.setText("Opportunity words")
-        lower_container = self._configure_text_edit(self.lower, self.lower_hints)
-        layout.addWidget(lower_container)
+
+        lower_pane = self._make_three_column_pane(
+            tape_edit=self.lower_tape,
+            hint_edit=self.lower_hints,
+            top_btn_text="Analyze",
+            top_btn_slot=self.analyze_opportunities,
+            bottom_btn_text="Lookup",
+            bottom_btn_slot=self.lookup_from_opportunities,
+            hint_fixed_width=220,          # keep the same width for consistency
+        )
+        v_layout.addWidget(lower_pane)
 
         return widget
-    
+        
     # @staticmethod
     def _configure_text_edit(self, edit: QTextEdit, edit_hints: QTextEdit):
         # print(f"Configuring new pane {edit}")
@@ -928,8 +937,146 @@ class MainWindow(QMainWindow):
         container.setLayout(hbox)
         return container
 
+    def _make_three_column_pane(
+        self,
+        tape_edit: QTextEdit,
+        hint_edit: QTextEdit,
+        top_btn_text: str,
+        top_btn_slot,
+        bottom_btn_text: str,
+        bottom_btn_slot,
+        hint_fixed_width: int = 200,   # you can change this value
+    ) -> QWidget:
+        """
+        Returns a QWidget containing:
+            • a vertical button column (top/bottom)
+            • the main QTextEdit (expanding)
+            • a hint QTextEdit with a fixed width
+        """
+        # ----- Configure the QTextEdits (same for both upper and lower panes) -----
+        # print(f"Configuring new pane {edit}")
+        tape_edit.setReadOnly(False)                     # allow programmatic writes
+        tape_edit.setFixedWidth(self.coach_hints_width)  
+        # (optional) keep the height flexible but prevent horizontal stretching
+        tape_edit.setSizePolicy(QSizePolicy.Policy.Fixed,
+                           QSizePolicy.Policy.Expanding)
+        # In Qt6 the wrap mode enum lives under LineWrapMode
+        tape_edit.setLineWrapMode(QTextEdit.LineWrapMode.NoWrap)
+        # Scroll‑bar policies are now under Qt.ScrollBarPolicy
+        tape_edit.setVerticalScrollBarPolicy(Qt.ScrollBarPolicy.ScrollBarAlwaysOn)
+        tape_edit.setHorizontalScrollBarPolicy(Qt.ScrollBarPolicy.ScrollBarAsNeeded)
+        tape_edit.setStyleSheet(
+            """
+            QTextEdit {
+                background-color: #fafafa;
+                font-family: Consolas, monospace;
+                font-size: 10pt;
+                padding: 2px;
+            }
+            """
+        )
+        hint_edit.setSizePolicy(QSizePolicy.Policy.Fixed,
+                           QSizePolicy.Policy.Expanding)
+        hint_edit.setReadOnly(False)
+        hint_edit.setFixedWidth(self.base_width - self.coach_hints_width)     
+        hint_edit.setStyleSheet(
+            """
+            QTextEdit {
+                background-color: #fafafa;
+                font-family: Consolas, monospace;
+                font-size: 10pt;
+                padding: 2px;
+            }
+            """
+        )
+        # print(f"Configured pane {edit}")
 
+        # ----- Outer horizontal layout (the three columns) -----
+        outer = QWidget()
+        h_layout = QHBoxLayout(outer)
+        h_layout.setContentsMargins(0, 0, 0, 0)
+        h_layout.setSpacing(6)                     # space between columns
 
+        # ----- 1️⃣ Left column: vertical button stack ----------
+        btn_col = QWidget()
+        v_layout = QVBoxLayout(btn_col)
+        v_layout.setContentsMargins(0, 0, 0, 0)
+        v_layout.setSpacing(2)
+
+        # Top button
+        btn_top = QPushButton(top_btn_text, self)
+        btn_top.setSizePolicy(
+            QSizePolicy(QSizePolicy.Policy.Fixed, QSizePolicy.Policy.Fixed)
+        )
+        btn_top.clicked.connect(top_btn_slot)
+        v_layout.addWidget(btn_top)
+
+        # Bottom button
+        btn_bottom = QPushButton(bottom_btn_text, self)
+        btn_bottom.setSizePolicy(
+            QSizePolicy(QSizePolicy.Policy.Fixed, QSizePolicy.Policy.Fixed)
+        )
+        btn_bottom.clicked.connect(bottom_btn_slot)
+        v_layout.addWidget(btn_bottom)
+
+        # Keep the button column as narrow as it needs to be
+        btn_col.setSizePolicy(
+            QSizePolicy(QSizePolicy.Policy.Fixed, QSizePolicy.Policy.Expanding)
+        )
+        h_layout.addWidget(btn_col)
+
+        # ----- 2️⃣ Middle column: the main QTextEdit (expanding) -----
+        hint_edit.setSizePolicy(
+            QSizePolicy(QSizePolicy.Policy.Expanding, QSizePolicy.Policy.Expanding)
+        )
+        h_layout.addWidget(hint_edit)
+
+        # ----- 3️⃣ Right column: the hint QTextEdit (fixed width) -----
+        tape_edit.setSizePolicy(
+            QSizePolicy(QSizePolicy.Policy.Fixed, QSizePolicy.Policy.Expanding)
+        )
+        tape_edit.setMinimumWidth(hint_fixed_width)
+        tape_edit.setMaximumWidth(hint_fixed_width)   # forces a fixed width
+        h_layout.addWidget(tape_edit)
+
+        return outer
+
+    def analyze_hints(self):
+        text = self.upper_tape.toPlainText()
+        self.append_log("Analyzing hints...")
+        # Placeholder for actual analysis logic
+        hint_count = len(text.splitlines())
+        self.append_log(f"Hint analysis complete: {hint_count} hints found.")
+
+    def lookup_from_hints(self):
+        text = self.upper_tape.toPlainText()
+        self.append_log("Looking up hints in dictionary...")
+        # Placeholder for actual lookup logic
+        words = set(re.findall(r"\b\w+\b", text))
+        found = 0
+        for word in words:
+            if self.composite.find_best_match(word):
+                found += 1
+        self.append_log(f"Lookup complete: {found}/{len(words)} hints matched in dictionary.")
+
+    def analyze_opportunities(self):
+        text = self.lower.toPlainText()
+        self.append_log("Analyzing opportunities...")
+        # Placeholder for actual analysis logic
+        opportunity_count = len(text.splitlines())
+        self.append_log(f"Opportunity analysis complete: {opportunity_count} opportunities found.")
+
+    def lookup_from_opportunities(self):
+        text = self.lower.toPlainText()
+        self.append_log("Looking up opportunities in dictionary...")
+        # Placeholder for actual lookup logic
+        words = set(re.findall(r"\b\w+\b", text))
+        found = 0
+        for word in words:
+            if self.composite.find_best_match(word):
+                found += 1
+        self.append_log(f"Lookup complete: {found}/{len(words)} opportunities matched in dictionary.")
+    
     # ------------------------------------------------------------------
     # Navigation handling
     # ------------------------------------------------------------------
@@ -1000,29 +1147,29 @@ class MainWindow(QMainWindow):
     def set_coach_hintlog(self, text: str):
         # print(f"Setting hintlog text to: {text}")
         scrubbed_text = self._scrub_text(text)
-        self.upper.setPlainText(scrubbed_text)
-        self.upper.verticalScrollBar().setValue(self.upper.verticalScrollBar().maximum())
+        self.upper_tape.setPlainText(scrubbed_text)
+        self.upper_tape.verticalScrollBar().setValue(self.upper_tape.verticalScrollBar().maximum())
 
     def append_coach_hintlog(self, line: str):
         # print(f"Appending to hintlog text: {line}")
         scrubbed_line = self._scrub_line(line)
-        self.upper.append(scrubbed_line)
-        self.upper.verticalScrollBar().setValue(self.upper.verticalScrollBar().maximum())
+        self.upper_tape.append(scrubbed_line)
+        self.upper_tape.verticalScrollBar().setValue(self.upper_tape.verticalScrollBar().maximum())
 
     def set_coach_predictions(self, text: str):
         # print(f"Setting predictions text to: {text} for self {self}")
-        # print(f"lower is {self.lower}")
+        # print(f"lower is {self.lower_tape}")
         scrubbed_text = self._scrub_text(text)
         # print(f"Setting lower text to scrubbed: {scrubbed_text}")
-        self.lower.setPlainText(scrubbed_text)
+        self.lower_tape.setPlainText(scrubbed_text)
         # print(f"Setting scrollbar") 
-        self.lower.verticalScrollBar().setValue(self.lower.verticalScrollBar().minimum())
+        self.lower_tape.verticalScrollBar().setValue(self.lower_tape.verticalScrollBar().minimum())
 
     def append_coach_predictions(self, line: str):
         # print(f"Appending to predictions text: {line}")
         scrubbed_line = self._scrub_line(line)
-        self.lower.append(scrubbed_line)
-        self.lower.verticalScrollBar().setValue(self.lower.verticalScrollBar().minimum())
+        self.lower_tape.append(scrubbed_line)
+        self.lower_tape.verticalScrollBar().setValue(self.lower_tape.verticalScrollBar().minimum())
 
     def set_coach_misses(self, text: str):
         # print(f"Setting misses text to: {text}")
@@ -1038,7 +1185,7 @@ class MainWindow(QMainWindow):
 
     def set_coach_opportunities(self, text: str):
         # print(f"Setting opportunities text to: {text} for self {self}")
-        # print(f"lower is {self.lower}")
+        # print(f"lower is {self.lower_tape}")
         scrubbed_text = self._scrub_text(text)
         # print(f"Setting lower text to scrubbed: {scrubbed_text}")
         self.lower_hints.setPlainText(scrubbed_text)
