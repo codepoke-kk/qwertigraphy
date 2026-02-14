@@ -889,54 +889,6 @@ class MainWindow(QMainWindow):
 
         return widget
         
-    # @staticmethod
-    def _configure_text_edit(self, edit: QTextEdit, edit_hints: QTextEdit):
-        # print(f"Configuring new pane {edit}")
-        edit.setReadOnly(False)                     # allow programmatic writes
-        edit.setFixedWidth(self.coach_hints_width)  
-        edit_hints.setReadOnly(False)
-        edit_hints.setFixedWidth(self.base_width - self.coach_hints_width)     
-        # (optional) keep the height flexible but prevent horizontal stretching
-        edit.setSizePolicy(QSizePolicy.Policy.Fixed,
-                           QSizePolicy.Policy.Expanding)
-        edit_hints.setSizePolicy(QSizePolicy.Policy.Fixed,
-                           QSizePolicy.Policy.Expanding)
-        # In Qt6 the wrap mode enum lives under LineWrapMode
-        edit.setLineWrapMode(QTextEdit.LineWrapMode.NoWrap)
-        # Scroll‑bar policies are now under Qt.ScrollBarPolicy
-        edit.setVerticalScrollBarPolicy(Qt.ScrollBarPolicy.ScrollBarAlwaysOn)
-        edit.setHorizontalScrollBarPolicy(Qt.ScrollBarPolicy.ScrollBarAsNeeded)
-        edit.setStyleSheet(
-            """
-            QTextEdit {
-                background-color: #fafafa;
-                font-family: Consolas, monospace;
-                font-size: 10pt;
-                padding: 2px;
-            }
-            """
-        )
-        edit_hints.setStyleSheet(
-            """
-            QTextEdit {
-                background-color: #fafafa;
-                font-family: Consolas, monospace;
-                font-size: 10pt;
-                padding: 2px;
-            }
-            """
-        )
-        # print(f"Configured pane {edit}")
-
-        hbox = QHBoxLayout()
-        hbox.setContentsMargins(0, 0, 0, 0)         # no extra margins inside
-        hbox.addWidget(edit_hints)                          # left‑hand stretch
-        hbox.addWidget(edit)                       # edit pushed to the right
-        # The horizontal layout itself is added to the main vertical layout
-        container = QWidget()
-        container.setLayout(hbox)
-        return container
-
     def _make_three_column_pane(
         self,
         tape_edit: QTextEdit,
@@ -1042,40 +994,159 @@ class MainWindow(QMainWindow):
         return outer
 
     def analyze_hints(self):
-        text = self.upper_tape.toPlainText()
+        """
+        Transform the contents of ``self.upper_hints`` (a QTextEdit) into a
+        compact, counted‑and‑sorted list.
+
+        Expected input (example):
+            Missed words
+            hz = things (as things)
+            Hi = There (as There)
+            r = are (as are)
+            hz = things (as things)
+            la = like (as like)
+
+        Expected output (written back into the same QTextEdit):
+            Missed words
+            [002] hz = things (as things)
+            [001] la = like (as like)
+            [001] Hi = There (as There)
+            [001] r = are (as are)
+        """
+        raw_text = self.upper_hints.toPlainText()
         self.append_log("Analyzing hints...")
-        # Placeholder for actual analysis logic
-        hint_count = len(text.splitlines())
-        self.append_log(f"Hint analysis complete: {hint_count} hints found.")
+        lines = raw_text.splitlines()
+        if not lines:
+            self.append_log("No text found in hints field.")
+            return
+
+        header = lines[0].strip() 
+        body_lines = lines[1:]  
+
+        cleaned = []  
+        for line in body_lines:
+            if ': ' in line:
+                counter_str, hint = line.split(': ', 1)
+            else:
+                counter_str, hint = '001', line
+
+            try:
+                repeat_cnt = int(counter_str)          # '002' → 2, '001' → 1, etc.
+            except ValueError:
+                # If the counter isn’t numeric we fall back to a single copy
+                repeat_cnt = 1
+
+            hint = hint.lower().strip()
+            for _ in range(repeat_cnt):
+                cleaned.append(hint)  
+
+            from collections import Counter
+            counter = Counter(cleaned)         # {'hz = things (as things)':2, ...}
+
+            aggregated = []
+            for line, cnt in counter.items():
+                aggregated.append(f"{cnt:03d}: {line}")
+
+            # ------------------------------------------------------------------
+            # Sort the aggregated lines:
+            #       • Primary key   : count  (descending → most frequent first)
+            #       • Secondary key : length (ascending → shorter first when counts tie)
+            # ------------------------------------------------------------------
+            aggregated.sort(key=lambda s: (-int(s[0:3]), -len(s)))
+
+            final_text = "\n".join([header] + aggregated)
+
+            self.upper_hints.setPlainText(final_text)
+
+        # ------------------------------------------------------------------
+        # 11️⃣  Log a summary for the user
+        # ------------------------------------------------------------------
+        hint_count = len(counter)                       # distinct hints
+        self.append_log(
+            f"Hint analysis complete: {hint_count} distinct hint(s) found."
+        )
 
     def lookup_from_hints(self):
-        text = self.upper_tape.toPlainText()
-        self.append_log("Looking up hints in dictionary...")
-        # Placeholder for actual lookup logic
-        words = set(re.findall(r"\b\w+\b", text))
-        found = 0
-        for word in words:
-            if self.composite.find_best_match(word):
-                found += 1
-        self.append_log(f"Lookup complete: {found}/{len(words)} hints matched in dictionary.")
+        cursor = self.upper_hints.textCursor() 
+        selected_text = cursor.selectedText() 
+        stripped = selected_text.strip()
+        if not stripped:
+            self.append_log("⚠️ No text selected; please highlight a word first.")
+            return
+
+        self.append_log(f"Looking up hint: “{stripped}” in Gregg Dictionary…")
+        self.focus_tab('Editor', 'foreground')
+        self.filter_edits[0].setText(stripped.capitalize())
+        self.editor_edits[0].setText(stripped.capitalize())
+        self._gregg_dict_lookup(stripped)
 
     def analyze_opportunities(self):
-        text = self.lower.toPlainText()
-        self.append_log("Analyzing opportunities...")
-        # Placeholder for actual analysis logic
-        opportunity_count = len(text.splitlines())
-        self.append_log(f"Opportunity analysis complete: {opportunity_count} opportunities found.")
+        raw_text = self.lower_hints.toPlainText()
+        self.append_log("Analyzing hints...")
+        lines = raw_text.splitlines()
+        if not lines:
+            self.append_log("No text found in hints field.")
+            return
+
+        header = lines[0].strip() 
+        body_lines = lines[1:]  
+
+        cleaned = []  
+        for line in body_lines:
+            if ': ' in line:
+                counter_str, hint = line.split(': ', 1)
+            else:
+                counter_str, hint = '001', line
+
+            try:
+                repeat_cnt = int(counter_str)          # '002' → 2, '001' → 1, etc.
+            except ValueError:
+                # If the counter isn’t numeric we fall back to a single copy
+                repeat_cnt = 1
+
+            hint = hint.lower().strip()
+            for _ in range(repeat_cnt):
+                cleaned.append(hint)  
+
+            from collections import Counter
+            counter = Counter(cleaned)         # {'hz = things (as things)':2, ...}
+
+            aggregated = []
+            for line, cnt in counter.items():
+                aggregated.append(f"{cnt:03d}: {line}")
+
+            # ------------------------------------------------------------------
+            # Sort the aggregated lines:
+            #       • Primary key   : count  (descending → most frequent first)
+            #       • Secondary key : length (ascending → shorter first when counts tie)
+            # ------------------------------------------------------------------
+            aggregated.sort(key=lambda s: (-int(s[0:3]), -len(s)))
+
+            final_text = "\n".join([header] + aggregated)
+
+            self.lower_hints.setPlainText(final_text)
+
+        # ------------------------------------------------------------------
+        # 11️⃣  Log a summary for the user
+        # ------------------------------------------------------------------
+        hint_count = len(counter)                       # distinct hints
+        self.append_log(
+            f"Hint analysis complete: {hint_count} distinct hint(s) found."
+        )
 
     def lookup_from_opportunities(self):
-        text = self.lower.toPlainText()
-        self.append_log("Looking up opportunities in dictionary...")
-        # Placeholder for actual lookup logic
-        words = set(re.findall(r"\b\w+\b", text))
-        found = 0
-        for word in words:
-            if self.composite.find_best_match(word):
-                found += 1
-        self.append_log(f"Lookup complete: {found}/{len(words)} opportunities matched in dictionary.")
+        cursor = self.lower_hints.textCursor() 
+        selected_text = cursor.selectedText() 
+        stripped = selected_text.strip()
+        if not stripped:
+            self.append_log("⚠️ No text selected; please highlight a word first.")
+            return
+
+        self.append_log(f"Looking up hint: “{stripped}” in Gregg Dictionary…")
+        self.focus_tab('Editor', 'foreground')
+        self.filter_edits[0].setText(stripped.capitalize())
+        self.editor_edits[0].setText(stripped.capitalize())
+        self._gregg_dict_lookup(stripped)
     
     # ------------------------------------------------------------------
     # Navigation handling
@@ -1180,7 +1251,7 @@ class MainWindow(QMainWindow):
     def append_coach_misses(self, line: str):
         # print(f"Appending to misses text: {line}")
         scrubbed_line = self._scrub_line(line)
-        self.upper_hints.append(scrubbed_line)
+        self.upper_hints.append(f"001: {scrubbed_line}")
         self.upper_hints.verticalScrollBar().setValue(self.upper_hints.verticalScrollBar().maximum())
 
     def set_coach_opportunities(self, text: str):
@@ -1195,7 +1266,7 @@ class MainWindow(QMainWindow):
     def append_coach_opportunities(self, line: str):
         # print(f"Appending to opportunities text: {line}")
         scrubbed_line = self._scrub_line(line)
-        self.lower_hints.append(scrubbed_line)
+        self.lower_hints.append(f"001: {scrubbed_line}")
         self.lower_hints.verticalScrollBar().setValue(self.lower_hints.verticalScrollBar().minimum())
 
     def _scrub_line(self, line: str):
