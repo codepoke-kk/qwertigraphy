@@ -800,22 +800,39 @@ class MainWindow(QMainWindow):
         self.append_log(f"Put entry {entry} to composite dictionary and engine expansions")
 
     def get_last_unbracketed_word(self) -> str | None:
-        # Find the word to lookup from the hints 
+        # Grab the raw text from the widget.
         raw_text: str = self.upper_tape.toPlainText()
         raw_text = raw_text.replace("\r\n", "\n")
 
-        # Apply the pattern.  ``^`` anchors to the start of the line,
-        #    ``\w+`` captures the word, and we require a space or end‑of‑line
-        #    after it (the look‑ahead ``(?= |\Z)``).
-        pattern = re.compile(r"^(?P<word>\w+)(?= |\Z)")
+        # ------------------------------------------------------------
+        # Single‑regex that captures two successive words:
+        #   <qwerd>  – the first word on the line
+        #   <word>   – the second word on the line (the value we return)
+        #
+        #   (?P<qwerd>\w+)   – one or more word characters, saved as “qwerd”
+        #   \W+              – one or more non‑word characters (space, punctuation …)
+        #   (?P<word>\w+)    – the next word, saved as “word”
+        # ------------------------------------------------------------
+        pattern = re.compile(r"(?P<qwerd>\w+)\W+(?P<word>\w+)")
+
         lines = raw_text.split("\n")
         for line in reversed(lines):
             line = line.rstrip()
-            match = pattern.search(line)
-            if match:
-                # Found the first (i.e. *last* in the whole document) word.
-                return match.group("word")
 
+            # Try to find the two‑word pair on this line.
+            m = pattern.search(line)
+            if m:
+                # m.group('qwerd') holds the first word (you called it “qwerd”)
+                # m.group('word')  holds the second word (the “word” you want)
+                return m.group("word")
+
+            # If the line contains only a single word, fall back to the original
+            # behaviour – return that lone word.
+            single_match = re.search(r"(?P<only>\w+)(?= |\Z)", line)
+            if single_match:
+                return single_match.group("only")
+
+        # No match found in any line.
         return None
     
     def focus_tab(self, tab, focus: str = '') -> None: 

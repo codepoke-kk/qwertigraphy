@@ -179,6 +179,8 @@ Argued,a-g-e-u-d,Agud,,qadgu,11
 Arguing,a-g-e-u-\-h,Agug,,qagu,11
 Argues,a-g-e-u-s,Agus,,qagsu,11
 Atheist,a-th-e-s2,Ahes,,qaehs,6
+Atheistic,a-th-e-s2-k,Ahesk,,qaehks,0
+Atheisticly,a-th-e-s2-k-e,Aheske,,qaehks,0
 Atheists,a-th-e-s2-s,Ahess,,qaehs,6
 Athletic,a-th-l-/-a,Ahla,,qahl,0
 Athletics,a-th-l-/-a-s,Ahlas,,qahls,0
@@ -6555,6 +6557,15 @@ Insufficiently,n-s2-u-f-e,Nsufe,,qefnsu,35
 Unsuccessful,n-s2-u-k-f,Nsukf,,qfknsu,372
 Unsuccessfully,n-s2-u-k-f-e,Nsukfe,,qefknsu,372
 Insult,n-s-u-l,Nsul,,qlnsu,
+Insulate,n-s-u-l-a,Nsula,,qalnsu,0
+Insulateable,n-s-u-l-a-b,Nsulab,,qablnsu,0
+Insulated,n-s-u-l-a-d,Nsulad,,qalnsu,0
+Insulating,n-s-u-l-a-\-h,Nsulag,,qalnsu,0
+Insulator,n-s-u-l-a-r,Nsular,,qalnrsu,0
+Insulators,n-s-u-l-a-r-s,Nsulars,,qalnrsu,0
+Insulates,n-s-u-l-a-s,Nsulas,,qalnsu,0
+Insulation,n-s-u-l-a-sh,Nsulaz,,qalnsuz,0
+Insulations,n-s-u-l-a-sh-s,Nsulazs,,qalnsuz,0
 Insulted,n-s-u-l-d,Nsuld,,qlnsu,
 Insulting,n-s-u-l-\-h,Nsulg,,qlnsu,
 Insults,n-s-u-l-s,Nsuls,,qlnsu,
@@ -10400,6 +10411,10 @@ Sistered,ss2-t-e2-d,Ssted,,qdest,14
 Sisterhood,ss2-t-e2-\-d,Sstedo,o,qdeost,0
 Sisterhoods,ss2-t-e2-\-d-s,Ssteds,,qdest,0
 Sistering,ss2-t-e2-\-h,Ssteg,,qegst,14
+Superstition,s-/-s2-t-e-sh,Sstez,,qestz,0
+Superstitions,s-/-s2-t-e-sh-s,Sstezs,,qestz,0
+Superstitious,s-/-s2-t-e-sh-u-s,Sstezus,,qestuz,0
+Superstitiously,s-/-s2-t-e-sh-u-s-e,Sstezuse,,qestuz,0
 Substituting,s-s2-t-\-h,Sstg,,qst,1
 Substituting,s-s2-t-\-h,Sstgo,o,qgost,1
 Systematize,s2s-t-i-s,Sstis,,qist,0
