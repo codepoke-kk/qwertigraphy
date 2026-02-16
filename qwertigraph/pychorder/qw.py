@@ -10,18 +10,8 @@ from datetime import datetime
 from PyQt6.QtCore import Qt, QSize, QSortFilterProxyModel, QModelIndex
 from PyQt6.QtGui import QIcon, QStandardItemModel, QStandardItem
 from PyQt6.QtWidgets import (
-    QApplication,
-    QMainWindow,
-    QWidget,
-    QVBoxLayout,
-    QHBoxLayout,
-    QLabel,
-    QLineEdit,
-    QGridLayout,
-    QComboBox,
-    QStackedWidget,
-    QTableWidget,
-    QTableWidgetItem,
+    QApplication, QMainWindow, QWidget, QVBoxLayout, QHBoxLayout, QLabel, QLineEdit,
+    QGridLayout, QComboBox, QStackedWidget, QTableWidget, QTableWidgetItem,
     QTextEdit, QPushButton, QListWidget, QInputDialog, QMessageBox, QSizePolicy,
     QTableView, QHeaderView
 )
@@ -63,7 +53,7 @@ def load_config() -> Dict[str, Any]:
     try:
         data = json.loads(CONFIG_FILE.read_text(encoding="utf-8"))
         if not isinstance(data, dict):
-            _QW_LOG.warning("Config file did not contain a JSON object – resetting")
+            _QW_LOG.warning("Config file did not contain a JSON object - resetting")
             return {}
         
         # Make sure we have some dictionaries. 
@@ -182,71 +172,146 @@ class MainWindow(QMainWindow):
         
         _QW_LOG.info("Started Engine in startup")
 
+
+    # ----------------------------------------------------------------------
+    # Helper: a combo box pre‑filled with the four log‑level options
+    # ----------------------------------------------------------------------
+    def _log_level_combo(self) -> QComboBox:
+        cb = QComboBox()
+        cb.addItems(["DEBUG", "INFO", "WARNING", "ERROR"])
+        cb.setCurrentText("INFO")
+        return cb
+
+
     def _build_settings_page(self) -> QWidget:
+        """Create the settings page with a 3x9 visual grid."""
         widget = QWidget()
         self.setting_fields: Dict[str, QLineEdit] = {}
+        self.setting_dropdowns: Dict[str, QComboBox] = {}
 
-        # Credential input fields
-        settings_grid = QGridLayout(widget)
-        settings_grid.setHorizontalSpacing(5)
-        settings_grid.setVerticalSpacing(5)
-        
-        # Control buttons
+        # --------------------------------------------------------------
+        # Section 1: Engine controls + log level settings (rows 0‑2)
+        # --------------------------------------------------------------
+        section_offset = 0
+        grid = QGridLayout(widget)
+        grid.setHorizontalSpacing(5)
+        grid.setVerticalSpacing(5)
+
+        # ------------------------------------------------------------------
+        # Column 0 – three control buttons (rows 0‑2)
+        # ------------------------------------------------------------------
         self.btn_start = QPushButton("Start Engine", self)
         self.btn_start.clicked.connect(self.start_engine)
-        settings_grid.addWidget(self.btn_start, 0, 1)
+        grid.addWidget(self.btn_start, section_offset + 0, 0)
 
         self.btn_stop = QPushButton("Stop Engine", self)
         self.btn_stop.clicked.connect(self.stop_engine)
-        settings_grid.addWidget(self.btn_stop, 1, 1)
+        grid.addWidget(self.btn_stop, section_offset + 1, 0)
 
-        # Credentials 
-        # Row 0 – Credential A
-        settings_grid.addWidget(QLabel("Credential A:", self), 2, 0)
-        self.user_a = QLineEdit(self)          # username field
-        settings_grid.addWidget(self.user_a, 2, 1)
-        self.setting_fields['user_a'] = self.user_a
-        self.pass_a = QLineEdit(self)          # password field
-        self.pass_a.setEchoMode(QLineEdit.EchoMode.Password)
-        settings_grid.addWidget(self.pass_a, 3, 1)
+        # ------------------------------------------------------------------
+        # Columns 1‑4 – twelve label+combo pairs (rows 0‑5)
+        # ------------------------------------------------------------------
+        # Definition of the 12 fields (label text, internal key)
+        log_fields = [
+            ("Key Input",      "LOG_LEVEL_KEYIN"),
+            ("Key Queue",      "LOG_LEVEL_KEYQ"),
+            ("Engine",         "LOG_LEVEL_ENGINE"),
+            ("Key Output",     "LOG_LEVEL_KEYOUT"),
+            ("Scribe",         "LOG_LEVEL_SCRIBE"),
+            ("Tape",           "LOG_LEVEL_TAPE"),
+            ("Comm Proxy",     "LOG_LEVEL_COMMS"),
+            ("Inflector",      "LOG_LEVEL_INFLK"),
+            ("Dictionary",     "LOG_LEVEL_DICT"),
+            ("Helpers",        "LOG_LEVEL_HELPR"),
+            ("Macros",         "LOG_LEVEL_MACRO"),
+            ("Vault",          "LOG_LEVEL_VAULT"),
+            ("Gregg",          "LOG_LEVEL_GREGG"),
+            ("Chord",          "LOG_LEVEL_CHORD"),
+            ("QW",             "LOG_LEVEL_QW"),
+            ("",               None)                     # empty placeholder (last cell)
+        ]
 
-        # Row 1 – Credential B
-        settings_grid.addWidget(QLabel("Credential B:", self), 4, 0)
-        self.user_b = QLineEdit(self)
-        settings_grid.addWidget(self.user_b, 4, 1)
-        self.setting_fields['user_b'] = self.user_b
-        self.pass_b = QLineEdit(self)
-        self.pass_b.setEchoMode(QLineEdit.EchoMode.Password)
-        settings_grid.addWidget(self.pass_b, 5, 1)
+        # We place two fields per visual row:
+        #   - first field uses columns 1 (label) & 2 (combo)
+        #   - second field uses columns 3 (label) & 4 (combo)
+        for idx, (lbl_txt, key) in enumerate(log_fields):
+            if not lbl_txt:          # skip the empty placeholder
+                continue
 
-        # Row 2 – Credential C
-        settings_grid.addWidget(QLabel("Credential C:", self), 6, 0)
-        self.user_c = QLineEdit(self)
-        settings_grid.addWidget(self.user_c, 6, 1)
-        self.setting_fields['user_c'] = self.user_c
-        self.pass_c = QLineEdit(self)
-        self.pass_c.setEchoMode(QLineEdit.EchoMode.Password)
-        settings_grid.addWidget(self.pass_c, 7, 1)
+            visual_row = idx // 2          # 0‑5
+            left_side = (idx % 2) == 0     # True → first field in the row
 
+            # Compute column indices
+            if left_side:
+                label_col = 1
+                combo_col = 2
+            else:
+                label_col = 3
+                combo_col = 4
 
+            # ----- label -----
+            grid.addWidget(QLabel(f"{lbl_txt}:", self), section_offset + visual_row, label_col)
+
+            # ----- combo box -----
+            combo = self._log_level_combo()
+            combo.setObjectName(key)               # handy for later lookup
+            self.setting_dropdowns[key] = combo
+            grid.addWidget(combo, section_offset + visual_row, combo_col)
+
+            # Store a reference on the instance for later reading/writing
+            setattr(self, f"combo_{key.lower()}", combo)
+
+        # ------------------------------------------------------------------
+        # Section 2: Credential management (rows 6‑11)
+        # ------------------------------------------------------------------
+        section_offset = 8
         self.btn_credentials = QPushButton("Update Creds", self)
         self.btn_credentials.clicked.connect(self.updated_credentials)
-        settings_grid.addWidget(self.btn_credentials, 8, 1)
+        grid.addWidget(self.btn_credentials, section_offset + 1, 2)
 
-        # ------------------- NEW: Dictionary Sources ------------------
-        # Label
-        settings_grid.addWidget(QLabel("Dictionary Sources:", self), 9, 0)
+        # ------------------------------------------------------------------
+        # Column 0 – credential fields (rows 3‑8)
+        # ------------------------------------------------------------------
+        # Helper to add a (label, line edit) pair
+        def _add_cred(row: int, label_txt: str, attr_name: str, password: bool = False):
+            lbl = QLabel(label_txt, self)
+            le = QLineEdit(self)
+            if password:
+                le.setEchoMode(QLineEdit.EchoMode.Password)
+            le.setFixedWidth(150) 
+            grid.addWidget(lbl, section_offset + row, 1)
+            grid.addWidget(le, section_offset + row, 2)          # we place the edit in column 1 just to keep the UI tidy
+            setattr(self, attr_name, le)
+            if not password:                     # only store usernames for config saving
+                self.setting_fields[attr_name] = le
 
-        # List widget (holds the array of strings)
+        # Credential A
+        _add_cred(section_offset + 1, "Credential A:", "user_a")
+        _add_cred(section_offset + 2, "Password A:", "pass_a", password=True)
+
+        # Credential B
+        _add_cred(section_offset + 3, "Credential B:", "user_b")
+        _add_cred(section_offset + 4, "Password B:", "pass_b", password=True)
+
+        # Credential C
+        _add_cred(section_offset + 5, "Credential C:", "user_c")
+        _add_cred(section_offset + 6, "Password C:", "pass_c", password=True)
+
+
+        # ------------------------------------------------------------------
+        # Section 3: Dictionary Sources
+        # ------------------------------------------------------------------
+        section_offset = 22
+        dict_label = QLabel("Dictionary Sources:", self)
+        grid.addWidget(dict_label, section_offset + 1, 0, 1, 5)          # span all logical columns
+
         self.dict_source_list = QListWidget(self)
         self.dict_source_list.setSelectionMode(
             QListWidget.SelectionMode.MultiSelection
         )
-        settings_grid.addWidget(self.dict_source_list, 9, 1)
+        grid.addWidget(self.dict_source_list, section_offset + 2, 0, 1, 5)
 
-        # --------------------------------------------------------------
-        # Create a *single* vertical layout that holds all three buttons
-        # --------------------------------------------------------------
+        # Vertical button column that acts on the list
         btn_vbox = QVBoxLayout()
         btn_vbox.setSpacing(4)
 
@@ -266,19 +331,24 @@ class MainWindow(QMainWindow):
         btn_move_down.clicked.connect(self._move_down_selected)
         btn_vbox.addWidget(btn_move_down)
 
-        # Wrap the layout in a dummy widget so we can add it to the grid
-        btn_holder = QWidget(self)
-        btn_holder.setLayout(btn_vbox)
+        holder = QWidget(self)
+        holder.setLayout(btn_vbox)
+        grid.addWidget(holder, section_offset + 2, 5)   # placed to the right of the list (extra column)
 
-        # Place the button column *below* the list (still column 1)
-        settings_grid.addWidget(btn_holder, 9, 2)   # row 10, same column as the list
-
+        # ------------------------------------------------------------------
+        # Load saved settings & connect signals
+        # ------------------------------------------------------------------
         cfg = load_config()
         for key, edit in self.setting_fields.items():
             if key in cfg:
                 edit.setText(cfg[key])
 
-        # Populate the dictionary‑source list
+        for key, dropdown in self.setting_dropdowns.items():
+            if key in cfg:
+                idx = dropdown.findText(cfg[key])
+                if idx != -1:
+                    dropdown.setCurrentIndex(idx)
+
         if "dict_sources" in cfg and isinstance(cfg["dict_sources"], list):
             for src in cfg["dict_sources"]:
                 self.dict_source_list.addItem(str(src))
@@ -286,7 +356,9 @@ class MainWindow(QMainWindow):
         for edit in self.setting_fields.values():
             edit.editingFinished.connect(self._save_settings)
 
-        # Also save when the list widget changes (add/remove)
+        for dropdown in self.setting_dropdowns.values():
+            dropdown.currentIndexChanged.connect(self._save_settings)   
+
         self.dict_source_list.itemChanged.connect(self._save_settings)
 
         return widget
@@ -377,6 +449,9 @@ class MainWindow(QMainWindow):
         # --- credentials (simple strings) ---
         for key, edit in self.setting_fields.items():
             cfg[key] = edit.text()
+
+        for key, dropdown in self.setting_dropdowns.items():
+            cfg[key] = dropdown.currentText()
 
         # --- dictionary sources (array) ---
         sources: List[str] = [
@@ -725,22 +800,39 @@ class MainWindow(QMainWindow):
         self.append_log(f"Put entry {entry} to composite dictionary and engine expansions")
 
     def get_last_unbracketed_word(self) -> str | None:
-        # Find the word to lookup from the hints 
-        raw_text: str = self.upper.toPlainText()
+        # Grab the raw text from the widget.
+        raw_text: str = self.upper_tape.toPlainText()
         raw_text = raw_text.replace("\r\n", "\n")
 
-        # Apply the pattern.  ``^`` anchors to the start of the line,
-        #    ``\w+`` captures the word, and we require a space or end‑of‑line
-        #    after it (the look‑ahead ``(?= |\Z)``).
-        pattern = re.compile(r"^(?P<word>\w+)(?= |\Z)")
+        # ------------------------------------------------------------
+        # Single‑regex that captures two successive words:
+        #   <qwerd>  – the first word on the line
+        #   <word>   – the second word on the line (the value we return)
+        #
+        #   (?P<qwerd>\w+)   – one or more word characters, saved as “qwerd”
+        #   \W+              – one or more non‑word characters (space, punctuation …)
+        #   (?P<word>\w+)    – the next word, saved as “word”
+        # ------------------------------------------------------------
+        pattern = re.compile(r"(?P<qwerd>\w+)\W+(?P<word>\w+)")
+
         lines = raw_text.split("\n")
         for line in reversed(lines):
             line = line.rstrip()
-            match = pattern.search(line)
-            if match:
-                # Found the first (i.e. *last* in the whole document) word.
-                return match.group("word")
 
+            # Try to find the two‑word pair on this line.
+            m = pattern.search(line)
+            if m:
+                # m.group('qwerd') holds the first word (you called it “qwerd”)
+                # m.group('word')  holds the second word (the “word” you want)
+                return m.group("word")
+
+            # If the line contains only a single word, fall back to the original
+            # behaviour – return that lone word.
+            single_match = re.search(r"(?P<only>\w+)(?= |\Z)", line)
+            if single_match:
+                return single_match.group("only")
+
+        # No match found in any line.
         return None
     
     def focus_tab(self, tab, focus: str = '') -> None: 
@@ -859,45 +951,75 @@ class MainWindow(QMainWindow):
 
     def _build_coach_page(self) -> QWidget:
         widget = QWidget()
-        layout = QVBoxLayout(widget)
-        layout.setContentsMargins(0, 0, 0, 0)   # no extra margins
-        layout.setSpacing(0)                   # panes touch each other
+        v_layout = QVBoxLayout(widget)
+        v_layout.setContentsMargins(0, 0, 0, 0)
+        v_layout.setSpacing(0)
 
-        # Upper pane: hints + missed words
-        self.upper = QTextEdit(self)
-        self.upper.setText("Hint log")
+        # ---------------- Upper pane ----------------
+        self.upper_tape = QTextEdit(self)
+        self.upper_tape.setText("Hint log")
         self.upper_hints = QTextEdit(self)
         self.upper_hints.setText("Missed words")
-        upper_container = self._configure_text_edit(self.upper, self.upper_hints)
-        layout.addWidget(upper_container)
-        # Lower pane: predictive words + opportunity words
-        self.lower = QTextEdit(self)
-        self.lower.setText("Predictive words")
+
+        upper_pane = self._make_three_column_pane(
+            tape_edit=self.upper_tape,
+            hint_edit=self.upper_hints,
+            top_btn_text="Analyze",
+            top_btn_slot=self.analyze_hints,
+            bottom_btn_text="Lookup",
+            bottom_btn_slot=self.lookup_from_hints,
+            hint_fixed_width=220,          # adjust to whatever width you like
+        )
+        v_layout.addWidget(upper_pane)
+
+        # ---------------- Lower pane ----------------
+        self.lower_tape = QTextEdit(self)
+        self.lower_tape.setText("Predictive words")
         self.lower_hints = QTextEdit(self)
         self.lower_hints.setText("Opportunity words")
-        lower_container = self._configure_text_edit(self.lower, self.lower_hints)
-        layout.addWidget(lower_container)
+
+        lower_pane = self._make_three_column_pane(
+            tape_edit=self.lower_tape,
+            hint_edit=self.lower_hints,
+            top_btn_text="Analyze",
+            top_btn_slot=self.analyze_opportunities,
+            bottom_btn_text="Lookup",
+            bottom_btn_slot=self.lookup_from_opportunities,
+            hint_fixed_width=220,          # keep the same width for consistency
+        )
+        v_layout.addWidget(lower_pane)
 
         return widget
-    
-    # @staticmethod
-    def _configure_text_edit(self, edit: QTextEdit, edit_hints: QTextEdit):
+        
+    def _make_three_column_pane(
+        self,
+        tape_edit: QTextEdit,
+        hint_edit: QTextEdit,
+        top_btn_text: str,
+        top_btn_slot,
+        bottom_btn_text: str,
+        bottom_btn_slot,
+        hint_fixed_width: int = 200,   # you can change this value
+    ) -> QWidget:
+        """
+        Returns a QWidget containing:
+            • a vertical button column (top/bottom)
+            • the main QTextEdit (expanding)
+            • a hint QTextEdit with a fixed width
+        """
+        # ----- Configure the QTextEdits (same for both upper and lower panes) -----
         # print(f"Configuring new pane {edit}")
-        edit.setReadOnly(False)                     # allow programmatic writes
-        edit.setFixedWidth(self.coach_hints_width)  
-        edit_hints.setReadOnly(False)
-        edit_hints.setFixedWidth(self.base_width - self.coach_hints_width)     
+        tape_edit.setReadOnly(False)                     # allow programmatic writes
+        tape_edit.setFixedWidth(self.coach_hints_width)  
         # (optional) keep the height flexible but prevent horizontal stretching
-        edit.setSizePolicy(QSizePolicy.Policy.Fixed,
-                           QSizePolicy.Policy.Expanding)
-        edit_hints.setSizePolicy(QSizePolicy.Policy.Fixed,
+        tape_edit.setSizePolicy(QSizePolicy.Policy.Fixed,
                            QSizePolicy.Policy.Expanding)
         # In Qt6 the wrap mode enum lives under LineWrapMode
-        edit.setLineWrapMode(QTextEdit.LineWrapMode.NoWrap)
+        tape_edit.setLineWrapMode(QTextEdit.LineWrapMode.NoWrap)
         # Scroll‑bar policies are now under Qt.ScrollBarPolicy
-        edit.setVerticalScrollBarPolicy(Qt.ScrollBarPolicy.ScrollBarAlwaysOn)
-        edit.setHorizontalScrollBarPolicy(Qt.ScrollBarPolicy.ScrollBarAsNeeded)
-        edit.setStyleSheet(
+        tape_edit.setVerticalScrollBarPolicy(Qt.ScrollBarPolicy.ScrollBarAlwaysOn)
+        tape_edit.setHorizontalScrollBarPolicy(Qt.ScrollBarPolicy.ScrollBarAsNeeded)
+        tape_edit.setStyleSheet(
             """
             QTextEdit {
                 background-color: #fafafa;
@@ -907,7 +1029,11 @@ class MainWindow(QMainWindow):
             }
             """
         )
-        edit_hints.setStyleSheet(
+        hint_edit.setSizePolicy(QSizePolicy.Policy.Fixed,
+                           QSizePolicy.Policy.Expanding)
+        hint_edit.setReadOnly(False)
+        hint_edit.setFixedWidth(self.base_width - self.coach_hints_width)     
+        hint_edit.setStyleSheet(
             """
             QTextEdit {
                 background-color: #fafafa;
@@ -919,17 +1045,211 @@ class MainWindow(QMainWindow):
         )
         # print(f"Configured pane {edit}")
 
-        hbox = QHBoxLayout()
-        hbox.setContentsMargins(0, 0, 0, 0)         # no extra margins inside
-        hbox.addWidget(edit_hints)                          # left‑hand stretch
-        hbox.addWidget(edit)                       # edit pushed to the right
-        # The horizontal layout itself is added to the main vertical layout
-        container = QWidget()
-        container.setLayout(hbox)
-        return container
+        # ----- Outer horizontal layout (the three columns) -----
+        outer = QWidget()
+        h_layout = QHBoxLayout(outer)
+        h_layout.setContentsMargins(0, 0, 0, 0)
+        h_layout.setSpacing(6)                     # space between columns
 
+        # ----- 1️⃣ Left column: vertical button stack ----------
+        btn_col = QWidget()
+        v_layout = QVBoxLayout(btn_col)
+        v_layout.setContentsMargins(0, 0, 0, 0)
+        v_layout.setSpacing(2)
 
+        # Top button
+        btn_top = QPushButton(top_btn_text, self)
+        btn_top.setSizePolicy(
+            QSizePolicy(QSizePolicy.Policy.Fixed, QSizePolicy.Policy.Fixed)
+        )
+        btn_top.clicked.connect(top_btn_slot)
+        v_layout.addWidget(btn_top)
 
+        # Bottom button
+        btn_bottom = QPushButton(bottom_btn_text, self)
+        btn_bottom.setSizePolicy(
+            QSizePolicy(QSizePolicy.Policy.Fixed, QSizePolicy.Policy.Fixed)
+        )
+        btn_bottom.clicked.connect(bottom_btn_slot)
+        v_layout.addWidget(btn_bottom)
+
+        # Keep the button column as narrow as it needs to be
+        btn_col.setSizePolicy(
+            QSizePolicy(QSizePolicy.Policy.Fixed, QSizePolicy.Policy.Expanding)
+        )
+        h_layout.addWidget(btn_col)
+
+        # ----- 2️⃣ Middle column: the main QTextEdit (expanding) -----
+        hint_edit.setSizePolicy(
+            QSizePolicy(QSizePolicy.Policy.Expanding, QSizePolicy.Policy.Expanding)
+        )
+        h_layout.addWidget(hint_edit)
+
+        # ----- 3️⃣ Right column: the hint QTextEdit (fixed width) -----
+        tape_edit.setSizePolicy(
+            QSizePolicy(QSizePolicy.Policy.Fixed, QSizePolicy.Policy.Expanding)
+        )
+        tape_edit.setMinimumWidth(hint_fixed_width)
+        tape_edit.setMaximumWidth(hint_fixed_width)   # forces a fixed width
+        h_layout.addWidget(tape_edit)
+
+        return outer
+
+    def analyze_hints(self):
+        """
+        Transform the contents of ``self.upper_hints`` (a QTextEdit) into a
+        compact, counted‑and‑sorted list.
+
+        Expected input (example):
+            Missed words
+            hz = things (as things)
+            Hi = There (as There)
+            r = are (as are)
+            hz = things (as things)
+            la = like (as like)
+
+        Expected output (written back into the same QTextEdit):
+            Missed words
+            [002] hz = things (as things)
+            [001] la = like (as like)
+            [001] Hi = There (as There)
+            [001] r = are (as are)
+        """
+        raw_text = self.upper_hints.toPlainText()
+        self.append_log("Analyzing hints...")
+        lines = raw_text.splitlines()
+        if not lines:
+            self.append_log("No text found in hints field.")
+            return
+
+        header = lines[0].strip() 
+        body_lines = lines[1:]  
+
+        cleaned = []  
+        for line in body_lines:
+            if ': ' in line:
+                counter_str, hint = line.split(': ', 1)
+            else:
+                counter_str, hint = '001', line
+
+            try:
+                repeat_cnt = int(counter_str)          # '002' → 2, '001' → 1, etc.
+            except ValueError:
+                # If the counter isn’t numeric we fall back to a single copy
+                repeat_cnt = 1
+
+            hint = hint.lower().strip()
+            for _ in range(repeat_cnt):
+                cleaned.append(hint)  
+
+            from collections import Counter
+            counter = Counter(cleaned)         # {'hz = things (as things)':2, ...}
+
+            aggregated = []
+            for line, cnt in counter.items():
+                aggregated.append(f"{cnt:03d}: {line}")
+
+            # ------------------------------------------------------------------
+            # Sort the aggregated lines:
+            #       • Primary key   : count  (descending → most frequent first)
+            #       • Secondary key : length (ascending → shorter first when counts tie)
+            # ------------------------------------------------------------------
+            aggregated.sort(key=lambda s: (-int(s[0:3]), -len(s)))
+
+            final_text = "\n".join([header] + aggregated)
+
+            self.upper_hints.setPlainText(final_text)
+
+        # ------------------------------------------------------------------
+        # 11️⃣  Log a summary for the user
+        # ------------------------------------------------------------------
+        hint_count = len(counter)                       # distinct hints
+        self.append_log(
+            f"Hint analysis complete: {hint_count} distinct hint(s) found."
+        )
+
+    def lookup_from_hints(self):
+        cursor = self.upper_hints.textCursor() 
+        selected_text = cursor.selectedText() 
+        stripped = selected_text.strip()
+        if not stripped:
+            self.append_log("⚠️ No text selected; please highlight a word first.")
+            return
+
+        self.append_log(f"Looking up hint: “{stripped}” in Gregg Dictionary…")
+        self.focus_tab('Editor', 'foreground')
+        self.filter_edits[0].setText(stripped.capitalize())
+        self.editor_edits[0].setText(stripped.capitalize())
+        self._gregg_dict_lookup(stripped)
+
+    def analyze_opportunities(self):
+        raw_text = self.lower_hints.toPlainText()
+        self.append_log("Analyzing hints...")
+        lines = raw_text.splitlines()
+        if not lines:
+            self.append_log("No text found in hints field.")
+            return
+
+        header = lines[0].strip() 
+        body_lines = lines[1:]  
+
+        cleaned = []  
+        for line in body_lines:
+            if ': ' in line:
+                counter_str, hint = line.split(': ', 1)
+            else:
+                counter_str, hint = '001', line
+
+            try:
+                repeat_cnt = int(counter_str)          # '002' → 2, '001' → 1, etc.
+            except ValueError:
+                # If the counter isn’t numeric we fall back to a single copy
+                repeat_cnt = 1
+
+            hint = hint.lower().strip()
+            for _ in range(repeat_cnt):
+                cleaned.append(hint)  
+
+            from collections import Counter
+            counter = Counter(cleaned)         # {'hz = things (as things)':2, ...}
+
+            aggregated = []
+            for line, cnt in counter.items():
+                aggregated.append(f"{cnt:03d}: {line}")
+
+            # ------------------------------------------------------------------
+            # Sort the aggregated lines:
+            #       • Primary key   : count  (descending → most frequent first)
+            #       • Secondary key : length (ascending → shorter first when counts tie)
+            # ------------------------------------------------------------------
+            aggregated.sort(key=lambda s: (-int(s[0:3]), -len(s)))
+
+            final_text = "\n".join([header] + aggregated)
+
+            self.lower_hints.setPlainText(final_text)
+
+        # ------------------------------------------------------------------
+        # 11️⃣  Log a summary for the user
+        # ------------------------------------------------------------------
+        hint_count = len(counter)                       # distinct hints
+        self.append_log(
+            f"Hint analysis complete: {hint_count} distinct hint(s) found."
+        )
+
+    def lookup_from_opportunities(self):
+        cursor = self.lower_hints.textCursor() 
+        selected_text = cursor.selectedText() 
+        stripped = selected_text.strip()
+        if not stripped:
+            self.append_log("⚠️ No text selected; please highlight a word first.")
+            return
+
+        self.append_log(f"Looking up hint: “{stripped}” in Gregg Dictionary…")
+        self.focus_tab('Editor', 'foreground')
+        self.filter_edits[0].setText(stripped.capitalize())
+        self.editor_edits[0].setText(stripped.capitalize())
+        self._gregg_dict_lookup(stripped)
+    
     # ------------------------------------------------------------------
     # Navigation handling
     # ------------------------------------------------------------------
@@ -1000,29 +1320,29 @@ class MainWindow(QMainWindow):
     def set_coach_hintlog(self, text: str):
         # print(f"Setting hintlog text to: {text}")
         scrubbed_text = self._scrub_text(text)
-        self.upper.setPlainText(scrubbed_text)
-        self.upper.verticalScrollBar().setValue(self.upper.verticalScrollBar().maximum())
+        self.upper_tape.setPlainText(scrubbed_text)
+        self.upper_tape.verticalScrollBar().setValue(self.upper_tape.verticalScrollBar().maximum())
 
     def append_coach_hintlog(self, line: str):
         # print(f"Appending to hintlog text: {line}")
         scrubbed_line = self._scrub_line(line)
-        self.upper.append(scrubbed_line)
-        self.upper.verticalScrollBar().setValue(self.upper.verticalScrollBar().maximum())
+        self.upper_tape.append(scrubbed_line)
+        self.upper_tape.verticalScrollBar().setValue(self.upper_tape.verticalScrollBar().maximum())
 
     def set_coach_predictions(self, text: str):
         # print(f"Setting predictions text to: {text} for self {self}")
-        # print(f"lower is {self.lower}")
+        # print(f"lower is {self.lower_tape}")
         scrubbed_text = self._scrub_text(text)
         # print(f"Setting lower text to scrubbed: {scrubbed_text}")
-        self.lower.setPlainText(scrubbed_text)
+        self.lower_tape.setPlainText(scrubbed_text)
         # print(f"Setting scrollbar") 
-        self.lower.verticalScrollBar().setValue(self.lower.verticalScrollBar().minimum())
+        self.lower_tape.verticalScrollBar().setValue(self.lower_tape.verticalScrollBar().minimum())
 
     def append_coach_predictions(self, line: str):
         # print(f"Appending to predictions text: {line}")
         scrubbed_line = self._scrub_line(line)
-        self.lower.append(scrubbed_line)
-        self.lower.verticalScrollBar().setValue(self.lower.verticalScrollBar().minimum())
+        self.lower_tape.append(scrubbed_line)
+        self.lower_tape.verticalScrollBar().setValue(self.lower_tape.verticalScrollBar().minimum())
 
     def set_coach_misses(self, text: str):
         # print(f"Setting misses text to: {text}")
@@ -1033,12 +1353,12 @@ class MainWindow(QMainWindow):
     def append_coach_misses(self, line: str):
         # print(f"Appending to misses text: {line}")
         scrubbed_line = self._scrub_line(line)
-        self.upper_hints.append(scrubbed_line)
+        self.upper_hints.append(f"001: {scrubbed_line}")
         self.upper_hints.verticalScrollBar().setValue(self.upper_hints.verticalScrollBar().maximum())
 
     def set_coach_opportunities(self, text: str):
         # print(f"Setting opportunities text to: {text} for self {self}")
-        # print(f"lower is {self.lower}")
+        # print(f"lower is {self.lower_tape}")
         scrubbed_text = self._scrub_text(text)
         # print(f"Setting lower text to scrubbed: {scrubbed_text}")
         self.lower_hints.setPlainText(scrubbed_text)
@@ -1048,7 +1368,7 @@ class MainWindow(QMainWindow):
     def append_coach_opportunities(self, line: str):
         # print(f"Appending to opportunities text: {line}")
         scrubbed_line = self._scrub_line(line)
-        self.lower_hints.append(scrubbed_line)
+        self.lower_hints.append(f"001: {scrubbed_line}")
         self.lower_hints.verticalScrollBar().setValue(self.lower_hints.verticalScrollBar().minimum())
 
     def _scrub_line(self, line: str):

@@ -3,9 +3,52 @@ import logging
 import logging.handlers
 import os
 from pathlib import Path
+from typing import Dict, List, Any
+import json
 
 _LOGGER_NAME = "qw"
 _logger = None
+
+CONFIG_DIR = Path(os.getenv("APPDATA", "")) / "Qwertigraph"
+CONFIG_FILE = CONFIG_DIR / "qw.config"
+
+def ensure_config_dir() -> None:
+    CONFIG_DIR.mkdir(parents=True, exist_ok=True)
+
+def load_config() -> Dict[str, Any]:
+    """
+    Load the JSON configuration file and return a dict.
+    If the file does not exist or cannot be parsed, an empty dict is returned.
+    """
+    ensure_config_dir()
+    # print("Loading config")
+
+    if not CONFIG_FILE.is_file():
+        print("Config file missing - returning empty dict")
+        return {}
+
+    try:
+        data = json.loads(CONFIG_FILE.read_text(encoding="utf-8"))
+        if not isinstance(data, dict):
+            print.warning("Config file did not contain a JSON object - resetting")
+            return {}
+        
+        # Make sure we have some dictionaries. 
+        if "dict_sources" not in data or not isinstance(data["dict_sources"], list) or not (len(data["dict_sources"])):
+            data["dict_sources"] = [
+                "%AppData%/Qwertigraph/personal.csv",
+                "dictionaries/anniversary_required.csv",
+                "dictionaries/anniversary_uniform_supplement.csv",
+                "dictionaries/anniversary_uniform_core.csv",
+                "dictionaries/anniversary_modern.csv",
+                "dictionaries/anniversary_cmu.csv"
+            ]
+        
+        # print(f"Config loaded: keys={list(data.keys())}")
+        return data
+    except Exception as exc:            # pragma: no cover – defensive logging
+        print(f"Could not read config: {exc}")
+        return {}
 
 def _build_root_logger() -> logging.Logger:
     """Create the root logger that writes to STDOUT and a rotating file."""
@@ -13,11 +56,11 @@ def _build_root_logger() -> logging.Logger:
     logger.setLevel(logging.DEBUG)                # accept everything; filters later
 
     # ---- Handlers ------------------------------------------------
-    # 1️⃣ Console (STDOUT)
+    # 1️ Console (STDOUT)
     console_handler = logging.StreamHandler()
     console_handler.setLevel(logging.DEBUG)      # let per‑class filter decide
 
-    # 2️⃣ Rotating file (10 MiB per file, keep 5 backups)
+    # 2 Rotating file (10 MiB per file, keep 5 backups)
     # log_dir = Path(os.getenv("LOG_DIR", "logs"))
     log_dir = Path("c:\\Windows\\temp\\qwertigraph")
     log_dir.mkdir(parents=True, exist_ok=True)
@@ -59,9 +102,13 @@ def get_logger(class_abbr: str) -> logging.LoggerAdapter:
 
     # Pull the desired level for this class from the environment.
     # Expected env var: LOG_LEVEL_<ABBR>, e.g. LOG_LEVEL_DB=DEBUG
+
+    cfg = load_config() 
+    # print(f"Config for {class_abbr}: {cfg.get(f'LOG_LEVEL_{class_abbr}', 'INFO')} set")
     env_key = f"LOG_LEVEL_{class_abbr.upper()}"
-    level_name = os.getenv(env_key, "INFO").upper()
-    # print(f"Setting log level for {class_abbr} to {env_key} as {level_name}")
+    # level_name = os.getenv(env_key, "INFO").upper()
+    level_name = cfg.get(env_key, 'INFO')
+    print(f"Setting log level for {class_abbr} to {env_key} as {level_name}")
     level = getattr(logging, level_name, logging.INFO)
 
     # Create a child logger so we can set a per‑class level without affecting others.
