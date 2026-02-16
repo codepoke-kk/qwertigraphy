@@ -3263,6 +3263,7 @@ Heads,^-h-\-e-d-s,Heds,,qdehs,5
 Headway,^-h-\-e-d-u-a,Hedua,,qadehu,5
 Headings,^-h-\-e-d-\-h-s,Hedz,,qdehz,5
 Heathen,h-e-h-e-n,Hehen,,qehn,0
+Heather,^-h-\-e-th-r,Hehr,,qehr,0
 Hedge,^-h-\-e-j,Hej,,qehj,1
 Hedged,^-h-\-e-j-d,Hejd,,qdehj,1
 Hedging,^-h-\-e-j-\-h,Hejg,,qeghj,1
@@ -4887,6 +4888,8 @@ Longing,l-ng-\-h,Lgg,,qgl,3
 Longingly,l-ng-\-h-e,Lgge,,qegl,3
 Longings,l-ng-\-h-s,Lggs,,qgls,3
 Willing,l-\-h,Lgi,i,qgil,0
+Longshot,l-ng-sh,Lgz,,qglz,909
+Longshots,l-ng-sh-s,Lgzs,,qglsz,909
 Willingly,l-\-h-e,Lhe,,qehl,6
 Wealthy,l-th-e,Lheo,o,qehlo,0
 Wealthiest,l-th-e-s,Lhes,,qehls,0
@@ -8409,6 +8412,7 @@ Redeemers,r-d-e-m-r-s,Rdemrs,,qdemrs,92527
 Redeems,r-d-e-m-s,Rdems,,qdemrs,92527
 Redemption,r-d-e-m-sh,Rdemz,,qdemrz,92527
 Redemptions,r-d-e-m-sh-s,Rdemzs,,qdemrsz,92527
+Readiness,r-e-d-e-n,Rden,,qdenr,665
 Readies,r-e-d-e-s,Rdes,,qders,665
 Redefine,r-e-df-i-n,Rdfin,,qdfinr,57
 Redefined,r-e-df-i-n-d,Rdfind,,qdfinr,57
@@ -9797,6 +9801,8 @@ Subfoldering,s-f-o-ld-r-\-h,Sfoldrg,,qdfglors,32
 Subfolders,s-f-o-ld-r-s,Sfoldrs,,qdflors,32
 Superfluous,s-/-f,Sfu,u,qfsu,1
 Significantly,s2-g-e,Sge,,qegs,76
+Signature,s-g,Sgi,i,qgis,
+Signatures,s-g-s,Sgis,i,qgis,
 Signaled,s2-g-n-d,Sgnd,,qdgns,1
 Signaling,s2-g-n-\-h,Sgng,,qgns,1
 Signals,s2-g-n-s,Sgns,,qgns,1
@@ -11052,6 +11058,10 @@ Trace,t-r-a-s,Tras,,qarst,100
 Traced,t-r-a-s-d,Trasd,,qadrst,100
 Tracing,t-r-a-s-\-h,Trasg,,qagrst,100
 Traces,t-r-a-s-s,Trass,,qarst,100
+Traveled,t-r-a-v-d,Travd,,qartv,1
+Traveler,t-r-a-v-r,Travr,,qartv,1
+Travelers,t-r-a-v-r-s,Travrs,,qarstv,1
+Travels,t-r-a-v-s,Travs,,qarstv,1
 Troubled,t-r-b-d,Trbd,,qbdrt,211
 Troubling,t-r-b-\-h,Trbg,,qbgrt,211
 Troubles,t-r-b-s,Trbs,,qbrst,211
