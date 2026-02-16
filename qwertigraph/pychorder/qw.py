@@ -53,7 +53,7 @@ def load_config() -> Dict[str, Any]:
     try:
         data = json.loads(CONFIG_FILE.read_text(encoding="utf-8"))
         if not isinstance(data, dict):
-            _QW_LOG.warning("Config file did not contain a JSON object – resetting")
+            _QW_LOG.warning("Config file did not contain a JSON object - resetting")
             return {}
         
         # Make sure we have some dictionaries. 
@@ -172,71 +172,146 @@ class MainWindow(QMainWindow):
         
         _QW_LOG.info("Started Engine in startup")
 
+
+    # ----------------------------------------------------------------------
+    # Helper: a combo box pre‑filled with the four log‑level options
+    # ----------------------------------------------------------------------
+    def _log_level_combo(self) -> QComboBox:
+        cb = QComboBox()
+        cb.addItems(["DEBUG", "INFO", "WARNING", "ERROR"])
+        cb.setCurrentText("INFO")
+        return cb
+
+
     def _build_settings_page(self) -> QWidget:
+        """Create the settings page with a 3x9 visual grid."""
         widget = QWidget()
         self.setting_fields: Dict[str, QLineEdit] = {}
+        self.setting_dropdowns: Dict[str, QComboBox] = {}
 
-        # Credential input fields
-        settings_grid = QGridLayout(widget)
-        settings_grid.setHorizontalSpacing(5)
-        settings_grid.setVerticalSpacing(5)
-        
-        # Control buttons
+        # --------------------------------------------------------------
+        # Section 1: Engine controls + log level settings (rows 0‑2)
+        # --------------------------------------------------------------
+        section_offset = 0
+        grid = QGridLayout(widget)
+        grid.setHorizontalSpacing(5)
+        grid.setVerticalSpacing(5)
+
+        # ------------------------------------------------------------------
+        # Column 0 – three control buttons (rows 0‑2)
+        # ------------------------------------------------------------------
         self.btn_start = QPushButton("Start Engine", self)
         self.btn_start.clicked.connect(self.start_engine)
-        settings_grid.addWidget(self.btn_start, 0, 1)
+        grid.addWidget(self.btn_start, section_offset + 0, 0)
 
         self.btn_stop = QPushButton("Stop Engine", self)
         self.btn_stop.clicked.connect(self.stop_engine)
-        settings_grid.addWidget(self.btn_stop, 1, 1)
+        grid.addWidget(self.btn_stop, section_offset + 1, 0)
 
-        # Credentials 
-        # Row 0 – Credential A
-        settings_grid.addWidget(QLabel("Credential A:", self), 2, 0)
-        self.user_a = QLineEdit(self)          # username field
-        settings_grid.addWidget(self.user_a, 2, 1)
-        self.setting_fields['user_a'] = self.user_a
-        self.pass_a = QLineEdit(self)          # password field
-        self.pass_a.setEchoMode(QLineEdit.EchoMode.Password)
-        settings_grid.addWidget(self.pass_a, 3, 1)
+        # ------------------------------------------------------------------
+        # Columns 1‑4 – twelve label+combo pairs (rows 0‑5)
+        # ------------------------------------------------------------------
+        # Definition of the 12 fields (label text, internal key)
+        log_fields = [
+            ("Key Input",      "LOG_LEVEL_KEYIN"),
+            ("Key Queue",      "LOG_LEVEL_KEYQ"),
+            ("Engine",         "LOG_LEVEL_ENGINE"),
+            ("Key Output",     "LOG_LEVEL_KEYOUT"),
+            ("Scribe",         "LOG_LEVEL_SCRIBE"),
+            ("Tape",           "LOG_LEVEL_TAPE"),
+            ("Comm Proxy",     "LOG_LEVEL_COMMS"),
+            ("Inflector",      "LOG_LEVEL_INFLK"),
+            ("Dictionary",     "LOG_LEVEL_DICT"),
+            ("Helpers",        "LOG_LEVEL_HELPR"),
+            ("Macros",         "LOG_LEVEL_MACRO"),
+            ("Vault",          "LOG_LEVEL_VAULT"),
+            ("Gregg",          "LOG_LEVEL_GREGG"),
+            ("Chord",          "LOG_LEVEL_CHORD"),
+            ("QW",             "LOG_LEVEL_QW"),
+            ("",               None)                     # empty placeholder (last cell)
+        ]
 
-        # Row 1 – Credential B
-        settings_grid.addWidget(QLabel("Credential B:", self), 4, 0)
-        self.user_b = QLineEdit(self)
-        settings_grid.addWidget(self.user_b, 4, 1)
-        self.setting_fields['user_b'] = self.user_b
-        self.pass_b = QLineEdit(self)
-        self.pass_b.setEchoMode(QLineEdit.EchoMode.Password)
-        settings_grid.addWidget(self.pass_b, 5, 1)
+        # We place two fields per visual row:
+        #   - first field uses columns 1 (label) & 2 (combo)
+        #   - second field uses columns 3 (label) & 4 (combo)
+        for idx, (lbl_txt, key) in enumerate(log_fields):
+            if not lbl_txt:          # skip the empty placeholder
+                continue
 
-        # Row 2 – Credential C
-        settings_grid.addWidget(QLabel("Credential C:", self), 6, 0)
-        self.user_c = QLineEdit(self)
-        settings_grid.addWidget(self.user_c, 6, 1)
-        self.setting_fields['user_c'] = self.user_c
-        self.pass_c = QLineEdit(self)
-        self.pass_c.setEchoMode(QLineEdit.EchoMode.Password)
-        settings_grid.addWidget(self.pass_c, 7, 1)
+            visual_row = idx // 2          # 0‑5
+            left_side = (idx % 2) == 0     # True → first field in the row
 
+            # Compute column indices
+            if left_side:
+                label_col = 1
+                combo_col = 2
+            else:
+                label_col = 3
+                combo_col = 4
 
+            # ----- label -----
+            grid.addWidget(QLabel(f"{lbl_txt}:", self), section_offset + visual_row, label_col)
+
+            # ----- combo box -----
+            combo = self._log_level_combo()
+            combo.setObjectName(key)               # handy for later lookup
+            self.setting_dropdowns[key] = combo
+            grid.addWidget(combo, section_offset + visual_row, combo_col)
+
+            # Store a reference on the instance for later reading/writing
+            setattr(self, f"combo_{key.lower()}", combo)
+
+        # ------------------------------------------------------------------
+        # Section 2: Credential management (rows 6‑11)
+        # ------------------------------------------------------------------
+        section_offset = 8
         self.btn_credentials = QPushButton("Update Creds", self)
         self.btn_credentials.clicked.connect(self.updated_credentials)
-        settings_grid.addWidget(self.btn_credentials, 8, 1)
+        grid.addWidget(self.btn_credentials, section_offset + 1, 2)
 
-        # ------------------- NEW: Dictionary Sources ------------------
-        # Label
-        settings_grid.addWidget(QLabel("Dictionary Sources:", self), 9, 0)
+        # ------------------------------------------------------------------
+        # Column 0 – credential fields (rows 3‑8)
+        # ------------------------------------------------------------------
+        # Helper to add a (label, line edit) pair
+        def _add_cred(row: int, label_txt: str, attr_name: str, password: bool = False):
+            lbl = QLabel(label_txt, self)
+            le = QLineEdit(self)
+            if password:
+                le.setEchoMode(QLineEdit.EchoMode.Password)
+            le.setFixedWidth(150) 
+            grid.addWidget(lbl, section_offset + row, 1)
+            grid.addWidget(le, section_offset + row, 2)          # we place the edit in column 1 just to keep the UI tidy
+            setattr(self, attr_name, le)
+            if not password:                     # only store usernames for config saving
+                self.setting_fields[attr_name] = le
 
-        # List widget (holds the array of strings)
+        # Credential A
+        _add_cred(section_offset + 1, "Credential A:", "user_a")
+        _add_cred(section_offset + 2, "Password A:", "pass_a", password=True)
+
+        # Credential B
+        _add_cred(section_offset + 3, "Credential B:", "user_b")
+        _add_cred(section_offset + 4, "Password B:", "pass_b", password=True)
+
+        # Credential C
+        _add_cred(section_offset + 5, "Credential C:", "user_c")
+        _add_cred(section_offset + 6, "Password C:", "pass_c", password=True)
+
+
+        # ------------------------------------------------------------------
+        # Section 3: Dictionary Sources
+        # ------------------------------------------------------------------
+        section_offset = 22
+        dict_label = QLabel("Dictionary Sources:", self)
+        grid.addWidget(dict_label, section_offset + 1, 0, 1, 5)          # span all logical columns
+
         self.dict_source_list = QListWidget(self)
         self.dict_source_list.setSelectionMode(
             QListWidget.SelectionMode.MultiSelection
         )
-        settings_grid.addWidget(self.dict_source_list, 9, 1)
+        grid.addWidget(self.dict_source_list, section_offset + 2, 0, 1, 5)
 
-        # --------------------------------------------------------------
-        # Create a *single* vertical layout that holds all three buttons
-        # --------------------------------------------------------------
+        # Vertical button column that acts on the list
         btn_vbox = QVBoxLayout()
         btn_vbox.setSpacing(4)
 
@@ -256,19 +331,24 @@ class MainWindow(QMainWindow):
         btn_move_down.clicked.connect(self._move_down_selected)
         btn_vbox.addWidget(btn_move_down)
 
-        # Wrap the layout in a dummy widget so we can add it to the grid
-        btn_holder = QWidget(self)
-        btn_holder.setLayout(btn_vbox)
+        holder = QWidget(self)
+        holder.setLayout(btn_vbox)
+        grid.addWidget(holder, section_offset + 2, 5)   # placed to the right of the list (extra column)
 
-        # Place the button column *below* the list (still column 1)
-        settings_grid.addWidget(btn_holder, 9, 2)   # row 10, same column as the list
-
+        # ------------------------------------------------------------------
+        # Load saved settings & connect signals
+        # ------------------------------------------------------------------
         cfg = load_config()
         for key, edit in self.setting_fields.items():
             if key in cfg:
                 edit.setText(cfg[key])
 
-        # Populate the dictionary‑source list
+        for key, dropdown in self.setting_dropdowns.items():
+            if key in cfg:
+                idx = dropdown.findText(cfg[key])
+                if idx != -1:
+                    dropdown.setCurrentIndex(idx)
+
         if "dict_sources" in cfg and isinstance(cfg["dict_sources"], list):
             for src in cfg["dict_sources"]:
                 self.dict_source_list.addItem(str(src))
@@ -276,7 +356,9 @@ class MainWindow(QMainWindow):
         for edit in self.setting_fields.values():
             edit.editingFinished.connect(self._save_settings)
 
-        # Also save when the list widget changes (add/remove)
+        for dropdown in self.setting_dropdowns.values():
+            dropdown.currentIndexChanged.connect(self._save_settings)   
+
         self.dict_source_list.itemChanged.connect(self._save_settings)
 
         return widget
@@ -367,6 +449,9 @@ class MainWindow(QMainWindow):
         # --- credentials (simple strings) ---
         for key, edit in self.setting_fields.items():
             cfg[key] = edit.text()
+
+        for key, dropdown in self.setting_dropdowns.items():
+            cfg[key] = dropdown.currentText()
 
         # --- dictionary sources (array) ---
         sources: List[str] = [

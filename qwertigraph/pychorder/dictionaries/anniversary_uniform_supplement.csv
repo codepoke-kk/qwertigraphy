@@ -1470,6 +1470,7 @@ Delicous,d-l-e-sh,Dlezo,o,qdeloz,18
 Deletions,d-l-e-sh-s,Dlezs,,qdelsz,18
 Delivering,d-l-\-h,Dlg,,qdgl,69
 Delighted,d-l-i-d,Dlid,,qdil,6
+Delightedly,d-l-i-d-e,Dlide,,qdeil,6
 Delightfully,d-l-i-f-e,Dlife,,qdefil,6
 Delighting,d-l-i-\-h,Dlig,,qdgil,6
 Delights,d-l-i-s,Dlis,,qdils,6
@@ -1947,6 +1948,9 @@ Disowned,d-s-o-n-d,Dsond,,qdnos,90958
 Disowning,d-s-o-n-\-h,Dsong,,qdgnos,90958
 Disowns,d-s-o-n-s,Dsons,,qdnos,90958
 Dissociate,d-s2-o-sh,Dsoz,,qdosz,0
+Dissociated,d-s2-o-sh-d,Dsozd,,qdosz,0
+Dissociating,d-s2-o-sh-\-h,Dsozg,,qdosz,0
+Dissociates,d-s2-o-sh-s,Dsozs,,qdosz,0
 Dissociated,d-s2-o-sh-t-d,Dsoztd,,qdostz,0
 Dissociating,d-s2-o-sh-t-\-h,Dsoztg,,qdgostz,0
 Dissociates,d-s2-o-sh-t-s,Dsozts,,qdostz,0
@@ -2171,9 +2175,13 @@ Egressing,e-g-r-e-s-\-h,Egresg,,qegrs,1
 Egresses,e-g-r-e-s-s,Egresso,o,qegors,1
 Withdraw,e-th-d-r-a,Ehdra,,qadehr,3
 Withdrawing,e-th-d-r-a-\-h,Ehdrag,,qadeghr,3
+Withdrawal,e-th-d-r-a-l,Ehdral,,qadehlr,3
+Withdrawals,e-th-d-r-a-l-s,Ehdrals,,qadehlrs,3
 Withdrawn,e-th-d-r-a-n,Ehdran,,qadehnr,3
 Withdraws,e-th-d-r-a-s,Ehdras,,qadehrs,3
 Withdrawing,e-th-d-r-o-\-h,Ehdrog,,qdeghor,3
+Withdrawal,e-th-d-r-o-l,Ehdrol,,qdehlor,3
+Withdrawals,e-th-d-r-o-l-s,Ehdrols,,qdehlors,3
 Withdrawn,e-th-d-r-o-n,Ehdron,,qdehnor,3
 Withdraws,e-th-d-r-o-s,Ehdros,,qdehors,3
 Withdrew,e-th-d-r-u,Ehdru,,qdehru,3
@@ -4200,6 +4208,11 @@ Collaborations,k-o-l-a-br-a-sh-s,Kolabrzs,,qabklorsz,0
 Collected,k-o-l-d,Kold,,qdklo,80
 Collegial,k-o-l-e-j-l,Kolejl,,qejklo,0
 Colleges,k-o-l-e-j-s,Kolejs,,qejklos,0
+Coalesce,k-o-l-e-s,Koles,,qeklos,1195
+Coalesced,k-o-l-e-s-d,Kolesd,,qeklos,1195
+Coalescing,k-o-l-e-s-\-h,Kolesg,,qeklos,1195
+Collegues,k-o-l-e-s,Koleso,o,qeklos,0
+Coalesces,k-o-l-e-s-s,Koless,,qeklos,1195
 Collisioned,k-o-l-e-sh-d,Kolezd,,qdekloz,0
 Collisioning,k-o-l-e-sh-\-h,Kolezg,,qegkloz,0
 Collisions,k-o-l-e-sh-s,Kolezs,,qeklosz,0
@@ -5152,6 +5165,12 @@ Millionaires,m-e-l-n-a2-s,Melnas,,qaelmns,38
 Millionth,m-e-l-n-th,Melnh,,qehlmn,0
 Millionths,m-e-l-n-th-s,Melnhs,,qehlmns,0
 Millions,m-e-l-n-s,Melns,,qelmns,38
+Melt,m-e-l-t,Melt,,qelmt,
+Melted,m-e-l-t-d,Meltd,,qelmt,
+Melting,m-e-l-t-\-h,Meltg,,qelmt,
+Melts,m-e-l-t-s,Melts,,qelmst,
+Meltdown,m-e-l-t-tn,Melttn,,qelmnt,
+Meltdowns,m-e-l-t-tn-s,Melttns,,qelmnst,
 Murmured,m-e2-m-e2-d,Memed,,qdem,0
 Murmurated,m-e2-m-e2a-d,Memedo,o,qdemo,0
 Murmuring,m-e2-m-e2-\-h,Memeg,,qegm,0
@@ -5567,6 +5586,11 @@ Misconfiguration,m-s-k-f-e-g-r-sh,Mskfegrz,,qefgkmrsz,358
 Misconfigurations,m-s-k-f-e-g-r-sh-s,Mskfegrzs,,qefgkmrsz,358
 Miscommunication,m-s-k-m-u,Mskmu,,qkmsu,32
 Miscommunications,m-s-k-m-u-s,Mskmus,,qkmsu,32
+Mislead,m-s-l-e-d,Msled,,qdelms,1
+Misled,m-s-l-e-d,Msledd,d,qdelms,1
+Misleading,m-s-l-e-d-\-h,Msledg,,qdelms,1
+Misled,m-s-l-e-d,Msledo,o,qdelmos,1
+Misleads,m-s-l-e-d-s,Msleds,,qdelms,1
 Mismatch,m-sm-a-ch,Msmac,,qacms,0
 Mismatched,m-sm-a-ch-d,Msmacd,,qacdms,0
 Mismatching,m-sm-a-ch-\-h,Msmacg,,qacgms,0
@@ -5826,6 +5850,8 @@ Inducted,nt-u-k-d,Ndukd,,qdknu,0
 Inducting,nt-u-k-\-h,Ndukg,,qdgknu,0
 Inducts,nt-u-k-s,Nduks,,qdknsu,0
 Introductions,n-/-d-u-k-s,Nduksqk,,qdknsu,1
+Induction,nt-u-k-sh,Ndukz,,qdknuz,0
+Inductions,nt-u-k-sh-s,Ndukzs,,qdknsuz,0
 Induced,n-d-u-s-d,Ndusd,,qdnsu,20
 Inducing,n-d-u-s-\-h,Ndusg,,qdgnsu,20
 Introducing,n-/-d-u-s-\-h,Ndusgqk,,qdgnsu,36
@@ -6383,6 +6409,7 @@ Incidental,n-s2-tn-l,Nsdnl,,qdlns,251
 Incidentally,n-s2-tn-l-e,Nsdnle,,qdelns,251
 Incidentals,n-s2-tn-l-s,Nsdnls,,qdlns,251
 Incidents,n-s2-tn-s,Nsdns,,qdns,251
+Unsaid,n-s2-e-d,Nsed,,qdens,576
 Incidental,n-s2-e-tn-l,Nsednl,,qdelns,251
 Incidentals,n-s2-e-tn-l-s,Nsednls,,qdelns,0
 Incidents,n-s2-e-tn-s,Nsedns,,qdens,251
@@ -6972,6 +6999,8 @@ Oligarchs,o-l-e-g-a-k-s,Olegaks,,qaegklos,0
 Oligarchic,o-l-e-g-k,Olegk,,qegklo,0
 Oligarchically,o-l-e-g-k-e,Olegke,,qegklo,0
 Oligarchies,o-l-e-g-s,Olegs,,qeglos,0
+Olympic,o-l-m-p-k,Olmpk,,qklmop,
+Olympics,o-l-m-p-k-s,Olmpks,,qklmops,
 Overload,o-/-l-o-d,Olod,,qdlo,31
 Overloaded,o-/-l-o-d-d,Olodd,,qdlo,31
 Overloading,o-/-l-o-d-\-h,Olodg,,qdglo,31
@@ -11042,6 +11071,12 @@ Tormenting,t-o-mn-t-\-h,Tomntg,,qgmnot,0
 Torments,t-o-mn-t-s,Tomnts,,qmnost,0
 Tone,t-o-n,Tono,o,qnot,0
 Tontine,t-o-n-tn,Tontn,,qnot,0
+Toast,t-o-s-t,Tost,,qost,
+Toasted,t-o-s-t-d,Tostd,,qost,
+Toasty,t-o-s-t-e,Toste,,qeost,
+Toasties,t-o-s-t-e-s,Tostes,,qeost,
+Toasting,t-o-s-t-\-h,Tostg,,qost,
+Toasts,t-o-s-t-s,Tosts,,qost,
 Total,t-o-t-l,Totl,,qlot,87
 Totalled,t-o-t-l-d,Totld,,qdlot,87
 Totally,t-o-t-l-e,Totle,,qelot,87
