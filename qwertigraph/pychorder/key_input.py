@@ -83,8 +83,16 @@ class Key_Input:
                 # If I don't return true here, ctrl-v leaves "v" in the queue and later expands 
                 return True
             self._log.debug(f"Received key event: {e.name}")
-            self.key_queue.push_keystroke(e.name)
-            self._log.debug(f"Returning from on_key")
+            if e.name:
+                self.key_queue.push_keystroke(e.name)
+                self._log.debug(f"Returning from on_key")
+            else:
+                self._log.warning(f"Nothing to send in {e}")
+                            
+                self._log.warning("EVENT: %r", e)
+                self._log.warning("  name=%r scan_code=%r device=%r event_type=%r time=%r modifiers=%r",
+                            e.name, getattr(e, "scan_code", None), getattr(e, "device", None),
+                            e.event_type, getattr(e, "time", None), getattr(e, "modifiers", None))
         return True
 
     def start_listening(self) -> None:

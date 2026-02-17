@@ -178,6 +178,7 @@ class MainWindow(QMainWindow):
     # ----------------------------------------------------------------------
     def _log_level_combo(self) -> QComboBox:
         cb = QComboBox()
+        cb.setFixedWidth(100)
         cb.addItems(["DEBUG", "INFO", "WARNING", "ERROR"])
         cb.setCurrentText("INFO")
         return cb
@@ -250,7 +251,9 @@ class MainWindow(QMainWindow):
                 combo_col = 4
 
             # ----- label -----
-            grid.addWidget(QLabel(f"{lbl_txt}:", self), section_offset + visual_row, label_col)
+            log_label = QLabel(f"{lbl_txt}:", self)
+            log_label.setFixedWidth(100)
+            grid.addWidget(log_label, section_offset + visual_row, label_col)
 
             # ----- combo box -----
             combo = self._log_level_combo()
@@ -273,35 +276,35 @@ class MainWindow(QMainWindow):
         # Column 0 – credential fields (rows 3‑8)
         # ------------------------------------------------------------------
         # Helper to add a (label, line edit) pair
-        def _add_cred(row: int, label_txt: str, attr_name: str, password: bool = False):
+        def _add_cred(row: int, col: int, label_txt: str, attr_name: str, password: bool = False):
             lbl = QLabel(label_txt, self)
             le = QLineEdit(self)
             if password:
                 le.setEchoMode(QLineEdit.EchoMode.Password)
             le.setFixedWidth(150) 
-            grid.addWidget(lbl, section_offset + row, 1)
-            grid.addWidget(le, section_offset + row, 2)          # we place the edit in column 1 just to keep the UI tidy
+            grid.addWidget(lbl, section_offset + row, 1 + col)
+            grid.addWidget(le, section_offset + row, 2 + col)          # we place the edit in column 1 just to keep the UI tidy
             setattr(self, attr_name, le)
             if not password:                     # only store usernames for config saving
                 self.setting_fields[attr_name] = le
 
         # Credential A
-        _add_cred(section_offset + 1, "Credential A:", "user_a")
-        _add_cred(section_offset + 2, "Password A:", "pass_a", password=True)
+        _add_cred(section_offset + 1, 0, "Credential A:", "user_a")
+        _add_cred(section_offset + 1, 2, "Password A:", "pass_a", password=True)
 
         # Credential B
-        _add_cred(section_offset + 3, "Credential B:", "user_b")
-        _add_cred(section_offset + 4, "Password B:", "pass_b", password=True)
+        _add_cred(section_offset + 2, 0, "Credential B:", "user_b")
+        _add_cred(section_offset + 2, 2, "Password B:", "pass_b", password=True)
 
         # Credential C
-        _add_cred(section_offset + 5, "Credential C:", "user_c")
-        _add_cred(section_offset + 6, "Password C:", "pass_c", password=True)
+        _add_cred(section_offset + 3, 0, "Credential C:", "user_c")
+        _add_cred(section_offset + 3, 2, "Password C:", "pass_c", password=True)
 
 
         # ------------------------------------------------------------------
         # Section 3: Dictionary Sources
         # ------------------------------------------------------------------
-        section_offset = 22
+        section_offset = 19
         dict_label = QLabel("Dictionary Sources:", self)
         grid.addWidget(dict_label, section_offset + 1, 0, 1, 5)          # span all logical columns
 
@@ -968,7 +971,7 @@ class MainWindow(QMainWindow):
             top_btn_slot=self.analyze_hints,
             bottom_btn_text="Lookup",
             bottom_btn_slot=self.lookup_from_hints,
-            hint_fixed_width=220,          # adjust to whatever width you like
+            hint_fixed_width=self.coach_hints_width,          # adjust to whatever width you like
         )
         v_layout.addWidget(upper_pane)
 
@@ -985,7 +988,7 @@ class MainWindow(QMainWindow):
             top_btn_slot=self.analyze_opportunities,
             bottom_btn_text="Lookup",
             bottom_btn_slot=self.lookup_from_opportunities,
-            hint_fixed_width=220,          # keep the same width for consistency
+            hint_fixed_width=self.coach_hints_width,          # keep the same width for consistency
         )
         v_layout.addWidget(lower_pane)
 
@@ -999,7 +1002,7 @@ class MainWindow(QMainWindow):
         top_btn_slot,
         bottom_btn_text: str,
         bottom_btn_slot,
-        hint_fixed_width: int = 200,   # you can change this value
+        hint_fixed_width: int = 100,   # you can change this value
     ) -> QWidget:
         """
         Returns a QWidget containing:
@@ -1089,8 +1092,8 @@ class MainWindow(QMainWindow):
         tape_edit.setSizePolicy(
             QSizePolicy(QSizePolicy.Policy.Fixed, QSizePolicy.Policy.Expanding)
         )
-        tape_edit.setMinimumWidth(hint_fixed_width)
-        tape_edit.setMaximumWidth(hint_fixed_width)   # forces a fixed width
+        tape_edit.setMinimumWidth(self.coach_hints_width)
+        tape_edit.setMaximumWidth(self.coach_hints_width)   # forces a fixed width
         h_layout.addWidget(tape_edit)
 
         return outer
