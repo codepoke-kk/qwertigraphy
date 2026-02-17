@@ -1,4 +1,4 @@
-import time, sys
+import time, sys, re
 from typing import List, Tuple, Iterable
 from collections import namedtuple
 from log_factory import get_logger
@@ -27,6 +27,7 @@ class Scribe:
         self._tape: List[Note] = []
         self._log.info('Scribe starting Coach')
         self._log.info('Initiated Scribe')
+        self._scrubbing_regex = re.compile(r'\d')  # Matches sequences of whitespace and word characters
 
 
     def record_note(self, key, word, end_key):
@@ -44,7 +45,11 @@ class Scribe:
 
         # Log the note both to tape log and internal tape
         self._log.debug(f"Recording input {key} to {word} ending with {end_key_str}")
-        self._tape_log.info(f"{key:<6}{word:<30}{end_key_str:>6}")
+        info = f"{key:<6}{word:<30}{end_key_str:>6}"
+        if not re.search(self._scrubbing_regex, info):
+            self._tape_log.info(info)
+        else:
+            self._tape_log.info("***** *****                                ")
         self.comms_proxy.signal_coach_append_hintlog(f"{key:<7} {word}{end_key_str}")
         ts = time.perf_counter()
         self._tape.append(Note(key, word, ts, end_key, end_key_str))
