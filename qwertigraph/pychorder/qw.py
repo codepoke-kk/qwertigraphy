@@ -178,6 +178,7 @@ class MainWindow(QMainWindow):
     # ----------------------------------------------------------------------
     def _log_level_combo(self) -> QComboBox:
         cb = QComboBox()
+        cb.setFixedWidth(100)
         cb.addItems(["DEBUG", "INFO", "WARNING", "ERROR"])
         cb.setCurrentText("INFO")
         return cb
@@ -250,7 +251,9 @@ class MainWindow(QMainWindow):
                 combo_col = 4
 
             # ----- label -----
-            grid.addWidget(QLabel(f"{lbl_txt}:", self), section_offset + visual_row, label_col)
+            log_label = QLabel(f"{lbl_txt}:", self)
+            log_label.setFixedWidth(100)
+            grid.addWidget(log_label, section_offset + visual_row, label_col)
 
             # ----- combo box -----
             combo = self._log_level_combo()
@@ -968,7 +971,7 @@ class MainWindow(QMainWindow):
             top_btn_slot=self.analyze_hints,
             bottom_btn_text="Lookup",
             bottom_btn_slot=self.lookup_from_hints,
-            hint_fixed_width=220,          # adjust to whatever width you like
+            hint_fixed_width=self.coach_hints_width,          # adjust to whatever width you like
         )
         v_layout.addWidget(upper_pane)
 
@@ -985,7 +988,7 @@ class MainWindow(QMainWindow):
             top_btn_slot=self.analyze_opportunities,
             bottom_btn_text="Lookup",
             bottom_btn_slot=self.lookup_from_opportunities,
-            hint_fixed_width=220,          # keep the same width for consistency
+            hint_fixed_width=self.coach_hints_width,          # keep the same width for consistency
         )
         v_layout.addWidget(lower_pane)
 
@@ -999,7 +1002,7 @@ class MainWindow(QMainWindow):
         top_btn_slot,
         bottom_btn_text: str,
         bottom_btn_slot,
-        hint_fixed_width: int = 200,   # you can change this value
+        hint_fixed_width: int = 100,   # you can change this value
     ) -> QWidget:
         """
         Returns a QWidget containing:
@@ -1089,8 +1092,8 @@ class MainWindow(QMainWindow):
         tape_edit.setSizePolicy(
             QSizePolicy(QSizePolicy.Policy.Fixed, QSizePolicy.Policy.Expanding)
         )
-        tape_edit.setMinimumWidth(hint_fixed_width)
-        tape_edit.setMaximumWidth(hint_fixed_width)   # forces a fixed width
+        tape_edit.setMinimumWidth(self.coach_hints_width)
+        tape_edit.setMaximumWidth(self.coach_hints_width)   # forces a fixed width
         h_layout.addWidget(tape_edit)
 
         return outer
