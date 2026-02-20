@@ -2496,6 +2496,12 @@ Eschatologically,e-s-k-a-t-\-o2-k-e,Eskatoke,,qaekost,2
 Eschatologies,e-s-k-a-t-\-o2-s,Eskatos,,qaekost,16
 Eschatologist,e-s-k-a-t-\-o2-s-t,Eskatost,,qaekost,0
 Eschatologists,e-s-k-a-t-\-o2-s-t-s,Eskatosts,,qaekost,0
+Escalate,e-s2-k-l-a,Eskla,,qaekls,0
+Escalated,e-s2-k-l-a-d,Esklad,,qaekls,0
+Escalating,e-s2-k-l-a-\-h,Esklag,,qaekls,0
+Escalator,e-s2-k-l-a-r,Esklar,,qaeklrs,0
+Escalators,e-s2-k-l-a-r-s,Esklars,,qaeklrs,0
+Escalates,e-s2-k-l-a-s,Esklas,,qaekls,0
 Escalate,e-s2-k-l-a-t,Esklat,,qaeklst,0
 Escalated,e-s2-k-l-a-t-d,Esklatd,,qadeklst,0
 Escalating,e-s2-k-l-a-t-\-h,Esklatg,,qaegklst,0
@@ -2504,6 +2510,8 @@ Escalators,e-s2-k-l-a-t-r-s,Esklatrs,,qaeklrst,0
 Escalates,e-s2-k-l-a-t-s,Esklats,,qaeklst,0
 Escalation,e-s2-k-l-a-t-sh,Esklatz,,qaeklstz,0
 Escalations,e-s2-k-l-a-t-sh-s,Esklatzs,,qaeklstz,0
+Escalation,e-s2-k-l-a-sh,Esklaz,,qaeklsz,0
+Escalations,e-s2-k-l-a-sh-s,Esklazs,,qaeklsz,0
 Eccentrically,e-s2-n-/-k-e,Esnke,,qekns,0
 Essence,e-s2-n-s,Esns,,qens,1
 Essences,e-s2-n-s-s,Esnss,,qens,1
@@ -7521,6 +7529,8 @@ Pliant,p-l-i-nt,Plint,,qilnpt,0
 Upload,p-l-o-d,Plod,,qdlop,41
 Uploaded,p-l-o-d-d,Plodd,,qdlop,41
 Uploading,p-l-o-d-\-h,Plodg,,qdglop,41
+Uploader,p-l-o-d-r,Plodr,,qdlopr,41
+Uploaders,p-l-o-d-r-s,Plodrs,,qdloprs,41
 Uploads,p-l-o-d-s,Plods,,qdlops,41
 Pleases,pl-s,Pls,,qlps,6
 Pulsed,pl-s-d,Plsd,,qdlps,0
@@ -9040,6 +9050,8 @@ Renewably,r-e-n-u-\-b-e,Rnube,,qbenru,1
 Renewables,r-e-n-u-\-b-s,Rnubs,,qbnrsu,1
 Renewing,r-e-n-u-\-h,Rnug,,qgnru,4620
 Renewals,r-e-n-u-l-s,Rnuls,,qlnrsu,19
+Renewer,r-e-n-u-r,Rnur,,qnru,4620
+Renewers,r-e-n-u-r-s,Rnurs,,qnrsu,4620
 Renews,r-e-n-u-s,Rnus,,qnrsu,4620
 Wronged,r-o-ng-d,Rogd,,qdgor,975
 Wrongly,r-o-ng-e,Roge,,qegor,975
@@ -9422,6 +9434,10 @@ Ruthlessly,r-u-h-l-e,Ruhle,,qehlru,3
 Ruach,r-u-k,Ruk,,qkru,68
 Ruachian,r-u-k-n,Rukn,,qknru,1
 Reuse,r-e-u-s,Rus,,qrsu,1
+Reuseable,r-e-u-s-b,Rusb,,qbrsu,1
+Reuseably,r-e-u-s-b-e,Rusbe,,qbersu,1
+Reuseability,r-e-u-s-\-b,Rusbo,o,qborsu,1
+Reuseables,r-e-u-s-b-s,Rusbs,,qbrsu,1
 Reused,r-e-u-s-d,Rusd,,qdrsu,1
 Reusing,r-e-u-s-\-h,Rusg,,qgrsu,1
 Reuses,r-e-u-s-s,Russo,o,qorsu,1
@@ -10960,6 +10976,10 @@ Types,t-i-p-s,Tipso,o,qiopst,70
 Titled,t-i-td,Titd,,qdit,0
 Tightly,t-i-t-e,Tite,,qeit,10
 Titling,t-i-t-\-h,Titg,,qgit,10
+Title,t-i-t-l,Titl,,qilt,10
+Titled,t-i-t-l-d,Titld,,qilt,10
+Titling,t-i-t-l-\-h,Titlg,,qilt,10
+Titles,t-i-t-l-s,Titls,,qilst,10
 Tighten,t-i-tn,Titn,,qint,10
 Tightened,t-i-tn-d,Titnd,,qdint,10
 Tightening,t-i-tn-\-h,Titng,,qgint,10
