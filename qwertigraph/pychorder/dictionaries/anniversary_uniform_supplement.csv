@@ -1430,6 +1430,14 @@ Dialectical,d-i-l-e-k-l,Dilekl,,qdeikl,0
 Dialectically,d-i-l-e-k-l-e,Dilekle,,qdeikl,0
 Dialecticals,d-i-l-e-k-l-s,Dilekls,,qdeikls,0
 Dialects,d-i-l-e-k-s,Dileks,,qdeikls,0
+Dialog,d-i-l-o-g,Dilog,,qdgilo,0
+Dialogued,d-i-l-o-g-d,Dilogd,,qdgil,0
+Dialoguing,d-i-l-o-g-\-h,Dilogg,,qdgil,0
+Dialogue,d-i-l-o-g,Dilogo,o,qdgilo,0
+Dialogued,d-i-l-o-g-d,Dilogod,o,qdgilo,0
+Dialoguing,d-i-l-o-g-\-h,Dilogog,o,qdgilo,0
+Dialogs,d-i-l-o-g-s,Dilogs,,qdgilos,0
+Dialogues,d-i-l-o-g-s,Dilogso,o,qdgilos,0
 Dilation,d-i-l-a-sh,Dilz,,qdilz,0
 Dilations,d-i-l-a-sh-s,Dilzs,,qdilsz,0
 Diameters,d-i-m-e-t-e2-s,Dimetes,,qdeimst,0
@@ -1554,6 +1562,8 @@ Demoting,d-m-o-t-\-h,Dmotg,,qdgmot,43
 Demotes,d-m-o-t-s,Dmots,,qdmost,43
 Demotion,d-m-o-sh,Dmoz,,qdmoz,43
 Demotions,d-m-o-sh-s,Dmozs,,qdmosz,43
+Downed,d-n-d,Dnd,,qdn,
+Downing,d-n-\-h,Dng,,qdgn,
 Downgrade,d-n-g-r-a,Dngra,,qadgnr,6
 Downgraded,d-n-g-r-a-d,Dngrad,,qadgnr,6
 Downgrading,d-n-g-r-a-\-h,Dngrag,,qadgnr,6
@@ -1582,6 +1592,7 @@ Denoted,tn-o-t-d,Dnotd,,qdnot,143
 Denoting,tn-o-t-\-h,Dnotg,,qdgnot,143
 Denotes,tn-o-t-s,Dnots,,qdnost,143
 Downpour,dn-p-o-r,Dnpor,,qdnopr,0
+Downward,d-n-\-r-d,Dnrd,,qdnr,
 Downsides,d-n-s-i-s,Dnsis,,qdins,15
 Downstream,d-n-s-t-r-e-m,Dnstrem,,qdemnrst,6
 Downstreamed,d-n-s-t-r-e-m-d,Dnstremd,,qdemnrst,6
@@ -2520,6 +2531,12 @@ Eschatologically,e-s-k-a-t-\-o2-k-e,Eskatoke,,qaekost,2
 Eschatologies,e-s-k-a-t-\-o2-s,Eskatos,,qaekost,16
 Eschatologist,e-s-k-a-t-\-o2-s-t,Eskatost,,qaekost,0
 Eschatologists,e-s-k-a-t-\-o2-s-t-s,Eskatosts,,qaekost,0
+Escalate,e-s2-k-l-a,Eskla,,qaekls,0
+Escalated,e-s2-k-l-a-d,Esklad,,qaekls,0
+Escalating,e-s2-k-l-a-\-h,Esklag,,qaekls,0
+Escalator,e-s2-k-l-a-r,Esklar,,qaeklrs,0
+Escalators,e-s2-k-l-a-r-s,Esklars,,qaeklrs,0
+Escalates,e-s2-k-l-a-s,Esklas,,qaekls,0
 Escalate,e-s2-k-l-a-t,Esklat,,qaeklst,0
 Escalated,e-s2-k-l-a-t-d,Esklatd,,qadeklst,0
 Escalating,e-s2-k-l-a-t-\-h,Esklatg,,qaegklst,0
@@ -2528,6 +2545,10 @@ Escalators,e-s2-k-l-a-t-r-s,Esklatrs,,qaeklrst,0
 Escalates,e-s2-k-l-a-t-s,Esklats,,qaeklst,0
 Escalation,e-s2-k-l-a-t-sh,Esklatz,,qaeklstz,0
 Escalations,e-s2-k-l-a-t-sh-s,Esklatzs,,qaeklstz,0
+Escalation,e-s2-k-l-a-sh,Esklaz,,qaeklsz,0
+Escalations,e-s2-k-l-a-sh-s,Esklazs,,qaeklsz,0
+Escalation,e-s2-k-l-sh,Esklz,,qeklsz,0
+Escalations,e-s2-k-l-sh-s,Esklzs,,qeklsz,0
 Eccentrically,e-s2-n-/-k-e,Esnke,,qekns,0
 Essence,e-s2-n-s,Esns,,qens,1
 Essences,e-s2-n-s-s,Esnss,,qens,1
@@ -3716,8 +3737,12 @@ Juggles,j-u-g-l-s,Jugls,,qgjlsu,
 Justified,j-u-s2-f-d,Jusfd,,qdfjsu,7
 Justifying,j-u-s2-f-\-h,Jusfg,,qfgjsu,7
 Justification,j-u-s2-\-f,Jusfo,o,qfjosu,2
+Justifier,j-u-s2-f-r,Jusfr,,qfjrsu,7
+Justifiers,j-u-s2-f-r-s,Jusfrs,,qfjrsu,7
 Justifies,j-u-s2-f-s,Jusfs,,qfjsu,7
 Justifications,j-u-s2-\-f-s,Jusfso,o,qfjosu,2
+Justification,j-u-s2-\-f-sh,Jusfz,,qfjsuz,2
+Justifications,j-u-s2-\-f-sh-s,Jusfzs,,qfjsuz,2
 Joyed,j-o-e-d,Jyd,,qdjy,106
 Joyful,j-o-e-f,Jyf,,qfjy,3
 Joyfully,j-o-e-f-e,Jyfe,,qefjy,3
@@ -4107,6 +4132,8 @@ Closing,k-l-o-s-\-h,Klosg,,qgklos,377
 Closer,k-l-o-s-r,Klosr,,qklors,30
 Closers,k-l-o-s-r-s,Klosrs,,qklors,30
 Closes,k-l-o-s-s,Kloss,,qklos,377
+Closure,k-l-o-sh-u,Klozu,,qklouz,
+Closures,k-l-o-sh-u-s,Klozus,,qklosuz,
 Controller,^-k-/-l-r,Klr,,qklr,148
 Clerked,k-l-r-d,Klrd,,qdklr,0
 Comptroller,^-k-/-l-r,Klro,o,qklor,148
@@ -5920,6 +5947,7 @@ Indenting,n-tn-t-\-h,Ndntg,,qdgnt,1
 Indents,n-tn-t-s,Ndnts,,qdnst,1
 Indentation,n-tn-sh,Ndnz,,qdnz,0
 Indentations,n-tn-sh-s,Ndnzs,,qdnsz,0
+Undocumented,n-d-o-k-m-d,Ndokmd,,qdkmno,455
 Indoctrination,n-d-o-k-t-sh,Ndoktz,,qdknotz,3
 Indoctrinational,n-d-o-k-t-sh-l,Ndoktzl,,qdklnotz,3
 Indoctrinationally,n-d-o-k-t-sh-l-e,Ndoktzle,,qdeklnotz,3
@@ -6379,7 +6407,7 @@ Internationalizing,n-/-n-a-sh-l-i-s-\-h,Nnzlisg,,qgilnsz,0
 Internationalizes,n-/-n-a-sh-l-i-s-s,Nnzliss,,qilnsz,0
 Unknowably,u-n-o-b-e,Nobe,,qbeno,316
 Knowably,n-o-b-e,Nobeo,o,qbeno,2
-Nobilty,n-o-\-b,Nobi,i,qbino,2
+Nobility,n-o-\-b,Nobi,i,qbino,2
 Noble,n-o-b-l,Nobl,,qblno,2
 Nobles,n-o-b-l-s,Nobls,,qblnos,2
 Unknowable,u-n-o-b,Nobu,u,qbnou,0
@@ -7363,6 +7391,8 @@ Packetizes,p-a-k-t-i-s-s,Paktiss,,qaikpst,5
 Packets,p-a-k-t-s,Pakts,,qakpst,5
 Palestinian,p-a-l-e-s2-tn-n,Palestnn,,qaelnpst,0
 Palestinians,p-a-l-e-s2-tn-n-s,Palestnns,,qaelnpst,0
+Payload,p-a-l-o-d,Palod,,qadlop,
+Payloads,p-a-l-o-d-s,Palods,,qadlops,
 Palpate,p-a-l-p-a-t,Palpat,,qalpt,0
 Palpated,p-a-l-p-a-t-d,Palpatd,,qadlpt,0
 Palpating,p-a-l-p-a-t-\-h,Palpatg,,qaglpt,0
@@ -8307,6 +8337,9 @@ Potentially,p-tn-t-sh-e,Ptntze,,qenptz,0
 Potentiality,p-tn-t-sh-\-l,Ptntzl,,qlnptz,0
 Potentialities,p-tn-t-sh-\-l-s,Ptntzls,,qlnpstz,0
 Potentials,p-tn-t-sh-s,Ptntzs,,qnpstz,0
+Potential,p-tn-sh,Ptnz,,qnptz,0
+Potentially,p-tn-sh-e,Ptnze,,qenptz,0
+Potentials,p-tn-sh-s,Ptnzs,,qnpstz,0
 Patriot,p-t-r-o-t,Ptrot,,qoprt,8
 Patriotic,p-t-r-o-t-k,Ptrotk,,qkoprt,8
 Patriotically,p-t-r-o-t-k-e,Ptrotke,,qekoprt,8
@@ -8473,6 +8506,7 @@ Racheted,r-a-ch-t-d,Ractd,,qacdrt,0
 Racheting,r-a-ch-t-\-h,Ractg,,qacgrt,0
 Rachets,r-a-ch-t-s,Racts,,qacrst,0
 Radical,r-a-d-\-k,Radk,,qadkr,0
+Radically,r-a-d-\-k-e,Radke,,qadekr,0
 Radicalize,r-a-d-\-k-i-s,Radkis,,qadikrs,0
 Radicalized,r-a-d-\-k-i-s-d,Radkisd,,qadikrs,0
 Radicalizing,r-a-d-\-k-i-s-\-h,Radkisg,,qadgikrs,0
@@ -9422,6 +9456,9 @@ Reasoned,r-s2-n-d,Rsnd,,qdnrs,462
 Reasoning,r-s2-n-\-h,Rsng,,qgnrs,462
 Reasons,r-s2-n-s,Rsns,,qnrs,462
 Resolve,r-s-o-l,Rsol,,qlors,196
+Resolveable,r-s-o-l-b,Rsolb,,qblors,196
+Resolveably,r-s-o-l-b-e,Rsolbe,,qbelors,196
+Resolveability,r-s-o-l-\-b,Rsolbo,o,qblors,196
 Resolved,r-s-o-l-d,Rsold,,qdlors,196
 Resolving,r-s-o-l-\-h,Rsolg,,qglors,196
 Resolves,r-s-o-l-s,Rsols,,qlors,196
@@ -9624,6 +9661,10 @@ Sabbatical,s-a-b-\-a,Saba,,qabs,0
 Sabbaticals,s-a-b-\-a-s,Sabas,,qabs,0
 Sabbath,s-a-b-h,Sabh,,qabhs,8
 Sabbaths,s-a-b-h-s,Sabhs,,qabhs,8
+Saddle,s-a-d-l,Sadl,,qadls,455
+Saddled,s-a-d-l-d,Sadld,,qadls,455
+Saddling,s-a-d-l-\-h,Sadlg,,qadls,455
+Saddles,s-a-d-l-s,Sadls,,qadls,455
 Sadducee,s-a-d-s-e,Sadse,,qades,0
 Sadducees,s-a-d-s-e-s,Sadses,,qades,0
 Safeguard,s-a-f-g-a2-d,Safgad,,qadfgs,0
@@ -11694,6 +11735,12 @@ Europeans,e-u-r-o-p-n-s,Uropns,,qnoprsu,10
 Underwrote,u-\-r-o-t,Urot,,qortu,92527
 Users,e-u-r-s,Urs,,qrsu,1237
 User,e-u-r,Uru,u,qru,1237
+Unsecure,u-s2-e-k-r,Usekr,,qekrsu,232
+Unsecureable,u-s2-e-k-r-b,Usekrb,,qbekrsu,232
+Unsecureably,u-s2-e-k-r-b-e,Usekrbe,,qbekrsu,232
+Unsecured,u-s2-e-k-r-d,Usekrd,,qekrsu,232
+Unsecuring,u-s2-e-k-r-\-h,Usekrg,,qekrsu,232
+Unsecures,u-s2-e-k-r-s,Usekrs,,qekrsu,232
 Underside,u-/-s-i,Usio,o,qiosu,0
 Undersides,u-/-s-i-s,Usis,,qisu,0
 Underscore,u-\-s-k-o-r,Uskor,,qkorsu,1
