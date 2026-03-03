@@ -355,6 +355,7 @@ Allotments,a-l-o-t-m-s,Alotms,,qalmost,0
 Allot,a-l-o-t,Aloto,o,qalot,0
 Allots,a-l-o-t-s,Alots,,qalost,0
 Allows,a-l-s,Als,,qals,90619
+Aloud,a-l-au,Alw,,qalw,
 Allusions,a-l-sh-s,Alzs,,qalsz,361
 Amaze,a-m-a-s,Amas,,qams,84
 Amazed,a-m-a-s-d,Amasd,,qadms,84
@@ -599,6 +600,13 @@ Associates,a-s2-o-sh-t-s,Asozts,,qaostz,19
 Associative,a-s2-o-sh-t-v,Asoztv,,qaostvz,19
 Association,a-s2-o-sh-sh,Asozz,,qaosz,8
 Associations,a-s2-o-sh-sh-s,Asozzs,,qaosz,8
+Aspired,a-s-p-i-d,Aspid,,qaips,1
+Aspiring,a-s-p-i-\-h,Aspig,,qaips,1
+Aspires,a-s-p-i-s,Aspis,,qaips,1
+Aspiration,a-s-p-i-sh,Aspiz,,qaipsz,1
+Aspirational,a-s-p-i-sh-l,Aspizl,,qailpsz,1
+Aspirationally,a-s-p-i-sh-l-e,Aspizle,,qaeilpsz,1
+Aspirations,a-s-p-i-sh-s,Aspizs,,qaipsz,1
 Assessed,a2-ss-d,Assd,,qads,4
 Assessing,a2-ss-\-h,Assg,,qags,4
 Assessment,a2-ss-m,Assm,,qams,2
@@ -772,6 +780,10 @@ Balancing,b-a-l-\-h,Balg,,qabgl,73
 Balancer,b-a-l-r,Balr,,qablr,522
 Balancers,b-a-l-r-s,Balrs,,qablrs,522
 Balances,b-a-l-s,Bals,,qabls,73
+Banner,b-a-n-r,Banr,,qabnr,
+Bannered,b-a-n-r-d,Banrd,,qabnr,
+Bannering,b-a-n-r-\-h,Banrg,,qabnr,
+Banners,b-a-n-r-s,Banrs,,qabnrs,
 Baseline,b-a-s-l,Basl,,qabls,0
 Baselined,b-a-s-l-d,Basld,,qabls,0
 Baselining,b-a-s-l-\-h,Baslg,,qabls,0
@@ -956,6 +968,11 @@ Borrower,b-o-r-o-r,Boror,,qbor,0
 Borrowers,b-o-r-o-r-s,Borors,,qbors,0
 Borrows,b-o-r-o-s,Boros,,qbors,0
 Biographers,b-/-o-r-s,Bors,,qbors,0
+Bottled,b-o-t-l-d,Botld,,qblot,3
+Bottling,b-o-t-l-\-h,Botlg,,qblot,3
+Bottler,b-o-t-l-r,Botlr,,qblort,3
+Bottlers,b-o-t-l-r-s,Botlrs,,qblorst,3
+Bottles,b-o-t-l-s,Botls,,qblost,3
 Bottomed,b-o-tm-d,Botmd,,qbdmot,202
 Bottoming,b-o-tm-\-h,Botmg,,qbgmot,202
 Bottomless,b-o-tm-l,Botml,,qblmot,202
@@ -975,6 +992,8 @@ Bypasses,b-p-a-s-s,Bpass,,qabps,4
 Blood pressure,b-p-u,Bpu,,qbpu,0
 Blood pressures,b-p-u-s,Bpus,,qbpsu,0
 Breaking,br-a-k-\-h,Brakg,,qabgkr,2
+Breakthrough,b-r-a-k-th,Brakh,,qabhkr,
+Breakthroughs,b-r-a-k-th-s,Brakhs,,qabhkrs,
 Brainwash,br-a-n-u-o-sh,Branuoz,,qabnoruz,2
 Brainwashed,br-a-n-u-o-sh-d,Branuozd,,qabdnoruz,2
 Brainwashing,br-a-n-u-o-sh-\-h,Branuozg,,qabgnoruz,2
@@ -1113,9 +1132,9 @@ Chased,ch-a-s-d,Casd,,qacds,13
 Chasing,ch-a-s-\-h,Casg,,qacgs,13
 Chaser,ch-a-s-r,Casr,,qacrs,0
 Chases,ch-a-s-s,Cass,,qacs,13
-Chated,ch-a-t-d,Catd,,qacdt,0
+Chatted,ch-a-t-d,Catd,,qacdt,0
 Chatty,ch-a-t-e,Cate,,qacet,0
-Chating,ch-a-t-\-h,Catg,,qacgt,0
+Chatting,ch-a-t-\-h,Catg,,qacgt,0
 Chatter,ch-a-t-r,Catr,,qacrt,0
 Chattery,ch-a-t-r-e,Catre,,qacert,0
 Chatterer,ch-a-t-r-r,Catrr,,qacrt,0
@@ -1419,10 +1438,12 @@ Diagnostic,d-i-g-n-\-s-t,Dignst,,qdginst,10
 Diagnostics,d-i-g-n-\-s-t-s,Dignsts,,qdginst,10
 Diagrams,d-i-\-g-s,Digso,o,qdgios,1
 Diacritical,d-i-k-r-/-y-a,Dikry,,qdikry,0
+Dial,d-i-l,Dil,,qdil,
 Dilate,d-i-l-a,Dila,,qadil,0
 Dilated,d-i-l-a-d,Dilad,,qadil,0
 Dilating,d-i-l-a-\-h,Dilag,,qadgil,0
 Dilates,d-i-l-a-s,Dilas,,qadils,0
+Dialed,d-i-l-d,Dild,,qdil,
 Dialect,d-i-l-e-k,Dilek,,qdeikl,0
 Dialectic,d-i-l-e-k-k,Dilekk,,qdeikl,0
 Dialectics,d-i-l-e-k-k-s,Dilekks,,qdeikls,0
@@ -1438,6 +1459,8 @@ Dialogued,d-i-l-o-g-d,Dilogod,o,qdgilo,0
 Dialoguing,d-i-l-o-g-\-h,Dilogog,o,qdgilo,0
 Dialogs,d-i-l-o-g-s,Dilogs,,qdgilos,0
 Dialogues,d-i-l-o-g-s,Dilogso,o,qdgilos,0
+Dialing,d-i-l-\-h,Dilg,,qdil,
+Dials,d-i-l-s,Dils,,qdils,
 Dilation,d-i-l-a-sh,Dilz,,qdilz,0
 Dilations,d-i-l-a-sh-s,Dilzs,,qdilsz,0
 Diameters,d-i-m-e-t-e2-s,Dimetes,,qdeimst,0
@@ -4578,6 +4601,8 @@ Creatures,k-r-ea-t-r-s,Kretrs,,qekrst,5
 Creates,k-r-ea-t-s,Krets,,qekrst,2369
 Criticized,k-r-e-t-ss-d,Kretssd,,qdekrst,1
 Criticizing,k-r-e-t-ss-\-h,Kretssg,,qegkrst,1
+Criticism,k-r-e-t-ss-m,Kretssm,,qekmrst,1
+Criticisms,k-r-e-t-ss-m-s,Kretssms,,qekmrst,1
 Criticizes,k-r-e-t-ss-s,Kretsss,,qekrst,1
 Criticisms,k-r-e-t-ss-s,Kretssso,o,qekorst,1
 Creative,k-r-ea-df,Kretv,,qekrtv,3
@@ -4690,6 +4715,11 @@ Constructs,k-s2-/-k-s,Ksks,,qks,8
 Constructive,k-s2-/-k-v,Kskv,,qksv,8
 Constructively,k-s2-/-k-v-e,Kskve,,qeksv,8
 Constructions,k-s2-/-k-sh-s,Kskzs,,qksz,0
+Consummate,k-s2-m-a-t,Ksmat,,qakmst,22
+Consummated,k-s2-m-a-t-d,Ksmatd,,qakmst,22
+Consummating,k-s2-m-a-t-\-h,Ksmatg,,qakmst,22
+Consummates,k-s2-m-a-t-s,Ksmats,,qakmst,22
+Consummatation,k-s2-m-a-t-sh,Ksmatz,,qakmstz,22
 Consumed,k-s2-m-d,Ksmd,,qdkms,22
 Consuming,k-s2-m-\-h,Ksmg,,qgkms,22
 Consumer,k-s2-m-r,Ksmr,,qkmrs,1
@@ -4831,6 +4861,10 @@ Convincingly,k-v-e-n-s-\-h-e,Kvenshe,,qehknsv,1
 Convinces,k-v-e-n-s-s,Kvenss,,qeknsv,10
 Conversion,k-v-e-r-sh,Kverz,,qekrvz,8
 Conversions,k-v-e-r-sh-s,Kverzs,,qekrsvz,2
+Conversate,k-v-e-s-a-t,Kvesat,,qaekstv,48
+Conversated,k-v-e-s-a-t-d,Kvesatd,,qaekstv,48
+Conversating,k-v-e-s-a-t-\-h,Kvesatg,,qaekstv,48
+Conversates,k-v-e-s-a-t-s,Kvesats,,qaekstv,48
 Conversed,k-v-e-s-d,Kvesd,,qdeksv,4
 Conversely,k-v-e-s-e,Kvese,,qeksv,4
 Conversing,k-v-e-s-\-h,Kvesg,,qegksv,4
@@ -5072,6 +5106,8 @@ Logical,l-o-j-k-l,Lojkl,,qjklo,90371
 Logically,l-o-j-k-l-e,Lojkle,,qejklo,90371
 Logical,l-o-j-/-k,Lojko,o,qjklo,1
 Locked,l-o-k-d,Lokd,,qdklo,329
+Lockdown,l-o-k-dn,Lokdn,,qdklno,329
+Lockdowns,l-o-k-dn-s,Lokdns,,qdklnos,329
 Located,l-o-k-d,Lokdo,o,qdklo,329
 Locking,l-o-k-\-h,Lokg,,qgklo,329
 Locating,l-o-k-\-h,Lokgo,o,qgklo,329
@@ -5188,6 +5224,7 @@ Marking,m-a-r-k-\-h,Markg,,qagkmr,17
 Massaged,m-a-s-a-sh-d,Masazd,,qadmsz,0
 Massaging,m-a-s-a-sh-\-h,Masazg,,qagmsz,0
 Massages,m-a-s-a-sh-s,Masazs,,qamsz,0
+Masochism,m-a-s-k-s2-m,Masksm,,qakms,0
 Masquerade,m-a-s-k-r-a-d,Masqrad,,qadmqrs,919
 Masqueraded,m-a-s-k-r-a-d-d,Masqradd,,qadmqrs,919
 Masquerading,m-a-s-k-r-a-d-\-h,Masqradg,,qadgmqrs,919
@@ -6236,6 +6273,10 @@ Nights,n-i-s,Niso,o,qinos,581
 Naive,n-i-v,Niv,,qinv,581
 Naively,n-i-v-e,Nive,,qeinv,581
 Naivete,n-i-v-t-a,Nivta,,qaintv,0
+Ingest,n-j-e-s,Njes,,qejns,0
+Ingested,n-j-e-s-d,Njesd,,qejns,0
+Ingesting,n-j-e-s-\-h,Njesg,,qejns,0
+Ingests,n-j-e-s-s,Njess,,qejns,0
 New jersey,n-~-j,Nji,i,qijn,0
 Injected,n-j-k-d,Njkd,,qdjkn,633
 Injecting,n-j-k-\-h,Njkg,,qgjkn,633
@@ -6536,6 +6577,9 @@ Unrevoker,n-r-v-k-r,Nrvkr,,qknrv,10
 Unrevokers,n-r-v-k-r-s,Nrvkrs,,qknrsv,10
 Unrevokes,n-r-v-k-s,Nrvks,,qknrsv,10
 Insane,n-s2-a-n,Nsan,,qans,91378
+Insanely,n-s2-a-n-e,Nsane,,qaens,91378
+Insanity,n-s2-a-n-t-e,Nsante,,qaenst,91378
+Insanities,n-s2-a-n-t-e-s,Nsantes,,qaenst,91378
 Unsatisfactory,n-s2-a-t,Nsat,,qanst,64
 Unsatisfied,n-s2-a-t-d,Nsatd,,qadnst,64
 Interested,^-n-\-s-d,Nsd,,qdns,4
@@ -8727,6 +8771,8 @@ Wrestler,r-e-s-l-r,Reslr,,qelrs,0
 Wrestlers,r-e-s-l-r-s,Reslrs,,qelrs,0
 Wrestles,r-e-s-l-s,Resls,,qelrs,0
 Rests,r-e-s-s,Ress,,qers,
+Realistic,r-e-\-s-t-k,Restk,,qekrst,6
+Realistically,r-e-\-s-t-k-e,Restke,,qekrst,6
 Reissue,r-e-sh-u,Rezu,,qeruz,1696
 Reissued,r-e-sh-u-d,Rezud,,qeruz,1696
 Reissuing,r-e-sh-u-\-h,Rezug,,qeruz,1696
@@ -9509,6 +9555,8 @@ Reestablished,r-e-s2-t-b-d,Rstbd,,qbdrst,0
 Reestablishing,r-e-s2-t-b-\-h,Rstbg,,qbgrst,0
 Reestablishes,r-e-s2-t-b-s,Rstbs,,qbrst,0
 Realistically,r-e-\-s-t-e,Rste,,qerst,6
+Realistic,r-e-\-s-t-k,Rstk,,qkrst,6
+Realistically,r-e-\-s-t-k-e,Rstke,,qekrst,6
 Realistic,r-e-\-s-t,Rsto,o,qorst,6
 Restore,r-s-t-o-r,Rstor,,qorst,94
 Restorative,r-s-t-o-r-a-df,Rstoratv,,qaorstv,0
@@ -9549,6 +9597,10 @@ Retainers,r-e-tn-r-s,Rtnrs,,qnrst,0
 Retains,r-e-tn-s,Rtns,,qnrst,0
 Retention,r-tn-sh,Rtnz,,qnrtz,17
 Retreat,^-r-\-t,Rto,o,qort,2
+Retreat,^-r-\-t-r-e,Rtre,,qert,2
+Retreated,^-r-\-t-r-e-d,Rtred,,qert,2
+Retreating,^-r-\-t-r-e-\-h,Rtreg,,qert,2
+Retreats,^-r-\-t-r-e-s,Rtres,,qerst,2
 Returns,r-e-t-s,Rts,,qrst,87
 Retreats,^-r-\-t-s,Rtso,o,qorst,2
 Reusably,r-e-u-\-b-e,Rubeo,o,qbeoru,0
@@ -10743,6 +10795,10 @@ Subtitles,^-s-\-t-i-t-s,Stits,,qist,10
 Stranger,s2-t-j-r,Stjr,,qjrst,80
 Strangers,s2-t-j-r-s,Stjrs,,qjrst,80
 Statement,s2-t-m,Stm,,qmst,170
+Stumble,s-t-m-b,Stmb,,qbmst,
+Stumbled,s-t-m-b-d,Stmbd,,qbmst,
+Stumbling,s-t-m-b-\-h,Stmbg,,qbmst,
+Stumbles,s-t-m-b-s,Stmbs,,qbmst,
 Stimulant,s-tm-l-a-nt,Stmlant,,qalmnst,0
 Stimulants,s-tm-l-a-nt-s,Stmlants,,qalmnst,0
 Stimulus,s-tm-\-l-u-s,Stmlus,,qlmstu,0
@@ -10967,6 +11023,8 @@ Tabularized,t-a-bl-r-i-s-d,Tablrisd,,qabdilrst,0
 Tabularizing,t-a-bl-r-i-s-\-h,Tablrisg,,qabgilrst,0
 Tabularizes,t-a-bl-r-i-s-s,Tablriss,,qabilrst,0
 Tables,t-a-b-l-s,Tabls,,qablst,1136
+Tablet,t-a-b-l-t,Tablt,,qablt,1136
+Tablets,t-a-b-l-t-s,Tablts,,qablst,1136
 Tables,t-a-b-s,Tabso,o,qabost,38
 Tabulate,t-a-b-\-u,Tabu,,qabtu,0
 Tabulated,t-a-b-\-u-d,Tabud,,qabdtu,0
