@@ -25,6 +25,7 @@ class Chorder:
             # ── time and date helpers ───────────────────
             "output_time": self._macros.output_time,    
             "output_date": self._macros.output_date,    
+            "output_tab": self._macros.output_tab,    
 
             # -- UI Helpers ─────────────────────────
             "gregg_dict_lookup_word": self.comms_proxy.signal_gregg_dict_lookup_word, 
