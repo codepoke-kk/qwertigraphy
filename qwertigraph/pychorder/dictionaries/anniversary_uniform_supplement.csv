@@ -1451,6 +1451,7 @@ Dialectical,d-i-l-e-k-l,Dilekl,,qdeikl,0
 Dialectically,d-i-l-e-k-l-e,Dilekle,,qdeikl,0
 Dialecticals,d-i-l-e-k-l-s,Dilekls,,qdeikls,0
 Dialects,d-i-l-e-k-s,Dileks,,qdeikls,0
+Dialing,d-i-l-\-h,Dilg,,qdil,
 Dialog,d-i-l-o-g,Dilog,,qdgilo,0
 Dialogued,d-i-l-o-g-d,Dilogd,,qdgil,0
 Dialoguing,d-i-l-o-g-\-h,Dilogg,,qdgil,0
@@ -1459,7 +1460,6 @@ Dialogued,d-i-l-o-g-d,Dilogod,o,qdgilo,0
 Dialoguing,d-i-l-o-g-\-h,Dilogog,o,qdgilo,0
 Dialogs,d-i-l-o-g-s,Dilogs,,qdgilos,0
 Dialogues,d-i-l-o-g-s,Dilogso,o,qdgilos,0
-Dialing,d-i-l-\-h,Dilg,,qdil,
 Dials,d-i-l-s,Dils,,qdils,
 Dilation,d-i-l-a-sh,Dilz,,qdilz,0
 Dilations,d-i-l-a-sh-s,Dilzs,,qdilsz,0
@@ -1657,6 +1657,7 @@ Domaining,d-o-mn-\-h,Domng,,qdgmno,322
 Domains,d-o-mn-s,Domns,,qdmnos,322
 Dominions,d-o-mn-u-n-s,Domnuns,,qdmnosu,0
 Dominations,d-o-mn-sh-s,Domnzs,,qdmnosz,322
+Dollars and cents,d-o-/-ss,Doss,,qdos,0
 Depicted,d-p-k-d,Dpkd,,qdkp,0
 Depicting,d-p-k-\-h,Dpkg,,qdkp,0
 Depicts,d-p-k-s,Dpks,,qdkps,0
@@ -9308,6 +9309,8 @@ Repose,r-p-o,Rpoo,o,qopr,43
 Repository,r-p-o-\-r-e,Rpore,,qeopr,3
 Repositories,r-p-o-\-r-e-s,Rpores,,qeoprs,3
 Reposes,r-p-o-s,Rpos,,qoprs,43
+Repository,r-p-o-s-t-r-e,Rpostre,,qeoprst,3
+Repositories,r-p-o-s-t-r-e-s,Rpostres,,qeoprst,3
 Reportable,r-pr-b,Rprb,,qbpr,600
 Reprobate,r-pr-b-a-t,Rprbat,,qabprt,0
 Reprobates,r-pr-b-a-t-s,Rprbats,,qabprst,0
