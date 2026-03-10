@@ -21,3 +21,7 @@ class Macros:
         now = datetime.datetime.now().strftime("%H:%M:%S")
         self._log.debug(f"Writing now as {now}")
         keyboard.write(now)    
+
+    def output_tab(self) -> None:
+        self._log.debug("Writing tab character")
+        keyboard.write("\t")

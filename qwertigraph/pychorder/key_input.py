@@ -23,6 +23,8 @@ class Key_Input:
         mouse.on_right_click(lambda: self.key_queue.clear_queue("Mouse right clicked"))
                 
         self._chorder = Chorder(self.comms_proxy)
+        # Numpad chords need 3 keys to avoid accidental activation when using the normal keyboard 
+        # There's no way to distinguish numpad from normal numbers 
         self.CHORD_MAP = {
             "t+1": {"keys": 2, "backspaces": 1, "function": "output_time"},
             "d+1": {"keys": 2, "backspaces": 1, "function": "output_date"},
@@ -40,7 +42,17 @@ class Key_Input:
             "b+6": {"keys": 2, "backspaces": 1, "function": "output_username_b"},
             "b+7": {"keys": 2, "backspaces": 1, "function": "output_password_c"},
             "b+8": {"keys": 2, "backspaces": 1, "function": "output_username_password_c"},
-            "b+9": {"keys": 2, "backspaces": 1, "function": "output_username_c"}
+            "b+9": {"keys": 2, "backspaces": 1, "function": "output_username_c"},
+            "0+1": {"keys": 2, "backspaces": 1, "function": "output_password_a"},
+            "0+2": {"keys": 2, "backspaces": 1, "function": "output_username_password_a"},
+            "0+3": {"keys": 2, "backspaces": 1, "function": "output_username_a"},
+            "0+4": {"keys": 2, "backspaces": 1, "function": "output_password_b"},
+            "0+5": {"keys": 2, "backspaces": 1, "function": "output_username_password_b"},
+            "0+6": {"keys": 2, "backspaces": 1, "function": "output_username_b"},
+            "0+7": {"keys": 2, "backspaces": 1, "function": "output_password_c"},
+            "0+8": {"keys": 2, "backspaces": 1, "function": "output_username_password_c"},
+            "0+9": {"keys": 3, "backspaces": 1, "function": "output_username_c"},
+            "1+2+3": {"keys": 3, "backspaces": 2, "function": "output_tab"},
         }
         self.registered_chords = []
         for combo, token in self.CHORD_MAP.items():
