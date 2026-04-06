@@ -2065,9 +2065,10 @@ Disciplining,d-s-pl-e-n-\-h,Dspleng,,qdeglnps,0
 Disciplinary,d-s-pl-e-n-r-e,Dsplenre,,qdelnprs,0
 Disciplinarian,d-s-pl-e-n-r-e-n,Dsplenren,,qdelnprs,0
 Disciplines,d-s-pl-e-n-s,Dsplens,,qdelnps,0
-Dispensible,d-s-p-n-s-b,Dspnsb,,qbdnps,0
-Dispensibly,d-s-p-n-s-b-e,Dspnsbe,,qbdenps,0
+Dispensable,d-s-p-n-s-b,Dspnsb,,qbdnps,0
+Dispensably,d-s-p-n-s-b-e,Dspnsbe,,qbdenps,0
 Dispensability,d-s-p-n-s-\-b,Dspnsbo,o,qbdnops,0
+Dispensables,d-s-p-n-s-b-s,Dspnsbs,,qbdnps,0
 Dispensed,d-s-p-n-s-d,Dspnsd,,qdnps,0
 Dispensing,d-s-p-n-s-\-h,Dspnsg,,qdnps,0
 Dispensor,d-s-p-n-s-r,Dspnsr,,qdnprs,0
@@ -6067,9 +6068,9 @@ Indecipherable,n-d-s2-i-f-b,Ndsifb,,qbdfins,0
 Indecipherably,n-d-s2-i-f-b-e,Ndsifbe,,qbdefins,0
 Indescribably,nt-s2-k-r-b-e,Ndskrbe,,qbdeknrs,0
 Undisciplined,n-d-s-pl-e-n-d,Ndsplend,,qdelnps,0
-Indispensible,n-d-s-p-n-s-b,Ndspnsb,,qbdnps,0
+Indispensable,n-d-s-p-n-s-b,Ndspnsb,,qbdnps,0
 Indispensability,n-d-s-p-n-s-\-b,Ndspnsbo,,qbdnops,0
-Indispeneables,n-d-s-p-n-s-b-s,Ndspnsbs,,qbdnps,0
+Indispensables,n-d-s-p-n-s-b-s,Ndspnsbs,,qbdnps,0
 Indispensibles,nt-s-p-s,Ndsps,,qdnps,0
 Inducted,nt-u-k-d,Ndukd,,qdknu,0
 Inducting,nt-u-k-\-h,Ndukg,,qdgknu,0
