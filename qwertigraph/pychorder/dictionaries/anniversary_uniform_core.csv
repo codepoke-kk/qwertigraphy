@@ -5609,7 +5609,6 @@ Opposes,o-p-o-s,Oposo,o,qops,12
 Opposition,o-p-o-sh,Opoz,,qopz,12
 Opportunity,o-pr,Opr,,qopr,81
 Opera,o-pr-a,Opra,,qaopr,10
-Operate,o-pr-a,Oprao,o,qaopr,10
 Opprobrium,o-pr-br-m,Oprbrm,,qbmopr,0
 Operetta,o-pr-e-t-a,Opreta,,qaeoprt,0
 Hope to receive,o-pr-s-e,Oprse,,qeoprs,0
@@ -6523,7 +6522,7 @@ Significant,s2-g,Sg,,qgs,76
 Signal,s2-g-n,Sgn,,qgns,1
 As great as,s2-g-r-s,Sgrs,,qgrs,0
 As good as,s2-g-s,Sgs,,qgs,76
-Is the,s2-th,Sh,,qhs,2
+Is the,s2-th,Shq,q,qhs,2
 Scientific,s2-ia-n-df,Siantf,,qafinst,0
 Sides,s2-i-d-s,Sids,,qdis,11
 Cyclone,s2-i-k-l-o-n,Siklon,,qiklnos,0
