@@ -3050,6 +3050,10 @@ Folky,f-o-k-e,Foke,,qefko,46
 Folks,f-o-k-s,Foks,,qfkos,46
 Foldered,f-o-ld-r-d,Foldrd,,qdflor,32
 Foldering,f-o-ld-r-\-h,Foldrg,,qdfglor,32
+Folderize,f-o-ld-r-i-s,Foldris,,qdfilors,32
+Folderized,f-o-ld-r-i-s-d,Foldrisd,,qdfilors,32
+Folderizing,f-o-ld-r-i-s-\-h,Foldrisg,,qdfilors,32
+Folderizes,f-o-ld-r-i-s-s,Foldriss,,qdfilors,32
 Folders,f-o-ld-r-s,Foldrs,,qdflors,32
 Phoning,f-o-n-\-h,Fong,,qfgno,299
 Phones,f-o-n-s,Fons,,qfnos,299
@@ -4958,10 +4962,11 @@ Convenience,k-v-e-n-n-s,Kvenns,,qeknsv,42
 Conveniences,k-v-e-n-n-s-s,Kvennss,,qeknsv,42
 Convenient,k-v-e-n-nt,Kvennt,,qekntv,42
 Conveniently,k-v-e-n-nt-e,Kvennte,,qekntv,42
-Convenes,k-v-e-n-s,Kvens,,qeknsv,42
+Convince,k-v-e-n-s,Kvens,,qeknsv,10
 Convinced,k-v-e-n-s-d,Kvensd,,qdeknsv,10
 Convincing,k-v-e-n-s-\-h,Kvensg,,qegknsv,10
 Convincingly,k-v-e-n-s-\-h-e,Kvenshe,,qehknsv,1
+Convenes,k-v-e-n-s,Kvenso,o,qeknosv,42
 Convinces,k-v-e-n-s-s,Kvenss,,qeknsv,10
 Conversion,k-v-e-r-sh,Kverz,,qekrvz,8
 Conversions,k-v-e-r-sh-s,Kverzs,,qekrsvz,2
@@ -10352,6 +10357,12 @@ Subjective,s-j-v,Sjv,,qjsv,216
 Subjectively,s-j-v-e,Sjve,,qejsv,216
 Subjection,s-j-sh,Sjz,,qjsz,216
 Subjections,s-j-sh-s,Sjzs,,qjsz,0
+Scalable,s2-k-a-l-b,Skalb,,qabkls,1
+Scalably,s2-k-a-l-b-e,Skalbe,,qabekls,1
+Scalability,s2-k-a-l-\-b,Skalbo,o,qabklos,1
+Scaled,s2-k-a-l-d,Skald,,qakls,1
+Scaling,s2-k-a-l-\-h,Skalg,,qakls,1
+Scales,s2-k-a-l-s,Skals,,qakls,1
 Scan,s-k-a-n,Skan,,qakns,1
 Scanned,s-k-a-n-d,Skand,,qadkns,1
 Scandal,s-k-a-nd-l,Skandl,,qadklns,0
