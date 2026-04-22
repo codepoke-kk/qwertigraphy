@@ -3028,6 +3028,14 @@ Formidability,f-m-e-d-\-b,Fmedbo,,qbdefmo,44
 Formidables,f-m-e-d-b-s,Fmedbs,,qbdefms,44
 Forming,f-m-\-h,Fmg,,qfgm,6294
 Formal,f-m-\-l,Fml,,qflm,0
+Formula,f-m-l-a,Fmla,,qaflm,0
+Formulas,f-m-l-a-s,Fmlas,,qaflms,0
+Formulate,f-m-l-a-t,Fmlat,,qaflmt,0
+Formulated,f-m-l-a-t-d,Fmlatd,,qaflmt,0
+Formulating,f-m-l-a-t-\-h,Fmlatg,,qaflmt,0
+Formulates,f-m-l-a-t-s,Fmlats,,qaflmst,0
+Formulation,f-m-l-a-t-sh,Fmlatz,,qaflmtz,0
+Formulations,f-m-l-a-t-sh-s,Fmlatzs,,qaflmstz,0
 Formals,f-m-l-s,Fmls,,qflms,1
 Formality,f-m-l-t-e,Fmlte,,qeflmt,0
 Federated malay states,f-m-~-s,Fmso,o,qfmos,0
@@ -4089,6 +4097,8 @@ Conformable,k-f-m-b,Kfmb,,qbfkm,17
 Conformably,k-f-m-b-e,Kfmbe,,qbefkm,0
 Conformed,k-f-m-d,Kfmd,,qdfkm,17
 Conforming,k-f-m-\-h,Kfmg,,qfgkm,17
+Conformant,k-f-m-nt,Kfmnt,,qfkmnt,17
+Conformantly,k-f-m-nt-e,Kfmnte,,qefkmnt,17
 Conforms,k-f-m-s,Kfms,,qfkms,17
 Conformity,k-f-mt,Kfmt,,qfkmt,0
 Conformities,k-f-mt-s,Kfmts,,qfkmst,0
@@ -7578,6 +7588,9 @@ Overviewed,^-o-\v-u-d,Ovud,,qdouv,28
 Overviewing,^-o-\v-u-\-h,Ovug,,qgouv,28
 Overviews,^-o-\v-u-s,Ovus,,qosuv,28
 Officially,o-sh-l-e,Ozle,,qeloz,4
+Ocean,o-sh-n,Ozn,,qnoz,37
+Oceanic,o-sh-n-k,Oznk,,qknoz,37
+Oceans,o-sh-n-s,Ozns,,qnosz,37
 Officially,o-sh-ye,Ozy,,qoyz,4
 Para-,P-a->,Pa>,,q>ap,0
 Payback,p-a-b-a-k,Pabak,,qabkp,1
@@ -12268,6 +12281,15 @@ Versioned,v-e2-z-d,Vezd,,qdevz,427
 Visioned,v-e-sh-d,Vezdo,o,qdeovz,25
 Versioning,v-e2-z-\-h,Vezg,,qegvz,427
 Visioning,v-e-sh-\-h,Vezgo,o,qegovz,25
+Visual,v-e-sh-l,Vezl,,qelvz,3
+Visually,v-e-sh-l-e,Vezle,,qelvz,3
+Visualize,v-e-sh-l-i-s,Vezlis,,qeilsvz,3
+Visualized,v-e-sh-l-i-s-d,Vezlisd,,qeilsvz,3
+Visualizing,v-e-sh-l-i-s-\-h,Vezlisg,,qeilsvz,3
+Visualizes,v-e-sh-l-i-s-s,Vezliss,,qeilsvz,3
+Visualization,v-e-sh-l-i-s-sh,Vezlisz,,qeilsvz,3
+Visualizations,v-e-sh-l-i-s-sh-s,Vezliszs,,qeilsvz,3
+Visuals,v-e-sh-l-s,Vezls,,qelsvz,3
 Vision,v-e-sh,Vezo,o,qeovz,1146
 Versions,v-e2-z-s,Vezs,,qesvz,427
 Visions,v-e-sh-s,Vezso,o,qeosvz,25
