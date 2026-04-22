@@ -206,6 +206,8 @@ Adjudged,a-j-j-d,Ajjd,,qadj,0
 Adjudging,a-j-j-\-h,Ajjg,,qagj,0
 Adjudges,a-j-j-s,Ajjs,,qajs,0
 Adjectives,a-j-k-v-s,Ajkvs,,qajksv,0
+Agentlessly,a-j-l-e,Ajle,,qaejl,112
+Agentless,a-j-l,Ajlo,o,qajlo,112
 Assistant general manager,a-j-~-m,Ajm,,qajm,0
 Ages,a-j-s,Ajs,,qajs,112
 Agencies,a-j-s-e-s,Ajses,,qaejs,0
@@ -3038,6 +3040,14 @@ Formidability,f-m-e-d-\-b,Fmedbo,,qbdefmo,44
 Formidables,f-m-e-d-b-s,Fmedbs,,qbdefms,44
 Forming,f-m-\-h,Fmg,,qfgm,6294
 Formal,f-m-\-l,Fml,,qflm,0
+Formula,f-m-l-a,Fmla,,qaflm,0
+Formulas,f-m-l-a-s,Fmlas,,qaflms,0
+Formulate,f-m-l-a-t,Fmlat,,qaflmt,0
+Formulated,f-m-l-a-t-d,Fmlatd,,qaflmt,0
+Formulating,f-m-l-a-t-\-h,Fmlatg,,qaflmt,0
+Formulates,f-m-l-a-t-s,Fmlats,,qaflmst,0
+Formulation,f-m-l-a-t-sh,Fmlatz,,qaflmtz,0
+Formulations,f-m-l-a-t-sh-s,Fmlatzs,,qaflmstz,0
 Formals,f-m-l-s,Fmls,,qflms,1
 Formality,f-m-l-t-e,Fmlte,,qeflmt,0
 Federated malay states,f-m-~-s,Fmso,o,qfmos,0
@@ -4104,6 +4114,8 @@ Conformable,k-f-m-b,Kfmb,,qbfkm,17
 Conformably,k-f-m-b-e,Kfmbe,,qbefkm,0
 Conformed,k-f-m-d,Kfmd,,qdfkm,17
 Conforming,k-f-m-\-h,Kfmg,,qfgkm,17
+Conformant,k-f-m-nt,Kfmnt,,qfkmnt,17
+Conformantly,k-f-m-nt-e,Kfmnte,,qefkmnt,17
 Conforms,k-f-m-s,Kfms,,qfkms,17
 Conformity,k-f-mt,Kfmt,,qfkmt,0
 Conformities,k-f-mt-s,Kfmts,,qfkmst,0
@@ -4545,6 +4557,10 @@ Compiling,k-p-i-l-\-h,Kpilg,,qgiklp,18
 Compiler,k-p-i-l-r,Kpilr,,qiklpr,10
 Compilers,k-p-i-l-r-s,Kpilrs,,qiklprs,10
 Compiles,k-p-i-l-s,Kpils,,qiklps,18
+Copilot,k-p-i-l-t,Kpilt,,qiklpt,92396
+Copiloted,k-p-i-l-t-d,Kpiltd,,qiklpt,92396
+Copiloting,k-p-i-l-t-\-h,Kpiltg,,qiklpt,92396
+Copilots,k-p-i-l-t-s,Kpilts,,qiklpst,92396
 Compilation,k-p-i-l-sh,Kpilz,,qiklpz,18
 Compilations,k-p-i-l-sh-s,Kpilzs,,qiklpsz,0
 Compel,k-pl,Kpl,,qklp,16
@@ -5716,6 +5732,9 @@ Modelling,m-o-d-l-\-h,Modlg,,qdglmo,1
 Module,m-o-d-\-l,Modlo,o,qdlmo,86
 Models,m-o-d-l-s,Modls,,qdlmos,1
 Modules,m-o-d-\-l-s,Modlsqk,,qdlmos,86
+Modern,m-o-dn,Modn,,qdmno,0
+Moderns,m-o-dn-s,Modns,,qdmnos,0
+Modernity,m-o-dn-t-e,Modnte,,qdemnot,0
 Momentarily,m-o-m-r-ye,Momry,,qmory,0
 Morality,m-o-r-/-l,Morlo,o,qlmor,0
 Moralities,m-o-r-/-l-s,Morlos,o,qlmors,0
@@ -6480,6 +6499,8 @@ Unclaimed,n-k-l-a-mt,Nklamd,,qadklmn,7
 Unclaimeds,n-k-l-a-mt-s,Nklamds,,qadklmns,7
 Uncontrolable,^-n-k-/-l-b,Nklb,,qbkln,1
 Uncontrolled,^-n-k-/-l-d,Nkld,,qdkln,1
+Unclear,n-k-l-e,Nkle,,qekln,618
+Unclearly,n-k-l-e-e,Nklee,,qekln,618
 Unclean,n-k-l-e-n,Nklen,,qekln,165
 Uncleanly,n-k-l-e-n-e,Nklene,,qekln,165
 Incline,n-k-l-i-n,Nklin,,qikln,91109
@@ -7611,6 +7632,9 @@ Overviewed,^-o-\v-u-d,Ovud,,qdouv,28
 Overviewing,^-o-\v-u-\-h,Ovug,,qgouv,28
 Overviews,^-o-\v-u-s,Ovus,,qosuv,28
 Officially,o-sh-l-e,Ozle,,qeloz,4
+Ocean,o-sh-n,Ozn,,qnoz,37
+Oceanic,o-sh-n-k,Oznk,,qknoz,37
+Oceans,o-sh-n-s,Ozns,,qnosz,37
 Officially,o-sh-ye,Ozy,,qoyz,4
 Para-,P-a->,Pa>,,q>ap,0
 Payback,p-a-b-a-k,Pabak,,qabkp,1
@@ -7827,6 +7851,10 @@ Python3,p-i-th-3,Pih3,,hip3,62
 Pythonic,p-i-th-k,Pihk,,qhikp,0
 Pythonically,p-i-th-k-e,Pihke,,qehikp,0
 Pythons,p-i-th-s,Pihs,,qhips,62
+Pilot,p-i-l-t,Pilt,,qilpt,92396
+Piloted,p-i-l-t-d,Piltd,,qilpt,92396
+Piloting,p-i-l-t-\-h,Piltg,,qilpt,92396
+Pilots,p-i-l-t-s,Pilts,,qilpst,92396
 Piped,p-i-p-d,Pipd,,qdip,22
 Piping,p-i-p-\-h,Pipg,,qgip,22
 Pipeline,p-i-p-l,Pipl,,qilp,20
@@ -8640,7 +8668,7 @@ Puzzlers,p-u-s2-l-r-s,Puslrs,,qlprsu,0
 Puzzles,p-u-s2-l-s,Pusls,,qlpsu,1
 Poorest,p-u-s-t,Pust,,qpstu,0
 Poorhouse,p-u-u-s2-^-^-^-h,Puus,,qpsu,0
-Powered,p-a-u-d,Pwd,,qdpw,86
+Powered,p-a-u-d,Pwdo,o,qdopw,86
 Powerfully,p-a-u-f-e,Pwfe,,qefpw,36
 Powering,p-a-u-\-h,Pwg,,qgpw,86
 Powerhouse,p-a-u-h-u-s,Pwhus,,qhpsuw,86
@@ -9474,6 +9502,8 @@ Wrongness,r-o-ng-n-e-s,Rognes,,qegnors,975
 Wrongnesses,r-o-ng-n-e-s-s,Rogness,,qegnors,975
 Wrongs,r-o-ng-s,Rogs,,qgors,975
 Reorganization,r-o-g-sh,Rogz,,qgorz,119
+Rollback,r-o-l-b-a-k,Rolbak,,qabklor,86
+Rollbacks,r-o-l-b-a-k-s,Rolbaks,,qabklors,86
 Rolled,r-o-l-d,Rold,,qdlor,177
 Rolling,r-o-l-\-h,Rolg,,qglor,177
 Rolls,r-o-l-s,Rols,,qlors,177
@@ -9761,6 +9791,8 @@ Resolveably,r-s-o-l-b-e,Rsolbe,,qbelors,196
 Resolveability,r-s-o-l-\-b,Rsolbo,o,qblors,196
 Resolved,r-s-o-l-d,Rsold,,qdlors,196
 Resolving,r-s-o-l-\-h,Rsolg,,qglors,196
+Resolver,r-s-o-l-r,Rsolr,,qlors,196
+Resolvers,r-s-o-l-r-s,Rsolrs,,qlors,196
 Resolves,r-s-o-l-s,Rsols,,qlors,196
 Resolute,r-s2-o-l-u-t,Rsolut,,qlorstu,0
 Resolutely,r-s2-o-l-u-t-e,Rsolute,,qelorstu,0
@@ -9772,6 +9804,8 @@ Resolutions,r-s2-o-l-sh-s,Rsolzs,,qlorsz,63
 Resource,r-s2-o-s2,Rsos,,qors,199
 Resourceful,r-s2-o-s2-f,Rsosf,,qfors,0
 Resourcefulness,r-s2-o-s2-f-n-s,Rsosfns,,qfnors,0
+Responsible,r-s-p-b,Rspb,,qbprs,285
+Responsibly,r-s-p-b-e,Rspbe,,qbeprs,285
 Responsibility,r-s-p-\-b,Rspbo,,qboprs,0
 Responsibilities,r-s-p-\-b-s,Rspbos,,qboprs,0
 Responsibly,r-s-p-e,Rspe,,qeprs,285
@@ -10709,6 +10743,10 @@ Socialist,s2-o-sh-s-t,Sozst,,qostz,0
 Socialistic,s2-o-sh-\-s-t,Sozsto,o,qostz,0
 Socialists,s2-o-sh-s-t-s,Sozsts,,qostz,0
 Super-,s-p->,Sp>,,q>ps,0
+Subpath,s-p-a-h,Spah,,qahps,
+Subpathed,s-p-a-h-d,Spahd,,qahps,
+Subpathing,s-p-a-h-\-h,Spahg,,qahps,
+Subpaths,s-p-a-h-s,Spahs,,qahps,
 Spaced,s-p-a-s-d,Spasd,,qadps,178
 Spacing,s-p-a-s-\-h,Spasg,,qagps,178
 Spaces,s-p-a-s-s,Spass,,qaps,178
@@ -11328,6 +11366,8 @@ Tanks,t-a-nk-s,Taqs,,qaqst,2
 Targeted,t-a-r-g-e-td,Targetd,,qadegrt,0
 Targeting,t-a-r-g-e-t-\-h,Targetg,,qaegrt,400
 Target,t-a-r-g-e-t,Targeto,o,qaegort,400
+Targeter,t-a-r-g-e-t-r,Targetor,o,qaegort,400
+Targeters,t-a-r-g-e-t-r-s,Targetors,o,qaegorst,400
 Targets,t-a-r-g-e-t-s,Targetso,o,qaegorst,400
 Tasted,t-a-s2-t-d,Tastd,,qast,2
 Tasteful,t-a-s2-t-f,Tastf,,qafst,2
@@ -11731,6 +11771,12 @@ Truncate,t-r-ng-a-t,Trgat,,qagrt,0
 Truncated,t-r-ng-a-t-d,Trgatd,,qadgrt,0
 Truncating,t-r-ng-a-t-\-h,Trgatg,,qagrt,0
 Truncates,t-r-ng-a-t-s,Trgats,,qagrst,0
+Target,t-r-g-t,Trgt,,qgrt,400
+Targeted,t-r-g-t-d,Trgtd,,qgrt,400
+Targeting,t-r-g-t-\-h,Trgtg,,qgrt,400
+Targeter,t-r-g-t-r,Trgtr,,qgrt,400
+Targeters,t-r-g-t-r-s,Trgtrs,,qgrst,400
+Targets,t-r-g-t-s,Trgts,,qgrst,400
 Truncation,t-r-ng-a-sh,Trgz,,qgrtz,0
 Truncations,t-r-ng-a-sh-s,Trgzs,,qgrstz,0
 Tribe,t-r-i-b,Trib,,qbirt,91334
@@ -12294,6 +12340,15 @@ Versioned,v-e2-z-d,Vezd,,qdevz,427
 Visioned,v-e-sh-d,Vezdo,o,qdeovz,25
 Versioning,v-e2-z-\-h,Vezg,,qegvz,427
 Visioning,v-e-sh-\-h,Vezgo,o,qegovz,25
+Visual,v-e-sh-l,Vezl,,qelvz,3
+Visually,v-e-sh-l-e,Vezle,,qelvz,3
+Visualize,v-e-sh-l-i-s,Vezlis,,qeilsvz,3
+Visualized,v-e-sh-l-i-s-d,Vezlisd,,qeilsvz,3
+Visualizing,v-e-sh-l-i-s-\-h,Vezlisg,,qeilsvz,3
+Visualizes,v-e-sh-l-i-s-s,Vezliss,,qeilsvz,3
+Visualization,v-e-sh-l-i-s-sh,Vezlisz,,qeilsvz,3
+Visualizations,v-e-sh-l-i-s-sh-s,Vezliszs,,qeilsvz,3
+Visuals,v-e-sh-l-s,Vezls,,qelsvz,3
 Vision,v-e-sh,Vezo,o,qeovz,1146
 Versions,v-e2-z-s,Vezs,,qesvz,427
 Visions,v-e-sh-s,Vezso,o,qeosvz,25
@@ -12597,6 +12652,9 @@ Exhaustives,e-s-o-s-v-s,Xosvs,,qosvx,0
 Exhaustion,e-s2-o-s-sh,Xosz,,qosxz,2
 Experience,e-s-p,Xp,,qpx,734
 Expand,e-s-p-a-nd,Xpand,,qadnpx,22
+Expandable,e-s-p-a-nd-b,Xpandb,,qabdnpx,22
+Expandably,e-s-p-a-nd-b-e,Xpandbe,,qabdenpx,22
+Expandability,e-s-p-a-nd-\-b,Xpandbo,o,qabdnopx,22
 Expanded,e-s-p-a-nd-d,Xpandd,,qadnpx,22
 Expanding,e-s-p-a-nd-\-h,Xpandg,,qadgnpx,22
 Expander,e-s-p-a-nd-r,Xpandr,,qadnprx,22
