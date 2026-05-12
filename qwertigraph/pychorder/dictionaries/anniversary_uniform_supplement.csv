@@ -248,6 +248,7 @@ Accomplishs,a-k-p-s,Akps,,qakps,3
 Accurately,a-k-r-a-e,Akrae,,qaekr,151
 Accorded,a-k-r-d,Akrd,,qadkr,195
 According,a-k-r-\-h,Akrg,,qagkr,195
+Accordingly,a-k-r-\-h-e,Akrge,,qaegkr,195
 Accords,a-k-r-s,Akrso,o,qakors,195
 Accept,a-k-s2,Aks,,qaks,200
 Accelerate,a-k-s-e-l-r-a,Akselra,,qaeklrs,3
@@ -1376,7 +1377,16 @@ Dictionary,d-e-k-z-r-e,Dekzre,,qdekrz,175
 Dictionaries,d-e-k-z-r-e-s,Dekzres,,qdekrsz,175
 Delegated,d-e-l-d,Deld,,qdel,11
 Dealing,d-e-l-\-h,Delg,,qdegl,11
+Delegate,d-e-l-g-a,Delga,,qadegl,11
+Delegated,d-e-l-g-a-d,Delgad,,qadegl,11
+Delegating,d-e-l-g-a-\-h,Delgag,,qadegl,11
+Delegater,d-e-l-g-a-r,Delgar,,qadeglr,11
+Delegates,d-e-l-g-a-s,Delgas,,qadegls,11
+Delegation,d-e-l-g-a-sh,Delgaz,,qadeglz,11
+Delegations,d-e-l-g-a-sh-s,Delgazs,,qadeglsz,11
 Delegating,d-e-l-\-h,Delgo,o,qdeglo,11
+Delegation,d-e-l-g-sh,Delgz,,qdeglz,11
+Delegations,d-e-l-g-sh-s,Delgzs,,qdeglsz,11
 Deals,d-e-l-s,Dels,,qdels,11
 Delegates,d-e-l-s,Delso,o,qdelos,11
 Dealings,d-e2-/-h-s,Delz,,qdelz,0
@@ -1710,6 +1720,7 @@ Dent,tn-t,Dnto,o,qdnot,1
 Wouldn't,d-n-t,Dntu,u,qdntu,0
 Dodge,d-o-j,Doj,,qdjo,4
 Dodged,d-o-j-d,Dojd,,qdjo,4
+Dodgy,d-o-j-e,Doje,,qdejo,4
 Dodging,d-o-j-\-h,Dojg,,qdgjo,4
 Dodges,d-o-j-s,Dojs,,qdjos,4
 Dock,d-o-k,Dok,,qdko,38
@@ -4051,6 +4062,8 @@ Conditioning,k-d-sh-\-h,Kdzg,,qdgkz,2241
 Conditional,k-d-sh-l,Kdzl,,qdklz,28
 Conditionally,k-d-sh-l-e,Kdzle,,qdeklz,28
 Conditionals,k-d-sh-l-s,Kdzls,,qdklsz,1
+Conditioner,k-d-sh-r,Kdzr,,qdkrz,2241
+Conditioners,k-d-sh-r-s,Kdzrs,,qdkrsz,2241
 Conditions,k-d-sh-s,Kdzs,,qdksz,2241
 Conditionally,k-d-sh-ye,Kdzy,,qdkyz,0
 Keyboarded,k-e-b-o-d-d,Kebodd,,qbdeko,75
@@ -7967,8 +7980,10 @@ Playbooking,pl-a-b-k-\-h,Plabkg,,qabgklp,148
 Playbooks,pl-a-b-k-s,Plabks,,qabklps,148
 Played,pl-a-d,Plad,,qadlp,657
 Playing,pl-a-\-h,Plag,,qaglp,657
+Playground,pl-a-g-r,Plagr,,qaglpr,1
 Playground,pl-a-g-r-nt,Plagrnd,,qadglnpr,1
 Playgrounds,pl-a-g-r-nt-s,Plagrnds,,qadglnprs,1
+Playgrounds,pl-a-g-r-s,Plagrs,,qaglprs,1
 Plagiary,pl-a-j-r-e,Plajre,,qaejlpr,0
 Plagiaries,pl-a-j-r-e-s,Plajres,,qaejlprs,0
 Plagiarist,pl-a-j-r-e-s,Plajreso,o,qaejloprs,0
@@ -11436,6 +11451,12 @@ Tag,t-a-g,Tag,,qagt,91766
 Tagged,t-a-g-d,Tagd,,qadgt,91766
 Tagging,t-a-g-\-h,Tagg,,qagt,91766
 Tags,t-a-g-s,Tags,,qagst,91766
+Target,t-a-g-t,Tagt,,qagt,400
+Targeted,t-a-g-t-d,Tagtd,,qagt,400
+Targeting,t-a-g-t-\-h,Tagtg,,qagt,400
+Targeter,t-a-g-t-r,Tagtr,,qagrt,400
+Targeters,t-a-g-t-r-s,Tagtrs,,qagrst,400
+Targets,t-a-g-t-s,Tagts,,qagst,400
 Transact,t-/-a-k,Tak,,qakt,14
 Taking,t-a-k-\-h,Takg,,qagkt,239
 Tactic,t-a-k-k,Takk,,qakt,719
