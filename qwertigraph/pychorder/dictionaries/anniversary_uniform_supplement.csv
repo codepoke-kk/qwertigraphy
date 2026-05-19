@@ -207,6 +207,8 @@ Adjudge,a-j-j,Ajj,,qaj,0
 Adjudged,a-j-j-d,Ajjd,,qadj,0
 Adjudging,a-j-j-\-h,Ajjg,,qagj,0
 Adjudges,a-j-j-s,Ajjs,,qajs,0
+Agentic,a-j-k,Ajk,,qajk,112
+Agentically,a-j-k-e,Ajke,,qaejk,112
 Adjectives,a-j-k-v-s,Ajkvs,,qajksv,0
 Agentlessly,a-j-l-e,Ajle,,qaejl,112
 Agentless,a-j-l,Ajlo,o,qajlo,112
@@ -478,6 +480,8 @@ Annotative,a-n-o-t-a-df,Anotatv,,qanotv,143
 Annotatively,a-n-o-t-a-df-e,Anotatve,,qaenotv,143
 Annotation,a-n-o-t-a-sh,Anotaz,,qanotz,143
 Annotations,a-n-o-t-a-sh-s,Anotazs,,qanostz,143
+Annotation,a-n-o-t-sh,Anotz,,qanotz,143
+Annotations,a-n-o-t-sh-s,Anotzs,,qanostz,143
 Anorexia,a-n-o-x,Anox,,qanox,5
 Anorexic,a-n-o-x-k,Anoxk,,qaknox,5
 Anorexically,a-n-o-x-k-e,Anoxke,,qaeknox,5
@@ -931,6 +935,8 @@ Building,bld-\-h,Bldg,,qbdgl,1190
 Builder,bld-r,Bldr,,qbdlr,122
 Builders,bld-r-s,Bldrs,,qbdlrs,122
 Builds,bld-\-s2,Blds,,qbdls,2
+Buildout,bld-au,Bldw,,qbdlw,1190
+Buildouts,bld-au-s,Bldws,,qbdlsw,1190
 Buildings,bld-\-s2,Bldz,,qbdlz,2
 Blink,bl-e-nk,Bleq,,qbelq,0
 Blinked,bl-e-nk-d,Bleqd,,qbdelq,0
@@ -3300,6 +3306,15 @@ Footers,f-u-t-r-s,Futrs,,qfrstu,0
 For example,f-e-s2-a-m,Fxam,,qafmx,5
 Foible,f-oe-b,Fyb,,qbfy,0
 Foibles,f-oe-b-s,Fybs,,qbfsy,0
+Foist,f-oe-s,Fys,,qfsy,
+Foisted,f-oe-s-d,Fysd,,qfsy,
+Foisting,f-oe-s-\-h,Fysg,,qfsy,
+Foister,f-oe-s-r,Fysr,,qfrsy,
+Foists,f-oe-s-s,Fyss,,qfsy,
+Foist,f-oe-s-t,Fyst,,qfsty,
+Foisted,f-oe-s-t-d,Fystd,,qfsty,
+Foisting,f-oe-s-t-\-h,Fystg,,qfsty,
+Foists,f-oe-s-t-s,Fysts,,qfsty,
 -Ification,<-f-sh,Fz<,,q<fz,0
 Efficiency,f-sh-s-e,Fzse,,qefsz,1
 Efficiencies,f-sh-s-e-s,Fzses,,qefsz,1
@@ -7564,10 +7579,16 @@ Auctioned,o-k-sh-d,Okzd,,qdkoz,0
 Auctioneers,o-k-sh-e2-s,Okzes,,qekosz,0
 Auctioning,o-k-sh-\-h,Okzg,,qgkoz,0
 Auctions,o-k-sh-s,Okzs,,qkosz,0
+Overlay,^-o-\-l-a,Ola,,qalo,0
+Overlayed,^-o-\-l-a-d,Olad,,qalo,0
+Overlaying,^-o-\-l-a-\-h,Olag,,qalo,0
 Overlap,^-o-\-l-a-p,Olap,,qalop,3
 Overlapped,^-o-\-l-a-p-d,Olapd,,qadlop,3
 Overlapping,^-o-\-l-a-p-\-h,Olapg,,qaglop,3
 Overlaps,^-o-\-l-a-p-s,Olaps,,qalops,3
+Overlayer,^-o-\-l-a-r,Olar,,qalor,0
+Overlayers,^-o-\-l-a-r-s,Olars,,qalors,0
+Overlays,^-o-\-l-a-s,Olas,,qalos,0
 OpenLDAP,o-l-d-p,Oldp,,qdlop,13
 Oligarch,o-l-e-g-a-k,Olegak,,qaegklo,0
 Oligarchs,o-l-e-g-a-k-s,Olegaks,,qaegklos,0
@@ -10988,6 +11009,8 @@ Suppositions,s-p-o-sh-s,Spozs,,qopsz,0
 Spray,s-p-r-a,Spra,,qaprs,2
 Sprayed,s-p-r-a-d,Sprad,,qadprs,2
 Spraying,s-p-r-a-g,Sprag,,qagprs,0
+Sprayer,s-p-r-a-r,Sprar,,qaprs,2
+Sprayers,s-p-r-a-r-s,Sprars,,qaprs,2
 Sprays,s-p-r-a-s,Spras,,qaprs,2
 Spirited,s-pr-d,Sprd,,qdprs,36
 Springing,s-pr-e-ng-\-h,Spregg,,qegprs,23
@@ -11387,6 +11410,10 @@ Statistical,^s-t-\-s-t-l,Ststl,,qlst,0
 Statistically,^s-t-\-s-t-l-e,Ststle,,qelst,0
 Statistics,^s-t-\-s-t-s,Ststs,,qst,0
 Statistically,^s-t-\-s-t-ya,Ststy,,qsty,0
+Status,s2-t-t,Stt,,qst,0
+Statused,s2-t-t-d,Sttd,,qst,0
+Statusing,s2-t-t-\-h,Sttg,,qst,0
+Statuses,s2-t-t-s,Stts,,qst,0
 Stubborn,s-t-u-b-e2-n,Stuben,,qbenstu,0
 Stubbornly,s-t-u-b-e2-n-e,Stubene,,qbenstu,0
 Stubbornness,s-t-u-b-e2-n-n-e-s,Stubennes,,qbenstu,0
@@ -12657,6 +12684,11 @@ Avoidably,v-o-e-b-e,Vybe,,qbevy,98
 Avoidability,v-o-e-\-b,Vybo,,qbovy,98
 Avoided,v-o-e-d,Vyd,,qdvy,98
 Avoiding,v-o-e-\-h,Vyg,,qgvy,98
+Voyaged,v-o-e-j-d,Vyjd,,qjvy,0
+Voyaging,v-o-e-j-\-h,Vyjg,,qjvy,0
+Voyager,v-o-e-j-r,Vyjr,,qjrvy,0
+Voyagers,v-o-e-j-r-s,Vyjrs,,qjrsvy,0
+Voyages,v-o-e-j-s,Vyjs,,qjsvy,0
 Avoidance,v-o-e-n-s,Vyns,,qnsvy,98
 Avoidances,v-o-e-n-s-s,Vynss,,qnsvy,98
 Avoidant,v-o-e-nt,Vynt,,qntvy,98
