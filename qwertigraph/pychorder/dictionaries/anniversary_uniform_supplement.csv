@@ -983,6 +983,8 @@ Blocked,bl-o-k-d,Blokd,,qbdklo,72
 Blocking,bl-o-k-\-h,Blokg,,qbgklo,72
 Blockage,bl-o-k-j,Blokj,,qbjklo,0
 Blockages,bl-o-k-j-s,Blokjs,,qbjklos,0
+Blocker,bl-o-k-r,Blokr,,qbklor,72
+Blockers,bl-o-k-r-s,Blokrs,,qbklors,72
 Blocks,bl-o-k-s,Bloks,,qbklos,72
 Below,bl-o,Bloo,o,qblo,108
 Blood pressure,bl-p-u,Blpu,,qblpu,0
@@ -1018,8 +1020,8 @@ Biologically,b-o-\-k-e,Boke,,qbeko,6
 Biological,b-o-\-k,Boko,o,qbko,6
 Biologicals,b-o-\-k-s,Boks,,qbkos,6
 Bowl,b-o-l,Bol,,qblo,0
-Bowled,b-o-l-d,Bold,,qbdlo,0
 Beholden,b-o2-ld-n,Boldn,,qbdlno,0
+Bowled,b-o-l-d,Boldo,o,qbdlo,0
 Beholding,b-o2-ld-\-h,Boldog,o,qbdlo,0
 Beholds,b-o2-ld-s,Boldos,o,qbdlos,0
 Bowling,b-o-l-\-h,Bolg,,qbglo,0
@@ -1354,11 +1356,17 @@ Debugged,d-b-u-g-d,Dbugd,,qbdgu,105
 Debugging,d-b-u-g-\-h,Dbugg,,qbdgu,105
 Debugger,d-b-u-g-r,Dbugr,,qbdgru,5
 Debugs,d-b-u-g-s,Dbugs,,qbdgsu,105
+Dedicate,dd-e-k,Ddek,,qdek,8
 Dedicated,td-e-k-a-t-d,Ddekatd,,qadekt,8
 Dedicating,td-e-k-a-t-\-h,Ddekatg,,qadegkt,8
 Dedicates,td-e-k-a-t-s,Ddekats,,qadekst,8
-Dedication,td-e-k-a-sh,Ddekz,,qdekz,1
-Dedications,td-e-k-a-sh-s,Ddekzs,,qdeksz,0
+Dedicated,dd-e-k-d,Ddekd,,qdek,8
+Dedicating,dd-e-k-\-h,Ddekg,,qdek,8
+Dedicator,dd-e-k-r,Ddekr,,qdekr,8
+Dedicators,dd-e-k-r-s,Ddekrs,,qdekrs,8
+Dedicates,dd-e-k-s,Ddeks,,qdeks,8
+Dedication,dd-e-k-sh,Ddekz,,qdekz,8
+Dedications,dd-e-k-sh-s,Ddekzs,,qdeksz,8
 Dedicate,td-k-a-t,Ddkat,,qadkt,8
 Dedicated,td-k-a-t-d,Ddkatd,,qadkt,8
 Dedicating,td-k-a-t-\-h,Ddkatg,,qadgkt,8
@@ -3233,6 +3241,7 @@ Frequenting,fr-e-k-\-h,Freqg,,qefgqr,8
 Frequents,fr-e-k-s,Freqs,,qefqrs,8
 Frequencies,fr-e-k-s,Freqso,o,qefoqrs,8
 Frees,fr-e-s,Freso,o,qefors,183
+Freshly,fr-e-sh-e,Freze,,qefrz,108
 Friending,fr-\-h,Frgo,o,qfgor,0
 Friday,fr-i,Fri,,qfir,178
 Frighten,fr-i-n,Frin,,qfinr,1
@@ -5509,6 +5518,12 @@ Marking,m-a-r-k-\-h,Markg,,qagkmr,17
 Massaged,m-a-s-a-sh-d,Masazd,,qadmsz,0
 Massaging,m-a-s-a-sh-\-h,Masazg,,qagmsz,0
 Massages,m-a-s-a-sh-s,Masazs,,qamsz,0
+Massage,m-a-s-j,Masj,,qajms,0
+Massaged,m-a-s-j-d,Masjd,,qajms,0
+Massaging,m-a-s-j-\-h,Masjg,,qajms,0
+Massager,m-a-s-j-r,Masjr,,qajmrs,0
+Massagers,m-a-s-j-r-s,Masjrs,,qajmrs,0
+Massages,m-a-s-j-s,Masjs,,qajms,0
 Masochist,m-a-s-k-e-s,Maskes,,qaekms,0
 Masochistic,m-a-s-k-e-s-k,Maskesk,,qaekms,0
 Masochistically,m-a-s-k-e-s-k-e,Maskeske,,qaekms,0
@@ -6297,6 +6312,10 @@ Indexing,nt-e-x-\-h,Ndexg,,qdegnx,9
 Indexer,nt-e-x-r,Ndexr,,qdenrx,1
 Indexers,nt-e-x-r-s,Ndexrs,,qdenrsx,1
 Indexs,nt-e-x-s,Ndexs,,qdensx,9
+Undefine,n-df-i-n,Ndfin,,qdfin,57
+Undefined,n-df-i-n-d,Ndfind,,qdfin,57
+Undefining,n-df-i-n-\-h,Ndfing,,qdfin,57
+Undefines,n-df-i-n-s,Ndfins,,qdfins,57
 Ending,nt-\-h,Ndg,,qdgn,90401
 Endings,nt-\-h-s,Ndgs,,qdgns,90401
 Indicted,nt-i-t-d,Nditd,,qdint,0
@@ -6869,6 +6888,8 @@ Notifier,n-o-df-r,Notfr,,qfnort,1
 Notifiers,n-o-df-r-s,Notfrs,,qfnorst,1
 Notifications,n-o-t-\-f-s,Notfs,,qfnost,153
 Notifies,n-o-df-s,Notfso,o,qfnost,64
+Notification,n-o-t-\-f-sh,Notfz,,qfnotz,153
+Notifications,n-o-t-\-f-sh-s,Notfzs,,qfnostz,153
 Noting,n-o-t-\-h,Notg,,qgnot,3
 Notes,n-o-t-s,Notso,o,qnost,3
 Note,n-o-t,Notu,u,qnotu,3
@@ -9198,6 +9219,8 @@ Ridiculously,r-e-d-e-k-e,Redeke,,qdekr,1
 Ridiculousness,r-e-d-e-k-n-e-s,Redeknes,,qdeknrs,1
 Reading,r-e-d-\-h,Redg,,qdegr,0
 Readings,r-e-d-\-h-s,Redgs,,qdegrs,0
+Reader,r-e2-d-r,Redr,,qder,0
+Readers,r-e2-d-r-s,Redrs,,qders,0
 Readings,r-e-d-\-h-s,Redz,,qderz,0
 Rhythm,r-e-th-m,Rehm,,qehmr,4
 Rhythmic,r-e-th-m-k,Rehmk,,qehkmr,0
@@ -9587,6 +9610,12 @@ Relationality,r-e-l-a-sh-\-l,Rlzlo,o,qlorz,2
 Relations,r-e-l-a-sh-s,Rlzs,,qlrsz,2
 Relationship,r-e-l-a-sh-\-sh,Rlzz,,qlrz,129
 Relationships,r-e-l-a-sh-\-sh-s,Rlzzs,,qlrsz,129
+Remark,r-m-a2-k,Rmak,,qakmr,0
+Remarkable,r-m-a2-k-b,Rmakb,,qabkmr,0
+Remarkably,r-m-a2-k-b-e,Rmakbe,,qabekmr,0
+Remarked,r-m-a2-k-d,Rmakd,,qakmr,0
+Remarking,r-m-a2-k-\-h,Rmakg,,qakmr,0
+Remarks,r-m-a2-k-s,Rmaks,,qakmrs,0
 Remap,r-m-a-p,Rmap,,qampr,3
 Remapped,r-m-a-p-d,Rmapd,,qadmpr,3
 Remapping,r-m-a-p-\-h,Rmapg,,qagmpr,3
@@ -9936,6 +9965,10 @@ Recycle,r-e-s-i-k-l,Rsikl,,qiklrs,7
 Recycled,r-e-s-i-k-l-d,Rsikld,,qdiklrs,7
 Recycling,r-e-s-i-k-l-\-h,Rsiklg,,qgiklrs,7
 Recycles,r-e-s-i-k-l-s,Rsikls,,qiklrs,7
+Resile,r-s-i-l,Rsil,,qilrs,0
+Resiled,r-s-i-l-d,Rsild,,qilrs,0
+Resiling,r-s-i-l-\-h,Rsilg,,qilrs,0
+Resiles,r-s-i-l-s,Rsils,,qilrs,0
 Resigned,r-s2-i-n-d,Rsind,,qdinrs,1
 Resignedly,r-s2-i-n-d-e,Rsinde,,qdeinrs,0
 Resigning,r-s2-i-n-\-h,Rsing,,qginrs,1
@@ -11037,6 +11070,8 @@ Sprayer,s-p-r-a-r,Sprar,,qaprs,2
 Sprayers,s-p-r-a-r-s,Sprars,,qaprs,2
 Sprays,s-p-r-a-s,Spras,,qaprs,2
 Spirited,s-pr-d,Sprd,,qdprs,36
+Spreading,s-pr-e-d-\-h,Spredg,,qdeprs,8
+Spreads,s-pr-e-d-s,Spreds,,qdeprs,8
 Springing,s-pr-e-ng-\-h,Spregg,,qegprs,23
 Springs,s-pr-e-ng-s,Spregs,,qegprs,23
 Spiriting,s-pr-\-h,Sprg,,qgprs,36
@@ -12174,6 +12209,7 @@ Weapons,u-e-p-n-s,Uepns,,qenpsu,0
 Weird,u-e-r-d,Uerd,,qderu,173
 Weirded,u-e-r-d-d,Uerdd,,qderu,173
 Weirdly,u-e-r-d-e,Uerde,,qderu,173
+Weirdest,u-e-r-d-e-s,Uerdes,,qdersu,173
 Weirding,u-e-r-d-\-h,Uerdg,,qdegru,173
 Weirdness,u-e-r-d-n-e-s,Uerdnes,,qdenrsu,0
 Weirdnesses,u-e-r-d-n-e-s-s,Uerdness,,qdenrsu,0
