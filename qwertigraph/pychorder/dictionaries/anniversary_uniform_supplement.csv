@@ -353,6 +353,10 @@ Algorithm,a-l-g-r-e-th-m,Algrehm,,qaeghlmr,0
 Algorithmic,a-l-g-r-e-th-m-k,Algrehmk,,qaeghklmr,0
 Algorithmically,a-l-g-r-e-th-m-k-e,Algrehmke,,qaeghklmr,0
 Algorithms,a-l-g-r-e-th-m-s,Algrehms,,qaeghlmrs,0
+Algorithm,a-l-g-r-th-m,Algrhm,,qaghlmr,0
+Algorithmic,a-l-g-r-th-m-k,Algrhmk,,qaghklmr,0
+Algorithmically,a-l-g-r-th-m-k-e,Algrhmke,,qaeghklmr,0
+Algorithms,a-l-g-r-th-m-s,Algrhms,,qaghlmrs,0
 Alongside,a-l-ng-s-i,Algsi,,qagils,8
 Align,a-l-i-n,Alin,,qailn,58
 Aligned,a-l-i-n-d,Alind,,qadiln,58
@@ -575,6 +579,8 @@ Arrangements,a-r-a-m-s,Arams,,qamrs,1
 Arranges,a-r-a-s,Aras,,qars,1
 Arriving,a-r-i-\-h,Arig,,qagir,13
 Arrive,a-r-i,Arii,i,qair,13
+Arrival,a-r-i-l,Aril,,qailr,13
+Arrivals,a-r-i-l-s,Arils,,qailrs,13
 Arrival,a-r-i,Ario,o,qaior,13
 Arrives,a-r-i-s,Aris,,qairs,13
 Arrivals,a-r-i-s,Ariso,o,qaiors,13
@@ -1083,6 +1089,11 @@ Briefs,br-e-f-s,Brefs,,qbefrs,2
 Breathy,br-e-th-e,Brehe,,qbehr,6
 Breathily,br-e-th-l,Brehl,,qbehlr,6
 Breaths,br-e-th-s,Brehs,,qbehrs,6
+Bridged,br-e-j-d,Brejd,,qbejr,19
+Bridging,br-e-j-\-h,Brejg,,qbejr,19
+Bridger,br-e-j-r,Brejr,,qbejr,19
+Bridgers,br-e-j-r-s,Brejrs,,qbejrs,19
+Bridges,br-e-j-s,Brejs,,qbejrs,19
 Breakfasts,br-e-k-f-a-s-s,Brekfass,,qabefkrs,3
 Brilliancy,br-e-l-e,Brele,,qbelr,1
 Brilliancies,br-e-l-e-s,Breles,,qbelrs,1
@@ -4224,6 +4235,7 @@ Confound,k-f-nt,Kfnd,,qdfkn,0
 Confounded,k-f-nt-d,Kfndd,,qdfkn,0
 Confounding,k-f-nt-\-h,Kfndg,,qdfgkn,0
 Confounds,k-f-nt-s,Kfnds,,qdfkns,0
+Confidences,k-f-s,Kfos,o,qfkos,55
 Confronted,k-fr-nt-d,Kfrntd,,qdfknrt,5
 Confronting,k-fr-nt-\-h,Kfrntg,,qfgknrt,5
 Confronts,k-fr-nt-s,Kfrnts,,qfknrst,5
@@ -6025,6 +6037,12 @@ Misjudge,m-s-j-j,Msjj,,qjms,0
 Misjudged,m-s-j-j-d,Msjjd,,qdjms,0
 Misjudging,m-s-j-j-\-h,Msjjg,,qgjms,0
 Misjudges,m-s-j-j-s,Msjjs,,qjms,0
+Mischaracterize,m-s-k-a-k-i-s,Mskakis,,qaikms,1
+Mischaracterized,m-s-k-a-k-i-s-d,Mskakisd,,qaikms,1
+Mischaracterizing,m-s-k-a-k-i-s-\-h,Mskakisg,,qaikms,1
+Mischaracterizes,m-s-k-a-k-i-s-s,Mskakiss,,qaikms,1
+Mischaracterization,m-s-k-a-k-i-s-sh,Mskakisz,,qaikmsz,1
+Mischaracterizations,m-s-k-a-k-i-s-sh-s,Mskakiszs,,qaikmsz,1
 Misconfigure,m-s-k-f-e-g-r,Mskfegr,,qefgkmrs,358
 Misconfigured,m-s-k-f-e-g-r-d,Mskfegrd,,qdefgkmrs,358
 Misconfiguring,m-s-k-f-e-g-r-\-h,Mskfegrg,,qefgkmrs,358
@@ -6084,6 +6102,7 @@ Misstated,m-ss2-t-d,Msstd,,qmst,0
 Misstating,m-ss2-t-\-h,Msstg,,qmst,0
 Misstatement,m-ss2-t-m,Msstm,,qmst,0
 Misstatements,m-ss2-t-m-s,Msstms,,qmst,0
+Misunderstands,m-s-/-s2-tn-s,Msstns,,qmnst,4
 Misunderstandings,m-s-/-s2-tn-\-h-s,Msstnz,,qmnstz,1
 Misstates,m-ss2-t-s,Mssts,,qmst,0
 Misunderstandings,m-s-/-s2-t-\-h-s,Msstz,,qmstz,1
@@ -7553,6 +7572,9 @@ Overkill,o-/-k-e-l,Okel,,qeklo,1
 Overkilled,o-/-k-e-l-d,Okeld,,qdeklo,1
 Overkilling,o-/-k-e-l-\-h,Okelg,,qegklo,1
 Overkills,o-/-k-e-l-s,Okels,,qeklos,1
+Overconfident,^-o-\-k-f,Okf,,qfko,55
+Overconfidence,^-o-\-k-f,Okfo,o,qfko,55
+Overconfidences,^-o-\-k-f-s,Okfos,o,qfkos,55
 Overcoming,o-/-k-m-\-h,Okmg,,qkmo,23
 Overcomer,o-/-k-m-r,Okmr,,qkmor,23
 Overcomers,o-/-k-m-r-s,Okmrs,,qkmors,23
@@ -9878,6 +9900,8 @@ Resilient,r-s-e-l-e-nt,Rselent,,qelnrst,0
 Resiliently,r-s-e-l-e-nt-e,Rselente,,qelnrst,0
 Resent,r-s-e-nt,Rsent,,qenrst,237
 Resented,r-s-e-nt-d,Rsentd,,qdenrst,237
+Resentful,r-s-e-nt-f,Rsentf,,qefnrst,237
+Resentfully,r-s-e-nt-f-e,Rsentfe,,qefnrst,237
 Resenting,r-s-e-nt-\-h,Rsentg,,qegnrst,237
 Resentment,r-s-e-nt-m,Rsentm,,qemnrst,237
 Resentments,r-s-e-nt-m-s,Rsentms,,qemnrst,237
