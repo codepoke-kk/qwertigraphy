@@ -4801,6 +4801,12 @@ Computations,k-p-u-sh-s,Kpuzs,,qkpsuz,0
 Conquest,k-k-e-s,Kqes,,qekqs,0
 Conquests,k-k-e-s-s,Kqess,,qekqs,0
 Critics,k-r-/-a-s,Kras,,qakrs,0
+Crash,k-r-a-sh,Kraz,,qakrz,91128
+Crashed,k-r-a-sh-d,Krazd,,qakrz,91128
+Crashing,k-r-a-sh-\-h,Krazg,,qakrz,91128
+Crasher,k-r-a-sh-r,Krazr,,qakrz,91128
+Crashers,k-r-a-sh-r-s,Krazrs,,qakrsz,91128
+Crashes,k-r-a-sh-s,Krazs,,qakrsz,91128
 Corrected,k-r-d,Krd,,qdkr,705
 Credible,k-r-d-b,Krdb,,qbdkr,2
 Credibly,k-r-d-b-e,Krdbe,,qbdekr,2
@@ -7575,6 +7581,7 @@ Authorizing,o-th-r-i-s-\-h,Ohrisg,,qghiors,20
 Authorizes,o-th-r-i-s-s,Ohriss,,qhiors,20
 Authorization,o-th-r-i-s-sh,Ohrisz,,qhiorsz,20
 Authorizations,o-th-r-i-s-sh-s,Ohriszs,,qhiorsz,20
+Authorial,o-th-r-l,Ohrl,,qhlor,20
 Authorities,o-th2-/-r-s,Ohrs,,qhors,167
 Authors,o-th-r-s,Ohrso,o,qhors,20
 Authoritatively,o-th-rdf-e,Ohrtve,,qehortv,18
@@ -8991,6 +8998,8 @@ Quotient,k-o-sh-t-\-\-\-~-~-n-~-~,Qoztn,,qnoqtz,0
 Conquests,k-k-e-s-s,Qqess,,qeqs,0
 Conquered,k-k-r-d,Qqrd,,qdqr,5
 Conquering,k-k-r-\-h,Qqrg,,qgqr,5
+Conqueror,k-k-r-r,Qqrr,,qqr,5
+Conquerors,k-k-r-r-s,Qqrrs,,qqrs,5
 Conquers,k-k-r-s,Qqrs,,qqrs,5
 Query,q-r-e,Qre,,qeqr,364
 Queried,q-r-e-d,Qred,,qdeqr,364
@@ -10257,6 +10266,7 @@ Saddling,s-a-d-l-\-h,Sadlg,,qadls,455
 Saddles,s-a-d-l-s,Sadls,,qadls,455
 Sadducee,s-a-d-s-e,Sadse,,qades,0
 Sadducees,s-a-d-s-e-s,Sadses,,qades,0
+Sadduceeism,s-a-d-s-e-s-m,Sadsesm,,qadems,0
 Safeguard,s-a-f-g-a2-d,Safgad,,qadfgs,0
 Safeguarded,s-a-f-g-a2-d-d,Safgadd,,qadfgs,0
 Safeguarding,s-a-f-g-a2-d-\-h,Safgadg,,qadfgs,0
@@ -12293,6 +12303,8 @@ Uniformed,e-u-n-f-m-d,Unfmd,,qdfmnu,4
 Uniformly,e-u-n-f-m-e,Unfme,,qefmnu,4
 Uniforming,e-u-n-f-m-\-h,Unfmg,,qfgmnu,4
 Uniforms,e-u-n-f-m-s,Unfms,,qfmnsu,4
+Uniformity,eu-n-f-m-t-e,Unfmte,,qefmntu,
+Uniformity,eu-n-f-\-nt,Unfnt,,qfntu,
 Uninhibit,u-n-^-h-\-b-t,Unhbt,,qbhntu,41
 Uninhibited,u-n-^-h-\-b-t-d,Unhbtd,,qbdhntu,41
 Uninhibitedly,u-n-^-h-\-b-t-d-e,Unhbtde,,qbdehntu,41
@@ -12591,6 +12603,10 @@ Victims,v-e-k-tm-s,Vektms,,qekmstv,12
 Victories,v-e-k-t-r-e-s,Vektres,,qekrstv,3
 Victorious,v-e-k-t-r-u-s,Vektrus,,qekrstuv,0
 Victoriously,v-e-k-t-r-u-s-e,Vektruse,,qekrstuv,0
+Villain,v-e-l-n,Veln,,qelnv,
+Villains,v-e-l-n-s,Velns,,qelnsv,
+Villainous,v-e-l-n-u-s,Velnus,,qelnsuv,
+Villainously,v-e-l-n-u-s-e,Velnuse,,qelnsuv,
 Vehemence,v-e-m-n-s,Vemns,,qemnsv,
 Vehement,v-e-m-nt,Vemnt,,qemntv,
 Vehemently,v-e-m-nt-e,Vemnte,,qemntv,
@@ -12982,6 +12998,17 @@ Expireds,e-s-p-i-/-t-s,Xpits,,qipstx,0
 Experientially,e-s-p-l-e,Xple,,qelpx,0
 Explaining,e-s-pl-\-h,Xplg,,qglpx,119
 Experiential,e-s-p-l,Xplo,o,qlopx,734
+Explode,e-s-p-l-o-d,Xplod,,qdlopx,91904
+Exploded,e-s-p-l-o-d-d,Xplodd,,qdlopx,91904
+Exploding,e-s-p-l-o-d-\-h,Xplodg,,qdlopx,91904
+Exploder,e-s-p-l-o-d-r,Xplodr,,qdloprx,91904
+Exploders,e-s-p-l-o-d-r-s,Xplodrs,,qdloprsx,91904
+Explodes,e-s-p-l-o-d-s,Xplods,,qdlopsx,91904
+Explosive,e-s-p-l-o-s-v,Xplosv,,qlopsvx,91904
+Explosively,e-s-p-l-o-s-v-e,Xplosve,,qelopsvx,91904
+Explosives,e-s-p-l-o-s-v-s,Xplosvs,,qlopsvx,91904
+Explosion,e-s-p-l-o-sh,Xploz,,qlopxz,91904
+Explosions,e-s-p-l-o-sh-s,Xplozs,,qlopsxz,91904
 Explored,e-s-pl-r-d,Xplrd,,qdlprx,5
 Explanatory,e-s-pl-\-r-e,Xplre,,qelprx,0
 Exploring,e-s-pl-r-\-h,Xplrg,,qglprx,5
