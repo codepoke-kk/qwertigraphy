@@ -67,8 +67,9 @@ Abusers,a-b-e-u-r-s,Aburs,,qabrsu,3
 Abuses,a-b-e-u-s,Abus,,qabsu,3
 Archbishops,a2-ch-b-e-sh-s,Acbezs,,qabcesz,0
 Achieve,a-c-e-v,Acev,,qacev,21
-Achieveable,a-c-e-v-b,Acevb,,qabcev,21
-Achieveably,a-c-e-v-b-e,Acevbe,,qabcev,0
+Achievable,a-c-e-v-b,Acevb,,qabcev,21
+Achievably,a-c-e-v-b-e,Acevbe,,qabcev,21
+Achieveability,a-c-e-v-\-b,Acevbo,o,qabceov,21
 Achieved,a-c-e-v-d,Acevd,,qacdev,21
 Achieving,a-c-e-v-\-h,Acevg,,qacegv,21
 Achievement,a-c-e-v-m,Acevm,,qacemv,0
@@ -2058,6 +2059,10 @@ Disconnecting,d-s2-k-e-k-\-h,Dskekg,,qdegks,7
 Disconnects,d-s2-k-e-k-s,Dskeks,,qdeks,7
 Disconnection,d-s2-k-e-k-sh,Dskekz,,qdeksz,7
 Disconnections,d-s2-k-e-k-sh-s,Dskekzs,,qdeksz,0
+Discomfort,d-s-k-f-t,Dskft,,qdfkst,53
+Discomforted,d-s-k-f-t-d,Dskftd,,qdfkst,53
+Discomforting,d-s-k-f-t-\-h,Dskftg,,qdfkst,53
+Discomforts,d-s-k-f-t-s,Dskfts,,qdfkst,53
 Discussing,d-s2-k-\-h,Dskg,,qdgks,143
 Distracted,d-s-/-k-\-h,Dskgi,i,qdgiks,4
 Describe,d-s2-k-r,Dskr,,qdkrs,74
@@ -2577,6 +2582,7 @@ Initiated,e-n-e-sh-ea-t-d,Enezatd,,qadentz,10
 Initiating,e-n-e-sh-ea-t-\-h,Enezatg,,qaegntz,10
 Initiates,e-n-e-sh-ea-t-s,Enezats,,qaenstz,10
 Initialed,e-n-e-sh-d,Enezd,,qdenz,143
+Initially,e-n-e-sh-e,Eneze,,qenz,143
 Initiate,e-n-e-sh-ea-t,Enezet,,qentz,10
 Initiated,e-n-e-sh-ea-t-d,Enezetd,,qdentz,10
 Initiating,e-n-e-sh-ea-t-\-h,Enezetg,,qegntz,10
@@ -3020,6 +3026,9 @@ Featuring,f-e-t-r-\-h,Fetrg,,qefgrt,42
 Features,f-e-t-r-s,Fetrs,,qefrst,42
 Forevermore,f-/-e-v-m,Fevm,,qefmv,88
 Forevers,f-/-e-v-s,Fevs,,qefsv,88
+Fixable,f-e-x-b,Fexb,,qbefx,4
+Fixably,f-e-x-b-e,Fexbe,,qbefx,4
+Fixability,f-e-x-\-b,Fexbo,o,qbefox,4
 Fixing,f-e-x-\-h,Fexg,,qefgx,4
 Fixes,f-e-x-s,Fexs,,qefsx,4
 Fissures,f-e-sh-u-s,Fezus,,qefsuz,0
@@ -5908,6 +5917,8 @@ Modifier,m-o-df-r,Modfr,,qdfmor,14
 Modifierer,m-o-df-r-r,Modfrr,,qdfmor,0
 Modifies,m-o-df-s,Modfs,,qdfmos,200
 Modifications,m-o-d-\-f-s,Modfso,o,qdfmos,7
+Modification,m-o-d-\-f-sh,Modfz,,qdfmoz,7
+Modifications,m-o-d-\-f-sh-s,Modfzs,,qdfmosz,7
 Modulate,m-o-d-\-l-a-t,Modlat,,qadlmot,0
 Modulated,m-o-d-\-l-a-t-d,Modlatd,,qadlmot,0
 Modulating,m-o-d-\-l-a-t-\-h,Modlatg,,qadglmot,0
