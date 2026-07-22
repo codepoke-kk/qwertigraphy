@@ -517,6 +517,8 @@ Appeaseably,a-p-e-s-b-e,Apesbe,,qabeps,0
 Appeaseability,a-p-e-s-\-b,Apesbo,,qabeops,0
 Appeased,a-p-e-s-d,Apesd,,qadeps,0
 Appeasing,a-p-e-s-\-h,Apesg,,qaegps,0
+Appeasement,a-p-e-s-m,Apesm,,qaemps,0
+Appeasements,a-p-e-s-m-s,Apesms,,qaemps,0
 Appeases,a-p-e-s-s,Apess,,qaeps,0
 Apocalyptic,a-p-k-l-e-p-k,Apklepk,,qaeklp,1
 Application blank,a-pl-~-b,Aplb,,qablp,0
@@ -840,6 +842,12 @@ Banner,b-a-n-r,Banr,,qabnr,
 Bannered,b-a-n-r-d,Banrd,,qabnr,
 Bannering,b-a-n-r-\-h,Banrg,,qabnr,
 Banners,b-a-n-r-s,Banrs,,qabnrs,
+Banish,b-a-n-sh,Banz,,qabnz,90904
+Banished,b-a-n-sh-d,Banzd,,qabnz,90904
+Banishing,b-a-n-sh-\-h,Banzg,,qabnz,90904
+Banishment,b-a-n-sh-m,Banzm,,qabmnz,90904
+Banishments,b-a-n-sh-m-s,Banzms,,qabmnsz,90904
+Banishes,b-a-n-sh-s,Banzs,,qabnsz,90904
 Baseline,b-a-s-l,Basl,,qabls,0
 Baselined,b-a-s-l-d,Basld,,qabls,0
 Baselining,b-a-s-l-\-h,Baslg,,qabls,0
@@ -933,6 +941,14 @@ Budges,b-j-s,Bjs,,qbjs,2
 Becoming,b-k-\-h,Bkg,,qbgk,135
 Blue Collar Christianity,b-k-k,Bkk,,qbk,203
 Becomes,b-k-s,Bks,,qbks,135
+Blaspheme,bl-a-f-e-m,Blafem,,qabeflm,1
+Blasphemed,bl-a-f-e-m-d,Blafemd,,qabeflm,1
+Blasphemy,bl-a-f-e-m-e,Blafeme,,qabeflm,1
+Blasphemies,bl-a-f-e-m-e-s,Blafemes,,qabeflms,1
+Blaspheming,bl-a-f-e-m-\-h,Blafemg,,qabeflm,1
+Blasphemer,bl-a-f-e-m-r,Blafemr,,qabeflmr,1
+Blasphemers,bl-a-f-e-m-r-s,Blafemrs,,qabeflmrs,1
+Blasphemes,bl-a-f-e-m-s,Blafems,,qabeflms,1
 Blackout,bl-a-k-a-u,Blakw,,qabklw,1
 Blackouts,bl-a-k-a-u-s,Blakws,,qabklsw,1
 Blamed,bl-a-m-d,Blamd,,qabdlm,30
@@ -1004,6 +1020,10 @@ Bloody,bl-u-d-e,Blude,,qbdelu,0
 Bloodied,bl-u-d-e-d,Bluded,,qbdelu,0
 Bloods,bl-u-d-s,Bluds,,qbdlsu,0
 Bluetooth,bl-u-t-u-th,Blutuh,,qbhltu,
+Bunched,b-n-ch-d,Bncd,,qbcn,4
+Bunching,b-n-ch-\-h,Bncg,,qbcn,4
+Buncher,b-n-ch-r,Bncr,,qbcnr,4
+Bunches,b-n-ch-s,Bncs,,qbcns,4
 Bounded,b-n-d,Bnd,,qbdn,2122
 Beneath,b-n-e-th,Bneh,,qbehn,3
 Benefited,b-n-f-d,Bnfd,,qbfn,5
@@ -1117,10 +1137,12 @@ Brilliancy,br-e-l-e,Brele,,qbelr,1
 Brilliancies,br-e-l-e-s,Breles,,qbelrs,1
 Brilliance,br-e-l,Brelo,o,qbelor,19
 Bringing,br-\-h,Brg,,qbgr,9
+Bright,br-i,Bri,,qbir,3
 Brightened,br-i-n-d,Brind,,qbdinr,1
 Brightness,br-i-n-e-s,Brines,,qbeinrs,0
 Brightening,br-i-n-\-h,Bringo,o,qbginor,1
 Brightens,br-i-n-s,Brins,,qbinrs,1
+Brights,br-i-s,Bris,,qbirs,3
 Brightest,br-i-t-e-s,Brites,,qbeirst,0
 Bridgette,br-j-e-t,Brjet,,qbejrt,
 Broth,b-r-o-th,Broh,,qbhor,1
@@ -1295,6 +1317,14 @@ Checkpoint,ch-e-k-oe,Ceky,,qceky,608
 Checkpointed,ch-e-k-oe-d,Cekyd,,qcdeky,608
 Checkpointing,ch-e-k-oe-\-h,Cekyg,,qcegky,608
 Checkpoints,ch-e-k-oe-s,Cekys,,qceksy,608
+Cheer,ch-e-r,Cer,,qcer,18
+Cheered,ch-e-r-d,Cerd,,qcer,18
+Cheerful,ch-e-r-f,Cerf,,qcefr,18
+Cheerfully,ch-e-r-f-e,Cerfe,,qcefr,18
+Cheering,ch-e-r-\-h,Cerg,,qcer,18
+Cheerless,ch-e-r-l,Cerl,,qcelr,18
+Cheerlessly,ch-e-r-l-e,Cerle,,qcelr,18
+Cheers,ch-e-r-s,Cers,,qcers,18
 Cheers,ch-e2-s,Ces,,qces,18
 Cheat,c-e-t,Cet,,qcet,12
 Cheated,c-e-t-d,Cetd,,qcdet,12
@@ -1406,6 +1436,8 @@ Dearly,d-e2-e,Dee,,qde,14
 Degraded,d-e-g-r-a-d,Degrad,,qadegr,0
 Degrading,d-e-g-r-a-\-h,Degrag,,qadegr,0
 Degrades,d-e-g-r-a-s,Degras,,qadegrs,0
+Deathbed,d-e-th-b,Dehb,,qbdeh,89
+Deathbeds,d-e-th-b-s,Dehbs,,qbdehs,89
 Deaths,d-e-th-s,Dehs,,qdehs,89
 Dealings,d-e2-/-h-s,Dehsqk,,qdehs,0
 Digital,d-e-j-t-l,Dejtl,,qdejlt,2
@@ -1763,6 +1795,7 @@ Denounced,dn-n-s-d,Dnnsd,,qdns,0
 Denouncing,dn-n-s-\-h,Dnnsg,,qdgns,0
 Denounces,dn-n-s-s,Dnnss,,qdns,0
 Down,d-n,Dno,o,qdno,2176
+Denominations,tn-o-mn-sh-s,Dnomnzs,,qdmnosz,0
 Denote,tn-o-t,Dnot,,qdnot,143
 Denoted,tn-o-t-d,Dnotd,,qdnot,143
 Denoting,tn-o-t-\-h,Dnotg,,qdgnot,143
@@ -2348,6 +2381,9 @@ Deviations,d-v-ea-sh-s,Dvazs,,qadsvz,90862
 Diverged,df-e-j-d,Dvejd,,qdejv,0
 Diverging,df-e-j-\-h,Dvejg,,qdejv,0
 Diverges,df-e-j-s,Dvejs,,qdejsv,0
+Defective,df-e-k-v,Dvekv,,qdekv,1
+Defectively,df-e-k-v-e,Dvekve,,qdekv,1
+Defectives,df-e-k-v-s,Dvekvs,,qdeksv,1
 Divested,df-e-s-d,Dvesd,,qdesv,0
 Divesting,df-e-s-\-h,Dvesg,,qdegsv,0
 Divests,df-e-s-s,Dvess,,qdesv,0
@@ -2797,6 +2833,8 @@ Israelites,E-s-r-ea-l-i-t-s,Esrelits,,qeilrst,0
 Established,e-s2-t-b-d,Estbd,,qbdest,2
 Establishing,e-s2-t-b-\-h,Estbg,,qbegst,2
 Establishes,e-s2-t-b-s,Estbs,,qbest,2
+Estimating,e-s2-tm-a-t-\-h,Estmatg,,qaemst,0
+Estimates,e-s2-tm-a-t-s,Estmats,,qaemst,0
 Irritated,e2-t-a-d,Etad,,qadet,0
 Irritating,e2-t-a-\-h,Etag,,qaegt,0
 Irritates,e2-t-a-s,Etas,,qaest,0
@@ -3299,6 +3337,7 @@ Freaking,f-r-e-k-\-h,Frekg,,qefgkr,396
 Freaks,f-r-e-k-s,Freks,,qefkrs,396
 Friction,fr-e-k-sh,Frekz,,qefkrz,0
 Frictions,fr-e-k-sh-s,Frekzs,,qefkrsz,0
+Freely,fr-e-l,Frel,,qeflr,1
 Friendly,fr-e,Freo,o,qefor,15
 Frequented,fr-e-k-d,Freqd,,qdefqr,8
 Frequently,fr-e-k-e,Freqe,,qefqr,8
@@ -4481,6 +4520,8 @@ Clones,k-l-o-n-s,Klons,,qklnos,30
 Chlorophyll,k-l-o-r-f-e-l,Klorfel,,qefklor,0
 Closest,k-l-o-s-e-s,Kloses,,qeklos,1
 Closing,k-l-o-s-\-h,Klosg,,qgklos,377
+Closeness,k-l-o-s-n,Klosn,,qklnos,377
+Closeness,k-l-o-s-n-e-s,Klosnes,,qeklnos,377
 Closer,k-l-o-s-r,Klosr,,qklors,30
 Closers,k-l-o-s-r-s,Klosrs,,qklors,30
 Closes,k-l-o-s-s,Kloss,,qklos,377
@@ -4720,6 +4761,11 @@ Calls,k-o-s,Kos,,qkos,1195
 Costa rica,k-o-s-~-r,Kosr,,qkors,0
 Courted,k-o-t-d,Kotdo,o,qdkot,1735
 Courting,k-o-t-\-h,Kotg,,qgkot,1735
+Cottoned,k-o-tn-d,Kotnd,,qknot,0
+Cottoning,k-o-tn-\-h,Kotng,,qknot,0
+Cotton gin,k-o-tn-j,Kotnj,,qjknot,0
+Cotton gins,k-o-tn-j-s,Kotnjs,,qjknost,0
+Cottons,k-o-tn-s,Kotns,,qknost,0
 Courts,k-o-t-s,Kots,,qkost,1735
 Courtship,k-o-t-sh,Kotz,,qkotz,0
 Courtshipped,k-o-t-sh-d,Kotzd,,qdkotz,0
@@ -4800,6 +4846,8 @@ Complexity,k-p-l-e-s-t-e,Kplxte,,qeklptx,4
 Complexities,k-p-l-e-s-t-e-s,Kplxtes,,qeklpstx,4
 Complexities,k-p-l-e-s-t-e-s,Kplxts,,qklpstx,4
 Complexities,k-p-l-e-s-t-e-s,Kplxtx,,qklptx,4
+Complexion,k-p-l-x-sh,Kplxz,,qklpxz,
+Complexions,k-p-l-x-sh-s,Kplxzs,,qklpsxz,
 Compulsion,k-pl-sh,Kplz,,qklpz,16
 Compulsions,k-pl-sh-s,Kplzs,,qklpsz,0
 Compounded,k-p-n-d,Kpnd,,qdknp,1
@@ -4861,6 +4909,7 @@ Companies,k-p-s,Kps,,qkps,3
 Complaints,k-p-s,Kpsi,i,qikps,818
 Complains,k-p-s,Kpso,o,qkops,818
 Completes,kp-s,Kpsu,u,qkpsu,23
+Competitors,k-p-t-e-t-s,Kptets,,qekpst,0
 Compartment,k-p-t-m,Kptm,,qkmpt,0
 Compartmental,k-p-t-m-l,Kptml,,qklmpt,0
 Compartmentalize,k-p-t-m-l-i-s,Kptmlis,,qiklmpst,0
@@ -5448,13 +5497,17 @@ Leveraging,l-e-v-r-j-\-h,Levrjg,,qegjlrv,90822
 Leverages,l-e-v-r-j-s,Levrjs,,qejlrsv,90822
 Levers,l-e-v-r-s,Levrs,,qelrsv,90822
 LGBTQIA+,l-g-b-f,Lgbf,,qbfgl,0
-Longing,l-ng-\-h,Lgg,,qgl,3
+Longed,l-ng-d,Lgd,,qgl,909
+Longing,l-ng-\-h,Lgg,,qgl,909
 Longingly,l-ng-\-h-e,Lgge,,qegl,3
-Longings,l-ng-\-h-s,Lggs,,qgls,3
+Longings,l-ng-\-h-s,Lggs,,qgls,909
 Willing,l-\-h,Lgi,i,qgil,0
 Willingness,l-^-h-\-n-e-s,Lgnes,,qeglns,0
-Longshot,l-ng-sh,Lgz,,qglz,909
+Longs,l-ng-s,Lgs,,qgls,909
+Longings,l-ng-\-sh,Lgz,,qglz,3
 Longshots,l-ng-sh-s,Lgzs,,qglsz,909
+Longshot,l-ng-sh-t,Lgzt,,qgltz,909
+Longshots,l-ng-sh-t-s,Lgzts,,qglstz,909
 Wealthy,l-th-e,Lhe,,qehl,0
 Wealthies,l-th-e-s,Lheos,o,qehlos,0
 Wealthiest,l-th-e-s,Lhes,,qehls,0
@@ -5758,6 +5811,8 @@ Messengers,m-e-s-j-e2-s,Mesjes,,qejms,1
 Messaging,m-e-s-j-\-h,Mesjg,,qegjms,399
 Messager,m-e-s-j-r,Mesjr,,qejmrs,0
 Messages,m-e-s-j-s,Mesjs,,qejms,399
+Miserable,m-e-s-r-b,Mesrb,,qbemrs,9
+Miserably,m-e-s-r-b-e,Mesrbe,,qbemrs,9
 Messes,m-e-ss,Messe,e,qems,92298
 Mystified,m-e-s2-df-d,Mestfd,,qdefmst,0
 Mystifying,m-e-s2-df-\-h,Mestfg,,qefgmst,0
@@ -6149,6 +6204,7 @@ Misdirectors,m-s-d-r-k-r-s,Msdrkrs,,qdkmrs,378
 Misdirects,m-s-d-r-k-s,Msdrks,,qdkmrs,378
 Misdirection,m-s-d-r-k-sh,Msdrkz,,qdkmrsz,378
 Misdirections,m-s-d-r-k-sh-s,Msdrkzs,,qdkmrsz,378
+Miserably,m-s-e-r-b-e,Mserbe,,qbemrs,9
 Misfire,m-s-f-i-r,Msfir,,qfimrs,
 Misfired,m-s-f-i-r-d,Msfird,,qfimrs,
 Misfiring,m-s-f-i-r-\-h,Msfirg,,qfimrs,
@@ -6436,6 +6492,7 @@ Indigenous,nt-j-n-u-s,Ndjnus,,qdjnsu,21
 Endangered,n-tn-j-e2-d,Ndnjed,,qdejn,6
 Endangering,n-tn-j-e2-\-h,Ndnjeg,,qdegjn,6
 Endangers,n-tn-j-e2-s,Ndnjes,,qdejns,6
+Interdenominationally,n-/-tn-o-mn-sh-l-e,Ndnomnzle,,qdelmnoz,0
 Indent,n-tn-t,Ndnt,,qdnt,1
 Indented,n-tn-t-d,Ndntd,,qdnt,1
 Indenting,n-tn-t-\-h,Ndntg,,qdgnt,1
@@ -6448,6 +6505,9 @@ Indoctrinational,n-d-o-k-t-sh-l,Ndoktzl,,qdklnotz,3
 Indoctrinationally,n-d-o-k-t-sh-l-e,Ndoktzle,,qdeklnotz,3
 Indoctrinations,n-d-o-k-t-sh-s,Ndoktzs,,qdknostz,3
 Independently,nt-p-e,Ndpe,,qdenp,4
+Interdependent,^-n-\-d-jnt-nt,Ndpndnd,,qdnp,17
+Interdependence,^-n-\-d-jnt-n-s,Ndpndns,,qdnps,17
+Interdependency,^-n-\-d-jnt-n-s-e,Ndpndnse,,qdenps,17
 Independence,nt-p,Ndpo,o,qdnop,4
 Endured,nt-r-d,Ndrd,,qdnr,4
 Enduring,nt-r-\-h,Ndrg,,qdnr,4
@@ -6584,6 +6644,10 @@ Networking,n-e-t-r-k-\-h,Netrkg,,qegknrt,583
 Networks,n-e-t-r-k-s,Netrks,,qeknrst,583
 Nets,n-e-t-s,Netso,o,qenost,4
 Neitzsche,n-e-t-sh-e,Netze,,qentz,0
+Inevitable,n-e-v-t-b,Nevtb,,qbentv,0
+Inevitably,n-e-v-t-b-e,Nevtbe,,qbentv,0
+Inevitability,n-e-v-t-\-b,Nevtbo,,qbenotv,0
+Inevitabilities,n-e-v-t-\-b-s,Nevtbos,,qbenostv,0
 Nervously,n-e-v-u-s-e,Nevuse,,qensuv,1
 Nervousness,n-e-v-u-s-n-e-s,Nevusnes,,qensuv,0
 Unfaithful,n-f-a-th2-f,Nfahf,,qafhn,17
@@ -7191,6 +7255,8 @@ Enslaved,n-s-l-a-v-d,Nslavd,,qadlnsv,2
 Enslaving,n-s-l-a-v-\-h,Nslavg,,qaglnsv,2
 Enslavement,n-s-l-a-v-m,Nslavm,,qalmnsv,2
 Enslavements,n-s-l-a-v-m-s,Nslavms,,qalmnsv,2
+Enslaver,n-s-l-a-v-r,Nslavr,,qalnrsv,2
+Enslavers,n-s-l-a-v-r-s,Nslavrs,,qalnrsv,2
 Enslaves,n-s-l-a-v-s,Nslavs,,qalnsv,2
 Instrumented,n-s-/-m-d,Nsmd,,qmns,0
 Instrumenting,n-s-/-m-\-h,Nsmg,,qmns,0
@@ -8772,6 +8838,7 @@ Productionized,pr-o-k-sh-i-s-d,Prokzisd,,qdikoprsz,5
 Productionizing,pr-o-k-sh-i-s-\-h,Prokzisg,,qgikoprsz,5
 Productionizes,pr-o-k-sh-i-s-s,Prokziss,,qikoprsz,5
 Productions,pr-o-k-sh-s,Prokzs,,qkoprsz,0
+Propaganda,pr-o-p-d-a,Propda,,qadopr,0
 Protecting,pr-o-t-e-k-\-h,Protekg,,qegkoprt,88
 Protector,pr-o-t-e-k-r,Protekr,,qekoprt,0
 Protectorate,pr-o-t-e-k-r-a,Protekra,,qaekoprt,0
@@ -8790,11 +8857,12 @@ Protesters,pr-o-t-e-s-r-s,Protesrs,,qeoprst,12
 Protests,pr-o-t-e-s-s,Protess,,qeoprst,575
 Protestation,pr-o-t-e-s-a-sh,Protesz,,qeoprstz,575
 Protestations,pr-o-t-e-s-a-sh-s,Proteszs,,qeoprstz,0
+Propaganda,pr-p-d-a,Prpda,,qadpr,0
 Purposely,pr-p-e,Prpe,,qepr,108
 Purposeful,pr-p-\-f,Prpf,,qfpr,0
 Purposefully,pr-p-\-f-e,Prpfe,,qefpr,0
 Propagate,pr-p-g,Prpg,,qgpr,2
-Propaganda,pr-p-g-a-nt-a,Prpganda,,qadgnpr,0
+Propaganda,pr-o-p-d-a,Prpganda,,qadgnpr,0
 Propagated,pr-p-g-d,Prpgd,,qdgpr,2
 Propagating,pr-p-g-\-h,Prpgg,,qgpr,2
 Propagates,pr-p-g-s,Prpgs,,qgprs,2
@@ -11368,6 +11436,14 @@ Schism,ss2-m,Ssm,,qms,5
 Schismatic,ss2-m-k,Ssmk,,qkms,5
 Schismatics,ss2-m-k-s,Ssmks,,qkms,5
 Schisms,ss2-m-s,Ssms,,qms,5
+Suspend,ss-nd,Ssnd,,qdns,92690
+Suspended,ss-nd-d,Ssndd,,qdns,92690
+Suspending,ss-nd-\-h,Ssndg,,qdns,92690
+Suspender,ss-nd-r,Ssndr,,qdnrs,92690
+Suspenders,ss-nd-r-s,Ssndrs,,qdnrs,92690
+Suspends,ss-nd-s,Ssnds,,qdns,92690
+Suspension,ss-nd-sh,Ssndz,,qdnsz,92690
+Suspensions,ss-nd-sh-s,Ssndzs,,qdnsz,92690
 Stepson,s-s-o-n,Sson,,qnos,92247
 Stepsons,s-s-o-n-s,Ssons,,qnos,92247
 Systems,s2s-s,Sss,,qs,1532
@@ -11495,6 +11571,12 @@ Stitching,s-t-e-ch-\-h,Stecg,,qcest,1
 Stitcher,s-t-e-ch-r,Stecr,,qcerst,1
 Stitchers,s-t-e-ch-r-s,Stecrs,,qcerst,1
 Stitches,s-t-e-ch-s,Stecs,,qcest,1
+Steal,s-t-e-l,Stel,,qelst,
+Stealing,s-t-e-l-\-h,Stelg,,qelst,
+Stealth,s-t-e-l-th,Stelh,,qehlst,
+Stealthy,s-t-e-l-th-e,Stelhe,,qehlst,
+Stealthily,s-t-e-l-th-\-e,Stelheo,o,qehlost,
+Steals,s-t-e-l-s,Stels,,qelst,
 Steamroll,s2-t-e-m-r-o-l,Stemrol,,qelmorst,0
 Steamrolled,s2-t-e-m-r-o-l-d,Stemrold,,qelmorst,0
 Steamrolling,s2-t-e-m-r-o-l-\-h,Stemrolg,,qelmorst,0
@@ -11645,6 +11727,9 @@ Statuses,s2-t-t-s,Stts,,qst,0
 Stubborn,s-t-u-b-e2-n,Stuben,,qbenstu,0
 Stubbornly,s-t-u-b-e2-n-e,Stubene,,qbenstu,0
 Stubbornness,s-t-u-b-e2-n-n-e-s,Stubennes,,qbenstu,0
+Studented,s2-t-u-tn-d,Studnd,,qdnstu,0
+Studenting,s2-t-u-tn-\-h,Studng,,qdnstu,0
+Students,s2-t-u-tn-s,Studns,,qdnstu,0
 Stuffed,s2-t-u-f-d,Stufd,,qdfstu,939
 Stuffing,s2-t-u-f-\-h,Stufg,,qfgstu,939
 Stuffs,s2-t-u-f-s,Stufs,,qfstu,939
@@ -12061,6 +12146,8 @@ Tenet,tn-e-t,Tnet,,qent,0
 Tonight,tn-i,Tnio,o,qinot,237
 Tenants,tn-nt-s,Tnnts,,qnst,0
 Do you know,tn-o,Tnoi,i,qinot,0
+Denominational,tn-o-mn-sh-l,Tnomnzl,,qlmnotz,0
+Denominationally,tn-o-mn-sh-l-e,Tnomnzle,,qelmnotz,0
 Downsize,tn-s-i-s,Tnsis,,qinst,16
 Downsized,tn-s-i-s-d,Tnsisd,,qdinst,16
 Downsizing,tn-s-i-s-\-h,Tnsisg,,qginst,16
@@ -12142,6 +12229,8 @@ Tragic,t-r-a-j-k,Trajk,,qajkrt,1
 Tragically,t-r-a-j-k-e,Trajke,,qaejkrt,1
 Trajectory,t-r-a-j-k-t-r-e,Trajktre,,qaejkrt,0
 Trajectories,t-r-a-j-k-t-r-e-s,Trajktres,,qaejkrst,0
+Trajectory,t-r-a-j-r-e,Trajre,,qaejrt,0
+Trajectories,t-r-a-j-r-e-s,Trajres,,qaejrst,0
 Tracked,t-r-a-k-d,Trakd,,qadkrt,151
 Tracking,t-r-a-k-\-h,Trakg,,qagkrt,151
 Tractor,t-r-a-k-r,Trakr,,qakrt,0
@@ -12400,6 +12489,12 @@ Weirdnesses,u-e-r-d-n-e-s-s,Uerdness,,qdenrsu,0
 Weirder,u-e-r-d-r,Uerdr,,qderu,173
 Weirds,u-e-r-d-s,Uerds,,qdersu,173
 Wisdoms,u-e-s2-tm-s,Uesdms,,qdemsu,50
+Underestimate,^-u-\-e-s2-tm-a-t,Uestmat,,qaemstu,0
+Underestimated,^-u-\-e-s2-tm-a-t-d,Uestmatd,,qaemstu,0
+Underestimating,^-u-\-e-s2-tm-a-t-\-h,Uestmatg,,qaemstu,0
+Underestimates,^-u-\-e-s2-tm-a-t-s,Uestmats,,qaemstu,0
+Underestimation,^-u-\-e-s2-tm-a-sh,Uestmz,,qemstuz,0
+Underestimations,^-u-\-e-s2-tm-a-sh-s,Uestmzs,,qemstuz,0
 Witnessed,u-e-t-n-e-s-d,Uetnesd,,qdenstu,1
 Witnessing,u-e-t-n-e-s-\-h,Uetnesg,,qegnstu,1
 Witnesses,u-e-t-n-e-s-s,Uetness,,qenstu,1
@@ -13021,6 +13116,8 @@ Outlining,a-u-l-a-n-\-h,Wling,,qgilnw,9
 Outliner,a-u-l-a-n-r,Wlinr,,qilnrw,0
 Outliners,a-u-l-a-n-r-s,Wlinrs,,qilnrsw,0
 Outlines,a-u-l-a-n-s,Wlins,,qilnsw,9
+Outlier,a-u-l-i-r,Wlir,,qilrw,0
+Outliers,a-u-l-i-r-s,Wlirs,,qilrsw,0
 Outlaw,a-u-l-o,Wlo,,qlow,14
 Outlawed,a-u-l-o-d,Wlod,,qdlow,14
 Outlawing,a-u-l-o-\-h,Wlog,,qglow,14
