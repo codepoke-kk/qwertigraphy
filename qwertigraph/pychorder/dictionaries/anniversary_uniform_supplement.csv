@@ -3588,6 +3588,12 @@ Happiest,^-h-\-a-p-e-/-s2,Hapes,,qaehps,6
 Happened,^-h-\-a-p-n-d,Hapnd,,qadhnp,799
 Happening,^-h-\-a-p-n-\-h,Hapng,,qaghnp,799
 Happenings,^-h-\-a-p-n-s\--h,Hapnsh,,qahnps,0
+Harass,^-h-\-a-r-a-s,Haras,,qahrs,0
+Harassed,^-h-\-a-r-a-s-d,Harasd,,qahrs,0
+Harassing,^-h-\-a-r-a-s-\-h,Harasg,,qahrs,0
+Harassment,^-h-\-a-r-a-s-m,Harasm,,qahmrs,0
+Harassments,^-h-\-a-r-a-s-m-s,Harasms,,qahmrs,0
+Harasses,^-h-\-a-r-a-s-s,Harass,,qahrs,0
 Hassle,^-h-\-a-s-l,Hasl,,qahls,53
 Hassled,^-h-\-a-s-l-d,Hasld,,qadhls,53
 Hassling,^-h-\-a-s-l-\-h,Haslg,,qaghls,53
@@ -5142,7 +5148,9 @@ Communiting,k-t-e-\-h,Kteg,,qegkt,0
 Communities,k-t-e-s,Ktes,,qekst,0
 Contemporaneously,k-tm-pr-a-n-u-s-e,Ktmpranuse,,qaekmnprstu,0
 Contemporaries,k-tm-pr-r-e-s,Ktmprres,,qekmprst,0
-Contained,k-tn-d,Ktndo,o,qdknot,124
+Contained,k-tn-d,Ktnd,,qdknt,124
+Contend,k-tn-d,Ktndi,i,qdiknt,0
+Contend,k-tn-d,Ktndo,o,qdknot,0
 Containing,k-tn-\-h,Ktng,,qgknt,124
 Continual,k-tn-l,Ktnl,,qklnt,124
 Containment,k-tn-m,Ktnm,,qkmnt,2
@@ -6473,6 +6481,7 @@ Individuated,nt-v-a-t-d,Ndvatd,,qadntv,138
 Individuating,nt-v-a-t-\-h,Ndvatg,,qadgntv,138
 Individuates,nt-v-a-t-s,Ndvats,,qadnstv,138
 Individuation,nt-v-a-sh,Ndvaz,,qadnvz,138
+Individually,nt-v-e,Ndve,,qdenv,0
 Indivisibly,n-df-e-s-b-e,Ndvesbe,,qbdensv,0
 Undivided,n-df-i-d,Ndvid,,qdinv,0
 Individualize,nt-v-i-s,Ndvis,,qdinsv,1
@@ -7138,6 +7147,10 @@ Uncertainties,n-s2-e-tn-t-e-s,Nsetntes,,qenst,14
 Inserts,n-s2-e2-t-s,Nsets,,qenst,0
 Insertion,n-s-e-sh,Nsez,,qensz,5436
 Insertions,n-s-e-sh-s,Nsezs,,qensz,65
+Insufficient,n-s2-f-sh,Nsfz,,qfnsz,35
+Insufficiently,n-s2-f-sh-e,Nsfze,,qefnsz,35
+Insufficiency,n-s2-f-sh-s-e,Nsfzse,,qefnsz,35
+Insufficiencies,n-s2-f-sh-s-e-s,Nsfzses,,qefnsz,35
 Interesting,^-n-\-s-\-h,Nsg,,qgns,4
 Interestingly,^-n-\-s-\-h-e,Nsge,,qegns,4
 Insignificantly,n-s2-g-e,Nsgeqk,,qegns,76
@@ -8666,6 +8679,7 @@ Price,pr-i-s,Pris,,qiprs,3
 Priced,pr-i-s-d,Prisd,,qdiprs,3
 Pricy,pr-i-s-e,Prise,,qeiprs,0
 Pricing,pr-i-s-\-h,Prisg,,qgiprs,3
+Priceless,pr-i-s-l,Prisl,,qilprs,3
 Privates,pr-i-s,Priso,o,qioprs,11
 Prices,pr-i-s-s,Priss,,qiprs,3
 Prize,pr-i-s,Prisu,u,qiprsu,3
@@ -9639,6 +9653,8 @@ Reconciling,r-k-s-i-l-\-h,Rksilg,,qgiklrs,18
 Reconciler,r-k-s-i-l-r,Rksilr,,qiklrs,4
 Reconcilers,r-k-s-i-l-r-s,Rksilrs,,qiklrs,4
 Reconciles,r-k-s-i-l-s,Rksils,,qiklrs,18
+Reconciliation,r-k-s-i-l-sh,Rksilz,,qiklrsz,0
+Reconciliations,r-k-s-i-l-sh-s,Rksilzs,,qiklrsz,0
 Reconstruct,r-e-k-s2-/-k,Rksk,,qkrs,8
 Reconstructed,r-e-k-s2-/-k-d,Rkskd,,qdkrs,8
 Reconstructing,r-e-k-s2-/-k-\-h,Rkskg,,qgkrs,8
@@ -10080,6 +10096,14 @@ Receptacles,r-s-e-p-\-k-s,Rsepks,,qekprs,0
 Receptive,r-s-e-p-df,Rseptv,,qeprstv,236
 Receptively,r-s-e-p-df-e,Rseptve,,qeprstv,236
 Receptions,r-s-e-p-sh-s,Rsepzs,,qeprsz,236
+Resequence,r-s-e-k-\-n-^-e-n-s,Rseqens,,qenqrs,7
+Resequenced,r-s-e-k-\-n-^-e-n-s-d,Rseqensd,,qenqrs,7
+Resequencing,r-s-e-k-\-n-^-e-n-s-\-h,Rseqensg,,qenqrs,7
+Resequences,r-s-e-k-\-n-^-e-n-s-s,Rseqenss,,qenqrs,7
+Resequence,r-s-e-k-\-n-^-e-n-s,Rseqns,,qenqrs,7
+Resequenced,r-s-e-k-\-n-^-e-n-s-d,Rseqnsd,,qenqrs,7
+Resequencing,r-s-e-k-\-n-^-e-n-s-\-h,Rseqnsg,,qenqrs,7
+Resequences,r-s-e-k-\-n-^-e-n-s-s,Rseqnss,,qenqrs,7
 Resurrections,r-e-s-e-r-e-k-sh-s,Rserekzs,,qekrsz,0
 Receivers,r-s-e-r-s,Rsers,,qers,2
 Receives,r-s2-e-s,Rses,,qers,375
@@ -10779,6 +10803,10 @@ Self,s-f,Sf,,qfs,92827
 Stepfather,s-f-a-th,Sfah,,qafhs,0
 Stepfathers,s-f-a-th-s,Sfahs,,qafhs,0
 Superfluously,s-/-f-e,Sfe,,qefs,1
+Suffice,s2-f-i-s,Sfis,,qfis,0
+Sufficed,s2-f-i-s-d,Sfisd,,qfis,0
+Sufficing,s2-f-i-s-\-h,Sfisg,,qfis,0
+Suffices,s2-f-i-s-s,Sfiss,,qfis,0
 Selfless,s-f-l,Sfl,,qfls,92827
 Selflessly,s-f-l-e,Sfle,,qefls,92827
 Subfolder,s-f-o-ld-r,Sfoldr,,qdflors,32
@@ -10786,6 +10814,9 @@ Subfoldered,s-f-o-ld-r-d,Sfoldrd,,qdflors,32
 Subfoldering,s-f-o-ld-r-\-h,Sfoldrg,,qdfglors,32
 Subfolders,s-f-o-ld-r-s,Sfoldrs,,qdflors,32
 Superfluous,s-/-f,Sfu,u,qfsu,1
+Sufficient,s2-f-sh,Sfz,,qfsz,35
+Sufficiently,s2-f-sh-e,Sfze,,qefsz,35
+Sufficiency,s2-f-sh-s-e,Sfzse,,qefsz,35
 Significantly,s2-g-e,Sge,,qegs,76
 Signature,s-g,Sgi,i,qgis,
 Signatures,s-g-s,Sgis,i,qgis,
@@ -12476,6 +12507,10 @@ Universally,e-u-n-v-e,Unve,,qenuv,51
 Universities,e-u-n-v-e-s2-t-e-s,Unvestes,,qenstuv,1
 Universal,e-u-n-v-l,Unvl,,qlnuv,51
 Universally,e-u-n-v-l-e,Unvle,,qelnuv,51
+Universalize,e-u-n-v-l-i-s,Unvlis,,qilnsuv,51
+Universalized,e-u-n-v-l-i-s-d,Unvlisd,,qilnsuv,51
+Universalizing,e-u-n-v-l-i-s-\-h,Unvlisg,,qilnsuv,51
+Universalizes,e-u-n-v-l-i-s-s,Unvliss,,qilnsuv,51
 Universality,e-u-n-v-\-l,Unvlo,o,qlnouv,51
 Universals,e-u-n-v-l-s,Unvls,,qlnsuv,51
 Universalities,e-u-n-v-\-l-s,Unvlso,o,qlnosuv,51
