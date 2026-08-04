@@ -991,7 +991,7 @@ Blinded,bl-i-nt-d,Blindd,,qbdiln,0
 Blinding,bl-i-nt-\-h,Blindg,,qbdgiln,0
 Blinds,bl-i-nt-s,Blinds,,qbdilns,0
 Blinds,bl-i-s,Blis,,qbils,0
-Builtin,bl-n,Bln,,qbln,29
+Built-in,bl-n,Bln,,qbln,29
 Blend,bl-n-d,Blnd,,qbdln,92271
 Blendable,bl-n-d-b,Blndb,,qbdln,92271
 Blendability,bl-n-d-\-b,Blndbo,o,qbdlno,92271
@@ -1001,7 +1001,7 @@ Blending,bl-n-d-\-h,Blndg,,qbdln,92271
 Blender,bl-n-d-r,Blndr,,qbdlnr,92271
 Blenders,bl-n-d-r-s,Blndrs,,qbdlnrs,92271
 Blends,bl-n-d-s,Blnds,,qbdlns,92271
-Builtins,bl-n-s,Blns,,qblns,29
+Built-ins,bl-n-s,Blns,,qblns,29
 Blockade,bl-o-k-a-d,Blokad,,qabdklo,0
 Blockaded,bl-o-k-a-d-d,Blokadd,,qabdklo,0
 Blockading,bl-o-k-a-d-\-h,Blokadg,,qabdgklo,0
@@ -4781,6 +4781,14 @@ Cautious,k-o-sh-u-s,Kozus,,qkosuz,1195
 Cautiously,k-o-sh-u-s-e,Kozuse,,qekosuz,1195
 Company,k-p,Kp,,qkp,3
 Complain,k-p,Kpa,a,qakp,818
+Compact,k-p-a-k,Kpak,,qakp,135
+Compacted,k-p-a-k-d,Kpakd,,qakp,135
+Compacting,k-p-a-k-\-h,Kpakg,,qakp,135
+Compactor,k-p-a-k-r,Kpakr,,qakpr,135
+Compactors,k-p-a-k-r-s,Kpakrs,,qakprs,135
+Compacts,k-p-a-k-s,Kpaks,,qakps,135
+Compaction,k-p-a-k-sh,Kpakz,,qakpz,135
+Compactions,k-p-a-k-sh-s,Kpakzs,,qakpsz,135
 Campaign,k-p-a-n,Kpan,,qaknp,0
 Campaigned,k-p-a-n-d,Kpand,,qadknp,0
 Campaigning,k-p-a-n-\-h,Kpang,,qagknp,0
@@ -4956,6 +4964,10 @@ Credited,k-r-e-d-d,Kredd,,qdekr,59
 Crediting,k-r-e-d-\-h,Kredg,,qdekr,59
 Credit card,k-r-e-d-\-k,Kredk,,qdekr,59
 Credit cards,k-r-e-d-\-k-s,Kredks,,qdekrs,59
+Credential,k-r-e-tn,Kredn,,qdeknr,460
+Credentialed,k-r-e-tn-d,Krednd,,qdeknr,460
+Credentialing,k-r-e-tn-\-h,Kredng,,qdeknr,460
+Credentials,k-r-e-tn-s,Kredns,,qdeknrs,460
 Credentialed,k-r-e-tn-sh-d,Krednzd,,qdeknrz,460
 Credentialing,k-r-e-tn-sh-\-h,Krednzg,,qdegknrz,460
 Credentials,k-r-e-tn-sh-s,Krednzs,,qdeknrsz,460
@@ -6229,8 +6241,12 @@ Misconfiguring,m-s-k-f-e-g-r-\-h,Mskfegrg,,qefgkmrs,358
 Misconfigures,m-s-k-f-e-g-r-s,Mskfegrs,,qefgkmrs,358
 Misconfiguration,m-s-k-f-e-g-r-sh,Mskfegrz,,qefgkmrsz,358
 Misconfigurations,m-s-k-f-e-g-r-sh-s,Mskfegrzs,,qefgkmrsz,358
-Miscommunication,m-s-k-m-u,Mskmu,,qkmsu,32
-Miscommunications,m-s-k-m-u-s,Mskmus,,qkmsu,32
+Miscommunicate,m-s-k-m-u,Mskmu,,qkmsu,32
+Miscommunicated,m-s-k-m-u-d,Mskmud,,qkmsu,32
+Miscommunicating,m-s-k-m-u-\-h,Mskmug,,qkmsu,32
+Miscommunicates,m-s-k-m-u-s,Mskmus,,qkmsu,32
+Miscommunication,m-s-k-m-u-sh,Mskmuz,,qkmsuz,32
+Miscommunications,m-s-k-m-u-sh-s,Mskmuzs,,qkmsuz,32
 Misconstrue,m-s-k-s2-t-r-u,Mskstru,,qkmrstu,83
 Misconstruable,m-s-k-s2-t-r-u-b,Mskstrub,,qbkmrstu,83
 Misconstruably,m-s-k-s2-t-r-u-b-e,Mskstrube,,qbekmrstu,83
@@ -6629,6 +6645,7 @@ Unnoticed,u-n-e-s2-t,Nesdo,o,qdenos,0
 Noticing,n-e-s-\-h,Nesg,,qegns,1079
 Knees,n-e-s,Neso,o,qenos,8247
 Unnecessarily,u-n-e-ss-e,Nesseo,o,qenos,200
+Notices,n-e-ss,Nesso,o,qenos,1079
 Necessaries,n-e-ss-s,Nesss,,qens,318
 Nested,n-e-s-t-d,Nestd,,qdenst,0
 Nesting,n-e-s-t-\-h,Nestg,,qegnst,0
@@ -11748,6 +11765,10 @@ Switchability,s-u-e-ch-\-b,Suecbo,,qbceosu,0
 Switched,s-u-e-ch-d,Suecd,,qcdesu,85
 Switching,s-u-e-ch-\-h,Suecg,,qcegsu,85
 Switches,s-u-e-ch-s,Suecs,,qcesu,85
+Sweep,s-u-e-p,Suep,,qepsu,
+Sweeping,s-u-e-p-\-h,Suepg,,qepsu,
+Sweeps,s-u-e-p-s,Sueps,,qepsu,
+Swept,s-u-e-p-t,Suept,,qepstu,
 Suffered,s2-u-f-d,Sufd,,qdfsu,35
 Sufficiently,s2-u-f-e,Sufe,,qefsu,35
 Suffering,s2-u-f-\-h,Sufg,,qfgsu,35
