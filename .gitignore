@@ -8,3 +8,4 @@ logs
 personal.ahk
 /qwertigraph/dictionaries/*.v1backup
 /anniversary_hold
+**/__pycache__/**
