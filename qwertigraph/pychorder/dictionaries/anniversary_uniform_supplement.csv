@@ -4240,6 +4240,12 @@ Occasioned,k-a-sh-d,Kazd,,qadkz,2
 Occasioning,k-a-sh-\-h,Kazg,,qagkz,2
 Occasions,k-a-sh-s,Kazs,,qaksz,2
 Counterbalanced,k-/-b-a-l-d,Kbald,,qabdkl,0
+Combat,k-b-a-t,Kbat,,qabkt,15
+Combated,k-b-a-t-d,Kbatd,,qabkt,15
+Combating,k-b-a-t-\-h,Kbatg,,qabkt,15
+Combatant,k-b-a-t-nt,Kbatnt,,qabknt,15
+Combatants,k-b-a-t-nt-s,Kbatnts,,qabknst,15
+Combats,k-b-a-t-s,Kbats,,qabkst,15
 Contributed,k-\-b-d,Kbd,,qbdk,0
 Kubernetes,k-b-e-s,Kbes,,qbeks,5
 Contributing,k-\-b-\-h,Kbg,,qbgk,0
@@ -8281,6 +8287,14 @@ Paradoxically,p-/-d-o-x-\-k-e,Pdoxke,,qdekopx,0
 Paradoxes,p-/-d-o-x-s,Pdoxs,,qdopsx,0
 Picked,p-e-k-d,Pekd,,qdekp,202
 Picking,p-e-k-\-h,Pekg,,qegkp,202
+Pickle,p-e-k-l,Pekl,,qeklp,92493
+Pickled,p-e-k-l-d,Pekld,,qeklp,92493
+Pickling,p-e-k-l-\-h,Peklg,,qeklp,92493
+Pickler,p-e-k-l-r,Peklr,,qeklpr,92493
+Picklers,p-e-k-l-r-s,Peklrs,,qeklprs,92493
+Pickles,p-e-k-l-s,Pekls,,qeklps,92493
+Picker,p-e-k-r,Pekr,,qekpr,202
+Pickers,p-e-k-r-s,Pekrs,,qekprs,202
 Picks,p-e-k-s,Peks,,qekps,202
 Perimeter,p-e-m-e-t-e2,Pemete,,qempt,0
 Perimetered,p-e-m-e-t-e2-d,Pemeted,,qdempt,0
@@ -9282,6 +9296,8 @@ Quarantine,k-\-n-^-o-r-a-nt,Qorant,,qanoqrt,0
 Quarantined,k-\-n-^-o-r-a-nt-d,Qorantd,,qadnoqrt,0
 Quarantining,k-\-n-^-o-r-a-nt-\-h,Qorantg,,qagnoqrt,0
 Quarantines,k-\-n-^-o-r-a-nt-s,Qorants,,qanoqrst,0
+Quota,k-w-o-t-a,Qota,,qaot,40
+Quotas,k-w-o-t-a-s,Qotas,,qaoqst,40
 Quoted,k-w-o-t-d,Qotd,,qdoqt,40
 Quotidian,k-w-o-td-ea-n,Qotden,,qdenoqt,0
 Quoting,k-w-o-t-\-h,Qotg,,qgoqt,40
