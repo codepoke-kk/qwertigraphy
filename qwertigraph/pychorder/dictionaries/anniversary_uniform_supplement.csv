@@ -58,9 +58,15 @@ Absenced,a-b-s-n-s-d,Absnsd,,qabns,5
 Absencing,a-b-s-n-s-\-h,Absnsg,,qabns,5
 Absences,a-b-s-n-s-s,Absnss,,qabns,5
 Absolute,a-b-s2-o,Abso,,qabos,61
+Absorbed,a-b-s2-o-b-d,Absobd,,qabos,0
+Absorbing,a-b-s2-o-b-\-h,Absobg,,qabos,0
+Absorber,a-b-s2-o-b-r,Absobr,,qabors,0
+Absorbers,a-b-s2-o-b-r-s,Absobrs,,qabors,0
+Absorbs,a-b-s2-o-b-s,Absobs,,qabos,0
 Absolution,a-b-s2-o-l-sh,Absolz,,qablosz,0
 Absolutions,a-b-s2-o-l-sh-s,Absolzs,,qablosz,0
 Absolute,a-b-s2-o,Absoo,o,qabos,61
+Absorptions,a-b-s2-o-p-sh-s,Absopzs,,qabopsz,0
 Absolutes,a-b-s2-o-s,Absos,,qabos,61
 Absence,a-b-s,Absu,u,qabsu,5
 Absolutely,a-b-s2-o-e,Absy,,qabsy,61
@@ -475,6 +481,14 @@ Angelic,a-n-j-l-k,Anjlk,,qajkln,0
 Angels,a-n-j-l-s,Anjls,,qajlns,6
 Analyst,a-n-l-e-s,Anleso,o,qaelnos,0
 Analysts,a-n-l-e-s-s,Anless,,qaelns,0
+Analyze,a-n-l-i-s,Anlis,,qailns,25
+Analyzed,a-n-l-i-s-d,Anlisd,,qailns,25
+Analyzing,a-n-l-i-s-\-h,Anlisg,,qailns,25
+Analyzer,a-n-l-i-s-r,Anlisr,,qailnrs,25
+Analyzers,a-n-l-i-s-r-s,Anlisrs,,qailnrs,25
+Analyzes,a-n-l-i-s-s,Anliss,,qailns,25
+Analysis,a-n-l-ss,Anlss,,qalns,59
+Analyses,a-n-l-ss-s,Anlsss,,qalns,59
 Anathema,a-n-\-m-a,Anma,,qamn,17
 Anathemas,a-n-\-m-a-s,Anmas,,qamns,17
 Anathematize,a-n-\-m-a-t-i-s,Anmatis,,qaimnst,17
@@ -4537,6 +4551,14 @@ Culminates,k-l-mn-a-t-s,Klmnats,,qaklmnst,0
 Culminations,k-l-mn-sh-s,Klmnzs,,qklmnsz,0
 Clumsily,k-l-m-s-e-e,Klmsee,,qeklms,0
 Clumsiness,k-l-m-s-e-n-e-s,Klmsenes,,qeklmns,0
+Claude,k-l-o-d,Klod,,qdklo,92068
+Clauded,k-l-o-d-d,Klodd,,qdklo,92068
+Clauding,k-l-o-d-\-h,Klodg,,qdklo,92068
+Claude Risk,k-l-o-d-k,Klodk,,qdklo,92068
+Claude Risks,k-l-o-d-k-s,Klodks,,qdklos,92068
+Clauder,k-l-o-d-r,Klodr,,qdklor,92068
+Clauders,k-l-o-d-r-s,Klodrs,,qdklors,92068
+Claudes,k-l-o-d-s,Klods,,qdklos,92068
 Clothed,k-l-o-th-d,Klohd,,qdhklo,3
 Clothing,k-l-o-th-\-h,Klohg,,qghklo,3
 Cloth,k-l-o-th,Kloho,o,qhklo,3
