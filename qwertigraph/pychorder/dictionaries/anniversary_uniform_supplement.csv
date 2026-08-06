@@ -924,6 +924,10 @@ Beatifies,b-ea-df-s,Betfs,,qbefst,0
 Beatifyion,b-ea-df-sh,Betfz,,qbeftz,0
 Beating,b-e-t-\-h,Betg,,qbegt,0
 Beatings,b-e-t-\-h-s,Betz,,qbetz,0
+Bishop,b-e-sh-p,Bezp,,qbepz,1079
+Bishopric,b-e-sh-p-k,Bezpk,,qbekpz,1079
+Bishoprics,b-e-sh-p-k-s,Bezpks,,qbekpsz,1079
+Bishops,b-e-sh-p-s,Bezps,,qbepsz,1079
 Beforehand,b-f-n-t,Bfnt,,qbfnt,0
 Befriended,b-fr-d,Bfrd,,qbdfr,0
 Began,b-g-a-n,Bgan,,qabgn,0
@@ -1709,6 +1713,14 @@ Detractor,d-/-k-r,Dkro,o,qdkor,6
 Decryptors,d-/-k-r-s,Dkrs,,qdkrs,36
 Detractors,d-/-k-r-s,Dkrso,o,qdkors,6
 Decrypts,d-/-k-s,Dks,,qdks,36
+Deconstruct,d-k-s2-/-k,Dksk,,qdks,0
+Deconstructed,d-k-s2-/-k-d,Dkskd,,qdks,0
+Deconstructing,d-k-s2-/-k-\-h,Dkskg,,qdks,0
+Deconstructer,d-k-s2-/-k-r,Dkskr,,qdkrs,0
+Deconstructers,d-k-s2-/-k-r-s,Dkskrs,,qdkrs,0
+Deconstructs,d-k-s2-/-k-s,Dksks,,qdks,0
+Deconstruction,d-k-s2-/-k-sh,Dkskz,,qdksz,0
+Deconstructions,d-k-s2-/-k-sh-s,Dkskzs,,qdksz,0
 Detracts,d-/-k-s,Dkso,o,qdkos,36
 Decryption,d-/-k-sh,Dkz,,qdkz,36
 Detraction,d-/-k-sh,Dkzo,o,qdkoz,36
@@ -12644,6 +12656,7 @@ Unneeded,u-n-e-td,Unedd,,qdeno,7
 Underneath,u-/-n-e-h,Uneh,,qehnu,0
 Unique,e-u-n-e-k,Uneq,,qenqu,109
 Uniquely,e-u-n-e-k-e,Uneqe,,qenqu,109
+Unnoticed,u-n-e-s-d,Unesd,,qdensu,1079
 Unison,e-u-n-e-s-n,Unesn,,qensu,0
 Units,e-u-n-e-t-s,Unets,,qenstu,0
 Unnerve,u-n-e-v,Unev,,qenuv,
