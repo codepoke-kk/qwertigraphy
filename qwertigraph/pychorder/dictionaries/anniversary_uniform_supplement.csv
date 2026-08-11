@@ -632,6 +632,8 @@ Assailant,a-s-a-l-nt,Asalnt,,qalnst,
 Assailants,a-s-a-l-nt-s,Asalnts,,qalnst,
 Assails,a-s-a-l-s,Asals,,qals,
 Assembled,a-s2-e-m-d,Asemd,,qadems,1
+Assembly,a-s2-e-m-e,Aseme,,qaems,1
+Assemblies,a-s2-e-m-e-s,Asemes,,qaems,1
 Assembling,a-s2-e-m-\-h,Asemg,,qaegms,1
 Assembler,a-s2-e-m-r,Asemr,,qaemrs,1
 Assemblers,a-s2-e-m-r-s,Asemrs,,qaemrs,1
@@ -1843,7 +1845,15 @@ Denote,tn-o-t,Dnot,,qdnot,143
 Denoted,tn-o-t-d,Dnotd,,qdnot,143
 Denoting,tn-o-t-\-h,Dnotg,,qdgnot,143
 Denotes,tn-o-t-s,Dnots,,qdnost,143
+Downplay,d-n-p,Dnp,,qdnp,2176
+Downplayed,d-n-p-d,Dnpd,,qdnp,2176
+Downplaying,d-n-p-\-h,Dnpg,,qdnp,2176
+Downplay,d-n-pl-a,Dnpla,,qadlnp,2176
+Downplayed,d-n-pl-a-d,Dnplad,,qadlnp,2176
+Downplaying,d-n-pl-a-\-h,Dnplag,,qadlnp,2176
+Downplays,d-n-pl-a-s,Dnplas,,qadlnps,2176
 Downpour,dn-p-o-r,Dnpor,,qdnopr,0
+Downplays,d-n-p-s,Dnps,,qdnps,2176
 Downward,d-n-\-r-d,Dnrd,,qdnr,
 Downsides,d-n-s-i-s,Dnsis,,qdins,15
 Downstream,d-n-s-t-r-e-m,Dnstrem,,qdemnrst,6
@@ -1884,7 +1894,8 @@ Dominating,d-o-mn-a-t-\-h,Domnatg,,qadgmnot,0
 Dominates,d-o-mn-a-t-s,Domnats,,qadmnost,0
 Domained,d-o-mn-d,Domnd,,qdmno,322
 Domaining,d-o-mn-\-h,Domng,,qdgmno,322
-Dominance,d-o-mn-n-s,Domnns,,qdmnos,8
+Dominion,d-o-mn-n,Domnn,,qdmno,0
+Dominions,d-o-mn-n-s,Domnns,,qdmnos,0
 Dominant,d-o-mn-nt,Domnnt,,qdmnot,8
 Domains,d-o-mn-s,Domns,,qdmnos,322
 Dominions,d-o-mn-u-n-s,Domnuns,,qdmnosu,0
@@ -2651,6 +2662,7 @@ Emote,e-m-o-t,Emot,,qemot,7
 Emoted,e-m-o-t-d,Emotd,,qdemot,7
 Emoting,e-m-o-t-\-h,Emotg,,qegmot,7
 Emotes,e-m-o-t-s,Emots,,qemost,7
+Emotionally,e-m-o-sh-e,Emoze,,qemoz,2
 Emotional,e-m-o-sh-l,Emozl,,qelmoz,16
 Emotionally,e-m-o-sh-l-e,Emozle,,qelmoz,2
 Emotions,e-m-o-sh-s,Emozs,,qemosz,16
@@ -3213,6 +3225,7 @@ Forgery,f-j-r-e,Fjre,,,91163
 Forgeries,f-j-r-e-s,Fjres,,qefjrs,91163
 Forges,f-j-s,Fjs,,qfjs,12
 Forthcoming,f-k-m-\-h,Fkmg,,qfgkm,0
+Effectiveness,f-k-v-n,Fkvn,,qfknv,97
 Flagged,fl-a-g-d,Flagd,,qadfgl,1
 Flagging,fl-a-g-\-h,Flagg,,qafgl,1
 Flags,fl-a-g-s,Flagso,o,qafglos,1
@@ -6763,6 +6776,8 @@ Infects,n-f-e-k-s,Nfeks,,qefkns,2
 Infection,n-f-e-k-sh,Nfekz,,qefknz,2
 Infectious,n-f-e-k-sh-us,Nfekzus,,qefknsuz,0
 Influencing,n-f-\-h,Nfg,,qfgn,0
+Ineffectively,n-f-k-v-e,Nfkve,,qefknv,97
+Ineffectiveness,n-f-k-v-n,Nfkvn,,qfknv,97
 Inflated,n-fl-a-d,Nflad,,qadfln,10
 Inflatedly,n-fl-a-d-e,Nflade,,qadefln,0
 Inflating,n-fl-a-\-h,Nflag,,qafgln,10
@@ -7305,6 +7320,9 @@ Unsettles,n-s2-e-t-l-s,Nsetls,,qelnst,1
 Uncertainty,n-s2-e-tn-t-e,Nsetnte,,qenst,14
 Uncertainties,n-s2-e-tn-t-e-s,Nsetntes,,qenst,14
 Inserts,n-s2-e2-t-s,Nsets,,qenst,0
+Unsurviveable,n-s-e2-v-i-b,Nsevib,,qbeinsv,35
+Unsurviveably,n-s-e2-v-i-b-e,Nsevibe,,qbeinsv,35
+Unsurviveability,n-s-e2-v-i-\-b,Nsevibo,,qbeinosv,35
 Insertion,n-s-e-sh,Nsez,,qensz,5436
 Insertions,n-s-e-sh-s,Nsezs,,qensz,65
 Interesting,^-n-\-s-\-h,Nsg,,qgns,4
@@ -8392,6 +8410,8 @@ Playbooked,pl-a-b-k-d,Plabkd,,qabdklp,148
 Playbooking,pl-a-b-k-\-h,Plabkg,,qabgklp,148
 Playbooks,pl-a-b-k-s,Plabks,,qabklps,148
 Played,pl-a-d,Plad,,qadlp,657
+Playful,pl-a-f,Plaf,,qaflp,657
+Playfully,pl-a-f-e,Plafe,,qaeflp,657
 Playing,pl-a-\-h,Plag,,qaglp,657
 Playground,pl-a-g-r,Plagr,,qaglpr,1
 Playground,pl-a-g-r-nt,Plagrnd,,qadglnpr,1
@@ -10959,6 +10979,7 @@ Servings,s2-e-v-\-h-s,Sevgs,,qegsv,375
 Survive,s-e2-v-i,Sevi,,qeisv,35
 Survivable,s-e2-v-i-b,Sevib,,qbeisv,35
 Survivably,s-e2-v-i-b-e,Sevibe,,qbeisv,0
+Surviveability,s-e2-v-i-\-b,Sevibo,o,qbeiosv,35
 Survived,s-e2-v-i-d,Sevid,,qdeisv,35
 Surviving,s-e2-v-i-\-h,Sevig,,qegisv,35
 Survival,s-e2-v-i-l,Sevil,,qeilsv,35
@@ -11273,6 +11294,10 @@ Softly,s2-o-f-t-e,Softe,,qefost,0
 Softest,s2-o-f-t-e-s,Softes,,qefost,0
 Softer,s2-o-f-t-r,Softr,,qforst,0
 Software,s2-o-f-w-a,Sofwa,,qafosw,0
+Songwriter,s2-o-ng-r,Sogr,,qgors,6
+Songwriter,s2-o-ng-r-i-r,Sogrir,,qgiors,6
+Songwriters,s2-o-ng-r-i-r-s,Sogrirs,,qgiors,6
+Songwriters,s2-o-ng-r-s,Sogrs,,qgors,6
 Songs,s2-o-ng-s,Sogs,,qgos,6
 Sock,s-o-k,Sok,,qkos,
 Socked,s-o-k-d,Sokd,,qkos,
@@ -11520,6 +11545,14 @@ Subside,ss-i-d,Ssid,,qdis,36
 Subsided,ss-i-d-d,Ssidd,,qdis,36
 Subsiding,ss-i-d-\-h,Ssidg,,qdgis,36
 Subsides,ss-i-d-s,Ssids,,qdis,36
+Circumcise,^-s-\-s-i-s,Ssis,,qis,
+Circumcised,^-s-\-s-i-s-d,Ssisd,,qis,
+Circumcising,^-s-\-s-i-s-\-h,Ssisg,,qis,
+Circumciser,^-s-\-s-i-s-r,Ssisr,,qirs,
+Circumcisers,^-s-\-s-i-s-r-s,Ssisrs,,qirs,
+Circumcises,^-s-\-s-i-s-s,Ssiss,,qis,
+Circumcision,^-s-\-s-i-s-sh,Ssisz,,qisz,
+Circumcisions,^-s-\-s-i-s-sh-s,Ssiszs,,qisz,
 Suspect,ss-/-k,Ssk,,qks,80
 Suspected,ss-/-k-d,Sskd,,qdks,80
 Systemically,s2s-k-e,Sske,,qeks,0
