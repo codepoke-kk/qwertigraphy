@@ -3085,6 +3085,13 @@ Foreach,f-ch,Fc,,qcf,47
 Forwarder,f-d-r,Fdr,,qdfr,16
 Forwarders,f-d-r-s,Fdrs,,qdfrs,16
 -Fully,<-f-e,Fe<,,q<ef,0
+Fetch,f-e-ch,Fec,,qcef,92216
+Fetchable,f-e-ch-b,Fecb,,qbcef,92216
+Fetchability,f-e-ch-\-b,Fecbo,o,qbcefo,92216
+Fetchables,f-e-ch-b-s,Fecbs,,qbcefs,92216
+Fetched,f-e-ch-d,Fecd,,qcef,92216
+Fetching,f-e-ch-\-h,Fecg,,qcef,92216
+Fetches,f-e-ch-s,Fecs,,qcefs,92216
 Feedback,f-e-d-b,Fedb,,qbdef,3
 Federalist,f-e-d-e-s,Fedes,,qdefs,0
 Federalists,f-e-d-e-s-s,Fedess,,qdefs,0
@@ -5208,6 +5215,8 @@ Causing,k-s2-\-h,Ksg,,qgks,2222
 Considering,k-s-g,Ksgi,,qgiks,92170
 Causing,k-s2-\-h,Ksgo,o,qgkos,2222
 Consider,k-s,Ksi,i,qiks,21
+Concise,k-s-i-s,Ksis,,qiks,
+Concisely,k-s-i-s-e,Ksise,,qeiks,
 Constructed,k-s2-/-k-d,Kskd,,qdks,8
 Constructing,k-s2-/-k-\-h,Kskg,,qgks,8
 Constructs,k-s2-/-k-s,Ksks,,qks,8
@@ -5713,6 +5722,9 @@ More,m,M,,qm,5160
 -Ment,<-m,M<,,q<m,0
 Multi-,m->,M>,,q>m,0
 Match,m-a-ch,Mac,,qacm,232
+Matchable,m-a-ch-b,Macb,,qabcm,232
+Matchability,m-a-ch-\-b,Macbo,o,qabcmo,232
+Matchables,m-a-ch-b-s,Macbs,,qabcms,232
 Matched,m-a-ch-d,Macd,,qacdm,232
 Marched,m-a-ch-d,Macdo,o,qacdmo,232
 Matching,m-a-ch-\-h,Macg,,qacgm,232
