@@ -6434,6 +6434,7 @@ Muster,m-u-s-t-e2,Muste,,qemstu,0
 Mustered,m-u-s-t-e2-d,Musted,,qdemstu,0
 Mustering,m-u-s-t-e2-\-h,Musteg,,qegmstu,0
 Musters,m-u-s-t-e2-s,Mustes,,qemstu,0
+Mutually,m-u-t-l-e,Mutle,,qelmtu,0
 Mutuality,m-u-t-\-l,Mutlo,o,qlmotu,0
 Mutuals,m-u-t-l-s,Mutls,,qlmstu,0
 Mouthed,m-a-u-th-d,Mwhd,,qhmw,13
@@ -6720,6 +6721,8 @@ Unemotionally,u-n-e-m-o-sh-l-e,Nemozle,,qelmnoz,2
 Any more,n-e-m,Nemu,u,qemnu,0
 Nineveh,n-e-n-v-e,Nenve,,qenv,5497
 Near,n-e2,Neo,o,qeno,73
+Unexplainable,n-e-pl-b,Neplb,,qbelnp,92365
+Unexplainably,n-e-pl-b-e,Neplbe,,qbelnp,92365
 Unexplained,n-e-pl-d,Nepld,,qdelnp,92365
 Unequal,n-e-k-l,Neql,,qelnq,919
 Unequaled,n-e-k-l-d,Neqld,,qdelnq,919
@@ -11109,12 +11112,21 @@ Skilled,s2-k-l-d,Skld,,qdkls,70
 Schooled,s2-k-l-d,Skldo,o,qdklos,70
 Skilling,s2-k-l-\-h,Sklg,,qgkls,70
 Schooling,s2-k-l-\-h,Sklgo,o,qgklos,70
-Schooler,s2-k-l-r,Sklr,,qklrs,0
+Schooler,s2-k-l-r,Sklor,o,qklors,70
+Schoolers,s2-k-l-r-s,Sklors,o,qklors,70
+Scholar,s2-k-l-r,Sklr,,qklrs,0
+Scholarly,s2-k-l-r-e,Sklre,,qeklrs,0
 Schooler,s2-k-l-r,Sklro,o,qklors,0
-Schoolers,s2-k-l-r-s,Sklrs,,qklrs,0
+Scholars,s2-k-l-r-s,Sklrs,,qklrs,0
 Schoolers,s2-k-l-r-s,Sklrso,o,qklors,0
+Scholarships,s2-k-l-r-/-sh-s,Sklrzs,,qklrsz,0
 Skills,s2-k-l-s,Skls,,qkls,70
 Schools,s2-k-l-s,Sklso,o,qklos,70
+Scholar,s2-k-o-l-r,Skolr,,qklors,0
+Scholarly,s2-k-o-l-r-e,Skolre,,qeklors,0
+Scholars,s2-k-o-l-r-s,Skolrs,,qklors,0
+Scholarship,s2-k-o-l-r-sh,Skolrz,,qklorsz,0
+Scholarships,s2-k-o-l-r-sh-s,Skolrzs,,qklorsz,0
 Scribe,s2-k-r,Skr,,qkrs,3
 Scrape,s2-k-r-a-p,Skrap,,qakprs,92554
 Scraped,s2-k-r-a-p-d,Skrapd,,qadkprs,92554
@@ -13589,6 +13601,8 @@ Shaking,sh-a-k-\-h,Zakg,,qagkz,4
 Shaken,sh-a-k-n,Zakn,,qaknz,4
 Shakes,sh-a-k-s,Zaks,,qaksz,4
 Shamed,sh-a-m-d,Zamd,,qadmz,8
+Shameful,sh-a-m-f,Zamf,,qafmz,8
+Shamefully,sh-a-m-f-e,Zamfe,,qaefmz,8
 Shaming,sh-a-m-\-h,Zamg,,qagmz,8
 Shames,sh-a-m-s,Zams,,qamsz,8
 Shareholder,sh-a-\-o-l-d-r,Zaoldr,,qadlorz,17
