@@ -2729,6 +2729,9 @@ Initiates,e-n-e-sh-ea-t-s,Enezts,,qenstz,10
 Initiative,e-n-e-sh-t-v,Eneztv,,qentvz,0
 Initiatives,e-n-e-sh-t-v-s,Eneztvs,,qenstvz,1
 Enforce,e-n-f-s2,Enfs,,qefns,6
+Enforceable,e-n-f-s2-b,Enfsb,,qbefns,6
+Enforceably,e-n-f-s2-b-e,Enfsbe,,qbefns,6
+Enforceability,e-n-f-s2-\-b,Enfsbo,o,qbefnos,6
 Enforced,e-n-f-s2-d,Enfsd,,qdefns,6
 Enforcing,e-n-f-s2-\-h,Enfsg,,qefgns,6
 Enforcement,e-n-f-s2-m,Enfsm,,qefmns,0
@@ -3412,7 +3415,12 @@ Frequently,fr-e-k-e,Freqe,,qefqr,8
 Frequenting,fr-e-k-\-h,Freqg,,qefgqr,8
 Frequents,fr-e-k-s,Freqs,,qefqrs,8
 Frequencies,fr-e-k-s,Freqso,o,qefoqrs,8
+Freezed,fr-e-s-d,Fresd,,qefrs,1
+Freezing,fr-e-s-\-h,Fresg,,qefrs,1
 Frees,fr-e-s,Freso,o,qefors,183
+Freezer,fr-e-s-r,Fresr,,qefrs,1
+Freezers,fr-e-s-r-s,Fresrs,,qefrs,1
+Freezes,fr-e-s-s,Fress,,qefrs,1
 Freshly,fr-e-sh-e,Freze,,qefrz,108
 Friending,fr-\-h,Frgo,o,qfgor,0
 Friday,fr-i,Fri,,qfir,178
@@ -5667,6 +5675,8 @@ Localizes,l-o-k-i-s-s,Lokiss,,qiklos,0
 Locality,l-o-k-\-l,Lokl,,qklo,329
 Locomotives,l-o-k-m-o-df-s,Lokmotvs,,qklmostv,0
 Local,l-o-k,Loko,o,qklo,329
+Locator,l-o-k-r,Lokr,,qklor,329
+Locators,l-o-k-r-s,Lokrs,,qklors,329
 Locks,l-o-k-s,Loks,,qklos,329
 Locates,l-o-k-s,Loksi,i,qiklos,329
 Locals,l-o-k-s,Lokso,o,qklos,329
@@ -8107,6 +8117,10 @@ Office,o-s,Osi,i,qios,295
 Oversold,^-o-\-s-o-l-d,Osold,,qdlos,2
 Offices,o-ss,Ossi,i,qios,295
 Overstate,o-/-s2-t,Ost,,qost,11
+Overstaff,^-o-\s-t-a-f,Ostaf,,qafost,36
+Overstaffed,^-o-\s-t-a-f-d,Ostafd,,qafost,36
+Overstaffing,^-o-\s-t-a-f-\-h,Ostafg,,qafost,36
+Overstaffs,^-o-\s-t-a-f-s,Ostafs,,qafost,36
 Overstated,o-/-s2-td,Ostd,,qdost,0
 Overstating,o-/-s2-t-\-h,Ostg,,qgost,11
 Overstatement,^-o-\-s2-t-m,Ostm,,qmost,170
@@ -9696,6 +9710,8 @@ Regards,r-g-s,Rgas,a,qagrs,0
 Regarded,r-g-d,Rgd,,qdgr,0
 Regularly,r-e-g-e,Rge,,qegr,31
 Regarding,r-g-\-h,Rgg,,qgr,0
+Regardless,r-g-l,Rgl,,qglr,0
+Regardlessly,r-g-l-e,Rgle,,qeglr,0
 Regress,r-g-r-e-s,Rgres,,qegrs,
 Regressed,r-g-r-e-s-d,Rgresd,,qegrs,
 Regressing,r-g-r-e-s-\-h,Rgresg,,qegrs,
@@ -9922,6 +9938,7 @@ Relinquished,r-e-l-e-ng-d,Rlengd,,qdeglnr,19
 Relinquishes,r-e-l-e-ng-s,Rlengs,,qeglnrs,19
 Released,r-e-l-e-s-d,Rlesd,,qdelrs,81
 Releasing,r-e-l-e-s-\-h,Rlesg,,qeglrs,81
+Regardlessly,r-e-/-l-e-s-e,Rlesoe,o,qelors,0
 Releases,r-e-l-e-s-s,Rless,,qelrs,81
 Realization,r-e-l-e-s-a-sh,Rlesz,,qelrsz,81
 Realizations,r-e-l-e-s-a-sh-s,Rleszs,,qelrsz,0
@@ -12857,6 +12874,10 @@ Underscores,u-\-s-k-o-r-s,Uskors,,qkorsu,1
 Ultrasound,u-s2-nt,Usnd,,qdnsu,593
 Ultrasounds,u-s2-nt-s,Usnds,,qdnsu,593
 Understate,^-u-\-s2-t,Ust,,qstu,295
+Understaff,^-u-\s-t-a-f,Ustaf,,qafstu,36
+Understaffed,^-u-\s-t-a-f-d,Ustafd,,qafstu,36
+Understaffing,^-u-\s-t-a-f-\-h,Ustafg,,qafstu,36
+Understaffs,^-u-\s-t-a-f-s,Ustafs,,qafstu,36
 Understated,^-u-\-s2-t-d,Ustd,,qstu,295
 Understating,^-u-\-s2-t-\-h,Ustg,,qstu,295
 Understatement,^-u-\-s2-t-m,Ustm,,qmstu,295
