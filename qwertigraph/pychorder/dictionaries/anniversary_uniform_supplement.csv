@@ -166,6 +166,8 @@ Affirmation,a-f-e-m-sh,Afemz,,qaefmz,6
 Affirmations,a-f-e-m-sh-s,Afemzs,,qaefmsz,0
 Afterthought,a-f-h-o-t,Afhot,,qafhot,0
 Afterthoughts,a-f-h-o-t-s,Afhots,,qafhost,0
+Affecting,a-f-k-\-h,Afkg,,qafk,17
+Affects,a-f-k-s,Afks,,qafks,17
 Afterlife,a-f-l-a,Afla,,qafl,0
 Afterlife,a-f-l-a-f,Aflaf,,qafl,0
 Afterlives,a-f-l-a-s,Aflas,,qafls,0
@@ -1503,6 +1505,10 @@ Dictates,d-e-k-t-a-s,Dektas,,qadekst,0
 Dictionary,d-e-k-z-r-e,Dekzre,,qdekrz,175
 Dictionaries,d-e-k-z-r-e-s,Dekzres,,qdekrsz,175
 Delegated,d-e-l-d,Deld,,qdel,11
+Delicately,d-e-l-e-k-e,Deleke,,qdekl,1
+Delicatessen,d-l-e-k-e-s2-n,Delekesn,,qdeklns,0
+Delicatessens,d-l-e-k-e-s2-n-s,Delekesns,,qdeklns,0
+Delicates,d-e-l-e-k-s,Deleks,,qdekls,1
 Dealing,d-e-l-\-h,Delg,,qdegl,11
 Delegate,d-e-l-g-a,Delga,,qadegl,11
 Delegated,d-e-l-g-a-d,Delgad,,qadegl,11
@@ -1736,6 +1742,11 @@ Deliverability,d-l-\-b,Dlbo,,qbdlo,0
 Deliverables,d-l-b-s,Dlbs,,qbdls,2
 Delivered,d-l-d,Dld,,qdl,69
 Delivery,d-l-e,Dle,,qdel,69
+Delicate,d-l-e-k,Dlek,,qdekl,1
+Delicately,d-l-e-k-e,Dleke,,qdekl,1
+Delicatessen,d-l-e-k-e-s2-n,Dlekesn,,qdeklns,0
+Delicatessens,d-l-e-k-e-s2-n-s,Dlekesns,,qdeklns,0
+Delicates,d-l-e-k-s,Dleks,,qdekls,1
 Deliveries,d-l-e-s,Dles,,qdels,69
 Delete,d-l-e-t,Dlet,,qdelt,636
 Deleted,d-l-e-td,Dletd,,qdelt,181
@@ -2286,7 +2297,7 @@ Dispatched,d-s-p-a-ch-d,Dspacd,,qacdps,125
 Dispatching,d-s-p-a-ch-\-h,Dspacg,,qacdgps,125
 Dispatcher,d-s-p-a-ch-r,Dspacr,,qacdprs,125
 Dispatchers,d-s-p-a-ch-r-s,Dspacrs,,qacdprs,125
-Dispatchs,d-s-p-a-ch-s,Dspacs,,qacdps,125
+Dispatches,d-s-p-a-ch-s,Dspacs,,qacdps,125
 Despair,d-s-p-a-r,Dspar,,qadprs,232
 Despaired,d-s-p-a-r-d,Dspard,,qadprs,232
 Despairing,d-s-p-a-r-\-h,Dsparg,,qadgprs,232
@@ -6980,6 +6991,14 @@ Incapable,n-k-a-p-b,Nkapb,,qabknp,41
 Incapably,n-k-a-p-b-e,Nkapbe,,qabeknp,41
 Incapability,n-k-a-p-\-b,Nkapbo,,qabknop,14
 Incapabilities,n-k-a-p-\-b-s,Nkapbs,,qabknps,14
+Encapsulate,n-k-a-p-s-l-a-t,Nkapslat,,qaklnpst,0
+Encapsulated,n-k-a-p-s-l-a-t-d,Nkapslatd,,qaklnpst,0
+Encapsulating,n-k-a-p-s-l-a-t-\-h,Nkapslatg,,qaklnpst,0
+Encapsulates,n-k-a-p-s-l-a-t-s,Nkapslats,,qaklnpst,0
+Encapsulation,n-k-a-p-s-l-a-t-sh,Nkapslatz,,qaklnpstz,0
+Encapsulations,n-k-a-p-s-l-a-t-sh-s,Nkapslatzs,,qaklnpstz,0
+Encapsulation,n-k-a-p-s-l-sh,Nkapslz,,qaklnpsz,0
+Encapsulations,n-k-a-p-s-l-sh-s,Nkapslzs,,qaklnpsz,0
 Encryptable,n-\-k-b,Nkb,,qbkn,234
 Encryptably,n-\-k-b-e,Nkbe,,qbekn,0
 Encrypted,n-\-k-d,Nkd,,qdkn,234
@@ -7565,6 +7584,7 @@ Newline,n-u-l,Nul,,qlnu,4620
 Newlines,n-u-l-s,Nuls,,qlnsu,4620
 Numbered,n-u-m-d,Numd,,qdmnu,640
 Numbering,n-u-m-\-h,Numg,,qgmnu,640
+Pneumonia,n-u-mn-ea,Numna,,qamnu,0
 Numbers,n-u-m-s,Nums,,qmnsu,640
 None,n-u-n,Nun,,qnu,283
 Nonetheless,n-u-n-th-l,Nunhl,,qhlnu,0
@@ -7719,6 +7739,7 @@ Unavoidably,n-v-o-e-b-e,Nvybe,,qbenvy,98
 Unavoidably,n-v-o-e-e,Nvye,,qenvy,98
 Inexactly,n-e-s2-a-k-e,Nxake,,qaeknx,392
 Inexhaustibly,n-e-s2-o-s-b-e,Nxosbe,,qbenosx,0
+Unexpectedly,n-e-s-p-/-t-e,Nxpde,,qdenpx,351
 Noisy,n-o-e-s-e,Nyse,,qensy,15
 Noisily,n-o-e-s-e,Nysy,y,qensy,15
 Nationalist,n-a-sh-l-e-s,Nzles,,qelnsz,1
