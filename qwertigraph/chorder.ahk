@@ -34,30 +34,30 @@ FileInstall, coach.ico, coach.ico, true
 Gui, MainGUI: Add, Tab3,x6 y40 w928 h526 vMainTabSet, Coach|Historical|Editor|GreggDict|Logs||Settings|Strokes|Clipper|Player
 Gui, MainGUI: Show, x262 y118 w940 h570, % "Qwertigraph"
 
-#Include classes\Gdip_All.ahk
-#Include classes\QwertigraphyEnvironment.ahk
-#Include classes\DictionaryEntry.ahk
-#Include classes\DictionaryMap.ahk
-#Include classes\MappingEngine.ahk
-#Include classes\AuxKeyboardEngine.ahk
-#Include classes\Queue.ahk
-#Include classes\LoggingEvent.ahk
-#Include classes\LogViewport.ahk
-#Include classes\SpeedingEvent.ahk
-#Include classes\SpeedViewport.ahk
-#Include classes\CoachingEvent.ahk
-#Include classes\GreggdictViewport.ahk
-#Include classes\GreggdictEntry.ahk
-#Include classes\CoachViewport.ahk
-#Include classes\EditorViewport.ahk
+#Include %A_ScriptDir%\classes\Gdip_All.ahk
+#Include %A_ScriptDir%\classes\QwertigraphyEnvironment.ahk
+#Include %A_ScriptDir%\classes\DictionaryEntry.ahk
+#Include %A_ScriptDir%\classes\DictionaryMap.ahk
+#Include %A_ScriptDir%\classes\MappingEngine.ahk
+#Include %A_ScriptDir%\classes\AuxKeyboardEngine.ahk
+#Include %A_ScriptDir%\classes\Queue.ahk
+#Include %A_ScriptDir%\classes\LoggingEvent.ahk
+#Include %A_ScriptDir%\classes\LogViewport.ahk
+#Include %A_ScriptDir%\classes\SpeedingEvent.ahk
+#Include %A_ScriptDir%\classes\SpeedViewport.ahk
+#Include %A_ScriptDir%\classes\CoachingEvent.ahk
+#Include %A_ScriptDir%\classes\GreggdictViewport.ahk
+#Include %A_ScriptDir%\classes\GreggdictEntry.ahk
+#Include %A_ScriptDir%\classes\CoachViewport.ahk
+#Include %A_ScriptDir%\classes\EditorViewport.ahk
 ;#Include classes\PenEvent.ahk
 ;#Include classes\PadViewport.ahk
-#Include classes\DashboardEvent.ahk
-#Include classes\DashboardViewport.ahk
-#Include classes\StrokepathsViewport.ahk
-#Include classes\ClipperViewport.ahk
-#Include classes\PlayerViewport.ahk
-#Include scripts\shared_functions.ahk
+#Include %A_ScriptDir%\classes\DashboardEvent.ahk
+#Include %A_ScriptDir%\classes\DashboardViewport.ahk
+#Include %A_ScriptDir%\classes\StrokepathsViewport.ahk
+#Include %A_ScriptDir%\classes\ClipperViewport.ahk
+#Include %A_ScriptDir%\classes\PlayerViewport.ahk
+#Include %A_ScriptDir%\scripts\shared_functions.ahk
 
 ; Make the pretty icon
 I_Icon = coach.ico
@@ -115,7 +115,7 @@ logViewer.addQueue(stroker.logQueue)
 logViewer.addQueue(clipper.logQueue)
 ;
 
-#Include classes\SettingsViewport.ahk
+#Include %A_ScriptDir%\classes\SettingsViewport.ahk
 
 ; engine.Start()
 
