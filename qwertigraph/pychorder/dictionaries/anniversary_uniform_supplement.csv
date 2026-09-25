@@ -433,9 +433,12 @@ Administrator,a-mn-a-t-r,Amnatr,,qamnrt,8
 Administrators,a-mn-a-t-r-s,Amnatrs,,qamnrst,8
 Administrates,a-mn-a-t-s,Amnats,,qamnst,8
 Admined,a-mn-d,Amnd,,qadmn,52
+Administrations,a-mn-e-s-sh-s,Amneszs,,qaemnsz,5
 Admining,a-mn-\-h,Amng,,qagmn,52
 Admin,a-mn,Amni,i,qaimn,52
 Administrators,a-mn-r-s,Amnrs,,qamnrs,8
+Administration,a-mn-r-sh,Amnrz,,qamnrz,5
+Administrations,a-mn-r-sh-s,Amnrzs,,qamnrsz,5
 Admins,a-mn-s,Amnsi,i,qaimns,52
 Admins,a-mn-s,Amnso,o,qamnos,52
 Amounted,a-mn-t-d,Amntd,,qadmnt,4
@@ -1092,6 +1095,11 @@ Bodyguard,b-o-g-a2-d,Bogad,,qabdgo,0
 Bodyguards,b-o-g-a2-d-s,Bogads,,qabdgos,0
 Bothered,b-o-th-d,Bohd,,qbdho,1101
 Bothering,b-o-th-\-h,Bohg,,qbgho,1101
+Bother,b-o-th-r,Bohr,,qbhor,1101
+Bothered,b-o-th-r-d,Bohrd,,qbhor,1101
+Bothering,b-o-th-r-\-h,Bohrg,,qbhor,1101
+Bothers,b-o-th-r-s,Bohrs,,qbhors,1101
+Bothersome,b-o-th-r-s2-m,Bohrsm,,qbhmors,0
 Bothers,b-o-th-s,Bohs,,qbhos,1101
 Biologically,b-o-\-k-e,Boke,,qbeko,6
 Biological,b-o-\-k,Boko,o,qbko,6
@@ -1477,6 +1485,11 @@ Deadlined,td-l-a-n-d,Ddlind,,qdiln,0
 Deadlining,td-l-a-n-\-h,Ddling,,qdgiln,0
 Deadlines,td-l-a-n-s,Ddlins,,qdilns,0
 Didn't,td-n,Ddn,,qdn,0
+Deduplicate,d-d-u-p,Ddup,,qdpu,30
+Deduplicated,d-d-u-p-d,Ddupd,,qdpu,30
+Deduplicating,d-d-u-p-\-h,Ddupg,,qdpu,30
+Deduplicates,d-d-u-p-s,Ddups,,qdpsu,30
+Deduplication,d-d-u-p-sh,Ddupz,,qdpuz,30
 Dearly,d-e2-e,Dee,,qde,14
 Degraded,d-e-g-r-a-d,Degrad,,qadegr,0
 Degrading,d-e-g-r-a-\-h,Degrag,,qadegr,0
@@ -3301,6 +3314,8 @@ Flows,f-l-o-s,Flos,,qflos,72
 Float,f-l-o-t,Flot,,qflot,2
 Floated,f-l-o-t-d,Flotd,,qdflot,2
 Floating,f-l-o-t-\-h,Flotg,,qfglot,2
+Floater,f-l-o-t-r,Flotr,,qflort,2
+Floaters,f-l-o-t-r-s,Flotrs,,qflorst,2
 Floats,f-l-o-t-s,Flots,,qflost,2
 Flotation,f-l-o-t-a-sh,Flotz,,qflotz,2
 Flowered,fl-r-d,Flrd,,qdflr,1
@@ -4948,6 +4963,8 @@ Compassionately,k-p-a-sh-a-t-e,Kpazate,,qaekptz,2
 Compassions,k-p-a-sh-s,Kpazs,,qakpsz,0
 Complained,k-p-d,Kpdo,o,qdkop,818
 Completely,kp-e,Kpeo,o,qekop,147
+Competitive,kp-e-df,Kpetv,,qekptv,2
+Competitively,kp-e-df-e,Kpetve,,qekptv,2
 Complaining,k-p-\-h,Kpg,,qgkp,818
 Compile,k-p-i-l,Kpil,,qiklp,18
 Compiled,k-p-i-l-d,Kpild,,qdiklp,18
@@ -5807,6 +5824,7 @@ Magistrate,m-a-j-s-t-r-a,Majstra,,qajmrst,0
 Magistrates,m-a-j-s-t-r-a-s,Majstras,,qajmrst,0
 Making,m-a-k-\-h,Makg,,qagkm,2910
 Machinations,m-a-k-n-sh-s,Maknzs,,qakmnsz,0
+Maladministration,m-a-l-a-mn-r-sh,Malamnrz,,qalmnrz,5
 Mailable,m-a2-l-b,Malbi,i,qabilm,0
 Mailed,m-a2-l-d,Mald,,qadlm,5
 Mailing,m-a2-l-\-h,Malg,,qaglm,5
@@ -5879,6 +5897,12 @@ Embarrassing,m-b-a-r-a-s-\-h,Mbarasg,,qabgmrs,1
 Embarrassment,m-b-a-r-a-s-m,Mbarasm,,qabmrs,0
 Embarrassments,m-b-a-r-a-s-m-s,Mbarasms,,qabmrs,0
 Embarrasss,m-b-a-r-a-s-s,Mbarass,,qabmrs,1
+Embarass,m-b-a-r-s,Mbars,,qabmrs,
+Embarassed,m-b-a-r-s-d,Mbarsd,,qabmrs,
+Embarassing,m-b-a-r-s-\-h,Mbarsg,,qabmrs,
+Embarassment,m-b-a-r-s-m,Mbarsm,,qabmrs,
+Embarassments,m-b-a-r-s-m-s,Mbarsms,,qabmrs,
+Embarasses,m-b-a-r-s-s,Mbarss,,qabmrs,
 Embrace,m-br-a-s,Mbras,,qabmrs,32
 Embraceable,m-br-a-s-b,Mbrasb,,qabmrs,32
 Embraceably,m-br-a-s-b-e,Mbrasbe,,qabemrs,0
@@ -6033,6 +6057,7 @@ Emphasizes,m-f-s-i-s-s,Mfsiss,,qfims,2
 Emphasis,m-f-ss,Mfss,,qfms,2
 Emphases,m-f-ss,Mfsso,o,qfmos,2
 Emphases,m-f-ss,Mfsss,s,qfms,2
+Morpheus,m-f-u-s,Mfus,,qfmsu,
 Emphatically,m-f-/-ya,Mfy,,qfmy,0
 Admired,m-i2-d,Mido,o,qdimo,0
 Admiring,m-i2-\-h,Migo,o,qgimo,0
@@ -6537,6 +6562,7 @@ Unambiguous,n-a-m-b-g,Nambg,,qabgmn,0
 Unambiguously,n-a-m-b-g-e,Nambge,,qabegmn,0
 Unannounced,n-a-n-n-s-d,Nannsd,,qadns,17
 Unanswerably,n-a-n-s-b-e,Nansbe,,qabens,0
+Unanswered,n-a-n-s-d,Nansd,,qadns,1331
 Unappeaseable,n-a-p-e-s-b,Napesb,,qabenps,0
 Unappeaseably,n-a-p-e-s-b-e,Napesbe,,qabenps,0
 Unappeased,n-a-p-e-s-d,Napesd,,qadenps,0
@@ -7672,6 +7698,7 @@ Invaded,n-v-a-d-d,Nvadd,,qadnv,0
 Invading,n-v-a-d-\-h,Nvadg,,qadgnv,0
 Invades,n-v-a-d-s,Nvads,,qadnsv,0
 Invadion,n-v-a-d-sh,Nvadz,,qadnvz,0
+Interval,n-/-v-a-l,Nval,,qalnv,0
 Invalid,n-v-a-l-d,Nvald,,qadlnv,193
 Invalidate,n-v-a-l-d-d,Nvaldd,,qadlnv,92
 Invalidated,n-v-a-l-d-d-d,Nvalddd,,qadlnv,92
@@ -7690,6 +7717,7 @@ Invalids,n-v-a-l-e-d-s,Nvaleds,,qadelnsv,193
 Invalidity,n-v-a-l-e-td-e,Nvaledte,,qadelntv,12
 Invalidation,n-v-a-l-e-d-sh,Nvaledz,,qadelnvz,193
 Invalidations,n-v-a-l-e-d-sh-s,Nvaledzs,,qadelnsvz,193
+Intervals,n-/-v-a-l-s,Nvals,,qalnsv,0
 Invasive,n-v-a-s-v,Nvasv,,qansv,0
 Invasively,n-v-a-s-v-e,Nvasve,,qaensv,0
 Invasives,n-v-a-s-v-s,Nvasvs,,qansv,0
@@ -7751,6 +7779,7 @@ Invocation,n-v-k-sh,Nvkz,,qknvz,10
 Invocations,n-v-k-sh-s,Nvkzs,,qknsvz,0
 Invaluable,n-v-l-b,Nvlb,,qblnv,90531
 Invaluably,n-v-l-b-e,Nvlbe,,qbelnv,90531
+Intervals,n-/-v-l-s,Nvlis,i,qilnsv,0
 Invulnerable,n-v-u-l-n-e-r-b,Nvlnb,,qblnv,135
 Invulnerability,n-v-u-l-n-e-r-\-b,Nvlnbo,o,qblnov,135
 Invent,n-v-nt,Nvnt,,qntv,22
@@ -10764,6 +10793,9 @@ Sameness,s2-a-m-n-e-s,Samnes,,qaemns,0
 Samaritan,s-a-mt-a-n,Samtan,,qamnst,3
 Samaritans,s-a-mt-a-n-s,Samtans,,qamnst,3
 Satisfied,s2-a-t-d,Satd,,qadst,64
+Satisfactory,s2-a-t-e,Sate,,qaest,64
+Satisfactorily,s2-a-t-e,Sateo,o,qaeost,64
+Satisfactories,s2-a-t-e-s,Sates,,qaest,64
 Satisfying,s2-a-t-\-h,Satg,,qagst,64
 Satisfies,s2-a-t-s,Sats,,qast,64
 Saving,s2-a-v-\-h,Savg,,qagsv,156
@@ -12890,6 +12922,8 @@ Watching,u-o-ch-\-h,Uocg,,qcgou,150
 Watcher,u-o-ch-r,Uocr,,qcoru,20
 Watchers,u-o-ch-r-s,Uocrs,,qcorsu,20
 Watches,u-o-ch-s,Uocs,,qcosu,150
+Walkthrough,u-o-k-th-r-u,Uokhru,,qhkoru,83
+Walkthroughs,u-o-k-th-r-u-s,Uokhrus,,qhkorsu,83
 Walker,u-o-k-r,Uokr,,qkoru,1
 Walkers,u-o-k-r-s,Uokrs,,qkorsu,1
 Walks,u-o-k-s,Uoks,,qkosu,83
