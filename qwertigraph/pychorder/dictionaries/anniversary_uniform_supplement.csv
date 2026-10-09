@@ -2684,6 +2684,10 @@ Determined,e2-mn-d,Emnd,,qdemn,37
 Determinedly,e2-mn-d-e,Emnde,,qdemn,37
 Determining,e2-mn-\-h,Emng,,qegmn,37
 Determines,e2-mn-s,Emns,,qemns,37
+Determinist,e2-mn-s-t,Emnst,,qemnst,37
+Deterministic,e2-mn-s-t-k,Emnstk,,qekmnst,37
+Deterministically,e2-mn-s-t-k-e,Emnstke,,qekmnst,37
+Determinists,e2-mn-s-t-s,Emnsts,,qemnst,37
 Determines,e2-mn-s,Emnsu,u,qemnsu,37
 Determinedly,e2-mn-\-t-e,Emnte,,qemnt,0
 Determination,e2-mn-sh,Emnz,,qemnz,37
@@ -4569,6 +4573,8 @@ Classifying,k-l-a-s-f-\-h,Klasfg,,qafgkls,0
 Classification,k-l-a-s-/-f,Klasfo,o,qafklos,0
 Classifications,k-l-a-s-/-f-s,Klasfs,,qafkls,0
 Classifies,k-l-a-s-f-s,Klasfsqk,,qafkls,0
+Classification,k-l-a-s-/-f-sh,Klasfz,,qafklsz,0
+Classifications,k-l-a-s-/-f-sh-s,Klasfzs,,qafklsz,0
 Classroom,k-l-a-s-r-m,Klasrm,,qaklmrs,175
 Classrooms,k-l-a-s-r-m-s,Klasrms,,qaklmrs,175
 Clubbed,k-l-b-d,Klbd,,qbdkl,0
@@ -6343,6 +6349,9 @@ Imposes,m-p-o-s-s,Mposso,o,qmops,0
 Imposition,m-p-o-s-sh,Mposz,,qmopsz,2
 Impositions,m-p-o-s-sh-s,Mposzs,,qmopsz,2
 Import,m-p-o-t,Mpot,,qmopt,343
+Importable,m-p-o-t-b,Mpotb,,qbmopt,343
+Importably,m-p-o-t-b-e,Mpotbe,,qbemopt,343
+Importability,m-p-o-t-\-b,Mpotbo,o,qbmopt,343
 Imported,m-p-o-td,Mpotd,,qdmopt,36
 Importing,m-p-o-t-\-h,Mpotg,,qgmopt,343
 Importer,m-p-o-t-r,Mpotr,,qmoprt,0
@@ -7845,6 +7854,10 @@ Unavoidably,n-v-o-e-e,Nvye,,qenvy,98
 Inexactly,n-e-s2-a-k-e,Nxake,,qaeknx,392
 Inexhaustibly,n-e-s2-o-s-b-e,Nxosbe,,qbenosx,0
 Unexpectedly,n-e-s-p-/-t-e,Nxpde,,qdenpx,351
+Unexpire,n-e-s-p-i,Nxpi,,qinpx,132
+Unexpired,n-e-s-p-i-d,Nxpid,,qinpx,132
+Unexpiring,n-e-s-p-i-\-h,Nxpig,,qinpx,132
+Unexpires,n-e-s-p-i-s,Nxpis,,qinpsx,132
 Noisy,n-o-e-s-e,Nyse,,qensy,15
 Noisily,n-o-e-s-e,Nysy,y,qensy,15
 Nationalist,n-a-sh-l-e-s,Nzles,,qelnsz,1
@@ -9512,6 +9525,9 @@ Critiques,k-r-e-t-e-k-s,Qreteqs,,qeqrst,1
 Consequences,k-s2-e-k-s,Qseqs,,qeqs,1
 Consequentially,k-s2-e-k-sh-e,Qseqze,,qeqsz,0
 Quantity,k-~-t,Qt,,qqt,0
+Quartered,k-t-r-d,Qtrd,,qqrt,0
+Quartering,k-t-r-\-h,Qtrg,,qqrt,0
+Quarters,k-t-r-s,Qtrs,,qqrst,0
 Queued,k-e-u-d,Qud,,qdqu,166
 Queueing,k-e-u-\-h,Qug,,qgqu,166
 Qualities,k-u-s,Qus,,qqsu,15
@@ -11966,6 +11982,8 @@ Standby,s2-tn-b,Stnb,,qbnst,25
 Standbys,s2-tn-b-s,Stnbs,,qbnst,25
 Stunned,s2-t-n-\-t,Stnd,,qdnst,0
 Stun,s2-t-n,Stno,o,qnost,0
+Standup,s2-tn-p,Stnp,,qnpst,156
+Standups,s2-tn-p-s,Stnps,,qnpst,156
 Stuns,s2-t-n-s,Stnso,o,qnost,0
 Stocking,s2-t-o-\-h,Stog,,qgost,0
 Stop,s2-t-o-p,Stop,,qopst,53
@@ -13623,6 +13641,7 @@ Expeditioner,e-s-p-d-sh-r,Xpdzr,,qdprxz,0
 Expeditionary,e-s-p-d-sh-r-e,Xpdzre,,qdeprxz,0
 Expeditioners,e-s-p-d-sh-r-s,Xpdzrs,,qdprsxz,0
 Expeditions,e-s-p-d-sh-s,Xpdzs,,qdpsxz,0
+Expertise,e2-s-p-e2-t-e-s,Xpetes,,qepst,2
 Experts,e2-s-p-e2-t-s,Xpets,,qepstx,21
 Expertise,e2-s-p-e2-t-e-s,Xpetx,,qeptx,2
 Experiencing,e-s-p-\-h,Xpg,,qgpx,734
