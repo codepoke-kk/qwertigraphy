@@ -2631,6 +2631,7 @@ Electronic,e-l-/-n-k,Elnk,,qekln,0
 Electronics,e-l-/-n-k-s,Elnks,,qeklns,0
 Illogic,e-l-o-j-k,Elojk,,qejklo,0
 Illogical,e-l-o-j-/-k,Elojko,o,qejklo,0
+Eloquently,e-l-o-k-e,Eloqe,,qeloq,0
 Heals,e-l-s,Els,,qels,92400
 Illustrated,e-l-u-s-d,Elusd,,qdelsu,0
 Illustrating,e-l-u-s-\-h,Elusg,,qeglsu,0
@@ -4033,6 +4034,8 @@ Humanizing,^-h-\-e-u-mn-i-s-\-h,Humnisg,,qhimnsu,127
 Humanizes,^-h-\-e-u-mn-i-s-s,Humniss,,qhimnsu,127
 Humans,^-h-\-e-u-mn-s,Humns,,qhmnsu,127
 Humanism,^-h-\-e-u-mn-s-m,Humnsm,,qhmsu,127
+Hundredth,^-h-\-u-nt-th,Hundh,,qdhnu,55
+Hundredths,^-h-\-u-nt-th-s,Hundhs,,qdhnsu,55
 Husband,^-h-\-u-s2-b,Husb,,qbhsu,0
 Husbandry,^-h-\-u-s2-b-r-e,Husbre,,qbehrsu,0
 Husbands,^-h-\-u-s2-b-s,Husbs,,qbhsu,0
@@ -4256,6 +4259,7 @@ Cancelled,k-a-n-s-d,Kansd,,qadkns,4
 Cancelling,k-a-n-s-\-h,Kansg,,qagkns,4
 Cancels,k-a-n-s-s,Kanss,,qakns,4
 Cancellations,k-a-n-s-sh-s,Kanszs,,qaknsz,0
+Chaos,k-a-o-s,Kaos,,qakos,
 Capable,k-a-p-b,Kapb,,qabkp,41
 Capably,k-a-p-b-e,Kapbe,,qabekp,41
 Capability,k-a-p-\-b,Kapbo,,qabkop,14
@@ -4963,6 +4967,10 @@ Compassionately,k-p-a-sh-a-t-e,Kpazate,,qaekptz,2
 Compassions,k-p-a-sh-s,Kpazs,,qakpsz,0
 Complained,k-p-d,Kpdo,o,qdkop,818
 Completely,kp-e,Kpeo,o,qekop,147
+Competitor,k-p-e-t-t,Kpett,,qekpt,0
+Competitor,k-p-e-t-t-r,Kpettr,,qekprt,0
+Competitors,k-p-e-t-t-r-s,Kpettrs,,qekprst,0
+Competitors,k-p-e-t-t-s,Kpetts,,qekpst,0
 Competitive,kp-e-df,Kpetv,,qekptv,2
 Competitively,kp-e-df-e,Kpetve,,qekptv,2
 Complaining,k-p-\-h,Kpg,,qgkp,818
@@ -7850,6 +7858,8 @@ Noisily,n-o-e-s-e,Nysy,y,qensy,15
 Nationalist,n-a-sh-l-e-s,Nzles,,qelnsz,1
 Nationalists,n-a-sh-l-e-s-s,Nzless,,qelnsz,1
 Nationals,n-a-sh-l-s,Nzls,,qlnsz,2
+Nationalism,n-a-sh-l-s-m,Nzlsm,,qlmnsz,1
+Nationalisms,n-a-sh-l-s-m-s,Nzlsms,,qlmnsz,1
 Nationalistically,n-a-sh-l-/-s2-t-e,Nzlste,,qelnstz,1
 Enshrine,n-sh-r-i-n,Nzrin,,qinrz,
 Enshrineable,n-sh-r-i-n-b,Nzrinb,,qbinrz,
@@ -8021,6 +8031,7 @@ Authenticates,o-th-e-nt-s,Ohents,,qehnost,314
 Authenticity,o-th-e-nt-\-s-e,Ohentse,,qehnost,314
 Authentication,o-th-e-nt-sh,Ohentz,,qehnotz,314
 Authentications,o-th-e-nt-sh-s,Ohentzs,,qehnostz,3
+Overthought,^-o-\-th-o-t,Ohot,,qhot,550
 Authoritarian,o-th-r-a-n,Ohran,,qahnor,18
 Authoritarians,o-th-r-a-n-s,Ohrans,,qahnors,18
 Authoritarianism,o-th-r-a-n-s-m,Ohransm,,qahmnors,18
@@ -8240,6 +8251,13 @@ Overseeing,o-/-s-e-\-h,Oseg,,qegos,0
 Oversell,^-o-\-s-e-l,Osel,,qelos,2
 Overselling,^-o-\-s-e-l-\-h,Oselg,,qeglos,2
 Oversells,^-o-\-s-e-l-s,Osels,,qelos,2
+Oversimple,^-o-\-s2-e-m-p,Osemp,,qemops,545
+Oversimplify,^-o-\-s2-e-m-p-f,Osempf,,qefmops,4
+Oversimplified,^-o-\-s2-e-m-p-f-d,Osempfd,,qefmops,4
+Oversimplifying,^-o-\-s2-e-m-p-f-\-h,Osempfg,,qefmops,4
+Oversimplifies,^-o-\-s2-e-m-p-f-s,Osempfs,,qefmops,4
+Oversimplification,^-o-\-s2-e-m-p-f-sh,Osempfz,,qefmopsz,4
+Oversimplifications,^-o-\-s2-e-m-p-f-sh-s,Osempfzs,,qefmopsz,4
 Overseen,o-/-s-e-n,Osen,,qenos,0
 Oversees,o-/-s-e-s,Oses,,qeos,0
 Office,o-s,Osi,i,qios,295
@@ -10982,6 +11000,8 @@ Simplify,s2-e-m-p-f,Sempf,,qefmps,4
 Simplified,s2-e-m-p-f-d,Sempfd,,qdefmps,4
 Simplifying,s2-e-m-p-f-\-h,Sempfg,,qefgmps,4
 Simplifies,s2-e-m-p-f-s,Sempfs,,qefmps,4
+Simplification,s2-e-m-p-f-sh,Sempfz,,qefmpsz,4
+Simplifications,s2-e-m-p-f-sh-s,Sempfzs,,qefmpsz,4
 Simpler,s2-e-m-p-r,Sempr,,qemprs,3
 Simplicity,s2-e-m-p-\-s2,Semps,,qemps,0
 Simplest,s2-e-m-p-\-s-t,Sempst,,qempst,1
@@ -12059,6 +12079,11 @@ Students,s2-t-u-tn-s,Studns,,qdnstu,0
 Stuffed,s2-t-u-f-d,Stufd,,qdfstu,939
 Stuffing,s2-t-u-f-\-h,Stufg,,qfgstu,939
 Stuffs,s2-t-u-f-s,Stufs,,qfstu,939
+Stupid,s-t-u-p-d,Stupd,,qdpstu,
+Stupidly,s-t-u-p-d-e,Stupde,,qdepstu,
+Stupider,s-t-u-p-d-r,Stupdr,,qdprstu,
+Stupidity,s-t-u-p-d-t-e,Stupdte,,qdepstu,
+Stupidities,s-t-u-p-d-t-e-s,Stupdtes,,qdepstu,
 Supportive,s-/-t-v,Stv,,qstv,1211
 Supportively,s-/-t-v-e,Stve,,qestv,1211
 Stationed,s2-t-sh-d,Stzd,,qdstz,1
@@ -12118,6 +12143,8 @@ Successive,s2-u-k-v,Sukv,,qksuv,795
 Successively,s2-u-k-v-e,Sukve,,qeksuv,795
 Succession,s2-u-k-sh,Sukz,,qksuz,795
 Successions,s2-u-k-sh-s,Sukzs,,qksuz,0
+Sooner,s-u-n-r,Sunr,,qnrsu,0
+Sooners,s-u-n-r-s,Sunrs,,qnrsu,0
 Swore,s-u-o-r,Suor,,qorsu,0
 Sworn,s-u-o-r-n,Suorn,,qnorsu,0
 Supple,s-u-pl,Supl,,qlpsu,8
