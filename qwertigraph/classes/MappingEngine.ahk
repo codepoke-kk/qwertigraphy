@@ -11,18 +11,18 @@ Control+letter must cancel its own token
 engine := {}
 
 #Include *i %A_AppData%\Qwertigraph\personal_functions.ahk
-#Include scripts\default.ahk
+#Include %A_ScriptDir%\scripts\default.ahk
 
-#Include classes\EngineParts\Keyboard.ahk
-#Include classes\EngineParts\Listener.ahk
-#Include classes\EngineParts\Accumulator.ahk
-#Include classes\EngineParts\TokenEvent.ahk
-#Include classes\EngineParts\SerialExpander.ahk
-#Include classes\EngineParts\ChordExpander.ahk
-#Include classes\EngineParts\Sender.ahk
-#Include classes\EngineParts\Coacher.ahk
-#Include classes\EngineParts\Dashboarder.ahk
-#Include classes\EngineParts\Recorder.ahk
+#Include %A_ScriptDir%\classes\EngineParts\Keyboard.ahk
+#Include %A_ScriptDir%\classes\EngineParts\Listener.ahk
+#Include %A_ScriptDir%\classes\EngineParts\Accumulator.ahk
+#Include %A_ScriptDir%\classes\EngineParts\TokenEvent.ahk
+#Include %A_ScriptDir%\classes\EngineParts\SerialExpander.ahk
+#Include %A_ScriptDir%\classes\EngineParts\ChordExpander.ahk
+#Include %A_ScriptDir%\classes\EngineParts\Sender.ahk
+#Include %A_ScriptDir%\classes\EngineParts\Coacher.ahk
+#Include %A_ScriptDir%\classes\EngineParts\Dashboarder.ahk
+#Include %A_ScriptDir%\classes\EngineParts\Recorder.ahk
 
 class MappingEngine {
 	Static ContractedEndings := "s,d,t,m,re,ve,ll,r,v,l"
