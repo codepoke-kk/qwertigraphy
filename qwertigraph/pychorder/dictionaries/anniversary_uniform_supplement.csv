@@ -1078,6 +1078,8 @@ Benefits,b-n-f-s,Bnfs,,qbfns,5
 Bounding,b-n-\-h,Bng,,qbgn,2122
 Bundled,b-n-l-d,Bnld,,qbdln,41
 Bundling,b-n-l-\-h,Bnlg,,qbgln,41
+Bundler,b-n-l-r,Bnlr,,qblnr,41
+Bundlers,b-n-l-r-s,Bnlrs,,qblnrs,41
 Bundles,b-n-l-s,Bnls,,qblns,41
 Bounder,b-n-r,Bnr,,qbnr,0
 Boundary,b-n-r-e,Bnre,,qbenr,4
@@ -3248,6 +3250,10 @@ Filer,f-i-l-r,Filr,,qfilr,0
 Filers,f-i-l-r-s,Filrs,,qfilrs,0
 Files,f-i-l-s,Fils,,qfils,890
 Filings,f-i-l-\-s2,Filz,,qfilz,0
+Fileshare,f-i-l-sh-a,Filza,,qafilz,890
+Fileshared,f-i-l-sh-a-d,Filzad,,qafilz,890
+Filesharing,f-i-l-sh-a-\-h,Filzag,,qafilz,890
+Fileshares,f-i-l-sh-a-s,Filzas,,qafilsz,890
 Finale,f-i-n-l-a,Finla,,qafiln,0
 Finaled,f-i-n-l-d,Finld,,qdfiln,0
 Finalist,f-i-n-l-e-s,Finles,,qefilns,0
@@ -6723,6 +6729,8 @@ Indent,n-tn-t,Ndnt,,qdnt,1
 Indented,n-tn-t-d,Ndntd,,qdnt,1
 Indenting,n-tn-t-\-h,Ndntg,,qdgnt,1
 Indents,n-tn-t-s,Ndnts,,qdnst,1
+Indentation,n-tn-t-sh,Ndntz,,qdntz,0
+Indentations,n-tn-t-sh-s,Ndntzs,,qdnstz,0
 Indentation,n-tn-sh,Ndnz,,qdnz,0
 Indentations,n-tn-sh-s,Ndnzs,,qdnsz,0
 Undocumented,n-d-o-k-m-d,Ndokmd,,qdkmno,455
@@ -10295,8 +10303,10 @@ Wrongness,r-o-ng-n-e-s,Rognes,,qegnors,975
 Wrongnesses,r-o-ng-n-e-s-s,Rogness,,qegnors,975
 Wrongs,r-o-ng-s,Rogs,,qgors,975
 Reorganization,r-o-g-sh,Rogz,,qgorz,119
+Rollback,r-o-l-b,Rolb,,qblor,86
 Rollback,r-o-l-b-a-k,Rolbak,,qabklor,86
 Rollbacks,r-o-l-b-a-k-s,Rolbaks,,qabklors,86
+Rollbacks,r-o-l-b-s,Rolbs,,qblors,86
 Rolled,r-o-l-d,Rold,,qdlor,177
 Rolling,r-o-l-\-h,Rolg,,qglor,177
 Rolls,r-o-l-s,Rols,,qlors,177
@@ -12454,6 +12464,10 @@ Timeframe,tm-f,Tmf,,qfmt,3
 Timeframes,tm-f-s,Tmfs,,qfmst,3
 Timing,tm-\-h,Tmg,,qgmt,86
 Traffic manager,t-~-m,Tmi,i,qimt,0
+Timeline,tm-l-i-n,Tmlin,,qilmnt,91959
+Timelined,tm-l-i-n-d,Tmlind,,qilmnt,91959
+Timelining,tm-l-i-n-\-h,Tmling,,qilmnt,91959
+Timelines,tm-l-i-n-s,Tmlins,,qilmnst,91959
 Terminate,t-mn-a-t,Tmnat,,qamnt,0
 Terminated,t-mn-a-t-d,Tmnatd,,qadmnt,0
 Terminating,t-mn-a-t-\-h,Tmnatg,,qagmnt,0
