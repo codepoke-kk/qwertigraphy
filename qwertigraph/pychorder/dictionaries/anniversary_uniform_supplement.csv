@@ -595,6 +595,10 @@ Approvals,a-pr-v-l-s,Aprvls,,qalprsv,18
 Approver,a-pr-v-r,Aprvr,,qaprv,7
 Approvers,a-pr-v-r-s,Aprvrs,,qaprsv,7
 Approves,a-pr-v-s,Aprvs,,qaprsv,120
+Approximated,a-pr-x-d,Aprxd,,qaprx,0
+Approximately,a-pr-x-e,Aprxe,,qaeprx,0
+Approximating,a-pr-x-\-h,Aprxg,,qaprx,0
+Approximates,a-pr-x-s,Aprxs,,qaprsx,0
 Appropriation,a-pr-a-sh,Aprz,,qaprz,128
 Appropriations,a-pr-a-sh-s,Aprzs,,qaprsz,0
 Appetites,a-p-t-i-s,Aptis,,qaipst,13
@@ -844,6 +848,10 @@ Background,b-a-k-g-r,Bakgr,,qabgkr,23
 Backgrounded,b-a-k-g-r-d,Bakgrd,,qabdgkr,23
 Backgrounding,b-a-k-g-r-\-h,Bakgrg,,qabgkr,23
 Backgrounds,b-a-k-g-r-s,Bakgrs,,qabgkrs,23
+Backlit,b-a-k-l-e-t,Baklet,,qabeklt,3030
+Backlight,b-a-k-l-i,Bakli,,qabikl,3030
+Backlighting,b-a-k-l-i-\-h,Baklig,,qabikl,3030
+Backlights,b-a-k-l-i-s,Baklis,,qabikls,3030
 Backended,b-a-k-nt-t,Bakndd,,qabdkn,0
 Backend,b-a-k-n-t,Baknt,,qabknt,168
 Backends,b-a-k-n-t-s,Baknts,,qabknst,168
@@ -2447,6 +2455,8 @@ Detectability,td-e-k-\-b,Dtekbo,,qbdekot,1
 Detectabilities,td-e-k-\-b-s,Dtekbos,,qbdekost,1
 Detected,td-e-k-d,Dtekd,,qdekt,1
 Detecting,td-e-k-\-h,Dtekg,,qdegkt,1
+Detector,td-e-k-r,Dtekr,,qdekrt,1
+Detectors,td-e-k-r-s,Dtekrs,,qdekrst,1
 Detects,td-e-k-s,Dteks,,qdekst,1
 Detectived,td-e-k-v-d,Dtekvd,,qdektv,0
 Detectiving,td-e-k-v-\-h,Dtekvg,,qdegktv,0
@@ -2746,6 +2756,9 @@ Enabler,e-n-b-r,Enbr,,qbenr,3852
 Enablers,e-n-b-r-s,Enbrs,,qbenrs,3852
 Enables,e-n-b-s,Enbs,,qbens,92
 Ended,e-nt-d,Endd,,qden,
+Ending,e-nt-\-h,Endg,,qdegn,90401
+Endings,e-nt-\-h-s,Endgs,,qdegns,90401
+Endings,e-nt-\-h-s,Endz,,qdenz,90401
 inner,e-n-e2,Ene,,qen,1
 Inerrancy,e-n-e-r-a-n-s-e,Eneranse,,qaenrs,0
 Inerrantly,e-n-e-r-a-nt-e,Enerante,,qaenrt,0
@@ -3592,7 +3605,9 @@ Guarding,g-a2-d-\-h,Gadg,,qadg,3
 Guards,g-a2-d-s,Gads,,qadgs,3
 Gathered,g-a-th-d,Gahd,,qadgh,139
 Gathering,g-a-th-\-h,Gahg,,qagh,139
+Gatherings,g-a-th-\-h-s,Gahgs,,qaghs,139
 Gathers,g-a-th-s,Gahs,,qaghs,139
+Gatherings,g-a-th-\-sh,Gahz,,qaghz,139
 GitHub Action,g-a-k,Gak,,qagk,955
 GitHub Actions,g-a-k-s,Gaks,,qagks,955
 Galilee,g-a-l-l-e,Galle,,qaegl,6
@@ -4032,6 +4047,7 @@ Throws,th-r-o-s,Hros,,qhors,172
 Throated,th-r-o-t-d,Hrotd,,qdhort,0
 Throating,th-r-o-t-\-h,Hrotg,,qghort,0
 Throats,th-r-o-t-s,Hrots,,qhorst,0
+Throughput,th-r-u-p,Hrup,,qhpru,1539
 Throughout,th-r-a-u,Hrw,,qhrw,44
 Threshold,th-r-sh-o-ld,Hrzold,,qdhlorz,35
 Thresholds,th-r-sh-o-ld-s,Hrzolds,,qdhlorsz,35
@@ -4273,6 +4289,8 @@ Calculating,k-a-l-\-h,Kalg,,qagkl,1
 Calculator,k-a-l-r,Kalr,,qaklr,0
 Calculators,k-a-l-r-s,Kalrs,,qaklrs,0
 Calculates,k-a-l-s,Kals,,qakls,1
+Calculation,k-a-l-sh,Kalz,,qaklz,1
+Calculations,k-a-l-sh-s,Kalzs,,qaklsz,1
 Cannibal,k-a-n-b,Kanb,,qabkn,90958
 Cannibalize,k-a-n-b-i-s,Kanbis,,qabikns,90958
 Cannibalized,k-a-n-b-i-s-d,Kanbisd,,qabdikns,90958
@@ -4568,9 +4586,15 @@ Concludes,k-k-l-s,Kkls,,qkls,14
 Conclusion,k-k-l-sh,Kklz,,qklz,14
 Conclusions,k-k-l-sh-s,Kklzs,,qklsz,14
 Contractor,k-/-k-r,Kkr,,qkr,33
+Concurrence,k-k-r-e-n-s,Kkrens,,qeknrs,2
+Concurrency,k-k-r-e-n-s-e,Kkrense,,qeknrs,2
 Concurrent,k-k-r-e-nt,Kkrent,,qeknrt,2
 Concurrently,k-k-r-e-nt-e,Kkrente,,qeknrt,2
 Corpus Christi,k-k-r-e-s,Kkres,,qekrs,53
+Concurrence,k-k-r-n-s,Kkrns,,qknrs,2
+Concurrency,k-k-r-n-s-e,Kkrnse,,qeknrs,2
+Concurrent,k-k-r-nt,Kkrnt,,qknrt,2
+Concurrently,k-k-r-nt-e,Kkrnte,,qeknrt,2
 Concur,k-k-r,Kkro,o,qkor,5
 Contractors,k-/-k-r-s,Kkrs,,qkrs,33
 Concurs,k-k-r-s,Kkrso,o,qkors,5
@@ -5117,6 +5141,9 @@ Complaints,k-p-s,Kpsi,i,qikps,818
 Complains,k-p-s,Kpso,o,qkops,818
 Completes,kp-s,Kpsu,u,qkpsu,23
 Competitors,k-p-t-e-t-s,Kptets,,qekpst,0
+Capital,k-p-t-l,Kptl,,qklpt,127
+Capitalist,k-p-t-l-e-s,Kptles,,qeklpst,127
+Capitalists,k-p-t-l-e-s-s,Kptless,,qeklpst,127
 Compartment,k-p-t-m,Kptm,,qkmpt,0
 Compartmental,k-p-t-m-l,Kptml,,qklmpt,0
 Compartmentalize,k-p-t-m-l-i-s,Kptmlis,,qiklmpst,0
@@ -6415,9 +6442,17 @@ Improperly,m-pr-pr-e,Mprpre,,qempr,0
 Emperor,m-pr-r,Mprr,,qmpr,0
 Emperors,m-pr-r-s,Mprrs,,qmprs,0
 Improves,m-pr-s,Mprs,,qmprs,24
+Impersonate,m-pr-s-a-t,Mprsat,,qamprst,513
+Impersonated,m-pr-s-a-t-d,Mprsatd,,qamprst,513
+Impersonating,m-pr-s-a-t-\-h,Mprsatg,,qamprst,513
+Impersonator,m-pr-s-a-t-r,Mprsatr,,qamprst,513
+Impersonators,m-pr-s-a-t-r-s,Mprsatrs,,qamprst,513
+Impersonates,m-pr-s-a-t-s,Mprsats,,qamprst,513
 Perceptive,m-pr-s-e-p-df,Mprseptv,,qemprstv,0
 Perceptively,m-pr-s-e-p-df-e,Mprseptve,,qemprstv,0
 Improvements,m-pr-s,Mprso,o,qmoprs,24
+Impersonation,m-pr-s-a-sh,Mprsz,,qmprsz,513
+Impersonations,m-pr-s-a-sh-s,Mprszs,,qmprsz,513
 Improvisation,m-pr-v-e-s-a-sh,Mprvesz,,qemprsvz,0
 Improvise,m-pr-v-i-s,Mprvis,,qimprsv,0
 Improvised,m-pr-v-i-s-d,Mprvisd,,qdimprsv,0
@@ -6757,6 +6792,14 @@ Indoctrinational,n-d-o-k-t-sh-l,Ndoktzl,,qdklnotz,3
 Indoctrinationally,n-d-o-k-t-sh-l-e,Ndoktzle,,qdeklnotz,3
 Indoctrinations,n-d-o-k-t-sh-s,Ndoktzs,,qdknostz,3
 Independently,nt-p-e,Ndpe,,qdenp,4
+Undeploy,n-d-pl,Ndpl,,qdlnp,1151
+Undeployed,n-d-pl-d,Ndpld,,qdlnp,1151
+Undeploying,n-d-pl-\-h,Ndplg,,qdlnp,1151
+Undeployment,n-d-pl-m,Ndplm,,qdlmnp,1151
+Undeployments,n-d-pl-m-s,Ndplms,,qdlmnps,1151
+Undeployer,n-d-pl-r,Ndplr,,qdlnpr,1151
+Undeployers,n-d-pl-r-s,Ndplrs,,qdlnprs,1151
+Undeploys,n-d-pl-s,Ndpls,,qdlnps,1151
 Interdependent,^-n-\-d-jnt-nt,Ndpndnd,,qdnp,17
 Interdependence,^-n-\-d-jnt-n-s,Ndpndns,,qdnps,17
 Interdependency,^-n-\-d-jnt-n-s-e,Ndpndnse,,qdenps,17
@@ -7063,6 +7106,8 @@ Enthused,n-th-u-s-d,Nhusd,,qdhnsu,0
 Enthusing,n-th-u-s-\-h,Nhusg,,qghnsu,0
 Enthusiasms,n-th-u-s-s,Nhuss,,qhnsu,0
 Enthusiastically,n-th-u-s-/-s2-t-e,Nhusste,,qehnstu,0
+nightly,u-n-ia,Nia,,qain,0
+Unknightly,u-n-ia,Niao,o,qaino,0
 Nightly,n-i-e,Nie,,qein,581
 Nihilist,n-i-l-e-s,Niles,,qeilns,0
 Nihilists,n-i-l-e-s-s,Niless,,qeilns,0
@@ -7284,6 +7329,14 @@ Internalizes,n-/-n-l-i-s-s,Nnliss,,qilns,12
 Internals,n-/-n-l-s,Nnls,,qlns,142
 Entrance,n-\-n-s,Nns,,qns,0
 Entrances,n-\-n-s-s,Nnss,,qns,0
+Uninstall,n-n-s2-t-o-l,Nnstol,,qlnost,822
+Uninstalled,n-n-s2-t-o-l-d,Nnstold,,qlnost,822
+Uninstalling,n-n-s2-t-o-l-\-h,Nnstolg,,qlnost,822
+Uninstaller,n-n-s2-t-o-l-r,Nnstolr,,qlnorst,822
+Uninstallers,n-n-s2-t-o-l-r-s,Nnstolrs,,qlnorst,822
+Uninstalls,n-n-s2-t-o-l-s,Nnstols,,qlnost,822
+Uninstallation,n-n-s2-t-o-l-sh,Nnstolz,,qlnostz,822
+Uninstallations,n-n-s2-t-o-l-sh-s,Nnstolzs,,qlnostz,822
 Internet,n-/-nt,Nnt,,qnt,232
 Unintentional,n-n-tn-sh-l,Nntnzl,,qlntz,8
 Unintentionally,n-n-tn-sh-l-e,Nntnzle,,qelntz,8
@@ -8281,6 +8334,8 @@ Overrides,o-\-r-i-d-s,Orids,,qdiors,90768
 Overwriting,^-o-\-r-i-\-h,Orig,,qgior,22
 All right,o-r-i,Orio,o,qior,12
 Overwrites,^-o-\-r-i-s,Oris,,qiors,22
+Overwrote,o-/-r-o,Oro,,qor,2
+Overwrote,o-/-r-o-t,Orot,,qort,2
 Oversee,o-/-s-e,Ose,,qeos,0
 Overseeing,o-/-s-e-\-h,Oseg,,qegos,0
 Oversell,^-o-\-s-e-l,Osel,,qelos,2
@@ -9566,6 +9621,10 @@ Critiques,k-r-e-t-e-k-s,Qreteqs,,qeqrst,1
 Consequences,k-s2-e-k-s,Qseqs,,qeqs,1
 Consequentially,k-s2-e-k-sh-e,Qseqze,,qeqsz,0
 Quantity,k-~-t,Qt,,qqt,0
+Quartered,k-t-r-d,Qtrd,,qqrt,0
+Quarterly,k-t-r-e,Qtre,,qeqrt,0
+Quartering,k-t-r-\-h,Qtrg,,qqrt,0
+Quarters,k-t-r-s,Qtrs,,qqrst,0
 Queued,k-e-u-d,Qud,,qdqu,166
 Queueing,k-e-u-\-h,Qug,,qgqu,166
 Qualities,k-u-s,Qus,,qqsu,15
@@ -11262,6 +11321,7 @@ Signaled,s2-g-n-d,Sgnd,,qdgns,1
 Signaling,s2-g-n-\-h,Sgng,,qgns,1
 Signals,s2-g-n-s,Sgns,,qgns,1
 Servicing,^-s2-\-h,Sgo,o,qgos,638
+Side-by-side,s-i-b-s-i,Sibsi,,qbis,136
 Cipher,s2-i-f,Sif,,qfis,4
 Ciphered,s2-i-f-d,Sifd,,qdfis,4
 Ciphering,s2-i-f-\-h,Sifg,,qfgis,4
@@ -11740,6 +11800,7 @@ Spreadsheeting,s-p-sh-e-t-\-h,Spzetg,,qegpstz,195
 Spreadsheets,s-p-sh-e-t-s,Spzets,,qepstz,195
 Squirrel,s-q-e-r-e-l,Sqerel,,qelqrs,31
 Squirreled,s-q-e-r-e-l-d,Sqereld,,qdelqrs,31
+Squirrelly,s-q-e-r-e-l-e,Sqerele,,qelqrs,31
 Squirreling,s-q-e-r-e-l-\-h,Sqerelg,,qeglqrs,31
 Squirrels,s-q-e-r-e-l-s,Sqerels,,qelqrs,31
 Squirrel,s-q-e-r-l,Sqerl,,qelqrs,31
@@ -12469,6 +12530,7 @@ Translators,t-/-l-a-r-s,Tlars,,qalrst,0
 Translates,t-/-l-a-s,Tlas,,qalst,7
 Translations,t-/-l-a-sh-s,Tlzs,,qlstz,1
 Timed,tm-d,Tmd,,qdmt,9
+Transmit,^-t-\-m-e-t,Tmet,,qemt,4
 Transmitted,^-t-\-m-e-t-d,Tmetd,,qdemt,4
 Transmitting,^-t-\-m-e-t-\-h,Tmetg,,qegmt,4
 Transmit,^-t-\-m-e-t,Tmeto,o,qemot,4
