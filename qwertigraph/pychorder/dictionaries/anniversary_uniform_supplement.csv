@@ -6826,10 +6826,13 @@ Inducts,nt-u-k-s,Nduks,,qdknsu,0
 Introductions,n-/-d-u-k-s,Nduksqk,,qdknsu,1
 Induction,nt-u-k-sh,Ndukz,,qdknuz,0
 Inductions,nt-u-k-sh-s,Ndukzs,,qdknsuz,0
-Induced,n-d-u-s-d,Ndusd,,qdnsu,20
-Inducing,n-d-u-s-\-h,Ndusg,,qdgnsu,20
+Introduced,n-/-d-u-s-d,Ndusd,,qdnsu,36
+Induced,n-d-u-s-d,Ndusdo,o,qdnosu,20
+Introducing,n-/-d-u-s-\-h,Ndusg,,qdnsu,36
+Inducing,n-d-u-s-\-h,Ndusgo,o,qdgnosu,20
 Introducing,n-/-d-u-s-\-h,Ndusgqk,,qdgnsu,36
-Induces,n-d-u-s-s,Nduss,,qdnsu,20
+Introduces,n-/-d-u-s-s,Nduss,,qdnsu,36
+Induces,n-d-u-ss,Ndusso,o,qdnosu,20
 Introduces,n-/-d-u-s-s,Ndussqk,,qdnsu,36
 Individuate,nt-v-a-t,Ndvat,,qadntv,138
 Individuated,nt-v-a-t-d,Ndvatd,,qadntv,138
@@ -9188,6 +9191,10 @@ Permanente,pr-mn-a,Prmna,,qamnpr,0
 Permanently,pr-mn-e,Prmne,,qemnpr,56
 Permanents,pr-mn-s,Prmns,,qmnprs,56
 Permanence,pr-mn-s,Prmnso,o,qmnoprs,0
+Promote,pr-m-o,Prmo,,qmopr,43
+Promoted,pr-m-o-d,Prmod,,qmopr,43
+Promoting,pr-m-o-\-h,Prmog,,qmopr,43
+Promotes,pr-m-o-s,Prmos,,qmoprs,43
 Promote,pr-m-o-t,Prmot,,qmoprt,43
 Promotable,pr-m-o-t-b,Prmotb,,qbmoprt,43
 Promotably,pr-m-o-t-b-e,Prmotbe,,qbemoprt,0
