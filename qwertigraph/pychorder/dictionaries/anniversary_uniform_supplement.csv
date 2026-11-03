@@ -2464,6 +2464,7 @@ Detectives,td-e-k-v-s,Dtekvs,,qdekstv,0
 Detection,td-e-k-sh,Dtekz,,qdektz,1
 Detections,td-e-k-sh-s,Dtekzs,,qdekstz,0
 Dating,td-\-h,Dtg,,qdgt,3
+Delaware,d-\-u-a-r,Duar,,qadru,4
 Duplicated,d-u-p-d,Dupd,,qdpu,30
 Duplicating,d-u-p-\-h,Dupg,,qdgpu,30
 Duplicator,d-u-p-r,Dupr,,qdpru,0
@@ -2840,8 +2841,12 @@ Entrust,e-nt-r-s,Entrs,,qenrst,994
 Entrusted,e-nt-r-s-d,Entrsd,,qdenrst,994
 Entrusting,e-nt-r-s-\-h,Entrsg,,qegnrst,994
 Entrusts,e-nt-r-s-s,Entrss,,qenrst,994
+Inhumane,e-n-e-u-m-a-n,Enuman,,qaemnu,0
+Inhumanely,e-n-e-u-m-a-n-e,Enumane,,qaemnu,0
 Enumerated,e-n-e-u-m-d,Enumd,,qdemnu,0
 Enumerating,e-n-e-u-m-\-h,Enumg,,qegmnu,0
+Inhuman,e-n-e-u-mn,Enumn,,qemnu,0
+Inhumanly,e-n-e-u-mn-e,Enumne,,qemnu,0
 Enumerates,e-n-e-u-m-s,Enums,,qemnsu,0
 Enumeration,e-n-e-u-m-sh,Enumz,,qemnuz,0
 Enumerations,e-n-e-u-m-sh-s,Enumzs,,qemnsuz,0
@@ -3824,6 +3829,10 @@ Heady,^-h-\-e-d-e,Hede,,qdeh,5
 Headiness,^-h-\-e-d-e-n-e-s,Hedenes,,qdehns,5
 Heading,^-h-\-e-d-\-h,Hedg,,qdegh,5
 Headings,^-h-\-e-d-\-h-s,Hedgs,,qdeghs,5
+Headquarter,^-h-\-e-d-/-k,Hedq,,qdehq,0
+Headquartered,^-h-\-e-d-/-k-d,Hedqd,,qdehq,0
+Headquartering,^-h-\-e-d-/-k-\-h,Hedqg,,qdehq,0
+Headquarters,^-h-\-e-d-/-k-s,Hedqs,,qdehqs,0
 Header,^-h-\-e-d-r,Hedr,,qdehr,5
 Headers,^-h-\-e-d-r-s,Hedrs,,qdehrs,5
 Heads,^-h-\-e-d-s,Heds,,qdehs,5
@@ -3981,10 +3990,6 @@ Handling,^-h-\-n-l-\-h,Hnlg,,qghln,89
 Handler,^-h-\-n-l-r,Hnlr,,qhlnr,89
 Handlers,^-h-\-n-l-r-s,Hnlrs,,qhlnrs,89
 Handles,^-h-\-n-l-s,Hnls,,qhlns,89
-Inhumane,^-h-\-n-e-u-m-a-n,Hnuman,,qahmnu,0
-Inhumanely,^-h-\-n-e-u-m-a-n-e,Hnumane,,qaehmnu,0
-Inhuman,^-h-\-n-e-u-mn,Hnumn,,qhmnu,0
-Inhumanly,^-h-\-n-e-u-mn-e,Hnumne,,qehmnu,0
 Hypo-,h-o->,Ho>,,q>ho,0
 Holding,^-h-\-o-ld-\-h,Holdg,,qdghlo,90315
 Holdings,^-h-\-o-ld-\-h-s,Holdgs,,qdghlos,90315
@@ -5442,7 +5447,8 @@ Consideration,k-s-sh,Kszi,i,qiksz,21
 Considerations,k-s-sh-s,Kszs,,qksz,21
 Community,k-t-e,Kte,,qekt,0
 Communitied,k-t-e-d,Kted,,qdekt,0
-Communiting,k-t-e-\-h,Kteg,,qegkt,0
+Contiguous,k-t-e-g,Kteg,,qegkt,0
+Contiguously,k-t-e-g-e,Ktege,,qegkt,0
 Communities,k-t-e-s,Ktes,,qekst,0
 Contemporaneously,k-tm-pr-a-n-u-s-e,Ktmpranuse,,qaekmnprstu,0
 Contemporaries,k-tm-pr-r-e-s,Ktmprres,,qekmprst,0
@@ -5899,6 +5905,8 @@ Magistrate,m-a-j-s-t-r-a,Majstra,,qajmrst,0
 Magistrates,m-a-j-s-t-r-a-s,Majstras,,qajmrst,0
 Making,m-a-k-\-h,Makg,,qagkm,2910
 Machinations,m-a-k-n-sh-s,Maknzs,,qakmnsz,0
+Maker,m-a-k-r,Makr,,qakmr,0
+Makers,m-a-k-r-s,Makrs,,qakmrs,0
 Maladministration,m-a-l-a-mn-r-sh,Malamnrz,,qalmnrz,5
 Mailable,m-a2-l-b,Malbi,i,qabilm,0
 Mailed,m-a2-l-d,Mald,,qadlm,5
@@ -8363,6 +8371,10 @@ Overstating,o-/-s2-t-\-h,Ostg,,qgost,11
 Overstatement,^-o-\-s2-t-m,Ostm,,qmost,170
 Overstatements,^-o-\-s2-t-m-s,Ostms,,qmost,170
 Overstates,o-/-s2-t-s,Osts,,qost,11
+Overstuff,^-o-\-s-t-u-f,Ostuf,,qfostu,36
+Overstuffed,^-o-\-s-t-u-f-d,Ostufd,,qfostu,36
+Overstuffing,^-o-\-s-t-u-f-\-h,Ostufg,,qfostu,36
+Overstuffs,^-o-\-s-t-u-f-s,Ostufs,,qfostu,36
 Whatcha,o-t-ch,Otc,,qcot,0
 Overturn,^-o-\-t-e-n,Oten,,qenot,1
 Alternated,o-t-e-n-a-t-d,Otenatd,,qadenot,3
@@ -9306,6 +9318,7 @@ Persuasive,pr-s-\-n-^-a-s-v,Prsasv,,qaprsv,1
 Persuasively,pr-s-\-n-^-a-s-v-e,Prsasve,,qaeprsv,1
 Persuasion,pr-s-\-n-^-a-sh,Prsaz,,qadprs,1
 Persuasions,pr-s-\-n-^-a-sh-s,Prsazs,,qaprsz,1
+Personhood,pr-s-\-d,Prsdo,o,qdoprs,513
 Perceived,pr-s-e-d,Prsedo,o,qdeoprs,5
 Perceiving,pr-s-e-\-h,Prsego,o,qegoprs,5
 Perception,pr-s-e-p-sh,Prsepz,,qeprsz,91250
@@ -11939,7 +11952,10 @@ Assists,ss2-t-s,Sstos,o,qost,29
 Assists,ss2-t-s,Ssts,,qst,29
 Substitutes,s-s2-t-s,Sstso,o,qost,1
 Substitutes,s-s2-t-s,Sstsu,u,qstu,1
-Substitute,s-s2-t,Sstu,u,qstu,1
+Substitute,s-s2-t-u,Sstu,,qstu,1
+Substituted,s-s2-t-u-d,Sstud,,qstu,1
+Substituting,s-s2-t-u-\-h,Sstug,,qstu,1
+Substitutes,s-s2-t-u-s,Sstus,,qstu,1
 Substitution,s-s2-t-sh,Sstz,,qstz,1
 Substitutionary,s-s2-t-sh-r-e,Sstzre,,qerstz,1
 Substitutions,s-s2-t-sh-s,Sstzs,,qstz,1
@@ -12853,6 +12869,8 @@ Tuberculosis,t-u-b-r-k-ss,Tubrkss,,qbkrstu,44
 Toothed,t-u-th-d,Tuhd,,qdhtu,3
 Toothing,t-u-th-\-h,Tuhg,,qghtu,3
 Toothes,t-u-th-s,Tuhs,,qhstu,3
+Toolbox,t-u-l-b,Tulb,,qbltu,385
+Toolboxes,t-u-l-b-s,Tulbs,,qblstu,385
 Tooled,t-u-l-d,Tuld,,qdltu,385
 Tooling,t-u-l-\-h,Tulg,,qgltu,385
 Tools,t-u-l-s,Tuls,,qlstu,385
