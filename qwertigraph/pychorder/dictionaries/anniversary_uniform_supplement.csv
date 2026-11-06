@@ -2448,6 +2448,8 @@ Detachably,d-t-ch-b-e,Dtcbe,,qbcdet,98
 Detachability,d-t-ch-\-b,Dtcbo,o,qbcdot,98
 Detached,d-t-ch-d,Dtcd,,qcdt,98
 Detaching,d-t-ch-\-h,Dtcg,,qcdt,98
+Detachment,d-t-ch-m,Dtcm,,qcdmt,98
+Detachments,d-t-ch-m-s,Dtcms,,qcdmst,98
 Detaches,d-t-ch-s,Dtcs,,qcdst,98
 Detectable,td-e-k-b,Dtekb,,qbdekt,1
 Detectably,td-e-k-b-e,Dtekbe,,qbdekt,1
@@ -4016,6 +4018,7 @@ Horrifies,^-h-\-o-r-f-s,Horfs,,qfhors,1
 Horizon,^-h-\-o-r-i-s2-n,Horisn,,qhinors,50
 Horizons,^-h-\-o-r-i-s2-n-s,Horisns,,qhinors,50
 Horrors,^-h-\-o-r-r-s,Horrs,,qhors,2
+Horoscopes,^-h-\-o-r-s2-k-p-s,Horskps,,qhkoprs,0
 Hostage,h-\-o-s-t-j,Hostj,,qhjost,0
 Hostages,h-\-o-s-t-j-s,Hostjs,,qhjost,0
 Hostility,^-h-\-o-s2-t-\-l,Hostli,i,qhilost,0
@@ -6152,6 +6155,7 @@ Migrators,m-i-g-r-a-r-s,Migrars,,qagimrs,23
 Migration,m-i-g-r-a-z,Migraz,,qagimrz,284
 Migrations,m-i-g-r-a-z-s,Migrazs,,qagimrsz,284
 Mileage,m-i2-\-j,Mij,,qijm,1
+Microscopes,m-i-k-r-o-s2-k-p-s,Mikroskps,,qikmoprs,0
 Minding,m-i-n-\-h,Ming,,qgimn,238
 Milepost,m-i-p-o-s-t,Mipost,,qimopst,0
 Mileposts,m-i-p-o-s-t-s,Miposts,,qimopst,0
@@ -11439,6 +11443,12 @@ Scholarly,s2-k-o-l-r-e,Skolre,,qeklors,0
 Scholars,s2-k-o-l-r-s,Skolrs,,qklors,0
 Scholarship,s2-k-o-l-r-sh,Skolrz,,qklorsz,0
 Scholarships,s2-k-o-l-r-sh-s,Skolrzs,,qklorsz,0
+Scope,s-k-o-p,Skop,,qkops,90564
+Scoped,s-k-o-p-d,Skopd,,qkops,90564
+Scoping,s-k-o-p-\-h,Skopg,,qkops,90564
+Scoper,s-k-o-p-r,Skopr,,qkoprs,90564
+Scopers,s-k-o-p-r-s,Skoprs,,qkoprs,90564
+Scopes,s-k-o-p-s,Skops,,qkops,90564
 Scribe,s2-k-r,Skr,,qkrs,3
 Scrape,s2-k-r-a-p,Skrap,,qakprs,92554
 Scraped,s2-k-r-a-p-d,Skrapd,,qadkprs,92554
@@ -12604,6 +12614,10 @@ Temporalities,tm-pr-\-l-s,Tmprls,,qlmprst,0
 Temperamental,tm-pr-\-m,Tmprm,,qmprt,0
 Temperamentally,tm-pr-\-m-e,Tmprme,,qemprt,0
 Tempers,tm-pr-s,Tmprs,,qmprst,0
+Timezone,tm-s2-o-n,Tmson,,qmnost,3696
+Timezoned,tm-s2-o-n-d,Tmsond,,qmnost,3696
+Timezoning,tm-s2-o-n-\-h,Tmsong,,qmnost,3696
+Timezones,tm-s2-o-n-s,Tmsons,,qmnost,3696
 Timestamp,tm-s-tm,Tmstm,,qmst,0
 Timestamped,tm-s-tm-d,Tmstmd,,qdmst,0
 Timestamping,tm-s-tm-\-h,Tmstmg,,qgmst,0
@@ -13104,6 +13118,7 @@ Unencrypts,u-n-\-k-s,Unks,,qknsu,32
 Unencryption,u-n-\-k-sh,Unkz,,qknuz,32
 Unencryptions,u-n-\-k-sh-s,Unkzs,,qknsuz,0
 Unknown,u-n-o-n,Unon,,qnou,76
+Unknowns,u-n-o-n-s,Unons,,qnosu,76
 Ones,u-n-s-e,Unse,,qensu,183
 Unity,e-u-\-nt,Unt,,qntu,5
 Universe,e-u-n-v,Unv,,qnuv,51
