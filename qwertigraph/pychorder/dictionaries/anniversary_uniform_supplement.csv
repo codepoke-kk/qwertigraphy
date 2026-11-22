@@ -364,6 +364,10 @@ Actions,a-k-sh-s,Akzs,,qaksz,66
 Alarmed,a-l-a-m-d,Alamd,,qalm,0
 Alarming,a-l-a-m-\-h,Alamg,,qalm,0
 Alarms,a-l-a-m-s,Alams,,qalms,0
+Allergy,a-l-e-j-e,Aleje,,qaejl,
+Allergies,a-l-e-j-e-s,Alejes,,qaejls,
+Allergic,a-l-e-j-k,Alejk,,qaejkl,
+Allergically,a-l-e-j-k-e,Alejke,,qaejkl,
 Alias,a-l-ea-s,Ales,,qaels,1382
 Aliased,a-l-ea-s-d,Alesd,,qadels,3
 Aliasing,a-l-ea-s-\-h,Alesg,,qaegls,3
@@ -1928,6 +1932,8 @@ Denounced,dn-n-s-d,Dnnsd,,qdns,0
 Denouncing,dn-n-s-\-h,Dnnsg,,qdgns,0
 Denounces,dn-n-s-s,Dnnss,,qdns,0
 Down,d-n,Dno,o,qdno,2176
+Denominator,tn-o-mn-a-t-r,Dnomnatr,,qadmnort,0
+Denominators,tn-o-mn-a-t-r-s,Dnomnatrs,,qadmnorst,0
 Denominations,tn-o-mn-sh-s,Dnomnzs,,qdmnosz,0
 Denote,tn-o-t,Dnot,,qdnot,143
 Denoted,tn-o-t-d,Dnotd,,qdnot,143
@@ -3474,6 +3480,7 @@ Folders,f-o-ld-r-s,Foldrs,,qdflors,32
 Phoning,f-o-n-\-h,Fong,,qfgno,299
 Phones,f-o-n-s,Fons,,qfnos,299
 Follow up,f-o-p,Fop,,qfop,196
+Follow ups,f-o-p-s,Fops,,qfops,196
 Follower,f-o-r,Foro,o,qfor,7
 Followers,f-o-r-s,Fors,,qfors,7
 Followers,f-o-r-s,Forso,o,qfors,7
@@ -3616,6 +3623,8 @@ Foolishness,f-u-l-sh-n-e-s,Fulznes,,qeflnsuz,4
 Foolishnesses,f-u-l-sh-n-e-s-s,Fulzness,,qeflnsuz,4
 Foolishnesses,f-u-l-sh-n-s,Fulzns,,qflnsuz,4
 Full,f-u,Fuo,o,qfou,719
+Fully Qualified Domain Name,f-u-q-tn,Fuqdn,,qdfnqu,74
+Fully Qualified Domain Names,f-u-q-tn-s,Fuqdns,,qdfnqsu,74
 Fury,f-e-u-r-e,Fure,,qefru,0
 Furied,f-e-u-r-e-d,Fured,,qdefru,0
 Furying,f-e-u-r-e-\-h,Fureg,,qefgru,0
@@ -5023,6 +5032,8 @@ Correlates,k-o-r-e-l-a-s,Korelas,,qaeklors,0
 Correlation,k-o-r-e-l-a-sh,Korelz,,qeklorz,0
 Correlations,k-o-r-e-l-a-sh-s,Korelzs,,qeklorsz,0
 Caller,k-o-r,Kori,i,qikor,3
+Coworker,k-o-r-k-/-r,Korkr,,qkor,93
+Coworkers,k-o-r-k-/-r-s,Korkrs,,qkors,93
 Correlate,k-o-r-l-a,Korla,,qaklor,0
 Correlated,k-o-r-l-a-d,Korlad,,qadklor,0
 Correlating,k-o-r-l-a-\-h,Korlag,,qagklor,0
@@ -6053,12 +6064,12 @@ Embarrassing,m-b-a-r-a-s-\-h,Mbarasg,,qabgmrs,1
 Embarrassment,m-b-a-r-a-s-m,Mbarasm,,qabmrs,0
 Embarrassments,m-b-a-r-a-s-m-s,Mbarasms,,qabmrs,0
 Embarrasss,m-b-a-r-a-s-s,Mbarass,,qabmrs,1
-Embarass,m-b-a-r-s,Mbars,,qabmrs,
-Embarassed,m-b-a-r-s-d,Mbarsd,,qabmrs,
-Embarassing,m-b-a-r-s-\-h,Mbarsg,,qabmrs,
+Embarrass,m-b-a-r-s,Mbars,,qabmrs,
+Embarrassed,m-b-a-r-s-d,Mbarsd,,qabmrs,
+Embarrassing,m-b-a-r-s-\-h,Mbarsg,,qabmrs,
 Embarassment,m-b-a-r-s-m,Mbarsm,,qabmrs,
 Embarassments,m-b-a-r-s-m-s,Mbarsms,,qabmrs,
-Embarasses,m-b-a-r-s-s,Mbarss,,qabmrs,
+Embarrasses,m-b-a-r-s-s,Mbarss,,qabmrs,
 Embrace,m-br-a-s,Mbras,,qabmrs,32
 Embraceable,m-br-a-s-b,Mbrasb,,qabmrs,32
 Embraceably,m-br-a-s-b-e,Mbrasbe,,qabemrs,0
@@ -6193,6 +6204,7 @@ Measurably,m-e-sh-u-b-e,Mezube,,qbemuz,2
 Measured,m-e-sh-u-d,Mezud,,qdemuz,30
 Measuring,m-e-sh-u-\-h,Mezug,,qegmuz,30
 Measurement,m-e-sh-u-m,Mezum,,qemuz,3
+Emphatically,m-f-/-a-e,Mfae,,qaefm,1
 Emphases,m-f-a-s-e-s,Mfases,,qaefms,2
 Emphasize,m-f-a-s-i-s,Mfasis,,qafims,2
 Emphasized,m-f-a-s-i-s-d,Mfasisd,,qadfims,2
@@ -7485,6 +7497,12 @@ Normalizing,n-o-m-i-s-\-h,Nomisg,,qgimnos,216
 Normalizer,n-o-m-i-s-r,Nomisr,,qimnors,216
 Normalizers,n-o-m-i-s-r-s,Nomisrs,,qimnors,216
 Normalizes,n-o-m-i-s-s,Nomiss,,qimnos,216
+Nominate,n-o-mn-a-t,Nomnat,,qamnot,0
+Nominated,n-o-mn-a-t-d,Nomnatd,,qamnot,0
+Nominating,n-o-mn-a-t-\-h,Nomnatg,,qamnot,0
+Nominates,n-o-mn-a-t-s,Nomnats,,qamnost,0
+Nomination,n-o-mn-a-t-sh,Nomnatz,,qamnotz,0
+Nominations,n-o-mn-a-t-sh-s,Nomnatzs,,qamnostz,0
 Normal,n-o-m,Nomo,o,qmno,216
 Normals,n-o-m-s,Noms,,qmnos,216
 Normalcy,n-o-m-s-e,Nomse,,qemnos,216
@@ -7979,9 +7997,15 @@ Investigates,n-v-e-s2-g-s,Nvesgs,,qegnsv,1
 Investigation,n-v-e-s2-g-sh,Nvesgz,,qegnsvz,1
 Investigations,n-v-e-s2-g-sh-s,Nvesgzs,,qegnsvz,0
 Investments,n-v-e-s2-m-s,Nvesms,,qemnsv,3
+Inversion,n-v-e-s-sh,Nvesoz,o,qenosvz,39
+Inversions,n-v-e-s-sh-s,Nvesozs,o,qenosvz,39
 Investor,n-v-e-s-r,Nvesr,,qenrsv,0
 Investors,n-v-e-s-r-s,Nvesrs,,qenrsv,0
 Invests,n-v-e-s-s,Nvess,,qensv,39
+Invert,n-v-e-t,Nvet,,qentv,39
+Inverted,n-v-e-t-d,Nvetd,,qentv,39
+Inverting,n-v-e-t-\-h,Nvetg,,qentv,39
+Inverts,n-v-e-t-s,Nvets,,qenstv,39
 Invitational,n-v-e-t-sh-l,Nvetzl,,qelntvz,0
 Invitationals,n-v-e-t-sh-l-s,Nvetzls,,qelnstvz,0
 Invitations,n-v-e-t-sh-s,Nvetzs,,qenstvz,0
@@ -10509,10 +10533,11 @@ Wrongness,r-o-ng-n-e-s,Rognes,,qegnors,975
 Wrongnesses,r-o-ng-n-e-s-s,Rogness,,qegnors,975
 Wrongs,r-o-ng-s,Rogs,,qgors,975
 Reorganization,r-o-g-sh,Rogz,,qgorz,119
-Rollback,r-o-l-b,Rolb,,qblor,86
+Rollable,r-o-l-b,Rolb,,qblor,86
 Rollback,r-o-l-b-a-k,Rolbak,,qabklor,86
 Rollbacks,r-o-l-b-a-k-s,Rolbaks,,qabklors,86
-Rollbacks,r-o-l-b-s,Rolbs,,qblors,86
+Rollability,r-o-l-\-b,Rolbo,,qblor,86
+Rollables,r-o-l-b-s,Rolbs,,qblors,86
 Rolled,r-o-l-d,Rold,,qdlor,177
 Rolling,r-o-l-\-h,Rolg,,qglor,177
 Rolls,r-o-l-s,Rols,,qlors,177
@@ -10822,8 +10847,10 @@ Resolves,r-s-o-l-v-s,Rsolvs,,qlorsv,196
 Resolution,r-s2-o-l-sh,Rsolz,,qlorsz,851
 Resolutions,r-s2-o-l-sh-s,Rsolzs,,qlorsz,63
 Resource,r-s2-o-s2,Rsos,,qors,199
+Resourced,r-s2-o-s2-d,Rsosd,,qors,199
 Resourceful,r-s2-o-s2-f,Rsosf,,qfors,0
 Resourcefulness,r-s2-o-s2-f-n-s,Rsosfns,,qfnors,0
+Resourcing,r-s2-o-s2-\-h,Rsosg,,qors,199
 Responsible,r-s-p-b,Rspb,,qbprs,285
 Responsibly,r-s-p-b-e,Rspbe,,qbeprs,285
 Responsibility,r-s-p-\-b,Rspbo,,qboprs,0
@@ -11583,6 +11610,7 @@ Scribed,s2-k-r-d,Skrd,,qdkrs,3
 Scribing,s2-k-r-\-h,Skrg,,qgkrs,3
 Scroll,s-k-r-o-l,Skrol,,qklors,0
 Scrollable,s-k-r-o-l-b,Skrolb,,qbklors,0
+Scrollables,s-k-r-o-l-b-s,Skrolbs,,qbklors,0
 Scrolled,s-k-r-o-l-d,Skrold,,qdklors,0
 Scrolling,s-k-r-o-l-\-h,Skrolg,,qgklors,0
 Scrolls,s-k-r-o-l-s,Skrols,,qklors,0
@@ -13598,6 +13626,8 @@ Verses,v-e-s-s,Vess,,qesv,39
 Virtual,v-e2-t-l,Vetl,,qeltv,2
 Virtually,v-e2-t-l-e,Vetle,,qeltv,0
 Virtuals,v-e2-t-l-s,Vetls,,qelstv,0
+Veteran,v-e-t-r-n,Vetrn,,qenrtv,
+Veterans,v-e-t-r-n-s,Vetrns,,qenrstv,
 Virtues,v-e2-t-u-s,Vetus,,qestuv,10
 Virtuous,v-e2-t-u-u-s,Vetuus,,qestuv,0
 Vertically,v-e2-t-\-ye,Vety,,qetvy,0
@@ -13997,6 +14027,11 @@ Explains,e-s-pl-s,Xpls,,qlpsx,119
 Explicit,e-s-pl-e-s2-t,Xplst,,qlpstx,6
 Explicitly,e-s-pl-e-s2-t-e,Xplste,,qelpstx,6
 Explicitly,e-s-pl-e-s2-t-e,Xplxte,,qelptx,6
+Exploited,e-s-pl-o-e-d,Xplyd,,qlpxy,3
+Exploiting,e-s-pl-o-e-\-h,Xplyg,,qlpxy,3
+Exploits,e-s-pl-o-e-s,Xplys,,qlpsxy,3
+Exploitation,e-s-pl-o-e-sh,Xplyz,,qlpxyz,3
+Exploitations,e-s-pl-o-e-sh-s,Xplyzs,,qlpsxyz,3
 Explanations,e-s-pl-sh-s,Xplzs,,qlpsxz,6
 Expendable,e-s-jnt-b,Xpndb,,qbdnpx,4
 Expendably,e-s-jnt-b-e,Xpndbe,,qbdenpx,4
@@ -14208,6 +14243,16 @@ Shoulders,sh-o-ld-r-s,Zoldrs,,qdlorsz,10
 Shopped,sh-o-p-d,Zopd,,qdopz,3
 Shopping,sh-o-p-\-h,Zopg,,qgopz,3
 Shops,sh-o-p-s,Zops,,qopsz,3
+Shove,sh-o-v,Zov,,qovz,92758
+Shoved,sh-o-v-d,Zovd,,qovz,92758
+Shoving,sh-o-v-\-h,Zovg,,qovz,92758
+Shovel,sh-o-v-l,Zovl,,qlovz,92758
+Shoveled,sh-o-v-l-d,Zovld,,qlovz,92758
+Shoveling,sh-o-v-l-\-h,Zovlg,,qlovz,92758
+Shovels,sh-o-v-l-s,Zovls,,qlosvz,92758
+Shover,sh-o-v-r,Zovr,,qorvz,92758
+Shovers,sh-o-v-r-s,Zovrs,,qorsvz,92758
+Shoves,sh-o-v-s,Zovs,,qosvz,92758
 Schrodinger,sh-r-o-d-j,Zrodj,,qdjorz,
 Shortsighted,^-sh-\s-i-td,Zsitd,,qdistz,0
 Shortsightedly,^-sh-\s-i-td-e,Zsitde,,qdeistz,0
