@@ -1909,6 +1909,8 @@ Denied,tn-i-d,Dnid,,qdin,237
 Denying,tn-i-\-h,Dnig,,qdgin,237
 Denial,tn-i-l,Dnil,,qdiln,237
 Denials,tn-i-l-s,Dnils,,qdilns,237
+Denier,tn-i-r,Dnir,,qdinr,237
+Deniers,tn-i-r-s,Dnirs,,qdinrs,237
 Denies,tn-i-s,Dnis,,qdins,237
 Dangers,tn-j-e2-s,Dnjes,,qdejns,4
 Dangerously,tn-j-u-s-e,Dnjuse,,qdejnsu,6
@@ -5928,6 +5930,7 @@ Loveably,l-v-b-e,Lvbe,,qbelv,625
 Loveability,l-v-\-b,Lvbo,,qblov,625
 Lovely,l-v-e,Lve,,qelv,625
 Loving,l-v-\-h,Lvg,,qglv,625
+Lovingly,l-v-\-h-e,Lvge,,qeglv,1
 Lovingly,l-v-\-h-e,Lvhe,,qehlv,1
 Lovers,l-v-r-s,Lvrs,,qlrsv,2
 Loves,l-v-s,Lvs,,qlsv,625
@@ -12256,6 +12259,7 @@ Standbys,s2-tn-b-s,Stnbs,,qbnst,25
 Stunned,s2-t-n-\-t,Stnd,,qdnst,0
 Stun,s2-t-n,Stno,o,qnost,0
 Stuns,s2-t-n-s,Stnso,o,qnost,0
+Stenography,^-s-tn-\-oe,Stnyo,o,qnosty,
 Stocking,s2-t-o-\-h,Stog,,qgost,0
 Stop,s2-t-o-p,Stop,,qopst,53
 Stopped,s2-t-o-p-d,Stopd,,qdopst,53
