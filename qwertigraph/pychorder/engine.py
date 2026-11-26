@@ -4,6 +4,7 @@ import os
 import csv
 from pathlib import Path
 from comms_proxy import Comms_Proxy
+import keyboard 
 
 # Imports for the watchdog that monitors dictionary file changes
 import threading
@@ -364,6 +365,12 @@ class Expansion_Engine:
             qwerd += key
         self._log.debug(f"Qwerd: {qwerd}")
 
+        # Implement camel casing by sending backspace iff the last end key was a caret and the qwerd starts with an alpha character
+        if self._last_end_key == "^" and qwerd and qwerd[0].isalpha():
+            self._log.debug(f"I see a camel caser before {qwerd}")
+            keyboard.send("backspace")
+        # else:
+            # self._log.debug(f"No camel caser off {qwerd}")
 
         replay_output = ''
         if qwerd in self.expansions:
@@ -374,6 +381,7 @@ class Expansion_Engine:
                 # In single quoted strings, a thing that *could* be a contraction will be treated as one 
                 self._log.debug(f"Prepending apostrophe to {qwerd} as contraction")
                 qwerd = f"'{qwerd}"
+
 
             # Replacing the qwerd triggers the scribe, 
             # so to give hints about shorter qwerds, we need to pass the shortest one
