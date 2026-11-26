@@ -356,7 +356,7 @@
   {
     "comment": "Purge non-characters",
     "word_pattern": ".",
-    "form_pattern": "[-\\\\/\\^~0-9]",
+    "form_pattern": "[-\\\\/\\^0-9]",
     "replace": ""
   },
   {
