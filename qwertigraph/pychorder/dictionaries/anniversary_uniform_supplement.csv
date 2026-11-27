@@ -7513,6 +7513,10 @@ Noncatholics,n-o-n-k-a-th-s,Nonkahs,,qahknos,0
 Unwanted,n-o-nt-t,Nontd,,qdnot,3135
 Non,n-o-n,Nonu,u,qnou,232
 Inoperative,n-o-pr-a-\-v,Noprav,,qanoprv,0
+Notate,n-o-t-a,Nota,,qanot,143
+Notated,n-o-t-a-d,Notad,,qanot,143
+Notating,n-o-t-a-\-h,Notag,,qanot,143
+Notates,n-o-t-a-s,Notas,,qanost,143
 Notably,n-o-t-b-e,Notbe,,qbenot,87
 Notebook,n-o-t-b-k,Notbk,,qbknot,0
 Notebooks,n-o-t-b-k-s,Notbks,,qbknost,0
@@ -10643,11 +10647,15 @@ Reproduce,r-pr-o-d-u-s,Rprodus,,qdoprsu,2
 Reproduced,r-pr-o-d-u-s-d,Rprodusd,,qdoprsu,2
 Reproducing,r-pr-o-d-u-s-\-h,Rprodusg,,qdgoprsu,2
 Reproduces,r-pr-o-d-u-ss,Rproduss,,qdoprsu,0
+Reproductive,r-pr-o-k-v,Rprokv,,qkoprv,1
+Reproductively,r-pr-o-k-v-e,Rprokve,,qekoprv,1
 Repurpose,r-pr-p,Rprp,,qpr,108
 Repurposed,r-pr-p-d,Rprpd,,qdpr,108
 Repurposing,r-pr-p-\-h,Rprpg,,qgpr,108
 Repurposes,r-pr-p-s,Rprps,,qprs,108
 Reports,r-pr-s,Rprs,,qprs,101
+Reproduction,r-pr-u-k-sh,Rprukz,,qkpruz,1
+Reproductions,r-pr-u-k-sh-s,Rprukzs,,qkprsuz,1
 Replies,r-e-p-s,Rps,,qprs,6
 Represents,r-p-s,Rpso,o,qoprs,6
 Republics,r-p-s,Rpsqk,,qprs,4
@@ -11368,6 +11376,8 @@ Surprising,s-e-pr-i-s-\-h,Seprisg,,qegiprs,104
 Surprisingly,s-e-pr-i-s-\-h-e,Seprishe,,qehiprs,3
 Surprises,s-e-pr-i-s-s,Sepriss,,qeiprs,104
 Separateness,s-e-pr-n-s,Seprns,,qenprs,0
+Separator,s-e-pr-r,Seprr,,qeprs,175
+Separators,s-e-pr-r-s,Seprrs,,qeprs,175
 Separates,s-e-pr-s,Seprs,,qeprs,175
 Separatist,s-e-pr-t-s-t,Seprtst,,qeprst,0
 Separatists,s-e-pr-t-s-t-s,Seprtsts,,qeprst,0
@@ -12015,6 +12025,8 @@ Surrounded,s-r-nt-d,Srndd,,qdnrs,4
 Surrounding,s-r-nt-\-h,Srndg,,qdnrs,4
 Surroundings,s-r-nt-\-h-s,Srndgs,,qdgnrs,4
 Surrounds,s-r-nt-s,Srnds,,qdnrs,4
+Surrogate,s-r-o-g-t,Srogt,,qgorst,
+Surrogates,s-r-o-g-t-s,Srogts,,qgorst,
 -Selves,<-ss,Ss<,,q<s,5
 Systematic,s2s-\-a,Ssa,,qas,5
 Society,ss2,Sse,e,qes,5

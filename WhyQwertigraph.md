@@ -7,20 +7,22 @@
 
 Because you are willing to work pretty hard to work smart. 
 
-By now we were supposed to have flying cars and our computers were going to know everything we wanted them to do by a simple voice command. We were supposed to be able to tell them to "write a note to Grandma", and all our deepest feelings would show up on screen. That has not happened, and it's not going to happen. I'll never feel good about the way any computer captured my words and put them on paper. 
+By now we were supposed to have flying cars and our computers were going to know everything we wanted them to do by a simple voice command. We were supposed to be able to tell them to "write a note to Grandma", and all our deepest feelings would show up on screen. ~~That has not happened, and it's not going to happen.~~ I'll never feel good about the way any computer captured my words and put them on paper. 
+
+Well, AI came for all our stenography. It's better, faster, and smarter, and I don't care. The market for this product has gone from one, to really, really one. That's okay. I am well past doing this for whomever may someday read my little note. I love you and I hope you find some joy in this little program, but I gave up on waiting for you. I did this for me. 
 
 I need a keyboard. 
 
-But I also need the words to show up quicker. The Qwertigraph allows me to boost my usual 60-80 WPM to 90-150 WPM. I especially feel that benefit when I'm in an instant chat with someone. I want the words to flow at the speed of speech, and hitting 150 WPM for an extended stretch is just fun. Email flows better at 100 WPM than at 60. Reports are vaguely interesting when I'm done with them 40% quicker. 
+I want to type my own words, not let an LLM create them for me, but I also need the words to show up quicker. The Qwertigraph allows me to boost my usual 60-80 WPM to 90-150 WPM. I especially feel that benefit when I'm in an instant messaging chat with someone. I want the words to flow at the speed of speech, and hitting 150 WPM for an extended stretch is just fun. Email flows better at 100 WPM than at 60. Reports are vaguely interesting when I'm done with them 40% quicker. The programs I write at work come out a lot faster with AI, but they come out a little faster still with the Qwertigraph. 
 
-I wrote and use the Qwertigraph because it turns every typing task into a fun little game, and while I'm playing I happen to be finishing the task in a fraction of the time it would have taken anyway. I know I've spent over 1000 hours making it, hours of irritation, fury, and eventual relief, just like playing any game. It's filled my free time with programming and my work time with savings. 
+I wrote and use the Qwertigraph because it turns every typing task into a fun little game, and while I'm playing I happen to be finishing the task in a portion of the time it would have taken anyway. I know I've spent over 1000 hours making it, hours of irritation, fury, and eventual relief, just like playing any game. It's filled my free time with programming and my work time with savings. 
 
 I hope you find some little joy in it, too. 
 
 #### The Qwertigraph: 
 The Qwertigraph is Qwertigraphy's main engine. Once started, it runs silently in the background watching all your keyboard input. When it sees a string of keystrokes it recognizes, it deletes whatever was typed and replaces it with an expanded word. When, for example, it sees "rf" followed by an "end character" like the space bar key, it deletes that "rf", types "reference", and only then types the space bar. You typed 3 characters and 10 were output. This may sound slow, but the system has been proven to work fine with keyboard input of more than 250 WPM and expanded output of more than 600 WPM. The Qwertigraph is fast. 
 
-The Qwertigraph can also fit your typing style. I built Qwertigraphy with a specific goal in mind. I wanted to use it to teach myself Gregg Shorthand, so I built a dictionary of 10's of thousands of abbreviations modelled after Gregg. You may like Pittman or Forkner or an abbreviation pattern that fits your unique outlook on typing. Email me. If you a dictionary, I can show you how to format it and use your shorthand theory in the Qwertigraph. 
+The Qwertigraph can also fit your typing style. I built Qwertigraphy with a specific goal in mind. I wanted to use it to teach myself Gregg Shorthand, so I built a dictionary of tens of thousands of abbreviations modelled after Gregg. You may like Pittman or Forkner or an abbreviation pattern that fits your unique outlook on typing. Email me. If you need a dictionary, I can show you how to format it and use your shorthand theory in the Qwertigraph. 
 
 That said, let's settle on some terms:
 - Theory: A (usually pretty complex) systematic method of abbreviating words into easier to type abbreviations
@@ -29,11 +31,11 @@ That said, let's settle on some terms:
 -- Qwerd: The formal qwerd is the typed input of the abbreviation 
 -- Word: The word is the text to be output when the qwerd is expanded
 -- Form: A hyphen-delimited set of characters that shows how the word would be written in Gregg Shorthand with a pen and paper 
--- Keyer: In Gregg Shorthand, "the, there, and their" are all written the same way. In the Qwertigraph, they need to be distinguished from each other so they are written "h, hi, ho". The "i" and "o" are not a proper part of the word itself. They are the keyers that distinguish the three words. 
+-- Keyer: In Gregg Shorthand, "the, there, and their" are all written the same way. In the Qwertigraph, they need to be uniquely identified and are distinguished from each other writing "h for the, hi for there, and ho for their". The "i" and "o" are not a proper part of the word itself. They are the keyers that distinguish the three words. 
 -- Chord: Advanced Qwertigraphers can hit every key in a qwerd simultaneously to output an entire word with one motion; the chord is the collection of keys that output that word 
--- Usage: This was originally a word's frequency in common English use. Maintaining that became a nuisance, so now it's a vague impression of how often the word appears in normal typing. 
+-- Usage: This was originally a word's frequency in common English use. Maintaining that became a nuisance, so now it's a null value I've not yet removed. 
 
-The Qwertigraph will support your preferred theory, after a dictionary of qwerds is built for it. I love Gregg Theory, but I seem to be pretty rare in that regard. Most people see the oddities of Gregg's theory as embodied and the Qwertigraph and run away. I get that. It's a good theory, and I can defend it, but I'd rather see people pick up the Qwertigraph with their own theory than walk away because Gregg's theory is often unintuitive. 
+The Qwertigraph will support your preferred theory, after a dictionary of qwerds is built for it. I love Gregg Theory, but I seem to be pretty rare in that regard. Most people see the oddities of Gregg's theory as it's embodied and the way the Qwertigraph models them and run away. I get that. It's a good theory, and I can defend it, but I'd rather see people pick up the Qwertigraph with their own theory than walk away because Gregg's theory is often unintuitive. I can show you how to make your own dictionary. It's just a lot of work. 
 
 For the remainder of this documentation, I will be giving examples using Gregg Theory. 
 
@@ -42,8 +44,8 @@ The Coach is always available to tell you what you could type, what you have typ
 
 As of this writing, the Coach always sits to the far right of the primary screen. If you need that modified, you'll have to write the change yourself or write me and request it. The code stubs are there, but I'm happy with it the way it is. 
 
-### The Dashboard
-The Dashboard lets you stop/start (and reload dictionaries) for the Qwertigraph. It also lets you store up to 3 username/password combinations. You access those by chording b1-9. I'm still tinkering with those, so I won't document it yet. Play with it to figure out which is which. 
+### The Settings
+The Dashboard lets you stop/start (and reload dictionaries) for the Qwertigraph. It also lets you store up to 3 username/password combinations. You access those by chording b1-9. I'm still tinkering with those (2 years later), so I won't document it yet (sorry). Play with it to figure out which is which. Put values in the 6 fields, click "Update Credentials" and then type b1, b2, etc, and you'll quickly see how it works. 
 
 #### But didn't I mention taking faster notes with a pen?
 
@@ -51,20 +53,24 @@ You will quickly learn the qwerd for the word, "and". In Qwertigraphy, that's ty
 
 Gregg Shorthand reduces the "nt" of "and" to a single pen-stroke. That's 86% of your life back.
 
-Once you've learned the Qwertigraphy representation of any word, you can take a quick look at the Dashboard learn to its Gregg shorthand representation. A hard-working longhand writer will usually take their notes at something like 25 words per minute. With Gregg, 100 WPM will be well within your reach, and the best shorthand users exceed 200 WPM. Learn Gregg, and writing will become so much fun you'll be tempted to start writing more valuable notes, notes filled with a ton more detail. 
+Once you've learned the Qwertigraphy representation of any word, you can take a look at the Editor's "form" field to learn its Gregg shorthand representation. A hard-working longhand writer will usually take their notes at something like 25 words per minute. With Gregg, 100 WPM will be well within your reach, and the best shorthand users exceed 200 WPM. Learn Gregg, and writing will become so much fun you'll be tempted to start writing more valuable notes, notes filled with a ton more detail. 
 
 *Qwertigraphy cannot be held responsible for such self-abuse, but it's a risk you'll have to take.*
 
 Next: [How to Qwertigraph](https://github.com/codepoke-kk/qwertigraphy/blob/master/HowQwertigraph.md)
 
-# The rest of this is old....
-
+## Important note 
 ### I've replaced the AutoHotKey Qwertigraph with the PyChorder Qwertigraph. 
 
 The new tool is written in Python, so it's theoretically no longer stuck to Windows. I've not tried it on any other platform, so you might want to avoid trying it unless you're up for some building/fixing.
 
 
+# The rest of this is old....
 ### Ignore from here 
+I retain this for any deluded soul who thinks to resurrect the old AutoHotkey 1.1 Qwertigraph. I highly recommend not going down that road. Do so at your own risk and with only Claude to support you. I will not be able it. I have the memory of a fruitfly, and I've not touched that code in 3+ years. It worked when I mothballed it. 
+
+### Off you go, then ...
+
 You can do 2 things to the dashboard:
 - Display: Press Win-Alt-D to toggle its visibility. If you don't like it, WAD will hide it. If you want it back, hit WAD again. 
 - Find: Press Win-Alt-F to find the Dashboard. The Dashboard is not set to "always visible", so various windows can and will hide it. Any window set to full screen will always hide the Dashboard. I find this the best setting. If all the windows you have on the primary screen are in window mode, hitting WAF will rearrange them off to the left such that the Dashboard is visible. It can be a little annoying to have to do this, but every other method I tried to make it work was much more annoying. I'm open to ideas. 

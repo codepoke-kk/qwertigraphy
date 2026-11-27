@@ -1,1 +1,1 @@
-This is currently just a working experiment with using Python to monitor a keyboard and do AHK-like text expansions. 
+You've found the main meat of the PyChorder. Please see the readme at the repo root for actual information. 

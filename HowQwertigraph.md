@@ -12,13 +12,17 @@ https://github.com/codepoke-kk/qwertigraphy/release/chorder.exe
 Double click and go!
 
 ### Reality Check 
-If you are reading these words, please understand this poor tool has received much more attention from me than from anyone else on earth, and I never needed these hints how to proceed. They are incomplete, because no one has ever really needed them. You can try emailing me with questions, and I will be happy to answer when the time makes itself available. 
+If you are reading these words, please understand this poor tool has received much more attention from me than from anyone else on earth, and I never needed these hints how to proceed. They are incomplete, because no one else has ever really needed them. You can try emailing me with questions, and I will be happy to answer when the time makes itself available. 
 
 And, I have to admit the dictionary is only 95% complete, even for me. I mean to say, 95% of the words I need are in there. Every day I find the word I need thousands of times, but a dozen times a day the word I need is not in there. And I may not need that word again for another year or two, so I don't just jump up and add it. And then it's missing the next time I need it, too. The Coach helps me find those words, but I'm busy actually typing all day long, and don't always enter the words the Coach is coaching me to use. 
 
-And, I know the qwerds look like utter nonsense sometimes. My chief goal in this process is to end up with a fully compliant Gregg Anniversary dictionary, and sometimes Gregg looks like nonsense. That's my desire, and in 2 years I've not wavered from it. Gregg says "re" is "real" while "reality" is "rel", so that's what the Qwertigraph will say. It looks silly, but that's me for you. Your author of this product is just silly.
+And, I know the qwerds look like utter nonsense sometimes. My chief goal in this process is to end up with a fully compliant Gregg Anniversary dictionary, and sometimes Gregg looks like nonsense. That's my desire, and in ~~2~~ 6 years I've not wavered from it. Gregg says "re" is "real" while "reality" is "rel", so that's what the Qwertigraph will say. But Qwertigraph often treats the re- prefix as "r", and rl is already taken, so it gets an "o" keyer, so reality is "rlo". It looks silly, but that's me for you. Your author of this product is just silly.
 
-The Qwertigraph is a tool, a framework. You, or anyone else can create your own dictionary of cooler and more efficient qwerds. Maybe you like Teeline or Pitman? The Qwertigraph can do them. Maybe you have your own idea of the most efficient way to structure a brand new Shorthand. The Qwertigraph can do that. If you have such a dream, drop me a line and I'll help you make your dictionary happen. And if you want to pair it with pen shorthand changes, I can show you how to make that happen, too. It ain't easy, but it's possible and fun.  
+The Qwertigraph is a tool, a framework. You, or anyone else can create your own dictionary of cooler and more efficient qwerds. Maybe you like Teeline or Pitman? The Qwertigraph can do them. Maybe you have your own idea of the most efficient way to structure a brand new Shorthand. The Qwertigraph can do that. If you have such a dream, drop me a line and I'll help you make your dictionary happen. And if you want to pair it with pen shorthand changes, I can show you how to make that happen, too. It ain't easy, but it's possible and fun if you find it fun. It's all about you. 
+
+I will note I just made "~" a valid letter in qwerds, so you can make a qwerd like "Gl~u" and typing it will yield: Glad to hear from you 
+
+I also just made the ^ character the "camel case separator". You can type fes^Gr^Oprar and out will pop: firstGreatOperator 
 
 Lastly, If you'd like to see how the code works, change a couple things, or steal the code and make something better:
 
@@ -50,14 +54,14 @@ This will launch the Qwertigraph in fully active mode. You can pre-load some cre
 
 
 
-
-# The rest of this is old....
-
+## Important note: 
 ### I've replaced the AutoHotKey Qwertigraph with the PyChorder Qwertigraph. 
 
 The new tool is written in Python, so it's theoretically no longer stuck to Windows. I've not tried it on any other platform, so you might want to avoid trying it unless you're up for some building/fixing.
 
 
+
+# The rest of this is old....
 ### Ignore from here
 
 #### Step: Download AutoHotkey 

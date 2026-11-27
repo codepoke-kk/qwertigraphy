@@ -12,13 +12,13 @@ I work two jobs. This is a labor of amusement for me, so I'll get to things when
 I learned Gregg in 1993 or so, and figured I knew enough to be dangerous when I got to lesson 12 of 36 in my book. Oops. I did Gregg poorly until 2019. I've got nothing but half-baked knowledge and deeply ingrained bad habits to show for all my experience. I'm slowly coming up to speed, but my weaknesses impact the final product badly. I'm sorry and trying to do better.
 
 #### My Python-fu is weak, too
-I'd never touched Python before June of 2025 and I'm finishing this in December 2025. I've taken advice where I could get it and jogged AI as much as I could, but there are certainly places someone with skills could improve on what we have here. 
+I'd never touched Python before June of 2025 and I'm finishing this in December 2025. I've taken advice where I could get it and jogged AI as much as I could, but there are certainly places someone with skills could improve on what we have here. As of 12/2026, I'm better at Python, but I'm pretty much just using what fell into place last year. 
 
 #### What am I even doing, trying this?
 If someone else has already done this better, let me know. I'd gladly shut this down and buy theirs.
 
 #### The Dictionary is a moving target
-I consider my hardcopy Gregg Shorthand Dictionary of 1930, Anniversary Edition, to be the gold standard for the "anniversary_core.ahk" dictionary. I manually add/fix some words into anniversary_supplement.ahk every week, but I'll be a long while getting to "right". 
+I consider my hardcopy, bounded, paper Gregg Shorthand Dictionary of 1930, Anniversary Edition, to be the gold standard for the "anniversary_core.ahk" dictionary. I manually add/fix some words into anniversary_supplement.ahk every week, but I'll be a long while getting to "right". I'm past 23k words now, so I think that's like 5k words manually added across 350 weeks or so. It's not a bad pace for an old guy like me. 
 
 
 
